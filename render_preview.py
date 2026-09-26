@@ -259,21 +259,172 @@ def _water(rgb: np.ndarray, t: float, params: dict) -> np.ndarray:
     return rgb * (1.0 - mask) + moved * mask
 
 
-def _lightning(rgb: np.ndarray, t: float, params: dict, beats: list[float]) -> tuple[np.ndarray, float]:
-    strength = float(params.get("strength", 0.0))
-    if strength <= 0.0 or not beats:
-        return rgb, 0.0
-    nearest = min(abs(t - b) for b in beats)
-    if nearest > 0.09:
-        return rgb, 0.0
-    amount = (1.0 - nearest / 0.09) * strength
-    h, w = rgb.shape[:2]
-    band = np.zeros((h, w), np.float32)
-    y0, y1 = int(h * 0.38), int(h * 0.52)
-    band[y0:y1] = 1.0
-    band = cv2.GaussianBlur(band, (0, 0), 12.0)
-    lift = np.array([0.15, 0.55, 0.62], np.float32) * amount
-    return np.clip(rgb + band[..., None] * lift, 0.0, 1.0), amount
+def _pulse(t: float, beats: list[float]) -> float:
+    if not beats:
+        return 0.0
+    nearest = min(abs(t - beat) for beat in beats)
+    if nearest > 0.12:
+        return 0.0
+    return 1.0 - nearest / 0.12
+
+
+def find_light_sources(plate, depth=None, door_slit=None) -> list[dict]:
+    """Warm lantern, fire, and window peaks, plus the ark door when it is lit."""
+    if plate is None:
+        return []
+    img = plate.astype(np.float32)
+    if img.max() > 1.5:
+        img = img / 255.0
+    if img.ndim != 3 or img.shape[2] < 3:
+        return []
+    height, width = img.shape[:2]
+    red, green, blue = img[:, :, 0], img[:, :, 1], img[:, :, 2]
+    score = np.clip(red - np.maximum(green, blue), 0.0, 1.0) * (red > 0.35)
+    # A sunset or horizon streak is warm across the width. That is not a lantern.
+    row_frac = (score > 0.05).mean(axis=1)
+    score[row_frac > 0.28] = 0
+    small = cv2.resize(score.astype(np.float32), (max(8, width // 8), max(8, height // 8)))
+    sources = []
+    for _ in range(4):
+        index = int(np.argmax(small))
+        peak = float(small.flat[index])
+        if peak < 0.08:
+            break
+        y, x = divmod(index, small.shape[1])
+        small[max(0, y - 6) : y + 7, max(0, x - 6) : x + 7] = 0
+        px = int(min(width - 1, x / small.shape[1] * width))
+        py = int(min(height - 1, y / small.shape[0] * height))
+        sample = float(depth[py, px]) if depth is not None else 0.5
+        sources.append({"x": px, "y": py, "kind": "warm", "depth": sample})
+    if door_slit is not None and float(np.max(door_slit)) > 0.2:
+        ys, xs = np.where(door_slit > 0.2)
+        py = int(np.clip(ys.mean(), 0, height - 1))
+        px = int(np.clip(xs.mean(), 0, width - 1))
+        sample = float(depth[py, px]) if depth is not None else 0.55
+        sources.append({"x": px, "y": py, "kind": "door", "depth": sample})
+    return sources
+
+
+def _project_sources(prep: dict, pose, sources: list[dict]) -> list[dict]:
+    if not sources:
+        return []
+    plate_w, plate_h = prep["plate_size"]
+    matrix = layer_affine(pose, 0.91, plate_w, plate_h, OUT_W, OUT_H)
+    points = np.array([[[float(item["x"]), float(item["y"])]] for item in sources], np.float32)
+    moved = cv2.transform(points, matrix)
+    projected = []
+    for item, point in zip(sources, moved[:, 0]):
+        copy = dict(item)
+        copy["x"] = float(point[0])
+        copy["y"] = float(point[1])
+        projected.append(copy)
+    return projected
+
+
+def _glow_patch(rgb: np.ndarray, cx: float, cy: float, radius: float, color: np.ndarray, amount: float, depth, source_depth) -> None:
+    if amount <= 0.01:
+        return
+    height, width = rgb.shape[:2]
+    x0 = max(0, int(cx - radius))
+    x1 = min(width, int(cx + radius) + 1)
+    y0 = max(0, int(cy - radius))
+    y1 = min(height, int(cy + radius) + 1)
+    if x1 <= x0 or y1 <= y0:
+        return
+    yy, xx = np.mgrid[y0:y1, x0:x1]
+    dist2 = (xx - cx) ** 2 + (yy - cy) ** 2
+    glow = np.exp(-dist2 / (2.0 * (radius * 0.42) ** 2)).astype(np.float32)
+    if depth is not None and source_depth is not None:
+        local = depth[y0:y1, x0:x1]
+        glow *= np.exp(-((local - float(source_depth)) ** 2) / 0.018).astype(np.float32)
+    rgb[y0:y1, x0:x1] += glow[..., None] * color * float(amount)
+
+
+def motivated_light(
+    rgb: np.ndarray,
+    t: float,
+    beats: list[float],
+    prep: dict | None = None,
+    pose=None,
+    sources: list[dict] | None = None,
+    depth=None,
+    sky=None,
+    bolts: bool = False,
+) -> np.ndarray:
+    """Localized depth-masked light. Never a full-width centre band."""
+    pulse = _pulse(t, beats)
+    if sources is None and prep is not None:
+        cached = prep.get("v3_lights")
+        if cached is None:
+            cached = find_light_sources(prep.get("plate"), prep.get("depth"), prep.get("door_slit"))
+            prep["v3_lights"] = cached
+        sources = _project_sources(prep, pose, cached) if pose is not None else cached
+    sources = sources or []
+    if depth is None and prep is not None and pose is not None:
+        matrix = layer_affine(pose, 0.91, prep["plate_size"][0], prep["plate_size"][1], rgb.shape[1], rgb.shape[0])
+        depth = cv2.warpAffine(prep["depth"].astype(np.float32), matrix, (rgb.shape[1], rgb.shape[0]))
+    out = rgb
+    flicker = 0.72 + 0.28 * math.sin(t * 9.0)
+    for source in sources:
+        kind = source.get("kind", "warm")
+        color = np.array([1.0, 0.62, 0.28], np.float32) if kind != "door" else np.array([1.0, 0.72, 0.38], np.float32)
+        amount = (0.35 + 0.65 * pulse) * flicker
+        if kind == "warm" and pulse > 0.75 and int(t * 10) % 17 == 0:
+            amount *= 1.35
+        _glow_patch(
+            out,
+            float(source["x"]),
+            float(source["y"]),
+            46.0 if kind == "warm" else 64.0,
+            color,
+            amount * 0.85,
+            depth,
+            source.get("depth"),
+        )
+        if pulse > 0.45 and kind == "warm":
+            x = int(source["x"])
+            y = int(source["y"])
+            height, width = out.shape[:2]
+            for step in range(3):
+                x2 = min(width - 1, max(0, x + step * 3 - 3))
+                y1 = min(height - 1, max(0, y))
+                y2 = min(height - 1, y + 14 + step * 6)
+                if y2 > y1:
+                    out[y1:y2, x2] = np.clip(out[y1:y2, x2] + color * amount * 0.35, 0.0, 1.0)
+    if sky is None and prep is not None:
+        sky = prep.get("sky_mask")
+    if sky is not None and float(np.max(sky)) > 0.05:
+        height, width = out.shape[:2]
+        sky_s = sky if sky.shape[:2] == (height, width) else cv2.resize(sky.astype(np.float32), (width, height))
+        cx = width * (0.42 + 0.12 * math.sin(t * 0.31))
+        cy = height * 0.08
+        y1 = max(1, int(height * 0.22))
+        yy, xx = np.mgrid[0:y1, 0:width]
+        blob = np.exp(-((xx - cx) ** 2) / (2 * (width * 0.055) ** 2) - ((yy - cy) ** 2) / (2 * (height * 0.05) ** 2))
+        mask = blob * sky_s[:y1] * (0.18 + 0.55 * pulse)
+        out[:y1] += mask[..., None] * np.array([0.45, 0.55, 0.62], np.float32)
+    if bolts and pulse > 0.2:
+        height, width = out.shape[:2]
+        rng = np.random.default_rng(int(round(t * 24)) * 17 + 3)
+        x = int(width * (0.2 + 0.6 * rng.random()))
+        y = int(height * 0.03)
+        overlay = np.zeros((height, width), np.float32)
+        for _ in range(6):
+            x2 = int(np.clip(x + int(rng.integers(-36, 36)), width * 0.12, width * 0.88))
+            y2 = int(min(height * 0.40, y + int(rng.integers(16, 36))))
+            cv2.line(overlay, (x, y), (x2, y2), 1.0, 2, cv2.LINE_AA)
+            x, y = x2, y2
+        overlay = cv2.GaussianBlur(overlay, (0, 0), 2.2)
+        out += overlay[..., None] * np.array([0.72, 0.8, 0.95], np.float32) * pulse
+        _glow_patch(out, x, y, 64.0, np.array([0.55, 0.66, 0.8], np.float32), pulse, depth, None)
+    return np.clip(out, 0.0, 1.0)
+
+
+def _lightning(rgb: np.ndarray, t: float, params: dict, beats: list[float], prep: dict | None = None, pose=None) -> tuple[np.ndarray, float]:
+    """Scene light on the beat. The old full-width centre strip is not drawn."""
+    strength = float(params.get("strength", 0.0) or 0.0)
+    lit = motivated_light(rgb, t, beats, prep=prep, pose=pose, bolts=strength > 0.05)
+    return lit, _pulse(t, beats) * strength
 
 
 def _paste(rgb: np.ndarray, sprite: np.ndarray, x: int, y: int) -> None:
@@ -417,7 +568,7 @@ def render_frame(prep: dict, shot: dict, fx: dict, pose, t: float, beats: list[f
     rgb = _dust(rgb, t, layers["dust"], seed=200 + int(shot["id"][1:]))
     rgb = _godrays(rgb, t, layers["godrays"])
     rgb = _motes(rgb, t, layers["motes"], seed=300 + int(shot["id"][1:]))
-    rgb, _flash = _lightning(rgb, t, layers.get("lightning", {"strength": 0}), beats)
+    rgb, _flash = _lightning(rgb, t, layers.get("lightning", {"strength": 0}), beats, prep, pose)
     rgb = _rain(rgb, t, layers.get("rain", {"count": 0}), seed=400 + int(shot["id"][1:]))
     rgb = _water(rgb, t, layers.get("water", {"amp": 0}))
     rgb = grade_teal_amber(rgb)

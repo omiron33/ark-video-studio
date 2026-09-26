@@ -543,7 +543,7 @@ def load_lyric_lines(path: Path | None = None) -> list[dict]:
 _FONT_CACHE: dict[int, ImageFont.FreeTypeFont] = {}
 
 
-def _font(size: int) -> ImageFont.FreeTypeFont:
+def _measure_font(size: int) -> ImageFont.FreeTypeFont:
     font = _FONT_CACHE.get(size)
     if font is None:
         font = ImageFont.truetype(str(FONT_HERO), size)
@@ -555,7 +555,7 @@ def line_width(text: str, size: int = HERO_PX) -> float:
     if not text:
         return 0.0
     probe = ImageDraw.Draw(Image.new("L", (4, 4)))
-    box = probe.textbbox((0, 0), text, font=_font(size))
+    box = probe.textbbox((0, 0), text, font=_measure_font(size))
     return float(box[2] - box[0])
 
 
