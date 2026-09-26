@@ -2,8 +2,9 @@
 
 import numpy as np
 
-from arkpipe.composite import RainField
-from render_timeline import DISSOLVE_FRAMES, blend_dissolve, calm, flow_water, load_shots, water_mask
+from arkpipe.camera import CameraPose
+from arkpipe.composite import RainField, layer_affine, sample_corners_inside
+from render_timeline import DISSOLVE_FRAMES, HEIGHT, WIDTH, blend_dissolve, calm, flow_water, load_shots, water_mask
 
 
 def test_dissolve_is_short_and_keeps_every_frame():
@@ -52,6 +53,18 @@ def test_brown_flood_is_water_and_the_sky_is_not():
     mask = water_mask(plate, depth)
     assert float(mask[32].mean()) > 0.3
     assert float(mask[2].mean()) < 0.05
+
+
+def test_overscan_keeps_shake_off_the_plate_edge():
+    plate_w, plate_h = 2304, 1296
+    poses = [
+        CameraPose(0, 0.0, 0.012, 8.0, 3.0, 0.18, 22.0, 6.2, 0.16),
+        CameraPose(0, 190.46, 0.010, 10.5, 4.2, 0.30, 34.0, 12.0, 0.31),
+    ]
+    for pose in poses:
+        for parallax in (0.08, 0.54, 1.0):
+            matrix = layer_affine(pose, parallax, plate_w, plate_h, WIDTH, HEIGHT)
+            assert sample_corners_inside(matrix, plate_w, plate_h, WIDTH, HEIGHT)
 
 
 def test_no_rain_draws_nothing():

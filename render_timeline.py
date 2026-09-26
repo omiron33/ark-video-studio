@@ -343,8 +343,8 @@ def prep_for(shot: dict) -> tuple[dict, bool]:
     cfg = {
         "id": shot["still"],
         "source_image": rel,
-        "plate_width": 1920,
-        "plate_height": 1080,
+        "plate_width": 2304,
+        "plate_height": 1296,
         "layers": 3,
         "feather_px": 4.0,
         "reveal_px": 48,
