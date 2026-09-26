@@ -503,20 +503,28 @@ def build_fx(shots: list[dict], locked: dict | None = None) -> dict:
 
 
 HOLD = 0.40
-ENTRANCES = ("fade", "slide_left", "slide_right", "slide_below", "scale", "blur", "tracking", "wipe", "shake")
-EXITS = ("fade", "slide_left", "slide_right", "slide_below", "scale", "wipe")
+GAP_SPLIT = 2.0
+MIN_ON_SCREEN = 1.5
+LONG_TEXT = 90
+HERO_PX = 54
+HERO_PX_3 = 40
+MAX_SPRITE_W = 1600
+SPRITE_PAD = 160
+MAX_LINE_PX = MAX_SPRITE_W - SPRITE_PAD
+QUIET_ENTRANCES = ("fade", "blur", "tracking")
+NARRATIVE_ENTRANCES = ("slide_left", "slide_right", "slide_below", "wipe", "scale")
+ENTRANCES = QUIET_ENTRANCES + NARRATIVE_ENTRANCES + ("shake",)
+EXITS = ("fade", "blur", "slide_left", "slide_right", "slide_below", "wipe", "scale")
 SHAKE_KEYS = (
+    "great deep",
+    "fountain",
+    "heavens opened",
     "shut them in",
     "shut him",
-    "fountain",
-    "windows of heaven",
-    "heavens opened",
-    "all flesh",
     "flood",
-    "great deep",
-    "burst",
-    "lightning",
     "swept away",
+    "earth died",
+    "creature",
 )
 
 
@@ -532,25 +540,76 @@ def load_lyric_lines(path: Path | None = None) -> list[dict]:
     return lines
 
 
+_FONT_CACHE: dict[int, ImageFont.FreeTypeFont] = {}
+
+
+def _font(size: int) -> ImageFont.FreeTypeFont:
+    font = _FONT_CACHE.get(size)
+    if font is None:
+        font = ImageFont.truetype(str(FONT_HERO), size)
+        _FONT_CACHE[size] = font
+    return font
+
+
+def line_width(text: str, size: int = HERO_PX) -> float:
+    if not text:
+        return 0.0
+    probe = ImageDraw.Draw(Image.new("L", (4, 4)))
+    box = probe.textbbox((0, 0), text, font=_font(size))
+    return float(box[2] - box[0])
+
+
+def hero_px(line_count: int) -> int:
+    """Three lines use a smaller hero size than the two-line face."""
+    return HERO_PX_3 if line_count >= 3 else HERO_PX
+
+
 def wrap_lines(text: str) -> list[str]:
-    """At most two centred lines."""
+    """Two centred lines. A third line only when two lines cannot fit."""
     words = text.split()
     if not words:
         return []
-    if len(words) <= 4 and len(text) <= 26:
-        return [" ".join(words)]
-    best = max(1, len(words) // 2)
+    if len(words) == 1:
+        return [words[0]]
+    best_index = None
+    best_balance = None
+    for index in range(1, len(words)):
+        left = " ".join(words[:index])
+        right = " ".join(words[index:])
+        widest = max(line_width(left), line_width(right))
+        if widest <= MAX_LINE_PX:
+            balance = abs(len(left) - len(right))
+            if best_balance is None or balance < best_balance:
+                best_balance = balance
+                best_index = index
+    if best_index is not None or len(words) < 3:
+        cut = best_index if best_index is not None else 1
+        return [" ".join(words[:cut]), " ".join(words[cut:])]
+    first = _balanced_cut(words, 3)
+    rest = words[first:]
+    second = _balanced_cut(rest, 2)
+    return [" ".join(words[:first]), " ".join(rest[:second]), " ".join(rest[second:])]
+
+
+def _balanced_cut(words: list[str], parts: int) -> int:
+    """Index that starts the last `parts-1` chunks, balanced by characters."""
+    if len(words) <= 1:
+        return len(words)
+    target = len(" ".join(words)) / parts
+    best = 1
     best_score = 10**9
     for index in range(1, len(words)):
-        score = abs(len(" ".join(words[:index])) - len(" ".join(words[index:])))
+        score = abs(len(" ".join(words[:index])) - target)
         if score < best_score:
             best = index
             best_score = score
-    return [" ".join(words[:best]), " ".join(words[best:])]
+    return best
 
 
 def wants_shake(text: str) -> bool:
     low = text.lower()
+    if "creature" in low and "died" not in low and "end" not in low:
+        return False
     return any(key in low for key in SHAKE_KEYS)
 
 
@@ -562,50 +621,191 @@ def _nearest_bar(t: float, bars: list[float], start: float, end: float) -> float
     return min(pool, key=lambda bar: abs(bar - t))
 
 
-def build_sentences(lines: list[dict], bars: list[float] | None = None) -> list[dict]:
-    """One lyric line is one sentence. The hold never overlaps the next sentence."""
-    bars = list(bars or [])
-    raw = []
+def _clean_token(word: str) -> str:
+    return word.replace("\u2014", ",").replace("\u00a0", " ").strip()
+
+
+def _flatten_words(lines: list[dict]) -> list[dict]:
+    words = []
     for line in lines:
-        words = line["words"]
-        text = (line.get("text") or " ".join(word["word"] for word in words))
-        text = " ".join(text.replace("\u2014", ",").replace("\u00a0", " ").split())
+        for word in line["words"]:
+            words.append(
+                {
+                    "word": _clean_token(word["word"]),
+                    "start": float(word["start"]),
+                    "end": float(word["end"]),
+                }
+            )
+    words.sort(key=lambda item: (item["start"], item["end"]))
+    return words
+
+
+def _is_list_colon(word: dict, following: list[dict]) -> bool:
+    token = word["word"].rstrip().rstrip("\"'”’")
+    if not token.endswith(":"):
+        return False
+    sample = following[:6]
+    if not sample:
+        return False
+    commas = sum(1 for item in sample if item["word"].rstrip().endswith(","))
+    short = sum(1 for item in sample if len(item["word"].strip(",.:;")) <= 8)
+    return commas >= 1 or short >= 3
+
+
+def _ends_thought(word: dict, following: list[dict]) -> bool:
+    token = word["word"].rstrip().rstrip("\"'”’")
+    if token.endswith((".", "!", "?", ";")):
+        return True
+    if token.endswith(":"):
+        return not _is_list_colon(word, following)
+    return False
+
+
+def _span_until(words: list[dict], index: int, swallow_short: bool) -> float:
+    """Duration from words[index] until the next real boundary."""
+    if index >= len(words):
+        return MIN_ON_SCREEN
+    end = words[index]["end"]
+    chunk_start = words[index]["start"]
+    cursor = index
+    while cursor + 1 < len(words):
+        thought = _ends_thought(words[cursor], words[cursor + 1 : cursor + 8])
+        gap = words[cursor + 1]["start"] - words[cursor]["end"]
+        chunk = words[cursor]["end"] - chunk_start
+        stop = thought or gap > GAP_SPLIT
+        if stop and (not swallow_short or chunk >= MIN_ON_SCREEN):
+            break
+        cursor += 1
+        end = words[cursor]["end"]
+        if stop:
+            chunk_start = words[cursor]["start"]
+    return end - words[index]["start"]
+
+
+def _group_words(words: list[dict]) -> list[list[dict]]:
+    if not words:
+        return []
+    groups = []
+    current = [words[0]]
+    for index in range(1, len(words)):
+        previous = words[index - 1]
+        nxt = words[index]
+        gap = nxt["start"] - previous["end"]
+        if gap < 0:
+            current.append(nxt)
+            continue
+        boundary = _ends_thought(previous, words[index : index + 8]) or gap > GAP_SPLIT
+        if boundary:
+            left = previous["end"] - current[0]["start"]
+            # A pause inside one clause must not peel off a short tail.
+            # A finished thought may keep the following short words with the next clause.
+            swallow = _ends_thought(previous, words[index : index + 8])
+            right = _span_until(words, index, swallow_short=swallow)
+            if left >= MIN_ON_SCREEN and right >= MIN_ON_SCREEN:
+                groups.append(current)
+                current = [nxt]
+                continue
+        current.append(nxt)
+    groups.append(current)
+    return groups
+
+
+def _split_long(group: list[dict]) -> list[list[dict]]:
+    text = " ".join(item["word"] for item in group)
+    if len(text) <= LONG_TEXT:
+        return [group]
+    options = []
+    for index in range(len(group) - 1):
+        if not group[index]["word"].rstrip().endswith(","):
+            continue
+        left = group[index]["end"] - group[0]["start"]
+        right = group[-1]["end"] - group[index + 1]["start"]
+        if left < MIN_ON_SCREEN or right < MIN_ON_SCREEN:
+            continue
+        left_text = " ".join(item["word"] for item in group[: index + 1])
+        options.append((abs(len(left_text) - len(text) / 2), index))
+    if not options:
+        return [group]
+    cut = min(options)[1]
+    return _split_long(group[: cut + 1]) + _split_long(group[cut + 1 :])
+
+
+def _mood(text: str) -> str:
+    if wants_shake(text):
+        return "powerful"
+    low = text.lower()
+    quiet_keys = (
+        "only noah",
+        "only the ark",
+        "remained",
+        "was gone",
+        "still moved",
+        "still prevailed",
+        "no mountain",
+        "no field",
+        "no road",
+        "no human",
+        "judgment",
+        "preserved",
+    )
+    if any(key in low for key in quiet_keys) or len(text.split()) <= 6:
+        return "quiet"
+    return "narrative"
+
+
+def _pick(palette: tuple[str, ...], text: str, previous: str | None, salt: int) -> str:
+    start = (sum(ord(char) for char in text) + salt) % len(palette)
+    for offset in range(len(palette)):
+        choice = palette[(start + offset) % len(palette)]
+        if choice != previous:
+            return choice
+    return palette[0]
+
+
+def build_sentences(lines: list[dict], bars: list[float] | None = None) -> list[dict]:
+    """Merge lyric words into complete thoughts. Comma lists stay together."""
+    bars = list(bars or [])
+    groups = []
+    for group in _group_words(_flatten_words(lines)):
+        groups.extend(_split_long(group))
+    raw = []
+    for group in groups:
+        text = " ".join(item["word"] for item in group)
+        text = " ".join(text.replace("\u2014", ",").split())
         raw.append(
             {
                 "text": text,
-                "start": float(words[0]["start"]),
-                "last_end": float(words[-1]["end"]),
+                "start": group[0]["start"],
+                "last_end": group[-1]["end"],
                 "lines": wrap_lines(text),
             }
         )
-    raw.sort(key=lambda item: item["start"])
     for index, sent in enumerate(raw):
         nxt = raw[index + 1]["start"] if index + 1 < len(raw) else None
         end = sent["last_end"] + HOLD
-        if nxt is not None:
+        if nxt is not None and nxt >= sent["last_end"]:
             end = min(end, nxt)
+        elif nxt is not None and nxt > sent["start"]:
+            end = max(sent["last_end"], min(end, nxt))
         sent["end"] = end
-    plain = [name for name in ENTRANCES if name != "shake"]
-    cursor = 0
     previous = None
     for index, sent in enumerate(raw):
-        if wants_shake(sent["text"]) and previous != "shake":
+        mood = _mood(sent["text"])
+        if mood == "powerful" and previous != "shake":
             entrance = "shake"
+        elif mood == "powerful":
+            entrance = _pick(NARRATIVE_ENTRANCES, sent["text"], previous, 3)
+        elif mood == "quiet":
+            entrance = _pick(QUIET_ENTRANCES, sent["text"], previous, 1)
         else:
-            entrance = plain[cursor % len(plain)]
-            cursor += 1
-            if entrance == previous:
-                entrance = plain[cursor % len(plain)]
-                cursor += 1
+            entrance = _pick(NARRATIVE_ENTRANCES, sent["text"], previous, 2)
         sent["entrance"] = entrance
         previous = entrance
-        exit_name = EXITS[index % len(EXITS)]
-        if exit_name == entrance:
-            exit_name = EXITS[(index + 1) % len(EXITS)]
-        sent["exit"] = exit_name
+        exit_palette = QUIET_ENTRANCES if mood == "quiet" else NARRATIVE_ENTRANCES
+        sent["exit"] = _pick(exit_palette, sent["text"], entrance, 11)
         sent["shake_time"] = None
-        if entrance == "shake" or wants_shake(sent["text"]):
-            sent["shake_time"] = _nearest_bar(sent["start"], bars, sent["start"], sent["end"])
+        if mood == "powerful":
+            sent["shake_time"] = _nearest_bar(sent["start"], bars, sent["start"], sent["last_end"])
         sent["index"] = index
     return raw
 

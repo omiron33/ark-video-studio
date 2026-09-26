@@ -17,7 +17,9 @@ from arkpipe.full2fx import (
     OUT_H,
     OUT_W,
     SONG_END,
+    MAX_SPRITE_W,
     build_sentences,
+    hero_px,
     load_all_shots,
     load_bars,
     load_lyric_lines,
@@ -48,7 +50,7 @@ def load_sentences() -> list[dict]:
 
 def _sprite(sentence: dict, motion: dict) -> np.ndarray:
     lines = [line.rstrip(" ,;:") for line in sentence["lines"]]
-    font = ImageFont.truetype(str(FONT_HERO), 54)
+    font = ImageFont.truetype(str(FONT_HERO), hero_px(len(sentence["lines"])))
     probe = ImageDraw.Draw(Image.new("L", (8, 8)))
     track = float(motion["track"])
     gap = 14
@@ -89,7 +91,7 @@ def _sprite(sentence: dict, motion: dict) -> np.ndarray:
     blur = float(motion["blur"])
     if blur > 0.4:
         sprite = cv2.GaussianBlur(sprite, (0, 0), blur)
-    max_w = 1600
+    max_w = MAX_SPRITE_W
     if sprite.shape[1] > max_w:
         scale = max_w / sprite.shape[1]
         sprite = cv2.resize(
