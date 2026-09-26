@@ -15,6 +15,7 @@ import yaml
 
 from arkpipe.camera import camera_poses, frame_index_for_time
 from arkpipe.door import build_closed_door
+from arkpipe.figure import detect_figure_mask
 from arkpipe.composite import FogField, RainField, render_frame, _vignette
 from arkpipe.encode import encode_shot, write_check_frames, write_contact_sheet
 from arkpipe.prep import load_or_build_prep
@@ -92,6 +93,7 @@ def render(config_path: Path) -> None:
     closed_plate, opening, rect = build_closed_door(prep["plate"], prep["door_slit"])
     prep["closed_plate"] = closed_plate
     prep["opening"] = opening
+    prep["figure_mask"] = detect_figure_mask(prep["plate"])
     print(f"door opening rect: {rect[0]},{rect[1]} {rect[2]},{rect[3]}", flush=True)
     prep_s = time.perf_counter() - prep_started
     print(f"prep time: {prep_s:.2f}s", flush=True)

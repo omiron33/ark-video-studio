@@ -12,6 +12,7 @@ import numpy as np
 
 from arkpipe.camera import CameraPose
 from arkpipe.door import cut_puddle, door_is_shut, paint_fire, seam_mask, slam_exposure, _flicker
+from arkpipe.figure import apply_figure_life, detect_figure_mask
 
 # Far sky moves least. Differentials stay small so the ark face does not split.
 PARALLAX = (0.10, 0.40, 0.70, 1.0)
@@ -77,18 +78,20 @@ class RainField:
     Gust noise opens gaps so the field is not uniform.
     """
 
-    def __init__(self, h: int, w: int, seed: int):
+    def __init__(self, h: int, w: int, seed: int, density: float = 1.0):
         self.h = h
         self.w = w
         rng = np.random.default_rng(seed)
-        self.far_drops = self._drops(rng, 720, (260, 480), (5, 13), (0.03, 0.16), (0.035, 0.11), gusts=9)
-        self.mid_drops = self._drops(rng, 160, (520, 880), (22, 48), (0.05, 0.26), (0.05, 0.16), gusts=6)
-        self.near_drops = self._drops(rng, 64, (1200, 1900), (70, 150), (0.08, 0.36), (0.14, 0.38), gusts=5)
-        self.splash_x = rng.uniform(0, w, 50)
-        self.splash_y = rng.uniform(h * 0.82, h * 0.98, 50)
-        self.splash_phase = rng.uniform(0, 1, 50)
-        self.splash_len = rng.uniform(3, 11, 50)
-        self.splash_amp = rng.uniform(0.12, 0.38, 50)
+        scale = max(0.15, float(density))
+        self.far_drops = self._drops(rng, max(24, int(720 * scale)), (260, 480), (5, 13), (0.03, 0.16), (0.035, 0.11), gusts=9)
+        self.mid_drops = self._drops(rng, max(12, int(160 * scale)), (520, 880), (22, 48), (0.05, 0.26), (0.05, 0.16), gusts=6)
+        self.near_drops = self._drops(rng, max(8, int(64 * scale)), (1200, 1900), (70, 150), (0.08, 0.36), (0.14, 0.38), gusts=5)
+        n_splash = max(8, int(50 * scale))
+        self.splash_x = rng.uniform(0, w, n_splash)
+        self.splash_y = rng.uniform(h * 0.82, h * 0.98, n_splash)
+        self.splash_phase = rng.uniform(0, 1, n_splash)
+        self.splash_len = rng.uniform(3, 11, n_splash)
+        self.splash_amp = rng.uniform(0.12, 0.38, n_splash)
         gust = rng.random((h // 10, w // 10), dtype=np.float32)
         self.gust = cv2.GaussianBlur(gust, (0, 0), 2.4)
 
@@ -305,23 +308,26 @@ def render_frame(
     acc = _add_mono(acc, near_rain, np.array([0.70, 0.76, 0.82], np.float32), 0.55)
     acc = _add_mono(acc, splash, np.array([0.78, 0.82, 0.84], np.float32), 0.40)
 
-    door_i = int(np.clip(prep["door_layer"], 0, n_layers - 1))
-    opening = _warp_gray(prep["opening"], matrices[door_i], out_w, out_h)
-    ground = _warp_gray(prep["ground_glow"], matrices[door_i], out_w, out_h)
-    shut = door_is_shut(pose.time, slam_time)
-    flick = _flicker(pose.time, seed)
-    if shut:
+    door_i = int(np.clip(prep.get("door_layer", 1), 0, n_layers - 1))
+    seam = np.zeros((out_h, out_w), np.float32)
+    use_door = prep.get("opening") is not None and prep.get("closed_plate") is not None
+    if use_door:
+        opening = _warp_gray(prep["opening"], matrices[door_i], out_w, out_h)
+        ground = _warp_gray(prep["ground_glow"], matrices[door_i], out_w, out_h)
+        shut = door_is_shut(pose.time, slam_time)
+        flick = _flicker(pose.time, seed)
+    else:
+        opening = None
+        shut = False
+        flick = 1.0
+    if use_door and shut:
         wood = _warp_rgb(prep["closed_plate"], matrices[door_i], out_w, out_h, replicate=True)
         wood = wood.astype(np.float32) / 255.0
         acc = acc * (1.0 - opening[..., None]) + wood * opening[..., None]
         # Kill the ramp reflection before the seam, or the seam tip loses its red.
         acc = cut_puddle(acc, ground, True, flick)
         seam = seam_mask(opening, pose.time, slam_time)
-        blade = np.array([0.92, 0.40, 0.09], dtype=np.float32)
-        acc = acc * (1.0 - seam[..., None] * 0.85) + blade * seam[..., None]
-        glow = cv2.GaussianBlur(seam, (0, 0), 2.2) * 0.55
-        acc = np.clip(acc + glow[..., None] * blade, 0.0, 1.0)
-    else:
+    elif use_door:
         acc = paint_fire(acc, opening, pose.time, seed)
         luma = 0.2126 * acc[:, :, 0] + 0.7152 * acc[:, :, 1] + 0.0722 * acc[:, :, 2]
         core = np.clip((luma - 0.45) / 0.35, 0.0, 1.0) * (opening > 0.2)
@@ -348,6 +354,15 @@ def render_frame(
     acc = grade_teal_amber(acc)
     acc *= vignette[..., None]
     acc = _chromatic(acc)
+    # Seam after the color split so the line stays amber and does not grow a green rim.
+    if seam.max() > 0.01:
+        blade = np.array([0.95, 0.42, 0.08], dtype=np.float32)
+        acc = acc * (1.0 - seam[..., None] * 0.92) + blade * seam[..., None]
+        glow = cv2.GaussianBlur(seam, (0, 0), 1.4) * 0.28
+        acc = np.clip(acc + glow[..., None] * blade, 0.0, 1.0)
+    figure = prep.get("figure_mask")
+    if figure is not None and float(np.max(figure)) > 0.2:
+        acc = apply_figure_life(acc, _warp_gray(figure, matrices[door_i], out_w, out_h), pose.time)
     acc = _grain(acc, seed, pose.frame)
     return np.clip(acc * 255.0 + 0.5, 0, 255).astype(np.uint8)
 

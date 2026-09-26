@@ -13,6 +13,14 @@ uv pip install --python .venv/bin/python -r requirements.txt
 
 Depth runs on Apple MPS. The first render downloads the relative Depth Anything V2 Small weights. Later renders reuse `cache/`.
 
+## Render the full song
+
+```bash
+.venv/bin/python render_timeline.py
+```
+
+That reads `timeline/shotlist.json`, measures `timeline/cues.json` if it is missing, prepares each still with Depth Anything V2 on MPS, and writes one intermediate mp4 per shot under `out/shot_video/`. A shot file that already has the right frame count is skipped, so a rerun resumes. The command then muxes `out/genesis7_full.mp4` with the full song and writes `out/contact_sheet_full.png` plus `out/shot_checks/`.
+
 ## Render a shot
 
 ```bash

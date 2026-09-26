@@ -1,6 +1,31 @@
 # Status
 
-Phase: the 5 second test clip has been re-rendered after the door review and checked again.
+Phase: full-song stills are in progress. Twelve of the twenty-eight new stills are accepted. The timeline renderer and the steady door seam are in the code. The full mp4 is not rendered yet.
+
+## Full-video stills
+
+Accepted, 1280x720, 16:9, in ../shots:
+
+- plain_storm.png. Empty plain, teal horizon, no people.
+- command_ridge.png. Tiny cloaked figure from behind, no face, one shaft of light.
+- ark_finished_dusk.png. Boxy flat-roof timber ark, tents, tiny cloaked figures. This is the ark reference.
+- noah_hull_wide.png. Low angle on the timber wall, cloaked figure from behind, lantern.
+- herds_plain.png. Herds and a distant boxy ark.
+- birds_sky.png. Flat-roof box under a flock. Regenerated after the first pass looked like a barn on stilts.
+- earth_vista.png. Wide land, river, tiny box ark. Regenerated after the first pass was a houseboat.
+- storm_wall_sunset.png. Storm wall and a box ark on a hill. Regenerated after the first pass was a wagon.
+- pitch_torchlight.png. Box hull, hooded figures with torches, no faces. Regenerated so the hull stayed a box.
+- animals_ramp.png. Box ark, ramp, animals, one small cloaked figure.
+- noah_ramp_behind.png. Box ark, ramp, cloaked figure with a staff from behind.
+- sealed_ark_lightning.png. Sealed box ark in lightning, no door glow.
+
+Rejected and not saved: a ship-prow ark, a curved-roof barn, a metal shed standing in for the ark, and a houseboat. family_boarding came back with figures too large and will be regenerated. fountains_burst and wild_animals_path will be regenerated because the ark in them was a boat and a shed.
+
+## Door seam and figure
+
+After the slam the seam level stays at 0.72 instead of fading out. The seam is drawn after chromatic aberration so it does not pick up a green rim. Cloaked figures get a small local sway that is stronger at the shoulders than at the feet.
+
+The 5 second clip section below is the earlier test. The full song replaces the fading seam with the steady one.
 
 ## What is done
 

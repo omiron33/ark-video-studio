@@ -134,18 +134,17 @@ def paint_fire(acc: np.ndarray, opening: np.ndarray, t: float, seed: int) -> np.
     return acc * (1.0 - replace[..., None]) + color * replace[..., None]
 
 
+def seam_level(t: float, slam_t: float) -> float:
+    """0 before the slam. After the slam the seam stays on at a steady level."""
+    if t < slam_t - 1.0 / 48.0:
+        return 0.0
+    return 0.72
+
+
 def seam_mask(opening: np.ndarray, t: float, slam_t: float) -> np.ndarray:
-    """Razor seam down the closed leaf. Full at the slam, gone after 0.5 s."""
-    dt = t - slam_t
-    if dt < -1.0 / 48.0 or opening.max() < 0.2:
-        return np.zeros_like(opening)
-    if dt < 0.02:
-        amount = 1.0
-    elif dt >= 0.50:
-        amount = 0.0
-    else:
-        amount = 1.0 - dt / 0.50
-    if amount <= 0.0:
+    """Razor warm seam. It does not fade out after the slam."""
+    amount = seam_level(t, slam_t)
+    if amount <= 0.0 or opening.max() < 0.2:
         return np.zeros_like(opening)
     h, w = opening.shape
     xs = np.arange(w, dtype=np.float32)
