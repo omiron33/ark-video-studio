@@ -194,7 +194,11 @@ def main() -> None:
         ],
         check=True,
     )
+    import render_full2
+    saved_segments = render_full2.SEGMENTS
+    render_full2.SEGMENTS = OUT_DIR
     _contact(shots, segment_frames(shots), FULL / "genesis7_contact.png")
+    render_full2.SEGMENTS = saved_segments
     print(f"sentence pass {time.perf_counter() - started:.2f}s", flush=True)
 
 
