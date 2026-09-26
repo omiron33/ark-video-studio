@@ -1,0 +1,57 @@
+# Ark video
+
+Config-driven 2.5D shots for "Genesis Chapter 7". One still is split into depth layers, moved, and graded in Python. ffmpeg muxes the song. No generative video model.
+
+## Setup
+
+From this directory, with uv and Python 3.12:
+
+```bash
+uv venv --python 3.12 .venv
+uv pip install --python .venv/bin/python -r requirements.txt
+```
+
+Depth runs on Apple MPS. The first render downloads the relative Depth Anything V2 Small weights. Later renders reuse `cache/`.
+
+## Render a shot
+
+```bash
+.venv/bin/python render.py shots/ark_door_187.yaml
+```
+
+That command prepares the plate (upscale, depth, layers, inpaint) if the cache is cold, writes 120 frames, then encodes `out/test_ark_5s.mp4` and `out/contact_sheet.png`. Check stills land in `out/frames_check/`. Prep is cached. A second launch skips Depth Anything V2 and still writes the same frames.
+
+The test clip uses `../styles/real_1.png` and `../song.mp3` from 187.0 to 192.0 seconds. Cues are in `shots/ark_door_187.cues.json`.
+
+## Add a shot
+
+1. Copy `shots/ark_door_187.yaml` to a new file.
+2. Set `id`, `source_image`, `time_in`, `time_out`, and the output paths.
+3. Measure cues and save them next to the yaml:
+
+```bash
+.venv/bin/python -c "from arkpipe.cues import measure_cues; import json; from pathlib import Path; c=measure_cues(Path('../song.mp3'), Path('../audio.json'), Path('../lyrics.json'), t0=0.0, t1=5.0); Path('shots/new.cues.json').write_text(json.dumps(c, indent=2)+'\n')"
+```
+
+Use the shot's real in and out times. Point the yaml `cues` field at that file.
+
+4. Render with the same command: `.venv/bin/python render.py shots/your_shot.yaml`.
+
+Each shot is one still, one time range, one cue list. To build the full song later, render every shot, then concatenate the mp4s with ffmpeg. Keep source images and `song.mp3` outside this repo (the paths in the yaml are relative to this directory).
+
+## Tests
+
+```bash
+.venv/bin/python -m pytest tests -q
+```
+
+Cue tests read `../audio.json` and run onset plus low-band analysis on `../song.mp3`. Camera and layer tests call the functions the renderer uses.
+
+## Layout
+
+- `shots/`: one yaml per shot, plus the measured cue list
+- `arkpipe/`: cues, camera, depth layers, prep cache, compositor, encode
+- `render.py`: the command above
+- `cache/`: depth and layer cache (not committed)
+- `out/frames/`: full frame sequence (not committed)
+- `out/test_ark_5s.mp4`, `out/contact_sheet.png`, `out/frames_check/`, `out/depth_preview.png`: deliverables

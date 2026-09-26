@@ -1,0 +1,195 @@
+{
+  "time_in": 187.0,
+  "time_out": 192.0,
+  "flash": {
+    "type": "flash",
+    "time": 187.153,
+    "target": 187.13,
+    "beat_grid": 187.153,
+    "nearest_onset": 187.13931972789115,
+    "onset_distance": 0.013680272108842928,
+    "onset_strength": 13.100740432739258,
+    "source": "beat grid downbeat nearest 187.13"
+  },
+  "slam": {
+    "type": "slam",
+    "time": 190.45977324263038,
+    "target": 190.46,
+    "beat_grid": 190.473,
+    "low_band_peak": 190.57587301587301,
+    "low_band_energy": 0.4773236155958865,
+    "source": "low-band attack"
+  },
+  "pulses": [
+    {
+      "type": "pulse",
+      "listed": 187.6,
+      "time": 187.58049886621316,
+      "source": "onset",
+      "shifted": false,
+      "onset_distance": 0.01950113378683227
+    },
+    {
+      "type": "pulse",
+      "listed": 188.0,
+      "time": 187.9752380952381,
+      "source": "onset",
+      "shifted": false,
+      "onset_distance": 0.024761904761902542
+    },
+    {
+      "type": "pulse",
+      "listed": 188.25,
+      "time": 188.2538775510204,
+      "source": "onset",
+      "shifted": false,
+      "onset_distance": 0.003877551020394776
+    },
+    {
+      "type": "pulse",
+      "listed": 188.8,
+      "time": 188.81115646258505,
+      "source": "onset",
+      "shifted": false,
+      "onset_distance": 0.011156462585034888
+    },
+    {
+      "type": "pulse",
+      "listed": 189.08,
+      "time": 189.08979591836734,
+      "source": "onset",
+      "shifted": false,
+      "onset_distance": 0.009795918367331069
+    },
+    {
+      "type": "pulse",
+      "listed": 189.36,
+      "time": 189.34521541950113,
+      "source": "onset",
+      "shifted": false,
+      "onset_distance": 0.014784580498883315
+    },
+    {
+      "type": "pulse",
+      "listed": 191.57,
+      "time": 191.57433106575962,
+      "source": "onset",
+      "shifted": false,
+      "onset_distance": 0.004331065759629382
+    }
+  ],
+  "lyrics": [
+    {
+      "word": "Then",
+      "key": "then",
+      "time": 188.5,
+      "end": 188.95,
+      "lyrics_json_start": 188.5,
+      "lyrics_json_end": 188.95,
+      "aligned": false,
+      "goal_md": 188.02,
+      "goal_md_end": null,
+      "note": "lyrics.json measures Then at 188.50 (aligned false). GOAL.md says 188.02."
+    },
+    {
+      "word": "the",
+      "key": "the",
+      "time": 188.95,
+      "end": 189.4,
+      "lyrics_json_start": 188.95,
+      "lyrics_json_end": 189.4,
+      "aligned": false,
+      "goal_md": 189.02,
+      "goal_md_end": null,
+      "note": "lyrics.json measures the at 188.95 (aligned false). GOAL.md says 189.02."
+    },
+    {
+      "word": "Lord",
+      "key": "lord",
+      "time": 189.4,
+      "end": 189.85,
+      "lyrics_json_start": 189.4,
+      "lyrics_json_end": 189.85,
+      "aligned": false,
+      "goal_md": 189.54,
+      "goal_md_end": null,
+      "note": "lyrics.json measures Lord at 189.40 (aligned false). GOAL.md says 189.54."
+    },
+    {
+      "word": "shut",
+      "key": "shut",
+      "time": 189.85,
+      "end": 190.3,
+      "lyrics_json_start": 189.85,
+      "lyrics_json_end": 190.3,
+      "aligned": true,
+      "goal_md": 189.8,
+      "goal_md_end": null,
+      "note": "lyrics.json measures shut at 189.85 (aligned true). GOAL.md says 189.80."
+    },
+    {
+      "word": "them",
+      "key": "them",
+      "time": 190.3,
+      "end": 190.75,
+      "lyrics_json_start": 190.3,
+      "lyrics_json_end": 190.75,
+      "aligned": false,
+      "goal_md": 190.18,
+      "goal_md_end": null,
+      "note": "lyrics.json measures them at 190.30 (aligned false). GOAL.md says 190.18."
+    },
+    {
+      "word": "in.",
+      "key": "in",
+      "time": 190.75,
+      "end": 191.2,
+      "lyrics_json_start": 190.75,
+      "lyrics_json_end": 191.2,
+      "aligned": false,
+      "goal_md": 190.46,
+      "goal_md_end": 191.8,
+      "note": "lyrics.json measures in. at 190.75 (aligned false). GOAL.md says 190.46."
+    }
+  ],
+  "onset_times": [
+    187.0696598639456,
+    187.13931972789115,
+    187.30185941043084,
+    187.41795918367347,
+    187.58049886621316,
+    187.69659863945577,
+    187.85913832199546,
+    187.9752380952381,
+    188.13777777777779,
+    188.2538775510204,
+    188.41641723356008,
+    188.53251700680272,
+    188.67183673469387,
+    188.81115646258505,
+    188.9736961451247,
+    189.08979591836734,
+    189.25233560090703,
+    189.34521541950113,
+    189.64707482993197,
+    189.7631746031746,
+    189.9257142857143,
+    190.2043537414966,
+    190.45977324263038,
+    190.7616326530612,
+    191.017052154195,
+    191.29569160997733,
+    191.57433106575962,
+    191.85297052154195
+  ],
+  "disagreements": [
+    "Low-band RMS maximum is 190.576 because the sub-bass note sustains. The attack is 190.460 (low-band attack), next to beat grid 190.473. The slam uses the attack, not the later sustain peak.",
+    "GOAL.md places Then at 188.02. lyrics.json places Then at 188.50 to 188.95 with aligned false. The cue list uses the lyrics.json time, not the GOAL.md time.",
+    "GOAL.md places the at 189.02. lyrics.json places the at 188.95 to 189.40 with aligned false. The cue list uses the lyrics.json time, not the GOAL.md time.",
+    "GOAL.md places Lord at 189.54. lyrics.json places Lord at 189.40 to 189.85 with aligned false. The cue list uses the lyrics.json time, not the GOAL.md time.",
+    "GOAL.md places them at 190.18. lyrics.json places them at 190.30 to 190.75 with aligned false. The cue list uses the lyrics.json time, not the GOAL.md time.",
+    "GOAL.md places in at 190.46. lyrics.json places in. at 190.75 to 191.20 with aligned false. The cue list uses the lyrics.json time, not the GOAL.md time.",
+    "GOAL.md ends in at 191.80. lyrics.json ends in. at 191.20.",
+    "Door slam stays on the low-band attack at 190.460 (beat grid 190.473, low-band peak 190.576, energy 0.47732). lyrics.json places in. at 190.75 to 191.20 with aligned false. The slam follows the musical hit, not the word in."
+  ]
+}

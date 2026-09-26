@@ -1,0 +1,12 @@
+torch==2.14.0
+torchvision==0.29.0
+opencv-python-headless==5.0.0.93
+numpy==2.5.3
+pyyaml==6.0.3
+librosa==1.0.0
+soundfile==0.14.0
+transformers==5.17.0
+pillow==12.3.0
+safetensors==0.8.0
+scipy==1.18.1
+pytest==9.1.1

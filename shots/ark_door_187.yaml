@@ -1,0 +1,35 @@
+id: ark_door_187
+source_image: ../styles/real_1.png
+song: ../song.mp3
+audio_json: ../audio.json
+lyrics_json: ../lyrics.json
+time_in: 187.0
+time_out: 192.0
+fps: 24
+width: 1920
+height: 1080
+plate_width: 2304
+plate_height: 1296
+layers: 4
+feather_px: 5.0
+reveal_px: 72
+seed: 187
+cues: shots/ark_door_187.cues.json
+depth_preview: out/depth_preview.png
+camera:
+  move: dolly_in
+  drift: small
+  roll: tiny
+effects:
+  rain: layered
+  fog: between_layers
+  lightning: depth_relight_and_flash
+  door: amber_glow_collapses_on_slam
+  grade: teal_amber
+  grain: true
+  vignette: true
+  chromatic_aberration: slight
+output:
+  video: out/test_ark_5s.mp4
+  contact_sheet: out/contact_sheet.png
+  frames_check: out/frames_check
