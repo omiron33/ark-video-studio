@@ -96,61 +96,61 @@
     "index": 2
   },
   {
-    "text": "Take with you the clean animals, seven pairs of",
+    "text": "Take with you the clean animals,",
     "start": 36.44,
-    "last_end": 42.3,
+    "last_end": 39.3,
     "lines": [
-      "Take with you the clean animals,",
-      "seven pairs of"
+      "Take with you the clean animals,"
     ],
-    "end": 42.3,
-    "font": "archivo",
-    "fonts": [
-      "archivo"
-    ],
-    "emphasis": [],
-    "size": 1.0,
-    "layout": "left",
-    "anchor": [
-      0.06,
-      0.16
-    ],
-    "depth": 0.9,
-    "entrance": "zoom",
-    "exit": "slide_below",
-    "hold_motion": "still",
-    "fx": "typewriter",
-    "hit_times": [
-      36.502
-    ],
-    "index": 3
-  },
-  {
-    "text": "every kind, male and female together.",
-    "start": 42.3,
-    "last_end": 47.02,
-    "lines": [
-      "every kind, male and female together."
-    ],
-    "end": 47.02,
+    "end": 39.699999999999996,
     "font": "cormorant",
     "fonts": [
       "cormorant"
     ],
     "emphasis": [],
     "size": 0.7,
-    "layout": "top",
+    "layout": "left",
     "anchor": [
-      0.5,
-      0.06
+      0.06,
+      0.16
     ],
     "depth": 0.9,
-    "entrance": "fade",
-    "exit": "zoom",
+    "entrance": "tracking",
+    "exit": "wipe",
     "hold_motion": "still",
     "fx": "ink",
     "hit_times": [
-      42.632
+      36.502
+    ],
+    "index": 3
+  },
+  {
+    "text": "Seven pairs of every kind, male and female together.",
+    "start": 40.44,
+    "last_end": 47.02,
+    "lines": [
+      "Seven pairs of every kind,",
+      "male and female together."
+    ],
+    "end": 47.02,
+    "font": "archivo",
+    "fonts": [
+      "archivo"
+    ],
+    "emphasis": [],
+    "size": 1.0,
+    "layout": "diagonal",
+    "anchor": [
+      0.1,
+      0.2
+    ],
+    "depth": 0.9,
+    "entrance": "typewriter",
+    "exit": "slide_left",
+    "hold_motion": "still",
+    "fx": "fade",
+    "hit_times": [
+      41.006
     ],
     "index": 4
   },

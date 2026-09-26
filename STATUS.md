@@ -26,8 +26,8 @@ Check frames in ../full/v3_checks/:
 | 0 | 10.00 | 21.64 | Then the Lord said to Noah, | cormorant | top | tracking | slide_right | ink |
 | 1 | 24.11 | 30.96 | Come into the ark, you and all your household, | archivo | diagonal | slide_left | slide_below | fade |
 | 2 | 31.08 | 36.44 | For I have seen you walking rightly before Me in this generation. | archivo | diagonal | zoom | blur | fade |
-| 3 | 36.44 | 42.30 | Take with you the clean animals, seven pairs of | archivo | left | zoom | slide_below | typewriter |
-| 4 | 42.30 | 47.02 | every kind, male and female together. | cormorant | top | fade | zoom | ink |
+| 3 | 36.44 | 39.70 | Take with you the clean animals, | cormorant | left | tracking | wipe | ink |
+| 4 | 40.44 | 47.02 | Seven pairs of every kind, male and female together. | archivo | diagonal | typewriter | slide_left | fade |
 | 5 | 47.02 | 52.52 | Of the animals not counted clean, take one pair, male and female. | dirt | bottom | slide_left | slide_right | fade |
 | 6 | 53.05 | 58.06 | Take also seven pairs of the birds, | cinzel | right | zoom | blur | typewriter |
 | 7 | 59.08 | 66.45 | So their kind may continue across the face of the earth. | archivo | top | zoom | wipe | fade |

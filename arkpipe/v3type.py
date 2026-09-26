@@ -106,6 +106,8 @@ def _split_overlong(group: list[dict]) -> list[list[dict]]:
     for index in range(len(group) - 1):
         comma = group[index]["word"].rstrip().endswith(",")
         nxt = _base(group[index + 1]["word"])
+        if _base(group[index]["word"]) in {"of", "the", "a", "an", "to"}:
+            continue
         if not comma and nxt not in {"from", "every", "that", "and", "with", "before"}:
             continue
         left = group[: index + 1]
