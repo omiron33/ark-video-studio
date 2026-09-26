@@ -39,6 +39,6 @@ Shane approved all 72 storyboard stills. Render the full song-length video with 
 - Keep the per-sentence choice in a data file (e.g. `timeline/sentences.json` with text, start, end, lines, entrance, exit, shake_time) so it can be tuned later.
 - In STATUS.md add a table: sentence index, start, end, text (short), entrance, exit. Add check frames in `~/storybook/full/sentence_checks/` that show at least one slide mid-entrance, one shake, one fade, and one fully held 2-line sentence, and list their paths.
 
-## ADDENDUM 3 (9:59 CT): output paths
-- The sentence-lyrics film is v2. Write it ONLY to `~/storybook/full/genesis7_full_v2.mp4` (contact sheet `~/storybook/full/genesis7_contact_v2.png`).
-- Restore v1 at its original path: `~/storybook/full/genesis7_full.mp4` must be the v1 word-by-word film (move `genesis7_full_v1_words.mp4` back to that name once v2 is safely at its own path). Never overwrite v1 again; it is being reviewed elsewhere. Leave the v1 contact sheet `genesis7_contact.png` as the v1 sheet.
+## ADDENDUM 3: output paths
+- Keep the word-by-word film as `~/storybook/full/genesis7_full_v1_words.mp4`.
+- The sentence-lyrics film is `~/storybook/full/genesis7_full.mp4`, with contact sheet `~/storybook/full/genesis7_contact.png`.

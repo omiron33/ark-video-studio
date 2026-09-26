@@ -185,8 +185,8 @@ def main() -> None:
         elapsed = time.perf_counter() - started
         print(f"plate render time: {elapsed:.2f}s", flush=True)
         return
-    out = FULL / "genesis7_full.mp4"
-    contact = FULL / "genesis7_contact.png"
+    out = FULL / "genesis7_full_v1_words.mp4"
+    contact = FULL / "genesis7_contact_v1_words.png"
     if rendered == 0 and out.exists() and contact.exists():
         print(f"resume complete, skipped {len(shots)}, left existing film in place", flush=True)
         return
