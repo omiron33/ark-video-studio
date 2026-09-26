@@ -1,5 +1,156 @@
 # Status
 
+## Sentences
+
+The sentence cut is ../full/genesis7_full.mp4. Textless plates were rendered once (2041.61 s) and the sentences were composited in a later overlay, so the motion was not rendered again. Video duration 367.208 s, 8813 frames, 1920x1080, 24 fps, H.264 CRF 20, AAC. File size about 520 MB. Container duration is within 0.1 s of 367.2 s.
+
+Check frames in ../full/sentence_checks/:
+
+- sentence_checks/mid_01.png at 10.50 s, sentence 0, mid hold, Then the Lord said to Noah.
+- sentence_checks/mid_02.png at 24.61 s, sentence 1, mid hold, Come into the ark.
+- sentence_checks/mid_03.png at 26.90 s, sentence 2, mid hold, You and all your household.
+- sentence_checks/mid_04.png at 31.58 s, sentence 3, mid hold, For I have seen you walking rightly.
+- sentence_checks/held_two_line.png at 10.55 s, sentence 0, fully held two-line sentence.
+- sentence_checks/slide_entrance.png at 24.19 s, sentence 1, slide in from the left.
+- sentence_checks/fade_entrance.png at 10.10 s, sentence 0, fade entrance.
+- sentence_checks/shake_hit.png at 145.10 s, sentence 47, shake, The great deep broke open.
+- sentence_checks/instrumental_gap.png at 4.00 s, no lyric, verse line only.
+
+| index | start | end | text | entrance | exit |
+| --- | --- | --- | --- | --- | --- |
+| 0 | 10.00 | 21.64 | Then the Lord said to Noah, | fade | slide_left |
+| 1 | 24.11 | 25.92 | Come into the ark, | slide_left | slide_right |
+| 2 | 26.40 | 30.96 | You and all your household, | slide_right | slide_below |
+| 3 | 31.08 | 33.72 | For I have seen you walking rightly | slide_below | scale |
+| 4 | 33.72 | 36.44 | Before Me in this generation. | scale | wipe |
+| 5 | 36.44 | 39.70 | Take with you the clean animals, | blur | wipe |
+| 6 | 40.44 | 43.62 | Seven pairs of every kind, | tracking | fade |
+| 7 | 44.58 | 47.02 | Male and female together. | wipe | slide_left |
+| 8 | 47.02 | 49.24 | Of the animals not counted clean, | fade | slide_right |
+| 9 | 49.24 | 51.00 | Take one pair, | slide_left | slide_below |
+| 10 | 51.02 | 52.52 | Male and female. | slide_right | scale |
+| 11 | 53.05 | 58.06 | Take also seven pairs of the birds, | slide_below | wipe |
+| 12 | 59.08 | 61.60 | So their kind may continue | scale | fade |
+| 13 | 61.60 | 66.45 | Across the face of the earth. | blur | slide_left |
+| 14 | 67.18 | 74.83 | God said “For after seven more days, | tracking | slide_right |
+| 15 | 75.11 | 79.23 | Rain will fall upon the earth | wipe | slide_below |
+| 16 | 79.25 | 80.51 | For forty days | fade | scale |
+| 17 | 80.51 | 81.39 | And forty nights. | slide_left | wipe |
+| 18 | 81.39 | 82.65 | I will sweep away | slide_right | fade |
+| 19 | 82.65 | 84.10 | From the face of the ground | slide_below | slide_left |
+| 20 | 84.10 | 85.43 | Every living thing | scale | slide_right |
+| 21 | 85.43 | 86.62 | That I have made. | blur | slide_below |
+| 22 | 86.62 | 87.84 | And Noah did | tracking | scale |
+| 23 | 87.84 | 90.57 | Everything the Lord commanded. | wipe | fade |
+| 24 | 96.75 | 111.73 | Noah was six hundred years old | fade | slide_left |
+| 25 | 111.73 | 113.67 | When the waters came upon the earth. | slide_left | slide_right |
+| 26 | 113.67 | 115.44 | Noah entered the ark, | slide_right | slide_below |
+| 27 | 115.44 | 117.68 | And with him came his sons: | slide_below | scale |
+| 28 | 117.68 | 118.52 | Shem, | scale | wipe |
+| 29 | 118.52 | 118.82 | Ham, | blur | wipe |
+| 30 | 118.82 | 119.56 | And Japheth. | tracking | fade |
+| 31 | 119.56 | 120.80 | His wife entered with him, | wipe | slide_left |
+| 32 | 120.80 | 122.02 | And the wives of his sons. | fade | slide_right |
+| 33 | 122.02 | 123.76 | The animals came also: | slide_left | slide_below |
+| 34 | 123.76 | 125.52 | Clean and unclean, | slide_right | scale |
+| 35 | 125.52 | 126.34 | Birds of the air, | slide_below | wipe |
+| 36 | 126.34 | 126.92 | And every creature | scale | fade |
+| 37 | 126.92 | 128.72 | That moved along the ground. | blur | slide_left |
+| 38 | 128.72 | 129.96 | They entered by pairs, | tracking | slide_right |
+| 39 | 129.96 | 132.00 | Male and female, | wipe | slide_below |
+| 40 | 132.00 | 135.06 | Just as God had commanded Noah. | fade | scale |
+| 41 | 137.10 | 138.41 | Seven days passed. | slide_left | wipe |
+| 42 | 138.41 | 139.22 | Then the waters came. | slide_right | fade |
+| 43 | 139.22 | 140.39 | In the six hundredth year | slide_below | slide_left |
+| 44 | 140.39 | 141.44 | Of Noah’s life, | scale | slide_right |
+| 45 | 141.44 | 142.52 | In the second month, | blur | slide_below |
+| 46 | 142.52 | 143.79 | On the seventeenth day, | tracking | scale |
+| 47 | 143.79 | 145.28 | The great deep broke open. | shake | wipe |
+| 48 | 145.28 | 147.54 | The fountains beneath the earth | wipe | fade |
+| 49 | 147.54 | 148.86 | Burst from their places, | shake | slide_left |
+| 50 | 148.86 | 150.53 | And the heavens opened above. | fade | slide_right |
+| 51 | 150.59 | 152.77 | Rain poured upon the earth | slide_left | slide_below |
+| 52 | 152.77 | 153.51 | For forty days | slide_right | scale |
+| 53 | 153.51 | 154.79 | And forty nights. | slide_below | wipe |
+| 54 | 154.79 | 156.90 | That same day Noah entered the ark, | scale | fade |
+| 55 | 156.90 | 157.98 | With Shem, | blur | slide_left |
+| 56 | 157.98 | 158.29 | Ham, | tracking | slide_right |
+| 57 | 158.29 | 159.08 | And Japheth. | wipe | slide_below |
+| 58 | 159.08 | 160.33 | His wife was with him, | fade | scale |
+| 59 | 160.33 | 161.95 | And the wives of his sons. | slide_left | wipe |
+| 60 | 161.95 | 164.17 | Every beast after its kind, | slide_right | fade |
+| 61 | 164.17 | 166.40 | Every animal after its kind, | slide_below | slide_left |
+| 62 | 166.40 | 168.06 | Every creature moving on the ground, | scale | slide_right |
+| 63 | 168.06 | 170.42 | Every bird and every winged thing. | blur | slide_below |
+| 64 | 170.42 | 172.20 | They came to Noah, | tracking | scale |
+| 65 | 172.20 | 173.22 | Two by two, | wipe | fade |
+| 66 | 173.22 | 174.80 | All carrying the breath of life. | fade | slide_left |
+| 67 | 174.80 | 176.30 | They entered the ark, | slide_left | slide_right |
+| 68 | 176.46 | 178.38 | Male and female, | slide_right | slide_below |
+| 69 | 178.88 | 181.26 | As God had commanded. | slide_below | scale |
+| 70 | 188.50 | 191.60 | Then the Lord shut them in. | shake | scale |
+| 71 | 199.11 | 202.12 | The Flood rose for forty days. | scale | wipe |
+| 72 | 202.12 | 203.62 | The waters increased | blur | fade |
+| 73 | 203.62 | 205.62 | And lifted the ark | tracking | slide_left |
+| 74 | 205.62 | 207.63 | High above the earth. | wipe | slide_right |
+| 75 | 207.63 | 209.13 | Higher they climbed, | fade | slide_below |
+| 76 | 209.13 | 210.80 | Stronger they became, | slide_left | scale |
+| 77 | 210.80 | 212.94 | Until the ark moved | slide_right | wipe |
+| 78 | 212.94 | 215.12 | Across the face of the waters. | slide_below | fade |
+| 79 | 215.20 | 217.83 | The floodwaters grew greatly, | shake | slide_left |
+| 80 | 217.84 | 219.56 | And every high mountain | scale | slide_right |
+| 81 | 219.56 | 220.56 | Beneath the whole heaven | blur | slide_below |
+| 82 | 220.56 | 221.73 | Was covered. | tracking | scale |
+| 83 | 221.79 | 224.20 | The waters rose above them | wipe | fade |
+| 84 | 224.20 | 227.85 | Until even the highest ground | fade | slide_left |
+| 85 | 228.25 | 230.67 | Disappeared below. | slide_left | slide_right |
+| 86 | 231.72 | 235.36 | Then every creature | slide_right | slide_below |
+| 87 | 235.36 | 238.02 | That moved upon the earth died. | slide_below | scale |
+| 88 | 238.02 | 238.54 | Birds, | scale | wipe |
+| 89 | 238.54 | 239.55 | Livestock, | blur | wipe |
+| 90 | 239.55 | 240.63 | Wild beasts, | tracking | fade |
+| 91 | 240.63 | 241.68 | Creeping things, | wipe | slide_left |
+| 92 | 241.68 | 242.56 | And mankind. | fade | slide_right |
+| 93 | 242.56 | 243.49 | Everything on dry land | slide_left | slide_below |
+| 94 | 243.49 | 246.79 | That carried the breath of life | slide_right | scale |
+| 95 | 246.79 | 249.18 | Came to its end. | slide_below | wipe |
+| 96 | 249.31 | 250.65 | The waters covered | scale | fade |
+| 97 | 250.65 | 254.00 | What once had been fields, | blur | slide_left |
+| 98 | 254.00 | 254.63 | Roads, | tracking | slide_right |
+| 99 | 254.63 | 255.25 | Homes, | wipe | slide_below |
+| 100 | 255.25 | 257.14 | And living ground. | fade | scale |
+| 101 | 257.14 | 259.02 | Every living thing | slide_left | wipe |
+| 102 | 259.02 | 262.79 | Upon the face of the earth | slide_right | fade |
+| 103 | 262.79 | 264.68 | Was swept away. | shake | slide_left |
+| 104 | 264.68 | 265.20 | Man and beast, | slide_below | slide_right |
+| 105 | 265.20 | 266.62 | Creeping thing and bird, | scale | slide_below |
+| 106 | 266.62 | 268.72 | All were taken from the land. | blur | scale |
+| 107 | 268.72 | 270.86 | Only Noah remained, | tracking | wipe |
+| 108 | 270.86 | 273.42 | And those who were with him | wipe | fade |
+| 109 | 273.50 | 275.19 | Inside the ark. | fade | slide_left |
+| 110 | 275.19 | 276.13 | Above them, | slide_left | slide_right |
+| 111 | 276.13 | 278.66 | The waters still moved. | slide_right | slide_below |
+| 112 | 278.66 | 280.00 | Around them, | slide_below | scale |
+| 113 | 280.00 | 283.47 | The old world was gone. | scale | wipe |
+| 114 | 283.96 | 289.37 | For one hundred and fifty days, | blur | fade |
+| 115 | 289.37 | 291.17 | The waters remained strong | tracking | slide_left |
+| 116 | 291.17 | 292.67 | Upon the earth. | wipe | slide_right |
+| 117 | 292.86 | 295.11 | No mountain stood above them. | fade | slide_below |
+| 118 | 295.11 | 297.06 | No field broke through. | slide_left | scale |
+| 119 | 297.06 | 298.57 | No road returned. | slide_right | wipe |
+| 120 | 298.62 | 301.65 | No human voice answered outside. | slide_below | fade |
+| 121 | 301.65 | 304.89 | Only the ark remained | scale | slide_left |
+| 122 | 304.89 | 306.69 | Upon the endless waters, | blur | slide_right |
+| 123 | 306.69 | 307.58 | Carrying Noah, | tracking | slide_below |
+| 124 | 307.58 | 308.41 | His household, | wipe | scale |
+| 125 | 308.41 | 309.69 | And the living creatures | fade | wipe |
+| 126 | 309.69 | 311.49 | God had preserved within. | slide_left | fade |
+| 127 | 311.49 | 312.63 | The rain had fallen. | slide_right | slide_left |
+| 128 | 312.63 | 314.69 | The earth was covered. | slide_below | slide_right |
+| 129 | 316.26 | 319.34 | The judgment had come. | scale | slide_below |
+| 130 | 319.34 | 321.42 | And beneath a darkened heaven, | blur | scale |
+| 131 | 321.42 | 328.18 | The waters still prevailed. | tracking | wipe |
+
 ## Full2 72-shot film
 
 Output: `../full/genesis7_full.mp4` and `../full/genesis7_contact.png`. 1920x1080, 24 fps, H.264 yuv420p CRF 20, AAC. Container duration 367.160 s, video duration 367.125 s, both within 0.1 s of 367.2 s. File size 936 MB. The older `out/genesis7_full.mp4` was left in place.
@@ -81,7 +232,7 @@ Render time: 2153.87 s of segment encoding, 2168.50 s wall clock, including dept
 | s71 | 347.951 | 356.821 | very slow drift, fade out | clouds, fog, water | sink_fade | pass, end fade |
 | s72 | 356.821 | 367.200 | static, fade to black | clouds, fog, water | float_bob | pass, end fade |
 
-Shared notes: consecutive shots do not all use the same type treatment. Words use the shotlist start times. The verse line is the smaller second layer. Parallax between depth layers stays tight so small figures do not split; the camera move carries the shot. Rain, dust, fog, grass, water, and lightning are the moving layers. Detail painted into a still does not all move. CRF 20 kept the file under 1.5 GB.
+Shared notes: consecutive shots do not all use the same type treatment. Hero lyrics are full sentences from lyrics.json, not one word at a time. The earlier word-drip cut is ../full/genesis7_full_v1_words.mp4. The verse line is the smaller second layer. Parallax between depth layers stays tight so small figures do not split; the camera move carries the shot. Rain, dust, fog, grass, water, and lightning are the moving layers. Detail painted into a still does not all move. CRF 20 kept the file under 1.5 GB.
 
 Phase: the 72-shot full2 film is rendered at ../full/genesis7_full.mp4. The s01 to s04 preview notes below still stand. out/genesis7_full.mp4 was not deleted.
 

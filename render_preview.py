@@ -311,7 +311,7 @@ def _blit_text(rgb: np.ndarray, text: str, font: ImageFont.FreeTypeFont, xy: tup
     _paste(rgb, sprite, xy[0], xy[1])
 
 
-def _draw_type(rgb: np.ndarray, shot: dict, fx: dict, t: float, u: float) -> np.ndarray:
+def _draw_type(rgb: np.ndarray, shot: dict, fx: dict, t: float, u: float, draw_hero: bool = True) -> np.ndarray:
     text = fx["text"]
     treatment = text["treatment"]
     hero_font = ImageFont.truetype(str(FONT_HERO), 92)
@@ -321,7 +321,7 @@ def _draw_type(rgb: np.ndarray, shot: dict, fx: dict, t: float, u: float) -> np.
     out = rgb
     title = text.get("title") or ""
     probe = ImageDraw.Draw(Image.new("L", (4, 4)))
-    if title and treatment in {"condense_fog", "lightning_flash"}:
+    if draw_hero and title and treatment in {"condense_fog", "lightning_flash"}:
         gather = min(1.0, u / 0.45) if treatment == "condense_fog" else 1.0
         if treatment == "lightning_flash":
             gather = 1.0
@@ -338,7 +338,7 @@ def _draw_type(rgb: np.ndarray, shot: dict, fx: dict, t: float, u: float) -> np.
         for ch, extra, width in zip(title, offsets, widths):
             _blit_text(out, ch, title_font, (base_x + cursor + int(extra), base_y), (226, 214, 190, alpha))
             cursor += width + 2
-    words = shot.get("words") or []
+    words = (shot.get("words") or []) if draw_hero else []
     for index, word in enumerate(words):
         spec = {
             "start": float(word["start"]),
@@ -404,7 +404,7 @@ def _draw_type(rgb: np.ndarray, shot: dict, fx: dict, t: float, u: float) -> np.
     return out
 
 
-def render_frame(prep: dict, shot: dict, fx: dict, pose, t: float, beats: list[float]) -> np.ndarray:
+def render_frame(prep: dict, shot: dict, fx: dict, pose, t: float, beats: list[float], draw_hero: bool = True) -> np.ndarray:
     layers = layer_params(shot["id"], fx if False else {shot["id"]: fx})
     # layer_params expects the whole config. Pass a one-shot map.
     rgb = _parallax(prep, pose)
@@ -424,7 +424,7 @@ def render_frame(prep: dict, shot: dict, fx: dict, pose, t: float, beats: list[f
     vignette = prep["vignette"]
     rgb = rgb * vignette[..., None]
     rgb = _grain(rgb, 11 + int(shot["id"][1:]), pose.frame)
-    rgb = _draw_type(rgb, shot, fx, t, u)
+    rgb = _draw_type(rgb, shot, fx, t, u, draw_hero=draw_hero)
     return np.clip(rgb * 255.0 + 0.5, 0, 255).astype(np.uint8)
 
 

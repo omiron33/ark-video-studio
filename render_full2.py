@@ -60,10 +60,11 @@ def _frame_count(path: Path) -> int:
         return 0
 
 
-def _encode_shot(shot: dict, span: tuple[int, int], config: dict, bars: list[float], beats: list[float]) -> float:
+def _encode_shot(shot: dict, span: tuple[int, int], config: dict, bars: list[float], beats: list[float], *, draw_hero: bool = True, dest_dir: Path | None = None) -> float:
     start, stop = span
     n = stop - start
-    dest = SEGMENTS / f"{shot['id']}.mp4"
+    folder = dest_dir or SEGMENTS
+    dest = folder / f"{shot['id']}.mp4"
     dest.parent.mkdir(parents=True, exist_ok=True)
     if dest.exists() and _frame_count(dest) == n:
         print(f"{shot['id']} resume skip {n} frames", flush=True)
@@ -85,7 +86,7 @@ def _encode_shot(shot: dict, span: tuple[int, int], config: dict, bars: list[flo
     for frame in range(start, stop):
         t = frame / FPS
         pose = camera_at(t, shot, config, bars, frame=frame)
-        rgb = render_frame(prep, shot, fx, pose, t, beats)
+        rgb = render_frame(prep, shot, fx, pose, t, beats, draw_hero=draw_hero)
         if fade and frame > stop - 48:
             scale = max(0.0, (stop - frame) / 48.0)
             rgb = (rgb.astype(np.float32) * scale).astype(np.uint8)
@@ -100,7 +101,7 @@ def _encode_shot(shot: dict, span: tuple[int, int], config: dict, bars: list[flo
     if code != 0:
         raise RuntimeError(f"ffmpeg failed for {shot['id']} ({code})")
     elapsed = time.perf_counter() - t0
-    (SEGMENTS / f"{shot['id']}.time").write_text(f"{elapsed:.2f}\n")
+    (folder / f"{shot['id']}.time").write_text(f"{elapsed:.2f}\n")
     print(f"{shot['id']} frame render time: {elapsed:.2f}s ({n} frames)", flush=True)
     return elapsed
 
@@ -158,7 +159,10 @@ def _contact(shots: list[dict], spans: list[tuple[int, int]], dest: Path) -> Non
 
 
 def main() -> None:
+    import sys
+    plates = "--plates" in sys.argv
     print("full2 entry render_full2.py", flush=True)
+    print("plates" if plates else "segments", flush=True)
     print("not launching render_timeline", flush=True)
     started = time.perf_counter()
     shots = load_all_shots()
@@ -167,9 +171,16 @@ def main() -> None:
     bars = [b for b in load_bars() if 0.0 <= b <= SONG_END]
     beats = [b for b in load_beats() if 0.0 <= b <= SONG_END]
     spans = segment_frames(shots)
+    folder = FULL / "plates" if plates else SEGMENTS
     total_time = 0.0
     for shot, span in zip(shots, spans):
-        total_time += _encode_shot(shot, span, config, bars, beats)
+        total_time += _encode_shot(
+            shot, span, config, bars, beats, draw_hero=not plates, dest_dir=folder,
+        )
+    if plates:
+        elapsed = time.perf_counter() - started
+        print(f"plate render time: {elapsed:.2f}s", flush=True)
+        return
     out = FULL / "genesis7_full.mp4"
     _concat(shots, out)
     _contact(shots, spans, FULL / "genesis7_contact.png")

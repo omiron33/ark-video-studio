@@ -502,6 +502,173 @@ def build_fx(shots: list[dict], locked: dict | None = None) -> dict:
     return config
 
 
+HOLD = 0.40
+ENTRANCES = ("fade", "slide_left", "slide_right", "slide_below", "scale", "blur", "tracking", "wipe", "shake")
+EXITS = ("fade", "slide_left", "slide_right", "slide_below", "scale", "wipe")
+SHAKE_KEYS = (
+    "shut them in",
+    "shut him",
+    "fountain",
+    "windows of heaven",
+    "heavens opened",
+    "all flesh",
+    "flood",
+    "great deep",
+    "burst",
+    "lightning",
+    "swept away",
+)
+
+
+def load_lyric_lines(path: Path | None = None) -> list[dict]:
+    src = path or (ROOT.parent / "lyrics.json")
+    data = json.loads(src.read_text())
+    lines = []
+    for section in data.get("sections") or []:
+        for line in section.get("lines") or []:
+            if isinstance(line, dict) and line.get("words"):
+                lines.append(line)
+    lines.sort(key=lambda item: float(item["words"][0]["start"]))
+    return lines
+
+
+def wrap_lines(text: str) -> list[str]:
+    """At most two centred lines."""
+    words = text.split()
+    if not words:
+        return []
+    if len(words) <= 4 and len(text) <= 26:
+        return [" ".join(words)]
+    best = max(1, len(words) // 2)
+    best_score = 10**9
+    for index in range(1, len(words)):
+        score = abs(len(" ".join(words[:index])) - len(" ".join(words[index:])))
+        if score < best_score:
+            best = index
+            best_score = score
+    return [" ".join(words[:best]), " ".join(words[best:])]
+
+
+def wants_shake(text: str) -> bool:
+    low = text.lower()
+    return any(key in low for key in SHAKE_KEYS)
+
+
+def _nearest_bar(t: float, bars: list[float], start: float, end: float) -> float | None:
+    inside = [bar for bar in bars if start - 0.05 <= bar <= end + 0.2]
+    pool = inside or bars
+    if not pool:
+        return None
+    return min(pool, key=lambda bar: abs(bar - t))
+
+
+def build_sentences(lines: list[dict], bars: list[float] | None = None) -> list[dict]:
+    """One lyric line is one sentence. The hold never overlaps the next sentence."""
+    bars = list(bars or [])
+    raw = []
+    for line in lines:
+        words = line["words"]
+        text = (line.get("text") or " ".join(word["word"] for word in words))
+        text = " ".join(text.replace("\u2014", ",").replace("\u00a0", " ").split())
+        raw.append(
+            {
+                "text": text,
+                "start": float(words[0]["start"]),
+                "last_end": float(words[-1]["end"]),
+                "lines": wrap_lines(text),
+            }
+        )
+    raw.sort(key=lambda item: item["start"])
+    for index, sent in enumerate(raw):
+        nxt = raw[index + 1]["start"] if index + 1 < len(raw) else None
+        end = sent["last_end"] + HOLD
+        if nxt is not None:
+            end = min(end, nxt)
+        sent["end"] = end
+    plain = [name for name in ENTRANCES if name != "shake"]
+    cursor = 0
+    previous = None
+    for index, sent in enumerate(raw):
+        if wants_shake(sent["text"]) and previous != "shake":
+            entrance = "shake"
+        else:
+            entrance = plain[cursor % len(plain)]
+            cursor += 1
+            if entrance == previous:
+                entrance = plain[cursor % len(plain)]
+                cursor += 1
+        sent["entrance"] = entrance
+        previous = entrance
+        exit_name = EXITS[index % len(EXITS)]
+        if exit_name == entrance:
+            exit_name = EXITS[(index + 1) % len(EXITS)]
+        sent["exit"] = exit_name
+        sent["shake_time"] = None
+        if entrance == "shake" or wants_shake(sent["text"]):
+            sent["shake_time"] = _nearest_bar(sent["start"], bars, sent["start"], sent["end"])
+        sent["index"] = index
+    return raw
+
+
+def sentence_visible(t: float, sentence: dict) -> bool:
+    return float(sentence["start"]) <= t < float(sentence["end"])
+
+
+def sentence_motion(sentence: dict, t: float) -> dict:
+    """Entrance, still hold, and exit. No spin. Shake decays and does not bounce."""
+    start = float(sentence["start"])
+    end = float(sentence["end"])
+    hidden = {"alpha": 0.0, "dx": 0.0, "dy": 0.0, "scale": 1.0, "blur": 0.0, "track": 0.0, "wipe": 1.0, "shake": 0.0}
+    if t < start or t >= end:
+        return hidden
+    enter = 0.22
+    exit_d = 0.18
+    if t < start + enter:
+        phase = "in"
+        kind = sentence["entrance"]
+        u = (t - start) / enter
+    elif t > end - exit_d and (end - start) > enter + exit_d:
+        phase = "out"
+        kind = sentence["exit"]
+        u = max(0.0, (end - t) / exit_d)
+    else:
+        phase = "hold"
+        kind = "hold"
+        u = 1.0
+    alpha = 1.0
+    dx = dy = 0.0
+    scale = 1.0
+    blur = 0.0
+    track = 0.0
+    wipe = 1.0
+    if phase != "hold":
+        if kind == "fade":
+            alpha = u
+        elif kind == "slide_left":
+            dx = (1.0 - u) * -80.0
+        elif kind == "slide_right":
+            dx = (1.0 - u) * 80.0
+        elif kind == "slide_below":
+            dy = (1.0 - u) * 48.0
+        elif kind == "scale":
+            scale = 0.92 + 0.08 * u
+        elif kind == "blur":
+            blur = (1.0 - u) * 6.0
+        elif kind == "tracking":
+            track = (1.0 - u) * 18.0
+        elif kind == "wipe":
+            wipe = u
+        elif kind == "shake":
+            alpha = min(1.0, u * 1.4)
+    shake = 0.0
+    when = sentence.get("shake_time")
+    if when is not None:
+        dt = t - float(when)
+        if 0.0 <= dt <= 0.45:
+            shake = math.exp(-dt / 0.12)
+    return {"alpha": alpha, "dx": dx, "dy": dy + shake * 6.0, "scale": scale, "blur": blur, "track": track, "wipe": wipe, "shake": shake}
+
+
 def active_layer_names(shot_id: str, config: dict) -> list[str]:
     """Layers whose parameters actually ask for motion."""
     names = []
