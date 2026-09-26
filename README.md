@@ -19,7 +19,7 @@ Depth runs on Apple MPS. The first render downloads the relative Depth Anything 
 .venv/bin/python render_timeline.py
 ```
 
-That reads `timeline/shotlist.json`, measures `timeline/cues.json` if it is missing, prepares each still with Depth Anything V2 on MPS, and writes one intermediate mp4 per shot under `out/shot_video/`. A shot file that already has the right frame count is skipped, so a rerun resumes. The command then muxes `out/genesis7_full.mp4` with the full song and writes `out/contact_sheet_full.png` plus `out/shot_checks/`.
+That reads `timeline/shotlist.json`, measures `timeline/cues.json` if it is missing, prepares each still with Depth Anything V2 on MPS, and writes one intermediate mp4 per shot under `out/shot_video/`. A shot file that already has the right frame count is skipped, so a rerun resumes. Calm shots dissolve across 8 frames. Bird shots drift a flock. Flood and sea shots move water found by depth and color, with a current that changes by row instead of sliding the whole plate. The command then muxes `out/genesis7_full.mp4` with the full song and writes `out/contact_sheet_full.png` plus `out/shot_checks/`.
 
 ## Render a shot
 

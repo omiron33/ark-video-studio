@@ -1,6 +1,9 @@
 .venv/
 cache/
 out/frames/
+out/shot_video/
+out/depth_*.png
+out/depth_preview.png
 __pycache__/
 .pytest_cache/
 *.pt

@@ -82,7 +82,22 @@ class RainField:
         self.h = h
         self.w = w
         rng = np.random.default_rng(seed)
-        scale = max(0.15, float(density))
+        scale = float(density)
+        if scale <= 0.0:
+            empty = self._empty_drops()
+            self.far_drops = empty
+            self.mid_drops = empty
+            self.near_drops = empty
+            zeros = np.zeros(0, np.float32)
+            self.splash_x = zeros
+            self.splash_y = zeros
+            self.splash_phase = zeros
+            self.splash_len = zeros
+            self.splash_amp = zeros
+            gust = rng.random((h // 10, w // 10), dtype=np.float32)
+            self.gust = cv2.GaussianBlur(gust, (0, 0), 2.4)
+            return
+        scale = max(0.15, scale)
         self.far_drops = self._drops(rng, max(24, int(720 * scale)), (260, 480), (5, 13), (0.03, 0.16), (0.035, 0.11), gusts=9)
         self.mid_drops = self._drops(rng, max(12, int(160 * scale)), (520, 880), (22, 48), (0.05, 0.26), (0.05, 0.16), gusts=6)
         self.near_drops = self._drops(rng, max(8, int(64 * scale)), (1200, 1900), (70, 150), (0.08, 0.36), (0.14, 0.38), gusts=5)
@@ -94,6 +109,19 @@ class RainField:
         self.splash_amp = rng.uniform(0.12, 0.38, n_splash)
         gust = rng.random((h // 10, w // 10), dtype=np.float32)
         self.gust = cv2.GaussianBlur(gust, (0, 0), 2.4)
+
+    @staticmethod
+    def _empty_drops() -> dict:
+        zeros = np.zeros(0, np.float32)
+        return {
+            "x": zeros,
+            "y": zeros,
+            "speed": zeros,
+            "length": zeros,
+            "slant": zeros,
+            "alpha": zeros,
+            "jitter": zeros,
+        }
 
     @staticmethod
     def _drops(rng, n, speed, length, slant, alpha, gusts: int):
