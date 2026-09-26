@@ -14,8 +14,8 @@ Shane approved all 72 storyboard stills. Render the full song-length video with 
 - The old `out/genesis7_full.mp4` from FULL_GOAL.md is superseded; leave it in place, do not delete it.
 
 ## Output
-- `~/storybook/full/genesis7_full.mp4`: 0 to 367.2 s (the full song), 1920x1080, 24 fps, H.264 (yuv420p, CRF about 18 to 20, keep the file under about 1.5 GB), full song audio as AAC. Cuts land exactly on the shot `in`/`out` times from shotlist.json, shots in order s01 to s72.
-- `~/storybook/full/genesis7_contact.png`: contact sheet with one labelled frame per shot (72 tiles, shot id + timestamp), readable at a glance.
+- v1 (word film, done, do not touch): `~/storybook/full/genesis7_full.mp4`. v2 (sentence film, the current work): `~/storybook/full/genesis7_full_v2.mp4`. Both: 0 to 367.2 s (the full song), 1920x1080, 24 fps, H.264 (yuv420p, CRF about 18 to 20, keep the file under about 1.5 GB), full song audio as AAC. Cuts land exactly on the shot `in`/`out` times from shotlist.json, shots in order s01 to s72.
+- `~/storybook/full/genesis7_contact.png` is the v1 sheet; the v2 sheet is `~/storybook/full/genesis7_contact_v2.png`. Contact sheet with one labelled frame per shot (72 tiles, shot id + timestamp), readable at a glance.
 - Render robustly: render per-shot segments (resumable, skip finished ones), run the long render detached with a log, then concatenate and mux. A previous full render died mid-way, so free the depth model after each still and watch memory.
 
 ## Self-verification (must pass before done)
@@ -29,7 +29,7 @@ Shane approved all 72 storyboard stills. Render the full song-length video with 
 - The hero lyric text must no longer drip one word at a time. Group the lyric words into full sentences (one complete thought), splitting on sentence punctuation (. ! ? ; and line ends from lyrics.json that close a thought) using the lyric word timings. Sentences may span shot cuts.
 - Each sentence appears on screen all at once at its first word's start time (short fade in, about 0.15 to 0.25 s), stays fully readable until that sentence finishes in the song (last word end, plus a short hold), then fades out briefly and is replaced by the next sentence. Never show two sentences at once. Long sentences wrap to 2 lines, centred in negative space, readable (soft shadow/glow), same elegant fonts. Instrumental gaps show no lyric text (the small verse reference layer can stay).
 - Do not re-render the shot motion more than needed. Preferred: make the segment renderer able to output motion-only plates (no hero lyric words, keep or also move the verse layer as you judge best), and apply the sentence lyric layer as a separate text-overlay pass over the concatenated video (e.g. render transparent text frames or PNG overlays with timings and composite with ffmpeg, or a Python pass that decodes, draws, encodes). If a textless re-render of segments is unavoidable, do it once so future text changes only need the overlay pass.
-- Keep the previous v1 film as `~/storybook/full/genesis7_full_v1_words.mp4` (rename), and write the new one to `~/storybook/full/genesis7_full.mp4` and a new `~/storybook/full/genesis7_contact.png`.
+- (Superseded by ADDENDUM 3: v1 stays at genesis7_full.mp4, v2 goes to genesis7_full_v2.mp4.)
 - Verify: export 4 or more check frames to `~/storybook/full/sentence_checks/` (for example mid-sentence frames of 4 different sentences, at least one 2-line sentence, and one instrumental gap), look at them, confirm a full sentence is on screen with no leftover single word from the old layer. List those frame paths and which sentence each shows in STATUS.md. Re-run the ffprobe/duration/segment/black-frame checks.
 
 ## ADDENDUM 2 (Shane, 8:59 CT): varied sentence entrances and exits
@@ -39,6 +39,6 @@ Shane approved all 72 storyboard stills. Render the full song-length video with 
 - Keep the per-sentence choice in a data file (e.g. `timeline/sentences.json` with text, start, end, lines, entrance, exit, shake_time) so it can be tuned later.
 - In STATUS.md add a table: sentence index, start, end, text (short), entrance, exit. Add check frames in `~/storybook/full/sentence_checks/` that show at least one slide mid-entrance, one shake, one fade, and one fully held 2-line sentence, and list their paths.
 
-## ADDENDUM 3: output paths
-- Keep the word-by-word film as `~/storybook/full/genesis7_full_v1_words.mp4`.
-- The sentence-lyrics film is `~/storybook/full/genesis7_full.mp4`, with contact sheet `~/storybook/full/genesis7_contact.png`.
+## ADDENDUM 3 (9:59 CT, from Shane, FINAL, do not edit this section): output paths
+- The sentence-lyrics film is v2. Write it ONLY to `~/storybook/full/genesis7_full_v2.mp4` (contact sheet `~/storybook/full/genesis7_contact_v2.png`).
+- `~/storybook/full/genesis7_full.mp4` must be the v1 word-by-word film (the 935880363-byte file now named genesis7_full_v1_words.mp4) and `genesis7_contact.png` the v1 sheet. v1 is being reviewed in another app; never overwrite, rename, or move it again.
