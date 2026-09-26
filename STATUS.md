@@ -1,14 +1,14 @@
 # Status
 
-Phase: full-song stills are in progress. Twelve of the twenty-eight new stills are accepted. The timeline renderer and the steady door seam are in the code. The full mp4 is not rendered yet.
+Phase: all 28 new stills are accepted at 1280x720, 16:9, in ../shots. The timeline renderer is in the code. The full mp4 is not rendered yet.
 
 ## Full-video stills
 
-Accepted, 1280x720, 16:9, in ../shots:
+Each file below was opened. Reuses of animals_ramp, ark_endless_aerial, dark_sea_rainfall, real_1, real_3, and gritty_C3 are one file each. real_1, real_3, and gritty_C3 were not regenerated.
 
 - plain_storm.png. Empty plain, teal horizon, no people.
 - command_ridge.png. Tiny cloaked figure from behind, no face, one shaft of light.
-- ark_finished_dusk.png. Boxy flat-roof timber ark, tents, tiny cloaked figures. This is the ark reference.
+- ark_finished_dusk.png. Boxy flat-roof timber ark, tents, tiny cloaked figures. This is the ark reference used for later edits.
 - noah_hull_wide.png. Low angle on the timber wall, cloaked figure from behind, lantern.
 - herds_plain.png. Herds and a distant boxy ark.
 - birds_sky.png. Flat-roof box under a flock. Regenerated after the first pass looked like a barn on stilts.
@@ -18,8 +18,24 @@ Accepted, 1280x720, 16:9, in ../shots:
 - animals_ramp.png. Box ark, ramp, animals, one small cloaked figure.
 - noah_ramp_behind.png. Box ark, ramp, cloaked figure with a staff from behind.
 - sealed_ark_lightning.png. Sealed box ark in lightning, no door glow.
+- family_boarding.png. Box ark, small cloaked figures, no faces. An earlier pass with large figures was rejected.
+- fountains_burst.png. Box ark between two water bursts. An earlier houseboat pass was rejected.
+- wild_animals_path.png. Animals on a path and a distant box ark. An earlier metal-shed pass was rejected.
+- heavens_open.png. Sky opening over the storm.
+- pair_elephants.png. Two elephants, rain, the box ark behind them.
+- boarding_rain.png. Ramp and small cloaked figures in rain.
+- ark_lantern_window.png. Sealed box with a small warm window.
+- flood_rising_base.png. Water at the base of the box ark.
+- ark_afloat.png. The box barge in heavy seas. Later sea shots were edited from this frame.
+- mountains_submerging.png. Peaks going under, no ark.
+- last_peak.png. One peak left above the flood.
+- drowned_fields.png. Fields under brown water.
+- drowned_village.png. Mud-brick roofs, a broken cart, flood water, no people.
+- flood_current.png. Brown flood, uprooted trees, debris, lightning. No faces.
+- dark_sea_rainfall.png. Edited from ark_afloat.png. Endless sea and a tiny rectangular ark on the horizon.
+- ark_endless_aerial.png. Edited from ark_afloat.png. High view of the same barge. The first aerial was an open trough and was rejected. This one has a solid flat plank roof, no sails, no masts, no prow.
 
-Rejected and not saved: a ship-prow ark, a curved-roof barn, a metal shed standing in for the ark, and a houseboat. family_boarding came back with figures too large and will be regenerated. fountains_burst and wild_animals_path will be regenerated because the ark in them was a boat and a shed.
+Rejected and not saved: a ship-prow ark, a curved-roof barn, a metal shed standing in for the ark, a houseboat, a wooden wagon, large foreground people, and an open-top aerial. Ark stills that came back as ships were redone with image_edit from the accepted box so the hull stayed a flat timber barge.
 
 ## Door seam and figure
 
