@@ -11,10 +11,10 @@ Each file below was opened. Reuses of animals_ramp, ark_endless_aerial, dark_sea
 - ark_finished_dusk.png. Boxy flat-roof timber ark, tents, tiny cloaked figures. This is the ark reference used for later edits.
 - noah_hull_wide.png. Low angle on the timber wall, cloaked figure from behind, lantern.
 - herds_plain.png. Herds and a distant boxy ark.
-- birds_sky.png. Flat-roof box under a flock. Regenerated after the first pass looked like a barn on stilts.
+- birds_sky.png. Tall rectangular hull from a low angle, flat roof as a thin top edge, flock above the roofline. The first pass was a barn on stilts. The second pass read as a low flat tray, so it was regenerated again from the tall hull.
 - earth_vista.png. Wide land, river, tiny box ark. Regenerated after the first pass was a houseboat.
 - storm_wall_sunset.png. Storm wall and a box ark on a hill. Regenerated after the first pass was a wagon.
-- pitch_torchlight.png. Box hull, hooded figures with torches, no faces. Regenerated so the hull stayed a box.
+- pitch_torchlight.png. Box hull, hooded figures with torches. They are closer than the other people, but the hoods hide the faces, so this pass stays. Regenerated earlier so the hull stayed a box.
 - animals_ramp.png. Box ark, ramp, animals, one small cloaked figure.
 - noah_ramp_behind.png. Box ark, ramp, cloaked figure with a staff from behind.
 - sealed_ark_lightning.png. Sealed box ark in lightning, no door glow.
