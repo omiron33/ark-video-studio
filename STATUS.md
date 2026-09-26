@@ -1,6 +1,19 @@
 # Status
 
-Phase: all 28 new stills are accepted at 1280x720, 16:9, in ../shots. The timeline renderer is in the code. The full mp4 is not rendered yet.
+Phase: the s01 to s04 preview is rendered. The detached full-song render was left alone and is not part of this preview.
+
+## s01 to s04 preview
+
+Output: `../full2/preview/s01_s04_preview.mp4` and `../full2/preview/frames_contact.png`. Song time 0.000 to 24.102. 1920x1080, 24 fps, H.264, AAC. Container duration 24.102 s. The picture stream is 578 frames (24.083 s) because 24.102 s is not an integer frame. Cuts sit on 6.084, 10.588, 17.369, and 24.102.
+
+Render time, second pass, with depth already cached: 168.81 s. The pass before it was 167.05 s. Both used Depth Anything V2 on MPS from the prep cache.
+
+- s01, 0.000 to 6.084. Slow push. Clouds roll, dust crosses the plain, fog sits on the ground, and the horizon lifts on beats. "GENESIS 7" gathers in the sky. The verse line finishes before the cut. The gather is subtle; the title is nearly set by one second.
+- s02, 6.084 to 10.588. Low slide across the grass, with sway and dust. "THEN" is white for two frames with a frame lift, then a teal afterimage. The title stays faint above it. The verse sits low and does not cover the word.
+- s03, 10.588 to 17.369. Crane and push. "THE", "LORD", and "SAID" land in the upper left of the shaft, clear of the figure. A soft beam flickers. The verse is small at the lower left. One silhouette on the ridge. A little haze in the beam is in the still.
+- s04, 17.369 to 24.102. Tilt down. "TO" and "NOAH" sit on the lit rock at the right, with a dark inner edge. Chips are small, so the letters read as cut type more than a shower of stone. The verse is complete in the dark above the rock and does not cover the hero word.
+
+Weak spots: the s02 flash lifts the whole frame, not only the letters. Parallax between layers is kept tight so the figure does not split, so the depth separation is modest and the move comes mostly from the camera. Source rain and dust in the stills do not all move; the moving dust, grass, fog, and clouds are the layers added on top.
 
 ## Full-video stills
 

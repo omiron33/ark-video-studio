@@ -1,0 +1,82 @@
+{
+  "s01": {
+    "camera": {"move": "push", "dolly": 0.05, "drift": 10.0},
+    "layers": [
+      {"name": "clouds", "params": {"speed": 22.0, "amp": 0.55}},
+      {"name": "fog", "params": {"amount": 0.28, "speed": 12.0}},
+      {"name": "dust", "params": {"count": 80, "speed": 90.0}},
+      {"name": "grass", "params": {"amp": 2.5}},
+      {"name": "godrays", "params": {"strength": 0.0, "origin_x": 0.5, "origin_y": 0.05}},
+      {"name": "motes", "params": {"count": 0, "origin_x": 0.5, "origin_y": 0.2}},
+      {"name": "lightning", "params": {"strength": 0.55}}
+    ],
+    "text": {
+      "treatment": "condense_fog",
+      "title": "GENESIS 7",
+      "verse_ref": "Genesis 7:4",
+      "verse_line": "For yet seven days, and I will cause it to rain upon the earth",
+      "hero_anchor": [0.5, 0.2],
+      "verse_anchor": [0.06, 0.84]
+    }
+  },
+  "s02": {
+    "camera": {"move": "slide", "dolly": 0.03, "drift": 56.0},
+    "layers": [
+      {"name": "clouds", "params": {"speed": 14.0, "amp": 0.35}},
+      {"name": "fog", "params": {"amount": 0.12, "speed": 8.0}},
+      {"name": "dust", "params": {"count": 90, "speed": 140.0}},
+      {"name": "grass", "params": {"amp": 7.0}},
+      {"name": "godrays", "params": {"strength": 0.0, "origin_x": 0.5, "origin_y": 0.0}},
+      {"name": "motes", "params": {"count": 12, "origin_x": 0.5, "origin_y": 0.35}},
+      {"name": "lightning", "params": {"strength": 0.7}}
+    ],
+    "text": {
+      "treatment": "lightning_flash",
+      "title": "GENESIS 7",
+      "verse_ref": "Genesis 7:4",
+      "verse_line": "every living substance that I have made will I destroy",
+      "hero_anchor": [0.5, 0.3],
+      "verse_anchor": [0.06, 0.9]
+    }
+  },
+  "s03": {
+    "camera": {"move": "crane", "dolly": 0.045, "drift": 34.0},
+    "layers": [
+      {"name": "clouds", "params": {"speed": 8.0, "amp": 0.2}},
+      {"name": "fog", "params": {"amount": 0.2, "speed": 9.0}},
+      {"name": "dust", "params": {"count": 40, "speed": 36.0}},
+      {"name": "grass", "params": {"amp": 1.5}},
+      {"name": "godrays", "params": {"strength": 0.55, "origin_x": 0.5, "origin_y": 0.02}},
+      {"name": "motes", "params": {"count": 46, "origin_x": 0.5, "origin_y": 0.08}},
+      {"name": "lightning", "params": {"strength": 0.15}}
+    ],
+    "text": {
+      "treatment": "shaft_descend",
+      "title": "",
+      "verse_ref": "Genesis 7:1",
+      "verse_line": "And the LORD said unto Noah",
+      "hero_anchor": [0.2, 0.14],
+      "verse_anchor": [0.05, 0.9]
+    }
+  },
+  "s04": {
+    "camera": {"move": "tilt", "dolly": 0.028, "drift": 30.0},
+    "layers": [
+      {"name": "clouds", "params": {"speed": 6.0, "amp": 0.12}},
+      {"name": "fog", "params": {"amount": 0.16, "speed": 6.0}},
+      {"name": "dust", "params": {"count": 36, "speed": 28.0}},
+      {"name": "grass", "params": {"amp": 0.0}},
+      {"name": "godrays", "params": {"strength": 0.4, "origin_x": 0.42, "origin_y": 0.0}},
+      {"name": "motes", "params": {"count": 40, "origin_x": 0.4, "origin_y": 0.05}},
+      {"name": "lightning", "params": {"strength": 0.0}}
+    ],
+    "text": {
+      "treatment": "chisel_rock",
+      "title": "",
+      "verse_ref": "Genesis 7:1",
+      "verse_line": "for thee have I seen righteous before me",
+      "hero_anchor": [0.5, 0.6],
+      "verse_anchor": [0.36, 0.1]
+    }
+  }
+}
