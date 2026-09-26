@@ -14,6 +14,7 @@ import cv2
 import yaml
 
 from arkpipe.camera import camera_poses, frame_index_for_time
+from arkpipe.door import build_closed_door
 from arkpipe.composite import FogField, RainField, render_frame, _vignette
 from arkpipe.encode import encode_shot, write_check_frames, write_contact_sheet
 from arkpipe.prep import load_or_build_prep
@@ -88,6 +89,10 @@ def render(config_path: Path) -> None:
 
     prep_started = time.perf_counter()
     prep, cache_hit = load_or_build_prep(cfg, ROOT)
+    closed_plate, opening, rect = build_closed_door(prep["plate"], prep["door_slit"])
+    prep["closed_plate"] = closed_plate
+    prep["opening"] = opening
+    print(f"door opening rect: {rect[0]},{rect[1]} {rect[2]},{rect[3]}", flush=True)
     prep_s = time.perf_counter() - prep_started
     print(f"prep time: {prep_s:.2f}s", flush=True)
     print(f"prep cache: {'hit' if cache_hit else 'miss'}", flush=True)

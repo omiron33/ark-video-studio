@@ -82,38 +82,41 @@
     {
       "word": "Then",
       "key": "then",
-      "time": 188.5,
-      "end": 188.95,
+      "time": 188.02,
+      "end": 188.47,
       "lyrics_json_start": 188.5,
       "lyrics_json_end": 188.95,
       "aligned": false,
       "goal_md": 188.02,
       "goal_md_end": null,
-      "note": "lyrics.json measures Then at 188.50 (aligned false). GOAL.md says 188.02."
+      "time_source": "GOAL.md",
+      "note": "lyrics.json has Then at 188.50 (aligned false). GOAL.md says 188.02. The cue uses GOAL.md at 188.02."
     },
     {
       "word": "the",
       "key": "the",
-      "time": 188.95,
-      "end": 189.4,
+      "time": 189.02,
+      "end": 189.47000000000003,
       "lyrics_json_start": 188.95,
       "lyrics_json_end": 189.4,
       "aligned": false,
       "goal_md": 189.02,
       "goal_md_end": null,
-      "note": "lyrics.json measures the at 188.95 (aligned false). GOAL.md says 189.02."
+      "time_source": "GOAL.md",
+      "note": "lyrics.json has the at 188.95 (aligned false). GOAL.md says 189.02. The cue uses GOAL.md at 189.02."
     },
     {
       "word": "Lord",
       "key": "lord",
-      "time": 189.4,
-      "end": 189.85,
+      "time": 189.54,
+      "end": 189.98999999999998,
       "lyrics_json_start": 189.4,
       "lyrics_json_end": 189.85,
       "aligned": false,
       "goal_md": 189.54,
       "goal_md_end": null,
-      "note": "lyrics.json measures Lord at 189.40 (aligned false). GOAL.md says 189.54."
+      "time_source": "GOAL.md",
+      "note": "lyrics.json has Lord at 189.40 (aligned false). GOAL.md says 189.54. The cue uses GOAL.md at 189.54."
     },
     {
       "word": "shut",
@@ -125,31 +128,34 @@
       "aligned": true,
       "goal_md": 189.8,
       "goal_md_end": null,
-      "note": "lyrics.json measures shut at 189.85 (aligned true). GOAL.md says 189.80."
+      "time_source": "lyrics.json",
+      "note": "lyrics.json has shut at 189.85 (aligned true). GOAL.md says 189.80. The cue uses lyrics.json at 189.85."
     },
     {
       "word": "them",
       "key": "them",
-      "time": 190.3,
-      "end": 190.75,
+      "time": 190.18,
+      "end": 190.63,
       "lyrics_json_start": 190.3,
       "lyrics_json_end": 190.75,
       "aligned": false,
       "goal_md": 190.18,
       "goal_md_end": null,
-      "note": "lyrics.json measures them at 190.30 (aligned false). GOAL.md says 190.18."
+      "time_source": "GOAL.md",
+      "note": "lyrics.json has them at 190.30 (aligned false). GOAL.md says 190.18. The cue uses GOAL.md at 190.18."
     },
     {
       "word": "in.",
       "key": "in",
-      "time": 190.75,
-      "end": 191.2,
+      "time": 190.46,
+      "end": 191.8,
       "lyrics_json_start": 190.75,
       "lyrics_json_end": 191.2,
       "aligned": false,
       "goal_md": 190.46,
       "goal_md_end": 191.8,
-      "note": "lyrics.json measures in. at 190.75 (aligned false). GOAL.md says 190.46."
+      "time_source": "GOAL.md",
+      "note": "lyrics.json has in. at 190.75 (aligned false). GOAL.md says 190.46. The cue uses GOAL.md at 190.46."
     }
   ],
   "onset_times": [
@@ -184,11 +190,11 @@
   ],
   "disagreements": [
     "Low-band RMS maximum is 190.576 because the sub-bass note sustains. The attack is 190.460 (low-band attack), next to beat grid 190.473. The slam uses the attack, not the later sustain peak.",
-    "GOAL.md places Then at 188.02. lyrics.json places Then at 188.50 to 188.95 with aligned false. The cue list uses the lyrics.json time, not the GOAL.md time.",
-    "GOAL.md places the at 189.02. lyrics.json places the at 188.95 to 189.40 with aligned false. The cue list uses the lyrics.json time, not the GOAL.md time.",
-    "GOAL.md places Lord at 189.54. lyrics.json places Lord at 189.40 to 189.85 with aligned false. The cue list uses the lyrics.json time, not the GOAL.md time.",
-    "GOAL.md places them at 190.18. lyrics.json places them at 190.30 to 190.75 with aligned false. The cue list uses the lyrics.json time, not the GOAL.md time.",
-    "GOAL.md places in at 190.46. lyrics.json places in. at 190.75 to 191.20 with aligned false. The cue list uses the lyrics.json time, not the GOAL.md time.",
+    "GOAL.md places Then at 188.02. lyrics.json places Then at 188.50 to 188.95 with aligned false, so that time is interpolated. The cue list uses the GOAL.md time.",
+    "GOAL.md places the at 189.02. lyrics.json places the at 188.95 to 189.40 with aligned false, so that time is interpolated. The cue list uses the GOAL.md time.",
+    "GOAL.md places Lord at 189.54. lyrics.json places Lord at 189.40 to 189.85 with aligned false, so that time is interpolated. The cue list uses the GOAL.md time.",
+    "GOAL.md places them at 190.18. lyrics.json places them at 190.30 to 190.75 with aligned false, so that time is interpolated. The cue list uses the GOAL.md time.",
+    "GOAL.md places in at 190.46. lyrics.json places in. at 190.75 to 191.20 with aligned false, so that time is interpolated. The cue list uses the GOAL.md time.",
     "GOAL.md ends in at 191.80. lyrics.json ends in. at 191.20.",
     "Door slam stays on the low-band attack at 190.460 (beat grid 190.473, low-band peak 190.576, energy 0.47732). lyrics.json places in. at 190.75 to 191.20 with aligned false. The slam follows the musical hit, not the word in."
   ]

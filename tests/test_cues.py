@@ -39,15 +39,28 @@ def test_measure_cues_from_song_and_lyrics():
     file_words = {w["word"].strip(".,").lower(): w for w in line["words"]}
     got = {w["key"]: w for w in cues["lyrics"]}
     for key in ("then", "the", "lord", "shut", "them", "in"):
-        assert got[key]["time"] == file_words[key]["start"]
         assert got[key]["aligned"] == file_words[key]["aligned"]
+        assert got[key]["lyrics_json_start"] == file_words[key]["start"]
         assert "goal_md" in got[key]
         assert "GOAL.md" in got[key]["note"]
         assert "lyrics.json" in got[key]["note"]
+        if file_words[key]["aligned"]:
+            assert got[key]["time"] == file_words[key]["start"]
+            assert got[key]["time_source"] == "lyrics.json"
+        else:
+            assert got[key]["time"] == got[key]["goal_md"]
+            assert got[key]["time_source"] == "GOAL.md"
     assert file_words["then"]["start"] == 188.5
     assert file_words["then"]["aligned"] is False
     assert got["then"]["goal_md"] == 188.02
-    assert got["then"]["time"] != got["then"]["goal_md"]
+    assert got["then"]["time"] == 188.02
+    assert got["the"]["time"] == 189.02
+    assert got["lord"]["time"] == 189.54
+    assert got["them"]["time"] == 190.18
+    assert got["in"]["time"] == 190.46
+    assert file_words["shut"]["aligned"] is True
+    assert got["shut"]["time"] == file_words["shut"]["start"]
     joined = " ".join(cues["disagreements"])
     assert "188.02" in joined and "188.5" in joined
+    assert "interpolated" in joined
     assert "slam" in joined.lower() or "Slam" in joined or "Door slam" in joined

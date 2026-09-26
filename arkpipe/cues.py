@@ -234,34 +234,53 @@ def measure_cues(
     lyric_cues = []
     for goal_word, goal_start, goal_end in GOAL_WORD_TIMES:
         src = by_word[goal_word.lower()]
-        chosen = float(src["start"])
+        aligned = bool(src.get("aligned", False))
+        lyrics_start = float(src["start"])
+        lyrics_end = float(src["end"])
+        # aligned false means the lyrics.json time was interpolated. Use GOAL.md.
+        if aligned:
+            chosen = lyrics_start
+            chosen_end = lyrics_end
+            chosen_source = "lyrics.json"
+        else:
+            chosen = float(goal_start)
+            chosen_end = float(goal_end) if goal_end is not None else chosen + max(0.2, lyrics_end - lyrics_start)
+            chosen_source = "GOAL.md"
         entry = {
             "word": src["word"],
             "key": goal_word.lower(),
             "time": chosen,
-            "end": float(src["end"]),
-            "lyrics_json_start": float(src["start"]),
-            "lyrics_json_end": float(src["end"]),
-            "aligned": bool(src.get("aligned", False)),
+            "end": chosen_end,
+            "lyrics_json_start": lyrics_start,
+            "lyrics_json_end": lyrics_end,
+            "aligned": aligned,
             "goal_md": float(goal_start),
             "goal_md_end": None if goal_end is None else float(goal_end),
+            "time_source": chosen_source,
         }
         note = (
-            f"lyrics.json measures {entry['word']} at {chosen:.2f} "
-            f"(aligned {str(entry['aligned']).lower()}). "
-            f"GOAL.md says {goal_start:.2f}."
+            f"lyrics.json has {entry['word']} at {lyrics_start:.2f} "
+            f"(aligned {str(aligned).lower()}). "
+            f"GOAL.md says {goal_start:.2f}. "
+            f"The cue uses {chosen_source} at {chosen:.2f}."
         )
-        if abs(chosen - goal_start) > 0.05:
+        if (not aligned) and abs(lyrics_start - goal_start) > 0.05:
             disagreements.append(
                 f"GOAL.md places {goal_word} at {goal_start:.2f}. "
-                f"lyrics.json places {src['word']} at {chosen:.2f} to {float(src['end']):.2f} "
-                f"with aligned {str(bool(src.get('aligned'))).lower()}. "
-                "The cue list uses the lyrics.json time, not the GOAL.md time."
+                f"lyrics.json places {src['word']} at {lyrics_start:.2f} to {lyrics_end:.2f} "
+                "with aligned false, so that time is interpolated. "
+                "The cue list uses the GOAL.md time."
             )
-        if goal_end is not None and abs(float(src["end"]) - goal_end) > 0.05:
+        elif aligned and abs(lyrics_start - goal_start) > 0.05:
+            disagreements.append(
+                f"GOAL.md places {goal_word} at {goal_start:.2f}. "
+                f"lyrics.json places {src['word']} at {lyrics_start:.2f} to {lyrics_end:.2f} "
+                "with aligned true. The cue list uses the lyrics.json time."
+            )
+        if goal_end is not None and abs(lyrics_end - goal_end) > 0.05:
             disagreements.append(
                 f"GOAL.md ends {goal_word} at {goal_end:.2f}. "
-                f"lyrics.json ends {src['word']} at {float(src['end']):.2f}."
+                f"lyrics.json ends {src['word']} at {lyrics_end:.2f}."
             )
         entry["note"] = note
         lyric_cues.append(entry)

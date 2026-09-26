@@ -11,6 +11,7 @@ import cv2
 import numpy as np
 
 from arkpipe.camera import CameraPose
+from arkpipe.door import cut_puddle, door_is_shut, paint_fire, seam_mask, slam_exposure, _flicker
 
 # Far sky moves least. Differentials stay small so the ark face does not split.
 PARALLAX = (0.10, 0.40, 0.70, 1.0)
@@ -215,47 +216,6 @@ def _hit_env(t: float, center: float, decay: float, lead: float = 0.0) -> float:
     return math.exp(-dt / decay)
 
 
-def door_openness(t: float, slam_t: float) -> float:
-    """1 while the door is open. Collapses on the slam frame and stays shut."""
-    dt = t - slam_t
-    if dt < -1.0 / 48.0:
-        return 1.0
-    if dt < 1.0 / 24.0:
-        return 0.05
-    return 0.035
-
-
-def close_slit(mask: np.ndarray, openness: float) -> tuple[np.ndarray, np.ndarray]:
-    """Return the remaining glow and the mask of door light to replace with wood.
-
-    An open door keeps the photograph. A shut door becomes one clean blade of light,
-    not a ragged column of the original pixels.
-    """
-    if openness > 0.98:
-        return mask, np.zeros_like(mask)
-    col = mask.mean(axis=0)
-    row = mask.max(axis=1)
-    xs = np.nonzero(col > 0.008)[0]
-    ys = np.nonzero(row > 0.05)[0]
-    if xs.size < 2 or ys.size < 2:
-        kill = np.clip(mask * (1.0 - openness), 0.0, 1.0)
-        return mask * openness, kill
-    cx = float(np.average(np.arange(mask.shape[1]), weights=col + 1e-6))
-    sigma = 1.15
-    column = np.exp(-0.5 * ((np.arange(mask.shape[1], dtype=np.float32) - cx) / sigma) ** 2)
-    vert = cv2.GaussianBlur(row.reshape(-1, 1), (0, 0), 2.0).ravel()
-    vert = np.clip(vert / max(float(vert.max()), 1e-6), 0.0, 1.0)
-    # Keep the blade inside the doorway, not as a line across the whole frame.
-    span = np.zeros(mask.shape[0], np.float32)
-    span[int(ys[0]) : int(ys[-1]) + 1] = 1.0
-    span = cv2.GaussianBlur(span.reshape(-1, 1), (0, 0), 2.0).ravel()
-    line = (vert * span)[:, None] * column[None, :]
-    # Follow the glow shape. A filled rectangle reads as a flat patch on the bricks.
-    cover = cv2.GaussianBlur(np.clip(mask * 3.0, 0.0, 1.0), (0, 0), 2.4)
-    kill = np.clip(cover * (1.0 - line), 0.0, 1.0)
-    return line.astype(np.float32), kill.astype(np.float32)
-
-
 def grade_teal_amber(rgb: np.ndarray) -> np.ndarray:
     """Crushed blacks, teal shadows, amber highlights. rgb is 0 to 1."""
     x = np.clip((rgb - 0.035) * 1.06, 0.0, 1.0)
@@ -346,24 +306,29 @@ def render_frame(
     acc = _add_mono(acc, splash, np.array([0.78, 0.82, 0.84], np.float32), 0.40)
 
     door_i = int(np.clip(prep["door_layer"], 0, n_layers - 1))
-    slit = _warp_gray(prep["door_slit"], matrices[door_i], out_w, out_h)
+    opening = _warp_gray(prep["opening"], matrices[door_i], out_w, out_h)
     ground = _warp_gray(prep["ground_glow"], matrices[door_i], out_w, out_h)
-    openness = door_openness(pose.time, slam_time)
-    slit_left, kill = close_slit(slit, openness)
-    kill = np.maximum(kill, ground * (1.0 - openness))
-    # Crush the glow in place so the planks stay. Do not paste a flat color.
-    acc = acc * (1.0 - kill[..., None] * 0.94)
-    if openness <= 0.98:
-        core = np.clip(slit_left, 0.0, 1.0)[..., None]
-        blade = np.array([1.0, 0.58, 0.14], dtype=np.float32)
-        acc = np.clip(acc * (1.0 - core * 0.75) + blade * core, 0.0, 1.0)
-
-    flick = 0.90 + 0.10 * math.sin(pose.time * 21.0)
-    flick *= 0.94 + 0.06 * math.sin(pose.time * 9.0 + 1.3)
-    bloom = cv2.GaussianBlur(slit_left, (0, 0), 13) * 0.85 + cv2.GaussianBlur(slit_left, (0, 0), 34) * 0.40
-    bloom = bloom + cv2.GaussianBlur(ground, (0, 0), 19) * openness * 0.65
-    amber = np.array([1.05, 0.48, 0.08], dtype=np.float32)
-    acc = np.clip(acc + bloom[..., None] * amber * flick, 0.0, 1.0)
+    shut = door_is_shut(pose.time, slam_time)
+    flick = _flicker(pose.time, seed)
+    if shut:
+        wood = _warp_rgb(prep["closed_plate"], matrices[door_i], out_w, out_h, replicate=True)
+        wood = wood.astype(np.float32) / 255.0
+        acc = acc * (1.0 - opening[..., None]) + wood * opening[..., None]
+        # Kill the ramp reflection before the seam, or the seam tip loses its red.
+        acc = cut_puddle(acc, ground, True, flick)
+        seam = seam_mask(opening, pose.time, slam_time)
+        blade = np.array([0.92, 0.40, 0.09], dtype=np.float32)
+        acc = acc * (1.0 - seam[..., None] * 0.85) + blade * seam[..., None]
+        glow = cv2.GaussianBlur(seam, (0, 0), 2.2) * 0.55
+        acc = np.clip(acc + glow[..., None] * blade, 0.0, 1.0)
+    else:
+        acc = paint_fire(acc, opening, pose.time, seed)
+        luma = 0.2126 * acc[:, :, 0] + 0.7152 * acc[:, :, 1] + 0.0722 * acc[:, :, 2]
+        core = np.clip((luma - 0.45) / 0.35, 0.0, 1.0) * (opening > 0.2)
+        glow = cv2.GaussianBlur(core.astype(np.float32), (0, 0), 7.0) * 0.22 * flick
+        amber = np.array([0.85, 0.32, 0.06], dtype=np.float32)
+        acc = np.clip(acc + glow[..., None] * amber, 0.0, 1.0)
+        acc = cut_puddle(acc, ground, False, flick)
 
     ndotl = _warp_gray(prep["ndotl"], matrices[min(1, n_layers - 1)], out_w, out_h)
     xs = np.linspace(1.0, 0.12, out_w, dtype=np.float32)
@@ -378,9 +343,7 @@ def render_frame(
     relight = relight + pulse * 0.08
     cool = np.array([0.62, 0.78, 1.0], dtype=np.float32)
     acc = np.clip(acc + relight[..., None] * cool, 0.0, 1.0)
-    # A touch of warm pulse on the door before it shuts, separate from the slam.
-    if pulse > 0.0:
-        acc = np.clip(acc + slit_left[..., None] * amber * pulse * 0.25, 0.0, 1.0)
+    acc = np.clip(acc * slam_exposure(pose.time, slam_time), 0.0, 1.0)
 
     acc = grade_teal_amber(acc)
     acc *= vignette[..., None]
