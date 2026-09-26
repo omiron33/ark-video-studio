@@ -379,6 +379,7 @@ def concat_and_mux(shots: list[dict]) -> None:
         "-i", str(STORY / "song.mp3"),
         "-map", "0:v:0", "-map", "1:a:0",
         "-c:v", "libx264", "-crf", "16", "-pix_fmt", "yuv420p",
+        "-preset", "veryfast", "-x264-params", "frame-threads=1:sliced-threads=0",
         "-c:a", "aac", "-b:a", "192k",
         "-shortest", "-movflags", "+faststart",
         str(out),
