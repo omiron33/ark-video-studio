@@ -33,6 +33,9 @@ def encode_shot(
     fade_out_start = max(0.0, duration - fade_out)
     cmd = [
         ffmpeg_bin(),
+        "-hide_banner",
+        "-loglevel",
+        "error",
         "-y",
         "-framerate",
         str(fps),
