@@ -83,6 +83,7 @@ def _prep(shot: dict) -> dict:
     }
     prep, hit = load_or_build_prep(cfg, ROOT)
     print(f"{shot['id']} prep cache {'hit' if hit else 'miss'}", flush=True)
+    print("depth model released", flush=True)
     prep["sky_mask"] = _sky_mask(prep["depth"])
     prep["ground_mask"] = _ground_mask(prep["depth"])
     return prep
@@ -223,6 +224,41 @@ def _motes(rgb: np.ndarray, t: float, params: dict, seed: int) -> np.ndarray:
     return np.clip(rgb + overlay[..., None] * np.array([0.9, 0.84, 0.7], np.float32) * 0.45, 0.0, 1.0)
 
 
+def _rain(rgb: np.ndarray, t: float, params: dict, seed: int) -> np.ndarray:
+    count = int(params.get("count", 0))
+    if count <= 0:
+        return rgb
+    h, w = rgb.shape[:2]
+    rng = np.random.default_rng(seed + 5)
+    x0 = rng.uniform(0, w, count)
+    y0 = rng.uniform(0, 1, count)
+    speed = float(params.get("speed", 480.0))
+    overlay = np.zeros((h, w), np.float32)
+    for i in range(count):
+        y = int((y0[i] * h + t * speed) % (h + 30)) - 15
+        x = int((x0[i] + t * 18.0) % w)
+        y2 = y + 14
+        if 0 <= x < w and y2 > 0 and y < h:
+            cv2.line(overlay, (x, max(0, y)), (x + 2, min(h - 1, y2)), 0.55, 1, cv2.LINE_AA)
+    return np.clip(rgb + overlay[..., None] * np.array([0.62, 0.7, 0.74], np.float32), 0.0, 1.0)
+
+
+def _water(rgb: np.ndarray, t: float, params: dict) -> np.ndarray:
+    amp = float(params.get("amp", 0.0))
+    if amp <= 0.0:
+        return rgb
+    h, w = rgb.shape[:2]
+    ys = np.arange(h, dtype=np.float32)
+    xs = np.arange(w, dtype=np.float32)
+    weight = np.clip((ys - h * 0.42) / (h * 0.58), 0.0, 1.0)
+    shift = (4.0 + 10.0 * amp) * weight * np.sin(t * 1.1 + ys * 0.04)
+    map_x = np.broadcast_to(xs, (h, w)).astype(np.float32) - shift[:, None]
+    map_y = np.broadcast_to(ys[:, None], (h, w)).astype(np.float32)
+    moved = cv2.remap(rgb, map_x, map_y, cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
+    mask = weight[:, None, None]
+    return rgb * (1.0 - mask) + moved * mask
+
+
 def _lightning(rgb: np.ndarray, t: float, params: dict, beats: list[float]) -> tuple[np.ndarray, float]:
     strength = float(params.get("strength", 0.0))
     if strength <= 0.0 or not beats:
@@ -325,6 +361,21 @@ def _draw_type(rgb: np.ndarray, shot: dict, fx: dict, t: float, u: float) -> np.
             color = hero_color(treatment, since)
             sprite = hero_raster(treatment, since, label, size=110)
             _paste(out, sprite, int(ax * OUT_W), int(ay * OUT_H))
+        elif treatment == "sink_fade":
+            sprite = hero_raster(treatment, since, label, size=100)
+            fade = max(0.2, 1.0 - since / 40.0)
+            sprite = sprite.copy()
+            sprite[:, :, 3] = (sprite[:, :, 3].astype(np.float32) * fade).astype(np.uint8)
+            y = int(OUT_H * text["hero_anchor"][1] + since * 3)
+            _paste(out, sprite, int(OUT_W * text["hero_anchor"][0]), y)
+        elif treatment == "float_bob":
+            sprite = hero_raster(treatment, since, label, size=100)
+            y = int(OUT_H * text["hero_anchor"][1] + 12 * math.sin(t * 1.4))
+            _paste(out, sprite, int(OUT_W * text["hero_anchor"][0]), y)
+        elif treatment == "slide_across":
+            sprite = hero_raster(treatment, since, label, size=96)
+            x = int(OUT_W * (0.12 + 0.45 * min(1.0, (t - spec["start"]) / 1.4)))
+            _paste(out, sprite, x, int(OUT_H * text["hero_anchor"][1]))
         elif treatment == "chisel_rock":
             sprite = hero_raster(treatment, max(since, 0), label, size=100)
             x = int(OUT_W * text["hero_anchor"][0])
@@ -366,7 +417,9 @@ def render_frame(prep: dict, shot: dict, fx: dict, pose, t: float, beats: list[f
     rgb = _dust(rgb, t, layers["dust"], seed=200 + int(shot["id"][1:]))
     rgb = _godrays(rgb, t, layers["godrays"])
     rgb = _motes(rgb, t, layers["motes"], seed=300 + int(shot["id"][1:]))
-    rgb, _flash = _lightning(rgb, t, layers["lightning"], beats)
+    rgb, _flash = _lightning(rgb, t, layers.get("lightning", {"strength": 0}), beats)
+    rgb = _rain(rgb, t, layers.get("rain", {"count": 0}), seed=400 + int(shot["id"][1:]))
+    rgb = _water(rgb, t, layers.get("water", {"amp": 0}))
     rgb = grade_teal_amber(rgb)
     vignette = prep["vignette"]
     rgb = rgb * vignette[..., None]

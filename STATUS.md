@@ -1,6 +1,89 @@
 # Status
 
-Phase: the s01 to s04 preview is rendered. The detached full-song render was left alone and is not part of this preview.
+## Full2 72-shot film
+
+Output: `../full/genesis7_full.mp4` and `../full/genesis7_contact.png`. 1920x1080, 24 fps, H.264 yuv420p CRF 20, AAC. Container duration 367.160 s, video duration 367.125 s, both within 0.1 s of 367.2 s. File size 936 MB. The older `out/genesis7_full.mp4` was left in place.
+
+Render time: 2153.87 s of segment encoding, 2168.50 s wall clock, including depth prep. A second launch skipped all 72 finished segments.
+
+| id | in | out | camera | layers | text treatment | pass/notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| s01 | 0.000 | 6.084 | slow push in | clouds, fog, dust, grass, lightning | condense_fog | pass, preview treatment kept |
+| s02 | 6.084 | 10.588 | low slider across grass | clouds, fog, dust, grass, motes, lightning | lightning_flash | pass, preview treatment kept |
+| s03 | 10.588 | 17.369 | slow crane up and push | clouds, fog, dust, grass, godrays, motes, lightning | shaft_descend | pass, preview treatment kept |
+| s04 | 17.369 | 24.102 | slow tilt down | clouds, fog, dust, godrays, motes | chisel_rock | pass, preview treatment kept |
+| s05 | 24.102 | 26.355 | slow lateral drift | clouds, fog, dust | sink_fade | pass |
+| s06 | 26.355 | 30.859 | slow push toward fires | clouds, fog, dust, motes | shaft_descend | pass |
+| s07 | 30.859 | 33.112 | low dolly in | clouds, fog, dust | chisel_rock | pass |
+| s08 | 33.112 | 36.502 | slow tilt up the hull | clouds, fog, rain | shaft_descend | pass |
+| s09 | 36.502 | 39.845 | slow pan | clouds, fog, dust, grass | slide_across | pass |
+| s10 | 39.845 | 44.350 | low tracking follow | clouds, fog, dust, grass | shaft_descend | pass |
+| s11 | 44.350 | 48.832 | slow push along path | clouds, fog, dust, rain | chisel_rock | pass |
+| s12 | 48.832 | 53.336 | slow orbit | clouds, fog, grass, rain | sink_fade | pass |
+| s13 | 53.336 | 57.841 | tilt down | clouds, fog, dust | shaft_descend | pass |
+| s14 | 57.841 | 62.322 | slow push along roofline | clouds, fog, rain | chisel_rock | pass |
+| s15 | 62.322 | 64.575 | very slow pull back | clouds, fog, dust, lightning | shaft_descend | pass |
+| s16 | 64.575 | 67.180 | slow drift | clouds, fog, dust | sink_fade | pass |
+| s17 | 67.180 | 73.538 | slow push in | clouds, fog, lightning, rain | chisel_rock | pass |
+| s18 | 73.538 | 81.386 | slow push toward rain | clouds, fog, grass, lightning, rain | shaft_descend | pass |
+| s19 | 81.386 | 86.982 | slow lateral drift | clouds, fog, dust, rain | chisel_rock | pass |
+| s20 | 86.982 | 90.349 | slow push | clouds, fog, dust, motes | shaft_descend | pass |
+| s21 | 90.349 | 100.426 | slow crane up | clouds, fog, rain | chisel_rock | pass |
+| s22 | 100.426 | 111.618 | low slow push | clouds, fog, rain | shaft_descend | pass |
+| s23 | 111.618 | 116.100 | slow push | clouds, fog, rain | chisel_rock | pass |
+| s24 | 116.100 | 122.787 | handheld follow | clouds, fog, rain | shaft_descend | pass |
+| s25 | 122.787 | 129.498 | slow dolly in | clouds, fog, rain | chisel_rock | pass |
+| s26 | 129.498 | 137.100 | low static, slight push | clouds, fog, dust, rain | shaft_descend | pass |
+| s27 | 137.100 | 140.643 | slow push in | clouds, fog, rain | chisel_rock | pass |
+| s28 | 140.643 | 143.987 | macro slow motion feel | clouds, fog, dust, rain | shaft_descend | pass |
+| s29 | 143.987 | 147.331 | slow push, shake on hits | clouds, fog, godrays, rain, water | chisel_rock | pass |
+| s30 | 147.331 | 149.537 | low push, heavy shake | clouds, fog, water | shaft_descend | pass |
+| s31 | 149.537 | 151.766 | slow tilt down | clouds, fog, lightning, rain | chisel_rock | pass |
+| s32 | 151.766 | 154.790 | slow pan | clouds, fog, rain, water | sink_fade | pass |
+| s33 | 154.790 | 158.407 | slow push | clouds, fog, rain | float_bob | pass |
+| s34 | 158.407 | 163.933 | handheld close follow | clouds, fog, rain | shaft_descend | pass |
+| s35 | 163.933 | 167.253 | slow dolly along the line | clouds, fog, rain | slide_across | pass |
+| s36 | 167.253 | 171.665 | macro low slide | clouds, fog, rain | shaft_descend | pass |
+| s37 | 171.665 | 176.077 | slow push | clouds, fog, rain | slide_across | pass |
+| s38 | 176.077 | 180.489 | slow push | clouds, fog, rain | shaft_descend | pass |
+| s39 | 180.489 | 182.718 | slow push | clouds, fog, rain | chisel_rock | pass |
+| s40 | 182.718 | 187.000 | static, slow push toward opening | clouds, fog, godrays, rain, water | shaft_descend | pass |
+| s41 | 187.000 | 189.382 | slow push, shake on hits | clouds, fog, lightning, rain | lightning_flash | pass |
+| s42 | 189.382 | 193.000 | hard shake on slam, then still | clouds, fog, dust, lightning, rain | shaft_descend | pass |
+| s43 | 193.000 | 196.023 | slow push, shake on sub hits | clouds, fog, lightning, rain | chisel_rock | pass |
+| s44 | 196.023 | 199.110 | slow tilt, flash cuts | clouds, fog, lightning, rain | lightning_flash | pass |
+| s45 | 199.110 | 202.664 | slow push | clouds, fog, godrays, rain, water | shaft_descend | pass |
+| s46 | 202.664 | 207.006 | slow low push, gentle bob | clouds, fog, rain, water | float_bob | pass |
+| s47 | 207.006 | 211.511 | gentle bob and drift | clouds, fog, rain, water | slide_across | pass |
+| s48 | 211.511 | 215.946 | low tracking over waves | clouds, fog, godrays, rain, water | shaft_descend | pass |
+| s49 | 215.946 | 220.381 | slow pan | clouds, fog, rain, water | chisel_rock | pass |
+| s50 | 220.381 | 222.586 | slow push | clouds, fog, rain, water | sink_fade | pass |
+| s51 | 222.586 | 227.021 | slow push in | clouds, fog, lightning, rain, water | chisel_rock | pass |
+| s52 | 227.021 | 231.720 | very slow push | clouds, fog, rain, water | sink_fade | pass |
+| s53 | 231.720 | 238.051 | slow drift | clouds, fog, rain, water | float_bob | pass |
+| s54 | 238.051 | 243.554 | slow push | clouds, fog, rain | slide_across | pass |
+| s55 | 243.554 | 251.240 | slow lateral drift | clouds, fog, rain, water | shaft_descend | pass |
+| s56 | 251.240 | 257.140 | slow push | clouds, fog, rain, water | sink_fade | pass |
+| s57 | 257.140 | 262.246 | push with shake on hits | clouds, fog, godrays, rain, water | shaft_descend | pass |
+| s58 | 262.246 | 268.841 | slow top-down rotation | clouds, fog, rain, water | chisel_rock | pass |
+| s59 | 268.841 | 273.206 | slow push in | clouds, fog, rain, water | shaft_descend | pass |
+| s60 | 273.206 | 275.412 | slow push | clouds, fog, rain | chisel_rock | pass |
+| s61 | 275.412 | 279.800 | low slow push over waves | clouds, fog, lightning, rain, water | float_bob | pass |
+| s62 | 279.800 | 283.960 | very slow pull back | clouds, fog, rain, water | sink_fade | pass |
+| s63 | 283.960 | 293.013 | very slow drift | clouds, fog, rain, water | chisel_rock | pass |
+| s64 | 293.013 | 301.813 | static, slight push | clouds, fog, rain | sink_fade | pass |
+| s65 | 301.813 | 306.225 | slow descending push | clouds, fog, water | shaft_descend | pass |
+| s66 | 306.225 | 311.705 | slow tilt | clouds, fog, rain, water | chisel_rock | pass |
+| s67 | 311.705 | 319.390 | slow push | clouds, fog, lightning, rain | lightning_flash | pass |
+| s68 | 319.390 | 327.780 | slow push | clouds, fog, lightning, rain, water | chisel_rock | pass |
+| s69 | 327.780 | 336.968 | very slow pull back | clouds, fog, water | float_bob | pass |
+| s70 | 336.968 | 347.951 | very slow drift | clouds, fog, water | slide_across | pass |
+| s71 | 347.951 | 356.821 | very slow drift, fade out | clouds, fog, water | sink_fade | pass, end fade |
+| s72 | 356.821 | 367.200 | static, fade to black | clouds, fog, water | float_bob | pass, end fade |
+
+Shared notes: consecutive shots do not all use the same type treatment. Words use the shotlist start times. The verse line is the smaller second layer. Parallax between depth layers stays tight so small figures do not split; the camera move carries the shot. Rain, dust, fog, grass, water, and lightning are the moving layers. Detail painted into a still does not all move. CRF 20 kept the file under 1.5 GB.
+
+Phase: the 72-shot full2 film is rendered at ../full/genesis7_full.mp4. The s01 to s04 preview notes below still stand. out/genesis7_full.mp4 was not deleted.
 
 ## s01 to s04 preview
 

@@ -95,6 +95,21 @@ def word_spec(shots: list[dict], name: str) -> dict:
     raise KeyError(name)
 
 
+def word_window(shot: dict, index: int = 0) -> dict:
+    """Timing for one word on one shot. Holds until the next word or the shot end."""
+    words = shot.get("words") or []
+    word = words[index]
+    later = [float(item["start"]) for item in words[index + 1 :]]
+    hold = min(later) if later else float(shot["out"])
+    return {
+        "word": _clean_word(word["word"]),
+        "shot_id": shot["id"],
+        "start": float(word["start"]),
+        "end": float(word["end"]),
+        "hold_until": hold,
+    }
+
+
 def word_visible(t: float, spec: dict) -> bool:
     """On from the word start until the next word or the shot end. Off before."""
     return float(spec["start"]) <= t < float(spec["hold_until"])
@@ -239,6 +254,12 @@ def hero_color(treatment: str, frames_since_on: int) -> tuple[int, int, int, int
         return (246, 236, 214, 255)
     if treatment == "chisel_rock":
         return (214, 206, 190, 255)
+    if treatment == "sink_fade":
+        return (206, 198, 184, 255)
+    if treatment == "float_bob":
+        return (232, 226, 210, 255)
+    if treatment == "slide_across":
+        return (220, 214, 196, 255)
     return (230, 226, 214, 255)
 
 
@@ -304,3 +325,190 @@ def descend_anchor(u: float, origin: tuple[float, float] = (0.2, 0.14)) -> tuple
 def verse_reveal(u: float) -> float:
     """0 to 1. The line is complete early so it is readable while the hero word is up."""
     return min(1.0, max(0.0, u / 0.22))
+
+
+SONG_END = 367.2
+TREATMENT_CYCLE = (
+    "condense_fog",
+    "lightning_flash",
+    "shaft_descend",
+    "chisel_rock",
+    "sink_fade",
+    "float_bob",
+    "slide_across",
+)
+
+
+def load_all_shots(path: Path | None = None) -> list[dict]:
+    src = path or (ROOT.parent / "full2" / "shotlist.json")
+    data = json.loads(src.read_text())
+    shots = data["shots"] if isinstance(data, dict) else data
+    return sorted(shots, key=lambda shot: float(shot["in"]))
+
+
+def segment_frames(shots: list[dict], fps: int = FPS, end: float | None = None) -> list[tuple[int, int]]:
+    """Half-open frame spans for every shot. The last edge covers the song end."""
+    end_t = float(shots[-1]["out"]) if end is None else float(end)
+    starts = [int(round(float(shot["in"]) * fps)) for shot in shots]
+    last = int(round(end_t * fps))
+    if last / fps < end_t - 1e-9:
+        last = int(math.ceil(end_t * fps))
+    spans = []
+    for index, start in enumerate(starts):
+        stop = starts[index + 1] if index + 1 < len(starts) else last
+        if stop <= start:
+            stop = start + 1
+        spans.append((start, stop))
+    return spans
+
+
+def classify_move(camera: str) -> str:
+    text = camera.lower()
+    if "crane" in text:
+        return "crane"
+    if "tilt" in text:
+        return "tilt"
+    if any(word in text for word in ("slider", "slide", "lateral", "pan", "orbit", "rotation", "tracking")):
+        return "slide"
+    return "push"
+
+
+def classify_treatment(text_treatment: str) -> str:
+    text = text_treatment.lower()
+    rules = (
+        ("condens", "condense_fog"),
+        ("out of fog", "condense_fog"),
+        ("lightning", "lightning_flash"),
+        ("strobe", "lightning_flash"),
+        ("thunder", "lightning_flash"),
+        ("white for two", "lightning_flash"),
+        ("descend", "shaft_descend"),
+        ("shaft", "shaft_descend"),
+        ("feather", "shaft_descend"),
+        ("drop from the top", "shaft_descend"),
+        ("chisel", "chisel_rock"),
+        ("carv", "chisel_rock"),
+        ("engrav", "chisel_rock"),
+        ("scratch", "chisel_rock"),
+        ("stamp", "chisel_rock"),
+        ("hammer", "chisel_rock"),
+        ("pitch", "chisel_rock"),
+        ("tally", "chisel_rock"),
+        ("numeral", "chisel_rock"),
+        ("stone", "chisel_rock"),
+        ("sink", "sink_fade"),
+        ("erod", "sink_fade"),
+        ("wash", "sink_fade"),
+        ("bleed", "sink_fade"),
+        ("dissolv", "sink_fade"),
+        ("fade", "sink_fade"),
+        ("below the frame", "sink_fade"),
+        ("float", "float_bob"),
+        ("bob", "float_bob"),
+        ("buoy", "float_bob"),
+        ("foam", "float_bob"),
+        ("scroll", "slide_across"),
+        ("slide", "slide_across"),
+        ("walk", "slide_across"),
+        ("herd", "slide_across"),
+        ("drift", "slide_across"),
+    )
+    for key, name in rules:
+        if key in text:
+            return name
+    return "shaft_descend"
+
+
+def avoid_repeat(name: str, previous: str | None) -> str:
+    if previous is None or name != previous:
+        return name
+    index = TREATMENT_CYCLE.index(name) if name in TREATMENT_CYCLE else 0
+    return TREATMENT_CYCLE[(index + 1) % len(TREATMENT_CYCLE)]
+
+
+def split_verse(verse: str) -> tuple[str, str]:
+    parts = verse.split(" ", 2)
+    if len(parts) >= 3 and parts[0] == "Gen":
+        return "Genesis " + parts[1], parts[2].replace("\u2014", "-")
+    return verse.replace("\u2014", "-"), ""
+
+
+def _layers_from_motion(motion: str) -> list[dict]:
+    text = motion.lower()
+    clouds = 0.4 if "cloud" in text else 0.1
+    fog = 0.24 if ("fog" in text or "mist" in text) else 0.05
+    dust = 64 if any(word in text for word in ("dust", "ember", "smoke", "spark")) else 0
+    grass = 6.5 if any(word in text for word in ("grass", "wool", "mane")) else 0.0
+    rays = 0.5 if any(word in text for word in ("god", "beam", "ray")) else 0.0
+    motes = 32 if any(word in text for word in ("mote", "ember", "spark")) else 0
+    lightning = 0.55 if "lightning" in text else 0.0
+    rain = 70 if any(word in text for word in ("rain", "drizzle", "drop")) else 0
+    water = 1.3 if any(word in text for word in ("water", "wave", "flood", "swell", "spray", "geyser", "current")) else 0.0
+    if max(dust, rain, motes) == 0 and grass == 0 and rays == 0 and water == 0:
+        dust = 28
+    return [
+        {"name": "clouds", "params": {"speed": 16.0, "amp": clouds}},
+        {"name": "fog", "params": {"amount": fog, "speed": 8.0}},
+        {"name": "dust", "params": {"count": dust, "speed": 80.0}},
+        {"name": "grass", "params": {"amp": grass}},
+        {"name": "godrays", "params": {"strength": rays, "origin_x": 0.5, "origin_y": 0.02}},
+        {"name": "motes", "params": {"count": motes, "origin_x": 0.48, "origin_y": 0.08}},
+        {"name": "lightning", "params": {"strength": lightning}},
+        {"name": "rain", "params": {"count": rain, "speed": 520.0}},
+        {"name": "water", "params": {"amp": water}},
+    ]
+
+
+def derive_config(shot: dict, index: int = 0, previous: str | None = None) -> dict:
+    """Map one shotlist row onto the shared camera, layer, and type set."""
+    move = classify_move(shot.get("camera") or "slow push")
+    treatment = avoid_repeat(classify_treatment(shot.get("text_treatment") or ""), previous)
+    ref, line = split_verse(shot.get("verse") or "")
+    if index % 2 == 0:
+        hero, verse = [0.18, 0.16], [0.06, 0.84]
+    else:
+        hero, verse = [0.56, 0.18], [0.4, 0.84]
+    drift = 48.0 if move == "slide" else 28.0
+    dolly = 0.05 if "push" in move or move == "push" else 0.035
+    if "shake" in (shot.get("camera") or "").lower() or "slam" in (shot.get("camera") or "").lower():
+        drift = 36.0
+    return {
+        "camera": {"move": move, "dolly": dolly, "drift": drift},
+        "layers": _layers_from_motion(shot.get("motion") or ""),
+        "text": {
+            "treatment": treatment,
+            "title": "GENESIS 7" if shot["id"] in {"s01", "s72"} else "",
+            "verse_ref": ref,
+            "verse_line": line,
+            "hero_anchor": hero,
+            "verse_anchor": verse,
+        },
+    }
+
+
+def build_fx(shots: list[dict], locked: dict | None = None) -> dict:
+    """Full config. Locked ids, such as the approved s01-s04 preview, stay as given."""
+    locked = locked or {}
+    config: dict = {}
+    previous = None
+    for index, shot in enumerate(shots):
+        if shot["id"] in locked:
+            config[shot["id"]] = locked[shot["id"]]
+            previous = locked[shot["id"]]["text"]["treatment"]
+            continue
+        made = derive_config(shot, index, previous)
+        config[shot["id"]] = made
+        previous = made["text"]["treatment"]
+    return config
+
+
+def active_layer_names(shot_id: str, config: dict) -> list[str]:
+    """Layers whose parameters actually ask for motion."""
+    names = []
+    for layer in resolve_shot(shot_id, config)["layers"]:
+        params = layer["params"]
+        if any(float(params.get(key, 0) or 0) > 0 for key in ("amp", "amount", "count", "strength", "speed")):
+            # speed alone on a zero cloud amp still counts as present; require a real amount
+            if float(params.get("amp", 0) or 0) > 0 or float(params.get("amount", 0) or 0) > 0 or int(params.get("count", 0) or 0) > 0 or float(params.get("strength", 0) or 0) > 0:
+                names.append(layer["name"])
+    return names

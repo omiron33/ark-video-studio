@@ -145,6 +145,7 @@ def infer_depth_mps(rgb: np.ndarray) -> np.ndarray:
     pred = predicted[0].detach().float().cpu().numpy()
     del predicted, tensor_inputs, inputs, model
     torch.mps.empty_cache()
+    print("depth model released", flush=True)
     return cv2.resize(pred, (w, h), interpolation=cv2.INTER_LINEAR)
 
 
