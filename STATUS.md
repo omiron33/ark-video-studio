@@ -2,7 +2,7 @@
 
 ## Sentences
 
-The sentence cut is ../full/genesis7_full.mp4. Textless plates were rendered once (2041.61 s) and the sentences were composited in a later overlay, so the motion was not rendered again. Video duration 367.208 s, 8813 frames, 1920x1080, 24 fps, H.264 CRF 20, AAC. File size about 520 MB. Container duration is within 0.1 s of 367.2 s.
+The word-by-word film stays at ../full/genesis7_full.mp4 with contact sheet ../full/genesis7_contact.png. The sentence cut is ../full/genesis7_full_v2.mp4 with ../full/genesis7_contact_v2.png. Textless plates were rendered once (2041.61 s) and the sentences were composited in a later overlay, so the motion was not rendered again. The v2 picture is 367.208 s, 8813 frames, 1920x1080, 24 fps, H.264 CRF 20, AAC, about 520 MB.
 
 Check frames in ../full/sentence_checks/:
 

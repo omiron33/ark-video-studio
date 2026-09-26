@@ -190,11 +190,11 @@ def main() -> None:
             "-map", "0:v:0", "-map", "1:a:0",
             "-c:v", "libx264", "-crf", "20", "-pix_fmt", "yuv420p", "-preset", "veryfast",
             "-c:a", "aac", "-b:a", "192k",
-            str(FULL / "genesis7_full.mp4"),
+            str(FULL / "genesis7_full_v2.mp4"),
         ],
         check=True,
     )
-    _contact(shots, segment_frames(shots), FULL / "genesis7_contact.png")
+    _contact(shots, segment_frames(shots), FULL / "genesis7_contact_v2.png")
     print(f"sentence pass {time.perf_counter() - started:.2f}s", flush=True)
 
 

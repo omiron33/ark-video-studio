@@ -173,17 +173,25 @@ def main() -> None:
     spans = segment_frames(shots)
     folder = FULL / "plates" if plates else SEGMENTS
     total_time = 0.0
+    rendered = 0
     for shot, span in zip(shots, spans):
-        total_time += _encode_shot(
+        elapsed_shot = _encode_shot(
             shot, span, config, bars, beats, draw_hero=not plates, dest_dir=folder,
         )
+        total_time += elapsed_shot
+        if elapsed_shot > 0:
+            rendered += 1
     if plates:
         elapsed = time.perf_counter() - started
         print(f"plate render time: {elapsed:.2f}s", flush=True)
         return
     out = FULL / "genesis7_full.mp4"
+    contact = FULL / "genesis7_contact.png"
+    if rendered == 0 and out.exists() and contact.exists():
+        print(f"resume complete, skipped {len(shots)}, left existing film in place", flush=True)
+        return
     _concat(shots, out)
-    _contact(shots, spans, FULL / "genesis7_contact.png")
+    _contact(shots, spans, contact)
     elapsed = time.perf_counter() - started
     (FULL / "render_time.txt").write_text(f"segments {total_time:.2f}\nwall {elapsed:.2f}\n")
     print(f"full2 render time: segments {total_time:.2f}s wall {elapsed:.2f}s", flush=True)
