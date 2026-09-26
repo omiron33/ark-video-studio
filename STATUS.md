@@ -4,19 +4,19 @@
 
 ETA: the corrected v3 shot render should take about 35 minutes (72 cached-depth segments) plus about 2 minutes to concat and mux. It runs straight through with no approval stop. Output is ../full/genesis7_full_v3.mp4 and ../full/genesis7_contact_v3.png. v1 and v2 stay untouched.
 
-Actual render: 2267.62 s for the 72 segments, concat, and contact sheet. A short repair then redrew s23, s24, and s58 (159 s) so the sons line can sit behind the cloaks and the whirlpool line stays readable. The picture is 367.208 s, 8813 frames, 1920x1080, 24 fps, H.264 yuv420p, AAC, about 699 MB.
+Actual render: 2267.62 s for the 72 segments, concat, and contact sheet. A short repair then redrew s23, s24, and s58 (159 s) so the sons line can sit behind the cloaks and the whirlpool line stays readable. The picture is 367.208 s, 8813 frames, 1920x1080, 24 fps, H.264 yuv420p, AAC, about 706 MB.
 
 Check frames in ../full/v3_checks/:
 
 - v3_checks/font_cormorant.png at 10.70 s, Cormorant, top, small, Then the Lord said to Noah,
 - v3_checks/font_archivo.png at 24.81 s, Archivo Black, diagonal, Come into the ark, you and all your household,
-- v3_checks/font_dirt.png at 47.72 s, Rubik Dirt, bottom, Of the animals not counted clean,
-- v3_checks/font_cinzel.png at 53.75 s, Cinzel, right, Take also seven pairs of the birds,
-- v3_checks/font_stencil.png at 142.14 s, Stardos Stencil, large, the great deep broke open.
-- v3_checks/glitch_1.png at 142.87 s, glitch, the great deep broke open.
-- v3_checks/glitch_2.png at 189.38 s, glitch, Then the Lord shut them in.
-- v3_checks/glitch_3.png at 257.83 s, glitch, was swept away.
-- v3_checks/text_behind.png at 119.44 s, the sons line across the cloaked figures, lanterns at their sides, words still readable.
+- v3_checks/font_dirt.png at 67.78 s, Rubik Dirt, left, God said For after seven more days,
+- v3_checks/font_cinzel.png at 53.65 s, Cinzel, right, Take also seven pairs of the birds,
+- v3_checks/font_stencil.png at 143.12 s, Stardos Stencil, large, the great deep broke open.
+- v3_checks/glitch_1.png at 142.70 s, glitch, On the seventeenth day, the great deep broke open.
+- v3_checks/glitch_2.png at 188.65 s, glitch, Then the Lord shut them in.
+- v3_checks/glitch_3.png at 262.90 s, glitch, Was swept away.
+- v3_checks/text_behind.png at 119.44 s, with him came his sons: Shem, Ham, and Japheth, across the cloaked figures.
 - v3_checks/lightning.png and v3_checks/beat_no_strip.png at 3.83 s, a bolt in the cloud, no hero lyric, no full-width centre strip.
 - v3_checks/s03.png at 10.64 s, the first Noah clause only, warm light on the figure rather than a horizon band.
 - v3_checks/lantern.png at 119.44 s, camp lanterns, local light.
@@ -28,65 +28,83 @@ Check frames in ../full/v3_checks/:
 | 2 | 31.08 | 36.44 | For I have seen you walking rightly before Me in this generation. | archivo | diagonal | zoom | blur | fade |
 | 3 | 36.44 | 39.70 | Take with you the clean animals, | cormorant | left | tracking | wipe | ink |
 | 4 | 40.44 | 47.02 | Seven pairs of every kind, male and female together. | archivo | diagonal | typewriter | slide_left | fade |
-| 5 | 47.02 | 52.52 | Of the animals not counted clean, take one pair, male and female. | dirt | bottom | slide_left | slide_right | fade |
-| 6 | 53.05 | 58.06 | Take also seven pairs of the birds, | cinzel | right | zoom | blur | typewriter |
-| 7 | 59.08 | 66.45 | So their kind may continue across the face of the earth. | archivo | top | zoom | wipe | fade |
-| 8 | 67.18 | 79.23 | God said “For after seven more days, rain will fall upon the earth | cinzel | center | wipe | zoom | light_sweep |
-| 9 | 79.25 | 81.39 | For forty days and forty nights. | cinzel | diagonal | blur | slide_left | ink |
-| 10 | 81.39 | 84.10 | I will sweep away from the face of the ground | cinzel | right | typewriter | slide_below | fade |
-| 11 | 84.10 | 86.72 | Every living thing that I have made. | dirt | left | slide_left | zoom | fade |
-| 12 | 86.72 | 90.57 | And Noah did everything the Lord commanded. | dirt | left | wipe | slide_right | typewriter |
-| 13 | 96.75 | 113.67 | Noah was six hundred years old when the waters came upon the earth. | dirt | bottom | zoom | slide_left | fade |
-| 14 | 113.67 | 119.56 | Noah entered the ark, and with him came his sons: Shem, Ham, and Japheth. | archivo | diagonal | wipe | ink | fade |
-| 15 | 119.56 | 122.02 | His wife entered with him, and the wives of his sons. | dirt | bottom | typewriter | slide_below | typewriter |
-| 16 | 122.02 | 125.52 | The animals came also: clean and unclean, | dirt | left | zoom | fade | fade |
-| 17 | 125.52 | 128.72 | Birds of the air, and every creature that moved along the ground. | dirt | bottom | zoom | slide_left | fade |
-| 18 | 128.72 | 135.06 | They entered by pairs, male and female, just as God had commanded Noah. | cinzel | right | typewriter | ink | typewriter |
-| 19 | 137.10 | 138.41 | Seven days passed. | cinzel | diagonal | ink | slide_below | ink |
-| 20 | 138.41 | 139.28 | Then the waters came. | cinzel | diagonal | blur | wipe | ink |
-| 21 | 139.28 | 141.44 | In the six hundredth year of Noah’s life, | cinzel | right | slide_right | slide_left | typewriter |
-| 22 | 141.44 | 145.28 | In the second month, on the seventeenth day, the great deep broke open. | stencil | right | shake | ink | glitch |
-| 23 | 145.28 | 147.80 | The fountains beneath the earth burst | stencil | bottom | stamp | ink | embers |
-| 24 | 147.80 | 150.53 | from their places, and the heavens opened above. | stencil | diagonal | shake | slide_below | embers |
-| 25 | 150.59 | 152.77 | Rain poured upon the earth | cinzel | bottom | ink | slide_below | light_sweep |
-| 26 | 152.77 | 154.79 | For forty days and forty nights. | cinzel | diagonal | blur | slide_left | ink |
-| 27 | 154.79 | 159.08 | That same day Noah entered the ark, with Shem, Ham, and Japheth. | cinzel | center | slide_right | zoom | typewriter |
-| 28 | 159.08 | 161.95 | His wife was with him, and the wives of his sons. | archivo | diagonal | slide_left | ink | fade |
-| 29 | 161.95 | 164.17 | Every beast after its kind, | cinzel | bottom | blur | slide_left | ink |
-| 30 | 164.17 | 168.06 | Every animal after its kind, every creature moving on the ground, | archivo | diagonal | slide_right | slide_below | typewriter |
-| 31 | 168.06 | 170.42 | Every bird and every winged thing. | cinzel | diagonal | ink | slide_below | ink |
-| 32 | 170.42 | 174.80 | They came to Noah, two by two, all carrying the breath of life. | dirt | bottom | typewriter | blur | fade |
-| 33 | 174.80 | 181.26 | They entered the ark, male and female, as God had commanded. | archivo | top | slide_right | fade | typewriter |
-| 34 | 188.50 | 191.60 | Then the Lord shut them in. | stencil | right | shake | slide_below | glitch |
-| 35 | 199.11 | 202.12 | The Flood rose for forty days. | stencil | right | stamp | slide_below | stamp |
-| 36 | 202.12 | 207.63 | The waters increased and lifted the ark high above the earth. | cinzel | center | slide_left | slide_right | typewriter |
-| 37 | 207.63 | 210.80 | Higher they climbed, stronger they became, | cinzel | diagonal | ink | fade | ink |
-| 38 | 210.80 | 215.12 | Until the ark moved across the face of the waters. | archivo | top | typewriter | wipe | fade |
-| 39 | 215.20 | 218.77 | The floodwaters grew greatly, and | bebas | center | shake | slide_right | typewriter |
-| 40 | 218.77 | 221.73 | every high mountain beneath the whole heaven was covered. | cinzel | center | zoom | fade | light_sweep |
-| 41 | 221.79 | 224.20 | The waters rose above them | cormorant | center | tracking | wipe | ink |
-| 42 | 224.20 | 230.67 | Until even the highest ground disappeared below. | dirt | left | slide_right | slide_below | typewriter |
-| 43 | 231.72 | 238.02 | Then every creature that moved upon the earth died. | stencil | bottom | shake | ink | fade |
-| 44 | 238.02 | 242.56 | Birds, livestock, wild beasts, creeping things, and mankind. | dirt | left | typewriter | slide_right | fade |
-| 45 | 242.56 | 249.18 | Everything on dry land that carried the breath of life came to its end. | archivo | top | slide_right | fade | typewriter |
-| 46 | 249.31 | 257.14 | The waters covered what once had been fields, roads, homes, and living ground. | archivo | diagonal | wipe | slide_below | fade |
-| 47 | 257.14 | 264.68 | Every living thing upon the face of the earth was swept away. | stencil | bottom | shake | slide_below | glitch |
-| 48 | 264.68 | 268.72 | Man and beast, creeping thing and bird, all were taken from the land. | dirt | bottom | wipe | blur | typewriter |
-| 49 | 268.72 | 275.19 | Only Noah remained, and those who were with him inside the ark. | cormorant | left | tracking | wipe | ink |
-| 50 | 275.19 | 278.66 | Above them, the waters still moved. | cormorant | top | tracking | slide_right | ink |
-| 51 | 278.66 | 283.47 | Around them, the old world was gone. | cormorant | top | fade | slide_left | ink |
-| 52 | 283.96 | 292.67 | For one hundred and fifty days, the waters remained strong upon the earth. | cormorant | center | tracking | wipe | ink |
-| 53 | 292.86 | 295.11 | No mountain stood above them. | cinzel | diagonal | blur | wipe | ink |
-| 54 | 295.11 | 297.06 | No field broke through. | cormorant | left | tracking | wipe | ink |
-| 55 | 297.06 | 298.57 | No road returned. | cinzel | diagonal | blur | wipe | ink |
-| 56 | 298.62 | 301.65 | No human voice answered outside. | cinzel | bottom | ink | slide_below | ink |
-| 57 | 301.65 | 306.69 | Only the ark remained upon the endless waters, | cormorant | top | fade | zoom | ink |
-| 58 | 306.69 | 308.41 | Carrying Noah, his household, | cinzel | right | ink | fade | ink |
-| 59 | 308.41 | 311.49 | And the living creatures God had preserved within. | cormorant | center | tracking | wipe | ink |
-| 60 | 311.49 | 312.63 | The rain had fallen. | cinzel | bottom | ink | slide_below | light_sweep |
-| 61 | 312.63 | 314.69 | The earth was covered. | cinzel | diagonal | blur | slide_left | ink |
-| 62 | 316.26 | 319.34 | The judgment had come. | cinzel | left | blur | slide_left | ink |
-| 63 | 319.34 | 328.18 | And beneath a darkened heaven, the waters still prevailed. | cormorant | center | fade | slide_left | light_sweep |
+| 5 | 47.02 | 49.24 | Of the animals not counted clean, | cormorant | left | fade | slide_left | ink |
+| 6 | 49.24 | 52.52 | Take one pair, male and female. | cormorant | right | fade | zoom | ink |
+| 7 | 53.05 | 58.06 | Take also seven pairs of the birds, | cinzel | right | zoom | blur | fade |
+| 8 | 59.08 | 66.45 | So their kind may continue across the face of the earth. | archivo | top | zoom | wipe | fade |
+| 9 | 67.18 | 74.83 | God said “For after seven more days, | dirt | left | typewriter | zoom | typewriter |
+| 10 | 75.11 | 79.23 | Rain will fall upon the earth | cinzel | right | ink | slide_below | light_sweep |
+| 11 | 79.25 | 81.39 | For forty days and forty nights. | cinzel | diagonal | blur | slide_left | ink |
+| 12 | 81.39 | 84.10 | I will sweep away from the face of the ground | cinzel | right | typewriter | slide_below | typewriter |
+| 13 | 84.10 | 86.72 | Every living thing that I have made. | dirt | left | slide_left | zoom | fade |
+| 14 | 86.72 | 90.57 | And Noah did everything the Lord commanded. | dirt | left | wipe | slide_right | fade |
+| 15 | 96.75 | 111.73 | Noah was six hundred years old | cinzel | bottom | blur | wipe | ink |
+| 16 | 111.73 | 113.67 | When the waters came upon the earth. | dirt | bottom | slide_right | ink | fade |
+| 17 | 113.67 | 115.88 | Noah entered the ark, and | cormorant | top | tracking | wipe | ink |
+| 18 | 115.88 | 119.56 | with him came his sons: Shem, Ham, and Japheth. | archivo | top | slide_left | zoom | typewriter |
+| 19 | 119.56 | 122.02 | His wife entered with him, and the wives of his sons. | dirt | bottom | typewriter | slide_below | fade |
+| 20 | 122.02 | 125.52 | The animals came also: clean and unclean, | dirt | left | zoom | fade | fade |
+| 21 | 125.52 | 126.34 | Birds of the air, | cinzel | bottom | blur | wipe | ink |
+| 22 | 126.34 | 128.72 | And every creature that moved along the ground. | dirt | bottom | slide_left | ink | fade |
+| 23 | 128.72 | 132.00 | They entered by pairs, male and female, | archivo | top | zoom | slide_right | fade |
+| 24 | 132.00 | 135.06 | Just as God had commanded Noah. | cormorant | top | fade | slide_left | ink |
+| 25 | 137.10 | 138.41 | Seven days passed. | cinzel | diagonal | ink | slide_below | ink |
+| 26 | 138.41 | 139.28 | Then the waters came. | cinzel | diagonal | blur | wipe | ink |
+| 27 | 139.28 | 141.44 | In the six hundredth year of Noah’s life, | cinzel | right | slide_right | slide_left | typewriter |
+| 28 | 141.44 | 142.52 | In the second month, | cinzel | right | blur | slide_left | ink |
+| 29 | 142.52 | 145.28 | On the seventeenth day, the great deep broke open. | stencil | bottom | shake | slide_left | glitch |
+| 30 | 145.28 | 147.80 | The fountains beneath the earth burst | stencil | bottom | stamp | ink | embers |
+| 31 | 147.80 | 150.53 | from their places, and the heavens opened above. | stencil | diagonal | shake | slide_below | embers |
+| 32 | 150.59 | 152.77 | Rain poured upon the earth | cinzel | bottom | ink | slide_below | light_sweep |
+| 33 | 152.77 | 154.79 | For forty days and forty nights. | cinzel | diagonal | blur | slide_left | ink |
+| 34 | 154.79 | 156.95 | That same day Noah entered the ark, | dirt | left | wipe | fade | fade |
+| 35 | 156.95 | 159.08 | With Shem, Ham, and Japheth. | cinzel | right | ink | fade | ink |
+| 36 | 159.08 | 161.95 | His wife was with him, and the wives of his sons. | archivo | diagonal | slide_left | ink | typewriter |
+| 37 | 161.95 | 164.17 | Every beast after its kind, | cinzel | bottom | blur | slide_left | ink |
+| 38 | 164.17 | 167.20 | Every animal after its kind, every creature moving | dirt | left | zoom | slide_right | fade |
+| 39 | 167.20 | 168.06 | on the ground, | cormorant | center | fade | zoom | ink |
+| 40 | 168.06 | 170.42 | Every bird and every winged thing. | cinzel | diagonal | ink | slide_below | ink |
+| 41 | 170.42 | 173.22 | They came to Noah, two by two, | dirt | bottom | wipe | slide_below | fade |
+| 42 | 173.22 | 174.80 | All carrying the breath of life. | cinzel | bottom | blur | wipe | ink |
+| 43 | 174.80 | 181.26 | They entered the ark, male and female, as God had commanded. | archivo | top | slide_right | fade | fade |
+| 44 | 188.50 | 191.60 | Then the Lord shut them in. | stencil | right | shake | slide_below | glitch |
+| 45 | 199.11 | 202.12 | The Flood rose for forty days. | stencil | right | stamp | slide_below | stamp |
+| 46 | 202.12 | 203.62 | The waters increased | cormorant | top | fade | slide_left | ink |
+| 47 | 203.62 | 207.63 | And lifted the ark high above the earth. | archivo | diagonal | zoom | blur | fade |
+| 48 | 207.63 | 210.80 | Higher they climbed, stronger they became, | cinzel | diagonal | ink | fade | ink |
+| 49 | 210.80 | 215.12 | Until the ark moved across the face of the waters. | archivo | top | typewriter | wipe | fade |
+| 50 | 215.20 | 218.77 | The floodwaters grew greatly, and | bebas | center | shake | slide_right | fade |
+| 51 | 218.77 | 221.73 | every high mountain beneath the whole heaven was covered. | cinzel | center | zoom | fade | light_sweep |
+| 52 | 221.79 | 224.20 | The waters rose above them | cormorant | center | tracking | wipe | ink |
+| 53 | 224.20 | 230.67 | Until even the highest ground disappeared below. | dirt | left | slide_right | slide_below | fade |
+| 54 | 231.72 | 238.02 | Then every creature that moved upon the earth died. | stencil | bottom | shake | ink | typewriter |
+| 55 | 238.02 | 242.56 | Birds, livestock, wild beasts, creeping things, and mankind. | dirt | left | typewriter | slide_right | fade |
+| 56 | 242.56 | 243.49 | Everything on dry land | cinzel | diagonal | ink | slide_below | ink |
+| 57 | 243.49 | 249.18 | That carried the breath of life came to its end. | dirt | left | zoom | fade | typewriter |
+| 58 | 249.31 | 254.00 | The waters covered what once had been fields, | archivo | diagonal | slide_right | blur | fade |
+| 59 | 254.00 | 257.14 | Roads, homes, and living ground. | cinzel | bottom | blur | slide_left | ink |
+| 60 | 257.14 | 262.79 | Every living thing upon the face of the earth | dirt | bottom | slide_right | blur | typewriter |
+| 61 | 262.79 | 264.68 | Was swept away. | stencil | bottom | shake | slide_left | glitch |
+| 62 | 264.68 | 266.62 | Man and beast, creeping thing and bird, | archivo | top | zoom | blur | fade |
+| 63 | 266.62 | 268.72 | All were taken from the land. | cormorant | center | fade | zoom | ink |
+| 64 | 268.72 | 271.84 | Only Noah remained, and those who were | cinzel | right | ink | slide_below | ink |
+| 65 | 271.84 | 275.19 | with him inside the ark. | cormorant | center | tracking | wipe | ink |
+| 66 | 275.19 | 278.66 | Above them, the waters still moved. | cormorant | top | tracking | slide_right | ink |
+| 67 | 278.66 | 283.47 | Around them, the old world was gone. | cormorant | top | fade | slide_left | ink |
+| 68 | 283.96 | 289.37 | For one hundred and fifty days, | cormorant | center | fade | slide_left | ink |
+| 69 | 289.37 | 292.67 | The waters remained strong upon the earth. | cinzel | bottom | blur | slide_left | ink |
+| 70 | 292.86 | 295.11 | No mountain stood above them. | cinzel | diagonal | blur | wipe | ink |
+| 71 | 295.11 | 297.06 | No field broke through. | cormorant | left | tracking | wipe | ink |
+| 72 | 297.06 | 298.57 | No road returned. | cinzel | diagonal | blur | wipe | ink |
+| 73 | 298.62 | 301.65 | No human voice answered outside. | cinzel | bottom | ink | slide_below | ink |
+| 74 | 301.65 | 306.69 | Only the ark remained upon the endless waters, | cormorant | top | fade | zoom | ink |
+| 75 | 306.69 | 307.58 | Carrying Noah, | cormorant | bottom | fade | zoom | ink |
+| 76 | 307.58 | 308.41 | His household, | cormorant | top | tracking | wipe | ink |
+| 77 | 308.41 | 311.49 | And the living creatures God had preserved within. | cormorant | center | tracking | wipe | ink |
+| 78 | 311.49 | 312.63 | The rain had fallen. | cinzel | bottom | ink | slide_below | light_sweep |
+| 79 | 312.63 | 314.69 | The earth was covered. | cinzel | diagonal | blur | slide_left | ink |
+| 80 | 316.26 | 319.34 | The judgment had come. | cinzel | left | blur | slide_left | ink |
+| 81 | 319.34 | 328.18 | And beneath a darkened heaven, the waters still prevailed. | cormorant | center | fade | slide_left | light_sweep |
 
 ## Sentences
 

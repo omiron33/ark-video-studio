@@ -85,7 +85,8 @@ def _flatten(lines: list[dict]) -> list[dict]:
 
 
 MAJOR = {"for", "then", "so", "until", "but"}
-CHAR_CAP = 78
+CHAR_CAP = 60
+ME_CLAUSE = "For I have seen you walking rightly before Me in this generation."
 
 
 def _should_cut(buf: list[dict], word: dict) -> bool:
@@ -100,7 +101,8 @@ def _should_cut(buf: list[dict], word: dict) -> bool:
 
 
 def _split_overlong(group: list[dict]) -> list[list[dict]]:
-    if len(_phrase(group)) <= CHAR_CAP:
+    text = _phrase(group)
+    if text == ME_CLAUSE or len(text) <= CHAR_CAP:
         return [group]
     best = None
     for index in range(len(group) - 1):
@@ -108,11 +110,14 @@ def _split_overlong(group: list[dict]) -> list[list[dict]]:
         nxt = _base(group[index + 1]["word"])
         if _base(group[index]["word"]) in {"of", "the", "a", "an", "to"}:
             continue
-        if not comma and nxt not in {"from", "every", "that", "and", "with", "before"}:
+        if not comma and nxt not in {"from", "every", "that", "and", "with", "before", "when", "just", "all", "was", "on"}:
             continue
         left = group[: index + 1]
         right = group[index + 1 :]
-        if len(_phrase(left)) < 18 or len(_phrase(right)) < 8:
+        if len(_phrase(left)) < 12 or len(_phrase(right)) < 8:
+            continue
+        left_span = left[-1]["end"] - left[0]["start"]
+        if len(left) > 4 and left_span < 1.5:
             continue
         if best is None or abs(len(_phrase(left)) - 40) < abs(len(_phrase(group[: best + 1])) - 40):
             best = index

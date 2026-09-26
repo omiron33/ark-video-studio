@@ -155,34 +155,62 @@
     "index": 4
   },
   {
-    "text": "Of the animals not counted clean, take one pair, male and female.",
+    "text": "Of the animals not counted clean,",
     "start": 47.02,
-    "last_end": 52.12,
+    "last_end": 49.24,
     "lines": [
-      "Of the animals not counted clean,",
-      "take one pair, male and female."
+      "Of the animals not counted clean,"
     ],
-    "end": 52.519999999999996,
-    "font": "dirt",
+    "end": 49.24,
+    "font": "cormorant",
     "fonts": [
-      "dirt"
+      "cormorant"
     ],
     "emphasis": [],
-    "size": 1.0,
-    "layout": "bottom",
+    "size": 0.7,
+    "layout": "left",
     "anchor": [
-      0.08,
-      0.62
+      0.06,
+      0.16
     ],
     "depth": 0.9,
-    "entrance": "slide_left",
-    "exit": "slide_right",
+    "entrance": "fade",
+    "exit": "slide_left",
     "hold_motion": "push",
-    "fx": "fade",
+    "fx": "ink",
     "hit_times": [
       47.16
     ],
     "index": 5
+  },
+  {
+    "text": "Take one pair, male and female.",
+    "start": 49.24,
+    "last_end": 52.12,
+    "lines": [
+      "Take one pair, male and female."
+    ],
+    "end": 52.519999999999996,
+    "font": "cormorant",
+    "fonts": [
+      "cormorant"
+    ],
+    "emphasis": [],
+    "size": 0.7,
+    "layout": "right",
+    "anchor": [
+      0.94,
+      0.18
+    ],
+    "depth": 0.42,
+    "entrance": "fade",
+    "exit": "zoom",
+    "hold_motion": "still",
+    "fx": "ink",
+    "hit_times": [
+      49.389
+    ],
+    "index": 6
   },
   {
     "text": "Take also seven pairs of the birds,",
@@ -203,15 +231,15 @@
       0.94,
       0.18
     ],
-    "depth": 0.42,
+    "depth": 0.9,
     "entrance": "zoom",
     "exit": "blur",
-    "hold_motion": "still",
-    "fx": "typewriter",
+    "hold_motion": "pan",
+    "fx": "fade",
     "hit_times": [
       53.336
     ],
-    "index": 6
+    "index": 7
   },
   {
     "text": "So their kind may continue across the face of the earth.",
@@ -236,45 +264,73 @@
     "depth": 0.9,
     "entrance": "zoom",
     "exit": "wipe",
-    "hold_motion": "pan",
+    "hold_motion": "still",
     "fx": "fade",
     "hit_times": [
       59.513
     ],
-    "index": 7
+    "index": 8
   },
   {
-    "text": "God said \u201cFor after seven more days, rain will fall upon the earth",
+    "text": "God said \u201cFor after seven more days,",
     "start": 67.18,
-    "last_end": 78.83,
+    "last_end": 74.43,
     "lines": [
-      "God said \u201cFor after seven more days,",
-      "rain will fall upon the earth"
+      "God said \u201cFor after seven more days,"
     ],
-    "end": 79.23,
-    "font": "cinzel",
+    "end": 74.83000000000001,
+    "font": "dirt",
     "fonts": [
-      "cinzel",
+      "dirt",
       "bebas"
     ],
     "emphasis": [
       "god"
     ],
     "size": 1.0,
-    "layout": "center",
+    "layout": "left",
     "anchor": [
-      0.5,
+      0.06,
       0.16
     ],
     "depth": 0.9,
-    "entrance": "wipe",
+    "entrance": "typewriter",
     "exit": "zoom",
     "hold_motion": "still",
-    "fx": "light_sweep",
+    "fx": "typewriter",
     "hit_times": [
       67.384
     ],
-    "index": 8
+    "index": 9
+  },
+  {
+    "text": "Rain will fall upon the earth",
+    "start": 75.11,
+    "last_end": 78.83,
+    "lines": [
+      "Rain will fall upon the earth"
+    ],
+    "end": 79.23,
+    "font": "cinzel",
+    "fonts": [
+      "cinzel"
+    ],
+    "emphasis": [],
+    "size": 0.7,
+    "layout": "right",
+    "anchor": [
+      0.94,
+      0.18
+    ],
+    "depth": 0.9,
+    "entrance": "ink",
+    "exit": "slide_below",
+    "hold_motion": "travel",
+    "fx": "light_sweep",
+    "hit_times": [
+      75.233
+    ],
+    "index": 10
   },
   {
     "text": "For forty days and forty nights.",
@@ -306,7 +362,7 @@
     "hit_times": [
       79.714
     ],
-    "index": 9
+    "index": 11
   },
   {
     "text": "I will sweep away from the face of the ground",
@@ -328,15 +384,15 @@
       0.94,
       0.18
     ],
-    "depth": 0.9,
+    "depth": 0.42,
     "entrance": "typewriter",
     "exit": "slide_below",
-    "hold_motion": "travel",
-    "fx": "fade",
+    "hold_motion": "push",
+    "fx": "typewriter",
     "hit_times": [
       81.966
     ],
-    "index": 10
+    "index": 12
   },
   {
     "text": "Every living thing that I have made.",
@@ -365,7 +421,7 @@
     "hit_times": [
       84.196
     ],
-    "index": 11
+    "index": 13
   },
   {
     "text": "And Noah did everything the Lord commanded.",
@@ -391,33 +447,61 @@
       0.06,
       0.16
     ],
-    "depth": 0.42,
+    "depth": 0.9,
     "entrance": "wipe",
     "exit": "slide_right",
-    "hold_motion": "push",
-    "fx": "typewriter",
+    "hold_motion": "still",
+    "fx": "fade",
     "hit_times": [
       86.982
     ],
-    "index": 12
+    "index": 14
   },
   {
-    "text": "Noah was six hundred years old when the waters came upon the earth.",
+    "text": "Noah was six hundred years old",
     "start": 96.75,
-    "last_end": 113.67,
+    "last_end": 111.73,
     "lines": [
-      "Noah was six hundred years old",
-      "when the waters came upon the earth."
+      "Noah was six hundred years old"
     ],
-    "end": 113.67,
-    "font": "dirt",
+    "end": 111.73,
+    "font": "cinzel",
     "fonts": [
-      "dirt",
+      "cinzel",
       "bebas"
     ],
     "emphasis": [
       "noah"
     ],
+    "size": 0.7,
+    "layout": "bottom",
+    "anchor": [
+      0.08,
+      0.62
+    ],
+    "depth": 0.9,
+    "entrance": "blur",
+    "exit": "wipe",
+    "hold_motion": "pan",
+    "fx": "ink",
+    "hit_times": [
+      97.083
+    ],
+    "index": 15
+  },
+  {
+    "text": "When the waters came upon the earth.",
+    "start": 111.73,
+    "last_end": 113.67,
+    "lines": [
+      "When the waters came upon the earth."
+    ],
+    "end": 113.67,
+    "font": "dirt",
+    "fonts": [
+      "dirt"
+    ],
+    "emphasis": [],
     "size": 1.0,
     "layout": "bottom",
     "anchor": [
@@ -425,48 +509,77 @@
       0.62
     ],
     "depth": 0.9,
-    "entrance": "zoom",
-    "exit": "slide_left",
+    "entrance": "slide_right",
+    "exit": "ink",
     "hold_motion": "still",
     "fx": "fade",
     "hit_times": [
-      97.083
+      112.199
     ],
-    "index": 13
+    "index": 16
   },
   {
-    "text": "Noah entered the ark, and with him came his sons: Shem, Ham, and Japheth.",
+    "text": "Noah entered the ark, and",
     "start": 113.67,
-    "last_end": 119.54,
+    "last_end": 115.88,
     "lines": [
-      "Noah entered the ark, and",
-      "with him came his sons: Shem, Ham, and Japheth."
+      "Noah entered the ark, and"
     ],
-    "end": 119.56,
-    "font": "archivo",
+    "end": 115.88,
+    "font": "cormorant",
     "fonts": [
-      "archivo",
+      "cormorant",
       "bebas"
     ],
     "emphasis": [
       "noah",
       "ark"
     ],
-    "size": 1.0,
-    "layout": "diagonal",
+    "size": 0.7,
+    "layout": "top",
     "anchor": [
-      0.1,
-      0.2
+      0.5,
+      0.06
     ],
-    "depth": 0.42,
-    "entrance": "wipe",
-    "exit": "ink",
-    "hold_motion": "still",
-    "fx": "fade",
+    "depth": 0.9,
+    "entrance": "tracking",
+    "exit": "wipe",
+    "hold_motion": "drift",
+    "fx": "ink",
     "hit_times": [
       113.871
     ],
-    "index": 14
+    "index": 17
+  },
+  {
+    "text": "with him came his sons: Shem, Ham, and Japheth.",
+    "start": 115.88,
+    "last_end": 119.54,
+    "lines": [
+      "with him came his sons: Shem,",
+      "Ham, and Japheth."
+    ],
+    "end": 119.56,
+    "font": "archivo",
+    "fonts": [
+      "archivo"
+    ],
+    "emphasis": [],
+    "size": 1.0,
+    "layout": "top",
+    "anchor": [
+      0.5,
+      0.06
+    ],
+    "depth": 0.42,
+    "entrance": "slide_left",
+    "exit": "zoom",
+    "hold_motion": "still",
+    "fx": "typewriter",
+    "hit_times": [
+      116.1
+    ],
+    "index": 18
   },
   {
     "text": "His wife entered with him, and the wives of his sons.",
@@ -491,12 +604,12 @@
     "depth": 0.9,
     "entrance": "typewriter",
     "exit": "slide_below",
-    "hold_motion": "pan",
-    "fx": "typewriter",
+    "hold_motion": "still",
+    "fx": "fade",
     "hit_times": [
       120.024
     ],
-    "index": 15
+    "index": 19
   },
   {
     "text": "The animals came also: clean and unclean,",
@@ -520,19 +633,48 @@
     "depth": 0.9,
     "entrance": "zoom",
     "exit": "fade",
-    "hold_motion": "still",
+    "hold_motion": "push",
     "fx": "fade",
     "hit_times": [
       122.253
     ],
-    "index": 16
+    "index": 20
   },
   {
-    "text": "Birds of the air, and every creature that moved along the ground.",
+    "text": "Birds of the air,",
     "start": 125.52,
+    "last_end": 126.34,
+    "lines": [
+      "Birds of the air,"
+    ],
+    "end": 126.34,
+    "font": "cinzel",
+    "fonts": [
+      "cinzel"
+    ],
+    "emphasis": [],
+    "size": 0.7,
+    "layout": "bottom",
+    "anchor": [
+      0.08,
+      0.62
+    ],
+    "depth": 0.9,
+    "entrance": "blur",
+    "exit": "wipe",
+    "hold_motion": "still",
+    "fx": "ink",
+    "hit_times": [
+      125.597
+    ],
+    "index": 21
+  },
+  {
+    "text": "And every creature that moved along the ground.",
+    "start": 126.34,
     "last_end": 128.54,
     "lines": [
-      "Birds of the air, and every creature",
+      "And every creature",
       "that moved along the ground."
     ],
     "end": 128.72,
@@ -548,48 +690,76 @@
       0.62
     ],
     "depth": 0.9,
-    "entrance": "zoom",
-    "exit": "slide_left",
-    "hold_motion": "drift",
+    "entrance": "slide_left",
+    "exit": "ink",
+    "hold_motion": "pan",
     "fx": "fade",
     "hit_times": [
-      125.597
+      126.711
     ],
-    "index": 17
+    "index": 22
   },
   {
-    "text": "They entered by pairs, male and female, just as God had commanded Noah.",
+    "text": "They entered by pairs, male and female,",
     "start": 128.72,
+    "last_end": 131.72,
+    "lines": [
+      "They entered by pairs, male and female,"
+    ],
+    "end": 132.0,
+    "font": "archivo",
+    "fonts": [
+      "archivo"
+    ],
+    "emphasis": [],
+    "size": 1.0,
+    "layout": "top",
+    "anchor": [
+      0.5,
+      0.06
+    ],
+    "depth": 0.9,
+    "entrance": "zoom",
+    "exit": "slide_right",
+    "hold_motion": "still",
+    "fx": "fade",
+    "hit_times": [
+      128.964
+    ],
+    "index": 23
+  },
+  {
+    "text": "Just as God had commanded Noah.",
+    "start": 132.0,
     "last_end": 134.66,
     "lines": [
-      "They entered by pairs, male and female,",
-      "just as God had commanded Noah."
+      "Just as God had commanded Noah."
     ],
     "end": 135.06,
-    "font": "cinzel",
+    "font": "cormorant",
     "fonts": [
-      "cinzel",
+      "cormorant",
       "bebas"
     ],
     "emphasis": [
       "noah",
       "god"
     ],
-    "size": 1.0,
-    "layout": "right",
+    "size": 0.7,
+    "layout": "top",
     "anchor": [
-      0.94,
-      0.18
+      0.5,
+      0.06
     ],
     "depth": 0.42,
-    "entrance": "typewriter",
-    "exit": "ink",
+    "entrance": "fade",
+    "exit": "slide_left",
     "hold_motion": "still",
-    "fx": "typewriter",
+    "fx": "ink",
     "hit_times": [
-      128.964
+      132.307
     ],
-    "index": 18
+    "index": 24
   },
   {
     "text": "Seven days passed.",
@@ -613,12 +783,12 @@
     "depth": 0.9,
     "entrance": "ink",
     "exit": "slide_below",
-    "hold_motion": "still",
+    "hold_motion": "drift",
     "fx": "ink",
     "hit_times": [
       137.323
     ],
-    "index": 19
+    "index": 25
   },
   {
     "text": "Then the waters came.",
@@ -642,12 +812,12 @@
     "depth": 0.9,
     "entrance": "blur",
     "exit": "wipe",
-    "hold_motion": "push",
+    "hold_motion": "still",
     "fx": "ink",
     "hit_times": [
       138.437
     ],
-    "index": 20
+    "index": 26
   },
   {
     "text": "In the six hundredth year of Noah\u2019s life,",
@@ -674,19 +844,48 @@
     "depth": 0.9,
     "entrance": "slide_right",
     "exit": "slide_left",
-    "hold_motion": "still",
+    "hold_motion": "travel",
     "fx": "typewriter",
     "hit_times": [
       139.552
     ],
-    "index": 21
+    "index": 27
   },
   {
-    "text": "In the second month, on the seventeenth day, the great deep broke open.",
+    "text": "In the second month,",
     "start": 141.44,
+    "last_end": 142.52,
+    "lines": [
+      "In the second month,"
+    ],
+    "end": 142.52,
+    "font": "cinzel",
+    "fonts": [
+      "cinzel"
+    ],
+    "emphasis": [],
+    "size": 0.7,
+    "layout": "right",
+    "anchor": [
+      0.94,
+      0.18
+    ],
+    "depth": 0.9,
+    "entrance": "blur",
+    "exit": "slide_left",
+    "hold_motion": "still",
+    "fx": "ink",
+    "hit_times": [
+      141.758
+    ],
+    "index": 28
+  },
+  {
+    "text": "On the seventeenth day, the great deep broke open.",
+    "start": 142.52,
     "last_end": 145.28,
     "lines": [
-      "In the second month, on the seventeenth day,",
+      "On the seventeenth day,",
       "the great deep broke open."
     ],
     "end": 145.28,
@@ -699,20 +898,20 @@
       "deep"
     ],
     "size": 1.9,
-    "layout": "right",
+    "layout": "bottom",
     "anchor": [
-      0.94,
-      0.18
+      0.08,
+      0.62
     ],
     "depth": 0.9,
     "entrance": "shake",
-    "exit": "ink",
-    "hold_motion": "pan",
+    "exit": "slide_left",
+    "hold_motion": "still",
     "fx": "glitch",
     "hit_times": [
       142.872
     ],
-    "index": 22
+    "index": 29
   },
   {
     "text": "The fountains beneath the earth burst",
@@ -736,15 +935,15 @@
       0.08,
       0.62
     ],
-    "depth": 0.9,
+    "depth": 0.42,
     "entrance": "stamp",
     "exit": "ink",
-    "hold_motion": "still",
+    "hold_motion": "pan",
     "fx": "embers",
     "hit_times": [
       147.331
     ],
-    "index": 23
+    "index": 30
   },
   {
     "text": "from their places, and the heavens opened above.",
@@ -769,7 +968,7 @@
       0.1,
       0.2
     ],
-    "depth": 0.42,
+    "depth": 0.9,
     "entrance": "shake",
     "exit": "slide_below",
     "hold_motion": "still",
@@ -777,7 +976,7 @@
     "hit_times": [
       149.537
     ],
-    "index": 24
+    "index": 31
   },
   {
     "text": "Rain poured upon the earth",
@@ -806,7 +1005,7 @@
     "hit_times": [
       150.651
     ],
-    "index": 25
+    "index": 32
   },
   {
     "text": "For forty days and forty nights.",
@@ -838,20 +1037,19 @@
     "hit_times": [
       152.88
     ],
-    "index": 26
+    "index": 33
   },
   {
-    "text": "That same day Noah entered the ark, with Shem, Ham, and Japheth.",
+    "text": "That same day Noah entered the ark,",
     "start": 154.79,
-    "last_end": 159.03,
+    "last_end": 156.95,
     "lines": [
-      "That same day Noah entered the ark,",
-      "with Shem, Ham, and Japheth."
+      "That same day Noah entered the ark,"
     ],
-    "end": 159.08,
-    "font": "cinzel",
+    "end": 156.95,
+    "font": "dirt",
     "fonts": [
-      "cinzel",
+      "dirt",
       "bebas"
     ],
     "emphasis": [
@@ -859,20 +1057,49 @@
       "ark"
     ],
     "size": 1.0,
-    "layout": "center",
+    "layout": "left",
     "anchor": [
-      0.5,
+      0.06,
       0.16
     ],
     "depth": 0.9,
-    "entrance": "slide_right",
-    "exit": "zoom",
-    "hold_motion": "travel",
-    "fx": "typewriter",
+    "entrance": "wipe",
+    "exit": "fade",
+    "hold_motion": "still",
+    "fx": "fade",
     "hit_times": [
       155.086
     ],
-    "index": 27
+    "index": 34
+  },
+  {
+    "text": "With Shem, Ham, and Japheth.",
+    "start": 156.95,
+    "last_end": 159.03,
+    "lines": [
+      "With Shem, Ham, and Japheth."
+    ],
+    "end": 159.08,
+    "font": "cinzel",
+    "fonts": [
+      "cinzel"
+    ],
+    "emphasis": [],
+    "size": 0.7,
+    "layout": "right",
+    "anchor": [
+      0.94,
+      0.18
+    ],
+    "depth": 0.9,
+    "entrance": "ink",
+    "exit": "fade",
+    "hold_motion": "travel",
+    "fx": "ink",
+    "hit_times": [
+      157.315
+    ],
+    "index": 35
   },
   {
     "text": "His wife was with him, and the wives of his sons.",
@@ -894,15 +1121,15 @@
       0.1,
       0.2
     ],
-    "depth": 0.9,
+    "depth": 0.42,
     "entrance": "slide_left",
     "exit": "ink",
     "hold_motion": "still",
-    "fx": "fade",
+    "fx": "typewriter",
     "hit_times": [
       159.521
     ],
-    "index": 28
+    "index": 36
   },
   {
     "text": "Every beast after its kind,",
@@ -926,42 +1153,71 @@
     "depth": 0.9,
     "entrance": "blur",
     "exit": "slide_left",
-    "hold_motion": "still",
+    "hold_motion": "push",
     "fx": "ink",
     "hit_times": [
       162.284
     ],
-    "index": 29
+    "index": 37
   },
   {
-    "text": "Every animal after its kind, every creature moving on the ground,",
+    "text": "Every animal after its kind, every creature moving",
     "start": 164.17,
-    "last_end": 168.04,
+    "last_end": 167.2,
     "lines": [
       "Every animal after its kind,",
-      "every creature moving on the ground,"
+      "every creature moving"
     ],
-    "end": 168.06,
-    "font": "archivo",
+    "end": 167.2,
+    "font": "dirt",
     "fonts": [
-      "archivo"
+      "dirt"
     ],
     "emphasis": [],
     "size": 1.0,
-    "layout": "diagonal",
+    "layout": "left",
     "anchor": [
-      0.1,
-      0.2
+      0.06,
+      0.16
     ],
-    "depth": 0.42,
-    "entrance": "slide_right",
-    "exit": "slide_below",
-    "hold_motion": "pan",
-    "fx": "typewriter",
+    "depth": 0.9,
+    "entrance": "zoom",
+    "exit": "slide_right",
+    "hold_motion": "still",
+    "fx": "fade",
     "hit_times": [
       164.49
     ],
-    "index": 30
+    "index": 38
+  },
+  {
+    "text": "on the ground,",
+    "start": 167.2,
+    "last_end": 168.04,
+    "lines": [
+      "on the ground,"
+    ],
+    "end": 168.06,
+    "font": "cormorant",
+    "fonts": [
+      "cormorant"
+    ],
+    "emphasis": [],
+    "size": 0.7,
+    "layout": "center",
+    "anchor": [
+      0.5,
+      0.16
+    ],
+    "depth": 0.9,
+    "entrance": "fade",
+    "exit": "zoom",
+    "hold_motion": "still",
+    "fx": "ink",
+    "hit_times": [
+      167.253
+    ],
+    "index": 39
   },
   {
     "text": "Every bird and every winged thing.",
@@ -985,22 +1241,21 @@
     "depth": 0.9,
     "entrance": "ink",
     "exit": "slide_below",
-    "hold_motion": "still",
+    "hold_motion": "drift",
     "fx": "ink",
     "hit_times": [
       168.368
     ],
-    "index": 31
+    "index": 40
   },
   {
-    "text": "They came to Noah, two by two, all carrying the breath of life.",
+    "text": "They came to Noah, two by two,",
     "start": 170.42,
-    "last_end": 174.66,
+    "last_end": 173.06,
     "lines": [
-      "They came to Noah, two by two,",
-      "all carrying the breath of life."
+      "They came to Noah, two by two,"
     ],
-    "end": 174.8,
+    "end": 173.22,
     "font": "dirt",
     "fonts": [
       "dirt",
@@ -1016,14 +1271,43 @@
       0.62
     ],
     "depth": 0.9,
-    "entrance": "typewriter",
-    "exit": "blur",
-    "hold_motion": "drift",
+    "entrance": "wipe",
+    "exit": "slide_below",
+    "hold_motion": "still",
     "fx": "fade",
     "hit_times": [
       170.574
     ],
-    "index": 32
+    "index": 41
+  },
+  {
+    "text": "All carrying the breath of life.",
+    "start": 173.22,
+    "last_end": 174.66,
+    "lines": [
+      "All carrying the breath of life."
+    ],
+    "end": 174.8,
+    "font": "cinzel",
+    "fonts": [
+      "cinzel"
+    ],
+    "emphasis": [],
+    "size": 0.7,
+    "layout": "bottom",
+    "anchor": [
+      0.08,
+      0.62
+    ],
+    "depth": 0.42,
+    "entrance": "blur",
+    "exit": "wipe",
+    "hold_motion": "travel",
+    "fx": "ink",
+    "hit_times": [
+      173.314
+    ],
+    "index": 42
   },
   {
     "text": "They entered the ark, male and female, as God had commanded.",
@@ -1053,11 +1337,11 @@
     "entrance": "slide_right",
     "exit": "fade",
     "hold_motion": "still",
-    "fx": "typewriter",
+    "fx": "fade",
     "hit_times": [
       174.986
     ],
-    "index": 33
+    "index": 43
   },
   {
     "text": "Then the Lord shut them in.",
@@ -1090,7 +1374,7 @@
     "hit_times": [
       189.382
     ],
-    "index": 34
+    "index": 44
   },
   {
     "text": "The Flood rose for forty days.",
@@ -1118,45 +1402,73 @@
     "depth": 0.9,
     "entrance": "stamp",
     "exit": "slide_below",
-    "hold_motion": "travel",
+    "hold_motion": "push",
     "fx": "stamp",
     "hit_times": [
       200.435
     ],
-    "index": 35
+    "index": 45
   },
   {
-    "text": "The waters increased and lifted the ark high above the earth.",
+    "text": "The waters increased",
     "start": 202.12,
+    "last_end": 203.57,
+    "lines": [
+      "The waters increased"
+    ],
+    "end": 203.62,
+    "font": "cormorant",
+    "fonts": [
+      "cormorant"
+    ],
+    "emphasis": [],
+    "size": 0.7,
+    "layout": "top",
+    "anchor": [
+      0.5,
+      0.06
+    ],
+    "depth": 0.9,
+    "entrance": "fade",
+    "exit": "slide_left",
+    "hold_motion": "still",
+    "fx": "ink",
+    "hit_times": [
+      202.13
+    ],
+    "index": 46
+  },
+  {
+    "text": "And lifted the ark high above the earth.",
+    "start": 203.62,
     "last_end": 207.57,
     "lines": [
-      "The waters increased",
-      "and lifted the ark high above the earth."
+      "And lifted the ark high above the earth."
     ],
     "end": 207.63,
-    "font": "cinzel",
+    "font": "archivo",
     "fonts": [
-      "cinzel",
+      "archivo",
       "bebas"
     ],
     "emphasis": [
       "ark"
     ],
     "size": 1.0,
-    "layout": "center",
+    "layout": "diagonal",
     "anchor": [
-      0.5,
-      0.16
+      0.1,
+      0.2
     ],
-    "depth": 0.42,
-    "entrance": "slide_left",
-    "exit": "slide_right",
-    "hold_motion": "still",
-    "fx": "typewriter",
+    "depth": 0.9,
+    "entrance": "zoom",
+    "exit": "blur",
+    "hold_motion": "pan",
+    "fx": "fade",
     "hit_times": [
-      202.13
+      203.755
     ],
-    "index": 36
+    "index": 47
   },
   {
     "text": "Higher they climbed, stronger they became,",
@@ -1177,15 +1489,15 @@
       0.1,
       0.2
     ],
-    "depth": 0.9,
+    "depth": 0.42,
     "entrance": "ink",
     "exit": "fade",
-    "hold_motion": "push",
+    "hold_motion": "still",
     "fx": "ink",
     "hit_times": [
       207.656
     ],
-    "index": 37
+    "index": 48
   },
   {
     "text": "Until the ark moved across the face of the waters.",
@@ -1218,7 +1530,7 @@
     "hit_times": [
       210.977
     ],
-    "index": 38
+    "index": 49
   },
   {
     "text": "The floodwaters grew greatly, and",
@@ -1245,12 +1557,12 @@
     "depth": 0.9,
     "entrance": "shake",
     "exit": "slide_right",
-    "hold_motion": "still",
-    "fx": "typewriter",
+    "hold_motion": "travel",
+    "fx": "fade",
     "hit_times": [
       215.946
     ],
-    "index": 39
+    "index": 50
   },
   {
     "text": "every high mountain beneath the whole heaven was covered.",
@@ -1275,12 +1587,12 @@
     "depth": 0.9,
     "entrance": "zoom",
     "exit": "fade",
-    "hold_motion": "drift",
+    "hold_motion": "still",
     "fx": "light_sweep",
     "hit_times": [
       219.289
     ],
-    "index": 40
+    "index": 51
   },
   {
     "text": "The waters rose above them",
@@ -1304,12 +1616,12 @@
     "depth": 0.9,
     "entrance": "tracking",
     "exit": "wipe",
-    "hold_motion": "still",
+    "hold_motion": "push",
     "fx": "ink",
     "hit_times": [
       222.029
     ],
-    "index": 41
+    "index": 52
   },
   {
     "text": "Until even the highest ground disappeared below.",
@@ -1331,15 +1643,15 @@
       0.06,
       0.16
     ],
-    "depth": 0.42,
+    "depth": 0.9,
     "entrance": "slide_right",
     "exit": "slide_below",
-    "hold_motion": "travel",
-    "fx": "typewriter",
+    "hold_motion": "still",
+    "fx": "fade",
     "hit_times": [
       224.258
     ],
-    "index": 42
+    "index": 53
   },
   {
     "text": "Then every creature that moved upon the earth died.",
@@ -1364,15 +1676,15 @@
       0.08,
       0.62
     ],
-    "depth": 0.9,
+    "depth": 0.42,
     "entrance": "shake",
     "exit": "ink",
     "hold_motion": "still",
-    "fx": "fade",
+    "fx": "typewriter",
     "hit_times": [
       233.639
     ],
-    "index": 43
+    "index": 54
   },
   {
     "text": "Birds, livestock, wild beasts, creeping things, and mankind.",
@@ -1397,52 +1709,81 @@
     "depth": 0.9,
     "entrance": "typewriter",
     "exit": "slide_right",
-    "hold_motion": "still",
+    "hold_motion": "pan",
     "fx": "fade",
     "hit_times": [
       238.051
     ],
-    "index": 44
+    "index": 55
   },
   {
-    "text": "Everything on dry land that carried the breath of life came to its end.",
+    "text": "Everything on dry land",
     "start": 242.56,
-    "last_end": 248.78,
+    "last_end": 243.49,
     "lines": [
-      "Everything on dry land",
-      "that carried the breath of life came to its end."
+      "Everything on dry land"
     ],
-    "end": 249.18,
-    "font": "archivo",
+    "end": 243.49,
+    "font": "cinzel",
     "fonts": [
-      "archivo"
+      "cinzel"
     ],
     "emphasis": [],
-    "size": 1.0,
-    "layout": "top",
+    "size": 0.7,
+    "layout": "diagonal",
     "anchor": [
-      0.5,
-      0.06
+      0.1,
+      0.2
     ],
     "depth": 0.9,
-    "entrance": "slide_right",
-    "exit": "fade",
-    "hold_motion": "push",
-    "fx": "typewriter",
+    "entrance": "ink",
+    "exit": "slide_below",
+    "hold_motion": "still",
+    "fx": "ink",
     "hit_times": [
       243.02
     ],
-    "index": 45
+    "index": 56
   },
   {
-    "text": "The waters covered what once had been fields, roads, homes, and living ground.",
-    "start": 249.31,
-    "last_end": 256.96,
+    "text": "That carried the breath of life came to its end.",
+    "start": 243.49,
+    "last_end": 248.78,
     "lines": [
-      "The waters covered what once had been fields,",
-      "roads, homes, and living ground."
+      "That carried the breath of",
+      "life came to its end."
     ],
-    "end": 257.14,
+    "end": 249.18,
+    "font": "dirt",
+    "fonts": [
+      "dirt"
+    ],
+    "emphasis": [],
+    "size": 1.0,
+    "layout": "left",
+    "anchor": [
+      0.06,
+      0.16
+    ],
+    "depth": 0.9,
+    "entrance": "zoom",
+    "exit": "fade",
+    "hold_motion": "drift",
+    "fx": "typewriter",
+    "hit_times": [
+      243.554
+    ],
+    "index": 57
+  },
+  {
+    "text": "The waters covered what once had been fields,",
+    "start": 249.31,
+    "last_end": 253.82,
+    "lines": [
+      "The waters covered what",
+      "once had been fields,"
+    ],
+    "end": 254.0,
     "font": "archivo",
     "fonts": [
       "archivo"
@@ -1455,22 +1796,80 @@
       0.2
     ],
     "depth": 0.9,
-    "entrance": "wipe",
-    "exit": "slide_below",
+    "entrance": "slide_right",
+    "exit": "blur",
     "hold_motion": "still",
     "fx": "fade",
     "hit_times": [
       249.615
     ],
-    "index": 46
+    "index": 58
   },
   {
-    "text": "Every living thing upon the face of the earth was swept away.",
+    "text": "Roads, homes, and living ground.",
+    "start": 254.0,
+    "last_end": 256.96,
+    "lines": [
+      "Roads, homes, and living ground."
+    ],
+    "end": 257.14,
+    "font": "cinzel",
+    "fonts": [
+      "cinzel"
+    ],
+    "emphasis": [],
+    "size": 0.7,
+    "layout": "bottom",
+    "anchor": [
+      0.08,
+      0.62
+    ],
+    "depth": 0.9,
+    "entrance": "blur",
+    "exit": "slide_left",
+    "hold_motion": "still",
+    "fx": "ink",
+    "hit_times": [
+      254.026
+    ],
+    "index": 59
+  },
+  {
+    "text": "Every living thing upon the face of the earth",
     "start": 257.14,
+    "last_end": 262.62,
+    "lines": [
+      "Every living thing upon",
+      "the face of the earth"
+    ],
+    "end": 262.79,
+    "font": "dirt",
+    "fonts": [
+      "dirt"
+    ],
+    "emphasis": [],
+    "size": 1.0,
+    "layout": "bottom",
+    "anchor": [
+      0.08,
+      0.62
+    ],
+    "depth": 0.42,
+    "entrance": "slide_right",
+    "exit": "blur",
+    "hold_motion": "push",
+    "fx": "typewriter",
+    "hit_times": [
+      257.3
+    ],
+    "index": 60
+  },
+  {
+    "text": "Was swept away.",
+    "start": 262.79,
     "last_end": 264.5,
     "lines": [
-      "Every living thing upon the face",
-      "of the earth was swept away."
+      "Was swept away."
     ],
     "end": 264.68,
     "font": "stencil",
@@ -1486,50 +1885,109 @@
     ],
     "depth": 0.9,
     "entrance": "shake",
-    "exit": "slide_below",
-    "hold_motion": "pan",
+    "exit": "slide_left",
+    "hold_motion": "still",
     "fx": "glitch",
     "hit_times": [
-      257.834
+      264.452
     ],
-    "index": 47
+    "index": 61
   },
   {
-    "text": "Man and beast, creeping thing and bird, all were taken from the land.",
+    "text": "Man and beast, creeping thing and bird,",
     "start": 264.68,
-    "last_end": 268.58,
+    "last_end": 266.56,
     "lines": [
-      "Man and beast, creeping thing and bird,",
-      "all were taken from the land."
+      "Man and beast, creeping thing and bird,"
     ],
-    "end": 268.72,
-    "font": "dirt",
+    "end": 266.62,
+    "font": "archivo",
     "fonts": [
-      "dirt"
+      "archivo"
     ],
     "emphasis": [],
     "size": 1.0,
-    "layout": "bottom",
+    "layout": "top",
     "anchor": [
-      0.08,
-      0.62
+      0.5,
+      0.06
     ],
-    "depth": 0.42,
-    "entrance": "wipe",
+    "depth": 0.9,
+    "entrance": "zoom",
     "exit": "blur",
-    "hold_motion": "still",
-    "fx": "typewriter",
+    "hold_motion": "pan",
+    "fx": "fade",
     "hit_times": [
       264.986
     ],
-    "index": 48
+    "index": 62
   },
   {
-    "text": "Only Noah remained, and those who were with him inside the ark.",
+    "text": "All were taken from the land.",
+    "start": 266.62,
+    "last_end": 268.58,
+    "lines": [
+      "All were taken from the land."
+    ],
+    "end": 268.72,
+    "font": "cormorant",
+    "fonts": [
+      "cormorant"
+    ],
+    "emphasis": [],
+    "size": 0.7,
+    "layout": "center",
+    "anchor": [
+      0.5,
+      0.16
+    ],
+    "depth": 0.9,
+    "entrance": "fade",
+    "exit": "zoom",
+    "hold_motion": "still",
+    "fx": "ink",
+    "hit_times": [
+      266.635
+    ],
+    "index": 63
+  },
+  {
+    "text": "Only Noah remained, and those who were",
     "start": 268.72,
+    "last_end": 271.84,
+    "lines": [
+      "Only Noah remained, and those who were"
+    ],
+    "end": 271.84,
+    "font": "cinzel",
+    "fonts": [
+      "cinzel",
+      "bebas"
+    ],
+    "emphasis": [
+      "noah"
+    ],
+    "size": 0.7,
+    "layout": "right",
+    "anchor": [
+      0.94,
+      0.18
+    ],
+    "depth": 0.9,
+    "entrance": "ink",
+    "exit": "slide_below",
+    "hold_motion": "still",
+    "fx": "ink",
+    "hit_times": [
+      268.841
+    ],
+    "index": 64
+  },
+  {
+    "text": "with him inside the ark.",
+    "start": 271.84,
     "last_end": 275.16,
     "lines": [
-      "Only Noah remained, and those who were",
       "with him inside the ark."
     ],
     "end": 275.19,
@@ -1539,24 +1997,23 @@
       "bebas"
     ],
     "emphasis": [
-      "noah",
       "ark"
     ],
     "size": 0.7,
-    "layout": "left",
+    "layout": "center",
     "anchor": [
-      0.06,
+      0.5,
       0.16
     ],
     "depth": 0.9,
     "entrance": "tracking",
     "exit": "wipe",
-    "hold_motion": "still",
+    "hold_motion": "drift",
     "fx": "ink",
     "hit_times": [
-      268.841
+      272.138
     ],
-    "index": 49
+    "index": 65
   },
   {
     "text": "Above them, the waters still moved.",
@@ -1577,15 +2034,15 @@
       0.5,
       0.06
     ],
-    "depth": 0.9,
+    "depth": 0.42,
     "entrance": "tracking",
     "exit": "slide_right",
-    "hold_motion": "travel",
+    "hold_motion": "still",
     "fx": "ink",
     "hit_times": [
       275.412
     ],
-    "index": 50
+    "index": 66
   },
   {
     "text": "Around them, the old world was gone.",
@@ -1609,22 +2066,21 @@
     "depth": 0.9,
     "entrance": "fade",
     "exit": "slide_left",
-    "hold_motion": "still",
+    "hold_motion": "travel",
     "fx": "ink",
     "hit_times": [
       278.709
     ],
-    "index": 51
+    "index": 67
   },
   {
-    "text": "For one hundred and fifty days, the waters remained strong upon the earth.",
+    "text": "For one hundred and fifty days,",
     "start": 283.96,
-    "last_end": 292.27,
+    "last_end": 289.37,
     "lines": [
-      "For one hundred and fifty days,",
-      "the waters remained strong upon the earth."
+      "For one hundred and fifty days,"
     ],
-    "end": 292.66999999999996,
+    "end": 289.37,
     "font": "cormorant",
     "fonts": [
       "cormorant"
@@ -1637,14 +2093,43 @@
       0.16
     ],
     "depth": 0.9,
-    "entrance": "tracking",
-    "exit": "wipe",
-    "hold_motion": "push",
+    "entrance": "fade",
+    "exit": "slide_left",
+    "hold_motion": "still",
     "fx": "ink",
     "hit_times": [
       284.189
     ],
-    "index": 52
+    "index": 68
+  },
+  {
+    "text": "The waters remained strong upon the earth.",
+    "start": 289.37,
+    "last_end": 292.27,
+    "lines": [
+      "The waters remained strong upon the earth."
+    ],
+    "end": 292.66999999999996,
+    "font": "cinzel",
+    "fonts": [
+      "cinzel"
+    ],
+    "emphasis": [],
+    "size": 0.7,
+    "layout": "bottom",
+    "anchor": [
+      0.08,
+      0.62
+    ],
+    "depth": 0.9,
+    "entrance": "blur",
+    "exit": "slide_left",
+    "hold_motion": "still",
+    "fx": "ink",
+    "hit_times": [
+      289.739
+    ],
+    "index": 69
   },
   {
     "text": "No mountain stood above them.",
@@ -1668,12 +2153,12 @@
     "depth": 0.9,
     "entrance": "blur",
     "exit": "wipe",
-    "hold_motion": "still",
+    "hold_motion": "pan",
     "fx": "ink",
     "hit_times": [
       293.013
     ],
-    "index": 53
+    "index": 70
   },
   {
     "text": "No field broke through.",
@@ -1694,7 +2179,7 @@
       0.06,
       0.16
     ],
-    "depth": 0.42,
+    "depth": 0.9,
     "entrance": "tracking",
     "exit": "wipe",
     "hold_motion": "still",
@@ -1702,7 +2187,7 @@
     "hit_times": [
       295.219
     ],
-    "index": 54
+    "index": 71
   },
   {
     "text": "No road returned.",
@@ -1723,15 +2208,15 @@
       0.1,
       0.2
     ],
-    "depth": 0.9,
+    "depth": 0.42,
     "entrance": "blur",
     "exit": "wipe",
-    "hold_motion": "pan",
+    "hold_motion": "drift",
     "fx": "ink",
     "hit_times": [
       297.401
     ],
-    "index": 55
+    "index": 72
   },
   {
     "text": "No human voice answered outside.",
@@ -1760,7 +2245,7 @@
     "hit_times": [
       299.003
     ],
-    "index": 56
+    "index": 73
   },
   {
     "text": "Only the ark remained upon the endless waters,",
@@ -1788,44 +2273,73 @@
     "depth": 0.9,
     "entrance": "fade",
     "exit": "zoom",
-    "hold_motion": "drift",
+    "hold_motion": "still",
     "fx": "ink",
     "hit_times": [
       301.813
     ],
-    "index": 57
+    "index": 74
   },
   {
-    "text": "Carrying Noah, his household,",
+    "text": "Carrying Noah,",
     "start": 306.69,
-    "last_end": 308.41,
+    "last_end": 307.58,
     "lines": [
-      "Carrying Noah, his household,"
+      "Carrying Noah,"
     ],
-    "end": 308.41,
-    "font": "cinzel",
+    "end": 307.58,
+    "font": "cormorant",
     "fonts": [
-      "cinzel",
+      "cormorant",
       "bebas"
     ],
     "emphasis": [
       "noah"
     ],
     "size": 0.7,
-    "layout": "right",
+    "layout": "bottom",
     "anchor": [
-      0.94,
-      0.18
+      0.08,
+      0.62
     ],
     "depth": 0.9,
-    "entrance": "ink",
-    "exit": "fade",
-    "hold_motion": "still",
+    "entrance": "fade",
+    "exit": "zoom",
+    "hold_motion": "travel",
     "fx": "ink",
     "hit_times": [
       306.759
     ],
-    "index": 58
+    "index": 75
+  },
+  {
+    "text": "His household,",
+    "start": 307.58,
+    "last_end": 308.41,
+    "lines": [
+      "His household,"
+    ],
+    "end": 308.41,
+    "font": "cormorant",
+    "fonts": [
+      "cormorant"
+    ],
+    "emphasis": [],
+    "size": 0.7,
+    "layout": "top",
+    "anchor": [
+      0.5,
+      0.06
+    ],
+    "depth": 0.9,
+    "entrance": "tracking",
+    "exit": "wipe",
+    "hold_motion": "still",
+    "fx": "ink",
+    "hit_times": [
+      307.873
+    ],
+    "index": 76
   },
   {
     "text": "And the living creatures God had preserved within.",
@@ -1853,12 +2367,12 @@
     "depth": 0.9,
     "entrance": "tracking",
     "exit": "wipe",
-    "hold_motion": "still",
+    "hold_motion": "push",
     "fx": "ink",
     "hit_times": [
       308.965
     ],
-    "index": 59
+    "index": 77
   },
   {
     "text": "The rain had fallen.",
@@ -1882,12 +2396,12 @@
     "depth": 0.42,
     "entrance": "ink",
     "exit": "slide_below",
-    "hold_motion": "push",
+    "hold_motion": "still",
     "fx": "light_sweep",
     "hit_times": [
       311.705
     ],
-    "index": 60
+    "index": 78
   },
   {
     "text": "The earth was covered.",
@@ -1916,7 +2430,7 @@
     "hit_times": [
       312.796
     ],
-    "index": 61
+    "index": 79
   },
   {
     "text": "The judgment had come.",
@@ -1940,12 +2454,12 @@
     "depth": 0.9,
     "entrance": "blur",
     "exit": "slide_left",
-    "hold_motion": "pan",
+    "hold_motion": "drift",
     "fx": "ink",
     "hit_times": [
       316.627
     ],
-    "index": 62
+    "index": 80
   },
   {
     "text": "And beneath a darkened heaven, the waters still prevailed.",
@@ -1978,6 +2492,6 @@
     "hit_times": [
       319.39
     ],
-    "index": 63
+    "index": 81
   }
 ]

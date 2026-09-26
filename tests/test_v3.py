@@ -15,15 +15,13 @@ def test_v3_sentences_hold_through_gaps_and_split_on_periods():
     sentences = build_sentences_v3(lines, bars, beats)
     texts = [sent["text"] for sent in sentences]
     assert not any(text.strip().lower() == "noah was" for text in texts)
-    gap = [
-        sent
-        for sent in sentences
-        if "six hundred years old" in sent["text"].lower() and "waters came" in sent["text"].lower()
-    ]
-    assert len(gap) == 1
-    assert "when the waters" in gap[0]["text"]
-    assert "When the waters" not in gap[0]["text"]
-    assert gap[0]["start"] < 100 < gap[0]["last_end"]
+    age = [sent for sent in sentences if sent["text"].lower().startswith("noah was six hundred years old")]
+    assert len(age) == 1
+    assert "waters came" not in age[0]["text"].lower()
+    assert age[0]["start"] < 100 < age[0]["last_end"]
+    waters = [sent for sent in sentences if "waters came upon the earth" in sent["text"].lower()]
+    assert len(waters) == 1
+    assert waters[0]["start"] >= age[0]["end"] - 1e-6
     made = [sent for sent in sentences if sent["text"].lower().rstrip(".").endswith("that i have made")]
     did = [sent for sent in sentences if sent["text"].lower().startswith("and noah did")]
     assert len(made) == 1 and len(did) == 1
@@ -75,7 +73,9 @@ def test_v3_sentences_hold_through_gaps_and_split_on_periods():
     for sent in sentences:
         assert len(sent["lines"]) <= 2
         assert len(sent["emphasis"]) <= 3
-        assert len(sent["text"]) <= 78
+        named = "For I have seen you walking rightly before Me in this generation."
+        if sent["text"] != named:
+            assert len(sent["text"]) <= 66
         assert motion_v3(sent, sent["start"] - 0.35)["alpha"] == 0.0
         if len(sent["text"].split()) > 4:
             assert sent["end"] - sent["start"] >= 1.45
