@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "id": "internal-genesis1-whale-word-composite",
+  "title": "A creature forms beneath its spoken name",
+  "source": {
+    "kind": "internal",
+    "path": "/Volumes/DATA/ArkRender/genesis1/genesis1-breath-earth-v1.mp4",
+    "projectPath": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/project.json",
+    "start": 195.35,
+    "end": 203.5,
+    "sectionIds": [
+      "g1-l057",
+      "g1-l058",
+      "g1-l059"
+    ],
+    "videoSha256": "b946c097f0902c0f3b4eda3a330aceca2ef893c29bd5a7eb511cc34101d130db"
+  },
+  "intent": [
+    "creation",
+    "material acquiring identity",
+    "spoken command",
+    "great whales"
+  ],
+  "tags": [
+    "organic line art",
+    "generated video integration",
+    "typography foreground",
+    "whale",
+    "bone and rust",
+    "contour continuity"
+  ],
+  "motion": {
+    "summary": "Loose bone filaments form a whale behind the measured canonical words; authored foreground strokes continue the same material into the frame.",
+    "phases": [
+      "Loose filaments appear beneath the preceding command.",
+      "A coherent whale resolves as its name is sung.",
+      "The recognizable form continues breathing while the next creature phrase begins."
+    ],
+    "transferablePrinciple": "Use generated motion for organic topology and authored exact type for words, joining them with a common contour vocabulary.",
+    "variations": [
+      "Resolve root filaments into a tree beneath a separately timed growth command.",
+      "Gather star trails into a night sky with exact lyric stations."
+    ],
+    "cautions": [
+      "Generate new scene artwork; never recycle this whale across unrelated passages.",
+      "Sparse frames do not certify motion smoothness or vocal synchronization.",
+      "Fine generated strokes need matched brightness and a continuous native last frame."
+    ]
+  },
+  "quality": {
+    "status": "observed",
+    "reviewer": "Rook; six actual encoded film frames at195.6,196.8,198,199.55,200.9,202.3seconds",
+    "userPreference": "unknown",
+    "userPreferenceScope": "Shane chose the overall Breath & Earth direction, not this extracted moment.",
+    "strengths": [
+      "The same sparse bone contours become a recognizable animal behind a separate, readable GREAT WHALES lyric.",
+      "Foreground contour strokes cross the video boundary without a rectangular cutaway.",
+      "Large cream words retain priority over thin animal lines and rust accents."
+    ],
+    "limitations": [
+      "Six still samples demonstrate composition and transformation stages, not complete motion smoothness or vocal-sync certification.",
+      "Generated source24fps is embedded in30fps1080p output.",
+      "The contour vocabulary supports one short creation passage; repeated use would dilute its effect."
+    ]
+  },
+  "frames": [
+    {
+      "path": "images/internal-genesis1-whale-word-composite/frame-01.jpg",
+      "timeSeconds": 195.6,
+      "sha256": "aff6dbd2c072fc7547668ec398f71b4c1e6616bc4f00e0ec7f8d62cdb70f6dfa"
+    },
+    {
+      "path": "images/internal-genesis1-whale-word-composite/frame-02.jpg",
+      "timeSeconds": 196.8,
+      "sha256": "eaee1baba4e1704183c73ddb320af8b2109d20a358d837037ebc17ee493485ce"
+    },
+    {
+      "path": "images/internal-genesis1-whale-word-composite/frame-03.jpg",
+      "timeSeconds": 198,
+      "sha256": "83ce30ebdc6c0e85cd940a4dc8016657859bf534eb81e6dd1e7eeb9c0ad28184"
+    },
+    {
+      "path": "images/internal-genesis1-whale-word-composite/frame-04.jpg",
+      "timeSeconds": 199.55,
+      "sha256": "5caa2a2e68f3527f891719eea20c4cfca0e3af7efa41e0f8fb94feffa7198d02"
+    },
+    {
+      "path": "images/internal-genesis1-whale-word-composite/frame-05.jpg",
+      "timeSeconds": 200.9,
+      "sha256": "a43463a331e188bab78da5e6c9368d45552fe9620a621ef13d580fa855bf0206"
+    },
+    {
+      "path": "images/internal-genesis1-whale-word-composite/frame-06.jpg",
+      "timeSeconds": 202.3,
+      "sha256": "ef5ee59f9f1c62f75b84463c24325532ba5a782f97234b028062b2ef3f326e61"
+    }
+  ],
+  "contactSheet": "images/internal-genesis1-whale-word-composite/sheet.jpg",
+  "capture": {
+    "method": "ffmpeg-frame-sequence-v1",
+    "videoDuration": 304.733333,
+    "fps": 30,
+    "sampledFrames": 6,
+    "contactSheetSha256": "f6b21c4a80a3c3dd1f9ced2f4206e9426c060446976691fed38abe69d399992b"
+  }
+}
