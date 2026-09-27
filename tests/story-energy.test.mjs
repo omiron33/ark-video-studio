@@ -8,8 +8,8 @@ const modes=['fracture','vortex','scorch','eclipse','lineage','strings'];
 function fixture(mode='fracture',kinetic='strike'){
  return {width:480,height:270,fps:30,duration:4,title:'The Brother’s Blood',palette:{ink:'#080a0c',paper:'#d4c9b6',accent:'#a64831'},words:[{id:'a',text:'Blood',start:.3,end:1},{id:'b',text:'cries',start:1.1,end:1.65},{id:'c',text:'from',start:1.8,end:2.1},{id:'d',text:'earth',start:2.2,end:3.1}],beats:[],sections:[{id:'scene',start:0,end:4,style:'story',wordIds:['a','b','c','d'],assetIds:[],seed:9,direction:{mode,kinetic,gritty:true,heroIds:['a','d'],lines:[['a','b'],['c','d']]}}]};
 }
-function raster(project,t,layer='all'){
- const c=createCanvas(480,270),ctx=c.getContext('2d');drawFrame(ctx,project,{},t,{layer});return Buffer.from(ctx.getImageData(0,0,480,270).data);
+function raster(project,t,layer='all',assets={}){
+ const c=createCanvas(480,270),ctx=c.getContext('2d');drawFrame(ctx,project,assets,t,{layer});return Buffer.from(ctx.getImageData(0,0,480,270).data);
 }
 test('new line families progress immediately and remain deterministic under random seeking',()=>{
  const signatures=[];
@@ -56,4 +56,21 @@ test('plucked strings react to canonical word attacks and settle without invente
  assert.deepEqual(raster(p,.29,'background'),raster(silent,.29,'background'),'no pluck before first word');
  assert.notDeepEqual(raster(p,1.15,'background'),raster(silent,1.15,'background'),'word onset excites the string');
  assert.deepEqual(raster(p,3.8,'background'),raster(silent,3.8,'background'),'strings rest once actual attacks decay');
+});
+test('red-black-white photo grade removes chroma while preserving highlight and shadow separation',()=>{
+ const p=fixture(),image=createCanvas(1920,1080),c=image.getContext('2d');
+ for(const [i,color]of ['#0020ff','#00dd30','#ffffff','#000000'].entries()){c.fillStyle=color;c.fillRect(i*480,0,480,1080);}
+ p.sections[0].direction={photo:'photo',mode:'statement',colorGrade:'red-black-white'};
+ const pixels=raster(p,1,'background',{photo:image}),plain=structuredClone(p);delete plain.sections[0].direction.colorGrade;
+ const original=raster(plain,1,'background',{photo:image}),rgb=(data,x)=>Array.from(data.subarray((135*480+x)*4,(135*480+x)*4+3));
+ const chroma=channels=>Math.max(...channels)-Math.min(...channels),mean=channels=>channels.reduce((a,b)=>a+b)/3;
+ for(const x of [65,185])assert.ok(chroma(rgb(pixels,x))<chroma(rgb(original,x))*.3,'blue/green photographic hue is removed');
+ assert.ok(mean(rgb(pixels,300))>180,'white light stays luminous');assert.ok(mean(rgb(pixels,415))<8,'black remains deep');
+ assert.ok(rgb(pixels,185)[0]>=rgb(pixels,185)[2],'midtone tint is red rather than blue');
+ assert.deepEqual(raster(p,1,'type',{photo:image}),raster(plain,1,'type',{photo:image}),'grade leaves lyric layer untouched');
+});
+test('red-black-white procedural ground is neutral and remains opt-in',()=>{
+ const p=fixture();p.palette.ink='#000000';p.sections[0].direction.graphicStrength=0;p.sections[0].direction.label='';p.sections[0].direction.colorGrade='red-black-white';
+ const pixels=raster(p,.1,'background'),i=(140*480+240)*4;assert.equal(pixels[i],pixels[i+1]);assert.equal(pixels[i+1],pixels[i+2]);
+ delete p.sections[0].direction.colorGrade;const legacy=raster(p,.1,'background');assert.ok(legacy[i+2]>legacy[i],'existing cool ground retains its prior appearance');
 });
