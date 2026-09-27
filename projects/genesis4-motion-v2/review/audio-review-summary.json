@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "sourceReport": {
+    "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/audio-final/audio-review.json",
+    "sha256": "2aa198d980a1f01c930fc93e4e3c5865090f88735fe7f60e4d5eb70615f4e53c",
+    "bytes": 1714160
+  },
+  "binding": {
+    "videoSha256": "21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777",
+    "projectHash": "6175e69248abc8b9e640ee850ad0bec66f13b0d1eaf5cf6ad50ef30d549cf4c5",
+    "audioSha256": "c26b0dfd26850b091b408953120f2a0e07188f7415c6b03792320bf2b422cc2b"
+  },
+  "status": "failed",
+  "methods": [
+    "Decoded mono PCM correlation and lag search across the exact source interval",
+    "Independent local Whisper base.en and small.en lyric recognition",
+    "Official local wav2vec2 CTC forced alignment with explicit instrumental blank states",
+    "Source versus AAC-decoded acoustic alignment stability",
+    "Official lyrics: independent base and large wav2vec2 checkpoints with paired onset AND end agreement; transparent ASR lexical disagreement"
+  ],
+  "checks": [
+    {
+      "id": "decoded_audio_match",
+      "passed": true,
+      "threshold": {
+        "minCorrelation": 0.985,
+        "minSegmentCorrelation": 0.97,
+        "maxAbsoluteGainDb": 0.75
+      },
+      "measured": {
+        "correlation": 0.999583,
+        "minSegmentCorrelation": 0.998018,
+        "gainDb": -0.026246,
+        "segmentsCount": 156
+      }
+    },
+    {
+      "id": "audio_offset",
+      "passed": true,
+      "threshold": {
+        "maxAbsoluteSeconds": 0.035
+      },
+      "measured": {
+        "offsetSeconds": 0
+      }
+    },
+    {
+      "id": "audio_duration",
+      "passed": true,
+      "threshold": {
+        "maxErrorSeconds": 0.08
+      },
+      "measured": {
+        "encodedSeconds": 312,
+        "sourceSeconds": 312,
+        "expectedSeconds": 312
+      }
+    },
+    {
+      "id": "lyric_phrase_match",
+      "passed": false,
+      "threshold": {
+        "policy": "Literal supplied lyrics preserved; every word requires independent paired acoustic evidence and AAC stability",
+        "minDualCtcConfidence": 0.7,
+        "maxSourceOnsetSpread": 0.08,
+        "maxSourceEndSpread": 0.12,
+        "minRecognitionProbability": 0.6,
+        "maxRecognitionOnsetDelta": 0.25,
+        "maxRecognitionEndDelta": 0.25
+      },
+      "measured": {
+        "error": null,
+        "canonicalTextReconciled": false,
+        "windowsCount": 13
+      }
+    },
+    {
+      "id": "word_sync",
+      "passed": false,
+      "threshold": {
+        "maxCueDelta": 0.04,
+        "maxEndDelta": 0.08,
+        "minWordAcousticConfidence": 0.2,
+        "minMeanAcousticConfidence": 0.55,
+        "maxCodecAlignmentSpread": 0.12,
+        "maxCrossModelBoundaryDelta": 0.45
+      },
+      "measured": {
+        "wordCount": 498,
+        "verifiedWords": 246,
+        "maxCueDelta": 2.265936,
+        "maxEndDelta": 2.446361,
+        "meanAcousticConfidence": 0.548848,
+        "error": null,
+        "unsupportedWordsCount": 243,
+        "repairsCount": 246
+      }
+    }
+  ],
+  "projectChanged": false,
+  "attemptCount": 89,
+  "repairProposalCount": 246,
+  "cache": {
+    "directory": "/Volumes/Code/ark-video-studio/projects/genesis4-motion-v2/.review-cache/audio",
+    "hits": 89,
+    "misses": 0,
+    "rejectedEntries": 0
+  },
+  "limitations": [
+    "Machine evidence assesses content, sample alignment and word boundaries; it does not claim subjective hearing or mathematical perfection.",
+    "CTC model is English speech trained; low-confidence sung words fail and trigger bounded retries.",
+    "Summary omits per-word acoustic evidence and inference outputs; original report remains at sourceReport.path with the recorded hash. Repair proposals were not applied in this targeted visual revision."
+  ]
+}

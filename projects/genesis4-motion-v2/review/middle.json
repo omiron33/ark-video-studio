@@ -1,0 +1,198 @@
+{
+  "videoSha256": "cff53abfbc97b66a63da169bd8a2f5cd63e9ff3ea591ed1f17f6675dfc415782",
+  "scope": {
+    "sceneIndexes": [
+      28,
+      55
+    ],
+    "start": 105.13333333333334,
+    "end": 205.76666666666668,
+    "sceneCount": 28
+  },
+  "method": "Visual inspection of every assigned chronological scene sheet from the actual final encoded video, plus three individual encoded frames for overlap and short final-word confirmation. Scene sheets were generated from a 6 fps decode; this review inspected their selected chronological samples, not every decoded frame. Compared visible progression and active words against the supplied manifest. No audio listening or auditory sync judgment.",
+  "passed": false,
+  "scores": {
+    "lyricLegibility": 7.5,
+    "semanticMotion": 8.6,
+    "photorealism": 8.8,
+    "composition": 7.8,
+    "continuity": 8.4
+  },
+  "issues": [
+    {
+      "severity": "blocking",
+      "sceneId": "g4-scene-037",
+      "sceneIndex": 35,
+      "start": 125.8,
+      "end": 128.3,
+      "description": "camera-spiral leaves TAKE/YOUR at full opacity intersecting BROTHER'S across its reveal and reading hold. Both rows collide vertically; confirmed in full encoded frame at approximately 126.667 seconds. Separate the rows or fade the completed preceding row before it intersects the current row.",
+      "evidence": [
+        "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/35-g4-scene-037.jpg",
+        "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/frames/frame-00761.jpg"
+      ]
+    }
+  ],
+  "observations": [
+    "The repaired 105\u2013108 second tunnel shows WHERE IS ABEL then YOUR BROTHER? at readable size without near-plane clipping.",
+    "Every assigned scene sheet was inspected. No additional blocking text crop, missing word or unwanted illustration was found.",
+    "The short ME after KILL and SO after NOT are visible in individual encoded frames; the sparse overview sheet happened to miss them.",
+    "Camera rail, hinge, canyon, horizon, stairwell and braid alternate with calmer semantic holds; pacing is not uniformly frenetic. Photo contexts remain visible behind the lyrics."
+  ],
+  "evidenceinspected": [
+    {
+      "sceneIndex": 28,
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/28-g4-scene-029.jpg",
+      "sampleCount": 8
+    },
+    {
+      "sceneIndex": 29,
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/29-g4-scene-030.jpg",
+      "sampleCount": 8
+    },
+    {
+      "sceneIndex": 30,
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/30-g4-scene-031.jpg",
+      "sampleCount": 8
+    },
+    {
+      "sceneIndex": 31,
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/31-g4-scene-032.jpg",
+      "sampleCount": 8
+    },
+    {
+      "sceneIndex": 32,
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/32-g4-scene-033.jpg",
+      "sampleCount": 8
+    },
+    {
+      "sceneIndex": 33,
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/33-g4-scene-035.jpg",
+      "sampleCount": 8
+    },
+    {
+      "sceneIndex": 34,
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/34-g4-scene-036.jpg",
+      "sampleCount": 5
+    },
+    {
+      "sceneIndex": 35,
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/35-g4-scene-037.jpg",
+      "sampleCount": 8
+    },
+    {
+      "sceneIndex": 36,
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/36-g4-scene-039.jpg",
+      "sampleCount": 8
+    },
+    {
+      "sceneIndex": 37,
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/37-g4-scene-040.jpg",
+      "sampleCount": 8
+    },
+    {
+      "sceneIndex": 38,
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/38-g4-scene-041.jpg",
+      "sampleCount": 8
+    },
+    {
+      "sceneIndex": 39,
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/39-g4-scene-042.jpg",
+      "sampleCount": 8
+    },
+    {
+      "sceneIndex": 40,
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/40-g4-scene-043.jpg",
+      "sampleCount": 8
+    },
+    {
+      "sceneIndex": 41,
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/41-g4-scene-044.jpg",
+      "sampleCount": 8
+    },
+    {
+      "sceneIndex": 42,
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/42-g4-scene-046.jpg",
+      "sampleCount": 8
+    },
+    {
+      "sceneIndex": 43,
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/43-g4-scene-047.jpg",
+      "sampleCount": 8
+    },
+    {
+      "sceneIndex": 44,
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/44-g4-scene-048.jpg",
+      "sampleCount": 8
+    },
+    {
+      "sceneIndex": 45,
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/45-g4-scene-049.jpg",
+      "sampleCount": 8
+    },
+    {
+      "sceneIndex": 46,
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/46-g4-scene-050.jpg",
+      "sampleCount": 8
+    },
+    {
+      "sceneIndex": 47,
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/47-g4-scene-051.jpg",
+      "sampleCount": 8
+    },
+    {
+      "sceneIndex": 48,
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/48-g4-scene-052.jpg",
+      "sampleCount": 7
+    },
+    {
+      "sceneIndex": 49,
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/49-g4-scene-053.jpg",
+      "sampleCount": 8
+    },
+    {
+      "sceneIndex": 50,
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/50-g4-scene-054.jpg",
+      "sampleCount": 8
+    },
+    {
+      "sceneIndex": 51,
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/51-g4-scene-055.jpg",
+      "sampleCount": 8
+    },
+    {
+      "sceneIndex": 52,
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/52-g4-rest-50-a.jpg",
+      "sampleCount": 8
+    },
+    {
+      "sceneIndex": 53,
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/53-g4-rest-50-b.jpg",
+      "sampleCount": 8
+    },
+    {
+      "sceneIndex": 54,
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/54-g4-scene-056.jpg",
+      "sampleCount": 8
+    },
+    {
+      "sceneIndex": 55,
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/55-g4-scene-059.jpg",
+      "sampleCount": 8
+    },
+    {
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/frames/frame-00761.jpg"
+    },
+    {
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/frames/frame-01013.jpg"
+    },
+    {
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/frames/frame-01030.jpg"
+    }
+  ],
+  "limitations": [
+    "No auditory listening or soundtrack-sync certification.",
+    "Subframe or intersample defects cannot be excluded by sampled visual review.",
+    "Reviewer authored the semantic choreography module, but not the camera choreography where the blocking issue occurs; this is not fully independent authorship for every scene in the range."
+  ],
+  "reviewedAt": "2026-09-27T06:40:58.485887+00:00"
+}

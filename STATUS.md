@@ -1,6 +1,14 @@
 # Current lyric-studio delivery
 
-The latest candidate is **Genesis 4 — The Brother's Blood**, a 5:12 red/black/white kinetic lyric film with 89 scenes, 11 unique photographic backdrops and the requested club struggle. The editable final project is `projects/genesis4-full/project.json`; see [its delivery and review note](projects/genesis4-full/README.md). It is in Mac Photos, synced to iCloud, and stored as OmiPC review candidate `vid-20260927-ab05f77d`. Technical and independent visual checks passed; strict automatic phrase/word timing remains uncertified. The accepted Genesis 7 film remains frozen.
+The latest review candidate is **Genesis 4 — spatial lyric revision v2**, a 5:12, 1080p/30 red/black/white film with 84 sections, 32 new camera/semantic choreographies plus two preserved bespoke treatments, and a new opening photograph with contemporary title type. All 498 canonical word cues, source audio, measured beats, the club struggle and embodied Christophany remain preserved. The editable source is `projects/genesis4-motion-v2/project.json`; see [delivery and review details](projects/genesis4-motion-v2/README.md).
+
+[Download the revised movie](https://omipc.taild60b4e.ts.net/api/admin/videos/vid-20260927-9e73681b/media?download=1) · [OmiPC review page](https://omipc.taild60b4e.ts.net/studio#videos). Candidate `vid-20260927-9e73681b` is pending Shane's review; served SHA-256 matches `21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777`, and byte-range playback returned HTTP 206. The video is imported into Photos album **Genesis 4 - Motion v2**, with native playback verified and the library reporting **Synced to iCloud**. The iPhone itself was not checked.
+
+Technical checks and all three final range visual reviews passed. The full test suite passed 199 tests before a bounded repair; 19 relevant tests passed afterward. Decoded audio matched the original with zero measured offset, but strict automatic phrase/word timing remains uncertified. Raw OCR recognized 494/498 words and remains failed at its 100% threshold; a separate final-frame check found the four missed words visible and unobstructed. These limitations are preserved in the [review archive](projects/genesis4-motion-v2/review/gauntlet-summary.json), not overridden by visual approval.
+
+## Previous Genesis 4 delivery
+
+The original **Genesis 4 — The Brother's Blood** cut is preserved in `projects/genesis4-full/project.json`, with 89 scenes, 11 unique photographic backdrops and the requested club struggle. See [its delivery note](projects/genesis4-full/README.md). It remains in Mac Photos and OmiPC as candidate `vid-20260927-ab05f77d`. Its strict automatic phrase/word timing was also uncertified. The accepted Genesis 7 film remains frozen.
 
 ## Previous accepted Genesis 7 delivery
 

@@ -1,4 +1,7 @@
 /** The long-form film vocabulary. All motion is evaluated from absolute song time. */
+const {CAMERA_CATALOG,drawCameraBackground,drawCameraTypography}=await import(new URL('./camera-choreography.mjs'+new URL(import.meta.url).search,import.meta.url));
+const {SEMANTIC_CATALOG,drawSemanticBackground,drawSemanticTypography}=await import(new URL('./semantic-choreography.mjs'+new URL(import.meta.url).search,import.meta.url));
+export const CHOREOGRAPHY_CATALOG={...CAMERA_CATALOG,...SEMANTIC_CATALOG};
 export const STORY_CATALOG={story:'Authored lyric tableaux and procedural fracture, vortex, scorch, eclipse, lineage and plucked-string line art.'};
 const clamp=(v,a=0,b=1)=>Math.max(a,Math.min(b,v)),mix=(a,b,p)=>a+(b-a)*p;
 const ease=v=>1-Math.pow(1-clamp(v),3),smooth=v=>{v=clamp(v);return v*v*(3-2*v)};
@@ -194,9 +197,13 @@ export function installStoryStyles(register,h){
  }
  function background(c,e){
   const d=e.s.direction,mode=d.mode||'statement',light=d.light===true,fg=light?e.ink:e.paper;
-  if(photo(c,e))return;
+  if(photo(c,e)){
+   if(d.choreography){drawCameraBackground(c,e,h);drawSemanticBackground(c,e,h);}
+   return;
+  }
   c.fillStyle=light?e.paper:e.ink;c.fillRect(0,0,1920,1080);
   if(!light){const g=c.createRadialGradient(960,570,70,960,570,1150);g.addColorStop(0,d.colorGrade==='red-black-white'?'#141414':d.gritty?'#182126':'#12373d');g.addColorStop(1,e.ink);c.fillStyle=g;c.fillRect(0,0,1920,1080)}
+  if(d.choreography&&(drawCameraBackground(c,e,h)||drawSemanticBackground(c,e,h))){h.grain(c,e.t,light);h.label(c,e,light);return;}
   const elapsed=e.t-e.s.start,phase=elapsed*.23;
   c.save();c.globalAlpha=d.graphicStrength??(light?.28:.34);
   if(['fracture','vortex','scorch','eclipse','lineage','strings'].includes(mode)){
@@ -277,9 +284,23 @@ export function installStoryStyles(register,h){
  }
  function typography(c,e){
   const d=e.s.direction,mode=d.mode||'statement',ws=words(e),light=d.light===true,ink=light?e.ink:e.paper;
+  if(ws.length&&d.choreography&&(drawCameraTypography(c,e,h,layout)||drawSemanticTypography(c,e,h,layout)))return;
   if(!ws.length){
    const title=d.title;if(title){const elapsed=e.t-e.s.start,p=ease((elapsed-.3)/1.2),fade=d.fadeOut?smooth((e.s.end-e.t)/2):1;c.save();c.globalAlpha=p*fade;
-    if(d.titleMotion==='chapter'){
+    if(d.titleMotion==='modern-chapter'){
+     // A severe editorial lockup; the landscape and large chapter numeral are
+     // physical planes, not a medieval book-cover title. No lyric is invented.
+     const settle=ease(elapsed/.68),travel=smooth(elapsed/Math.max(1,e.s.end-e.s.start));
+     c.globalAlpha=1;c.save();c.translate(145+(1-settle)*-180,320);c.beginPath();c.rect(0,-190,1150,280);c.clip();
+     h.setFont(c,165,'Archivo Black');c.textAlign='left';c.fillStyle=ink;c.fillText('GENESIS',0,40+(1-settle)*190);c.restore();
+     c.save();c.globalAlpha=.78;c.translate(160+travel*50,845-travel*32);h.setFont(c,450,'Archivo Black');c.textAlign='left';c.fillStyle=ink;c.fillText('4',0,0);c.restore();
+     c.save();c.globalAlpha=.8;stroke(c,[[155,390],[155+920*settle,390]],e.accent,4);stroke(c,[[780,425],[780,425+365*travel]],e.accent,2);c.restore();
+    }else if(d.titleMotion==='editorial-reveal'){
+     const reveal=ease(elapsed/.5),drift=smooth(elapsed/Math.max(1,e.s.end-e.s.start)),rows=String(title).split(/ (?=BLOOD$)/);
+     const family=d.titleFont||'Archivo Black';h.setFont(c,100,family);const size=Math.min(215,1540/Math.max(...rows.map(row=>c.measureText(row).width))*100);
+     rows.forEach((row,i)=>{c.save();c.beginPath();c.rect(150,310+i*260,1620,245);c.clip();h.setFont(c,size,family);c.textAlign=i?'right':'left';c.fillStyle=i?e.accent:ink;c.fillText(row,i?1760-35*drift:160+35*drift,500+i*250+(1-reveal)*260);c.restore();});
+     stroke(c,[[160,840],[160+1600*reveal,840]],e.accent,2);
+    }else if(d.titleMotion==='chapter'){
      const drift=clamp(elapsed/(e.s.end-e.s.start));c.save();c.globalAlpha=.13*p;h.setFont(c,1220,'Cinzel');c.fillStyle=e.accent;c.translate(1380-220*drift,1040-100*drift);c.rotate(-.09+.05*drift);c.fillText('7',0,0);c.restore();
      const letters=[...'GENESIS'],spread=mix(265,205,smooth(drift)),center=960-90*drift;
      h.setFont(c,210,d.titleFont||d.fontFamily||'Cinzel');c.fillStyle=ink;

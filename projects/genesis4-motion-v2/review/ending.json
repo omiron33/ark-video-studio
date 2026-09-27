@@ -1,0 +1,103 @@
+{
+  "videoSha256": "cff53abfbc97b66a63da169bd8a2f5cd63e9ff3ea591ed1f17f6675dfc415782",
+  "scope": {
+    "sceneIndexes": [
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83
+    ],
+    "timeStart": 205.76666666666668,
+    "timeEnd": 312
+  },
+  "method": "Inspected every chronological encoded scene sheet in scope; inspected original decoded frame at 232.833s to verify held word overlap and frame at 268.5s for short Eve cue. Actual final video was decoded at six frames per second. No audio listening performed.",
+  "passed": false,
+  "scores": {
+    "lyricLegibility": 7.8,
+    "semanticMotion": 8.5,
+    "photorealism": 9.0,
+    "composition": 8.3,
+    "continuity": 8.5
+  },
+  "issues": [
+    {
+      "severity": "blocking",
+      "sceneId": "g4-scene-074",
+      "sceneIndex": 65,
+      "start": 232.5,
+      "end": 233.67,
+      "description": "Active red PSALTERY overlaps the preceding white phrase INVENTED THE throughout a held interval. Both share the reading area on adjacent spiral stations.",
+      "evidence": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/frames/frame-01398.jpg",
+      "suggestedResolution": "Fade only the obstructing completed previous phrase when the new reading group enters; preserve current lyrics and camera path."
+    }
+  ],
+  "evidenceInspected": [
+    "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/56-g4-scene-060.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/57-g4-scene-061.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/58-g4-scene-063.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/59-g4-scene-067.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/60-g4-scene-068.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/61-g4-scene-070.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/62-g4-scene-071.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/63-g4-scene-072.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/64-g4-scene-073.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/65-g4-scene-074.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/66-g4-scene-076.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/67-g4-scene-077.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/68-g4-scene-078.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/69-g4-scene-079.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/70-g4-scene-080.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/71-g4-scene-081.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/72-g4-scene-082.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/73-g4-scene-083.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/74-g4-scene-084.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/75-g4-scene-085.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/76-g4-scene-086.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/77-g4-scene-087.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/78-g4-scene-088.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/79-g4-scene-090.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/80-g4-scene-091.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/81-g4-scene-093.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/82-g4-ending-life.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/83-g4-ending-title.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/frames/frame-01398.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual/frames/frame-01612.jpg"
+  ],
+  "observations": [
+    "The 248s KILLED strike is large, unclipped, and settles into a readable composition.",
+    "The revised tunnel at 246-248s preserves WORDS clearly with no old foreground phrase obstruction.",
+    "The 212-221s genealogy camera rail is coherent and held; the author has separately identified authored group boundaries to repair before final release.",
+    "The final photographic childbirth and human Jesus scenes preserve physical photorealism and the accepted light-dark treatment.",
+    "The ending combines camera routes, editorial arrangements, line motifs, and sparse photographic scenes with no repeated cyclic sequence apparent within the assigned range."
+  ],
+  "limitations": [
+    "Visual-only review: no claim of listening, beat synchronization, or acoustic word-sync certification.",
+    "Chronological sheets sample the final encoded video, not every individual frame.",
+    "This judgment binds to the supplied SHA and will need replacement after the identified correction is encoded.",
+    "Reviewer implemented the camera module; root is separately auditing camera scenes."
+  ]
+}

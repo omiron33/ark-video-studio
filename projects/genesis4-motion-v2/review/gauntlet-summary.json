@@ -1,0 +1,593 @@
+{
+  "schemaVersion": 1,
+  "sourceReport": {
+    "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/gauntlet-final/review.json",
+    "sha256": "9d635a8d1990d95449f097d4221d16027ddd7f7d8f84c408e86a6769a757c765",
+    "bytes": 2687577
+  },
+  "binding": {
+    "videoSha256": "21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777",
+    "projectHash": "6175e69248abc8b9e640ee850ad0bec66f13b0d1eaf5cf6ad50ef30d549cf4c5",
+    "rendererHash": "146f0c188dd3da30388fc62012a25fd395be832a6510eaea540b37dd4aa8687d",
+    "revisionHash": "b00e8d06354f986515766ab0e1a47ef1e48b36c6fa77e6203bfbe65e527f8abb"
+  },
+  "status": "machine_audio_review_failed",
+  "technical": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "probe",
+        "passed": true,
+        "observed": "ffprobe completed",
+        "expected": null
+      },
+      {
+        "name": "videoStream",
+        "passed": true,
+        "observed": "h264",
+        "expected": null
+      },
+      {
+        "name": "audioStream",
+        "passed": true,
+        "observed": "aac",
+        "expected": null
+      },
+      {
+        "name": "frameCount",
+        "passed": true,
+        "observed": 9360,
+        "expected": 9360
+      },
+      {
+        "name": "frameRate",
+        "passed": true,
+        "observed": 30.000751220733694,
+        "expected": 30
+      },
+      {
+        "name": "duration",
+        "passed": true,
+        "observed": 311.992188,
+        "expected": 312
+      },
+      {
+        "name": "dimensions",
+        "passed": true,
+        "observed": [
+          1920,
+          1080
+        ],
+        "expected": [
+          1920,
+          1080
+        ]
+      },
+      {
+        "name": "audioDuration",
+        "passed": true,
+        "observed": 312,
+        "expected": 312
+      },
+      {
+        "name": "safeDecode",
+        "passed": true,
+        "observed": "All video and audio packets decoded without errors",
+        "expected": null
+      },
+      {
+        "name": "renderOutputBinding",
+        "passed": true,
+        "observed": "21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777",
+        "expected": "21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777"
+      },
+      {
+        "name": "renderRevisionBinding",
+        "passed": true,
+        "observed": {
+          "start": "b00e8d06354f986515766ab0e1a47ef1e48b36c6fa77e6203bfbe65e527f8abb",
+          "end": "b00e8d06354f986515766ab0e1a47ef1e48b36c6fa77e6203bfbe65e527f8abb"
+        },
+        "expected": "b00e8d06354f986515766ab0e1a47ef1e48b36c6fa77e6203bfbe65e527f8abb"
+      },
+      {
+        "name": "evidenceCapture",
+        "passed": true,
+        "observed": "1814 frames, 83 transition strips",
+        "expected": null
+      },
+      {
+        "name": "unchangedDuringReview",
+        "passed": true,
+        "observed": "b00e8d06354f986515766ab0e1a47ef1e48b36c6fa77e6203bfbe65e527f8abb",
+        "expected": "b00e8d06354f986515766ab0e1a47ef1e48b36c6fa77e6203bfbe65e527f8abb"
+      }
+    ]
+  },
+  "visual": {
+    "status": "approved",
+    "threshold": 8,
+    "rubric": [
+      "lyricLegibility",
+      "semanticMotion",
+      "photorealism",
+      "composition",
+      "continuity"
+    ],
+    "reviews": [
+      {
+        "scope": "visual-only",
+        "reviewer": "Three range reviewers, final encoded-scene recheck",
+        "scores": {
+          "lyricLegibility": 8.7,
+          "semanticMotion": 8.3,
+          "photorealism": 8.8,
+          "composition": 8.5,
+          "continuity": 8.4
+        },
+        "notes": "All84 scenes inspected in chronological encoded sheets and dense frames. Initial review found two held text overlaps; one bounded correction resolved both. All7 changed scenes rechecked on final bytes by3 range reviewers. 77unchanged encoded sections retain exact chunk hash evidence and initial review. Full reports under reviews/{opening,middle,ending}-final.json and changed-sections.json. Some reviewers authored the underlying modules; this is disclosed in their reports. Visual-only judgment; no auditory listening or strict sync certification claimed.",
+        "binding": {
+          "videoSha256": "21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777",
+          "projectHash": "6175e69248abc8b9e640ee850ad0bec66f13b0d1eaf5cf6ad50ef30d549cf4c5",
+          "rendererHash": "146f0c188dd3da30388fc62012a25fd395be832a6510eaea540b37dd4aa8687d",
+          "revisionHash": "b00e8d06354f986515766ab0e1a47ef1e48b36c6fa77e6203bfbe65e527f8abb"
+        },
+        "reviewedAt": "2026-09-27T06:51:41.823Z"
+      }
+    ],
+    "note": "An independent agent or person judges decoded visual evidence. Audio/sync can be verified by the separate local machine-measurement gate; a human listening score is not required. Machine verification does not establish artistic excellence."
+  },
+  "quality": {
+    "technicalVerified": true,
+    "temporalActivityVerified": false,
+    "machineAudioVerified": false,
+    "machineVisualVerified": false,
+    "independentVisualReviewed": true,
+    "machineQualityVerified": false,
+    "syncBasis": "unverified",
+    "aestheticJudgment": "independent_review_passed",
+    "creativePolicyVerified": true
+  },
+  "temporalActivity": {
+    "required": false,
+    "passed": true,
+    "present": false,
+    "errors": []
+  },
+  "creativeDirection": {
+    "required": true,
+    "passed": true,
+    "issues": [],
+    "warnings": [
+      "Scenes through g4-scene-003 sustain flow pacing for at least 20 seconds; inspect the encoded film for monotonous phrasing.",
+      "No supported three-word accent burst is planned; do not invent beats to force one. Review phrase contrast through holds, semantic motion and scene length."
+    ],
+    "artwork": {
+      "policy": "unique-scene-artwork-v1",
+      "passed": true,
+      "status": "passed",
+      "issues": [],
+      "missing": [],
+      "duplicates": [],
+      "assetRequests": [],
+      "limitations": [
+        "SHA-256 detects byte-identical reuse, including renamed/copied files; re-encoded, cropped, or visually similar derivatives still require independent visual review. Fonts, explicitly marked textures/procedural assets, and transition-only dependencies are excluded from scene-artwork reuse counting."
+      ]
+    },
+    "artworkUseCount": 11,
+    "pacing": {
+      "passed": true,
+      "status": "supported-plan",
+      "issues": [],
+      "errors": [],
+      "warnings": [
+        "Scenes through g4-scene-003 sustain flow pacing for at least 20 seconds; inspect the encoded film for monotonous phrasing.",
+        "No supported three-word accent burst is planned; do not invent beats to force one. Review phrase contrast through holds, semantic motion and scene length."
+      ]
+    },
+    "choreography": {
+      "required": true,
+      "passed": true,
+      "issues": [],
+      "counts": {
+        "branching-seed": 3,
+        "camera-micro": 3,
+        "camera-pullback": 2,
+        "balance-offering": 2,
+        "camera-arc": 3,
+        "camera-canyon": 3,
+        "camera-rail": 2,
+        "forge-assembly": 3,
+        "camera-wall": 2,
+        "camera-rack": 2,
+        "refusal-bar": 2,
+        "falling-weight": 3,
+        "camera-stairwell": 2,
+        "camera-dolly": 2,
+        "negative-space": 3,
+        "camera-runway": 2,
+        "split-verdict": 3,
+        "incision": 3,
+        "breath-resolve": 2,
+        "camera-horizon": 2,
+        "camera-switchback": 2,
+        "photographic-club-strike": 1,
+        "photographic-divine-question": 1,
+        "camera-tunnel": 2,
+        "camera-hinge": 3,
+        "echo-cry": 2,
+        "camera-spiral": 2,
+        "string-pluck": 2,
+        "threshold-exile": 3,
+        "word-strike": 2,
+        "tally-vengeance": 3,
+        "fingerprint-mark": 1,
+        "camera-braid": 3,
+        "chain-lineage": 1
+      },
+      "unique": 34,
+      "total": 77,
+      "sequences": [
+        [
+          {
+            "sectionId": "g4-scene-000",
+            "id": "branching-seed"
+          },
+          {
+            "sectionId": "g4-scene-001",
+            "id": "camera-micro"
+          },
+          {
+            "sectionId": "g4-scene-002",
+            "id": "camera-pullback"
+          },
+          {
+            "sectionId": "g4-scene-003",
+            "id": "balance-offering"
+          },
+          {
+            "sectionId": "g4-scene-004",
+            "id": "camera-arc"
+          },
+          {
+            "sectionId": "g4-scene-005",
+            "id": "camera-canyon"
+          },
+          {
+            "sectionId": "g4-scene-006",
+            "id": "camera-rail"
+          },
+          {
+            "sectionId": "g4-scene-007",
+            "id": "forge-assembly"
+          },
+          {
+            "sectionId": "g4-scene-008",
+            "id": "balance-offering"
+          },
+          {
+            "sectionId": "g4-scene-009",
+            "id": "camera-wall"
+          },
+          {
+            "sectionId": "g4-scene-011",
+            "id": "camera-rack"
+          },
+          {
+            "sectionId": "g4-scene-012",
+            "id": "refusal-bar"
+          },
+          {
+            "sectionId": "g4-scene-014",
+            "id": "falling-weight"
+          },
+          {
+            "sectionId": "g4-scene-015",
+            "id": "camera-stairwell"
+          },
+          {
+            "sectionId": "g4-scene-016",
+            "id": "camera-dolly"
+          },
+          {
+            "sectionId": "g4-scene-017",
+            "id": "negative-space"
+          },
+          {
+            "sectionId": "g4-scene-018",
+            "id": "falling-weight"
+          },
+          {
+            "sectionId": "g4-scene-019",
+            "id": "camera-runway"
+          },
+          {
+            "sectionId": "g4-scene-020",
+            "id": "split-verdict"
+          },
+          {
+            "sectionId": "g4-scene-021",
+            "id": "incision"
+          },
+          {
+            "sectionId": "g4-scene-022",
+            "id": "breath-resolve"
+          },
+          {
+            "sectionId": "g4-scene-023",
+            "id": "camera-horizon"
+          },
+          {
+            "sectionId": "g4-scene-024",
+            "id": "camera-switchback"
+          },
+          {
+            "sectionId": "g4-scene-027",
+            "id": "photographic-club-strike"
+          },
+          {
+            "sectionId": "g4-scene-028",
+            "id": "photographic-divine-question"
+          },
+          {
+            "sectionId": "g4-scene-029",
+            "id": "camera-tunnel"
+          },
+          {
+            "sectionId": "g4-scene-030",
+            "id": "refusal-bar"
+          },
+          {
+            "sectionId": "g4-scene-031",
+            "id": "camera-hinge"
+          },
+          {
+            "sectionId": "g4-scene-032",
+            "id": "incision"
+          },
+          {
+            "sectionId": "g4-scene-033",
+            "id": "echo-cry"
+          },
+          {
+            "sectionId": "g4-scene-035",
+            "id": "camera-canyon"
+          },
+          {
+            "sectionId": "g4-scene-036",
+            "id": "camera-micro"
+          },
+          {
+            "sectionId": "g4-scene-037",
+            "id": "camera-spiral"
+          },
+          {
+            "sectionId": "g4-scene-039",
+            "id": "camera-wall"
+          },
+          {
+            "sectionId": "g4-scene-040",
+            "id": "negative-space"
+          },
+          {
+            "sectionId": "g4-scene-041",
+            "id": "string-pluck"
+          },
+          {
+            "sectionId": "g4-scene-042",
+            "id": "camera-horizon"
+          },
+          {
+            "sectionId": "g4-scene-043",
+            "id": "camera-dolly"
+          },
+          {
+            "sectionId": "g4-scene-044",
+            "id": "falling-weight"
+          },
+          {
+            "sectionId": "g4-scene-046",
+            "id": "threshold-exile"
+          },
+          {
+            "sectionId": "g4-scene-047",
+            "id": "camera-pullback"
+          },
+          {
+            "sectionId": "g4-scene-048",
+            "id": "negative-space"
+          },
+          {
+            "sectionId": "g4-scene-049",
+            "id": "camera-stairwell"
+          },
+          {
+            "sectionId": "g4-scene-050",
+            "id": "word-strike"
+          },
+          {
+            "sectionId": "g4-scene-051",
+            "id": "split-verdict"
+          },
+          {
+            "sectionId": "g4-scene-052",
+            "id": "camera-rack"
+          },
+          {
+            "sectionId": "g4-scene-053",
+            "id": "tally-vengeance"
+          },
+          {
+            "sectionId": "g4-scene-054",
+            "id": "fingerprint-mark"
+          },
+          {
+            "sectionId": "g4-scene-055",
+            "id": "camera-arc"
+          }
+        ],
+        [
+          {
+            "sectionId": "g4-scene-056",
+            "id": "threshold-exile"
+          },
+          {
+            "sectionId": "g4-scene-059",
+            "id": "camera-braid"
+          },
+          {
+            "sectionId": "g4-scene-060",
+            "id": "branching-seed"
+          },
+          {
+            "sectionId": "g4-scene-061",
+            "id": "forge-assembly"
+          },
+          {
+            "sectionId": "g4-scene-063",
+            "id": "camera-rail"
+          },
+          {
+            "sectionId": "g4-scene-067",
+            "id": "split-verdict"
+          },
+          {
+            "sectionId": "g4-scene-068",
+            "id": "camera-hinge"
+          },
+          {
+            "sectionId": "g4-scene-070",
+            "id": "camera-micro"
+          },
+          {
+            "sectionId": "g4-scene-071",
+            "id": "threshold-exile"
+          },
+          {
+            "sectionId": "g4-scene-072",
+            "id": "camera-canyon"
+          },
+          {
+            "sectionId": "g4-scene-073",
+            "id": "string-pluck"
+          },
+          {
+            "sectionId": "g4-scene-074",
+            "id": "camera-spiral"
+          },
+          {
+            "sectionId": "g4-scene-076",
+            "id": "chain-lineage"
+          },
+          {
+            "sectionId": "g4-scene-077",
+            "id": "forge-assembly"
+          },
+          {
+            "sectionId": "g4-scene-078",
+            "id": "camera-arc"
+          },
+          {
+            "sectionId": "g4-scene-079",
+            "id": "camera-hinge"
+          },
+          {
+            "sectionId": "g4-scene-080",
+            "id": "echo-cry"
+          },
+          {
+            "sectionId": "g4-scene-081",
+            "id": "camera-tunnel"
+          },
+          {
+            "sectionId": "g4-scene-082",
+            "id": "word-strike"
+          },
+          {
+            "sectionId": "g4-scene-083",
+            "id": "incision"
+          },
+          {
+            "sectionId": "g4-scene-084",
+            "id": "tally-vengeance"
+          },
+          {
+            "sectionId": "g4-scene-085",
+            "id": "camera-runway"
+          },
+          {
+            "sectionId": "g4-scene-086",
+            "id": "tally-vengeance"
+          },
+          {
+            "sectionId": "g4-scene-087",
+            "id": "camera-braid"
+          },
+          {
+            "sectionId": "g4-scene-088",
+            "id": "branching-seed"
+          },
+          {
+            "sectionId": "g4-scene-090",
+            "id": "camera-switchback"
+          },
+          {
+            "sectionId": "g4-scene-091",
+            "id": "camera-braid"
+          },
+          {
+            "sectionId": "g4-scene-093",
+            "id": "breath-resolve"
+          }
+        ]
+      ],
+      "policy": {
+        "version": 1,
+        "minDistinct": 30,
+        "maxUses": 3,
+        "noRepeatedTriples": true
+      },
+      "minDistinct": 30,
+      "adjacentDuplicates": [],
+      "repeatedTriples": [],
+      "legacyModes": {
+        "lineage": 17,
+        "fracture": 30,
+        "strings": 5,
+        "eclipse": 8,
+        "vortex": 9,
+        "breath": 1,
+        "count": 4,
+        "scorch": 3
+      },
+      "limitations": [
+        "Distinct IDs and descriptions do not prove distinct rendered motion or compelling artistry. Independent review of the encoded scenes is still required."
+      ]
+    },
+    "limitations": [
+      "Unique file bytes, distinct choreography IDs and supported timing do not establish originality or compelling rhythm. The encoded film still requires visual and measured audio review."
+    ]
+  },
+  "machineAudio": {
+    "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/audio-final/audio-review.json",
+    "present": true,
+    "sha256": "2aa198d980a1f01c930fc93e4e3c5865090f88735fe7f60e4d5eb70615f4e53c",
+    "passed": false,
+    "errors": [
+      "Machine audio lyric_phrase_match did not pass",
+      "Machine audio word_sync did not pass",
+      "Machine audio status is failed"
+    ]
+  },
+  "machineVisual": {
+    "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/film-final.mp4.visual-review.json",
+    "present": false,
+    "passed": false,
+    "errors": [
+      "Machine visual review has not been generated"
+    ]
+  },
+  "limitations": [
+    "Bounded archive omits full decoded frame inventories, duplicated inference reports and ffprobe detail. Original report is preserved at sourceReport.path with recorded hash. Visual approval is separate from failed strict machine audio certification. The separate OCR report is archived in lyric-visibility-summary.json."
+  ]
+}

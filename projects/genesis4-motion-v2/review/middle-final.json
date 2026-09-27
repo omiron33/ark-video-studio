@@ -1,0 +1,116 @@
+{
+  "videoSha256": "21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777",
+  "scope": {
+    "sceneIndexes": [
+      28,
+      55
+    ],
+    "start": 105.13333333333334,
+    "end": 205.76666666666668,
+    "sceneCount": 28
+  },
+  "method": "Bounded recheck of the two changed scenes in the previously inspected 28-scene range. Inspected both complete final chronological scene sheets, plus every encoded six-fps frame from 126.0 through 128.5 seconds (16 frames) in an additional dense sheet. Verified final movie SHA256 directly. The other 26 scenes retain their prior visual review through supplied exact encoded-section SHA256 comparison. Compared fade and hold timing to canonical manifest cues; no auditory listening.",
+  "passed": true,
+  "scores": {
+    "lyricLegibility": 8.8,
+    "semanticMotion": 8.6,
+    "photorealism": 8.8,
+    "composition": 8.6,
+    "continuity": 8.5
+  },
+  "issues": [],
+  "resolvedIssues": [
+    {
+      "sceneId": "g4-scene-037",
+      "priorIssue": "TAKE/YOUR intersected BROTHER'S during its reading hold.",
+      "resolution": "Completed preceding text now clears before the active BROTHER'S BLOOD plane. Every inspected dense frame shows separated, fully readable current words. BLOOD remains visible through its canonical sustained cue ending 127.978995 seconds, and FROM appears afterward. No active-word disappearance observed."
+    }
+  ],
+  "observations": [
+    "The stairwell scene retains GROANING / AND / TREMBLING through their reading intervals, then clears the completed group as ON / THE / EARTH appears.",
+    "Both targeted changes pass; no remaining blocking issue in this reviewed range."
+  ],
+  "previousReview": {
+    "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/reviews/middle.json",
+    "videoSha256": "cff53abfbc97b66a63da169bd8a2f5cd63e9ff3ea591ed1f17f6675dfc415782",
+    "inspectedScenes": 28,
+    "selectedChronologicalSamples": 220,
+    "detailedFrames": 3
+  },
+  "unchangedEvidence": {
+    "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/changed-sections.json",
+    "comparison": "Exact cached encoded section SHA256, not manifest labels",
+    "unchangedWholeFilmSections": 77,
+    "unchangedReviewedSceneCount": 26,
+    "unchangedReviewedSceneIds": [
+      "g4-scene-029",
+      "g4-scene-030",
+      "g4-scene-031",
+      "g4-scene-032",
+      "g4-scene-033",
+      "g4-scene-035",
+      "g4-scene-036",
+      "g4-scene-039",
+      "g4-scene-040",
+      "g4-scene-041",
+      "g4-scene-042",
+      "g4-scene-043",
+      "g4-scene-044",
+      "g4-scene-046",
+      "g4-scene-047",
+      "g4-scene-048",
+      "g4-scene-050",
+      "g4-scene-051",
+      "g4-scene-052",
+      "g4-scene-053",
+      "g4-scene-054",
+      "g4-scene-055",
+      "g4-rest-50-a",
+      "g4-rest-50-b",
+      "g4-scene-056",
+      "g4-scene-059"
+    ]
+  },
+  "evidenceinspected": [
+    {
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual-final/35-g4-scene-037.jpg",
+      "sceneId": "g4-scene-037",
+      "sampleCount": 8
+    },
+    {
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual-final/45-g4-scene-049.jpg",
+      "sceneId": "g4-scene-049",
+      "sampleCount": 8
+    },
+    {
+      "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/reviews/middle-final-dense.jpg",
+      "sourceFrames": [
+        "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual-final/frames/frame-00757.jpg",
+        "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual-final/frames/frame-00758.jpg",
+        "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual-final/frames/frame-00759.jpg",
+        "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual-final/frames/frame-00760.jpg",
+        "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual-final/frames/frame-00761.jpg",
+        "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual-final/frames/frame-00762.jpg",
+        "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual-final/frames/frame-00763.jpg",
+        "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual-final/frames/frame-00764.jpg",
+        "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual-final/frames/frame-00765.jpg",
+        "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual-final/frames/frame-00766.jpg",
+        "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual-final/frames/frame-00767.jpg",
+        "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual-final/frames/frame-00768.jpg",
+        "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual-final/frames/frame-00769.jpg",
+        "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual-final/frames/frame-00770.jpg",
+        "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual-final/frames/frame-00771.jpg",
+        "/Users/shanefisher/Movies/Genesis4-motion-v2-work/visual-final/frames/frame-00772.jpg"
+      ],
+      "sampleCount": 16,
+      "start": 126,
+      "end": 128.5
+    }
+  ],
+  "limitations": [
+    "No audio listening or auditory sync certification.",
+    "Sampled visual review cannot exclude subframe defects.",
+    "Reviewer authored semantic choreography but not either changed camera mode; unchanged semantic scenes retain the disclosed authorship limitation from the prior review."
+  ],
+  "reviewedAt": "2026-09-27T06:47:34.667157+00:00"
+}

@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "videoSha256": "21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777",
+  "archivedAt": "2026-09-27T06:55:25.935990+00:00",
+  "files": [
+    {
+      "file": "audio-review-summary.json",
+      "bytes": 3762,
+      "sha256": "b7e50a7359b29309e38fa71a558eadfbfce7164422fd994e72e852910cf56d7b"
+    },
+    {
+      "file": "candidate-upload-result.json",
+      "bytes": 3444,
+      "sha256": "a44e0866178757054999edaa7f00eed5d0d06739c2cfa42817da61a7bfd6ee5d"
+    },
+    {
+      "file": "changed-sections.json",
+      "bytes": 1523,
+      "sha256": "7389c5c89aec646d11ffe89cf5ee6298d6380834bf6e809d7fbce8b17d52a0fc"
+    },
+    {
+      "file": "delivery.json",
+      "bytes": 1376,
+      "sha256": "363f4c3909ddde52508ed8f46ea8e9bd04bd2206dad208ac0fc2884074246da9"
+    },
+    {
+      "file": "direction-plan.json",
+      "bytes": 16779,
+      "sha256": "c240c01835adb5addd01a8517384ca48070976384f19791adab77499b91db9ed"
+    },
+    {
+      "file": "ending-final.json",
+      "bytes": 8504,
+      "sha256": "2df68a1fbaaf24d0be7726b22962419aeeff58c25ae7872e7a5ad12dd0a61a8f"
+    },
+    {
+      "file": "ending.json",
+      "bytes": 5186,
+      "sha256": "9a3a8280e080eda06b7501b99b71ad85f6aba245eb91c0977f6f5647ca87ac0c"
+    },
+    {
+      "file": "gauntlet-summary.json",
+      "bytes": 17481,
+      "sha256": "4e792e23567cc461d6745bf9e2a94a2a08adcd48d14f57356a9e1a6215065546"
+    },
+    {
+      "file": "independent-visual-summary.json",
+      "bytes": 3780,
+      "sha256": "4a0cf700d24c7659846c94ead59c4c54b753c906392a6bd5c09cd7a3bb89e4d8"
+    },
+    {
+      "file": "lyric-visibility-summary.json",
+      "bytes": 3064,
+      "sha256": "652b28f5fe5c6ad5467466d6dead258472a4b858dcbf51fd6c45519ea4a2773d"
+    },
+    {
+      "file": "middle-final.json",
+      "bytes": 5330,
+      "sha256": "a53e8d07f2fab9b9e4ed59b267713d1d3e81e6262cfb732827e664784269cefb"
+    },
+    {
+      "file": "middle.json",
+      "bytes": 7238,
+      "sha256": "f780f7af0f293abf7a210a6d41b2c826fa2e81db47580f10d75fae9204ba5cb7"
+    },
+    {
+      "file": "ocr-exceptions-final.json",
+      "bytes": 3932,
+      "sha256": "008c597250932b39ba3995abefbfd9f20bf0eba0af843e8d920e3ec5939ca63e"
+    },
+    {
+      "file": "opening-final.json",
+      "bytes": 41638,
+      "sha256": "e869295fdd3f505ef4071d7c0ef5c08c5c1fbd804003b027f3d999c8aa70584e"
+    },
+    {
+      "file": "opening.json",
+      "bytes": 37030,
+      "sha256": "213804ff2f7c632b3fdca1296ed4d9b34a0b631d9f80d9d92b36ca08acbf195c"
+    },
+    {
+      "file": "render-final.json",
+      "bytes": 67904,
+      "sha256": "56e117f8bf7e0bc723e19d81c142febb7fe7b59f0ae0397b3cae13045189b631"
+    },
+    {
+      "file": "tests-after-repair.log",
+      "bytes": 1912,
+      "sha256": "d7fa96f6299fe507971b8af8514b4c1cbcf636f2a8495172df9683e67bde1869"
+    },
+    {
+      "file": "tests-before-repair.log",
+      "bytes": 19934,
+      "sha256": "a37c8fc722620355f22c3209a2d3ab9eb85efa0cc08fd02676f51162ca754d77"
+    }
+  ],
+  "pending": [],
+  "notes": [
+    "Large machine reports are retained as explicit summaries with source paths and hashes.",
+    "Delivery and Photos verification are recorded in delivery.json; no direct iPhone confirmation is claimed."
+  ]
+}

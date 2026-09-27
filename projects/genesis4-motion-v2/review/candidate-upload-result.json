@@ -1,0 +1,46 @@
+{
+  "duplicate": false,
+  "video": {
+    "id": "vid-20260927-9e73681b",
+    "project": "Genesis Chapter 4 music video",
+    "title": "Genesis 4 - The Brother's Blood",
+    "version": "Spatial lyric choreography v2",
+    "sourceAgent": "Codex",
+    "sourceMachine": "Mac mini",
+    "sourcePath": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/film-final.mp4",
+    "ingestedFrom": "C:\\Users\\sjfis\\Videos\\Genesis4\\genesis4-dark-kinetic-21a351db6f10.mp4",
+    "notes": "Revised 312-second Genesis 4 lyric film for Shane. Preserves the accepted song, all 498 canonical word cues, measured beats, key story photographs, Cain's club attack and the embodied Christophany. Replaces repetitive background-and-entrance cycling with 32 new spatial camera and semantic word choreographies plus two preserved bespoke scenes: 34 total treatments, no more than three uses, no repeated three-scene sequence. Camera journeys follow phrases rather than accelerating every syllable. New opening photograph and contemporary Archivo Black title. Independent visual review and exact encode checks; strict automatic sung-word certification remains unresolved, as in the accepted original. Source song https://suno.com/song/dd723dc8-5303-4694-9553-6d29f9768d04. Film SHA256 21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777.",
+    "supersedes": null,
+    "supersededBy": null,
+    "chapter": 4,
+    "md5": "9e73681b829888c4d0a706d49f1881a2",
+    "sha256": "21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777",
+    "bytes": 37256773,
+    "mimeType": "video/mp4",
+    "file": "media/videos/genesis-chapter-4-music-video/vid-20260927-9e73681b/video.mp4",
+    "thumbnail": {
+      "file": "media/videos/genesis-chapter-4-music-video/vid-20260927-9e73681b/thumbnail.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "probe": null,
+    "status": "pending_review",
+    "ingestedAt": "2026-09-27T06:51:59.508Z",
+    "updatedAt": "2026-09-27T06:51:59.508Z",
+    "history": [
+      {
+        "at": "2026-09-27T06:51:59.508Z",
+        "status": "pending_review",
+        "note": "Revised 312-second Genesis 4 lyric film for Shane. Preserves the accepted song, all 498 canonical word cues, measured beats, key story photographs, Cain's club attack and the embodied Christophany. Replaces repetitive background-and-entrance cycling with 32 new spatial camera and semantic word choreographies plus two preserved bespoke scenes: 34 total treatments, no more than three uses, no repeated three-scene sequence. Camera journeys follow phrases rather than accelerating every syllable. New opening photograph and contemporary Archivo Black title. Independent visual review and exact encode checks; strict automatic sung-word certification remains unresolved, as in the accepted original. Source song https://suno.com/song/dd723dc8-5303-4694-9553-6d29f9768d04. Film SHA256 21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777.",
+        "by": "Codex"
+      }
+    ]
+  },
+  "verified": {
+    "sha256": "21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777",
+    "servedSha256": "21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777",
+    "rangeStatus": 206,
+    "localFile": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/film-final.mp4"
+  },
+  "reviewUrl": "https://omipc.taild60b4e.ts.net/studio#videos",
+  "downloadUrl": "https://omipc.taild60b4e.ts.net/api/admin/videos/vid-20260927-9e73681b/media?download=1"
+}

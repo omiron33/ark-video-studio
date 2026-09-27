@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "sourceReport": {
+    "path": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/ocr-final/lyric-visibility.json",
+    "sha256": "4aa9fa301fc0fb3aa0b023b960d06cc74eff5c43b39cf58c62c5a67305616111",
+    "bytes": 4077920
+  },
+  "binding": {
+    "videoSha256": "21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777",
+    "projectHash": "6175e69248abc8b9e640ee850ad0bec66f13b0d1eaf5cf6ad50ef30d549cf4c5"
+  },
+  "status": "failed",
+  "method": "Apple Vision native accurate OCR",
+  "coverage": {
+    "required": 498,
+    "observed": 494,
+    "ratio": 0.9919678714859438,
+    "unresolved": [
+      "g4-l015-w03",
+      "g4-l020-w05",
+      "g4-l051-w05",
+      "g4-l067-w03"
+    ]
+  },
+  "checks": [
+    {
+      "id": "native_ocr_available",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "required_lyrics_visible",
+      "passed": false,
+      "measured": {
+        "required": 498,
+        "observed": 494,
+        "ratio": 0.9919678714859438,
+        "unresolved": [
+          "g4-l015-w03",
+          "g4-l020-w05",
+          "g4-l051-w05",
+          "g4-l067-w03"
+        ]
+      },
+      "threshold": {
+        "requiredRatio": 1
+      }
+    },
+    {
+      "id": "evidence_integrity",
+      "passed": true,
+      "checkedFrames": 1735,
+      "errors": []
+    },
+    {
+      "id": "unchanged_inputs",
+      "passed": true
+    }
+  ],
+  "sampledFrames": 1735,
+  "unresolvedWords": [
+    {
+      "id": "g4-l015-w03",
+      "text": "low.",
+      "sectionId": "g4-scene-015",
+      "start": 65.722626,
+      "end": 66.35297999999999,
+      "times": [
+        65.9,
+        65.833333,
+        65.966667,
+        66.333333
+      ]
+    },
+    {
+      "id": "g4-l020-w05",
+      "text": "rightly,",
+      "sectionId": "g4-scene-020",
+      "start": 81.082071,
+      "end": 81.76666666666667,
+      "times": [
+        81.233333,
+        81.3,
+        81.466667,
+        81.766667
+      ]
+    },
+    {
+      "id": "g4-l051-w05",
+      "text": "so.",
+      "sectionId": "g4-scene-051",
+      "start": 171.497943,
+      "end": 171.7,
+      "times": [
+        171.566667,
+        171.666667,
+        171.7
+      ]
+    },
+    {
+      "id": "g4-l067-w03",
+      "text": "wives:",
+      "sectionId": "g4-scene-067",
+      "start": 222.735524,
+      "end": 223.2,
+      "times": [
+        222.9,
+        223.066667,
+        223.2
+      ]
+    }
+  ],
+  "limitations": [
+    "OCR proves sampled word recognition, not perfect legibility or aesthetic quality.",
+    "OCR may miss arced, heavily stylized or occluded letters; an unresolved word is reported, never silently counted as visible.",
+    "Only top recognizer candidates are used, without lyric dictionary hints or language correction.",
+    "English recognition is configured for this Bible-song workflow.",
+    "Bounding boxes use each oriented image coordinate space.",
+    "Raw OCR remains failed at 494/498. Any separate visual exception inspection does not change this machine result. Full observations and frame recognition are retained at sourceReport.path."
+  ]
+}

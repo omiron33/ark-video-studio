@@ -1,0 +1,29 @@
+{
+  "videoSha256": "21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777",
+  "candidateId": "vid-20260927-9e73681b",
+  "status": "pending_review",
+  "reviewUrl": "https://omipc.taild60b4e.ts.net/studio#videos",
+  "downloadUrl": "https://omipc.taild60b4e.ts.net/api/admin/videos/vid-20260927-9e73681b/media?download=1",
+  "verifiedServedSha256": "21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777",
+  "rangeStatus": 206,
+  "uploadEvidence": "candidate-upload-result.json",
+  "photos": {
+    "status": "imported_and_playback_verified",
+    "album": "Genesis 4 - Motion v2",
+    "albumVideoCount": 1,
+    "durationSeconds": 312,
+    "creationTimeLocal": "2026-09-27 01:45",
+    "libraryVideoCountBefore": 361,
+    "libraryVideoCountAfter": 362,
+    "playbackVerified": "Native Photos playback advanced from 00:00 to 00:11, displayed the revised Genesis 4 title, then was paused.",
+    "iCloudStatus": "Synced to iCloud",
+    "iPhoneVerified": false,
+    "evidenceSource": "Root agent confirmed native UI inspection in this session."
+  },
+  "ocrVisualExceptionReview": {
+    "status": "all_four_visible_unobstructed",
+    "report": "ocr-exceptions-final.json",
+    "rawMachineStatus": "failed"
+  },
+  "reviewPageVerified": "Root agent confirmed OmiPC browser selected Spatial lyric choreography v2, Awaiting approval, with the correct download link."
+}

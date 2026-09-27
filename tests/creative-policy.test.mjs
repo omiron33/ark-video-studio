@@ -12,6 +12,11 @@ test('legacy manifests do not acquire new creative gates or mutations', async ()
   assert.equal(review.required, false); assert.equal(review.passed, true); assert.deepEqual(p, before);
 });
 
+test('creative replanning cannot silently remove an authored choreography gate',()=>{
+ const p=fixture();p.creation={creativePolicy:{...CREATIVE_POLICY,choreography:{version:1,minDistinct:30,maxUses:3,noRepeatedTriples:true}}};
+ assert.deepEqual(planCreativePolicy(p).project.creation.creativePolicy.choreography,p.creation.creativePolicy.choreography);
+});
+
 test('photographic requirements survive replacing direction and cannot be satisfied by dropping per-scene flags', async () => {
   const p = fixture(); p.creation = { interpreted: { photo: true }, creativePolicy: { ...CREATIVE_POLICY } };
   const planned = planCreativePolicy(p).project;

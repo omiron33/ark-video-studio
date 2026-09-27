@@ -1,0 +1,98 @@
+{
+  "videoSha256": "21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777",
+  "scope": "Four unresolved native OCR word matches in final Genesis 4 motion v2 encode",
+  "method": "Mapped each unresolved word ID to the canonical manifest and inspected the corresponding full-resolution PNG decoded from the final encoded MP4. Verified each inspected PNG SHA256 against the OCR evidence binding.",
+  "passed": true,
+  "results": [
+    {
+      "wordId": "g4-l015-w03",
+      "canonicalText": "low.",
+      "canonicalStart": 65.722626,
+      "canonicalEnd": 66.00298,
+      "verdict": "visible_no_defect",
+      "visible": true,
+      "defect": false,
+      "notes": "LOW is plainly visible in large white italic capitals; no clipping or covering text. OCR returned character substitutions rather than the displayed word.",
+      "inspectedTime": 65.9,
+      "inspectedPath": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/ocr-final/frames/frame-0001977-sample-0000276.png",
+      "evidenceSha256": "c98daf52be9359d8bf9868a4d0ca3d99a652a5b22146fdd83b8ebe3e047c63b4",
+      "ocrRecognizedLines": [
+        "1101",
+        "FELL",
+        "M0T",
+        "10T"
+      ]
+    },
+    {
+      "wordId": "g4-l020-w05",
+      "canonicalText": "rightly,",
+      "canonicalStart": 81.082071,
+      "canonicalEnd": 81.522571,
+      "verdict": "visible_no_defect",
+      "visible": true,
+      "defect": false,
+      "notes": "RIGHTLY is fully visible in large red capitals after white IT. The recognizer merged the adjacent words as ITRIGHTLY.",
+      "inspectedTime": 81.3,
+      "inspectedPath": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/ocr-final/frames/frame-0002439-sample-0000371.png",
+      "evidenceSha256": "48fcf6db13ad3fb779a1089b55543bbdb073e80c47ca7cae15a879e5f34f7996",
+      "ocrRecognizedLines": [
+        "BUTDID NOT DIVIDE",
+        "ITRIGHTLY"
+      ]
+    },
+    {
+      "wordId": "g4-l051-w05",
+      "canonicalText": "so.",
+      "canonicalStart": 171.497943,
+      "canonicalEnd": 171.698203,
+      "verdict": "visible_no_defect",
+      "visible": true,
+      "defect": false,
+      "notes": "SO is fully visible in large white capitals after NOT. The recognizer merged the adjacent words as NOTSO.",
+      "inspectedTime": 171.666667,
+      "inspectedPath": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/ocr-final/frames/frame-0005150-sample-0000975.png",
+      "evidenceSha256": "bb816159008217307b701ea32fe9e2127c2b0aea8ac9681197bbad2a8721b2b2",
+      "ocrRecognizedLines": [
+        "THELORD GOD SAID",
+        "NOTSO"
+      ]
+    },
+    {
+      "wordId": "g4-l067-w03",
+      "canonicalText": "wives:",
+      "canonicalStart": 222.735524,
+      "canonicalEnd": 223.115976,
+      "verdict": "visible_no_defect",
+      "visible": true,
+      "defect": false,
+      "notes": "WIVES: is fully visible in large white capitals after TWO. The recognizer merged the adjacent words as TWOWIVES:.",
+      "inspectedTime": 223.066667,
+      "inspectedPath": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/ocr-final/frames/frame-0006692-sample-0001243.png",
+      "evidenceSha256": "1fe7a7e2669c862ba8e3fbd2a4d747c954bf5c74cff9030900f169a0c5fa70e5",
+      "ocrRecognizedLines": [
+        "LAMECHTOOK",
+        "TWOWIVES:",
+        "LAMECH TOOK"
+      ]
+    }
+  ],
+  "machineGate": {
+    "reportPath": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/ocr-final/lyric-visibility.json",
+    "statusUnchanged": "failed",
+    "required": 498,
+    "recognized": 494,
+    "unresolved": [
+      "g4-l015-w03",
+      "g4-l020-w05",
+      "g4-l051-w05",
+      "g4-l067-w03"
+    ],
+    "note": "These visual judgments do not modify or override the strict machine OCR status."
+  },
+  "limitations": [
+    "One actual decoded full-resolution frame inspected per unresolved word.",
+    "Visibility review only; no acoustic synchronization or listening claim."
+  ],
+  "sourceChanged": false,
+  "rerendered": false
+}

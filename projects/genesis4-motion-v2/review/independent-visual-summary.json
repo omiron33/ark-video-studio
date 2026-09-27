@@ -1,0 +1,167 @@
+{
+  "videoSha256": "21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777",
+  "passed": true,
+  "scope": "All 84 encoded sections, 0-312 seconds",
+  "reviewers": [
+    {
+      "range": "opening",
+      "report": "opening-final.json",
+      "passed": true,
+      "scope": {
+        "sceneIndexes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27
+        ],
+        "sectionIds": [
+          "g4-opening-strike",
+          "g4-opening-blood",
+          "g4-opening-eclipse",
+          "g4-scene-000",
+          "g4-scene-001",
+          "g4-scene-002",
+          "g4-scene-003",
+          "g4-scene-004",
+          "g4-scene-005",
+          "g4-scene-006",
+          "g4-scene-007",
+          "g4-scene-008",
+          "g4-scene-009",
+          "g4-scene-011",
+          "g4-scene-012",
+          "g4-scene-014",
+          "g4-scene-015",
+          "g4-scene-016",
+          "g4-scene-017",
+          "g4-scene-018",
+          "g4-scene-019",
+          "g4-scene-020",
+          "g4-scene-021",
+          "g4-scene-022",
+          "g4-scene-023",
+          "g4-scene-024",
+          "g4-scene-027",
+          "g4-scene-028"
+        ],
+        "start": 0,
+        "end": 105.13333333333334,
+        "completeWithinScope": true
+      },
+      "scores": {
+        "lyricLegibility": 8.7,
+        "semanticMotion": 8.3,
+        "photorealism": 9.0,
+        "composition": 8.5,
+        "continuity": 8.4
+      },
+      "issues": []
+    },
+    {
+      "range": "middle",
+      "report": "middle-final.json",
+      "passed": true,
+      "scope": {
+        "sceneIndexes": [
+          28,
+          55
+        ],
+        "start": 105.13333333333334,
+        "end": 205.76666666666668,
+        "sceneCount": 28
+      },
+      "scores": {
+        "lyricLegibility": 8.8,
+        "semanticMotion": 8.6,
+        "photorealism": 8.8,
+        "composition": 8.6,
+        "continuity": 8.5
+      },
+      "issues": []
+    },
+    {
+      "range": "ending",
+      "report": "ending-final.json",
+      "passed": true,
+      "scope": {
+        "sceneIndexes": [
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83
+        ],
+        "timeStart": 205.76666666666668,
+        "timeEnd": 312
+      },
+      "scores": {
+        "lyricLegibility": 8.8,
+        "semanticMotion": 8.5,
+        "photorealism": 9.0,
+        "composition": 8.6,
+        "continuity": 8.6
+      },
+      "issues": []
+    }
+  ],
+  "initialReports": [
+    "opening.json",
+    "middle.json",
+    "ending.json"
+  ],
+  "changedSectionsProof": "changed-sections.json",
+  "unchangedEncodedSections": 77,
+  "recheckedChangedSections": 7,
+  "notes": [
+    "Initial review found held text collisions; a bounded repair resolved those concrete failures and corrected camera phrase grouping.",
+    "Final reviewers rechecked all seven changed sections; unchanged sections retain exact encoded chunk evidence and their original inspection.",
+    "Three agents reviewed different ranges; some also authored engine modules. This is not a fully external blind panel. No reviewer claims audio listening or strict sung-word synchronization certification."
+  ]
+}

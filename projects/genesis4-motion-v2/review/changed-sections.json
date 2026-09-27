@@ -1,0 +1,50 @@
+{
+  "finalSha256": "21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777",
+  "seconds": 111.281317709,
+  "changed": [
+    {
+      "id": "g4-scene-023",
+      "start": 86.93333333333334,
+      "end": 91.53333333333333,
+      "sha256": "0be513ea855dc9c59f338a1c7e8b42f816793d87c820eb0316b35bfb997fba7a"
+    },
+    {
+      "id": "g4-scene-024",
+      "start": 91.53333333333333,
+      "end": 99.83333333333333,
+      "sha256": "4aec5b739d9d5fe43354dc788e4fd493c5a6195fb29db5d22579f8e9d3d5c1bb"
+    },
+    {
+      "id": "g4-scene-037",
+      "start": 125.03333333333333,
+      "end": 129.7,
+      "sha256": "e2f5dd13e03bdc6d0a5d0ab4c190e76d1d4bef7d3c560fc190edc8e3911f51d2"
+    },
+    {
+      "id": "g4-scene-049",
+      "start": 162.73333333333332,
+      "end": 165.16666666666666,
+      "sha256": "825f6a15323132f83b85f5dff8299e1426cc3d7734ceeafe4de57bb5a0b001dc"
+    },
+    {
+      "id": "g4-scene-063",
+      "start": 212.16666666666666,
+      "end": 221.3,
+      "sha256": "ad0c6dd2983c4e00d5fda4086829b5e5303dc3035e9f66035b3a8fe201f569d1"
+    },
+    {
+      "id": "g4-scene-074",
+      "start": 231.73333333333332,
+      "end": 234.16666666666666,
+      "sha256": "f384fabb64a1552b65c1486c3c11a9a8985f0c3ac30089eb5fedffe534d54370"
+    },
+    {
+      "id": "g4-scene-081",
+      "start": 246.2,
+      "end": 248,
+      "sha256": "5b7d080d7e4631bd917e1057ef9493380b1caaf8b3e3b3140e57de8f55038f09"
+    }
+  ],
+  "unchangedSections": 77,
+  "comparison": "Exact cached encoded section SHA256, not manifest labels"
+}

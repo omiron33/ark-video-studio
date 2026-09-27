@@ -1,0 +1,27 @@
+✔ sixteen distinct fixed world arrangements exist, rather than aliases of a pan (0.819083ms)
+✔ perspective projection treats geometry and word anchors identically (0.669875ms)
+✔ authored phrase groups are respected, with bounded long-phrase subdivision (0.175084ms)
+✔ all paths retain world coordinates while the camera moves and preserve the lyric source (6.635625ms)
+✔ active words remain within the reading region, including long words and random seeks (21.536542ms)
+✔ no choreography submits a future lyric to the renderer (7.316542ms)
+✔ camera rendering is deterministic under out-of-order frame requests (81.6645ms)
+✔ three-word scenes retain a visible one-time camera arrival (0.778125ms)
+✔ passed near planes fade before their oversized text obscures the next station (0.364792ms)
+✔ wordless instrumental camera shots traverse their geometry without invented lyrics (0.237125ms)
+✔ completed spiral phrases cannot cover the active Brothers and Psaltery reading groups (0.592083ms)
+✔ collision fading preserves nonintersecting trail words and any word still being sung (0.130917ms)
+✔ story scenes support repeatable random seeking across every semantic motion family (161.42975ms)
+✔ custom positions preserve cue identity and support noncentral editorial compositions (0.266167ms)
+✔ story lyrics never appear before their vocal onset, including custom placements (5.913292ms)
+✔ a sung trigger moves its subject without changing cue timing or unrelated words (0.145791ms)
+✔ subject motion can wait until every target has been sung (0.067208ms)
+✔ dissolving words retain their complete reading hold and disappear after the triggered action (4.651875ms)
+✔ instrumental title and calendar motion remain time driven without inventing lyric cues (11.473ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 354.325167
