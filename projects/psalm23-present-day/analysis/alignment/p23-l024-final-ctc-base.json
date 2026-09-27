@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "32885123-f4b6-42e6-a546-f4acba404829.m4a",
+    "offset": 133.34,
+    "duration": 5.150000000000006,
+    "audioDuration": 219.96,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "I will fear no evil,",
+  "approvedLyrics": "I will fear no evil,\n",
+  "words": [
+    {
+      "id": "w_f24c56d37bb10682",
+      "text": "I",
+      "start": 134.842918,
+      "end": 134.862957,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.269467708725703,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_5349140dd27d286f",
+      "text": "will",
+      "start": 134.963152,
+      "end": 135.18358,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.4492685892835419,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_bc76bd716164a3a3",
+      "text": "fear",
+      "start": 135.343891,
+      "end": 136.045253,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.572519865666249,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_616c49db87d935f5",
+      "text": "no",
+      "start": 136.265681,
+      "end": 136.586304,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.5096574270760629,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_4af08ddb8ae1fd73",
+      "text": "evil,",
+      "start": 137.948949,
+      "end": 138.389805,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.03191155338884278,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "I will fear no evil,",
+      "wordIds": [
+        "w_f24c56d37bb10682",
+        "w_5349140dd27d286f",
+        "w_bc76bd716164a3a3",
+        "w_616c49db87d935f5",
+        "w_4af08ddb8ae1fd73"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ]
+}

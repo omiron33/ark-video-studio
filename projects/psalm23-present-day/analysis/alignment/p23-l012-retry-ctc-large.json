@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "32885123-f4b6-42e6-a546-f4acba404829.m4a",
+    "offset": 61.653315,
+    "duration": 3.9922009999999872,
+    "audioDuration": 219.96,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "in the shadow of death,",
+  "approvedLyrics": "in the shadow of death,\n",
+  "words": [
+    {
+      "id": "w_08c50f9de0a70f43",
+      "text": "in",
+      "start": 62.335397,
+      "end": 62.395581,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.5737280565579207,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_02996db321278e23",
+      "text": "the",
+      "start": 62.455765,
+      "end": 62.53601,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.1271069907559077,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_2114c879dcbb08a2",
+      "text": "shadow",
+      "start": 62.616255,
+      "end": 63.318398,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9491093760888515,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_4aa6ad5d59afb6bd",
+      "text": "of",
+      "start": 63.839991,
+      "end": 63.920236,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.06568337362864064,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_980b5df205d91a7f",
+      "text": "death,",
+      "start": 64.040603,
+      "end": 64.542134,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.1375536415361923,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "in the shadow of death,",
+      "wordIds": [
+        "w_08c50f9de0a70f43",
+        "w_02996db321278e23",
+        "w_2114c879dcbb08a2",
+        "w_4aa6ad5d59afb6bd",
+        "w_980b5df205d91a7f"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ]
+}

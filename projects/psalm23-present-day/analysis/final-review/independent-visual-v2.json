@@ -1,0 +1,464 @@
+{
+  "schemaVersion": 2,
+  "reviewer": "independent concept_critic agent",
+  "status": "accepted",
+  "verdict": "accepted",
+  "acceptanceScope": "Independent sampled encoded visual review only; audio, lyric-vocal synchronization and technical playback acceptance are outside this verdict.",
+  "artifact": {
+    "path": "/Users/shanefisher/Movies/Psalm23/review-work/psalm23-held-in-the-ordinary-v2.mp4",
+    "sha256": "e483e690ef13766ee4e04414711d0826209151d3beab5a91864c113758f3e4f2",
+    "sourceRevision": "2e18115e199808003cf4dcae527fe15c105e254a4e70bdf3b19701557fc07787",
+    "scenePlanSha256": "2cd04afd7670fab0773ad5d5949488258ef1f6c352fe31cd770ab12d8c9859f6",
+    "durationSeconds": 219.96,
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "fps": 30,
+    "videoHashIndependentlyRecomputed": true
+  },
+  "evidence": {
+    "packet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/packet.json",
+    "packetSha256": "410c520400f4b95a2dac6f3d21273ce5fad63b295bb32b1ef1a225799117d263",
+    "allPacketSheetsInspected": true,
+    "sheetCount": 55,
+    "phraseSequencesInspected": 39,
+    "actTransitionsInspected": 11,
+    "generatedSectionsInspected": 3,
+    "uniqueDecodedFramesAccordingToPacket": 1100,
+    "sampleFps": 5,
+    "method": "Visual inspection in chronological order of every phrase, opening and outro sheet, followed by all transition and generated-section sheets. Eight native frames and eight390px-wide resized images inspect the repaired reading states. This judges actual decoded images, not source family labels or structural branch counts.",
+    "nativeFrameTimesSeconds": [
+      82,
+      111.8,
+      124.7,
+      139.8,
+      145.4,
+      159.5,
+      160.5,
+      161.6
+    ],
+    "nativeDirectory": "/Users/shanefisher/Movies/Psalm23/review-work/native-v2",
+    "phoneSheet": "/Users/shanefisher/Movies/Psalm23/review-work/critic-phone-v2.jpg",
+    "limitations": [
+      "This is sampled decoded chronology, not uninterrupted full-speed watching.",
+      "No listening, vocal-sync or audio-quality claim is made.",
+      "A5fps sequence can miss very short artifacts and cannot fully establish30fps easing smoothness.",
+      "Phone-size assessment uses390px-wide stills and small contact-sheet frames, not actual phone playback.",
+      "Visual spelling checks do not independently certify the exact210-word transcript against a canonical source; the separate technical/transcript audit owns that check.",
+      "Motion-family boundaries involve judgment. Conservative grouping deliberately combines cosmetic differences."
+    ],
+    "comparators": [
+      {
+        "path": "/Volumes/DATA/ArkRender/psalm91-v4-independent-review/overview-21.jpg",
+        "use": "Earlier static layout comparator only; current film better integrates words into photographic negative space. Not a matched or blind comparison."
+      },
+      {
+        "path": "/Users/shanefisher/Movies/Genesis4-hyperframes-20s-work/preview/contact-sheet.jpg",
+        "use": "Earlier visual benchmark for conspicuously different text/object compositions; not a matched or blind motion comparison."
+      }
+    ],
+    "comparatorDisclosure": "Benchmarks were inspected earlier as static visual/layout context. This is not a matched blind comparison or a claim of superior full-speed motion."
+  },
+  "summary": "Accepted for the specified visual criteria. V2 resolves the material v1 failures: four formerly weak mechanisms are now visibly different, the first mercy path reads in canonical order, cup and wine no longer collide, and generated mercy is a readable material hero. Conservative grouping yields31 mechanisms with maximum reuse3. No remaining major visual defect was identified in the inspected evidence.",
+  "distinctness": {
+    "minimumRequired": 30,
+    "maximumAllowedEquivalentUses": 3,
+    "conservativeDistinctCount": 31,
+    "maximumEquivalentUses": 3,
+    "pass": true,
+    "equivalentGroups": [
+      {
+        "mechanism": "Words gather along curved approaches into fixed rows",
+        "phrases": [
+          1,
+          5,
+          35
+        ],
+        "count": 3
+      },
+      {
+        "mechanism": "Nothing opens/releases into its fixed reading station",
+        "phrases": [
+          2,
+          36
+        ],
+        "count": 2
+      },
+      {
+        "mechanism": "Ordinary write/reveal plus fine contour and hold",
+        "phrases": [
+          10,
+          39
+        ],
+        "count": 2
+      },
+      {
+        "mechanism": "Partner words approach and meet in a shared row",
+        "phrases": [
+          14,
+          25,
+          34
+        ],
+        "count": 3
+      },
+      {
+        "mechanism": "Glyph compression/stretch relaxes into readable form",
+        "phrases": [
+          16,
+          27
+        ],
+        "count": 2
+      },
+      {
+        "mechanism": "Dark curtain panels retract",
+        "phrases": [
+          17,
+          23
+        ],
+        "count": 2
+      }
+    ],
+    "singleUseMechanismPhrases": [
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      11,
+      12,
+      13,
+      15,
+      18,
+      19,
+      20,
+      21,
+      22,
+      24,
+      26,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      37,
+      38
+    ],
+    "countingRule": "Count visual mechanism, not function name, lyric identity, changed background, direction or timing. Same operation in different clothes is grouped. Opening, outro and act wipes are excluded from the39 lyric mechanism count.",
+    "v1Comparison": {
+      "conservativeCount": 27,
+      "generousCount": 29,
+      "maximumEquivalentUses": 6,
+      "newlyCreditedPhrases": [
+        3,
+        12,
+        28,
+        31
+      ],
+      "note": "The four replacements now each have observable scene/word behavior beyond ordinary reveal/hold. The v1 rejection remains valid for its own artifact."
+    }
+  },
+  "resolvedMaterialFindings": [
+    {
+      "phrase": 3,
+      "result": "Visible stem/leaf growth earns a distinct mechanism.",
+      "timesSeconds": [
+        24.6,
+        25.6
+      ]
+    },
+    {
+      "phrase": 12,
+      "result": "Moving projected word shadow through a light beam earns a distinct mechanism.",
+      "timesSeconds": [
+        64.2,
+        65.6
+      ]
+    },
+    {
+      "phrase": 28,
+      "result": "Letters assemble into a structural arch after a readable straight state.",
+      "timesSeconds": [
+        139.4,
+        139.8
+      ]
+    },
+    {
+      "phrase": 31,
+      "result": "Prominent generated filament mercy remains correctly spelled, registered and readable with the full sentence.",
+      "timesSeconds": [
+        159.5,
+        160.5,
+        161.6
+      ]
+    },
+    {
+      "phrase": 21,
+      "result": "Cup and wine are clearly separated throughout the sampled pour; native111.8s confirms the old collision point.",
+      "timesSeconds": [
+        111.8
+      ]
+    },
+    {
+      "phrase": 29,
+      "result": "Shall and follow occupy separate vertical stations, restoring clear reading order.",
+      "timesSeconds": [
+        145.4
+      ]
+    },
+    {
+      "phrase": 17,
+      "result": "No has an unambiguous roman form at the targeted frame.",
+      "timesSeconds": [
+        82
+      ]
+    },
+    {
+      "phrase": 25,
+      "result": "For and you remain separated during approach.",
+      "timesSeconds": [
+        124.7
+      ]
+    }
+  ],
+  "unresolvedMajorFindings": [],
+  "remainingLimitations": "The visual language remains deliberately quiet: many settled moments use fine contours and restrained camera drift over still photographs. The threshold is met by different observable word behaviors, not by claiming all39 are unique or that every moment is equally intricate. No additional production fix is required by this sampled review.",
+  "openingAndOutro": {
+    "openingFirstSecond": "Pass: the photographic scene is present immediately, and Psalm23 forms during the first second, readable in the0.8s sample. No blank lead-in.",
+    "openingHold": "Fine shelter threads extend through the open-hand porch scene; the image remains composed and reassuring. These are secondary motion and are not counted as a lyric mechanism.",
+    "outro": "Final lyric holds, then becomes Psalm23 around205.6s. The warm doorway and fine threads continue coherently through219.8s with no sampled black gap."
+  },
+  "generatedLayers": {
+    "shelter": "Threads build above the open hand and across the rain scene; visually integrated, gentle secondary motion. No sampled boundary seam.",
+    "water": "Fine currents blend with the river beneath readable words. This is restrained integration, not a showy standalone generated word effect.",
+    "mercy": "V2 now shows a large readable gold filament mercy. A brief registered plain-glyph to filament handoff occurs around160.0–160.2s; Your and shall follow me remain intact. No opaque geometry hides the canonical line in the inspected final frames."
+  },
+  "transitions": "All11 act-boundary sheets inspected. Consistent short directional wipe/dissolve transitions preserve the warm photographic language. Temporary overlap is confined to the transition itself; no major sampled jump, black gap or clipped final reading state.",
+  "phoneLegibility": {
+    "sampleWidthPx": 390,
+    "sampleCount": 8,
+    "finding": "Targeted repaired words, arch and generated mercy are legible at390px width. Thin decorative lines recede, as expected, without removing the lyric.159.5s contains an in-progress write-on of me;160.5s shows the complete sentence."
+  },
+  "photographyAndComposition": {
+    "finding": "Convincing contemporary clothing, home/care settings, rain, wet materials and natural light. Reviewed hands, faces and body poses show no major anatomy defect. Most people are still photographic plates with camera movement, rather than sustained live human action.",
+    "integration": "Photography and lyrics share wall, foliage, water and real doorway space. Care scenes are plainly contemporary and emotionally coherent. Faces and hands remain the photographic focus.",
+    "visualQualityCaution": "Photographic art direction is strong, but the film is largely still-image based; do not describe it as sustained photoreal generated human action."
+  },
+  "phraseObservations": [
+    {
+      "phrase": 1,
+      "observation": "Words gather from offset positions into two rows; shepherd approaches diagonally. Clear hold, but same broad approach/gather logic as5/35.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/01-p23-l001-gathering-shepherd.jpg"
+    },
+    {
+      "phrase": 2,
+      "observation": "Nothing opens into a fixed lower row; fine line expands beneath. Similar perceptual release as36.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/02-p23-l002-opening-nothing.jpg"
+    },
+    {
+      "phrase": 3,
+      "observation": "After a readable first state, individual green glyphs visibly elongate into stems with growing leaf/root contours at24.6–25.6s. The action is now large enough to distinguish actual growth from a routine reveal.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/03-p23-l003-growing-grass.jpg"
+    },
+    {
+      "phrase": 4,
+      "observation": "House/door outline forms around dwell and a small door opens; legible, distinct architectural framing.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/04-p23-l004-dwelling-threshold.jpg"
+    },
+    {
+      "phrase": 5,
+      "observation": "Words rise from bowl curve into fixed rows; sizeable travel but equivalent broad gathering mechanism to1/35.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/05-p23-l005-nourishing-bowl.jpg"
+    },
+    {
+      "phrase": 6,
+      "observation": "Watery/reflected type settles into clear words above river; fine currents blend with water.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/06-p23-l006-resting-water.jpg"
+    },
+    {
+      "phrase": 7,
+      "observation": "Split horizontal glyph parts rejoin; visible restoration action then clear hold.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/07-p23-l007-restoring-soul.jpg"
+    },
+    {
+      "phrase": 8,
+      "observation": "Guided acts as a travelling/flexing bridge toward me; genuine relational mechanism.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/08-p23-l008-guided-thread.jpg"
+    },
+    {
+      "phrase": 9,
+      "observation": "Words occupy descending steps; righteousness settles below. Paths/of briefly touch while entering but separate promptly.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/09-p23-l009-righteous-path.jpg"
+    },
+    {
+      "phrase": 10,
+      "observation": "Writing/reveal plus signature underline resolves to ordinary two rows; no separate substantial word/world action.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/10-p23-l010-name-signature.jpg"
+    },
+    {
+      "phrase": 11,
+      "observation": "Walk travels across ground with alternating letter footfalls; visible change of position and meaning.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/11-p23-l011-walking-ground.jpg"
+    },
+    {
+      "phrase": 12,
+      "observation": "The canonical phrase stays readable while a projected word shadow moves through a diagonal light beam at64.2–65.6s. This is now a visible light/projection interaction, distinct from the curtain treatments.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/12-p23-l012-withdrawing-shadow.jpg"
+    },
+    {
+      "phrase": 13,
+      "observation": "Fear enclosure opens while no expands; a clear release/barrier mechanism.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/13-p23-l013-courage-expansion.jpg"
+    },
+    {
+      "phrase": 14,
+      "observation": "With/me approach one another into a common row; same broad partner meeting as25/34.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/14-p23-l014-embracing-presence.jpg"
+    },
+    {
+      "phrase": 15,
+      "observation": "Rod and staff letters briefly form upright structures before reforming readable words; distinct glyph construction.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/15-p23-l015-staff-unfold.jpg"
+    },
+    {
+      "phrase": 16,
+      "observation": "Comforted bends/compresses and returns; elastic relaxation equivalent to27 despite different axis.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/16-p23-l016-comfort-cradle.jpg"
+    },
+    {
+      "phrase": 17,
+      "observation": "Dark panels retract outward, then the phrase reveals and holds; same curtain operation as23. The repaired roman no is unambiguous at native82.0s and390px width.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/17-p23-l017-fear-clearing.jpg"
+    },
+    {
+      "phrase": 18,
+      "observation": "Words occupy table place settings then unfold/gather on a shared plane; clear semantic staging.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/18-p23-l018-table-setting.jpg"
+    },
+    {
+      "phrase": 19,
+      "observation": "Affliction words surround protected me, then open a corridor and regroup; visibly distinct spatial relation.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/19-p23-l019-affliction-perimeter.jpg"
+    },
+    {
+      "phrase": 20,
+      "observation": "Already-read oil glyphs gather into a drop, touch toward head, then reform. Brief but materially different.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/20-p23-l020-anointing-descent.jpg"
+    },
+    {
+      "phrase": 21,
+      "observation": "Wine rises inside a drawn cup, then pours left to the sentence. At native111.8s wine is below cup with clear glyph separation; the5fps sequence shows the outbound route without the v1 word collision.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/21-p23-l021-cup-overflow.jpg"
+    },
+    {
+      "phrase": 22,
+      "observation": "Earlier words recede while should walk advances, then regroup; a visible two-depth-station mechanism.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/22-p23-l022-walking-depth-stations.jpg"
+    },
+    {
+      "phrase": 23,
+      "observation": "Vertical shadow panels retract over the underpass scene; equivalent to17.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/23-p23-l023-shadow-passage.jpg"
+    },
+    {
+      "phrase": 24,
+      "observation": "Already-read glyphs twist/unfasten and recover. Visible, though the knot effect momentarily sacrifices shape clarity.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/24-p23-l024-unfastening-fear.jpg"
+    },
+    {
+      "phrase": 25,
+      "observation": "For and you have clear separation at124.6–125.0s, confirmed native124.7s and390px width. With/me meet into a row; still equivalent to14/34, not counted as a new mechanism.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/25-p23-l025-meeting-you-me.jpg"
+    },
+    {
+      "phrase": 26,
+      "observation": "Rod and staff whole words lift/swing on visible supports; distinct from15 glyph stacking.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/26-p23-l026-lifting-supports.jpg"
+    },
+    {
+      "phrase": 27,
+      "observation": "Comforted/me compress and stretch before relaxing; same broad elastic family as16.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/27-p23-l027-settling-comfort.jpg"
+    },
+    {
+      "phrase": 28,
+      "observation": "A readable straight sentence precedes individual letter rotation and translation into a supported arch at139.4–139.8s. The completed arch stays legible and spans the caregiving pair. This is a distinct structural transformation, not the v1 baseline reveal.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/28-p23-l028-unbroken-declaration.jpg"
+    },
+    {
+      "phrase": 29,
+      "observation": "Words follow a shared S path with shall now on a clearly higher station than follow. Native145.4s and390px width preserve Your mercy / shall / follow / me reading order without the v1 near-concatenation.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/29-p23-l029-following-mercy.jpg"
+    },
+    {
+      "phrase": 30,
+      "observation": "Days circles a held life station then returns; clear orbit with no sampled collision.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/30-p23-l030-days-orbit.jpg"
+    },
+    {
+      "phrase": 31,
+      "observation": "Large mercy becomes glowing generated filament lettering in one registered station at160.0–160.2s, after a clear plain-letter reading interval. Your and shall follow me remain readable above/below it. Native160.5/161.6s show correctly spelled prominent generated mercy with no opaque occlusion of the canonical sentence.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/31-p23-l031-mercy-material.jpg"
+    },
+    {
+      "phrase": 32,
+      "observation": "Three text bands and folded ribbon form a stepped continuum; counted as a distinct plane/ribbon composition, though linework is delicate.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/32-p23-l032-life-continuum.jpg"
+    },
+    {
+      "phrase": 33,
+      "observation": "Fear shifts away from held I will as no/evil settle; a discernible lateral separation mechanism.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/33-p23-l033-quiet-courage.jpg"
+    },
+    {
+      "phrase": 34,
+      "observation": "Partner words settle together under a shelter contour; equivalent approach/meeting family to14/25.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/34-p23-l034-shared-shelter.jpg"
+    },
+    {
+      "phrase": 35,
+      "observation": "Words travel in on a long curved approach before settling; equivalent gathering family to1/5.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/35-p23-l035-shepherd-homeward.jpg"
+    },
+    {
+      "phrase": 36,
+      "observation": "Nothing opens/releases over a curved envelope; similar to2.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/36-p23-l036-nothing-release.jpg"
+    },
+    {
+      "phrase": 37,
+      "observation": "And I shall dwell in is first readable then travels behind real doorway occlusion; the house of the Lord occupies right wall. Distinct actual scene-depth integration.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/37-p23-l037-house-doorway.jpg"
+    },
+    {
+      "phrase": 38,
+      "observation": "Long slowly expands its tracking over the hold; modest but visible time-extension mechanism. This remains one of the quieter credited single-use mechanisms.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/38-p23-l038-long-time.jpg"
+    },
+    {
+      "phrase": 39,
+      "observation": "Final shepherd declaration reveals and holds under an enclosing contour; ordinary reveal/write family.",
+      "evidenceSheet": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/39-p23-l039-final-anchor.jpg"
+    }
+  ],
+  "scores": {
+    "lyricLegibility": 8.5,
+    "semanticMotion": 8.2,
+    "photorealism": 8.8,
+    "composition": 8.4,
+    "continuity": 8.3
+  },
+  "scoreReasons": {
+    "lyricLegibility": "Clear settled reading states across all39 phrases. Native and390px checks confirm the repaired cup/wine, follow/shall, no, for/you and generated mercy passages. Some intentional letter transformations briefly deform already-readable words, and partial letters during write-on are expected.",
+    "semanticMotion": "31 conservative visual mechanisms with maximum equivalent use3. Growth, moving shadow projection, structural letter arch and material mercy now add observable actions. Guidance, steps, footfalls, table, protection, oil, cup, orbit and doorway reinforce meaning. Several effects remain restrained and fine-lined, so the result is not uniformly spectacular.",
+    "photorealism": "Convincing contemporary clothing, home/care settings, rain, wet materials and natural light. Reviewed hands, faces and body poses show no major anatomy defect. Most people are still photographic plates with camera movement, rather than sustained live human action.",
+    "composition": "Words occupy photographic wall, foliage, water and doorway space, with clear hierarchy and protected faces. The new arch and large mercy materially broaden the compositions. A recurring serif/italic palette and quiet two-row holds remain intentional stylistic repetition.",
+    "continuity": "All11 sampled act transitions, all3 generated sections and their neighboring states are coherent, without sampled black gaps, broken joins or misplaced duplicate mercy words. A brief registered glyph crossfade is visible at the material handoff.5fps sampling cannot prove every30fps transition or easing detail."
+  },
+  "threshold": 8,
+  "allScoresAtOrAboveThreshold": true,
+  "audioOrSyncScored": false,
+  "confidence": "High on the visible repairs, spelling/reading states, photographic composition and reviewed joins; moderate on exact perceptual-family boundaries and sub200ms/full30fps motion continuity."
+}

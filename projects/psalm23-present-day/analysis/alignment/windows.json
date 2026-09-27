@@ -1,0 +1,105 @@
+[
+  {
+    "id": "window-01",
+    "start": 12.5,
+    "end": 44.8,
+    "lineIds": [
+      "p23-l001",
+      "p23-l002",
+      "p23-l003",
+      "p23-l004",
+      "p23-l005",
+      "p23-l006"
+    ],
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/window-01-lyrics.txt"
+  },
+  {
+    "id": "window-02",
+    "start": 42,
+    "end": 60,
+    "lineIds": [
+      "p23-l007",
+      "p23-l008",
+      "p23-l009",
+      "p23-l010"
+    ],
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/window-02-lyrics.txt"
+  },
+  {
+    "id": "window-03",
+    "start": 57,
+    "end": 89,
+    "lineIds": [
+      "p23-l011",
+      "p23-l012",
+      "p23-l013",
+      "p23-l014",
+      "p23-l015",
+      "p23-l016",
+      "p23-l017"
+    ],
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/window-03-lyrics.txt"
+  },
+  {
+    "id": "window-04",
+    "start": 85.5,
+    "end": 114.5,
+    "lineIds": [
+      "p23-l018",
+      "p23-l019",
+      "p23-l020",
+      "p23-l021"
+    ],
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/window-04-lyrics.txt"
+  },
+  {
+    "id": "window-05",
+    "start": 111.5,
+    "end": 144,
+    "lineIds": [
+      "p23-l022",
+      "p23-l023",
+      "p23-l024",
+      "p23-l025",
+      "p23-l026",
+      "p23-l027",
+      "p23-l028"
+    ],
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/window-05-lyrics.txt"
+  },
+  {
+    "id": "window-06",
+    "start": 140.5,
+    "end": 172.5,
+    "lineIds": [
+      "p23-l029",
+      "p23-l030",
+      "p23-l031",
+      "p23-l032"
+    ],
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/window-06-lyrics.txt"
+  },
+  {
+    "id": "window-07",
+    "start": 169,
+    "end": 188,
+    "lineIds": [
+      "p23-l033",
+      "p23-l034",
+      "p23-l035",
+      "p23-l036"
+    ],
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/window-07-lyrics.txt"
+  },
+  {
+    "id": "window-08",
+    "start": 185,
+    "end": 211,
+    "lineIds": [
+      "p23-l037",
+      "p23-l038",
+      "p23-l039"
+    ],
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/window-08-lyrics.txt"
+  }
+]

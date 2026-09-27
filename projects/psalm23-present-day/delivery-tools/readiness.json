@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "status": "ready_for_reviewed_candidate_delivery",
+  "verifiedAt": "2026-09-27T16:22:10.864928+00:00",
+  "host": "omipc.taild60b4e.ts.net",
+  "restoration": {
+    "before": "Existing scheduled app task stopped; loopback4317 refused; separate LAN proxy returned502",
+    "action": "Start-ScheduledTask -TaskName ScriptureInSongLocal",
+    "after": {
+      "stoppedOwnTimedOutInspectionPids": [],
+      "listeners": [
+        {
+          "LocalAddress": "192.168.4.245",
+          "LocalPort": 4317,
+          "OwningProcess": 9176
+        },
+        {
+          "LocalAddress": "127.0.0.1",
+          "LocalPort": 4317,
+          "OwningProcess": 26344
+        }
+      ],
+      "taskState": "Running"
+    },
+    "sourceOrConfigChanges": false
+  },
+  "studio": {
+    "status": 200,
+    "contentType": "text/html; charset=UTF-8",
+    "bytes": 641
+  },
+  "existingPlaybackRoute": {
+    "existingCandidateId": "vid-20260927-4fecbc68",
+    "status": 206,
+    "bytes": 1024,
+    "contentRange": "bytes 0-1023/187403161"
+  },
+  "workflowId": "psalm-23-lxx-22-shepherd",
+  "songId": "32885123-f4b6-42e6-a546-f4acba404829",
+  "sourceAudioSha256": "3669040e797c9d2bf8b4136dc4c029c6e1ed51f302ccc411d1888ae50da80c8f",
+  "lyricsSha256": "021492487b56a3ac1dac962cc4c75658b250d8a05ac925f0aebc9a72a09f385a",
+  "existingCandidatesPreserved": 24,
+  "psalm23Candidates": 0,
+  "publisher": "publish-reviewed.py",
+  "publisherExecuted": false,
+  "scope": "Readiness and existing service restoration only. No final video copy, candidate ingest, workflow change, or Photos import performed.",
+  "note": "Combined read-only source inspection timed out; code was subsequently read through SCP. Cleanup check found no lingering matching inspection process."
+}

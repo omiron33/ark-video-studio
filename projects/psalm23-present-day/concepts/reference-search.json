@@ -1,0 +1,393 @@
+{
+  "query": "Psalm 23 present day protection for you are with me I will fear no evil intimate reassuring Americana soul ballad 6/8 slow 220 seconds intricate words immersed in footage organic line art mercy shadow of death toward warmth",
+  "method": "local-lexical-concept-search-v1",
+  "results": [
+    {
+      "card": {
+        "version": 1,
+        "id": "internal-foreground-occlusion",
+        "title": "Caution: foreground depth can hide indispensable words",
+        "source": {
+          "kind": "internal",
+          "path": "/Users/shanefisher/Movies/Genesis 7 - music video v3.mp4",
+          "videoSha256": "ba363e5de17be904f40910aca6a71c585c7599da5bb5323851750ffb4c16660a",
+          "start": 116.1,
+          "end": 122.787,
+          "sectionIds": [
+            "s24"
+          ]
+        },
+        "intent": [
+          "depth",
+          "procession",
+          "belonging",
+          "readability protection"
+        ],
+        "tags": [
+          "cautionary",
+          "occlusion",
+          "foreground silhouettes",
+          "photographic composition",
+          "legibility failure"
+        ],
+        "motion": {
+          "summary": "Cloaked figures occupy the foreground while the sons lyric sits behind their heads. Several sampled frames hide parts of the second line, demonstrating the cost of uncontrolled depth placement.",
+          "phases": [
+            "Establish foreground silhouettes with small warm lanterns against a cool corridor.",
+            "Place text on a deeper plane, creating convincing overlap.",
+            "Observe the failure: heads cover letters needed to read the names."
+          ],
+          "transferablePrinciple": "Foreground overlap can make text inhabit a world, but the meaningful words require an unobstructed reading interval.",
+          "variations": [
+            "Occlude only an already-read word during its departure.",
+            "Reserve a clear band above the silhouettes while allowing decorative type behind them.",
+            "Use a foreground passage to reveal, rather than continuously obscure, the crucial word."
+          ],
+          "cautions": [
+            "Treat this as a cautionary example, not an approved legibility treatment.",
+            "Do not place names or essential lyric words behind opaque figures without a clear reading hold.",
+            "Review at phone size; small secondary verse text is already weak in this source."
+          ]
+        },
+        "quality": {
+          "status": "observed",
+          "reviewer": "agent visual inspection of decoded frame sequence",
+          "strengths": [
+            "Warm lanterns and cool silhouettes establish strong depth and atmosphere.",
+            "The reference exposes a concrete compositing failure useful for future reviews."
+          ],
+          "limitations": [
+            "Important letters in the sons line are visibly hidden across several samples.",
+            "The small lower verse line has weak contrast and is difficult to read.",
+            "Observed from six decoded frames of the exact hashed MP4; this is a concept reference, not full motion, audio-sync or whole-film acceptance."
+          ],
+          "userPreference": "unknown"
+        },
+        "frames": [
+          {
+            "path": "images/internal-foreground-occlusion/01.jpg",
+            "timeSeconds": 117
+          },
+          {
+            "path": "images/internal-foreground-occlusion/02.jpg",
+            "timeSeconds": 118
+          },
+          {
+            "path": "images/internal-foreground-occlusion/03.jpg",
+            "timeSeconds": 119
+          },
+          {
+            "path": "images/internal-foreground-occlusion/04.jpg",
+            "timeSeconds": 120
+          },
+          {
+            "path": "images/internal-foreground-occlusion/05.jpg",
+            "timeSeconds": 121
+          },
+          {
+            "path": "images/internal-foreground-occlusion/06.jpg",
+            "timeSeconds": 122.5
+          }
+        ],
+        "contactSheet": "images/internal-foreground-occlusion/sheet.jpg"
+      },
+      "fit": {
+        "score": 15.2,
+        "lexicalScore": 15.2,
+        "matchedConcepts": [
+          {
+            "queryTerm": "protection",
+            "referenceTerm": "protection",
+            "kind": "exact"
+          },
+          {
+            "queryTerm": "second",
+            "referenceTerm": "second",
+            "kind": "exact"
+          },
+          {
+            "queryTerm": "word",
+            "referenceTerm": "word",
+            "kind": "exact"
+          },
+          {
+            "queryTerm": "line",
+            "referenceTerm": "line",
+            "kind": "exact"
+          },
+          {
+            "queryTerm": "shadow",
+            "referenceTerm": "silhouette",
+            "kind": "related"
+          }
+        ],
+        "durationFit": null,
+        "repetitionPenalty": 0,
+        "diversityPenalty": 0
+      }
+    },
+    {
+      "card": {
+        "version": 1,
+        "id": "internal-genesis1-whale-word-composite",
+        "title": "A creature forms beneath its spoken name",
+        "source": {
+          "kind": "internal",
+          "path": "/Volumes/DATA/ArkRender/genesis1/genesis1-breath-earth-v1.mp4",
+          "projectPath": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/project.json",
+          "start": 195.35,
+          "end": 203.5,
+          "sectionIds": [
+            "g1-l057",
+            "g1-l058",
+            "g1-l059"
+          ],
+          "videoSha256": "b946c097f0902c0f3b4eda3a330aceca2ef893c29bd5a7eb511cc34101d130db"
+        },
+        "intent": [
+          "creation",
+          "material acquiring identity",
+          "spoken command",
+          "great whales"
+        ],
+        "tags": [
+          "organic line art",
+          "generated video integration",
+          "typography foreground",
+          "whale",
+          "bone and rust",
+          "contour continuity"
+        ],
+        "motion": {
+          "summary": "Loose bone filaments form a whale behind the measured canonical words; authored foreground strokes continue the same material into the frame.",
+          "phases": [
+            "Loose filaments appear beneath the preceding command.",
+            "A coherent whale resolves as its name is sung.",
+            "The recognizable form continues breathing while the next creature phrase begins."
+          ],
+          "transferablePrinciple": "Use generated motion for organic topology and authored exact type for words, joining them with a common contour vocabulary.",
+          "variations": [
+            "Resolve root filaments into a tree beneath a separately timed growth command.",
+            "Gather star trails into a night sky with exact lyric stations."
+          ],
+          "cautions": [
+            "Generate new scene artwork; never recycle this whale across unrelated passages.",
+            "Sparse frames do not certify motion smoothness or vocal synchronization.",
+            "Fine generated strokes need matched brightness and a continuous native last frame."
+          ]
+        },
+        "quality": {
+          "status": "observed",
+          "reviewer": "Rook; six actual encoded film frames at195.6,196.8,198,199.55,200.9,202.3seconds",
+          "userPreference": "unknown",
+          "userPreferenceScope": "Shane chose the overall Breath & Earth direction, not this extracted moment.",
+          "strengths": [
+            "The same sparse bone contours become a recognizable animal behind a separate, readable GREAT WHALES lyric.",
+            "Foreground contour strokes cross the video boundary without a rectangular cutaway.",
+            "Large cream words retain priority over thin animal lines and rust accents."
+          ],
+          "limitations": [
+            "Six still samples demonstrate composition and transformation stages, not complete motion smoothness or vocal-sync certification.",
+            "Generated source24fps is embedded in30fps1080p output.",
+            "The contour vocabulary supports one short creation passage; repeated use would dilute its effect."
+          ]
+        },
+        "frames": [
+          {
+            "path": "images/internal-genesis1-whale-word-composite/frame-01.jpg",
+            "timeSeconds": 195.6,
+            "sha256": "aff6dbd2c072fc7547668ec398f71b4c1e6616bc4f00e0ec7f8d62cdb70f6dfa"
+          },
+          {
+            "path": "images/internal-genesis1-whale-word-composite/frame-02.jpg",
+            "timeSeconds": 196.8,
+            "sha256": "eaee1baba4e1704183c73ddb320af8b2109d20a358d837037ebc17ee493485ce"
+          },
+          {
+            "path": "images/internal-genesis1-whale-word-composite/frame-03.jpg",
+            "timeSeconds": 198,
+            "sha256": "83ce30ebdc6c0e85cd940a4dc8016657859bf534eb81e6dd1e7eeb9c0ad28184"
+          },
+          {
+            "path": "images/internal-genesis1-whale-word-composite/frame-04.jpg",
+            "timeSeconds": 199.55,
+            "sha256": "5caa2a2e68f3527f891719eea20c4cfca0e3af7efa41e0f8fb94feffa7198d02"
+          },
+          {
+            "path": "images/internal-genesis1-whale-word-composite/frame-05.jpg",
+            "timeSeconds": 200.9,
+            "sha256": "a43463a331e188bab78da5e6c9368d45552fe9620a621ef13d580fa855bf0206"
+          },
+          {
+            "path": "images/internal-genesis1-whale-word-composite/frame-06.jpg",
+            "timeSeconds": 202.3,
+            "sha256": "ef5ee59f9f1c62f75b84463c24325532ba5a782f97234b028062b2ef3f326e61"
+          }
+        ],
+        "contactSheet": "images/internal-genesis1-whale-word-composite/sheet.jpg",
+        "capture": {
+          "method": "ffmpeg-frame-sequence-v1",
+          "videoDuration": 304.733333,
+          "fps": 30,
+          "sampledFrames": 6,
+          "contactSheetSha256": "f6b21c4a80a3c3dd1f9ced2f4206e9426c060446976691fed38abe69d399992b"
+        }
+      },
+      "fit": {
+        "score": 14.775,
+        "lexicalScore": 15,
+        "matchedConcepts": [
+          {
+            "queryTerm": "word",
+            "referenceTerm": "word",
+            "kind": "exact"
+          },
+          {
+            "queryTerm": "organic",
+            "referenceTerm": "organic",
+            "kind": "exact"
+          },
+          {
+            "queryTerm": "line",
+            "referenceTerm": "line",
+            "kind": "exact"
+          },
+          {
+            "queryTerm": "art",
+            "referenceTerm": "art",
+            "kind": "exact"
+          }
+        ],
+        "durationFit": null,
+        "repetitionPenalty": 0,
+        "diversityPenalty": 0.015
+      }
+    },
+    {
+      "card": {
+        "version": 1,
+        "id": "external-microtype-image-world",
+        "title": "Images built from a common microtype material",
+        "source": {
+          "kind": "external",
+          "url": "https://x.com/ptrubey/status/2104062055712260161",
+          "originalPostUrl": "https://x.com/johnknopf/status/2103698854399099057",
+          "path": "/tmp/ark-motion-external-2104062055712260161/source.mp4",
+          "videoSha256": "be382235c890a99cd4bb8e7448123646cf7bb4a1e52939c2566646f6c22bb395",
+          "start": 75,
+          "end": 85.033333,
+          "creator": "John Knopf (@johnknopf), original poster; shared by Phil Trubey (@PTrubey)",
+          "title": "All the Way Here"
+        },
+        "intent": [
+          "connect words to memory",
+          "unify varied scenes",
+          "show knowledge becoming imagery",
+          "intimate human recollection"
+        ],
+        "tags": [
+          "microtypography",
+          "ascii texture",
+          "typographic image",
+          "semantic montage",
+          "silhouette",
+          "photographic composition",
+          "dark",
+          "memory",
+          "letters"
+        ],
+        "motion": {
+          "summary": "A sparse title gives way to figurative scenes represented through dense small characters. Different subjects share the same text-like surface while a separate bottom lyric line remains readable.",
+          "phases": [
+            "A restrained title holds against near-black.",
+            "A large figurative image appears through a dense character grid.",
+            "The subject changes while the microtype material and bottom lyric band carry continuity."
+          ],
+          "transferablePrinciple": "Use one meaningful visual material across different compositions, so the material expresses the story while the subjects keep changing.",
+          "variations": [
+            "For ancestry, build new silhouettes from short verified family-record fragments, keeping the primary lyric separate.",
+            "For a flood story, let original maps or contour marks become the shared surface of distinct images.",
+            "Use changing marks only where they support form; a still readable silhouette can contrast with a later active transition."
+          ],
+          "cautions": [
+            "Borrow the idea of a shared semantic material, not this video's exact imagery, phrases or character patterns.",
+            "Dense small marks collapse on phones and video compression; test the encoded output at real display size.",
+            "Do not substitute changing textures for genuinely different choreography.",
+            "This sample establishes a visual treatment and scene succession, not a measured morph algorithm."
+          ]
+        },
+        "quality": {
+          "status": "observed",
+          "reviewer": "agent visual inspection of decoded frame sequence",
+          "strengths": [
+            "A consistent material ties different subjects to a story about language.",
+            "Large light-and-shadow shapes remain recognizable even when individual characters are too small to read."
+          ],
+          "limitations": [
+            "The sampled scenes are dark and very fine grained; small-screen contrast may be weak.",
+            "Primary lyrics are comparatively small; engine adaptation must use its own legibility requirements."
+          ],
+          "userPreference": "liked",
+          "userPreferenceScope": "Source video only. Shane noted cool ideas in the video; this individual excerpt has not been approved. No numerical craft or timing score assigned."
+        },
+        "frames": [
+          {
+            "path": "images/external-microtype-image-world/01.jpg",
+            "timeSeconds": 75
+          },
+          {
+            "path": "images/external-microtype-image-world/02.jpg",
+            "timeSeconds": 77
+          },
+          {
+            "path": "images/external-microtype-image-world/03.jpg",
+            "timeSeconds": 79
+          },
+          {
+            "path": "images/external-microtype-image-world/04.jpg",
+            "timeSeconds": 81
+          },
+          {
+            "path": "images/external-microtype-image-world/05.jpg",
+            "timeSeconds": 83
+          },
+          {
+            "path": "images/external-microtype-image-world/06.jpg",
+            "timeSeconds": 85
+          }
+        ],
+        "contactSheet": "images/external-microtype-image-world/sheet.jpg"
+      },
+      "fit": {
+        "score": 13.632,
+        "lexicalScore": 14.2,
+        "matchedConcepts": [
+          {
+            "queryTerm": "intimate",
+            "referenceTerm": "intimate",
+            "kind": "exact"
+          },
+          {
+            "queryTerm": "word",
+            "referenceTerm": "word",
+            "kind": "exact"
+          },
+          {
+            "queryTerm": "line",
+            "referenceTerm": "line",
+            "kind": "exact"
+          },
+          {
+            "queryTerm": "shadow",
+            "referenceTerm": "silhouette",
+            "kind": "related"
+          }
+        ],
+        "durationFit": null,
+        "repetitionPenalty": 0,
+        "diversityPenalty": 0.04
+      }
+    }
+  ],
+  "warnings": []
+}

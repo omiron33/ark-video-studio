@@ -1,0 +1,563 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "32885123-f4b6-42e6-a546-f4acba404829.m4a",
+    "offset": 101.731746,
+    "duration": 23.408382000000003,
+    "audioDuration": 219.96,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "anointed my head with oil, and your cup cheers me like the best wine. Even if I should walk in the shadow of death, I will fear no evil, for",
+  "approvedLyrics": "anointed my head with oil, and your cup cheers me like the best wine. Even if I should walk in the shadow of death, I will fear no evil, for",
+  "words": [
+    {
+      "id": "w_1760cc4a104f6567",
+      "text": "anointed",
+      "start": 102.351968,
+      "end": 103.172261,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.056526913910545165,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l020-w03"
+    },
+    {
+      "id": "w_5692f8d467282703",
+      "text": "my",
+      "start": 103.312311,
+      "end": 103.492376,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.8404339121289109,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l020-w04"
+    },
+    {
+      "id": "w_49efe0c628760a68",
+      "text": "head",
+      "start": 103.652433,
+      "end": 104.212634,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.7138366048660075,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l020-w05"
+    },
+    {
+      "id": "w_08820c85f621856e",
+      "text": "with",
+      "start": 104.312669,
+      "end": 104.532748,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9474505631048352,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l020-w06"
+    },
+    {
+      "id": "w_6f4938707f9e4832",
+      "text": "oil,",
+      "start": 105.052934,
+      "end": 105.212992,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.6397784916145596,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l020-w07"
+    },
+    {
+      "id": "w_26f1dce67a440200",
+      "text": "and",
+      "start": 107.493808,
+      "end": 107.573836,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.8968678485252678,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l021-w01"
+    },
+    {
+      "id": "w_1fb1fb982ca032ac",
+      "text": "your",
+      "start": 107.653865,
+      "end": 107.973979,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.8383443966493059,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l021-w02"
+    },
+    {
+      "id": "w_c705956ae2b3d5cb",
+      "text": "cup",
+      "start": 108.134037,
+      "end": 108.474158,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9921535314015989,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l021-w03"
+    },
+    {
+      "id": "w_d1577d3bc9934f09",
+      "text": "cheers",
+      "start": 109.454509,
+      "end": 110.114745,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9393156468824998,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l021-w04"
+    },
+    {
+      "id": "w_903dbddaa7e72a71",
+      "text": "me",
+      "start": 110.194774,
+      "end": 110.29481,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.8813756777350711,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l021-w05"
+    },
+    {
+      "id": "w_05625f3169e0f1ed",
+      "text": "like",
+      "start": 110.414853,
+      "end": 110.594917,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9812430866654617,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l021-w06"
+    },
+    {
+      "id": "w_2dc861b83b4125ef",
+      "text": "the",
+      "start": 110.674946,
+      "end": 110.754974,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.997822536451507,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l021-w07"
+    },
+    {
+      "id": "w_203cdecc40897b05",
+      "text": "best",
+      "start": 110.85501,
+      "end": 111.155117,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9556670383268873,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l021-w08"
+    },
+    {
+      "id": "w_75ff3ff299c48a58",
+      "text": "wine.",
+      "start": 111.295168,
+      "end": 112.175483,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.2812942726021428,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l021-w09"
+    },
+    {
+      "id": "w_1be7edd731dea7df",
+      "text": "Even",
+      "start": 113.255869,
+      "end": 113.515962,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9970717391301358,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l022-w01"
+    },
+    {
+      "id": "w_923db3154d6a44a4",
+      "text": "if",
+      "start": 113.676019,
+      "end": 113.716034,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9958072085968455,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l022-w02"
+    },
+    {
+      "id": "w_8b879358dd578def",
+      "text": "I",
+      "start": 113.95612,
+      "end": 113.976127,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9351565853181871,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l022-w03"
+    },
+    {
+      "id": "w_c6e0b40480a6f91a",
+      "text": "should",
+      "start": 114.456299,
+      "end": 114.856442,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.4759180357869333,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l022-w04"
+    },
+    {
+      "id": "w_e0510e7d4eee6356",
+      "text": "walk",
+      "start": 114.93647,
+      "end": 115.636721,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.06909664414982376,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l022-w05"
+    },
+    {
+      "id": "w_1c245f9f52cd8e6d",
+      "text": "in",
+      "start": 116.83715,
+      "end": 116.877165,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.5624961296239236,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l023-w01"
+    },
+    {
+      "id": "w_8c60aac78882148c",
+      "text": "the",
+      "start": 116.9772,
+      "end": 117.037222,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.8869055049785917,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l023-w02"
+    },
+    {
+      "id": "w_0f84019d0fd112a7",
+      "text": "shadow",
+      "start": 117.177272,
+      "end": 117.797494,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.6448743547789569,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l023-w03"
+    },
+    {
+      "id": "w_92a298dcf4a683d5",
+      "text": "of",
+      "start": 118.417716,
+      "end": 118.477737,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.3042907039742547,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l023-w04"
+    },
+    {
+      "id": "w_11be85b953b56d40",
+      "text": "death,",
+      "start": 118.59778,
+      "end": 118.937902,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.7004745208042982,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l023-w05"
+    },
+    {
+      "id": "w_95d6802ac6a6be16",
+      "text": "I",
+      "start": 120.298389,
+      "end": 120.318396,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.7824100006723314,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l024-w01"
+    },
+    {
+      "id": "w_d8ce72c158748177",
+      "text": "will",
+      "start": 120.438439,
+      "end": 120.658518,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.8675097830691619,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l024-w02"
+    },
+    {
+      "id": "w_6b378b8325b37f19",
+      "text": "fear",
+      "start": 120.858589,
+      "end": 121.518825,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.6855439655244585,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l024-w03"
+    },
+    {
+      "id": "w_eb325d39b7124eee",
+      "text": "no",
+      "start": 121.83894,
+      "end": 122.039011,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.027481945898421324,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l024-w04"
+    },
+    {
+      "id": "w_afdbee9332653075",
+      "text": "evil,",
+      "start": 122.879312,
+      "end": 123.279455,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.18261114103229104,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l024-w05"
+    },
+    {
+      "id": "w_5c65a5d117cad5b1",
+      "text": "for",
+      "start": 124.199785,
+      "end": 124.339835,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9167841972152876,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l025-w01"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "anointed my head with oil, and your cup cheers me like the best wine. Even if I should walk in the shadow of death, I will fear no evil, for",
+      "wordIds": [
+        "w_1760cc4a104f6567",
+        "w_5692f8d467282703",
+        "w_49efe0c628760a68",
+        "w_08820c85f621856e",
+        "w_6f4938707f9e4832",
+        "w_26f1dce67a440200",
+        "w_1fb1fb982ca032ac",
+        "w_c705956ae2b3d5cb",
+        "w_d1577d3bc9934f09",
+        "w_903dbddaa7e72a71",
+        "w_05625f3169e0f1ed",
+        "w_2dc861b83b4125ef",
+        "w_203cdecc40897b05",
+        "w_75ff3ff299c48a58",
+        "w_1be7edd731dea7df",
+        "w_923db3154d6a44a4",
+        "w_8b879358dd578def",
+        "w_c6e0b40480a6f91a",
+        "w_e0510e7d4eee6356",
+        "w_1c245f9f52cd8e6d",
+        "w_8c60aac78882148c",
+        "w_0f84019d0fd112a7",
+        "w_92a298dcf4a683d5",
+        "w_11be85b953b56d40",
+        "w_95d6802ac6a6be16",
+        "w_d8ce72c158748177",
+        "w_6b378b8325b37f19",
+        "w_eb325d39b7124eee",
+        "w_afdbee9332653075",
+        "w_5c65a5d117cad5b1"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "executionEvidence": {
+    "mode": "persistent-pass-cache",
+    "workerCodeSha256": "f79248815aeac1418c2de993edddc61a855af2c93c95043354196c07993efc18"
+  },
+  "cacheEvidence": {
+    "key": "55d710f1a2b12d9a539c28814d19f92bae88ccd537063cfc60f12fa05efbef96",
+    "cacheHit": true,
+    "entryPath": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/.review-cache/audio/55d710f1a2b12d9a539c28814d19f92bae88ccd537063cfc60f12fa05efbef96.json",
+    "resultSha256": "26e69feafca615d5aeb4eca6f74fb74004972b7419cd10dbc12a38fb5af2ac1f",
+    "currentInput": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/sources/32885123-f4b6-42e6-a546-f4acba404829.m4a",
+    "currentInputSha256": "3669040e797c9d2bf8b4136dc4c029c6e1ed51f302ccc411d1888ae50da80c8f",
+    "decodedAudio": {
+      "sha256": "c73f0db1904410ebda4ccb9118610c97116f43fb9d18d655f45c31f17c233d38",
+      "format": "mono-s16le-16000",
+      "samples": 374534
+    },
+    "model": {
+      "path": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+      "sha256": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d"
+    },
+    "runtimeSha256": "50a5d8ee887a89b9619cdbc8bba1bb53ab5f6cde3275aee01aa7f5b03c19eeba"
+  }
+}

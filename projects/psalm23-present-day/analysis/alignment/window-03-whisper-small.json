@@ -1,0 +1,662 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "transcribe",
+  "method": "local-openai-whisper-transcribe; machine estimates",
+  "source": {
+    "audio": "32885123-f4b6-42e6-a546-f4acba404829.m4a",
+    "offset": 57.0,
+    "duration": 32.0,
+    "audioDuration": 219.96,
+    "model": "/Volumes/DATA/AI/Models/Whisper/small.en.pt",
+    "backend": "openai-whisper",
+    "language": "en"
+  },
+  "transcript": "Even if I should walk in the shadow of death I will fear no evil for you are with me You're riding your staff, they have comfort at me I will fear no evil You have prepared a",
+  "words": [
+    {
+      "id": "w_89f61b29c4142ac3",
+      "text": "Even",
+      "start": 57.0,
+      "end": 58.82,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.152698814868927,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_76eb15a403ff2cfb",
+      "text": "if",
+      "start": 58.82,
+      "end": 59.24,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9680290818214417,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_3348e1ab6763d327",
+      "text": "I",
+      "start": 59.24,
+      "end": 59.7,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9742024540901184,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_8e8f306ee753688e",
+      "text": "should",
+      "start": 59.7,
+      "end": 60.24,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9739316701889038,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_ccc20f4679634d87",
+      "text": "walk",
+      "start": 60.24,
+      "end": 60.94,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9788690209388733,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_2f1f2e75c993f6d4",
+      "text": "in",
+      "start": 60.94,
+      "end": 62.44,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.5442741513252258,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_491e0a0d3dcb077e",
+      "text": "the",
+      "start": 62.44,
+      "end": 62.62,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9671878814697266,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_babaf0e5823c716a",
+      "text": "shadow",
+      "start": 62.62,
+      "end": 63.24,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9851412773132324,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_d945deb3efa7bfb4",
+      "text": "of",
+      "start": 63.24,
+      "end": 63.98,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9948780536651611,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_e69964f9f2388367",
+      "text": "death",
+      "start": 63.98,
+      "end": 64.68,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9781703352928162,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_084104a949cf4623",
+      "text": "I",
+      "start": 64.54,
+      "end": 65.92,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.7326160073280334,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_2c03c34199da2f15",
+      "text": "will",
+      "start": 65.92,
+      "end": 66.14,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.941885232925415,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_ea7f75fb616ab366",
+      "text": "fear",
+      "start": 66.14,
+      "end": 66.94,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9951802492141724,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_3bdc5c63e49c87a9",
+      "text": "no",
+      "start": 66.94,
+      "end": 67.64,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9898592829704285,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_d202ec1a8e9b0f96",
+      "text": "evil",
+      "start": 67.64,
+      "end": 68.8,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9960803389549255,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_c8f7cd41c2f3d156",
+      "text": "for",
+      "start": 68.8,
+      "end": 69.92,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.33380502462387085,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_0e42e24de7202415",
+      "text": "you",
+      "start": 69.92,
+      "end": 70.3,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9523730874061584,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_f31f444f3e4cef43",
+      "text": "are",
+      "start": 70.3,
+      "end": 71.02,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9937089681625366,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_4b59514517eb1cbb",
+      "text": "with",
+      "start": 71.02,
+      "end": 71.46,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9980608820915222,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_6388456027f1dfe5",
+      "text": "me",
+      "start": 71.46,
+      "end": 72.16,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9934123158454895,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_e5db6829366f5dd0",
+      "text": "You're",
+      "start": 72.82,
+      "end": 73.66,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.8265367746353149,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_475f00722184e524",
+      "text": "riding",
+      "start": 73.66,
+      "end": 74.18,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.4555605351924896,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_0dc7e5891a401ab6",
+      "text": "your",
+      "start": 74.18,
+      "end": 74.78,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.975380539894104,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_5d6543a4db43b1f8",
+      "text": "staff,",
+      "start": 74.78,
+      "end": 75.42,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.6523699760437012,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_a4d4eab126a574b7",
+      "text": "they",
+      "start": 75.42,
+      "end": 76.78,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9633969068527222,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_09c256d8a04185f2",
+      "text": "have",
+      "start": 76.78,
+      "end": 77.12,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9959606528282166,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_49825f0ff63411be",
+      "text": "comfort",
+      "start": 77.12,
+      "end": 77.88,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9993988275527954,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_c640837baae7c2a9",
+      "text": "at",
+      "start": 77.88,
+      "end": 78.36,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.7761372923851013,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_cb49513880545d1f",
+      "text": "me",
+      "start": 78.36,
+      "end": 79.08,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9630401134490967,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_272391d1be307fda",
+      "text": "I",
+      "start": 79.08,
+      "end": 80.42,
+      "phraseId": "phrase-0004",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9618582129478455,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_3558bb7cab77d3a6",
+      "text": "will",
+      "start": 80.42,
+      "end": 80.66,
+      "phraseId": "phrase-0004",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9966686367988586,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_ca8f1d10cc92f214",
+      "text": "fear",
+      "start": 80.66,
+      "end": 81.38,
+      "phraseId": "phrase-0004",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9974181652069092,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_a4643401cd85af2b",
+      "text": "no",
+      "start": 81.38,
+      "end": 82.18,
+      "phraseId": "phrase-0004",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9942823648452759,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_2017a6b6d9bab2ac",
+      "text": "evil",
+      "start": 82.18,
+      "end": 83.44,
+      "phraseId": "phrase-0004",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9995699524879456,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_7b6964aea2efe32f",
+      "text": "You",
+      "start": 87.0,
+      "end": 87.66,
+      "phraseId": "phrase-0005",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.42573943734169006,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_b16c533818a2f5ad",
+      "text": "have",
+      "start": 87.66,
+      "end": 87.88,
+      "phraseId": "phrase-0005",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9606913328170776,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_4b943e3953fb6c11",
+      "text": "prepared",
+      "start": 87.88,
+      "end": 88.46,
+      "phraseId": "phrase-0005",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9852773547172546,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_5746ee4dace3d54c",
+      "text": "a",
+      "start": 88.46,
+      "end": 88.92,
+      "phraseId": "phrase-0005",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.7573773264884949,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "Even if I should walk in the shadow of death",
+      "wordIds": [
+        "w_89f61b29c4142ac3",
+        "w_76eb15a403ff2cfb",
+        "w_3348e1ab6763d327",
+        "w_8e8f306ee753688e",
+        "w_ccc20f4679634d87",
+        "w_2f1f2e75c993f6d4",
+        "w_491e0a0d3dcb077e",
+        "w_babaf0e5823c716a",
+        "w_d945deb3efa7bfb4",
+        "w_e69964f9f2388367"
+      ]
+    },
+    {
+      "id": "phrase-0002",
+      "text": "I will fear no evil for you are with me",
+      "wordIds": [
+        "w_084104a949cf4623",
+        "w_2c03c34199da2f15",
+        "w_ea7f75fb616ab366",
+        "w_3bdc5c63e49c87a9",
+        "w_d202ec1a8e9b0f96",
+        "w_c8f7cd41c2f3d156",
+        "w_0e42e24de7202415",
+        "w_f31f444f3e4cef43",
+        "w_4b59514517eb1cbb",
+        "w_6388456027f1dfe5"
+      ]
+    },
+    {
+      "id": "phrase-0003",
+      "text": "You're riding your staff, they have comfort at me",
+      "wordIds": [
+        "w_e5db6829366f5dd0",
+        "w_475f00722184e524",
+        "w_0dc7e5891a401ab6",
+        "w_5d6543a4db43b1f8",
+        "w_a4d4eab126a574b7",
+        "w_09c256d8a04185f2",
+        "w_49825f0ff63411be",
+        "w_c640837baae7c2a9",
+        "w_cb49513880545d1f"
+      ]
+    },
+    {
+      "id": "phrase-0004",
+      "text": "I will fear no evil",
+      "wordIds": [
+        "w_272391d1be307fda",
+        "w_3558bb7cab77d3a6",
+        "w_ca8f1d10cc92f214",
+        "w_a4643401cd85af2b",
+        "w_2017a6b6d9bab2ac"
+      ]
+    },
+    {
+      "id": "phrase-0005",
+      "text": "You have prepared a",
+      "wordIds": [
+        "w_7b6964aea2efe32f",
+        "w_b16c533818a2f5ad",
+        "w_4b943e3953fb6c11",
+        "w_5746ee4dace3d54c"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ]
+}

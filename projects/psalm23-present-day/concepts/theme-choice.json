@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "status": "chosen",
+  "song": {
+    "title": "Psalm 23 (LXX 22) The Lord Is My Shepherd",
+    "sunoId": "32885123-f4b6-42e6-a546-f4acba404829",
+    "shareUrl": "https://suno.com/s/3wWZe2iEOVtgCNPP",
+    "canonicalUrl": "https://suno.com/song/32885123-f4b6-42e6-a546-f4acba404829",
+    "appWorkflowId": "psalm-23-lxx-22-shepherd",
+    "audioSha256": "3669040e797c9d2bf8b4136dc4c029c6e1ed51f302ccc411d1888ae50da80c8f",
+    "durationSeconds": 219.96,
+    "lyricsSha256": "021492487b56a3ac1dac962cc4c75658b250d8a05ac925f0aebc9a72a09f385a"
+  },
+  "sheetPath": "theme-options-v1.png",
+  "sheetStatus": "generated_and_independently_reviewed",
+  "promptPath": "image-prompt-v1.txt",
+  "options": [
+    {
+      "number": 1,
+      "name": "Held in the Ordinary",
+      "description": "Warm contemporary parent-and-child shelter; lyric planes and organic contour ribbons inhabit the same porch photograph.",
+      "motionStatus": "proposed_after_choice"
+    },
+    {
+      "number": 2,
+      "name": "Through the Valley",
+      "description": "A contemporary urban passage opens toward dawn; bold lyric planes and architectural masks turn the phrase into a spatial journey.",
+      "motionStatus": "proposed_after_choice"
+    },
+    {
+      "number": 3,
+      "name": "Mercy in Motion",
+      "description": "Intimate modern portrait, water reflections and flowing lyric strokes; experimental generated word-to-water transformation stabilized with exact editable type.",
+      "motionStatus": "new_capability_to_develop_and_verify_after_choice"
+    }
+  ],
+  "references": [
+    "internal-foreground-occlusion",
+    "internal-genesis1-whale-word-composite",
+    "external-microtype-image-world"
+  ],
+  "scope": "Theme 1 selected explicitly. Full authorized production and review may proceed.",
+  "userChoice": {
+    "option": 1,
+    "name": "Held in the Ordinary",
+    "instruction": "1",
+    "chosenAt": "2026-09-27T16:00:41.092068+00:00"
+  },
+  "review": {
+    "style": "pass_ready_for_theme_choice",
+    "animation": "not_implemented_not_reviewed",
+    "sync": "not_reviewed",
+    "styleEvidence": "style-review-v1.json",
+    "recommendedOption": 2
+  },
+  "createdAt": "2026-09-27T15:30:20.930Z",
+  "sheetSha256": "dfee53d8ecdf35ffb85168dd8a54ee69f08dc656372d4f607923ff2259a9f73d",
+  "generationTool": "built-in GPT Image",
+  "sheetDimensions": {
+    "width": 930,
+    "height": 1692
+  }
+}

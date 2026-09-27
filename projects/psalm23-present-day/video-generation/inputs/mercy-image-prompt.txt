@@ -1,0 +1,8 @@
+Use case: stylized-concept
+Asset type: final keyframe for experimental local generated typographic motion in a contemporary Psalm 23 lyric film.
+Primary request: The single exact English word "mercy", spelled m e r c y, all lowercase, beautifully legible, built entirely from many flowing warm amber-gold and ivory water filaments. Five clear letter silhouettes, elegant restrained italic serif letterform proportions, extremely readable, not illegible calligraphy. The strands subtly intertwine inside each letter's stroke, and fine flowing threads trail naturally below the baseline like quiet water. A few loose organic curves below the word tie the letters together. The word reads unmistakably "mercy".
+Backdrop: perfectly clean solid near-black olive #0a100b, uniform at every edge, no fog, no scene, no photographed water, no horizon. Matte for compositing.
+Composition: widescreen 16:9; the one large word stretches across the middle, from x=18% to x=82%, aligned at y=46%, letter height 26% of frame. Generous margins all around. Organic flowing threads underneath occupy y=60%-73%; remain inside edges.
+Materials: delicate fine warm amber #c79855 luminous water strands with soft ivory #f1e6cb highlights, modest glow, crisp detailed strand cores.
+Text (verbatim): "mercy"
+Constraints: ONLY these five letters, no other words or labels, no capital letters, no punctuation, no borders, no contact sheet, no panels or watermark. Intimate, warm and reassuring; sophisticated contemporary title design rather than neon spectacle. Make the five letters simple and plainly readable at reduced size.

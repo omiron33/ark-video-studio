@@ -1,0 +1,67 @@
+[
+  {
+    "path": "analysis/final-review/review.json",
+    "source": "/Users/shanefisher/Movies/Psalm23/review-work/review-v2/review.json",
+    "sha256": "0e7ec183504ff9ba62308990c4696954a3aeec6d756673df7eb79891ba300d97"
+  },
+  {
+    "path": "analysis/final-review/audio-review.json",
+    "source": "/Users/shanefisher/Movies/Psalm23/review-work/review-v2/audio/audio-review.json",
+    "sha256": "f4c2233394188e622e0a1b21649d8e930ed77dc04068832bebb51a967df1844b"
+  },
+  {
+    "path": "analysis/final-review/waveform.json",
+    "source": "/Users/shanefisher/Movies/Psalm23/review-work/review-v2/waveform.json",
+    "sha256": "401ace32320b7f0b9e1660d0033d35039f11a8972cc070ead2a927d2f5db5d16"
+  },
+  {
+    "path": "analysis/final-review/machine-review-summary.json",
+    "source": "/Users/shanefisher/Movies/Psalm23/review-work/review-v2/machine-review-summary.json",
+    "sha256": "fc7ff11581909b247205fb90fb626cf46fbdc5fd06b2a749ea373a933acb88e6"
+  },
+  {
+    "path": "analysis/final-review/independent-visual-v2.json",
+    "source": "/Users/shanefisher/Movies/Psalm23/review-work/independent-visual-v2.json",
+    "sha256": "1fbb467fc25bdefac7b45169f1825dcc0754007b7f4e5dfde151b325dab0cd1b"
+  },
+  {
+    "path": "analysis/final-review/visual-scores-v2.json",
+    "source": "/Users/shanefisher/Movies/Psalm23/review-work/visual-scores-v2.json",
+    "sha256": "103717d313b0b5f3e4e26bf3970b7bb37c60c987508c233278e327e69fa8b5fe"
+  },
+  {
+    "path": "analysis/final-review/formal-gate-v2.json",
+    "source": "/Users/shanefisher/Movies/Psalm23/review-work/formal-gate-v2.json",
+    "sha256": "9d9fa2597a8ebfd40da702053abfb5327edf9c49525b389e3c07b036afe1560c"
+  },
+  {
+    "path": "analysis/final-review/photos-delivery-v2.json",
+    "source": "/Users/shanefisher/Movies/Psalm23/review-work/photos-delivery-v2.json",
+    "sha256": "699efce7a2569781a3e86dfb455ddfc293c0539c844d095a124832beca3ab860"
+  },
+  {
+    "path": "analysis/final-review/delivery-review-v2.json",
+    "source": "/Users/shanefisher/Movies/Psalm23/review-work/delivery-review-v2.json",
+    "sha256": "082dbccf9ee1303fcf0fe2000c96cd9a6a522199d70c22c01e2dc60a87e55d64"
+  },
+  {
+    "path": "analysis/final-review/root-spotcheck-v2.json",
+    "source": "/Users/shanefisher/Movies/Psalm23/review-work/root-spotcheck-v2.json",
+    "sha256": "f067acca18f5ec3094ce603fb54bb0b446a9a6b4d70ff2f9ec83ef89b96873c4"
+  },
+  {
+    "path": "analysis/final-review/hyperframes-check-v2b.json",
+    "source": "/Users/shanefisher/Movies/Psalm23/review-work/hyperframes-check-v2b.json",
+    "sha256": "2bdaaec129b21ece4509906f051c12f00ea3e205515a4df3ec228548ceb021f1"
+  },
+  {
+    "path": "analysis/final-review/app-ui-delivery-v2.json",
+    "source": "/Users/shanefisher/Movies/Psalm23/review-work/app-ui-delivery-v2.json",
+    "sha256": "35bcf751f4c8f12f2e42d6bd0853fa62f79a4519c7e0fe04c6880c7921f0fbcc"
+  },
+  {
+    "path": "analysis/final-review/app-delivery.json",
+    "source": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/delivery-tools/runs/e483e690ef13766ee4e04414711d0826209151d3beab5a91864c113758f3e4f2/app-delivery.json",
+    "sha256": "de60cc2e0a78c37f0e47fb71543f17c4dadfcba19056ba1f369cfab95f87e2a8"
+  }
+]

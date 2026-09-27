@@ -1,0 +1,592 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "transcribe",
+  "method": "local-openai-whisper-transcribe; machine estimates",
+  "source": {
+    "audio": "32885123-f4b6-42e6-a546-f4acba404829.m4a",
+    "offset": 12.5,
+    "duration": 32.3,
+    "audioDuration": 219.96,
+    "model": "/Volumes/DATA/AI/Models/Whisper/base.en.pt",
+    "backend": "openai-whisper",
+    "language": "en"
+  },
+  "transcript": "The Lord is my shepherd and I shall want nothing. In a place of green grass, there he has made me dwell. He has nourished me by the water of rest. He has restored",
+  "words": [
+    {
+      "id": "w_94c939e6b641f65f",
+      "text": "The",
+      "start": 14.34,
+      "end": 15.26,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.14920145273208618,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_61ea95e52a23916d",
+      "text": "Lord",
+      "start": 15.26,
+      "end": 15.76,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.9123169183731079,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_7260ad81bec5a64b",
+      "text": "is",
+      "start": 15.76,
+      "end": 16.04,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.9672008156776428,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_785c7e339ed3a491",
+      "text": "my",
+      "start": 16.04,
+      "end": 16.4,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.9032526016235352,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_a4a074ee03ff856a",
+      "text": "shepherd",
+      "start": 16.4,
+      "end": 17.28,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.8717952370643616,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_a8d45d682f1da8a9",
+      "text": "and",
+      "start": 17.28,
+      "end": 19.42,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.43701764941215515,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_113c4ce6e1cd3813",
+      "text": "I",
+      "start": 19.42,
+      "end": 19.68,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.9929366707801819,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_9975495c78cd795e",
+      "text": "shall",
+      "start": 19.68,
+      "end": 20.12,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.9417860507965088,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_cd3dd0ca90215432",
+      "text": "want",
+      "start": 20.12,
+      "end": 20.58,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.649142324924469,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_5ed9e4ec2b0987ea",
+      "text": "nothing.",
+      "start": 20.58,
+      "end": 21.22,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.9409105181694031,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_d08a3be3c8fdd90f",
+      "text": "In",
+      "start": 22.46,
+      "end": 22.48,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.5829267501831055,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_59258fba455aaeb4",
+      "text": "a",
+      "start": 22.48,
+      "end": 22.54,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.4642314016819,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_8630aaa462abc565",
+      "text": "place",
+      "start": 22.54,
+      "end": 22.88,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.993771493434906,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_67f2ddb3e1ed7afd",
+      "text": "of",
+      "start": 22.88,
+      "end": 23.28,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.9944743514060974,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_ec01226651ba8539",
+      "text": "green",
+      "start": 23.28,
+      "end": 23.56,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.8979593515396118,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_9d7aa1eee0206d7a",
+      "text": "grass,",
+      "start": 23.56,
+      "end": 24.38,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.8862184286117554,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_e3de0c1cfcf4754e",
+      "text": "there",
+      "start": 25.86,
+      "end": 25.98,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.5773545503616333,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_f53bb114437a18bb",
+      "text": "he",
+      "start": 25.98,
+      "end": 26.46,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.45807746052742004,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_db064ce456e13aa8",
+      "text": "has",
+      "start": 26.46,
+      "end": 26.84,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.9887157082557678,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_9d22d80ccf7581c4",
+      "text": "made",
+      "start": 26.84,
+      "end": 27.14,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.9850016832351685,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_60e247392d6384ed",
+      "text": "me",
+      "start": 27.14,
+      "end": 27.56,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.9919096827507019,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_e37cae18203234af",
+      "text": "dwell.",
+      "start": 27.56,
+      "end": 27.9,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.9627472162246704,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_137ff7ef37979b9e",
+      "text": "He",
+      "start": 29.64,
+      "end": 30.56,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.9885990619659424,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_7159f4aeb8dc878e",
+      "text": "has",
+      "start": 30.56,
+      "end": 31.34,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.9976104497909546,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_0116b0141ccf1103",
+      "text": "nourished",
+      "start": 31.34,
+      "end": 32.32,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.9940322041511536,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_8903073cb643e33b",
+      "text": "me",
+      "start": 32.32,
+      "end": 32.62,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.995788037776947,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_544a642749dc135f",
+      "text": "by",
+      "start": 32.62,
+      "end": 36.8,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.4923659563064575,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_a3b515b70f02b3da",
+      "text": "the",
+      "start": 36.8,
+      "end": 37.08,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.9984323382377625,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_3aa1650a95dffba3",
+      "text": "water",
+      "start": 37.08,
+      "end": 37.48,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.8485575914382935,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_47b8a80698f6d58c",
+      "text": "of",
+      "start": 37.48,
+      "end": 38.46,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.9177314639091492,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_379f0e2e826241ef",
+      "text": "rest.",
+      "start": 38.46,
+      "end": 38.92,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.6698044538497925,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_f1f3b5608e6b695f",
+      "text": "He",
+      "start": 43.34,
+      "end": 43.94,
+      "phraseId": "phrase-0004",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.2787153422832489,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_6512dcd75c754ac1",
+      "text": "has",
+      "start": 43.94,
+      "end": 44.24,
+      "phraseId": "phrase-0004",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.9164640307426453,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_8ae03263c4f5280e",
+      "text": "restored",
+      "start": 44.24,
+      "end": 44.52,
+      "phraseId": "phrase-0004",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.8494125604629517,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "The Lord is my shepherd and I shall want nothing.",
+      "wordIds": [
+        "w_94c939e6b641f65f",
+        "w_61ea95e52a23916d",
+        "w_7260ad81bec5a64b",
+        "w_785c7e339ed3a491",
+        "w_a4a074ee03ff856a",
+        "w_a8d45d682f1da8a9",
+        "w_113c4ce6e1cd3813",
+        "w_9975495c78cd795e",
+        "w_cd3dd0ca90215432",
+        "w_5ed9e4ec2b0987ea"
+      ]
+    },
+    {
+      "id": "phrase-0002",
+      "text": "In a place of green grass, there he has made me dwell.",
+      "wordIds": [
+        "w_d08a3be3c8fdd90f",
+        "w_59258fba455aaeb4",
+        "w_8630aaa462abc565",
+        "w_67f2ddb3e1ed7afd",
+        "w_ec01226651ba8539",
+        "w_9d7aa1eee0206d7a",
+        "w_e3de0c1cfcf4754e",
+        "w_f53bb114437a18bb",
+        "w_db064ce456e13aa8",
+        "w_9d22d80ccf7581c4",
+        "w_60e247392d6384ed",
+        "w_e37cae18203234af"
+      ]
+    },
+    {
+      "id": "phrase-0003",
+      "text": "He has nourished me by the water of rest.",
+      "wordIds": [
+        "w_137ff7ef37979b9e",
+        "w_7159f4aeb8dc878e",
+        "w_0116b0141ccf1103",
+        "w_8903073cb643e33b",
+        "w_544a642749dc135f",
+        "w_a3b515b70f02b3da",
+        "w_3aa1650a95dffba3",
+        "w_47b8a80698f6d58c",
+        "w_379f0e2e826241ef"
+      ]
+    },
+    {
+      "id": "phrase-0004",
+      "text": "He has restored",
+      "wordIds": [
+        "w_f1f3b5608e6b695f",
+        "w_6512dcd75c754ac1",
+        "w_8ae03263c4f5280e"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ]
+}

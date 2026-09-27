@@ -29,7 +29,22 @@ export async function ensureOCR({toolsDir = defaultToolsDir} = {}) {
 }
 
 /** No lyric dictionary is supplied to the recognizer: these are observations of pixels. */
-export async function recognizeFrames({paths, outDir, orientations = [1], toolsDir}) {
+export async function recognizeFrames({paths, outDir, orientations = [1], toolsDir, nativeBatchSize}) {
+  if (nativeBatchSize !== undefined && (!Number.isSafeInteger(nativeBatchSize) || nativeBatchSize < 1)) throw new Error('nativeBatchSize must be a positive integer');
+  // Opt-in batches bound each native process to the existing deadline. Recognition
+  // settings, canonical matching and visibility thresholds remain unchanged.
+  if (nativeBatchSize !== undefined && paths.length > nativeBatchSize) {
+    const combined = {frames: [], nativeBatches: []};
+    for (let offset = 0; offset < paths.length; offset += nativeBatchSize) {
+      const batchPaths = paths.slice(offset, offset + nativeBatchSize), started = Date.now();
+      const result = await recognizeFrames({paths: batchPaths, outDir, orientations, toolsDir});
+      if (combined.sourceHash && combined.sourceHash !== result.sourceHash) throw new Error('Native OCR source changed between batches');
+      combined.method = result.method; combined.sourceHash = result.sourceHash;
+      combined.frames.push(...result.frames);
+      combined.nativeBatches.push({offset, imageCount: batchPaths.length, recognitionCount: result.frames.length, elapsedMs: Date.now() - started});
+    }
+    return combined;
+  }
   const {binary, sourceHash} = await ensureOCR({toolsDir});
   await mkdir(outDir, {recursive: true});
   const requestPath = path.join(outDir, `ocr-input-${digest({paths, orientations}).slice(0, 12)}.json`);
@@ -81,7 +96,7 @@ export async function verifyOCREvidence(evidence) {
   return {id:'evidence_integrity',passed:!errors.length,checkedFrames:evidence.length,errors};
 }
 
-export async function reviewLyricVisibility({projectPath, videoPath, outDir, evidence: suppliedEvidence, wordIds}) {
+export async function reviewLyricVisibility({projectPath, videoPath, outDir, evidence: suppliedEvidence, wordIds, nativeBatchSize}) {
   projectPath = path.resolve(projectPath); videoPath = path.resolve(videoPath); outDir = path.resolve(outDir);
   await mkdir(outDir, {recursive: true});
   const manifestBytes = await readFile(projectPath);
@@ -108,14 +123,16 @@ export async function reviewLyricVisibility({projectPath, videoPath, outDir, evi
       await command('ffmpeg', ['-v','error','-y','-ss',String(seekTime),'-i',videoPath,'-map','0:v:0','-frames:v','1',file]);
       report.evidence.push({time, seekTime, sampleIndex, path: file, sha256: await sha256File(file), recognition: []});
     }
-    const primary = report.evidence.length?await recognizeFrames({paths: report.evidence.map(f => f.path), outDir}):{frames:[],...(await ensureOCR())};
+    const primary = report.evidence.length?await recognizeFrames({paths: report.evidence.map(f => f.path), outDir, nativeBatchSize}):{frames:[],...(await ensureOCR())};
     report.recognizerSourceHash = primary.sourceHash;
+    if (nativeBatchSize !== undefined) report.nativeBatchExecution = {requestedBatchSize: nativeBatchSize, primary: primary.nativeBatches ?? [], rotated: []};
     for (const frame of report.evidence) frame.recognition = primary.frames.filter(result => result.path === frame.path);
     // Retry only windows with unresolved lyrics, in rotated orientations. This catches semantic vertical words.
     const missing = windows.filter(w => !observationsFor(w, report.evidence).length);
     const retryFrames = report.evidence.filter(frame => missing.some(w => frame.time >= w.start && frame.time <= w.end));
     if (retryFrames.length) {
-      const rotated = await recognizeFrames({paths: retryFrames.map(f => f.path), orientations: [6,8,3], outDir});
+      const rotated = await recognizeFrames({paths: retryFrames.map(f => f.path), orientations: [6,8,3], outDir, nativeBatchSize});
+      if (report.nativeBatchExecution) report.nativeBatchExecution.rotated = rotated.nativeBatches ?? [];
       for (const frame of retryFrames) frame.recognition.push(...rotated.frames.filter(result => result.path === frame.path));
     }
     report.wordCoverage = windows.map(w => {
@@ -131,7 +148,7 @@ export async function reviewLyricVisibility({projectPath, videoPath, outDir, evi
     report.checks.push({id:'unchanged_inputs',passed:endRevision.projectHash===binding.projectHash && await sha256File(videoPath)===binding.videoSha256});
     report.status = report.checks.every(c=>c.passed) ? 'passed' : 'failed';
   } catch(error) {
-    report.checks.push({id:'ocr_execution',passed:false,error:error.message});
+    report.checks.push({id:'ocr_execution',passed:false,error:error.message,...(error.code===undefined?{}:{code:error.code}),...(error.signal===undefined?{}:{signal:error.signal}),...(error.killed===undefined?{}:{killed:error.killed}),...(error.stderr?{stderr:error.stderr}:{} )});
     report.error = error.message;
   }
   await atomicJson(reportPath, report);

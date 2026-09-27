@@ -1,0 +1,22 @@
+{
+  "prompt_id": "c8be6433-8e22-40e5-a71d-cf67ee5cfb07",
+  "number": 102,
+  "node_errors": {},
+  "name": "shelter-v1",
+  "submittedAt": "2026-09-27T16:02:01.481797+00:00",
+  "project": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day",
+  "themeChoiceSha256": "660a1ee2e8007383760bfa3ba66cb51240a7b518c448cb5b9f7970ec7d0b567d",
+  "firstImage": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/inputs/shelter-end.png",
+  "firstImageSha256": "efeba980cd16ff9ee5fa19078fe764e41ea04f5d9defe6c4bdb88bc41af20130",
+  "lastImage": null,
+  "lastImageSha256": null,
+  "promptFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/shelter-v1-prompt.txt",
+  "workflow": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/shelter-v1-workflow.json",
+  "workflowSha256": "add7a36c4f02ef63f892ec24f1a7082018c690ca8adf4d965083e12fa35fcfd3",
+  "framesRequested": 124,
+  "fpsRequested": 24,
+  "seed": 20260927231,
+  "conditioning": "last_frame_only",
+  "provider": "local OmiPC ComfyUI",
+  "cost": "local GPU; no paid API"
+}

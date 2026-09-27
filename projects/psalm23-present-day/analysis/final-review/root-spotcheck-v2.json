@@ -1,0 +1,69 @@
+{
+  "videoSha256": "e483e690ef13766ee4e04414711d0826209151d3beab5a91864c113758f3e4f2",
+  "sourceRevision": "2e18115e199808003cf4dcae527fe15c105e254a4e70bdf3b19701557fc07787",
+  "kind": "root_native_visual_and_playback_spotcheck",
+  "quickTime": {
+    "movie": "/Users/shanefisher/Movies/Psalm23/review-work/psalm23-held-in-the-ordinary-v2.mp4",
+    "durationShown": "03:40",
+    "observedPlaybackSeconds": [
+      0,
+      46.68883807439825,
+      58.72204376367615
+    ],
+    "pausedThenClosedTaskWindow": true,
+    "existingOtherMoviePreserved": true
+  },
+  "inspectedNativeFrames": [
+    "frame-82.png",
+    "frame-111.8.png",
+    "frame-124.7.png",
+    "frame-139.8.png",
+    "frame-159.5.png",
+    "frame-160.5.png"
+  ],
+  "observations": [
+    "Upright no is clear in actual82s frame.",
+    "for and you have distinct separated reading positions124.7s.",
+    "wine exits below-left of cup without the prior word collision111.8s.",
+    "Arch letters are individually clear; rotated line-height rectangles overlap but glyph contours do not.",
+    "At159.5s canonical mercy remains clear while final me enters; by160.5s generated mercy occupies the same reading station with all other words clear."
+  ],
+  "evidence": [
+    {
+      "path": "/Users/shanefisher/Movies/Psalm23/review-work/native-v2/frame-111.8.png",
+      "sha256": "744d209963216a513348f5de91f202910c63b46afdac3b74f49c0584262a98aa"
+    },
+    {
+      "path": "/Users/shanefisher/Movies/Psalm23/review-work/native-v2/frame-124.7.png",
+      "sha256": "1bcbaf807e5086716f2cda490ea80a63556cc1e4bbd8a5ab350376918452a3b8"
+    },
+    {
+      "path": "/Users/shanefisher/Movies/Psalm23/review-work/native-v2/frame-139.8.png",
+      "sha256": "0a143b89e6654bbfa764bc5d17dfa5611cae575e8fad1978d7693780b5442676"
+    },
+    {
+      "path": "/Users/shanefisher/Movies/Psalm23/review-work/native-v2/frame-145.4.png",
+      "sha256": "40e0ab403d65accc91c5fb7cf19198b061ad43abc18f5607d2132d9e93d03442"
+    },
+    {
+      "path": "/Users/shanefisher/Movies/Psalm23/review-work/native-v2/frame-159.5.png",
+      "sha256": "a6366d026b7e5bf57d0d333569b3f2cd2733b5c7edc293083b7731552de0919d"
+    },
+    {
+      "path": "/Users/shanefisher/Movies/Psalm23/review-work/native-v2/frame-160.5.png",
+      "sha256": "5050b387644e3fd1bafe3ff920e5ee66976e55e4e7a7e63b4a5a7746624377f8"
+    },
+    {
+      "path": "/Users/shanefisher/Movies/Psalm23/review-work/native-v2/frame-161.6.png",
+      "sha256": "2b466d105d9f73b4e1e79d860dfcae98ac69a5c9c170d40a2475dc359d31c2ed"
+    },
+    {
+      "path": "/Users/shanefisher/Movies/Psalm23/review-work/native-v2/frame-82.png",
+      "sha256": "c83b8c95132b96a7b4e128a930050f873b7b86fe07a4dab710355c794b943071"
+    }
+  ],
+  "limitations": [
+    "Playback progression and sampled screenshots do not establish uninterrupted watching or hearing.",
+    "Independent whole-film visual judgment and measured audio gate remain separate."
+  ]
+}

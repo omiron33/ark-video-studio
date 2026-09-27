@@ -1,0 +1,49 @@
+{
+  "name": "water",
+  "job": "water-v1",
+  "provider": "local OmiPC ComfyUI",
+  "model": "MiniMax H3 FL2VA int8 convrot",
+  "checkpoint": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+  "turboLora": "minimax_h3_turbo_v4_step600_ema_pruned_comfyui.safetensors",
+  "steps": 4,
+  "sampler": "MiniMaxH3TurboSampler",
+  "sourceRevision": "1b7316690952a1bdee3cc9da5cdbb6449529aa95",
+  "promptId": "d4097817-e710-4d61-932d-a024bfa11ec4",
+  "conditioning": "first_frame",
+  "seed": 20260927232,
+  "input": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/inputs/water-first.png",
+  "inputSha256": "42900c61e4055c0119044d6982356bbb7aa0c020e4e3fa1757df8306b996234b",
+  "imageProvider": "built-in GPT Image",
+  "rawPath": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/raw/water-v1.mp4",
+  "rawSha256": "731a2fa82e3954547721495247e8e3ce873cbdcd20b87b9492b9dfcff525f412",
+  "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/assets/video/water-motion.mp4",
+  "sha256": "b0c94bd2989aeff777df6636d1c4bff95fb90973dbf3d65ddcbecf39c38dce3d",
+  "native": {
+    "width": 960,
+    "height": 544,
+    "fps": 24,
+    "frames": 124
+  },
+  "finished": {
+    "width": 960,
+    "height": 540,
+    "fps": 24,
+    "frames": 124,
+    "duration": 5.166666666666667,
+    "audio": false
+  },
+  "processing": "Center crop 2px top/bottom, silent H264 CRF17, no frame interpolation, no speed change, no upscale",
+  "decode": "pass",
+  "firstPoster": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/assets/video/water-first.png",
+  "lastPoster": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/assets/video/water-last.png",
+  "reviewSheet": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/review/water-v1-6fps.jpg",
+  "reviewStatus": "accepted_as_raw_supporting_insert",
+  "completedAt": "2026-09-27T16:06:51.725755+00:00",
+  "cost": "local GPU only; no paid API",
+  "review": {
+    "method": "All 31 decoded chronological samples at 6fps plus full decode; no audio in asset",
+    "observations": "Quiet multi-strand current maintains its lower-third route while individual amber/ivory filaments flow and curling eddies change gradually. Upper half remains dark. No sampled letters, objects, jump cuts or strong flashes.",
+    "limitations": "Motion is restrained, suitable for rest, and must not be the only scene activity. It crosses left/right frame edges, so a mask or full-width continuation is mandatory. Sparse frames do not certify every frame or full-speed smoothness.",
+    "recommendedComposite": "Screen with soft left/right edge mask or full-width continuous canvas; match coded current line to main wave at y65-75 percent. Place canonical lyric high in the empty dark region and keep meaningful word/line motion active."
+  }
+}

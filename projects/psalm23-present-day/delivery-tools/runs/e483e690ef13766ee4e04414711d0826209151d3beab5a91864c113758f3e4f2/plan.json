@@ -1,0 +1,49 @@
+{
+  "mode": "execute",
+  "video": "/Users/shanefisher/Movies/Psalm23/Psalm 23 - Held in the Ordinary.mp4",
+  "sha256": "e483e690ef13766ee4e04414711d0826209151d3beab5a91864c113758f3e4f2",
+  "posterSha256": "64828051f8c35755d8bbe2e72635f131da28338e0067dc01b28427c5a451ffd6",
+  "remoteVideo": "C:/Users/sjfis/Videos/Psalm23/held-in-ordinary-e483e690ef13766e.mp4",
+  "remotePoster": "C:/Users/sjfis/Videos/Psalm23/held-in-ordinary-e483e690ef13766e.jpg",
+  "remoteReport": "C:/Users/sjfis/Videos/Psalm23/held-in-ordinary-e483e690ef13766e-review-082dbccf9ee1.json",
+  "existingCandidateId": null,
+  "statusOnIngest": "pending_review",
+  "workflow": "psalm-23-lxx-22-shepherd",
+  "noSuperseding": true,
+  "evidence": [
+    {
+      "kind": "technical",
+      "path": "/Users/shanefisher/Movies/Psalm23/review-work/review-v2/review.json",
+      "sha256": "0e7ec183504ff9ba62308990c4696954a3aeec6d756673df7eb79891ba300d97",
+      "status": "passed"
+    },
+    {
+      "kind": "visual",
+      "path": "/Users/shanefisher/Movies/Psalm23/review-work/independent-visual-v2.json",
+      "sha256": "1fbb467fc25bdefac7b45169f1825dcc0754007b7f4e5dfde151b325dab0cd1b",
+      "status": "accepted"
+    },
+    {
+      "kind": "audio",
+      "path": "/Users/shanefisher/Movies/Psalm23/review-work/review-v2/audio/audio-review.json",
+      "sha256": "f4c2233394188e622e0a1b21649d8e930ed77dc04068832bebb51a967df1844b",
+      "status": "documented_exception"
+    }
+  ],
+  "app": {
+    "health": {
+      "ok": true,
+      "chapters": 50,
+      "source": "eng-Brenton"
+    },
+    "workflowId": "psalm-23-lxx-22-shepherd",
+    "workflowLyricsSha256": "021492487b56a3ac1dac962cc4c75658b250d8a05ac925f0aebc9a72a09f385a",
+    "songId": "32885123-f4b6-42e6-a546-f4acba404829",
+    "source": {
+      "bytes": 3643492,
+      "sha256": "3669040e797c9d2bf8b4136dc4c029c6e1ed51f302ccc411d1888ae50da80c8f"
+    },
+    "videoCount": 24,
+    "existingPsalm23Candidates": []
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "prompt_id": "b525dcd1-41cf-4892-9f14-cba6d83806a4",
+  "number": 104,
+  "node_errors": {},
+  "name": "mercy-v1",
+  "submittedAt": "2026-09-27T16:06:50.363372+00:00",
+  "project": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day",
+  "themeChoiceSha256": "660a1ee2e8007383760bfa3ba66cb51240a7b518c448cb5b9f7970ec7d0b567d",
+  "firstImage": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/inputs/mercy-end-opaque.png",
+  "firstImageSha256": "88d9b2b8251bf5943470cfe272a9d878a019cbc792d1e63b2e828d686042d298",
+  "lastImage": null,
+  "lastImageSha256": null,
+  "promptFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/mercy-v1-prompt.txt",
+  "workflow": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/mercy-v1-workflow.json",
+  "workflowSha256": "29c1fcdf094cc5395e5280f0a75a50832273fafc35c6ab5d7c163e22b60451e7",
+  "framesRequested": 124,
+  "fpsRequested": 24,
+  "seed": 20260927233,
+  "conditioning": "last_frame_only",
+  "provider": "local OmiPC ComfyUI",
+  "cost": "local GPU; no paid API"
+}

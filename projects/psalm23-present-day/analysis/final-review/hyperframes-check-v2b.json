@@ -1,0 +1,2747 @@
+{
+  "ok": true,
+  "strict": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 61,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "composition_file_too_large",
+        "severity": "warning",
+        "message": "This HTML composition file has 671 lines. Smaller sub-compositions are easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Split coherent scenes or layers into separate .html files under compositions/, then mount them from the parent with data-composition-src so each file stays small enough to inspect, revise, and validate independently."
+      },
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "Track 0 has 6 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into separate .html files under compositions/ and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      },
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "Track 1 has 6 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into separate .html files under compositions/ and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      },
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "Track 5 has 39 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into separate .html files under compositions/ and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      },
+      {
+        "code": "composition_heavy_overlay_count_high",
+        "severity": "warning",
+        "message": "This composition has 165 elements carrying \"heavy overlay\" CSS (filter:blur, radial-gradient, or clip-path). Field signal: a composition with ~40 such elements — including opacity:0 / visibility:hidden ones — captures solid-black for the first ~half of the render, recovering near the end. Reproduces identically via drawElement, forced screenshot capture, and snapshot, so the capture layer itself is the offender (not encoder/mux). Independent of duration. Presence alone matters; only display:none elements are excluded here.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Split coherent scenes / transitions into separate .html files under compositions/ and concat the pieces (FFmpeg or the runtime's slideshow) so each capture only sees a small subset of heavy overlays at once. Even hidden overlays (opacity:0 / visibility:hidden) contribute — either remove truly unused ones from the source or scope them into their own per-transition sub-composition. If an overlay is genuinely inert for the whole clip, use display:none so it never enters the render tree. Field ref ts=1784040753 (#hyperframes-cli-feedback)."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"act-01\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#act-01",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"act-01\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"act-02\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#act-02",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"act-02\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"act-03\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#act-03",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"act-03\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"act-04\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#act-04",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"act-04\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"act-05\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#act-05",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"act-05\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"act-06\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#act-06",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"act-06\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"act-07\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#act-07",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"act-07\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"act-08\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#act-08",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"act-08\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"act-09\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#act-09",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"act-09\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"act-10\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#act-10",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"act-10\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"act-11\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#act-11",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"act-11\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"act-12\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#act-12",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"act-12\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"poster-shelter\"> is a timeline element that contains nested <img>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#poster-shelter",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"poster-shelter\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"poster-water\"> is a timeline element that contains nested <img>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#poster-water",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"poster-water\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"poster-mercy\"> is a timeline element that contains nested <img>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#poster-mercy",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"poster-mercy\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l001\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l001",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l001\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l002\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l002",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l002\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l003\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l003",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l003\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l004\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l004",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l004\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l005\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l005",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l005\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l006\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l006",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l006\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l007\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l007",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l007\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l008\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l008",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l008\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l009\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l009",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l009\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l010\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l010",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l010\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l011\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l011",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l011\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l012\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l012",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l012\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l013\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l013",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l013\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l014\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l014",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l014\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l015\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l015",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l015\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l016\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l016",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l016\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l017\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l017",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l017\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l018\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l018",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l018\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l019\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l019",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l019\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l020\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l020",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l020\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l021\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l021",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l021\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l022\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l022",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l022\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l023\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l023",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l023\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l024\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l024",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l024\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l025\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l025",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l025\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l026\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l026",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l026\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l027\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l027",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l027\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l028\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l028",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l028\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l029\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l029",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l029\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l030\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l030",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l030\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l031\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l031",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l031\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l032\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l032",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l032\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l033\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l033",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l033\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l034\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l034",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l034\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l035\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l035",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l035\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l036\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l036",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l036\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l037\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l037",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l037\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l038\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l038",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l038\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"p23-l039\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#p23-l039",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"p23-l039\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"opening\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#opening",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"opening\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      },
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<section id=\"ending\"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#ending",
+        "dataAttributes": {},
+        "sourceFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <section id=\"ending\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      }
+    ],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 19,
+    "infoCount": 34,
+    "findings": [
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 24.603,
+        "selector": "#p23-l003-w05 > span:nth-of-type(1) > span:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 220.26,
+          "top": 365.45,
+          "right": 296.01,
+          "bottom": 700.78,
+          "width": 75.75,
+          "height": 335.33
+        },
+        "containerSelector": "#p23-l003-w05 > span:nth-of-type(1) > span:nth-of-type(3)",
+        "text": "r",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "1"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 220.26,
+          "y": 365.45,
+          "width": 75.75,
+          "height": 335.33
+        },
+        "firstSeen": 24.603,
+        "lastSeen": 24.97,
+        "occurrences": 3,
+        "heldMs": 366.9999999999973
+      },
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 24.603,
+        "selector": "#p23-l003-w05 > span:nth-of-type(1) > span:nth-of-type(4)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 331.07,
+          "top": 400.77,
+          "right": 399.08,
+          "bottom": 702.84,
+          "width": 68.01,
+          "height": 302.07
+        },
+        "containerSelector": "#p23-l003-w05 > span:nth-of-type(1) > span:nth-of-type(5)",
+        "text": "e",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "3"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 331.07,
+          "y": 400.77,
+          "width": 68.01,
+          "height": 302.07
+        },
+        "firstSeen": 24.603,
+        "lastSeen": 24.97,
+        "occurrences": 3,
+        "heldMs": 366.9999999999973
+      },
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 25.338,
+        "selector": "#p23-l003-w05 > span:nth-of-type(1) > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 155.73,
+          "top": 400.04,
+          "right": 230.22,
+          "bottom": 702.54,
+          "width": 74.49,
+          "height": 302.5
+        },
+        "containerSelector": "#p23-l003-w05 > span:nth-of-type(1) > span:nth-of-type(2)",
+        "text": "g",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 155.73,
+          "y": 400.04,
+          "width": 74.49,
+          "height": 302.5
+        },
+        "firstSeen": 25.338,
+        "lastSeen": 25.705,
+        "occurrences": 3,
+        "heldMs": 366.9999999999973
+      },
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 25.338,
+        "selector": "#p23-l003-w05 > span:nth-of-type(1) > span:nth-of-type(3)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 278.36,
+          "top": 330.94,
+          "right": 343.58,
+          "bottom": 697.95,
+          "width": 65.22,
+          "height": 367.01
+        },
+        "containerSelector": "#p23-l003-w05 > span:nth-of-type(1) > span:nth-of-type(4)",
+        "text": "e",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "2"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 278.36,
+          "y": 330.94,
+          "width": 65.22,
+          "height": 367.01
+        },
+        "firstSeen": 25.338,
+        "lastSeen": 25.705,
+        "occurrences": 3,
+        "heldMs": 366.9999999999973
+      },
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 71.239,
+        "selector": "#p23-l014-w01 > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 130,
+          "top": 314,
+          "right": 255.36,
+          "bottom": 449,
+          "width": 125.36,
+          "height": 135
+        },
+        "containerSelector": "#p23-l014-w04 > span:nth-of-type(1)",
+        "text": "for",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 130,
+          "y": 314,
+          "width": 125.36,
+          "height": 135
+        },
+        "firstSeen": 71.239,
+        "lastSeen": 71.606,
+        "occurrences": 2,
+        "heldMs": 366.9999999999902
+      },
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 74.544,
+        "selector": "#p23-l015-w02 > span:nth-of-type(1) > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 890.18,
+          "top": 336.49,
+          "right": 964.27,
+          "bottom": 543.43,
+          "width": 74.09,
+          "height": 206.94
+        },
+        "containerSelector": "#p23-l015-w02 > span:nth-of-type(1) > span:nth-of-type(2)",
+        "text": "r",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 890.18,
+          "y": 336.49,
+          "width": 74.09,
+          "height": 206.94
+        },
+        "firstSeen": 74.544,
+        "lastSeen": 74.911,
+        "occurrences": 2,
+        "heldMs": 367.00000000000443
+      },
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 74.544,
+        "selector": "#p23-l015-w02 > span:nth-of-type(1) > span:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 945.19,
+          "top": 338.27,
+          "right": 1019.44,
+          "bottom": 545.22,
+          "width": 74.25,
+          "height": 206.95
+        },
+        "containerSelector": "#p23-l015-w02 > span:nth-of-type(1) > span:nth-of-type(3)",
+        "text": "o",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "1"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 945.19,
+          "y": 338.27,
+          "width": 74.25,
+          "height": 206.95
+        },
+        "firstSeen": 74.544,
+        "lastSeen": 74.911,
+        "occurrences": 2,
+        "heldMs": 367.00000000000443
+      },
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 77.482,
+        "selector": "#p23-l016-w01 > span:nth-of-type(1) > span:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 936.88,
+          "top": 302.18,
+          "right": 991.53,
+          "bottom": 419.63,
+          "width": 54.65,
+          "height": 117.45
+        },
+        "containerSelector": "#p23-l016-w03 > span:nth-of-type(1) > span:nth-of-type(1)",
+        "text": "h",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "1"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 936.88,
+          "y": 302.18,
+          "width": 54.65,
+          "height": 117.45
+        },
+        "firstSeen": 77.482,
+        "lastSeen": 77.849,
+        "occurrences": 2,
+        "heldMs": 367.00000000000443
+      },
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 77.482,
+        "selector": "#p23-l016-w01 > span:nth-of-type(1) > span:nth-of-type(3)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 991.53,
+          "top": 302.18,
+          "right": 1036.08,
+          "bottom": 419.63,
+          "width": 44.55,
+          "height": 117.45
+        },
+        "containerSelector": "#p23-l016-w03 > span:nth-of-type(1) > span:nth-of-type(2)",
+        "text": "e",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "2"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 991.53,
+          "y": 302.18,
+          "width": 44.55,
+          "height": 117.45
+        },
+        "firstSeen": 77.482,
+        "lastSeen": 77.849,
+        "occurrences": 2,
+        "heldMs": 367.00000000000443
+      },
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 77.482,
+        "selector": "#p23-l016-w01 > span:nth-of-type(1) > span:nth-of-type(4)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 1036.08,
+          "top": 289.46,
+          "right": 1083.67,
+          "bottom": 406.91,
+          "width": 47.59,
+          "height": 117.45
+        },
+        "containerSelector": "#p23-l016-w03 > span:nth-of-type(1) > span:nth-of-type(3)",
+        "text": "y",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "3"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1036.08,
+          "y": 289.46,
+          "width": 47.59,
+          "height": 117.45
+        },
+        "firstSeen": 77.482,
+        "lastSeen": 77.849,
+        "occurrences": 2,
+        "heldMs": 367.00000000000443
+      },
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 77.849,
+        "selector": "#p23-l016-w02 > span:nth-of-type(1) > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 1113.08,
+          "top": 289.41,
+          "right": 1167.73,
+          "bottom": 406.89,
+          "width": 54.65,
+          "height": 117.48
+        },
+        "containerSelector": "#p23-l016-w03 > span:nth-of-type(1) > span:nth-of-type(3)",
+        "text": "h",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1113.08,
+          "y": 289.41,
+          "width": 54.65,
+          "height": 117.48
+        },
+        "firstSeen": 77.849,
+        "lastSeen": 78.216,
+        "occurrences": 2,
+        "heldMs": 366.9999999999902
+      },
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 77.849,
+        "selector": "#p23-l016-w02 > span:nth-of-type(1) > span:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 1167.73,
+          "top": 302.1,
+          "right": 1213.59,
+          "bottom": 419.58,
+          "width": 45.86,
+          "height": 117.48
+        },
+        "containerSelector": "#p23-l016-w03 > span:nth-of-type(1) > span:nth-of-type(4)",
+        "text": "a",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "1"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1167.73,
+          "y": 302.1,
+          "width": 45.86,
+          "height": 117.48
+        },
+        "firstSeen": 77.849,
+        "lastSeen": 78.216,
+        "occurrences": 2,
+        "heldMs": 366.9999999999902
+      },
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 77.849,
+        "selector": "#p23-l016-w02 > span:nth-of-type(1) > span:nth-of-type(3)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 1213.59,
+          "top": 302.1,
+          "right": 1261.13,
+          "bottom": 419.58,
+          "width": 47.54,
+          "height": 117.48
+        },
+        "containerSelector": "#p23-l016-w03 > span:nth-of-type(1) > span:nth-of-type(5)",
+        "text": "v",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "2"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1213.59,
+          "y": 302.1,
+          "width": 47.54,
+          "height": 117.48
+        },
+        "firstSeen": 77.849,
+        "lastSeen": 78.216,
+        "occurrences": 2,
+        "heldMs": 366.9999999999902
+      },
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 106.124,
+        "selector": "#p23-l020-w07 > span:nth-of-type(1) > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 930.48,
+          "top": 149.31,
+          "right": 987.76,
+          "bottom": 277.28,
+          "width": 57.28,
+          "height": 127.97
+        },
+        "containerSelector": "#p23-l020-w07 > span:nth-of-type(1) > span:nth-of-type(2)",
+        "text": "o",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 930.48,
+          "y": 149.31,
+          "width": 57.28,
+          "height": 127.97
+        },
+        "firstSeen": 106.124,
+        "lastSeen": 106.491,
+        "occurrences": 2,
+        "heldMs": 367.00000000000443
+      },
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 106.124,
+        "selector": "#p23-l020-w07 > span:nth-of-type(1) > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 930.48,
+          "top": 149.31,
+          "right": 987.76,
+          "bottom": 277.28,
+          "width": 57.28,
+          "height": 127.97
+        },
+        "containerSelector": "#p23-l020-w07 > span:nth-of-type(1) > span:nth-of-type(3)",
+        "text": "o",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 930.48,
+          "y": 149.31,
+          "width": 57.28,
+          "height": 127.97
+        },
+        "firstSeen": 106.124,
+        "lastSeen": 106.491,
+        "occurrences": 2,
+        "heldMs": 367.00000000000443
+      },
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 106.124,
+        "selector": "#p23-l020-w07 > span:nth-of-type(1) > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 930.48,
+          "top": 149.31,
+          "right": 987.76,
+          "bottom": 277.28,
+          "width": 57.28,
+          "height": 127.97
+        },
+        "containerSelector": "#p23-l020-w07 > span:nth-of-type(1) > span:nth-of-type(4)",
+        "text": "o",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 930.48,
+          "y": 149.31,
+          "width": 57.28,
+          "height": 127.97
+        },
+        "firstSeen": 106.124,
+        "lastSeen": 106.491,
+        "occurrences": 2,
+        "heldMs": 367.00000000000443
+      },
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 106.124,
+        "selector": "#p23-l020-w07 > span:nth-of-type(1) > span:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 948.52,
+          "top": 143.96,
+          "right": 976.64,
+          "bottom": 272.79,
+          "width": 28.12,
+          "height": 128.83
+        },
+        "containerSelector": "#p23-l020-w07 > span:nth-of-type(1) > span:nth-of-type(3)",
+        "text": "i",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "1"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 948.52,
+          "y": 143.96,
+          "width": 28.12,
+          "height": 128.83
+        },
+        "firstSeen": 106.124,
+        "lastSeen": 106.491,
+        "occurrences": 2,
+        "heldMs": 367.00000000000443
+      },
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 106.124,
+        "selector": "#p23-l020-w07 > span:nth-of-type(1) > span:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 948.52,
+          "top": 143.96,
+          "right": 976.64,
+          "bottom": 272.79,
+          "width": 28.12,
+          "height": 128.83
+        },
+        "containerSelector": "#p23-l020-w07 > span:nth-of-type(1) > span:nth-of-type(4)",
+        "text": "i",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "1"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 948.52,
+          "y": 143.96,
+          "width": 28.12,
+          "height": 128.83
+        },
+        "firstSeen": 106.124,
+        "lastSeen": 106.491,
+        "occurrences": 2,
+        "heldMs": 367.00000000000443
+      },
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 106.124,
+        "selector": "#p23-l020-w07 > span:nth-of-type(1) > span:nth-of-type(3)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 959.48,
+          "top": 141.06,
+          "right": 987.18,
+          "bottom": 269.86,
+          "width": 27.7,
+          "height": 128.8
+        },
+        "containerSelector": "#p23-l020-w07 > span:nth-of-type(1) > span:nth-of-type(4)",
+        "text": "l",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "2"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 959.48,
+          "y": 141.06,
+          "width": 27.7,
+          "height": 128.8
+        },
+        "firstSeen": 106.124,
+        "lastSeen": 106.491,
+        "occurrences": 2,
+        "heldMs": 367.00000000000443
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 20.931,
+        "selector": "#p23-l002-w01 > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 170,
+          "top": 329,
+          "right": 328.75,
+          "bottom": 464,
+          "width": 158.75,
+          "height": 135
+        },
+        "containerSelector": "#p23-l002-w05 > span:nth-of-type(1)",
+        "text": "and",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 170,
+          "y": 329,
+          "width": 158.75,
+          "height": 135
+        },
+        "firstSeen": 20.931,
+        "lastSeen": 20.931,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 20.931,
+        "selector": "#p23-l002-w02 > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 358.08,
+          "top": 329,
+          "right": 394.28,
+          "bottom": 464,
+          "width": 36.2,
+          "height": 135
+        },
+        "containerSelector": "#p23-l002-w05 > span:nth-of-type(1)",
+        "text": "I",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 358.08,
+          "y": 329,
+          "width": 36.2,
+          "height": 135
+        },
+        "firstSeen": 20.931,
+        "lastSeen": 20.931,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 20.931,
+        "selector": "#p23-l002-w03 > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 423.16,
+          "top": 329,
+          "right": 616.42,
+          "bottom": 464,
+          "width": 193.26,
+          "height": 135
+        },
+        "containerSelector": "#p23-l002-w05 > span:nth-of-type(1)",
+        "text": "shall",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 423.16,
+          "y": 329,
+          "width": 193.26,
+          "height": 135
+        },
+        "firstSeen": 20.931,
+        "lastSeen": 20.931,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 49.941,
+        "selector": "#p23-l008-w02 > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 387,
+          "top": 327.96,
+          "right": 524.29,
+          "bottom": 462.96,
+          "width": 137.29,
+          "height": 135
+        },
+        "containerSelector": "#p23-l008-w03 > span:nth-of-type(1)",
+        "text": "has",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 387,
+          "y": 327.96,
+          "width": 137.29,
+          "height": 135
+        },
+        "firstSeen": 49.941,
+        "lastSeen": 49.941,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 60.957,
+        "selector": "#p23-l011-w05 > span:nth-of-type(1) > span:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 761.34,
+          "top": 432.05,
+          "right": 840.77,
+          "bottom": 636.34,
+          "width": 79.43,
+          "height": 204.29
+        },
+        "containerSelector": "#p23-l011-w05 > span:nth-of-type(1) > span:nth-of-type(3)",
+        "text": "a",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "1"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 761.34,
+          "y": 432.05,
+          "width": 79.43,
+          "height": 204.29
+        },
+        "firstSeen": 60.957,
+        "lastSeen": 60.957,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 71.974,
+        "selector": "#p23-l014-w03 > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 470.16,
+          "top": 314,
+          "right": 598.91,
+          "bottom": 449,
+          "width": 128.75,
+          "height": 135
+        },
+        "containerSelector": "#p23-l014-w05 > span:nth-of-type(1)",
+        "text": "are",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 470.16,
+          "y": 314,
+          "width": 128.75,
+          "height": 135
+        },
+        "firstSeen": 71.974,
+        "lastSeen": 71.974,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 76.013,
+        "selector": "#p23-l015-w05 > span:nth-of-type(1) > span:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 1537.24,
+          "top": 446,
+          "right": 1740.24,
+          "bottom": 490.86,
+          "width": 203,
+          "height": 44.86
+        },
+        "containerSelector": "#p23-l015-w05 > span:nth-of-type(1) > span:nth-of-type(3)",
+        "text": "t",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "1"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1537.24,
+          "y": 446,
+          "width": 203,
+          "height": 44.86
+        },
+        "firstSeen": 76.013,
+        "lastSeen": 76.013,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 76.013,
+        "selector": "#p23-l015-w05 > span:nth-of-type(1) > span:nth-of-type(3)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 1546.29,
+          "top": 466.47,
+          "right": 1749.29,
+          "bottom": 542.38,
+          "width": 203,
+          "height": 75.91
+        },
+        "containerSelector": "#p23-l015-w05 > span:nth-of-type(1) > span:nth-of-type(4)",
+        "text": "a",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "2"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1546.29,
+          "y": 466.47,
+          "width": 203,
+          "height": 75.91
+        },
+        "firstSeen": 76.013,
+        "lastSeen": 76.013,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 76.013,
+        "selector": "#p23-l015-w05 > span:nth-of-type(1) > span:nth-of-type(4)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 1557.61,
+          "top": 515.73,
+          "right": 1760.61,
+          "bottom": 565.12,
+          "width": 203,
+          "height": 49.39
+        },
+        "containerSelector": "#p23-l015-w05 > span:nth-of-type(1) > span:nth-of-type(5)",
+        "text": "f",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "3"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1557.61,
+          "y": 515.73,
+          "width": 203,
+          "height": 49.39
+        },
+        "firstSeen": 76.013,
+        "lastSeen": 76.013,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 77.849,
+        "selector": "#p23-l016-w02 > span:nth-of-type(1) > span:nth-of-type(4)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 1261.13,
+          "top": 289.41,
+          "right": 1305.67,
+          "bottom": 406.89,
+          "width": 44.54,
+          "height": 117.48
+        },
+        "containerSelector": "#p23-l016-w03 > span:nth-of-type(1) > span:nth-of-type(6)",
+        "text": "e",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "3"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1261.13,
+          "y": 289.41,
+          "width": 44.54,
+          "height": 117.48
+        },
+        "firstSeen": 77.849,
+        "lastSeen": 77.849,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 106.124,
+        "selector": "#p23-l020-w03 > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 614,
+          "top": 49,
+          "right": 974.98,
+          "bottom": 177,
+          "width": 360.98,
+          "height": 128
+        },
+        "containerSelector": "#p23-l020-w07 > span:nth-of-type(1) > span:nth-of-type(2)",
+        "text": "anointed",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 614,
+          "y": 49,
+          "width": 360.98,
+          "height": 128
+        },
+        "firstSeen": 106.124,
+        "lastSeen": 106.124,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 106.491,
+        "selector": "#p23-l020-w05 > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 417,
+          "top": 174.24,
+          "right": 645.55,
+          "bottom": 330.26,
+          "width": 228.55,
+          "height": 156.02
+        },
+        "containerSelector": "#p23-l020-w07 > span:nth-of-type(1) > span:nth-of-type(1)",
+        "text": "head",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 417,
+          "y": 174.24,
+          "width": 228.55,
+          "height": 156.02
+        },
+        "firstSeen": 106.491,
+        "lastSeen": 106.491,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 106.491,
+        "selector": "#p23-l020-w05 > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 417,
+          "top": 174.24,
+          "right": 645.55,
+          "bottom": 330.26,
+          "width": 228.55,
+          "height": 156.02
+        },
+        "containerSelector": "#p23-l020-w07 > span:nth-of-type(1) > span:nth-of-type(2)",
+        "text": "head",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 417,
+          "y": 174.24,
+          "width": 228.55,
+          "height": 156.02
+        },
+        "firstSeen": 106.491,
+        "lastSeen": 106.491,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 106.491,
+        "selector": "#p23-l020-w05 > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 417,
+          "top": 174.24,
+          "right": 645.55,
+          "bottom": 330.26,
+          "width": 228.55,
+          "height": 156.02
+        },
+        "containerSelector": "#p23-l020-w07 > span:nth-of-type(1) > span:nth-of-type(3)",
+        "text": "head",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 417,
+          "y": 174.24,
+          "width": 228.55,
+          "height": 156.02
+        },
+        "firstSeen": 106.491,
+        "lastSeen": 106.491,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 106.491,
+        "selector": "#p23-l020-w05 > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 417,
+          "top": 174.24,
+          "right": 645.55,
+          "bottom": 330.26,
+          "width": 228.55,
+          "height": 156.02
+        },
+        "containerSelector": "#p23-l020-w07 > span:nth-of-type(1) > span:nth-of-type(4)",
+        "text": "head",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 417,
+          "y": 174.24,
+          "width": 228.55,
+          "height": 156.02
+        },
+        "firstSeen": 106.491,
+        "lastSeen": 106.491,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 106.859,
+        "selector": "#p23-l020-w06 > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 675,
+          "top": 161.77,
+          "right": 883.52,
+          "bottom": 326.77,
+          "width": 208.52,
+          "height": 165
+        },
+        "containerSelector": "#p23-l020-w07 > span:nth-of-type(1) > span:nth-of-type(1)",
+        "text": "with",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 675,
+          "y": 161.77,
+          "width": 208.52,
+          "height": 165
+        },
+        "firstSeen": 106.859,
+        "lastSeen": 106.859,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 122.282,
+        "selector": "#p23-l024-w02 > span:nth-of-type(1) > span:nth-of-type(3)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 1028.39,
+          "top": 350,
+          "right": 1056.38,
+          "bottom": 485,
+          "width": 27.99,
+          "height": 135
+        },
+        "containerSelector": "#p23-l024-w03 > span:nth-of-type(1) > span:nth-of-type(1)",
+        "text": "l",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "2"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1028.39,
+          "y": 350,
+          "width": 27.99,
+          "height": 135
+        },
+        "firstSeen": 122.282,
+        "lastSeen": 122.282,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 122.282,
+        "selector": "#p23-l024-w02 > span:nth-of-type(1) > span:nth-of-type(4)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 1056.38,
+          "top": 350,
+          "right": 1084.36,
+          "bottom": 485,
+          "width": 27.98,
+          "height": 135
+        },
+        "containerSelector": "#p23-l024-w03 > span:nth-of-type(1) > span:nth-of-type(1)",
+        "text": "l",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "3"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1056.38,
+          "y": 350,
+          "width": 27.98,
+          "height": 135
+        },
+        "firstSeen": 122.282,
+        "lastSeen": 122.282,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 123.75,
+        "selector": "#p23-l024-w02 > span:nth-of-type(1) > span:nth-of-type(3)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 1028.39,
+          "top": 350,
+          "right": 1056.38,
+          "bottom": 485,
+          "width": 27.99,
+          "height": 135
+        },
+        "containerSelector": "#p23-l024-w05 > span:nth-of-type(1) > span:nth-of-type(1)",
+        "text": "l",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "2"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1028.39,
+          "y": 350,
+          "width": 27.99,
+          "height": 135
+        },
+        "firstSeen": 123.75,
+        "lastSeen": 123.75,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 123.75,
+        "selector": "#p23-l024-w02 > span:nth-of-type(1) > span:nth-of-type(4)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 1056.38,
+          "top": 350,
+          "right": 1084.36,
+          "bottom": 485,
+          "width": 27.98,
+          "height": 135
+        },
+        "containerSelector": "#p23-l024-w05 > span:nth-of-type(1) > span:nth-of-type(1)",
+        "text": "l",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "3"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1056.38,
+          "y": 350,
+          "width": 27.98,
+          "height": 135
+        },
+        "firstSeen": 123.75,
+        "lastSeen": 123.75,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 123.75,
+        "selector": "#p23-l024-w04 > span:nth-of-type(1) > span:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 976.52,
+          "top": 466.42,
+          "right": 1035.11,
+          "bottom": 669.42,
+          "width": 58.59,
+          "height": 203
+        },
+        "containerSelector": "#p23-l024-w05 > span:nth-of-type(1) > span:nth-of-type(1)",
+        "text": "o",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "1"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 976.52,
+          "y": 466.42,
+          "width": 58.59,
+          "height": 203
+        },
+        "firstSeen": 123.75,
+        "lastSeen": 123.75,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 123.75,
+        "selector": "#p23-l024-w05 > span:nth-of-type(1) > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 1009.29,
+          "top": 453.73,
+          "right": 1111.42,
+          "bottom": 663.41,
+          "width": 102.13,
+          "height": 209.68
+        },
+        "containerSelector": "#p23-l024-w05 > span:nth-of-type(1) > span:nth-of-type(2)",
+        "text": "e",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1009.29,
+          "y": 453.73,
+          "width": 102.13,
+          "height": 209.68
+        },
+        "firstSeen": 123.75,
+        "lastSeen": 123.75,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 123.75,
+        "selector": "#p23-l024-w05 > span:nth-of-type(1) > span:nth-of-type(4)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 1233.28,
+          "top": 462.03,
+          "right": 1302.72,
+          "bottom": 668.97,
+          "width": 69.44,
+          "height": 206.94
+        },
+        "containerSelector": "#p23-l024-w05 > span:nth-of-type(1) > span:nth-of-type(5)",
+        "text": "l",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "3"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 1233.28,
+          "y": 462.03,
+          "width": 69.44,
+          "height": 206.94
+        },
+        "firstSeen": 123.75,
+        "lastSeen": 123.75,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 129.626,
+        "selector": "#p23-l026-w03 > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 674.16,
+          "top": 62.4,
+          "right": 832.91,
+          "bottom": 197.4,
+          "width": 158.75,
+          "height": 135
+        },
+        "containerSelector": "#p23-l026-w05 > span:nth-of-type(1)",
+        "text": "and",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 674.16,
+          "y": 62.4,
+          "width": 158.75,
+          "height": 135
+        },
+        "firstSeen": 129.626,
+        "lastSeen": 129.626,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 133.665,
+        "selector": "#p23-l027-w01 > span:nth-of-type(1) > span:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 286.88,
+          "top": 62,
+          "right": 341.53,
+          "bottom": 197,
+          "width": 54.65,
+          "height": 135
+        },
+        "containerSelector": "#p23-l027-w03 > span:nth-of-type(1) > span:nth-of-type(1)",
+        "text": "h",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "1"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 286.88,
+          "y": 62,
+          "width": 54.65,
+          "height": 135
+        },
+        "firstSeen": 133.665,
+        "lastSeen": 133.665,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 133.665,
+        "selector": "#p23-l027-w01 > span:nth-of-type(1) > span:nth-of-type(3)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 341.53,
+          "top": 62,
+          "right": 386.08,
+          "bottom": 197,
+          "width": 44.55,
+          "height": 135
+        },
+        "containerSelector": "#p23-l027-w03 > span:nth-of-type(1) > span:nth-of-type(2)",
+        "text": "e",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "2"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 341.53,
+          "y": 62,
+          "width": 44.55,
+          "height": 135
+        },
+        "firstSeen": 133.665,
+        "lastSeen": 133.665,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 133.665,
+        "selector": "#p23-l027-w01 > span:nth-of-type(1) > span:nth-of-type(4)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 386.08,
+          "top": 62,
+          "right": 433.67,
+          "bottom": 197,
+          "width": 47.59,
+          "height": 135
+        },
+        "containerSelector": "#p23-l027-w03 > span:nth-of-type(1) > span:nth-of-type(3)",
+        "text": "y",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "3"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 386.08,
+          "y": 62,
+          "width": 47.59,
+          "height": 135
+        },
+        "firstSeen": 133.665,
+        "lastSeen": 133.665,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 133.665,
+        "selector": "#p23-l027-w02 > span:nth-of-type(1) > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 463.08,
+          "top": 62,
+          "right": 517.73,
+          "bottom": 197,
+          "width": 54.65,
+          "height": 135
+        },
+        "containerSelector": "#p23-l027-w03 > span:nth-of-type(1) > span:nth-of-type(3)",
+        "text": "h",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 463.08,
+          "y": 62,
+          "width": 54.65,
+          "height": 135
+        },
+        "firstSeen": 133.665,
+        "lastSeen": 133.665,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 133.665,
+        "selector": "#p23-l027-w02 > span:nth-of-type(1) > span:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 517.73,
+          "top": 62,
+          "right": 563.59,
+          "bottom": 197,
+          "width": 45.86,
+          "height": 135
+        },
+        "containerSelector": "#p23-l027-w03 > span:nth-of-type(1) > span:nth-of-type(4)",
+        "text": "a",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "1"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 517.73,
+          "y": 62,
+          "width": 45.86,
+          "height": 135
+        },
+        "firstSeen": 133.665,
+        "lastSeen": 133.665,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 133.665,
+        "selector": "#p23-l027-w02 > span:nth-of-type(1) > span:nth-of-type(3)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 563.59,
+          "top": 62,
+          "right": 611.13,
+          "bottom": 197,
+          "width": 47.54,
+          "height": 135
+        },
+        "containerSelector": "#p23-l027-w03 > span:nth-of-type(1) > span:nth-of-type(5)",
+        "text": "v",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "2"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 563.59,
+          "y": 62,
+          "width": 47.54,
+          "height": 135
+        },
+        "firstSeen": 133.665,
+        "lastSeen": 133.665,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 133.665,
+        "selector": "#p23-l027-w02 > span:nth-of-type(1) > span:nth-of-type(4)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 611.13,
+          "top": 62,
+          "right": 655.67,
+          "bottom": 197,
+          "width": 44.54,
+          "height": 135
+        },
+        "containerSelector": "#p23-l027-w03 > span:nth-of-type(1) > span:nth-of-type(6)",
+        "text": "e",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {
+          "data-letter": "3"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 611.13,
+          "y": 62,
+          "width": 44.54,
+          "height": 135
+        },
+        "firstSeen": 133.665,
+        "lastSeen": 133.665,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 139.8,
+        "selector": "span.letter",
+        "message": "Nowrap text is wider than its container.",
+        "rect": {
+          "left": 123.11,
+          "top": 276.9,
+          "right": 321.11,
+          "bottom": 436.8,
+          "width": 198,
+          "height": 159.9
+        },
+        "containerSelector": "span.ink",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 250,
+          "top": 118,
+          "right": 305.78,
+          "bottom": 319.72,
+          "width": 55.78,
+          "height": 201.72
+        },
+        "overflow": {
+          "left": 126.89,
+          "right": 15.33
+        },
+        "dataAttributes": {
+          "data-letter": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 123.11,
+          "y": 276.9,
+          "width": 198,
+          "height": 159.9
+        },
+        "firstSeen": 139.8,
+        "lastSeen": 139.8,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 172.957,
+        "selector": "#p23-l033-w01 > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 130,
+          "top": 145,
+          "right": 163.22,
+          "bottom": 268,
+          "width": 33.22,
+          "height": 123
+        },
+        "containerSelector": "#p23-l033-w03 > span:nth-of-type(1)",
+        "text": "I",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 130,
+          "y": 145,
+          "width": 33.22,
+          "height": 123
+        },
+        "firstSeen": 172.957,
+        "lastSeen": 172.957,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 205.639,
+        "selector": "h1.ending-title",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 190,
+          "top": 353.33,
+          "right": 558.25,
+          "bottom": 535.33,
+          "width": 368.25,
+          "height": 182
+        },
+        "containerSelector": "div.ending-number",
+        "text": "Psalm",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 190,
+          "y": 353.33,
+          "width": 368.25,
+          "height": 182
+        },
+        "firstSeen": 205.639,
+        "lastSeen": 205.639,
+        "occurrences": 1,
+        "heldMs": 0
+      }
+    ],
+    "duration": 219.96,
+    "samples": [
+      24.2,
+      24.9,
+      25.6,
+      64.2,
+      65.2,
+      82,
+      111.8,
+      112.5,
+      124.7,
+      138.2,
+      139.8,
+      145.4,
+      157.6,
+      159.5,
+      160.4,
+      161.6
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 53,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "specPath": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/index.motion.json",
+    "samples": 300
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      24.2,
+      64.2,
+      112.5,
+      145.4,
+      161.6
+    ],
+    "checked": 42,
+    "passed": 42
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  },
+  "_meta": {
+    "version": "0.8.80",
+    "latestVersion": "0.8.79",
+    "updateAvailable": false
+  }
+}

@@ -1,0 +1,5431 @@
+{
+  "schemaVersion": 1,
+  "kind": "final-v2-machine-review-summary-no-visual-scores",
+  "videoPath": "/Users/shanefisher/Movies/Psalm23/review-work/psalm23-held-in-the-ordinary-v2.mp4",
+  "binding": {
+    "videoSha256": "e483e690ef13766ee4e04414711d0826209151d3beab5a91864c113758f3e4f2",
+    "projectHash": "ba3dcdce2b257b032026f6c966e358354b1045ca09bc3c511d6000462093db2c",
+    "rendererHash": "4947d690ce28e0dc88015783d6b5a7bc6093d222df04eaf6ec9957d47060c4ad",
+    "revisionHash": "2e18115e199808003cf4dcae527fe15c105e254a4e70bdf3b19701557fc07787"
+  },
+  "technicalPassed": true,
+  "technicalChecks": [
+    {
+      "name": "encodedFormat",
+      "passed": true,
+      "observed": {
+        "video": "h264",
+        "width": 1920,
+        "height": 1080,
+        "fps": "30/1",
+        "frames": "6599",
+        "audioTracks": 1,
+        "audioCodec": "aac"
+      },
+      "expected": {
+        "videoCodec": "h264",
+        "width": 1920,
+        "height": 1080,
+        "fps": "30/1",
+        "frames": 6599,
+        "audioTracks": 1,
+        "audioCodec": "aac"
+      }
+    },
+    {
+      "name": "encodedFullTimebase",
+      "passed": true,
+      "observed": {
+        "startTime": "0.000000",
+        "duration": "219.966667"
+      },
+      "expected": {
+        "startTime": 0,
+        "duration": 219.96666666666667,
+        "tolerance": 0.03333333333333333
+      }
+    },
+    {
+      "name": "safeDecode",
+      "passed": true,
+      "observed": "All video/audio packets decoded",
+      "expected": null
+    },
+    {
+      "name": "decodedAudioMatch",
+      "passed": true,
+      "observed": {
+        "correlation": 0.999414,
+        "minSegmentCorrelation": 0.998761,
+        "gainDb": -0.048188
+      },
+      "expected": {
+        "minCorrelation": 0.985,
+        "minSegmentCorrelation": 0.97,
+        "maxAbsoluteGainDb": 0.75
+      }
+    },
+    {
+      "name": "audioLag",
+      "passed": true,
+      "observed": {
+        "offsetSeconds": 0
+      },
+      "expected": {
+        "maxAbsoluteSeconds": 0.035
+      }
+    },
+    {
+      "name": "audioDuration",
+      "passed": true,
+      "observed": {
+        "source": 219.96,
+        "encoded": 219.968
+      },
+      "expected": {
+        "expected": 219.96,
+        "tolerance": 0.08
+      }
+    },
+    {
+      "name": "renderOutputBinding",
+      "passed": true,
+      "observed": "e483e690ef13766ee4e04414711d0826209151d3beab5a91864c113758f3e4f2",
+      "expected": "e483e690ef13766ee4e04414711d0826209151d3beab5a91864c113758f3e4f2"
+    },
+    {
+      "name": "renderRevisionBinding",
+      "passed": true,
+      "observed": {
+        "start": "2e18115e199808003cf4dcae527fe15c105e254a4e70bdf3b19701557fc07787",
+        "end": "2e18115e199808003cf4dcae527fe15c105e254a4e70bdf3b19701557fc07787"
+      },
+      "expected": "2e18115e199808003cf4dcae527fe15c105e254a4e70bdf3b19701557fc07787"
+    },
+    {
+      "name": "authoredChoreographyCoverage",
+      "passed": true,
+      "observed": {
+        "uniqueFamilies": 39,
+        "distinctImplementationBodies": 39,
+        "maxUses": 1,
+        "counts": {
+          "gathering-shepherd": 1,
+          "opening-nothing": 1,
+          "growing-grass": 1,
+          "dwelling-threshold": 1,
+          "nourishing-bowl": 1,
+          "resting-water": 1,
+          "restoring-soul": 1,
+          "guided-thread": 1,
+          "righteous-path": 1,
+          "name-signature": 1,
+          "walking-ground": 1,
+          "withdrawing-shadow": 1,
+          "courage-expansion": 1,
+          "embracing-presence": 1,
+          "staff-unfold": 1,
+          "comfort-cradle": 1,
+          "fear-clearing": 1,
+          "table-setting": 1,
+          "affliction-perimeter": 1,
+          "anointing-descent": 1,
+          "cup-overflow": 1,
+          "walking-depth-stations": 1,
+          "shadow-passage": 1,
+          "unfastening-fear": 1,
+          "meeting-you-me": 1,
+          "lifting-supports": 1,
+          "settling-comfort": 1,
+          "unbroken-declaration": 1,
+          "following-mercy": 1,
+          "days-orbit": 1,
+          "mercy-material": 1,
+          "life-continuum": 1,
+          "quiet-courage": 1,
+          "shared-shelter": 1,
+          "shepherd-homeward": 1,
+          "nothing-release": 1,
+          "house-doorway": 1,
+          "long-time": 1,
+          "final-anchor": 1
+        },
+        "mapping": [
+          {
+            "phraseId": "p23-l001",
+            "index": 1,
+            "family": "gathering-shepherd",
+            "intent": "Words gather under a crook drawn around the phrase; shepherd becomes the quiet anchor.",
+            "implementation": {
+              "family": "gathering-shepherd",
+              "provider": "main-switch",
+              "source": "choreography.js",
+              "bodySha256": "7f1e2e8a67730fb299e386fa5c0dea87e240feabc3b3f59921ff5e033fddd137",
+              "bodyCharacters": 320
+            }
+          },
+          {
+            "phraseId": "p23-l002",
+            "index": 2,
+            "family": "opening-nothing",
+            "intent": "Surrounding words open away from nothing; the emptied aperture remains spacious.",
+            "implementation": {
+              "family": "opening-nothing",
+              "provider": "main-switch",
+              "source": "choreography.js",
+              "bodySha256": "50c8d3816bd30f3866428f930782b4bbb59e3fde36149493d111495d4bf8f8c1",
+              "bodyCharacters": 594
+            }
+          },
+          {
+            "phraseId": "p23-l003",
+            "index": 3,
+            "family": "growing-grass",
+            "intent": "Individual letters grow upright from their roots into a green-grass horizon.",
+            "implementation": {
+              "family": "growing-grass",
+              "provider": "semantic-hook",
+              "source": "semantic-motion.js",
+              "bodySha256": "1e0f017acd50dbb2e50dd4f0c8b526a78f19de1a8fd1f156b8a2cee37145ec95",
+              "bodyCharacters": 1459
+            }
+          },
+          {
+            "phraseId": "p23-l004",
+            "index": 4,
+            "family": "dwelling-threshold",
+            "intent": "A roof and doorway are built around dwell as the preceding line crosses its threshold.",
+            "implementation": {
+              "family": "dwelling-threshold",
+              "provider": "main-switch",
+              "source": "choreography.js",
+              "bodySha256": "c241d93ca4a341e3871fdc592f0c58635b59b326252b8e0985efe627f4257f06",
+              "bodyCharacters": 643
+            }
+          },
+          {
+            "phraseId": "p23-l005",
+            "index": 5,
+            "family": "nourishing-bowl",
+            "intent": "The sentence is carried upward from a shallow bowl trajectory and settles as nourished expands.",
+            "implementation": {
+              "family": "nourishing-bowl",
+              "provider": "main-switch",
+              "source": "choreography.js",
+              "bodySha256": "67febff7135ff1ceb25f2260d97e09fb4dc8b0b74d27a1f0b1dddb95c76f8415",
+              "bodyCharacters": 356
+            }
+          },
+          {
+            "phraseId": "p23-l006",
+            "index": 6,
+            "family": "resting-water",
+            "intent": "Words roll across one receding wave; the final rest settles onto an almost level waterline.",
+            "implementation": {
+              "family": "resting-water",
+              "provider": "main-switch",
+              "source": "choreography.js",
+              "bodySha256": "ace33040d28ec8f1d2674860bfc90583b661c61a4a790830cc1c561818c1b4da",
+              "bodyCharacters": 505
+            }
+          },
+          {
+            "phraseId": "p23-l007",
+            "index": 7,
+            "family": "restoring-soul",
+            "intent": "Separated letters of restored and soul reunite; the sentence resolves from fractured to whole.",
+            "implementation": {
+              "family": "restoring-soul",
+              "provider": "main-switch",
+              "source": "choreography.js",
+              "bodySha256": "a7602a8990085428769f6bd46b75269629f0f13e63e043f83f55f9ae03a0e7ae",
+              "bodyCharacters": 113
+            }
+          },
+          {
+            "phraseId": "p23-l008",
+            "index": 8,
+            "family": "guided-thread",
+            "intent": "Each exact word follows a bent guide thread; the thread straightens toward the human connection.",
+            "implementation": {
+              "family": "guided-thread",
+              "provider": "semantic-hook",
+              "source": "semantic-motion.js",
+              "bodySha256": "0b9b6b0d4cb5026a99bd34ca765e0bcf3e133c003e4beba39b90f708e06e2dcb",
+              "bodyCharacters": 1286
+            }
+          },
+          {
+            "phraseId": "p23-l009",
+            "index": 9,
+            "family": "righteous-path",
+            "intent": "A stair of tilted word planes straightens into an unbroken path beneath righteousness.",
+            "implementation": {
+              "family": "righteous-path",
+              "provider": "main-switch",
+              "source": "choreography.js",
+              "bodySha256": "0d804f85604be4265b139c4b811de7596e84ec0677c80369ea8440836a7144be",
+              "bodyCharacters": 424
+            }
+          },
+          {
+            "phraseId": "p23-l010",
+            "index": 10,
+            "family": "name-signature",
+            "intent": "The phrase unfolds like a signature from its center; an authored line signs beneath name.",
+            "implementation": {
+              "family": "name-signature",
+              "provider": "main-switch",
+              "source": "choreography.js",
+              "bodySha256": "bca7ad26fae019219b73ec024603ae16dc8774681cfbb57d5fcc17ed482c18b3",
+              "bodyCharacters": 545
+            }
+          },
+          {
+            "phraseId": "p23-l011",
+            "index": 11,
+            "family": "walking-ground",
+            "intent": "Words cross the rain line in consecutive grounded steps, becoming a shared readable sentence.",
+            "implementation": {
+              "family": "walking-ground",
+              "provider": "semantic-hook",
+              "source": "semantic-motion.js",
+              "bodySha256": "dc498b8a965f1fcaffb0eaf1875b49790696c5524925046489324e7006cb25ea",
+              "bodyCharacters": 1454
+            }
+          },
+          {
+            "phraseId": "p23-l012",
+            "index": 12,
+            "family": "withdrawing-shadow",
+            "intent": "A long cast shadow separates from shadow and death while the exact words stay in the light.",
+            "implementation": {
+              "family": "withdrawing-shadow",
+              "provider": "semantic-hook",
+              "source": "semantic-motion.js",
+              "bodySha256": "52a442472f63705689dc4566435106e685ef7ec107ea80474b2610c7484100c7",
+              "bodyCharacters": 1888
+            }
+          },
+          {
+            "phraseId": "p23-l013",
+            "index": 13,
+            "family": "courage-expansion",
+            "intent": "No grows into a protective opening while fear moves back and the phrase becomes level.",
+            "implementation": {
+              "family": "courage-expansion",
+              "provider": "main-switch",
+              "source": "choreography.js",
+              "bodySha256": "5bfa843a144ea7afb4eebb8a2b61cf260d7ac8ca8c308044ed15653128355089",
+              "bodyCharacters": 572
+            }
+          },
+          {
+            "phraseId": "p23-l014",
+            "index": 14,
+            "family": "embracing-presence",
+            "intent": "With and me approach along two curving arms and stop within a shelter contour.",
+            "implementation": {
+              "family": "embracing-presence",
+              "provider": "main-switch",
+              "source": "choreography.js",
+              "bodySha256": "f219eb3ba4cb64efc2810cab7463fe97abe2ee7f7a8e9ef79da64fcf7203152d",
+              "bodyCharacters": 236
+            }
+          },
+          {
+            "phraseId": "p23-l015",
+            "index": 15,
+            "family": "staff-unfold",
+            "intent": "Rod and staff pivot from strong vertical supports into a two-line editorial statement.",
+            "implementation": {
+              "family": "staff-unfold",
+              "provider": "main-switch",
+              "source": "choreography.js",
+              "bodySha256": "f79d29b53091325c2ce27225e12277d2d06e9eccec2f118b62108da15f733a58",
+              "bodyCharacters": 475
+            }
+          },
+          {
+            "phraseId": "p23-l016",
+            "index": 16,
+            "family": "comfort-cradle",
+            "intent": "The phrase lowers into a visible supporting curve, then opens its tracking into a relaxed hold.",
+            "implementation": {
+              "family": "comfort-cradle",
+              "provider": "main-switch",
+              "source": "choreography.js",
+              "bodySha256": "af0232b42f3862a2e01081b799237cbd3cfe5f5d0b6933fe8db19001d9029ea7",
+              "bodyCharacters": 371
+            }
+          },
+          {
+            "phraseId": "p23-l017",
+            "index": 17,
+            "family": "fear-clearing",
+            "intent": "The line clears a pair of shadow shutters; no evil occupies the opening they leave.",
+            "implementation": {
+              "family": "fear-clearing",
+              "provider": "main-switch",
+              "source": "choreography.js",
+              "bodySha256": "3d024221637b3f3308b3020787a8af25d41c77aa29bfaaf41cd07e5c35e8300b",
+              "bodyCharacters": 419
+            }
+          },
+          {
+            "phraseId": "p23-l018",
+            "index": 18,
+            "family": "table-setting",
+            "intent": "Words arrive at distinct places around one drawn table and gather into two generous rows.",
+            "implementation": {
+              "family": "table-setting",
+              "provider": "semantic-hook",
+              "source": "semantic-motion.js",
+              "bodySha256": "8f881d7c6d0233898e38f2d54fb2b224067edf125df5923eb28de94c854f532a",
+              "bodyCharacters": 1424
+            }
+          },
+          {
+            "phraseId": "p23-l019",
+            "index": 19,
+            "family": "affliction-perimeter",
+            "intent": "Those who afflict arcs around an intact protected center before returning to the full sentence.",
+            "implementation": {
+              "family": "affliction-perimeter",
+              "provider": "semantic-hook",
+              "source": "semantic-motion.js",
+              "bodySha256": "c2ebb08f40b2e0e20cbf2ed29c8c85f87f7dcb5e1851d5bf84a157d1cc3b440d",
+              "bodyCharacters": 2049
+            }
+          },
+          {
+            "phraseId": "p23-l020",
+            "index": 20,
+            "family": "anointing-descent",
+            "intent": "Oil-shaped vertical traces touch down over head as that word rises to meet them.",
+            "implementation": {
+              "family": "anointing-descent",
+              "provider": "semantic-hook",
+              "source": "semantic-motion.js",
+              "bodySha256": "a6e4cfc0c69e51d5b0625ed8db970af9e22eb1e2dfd825dbb0ffc3dbeed6617e",
+              "bodyCharacters": 1618
+            }
+          },
+          {
+            "phraseId": "p23-l021",
+            "index": 21,
+            "family": "cup-overflow",
+            "intent": "The words fill an implied cup from its base, crest and spill gently into their reading positions.",
+            "implementation": {
+              "family": "cup-overflow",
+              "provider": "semantic-hook",
+              "source": "semantic-motion.js",
+              "bodySha256": "e38f25f9c59e57e8964700dac6234d8de79e51492f3691a542fa21af78182149",
+              "bodyCharacters": 1598
+            }
+          },
+          {
+            "phraseId": "p23-l022",
+            "index": 22,
+            "family": "walking-depth-stations",
+            "intent": "A shallow camera journey passes word planes at successive depths and lands with them in one plane.",
+            "implementation": {
+              "family": "walking-depth-stations",
+              "provider": "main-switch",
+              "source": "choreography.js",
+              "bodySha256": "405d12bf2112c855483303c024ae309669b1639978af2045ee6d254f77d531e7",
+              "bodyCharacters": 705
+            }
+          },
+          {
+            "phraseId": "p23-l023",
+            "index": 23,
+            "family": "shadow-passage",
+            "intent": "Two architectural shadow planes slide apart around a stable, fully readable central line.",
+            "implementation": {
+              "family": "shadow-passage",
+              "provider": "main-switch",
+              "source": "choreography.js",
+              "bodySha256": "cfde3f247bebef14b3a2d06bdc4f565a8d556be3afca7dc50264e1c68c403af3",
+              "bodyCharacters": 343
+            }
+          },
+          {
+            "phraseId": "p23-l024",
+            "index": 24,
+            "family": "unfastening-fear",
+            "intent": "A binding line loosens around fear; the exact letters release into a broad and level no evil.",
+            "implementation": {
+              "family": "unfastening-fear",
+              "provider": "main-switch",
+              "source": "choreography.js",
+              "bodySha256": "1cc138f2d6ebd0438d4d5d4fb624e224b900a8b7da7670b490eade1b02cb7142",
+              "bodyCharacters": 448
+            }
+          },
+          {
+            "phraseId": "p23-l025",
+            "index": 25,
+            "family": "meeting-you-me",
+            "intent": "You and me traverse opposite arcs into a shared center, the other words holding the reading order.",
+            "implementation": {
+              "family": "meeting-you-me",
+              "provider": "main-switch",
+              "source": "choreography.js",
+              "bodySha256": "1cebc0d4acd8631f2a5a44100ee71745edbae3d247192320bc659b38a96b0c14",
+              "bodyCharacters": 258
+            }
+          },
+          {
+            "phraseId": "p23-l026",
+            "index": 26,
+            "family": "lifting-supports",
+            "intent": "Two vertical supports lift rod and staff into place; surrounding words bridge between them.",
+            "implementation": {
+              "family": "lifting-supports",
+              "provider": "main-switch",
+              "source": "choreography.js",
+              "bodySha256": "bd93334c31ba711f0c7b917b723841638cd8cbb159e27af4d8cdbeee1994a7c4",
+              "bodyCharacters": 460
+            }
+          },
+          {
+            "phraseId": "p23-l027",
+            "index": 27,
+            "family": "settling-comfort",
+            "intent": "Each word has a different damping arc that progressively becomes still beside comforted.",
+            "implementation": {
+              "family": "settling-comfort",
+              "provider": "main-switch",
+              "source": "choreography.js",
+              "bodySha256": "199f7ef40cec6c0a817697b89e8599696179b9c5f44b32082cd1ee5e80629a88",
+              "bodyCharacters": 288
+            }
+          },
+          {
+            "phraseId": "p23-l028",
+            "index": 28,
+            "family": "unbroken-declaration",
+            "intent": "After its full reading interval, the exact letters assemble into one continuous protective arch across the caregivers.",
+            "implementation": {
+              "family": "unbroken-declaration",
+              "provider": "semantic-hook",
+              "source": "semantic-motion.js",
+              "bodySha256": "c3d016f1ef583f928dd7e52508cb0f0aa02772716f84bccac99fcb932f0ca424",
+              "bodyCharacters": 1414
+            }
+          },
+          {
+            "phraseId": "p23-l029",
+            "index": 29,
+            "family": "following-mercy",
+            "intent": "Mercy leads a slow travelling line; the remaining words follow its curved wake into exact order.",
+            "implementation": {
+              "family": "following-mercy",
+              "provider": "semantic-hook",
+              "source": "semantic-motion.js",
+              "bodySha256": "dc1be8b42898aeb90d146dc6b3f8261dfba9182c2cae8a22c74c0e620d7e3976",
+              "bodyCharacters": 1158
+            }
+          },
+          {
+            "phraseId": "p23-l030",
+            "index": 30,
+            "family": "days-orbit",
+            "intent": "Days cross a segment of a great circular path; life becomes its stationary center of gravity.",
+            "implementation": {
+              "family": "days-orbit",
+              "provider": "semantic-hook",
+              "source": "semantic-motion.js",
+              "bodySha256": "1e3f5990a80e5f75ebb0700858029223af7d5945de261caf4bee589d7daf1f99",
+              "bodyCharacters": 1110
+            }
+          },
+          {
+            "phraseId": "p23-l031",
+            "index": 31,
+            "family": "mercy-material",
+            "intent": "A prominent canonical mercy shares its exact reading station with generated golden filaments, then hands off to the fully formed generated word after the sung reading interval.",
+            "implementation": {
+              "family": "mercy-material",
+              "provider": "main-switch",
+              "source": "choreography.js",
+              "bodySha256": "dea598793b147d86fdba88b734ec8eb17875029f6801cf575daeb5a3ada522f2",
+              "bodyCharacters": 460
+            }
+          },
+          {
+            "phraseId": "p23-l032",
+            "index": 32,
+            "family": "life-continuum",
+            "intent": "The phrase is drawn across an unbroken horizon; the camera settles while the horizon continues beyond it.",
+            "implementation": {
+              "family": "life-continuum",
+              "provider": "semantic-hook",
+              "source": "semantic-motion.js",
+              "bodySha256": "3d9b31d02ec4672a7c078a919edb806b8d67494f9bb61594a455c115a365830f",
+              "bodyCharacters": 1740
+            }
+          },
+          {
+            "phraseId": "p23-l033",
+            "index": 33,
+            "family": "quiet-courage",
+            "intent": "A distant plane carrying fear approaches and becomes human-sized; no evil opens slowly beside it.",
+            "implementation": {
+              "family": "quiet-courage",
+              "provider": "main-switch",
+              "source": "choreography.js",
+              "bodySha256": "582c6e5e60d91b81d31ab791d60c52ebee80e394b583e1f2d6ce0d10833d59a4",
+              "bodyCharacters": 331
+            }
+          },
+          {
+            "phraseId": "p23-l034",
+            "index": 34,
+            "family": "shared-shelter",
+            "intent": "With me rises together inside two nested contours that gently converge without enclosing the people.",
+            "implementation": {
+              "family": "shared-shelter",
+              "provider": "main-switch",
+              "source": "choreography.js",
+              "bodySha256": "1d41a78b3d4ec7f135828d2a724e9e17a3ae9b406333033f9d6b0826923f83dd",
+              "bodyCharacters": 248
+            }
+          },
+          {
+            "phraseId": "p23-l035",
+            "index": 35,
+            "family": "shepherd-homeward",
+            "intent": "The Lord is my follows a returning path into shepherd, which unfolds from a deep diagonal plane.",
+            "implementation": {
+              "family": "shepherd-homeward",
+              "provider": "main-switch",
+              "source": "choreography.js",
+              "bodySha256": "457bc7c2b4ce346e5cd9e782442f8f7f3d1fba7635c333e307d58d80648e510a",
+              "bodyCharacters": 308
+            }
+          },
+          {
+            "phraseId": "p23-l036",
+            "index": 36,
+            "family": "nothing-release",
+            "intent": "The exact word nothing settles as a surrounding oval opens into an infinite-looking horizontal line.",
+            "implementation": {
+              "family": "nothing-release",
+              "provider": "main-switch",
+              "source": "choreography.js",
+              "bodySha256": "97094091ec31d19cc4629d3845f866734e1ab8709ffa0f592eea61d77a5d9c50",
+              "bodyCharacters": 517
+            }
+          },
+          {
+            "phraseId": "p23-l037",
+            "index": 37,
+            "family": "house-doorway",
+            "intent": "House and Lord become two reading stations in a single doorway; the rest passes through then settles.",
+            "implementation": {
+              "family": "house-doorway",
+              "provider": "semantic-hook",
+              "source": "semantic-motion.js",
+              "bodySha256": "dd0ed33c10f1dbf8952b4558eff9b33354f0ddcbc4042f401c89ece64ed62f7e",
+              "bodyCharacters": 2064
+            }
+          },
+          {
+            "phraseId": "p23-l038",
+            "index": 38,
+            "family": "long-time",
+            "intent": "Long gently extends the space around itself while the full phrase remains intact above a growing horizon.",
+            "implementation": {
+              "family": "long-time",
+              "provider": "main-switch",
+              "source": "choreography.js",
+              "bodySha256": "0270602a05e7fe4a5ed8a2427e03499ce1835c8c372984d8bdfb548fb0e8534d",
+              "bodyCharacters": 348
+            }
+          },
+          {
+            "phraseId": "p23-l039",
+            "index": 39,
+            "family": "final-anchor",
+            "intent": "The final shepherd becomes a fixed anchor as a surrounding circle resolves into the final open threshold.",
+            "implementation": {
+              "family": "final-anchor",
+              "provider": "main-switch",
+              "source": "choreography.js",
+              "bodySha256": "e19a992f8464b64a524e31764341876d43286b86690cba89a7d311c5d508bc41",
+              "bodyCharacters": 410
+            }
+          }
+        ],
+        "missingPhraseIds": [],
+        "unimplementedFamilies": [],
+        "mismatches": [],
+        "effectiveImplementations": [
+          {
+            "family": "gathering-shepherd",
+            "provider": "main-switch",
+            "source": "choreography.js",
+            "bodySha256": "7f1e2e8a67730fb299e386fa5c0dea87e240feabc3b3f59921ff5e033fddd137",
+            "bodyCharacters": 320
+          },
+          {
+            "family": "opening-nothing",
+            "provider": "main-switch",
+            "source": "choreography.js",
+            "bodySha256": "50c8d3816bd30f3866428f930782b4bbb59e3fde36149493d111495d4bf8f8c1",
+            "bodyCharacters": 594
+          },
+          {
+            "family": "dwelling-threshold",
+            "provider": "main-switch",
+            "source": "choreography.js",
+            "bodySha256": "c241d93ca4a341e3871fdc592f0c58635b59b326252b8e0985efe627f4257f06",
+            "bodyCharacters": 643
+          },
+          {
+            "family": "nourishing-bowl",
+            "provider": "main-switch",
+            "source": "choreography.js",
+            "bodySha256": "67febff7135ff1ceb25f2260d97e09fb4dc8b0b74d27a1f0b1dddb95c76f8415",
+            "bodyCharacters": 356
+          },
+          {
+            "family": "resting-water",
+            "provider": "main-switch",
+            "source": "choreography.js",
+            "bodySha256": "ace33040d28ec8f1d2674860bfc90583b661c61a4a790830cc1c561818c1b4da",
+            "bodyCharacters": 505
+          },
+          {
+            "family": "restoring-soul",
+            "provider": "main-switch",
+            "source": "choreography.js",
+            "bodySha256": "a7602a8990085428769f6bd46b75269629f0f13e63e043f83f55f9ae03a0e7ae",
+            "bodyCharacters": 113
+          },
+          {
+            "family": "righteous-path",
+            "provider": "main-switch",
+            "source": "choreography.js",
+            "bodySha256": "0d804f85604be4265b139c4b811de7596e84ec0677c80369ea8440836a7144be",
+            "bodyCharacters": 424
+          },
+          {
+            "family": "name-signature",
+            "provider": "main-switch",
+            "source": "choreography.js",
+            "bodySha256": "bca7ad26fae019219b73ec024603ae16dc8774681cfbb57d5fcc17ed482c18b3",
+            "bodyCharacters": 545
+          },
+          {
+            "family": "courage-expansion",
+            "provider": "main-switch",
+            "source": "choreography.js",
+            "bodySha256": "5bfa843a144ea7afb4eebb8a2b61cf260d7ac8ca8c308044ed15653128355089",
+            "bodyCharacters": 572
+          },
+          {
+            "family": "embracing-presence",
+            "provider": "main-switch",
+            "source": "choreography.js",
+            "bodySha256": "f219eb3ba4cb64efc2810cab7463fe97abe2ee7f7a8e9ef79da64fcf7203152d",
+            "bodyCharacters": 236
+          },
+          {
+            "family": "staff-unfold",
+            "provider": "main-switch",
+            "source": "choreography.js",
+            "bodySha256": "f79d29b53091325c2ce27225e12277d2d06e9eccec2f118b62108da15f733a58",
+            "bodyCharacters": 475
+          },
+          {
+            "family": "comfort-cradle",
+            "provider": "main-switch",
+            "source": "choreography.js",
+            "bodySha256": "af0232b42f3862a2e01081b799237cbd3cfe5f5d0b6933fe8db19001d9029ea7",
+            "bodyCharacters": 371
+          },
+          {
+            "family": "fear-clearing",
+            "provider": "main-switch",
+            "source": "choreography.js",
+            "bodySha256": "3d024221637b3f3308b3020787a8af25d41c77aa29bfaaf41cd07e5c35e8300b",
+            "bodyCharacters": 419
+          },
+          {
+            "family": "walking-depth-stations",
+            "provider": "main-switch",
+            "source": "choreography.js",
+            "bodySha256": "405d12bf2112c855483303c024ae309669b1639978af2045ee6d254f77d531e7",
+            "bodyCharacters": 705
+          },
+          {
+            "family": "shadow-passage",
+            "provider": "main-switch",
+            "source": "choreography.js",
+            "bodySha256": "cfde3f247bebef14b3a2d06bdc4f565a8d556be3afca7dc50264e1c68c403af3",
+            "bodyCharacters": 343
+          },
+          {
+            "family": "unfastening-fear",
+            "provider": "main-switch",
+            "source": "choreography.js",
+            "bodySha256": "1cc138f2d6ebd0438d4d5d4fb624e224b900a8b7da7670b490eade1b02cb7142",
+            "bodyCharacters": 448
+          },
+          {
+            "family": "meeting-you-me",
+            "provider": "main-switch",
+            "source": "choreography.js",
+            "bodySha256": "1cebc0d4acd8631f2a5a44100ee71745edbae3d247192320bc659b38a96b0c14",
+            "bodyCharacters": 258
+          },
+          {
+            "family": "lifting-supports",
+            "provider": "main-switch",
+            "source": "choreography.js",
+            "bodySha256": "bd93334c31ba711f0c7b917b723841638cd8cbb159e27af4d8cdbeee1994a7c4",
+            "bodyCharacters": 460
+          },
+          {
+            "family": "settling-comfort",
+            "provider": "main-switch",
+            "source": "choreography.js",
+            "bodySha256": "199f7ef40cec6c0a817697b89e8599696179b9c5f44b32082cd1ee5e80629a88",
+            "bodyCharacters": 288
+          },
+          {
+            "family": "mercy-material",
+            "provider": "main-switch",
+            "source": "choreography.js",
+            "bodySha256": "dea598793b147d86fdba88b734ec8eb17875029f6801cf575daeb5a3ada522f2",
+            "bodyCharacters": 460
+          },
+          {
+            "family": "quiet-courage",
+            "provider": "main-switch",
+            "source": "choreography.js",
+            "bodySha256": "582c6e5e60d91b81d31ab791d60c52ebee80e394b583e1f2d6ce0d10833d59a4",
+            "bodyCharacters": 331
+          },
+          {
+            "family": "shared-shelter",
+            "provider": "main-switch",
+            "source": "choreography.js",
+            "bodySha256": "1d41a78b3d4ec7f135828d2a724e9e17a3ae9b406333033f9d6b0826923f83dd",
+            "bodyCharacters": 248
+          },
+          {
+            "family": "shepherd-homeward",
+            "provider": "main-switch",
+            "source": "choreography.js",
+            "bodySha256": "457bc7c2b4ce346e5cd9e782442f8f7f3d1fba7635c333e307d58d80648e510a",
+            "bodyCharacters": 308
+          },
+          {
+            "family": "nothing-release",
+            "provider": "main-switch",
+            "source": "choreography.js",
+            "bodySha256": "97094091ec31d19cc4629d3845f866734e1ab8709ffa0f592eea61d77a5d9c50",
+            "bodyCharacters": 517
+          },
+          {
+            "family": "long-time",
+            "provider": "main-switch",
+            "source": "choreography.js",
+            "bodySha256": "0270602a05e7fe4a5ed8a2427e03499ce1835c8c372984d8bdfb548fb0e8534d",
+            "bodyCharacters": 348
+          },
+          {
+            "family": "final-anchor",
+            "provider": "main-switch",
+            "source": "choreography.js",
+            "bodySha256": "e19a992f8464b64a524e31764341876d43286b86690cba89a7d311c5d508bc41",
+            "bodyCharacters": 410
+          },
+          {
+            "family": "growing-grass",
+            "provider": "semantic-hook",
+            "source": "semantic-motion.js",
+            "bodySha256": "1e0f017acd50dbb2e50dd4f0c8b526a78f19de1a8fd1f156b8a2cee37145ec95",
+            "bodyCharacters": 1459
+          },
+          {
+            "family": "withdrawing-shadow",
+            "provider": "semantic-hook",
+            "source": "semantic-motion.js",
+            "bodySha256": "52a442472f63705689dc4566435106e685ef7ec107ea80474b2610c7484100c7",
+            "bodyCharacters": 1888
+          },
+          {
+            "family": "unbroken-declaration",
+            "provider": "semantic-hook",
+            "source": "semantic-motion.js",
+            "bodySha256": "c3d016f1ef583f928dd7e52508cb0f0aa02772716f84bccac99fcb932f0ca424",
+            "bodyCharacters": 1414
+          },
+          {
+            "family": "guided-thread",
+            "provider": "semantic-hook",
+            "source": "semantic-motion.js",
+            "bodySha256": "0b9b6b0d4cb5026a99bd34ca765e0bcf3e133c003e4beba39b90f708e06e2dcb",
+            "bodyCharacters": 1286
+          },
+          {
+            "family": "walking-ground",
+            "provider": "semantic-hook",
+            "source": "semantic-motion.js",
+            "bodySha256": "dc498b8a965f1fcaffb0eaf1875b49790696c5524925046489324e7006cb25ea",
+            "bodyCharacters": 1454
+          },
+          {
+            "family": "following-mercy",
+            "provider": "semantic-hook",
+            "source": "semantic-motion.js",
+            "bodySha256": "dc1be8b42898aeb90d146dc6b3f8261dfba9182c2cae8a22c74c0e620d7e3976",
+            "bodyCharacters": 1158
+          },
+          {
+            "family": "cup-overflow",
+            "provider": "semantic-hook",
+            "source": "semantic-motion.js",
+            "bodySha256": "e38f25f9c59e57e8964700dac6234d8de79e51492f3691a542fa21af78182149",
+            "bodyCharacters": 1598
+          },
+          {
+            "family": "table-setting",
+            "provider": "semantic-hook",
+            "source": "semantic-motion.js",
+            "bodySha256": "8f881d7c6d0233898e38f2d54fb2b224067edf125df5923eb28de94c854f532a",
+            "bodyCharacters": 1424
+          },
+          {
+            "family": "affliction-perimeter",
+            "provider": "semantic-hook",
+            "source": "semantic-motion.js",
+            "bodySha256": "c2ebb08f40b2e0e20cbf2ed29c8c85f87f7dcb5e1851d5bf84a157d1cc3b440d",
+            "bodyCharacters": 2049
+          },
+          {
+            "family": "anointing-descent",
+            "provider": "semantic-hook",
+            "source": "semantic-motion.js",
+            "bodySha256": "a6e4cfc0c69e51d5b0625ed8db970af9e22eb1e2dfd825dbb0ffc3dbeed6617e",
+            "bodyCharacters": 1618
+          },
+          {
+            "family": "days-orbit",
+            "provider": "semantic-hook",
+            "source": "semantic-motion.js",
+            "bodySha256": "1e3f5990a80e5f75ebb0700858029223af7d5945de261caf4bee589d7daf1f99",
+            "bodyCharacters": 1110
+          },
+          {
+            "family": "life-continuum",
+            "provider": "semantic-hook",
+            "source": "semantic-motion.js",
+            "bodySha256": "3d9b31d02ec4672a7c078a919edb806b8d67494f9bb61594a455c115a365830f",
+            "bodyCharacters": 1740
+          },
+          {
+            "family": "house-doorway",
+            "provider": "semantic-hook",
+            "source": "semantic-motion.js",
+            "bodySha256": "dd0ed33c10f1dbf8952b4558eff9b33354f0ddcbc4042f401c89ece64ed62f7e",
+            "bodyCharacters": 2064
+          }
+        ],
+        "inactiveSwitchFamilies": [
+          "growing-grass",
+          "guided-thread",
+          "walking-ground",
+          "withdrawing-shadow",
+          "table-setting",
+          "affliction-perimeter",
+          "anointing-descent",
+          "cup-overflow",
+          "unbroken-declaration",
+          "following-mercy",
+          "days-orbit",
+          "life-continuum",
+          "house-doorway"
+        ],
+        "semanticDispatchVerified": true,
+        "implementationRegistry": [
+          "gathering-shepherd",
+          "opening-nothing",
+          "growing-grass",
+          "dwelling-threshold",
+          "nourishing-bowl",
+          "resting-water",
+          "restoring-soul",
+          "guided-thread",
+          "righteous-path",
+          "name-signature",
+          "walking-ground",
+          "withdrawing-shadow",
+          "courage-expansion",
+          "embracing-presence",
+          "staff-unfold",
+          "comfort-cradle",
+          "fear-clearing",
+          "table-setting",
+          "affliction-perimeter",
+          "anointing-descent",
+          "cup-overflow",
+          "walking-depth-stations",
+          "shadow-passage",
+          "unfastening-fear",
+          "meeting-you-me",
+          "lifting-supports",
+          "settling-comfort",
+          "unbroken-declaration",
+          "following-mercy",
+          "days-orbit",
+          "mercy-material",
+          "life-continuum",
+          "quiet-courage",
+          "shared-shelter",
+          "shepherd-homeward",
+          "nothing-release",
+          "house-doorway",
+          "long-time",
+          "final-anchor"
+        ],
+        "implementationSources": [
+          {
+            "src": "choreography.js",
+            "sha256": "bfce3f539ebf62fe64a628ace0a5d7dd239d0cbd13f210a74875f779be0f4b56"
+          },
+          {
+            "src": "semantic-motion.js",
+            "sha256": "ad936e3db39ba484640ab4459a9ee5028ddb9b093c45d97030e9547fb8f19053"
+          }
+        ],
+        "passed": true,
+        "note": "Only effective dispatched implementations count. Bypassed old switch cases are excluded. Distinct code bodies can still look repetitive; independent encoded review must judge at least30 meaningful choreography groups with none used more than3times."
+      },
+      "expected": {
+        "minDistinctFamilies": 30,
+        "maxUses": 3,
+        "allPerformedPhrases": true
+      }
+    },
+    {
+      "name": "allCanonicalWordsSampled",
+      "passed": true,
+      "observed": {
+        "required": 210,
+        "observed": 210,
+        "ratio": 1,
+        "unresolved": []
+      },
+      "expected": {
+        "required": 210
+      }
+    },
+    {
+      "name": "encodedLyricVisibility",
+      "passed": true,
+      "observed": {
+        "required": 210,
+        "observed": 210,
+        "ratio": 1,
+        "unresolved": []
+      },
+      "expected": {
+        "requiredRatio": 1
+      }
+    },
+    {
+      "name": "temporalActivity",
+      "passed": true,
+      "observed": {
+        "errors": [],
+        "intervals": []
+      },
+      "expected": {
+        "maxStaticSeconds": 4
+      }
+    },
+    {
+      "name": "unchangedDuringReview",
+      "passed": true,
+      "observed": "2e18115e199808003cf4dcae527fe15c105e254a4e70bdf3b19701557fc07787",
+      "expected": "2e18115e199808003cf4dcae527fe15c105e254a4e70bdf3b19701557fc07787"
+    }
+  ],
+  "strictAudioStatus": "failed",
+  "audioCounts": {
+    "words": 210,
+    "passed": 153,
+    "unsupported": 55,
+    "supportedCueFailures": 2
+  },
+  "audioCache": {
+    "directory": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/.review-cache/audio",
+    "hits": 209,
+    "misses": 0,
+    "rejectedEntries": 0
+  },
+  "remainingAudioWords": [
+    {
+      "id": "p23-l001-w05",
+      "text": "shepherd,",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 16.677479,
+      "currentEnd": 17.700253,
+      "acousticStart": 16.694807,
+      "acousticEnd": 17.455254,
+      "acousticConfidence": 0.197714,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 0.017328,
+      "endDelta": 0.244999,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "shepherd,",
+          "start": 16.73483,
+          "end": 17.75543,
+          "score": 0.14315555785157388,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "shepherd,",
+          "start": 16.694807,
+          "end": 17.455254,
+          "score": 0.19771391653321368,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "shepherd,",
+        "start": 16.694807,
+        "end": 17.455254,
+        "score": 0.1031122453333037,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [
+        {
+          "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "role": "source",
+          "text": "shepherd",
+          "start": 16.593455,
+          "end": 17.633455,
+          "score": 0.9506248235702515,
+          "startDelta": 0.101352,
+          "endDelta": 0.178201
+        }
+      ],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l005-w01",
+      "text": "He",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 30.442924,
+      "currentEnd": 30.844094,
+      "acousticStart": 30.442883,
+      "acousticEnd": 30.823106,
+      "acousticConfidence": 0.998516,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 4.1e-05,
+      "endDelta": 0.020988,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "He",
+          "start": 30.422871,
+          "end": 30.643,
+          "score": 0.914885206543021,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "He",
+          "start": 30.442883,
+          "end": 30.823106,
+          "score": 0.9985162947237795,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "He",
+        "start": 30.442883,
+        "end": 30.823106,
+        "score": 0.9982996459840674,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [
+        {
+          "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+          "role": "source",
+          "text": "He",
+          "start": 30.213455,
+          "end": 30.853455,
+          "score": 0.9970807433128357,
+          "startDelta": 0.229428,
+          "endDelta": 0.030349
+        }
+      ],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l006-w04",
+      "text": "of",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 38.229791,
+      "currentEnd": 38.309972,
+      "acousticStart": 38.066271,
+      "acousticEnd": 38.106285,
+      "acousticConfidence": 0.232854,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0.120041,
+      "cueDelta": 0.16352,
+      "endDelta": 0.203687,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "of",
+          "start": 38.466409,
+          "end": 38.506423,
+          "score": 0.026386715937662206,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "of",
+          "start": 38.066271,
+          "end": 38.106285,
+          "score": 0.2328544842156326,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "of",
+        "start": 37.94623,
+        "end": 38.186312,
+        "score": 0.032125421676092905,
+        "startDelta": 0.120041,
+        "endDelta": 0.080027
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        ],
+        "mismatches": [
+          {
+            "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+            "role": "source",
+            "reason": "Canonical token was omitted or recognized differently"
+          }
+        ],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l006-w05",
+      "text": "rest.",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 38.608076,
+      "currentEnd": 38.988729,
+      "acousticStart": 38.606458,
+      "acousticEnd": 39.246679,
+      "acousticConfidence": 0.21892,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0.020007,
+      "cueDelta": 0.001618,
+      "endDelta": 0.25795,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "rest.",
+          "start": 38.626465,
+          "end": 39.04661,
+          "score": 0.18524420049429374,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "rest.",
+          "start": 38.606458,
+          "end": 39.246679,
+          "score": 0.21892028779927292,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "rest.",
+        "start": 38.586451,
+        "end": 39.266686,
+        "score": 0.6420838897664926,
+        "startDelta": 0.020007,
+        "endDelta": 0.020007
+      },
+      "corroboration": [
+        {
+          "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "role": "source",
+          "text": "rest",
+          "start": 38.585704,
+          "end": 39.365704,
+          "score": 0.8235952854156494,
+          "startDelta": 0.020754,
+          "endDelta": 0.119025
+        }
+      ],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872"
+        ],
+        "mismatches": [
+          {
+            "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+            "role": "source",
+            "reason": "Canonical token was omitted or recognized differently"
+          },
+          {
+            "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+            "role": "source",
+            "reason": "Canonical token was omitted or recognized differently"
+          }
+        ],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l007-w05",
+      "text": "soul,",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 45.807576,
+      "currentEnd": 46.789432,
+      "acousticStart": 45.78894,
+      "acousticEnd": 46.669244,
+      "acousticConfidence": 0.606535,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0.020007,
+      "cueDelta": 0.018636,
+      "endDelta": 0.120188,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "soul,",
+          "start": 45.868968,
+          "end": 46.809293,
+          "score": 0.13672790058660342,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "soul,",
+          "start": 45.78894,
+          "end": 46.669244,
+          "score": 0.6065354992903411,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "soul,",
+        "start": 45.768933,
+        "end": 46.689251,
+        "score": 0.3909567173443,
+        "startDelta": 0.020007,
+        "endDelta": 0.020007
+      },
+      "corroboration": [
+        {
+          "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "role": "source",
+          "text": "soul",
+          "start": 45.585704,
+          "end": 46.825704,
+          "score": 0.9977018237113953,
+          "startDelta": 0.203236,
+          "endDelta": 0.15646
+        },
+        {
+          "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+          "role": "source",
+          "text": "soul",
+          "start": 45.685704,
+          "end": 46.845704,
+          "score": 0.9950843453407288,
+          "startDelta": 0.103236,
+          "endDelta": 0.17646
+        }
+      ],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l008-w02",
+      "text": "has",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 48.640441,
+      "currentEnd": 48.740818,
+      "acousticStart": 48.609915,
+      "acousticEnd": 48.749963,
+      "acousticConfidence": 0.12606,
+      "selectedCheckpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 0.030526,
+      "endDelta": 0.009145,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "has",
+          "start": 48.609915,
+          "end": 48.749963,
+          "score": 0.12605961155417963,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "has",
+          "start": 48.609915,
+          "end": 48.749963,
+          "score": 0.030731635883363893,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "has",
+          "start": 48.609915,
+          "end": 48.749963,
+          "score": 0.030731635883363893,
+          "startDelta": 0,
+          "endDelta": 0
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+        "role": "source",
+        "text": "has",
+        "start": 48.609915,
+        "end": 48.749963,
+        "score": 0.11368194581105825,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [
+        {
+          "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "role": "source",
+          "text": "has",
+          "start": 48.505704,
+          "end": 48.725704,
+          "score": 0.9632688760757446,
+          "startDelta": 0.104211,
+          "endDelta": 0.024259
+        },
+        {
+          "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "role": "source",
+          "text": "has",
+          "start": 48.565704,
+          "end": 48.765704,
+          "score": 0.991780698299408,
+          "startDelta": 0.044211,
+          "endDelta": 0.015741
+        },
+        {
+          "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+          "role": "source",
+          "text": "has",
+          "start": 48.625704,
+          "end": 48.825704,
+          "score": 0.9836883544921875,
+          "startDelta": 0.015789,
+          "endDelta": 0.075741
+        }
+      ],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l008-w03",
+      "text": "guided",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 48.847608,
+      "currentEnd": 49.608454,
+      "acousticStart": 48.829991,
+      "acousticEnd": 49.610261,
+      "acousticConfidence": 0.177358,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0.020007,
+      "cueDelta": 0.017617,
+      "endDelta": 0.001807,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "guided",
+          "start": 48.849998,
+          "end": 49.570247,
+          "score": 0.01944096723580901,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "guided",
+          "start": 48.829991,
+          "end": 49.610261,
+          "score": 0.17735773809290128,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "guided",
+          "start": 48.849998,
+          "end": 49.570247,
+          "score": 0.01944096723580901,
+          "startDelta": 0.020007,
+          "endDelta": 0.040014
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "guided",
+        "start": 48.829991,
+        "end": 49.630268,
+        "score": 0.333039109537311,
+        "startDelta": 0,
+        "endDelta": 0.020007
+      },
+      "corroboration": [
+        {
+          "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "role": "source",
+          "text": "guided",
+          "start": 48.765704,
+          "end": 49.545704,
+          "score": 0.9996564388275146,
+          "startDelta": 0.064287,
+          "endDelta": 0.064557
+        },
+        {
+          "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+          "role": "source",
+          "text": "guided",
+          "start": 48.825704,
+          "end": 49.565704,
+          "score": 0.9888871312141418,
+          "startDelta": 0.004287,
+          "endDelta": 0.044557
+        }
+      ],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l008-w04",
+      "text": "me",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 49.708565,
+      "currentEnd": 49.74861,
+      "acousticStart": 49.750309,
+      "acousticEnd": 49.81033,
+      "acousticConfidence": 0.010335,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0.020007,
+      "cueDelta": 0.041744,
+      "endDelta": 0.06172,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "me",
+          "start": 49.610261,
+          "end": 49.650275,
+          "score": 0.006863761444867598,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "me",
+          "start": 49.750309,
+          "end": 49.81033,
+          "score": 0.01033547877877572,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "me",
+        "start": 49.730302,
+        "end": 49.81033,
+        "score": 0.02426924911730655,
+        "startDelta": 0.020007,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l009-w03",
+      "text": "paths",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 51.763428,
+      "currentEnd": 52.365336,
+      "acousticStart": 51.811021,
+      "acousticEnd": 52.47125,
+      "acousticConfidence": 0.164444,
+      "selectedCheckpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 0.047593,
+      "endDelta": 0.105914,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "paths",
+          "start": 51.811021,
+          "end": 52.47125,
+          "score": 0.1644438372015134,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "paths",
+          "start": 51.771008,
+          "end": 52.351208,
+          "score": 0.09106376214278843,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [],
+      "encodedEvidence": {
+        "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+        "role": "source",
+        "text": "paths",
+        "start": 51.811021,
+        "end": 52.47125,
+        "score": 0.11674951645668252,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [
+        {
+          "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+          "role": "source",
+          "text": "paths",
+          "start": 51.885704,
+          "end": 52.465704,
+          "score": 0.8876593112945557,
+          "startDelta": 0.074683,
+          "endDelta": 0.005546
+        }
+      ],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        ],
+        "mismatches": [
+          {
+            "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+            "role": "source",
+            "reason": "Canonical token was omitted or recognized differently"
+          }
+        ],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l011-w03",
+      "text": "I",
+      "supported": true,
+      "passed": false,
+      "route": "official_dual_ctc",
+      "currentStart": 59.555589,
+      "currentEnd": 59.575649,
+      "acousticStart": 59.622083,
+      "acousticEnd": 59.642095,
+      "acousticConfidence": 0.987173,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 0.066494,
+      "endDelta": 0.066446,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "I",
+          "start": 59.522025,
+          "end": 59.542037,
+          "score": 0.03816466090413092,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "I",
+          "start": 59.622083,
+          "end": 59.642095,
+          "score": 0.9871734417469029,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "I",
+          "start": 59.544504,
+          "end": 59.564582,
+          "score": 0.9522679088308557,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "I",
+          "start": 59.564582,
+          "end": 59.584659,
+          "score": 0.9829997197337849,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "I",
+          "start": 59.544504,
+          "end": 59.564582,
+          "score": 0.9522679088308557,
+          "startDelta": 0.077579,
+          "endDelta": 0.077513
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "I",
+        "start": 59.622083,
+        "end": 59.642095,
+        "score": 0.9948059901696578,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": "canonical-id-original-and-phrase-context"
+    },
+    {
+      "id": "p23-l011-w05",
+      "text": "walk",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 60.382114,
+      "currentEnd": 60.802376,
+      "acousticStart": 60.382526,
+      "acousticEnd": 60.80277,
+      "acousticConfidence": 0.774074,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 0.000412,
+      "endDelta": 0.000394,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "walk",
+          "start": 60.402537,
+          "end": 60.782759,
+          "score": 0.18957578184832727,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "walk",
+          "start": 60.382526,
+          "end": 60.80277,
+          "score": 0.7740738307330693,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "walk",
+          "start": 60.402537,
+          "end": 60.782759,
+          "score": 0.18957578184832727,
+          "startDelta": 0.020011,
+          "endDelta": 0.020011
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "walk",
+        "start": 60.382526,
+        "end": 60.80277,
+        "score": 0.8505148285672883,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l012-w01",
+      "text": "in",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 62.303315,
+      "currentEnd": 62.34334,
+      "acousticStart": 62.303644,
+      "acousticEnd": 62.343667,
+      "acousticConfidence": 0.769846,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 0.000329,
+      "endDelta": 0.000327,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "in",
+          "start": 62.343667,
+          "end": 62.403702,
+          "score": 0.5035042117424399,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "in",
+          "start": 62.303644,
+          "end": 62.343667,
+          "score": 0.7698463673877419,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "in",
+          "start": 62.343667,
+          "end": 62.403702,
+          "score": 0.5035042117424399,
+          "startDelta": 0.040023,
+          "endDelta": 0.060035
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "in",
+        "start": 62.303644,
+        "end": 62.343667,
+        "score": 0.8134214484176878,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l012-w04",
+      "text": "of",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 63.86429,
+      "currentEnd": 63.94434,
+      "acousticStart": 63.864552,
+      "acousticEnd": 63.944599,
+      "acousticConfidence": 0.996574,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0.060034,
+      "cueDelta": 0.000262,
+      "endDelta": 0.000259,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "of",
+          "start": 63.824529,
+          "end": 63.904576,
+          "score": 0.6326483050124431,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "of",
+          "start": 63.864552,
+          "end": 63.944599,
+          "score": 0.9965737539784465,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "of",
+          "start": 63.824529,
+          "end": 63.904576,
+          "score": 0.6326483050124431,
+          "startDelta": 0.040023,
+          "endDelta": 0.040023
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "of",
+        "start": 63.804518,
+        "end": 63.904576,
+        "score": 0.8975585646161905,
+        "startDelta": 0.060034,
+        "endDelta": 0.040023
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l013-w01",
+      "text": "I",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 65.825516,
+      "currentEnd": 65.845528,
+      "acousticStart": 65.825694,
+      "acousticEnd": 65.845706,
+      "acousticConfidence": 0.735969,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 0.000178,
+      "endDelta": 0.000178,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "I",
+          "start": 65.845706,
+          "end": 65.865717,
+          "score": 0.0007843177882255172,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "I",
+          "start": 65.825694,
+          "end": 65.845706,
+          "score": 0.7359692187625139,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "I",
+          "start": 65.845706,
+          "end": 65.865717,
+          "score": 0.0007843177882255172,
+          "startDelta": 0.020012,
+          "endDelta": 0.020011
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "I",
+        "start": 65.825694,
+        "end": 65.845706,
+        "score": 0.6800987509482604,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l013-w04",
+      "text": "no",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 67.24142,
+      "currentEnd": 67.602451,
+      "acousticStart": 67.246521,
+      "acousticEnd": 67.626742,
+      "acousticConfidence": 0.994554,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 0.005101,
+      "endDelta": 0.024291,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "no",
+          "start": 67.246521,
+          "end": 67.546696,
+          "score": 0.45644377702882116,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "no",
+          "start": 67.246521,
+          "end": 67.626742,
+          "score": 0.9945539495481392,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "no",
+          "start": 67.246521,
+          "end": 67.546696,
+          "score": 0.45644377702882116,
+          "startDelta": 0,
+          "endDelta": 0.080046
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "no",
+        "start": 67.246521,
+        "end": 67.626742,
+        "score": 0.9942892808902107,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l013-w05",
+      "text": "evil,",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 67.926829,
+      "currentEnd": 68.827392,
+      "acousticStart": 68.407197,
+      "acousticEnd": 68.827441,
+      "acousticConfidence": 0.800691,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0.020011,
+      "cueDelta": 0.480368,
+      "endDelta": 4.9e-05,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "evil,",
+          "start": 67.906905,
+          "end": 68.847453,
+          "score": 0.12767103285027268,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "evil,",
+          "start": 68.407197,
+          "end": 68.827441,
+          "score": 0.8006908202444796,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "evil,",
+        "start": 68.427208,
+        "end": 68.827441,
+        "score": 0.8590799074450836,
+        "startDelta": 0.020011,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l014-w03",
+      "text": "are",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 70.843261,
+      "currentEnd": 71.083979,
+      "acousticStart": 70.928664,
+      "acousticEnd": 71.088757,
+      "acousticConfidence": 0.816598,
+      "selectedCheckpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 0.085403,
+      "endDelta": 0.004778,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "are",
+          "start": 70.928664,
+          "end": 71.088757,
+          "score": 0.8165982355415158,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "are",
+          "start": 70.868629,
+          "end": 71.088757,
+          "score": 0.5131422587600972,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "are",
+          "start": 70.868629,
+          "end": 71.088757,
+          "score": 0.5131422587600972,
+          "startDelta": 0.060035,
+          "endDelta": 0
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+        "role": "source",
+        "text": "are",
+        "start": 70.928664,
+        "end": 71.088757,
+        "score": 0.7743418166163968,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l015-w01",
+      "text": "Your",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 73.342,
+      "currentEnd": 73.502516,
+      "acousticStart": 73.350074,
+      "acousticEnd": 73.530178,
+      "acousticConfidence": 0.326076,
+      "selectedCheckpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+      "codecAlignmentSpread": 0.020011,
+      "cueDelta": 0.008074,
+      "endDelta": 0.027662,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "Your",
+          "start": 73.350074,
+          "end": 73.530178,
+          "score": 0.3260760317118241,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "Your",
+          "start": 73.350074,
+          "end": 73.530178,
+          "score": 0.16495208500151762,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "Your",
+          "start": 73.350074,
+          "end": 73.530178,
+          "score": 0.16495208500151762,
+          "startDelta": 0,
+          "endDelta": 0
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+        "role": "source",
+        "text": "Your",
+        "start": 73.370085,
+        "end": 73.530178,
+        "score": 0.37811648407151294,
+        "startDelta": 0.020011,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [],
+        "mismatches": [
+          {
+            "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+            "role": "source",
+            "reason": "Canonical token was omitted or recognized differently"
+          },
+          {
+            "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+            "role": "source",
+            "reason": "Canonical token was omitted or recognized differently"
+          }
+        ],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l015-w02",
+      "text": "rod",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 73.603101,
+      "currentEnd": 74.084666,
+      "acousticStart": 73.630237,
+      "acousticEnd": 74.090505,
+      "acousticConfidence": 0.560293,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0.020012,
+      "cueDelta": 0.027136,
+      "endDelta": 0.005839,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "rod",
+          "start": 73.630237,
+          "end": 74.050481,
+          "score": 0.2197168932486101,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "rod",
+          "start": 73.630237,
+          "end": 74.090505,
+          "score": 0.5602928099934096,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "rod",
+          "start": 73.630237,
+          "end": 74.050481,
+          "score": 0.2197168932486101,
+          "startDelta": 0,
+          "endDelta": 0.040024
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "rod",
+        "start": 73.630237,
+        "end": 74.070493,
+        "score": 0.5323233724680598,
+        "startDelta": 0,
+        "endDelta": 0.020012
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [],
+        "mismatches": [
+          {
+            "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+            "role": "source",
+            "reason": "Canonical token was omitted or recognized differently"
+          },
+          {
+            "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+            "role": "source",
+            "reason": "Canonical token was omitted or recognized differently"
+          }
+        ],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l015-w03",
+      "text": "and",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 74.210757,
+      "currentEnd": 74.330832,
+      "acousticStart": 74.210574,
+      "acousticEnd": 74.310633,
+      "acousticConfidence": 0.832242,
+      "selectedCheckpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+      "codecAlignmentSpread": 0.020012,
+      "cueDelta": 0.000183,
+      "endDelta": 0.020199,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "and",
+          "start": 74.210574,
+          "end": 74.310633,
+          "score": 0.8322420812332275,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "and",
+          "start": 74.210574,
+          "end": 74.370668,
+          "score": 0.21549143570627402,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "and",
+          "start": 74.210574,
+          "end": 74.370668,
+          "score": 0.21549143570627402,
+          "startDelta": 0,
+          "endDelta": 0.060035
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+        "role": "source",
+        "text": "and",
+        "start": 74.210574,
+        "end": 74.290621,
+        "score": 0.7950963786027531,
+        "startDelta": 0,
+        "endDelta": 0.020012
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [],
+        "mismatches": [
+          {
+            "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+            "role": "source",
+            "reason": "Canonical token was omitted or recognized differently"
+          },
+          {
+            "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+            "role": "source",
+            "reason": "Canonical token was omitted or recognized differently"
+          }
+        ],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l015-w04",
+      "text": "your",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 74.525806,
+      "currentEnd": 74.746516,
+      "acousticStart": 74.530761,
+      "acousticEnd": 74.790912,
+      "acousticConfidence": 0.354299,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 0.004955,
+      "endDelta": 0.044396,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "your",
+          "start": 74.550773,
+          "end": 74.750889,
+          "score": 0.14165173273151355,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "your",
+          "start": 74.530761,
+          "end": 74.790912,
+          "score": 0.35429911256991525,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "your",
+          "start": 74.550773,
+          "end": 74.750889,
+          "score": 0.14165173273151355,
+          "startDelta": 0.020012,
+          "endDelta": 0.040023
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "your",
+        "start": 74.530761,
+        "end": 74.790912,
+        "score": 0.473442789765402,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l015-w05",
+      "text": "staff,",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 74.907032,
+      "currentEnd": 75.328387,
+      "acousticStart": 74.890971,
+      "acousticEnd": 75.391262,
+      "acousticConfidence": 0.180216,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0.020012,
+      "cueDelta": 0.016061,
+      "endDelta": 0.062875,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "staff,",
+          "start": 74.910982,
+          "end": 75.9716,
+          "score": 0.15947715198288473,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "staff,",
+          "start": 74.890971,
+          "end": 75.391262,
+          "score": 0.18021559192608846,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "staff,",
+        "start": 74.870959,
+        "end": 75.391262,
+        "score": 0.18535728383268685,
+        "startDelta": 0.020012,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [],
+        "mismatches": [
+          {
+            "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+            "role": "source",
+            "reason": "Canonical token was omitted or recognized differently"
+          },
+          {
+            "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+            "role": "source",
+            "reason": "Canonical token was omitted or recognized differently"
+          }
+        ],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l017-w01",
+      "text": "I",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 80.354597,
+      "currentEnd": 80.374609,
+      "acousticStart": 80.35415,
+      "acousticEnd": 80.374162,
+      "acousticConfidence": 0.76092,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 0.000447,
+      "endDelta": 0.000447,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "I",
+          "start": 80.59429,
+          "end": 80.614302,
+          "score": 0.25343458148997994,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "I",
+          "start": 80.35415,
+          "end": 80.374162,
+          "score": 0.7609199210725185,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "I",
+        "start": 80.35415,
+        "end": 80.374162,
+        "score": 0.7125018027031383,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l017-w05",
+      "text": "evil.",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 82.507582,
+      "currentEnd": 83.249615,
+      "acousticStart": 82.950192,
+      "acousticEnd": 83.350616,
+      "acousticConfidence": 0.92601,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0.020021,
+      "cueDelta": 0.44261,
+      "endDelta": 0.101001,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "evil.",
+          "start": 82.890128,
+          "end": 85.733138,
+          "score": 0.17427048141409976,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "evil.",
+          "start": 82.950192,
+          "end": 83.350616,
+          "score": 0.926010258512834,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "evil.",
+        "start": 82.950192,
+        "end": 83.330595,
+        "score": 0.8701620767227939,
+        "startDelta": 0,
+        "endDelta": 0.020021
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l018-w06",
+      "text": "before",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 89.502761,
+      "currentEnd": 90.083161,
+      "acousticStart": 89.517143,
+      "acousticEnd": 90.237906,
+      "acousticConfidence": 0.970627,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0.040043,
+      "cueDelta": 0.014382,
+      "endDelta": 0.154745,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "before",
+          "start": 89.517143,
+          "end": 90.057715,
+          "score": 0.5910328659679128,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "before",
+          "start": 89.517143,
+          "end": 90.237906,
+          "score": 0.9706272019220147,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "before",
+        "start": 89.517143,
+        "end": 90.277949,
+        "score": 0.9495143523711862,
+        "startDelta": 0,
+        "endDelta": 0.040043
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l018-w07",
+      "text": "me",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 90.423395,
+      "currentEnd": 90.703589,
+      "acousticStart": 90.378055,
+      "acousticEnd": 90.698394,
+      "acousticConfidence": 0.977827,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0.020021,
+      "cueDelta": 0.04534,
+      "endDelta": 0.005195,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "me",
+          "start": 90.438118,
+          "end": 90.63833,
+          "score": 0.31920067814124353,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "me",
+          "start": 90.378055,
+          "end": 90.698394,
+          "score": 0.9778269999581326,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "me",
+          "start": 90.438118,
+          "end": 90.63833,
+          "score": 0.31920067814124353,
+          "startDelta": 0.060063,
+          "endDelta": 0.060064
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "me",
+        "start": 90.398076,
+        "end": 90.718415,
+        "score": 0.7719586370572429,
+        "startDelta": 0.020021,
+        "endDelta": 0.020021
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l020-w03",
+      "text": "anointed",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 102.531746,
+      "currentEnd": 103.192202,
+      "acousticStart": 102.351968,
+      "acousticEnd": 103.172261,
+      "acousticConfidence": 0.949079,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 0.179778,
+      "endDelta": 0.019941,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "anointed",
+          "start": 102.351968,
+          "end": 103.172261,
+          "score": 0.056526913910545165,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "anointed",
+          "start": 102.351968,
+          "end": 103.172261,
+          "score": 0.9490792980114358,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "anointed",
+          "start": 102.351968,
+          "end": 103.172261,
+          "score": 0.056526913910545165,
+          "startDelta": 0,
+          "endDelta": 0
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "anointed",
+        "start": 102.351968,
+        "end": 103.172261,
+        "score": 0.9910657242977793,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [],
+        "mismatches": [
+          {
+            "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+            "role": "source",
+            "reason": "Canonical token was omitted or recognized differently"
+          },
+          {
+            "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+            "role": "source",
+            "reason": "Canonical token was omitted or recognized differently"
+          },
+          {
+            "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+            "role": "source",
+            "reason": "Canonical token was omitted or recognized differently"
+          }
+        ],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l020-w07",
+      "text": "oil,",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 105.113527,
+      "currentEnd": 105.293651,
+      "acousticStart": 105.052934,
+      "acousticEnd": 105.212992,
+      "acousticConfidence": 0.639778,
+      "selectedCheckpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 0.060593,
+      "endDelta": 0.080659,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "oil,",
+          "start": 105.052934,
+          "end": 105.212992,
+          "score": 0.6397784916145596,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "oil,",
+          "start": 104.952898,
+          "end": 105.032927,
+          "score": 0.024066966545883,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [],
+      "encodedEvidence": {
+        "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+        "role": "source",
+        "text": "oil,",
+        "start": 105.052934,
+        "end": 105.212992,
+        "score": 0.6189852747194602,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l021-w09",
+      "text": "wine.",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 111.288032,
+      "currentEnd": 112.229282,
+      "acousticStart": 111.27516,
+      "acousticEnd": 112.035432,
+      "acousticConfidence": 0.396891,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0.020008,
+      "cueDelta": 0.012872,
+      "endDelta": 0.19385,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "wine.",
+          "start": 111.295168,
+          "end": 112.175483,
+          "score": 0.2812942726021428,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "wine.",
+          "start": 111.27516,
+          "end": 112.035432,
+          "score": 0.3968908892736977,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "wine.",
+        "start": 111.27516,
+        "end": 112.05544,
+        "score": 0.38445755884559973,
+        "startDelta": 0,
+        "endDelta": 0.020008
+      },
+      "corroboration": [
+        {
+          "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "role": "source",
+          "text": "wine",
+          "start": 111.151746,
+          "end": 112.091746,
+          "score": 0.9443446397781372,
+          "startDelta": 0.123414,
+          "endDelta": 0.056314
+        },
+        {
+          "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+          "role": "source",
+          "text": "wine",
+          "start": 111.191746,
+          "end": 112.231746,
+          "score": 0.9990159273147583,
+          "startDelta": 0.083414,
+          "endDelta": 0.196314
+        }
+      ],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l022-w03",
+      "text": "I",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 113.941502,
+      "currentEnd": 113.981527,
+      "acousticStart": 114.23622,
+      "acousticEnd": 114.256227,
+      "acousticConfidence": 0.990523,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 0.294718,
+      "endDelta": 0.2747,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "I",
+          "start": 113.95612,
+          "end": 113.976127,
+          "score": 0.9351565853181871,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "I",
+          "start": 114.23622,
+          "end": 114.256227,
+          "score": 0.9905230538389076,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "I",
+        "start": 114.23622,
+        "end": 114.256227,
+        "score": 0.9948582555034783,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l024-w05",
+      "text": "evil,",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 122.383139,
+      "currentEnd": 123.285694,
+      "acousticStart": 122.879312,
+      "acousticEnd": 123.259448,
+      "acousticConfidence": 0.613413,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0.040014,
+      "cueDelta": 0.496173,
+      "endDelta": 0.026246,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "evil,",
+          "start": 122.879312,
+          "end": 123.279455,
+          "score": 0.18261114103229104,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "evil,",
+          "start": 122.879312,
+          "end": 123.259448,
+          "score": 0.6134126595995926,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "evil,",
+          "start": 122.879312,
+          "end": 123.279455,
+          "score": 0.18261114103229104,
+          "startDelta": 0,
+          "endDelta": 0.020007
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "evil,",
+        "start": 122.879312,
+        "end": 123.299462,
+        "score": 0.7111440679521569,
+        "startDelta": 0,
+        "endDelta": 0.040014
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l025-w03",
+      "text": "are",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 125.162554,
+      "currentEnd": 125.282909,
+      "acousticStart": 125.212208,
+      "acousticEnd": 125.352246,
+      "acousticConfidence": 0.743547,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0.020005,
+      "cueDelta": 0.049654,
+      "endDelta": 0.069337,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "are",
+          "start": 125.51229,
+          "end": 125.612317,
+          "score": 0.34510915173879564,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "are",
+          "start": 125.212208,
+          "end": 125.352246,
+          "score": 0.7435472058268601,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "are",
+        "start": 125.232213,
+        "end": 125.372251,
+        "score": 0.722623893934822,
+        "startDelta": 0.020005,
+        "endDelta": 0.020005
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l025-w05",
+      "text": "me.",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 126.068966,
+      "currentEnd": 126.209052,
+      "acousticStart": 126.072442,
+      "acousticEnd": 126.172469,
+      "acousticConfidence": 0.840776,
+      "selectedCheckpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 0.003476,
+      "endDelta": 0.036583,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "me.",
+          "start": 126.072442,
+          "end": 126.172469,
+          "score": 0.8407758315748339,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "me.",
+          "start": 126.072442,
+          "end": 126.21248,
+          "score": 0.626543497256586,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "me.",
+          "start": 126.072442,
+          "end": 126.21248,
+          "score": 0.626543497256586,
+          "startDelta": 0,
+          "endDelta": 0.040011
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+        "role": "source",
+        "text": "me.",
+        "start": 126.072442,
+        "end": 126.172469,
+        "score": 0.8086089406600458,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l026-w01",
+      "text": "Your",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 127.842053,
+      "currentEnd": 128.022643,
+      "acousticStart": 127.852927,
+      "acousticEnd": 128.032976,
+      "acousticConfidence": 0.350725,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 0.010874,
+      "endDelta": 0.010333,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "Your",
+          "start": 127.872932,
+          "end": 128.052981,
+          "score": 0.23633797626040548,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "Your",
+          "start": 127.852927,
+          "end": 128.032976,
+          "score": 0.3507249881693052,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "Your",
+          "start": 127.872932,
+          "end": 128.052981,
+          "score": 0.23633797626040548,
+          "startDelta": 0.020005,
+          "endDelta": 0.020005
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "Your",
+        "start": 127.852927,
+        "end": 128.032976,
+        "score": 0.37972383457431175,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [],
+        "mismatches": [
+          {
+            "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+            "role": "source",
+            "reason": "Canonical token was omitted or recognized differently"
+          },
+          {
+            "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+            "role": "source",
+            "reason": "Canonical token was omitted or recognized differently"
+          },
+          {
+            "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+            "role": "source",
+            "reason": "Canonical token was omitted or recognized differently"
+          }
+        ],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l026-w02",
+      "text": "rod",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 128.110222,
+      "currentEnd": 128.570505,
+      "acousticStart": 128.112998,
+      "acousticEnd": 128.573123,
+      "acousticConfidence": 0.808999,
+      "selectedCheckpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 0.002776,
+      "endDelta": 0.002618,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "rod",
+          "start": 128.112998,
+          "end": 128.573123,
+          "score": 0.8089988065471816,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "rod",
+          "start": 128.112998,
+          "end": 128.553118,
+          "score": 0.38529436211140294,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "rod",
+          "start": 128.112998,
+          "end": 128.553118,
+          "score": 0.38529436211140294,
+          "startDelta": 0,
+          "endDelta": 0.020005
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+        "role": "source",
+        "text": "rod",
+        "start": 128.112998,
+        "end": 128.573123,
+        "score": 0.7987950099407549,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [],
+        "mismatches": [
+          {
+            "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+            "role": "source",
+            "reason": "Canonical token was omitted or recognized differently"
+          },
+          {
+            "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+            "role": "source",
+            "reason": "Canonical token was omitted or recognized differently"
+          },
+          {
+            "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+            "role": "source",
+            "reason": "Canonical token was omitted or recognized differently"
+          }
+        ],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l026-w05",
+      "text": "staff,",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 129.370998,
+      "currentEnd": 129.751232,
+      "acousticStart": 129.353335,
+      "acousticEnd": 129.77345,
+      "acousticConfidence": 0.223486,
+      "selectedCheckpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 0.017663,
+      "endDelta": 0.022218,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "staff,",
+          "start": 129.353335,
+          "end": 129.77345,
+          "score": 0.22348590049844888,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "staff,",
+          "start": 129.353335,
+          "end": 129.733439,
+          "score": 0.08179563431695214,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "staff,",
+          "start": 129.353335,
+          "end": 129.733439,
+          "score": 0.08179563431695214,
+          "startDelta": 0,
+          "endDelta": 0.040011
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+        "role": "source",
+        "text": "staff,",
+        "start": 129.353335,
+        "end": 129.77345,
+        "score": 0.24267038102138835,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [],
+        "mismatches": [
+          {
+            "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+            "role": "source",
+            "reason": "Canonical token was omitted or recognized differently"
+          },
+          {
+            "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+            "role": "source",
+            "reason": "Canonical token was omitted or recognized differently"
+          },
+          {
+            "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+            "role": "source",
+            "reason": "Canonical token was omitted or recognized differently"
+          }
+        ],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l028-w01",
+      "text": "I",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 134.854372,
+      "currentEnd": 134.874384,
+      "acousticStart": 134.834828,
+      "acousticEnd": 134.854833,
+      "acousticConfidence": 0.949704,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 0.019544,
+      "endDelta": 0.019551,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "I",
+          "start": 134.814822,
+          "end": 134.834828,
+          "score": 0.01786589282416947,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "I",
+          "start": 134.834828,
+          "end": 134.854833,
+          "score": 0.9497043033353438,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "I",
+          "start": 134.814822,
+          "end": 134.834828,
+          "score": 0.01786589282416947,
+          "startDelta": 0.020006,
+          "endDelta": 0.020005
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "I",
+        "start": 134.834828,
+        "end": 134.854833,
+        "score": 0.9816671615567821,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l028-w05",
+      "text": "evil.",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 137.107315,
+      "currentEnd": 138.349728,
+      "acousticStart": 137.135454,
+      "acousticEnd": 142.016783,
+      "acousticConfidence": 0.232977,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 4.021095,
+      "cueDelta": 0.028139,
+      "endDelta": 3.667055,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "evil.",
+          "start": 137.015422,
+          "end": 140.236299,
+          "score": 0.0584679693244284,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "evil.",
+          "start": 137.135454,
+          "end": 142.016783,
+          "score": 0.2329771520475178,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "evil.",
+        "start": 137.135454,
+        "end": 137.995688,
+        "score": 0.18637305268201185,
+        "startDelta": 0,
+        "endDelta": 4.021095
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l029-w01",
+      "text": "Your",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 142.192285,
+      "currentEnd": 142.432744,
+      "acousticStart": 142.216838,
+      "acousticEnd": 142.416892,
+      "acousticConfidence": 0.926312,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 0.024553,
+      "endDelta": 0.015852,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "Your",
+          "start": 142.216838,
+          "end": 142.476909,
+          "score": 0.324873853616995,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "Your",
+          "start": 142.216838,
+          "end": 142.416892,
+          "score": 0.9263118628613909,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "Your",
+          "start": 142.216838,
+          "end": 142.476909,
+          "score": 0.324873853616995,
+          "startDelta": 0,
+          "endDelta": 0.060017
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "Your",
+        "start": 142.216838,
+        "end": 142.416892,
+        "score": 0.9932316105242687,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l029-w03",
+      "text": "shall",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 143.47473,
+      "currentEnd": 144.176066,
+      "acousticStart": 143.477181,
+      "acousticEnd": 144.177372,
+      "acousticConfidence": 0.988031,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 0.002451,
+      "endDelta": 0.001306,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "shall",
+          "start": 143.497186,
+          "end": 144.157366,
+          "score": 0.17122038625214475,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "shall",
+          "start": 143.477181,
+          "end": 144.177372,
+          "score": 0.9880313703485439,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "shall",
+          "start": 143.497186,
+          "end": 144.157366,
+          "score": 0.17122038625214475,
+          "startDelta": 0.020005,
+          "endDelta": 0.020006
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "shall",
+        "start": 143.477181,
+        "end": 144.177372,
+        "score": 0.998237919002481,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l030-w05",
+      "text": "my",
+      "supported": true,
+      "passed": false,
+      "route": "official_ctc_asr",
+      "currentStart": 151.220279,
+      "currentEnd": 151.500801,
+      "acousticStart": 165.552464,
+      "acousticEnd": 166.073067,
+      "acousticConfidence": 0.285593,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 14.332185,
+      "endDelta": 14.572266,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "my",
+          "start": 151.247458,
+          "end": 151.587701,
+          "score": 0.08842761606272626,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "my",
+          "start": 151.20743,
+          "end": 151.527658,
+          "score": 0.12245470410682295,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "my",
+          "start": 165.572487,
+          "end": 166.133136,
+          "score": 0.06469226962139646,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "my",
+          "start": 165.552464,
+          "end": 166.073067,
+          "score": 0.28559334905013245,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "my",
+          "start": 165.572487,
+          "end": 166.133136,
+          "score": 0.06469226962139646,
+          "startDelta": 0.020023,
+          "endDelta": 0.060069
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "my",
+        "start": 165.552464,
+        "end": 166.073067,
+        "score": 0.24261189661176286,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [
+        {
+          "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "role": "source",
+          "text": "my",
+          "start": 165.485503,
+          "end": 166.045503,
+          "score": 0.9991734623908997,
+          "startDelta": 0.066961,
+          "endDelta": 0.027564
+        }
+      ],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": "canonical-id-original-and-phrase-context"
+    },
+    {
+      "id": "p23-l030-w06",
+      "text": "life.",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 151.600987,
+      "currentEnd": 155.608449,
+      "acousticStart": 151.607715,
+      "acousticEnd": 155.630583,
+      "acousticConfidence": 0.224223,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0.020014,
+      "cueDelta": 0.006728,
+      "endDelta": 0.022134,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "life.",
+          "start": 151.747815,
+          "end": 155.650598,
+          "score": 0.011905769897897652,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "life.",
+          "start": 151.607715,
+          "end": 155.630583,
+          "score": 0.22422338178065165,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "life.",
+        "start": 151.627729,
+        "end": 155.630583,
+        "score": 0.15988257681055057,
+        "startDelta": 0.020014,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l031-w01",
+      "text": "Your",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 156.690119,
+      "currentEnd": 156.990306,
+      "acousticStart": 156.69134,
+      "acousticEnd": 157.031582,
+      "acousticConfidence": 0.309447,
+      "selectedCheckpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+      "codecAlignmentSpread": 0.020014,
+      "cueDelta": 0.001221,
+      "endDelta": 0.041276,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "Your",
+          "start": 156.69134,
+          "end": 157.031582,
+          "score": 0.3094470382702251,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "Your",
+          "start": 156.69134,
+          "end": 157.011568,
+          "score": 0.0924327789798041,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "Your",
+          "start": 156.69134,
+          "end": 157.011568,
+          "score": 0.0924327789798041,
+          "startDelta": 0,
+          "endDelta": 0.020014
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+        "role": "source",
+        "text": "Your",
+        "start": 156.69134,
+        "end": 157.011568,
+        "score": 0.2836256430800429,
+        "startDelta": 0,
+        "endDelta": 0.020014
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l031-w02",
+      "text": "mercy",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 157.150407,
+      "currentEnd": 157.770794,
+      "acousticStart": 157.171682,
+      "acousticEnd": 157.812139,
+      "acousticConfidence": 0.096226,
+      "selectedCheckpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 0.021275,
+      "endDelta": 0.041345,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "mercy",
+          "start": 157.171682,
+          "end": 157.812139,
+          "score": 0.0962261036016444,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "mercy",
+          "start": 157.131654,
+          "end": 157.792124,
+          "score": 0.07798539419323386,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "mercy",
+          "start": 157.131654,
+          "end": 157.792124,
+          "score": 0.07798539419323386,
+          "startDelta": 0.040028,
+          "endDelta": 0.020015
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+        "role": "source",
+        "text": "mercy",
+        "start": 157.171682,
+        "end": 157.812139,
+        "score": 0.10835759806545521,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [
+        {
+          "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "role": "source",
+          "text": "mercy",
+          "start": 156.925503,
+          "end": 157.705503,
+          "score": 0.9441872239112854,
+          "startDelta": 0.246179,
+          "endDelta": 0.106636
+        }
+      ],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l031-w03",
+      "text": "shall",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 157.963773,
+      "currentEnd": 158.845447,
+      "acousticStart": 157.992267,
+      "acousticEnd": 158.812852,
+      "acousticConfidence": 0.768999,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 0.028494,
+      "endDelta": 0.032595,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "shall",
+          "start": 158.012281,
+          "end": 158.752809,
+          "score": 0.10199336369280393,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "shall",
+          "start": 157.992267,
+          "end": 158.812852,
+          "score": 0.7689989906295311,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "shall",
+          "start": 158.012281,
+          "end": 158.752809,
+          "score": 0.10199336369280393,
+          "startDelta": 0.020014,
+          "endDelta": 0.060043
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "shall",
+        "start": 157.992267,
+        "end": 158.812852,
+        "score": 0.9027563143985305,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l031-w05",
+      "text": "me",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 159.466627,
+      "currentEnd": 159.667007,
+      "acousticStart": 159.473323,
+      "acousticEnd": 159.773537,
+      "acousticConfidence": 0.981747,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0.020014,
+      "cueDelta": 0.006696,
+      "endDelta": 0.10653,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "me",
+          "start": 162.635578,
+          "end": 162.775678,
+          "score": 0.016237225089142403,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "me",
+          "start": 159.473323,
+          "end": 159.773537,
+          "score": 0.9817466552027585,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "me",
+        "start": 159.473323,
+        "end": 159.753523,
+        "score": 0.9883496261730996,
+        "startDelta": 0,
+        "endDelta": 0.020014
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l032-w04",
+      "text": "of",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 165.389617,
+      "currentEnd": 165.449755,
+      "acousticStart": 165.377533,
+      "acousticEnd": 165.45759,
+      "acousticConfidence": 0.917969,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 0.012084,
+      "endDelta": 0.007835,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "of",
+          "start": 165.417561,
+          "end": 165.45759,
+          "score": 0.5302567634360569,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "of",
+          "start": 165.377533,
+          "end": 165.45759,
+          "score": 0.9179689512476764,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "of",
+          "start": 165.417561,
+          "end": 165.45759,
+          "score": 0.5302567634360569,
+          "startDelta": 0.040028,
+          "endDelta": 0
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "of",
+        "start": 165.377533,
+        "end": 165.45759,
+        "score": 0.9463763036866315,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l032-w06",
+      "text": "life.",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 166.226691,
+      "currentEnd": 168.48942,
+      "acousticStart": 166.258161,
+      "acousticEnd": 171.742071,
+      "acousticConfidence": 0.684885,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 0.03147,
+      "endDelta": 3.252651,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "life.",
+          "start": 167.23886,
+          "end": 171.281743,
+          "score": 0.029524848357281232,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "life.",
+          "start": 166.258161,
+          "end": 171.742071,
+          "score": 0.6848846895612437,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "life.",
+        "start": 166.258161,
+        "end": 171.742071,
+        "score": 0.6891764871144482,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l033-w01",
+      "text": "I",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 171.002107,
+      "currentEnd": 171.022129,
+      "acousticStart": 171.742071,
+      "acousticEnd": 171.762085,
+      "acousticConfidence": 0.127246,
+      "selectedCheckpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 0.739964,
+      "endDelta": 0.739956,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "I",
+          "start": 171.742071,
+          "end": 171.762085,
+          "score": 0.12724572036661586,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "I",
+          "start": 171.802114,
+          "end": 171.822128,
+          "score": 0.0017320378570990066,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "I",
+          "start": 171.802114,
+          "end": 171.822128,
+          "score": 0.0017320378570990066,
+          "startDelta": 0.060043,
+          "endDelta": 0.060043
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+        "role": "source",
+        "text": "I",
+        "start": 171.742071,
+        "end": 171.762085,
+        "score": 0.12348363135978133,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l033-w05",
+      "text": "evil,",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 173.161137,
+      "currentEnd": 174.043975,
+      "acousticStart": 173.644456,
+      "acousticEnd": 174.044723,
+      "acousticConfidence": 0.947691,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0.020013,
+      "cueDelta": 0.483319,
+      "endDelta": 0.000748,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "evil,",
+          "start": 173.144123,
+          "end": 174.14479,
+          "score": 0.01832394995374623,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "evil,",
+          "start": 173.644456,
+          "end": 174.044723,
+          "score": 0.9476910349292287,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "evil,",
+        "start": 173.644456,
+        "end": 174.064736,
+        "score": 0.8392659399150251,
+        "startDelta": 0,
+        "endDelta": 0.020013
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l034-w03",
+      "text": "are",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 176.042196,
+      "currentEnd": 176.222806,
+      "acousticStart": 176.00603,
+      "acousticEnd": 176.206164,
+      "acousticConfidence": 0.791779,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0.040027,
+      "cueDelta": 0.036166,
+      "endDelta": 0.016642,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "are",
+          "start": 176.106097,
+          "end": 176.24619,
+          "score": 0.3304572350012512,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "are",
+          "start": 176.00603,
+          "end": 176.206164,
+          "score": 0.7917788281465081,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "are",
+        "start": 176.046057,
+        "end": 176.206164,
+        "score": 0.9623273926861906,
+        "startDelta": 0.040027,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l035-w05",
+      "text": "shepherd,",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 180.087395,
+      "currentEnd": 180.709483,
+      "acousticStart": 180.128778,
+      "acousticEnd": 180.709165,
+      "acousticConfidence": 0.112314,
+      "selectedCheckpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+      "codecAlignmentSpread": 0.020013,
+      "cueDelta": 0.041383,
+      "endDelta": 0.000318,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "shepherd,",
+          "start": 180.128778,
+          "end": 180.709165,
+          "score": 0.11231400544298219,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "shepherd,",
+          "start": 180.068738,
+          "end": 180.649125,
+          "score": 0.10416988649367528,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "shepherd,",
+          "start": 180.068738,
+          "end": 180.649125,
+          "score": 0.10416988649367528,
+          "startDelta": 0.06004,
+          "endDelta": 0.06004
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+        "role": "source",
+        "text": "shepherd,",
+        "start": 180.128778,
+        "end": 180.729178,
+        "score": 0.08667361004178045,
+        "startDelta": 0,
+        "endDelta": 0.020013
+      },
+      "corroboration": [
+        {
+          "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "role": "source",
+          "text": "shepherd",
+          "start": 180.002255,
+          "end": 180.842255,
+          "score": 0.6481801867485046,
+          "startDelta": 0.126523,
+          "endDelta": 0.13309
+        }
+      ],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l036-w01",
+      "text": "and",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 182.213909,
+      "currentEnd": 182.293994,
+      "acousticStart": 182.210165,
+      "acousticEnd": 182.310232,
+      "acousticConfidence": 0.808878,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 0.003744,
+      "endDelta": 0.016238,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "and",
+          "start": 182.190152,
+          "end": 182.270205,
+          "score": 0.47063309181015806,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "and",
+          "start": 182.210165,
+          "end": 182.310232,
+          "score": 0.8088783783802577,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "and",
+          "start": 182.190152,
+          "end": 182.270205,
+          "score": 0.47063309181015806,
+          "startDelta": 0.020013,
+          "endDelta": 0.040027
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "and",
+        "start": 182.210165,
+        "end": 182.310232,
+        "score": 0.9203018879630764,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l037-w05",
+      "text": "in",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 189.21847,
+      "currentEnd": 189.25856,
+      "acousticStart": 189.194821,
+      "acousticEnd": 189.254861,
+      "acousticConfidence": 0.946939,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 0.023649,
+      "endDelta": 0.003699,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "in",
+          "start": 189.174808,
+          "end": 189.234848,
+          "score": 0.09857961813955549,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "in",
+          "start": 189.194821,
+          "end": 189.254861,
+          "score": 0.9469394172748506,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "in",
+          "start": 189.174808,
+          "end": 189.234848,
+          "score": 0.09857961813955549,
+          "startDelta": 0.020013,
+          "endDelta": 0.020013
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "in",
+        "start": 189.194821,
+        "end": 189.254861,
+        "score": 0.9727288404844212,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l037-w08",
+      "text": "of",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 190.163972,
+      "currentEnd": 190.404157,
+      "acousticStart": 190.295555,
+      "acousticEnd": 190.395621,
+      "acousticConfidence": 0.998969,
+      "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 0.131583,
+      "endDelta": 0.008536,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "of",
+          "start": 190.195488,
+          "end": 190.415635,
+          "score": 0.33250162955575685,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "of",
+          "start": 190.295555,
+          "end": 190.395621,
+          "score": 0.9989688090920749,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "of",
+        "start": 190.295555,
+        "end": 190.395621,
+        "score": 0.9651693605086691,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l038-w02",
+      "text": "a",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 193.057898,
+      "currentEnd": 193.077937,
+      "acousticStart": 193.377609,
+      "acousticEnd": 193.397622,
+      "acousticConfidence": 0.021013,
+      "selectedCheckpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 0.319711,
+      "endDelta": 0.319685,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "a",
+          "start": 193.377609,
+          "end": 193.397622,
+          "score": 0.021013226891394798,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "a",
+          "start": 193.377609,
+          "end": 193.397622,
+          "score": 0.005397052161678242,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "a",
+          "start": 193.377609,
+          "end": 193.397622,
+          "score": 0.005397052161678242,
+          "startDelta": 0,
+          "endDelta": 0
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+        "role": "source",
+        "text": "a",
+        "start": 193.377609,
+        "end": 193.397622,
+        "score": 0.023365961046946326,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    },
+    {
+      "id": "p23-l039-w05",
+      "text": "shepherd.",
+      "supported": false,
+      "passed": false,
+      "route": null,
+      "currentStart": 202.24725,
+      "currentEnd": 202.909313,
+      "acousticStart": 202.30792,
+      "acousticEnd": 202.868471,
+      "acousticConfidence": 0.219173,
+      "selectedCheckpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+      "codecAlignmentSpread": 0,
+      "cueDelta": 0.06067,
+      "endDelta": 0.040842,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "shepherd.",
+          "start": 202.30792,
+          "end": 202.868471,
+          "score": 0.21917340436244537,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "shepherd.",
+          "start": 202.247861,
+          "end": 203.248845,
+          "score": 0.03458344824811929,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [],
+      "encodedEvidence": {
+        "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+        "role": "source",
+        "text": "shepherd.",
+        "start": 202.30792,
+        "end": 202.868471,
+        "score": 0.18316729930382614,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "corroboration": [],
+      "lexicalEvidence": {
+        "matchedCheckpointIds": [
+          "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        ],
+        "mismatches": [],
+        "rejectedPasses": 0
+      },
+      "retry": null
+    }
+  ],
+  "fixedAndExcludedCueComparison": [
+    {
+      "id": "p23-l010-w04",
+      "text": "sake.",
+      "action": "timing-corrected",
+      "oldInterval": [
+        57.154878,
+        57.657146
+      ],
+      "currentInterval": [
+        57.212888,
+        57.613027
+      ],
+      "oldAcousticInterval": [
+        57.212888,
+        57.613027
+      ],
+      "currentAcousticInterval": [
+        57.212888,
+        57.613027
+      ],
+      "supported": true,
+      "passed": true,
+      "route": "official_ctc_asr",
+      "cueDelta": 0,
+      "endDelta": 0
+    },
+    {
+      "id": "p23-l012-w03",
+      "text": "shadow",
+      "action": "timing-corrected",
+      "oldInterval": [
+        62.616255,
+        63.318398
+      ],
+      "currentInterval": [
+        62.603819,
+        63.404285
+      ],
+      "oldAcousticInterval": [
+        62.603819,
+        63.404285
+      ],
+      "currentAcousticInterval": [
+        62.603819,
+        63.404285
+      ],
+      "supported": true,
+      "passed": true,
+      "route": "official_dual_ctc",
+      "cueDelta": 0,
+      "endDelta": 0
+    },
+    {
+      "id": "p23-l021-w04",
+      "text": "cheers",
+      "action": "timing-corrected",
+      "oldInterval": [
+        109.391635,
+        110.13353
+      ],
+      "currentInterval": [
+        109.454509,
+        110.114745
+      ],
+      "oldAcousticInterval": [
+        109.454509,
+        110.114745
+      ],
+      "currentAcousticInterval": [
+        109.454509,
+        110.114745
+      ],
+      "supported": true,
+      "passed": true,
+      "route": "official_dual_ctc",
+      "cueDelta": 0,
+      "endDelta": 0
+    },
+    {
+      "id": "p23-l024-w03",
+      "text": "fear",
+      "action": "timing-corrected",
+      "oldInterval": [
+        120.805727,
+        121.486145
+      ],
+      "currentInterval": [
+        120.858589,
+        121.518825
+      ],
+      "oldAcousticInterval": [
+        120.858589,
+        121.518825
+      ],
+      "currentAcousticInterval": [
+        120.858589,
+        121.518825
+      ],
+      "supported": true,
+      "passed": true,
+      "route": "official_ctc_asr",
+      "cueDelta": 0,
+      "endDelta": 0
+    },
+    {
+      "id": "p23-l033-w04",
+      "text": "no",
+      "action": "timing-corrected",
+      "oldInterval": [
+        172.483667,
+        172.864067
+      ],
+      "currentInterval": [
+        172.483682,
+        172.763869
+      ],
+      "oldAcousticInterval": [
+        172.483682,
+        172.763869
+      ],
+      "currentAcousticInterval": [
+        172.483682,
+        172.763869
+      ],
+      "supported": true,
+      "passed": true,
+      "route": "official_dual_ctc",
+      "cueDelta": 0,
+      "endDelta": 0
+    },
+    {
+      "id": "p23-l034-w05",
+      "text": "me.",
+      "action": "timing-corrected",
+      "oldInterval": [
+        176.768177,
+        177.128556
+      ],
+      "currentInterval": [
+        176.766537,
+        177.046724
+      ],
+      "oldAcousticInterval": [
+        176.766537,
+        177.046724
+      ],
+      "currentAcousticInterval": [
+        176.766537,
+        177.046724
+      ],
+      "supported": true,
+      "passed": true,
+      "route": "official_dual_ctc",
+      "cueDelta": 0,
+      "endDelta": 0
+    },
+    {
+      "id": "p23-l038-w05",
+      "text": "time.",
+      "action": "timing-corrected",
+      "oldInterval": [
+        195.027714,
+        195.60816
+      ],
+      "currentInterval": [
+        195.025788,
+        195.487558
+      ],
+      "oldAcousticInterval": [
+        195.025788,
+        195.487558
+      ],
+      "currentAcousticInterval": [
+        195.025788,
+        195.487558
+      ],
+      "supported": true,
+      "passed": true,
+      "route": "official_dual_ctc",
+      "cueDelta": 0,
+      "endDelta": 0
+    },
+    {
+      "id": "p23-l011-w03",
+      "text": "I",
+      "action": "retained-disputed-match",
+      "oldInterval": [
+        59.555589,
+        59.575649
+      ],
+      "currentInterval": [
+        59.555589,
+        59.575649
+      ],
+      "oldAcousticInterval": [
+        59.622083,
+        59.642095
+      ],
+      "currentAcousticInterval": [
+        59.622083,
+        59.642095
+      ],
+      "supported": true,
+      "passed": false,
+      "route": "official_dual_ctc",
+      "cueDelta": 0.066494,
+      "endDelta": 0.066446
+    },
+    {
+      "id": "p23-l030-w05",
+      "text": "my",
+      "action": "retained-disputed-match",
+      "oldInterval": [
+        151.220279,
+        151.500801
+      ],
+      "currentInterval": [
+        151.220279,
+        151.500801
+      ],
+      "oldAcousticInterval": [
+        165.552464,
+        166.073067
+      ],
+      "currentAcousticInterval": [
+        165.552464,
+        166.073067
+      ],
+      "supported": true,
+      "passed": false,
+      "route": "official_ctc_asr",
+      "cueDelta": 14.332185,
+      "endDelta": 14.572266
+    }
+  ],
+  "ocrStatus": "passed",
+  "ocrCoverage": {
+    "required": 210,
+    "observed": 210,
+    "ratio": 1,
+    "unresolved": []
+  },
+  "ocrUnresolvedWords": [],
+  "ocrChecks": [
+    {
+      "id": "native_ocr_available",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "required_lyrics_visible",
+      "passed": true,
+      "measured": {
+        "required": 210,
+        "observed": 210,
+        "ratio": 1,
+        "unresolved": []
+      },
+      "threshold": {
+        "requiredRatio": 1
+      }
+    },
+    {
+      "id": "evidence_integrity",
+      "passed": true,
+      "checkedFrames": 744,
+      "errors": []
+    },
+    {
+      "id": "unchanged_inputs",
+      "passed": true
+    }
+  ],
+  "temporalPassed": true,
+  "temporalErrors": [],
+  "rawReports": {
+    "/Users/shanefisher/Movies/Psalm23/review-work/review-v2/review.json": "ca75deab824ab49765c3007c1ebcfde2ed6951e96e1e03dced8d0c5e2ad0a05e",
+    "/Users/shanefisher/Movies/Psalm23/review-work/review-v2/audio/audio-review.json": "f4c2233394188e622e0a1b21649d8e930ed77dc04068832bebb51a967df1844b",
+    "/Users/shanefisher/Movies/Psalm23/review-work/review-v2/ocr/lyric-visibility.json": "123a78d7fbaccedf70c0c732292e2d6f937b68479f4ee444c0b6cdeaf6ee9fbf"
+  },
+  "limitations": [
+    "No visual scoring attached; independent exact-encode visual review remains separate.",
+    "Unsupported words remain unverified, not silently passed or interpreted as wrong lyrics.",
+    "Raw supported repeated-phrase assignments require identity/context scrutiny; no additional recognition or alignment attempt was run."
+  ]
+}

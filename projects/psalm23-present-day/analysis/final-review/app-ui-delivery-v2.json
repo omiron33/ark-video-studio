@@ -1,0 +1,17 @@
+{
+  "videoSha256": "e483e690ef13766ee4e04414711d0826209151d3beab5a91864c113758f3e4f2",
+  "candidateId": "vid-20260927-31bdda7a",
+  "page": "https://omipc.taild60b4e.ts.net/studio#videos",
+  "candidateTitle": "Psalm 23 \u2014 Held in the Ordinary",
+  "version": "Held in the Ordinary - full film v2",
+  "observedStatus": "Awaiting approval",
+  "queueTotal": 25,
+  "previousQueueTotal": 24,
+  "downloadUrl": "https://omipc.taild60b4e.ts.net/api/admin/videos/vid-20260927-31bdda7a/media?download=1",
+  "playback": "Observed opening poster0:00, clickedplay, later screenshot shows green-path photograph0:22. Paused and left selected candidate in deliverable browser tab.",
+  "reviewNote": "Actual visual findings and strict singing-sync limitation visible in candidate notes.",
+  "limitations": [
+    "Sampled real browser playback is not uninterrupted watching or hearing.",
+    "Server/master SHA verification is reported separately by publisher receipt."
+  ]
+}

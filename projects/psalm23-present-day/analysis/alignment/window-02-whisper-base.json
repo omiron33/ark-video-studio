@@ -1,0 +1,349 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "partial_recognition",
+  "task": "transcribe",
+  "method": "local-openai-whisper-transcribe; partial diagnostic evidence",
+  "source": {
+    "audio": "32885123-f4b6-42e6-a546-f4acba404829.m4a",
+    "offset": 42.0,
+    "duration": 18.0,
+    "audioDuration": 219.96,
+    "model": "/Volumes/DATA/AI/Models/Whisper/base.en.pt",
+    "backend": "openai-whisper",
+    "language": "en"
+  },
+  "transcript": "He has restored my soul. He has guided me. And the paths of for his name say, even if I should.",
+  "words": [
+    {
+      "id": "w_2ea1893a363533d5",
+      "text": "He",
+      "start": 43.06,
+      "end": 43.94,
+      "phraseId": "partial-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.21474602818489075,
+        "timingVerified": false,
+        "note": "Partial recognition: invalid raw tokens were omitted and remain explicit diagnostics."
+      }
+    },
+    {
+      "id": "w_fb049a8c6c8c1534",
+      "text": "has",
+      "start": 43.94,
+      "end": 44.22,
+      "phraseId": "partial-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.9809697866439819,
+        "timingVerified": false,
+        "note": "Partial recognition: invalid raw tokens were omitted and remain explicit diagnostics."
+      }
+    },
+    {
+      "id": "w_3d79d4b9c044b510",
+      "text": "restored",
+      "start": 44.22,
+      "end": 44.54,
+      "phraseId": "partial-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.9985688924789429,
+        "timingVerified": false,
+        "note": "Partial recognition: invalid raw tokens were omitted and remain explicit diagnostics."
+      }
+    },
+    {
+      "id": "w_6a0d71076135b0c6",
+      "text": "my",
+      "start": 44.54,
+      "end": 45.36,
+      "phraseId": "partial-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.9545251727104187,
+        "timingVerified": false,
+        "note": "Partial recognition: invalid raw tokens were omitted and remain explicit diagnostics."
+      }
+    },
+    {
+      "id": "w_685f4efeb1ceaaaf",
+      "text": "soul.",
+      "start": 45.36,
+      "end": 46.18,
+      "phraseId": "partial-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.9932237863540649,
+        "timingVerified": false,
+        "note": "Partial recognition: invalid raw tokens were omitted and remain explicit diagnostics."
+      }
+    },
+    {
+      "id": "w_caef7e41e4fcb2fd",
+      "text": "He",
+      "start": 48.44,
+      "end": 48.5,
+      "phraseId": "partial-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.9826428890228271,
+        "timingVerified": false,
+        "note": "Partial recognition: invalid raw tokens were omitted and remain explicit diagnostics."
+      }
+    },
+    {
+      "id": "w_4509069646d4f245",
+      "text": "has",
+      "start": 48.5,
+      "end": 48.72,
+      "phraseId": "partial-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.8828616738319397,
+        "timingVerified": false,
+        "note": "Partial recognition: invalid raw tokens were omitted and remain explicit diagnostics."
+      }
+    },
+    {
+      "id": "w_793d14a571bdf5ee",
+      "text": "guided",
+      "start": 48.72,
+      "end": 49.2,
+      "phraseId": "partial-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.8577881455421448,
+        "timingVerified": false,
+        "note": "Partial recognition: invalid raw tokens were omitted and remain explicit diagnostics."
+      }
+    },
+    {
+      "id": "w_a92816f1117c0d7f",
+      "text": "me.",
+      "start": 49.2,
+      "end": 50.32,
+      "phraseId": "partial-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.9795624017715454,
+        "timingVerified": false,
+        "note": "Partial recognition: invalid raw tokens were omitted and remain explicit diagnostics."
+      }
+    },
+    {
+      "id": "w_503dfccd0e5bb391",
+      "text": "And",
+      "start": 51.24,
+      "end": 51.56,
+      "phraseId": "partial-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.6874081492424011,
+        "timingVerified": false,
+        "note": "Partial recognition: invalid raw tokens were omitted and remain explicit diagnostics."
+      }
+    },
+    {
+      "id": "w_b40f0d27ff105a17",
+      "text": "the",
+      "start": 51.56,
+      "end": 51.66,
+      "phraseId": "partial-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.9659159183502197,
+        "timingVerified": false,
+        "note": "Partial recognition: invalid raw tokens were omitted and remain explicit diagnostics."
+      }
+    },
+    {
+      "id": "w_a69b08836f0bd2e8",
+      "text": "paths",
+      "start": 51.66,
+      "end": 52.1,
+      "phraseId": "partial-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.5746763348579407,
+        "timingVerified": false,
+        "note": "Partial recognition: invalid raw tokens were omitted and remain explicit diagnostics."
+      }
+    },
+    {
+      "id": "w_ce3776cab696239b",
+      "text": "of",
+      "start": 52.1,
+      "end": 53.36,
+      "phraseId": "partial-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.7376805543899536,
+        "timingVerified": false,
+        "note": "Partial recognition: invalid raw tokens were omitted and remain explicit diagnostics."
+      }
+    },
+    {
+      "id": "w_ca4fdd90a26301a8",
+      "text": "for",
+      "start": 53.36,
+      "end": 55.74,
+      "phraseId": "partial-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.423385888338089,
+        "timingVerified": false,
+        "note": "Partial recognition: invalid raw tokens were omitted and remain explicit diagnostics."
+      }
+    },
+    {
+      "id": "w_9c660a8b3cfd871a",
+      "text": "his",
+      "start": 55.74,
+      "end": 56.02,
+      "phraseId": "partial-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.594803512096405,
+        "timingVerified": false,
+        "note": "Partial recognition: invalid raw tokens were omitted and remain explicit diagnostics."
+      }
+    },
+    {
+      "id": "w_5a2b59cc372b20e1",
+      "text": "name",
+      "start": 56.02,
+      "end": 56.38,
+      "phraseId": "partial-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.945671796798706,
+        "timingVerified": false,
+        "note": "Partial recognition: invalid raw tokens were omitted and remain explicit diagnostics."
+      }
+    },
+    {
+      "id": "w_89b87da55eabd1be",
+      "text": "say,",
+      "start": 56.92,
+      "end": 57.36,
+      "phraseId": "partial-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.2084215134382248,
+        "timingVerified": false,
+        "note": "Partial recognition: invalid raw tokens were omitted and remain explicit diagnostics."
+      }
+    },
+    {
+      "id": "w_f8e7b86f8ee843ae",
+      "text": "even",
+      "start": 58.76,
+      "end": 58.86,
+      "phraseId": "partial-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.36836135387420654,
+        "timingVerified": false,
+        "note": "Partial recognition: invalid raw tokens were omitted and remain explicit diagnostics."
+      }
+    },
+    {
+      "id": "w_1b049378cb00b6e0",
+      "text": "if",
+      "start": 58.86,
+      "end": 59.14,
+      "phraseId": "partial-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.9512919783592224,
+        "timingVerified": false,
+        "note": "Partial recognition: invalid raw tokens were omitted and remain explicit diagnostics."
+      }
+    },
+    {
+      "id": "w_f7def875e1f55726",
+      "text": "I",
+      "start": 59.14,
+      "end": 59.48,
+      "phraseId": "partial-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.9833993911743164,
+        "timingVerified": false,
+        "note": "Partial recognition: invalid raw tokens were omitted and remain explicit diagnostics."
+      }
+    },
+    {
+      "id": "w_c337eb0b0b3f9d6a",
+      "text": "should.",
+      "start": 59.48,
+      "end": 59.92,
+      "phraseId": "partial-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "base.en.pt",
+        "tokenProbability": 0.2528688311576843,
+        "timingVerified": false,
+        "note": "Partial recognition: invalid raw tokens were omitted and remain explicit diagnostics."
+      }
+    }
+  ],
+  "phrases": [],
+  "omittedInvalidWords": [
+    {
+      "index": 13,
+      "text": "righteousness",
+      "rawStart": 11.36,
+      "rawEnd": 11.36,
+      "rawProbability": 0.9750032424926758,
+      "reason": "Invalid measured token; omitted without replacement timing"
+    }
+  ],
+  "rawWordCount": 22,
+  "warnings": [
+    "Known official-lyrics corroboration only. Omitted invalid tokens provide no word or timing evidence. Audio-only lyric discovery cannot use this result."
+  ]
+}

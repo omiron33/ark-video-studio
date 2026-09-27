@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "32885123-f4b6-42e6-a546-f4acba404829.m4a",
+    "offset": 193.038173,
+    "duration": 2.6100000000000136,
+    "audioDuration": 219.96,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "very long time.",
+  "approvedLyrics": "very long time.",
+  "words": [
+    {
+      "id": "w_d581e51101676b5e",
+      "text": "very",
+      "start": 193.198788,
+      "end": 193.660558,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9988118258492181,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l038-w03"
+    },
+    {
+      "id": "w_d907817c1cba8c8f",
+      "text": "long",
+      "start": 194.10225,
+      "end": 194.664404,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9835542424416895,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l038-w04"
+    },
+    {
+      "id": "w_81ee4d74d924c696",
+      "text": "time.",
+      "start": 195.025788,
+      "end": 195.487558,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.883693046587129,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l038-w05"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "very long time.",
+      "wordIds": [
+        "w_d581e51101676b5e",
+        "w_d907817c1cba8c8f",
+        "w_81ee4d74d924c696"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "executionEvidence": {
+    "mode": "resident-model-worker",
+    "workerCodeSha256": "f79248815aeac1418c2de993edddc61a855af2c93c95043354196c07993efc18",
+    "id": "481d5512-e4f1-4d4e-95ad-069f0e7aac6c",
+    "output": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/inference-618501ce-d0a6-4ae8-9aad-87454d3e8c28.json",
+    "status": "machine_estimate",
+    "seconds": 0.9654220421798527,
+    "modelCacheHit": true,
+    "modelsHeld": 4
+  },
+  "cacheEvidence": {
+    "key": "b033f95bd92e8fcbee0e52ca6ec374f1afd1aab137fe1bbbb93e9aee426ddef7",
+    "cacheHit": false,
+    "entryPath": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/.review-cache/audio/b033f95bd92e8fcbee0e52ca6ec374f1afd1aab137fe1bbbb93e9aee426ddef7.json",
+    "resultSha256": "a5d954608baddb0c4e1e0edeb901f2520556e942d63a0eaf6b6470991e7ec70e",
+    "currentInput": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/sources/32885123-f4b6-42e6-a546-f4acba404829.m4a",
+    "currentInputSha256": "3669040e797c9d2bf8b4136dc4c029c6e1ed51f302ccc411d1888ae50da80c8f",
+    "decodedAudio": {
+      "sha256": "cdc13db978c3b992c1859d77d46b6e607fdef3d85778bfbe2ad28d093ffb743c",
+      "format": "mono-s16le-16000",
+      "samples": 41760
+    },
+    "model": {
+      "path": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+      "sha256": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+    },
+    "runtimeSha256": "50a5d8ee887a89b9619cdbc8bba1bb53ab5f6cde3275aee01aa7f5b03c19eeba"
+  }
+}

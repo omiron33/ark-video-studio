@@ -1,0 +1,2778 @@
+{
+  "version": 1,
+  "method": "Full source decoded to mono 22050Hz float; RMS per source-caption region; 1024-sample Hann log spectral positive flux / 441-sample hop; strongest local peaks above 90th percentile separated by 400ms.",
+  "listened": false,
+  "measuredTempoBpm": null,
+  "tempoPromptBpm": 68,
+  "meterPrompt": "6/8",
+  "cautions": [
+    "Attacks include accompaniment and percussion, not vocal onsets or a verified beat grid.",
+    "Embedded captions are approximate source timing hints only; suspicious first chorus I will fear no evil at 64.069-64.947 and for you are with me at 64.947-73.324 require independent acoustic alignment after theme choice.",
+    "RMS quantifies loudness/energy, not emotional intensity or genre.",
+    "Resampled decoded PCM length is 219.973515 seconds, 13.515 ms longer than container/stream metadata; preserve original source and reconcile trimming/alignment during production."
+  ],
+  "sectionEnergy": [
+    {
+      "label": "Opening / first caption at 15.16s",
+      "start": 0,
+      "end": 15.16,
+      "boundaryBasis": "Suno embedded caption estimates; unverified approximate hints, not acoustically reviewed",
+      "rmsDbFS": -18.74,
+      "peakDbFS": -0.55,
+      "attackCount": 18
+    },
+    {
+      "label": "Verse 1",
+      "start": 15.16,
+      "end": 43.803,
+      "boundaryBasis": "Suno embedded caption estimates; unverified approximate hints, not acoustically reviewed",
+      "rmsDbFS": -16.19,
+      "peakDbFS": -1.13,
+      "attackCount": 43
+    },
+    {
+      "label": "Verse 2",
+      "start": 43.803,
+      "end": 58.803,
+      "boundaryBasis": "Suno embedded caption estimates; unverified approximate hints, not acoustically reviewed",
+      "rmsDbFS": -14.97,
+      "peakDbFS": -1.59,
+      "attackCount": 25
+    },
+    {
+      "label": "Chorus 1",
+      "start": 58.803,
+      "end": 87.447,
+      "boundaryBasis": "Suno embedded caption estimates; unverified approximate hints, not acoustically reviewed",
+      "rmsDbFS": -14.37,
+      "peakDbFS": -1.03,
+      "attackCount": 55
+    },
+    {
+      "label": "Verse 3",
+      "start": 87.447,
+      "end": 113.298,
+      "boundaryBasis": "Suno embedded caption estimates; unverified approximate hints, not acoustically reviewed",
+      "rmsDbFS": -14.75,
+      "peakDbFS": -1.11,
+      "attackCount": 53
+    },
+    {
+      "label": "Chorus 2",
+      "start": 113.298,
+      "end": 142.181,
+      "boundaryBasis": "Suno embedded caption estimates; unverified approximate hints, not acoustically reviewed",
+      "rmsDbFS": -12.63,
+      "peakDbFS": -1.08,
+      "attackCount": 60
+    },
+    {
+      "label": "Mercy bridge",
+      "start": 142.181,
+      "end": 170.904,
+      "boundaryBasis": "Suno embedded caption estimates; unverified approximate hints, not acoustically reviewed",
+      "rmsDbFS": -11.96,
+      "peakDbFS": -1.16,
+      "attackCount": 49
+    },
+    {
+      "label": "Final chorus",
+      "start": 170.904,
+      "end": 186.622,
+      "boundaryBasis": "Suno embedded caption estimates; unverified approximate hints, not acoustically reviewed",
+      "rmsDbFS": -16.09,
+      "peakDbFS": -2.3,
+      "attackCount": 16
+    },
+    {
+      "label": "Outro vocals",
+      "start": 186.622,
+      "end": 202.66,
+      "boundaryBasis": "Suno embedded caption estimates; unverified approximate hints, not acoustically reviewed",
+      "rmsDbFS": -12.94,
+      "peakDbFS": -1.83,
+      "attackCount": 24
+    },
+    {
+      "label": "Ending / instrumental tail",
+      "start": 202.66,
+      "end": 219.96,
+      "boundaryBasis": "Suno embedded caption estimates; unverified approximate hints, not acoustically reviewed",
+      "rmsDbFS": -14.51,
+      "peakDbFS": -1.93,
+      "attackCount": 15
+    }
+  ],
+  "attacks": [
+    {
+      "time": 0.36,
+      "strengthRelativeToMax": 0.2451,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 1.04,
+      "strengthRelativeToMax": 0.4057,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 1.48,
+      "strengthRelativeToMax": 0.2266,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 1.92,
+      "strengthRelativeToMax": 0.5282,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 2.8,
+      "strengthRelativeToMax": 0.288,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 3.72,
+      "strengthRelativeToMax": 0.7038,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 5.5,
+      "strengthRelativeToMax": 0.7058,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 6.4,
+      "strengthRelativeToMax": 0.2159,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 7.28,
+      "strengthRelativeToMax": 0.567,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 8.0,
+      "strengthRelativeToMax": 0.163,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 9.08,
+      "strengthRelativeToMax": 0.5648,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 9.54,
+      "strengthRelativeToMax": 0.1641,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 9.98,
+      "strengthRelativeToMax": 0.2241,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 10.88,
+      "strengthRelativeToMax": 0.5558,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 11.8,
+      "strengthRelativeToMax": 0.2046,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 12.68,
+      "strengthRelativeToMax": 0.5965,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 13.6,
+      "strengthRelativeToMax": 0.1743,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 14.48,
+      "strengthRelativeToMax": 0.5881,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 15.4,
+      "strengthRelativeToMax": 0.4099,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 16.06,
+      "strengthRelativeToMax": 0.2108,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 16.56,
+      "strengthRelativeToMax": 0.3948,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 17.22,
+      "strengthRelativeToMax": 0.1668,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 18.12,
+      "strengthRelativeToMax": 0.6383,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 19.04,
+      "strengthRelativeToMax": 0.3263,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 19.8,
+      "strengthRelativeToMax": 0.4318,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 20.86,
+      "strengthRelativeToMax": 0.329,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 21.76,
+      "strengthRelativeToMax": 0.5997,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 22.22,
+      "strengthRelativeToMax": 0.1665,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 22.62,
+      "strengthRelativeToMax": 0.3011,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 23.12,
+      "strengthRelativeToMax": 0.2587,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 23.6,
+      "strengthRelativeToMax": 0.3062,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 24.06,
+      "strengthRelativeToMax": 0.1661,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 24.92,
+      "strengthRelativeToMax": 0.1634,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 25.4,
+      "strengthRelativeToMax": 0.5445,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 25.86,
+      "strengthRelativeToMax": 0.2168,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 26.32,
+      "strengthRelativeToMax": 0.1597,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 27.24,
+      "strengthRelativeToMax": 0.3549,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 27.68,
+      "strengthRelativeToMax": 0.2568,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 28.14,
+      "strengthRelativeToMax": 0.3138,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 29.04,
+      "strengthRelativeToMax": 0.6067,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 29.5,
+      "strengthRelativeToMax": 0.1592,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 29.96,
+      "strengthRelativeToMax": 0.4558,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 30.42,
+      "strengthRelativeToMax": 0.2946,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 30.88,
+      "strengthRelativeToMax": 0.3525,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 31.78,
+      "strengthRelativeToMax": 0.3213,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 32.22,
+      "strengthRelativeToMax": 0.244,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 32.7,
+      "strengthRelativeToMax": 0.4332,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 33.6,
+      "strengthRelativeToMax": 0.4009,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 34.5,
+      "strengthRelativeToMax": 0.6554,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 35.42,
+      "strengthRelativeToMax": 0.3301,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 36.32,
+      "strengthRelativeToMax": 0.5463,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 36.78,
+      "strengthRelativeToMax": 0.3251,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 37.22,
+      "strengthRelativeToMax": 0.2431,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 38.14,
+      "strengthRelativeToMax": 0.5521,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 39.06,
+      "strengthRelativeToMax": 0.3405,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 39.96,
+      "strengthRelativeToMax": 0.5186,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 40.88,
+      "strengthRelativeToMax": 0.2973,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 41.78,
+      "strengthRelativeToMax": 0.4629,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 42.24,
+      "strengthRelativeToMax": 0.1909,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 42.68,
+      "strengthRelativeToMax": 0.2993,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 43.6,
+      "strengthRelativeToMax": 0.4769,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 44.34,
+      "strengthRelativeToMax": 0.4282,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 45.4,
+      "strengthRelativeToMax": 0.4092,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 45.82,
+      "strengthRelativeToMax": 0.156,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 46.32,
+      "strengthRelativeToMax": 0.1929,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 46.78,
+      "strengthRelativeToMax": 0.1692,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 47.22,
+      "strengthRelativeToMax": 0.6685,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 47.68,
+      "strengthRelativeToMax": 0.2996,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 48.14,
+      "strengthRelativeToMax": 0.3593,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 48.82,
+      "strengthRelativeToMax": 0.441,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 49.5,
+      "strengthRelativeToMax": 0.2352,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 49.96,
+      "strengthRelativeToMax": 0.3337,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 50.42,
+      "strengthRelativeToMax": 0.1659,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 50.86,
+      "strengthRelativeToMax": 0.9628,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 51.6,
+      "strengthRelativeToMax": 0.3552,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 52.22,
+      "strengthRelativeToMax": 0.1597,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 52.68,
+      "strengthRelativeToMax": 0.5541,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 53.28,
+      "strengthRelativeToMax": 0.2617,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 54.48,
+      "strengthRelativeToMax": 0.6178,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 54.94,
+      "strengthRelativeToMax": 0.2408,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 55.4,
+      "strengthRelativeToMax": 0.4886,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 55.86,
+      "strengthRelativeToMax": 0.1911,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 56.3,
+      "strengthRelativeToMax": 0.4567,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 57.0,
+      "strengthRelativeToMax": 0.3265,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 58.12,
+      "strengthRelativeToMax": 0.6003,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 58.58,
+      "strengthRelativeToMax": 0.2363,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 59.28,
+      "strengthRelativeToMax": 0.2273,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 59.94,
+      "strengthRelativeToMax": 0.3035,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 60.4,
+      "strengthRelativeToMax": 0.1532,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 60.86,
+      "strengthRelativeToMax": 0.2912,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 61.32,
+      "strengthRelativeToMax": 0.2104,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 61.76,
+      "strengthRelativeToMax": 0.9052,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 62.22,
+      "strengthRelativeToMax": 0.3054,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 63.14,
+      "strengthRelativeToMax": 0.2045,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 63.58,
+      "strengthRelativeToMax": 0.4022,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 64.06,
+      "strengthRelativeToMax": 0.2274,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 64.5,
+      "strengthRelativeToMax": 0.2802,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 64.96,
+      "strengthRelativeToMax": 0.2726,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 65.42,
+      "strengthRelativeToMax": 0.6618,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 66.14,
+      "strengthRelativeToMax": 0.3102,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 66.8,
+      "strengthRelativeToMax": 0.1627,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 67.24,
+      "strengthRelativeToMax": 0.4776,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 67.72,
+      "strengthRelativeToMax": 0.1777,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 68.62,
+      "strengthRelativeToMax": 0.2195,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 69.06,
+      "strengthRelativeToMax": 0.8374,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 69.52,
+      "strengthRelativeToMax": 0.3158,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 69.98,
+      "strengthRelativeToMax": 0.1988,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 70.44,
+      "strengthRelativeToMax": 0.2034,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 70.88,
+      "strengthRelativeToMax": 0.5064,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 71.78,
+      "strengthRelativeToMax": 0.2187,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 72.24,
+      "strengthRelativeToMax": 0.1936,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 72.7,
+      "strengthRelativeToMax": 0.7797,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 73.16,
+      "strengthRelativeToMax": 0.2729,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 73.6,
+      "strengthRelativeToMax": 0.1893,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 74.08,
+      "strengthRelativeToMax": 0.1684,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 74.5,
+      "strengthRelativeToMax": 0.411,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 74.98,
+      "strengthRelativeToMax": 0.1906,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 75.42,
+      "strengthRelativeToMax": 0.3071,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 75.88,
+      "strengthRelativeToMax": 0.2619,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 76.34,
+      "strengthRelativeToMax": 0.6238,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 77.18,
+      "strengthRelativeToMax": 0.4325,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 77.62,
+      "strengthRelativeToMax": 0.2423,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 78.14,
+      "strengthRelativeToMax": 0.3884,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 78.62,
+      "strengthRelativeToMax": 0.1994,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 79.06,
+      "strengthRelativeToMax": 0.3382,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 79.52,
+      "strengthRelativeToMax": 0.2465,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 79.96,
+      "strengthRelativeToMax": 0.8126,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 80.66,
+      "strengthRelativeToMax": 0.2455,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 81.78,
+      "strengthRelativeToMax": 0.6101,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 82.24,
+      "strengthRelativeToMax": 0.1692,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 82.7,
+      "strengthRelativeToMax": 0.1991,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 83.16,
+      "strengthRelativeToMax": 0.1637,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 83.6,
+      "strengthRelativeToMax": 0.7373,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 84.06,
+      "strengthRelativeToMax": 0.3091,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 84.52,
+      "strengthRelativeToMax": 0.3409,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 84.98,
+      "strengthRelativeToMax": 0.2224,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 85.42,
+      "strengthRelativeToMax": 0.6858,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 85.88,
+      "strengthRelativeToMax": 0.2683,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 86.32,
+      "strengthRelativeToMax": 0.3003,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 86.78,
+      "strengthRelativeToMax": 0.2323,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 87.24,
+      "strengthRelativeToMax": 0.8221,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 87.7,
+      "strengthRelativeToMax": 0.1953,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 88.14,
+      "strengthRelativeToMax": 0.2533,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 88.6,
+      "strengthRelativeToMax": 0.1653,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 89.0,
+      "strengthRelativeToMax": 0.6721,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 89.52,
+      "strengthRelativeToMax": 0.3139,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 89.96,
+      "strengthRelativeToMax": 0.2025,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 90.42,
+      "strengthRelativeToMax": 0.2389,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 90.88,
+      "strengthRelativeToMax": 0.7308,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 91.34,
+      "strengthRelativeToMax": 0.3533,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 91.78,
+      "strengthRelativeToMax": 0.3631,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 92.24,
+      "strengthRelativeToMax": 0.2828,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 92.68,
+      "strengthRelativeToMax": 0.7252,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 93.14,
+      "strengthRelativeToMax": 0.2501,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 93.6,
+      "strengthRelativeToMax": 0.4282,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 94.06,
+      "strengthRelativeToMax": 0.2618,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 94.5,
+      "strengthRelativeToMax": 0.93,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 95.1,
+      "strengthRelativeToMax": 0.3047,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 95.8,
+      "strengthRelativeToMax": 0.3419,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 96.32,
+      "strengthRelativeToMax": 0.5017,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 96.72,
+      "strengthRelativeToMax": 0.3315,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 97.12,
+      "strengthRelativeToMax": 0.2746,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 97.7,
+      "strengthRelativeToMax": 0.1928,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 98.14,
+      "strengthRelativeToMax": 1.0,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 98.6,
+      "strengthRelativeToMax": 0.378,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 99.06,
+      "strengthRelativeToMax": 0.2632,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 99.5,
+      "strengthRelativeToMax": 0.2434,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 99.96,
+      "strengthRelativeToMax": 0.7363,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 100.42,
+      "strengthRelativeToMax": 0.2131,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 100.86,
+      "strengthRelativeToMax": 0.357,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 101.32,
+      "strengthRelativeToMax": 0.2864,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 101.76,
+      "strengthRelativeToMax": 0.6767,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 102.22,
+      "strengthRelativeToMax": 0.1866,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 102.68,
+      "strengthRelativeToMax": 0.3156,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 103.6,
+      "strengthRelativeToMax": 0.3162,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 104.06,
+      "strengthRelativeToMax": 0.2363,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 104.5,
+      "strengthRelativeToMax": 0.3764,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 104.96,
+      "strengthRelativeToMax": 0.2382,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 105.4,
+      "strengthRelativeToMax": 0.7305,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 105.86,
+      "strengthRelativeToMax": 0.3175,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 106.32,
+      "strengthRelativeToMax": 0.3029,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 106.78,
+      "strengthRelativeToMax": 0.2549,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 107.22,
+      "strengthRelativeToMax": 0.8993,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 107.66,
+      "strengthRelativeToMax": 0.2991,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 108.08,
+      "strengthRelativeToMax": 0.4579,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 108.58,
+      "strengthRelativeToMax": 0.2144,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 109.04,
+      "strengthRelativeToMax": 0.6482,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 109.62,
+      "strengthRelativeToMax": 0.1725,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 110.08,
+      "strengthRelativeToMax": 0.3064,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 110.84,
+      "strengthRelativeToMax": 0.6122,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 111.3,
+      "strengthRelativeToMax": 0.2459,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 111.76,
+      "strengthRelativeToMax": 0.3173,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 112.22,
+      "strengthRelativeToMax": 0.2186,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 112.66,
+      "strengthRelativeToMax": 0.8483,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 113.34,
+      "strengthRelativeToMax": 0.2229,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 113.78,
+      "strengthRelativeToMax": 0.243,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 114.32,
+      "strengthRelativeToMax": 0.224,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 114.92,
+      "strengthRelativeToMax": 0.1786,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 115.38,
+      "strengthRelativeToMax": 0.2437,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 115.84,
+      "strengthRelativeToMax": 0.2343,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 116.28,
+      "strengthRelativeToMax": 0.5502,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 117.0,
+      "strengthRelativeToMax": 0.2725,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 117.66,
+      "strengthRelativeToMax": 0.1895,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 118.1,
+      "strengthRelativeToMax": 0.3432,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 118.56,
+      "strengthRelativeToMax": 0.3749,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 119.02,
+      "strengthRelativeToMax": 0.2177,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 119.46,
+      "strengthRelativeToMax": 0.3156,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 119.92,
+      "strengthRelativeToMax": 0.6285,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 120.62,
+      "strengthRelativeToMax": 0.2416,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 121.28,
+      "strengthRelativeToMax": 0.2157,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 121.74,
+      "strengthRelativeToMax": 0.4971,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 122.2,
+      "strengthRelativeToMax": 0.2995,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 123.1,
+      "strengthRelativeToMax": 0.2758,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 123.56,
+      "strengthRelativeToMax": 0.5417,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 124.02,
+      "strengthRelativeToMax": 0.2217,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 124.46,
+      "strengthRelativeToMax": 0.2233,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 124.92,
+      "strengthRelativeToMax": 0.1981,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 125.36,
+      "strengthRelativeToMax": 0.3184,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 125.84,
+      "strengthRelativeToMax": 0.1968,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 126.28,
+      "strengthRelativeToMax": 0.3402,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 126.74,
+      "strengthRelativeToMax": 0.4023,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 127.18,
+      "strengthRelativeToMax": 0.5836,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 127.64,
+      "strengthRelativeToMax": 0.2421,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 128.1,
+      "strengthRelativeToMax": 0.2533,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 128.56,
+      "strengthRelativeToMax": 0.3053,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 129.0,
+      "strengthRelativeToMax": 0.3691,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 129.46,
+      "strengthRelativeToMax": 0.3631,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 129.92,
+      "strengthRelativeToMax": 0.3232,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 130.38,
+      "strengthRelativeToMax": 0.3177,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 130.82,
+      "strengthRelativeToMax": 0.7817,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 131.24,
+      "strengthRelativeToMax": 0.1899,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 131.66,
+      "strengthRelativeToMax": 0.5273,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 132.1,
+      "strengthRelativeToMax": 0.3313,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 132.64,
+      "strengthRelativeToMax": 0.3163,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 133.1,
+      "strengthRelativeToMax": 0.2751,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 133.54,
+      "strengthRelativeToMax": 0.2478,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 134.0,
+      "strengthRelativeToMax": 0.4505,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 134.46,
+      "strengthRelativeToMax": 0.4856,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 135.14,
+      "strengthRelativeToMax": 0.2718,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 135.82,
+      "strengthRelativeToMax": 0.2452,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 136.26,
+      "strengthRelativeToMax": 0.4021,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 136.74,
+      "strengthRelativeToMax": 0.2412,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 137.18,
+      "strengthRelativeToMax": 0.2301,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 137.64,
+      "strengthRelativeToMax": 0.3168,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 138.08,
+      "strengthRelativeToMax": 0.4868,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 138.54,
+      "strengthRelativeToMax": 0.2865,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 139.0,
+      "strengthRelativeToMax": 0.307,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 139.44,
+      "strengthRelativeToMax": 0.2828,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 139.9,
+      "strengthRelativeToMax": 0.6779,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 140.36,
+      "strengthRelativeToMax": 0.3491,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 140.8,
+      "strengthRelativeToMax": 0.2338,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 141.26,
+      "strengthRelativeToMax": 0.3198,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 141.72,
+      "strengthRelativeToMax": 0.5576,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 142.14,
+      "strengthRelativeToMax": 0.1587,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 142.96,
+      "strengthRelativeToMax": 0.3357,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 143.54,
+      "strengthRelativeToMax": 0.2015,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 144.22,
+      "strengthRelativeToMax": 0.2543,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 144.9,
+      "strengthRelativeToMax": 0.2337,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 145.34,
+      "strengthRelativeToMax": 0.351,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 145.8,
+      "strengthRelativeToMax": 0.3229,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 146.26,
+      "strengthRelativeToMax": 0.233,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 146.7,
+      "strengthRelativeToMax": 0.3443,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 147.16,
+      "strengthRelativeToMax": 0.5881,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 147.62,
+      "strengthRelativeToMax": 0.3551,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 148.06,
+      "strengthRelativeToMax": 0.3321,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 148.52,
+      "strengthRelativeToMax": 0.3997,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 148.96,
+      "strengthRelativeToMax": 0.4926,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 149.64,
+      "strengthRelativeToMax": 0.521,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 150.18,
+      "strengthRelativeToMax": 0.1918,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 150.72,
+      "strengthRelativeToMax": 0.234,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 151.24,
+      "strengthRelativeToMax": 0.3607,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 151.7,
+      "strengthRelativeToMax": 0.2508,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 152.16,
+      "strengthRelativeToMax": 0.2174,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 152.6,
+      "strengthRelativeToMax": 0.3262,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 153.06,
+      "strengthRelativeToMax": 0.2604,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 153.5,
+      "strengthRelativeToMax": 0.2114,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 153.96,
+      "strengthRelativeToMax": 0.2494,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 154.42,
+      "strengthRelativeToMax": 0.3622,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 154.88,
+      "strengthRelativeToMax": 0.2042,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 155.32,
+      "strengthRelativeToMax": 0.3174,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 155.78,
+      "strengthRelativeToMax": 0.4332,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 156.22,
+      "strengthRelativeToMax": 0.5476,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 156.68,
+      "strengthRelativeToMax": 0.2776,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 157.14,
+      "strengthRelativeToMax": 0.3382,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 157.86,
+      "strengthRelativeToMax": 0.2615,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 158.8,
+      "strengthRelativeToMax": 0.2782,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 159.4,
+      "strengthRelativeToMax": 0.2385,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 159.86,
+      "strengthRelativeToMax": 0.3544,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 160.3,
+      "strengthRelativeToMax": 0.1994,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 160.76,
+      "strengthRelativeToMax": 0.4068,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 161.22,
+      "strengthRelativeToMax": 0.3981,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 161.66,
+      "strengthRelativeToMax": 0.5736,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 162.12,
+      "strengthRelativeToMax": 0.3473,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 162.58,
+      "strengthRelativeToMax": 0.3808,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 163.02,
+      "strengthRelativeToMax": 0.3985,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 163.48,
+      "strengthRelativeToMax": 0.6986,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 164.16,
+      "strengthRelativeToMax": 0.2843,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 165.3,
+      "strengthRelativeToMax": 0.3807,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 165.88,
+      "strengthRelativeToMax": 0.16,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 167.1,
+      "strengthRelativeToMax": 0.4841,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 168.0,
+      "strengthRelativeToMax": 0.1626,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 168.44,
+      "strengthRelativeToMax": 0.1735,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 168.9,
+      "strengthRelativeToMax": 0.5051,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 170.92,
+      "strengthRelativeToMax": 0.2834,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 171.4,
+      "strengthRelativeToMax": 0.2148,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 172.5,
+      "strengthRelativeToMax": 0.1686,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 174.3,
+      "strengthRelativeToMax": 0.3456,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 174.92,
+      "strengthRelativeToMax": 0.1682,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 176.06,
+      "strengthRelativeToMax": 0.3369,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 177.9,
+      "strengthRelativeToMax": 0.3477,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 178.78,
+      "strengthRelativeToMax": 0.3046,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 179.4,
+      "strengthRelativeToMax": 0.3068,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 180.0,
+      "strengthRelativeToMax": 0.3624,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 181.48,
+      "strengthRelativeToMax": 0.3813,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 182.38,
+      "strengthRelativeToMax": 0.4124,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 182.84,
+      "strengthRelativeToMax": 0.194,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 183.28,
+      "strengthRelativeToMax": 0.2845,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 183.74,
+      "strengthRelativeToMax": 0.2252,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 185.08,
+      "strengthRelativeToMax": 0.4524,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 187.04,
+      "strengthRelativeToMax": 0.4795,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 187.56,
+      "strengthRelativeToMax": 0.1854,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 188.68,
+      "strengthRelativeToMax": 0.3416,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 189.32,
+      "strengthRelativeToMax": 0.2888,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 189.88,
+      "strengthRelativeToMax": 0.3757,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 190.48,
+      "strengthRelativeToMax": 0.3038,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 190.9,
+      "strengthRelativeToMax": 0.1608,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 192.64,
+      "strengthRelativeToMax": 0.2899,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 195.0,
+      "strengthRelativeToMax": 0.7602,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 195.5,
+      "strengthRelativeToMax": 0.2437,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 195.96,
+      "strengthRelativeToMax": 0.5976,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 196.42,
+      "strengthRelativeToMax": 0.552,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 196.88,
+      "strengthRelativeToMax": 0.4195,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 197.34,
+      "strengthRelativeToMax": 0.25,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 197.78,
+      "strengthRelativeToMax": 0.8836,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 198.24,
+      "strengthRelativeToMax": 0.3494,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 198.7,
+      "strengthRelativeToMax": 0.5236,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 199.16,
+      "strengthRelativeToMax": 0.255,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 199.6,
+      "strengthRelativeToMax": 0.7602,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 200.06,
+      "strengthRelativeToMax": 0.5214,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 200.52,
+      "strengthRelativeToMax": 0.3265,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 200.98,
+      "strengthRelativeToMax": 0.2934,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 201.44,
+      "strengthRelativeToMax": 0.4922,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 202.12,
+      "strengthRelativeToMax": 0.3607,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 202.8,
+      "strengthRelativeToMax": 0.3439,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 203.26,
+      "strengthRelativeToMax": 0.539,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 203.72,
+      "strengthRelativeToMax": 0.3194,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 204.16,
+      "strengthRelativeToMax": 0.4192,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 204.62,
+      "strengthRelativeToMax": 0.4024,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 205.08,
+      "strengthRelativeToMax": 0.7666,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 205.54,
+      "strengthRelativeToMax": 0.2761,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 206.02,
+      "strengthRelativeToMax": 0.4435,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 207.96,
+      "strengthRelativeToMax": 0.3969,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 208.5,
+      "strengthRelativeToMax": 0.2936,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 209.02,
+      "strengthRelativeToMax": 0.2444,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 209.56,
+      "strengthRelativeToMax": 0.1662,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 210.16,
+      "strengthRelativeToMax": 0.1788,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 212.32,
+      "strengthRelativeToMax": 0.2174,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    },
+    {
+      "time": 215.24,
+      "strengthRelativeToMax": 0.2857,
+      "kind": "spectral_flux_attack_not_vocal_or_beat"
+    }
+  ],
+  "rmsOneSecond": [
+    {
+      "time": 0,
+      "rmsDbFS": -17.52
+    },
+    {
+      "time": 1,
+      "rmsDbFS": -22.04
+    },
+    {
+      "time": 2,
+      "rmsDbFS": -15.61
+    },
+    {
+      "time": 3,
+      "rmsDbFS": -20.61
+    },
+    {
+      "time": 4,
+      "rmsDbFS": -26.64
+    },
+    {
+      "time": 5,
+      "rmsDbFS": -16.95
+    },
+    {
+      "time": 6,
+      "rmsDbFS": -15.57
+    },
+    {
+      "time": 7,
+      "rmsDbFS": -22.16
+    },
+    {
+      "time": 8,
+      "rmsDbFS": -19.11
+    },
+    {
+      "time": 9,
+      "rmsDbFS": -18.13
+    },
+    {
+      "time": 10,
+      "rmsDbFS": -15.87
+    },
+    {
+      "time": 11,
+      "rmsDbFS": -24.86
+    },
+    {
+      "time": 12,
+      "rmsDbFS": -24.38
+    },
+    {
+      "time": 13,
+      "rmsDbFS": -16.38
+    },
+    {
+      "time": 14,
+      "rmsDbFS": -25.73
+    },
+    {
+      "time": 15,
+      "rmsDbFS": -13.4
+    },
+    {
+      "time": 16,
+      "rmsDbFS": -15.98
+    },
+    {
+      "time": 17,
+      "rmsDbFS": -14.79
+    },
+    {
+      "time": 18,
+      "rmsDbFS": -22.12
+    },
+    {
+      "time": 19,
+      "rmsDbFS": -14.45
+    },
+    {
+      "time": 20,
+      "rmsDbFS": -13.26
+    },
+    {
+      "time": 21,
+      "rmsDbFS": -22.21
+    },
+    {
+      "time": 22,
+      "rmsDbFS": -14.1
+    },
+    {
+      "time": 23,
+      "rmsDbFS": -15.47
+    },
+    {
+      "time": 24,
+      "rmsDbFS": -15.21
+    },
+    {
+      "time": 25,
+      "rmsDbFS": -17.96
+    },
+    {
+      "time": 26,
+      "rmsDbFS": -13.32
+    },
+    {
+      "time": 27,
+      "rmsDbFS": -17.07
+    },
+    {
+      "time": 28,
+      "rmsDbFS": -17.3
+    },
+    {
+      "time": 29,
+      "rmsDbFS": -19.56
+    },
+    {
+      "time": 30,
+      "rmsDbFS": -13.76
+    },
+    {
+      "time": 31,
+      "rmsDbFS": -12.67
+    },
+    {
+      "time": 32,
+      "rmsDbFS": -16.18
+    },
+    {
+      "time": 33,
+      "rmsDbFS": -17.02
+    },
+    {
+      "time": 34,
+      "rmsDbFS": -24.69
+    },
+    {
+      "time": 35,
+      "rmsDbFS": -18.08
+    },
+    {
+      "time": 36,
+      "rmsDbFS": -18.52
+    },
+    {
+      "time": 37,
+      "rmsDbFS": -15.25
+    },
+    {
+      "time": 38,
+      "rmsDbFS": -20.53
+    },
+    {
+      "time": 39,
+      "rmsDbFS": -17.15
+    },
+    {
+      "time": 40,
+      "rmsDbFS": -16.99
+    },
+    {
+      "time": 41,
+      "rmsDbFS": -21.93
+    },
+    {
+      "time": 42,
+      "rmsDbFS": -16.85
+    },
+    {
+      "time": 43,
+      "rmsDbFS": -20.28
+    },
+    {
+      "time": 44,
+      "rmsDbFS": -12.17
+    },
+    {
+      "time": 45,
+      "rmsDbFS": -13.4
+    },
+    {
+      "time": 46,
+      "rmsDbFS": -12.33
+    },
+    {
+      "time": 47,
+      "rmsDbFS": -17.65
+    },
+    {
+      "time": 48,
+      "rmsDbFS": -15.0
+    },
+    {
+      "time": 49,
+      "rmsDbFS": -16.56
+    },
+    {
+      "time": 50,
+      "rmsDbFS": -17.35
+    },
+    {
+      "time": 51,
+      "rmsDbFS": -14.1
+    },
+    {
+      "time": 52,
+      "rmsDbFS": -13.52
+    },
+    {
+      "time": 53,
+      "rmsDbFS": -14.83
+    },
+    {
+      "time": 54,
+      "rmsDbFS": -20.09
+    },
+    {
+      "time": 55,
+      "rmsDbFS": -14.98
+    },
+    {
+      "time": 56,
+      "rmsDbFS": -16.15
+    },
+    {
+      "time": 57,
+      "rmsDbFS": -16.83
+    },
+    {
+      "time": 58,
+      "rmsDbFS": -15.93
+    },
+    {
+      "time": 59,
+      "rmsDbFS": -14.12
+    },
+    {
+      "time": 60,
+      "rmsDbFS": -15.25
+    },
+    {
+      "time": 61,
+      "rmsDbFS": -18.3
+    },
+    {
+      "time": 62,
+      "rmsDbFS": -12.6
+    },
+    {
+      "time": 63,
+      "rmsDbFS": -12.33
+    },
+    {
+      "time": 64,
+      "rmsDbFS": -14.08
+    },
+    {
+      "time": 65,
+      "rmsDbFS": -15.35
+    },
+    {
+      "time": 66,
+      "rmsDbFS": -12.85
+    },
+    {
+      "time": 67,
+      "rmsDbFS": -13.01
+    },
+    {
+      "time": 68,
+      "rmsDbFS": -13.16
+    },
+    {
+      "time": 69,
+      "rmsDbFS": -16.55
+    },
+    {
+      "time": 70,
+      "rmsDbFS": -11.96
+    },
+    {
+      "time": 71,
+      "rmsDbFS": -14.97
+    },
+    {
+      "time": 72,
+      "rmsDbFS": -19.69
+    },
+    {
+      "time": 73,
+      "rmsDbFS": -12.88
+    },
+    {
+      "time": 74,
+      "rmsDbFS": -14.73
+    },
+    {
+      "time": 75,
+      "rmsDbFS": -14.58
+    },
+    {
+      "time": 76,
+      "rmsDbFS": -14.14
+    },
+    {
+      "time": 77,
+      "rmsDbFS": -12.93
+    },
+    {
+      "time": 78,
+      "rmsDbFS": -14.12
+    },
+    {
+      "time": 79,
+      "rmsDbFS": -15.41
+    },
+    {
+      "time": 80,
+      "rmsDbFS": -12.73
+    },
+    {
+      "time": 81,
+      "rmsDbFS": -14.1
+    },
+    {
+      "time": 82,
+      "rmsDbFS": -13.36
+    },
+    {
+      "time": 83,
+      "rmsDbFS": -18.93
+    },
+    {
+      "time": 84,
+      "rmsDbFS": -14.69
+    },
+    {
+      "time": 85,
+      "rmsDbFS": -21.7
+    },
+    {
+      "time": 86,
+      "rmsDbFS": -16.97
+    },
+    {
+      "time": 87,
+      "rmsDbFS": -15.83
+    },
+    {
+      "time": 88,
+      "rmsDbFS": -13.94
+    },
+    {
+      "time": 89,
+      "rmsDbFS": -17.85
+    },
+    {
+      "time": 90,
+      "rmsDbFS": -14.32
+    },
+    {
+      "time": 91,
+      "rmsDbFS": -14.55
+    },
+    {
+      "time": 92,
+      "rmsDbFS": -19.77
+    },
+    {
+      "time": 93,
+      "rmsDbFS": -15.9
+    },
+    {
+      "time": 94,
+      "rmsDbFS": -17.79
+    },
+    {
+      "time": 95,
+      "rmsDbFS": -12.3
+    },
+    {
+      "time": 96,
+      "rmsDbFS": -13.82
+    },
+    {
+      "time": 97,
+      "rmsDbFS": -14.36
+    },
+    {
+      "time": 98,
+      "rmsDbFS": -17.17
+    },
+    {
+      "time": 99,
+      "rmsDbFS": -15.59
+    },
+    {
+      "time": 100,
+      "rmsDbFS": -16.0
+    },
+    {
+      "time": 101,
+      "rmsDbFS": -18.41
+    },
+    {
+      "time": 102,
+      "rmsDbFS": -11.89
+    },
+    {
+      "time": 103,
+      "rmsDbFS": -14.01
+    },
+    {
+      "time": 104,
+      "rmsDbFS": -12.57
+    },
+    {
+      "time": 105,
+      "rmsDbFS": -17.13
+    },
+    {
+      "time": 106,
+      "rmsDbFS": -15.28
+    },
+    {
+      "time": 107,
+      "rmsDbFS": -14.58
+    },
+    {
+      "time": 108,
+      "rmsDbFS": -13.97
+    },
+    {
+      "time": 109,
+      "rmsDbFS": -13.95
+    },
+    {
+      "time": 110,
+      "rmsDbFS": -13.8
+    },
+    {
+      "time": 111,
+      "rmsDbFS": -14.05
+    },
+    {
+      "time": 112,
+      "rmsDbFS": -18.78
+    },
+    {
+      "time": 113,
+      "rmsDbFS": -12.06
+    },
+    {
+      "time": 114,
+      "rmsDbFS": -11.72
+    },
+    {
+      "time": 115,
+      "rmsDbFS": -12.18
+    },
+    {
+      "time": 116,
+      "rmsDbFS": -12.95
+    },
+    {
+      "time": 117,
+      "rmsDbFS": -11.17
+    },
+    {
+      "time": 118,
+      "rmsDbFS": -12.29
+    },
+    {
+      "time": 119,
+      "rmsDbFS": -12.98
+    },
+    {
+      "time": 120,
+      "rmsDbFS": -11.8
+    },
+    {
+      "time": 121,
+      "rmsDbFS": -12.24
+    },
+    {
+      "time": 122,
+      "rmsDbFS": -12.0
+    },
+    {
+      "time": 123,
+      "rmsDbFS": -14.34
+    },
+    {
+      "time": 124,
+      "rmsDbFS": -11.55
+    },
+    {
+      "time": 125,
+      "rmsDbFS": -12.54
+    },
+    {
+      "time": 126,
+      "rmsDbFS": -12.94
+    },
+    {
+      "time": 127,
+      "rmsDbFS": -13.24
+    },
+    {
+      "time": 128,
+      "rmsDbFS": -11.74
+    },
+    {
+      "time": 129,
+      "rmsDbFS": -13.48
+    },
+    {
+      "time": 130,
+      "rmsDbFS": -14.61
+    },
+    {
+      "time": 131,
+      "rmsDbFS": -11.52
+    },
+    {
+      "time": 132,
+      "rmsDbFS": -12.52
+    },
+    {
+      "time": 133,
+      "rmsDbFS": -12.77
+    },
+    {
+      "time": 134,
+      "rmsDbFS": -13.38
+    },
+    {
+      "time": 135,
+      "rmsDbFS": -12.18
+    },
+    {
+      "time": 136,
+      "rmsDbFS": -12.66
+    },
+    {
+      "time": 137,
+      "rmsDbFS": -12.22
+    },
+    {
+      "time": 138,
+      "rmsDbFS": -13.25
+    },
+    {
+      "time": 139,
+      "rmsDbFS": -13.36
+    },
+    {
+      "time": 140,
+      "rmsDbFS": -14.04
+    },
+    {
+      "time": 141,
+      "rmsDbFS": -14.72
+    },
+    {
+      "time": 142,
+      "rmsDbFS": -11.06
+    },
+    {
+      "time": 143,
+      "rmsDbFS": -12.23
+    },
+    {
+      "time": 144,
+      "rmsDbFS": -11.12
+    },
+    {
+      "time": 145,
+      "rmsDbFS": -10.57
+    },
+    {
+      "time": 146,
+      "rmsDbFS": -11.38
+    },
+    {
+      "time": 147,
+      "rmsDbFS": -12.76
+    },
+    {
+      "time": 148,
+      "rmsDbFS": -11.93
+    },
+    {
+      "time": 149,
+      "rmsDbFS": -10.05
+    },
+    {
+      "time": 150,
+      "rmsDbFS": -10.77
+    },
+    {
+      "time": 151,
+      "rmsDbFS": -10.03
+    },
+    {
+      "time": 152,
+      "rmsDbFS": -10.61
+    },
+    {
+      "time": 153,
+      "rmsDbFS": -10.02
+    },
+    {
+      "time": 154,
+      "rmsDbFS": -11.18
+    },
+    {
+      "time": 155,
+      "rmsDbFS": -10.35
+    },
+    {
+      "time": 156,
+      "rmsDbFS": -11.33
+    },
+    {
+      "time": 157,
+      "rmsDbFS": -10.26
+    },
+    {
+      "time": 158,
+      "rmsDbFS": -11.28
+    },
+    {
+      "time": 159,
+      "rmsDbFS": -10.1
+    },
+    {
+      "time": 160,
+      "rmsDbFS": -10.04
+    },
+    {
+      "time": 161,
+      "rmsDbFS": -12.65
+    },
+    {
+      "time": 162,
+      "rmsDbFS": -12.04
+    },
+    {
+      "time": 163,
+      "rmsDbFS": -13.77
+    },
+    {
+      "time": 164,
+      "rmsDbFS": -12.51
+    },
+    {
+      "time": 165,
+      "rmsDbFS": -16.11
+    },
+    {
+      "time": 166,
+      "rmsDbFS": -19.3
+    },
+    {
+      "time": 167,
+      "rmsDbFS": -23.73
+    },
+    {
+      "time": 168,
+      "rmsDbFS": -22.17
+    },
+    {
+      "time": 169,
+      "rmsDbFS": -24.47
+    },
+    {
+      "time": 170,
+      "rmsDbFS": -22.33
+    },
+    {
+      "time": 171,
+      "rmsDbFS": -13.63
+    },
+    {
+      "time": 172,
+      "rmsDbFS": -12.52
+    },
+    {
+      "time": 173,
+      "rmsDbFS": -14.3
+    },
+    {
+      "time": 174,
+      "rmsDbFS": -21.33
+    },
+    {
+      "time": 175,
+      "rmsDbFS": -16.21
+    },
+    {
+      "time": 176,
+      "rmsDbFS": -16.33
+    },
+    {
+      "time": 177,
+      "rmsDbFS": -22.23
+    },
+    {
+      "time": 178,
+      "rmsDbFS": -17.1
+    },
+    {
+      "time": 179,
+      "rmsDbFS": -12.71
+    },
+    {
+      "time": 180,
+      "rmsDbFS": -18.46
+    },
+    {
+      "time": 181,
+      "rmsDbFS": -26.33
+    },
+    {
+      "time": 182,
+      "rmsDbFS": -14.08
+    },
+    {
+      "time": 183,
+      "rmsDbFS": -13.22
+    },
+    {
+      "time": 184,
+      "rmsDbFS": -19.65
+    },
+    {
+      "time": 185,
+      "rmsDbFS": -31.55
+    },
+    {
+      "time": 186,
+      "rmsDbFS": -19.42
+    },
+    {
+      "time": 187,
+      "rmsDbFS": -13.69
+    },
+    {
+      "time": 188,
+      "rmsDbFS": -23.66
+    },
+    {
+      "time": 189,
+      "rmsDbFS": -15.0
+    },
+    {
+      "time": 190,
+      "rmsDbFS": -15.39
+    },
+    {
+      "time": 191,
+      "rmsDbFS": -18.73
+    },
+    {
+      "time": 192,
+      "rmsDbFS": -17.95
+    },
+    {
+      "time": 193,
+      "rmsDbFS": -13.72
+    },
+    {
+      "time": 194,
+      "rmsDbFS": -14.63
+    },
+    {
+      "time": 195,
+      "rmsDbFS": -11.55
+    },
+    {
+      "time": 196,
+      "rmsDbFS": -11.5
+    },
+    {
+      "time": 197,
+      "rmsDbFS": -11.75
+    },
+    {
+      "time": 198,
+      "rmsDbFS": -11.27
+    },
+    {
+      "time": 199,
+      "rmsDbFS": -11.98
+    },
+    {
+      "time": 200,
+      "rmsDbFS": -10.03
+    },
+    {
+      "time": 201,
+      "rmsDbFS": -10.82
+    },
+    {
+      "time": 202,
+      "rmsDbFS": -10.62
+    },
+    {
+      "time": 203,
+      "rmsDbFS": -10.89
+    },
+    {
+      "time": 204,
+      "rmsDbFS": -11.0
+    },
+    {
+      "time": 205,
+      "rmsDbFS": -11.02
+    },
+    {
+      "time": 206,
+      "rmsDbFS": -11.39
+    },
+    {
+      "time": 207,
+      "rmsDbFS": -14.47
+    },
+    {
+      "time": 208,
+      "rmsDbFS": -20.24
+    },
+    {
+      "time": 209,
+      "rmsDbFS": -21.69
+    },
+    {
+      "time": 210,
+      "rmsDbFS": -16.98
+    },
+    {
+      "time": 211,
+      "rmsDbFS": -19.95
+    },
+    {
+      "time": 212,
+      "rmsDbFS": -16.36
+    },
+    {
+      "time": 213,
+      "rmsDbFS": -15.06
+    },
+    {
+      "time": 214,
+      "rmsDbFS": -14.25
+    },
+    {
+      "time": 215,
+      "rmsDbFS": -12.97
+    },
+    {
+      "time": 216,
+      "rmsDbFS": -14.5
+    },
+    {
+      "time": 217,
+      "rmsDbFS": -18.78
+    },
+    {
+      "time": 218,
+      "rmsDbFS": -28.73
+    }
+  ],
+  "decodedPcmDurationSeconds": 219.97351473922902,
+  "sourceStreamDurationSeconds": 219.96
+}

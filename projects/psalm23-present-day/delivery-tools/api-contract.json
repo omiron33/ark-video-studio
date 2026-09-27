@@ -1,0 +1,53 @@
+{
+  "inspectedAt": "2026-09-27T16:23:27.594154+00:00",
+  "remoteRepo": "C:/Users/sjfis/Documents/Codex/orthodox-songbook",
+  "files": [
+    {
+      "path": "scripts/ingest-video.mjs",
+      "sha256": "ff97e407b04a4d9f02495176ede02bdd68b6cc7536b07eae4bc177d7126f1527",
+      "bytes": 2435
+    },
+    {
+      "path": "api/server.mjs",
+      "sha256": "fa56dab233e6a6263f3a339430cfdc32f41539e6f539a0ac35da5084fb2e0baa",
+      "bytes": 51523
+    },
+    {
+      "path": "docs/video-ingest.md",
+      "sha256": "21dc6cb9842670931cae2dfc1aff6f2a128d8e9b1852878aa5f78ca0df2620a2",
+      "bytes": 4308
+    },
+    {
+      "path": "api/video-review.mjs",
+      "sha256": "5992578745bb913e2b8074b71b65b32f4e3518e2cf9a818d922a586f9b6be075",
+      "bytes": 18444
+    },
+    {
+      "path": "api/suno-workflows.mjs",
+      "sha256": "6b978c88a6b322b48b5406962f2c13b9be1aea66070165763c0f73d246e21e26",
+      "bytes": 8481
+    }
+  ],
+  "videoIngest": {
+    "method": "POST",
+    "path": "/api/admin/videos/ingest",
+    "localOnly": true,
+    "deduplication": "MD5",
+    "expectedMd5Supported": true,
+    "defaultStatus": "pending_review",
+    "notesLimit": 5000,
+    "superseding": "opt-in; publisher omits it"
+  },
+  "workflowRegistration": {
+    "module": "api/suno-workflows.mjs",
+    "function": "saveWorkflow",
+    "sourceRead": "listWorkflows",
+    "notesLimit": 4000,
+    "behavior": "Requires complete label/title/style/lyrics fields, preserves existing takes/failures/createdAt; use latest full workflow object plus appended note."
+  },
+  "mediaRoutes": {
+    "rangeSupported": true,
+    "masterQuery": "?download=1&master=1",
+    "thumbnail": "/api/admin/videos/:id/thumbnail"
+  }
+}

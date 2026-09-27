@@ -1,0 +1,49 @@
+{
+  "name": "mercy",
+  "job": "mercy-v1",
+  "provider": "local OmiPC ComfyUI",
+  "model": "MiniMax H3 FL2VA int8 convrot",
+  "checkpoint": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+  "turboLora": "minimax_h3_turbo_v4_step600_ema_pruned_comfyui.safetensors",
+  "steps": 4,
+  "sampler": "MiniMaxH3TurboSampler",
+  "sourceRevision": "1b7316690952a1bdee3cc9da5cdbb6449529aa95",
+  "promptId": "b525dcd1-41cf-4892-9f14-cba6d83806a4",
+  "conditioning": "last_frame_only",
+  "seed": 20260927233,
+  "input": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/inputs/mercy-end-opaque.png",
+  "inputSha256": "88d9b2b8251bf5943470cfe272a9d878a019cbc792d1e63b2e828d686042d298",
+  "imageProvider": "built-in GPT Image",
+  "rawPath": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/raw/mercy-v1.mp4",
+  "rawSha256": "cb95774435edde19081fb7e93c753e9fbbb9c89c5233412bd1af43489e23a78d",
+  "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/assets/video/mercy-motion.mp4",
+  "sha256": "574752ea503e8743184306c6a29a03cd7d7d9436f2585dc09c9c9ff63e5ebd32",
+  "native": {
+    "width": 960,
+    "height": 544,
+    "fps": 24,
+    "frames": 124
+  },
+  "finished": {
+    "width": 960,
+    "height": 540,
+    "fps": 24,
+    "frames": 124,
+    "duration": 5.166666666666667,
+    "audio": false
+  },
+  "processing": "Center crop 2px top/bottom, silent H264 CRF17, no frame interpolation, no speed change, no upscale",
+  "decode": "pass",
+  "firstPoster": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/assets/video/mercy-first.png",
+  "lastPoster": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/assets/video/mercy-last.png",
+  "reviewSheet": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/review/mercy-v1-6fps.jpg",
+  "reviewStatus": "accepted_as_generated_text_experiment_supporting_exact_editable_lyrics",
+  "completedAt": "2026-09-27T16:08:45.347681+00:00",
+  "cost": "local GPU only; no paid API",
+  "review": {
+    "method": "All31 decoded chronological6fps samples plus decoded last poster and full-decode integrity check; no audio",
+    "observations": "Golden water filaments form successive lowercase m, e, r, c, y letter silhouettes from left to right; complete word mercy reads by about3.0s and stays legible through the final frame while fine internal strand highlights continue moving. No sampled extra words, duplicated letters or late spelling mutation. Some incomplete glyphs during0-3s are intentional formation and are not canonical lyric delivery.",
+    "limitations": "Generated lettering has no per-letter timing control and becomes fully readable later than requested halfway mark. Use only when mercy belongs to the active canonical lyric passage; exact editable words must provide timely reading independently. Sixfps samples cannot certify every frame or full-speed smoothness. Final composite requires independent encoded review.",
+    "recommendedComposite": "Screen or luma composite over contemporary imagery with a soft outer vignette. Consider large generated mercy as supporting texture below the active full canonical line, or mask moving filament texture inside exact editable mercy. Do not require this asset alone to carry synchronized word coverage."
+  }
+}

@@ -1,0 +1,524 @@
+[
+  {
+    "id": "p23-l001",
+    "section": "Verse 1",
+    "sectionIndex": 2,
+    "text": "The Lord is my shepherd,",
+    "wordIds": [
+      "p23-l001-w01",
+      "p23-l001-w02",
+      "p23-l001-w03",
+      "p23-l001-w04",
+      "p23-l001-w05"
+    ]
+  },
+  {
+    "id": "p23-l002",
+    "section": "Verse 1",
+    "sectionIndex": 2,
+    "text": "and I shall want nothing.",
+    "wordIds": [
+      "p23-l002-w01",
+      "p23-l002-w02",
+      "p23-l002-w03",
+      "p23-l002-w04",
+      "p23-l002-w05"
+    ]
+  },
+  {
+    "id": "p23-l003",
+    "section": "Verse 1",
+    "sectionIndex": 2,
+    "text": "In a place of green grass",
+    "wordIds": [
+      "p23-l003-w01",
+      "p23-l003-w02",
+      "p23-l003-w03",
+      "p23-l003-w04",
+      "p23-l003-w05",
+      "p23-l003-w06"
+    ]
+  },
+  {
+    "id": "p23-l004",
+    "section": "Verse 1",
+    "sectionIndex": 2,
+    "text": "there he has made me dwell.",
+    "wordIds": [
+      "p23-l004-w01",
+      "p23-l004-w02",
+      "p23-l004-w03",
+      "p23-l004-w04",
+      "p23-l004-w05",
+      "p23-l004-w06"
+    ]
+  },
+  {
+    "id": "p23-l005",
+    "section": "Verse 1",
+    "sectionIndex": 2,
+    "text": "He has nourished me",
+    "wordIds": [
+      "p23-l005-w01",
+      "p23-l005-w02",
+      "p23-l005-w03",
+      "p23-l005-w04"
+    ]
+  },
+  {
+    "id": "p23-l006",
+    "section": "Verse 1",
+    "sectionIndex": 2,
+    "text": "by the water of rest.",
+    "wordIds": [
+      "p23-l006-w01",
+      "p23-l006-w02",
+      "p23-l006-w03",
+      "p23-l006-w04",
+      "p23-l006-w05"
+    ]
+  },
+  {
+    "id": "p23-l007",
+    "section": "Verse 2",
+    "sectionIndex": 3,
+    "text": "He has restored my soul,",
+    "wordIds": [
+      "p23-l007-w01",
+      "p23-l007-w02",
+      "p23-l007-w03",
+      "p23-l007-w04",
+      "p23-l007-w05"
+    ]
+  },
+  {
+    "id": "p23-l008",
+    "section": "Verse 2",
+    "sectionIndex": 3,
+    "text": "he has guided me",
+    "wordIds": [
+      "p23-l008-w01",
+      "p23-l008-w02",
+      "p23-l008-w03",
+      "p23-l008-w04"
+    ]
+  },
+  {
+    "id": "p23-l009",
+    "section": "Verse 2",
+    "sectionIndex": 3,
+    "text": "in the paths of righteousness",
+    "wordIds": [
+      "p23-l009-w01",
+      "p23-l009-w02",
+      "p23-l009-w03",
+      "p23-l009-w04",
+      "p23-l009-w05"
+    ]
+  },
+  {
+    "id": "p23-l010",
+    "section": "Verse 2",
+    "sectionIndex": 3,
+    "text": "for his name's sake.",
+    "wordIds": [
+      "p23-l010-w01",
+      "p23-l010-w02",
+      "p23-l010-w03",
+      "p23-l010-w04"
+    ]
+  },
+  {
+    "id": "p23-l011",
+    "section": "Chorus",
+    "sectionIndex": 4,
+    "text": "Even if I should walk",
+    "wordIds": [
+      "p23-l011-w01",
+      "p23-l011-w02",
+      "p23-l011-w03",
+      "p23-l011-w04",
+      "p23-l011-w05"
+    ]
+  },
+  {
+    "id": "p23-l012",
+    "section": "Chorus",
+    "sectionIndex": 4,
+    "text": "in the shadow of death,",
+    "wordIds": [
+      "p23-l012-w01",
+      "p23-l012-w02",
+      "p23-l012-w03",
+      "p23-l012-w04",
+      "p23-l012-w05"
+    ]
+  },
+  {
+    "id": "p23-l013",
+    "section": "Chorus",
+    "sectionIndex": 4,
+    "text": "I will fear no evil,",
+    "wordIds": [
+      "p23-l013-w01",
+      "p23-l013-w02",
+      "p23-l013-w03",
+      "p23-l013-w04",
+      "p23-l013-w05"
+    ]
+  },
+  {
+    "id": "p23-l014",
+    "section": "Chorus",
+    "sectionIndex": 4,
+    "text": "for you are with me.",
+    "wordIds": [
+      "p23-l014-w01",
+      "p23-l014-w02",
+      "p23-l014-w03",
+      "p23-l014-w04",
+      "p23-l014-w05"
+    ]
+  },
+  {
+    "id": "p23-l015",
+    "section": "Chorus",
+    "sectionIndex": 4,
+    "text": "Your rod and your staff,",
+    "wordIds": [
+      "p23-l015-w01",
+      "p23-l015-w02",
+      "p23-l015-w03",
+      "p23-l015-w04",
+      "p23-l015-w05"
+    ]
+  },
+  {
+    "id": "p23-l016",
+    "section": "Chorus",
+    "sectionIndex": 4,
+    "text": "they have comforted me.",
+    "wordIds": [
+      "p23-l016-w01",
+      "p23-l016-w02",
+      "p23-l016-w03",
+      "p23-l016-w04"
+    ]
+  },
+  {
+    "id": "p23-l017",
+    "section": "Chorus",
+    "sectionIndex": 4,
+    "text": "I will fear no evil.",
+    "wordIds": [
+      "p23-l017-w01",
+      "p23-l017-w02",
+      "p23-l017-w03",
+      "p23-l017-w04",
+      "p23-l017-w05"
+    ]
+  },
+  {
+    "id": "p23-l018",
+    "section": "Verse 3",
+    "sectionIndex": 5,
+    "text": "You have prepared a table before me",
+    "wordIds": [
+      "p23-l018-w01",
+      "p23-l018-w02",
+      "p23-l018-w03",
+      "p23-l018-w04",
+      "p23-l018-w05",
+      "p23-l018-w06",
+      "p23-l018-w07"
+    ]
+  },
+  {
+    "id": "p23-l019",
+    "section": "Verse 3",
+    "sectionIndex": 5,
+    "text": "in the presence of those who afflict me.",
+    "wordIds": [
+      "p23-l019-w01",
+      "p23-l019-w02",
+      "p23-l019-w03",
+      "p23-l019-w04",
+      "p23-l019-w05",
+      "p23-l019-w06",
+      "p23-l019-w07",
+      "p23-l019-w08"
+    ]
+  },
+  {
+    "id": "p23-l020",
+    "section": "Verse 3",
+    "sectionIndex": 5,
+    "text": "You have anointed my head with oil,",
+    "wordIds": [
+      "p23-l020-w01",
+      "p23-l020-w02",
+      "p23-l020-w03",
+      "p23-l020-w04",
+      "p23-l020-w05",
+      "p23-l020-w06",
+      "p23-l020-w07"
+    ]
+  },
+  {
+    "id": "p23-l021",
+    "section": "Verse 3",
+    "sectionIndex": 5,
+    "text": "and your cup cheers me like the best wine.",
+    "wordIds": [
+      "p23-l021-w01",
+      "p23-l021-w02",
+      "p23-l021-w03",
+      "p23-l021-w04",
+      "p23-l021-w05",
+      "p23-l021-w06",
+      "p23-l021-w07",
+      "p23-l021-w08",
+      "p23-l021-w09"
+    ]
+  },
+  {
+    "id": "p23-l022",
+    "section": "Chorus",
+    "sectionIndex": 6,
+    "text": "Even if I should walk",
+    "wordIds": [
+      "p23-l022-w01",
+      "p23-l022-w02",
+      "p23-l022-w03",
+      "p23-l022-w04",
+      "p23-l022-w05"
+    ]
+  },
+  {
+    "id": "p23-l023",
+    "section": "Chorus",
+    "sectionIndex": 6,
+    "text": "in the shadow of death,",
+    "wordIds": [
+      "p23-l023-w01",
+      "p23-l023-w02",
+      "p23-l023-w03",
+      "p23-l023-w04",
+      "p23-l023-w05"
+    ]
+  },
+  {
+    "id": "p23-l024",
+    "section": "Chorus",
+    "sectionIndex": 6,
+    "text": "I will fear no evil,",
+    "wordIds": [
+      "p23-l024-w01",
+      "p23-l024-w02",
+      "p23-l024-w03",
+      "p23-l024-w04",
+      "p23-l024-w05"
+    ]
+  },
+  {
+    "id": "p23-l025",
+    "section": "Chorus",
+    "sectionIndex": 6,
+    "text": "for you are with me.",
+    "wordIds": [
+      "p23-l025-w01",
+      "p23-l025-w02",
+      "p23-l025-w03",
+      "p23-l025-w04",
+      "p23-l025-w05"
+    ]
+  },
+  {
+    "id": "p23-l026",
+    "section": "Chorus",
+    "sectionIndex": 6,
+    "text": "Your rod and your staff,",
+    "wordIds": [
+      "p23-l026-w01",
+      "p23-l026-w02",
+      "p23-l026-w03",
+      "p23-l026-w04",
+      "p23-l026-w05"
+    ]
+  },
+  {
+    "id": "p23-l027",
+    "section": "Chorus",
+    "sectionIndex": 6,
+    "text": "they have comforted me.",
+    "wordIds": [
+      "p23-l027-w01",
+      "p23-l027-w02",
+      "p23-l027-w03",
+      "p23-l027-w04"
+    ]
+  },
+  {
+    "id": "p23-l028",
+    "section": "Chorus",
+    "sectionIndex": 6,
+    "text": "I will fear no evil.",
+    "wordIds": [
+      "p23-l028-w01",
+      "p23-l028-w02",
+      "p23-l028-w03",
+      "p23-l028-w04",
+      "p23-l028-w05"
+    ]
+  },
+  {
+    "id": "p23-l029",
+    "section": "Bridge",
+    "sectionIndex": 7,
+    "text": "Your mercy shall follow me",
+    "wordIds": [
+      "p23-l029-w01",
+      "p23-l029-w02",
+      "p23-l029-w03",
+      "p23-l029-w04",
+      "p23-l029-w05"
+    ]
+  },
+  {
+    "id": "p23-l030",
+    "section": "Bridge",
+    "sectionIndex": 7,
+    "text": "all the days of my life.",
+    "wordIds": [
+      "p23-l030-w01",
+      "p23-l030-w02",
+      "p23-l030-w03",
+      "p23-l030-w04",
+      "p23-l030-w05",
+      "p23-l030-w06"
+    ]
+  },
+  {
+    "id": "p23-l031",
+    "section": "Bridge",
+    "sectionIndex": 7,
+    "text": "Your mercy shall follow me",
+    "wordIds": [
+      "p23-l031-w01",
+      "p23-l031-w02",
+      "p23-l031-w03",
+      "p23-l031-w04",
+      "p23-l031-w05"
+    ]
+  },
+  {
+    "id": "p23-l032",
+    "section": "Bridge",
+    "sectionIndex": 7,
+    "text": "all the days of my life.",
+    "wordIds": [
+      "p23-l032-w01",
+      "p23-l032-w02",
+      "p23-l032-w03",
+      "p23-l032-w04",
+      "p23-l032-w05",
+      "p23-l032-w06"
+    ]
+  },
+  {
+    "id": "p23-l033",
+    "section": "Final Chorus",
+    "sectionIndex": 8,
+    "text": "I will fear no evil,",
+    "wordIds": [
+      "p23-l033-w01",
+      "p23-l033-w02",
+      "p23-l033-w03",
+      "p23-l033-w04",
+      "p23-l033-w05"
+    ]
+  },
+  {
+    "id": "p23-l034",
+    "section": "Final Chorus",
+    "sectionIndex": 8,
+    "text": "for you are with me.",
+    "wordIds": [
+      "p23-l034-w01",
+      "p23-l034-w02",
+      "p23-l034-w03",
+      "p23-l034-w04",
+      "p23-l034-w05"
+    ]
+  },
+  {
+    "id": "p23-l035",
+    "section": "Final Chorus",
+    "sectionIndex": 8,
+    "text": "The Lord is my shepherd,",
+    "wordIds": [
+      "p23-l035-w01",
+      "p23-l035-w02",
+      "p23-l035-w03",
+      "p23-l035-w04",
+      "p23-l035-w05"
+    ]
+  },
+  {
+    "id": "p23-l036",
+    "section": "Final Chorus",
+    "sectionIndex": 8,
+    "text": "and I shall want nothing.",
+    "wordIds": [
+      "p23-l036-w01",
+      "p23-l036-w02",
+      "p23-l036-w03",
+      "p23-l036-w04",
+      "p23-l036-w05"
+    ]
+  },
+  {
+    "id": "p23-l037",
+    "section": "Outro",
+    "sectionIndex": 9,
+    "text": "And I shall dwell in the house of the Lord",
+    "wordIds": [
+      "p23-l037-w01",
+      "p23-l037-w02",
+      "p23-l037-w03",
+      "p23-l037-w04",
+      "p23-l037-w05",
+      "p23-l037-w06",
+      "p23-l037-w07",
+      "p23-l037-w08",
+      "p23-l037-w09",
+      "p23-l037-w10"
+    ]
+  },
+  {
+    "id": "p23-l038",
+    "section": "Outro",
+    "sectionIndex": 9,
+    "text": "for a very long time.",
+    "wordIds": [
+      "p23-l038-w01",
+      "p23-l038-w02",
+      "p23-l038-w03",
+      "p23-l038-w04",
+      "p23-l038-w05"
+    ]
+  },
+  {
+    "id": "p23-l039",
+    "section": "Outro",
+    "sectionIndex": 9,
+    "text": "The Lord is my shepherd.",
+    "wordIds": [
+      "p23-l039-w01",
+      "p23-l039-w02",
+      "p23-l039-w03",
+      "p23-l039-w04",
+      "p23-l039-w05"
+    ]
+  }
+]

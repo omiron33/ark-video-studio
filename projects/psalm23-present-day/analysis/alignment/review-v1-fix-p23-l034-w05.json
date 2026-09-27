@@ -1,0 +1,580 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "32885123-f4b6-42e6-a546-f4acba404829.m4a",
+    "offset": 170.342255,
+    "duration": 23.53568200000001,
+    "audioDuration": 219.96,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "will fear no evil, for you are with me. The Lord is my shepherd, and I shall want nothing. And I shall dwell in the house of the Lord for a",
+  "approvedLyrics": "will fear no evil, for you are with me. The Lord is my shepherd, and I shall want nothing. And I shall dwell in the house of the Lord for a",
+  "words": [
+    {
+      "id": "w_e308e8a4a8325d00",
+      "text": "will",
+      "start": 171.142789,
+      "end": 171.382949,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9640582247754177,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l033-w02"
+    },
+    {
+      "id": "w_9d94dc162085b199",
+      "text": "fear",
+      "start": 171.523042,
+      "end": 172.063402,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9734678602175411,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l033-w03"
+    },
+    {
+      "id": "w_c62f313f23ebd0d5",
+      "text": "no",
+      "start": 172.483682,
+      "end": 172.763869,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9812318568853842,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l033-w04"
+    },
+    {
+      "id": "w_2e5fa15363698b4f",
+      "text": "evil,",
+      "start": 173.644456,
+      "end": 174.044723,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9476910349292287,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l033-w05"
+    },
+    {
+      "id": "w_17c6d6813590923d",
+      "text": "for",
+      "start": 174.92531,
+      "end": 175.065403,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9964374313622542,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l034-w01"
+    },
+    {
+      "id": "w_de9292a40808f436",
+      "text": "you",
+      "start": 175.185483,
+      "end": 175.445657,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9870880721936242,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l034-w02"
+    },
+    {
+      "id": "w_b955552585f775d5",
+      "text": "are",
+      "start": 176.00603,
+      "end": 176.206164,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.7917788281465081,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l034-w03"
+    },
+    {
+      "id": "w_22f387cb489daeb3",
+      "text": "with",
+      "start": 176.326244,
+      "end": 176.586417,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9917116768911716,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l034-w04"
+    },
+    {
+      "id": "w_e022a438cf780beb",
+      "text": "me.",
+      "start": 176.766537,
+      "end": 177.046724,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9991958281185643,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l034-w05"
+    },
+    {
+      "id": "w_a29244eb5c405aba",
+      "text": "The",
+      "start": 178.567738,
+      "end": 178.647791,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9992727145319726,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l035-w01"
+    },
+    {
+      "id": "w_d0fa4e0022151caf",
+      "text": "Lord",
+      "start": 178.787884,
+      "end": 179.228178,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9887675265021403,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l035-w02"
+    },
+    {
+      "id": "w_50a49fd5be84c063",
+      "text": "is",
+      "start": 179.368271,
+      "end": 179.448325,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9977910676330347,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l035-w03"
+    },
+    {
+      "id": "w_5d85545d9a3f4ab5",
+      "text": "my",
+      "start": 179.668471,
+      "end": 179.908631,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.8849091812916025,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l035-w04"
+    },
+    {
+      "id": "w_d291859c21e67cc9",
+      "text": "shepherd,",
+      "start": 180.068738,
+      "end": 180.649125,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.10416988649367528,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l035-w05"
+    },
+    {
+      "id": "w_e075ea9084425397",
+      "text": "and",
+      "start": 182.210165,
+      "end": 182.310232,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.8088783783802577,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l036-w01"
+    },
+    {
+      "id": "w_c547ff562e4ec596",
+      "text": "I",
+      "start": 182.550392,
+      "end": 182.570406,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.553069819280532,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l036-w02"
+    },
+    {
+      "id": "w_0cc9fd815e5d814f",
+      "text": "shall",
+      "start": 182.730512,
+      "end": 183.250859,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9524992110191238,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l036-w03"
+    },
+    {
+      "id": "w_45eaaef4bb04d2a4",
+      "text": "want",
+      "start": 183.330912,
+      "end": 183.631113,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.2583820470900827,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l036-w04"
+    },
+    {
+      "id": "w_58f763ae477077ea",
+      "text": "nothing.",
+      "start": 183.751193,
+      "end": 184.151459,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9745564388484114,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l036-w05"
+    },
+    {
+      "id": "w_5f78e263932e3b40",
+      "text": "And",
+      "start": 186.693154,
+      "end": 186.773207,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9114499319519658,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l037-w01"
+    },
+    {
+      "id": "w_62b3652f788de541",
+      "text": "I",
+      "start": 186.993354,
+      "end": 187.013367,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.4461058863909267,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l037-w02"
+    },
+    {
+      "id": "w_86bb059d4fbbc942",
+      "text": "shall",
+      "start": 187.133447,
+      "end": 187.553727,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.46536748698666636,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l037-w03"
+    },
+    {
+      "id": "w_55ad3c19afa397a1",
+      "text": "dwell",
+      "start": 187.593754,
+      "end": 187.933981,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.1602553295584114,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l037-w04"
+    },
+    {
+      "id": "w_a009650eee347031",
+      "text": "in",
+      "start": 189.194821,
+      "end": 189.254861,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9469394172748506,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l037-w05"
+    },
+    {
+      "id": "w_68f6f2e9a18820f0",
+      "text": "the",
+      "start": 189.334914,
+      "end": 189.434981,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.99548514849224,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l037-w06"
+    },
+    {
+      "id": "w_d237e363da28bdfa",
+      "text": "house",
+      "start": 189.575074,
+      "end": 189.975341,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9763512201139554,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l037-w07"
+    },
+    {
+      "id": "w_ebf20c580efda887",
+      "text": "of",
+      "start": 190.295555,
+      "end": 190.395621,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9989688090920749,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l037-w08"
+    },
+    {
+      "id": "w_17d7112affa57a00",
+      "text": "the",
+      "start": 190.495688,
+      "end": 190.675808,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9743725603766004,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l037-w09"
+    },
+    {
+      "id": "w_2620b28b8bbf1cef",
+      "text": "Lord",
+      "start": 190.915968,
+      "end": 191.356262,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9904363204381765,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l037-w10"
+    },
+    {
+      "id": "w_ec60530666826577",
+      "text": "for",
+      "start": 192.717169,
+      "end": 192.937316,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9882074189442139,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l038-w01"
+    },
+    {
+      "id": "w_b2360c51ae30d6b7",
+      "text": "a",
+      "start": 193.377609,
+      "end": 193.397622,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.005397052161678242,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "p23-l038-w02"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "will fear no evil, for you are with me. The Lord is my shepherd, and I shall want nothing. And I shall dwell in the house of the Lord for a",
+      "wordIds": [
+        "w_e308e8a4a8325d00",
+        "w_9d94dc162085b199",
+        "w_c62f313f23ebd0d5",
+        "w_2e5fa15363698b4f",
+        "w_17c6d6813590923d",
+        "w_de9292a40808f436",
+        "w_b955552585f775d5",
+        "w_22f387cb489daeb3",
+        "w_e022a438cf780beb",
+        "w_a29244eb5c405aba",
+        "w_d0fa4e0022151caf",
+        "w_50a49fd5be84c063",
+        "w_5d85545d9a3f4ab5",
+        "w_d291859c21e67cc9",
+        "w_e075ea9084425397",
+        "w_c547ff562e4ec596",
+        "w_0cc9fd815e5d814f",
+        "w_45eaaef4bb04d2a4",
+        "w_58f763ae477077ea",
+        "w_5f78e263932e3b40",
+        "w_62b3652f788de541",
+        "w_86bb059d4fbbc942",
+        "w_55ad3c19afa397a1",
+        "w_a009650eee347031",
+        "w_68f6f2e9a18820f0",
+        "w_d237e363da28bdfa",
+        "w_ebf20c580efda887",
+        "w_17d7112affa57a00",
+        "w_2620b28b8bbf1cef",
+        "w_ec60530666826577",
+        "w_b2360c51ae30d6b7"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "executionEvidence": {
+    "mode": "persistent-pass-cache",
+    "workerCodeSha256": "f79248815aeac1418c2de993edddc61a855af2c93c95043354196c07993efc18"
+  },
+  "cacheEvidence": {
+    "key": "62fcde776e590dc12ee7f8258d9f2b45ae97d6b1af14200c4eddc277dddfc793",
+    "cacheHit": true,
+    "entryPath": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/.review-cache/audio/62fcde776e590dc12ee7f8258d9f2b45ae97d6b1af14200c4eddc277dddfc793.json",
+    "resultSha256": "f71efbf0b8d3870972a997813272776d42712589dff6d40fe6b560accca5279d",
+    "currentInput": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/sources/32885123-f4b6-42e6-a546-f4acba404829.m4a",
+    "currentInputSha256": "3669040e797c9d2bf8b4136dc4c029c6e1ed51f302ccc411d1888ae50da80c8f",
+    "decodedAudio": {
+      "sha256": "ecb7ec2029ad3f4c315d68b954ab2d85a169d4c53fc9c0707364302873064d21",
+      "format": "mono-s16le-16000",
+      "samples": 376571
+    },
+    "model": {
+      "path": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+      "sha256": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+    },
+    "runtimeSha256": "50a5d8ee887a89b9619cdbc8bba1bb53ab5f6cde3275aee01aa7f5b03c19eeba"
+  }
+}

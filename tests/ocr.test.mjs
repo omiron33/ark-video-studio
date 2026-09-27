@@ -5,7 +5,7 @@ import path from 'node:path';
 import os from 'node:os';
 import {createCanvas} from '@napi-rs/canvas';
 import {runProcess} from '../engine/export.mjs';
-import {reviewLyricVisibility,visibilityWindows,verifyOCREvidence} from '../engine/ocr.mjs';
+import {reviewLyricVisibility,visibilityWindows,verifyOCREvidence,recognizeFrames} from '../engine/ocr.mjs';
 import {sha256File} from '../engine/gauntlet.mjs';
 
 test('OCR visibility windows respect authored portal and submerge exits',()=>{
@@ -63,4 +63,20 @@ test('nearby subframe OCR samples keep distinct encoded pictures and reject chan
   await writeFile(first.path,await readFile(second.path));
   const changed=await verifyOCREvidence(report.evidence);assert.equal(changed.passed,false);assert.ok(changed.errors.some(e=>e.path===first.path&&e.error==='Evidence hash changed'));
   await rm(second.path);const missing=await verifyOCREvidence(report.evidence);assert.equal(missing.passed,false);assert.ok(missing.errors.some(e=>e.path===second.path&&e.error.startsWith('Evidence unavailable:')));
+});
+
+
+test('opt-in native batches preserve upright and rotated pixel observations', {skip:process.platform!=='darwin',timeout:180000},async t=>{
+  const dir=await mkdtemp(path.join(os.tmpdir(),'ark-ocr-batches-'));t.after(()=>rm(dir,{recursive:true,force:true}));
+  const canvas=createCanvas(640,360),c=canvas.getContext('2d');
+  c.fillStyle='#081b21';c.fillRect(0,0,640,360);c.fillStyle='#fff';c.font='bold 68px Arial';c.textAlign='center';c.fillText('MERCY',320,190);
+  const paths=[];
+  for(let i=0;i<3;i++){const png=path.join(dir,`frame-${i}.png`);await writeFile(png,canvas.toBuffer('image/png'));paths.push(png)}
+  const options={paths,outDir:dir,orientations:[1,6,8,3]};
+  const single=await recognizeFrames(options),batched=await recognizeFrames({...options,nativeBatchSize:2});
+  assert.deepEqual(batched.frames,single.frames,'Batching must preserve actual native observations and ordering');
+  assert.equal(batched.sourceHash,single.sourceHash);assert.equal(batched.frames.length,12);
+  assert.deepEqual(batched.nativeBatches.map(b=>[b.offset,b.imageCount,b.recognitionCount]),[[0,2,8],[2,1,4]]);
+  assert.ok(batched.frames.some(f=>f.lines.some(l=>l.text==='MERCY')));
+  for(const nativeBatchSize of [0,-1,1.5,NaN])await assert.rejects(recognizeFrames({...options,nativeBatchSize}),/positive integer/);
 });

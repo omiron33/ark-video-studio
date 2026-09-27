@@ -1,0 +1,22 @@
+{
+  "status": "delivered_for_user_review",
+  "videoSha256": "e483e690ef13766ee4e04414711d0826209151d3beab5a91864c113758f3e4f2",
+  "renderSourceRevision": "2e18115e199808003cf4dcae527fe15c105e254a4e70bdf3b19701557fc07787",
+  "videoLocal": "/Users/shanefisher/Movies/Psalm23/Psalm 23 - Held in the Ordinary.mp4",
+  "photosAlbum": "Psalm 23 - Held in the Ordinary",
+  "candidateId": "vid-20260927-31bdda7a",
+  "watchUrl": "https://omipc.taild60b4e.ts.net/api/admin/videos/vid-20260927-31bdda7a/media",
+  "downloadUrl": "https://omipc.taild60b4e.ts.net/api/admin/videos/vid-20260927-31bdda7a/media?download=1&master=1",
+  "reviewUrl": "https://omipc.taild60b4e.ts.net/studio#videos",
+  "visualReview": "independent_review_passed",
+  "ocrWordsRecognized": 210,
+  "distinctMotionMechanisms": 31,
+  "strictAudio": {
+    "status": "documented_exception_not_certified",
+    "passed": 153,
+    "unsupported": 55,
+    "disputed": 2
+  },
+  "userApproved": false,
+  "evidence": "analysis/final-review/evidence-manifest.json"
+}

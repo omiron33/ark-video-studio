@@ -1,0 +1,9 @@
+{
+  "duration": 219.96,
+  "assertions": [
+    {"kind":"appearsBy","selector":"#opening .title-word","bySec":0.8},
+    {"kind":"staysInFrame","selector":"#opening .title-word"},
+    {"kind":"staysInFrame","selector":"#p23-l031-w02"},
+    {"kind":"staysInFrame","selector":"#ending .ending-title"}
+  ]
+}

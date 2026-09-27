@@ -1,0 +1,41 @@
+{
+  "createdAt": "2026-09-27T16:07:14.455774+00:00",
+  "inputs": [
+    {
+      "file": "projects/psalm23-present-day/video-generation/inputs/shelter-end.png",
+      "sha256": "efeba980cd16ff9ee5fa19078fe764e41ea04f5d9defe6c4bdb88bc41af20130",
+      "provider": "built-in GPT Image",
+      "originalPath": "/Users/shanefisher/.codex/generated_images/01a0e397-e41e-70b0-9c11-4b1a4f04263a/exec-5ae34c75-3095-43d2-bb06-8b789022a89d.png",
+      "exactPrompt": "projects/psalm23-present-day/video-generation/inputs/shelter-image-prompt.txt",
+      "role": "final frame conditioning",
+      "notes": "Original generated input; no image manipulation."
+    },
+    {
+      "file": "projects/psalm23-present-day/video-generation/inputs/water-first.png",
+      "sha256": "42900c61e4055c0119044d6982356bbb7aa0c020e4e3fa1757df8306b996234b",
+      "provider": "built-in GPT Image",
+      "originalPath": "/Users/shanefisher/.codex/generated_images/01a0e397-e41e-70b0-9c11-4b1a4f04263a/exec-55b17483-2dd7-49e2-9e9a-a8834cd04b63.png",
+      "exactPrompt": "projects/psalm23-present-day/video-generation/inputs/water-image-prompt.txt",
+      "role": "first frame conditioning",
+      "notes": "Original generated input; no image manipulation."
+    },
+    {
+      "file": "projects/psalm23-present-day/video-generation/inputs/mercy-end.png",
+      "sha256": "e5d5214e5f218dddd437bdc382f8cadedddae5ff0102bd3ed306074a96fa0a92",
+      "provider": "built-in GPT Image",
+      "originalPath": "/Users/shanefisher/.codex/generated_images/01a0e397-e41e-70b0-9c11-4b1a4f04263a/exec-7cf1f6d0-ad96-4ffc-9423-fec41ac36ee3.png",
+      "exactPrompt": "projects/psalm23-present-day/video-generation/inputs/mercy-image-prompt.txt",
+      "role": "final frame conditioning",
+      "notes": "Original mercy returned unwanted alpha; preserved, then targeted GPT Image edit produced opaque backing. Only opaque revision used in H3."
+    },
+    {
+      "file": "projects/psalm23-present-day/video-generation/inputs/mercy-end-opaque.png",
+      "sha256": "88d9b2b8251bf5943470cfe272a9d878a019cbc792d1e63b2e828d686042d298",
+      "provider": "built-in GPT Image",
+      "originalPath": "/Users/shanefisher/.codex/generated_images/01a0e397-e41e-70b0-9c11-4b1a4f04263a/exec-9773d392-12f9-46dd-b9eb-111c18a05ff4.png",
+      "exactPrompt": "projects/psalm23-present-day/video-generation/inputs/mercy-image-edit-prompt.txt",
+      "role": "final frame conditioning",
+      "notes": "Original mercy returned unwanted alpha; preserved, then targeted GPT Image edit produced opaque backing. Only opaque revision used in H3."
+    }
+  ]
+}

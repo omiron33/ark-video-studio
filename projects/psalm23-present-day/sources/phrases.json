@@ -1,0 +1,2035 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "duration": 219.96,
+  "status": "machine_estimate",
+  "phrases": [
+    {
+      "id": "p23-l001",
+      "text": "The Lord is my shepherd,",
+      "start": 15.193455,
+      "end": 17.700253,
+      "wordIds": [
+        "p23-l001-w01",
+        "p23-l001-w02",
+        "p23-l001-w03",
+        "p23-l001-w04",
+        "p23-l001-w05"
+      ],
+      "words": [
+        {
+          "id": "p23-l001-w01",
+          "text": "The",
+          "start": 15.193455,
+          "end": 15.273672
+        },
+        {
+          "id": "p23-l001-w02",
+          "text": "Lord",
+          "start": 15.393998,
+          "end": 15.855249
+        },
+        {
+          "id": "p23-l001-w03",
+          "text": "is",
+          "start": 16.015684,
+          "end": 16.095902
+        },
+        {
+          "id": "p23-l001-w04",
+          "text": "my",
+          "start": 16.302354,
+          "end": 16.502478
+        },
+        {
+          "id": "p23-l001-w05",
+          "text": "shepherd,",
+          "start": 16.677479,
+          "end": 17.700253
+        }
+      ],
+      "sourceSection": "Verse 1",
+      "sourceSectionIndex": 2,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 5
+    },
+    {
+      "id": "p23-l002",
+      "text": "and I shall want nothing.",
+      "start": 19.344238,
+      "end": 21.303006,
+      "wordIds": [
+        "p23-l002-w01",
+        "p23-l002-w02",
+        "p23-l002-w03",
+        "p23-l002-w04",
+        "p23-l002-w05"
+      ],
+      "words": [
+        {
+          "id": "p23-l002-w01",
+          "text": "and",
+          "start": 19.344238,
+          "end": 19.464312
+        },
+        {
+          "id": "p23-l002-w02",
+          "text": "I",
+          "start": 19.69761,
+          "end": 19.717678
+        },
+        {
+          "id": "p23-l002-w03",
+          "text": "shall",
+          "start": 19.878217,
+          "end": 20.339768
+        },
+        {
+          "id": "p23-l002-w04",
+          "text": "want",
+          "start": 20.424907,
+          "end": 20.765118
+        },
+        {
+          "id": "p23-l002-w05",
+          "text": "nothing.",
+          "start": 20.881589,
+          "end": 21.303006
+        }
+      ],
+      "sourceSection": "Verse 1",
+      "sourceSectionIndex": 2,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 5
+    },
+    {
+      "id": "p23-l003",
+      "text": "In a place of green grass",
+      "start": 22.423168,
+      "end": 24.929356,
+      "wordIds": [
+        "p23-l003-w01",
+        "p23-l003-w02",
+        "p23-l003-w03",
+        "p23-l003-w04",
+        "p23-l003-w05",
+        "p23-l003-w06"
+      ],
+      "words": [
+        {
+          "id": "p23-l003-w01",
+          "text": "In",
+          "start": 22.423168,
+          "end": 22.463267
+        },
+        {
+          "id": "p23-l003-w02",
+          "text": "a",
+          "start": 22.566233,
+          "end": 22.586245
+        },
+        {
+          "id": "p23-l003-w03",
+          "text": "place",
+          "start": 22.643713,
+          "end": 23.14495
+        },
+        {
+          "id": "p23-l003-w04",
+          "text": "of",
+          "start": 23.260747,
+          "end": 23.300872
+        },
+        {
+          "id": "p23-l003-w05",
+          "text": "green",
+          "start": 23.401183,
+          "end": 23.882675
+        },
+        {
+          "id": "p23-l003-w06",
+          "text": "grass",
+          "start": 24.067228,
+          "end": 24.929356
+        }
+      ],
+      "sourceSection": "Verse 1",
+      "sourceSectionIndex": 2,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 5
+    },
+    {
+      "id": "p23-l004",
+      "text": "there he has made me dwell.",
+      "start": 25.859911,
+      "end": 28.185833,
+      "wordIds": [
+        "p23-l004-w01",
+        "p23-l004-w02",
+        "p23-l004-w03",
+        "p23-l004-w04",
+        "p23-l004-w05",
+        "p23-l004-w06"
+      ],
+      "words": [
+        {
+          "id": "p23-l004-w01",
+          "text": "there",
+          "start": 25.859911,
+          "end": 26.240881
+        },
+        {
+          "id": "p23-l004-w02",
+          "text": "he",
+          "start": 26.361188,
+          "end": 26.521596
+        },
+        {
+          "id": "p23-l004-w03",
+          "text": "has",
+          "start": 26.661953,
+          "end": 26.862464
+        },
+        {
+          "id": "p23-l004-w04",
+          "text": "made",
+          "start": 27.002821,
+          "end": 27.303587
+        },
+        {
+          "id": "p23-l004-w05",
+          "text": "me",
+          "start": 27.463995,
+          "end": 27.584301
+        },
+        {
+          "id": "p23-l004-w06",
+          "text": "dwell.",
+          "start": 27.684557,
+          "end": 28.185833
+        }
+      ],
+      "sourceSection": "Verse 1",
+      "sourceSectionIndex": 2,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 6
+    },
+    {
+      "id": "p23-l005",
+      "text": "He has nourished me",
+      "start": 30.442924,
+      "end": 32.646965,
+      "wordIds": [
+        "p23-l005-w01",
+        "p23-l005-w02",
+        "p23-l005-w03",
+        "p23-l005-w04"
+      ],
+      "words": [
+        {
+          "id": "p23-l005-w01",
+          "text": "He",
+          "start": 30.442924,
+          "end": 30.844094
+        },
+        {
+          "id": "p23-l005-w02",
+          "text": "has",
+          "start": 31.103809,
+          "end": 31.54471
+        },
+        {
+          "id": "p23-l005-w03",
+          "text": "nourished",
+          "start": 31.771933,
+          "end": 32.372305
+        },
+        {
+          "id": "p23-l005-w04",
+          "text": "me",
+          "start": 32.466596,
+          "end": 32.646965
+        }
+      ],
+      "sourceSection": "Verse 1",
+      "sourceSectionIndex": 2,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 3
+    },
+    {
+      "id": "p23-l006",
+      "text": "by the water of rest.",
+      "start": 36.766482,
+      "end": 38.988729,
+      "wordIds": [
+        "p23-l006-w01",
+        "p23-l006-w02",
+        "p23-l006-w03",
+        "p23-l006-w04",
+        "p23-l006-w05"
+      ],
+      "words": [
+        {
+          "id": "p23-l006-w01",
+          "text": "by",
+          "start": 36.766482,
+          "end": 36.906799
+        },
+        {
+          "id": "p23-l006-w02",
+          "text": "the",
+          "start": 37.007026,
+          "end": 37.107252
+        },
+        {
+          "id": "p23-l006-w03",
+          "text": "water",
+          "start": 37.225704,
+          "end": 37.646426
+        },
+        {
+          "id": "p23-l006-w04",
+          "text": "of",
+          "start": 38.229791,
+          "end": 38.309972
+        },
+        {
+          "id": "p23-l006-w05",
+          "text": "rest.",
+          "start": 38.608076,
+          "end": 38.988729
+        }
+      ],
+      "sourceSection": "Verse 1",
+      "sourceSectionIndex": 2,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 3
+    },
+    {
+      "id": "p23-l007",
+      "text": "He has restored my soul,",
+      "start": 43.834005,
+      "end": 46.789432,
+      "wordIds": [
+        "p23-l007-w01",
+        "p23-l007-w02",
+        "p23-l007-w03",
+        "p23-l007-w04",
+        "p23-l007-w05"
+      ],
+      "words": [
+        {
+          "id": "p23-l007-w01",
+          "text": "He",
+          "start": 43.834005,
+          "end": 43.954365
+        },
+        {
+          "id": "p23-l007-w02",
+          "text": "has",
+          "start": 44.054665,
+          "end": 44.235205
+        },
+        {
+          "id": "p23-l007-w03",
+          "text": "restored",
+          "start": 44.315445,
+          "end": 45.057666
+        },
+        {
+          "id": "p23-l007-w04",
+          "text": "my",
+          "start": 45.218146,
+          "end": 45.559166
+        },
+        {
+          "id": "p23-l007-w05",
+          "text": "soul,",
+          "start": 45.807576,
+          "end": 46.789432
+        }
+      ],
+      "sourceSection": "Verse 2",
+      "sourceSectionIndex": 3,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 4
+    },
+    {
+      "id": "p23-l008",
+      "text": "he has guided me",
+      "start": 48.399535,
+      "end": 49.74861,
+      "wordIds": [
+        "p23-l008-w01",
+        "p23-l008-w02",
+        "p23-l008-w03",
+        "p23-l008-w04"
+      ],
+      "words": [
+        {
+          "id": "p23-l008-w01",
+          "text": "he",
+          "start": 48.399535,
+          "end": 48.540063
+        },
+        {
+          "id": "p23-l008-w02",
+          "text": "has",
+          "start": 48.640441,
+          "end": 48.740818
+        },
+        {
+          "id": "p23-l008-w03",
+          "text": "guided",
+          "start": 48.847608,
+          "end": 49.608454
+        },
+        {
+          "id": "p23-l008-w04",
+          "text": "me",
+          "start": 49.708565,
+          "end": 49.74861
+        }
+      ],
+      "sourceSection": "Verse 2",
+      "sourceSectionIndex": 3,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 2
+    },
+    {
+      "id": "p23-l009",
+      "text": "in the paths of righteousness",
+      "start": 51.522665,
+      "end": 53.769811,
+      "wordIds": [
+        "p23-l009-w01",
+        "p23-l009-w02",
+        "p23-l009-w03",
+        "p23-l009-w04",
+        "p23-l009-w05"
+      ],
+      "words": [
+        {
+          "id": "p23-l009-w01",
+          "text": "in",
+          "start": 51.522665,
+          "end": 51.562793
+        },
+        {
+          "id": "p23-l009-w02",
+          "text": "the",
+          "start": 51.623082,
+          "end": 51.68327
+        },
+        {
+          "id": "p23-l009-w03",
+          "text": "paths",
+          "start": 51.763428,
+          "end": 52.365336
+        },
+        {
+          "id": "p23-l009-w04",
+          "text": "of",
+          "start": 52.566038,
+          "end": 52.606164
+        },
+        {
+          "id": "p23-l009-w05",
+          "text": "righteousness",
+          "start": 52.726541,
+          "end": 53.769811
+        }
+      ],
+      "sourceSection": "Verse 2",
+      "sourceSectionIndex": 3,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 3
+    },
+    {
+      "id": "p23-l010",
+      "text": "for his name's sake.",
+      "start": 55.648075,
+      "end": 57.613027,
+      "wordIds": [
+        "p23-l010-w01",
+        "p23-l010-w02",
+        "p23-l010-w03",
+        "p23-l010-w04"
+      ],
+      "words": [
+        {
+          "id": "p23-l010-w01",
+          "text": "for",
+          "start": 55.648075,
+          "end": 55.828891
+        },
+        {
+          "id": "p23-l010-w02",
+          "text": "his",
+          "start": 55.909254,
+          "end": 56.090071
+        },
+        {
+          "id": "p23-l010-w03",
+          "text": "name's",
+          "start": 56.215795,
+          "end": 57.05673
+        },
+        {
+          "id": "p23-l010-w04",
+          "text": "sake.",
+          "start": 57.212888,
+          "end": 57.613027
+        }
+      ],
+      "sourceSection": "Verse 2",
+      "sourceSectionIndex": 3,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 3
+    },
+    {
+      "id": "p23-l011",
+      "text": "Even if I should walk",
+      "start": 58.713054,
+      "end": 60.802376,
+      "wordIds": [
+        "p23-l011-w01",
+        "p23-l011-w02",
+        "p23-l011-w03",
+        "p23-l011-w04",
+        "p23-l011-w05"
+      ],
+      "words": [
+        {
+          "id": "p23-l011-w01",
+          "text": "Even",
+          "start": 58.713054,
+          "end": 58.953779
+        },
+        {
+          "id": "p23-l011-w02",
+          "text": "if",
+          "start": 59.121326,
+          "end": 59.261413
+        },
+        {
+          "id": "p23-l011-w03",
+          "text": "I",
+          "start": 59.555589,
+          "end": 59.575649
+        },
+        {
+          "id": "p23-l011-w04",
+          "text": "should",
+          "start": 59.881801,
+          "end": 60.202001
+        },
+        {
+          "id": "p23-l011-w05",
+          "text": "walk",
+          "start": 60.382114,
+          "end": 60.802376
+        }
+      ],
+      "sourceSection": "Chorus",
+      "sourceSectionIndex": 4,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 5
+    },
+    {
+      "id": "p23-l012",
+      "text": "in the shadow of death,",
+      "start": 62.303315,
+      "end": 64.484678,
+      "wordIds": [
+        "p23-l012-w01",
+        "p23-l012-w02",
+        "p23-l012-w03",
+        "p23-l012-w04",
+        "p23-l012-w05"
+      ],
+      "words": [
+        {
+          "id": "p23-l012-w01",
+          "text": "in",
+          "start": 62.303315,
+          "end": 62.34334
+        },
+        {
+          "id": "p23-l012-w02",
+          "text": "the",
+          "start": 62.42339,
+          "end": 62.50344
+        },
+        {
+          "id": "p23-l012-w03",
+          "text": "shadow",
+          "start": 62.603819,
+          "end": 63.404285
+        },
+        {
+          "id": "p23-l012-w04",
+          "text": "of",
+          "start": 63.86429,
+          "end": 63.94434
+        },
+        {
+          "id": "p23-l012-w05",
+          "text": "death,",
+          "start": 64.064415,
+          "end": 64.484678
+        }
+      ],
+      "sourceSection": "Chorus",
+      "sourceSectionIndex": 4,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 2
+    },
+    {
+      "id": "p23-l013",
+      "text": "I will fear no evil,",
+      "start": 65.825516,
+      "end": 68.827392,
+      "wordIds": [
+        "p23-l013-w01",
+        "p23-l013-w02",
+        "p23-l013-w03",
+        "p23-l013-w04",
+        "p23-l013-w05"
+      ],
+      "words": [
+        {
+          "id": "p23-l013-w01",
+          "text": "I",
+          "start": 65.825516,
+          "end": 65.845528
+        },
+        {
+          "id": "p23-l013-w02",
+          "text": "will",
+          "start": 65.977809,
+          "end": 66.178382
+        },
+        {
+          "id": "p23-l013-w03",
+          "text": "fear",
+          "start": 66.305816,
+          "end": 66.966229
+        },
+        {
+          "id": "p23-l013-w04",
+          "text": "no",
+          "start": 67.24142,
+          "end": 67.602451
+        },
+        {
+          "id": "p23-l013-w05",
+          "text": "evil,",
+          "start": 67.926829,
+          "end": 68.827392
+        }
+      ],
+      "sourceSection": "Chorus",
+      "sourceSectionIndex": 4,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 3
+    },
+    {
+      "id": "p23-l014",
+      "text": "for you are with me.",
+      "start": 69.719914,
+      "end": 71.729206,
+      "wordIds": [
+        "p23-l014-w01",
+        "p23-l014-w02",
+        "p23-l014-w03",
+        "p23-l014-w04",
+        "p23-l014-w05"
+      ],
+      "words": [
+        {
+          "id": "p23-l014-w01",
+          "text": "for",
+          "start": 69.719914,
+          "end": 69.860333
+        },
+        {
+          "id": "p23-l014-w02",
+          "text": "you",
+          "start": 70.000751,
+          "end": 70.301648
+        },
+        {
+          "id": "p23-l014-w03",
+          "text": "are",
+          "start": 70.843261,
+          "end": 71.083979
+        },
+        {
+          "id": "p23-l014-w04",
+          "text": "with",
+          "start": 71.164218,
+          "end": 71.485174
+        },
+        {
+          "id": "p23-l014-w05",
+          "text": "me.",
+          "start": 71.569106,
+          "end": 71.729206
+        }
+      ],
+      "sourceSection": "Chorus",
+      "sourceSectionIndex": 4,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 4
+    },
+    {
+      "id": "p23-l015",
+      "text": "Your rod and your staff,",
+      "start": 73.342,
+      "end": 75.328387,
+      "wordIds": [
+        "p23-l015-w01",
+        "p23-l015-w02",
+        "p23-l015-w03",
+        "p23-l015-w04",
+        "p23-l015-w05"
+      ],
+      "words": [
+        {
+          "id": "p23-l015-w01",
+          "text": "Your",
+          "start": 73.342,
+          "end": 73.502516
+        },
+        {
+          "id": "p23-l015-w02",
+          "text": "rod",
+          "start": 73.603101,
+          "end": 74.084666
+        },
+        {
+          "id": "p23-l015-w03",
+          "text": "and",
+          "start": 74.210757,
+          "end": 74.330832
+        },
+        {
+          "id": "p23-l015-w04",
+          "text": "your",
+          "start": 74.525806,
+          "end": 74.746516
+        },
+        {
+          "id": "p23-l015-w05",
+          "text": "staff,",
+          "start": 74.907032,
+          "end": 75.328387
+        }
+      ],
+      "sourceSection": "Chorus",
+      "sourceSectionIndex": 4,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 4
+    },
+    {
+      "id": "p23-l016",
+      "text": "they have comforted me.",
+      "start": 76.564063,
+      "end": 78.893684,
+      "wordIds": [
+        "p23-l016-w01",
+        "p23-l016-w02",
+        "p23-l016-w03",
+        "p23-l016-w04"
+      ],
+      "words": [
+        {
+          "id": "p23-l016-w01",
+          "text": "they",
+          "start": 76.564063,
+          "end": 76.744591
+        },
+        {
+          "id": "p23-l016-w02",
+          "text": "have",
+          "start": 76.892433,
+          "end": 77.092558
+        },
+        {
+          "id": "p23-l016-w03",
+          "text": "comforted",
+          "start": 77.185881,
+          "end": 78.369342
+        },
+        {
+          "id": "p23-l016-w04",
+          "text": "me.",
+          "start": 78.613508,
+          "end": 78.893684
+        }
+      ],
+      "sourceSection": "Chorus",
+      "sourceSectionIndex": 4,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 4
+    },
+    {
+      "id": "p23-l017",
+      "text": "I will fear no evil.",
+      "start": 80.354597,
+      "end": 83.249615,
+      "wordIds": [
+        "p23-l017-w01",
+        "p23-l017-w02",
+        "p23-l017-w03",
+        "p23-l017-w04",
+        "p23-l017-w05"
+      ],
+      "words": [
+        {
+          "id": "p23-l017-w01",
+          "text": "I",
+          "start": 80.354597,
+          "end": 80.374609
+        },
+        {
+          "id": "p23-l017-w02",
+          "text": "will",
+          "start": 80.494684,
+          "end": 80.714822
+        },
+        {
+          "id": "p23-l017-w03",
+          "text": "fear",
+          "start": 80.847119,
+          "end": 81.508579
+        },
+        {
+          "id": "p23-l017-w04",
+          "text": "no",
+          "start": 81.64522,
+          "end": 82.126538
+        },
+        {
+          "id": "p23-l017-w05",
+          "text": "evil.",
+          "start": 82.507582,
+          "end": 83.249615
+        }
+      ],
+      "sourceSection": "Chorus",
+      "sourceSectionIndex": 4,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 2
+    },
+    {
+      "id": "p23-l018",
+      "text": "You have prepared a table before me",
+      "start": 87.512658,
+      "end": 90.703589,
+      "wordIds": [
+        "p23-l018-w01",
+        "p23-l018-w02",
+        "p23-l018-w03",
+        "p23-l018-w04",
+        "p23-l018-w05",
+        "p23-l018-w06",
+        "p23-l018-w07"
+      ],
+      "words": [
+        {
+          "id": "p23-l018-w01",
+          "text": "You",
+          "start": 87.512658,
+          "end": 87.63289
+        },
+        {
+          "id": "p23-l018-w02",
+          "text": "have",
+          "start": 87.753122,
+          "end": 87.893393
+        },
+        {
+          "id": "p23-l018-w03",
+          "text": "prepared",
+          "start": 87.95351,
+          "end": 88.795136
+        },
+        {
+          "id": "p23-l018-w04",
+          "text": "a",
+          "start": 88.89533,
+          "end": 88.915368
+        },
+        {
+          "id": "p23-l018-w05",
+          "text": "table",
+          "start": 89.015562,
+          "end": 89.436375
+        },
+        {
+          "id": "p23-l018-w06",
+          "text": "before",
+          "start": 89.502761,
+          "end": 90.083161
+        },
+        {
+          "id": "p23-l018-w07",
+          "text": "me",
+          "start": 90.423395,
+          "end": 90.703589
+        }
+      ],
+      "sourceSection": "Verse 3",
+      "sourceSectionIndex": 5,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 7
+    },
+    {
+      "id": "p23-l019",
+      "text": "in the presence of those who afflict me.",
+      "start": 94.837724,
+      "end": 97.903717,
+      "wordIds": [
+        "p23-l019-w01",
+        "p23-l019-w02",
+        "p23-l019-w03",
+        "p23-l019-w04",
+        "p23-l019-w05",
+        "p23-l019-w06",
+        "p23-l019-w07",
+        "p23-l019-w08"
+      ],
+      "words": [
+        {
+          "id": "p23-l019-w01",
+          "text": "in",
+          "start": 94.837724,
+          "end": 94.877803
+        },
+        {
+          "id": "p23-l019-w02",
+          "text": "the",
+          "start": 94.957959,
+          "end": 95.018077
+        },
+        {
+          "id": "p23-l019-w03",
+          "text": "presence",
+          "start": 95.098234,
+          "end": 95.879761
+        },
+        {
+          "id": "p23-l019-w04",
+          "text": "of",
+          "start": 95.959918,
+          "end": 95.999996
+        },
+        {
+          "id": "p23-l019-w05",
+          "text": "those",
+          "start": 96.100192,
+          "end": 96.761484
+        },
+        {
+          "id": "p23-l019-w06",
+          "text": "who",
+          "start": 96.841641,
+          "end": 96.961876
+        },
+        {
+          "id": "p23-l019-w07",
+          "text": "afflict",
+          "start": 97.122189,
+          "end": 97.543012
+        },
+        {
+          "id": "p23-l019-w08",
+          "text": "me.",
+          "start": 97.663247,
+          "end": 97.903717
+        }
+      ],
+      "sourceSection": "Verse 3",
+      "sourceSectionIndex": 5,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 8
+    },
+    {
+      "id": "p23-l020",
+      "text": "You have anointed my head with oil,",
+      "start": 102.031401,
+      "end": 105.293651,
+      "wordIds": [
+        "p23-l020-w01",
+        "p23-l020-w02",
+        "p23-l020-w03",
+        "p23-l020-w04",
+        "p23-l020-w05",
+        "p23-l020-w06",
+        "p23-l020-w07"
+      ],
+      "words": [
+        {
+          "id": "p23-l020-w01",
+          "text": "You",
+          "start": 102.031401,
+          "end": 102.151484
+        },
+        {
+          "id": "p23-l020-w02",
+          "text": "have",
+          "start": 102.271567,
+          "end": 102.451691
+        },
+        {
+          "id": "p23-l020-w03",
+          "text": "anointed",
+          "start": 102.531746,
+          "end": 103.192202
+        },
+        {
+          "id": "p23-l020-w04",
+          "text": "my",
+          "start": 103.285799,
+          "end": 103.486262
+        },
+        {
+          "id": "p23-l020-w05",
+          "text": "head",
+          "start": 103.632505,
+          "end": 104.212905
+        },
+        {
+          "id": "p23-l020-w06",
+          "text": "with",
+          "start": 104.30816,
+          "end": 104.52867
+        },
+        {
+          "id": "p23-l020-w07",
+          "text": "oil,",
+          "start": 105.113527,
+          "end": 105.293651
+        }
+      ],
+      "sourceSection": "Verse 3",
+      "sourceSectionIndex": 5,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 6
+    },
+    {
+      "id": "p23-l021",
+      "text": "and your cup cheers me like the best wine.",
+      "start": 107.506822,
+      "end": 112.229282,
+      "wordIds": [
+        "p23-l021-w01",
+        "p23-l021-w02",
+        "p23-l021-w03",
+        "p23-l021-w04",
+        "p23-l021-w05",
+        "p23-l021-w06",
+        "p23-l021-w07",
+        "p23-l021-w08",
+        "p23-l021-w09"
+      ],
+      "words": [
+        {
+          "id": "p23-l021-w01",
+          "text": "and",
+          "start": 107.506822,
+          "end": 107.566975
+        },
+        {
+          "id": "p23-l021-w02",
+          "text": "your",
+          "start": 107.667231,
+          "end": 107.968
+        },
+        {
+          "id": "p23-l021-w03",
+          "text": "cup",
+          "start": 108.088307,
+          "end": 108.489331
+        },
+        {
+          "id": "p23-l021-w04",
+          "text": "cheers",
+          "start": 109.454509,
+          "end": 110.114745
+        },
+        {
+          "id": "p23-l021-w05",
+          "text": "me",
+          "start": 110.193684,
+          "end": 110.313991
+        },
+        {
+          "id": "p23-l021-w06",
+          "text": "like",
+          "start": 110.414247,
+          "end": 110.614759
+        },
+        {
+          "id": "p23-l021-w07",
+          "text": "the",
+          "start": 110.654862,
+          "end": 110.715015
+        },
+        {
+          "id": "p23-l021-w08",
+          "text": "best",
+          "start": 110.837474,
+          "end": 111.157695
+        },
+        {
+          "id": "p23-l021-w09",
+          "text": "wine.",
+          "start": 111.288032,
+          "end": 112.229282
+        }
+      ],
+      "sourceSection": "Verse 3",
+      "sourceSectionIndex": 5,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 9
+    },
+    {
+      "id": "p23-l022",
+      "text": "Even if I should walk",
+      "start": 113.253024,
+      "end": 115.428766,
+      "wordIds": [
+        "p23-l022-w01",
+        "p23-l022-w02",
+        "p23-l022-w03",
+        "p23-l022-w04",
+        "p23-l022-w05"
+      ],
+      "words": [
+        {
+          "id": "p23-l022-w01",
+          "text": "Even",
+          "start": 113.253024,
+          "end": 113.513813
+        },
+        {
+          "id": "p23-l022-w02",
+          "text": "if",
+          "start": 113.674298,
+          "end": 113.73448
+        },
+        {
+          "id": "p23-l022-w03",
+          "text": "I",
+          "start": 113.941502,
+          "end": 113.981527
+        },
+        {
+          "id": "p23-l022-w04",
+          "text": "should",
+          "start": 114.416541,
+          "end": 114.817754
+        },
+        {
+          "id": "p23-l022-w05",
+          "text": "walk",
+          "start": 114.90766,
+          "end": 115.428766
+        }
+      ],
+      "sourceSection": "Chorus",
+      "sourceSectionIndex": 6,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 5
+    },
+    {
+      "id": "p23-l023",
+      "text": "in the shadow of death,",
+      "start": 116.823276,
+      "end": 119.004618,
+      "wordIds": [
+        "p23-l023-w01",
+        "p23-l023-w02",
+        "p23-l023-w03",
+        "p23-l023-w04",
+        "p23-l023-w05"
+      ],
+      "words": [
+        {
+          "id": "p23-l023-w01",
+          "text": "in",
+          "start": 116.823276,
+          "end": 116.8633
+        },
+        {
+          "id": "p23-l023-w02",
+          "text": "the",
+          "start": 116.94335,
+          "end": 117.023399
+        },
+        {
+          "id": "p23-l023-w03",
+          "text": "shadow",
+          "start": 117.14515,
+          "end": 117.8469
+        },
+        {
+          "id": "p23-l023-w04",
+          "text": "of",
+          "start": 118.384236,
+          "end": 118.484298
+        },
+        {
+          "id": "p23-l023-w05",
+          "text": "death,",
+          "start": 118.564347,
+          "end": 119.004618
+        }
+      ],
+      "sourceSection": "Chorus",
+      "sourceSectionIndex": 6,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 4
+    },
+    {
+      "id": "p23-l024",
+      "text": "I will fear no evil,",
+      "start": 120.305419,
+      "end": 123.285694,
+      "wordIds": [
+        "p23-l024-w01",
+        "p23-l024-w02",
+        "p23-l024-w03",
+        "p23-l024-w04",
+        "p23-l024-w05"
+      ],
+      "words": [
+        {
+          "id": "p23-l024-w01",
+          "text": "I",
+          "start": 120.305419,
+          "end": 120.325431
+        },
+        {
+          "id": "p23-l024-w02",
+          "text": "will",
+          "start": 120.425493,
+          "end": 120.645628
+        },
+        {
+          "id": "p23-l024-w03",
+          "text": "fear",
+          "start": 120.858589,
+          "end": 121.518825
+        },
+        {
+          "id": "p23-l024-w04",
+          "text": "no",
+          "start": 121.766318,
+          "end": 122.066502
+        },
+        {
+          "id": "p23-l024-w05",
+          "text": "evil,",
+          "start": 122.383139,
+          "end": 123.285694
+        }
+      ],
+      "sourceSection": "Chorus",
+      "sourceSectionIndex": 6,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 3
+    },
+    {
+      "id": "p23-l025",
+      "text": "for you are with me.",
+      "start": 124.199714,
+      "end": 126.209052,
+      "wordIds": [
+        "p23-l025-w01",
+        "p23-l025-w02",
+        "p23-l025-w03",
+        "p23-l025-w04",
+        "p23-l025-w05"
+      ],
+      "words": [
+        {
+          "id": "p23-l025-w01",
+          "text": "for",
+          "start": 124.199714,
+          "end": 124.340128
+        },
+        {
+          "id": "p23-l025-w02",
+          "text": "you",
+          "start": 124.451783,
+          "end": 124.71268
+        },
+        {
+          "id": "p23-l025-w03",
+          "text": "are",
+          "start": 125.162554,
+          "end": 125.282909
+        },
+        {
+          "id": "p23-l025-w04",
+          "text": "with",
+          "start": 125.668719,
+          "end": 125.988916
+        },
+        {
+          "id": "p23-l025-w05",
+          "text": "me.",
+          "start": 126.068966,
+          "end": 126.209052
+        }
+      ],
+      "sourceSection": "Chorus",
+      "sourceSectionIndex": 6,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 4
+    },
+    {
+      "id": "p23-l026",
+      "text": "Your rod and your staff,",
+      "start": 127.842053,
+      "end": 129.751232,
+      "wordIds": [
+        "p23-l026-w01",
+        "p23-l026-w02",
+        "p23-l026-w03",
+        "p23-l026-w04",
+        "p23-l026-w05"
+      ],
+      "words": [
+        {
+          "id": "p23-l026-w01",
+          "text": "Your",
+          "start": 127.842053,
+          "end": 128.022643
+        },
+        {
+          "id": "p23-l026-w02",
+          "text": "rod",
+          "start": 128.110222,
+          "end": 128.570505
+        },
+        {
+          "id": "p23-l026-w03",
+          "text": "and",
+          "start": 128.690579,
+          "end": 128.79064
+        },
+        {
+          "id": "p23-l026-w04",
+          "text": "your",
+          "start": 129.006323,
+          "end": 129.227032
+        },
+        {
+          "id": "p23-l026-w05",
+          "text": "staff,",
+          "start": 129.370998,
+          "end": 129.751232
+        }
+      ],
+      "sourceSection": "Chorus",
+      "sourceSectionIndex": 6,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 4
+    },
+    {
+      "id": "p23-l027",
+      "text": "they have comforted me.",
+      "start": 131.083924,
+      "end": 133.373461,
+      "wordIds": [
+        "p23-l027-w01",
+        "p23-l027-w02",
+        "p23-l027-w03",
+        "p23-l027-w04"
+      ],
+      "words": [
+        {
+          "id": "p23-l027-w01",
+          "text": "they",
+          "start": 131.083924,
+          "end": 131.264449
+        },
+        {
+          "id": "p23-l027-w02",
+          "text": "have",
+          "start": 131.364741,
+          "end": 131.565325
+        },
+        {
+          "id": "p23-l027-w03",
+          "text": "comforted",
+          "start": 131.692426,
+          "end": 132.833128
+        },
+        {
+          "id": "p23-l027-w04",
+          "text": "me.",
+          "start": 133.093288,
+          "end": 133.373461
+        }
+      ],
+      "sourceSection": "Chorus",
+      "sourceSectionIndex": 6,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 4
+    },
+    {
+      "id": "p23-l028",
+      "text": "I will fear no evil.",
+      "start": 134.854372,
+      "end": 138.349728,
+      "wordIds": [
+        "p23-l028-w01",
+        "p23-l028-w02",
+        "p23-l028-w03",
+        "p23-l028-w04",
+        "p23-l028-w05"
+      ],
+      "words": [
+        {
+          "id": "p23-l028-w01",
+          "text": "I",
+          "start": 134.854372,
+          "end": 134.874384
+        },
+        {
+          "id": "p23-l028-w02",
+          "text": "will",
+          "start": 134.945955,
+          "end": 135.146383
+        },
+        {
+          "id": "p23-l028-w03",
+          "text": "fear",
+          "start": 135.334667,
+          "end": 135.875
+        },
+        {
+          "id": "p23-l028-w04",
+          "text": "no",
+          "start": 136.295259,
+          "end": 136.635468
+        },
+        {
+          "id": "p23-l028-w05",
+          "text": "evil.",
+          "start": 137.107315,
+          "end": 138.349728
+        }
+      ],
+      "sourceSection": "Chorus",
+      "sourceSectionIndex": 6,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 2
+    },
+    {
+      "id": "p23-l029",
+      "text": "Your mercy shall follow me",
+      "start": 142.192285,
+      "end": 145.117862,
+      "wordIds": [
+        "p23-l029-w01",
+        "p23-l029-w02",
+        "p23-l029-w03",
+        "p23-l029-w04",
+        "p23-l029-w05"
+      ],
+      "words": [
+        {
+          "id": "p23-l029-w01",
+          "text": "Your",
+          "start": 142.192285,
+          "end": 142.432744
+        },
+        {
+          "id": "p23-l029-w02",
+          "text": "mercy",
+          "start": 142.613087,
+          "end": 143.234271
+        },
+        {
+          "id": "p23-l029-w03",
+          "text": "shall",
+          "start": 143.47473,
+          "end": 144.176066
+        },
+        {
+          "id": "p23-l029-w04",
+          "text": "follow",
+          "start": 144.416525,
+          "end": 144.817289
+        },
+        {
+          "id": "p23-l029-w05",
+          "text": "me",
+          "start": 144.937518,
+          "end": 145.117862
+        }
+      ],
+      "sourceSection": "Bridge",
+      "sourceSectionIndex": 7,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 4
+    },
+    {
+      "id": "p23-l030",
+      "text": "all the days of my life.",
+      "start": 149.305503,
+      "end": 155.608449,
+      "wordIds": [
+        "p23-l030-w01",
+        "p23-l030-w02",
+        "p23-l030-w03",
+        "p23-l030-w04",
+        "p23-l030-w05",
+        "p23-l030-w06"
+      ],
+      "words": [
+        {
+          "id": "p23-l030-w01",
+          "text": "all",
+          "start": 149.305503,
+          "end": 149.425578
+        },
+        {
+          "id": "p23-l030-w02",
+          "text": "the",
+          "start": 149.477033,
+          "end": 149.537145
+        },
+        {
+          "id": "p23-l030-w03",
+          "text": "days",
+          "start": 149.665729,
+          "end": 150.746404
+        },
+        {
+          "id": "p23-l030-w04",
+          "text": "of",
+          "start": 150.926517,
+          "end": 150.986554
+        },
+        {
+          "id": "p23-l030-w05",
+          "text": "my",
+          "start": 151.220279,
+          "end": 151.500801
+        },
+        {
+          "id": "p23-l030-w06",
+          "text": "life.",
+          "start": 151.600987,
+          "end": 155.608449
+        }
+      ],
+      "sourceSection": "Bridge",
+      "sourceSectionIndex": 7,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 4
+    },
+    {
+      "id": "p23-l031",
+      "text": "Your mercy shall follow me",
+      "start": 156.690119,
+      "end": 159.667007,
+      "wordIds": [
+        "p23-l031-w01",
+        "p23-l031-w02",
+        "p23-l031-w03",
+        "p23-l031-w04",
+        "p23-l031-w05"
+      ],
+      "words": [
+        {
+          "id": "p23-l031-w01",
+          "text": "Your",
+          "start": 156.690119,
+          "end": 156.990306
+        },
+        {
+          "id": "p23-l031-w02",
+          "text": "mercy",
+          "start": 157.150407,
+          "end": 157.770794
+        },
+        {
+          "id": "p23-l031-w03",
+          "text": "shall",
+          "start": 157.963773,
+          "end": 158.845447
+        },
+        {
+          "id": "p23-l031-w04",
+          "text": "follow",
+          "start": 158.945637,
+          "end": 159.366437
+        },
+        {
+          "id": "p23-l031-w05",
+          "text": "me",
+          "start": 159.466627,
+          "end": 159.667007
+        }
+      ],
+      "sourceSection": "Bridge",
+      "sourceSectionIndex": 7,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 4
+    },
+    {
+      "id": "p23-l032",
+      "text": "all the days of my life.",
+      "start": 163.854597,
+      "end": 168.48942,
+      "wordIds": [
+        "p23-l032-w01",
+        "p23-l032-w02",
+        "p23-l032-w03",
+        "p23-l032-w04",
+        "p23-l032-w05",
+        "p23-l032-w06"
+      ],
+      "words": [
+        {
+          "id": "p23-l032-w01",
+          "text": "all",
+          "start": 163.854597,
+          "end": 163.974672
+        },
+        {
+          "id": "p23-l032-w02",
+          "text": "the",
+          "start": 164.006439,
+          "end": 164.086623
+        },
+        {
+          "id": "p23-l032-w03",
+          "text": "days",
+          "start": 164.186854,
+          "end": 165.189156
+        },
+        {
+          "id": "p23-l032-w04",
+          "text": "of",
+          "start": 165.389617,
+          "end": 165.449755
+        },
+        {
+          "id": "p23-l032-w05",
+          "text": "my",
+          "start": 165.55566,
+          "end": 166.03596
+        },
+        {
+          "id": "p23-l032-w06",
+          "text": "life.",
+          "start": 166.226691,
+          "end": 168.48942
+        }
+      ],
+      "sourceSection": "Bridge",
+      "sourceSectionIndex": 7,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 4
+    },
+    {
+      "id": "p23-l033",
+      "text": "I will fear no evil,",
+      "start": 171.002107,
+      "end": 174.043975,
+      "wordIds": [
+        "p23-l033-w01",
+        "p23-l033-w02",
+        "p23-l033-w03",
+        "p23-l033-w04",
+        "p23-l033-w05"
+      ],
+      "words": [
+        {
+          "id": "p23-l033-w01",
+          "text": "I",
+          "start": 171.002107,
+          "end": 171.022129
+        },
+        {
+          "id": "p23-l033-w02",
+          "text": "will",
+          "start": 171.142255,
+          "end": 171.402529
+        },
+        {
+          "id": "p23-l033-w03",
+          "text": "fear",
+          "start": 171.522655,
+          "end": 172.123288
+        },
+        {
+          "id": "p23-l033-w04",
+          "text": "no",
+          "start": 172.483682,
+          "end": 172.763869
+        },
+        {
+          "id": "p23-l033-w05",
+          "text": "evil,",
+          "start": 173.161137,
+          "end": 174.043975
+        }
+      ],
+      "sourceSection": "Final Chorus",
+      "sourceSectionIndex": 8,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 2
+    },
+    {
+      "id": "p23-l034",
+      "text": "for you are with me.",
+      "start": 174.918405,
+      "end": 177.046724,
+      "wordIds": [
+        "p23-l034-w01",
+        "p23-l034-w02",
+        "p23-l034-w03",
+        "p23-l034-w04",
+        "p23-l034-w05"
+      ],
+      "words": [
+        {
+          "id": "p23-l034-w01",
+          "text": "for",
+          "start": 174.918405,
+          "end": 175.058879
+        },
+        {
+          "id": "p23-l034-w02",
+          "text": "you",
+          "start": 175.199353,
+          "end": 175.460233
+        },
+        {
+          "id": "p23-l034-w03",
+          "text": "are",
+          "start": 176.042196,
+          "end": 176.222806
+        },
+        {
+          "id": "p23-l034-w04",
+          "text": "with",
+          "start": 176.323144,
+          "end": 176.584024
+        },
+        {
+          "id": "p23-l034-w05",
+          "text": "me.",
+          "start": 176.766537,
+          "end": 177.046724
+        }
+      ],
+      "sourceSection": "Final Chorus",
+      "sourceSectionIndex": 8,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 4
+    },
+    {
+      "id": "p23-l035",
+      "text": "The Lord is my shepherd,",
+      "start": 178.562276,
+      "end": 180.709483,
+      "wordIds": [
+        "p23-l035-w01",
+        "p23-l035-w02",
+        "p23-l035-w03",
+        "p23-l035-w04",
+        "p23-l035-w05"
+      ],
+      "words": [
+        {
+          "id": "p23-l035-w01",
+          "text": "The",
+          "start": 178.562276,
+          "end": 178.642545
+        },
+        {
+          "id": "p23-l035-w02",
+          "text": "Lord",
+          "start": 178.783017,
+          "end": 179.224498
+        },
+        {
+          "id": "p23-l035-w03",
+          "text": "is",
+          "start": 179.36497,
+          "end": 179.445239
+        },
+        {
+          "id": "p23-l035-w04",
+          "text": "my",
+          "start": 179.66598,
+          "end": 179.906788
+        },
+        {
+          "id": "p23-l035-w05",
+          "text": "shepherd,",
+          "start": 180.087395,
+          "end": 180.709483
+        }
+      ],
+      "sourceSection": "Final Chorus",
+      "sourceSectionIndex": 8,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 4
+    },
+    {
+      "id": "p23-l036",
+      "text": "and I shall want nothing.",
+      "start": 182.213909,
+      "end": 184.175975,
+      "wordIds": [
+        "p23-l036-w01",
+        "p23-l036-w02",
+        "p23-l036-w03",
+        "p23-l036-w04",
+        "p23-l036-w05"
+      ],
+      "words": [
+        {
+          "id": "p23-l036-w01",
+          "text": "and",
+          "start": 182.213909,
+          "end": 182.293994
+        },
+        {
+          "id": "p23-l036-w02",
+          "text": "I",
+          "start": 182.56486,
+          "end": 182.584916
+        },
+        {
+          "id": "p23-l036-w03",
+          "text": "shall",
+          "start": 182.754478,
+          "end": 183.234984
+        },
+        {
+          "id": "p23-l036-w04",
+          "text": "want",
+          "start": 183.315068,
+          "end": 183.595364
+        },
+        {
+          "id": "p23-l036-w05",
+          "text": "nothing.",
+          "start": 183.755532,
+          "end": 184.175975
+        }
+      ],
+      "sourceSection": "Final Chorus",
+      "sourceSectionIndex": 8,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 5
+    },
+    {
+      "id": "p23-l037",
+      "text": "And I shall dwell in the house of the Lord",
+      "start": 186.692783,
+      "end": 191.343255,
+      "wordIds": [
+        "p23-l037-w01",
+        "p23-l037-w02",
+        "p23-l037-w03",
+        "p23-l037-w04",
+        "p23-l037-w05",
+        "p23-l037-w06",
+        "p23-l037-w07",
+        "p23-l037-w08",
+        "p23-l037-w09",
+        "p23-l037-w10"
+      ],
+      "words": [
+        {
+          "id": "p23-l037-w01",
+          "text": "And",
+          "start": 186.692783,
+          "end": 186.772963
+        },
+        {
+          "id": "p23-l037-w02",
+          "text": "I",
+          "start": 187.004081,
+          "end": 187.02412
+        },
+        {
+          "id": "p23-l037-w03",
+          "text": "shall",
+          "start": 187.124317,
+          "end": 187.545143
+        },
+        {
+          "id": "p23-l037-w04",
+          "text": "dwell",
+          "start": 187.605261,
+          "end": 187.965968
+        },
+        {
+          "id": "p23-l037-w05",
+          "text": "in",
+          "start": 189.21847,
+          "end": 189.25856
+        },
+        {
+          "id": "p23-l037-w06",
+          "text": "the",
+          "start": 189.338741,
+          "end": 189.459012
+        },
+        {
+          "id": "p23-l037-w07",
+          "text": "house",
+          "start": 189.559237,
+          "end": 189.96014
+        },
+        {
+          "id": "p23-l037-w08",
+          "text": "of",
+          "start": 190.163972,
+          "end": 190.404157
+        },
+        {
+          "id": "p23-l037-w09",
+          "text": "the",
+          "start": 190.501359,
+          "end": 190.70181
+        },
+        {
+          "id": "p23-l037-w10",
+          "text": "Lord",
+          "start": 190.902262,
+          "end": 191.343255
+        }
+      ],
+      "sourceSection": "Outro",
+      "sourceSectionIndex": 9,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 7
+    },
+    {
+      "id": "p23-l038",
+      "text": "for a very long time.",
+      "start": 192.697189,
+      "end": 195.487558,
+      "wordIds": [
+        "p23-l038-w01",
+        "p23-l038-w02",
+        "p23-l038-w03",
+        "p23-l038-w04",
+        "p23-l038-w05"
+      ],
+      "words": [
+        {
+          "id": "p23-l038-w01",
+          "text": "for",
+          "start": 192.697189,
+          "end": 192.937661
+        },
+        {
+          "id": "p23-l038-w02",
+          "text": "a",
+          "start": 193.057898,
+          "end": 193.077937
+        },
+        {
+          "id": "p23-l038-w03",
+          "text": "very",
+          "start": 193.198173,
+          "end": 193.719198
+        },
+        {
+          "id": "p23-l038-w04",
+          "text": "long",
+          "start": 194.099946,
+          "end": 194.761246
+        },
+        {
+          "id": "p23-l038-w05",
+          "text": "time.",
+          "start": 195.025788,
+          "end": 195.487558
+        }
+      ],
+      "sourceSection": "Outro",
+      "sourceSectionIndex": 9,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 4
+    },
+    {
+      "id": "p23-l039",
+      "text": "The Lord is my shepherd.",
+      "start": 200.303272,
+      "end": 202.909313,
+      "wordIds": [
+        "p23-l039-w01",
+        "p23-l039-w02",
+        "p23-l039-w03",
+        "p23-l039-w04",
+        "p23-l039-w05"
+      ],
+      "words": [
+        {
+          "id": "p23-l039-w01",
+          "text": "The",
+          "start": 200.303272,
+          "end": 200.403505
+        },
+        {
+          "id": "p23-l039-w02",
+          "text": "Lord",
+          "start": 200.523785,
+          "end": 200.984859
+        },
+        {
+          "id": "p23-l039-w03",
+          "text": "is",
+          "start": 201.145232,
+          "end": 201.225419
+        },
+        {
+          "id": "p23-l039-w04",
+          "text": "my",
+          "start": 201.412625,
+          "end": 201.91301
+        },
+        {
+          "id": "p23-l039-w05",
+          "text": "shepherd.",
+          "start": 202.24725,
+          "end": 202.909313
+        }
+      ],
+      "sourceSection": "Outro",
+      "sourceSectionIndex": 9,
+      "confidence": "machine_estimate",
+      "sourceSupportedWordCount": 5
+    }
+  ],
+  "summary": {
+    "wordCount": 210,
+    "phraseCount": 39,
+    "sourceSupported": 166,
+    "unsupported": 44,
+    "overlaps": [],
+    "firstVocalStart": 15.193455,
+    "lastVocalEnd": 202.909313,
+    "encodedReview": "pending",
+    "listened": false
+  }
+}

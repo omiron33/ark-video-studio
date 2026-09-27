@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 2,
+  "reviewer": "independent concept_critic agent",
+  "status": "accepted",
+  "videoSha256": "e483e690ef13766ee4e04414711d0826209151d3beab5a91864c113758f3e4f2",
+  "sourceRevision": "2e18115e199808003cf4dcae527fe15c105e254a4e70bdf3b19701557fc07787",
+  "scale": "0 to10",
+  "threshold": 8,
+  "scores": {
+    "lyricLegibility": 8.5,
+    "semanticMotion": 8.2,
+    "photorealism": 8.8,
+    "composition": 8.4,
+    "continuity": 8.3
+  },
+  "reasons": {
+    "lyricLegibility": "Clear settled reading states across all39 phrases. Native and390px checks confirm the repaired cup/wine, follow/shall, no, for/you and generated mercy passages. Some intentional letter transformations briefly deform already-readable words, and partial letters during write-on are expected.",
+    "semanticMotion": "31 conservative visual mechanisms with maximum equivalent use3. Growth, moving shadow projection, structural letter arch and material mercy now add observable actions. Guidance, steps, footfalls, table, protection, oil, cup, orbit and doorway reinforce meaning. Several effects remain restrained and fine-lined, so the result is not uniformly spectacular.",
+    "photorealism": "Convincing contemporary clothing, home/care settings, rain, wet materials and natural light. Reviewed hands, faces and body poses show no major anatomy defect. Most people are still photographic plates with camera movement, rather than sustained live human action.",
+    "composition": "Words occupy photographic wall, foliage, water and doorway space, with clear hierarchy and protected faces. The new arch and large mercy materially broaden the compositions. A recurring serif/italic palette and quiet two-row holds remain intentional stylistic repetition.",
+    "continuity": "All11 sampled act transitions, all3 generated sections and their neighboring states are coherent, without sampled black gaps, broken joins or misplaced duplicate mercy words. A brief registered glyph crossfade is visible at the material handoff.5fps sampling cannot prove every30fps transition or easing detail."
+  },
+  "pass": true,
+  "creativeVarietyPass": true,
+  "conservativeDistinctCount": 31,
+  "maximumEquivalentUses": 3,
+  "evidence": "/Users/shanefisher/Movies/Psalm23/review-work/independent-visual-v2.json",
+  "reviewMethod": "All55 decoded chronological5fps sheets plus8 native frames and8 phone-size390px samples. Not uninterrupted full-speed watching or listening.",
+  "audioOrSyncScored": false
+}

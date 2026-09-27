@@ -1,0 +1,22 @@
+{
+  "prompt_id": "d4097817-e710-4d61-932d-a024bfa11ec4",
+  "number": 103,
+  "node_errors": {},
+  "name": "water-v1",
+  "submittedAt": "2026-09-27T16:04:10.101981+00:00",
+  "project": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day",
+  "themeChoiceSha256": "660a1ee2e8007383760bfa3ba66cb51240a7b518c448cb5b9f7970ec7d0b567d",
+  "firstImage": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/inputs/water-first.png",
+  "firstImageSha256": "42900c61e4055c0119044d6982356bbb7aa0c020e4e3fa1757df8306b996234b",
+  "lastImage": null,
+  "lastImageSha256": null,
+  "promptFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/water-v1-prompt.txt",
+  "workflow": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/water-v1-workflow.json",
+  "workflowSha256": "a9a85b6e89afd77d2d6beb6a5f31f9ef077b2350e873832699f05bbc7521c95e",
+  "framesRequested": 124,
+  "fpsRequested": 24,
+  "seed": 20260927232,
+  "conditioning": "first_frame",
+  "provider": "local OmiPC ComfyUI",
+  "cost": "local GPU; no paid API"
+}

@@ -1,0 +1,37 @@
+{
+  "duplicate": false,
+  "video": {
+    "id": "vid-20260927-31bdda7a",
+    "project": "Psalm 23 (LXX 22) lyric film",
+    "title": "Psalm 23 - Held in the Ordinary",
+    "version": "Held in the Ordinary - full film v2",
+    "sourceAgent": "Codex",
+    "sourceMachine": "Mac mini / OmiPC",
+    "sourcePath": "/Users/shanefisher/Movies/Psalm23/Psalm 23 - Held in the Ordinary.mp4",
+    "ingestedFrom": "C:\\Users\\sjfis\\Videos\\Psalm23\\held-in-ordinary-e483e690ef13766e.mp4",
+    "notes": "Psalm 23 (LXX 22) The Lord Is My Shepherd. Full 219.96-second source, selected Suno take 32885123-f4b6-42e6-a546-f4acba404829. Shane chose theme 1, Held in the Ordinary: contemporary protection and lyric-led animation. Full Psalm23 Held in the Ordinary v2:219.966667s,6599frames,1920x1080,30fps,H264/AAC. Exact source song preserved. Twelve original photographs show present-day protection and care; three locally generated inserts integrate shelter, water and a prominent golden mercy word. Independent encoded visual review accepted31 conservative distinct mechanisms,max3 equivalent uses. Scores:legibility8.5,semantic motion8.2,photorealism8.8,composition8.4,continuity8.3. All55 chronological sheets,8native and8phone-size samples inspected; no uninterrupted watching or hearing claim. V1 rejected and retained; v2 repairs grass growth, projected shadows, letter arch, generated mercy handoff, cup/wine collision, shall/follow spacing, no/you visibility. Technical decode/provenance, OCR210/210 and temporal checks passed. Seven timing corrections pass. STRICT SINGING SYNC IS NOT FULLY CERTIFIED:153/210pass,55unsupported,2 disputed model matches; detailed raw failures preserved. PCM correlation0.999414,min0.998761,lag0. Photos album has1movie; actual local playback verified. Awaiting Shane review; not user approved. SHA256 e483e690ef13766ee4e04414711d0826209151d3beab5a91864c113758f3e4f2. Pending Shane review; not user approved. Video SHA256 e483e690ef13766ee4e04414711d0826209151d3beab5a91864c113758f3e4f2. Review report SHA256 082dbccf9ee1303fcf0fe2000c96cd9a6a522199d70c22c01e2dc60a87e55d64. Audio exception: Strict singing-sync remains failed:153/210 words passed,55 unsupported,2 supported model-disagreement flags. The I flag differs66ms from the selected match despite source phrase-context support for the retained cue. The my flag selects the later repetition14.332s away. Seven defensible timing corrections all pass in v2. No further model retries or manual automatic-pass relabeling. Source/encoded PCM correlation0.999414, minimum segment0.998761, lag0, gain-0.048188dB; audio content preserved. This is a review candidate with unresolved word-level certification, not a perfect-sync claim.",
+    "supersedes": null,
+    "supersededBy": null,
+    "md5": "31bdda7a24fcf8f8e89584d4dc35af69",
+    "sha256": "e483e690ef13766ee4e04414711d0826209151d3beab5a91864c113758f3e4f2",
+    "bytes": 314123868,
+    "mimeType": "video/mp4",
+    "file": "media/videos/psalm-23-lxx-22-lyric-film/vid-20260927-31bdda7a/video.mp4",
+    "thumbnail": {
+      "file": "media/videos/psalm-23-lxx-22-lyric-film/vid-20260927-31bdda7a/thumbnail.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "probe": null,
+    "status": "pending_review",
+    "ingestedAt": "2026-09-27T18:08:44.821Z",
+    "updatedAt": "2026-09-27T18:08:44.821Z",
+    "history": [
+      {
+        "at": "2026-09-27T18:08:44.821Z",
+        "status": "pending_review",
+        "note": "Psalm 23 (LXX 22) The Lord Is My Shepherd. Full 219.96-second source, selected Suno take 32885123-f4b6-42e6-a546-f4acba404829. Shane chose theme 1, Held in the Ordinary: contemporary protection and lyric-led animation. Full Psalm23 Held in the Ordinary v2:219.966667s,6599frames,1920x1080,30fps,H264/AAC. Exact source song preserved. Twelve original photographs show present-day protection and care; three locally generated inserts integrate shelter, water and a prominent golden mercy word. Independent encoded visual review accepted31 conservative distinct mechanisms,max3 equivalent uses. Scores:legibility8.5,semantic motion8.2,photorealism8.8,composition8.4,continuity8.3. All55 chronological sheets,8native and8phone-size samples inspected; no uninterrupted watching or hearing claim. V1 rejected and retained; v2 repairs grass growth, projected shadows, letter arch, generated mercy handoff, cup/wine collision, shall/follow spacing, no/you visibility. Technical decode/provenance, OCR210/210 and temporal checks passed. Seven timing corrections pass. STRICT SINGING SYNC IS NOT FULLY CERTIFIED:153/210pass,55unsupported,2 disputed model matches; detailed raw failures preserved. PCM correlation0.999414,min0.998761,lag0. Photos album has1movie; actual local playback verified. Awaiting Shane review; not user approved. SHA256 e483e690ef13766ee4e04414711d0826209151d3beab5a91864c113758f3e4f2. Pending Shane review; not user approved. Video SHA256 e483e690ef13766ee4e04414711d0826209151d3beab5a91864c113758f3e4f2. Review report SHA256 082dbccf9ee1303fcf0fe2000c96cd9a6a522199d70c22c01e2dc60a87e55d64. Audio exception: Strict singing-sync remains failed:153/210 words passed,55 unsupported,2 supported model-disagreement flags. The I flag differs66ms from the selected match despite source phrase-context support for the retained cue. The my flag selects the later repetition14.332s away. Seven defensible timing corrections all pass in v2. No further model retries or manual automatic-pass relabeling. Source/encoded PCM correlation0.999414, minimum segment0.998761, lag0, gain-0.048188dB; audio content preserved. This is a review candidate with unresolved word-level certification, not a perfect-sync claim.",
+        "by": "Codex"
+      }
+    ]
+  }
+}

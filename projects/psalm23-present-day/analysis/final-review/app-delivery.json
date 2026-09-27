@@ -1,0 +1,38 @@
+{
+  "status": "verified_review_candidate_delivery",
+  "candidateId": "vid-20260927-31bdda7a",
+  "candidateStatus": "pending_review",
+  "duplicate": false,
+  "sha256": "e483e690ef13766ee4e04414711d0826209151d3beab5a91864c113758f3e4f2",
+  "remoteDownloadSha256": "e483e690ef13766ee4e04414711d0826209151d3beab5a91864c113758f3e4f2",
+  "posterSha256": "64828051f8c35755d8bbe2e72635f131da28338e0067dc01b28427c5a451ffd6",
+  "copies": {
+    "video": {
+      "sha256": "e483e690ef13766ee4e04414711d0826209151d3beab5a91864c113758f3e4f2",
+      "reused": false
+    },
+    "poster": {
+      "sha256": "64828051f8c35755d8bbe2e72635f131da28338e0067dc01b28427c5a451ffd6",
+      "reused": false
+    },
+    "report": {
+      "sha256": "082dbccf9ee1303fcf0fe2000c96cd9a6a522199d70c22c01e2dc60a87e55d64",
+      "reused": false
+    }
+  },
+  "bytes": 314123868,
+  "httpStatus": 200,
+  "contentType": "video/mp4",
+  "rangeStatus": 206,
+  "contentRange": "bytes 0-1023/314123868",
+  "watchUrl": "https://omipc.taild60b4e.ts.net/api/admin/videos/vid-20260927-31bdda7a/media",
+  "downloadUrl": "https://omipc.taild60b4e.ts.net/api/admin/videos/vid-20260927-31bdda7a/media?download=1&master=1",
+  "reviewUrl": "https://omipc.taild60b4e.ts.net/studio#videos",
+  "workflowUrl": "https://omipc.taild60b4e.ts.net/studio#workflows",
+  "workflowRegistered": true,
+  "workflowChanged": true,
+  "priorCandidatesPreserved": 24,
+  "reviewReport": "/Users/shanefisher/Movies/Psalm23/review-work/delivery-review-v2.json",
+  "reviewReportSha256": "082dbccf9ee1303fcf0fe2000c96cd9a6a522199d70c22c01e2dc60a87e55d64",
+  "verifiedAt": "2026-09-27T18:11:42.246089+00:00"
+}

@@ -1,0 +1,1888 @@
+{
+  "schemaVersion": 1,
+  "kind": "proposed-timing-repairs-no-source-mutation",
+  "createdAt": "2026-09-27T17:28:51.579607+00:00",
+  "reportPath": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/audio-review.json",
+  "reportSha256": "d182e26ae6412e92c442170cde957bc56c173f74485fbf67c3e72d9c1b211edb",
+  "binding": {
+    "videoSha256": "371f2df5bd8d2214ae35aaa661aad883416e56c54144eefcabd7e1faefbae3c7",
+    "projectHash": "f3183db6ab775a27202f4ae58d1c9c09b90467f81c3afa4c5d9d8d6261a69570",
+    "audioSha256": "3669040e797c9d2bf8b4136dc4c029c6e1ed51f302ccc411d1888ae50da80c8f"
+  },
+  "budget": {
+    "maxAttempts": 3,
+    "repair": false,
+    "additionalInferenceAuthorized": false
+  },
+  "rawSummary": {
+    "passed": 146,
+    "unsupported": 55,
+    "supportedCueFailures": 9,
+    "strictStatus": "failed"
+  },
+  "repairs": [
+    {
+      "id": "p23-l010-w04",
+      "text": "sake.",
+      "oldStart": 57.154878,
+      "oldEnd": 57.657146,
+      "rawSupported": true,
+      "rawRoute": "official_ctc_asr",
+      "rawSelectedInterval": {
+        "start": 57.212888,
+        "end": 57.613027,
+        "confidence": 0.998268,
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "sake.",
+          "start": 57.252902,
+          "end": 57.532999,
+          "score": 0.012719530827454249,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "sake.",
+          "start": 57.212888,
+          "end": 57.613027,
+          "score": 0.9982682852617173,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "encoded",
+        "text": "sake.",
+        "start": 57.212888,
+        "end": 57.613027,
+        "score": 0.9984174092326732,
+        "startDelta": 0,
+        "endDelta": 0,
+        "note": "Role derived from paired AAC input. Raw report mistakenly labels this projected object source; input-role artifacts below are authoritative."
+      },
+      "actualPassArtifacts": [
+        {
+          "input": "source",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 36.425704,
+            "end": 59.753778999999994
+          },
+          "start": 57.252902,
+          "end": 57.532999,
+          "confidence": 0.012719530827454249,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0022-e97e6c3d-a853-45dc-ae99-beeb8bf83d76-8ad657b4bb58b8aaef9497669f1c38337cd79887aa5fdc682cfab6a927cf04e5.json",
+          "artifactSha256": "b03919e2f01050c4ffb9f1461d0556b578f9f2f551f9a5fe9a21778b46182861"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 36.425704,
+            "end": 59.753778999999994
+          },
+          "start": 57.252902,
+          "end": 57.532999,
+          "confidence": 0.015451398039546316,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0023-8dfaacd9-8d85-4b4c-8618-27b61fd8a450-1e440ed1f52f515a866e9a35520ea14df11508c1750f963d06dd4c8144bcb890.json",
+          "artifactSha256": "8cb530d2250e96337ec86075435631fa42e2d013fac996f7b879eff46c18f2c2"
+        },
+        {
+          "input": "source",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 36.425704,
+            "end": 59.753778999999994
+          },
+          "start": 57.212888,
+          "end": 57.613027,
+          "confidence": 0.9982682852617173,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0024-55a4aa6a-7ca5-4fa4-81ae-83c4bd722576-13d9aa2ea349a5d31ecb46ece9637001be397ab58e609049ab51be794e3fbf7c.json",
+          "artifactSha256": "4482b69e7f6578c06c91bd28de2172d293ddd769eb66268fb0a3fa1f0000204c"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 36.425704,
+            "end": 59.753778999999994
+          },
+          "start": 57.212888,
+          "end": 57.613027,
+          "confidence": 0.9984174092326732,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0025-6d15adca-3f6e-4591-86ef-aed7654462cf-f23e5625247338ea9ad69e65f2d892b9964c7cb2e2f1b917ae8625775e51be6b.json",
+          "artifactSha256": "fd712209769ccabb028aafefb52b9cd265f777b6e9197ef001cbeb687e29f797"
+        }
+      ],
+      "decision": "proposed",
+      "targetStart": 57.212888,
+      "targetEnd": 57.613027,
+      "targetMethod": "selected-source-CTC-with-paired-AAC-and-independent-support",
+      "rationale": "Use the measured selected source CTC interval; the same checkpoint is corroborated on the encoded AAC, with additional source-checkpoint or independent ASR boundary support. This is a proposed local cue correction, not an assertion of perceptual perfection.",
+      "selectedSourceArtifacts": [
+        {
+          "input": "source",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 36.425704,
+            "end": 59.753778999999994
+          },
+          "start": 57.212888,
+          "end": 57.613027,
+          "confidence": 0.9982682852617173,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0024-55a4aa6a-7ca5-4fa4-81ae-83c4bd722576-13d9aa2ea349a5d31ecb46ece9637001be397ab58e609049ab51be794e3fbf7c.json",
+          "artifactSha256": "4482b69e7f6578c06c91bd28de2172d293ddd769eb66268fb0a3fa1f0000204c"
+        }
+      ],
+      "selectedEncodedArtifacts": [
+        {
+          "input": "encoded",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 36.425704,
+            "end": 59.753778999999994
+          },
+          "start": 57.212888,
+          "end": 57.613027,
+          "confidence": 0.9984174092326732,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0025-6d15adca-3f6e-4591-86ef-aed7654462cf-f23e5625247338ea9ad69e65f2d892b9964c7cb2e2f1b917ae8625775e51be6b.json",
+          "artifactSha256": "fd712209769ccabb028aafefb52b9cd265f777b6e9197ef001cbeb687e29f797"
+        }
+      ]
+    },
+    {
+      "id": "p23-l012-w03",
+      "text": "shadow",
+      "oldStart": 62.616255,
+      "oldEnd": 63.318398,
+      "rawSupported": true,
+      "rawRoute": "official_dual_ctc",
+      "rawSelectedInterval": {
+        "start": 62.603819,
+        "end": 63.404285,
+        "confidence": 0.983509,
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "shadow",
+          "start": 62.663854,
+          "end": 63.364261,
+          "score": 0.8140660400792801,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "shadow",
+          "start": 62.603819,
+          "end": 63.404285,
+          "score": 0.9835089120313019,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "encoded",
+        "text": "shadow",
+        "start": 62.603819,
+        "end": 63.34425,
+        "score": 0.9982202280679748,
+        "startDelta": 0,
+        "endDelta": 0.060035,
+        "note": "Role derived from paired AAC input. Raw report mistakenly labels this projected object source; input-role artifacts below are authoritative."
+      },
+      "actualPassArtifacts": [
+        {
+          "input": "source",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 58.321326000000006,
+            "end": 81.514822
+          },
+          "start": 62.663854,
+          "end": 63.364261,
+          "confidence": 0.8140660400792801,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0045-dd1a6442-11bc-49dc-ab6c-03ec1c39a6ff-df83391a51b15a8b01d98e0b38a5387d03cd0d1e6bc8cd758e4e2358c5b68fde.json",
+          "artifactSha256": "438ef6ecbe3791b8a15bedf6fb34f785dddc04051829b3d00a87c1d87a283f4e"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 58.321326000000006,
+            "end": 81.514822
+          },
+          "start": 62.663854,
+          "end": 63.34425,
+          "confidence": 0.84296458819457,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0046-321a5d14-51a4-4406-ab94-297f30bd800a-3b0dcafee18419af4884f3891a5d8e0a834d4d00a90b6cd94f575ee249a3ba32.json",
+          "artifactSha256": "1b7ef10c1d26cec66466dac70d6c2e9c300334d9f6c74728590a57644be5889a"
+        },
+        {
+          "input": "source",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 58.321326000000006,
+            "end": 81.514822
+          },
+          "start": 62.603819,
+          "end": 63.404285,
+          "confidence": 0.9835089120313019,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0047-511dd413-4f73-4729-bb56-56129a1a6eaf-b6d55d2f28b0ef8c00129d22ca2c3544d0976912569b3c575de1d071a085e53e.json",
+          "artifactSha256": "f132d8cae052359a5cd8fb82ca06f81b290c7c8cce38dc2136666b5aab7b7852"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 58.321326000000006,
+            "end": 81.514822
+          },
+          "start": 62.603819,
+          "end": 63.34425,
+          "confidence": 0.9982202280679748,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0048-d8674778-7a20-4d91-86b1-c444182ec0b9-ae8cebfb015bd1956768e934f828f1409164db5af9f003f6957c5c67ea0cad0a.json",
+          "artifactSha256": "1ff43d80cfb7bb6c31b2018ad7a3b35e3ddc8a4f6e03b7f96a37da66a3d4402c"
+        },
+        {
+          "input": "source",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 60.481325999999996,
+            "end": 64.531326
+          },
+          "start": 62.646673,
+          "end": 63.308306,
+          "confidence": 0.6971050026637754,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0053-85dda43a-9124-4140-9634-d8dc5bce34b5-116bbd14ea1f4d77d86f8aa9f9630e8d2a8e7b99968c5ca1925f25d136b48dba.json",
+          "artifactSha256": "40f54b3ecc70768590e7fe1177d2abac605a90fd7a1e9f45f29a44e7f6fba7b4"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 60.481325999999996,
+            "end": 64.531326
+          },
+          "start": 62.646673,
+          "end": 63.308306,
+          "confidence": 0.6982447053010281,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0054-5c2a7255-7703-491f-8a36-c485cf6b692c-c4c6c4af166319d3aaf1ebb7c6e1b393c816f9737c053ed465160eb815aa572e.json",
+          "artifactSha256": "3d5fdfe0b45a88764e85b4d28e04775338cf89980a0b0dd9adef694b1dfde117"
+        },
+        {
+          "input": "source",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 60.481325999999996,
+            "end": 64.531326
+          },
+          "start": 62.606574,
+          "end": 63.408554,
+          "confidence": 0.9703282071224637,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0055-9ec59af0-b529-4212-98ca-e07f3ca88c37-0c88c33282ad03c01605dbaa81b8015713f5294df0278b96e253822f23694b5c.json",
+          "artifactSha256": "aed1a10515b1832e57e923dc089f59f0942038daf665dcb9fb128129391d2547"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 60.481325999999996,
+            "end": 64.531326
+          },
+          "start": 62.606574,
+          "end": 63.388504,
+          "confidence": 0.8531833168004679,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0056-f27e6cf1-b33e-4c69-8c99-5bcacf29c86c-636bf7450200ade2cdb4e8b8f4df62192666a639bcde644662c0eccc7727be62.json",
+          "artifactSha256": "62a3f414ef058a75c62c904f70a34129fd313ca0efda7539492d6cce37c20d56"
+        }
+      ],
+      "decision": "proposed",
+      "targetStart": 62.603819,
+      "targetEnd": 63.404285,
+      "targetMethod": "selected-source-CTC-with-paired-AAC-and-independent-support",
+      "rationale": "Use the measured selected source CTC interval; the same checkpoint is corroborated on the encoded AAC, with additional source-checkpoint or independent ASR boundary support. This is a proposed local cue correction, not an assertion of perceptual perfection.",
+      "selectedSourceArtifacts": [
+        {
+          "input": "source",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 58.321326000000006,
+            "end": 81.514822
+          },
+          "start": 62.603819,
+          "end": 63.404285,
+          "confidence": 0.9835089120313019,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0047-511dd413-4f73-4729-bb56-56129a1a6eaf-b6d55d2f28b0ef8c00129d22ca2c3544d0976912569b3c575de1d071a085e53e.json",
+          "artifactSha256": "f132d8cae052359a5cd8fb82ca06f81b290c7c8cce38dc2136666b5aab7b7852"
+        }
+      ],
+      "selectedEncodedArtifacts": [
+        {
+          "input": "encoded",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 58.321326000000006,
+            "end": 81.514822
+          },
+          "start": 62.603819,
+          "end": 63.34425,
+          "confidence": 0.9982202280679748,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0048-d8674778-7a20-4d91-86b1-c444182ec0b9-ae8cebfb015bd1956768e934f828f1409164db5af9f003f6957c5c67ea0cad0a.json",
+          "artifactSha256": "1ff43d80cfb7bb6c31b2018ad7a3b35e3ddc8a4f6e03b7f96a37da66a3d4402c"
+        }
+      ]
+    },
+    {
+      "id": "p23-l021-w04",
+      "text": "cheers",
+      "oldStart": 109.391635,
+      "oldEnd": 110.13353,
+      "rawSupported": true,
+      "rawRoute": "official_dual_ctc",
+      "rawSelectedInterval": {
+        "start": 109.454509,
+        "end": 110.114745,
+        "confidence": 0.939316,
+        "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d"
+      },
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "cheers",
+          "start": 109.454509,
+          "end": 110.114745,
+          "score": 0.9393156468824998,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "cheers",
+          "start": 109.394488,
+          "end": 110.114745,
+          "score": 0.9136652358011016,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+        "role": "encoded",
+        "text": "cheers",
+        "start": 109.454509,
+        "end": 110.114745,
+        "score": 0.9000674424480221,
+        "startDelta": 0,
+        "endDelta": 0,
+        "note": "Role derived from paired AAC input. Raw report mistakenly labels this projected object source; input-role artifacts below are authoritative."
+      },
+      "actualPassArtifacts": [
+        {
+          "input": "source",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 101.731746,
+            "end": 125.140128
+          },
+          "start": 109.454509,
+          "end": 110.114745,
+          "confidence": 0.9393156468824998,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0090-53099dfb-5aa3-45b6-bf13-f24a13b8d022-55d710f1a2b12d9a539c28814d19f92bae88ccd537063cfc60f12fa05efbef96.json",
+          "artifactSha256": "e2442a370f6a10f2c112439febca63d81ac3c9fd4f6a721b8cea12705682cb0d"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 101.731746,
+            "end": 125.140128
+          },
+          "start": 109.454509,
+          "end": 110.114745,
+          "confidence": 0.9000674424480221,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0091-a94d1bb3-0522-443d-8390-848c78d0baa5-bd50bee5ac45a29bcb0581ef92a3add581061d3127f08128b66dec53191a83b7.json",
+          "artifactSha256": "90797ecdddbd41a6ce443479e0ff30dbcc099a6d8fc0ad4fb456d1ef27013838"
+        },
+        {
+          "input": "source",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 101.731746,
+            "end": 125.140128
+          },
+          "start": 109.394488,
+          "end": 110.114745,
+          "confidence": 0.9136652358011016,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0092-cd2f4cd6-0291-43f7-80af-7209301af2b2-3ba371f4d3f1c7a91d64ccce07a427a87e7c561162240950c441811534c8d0fa.json",
+          "artifactSha256": "ac967c94aee6631ca2408d5d7eb8bccc0652896d42a0e02a2c4da910cae0cc70"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 101.731746,
+            "end": 125.140128
+          },
+          "start": 109.394488,
+          "end": 110.114745,
+          "confidence": 0.9059237841843062,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0093-66da5107-ff98-4d20-b117-ac0552e9c598-04c224b7628930b404efdc327b4086bfac6b95ba8bb4a2491eb48f42323cd5f4.json",
+          "artifactSha256": "bb2d8e80283ae5ed03a88ed2dc2b012c77b3eb08e460819cc12b5c3cfc039b52"
+        },
+        {
+          "input": "source",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 106.531746,
+            "end": 112.481746
+          },
+          "start": 109.456662,
+          "end": 110.117773,
+          "confidence": 0.8076608921341726,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0099-47c839e8-5713-4753-ac47-5c9145b9b2eb-30c98dfc9b74dd47bd22e6feac5d577a956b90942ac257a27fd594704b89c243.json",
+          "artifactSha256": "8ded46e08faa2223c29c1cf5589256736f1151248d81c51b1ec64b126adf355e"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 106.531746,
+            "end": 112.481746
+          },
+          "start": 109.456662,
+          "end": 110.117773,
+          "confidence": 0.7547334363358593,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0100-886f802e-03ae-4a75-b3f4-16b0307bc52e-7503a9d1da6d7f1e4038cb9a13cd68d84d60c164323e22aee987f06782b51e2e.json",
+          "artifactSha256": "7721b6029a50b493f38f87c6ae49c94c56e289245f8bca39618bdd06f6769256"
+        },
+        {
+          "input": "source",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 106.531746,
+            "end": 112.481746
+          },
+          "start": 109.376527,
+          "end": 110.137807,
+          "confidence": 0.9512558522538728,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0101-d98b51ee-3c3f-42af-b0b9-caa1b163df9f-64af4c85285157373bff179580e85bf432efb79e873379b60ed52059d19efdb9.json",
+          "artifactSha256": "048f063d4d690b0d6d4b52735917c19fb005edf33cccbbf0bceca55a53cf12d1"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 106.531746,
+            "end": 112.481746
+          },
+          "start": 109.376527,
+          "end": 110.137807,
+          "confidence": 0.9865044898812414,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0102-24d8e8c5-3bce-4a35-a5fb-80b099c502b9-99fdf6fb7f53afeb0bba10a8629d393c3ae12ff30c3650215fcff2a0282fcbdd.json",
+          "artifactSha256": "479fe0a1dd2f5d5df0f3c8001a031612317e562aa5fe1742e1c5d5e2c1dc35d3"
+        }
+      ],
+      "decision": "proposed",
+      "targetStart": 109.454509,
+      "targetEnd": 110.114745,
+      "targetMethod": "selected-source-CTC-with-paired-AAC-and-independent-support",
+      "rationale": "Use the measured selected source CTC interval; the same checkpoint is corroborated on the encoded AAC, with additional source-checkpoint or independent ASR boundary support. This is a proposed local cue correction, not an assertion of perceptual perfection.",
+      "selectedSourceArtifacts": [
+        {
+          "input": "source",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 101.731746,
+            "end": 125.140128
+          },
+          "start": 109.454509,
+          "end": 110.114745,
+          "confidence": 0.9393156468824998,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0090-53099dfb-5aa3-45b6-bf13-f24a13b8d022-55d710f1a2b12d9a539c28814d19f92bae88ccd537063cfc60f12fa05efbef96.json",
+          "artifactSha256": "e2442a370f6a10f2c112439febca63d81ac3c9fd4f6a721b8cea12705682cb0d"
+        }
+      ],
+      "selectedEncodedArtifacts": [
+        {
+          "input": "encoded",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 101.731746,
+            "end": 125.140128
+          },
+          "start": 109.454509,
+          "end": 110.114745,
+          "confidence": 0.9000674424480221,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0091-a94d1bb3-0522-443d-8390-848c78d0baa5-bd50bee5ac45a29bcb0581ef92a3add581061d3127f08128b66dec53191a83b7.json",
+          "artifactSha256": "90797ecdddbd41a6ce443479e0ff30dbcc099a6d8fc0ad4fb456d1ef27013838"
+        }
+      ]
+    },
+    {
+      "id": "p23-l024-w03",
+      "text": "fear",
+      "oldStart": 120.805727,
+      "oldEnd": 121.486145,
+      "rawSupported": true,
+      "rawRoute": "official_ctc_asr",
+      "rawSelectedInterval": {
+        "start": 120.858589,
+        "end": 121.518825,
+        "confidence": 0.685544,
+        "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d"
+      },
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "fear",
+          "start": 120.858589,
+          "end": 121.518825,
+          "score": 0.6855439655244585,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "fear",
+          "start": 120.798568,
+          "end": 121.518825,
+          "score": 0.6707807046331496,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+        "role": "encoded",
+        "text": "fear",
+        "start": 120.858589,
+        "end": 121.518825,
+        "score": 0.6840341734723252,
+        "startDelta": 0,
+        "endDelta": 0,
+        "note": "Role derived from paired AAC input. Raw report mistakenly labels this projected object source; input-role artifacts below are authoritative."
+      },
+      "actualPassArtifacts": [
+        {
+          "input": "source",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 101.731746,
+            "end": 125.140128
+          },
+          "start": 120.858589,
+          "end": 121.518825,
+          "confidence": 0.6855439655244585,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0090-53099dfb-5aa3-45b6-bf13-f24a13b8d022-55d710f1a2b12d9a539c28814d19f92bae88ccd537063cfc60f12fa05efbef96.json",
+          "artifactSha256": "e2442a370f6a10f2c112439febca63d81ac3c9fd4f6a721b8cea12705682cb0d"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 101.731746,
+            "end": 125.140128
+          },
+          "start": 120.858589,
+          "end": 121.518825,
+          "confidence": 0.6840341734723252,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0091-a94d1bb3-0522-443d-8390-848c78d0baa5-bd50bee5ac45a29bcb0581ef92a3add581061d3127f08128b66dec53191a83b7.json",
+          "artifactSha256": "90797ecdddbd41a6ce443479e0ff30dbcc099a6d8fc0ad4fb456d1ef27013838"
+        },
+        {
+          "input": "source",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 101.731746,
+            "end": 125.140128
+          },
+          "start": 120.798568,
+          "end": 121.518825,
+          "confidence": 0.6707807046331496,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0092-cd2f4cd6-0291-43f7-80af-7209301af2b2-3ba371f4d3f1c7a91d64ccce07a427a87e7c561162240950c441811534c8d0fa.json",
+          "artifactSha256": "ac967c94aee6631ca2408d5d7eb8bccc0652896d42a0e02a2c4da910cae0cc70"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 101.731746,
+            "end": 125.140128
+          },
+          "start": 120.798568,
+          "end": 121.498818,
+          "confidence": 0.8015676396774919,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0093-66da5107-ff98-4d20-b117-ac0552e9c598-04c224b7628930b404efdc327b4086bfac6b95ba8bb4a2491eb48f42323cd5f4.json",
+          "artifactSha256": "bb2d8e80283ae5ed03a88ed2dc2b012c77b3eb08e460819cc12b5c3cfc039b52"
+        },
+        {
+          "input": "source",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 119.531746,
+            "end": 123.601746
+          },
+          "start": 120.854997,
+          "end": 121.456475,
+          "confidence": 0.7367462571982609,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0111-6dd757bf-6afc-40f1-86e3-c22cc6ad04fa-25713e216847380cb255ad53035480059dbb426850378ce7ccf62aeda16cbcda.json",
+          "artifactSha256": "fb14b36b1c5d309ec486ce5477d2987e4d4933c93fea28a63b41c26371e504fb"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 119.531746,
+            "end": 123.601746
+          },
+          "start": 120.854997,
+          "end": 121.456475,
+          "confidence": 0.7118850491036707,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0112-c6d39342-ca3d-479a-abb1-fa13184add31-5dd7ed7729008ccbb04faac4b60a9e7a76456789c8d7689f6a0e06abc8b3cc15.json",
+          "artifactSha256": "578be8340b86ecc96a0b67fa0cbd4796be2f3447256be0c6b6e63e7a2f3c666f"
+        },
+        {
+          "input": "source",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 119.531746,
+            "end": 123.601746
+          },
+          "start": 120.794849,
+          "end": 121.356229,
+          "confidence": 0.7920429577672226,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0113-f05a2050-363a-4f55-a274-bb7e424231f4-46f92824aabc02fad021e54ed9545a998a3e8072150eb5f792c5fc2be64e3f07.json",
+          "artifactSha256": "7642f7bb1d510355be74934caa4a085242df1c0ae6f3e5a01e5497aef1c1ccaa"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 119.531746,
+            "end": 123.601746
+          },
+          "start": 120.794849,
+          "end": 121.356229,
+          "confidence": 0.6735391021032311,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0114-74d04171-226d-4be6-b24c-163ad519f7e2-533aec299c78cdf98e6e3c9c0bd9c2aa3107aeaa5ed2bc4ce3ab95114e36f528.json",
+          "artifactSha256": "2a91d4670dd19f307a23416ef2b3014c17e5dd608294d9e12907941c05ed9d4b"
+        }
+      ],
+      "decision": "proposed",
+      "targetStart": 120.858589,
+      "targetEnd": 121.518825,
+      "targetMethod": "selected-source-CTC-with-paired-AAC-and-independent-support",
+      "rationale": "Use the measured selected source CTC interval; the same checkpoint is corroborated on the encoded AAC, with additional source-checkpoint or independent ASR boundary support. This is a proposed local cue correction, not an assertion of perceptual perfection.",
+      "selectedSourceArtifacts": [
+        {
+          "input": "source",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 101.731746,
+            "end": 125.140128
+          },
+          "start": 120.858589,
+          "end": 121.518825,
+          "confidence": 0.6855439655244585,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0090-53099dfb-5aa3-45b6-bf13-f24a13b8d022-55d710f1a2b12d9a539c28814d19f92bae88ccd537063cfc60f12fa05efbef96.json",
+          "artifactSha256": "e2442a370f6a10f2c112439febca63d81ac3c9fd4f6a721b8cea12705682cb0d"
+        }
+      ],
+      "selectedEncodedArtifacts": [
+        {
+          "input": "encoded",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 101.731746,
+            "end": 125.140128
+          },
+          "start": 120.858589,
+          "end": 121.518825,
+          "confidence": 0.6840341734723252,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0091-a94d1bb3-0522-443d-8390-848c78d0baa5-bd50bee5ac45a29bcb0581ef92a3add581061d3127f08128b66dec53191a83b7.json",
+          "artifactSha256": "90797ecdddbd41a6ce443479e0ff30dbcc099a6d8fc0ad4fb456d1ef27013838"
+        }
+      ]
+    },
+    {
+      "id": "p23-l033-w04",
+      "text": "no",
+      "oldStart": 172.483667,
+      "oldEnd": 172.864067,
+      "rawSupported": true,
+      "rawRoute": "official_dual_ctc",
+      "rawSelectedInterval": {
+        "start": 172.483682,
+        "end": 172.763869,
+        "confidence": 0.981232,
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "no",
+          "start": 172.503696,
+          "end": 172.743856,
+          "score": 0.8020621873712673,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "no",
+          "start": 172.483682,
+          "end": 172.763869,
+          "score": 0.9812318568853842,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "encoded",
+        "text": "no",
+        "start": 172.483682,
+        "end": 172.863936,
+        "score": 0.7552842104240071,
+        "startDelta": 0,
+        "endDelta": 0.100067,
+        "note": "Role derived from paired AAC input. Raw report mistakenly labels this projected object source; input-role artifacts below are authoritative."
+      },
+      "actualPassArtifacts": [
+        {
+          "input": "source",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 170.342255,
+            "end": 193.877937
+          },
+          "start": 172.503696,
+          "end": 172.743856,
+          "confidence": 0.8020621873712673,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0166-4fe216ee-04a2-4159-8d1e-9270acbc0cda-2acb25242831490d3f84f2236e81b2995e3ae846471bd1ccd533e45b8bfa42d6.json",
+          "artifactSha256": "9852c720bb712ed348bde694e59dc44c6539d6c644c5521a678bac1d2ce83454"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 170.342255,
+            "end": 193.877937
+          },
+          "start": 172.503696,
+          "end": 172.743856,
+          "confidence": 0.7032932230528443,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0167-b5513ffb-bda2-47f4-a22b-b7c44003bda9-2ae826c643dba8f2915cc4ac2d594582d16b1ea819ab5bdabb33c0128f045132.json",
+          "artifactSha256": "01af826460d795148e6fda06b3147f2dfce0c07d75f7e319d06fa63100564bc7"
+        },
+        {
+          "input": "source",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 170.342255,
+            "end": 193.877937
+          },
+          "start": 172.483682,
+          "end": 172.763869,
+          "confidence": 0.9812318568853842,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0168-6590879a-a4f2-4e44-8768-22557c3419dc-62fcde776e590dc12ee7f8258d9f2b45ae97d6b1af14200c4eddc277dddfc793.json",
+          "artifactSha256": "425f5ac905c2db587256c8e285e2654f78f32a91161a3369a4c4d7b591ecc2f6"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 170.342255,
+            "end": 193.877937
+          },
+          "start": 172.483682,
+          "end": 172.863936,
+          "confidence": 0.7552842104240071,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0169-1e0281f2-7083-4d5f-96f6-f8c4a20a8caa-78d819b614c4cc6412c03af08271bdabcf8504b4a096ab1d6e83f01098666e56.json",
+          "artifactSha256": "026fa5721552ab0f300eec4a71be9cb72dabc19f4a1cea07e53ff36236ebd9c3"
+        },
+        {
+          "input": "source",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 170.90225500000003,
+            "end": 174.272255
+          },
+          "start": 172.38666,
+          "end": 172.747731,
+          "confidence": 0.33459022167889546,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0171-cc702643-b8ee-428b-8b1b-21027362e46d-7209e103c064ece7db7c874e583b786ff243ef59c1c6a458e50ec7f4d74d5cca.json",
+          "artifactSha256": "83d3db4752074465bc3fbd34b76d8a8e9933fdda1e2660da75c5a73cb7289316"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 170.90225500000003,
+            "end": 174.272255
+          },
+          "start": 172.527076,
+          "end": 172.707612,
+          "confidence": 0.1837151790804316,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0172-93891bfc-acf1-4e0d-9d03-e235da0cf97e-8aee2f7b26c743e6ab0d8d4907e283ef82a8e5c6e44184840a004577ce5276a6.json",
+          "artifactSha256": "a8b750322a964fcc0a7f58fd48542245b3b4b270968c7a095d68c55e84fd51fa"
+        },
+        {
+          "input": "source",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 170.90225500000003,
+            "end": 174.272255
+          },
+          "start": 172.486957,
+          "end": 172.78785,
+          "confidence": 0.7414923199981397,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0173-3d2e172f-4292-4511-9271-f829c09f143e-5de532cef0297b566a1f7ef89bc1066608e2f7aca944a6e813ddcc17e4b41cee.json",
+          "artifactSha256": "426bdfadeefc52601d8073883b09d4bb969baf7d2ac3565ae92a27f7b3096ece"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 170.90225500000003,
+            "end": 174.272255
+          },
+          "start": 172.3666,
+          "end": 172.727672,
+          "confidence": 0.277131403474018,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0174-b4c8c35a-03e2-47c8-9789-b18542e2877d-fd55eea4dd32be4806aad5bcee4a94e9e6ff831d1ad15fd76a9de9c8caeb9a18.json",
+          "artifactSha256": "d83dc030a81b01eee97b8a637c259ccebf5a5c737907fa4cc7074c8f08b9121a"
+        }
+      ],
+      "decision": "proposed",
+      "targetStart": 172.483682,
+      "targetEnd": 172.763869,
+      "targetMethod": "selected-source-CTC-with-paired-AAC-and-independent-support",
+      "rationale": "Use the measured selected source CTC interval; the same checkpoint is corroborated on the encoded AAC, with additional source-checkpoint or independent ASR boundary support. This is a proposed local cue correction, not an assertion of perceptual perfection. Two source checkpoints place the ending at172.743856/172.763869, while AAC selected endpoint is172.863936 (100ms codec spread); target follows source agreement and preserves the measured discrepancy.",
+      "selectedSourceArtifacts": [
+        {
+          "input": "source",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 170.342255,
+            "end": 193.877937
+          },
+          "start": 172.483682,
+          "end": 172.763869,
+          "confidence": 0.9812318568853842,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0168-6590879a-a4f2-4e44-8768-22557c3419dc-62fcde776e590dc12ee7f8258d9f2b45ae97d6b1af14200c4eddc277dddfc793.json",
+          "artifactSha256": "425f5ac905c2db587256c8e285e2654f78f32a91161a3369a4c4d7b591ecc2f6"
+        }
+      ],
+      "selectedEncodedArtifacts": [
+        {
+          "input": "encoded",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 170.342255,
+            "end": 193.877937
+          },
+          "start": 172.483682,
+          "end": 172.863936,
+          "confidence": 0.7552842104240071,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0169-1e0281f2-7083-4d5f-96f6-f8c4a20a8caa-78d819b614c4cc6412c03af08271bdabcf8504b4a096ab1d6e83f01098666e56.json",
+          "artifactSha256": "026fa5721552ab0f300eec4a71be9cb72dabc19f4a1cea07e53ff36236ebd9c3"
+        }
+      ]
+    },
+    {
+      "id": "p23-l034-w05",
+      "text": "me.",
+      "oldStart": 176.768177,
+      "oldEnd": 177.128556,
+      "rawSupported": true,
+      "rawRoute": "official_dual_ctc",
+      "rawSelectedInterval": {
+        "start": 176.766537,
+        "end": 177.046724,
+        "confidence": 0.999196,
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "me.",
+          "start": 176.78655,
+          "end": 177.006697,
+          "score": 0.9984659598535637,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "me.",
+          "start": 176.766537,
+          "end": 177.046724,
+          "score": 0.9991958281185643,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "encoded",
+        "text": "me.",
+        "start": 176.766537,
+        "end": 177.106764,
+        "score": 0.9994083573919832,
+        "startDelta": 0,
+        "endDelta": 0.06004,
+        "note": "Role derived from paired AAC input. Raw report mistakenly labels this projected object source; input-role artifacts below are authoritative."
+      },
+      "actualPassArtifacts": [
+        {
+          "input": "source",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 170.342255,
+            "end": 193.877937
+          },
+          "start": 176.78655,
+          "end": 177.006697,
+          "confidence": 0.9984659598535637,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0166-4fe216ee-04a2-4159-8d1e-9270acbc0cda-2acb25242831490d3f84f2236e81b2995e3ae846471bd1ccd533e45b8bfa42d6.json",
+          "artifactSha256": "9852c720bb712ed348bde694e59dc44c6539d6c644c5521a678bac1d2ce83454"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 170.342255,
+            "end": 193.877937
+          },
+          "start": 176.78655,
+          "end": 177.006697,
+          "confidence": 0.8497835308062277,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0167-b5513ffb-bda2-47f4-a22b-b7c44003bda9-2ae826c643dba8f2915cc4ac2d594582d16b1ea819ab5bdabb33c0128f045132.json",
+          "artifactSha256": "01af826460d795148e6fda06b3147f2dfce0c07d75f7e319d06fa63100564bc7"
+        },
+        {
+          "input": "source",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 170.342255,
+            "end": 193.877937
+          },
+          "start": 176.766537,
+          "end": 177.046724,
+          "confidence": 0.9991958281185643,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0168-6590879a-a4f2-4e44-8768-22557c3419dc-62fcde776e590dc12ee7f8258d9f2b45ae97d6b1af14200c4eddc277dddfc793.json",
+          "artifactSha256": "425f5ac905c2db587256c8e285e2654f78f32a91161a3369a4c4d7b591ecc2f6"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 170.342255,
+            "end": 193.877937
+          },
+          "start": 176.766537,
+          "end": 177.106764,
+          "confidence": 0.9994083573919832,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0169-1e0281f2-7083-4d5f-96f6-f8c4a20a8caa-78d819b614c4cc6412c03af08271bdabcf8504b4a096ab1d6e83f01098666e56.json",
+          "artifactSha256": "026fa5721552ab0f300eec4a71be9cb72dabc19f4a1cea07e53ff36236ebd9c3"
+        },
+        {
+          "input": "source",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 173.822255,
+            "end": 178.092255
+          },
+          "start": 177.290377,
+          "end": 177.330471,
+          "confidence": 3.967351742831949e-05,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0175-9a47a03c-a58d-49d7-9003-5827261da2b9-d4d612103880797e3ec6089e94f7eca17cfe46cd747561987ba4d5907a309c77.json",
+          "artifactSha256": "7791aa91c355888f10965969c9cfe4b5f3bce93b5f29b517e43b04fdfe3add38"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 173.822255,
+            "end": 178.092255
+          },
+          "start": 177.290377,
+          "end": 177.330471,
+          "confidence": 4.7197068299428784e-05,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0176-c83ffd40-a305-4f25-94a3-81f4fcc40c27-7029b47f277bce3b8649a7e96af9c9fc1ef83378133e69b3a74661df324d10c4.json",
+          "artifactSha256": "f380d175c9b7a1ebacb13e72def573a76f58b99744dc569df6151e0c00155993"
+        },
+        {
+          "input": "source",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 173.822255,
+            "end": 178.092255
+          },
+          "start": 176.769156,
+          "end": 177.150048,
+          "confidence": 0.9984867296128207,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0177-40340ea5-7b09-466a-8c65-2bf2f719721c-63fbb42ef6c5a87f54e42fa4110e32aca5b3f55071a8558695db2f9525a5f829.json",
+          "artifactSha256": "2383ba92108c44a6e2256c8536853a6fec488d45e006f863251280873e8effa6"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 173.822255,
+            "end": 178.092255
+          },
+          "start": 176.789203,
+          "end": 177.150048,
+          "confidence": 0.961471653625486,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0178-2ff3934f-8510-4509-8355-30b84719fc87-c7c8f194e611834cbe35edaac0f70cccf5f978dc6c6cff5229c22410434ecae7.json",
+          "artifactSha256": "c9a86965d2607a2de64797c8146f45589216891a46ebb05d4800102a2ff25aaf"
+        }
+      ],
+      "decision": "proposed",
+      "targetStart": 176.766537,
+      "targetEnd": 177.046724,
+      "targetMethod": "selected-source-CTC-with-paired-AAC-and-independent-support",
+      "rationale": "Use the measured selected source CTC interval; the same checkpoint is corroborated on the encoded AAC, with additional source-checkpoint or independent ASR boundary support. This is a proposed local cue correction, not an assertion of perceptual perfection.",
+      "selectedSourceArtifacts": [
+        {
+          "input": "source",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 170.342255,
+            "end": 193.877937
+          },
+          "start": 176.766537,
+          "end": 177.046724,
+          "confidence": 0.9991958281185643,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0168-6590879a-a4f2-4e44-8768-22557c3419dc-62fcde776e590dc12ee7f8258d9f2b45ae97d6b1af14200c4eddc277dddfc793.json",
+          "artifactSha256": "425f5ac905c2db587256c8e285e2654f78f32a91161a3369a4c4d7b591ecc2f6"
+        }
+      ],
+      "selectedEncodedArtifacts": [
+        {
+          "input": "encoded",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 170.342255,
+            "end": 193.877937
+          },
+          "start": 176.766537,
+          "end": 177.106764,
+          "confidence": 0.9994083573919832,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0169-1e0281f2-7083-4d5f-96f6-f8c4a20a8caa-78d819b614c4cc6412c03af08271bdabcf8504b4a096ab1d6e83f01098666e56.json",
+          "artifactSha256": "026fa5721552ab0f300eec4a71be9cb72dabc19f4a1cea07e53ff36236ebd9c3"
+        }
+      ]
+    },
+    {
+      "id": "p23-l038-w05",
+      "text": "time.",
+      "oldStart": 195.027714,
+      "oldEnd": 195.60816,
+      "rawSupported": true,
+      "rawRoute": "official_dual_ctc",
+      "rawSelectedInterval": {
+        "start": 195.025788,
+        "end": 195.487558,
+        "confidence": 0.883693,
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "time.",
+          "start": 195.040772,
+          "end": 195.501225,
+          "score": 0.8791386475873693,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "time.",
+          "start": 195.000733,
+          "end": 195.741461,
+          "score": 0.7101519290383003,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "time.",
+          "start": 195.086019,
+          "end": 195.547788,
+          "score": 0.007210752785673946,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "time.",
+          "start": 195.025788,
+          "end": 195.487558,
+          "score": 0.883693046587129,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "encoded",
+        "text": "time.",
+        "start": 195.025788,
+        "end": 195.487558,
+        "score": 0.9266547265830839,
+        "startDelta": 0,
+        "endDelta": 0,
+        "note": "Role derived from paired AAC input. Raw report mistakenly labels this projected object source; input-role artifacts below are authoritative."
+      },
+      "actualPassArtifacts": [
+        {
+          "input": "source",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 192.39817299999999,
+            "end": 203.709313
+          },
+          "start": 195.040772,
+          "end": 195.501225,
+          "confidence": 0.8791386475873693,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0197-1a9a87b0-4650-4396-835c-90dd0a639275-09eae90c2cbb10b0254f72e918a048c2294ec7fe995e702e4bc78f25e770cb54.json",
+          "artifactSha256": "21de987ce80e790e17a6fb48790f87aab1645ba6b9e603e5aa2d6cde25b41da1"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 192.39817299999999,
+            "end": 203.709313
+          },
+          "start": 195.040772,
+          "end": 195.461186,
+          "confidence": 0.508600699456368,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0198-e315ab17-d29c-47e0-807d-c084ea2ae0dc-9c1785ec2367a6a6a76dcc7027531c3d466d11a56a950eb3dc96269407820cb5.json",
+          "artifactSha256": "7d9f9e8a5d672a21cabed630438cf7dcbc19598753c7fb1153de05bd0421539b"
+        },
+        {
+          "input": "source",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 192.39817299999999,
+            "end": 203.709313
+          },
+          "start": 195.000733,
+          "end": 195.741461,
+          "confidence": 0.7101519290383003,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0199-f9cc5dc6-b0ac-4b8b-b8f3-b0558654b27d-475007067b1040270d2ebb486676d869e879c1a5e7eb2de03ff1f3e64ed88677.json",
+          "artifactSha256": "70076a25fa155e6980e7f23a4f40398f524446cd755c9b4479444d1cda8f38b5"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 192.39817299999999,
+            "end": 203.709313
+          },
+          "start": 195.020752,
+          "end": 195.80152,
+          "confidence": 0.8625150984148742,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0200-94ac1365-4d3d-4b50-97bb-aaf6a6c47d73-37783385fa3e4350170d2ee74fa98bb914ccc8906f473d9c81c62bca61852ceb.json",
+          "artifactSha256": "5d7017fccf5cfcd6c7692ca82a40697cfe50cb36bbb90bbe636fc5d04ad9861f"
+        },
+        {
+          "input": "source",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 193.038173,
+            "end": 195.648173
+          },
+          "start": 195.086019,
+          "end": 195.547788,
+          "confidence": 0.007210752785673946,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0202-28c1bca3-fbbd-40cd-8429-a280b4135110-d5dd5a061aa52f6b18808c6ccc32985bc12b836e33599312e2b55b280de75d11.json",
+          "artifactSha256": "1f4f8b3e60d6af9d654428a076d02e55d55c8c3974d49b2455277775f3748d56"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 193.038173,
+            "end": 195.648173
+          },
+          "start": 195.086019,
+          "end": 195.547788,
+          "confidence": 0.00829528024705737,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0203-fe9f00fa-c785-469e-ba6c-915fadb636ee-06aed3fb68a1c87834e68a5bd3eff49c834dbd20c70fc96d5efa398c26a0da24.json",
+          "artifactSha256": "0bd0da5578aa2d8e688fa25da731f8a7239aa8946d4099ebbf2a99107e32002d"
+        },
+        {
+          "input": "source",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 193.038173,
+            "end": 195.648173
+          },
+          "start": 195.025788,
+          "end": 195.487558,
+          "confidence": 0.883693046587129,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0204-1d201083-2c1d-4615-851f-6b8082838998-b033f95bd92e8fcbee0e52ca6ec374f1afd1aab137fe1bbbb93e9aee426ddef7.json",
+          "artifactSha256": "39961e9c1583a7ef4e3dbbd2aa06a2e1126967e348358735101547403933ea04"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 193.038173,
+            "end": 195.648173
+          },
+          "start": 195.025788,
+          "end": 195.487558,
+          "confidence": 0.9266547265830839,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0205-2d321270-6ea2-4630-8942-b03c66f0a481-5a3fe76e63f7a30e72a147af6abc133ec35e317652a99b775714cae127f1e7a0.json",
+          "artifactSha256": "63eda1522378929601b8fbaacbeda90107dd6e14442a57805b5be64ade3b0f91"
+        }
+      ],
+      "decision": "proposed",
+      "targetStart": 195.025788,
+      "targetEnd": 195.487558,
+      "targetMethod": "selected-source-CTC-with-paired-AAC-and-independent-support",
+      "rationale": "Use the measured selected source CTC interval; the same checkpoint is corroborated on the encoded AAC, with additional source-checkpoint or independent ASR boundary support. This is a proposed local cue correction, not an assertion of perceptual perfection. Phrase-context source195.025788\u2013195.487558 and independent full-window source195.040772\u2013195.501225 agree within15ms, with exact selected AAC interval; the later full-window CTC end195.741461 has lower confidence.",
+      "selectedSourceArtifacts": [
+        {
+          "input": "source",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 193.038173,
+            "end": 195.648173
+          },
+          "start": 195.025788,
+          "end": 195.487558,
+          "confidence": 0.883693046587129,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0204-1d201083-2c1d-4615-851f-6b8082838998-b033f95bd92e8fcbee0e52ca6ec374f1afd1aab137fe1bbbb93e9aee426ddef7.json",
+          "artifactSha256": "39961e9c1583a7ef4e3dbbd2aa06a2e1126967e348358735101547403933ea04"
+        }
+      ],
+      "selectedEncodedArtifacts": [
+        {
+          "input": "encoded",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 193.038173,
+            "end": 195.648173
+          },
+          "start": 195.025788,
+          "end": 195.487558,
+          "confidence": 0.9266547265830839,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0205-2d321270-6ea2-4630-8942-b03c66f0a481-5a3fe76e63f7a30e72a147af6abc133ec35e317652a99b775714cae127f1e7a0.json",
+          "artifactSha256": "63eda1522378929601b8fbaacbeda90107dd6e14442a57805b5be64ade3b0f91"
+        }
+      ]
+    }
+  ],
+  "excludedSupportedFailures": [
+    {
+      "id": "p23-l011-w03",
+      "text": "I",
+      "oldStart": 59.555589,
+      "oldEnd": 59.575649,
+      "rawSupported": true,
+      "rawRoute": "official_dual_ctc",
+      "rawSelectedInterval": {
+        "start": 59.622083,
+        "end": 59.642095,
+        "confidence": 0.987173,
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "I",
+          "start": 59.522025,
+          "end": 59.542037,
+          "score": 0.03816466090413092,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "I",
+          "start": 59.622083,
+          "end": 59.642095,
+          "score": 0.9871734417469029,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "I",
+          "start": 59.544504,
+          "end": 59.564582,
+          "score": 0.9522679088308557,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "I",
+          "start": 59.564582,
+          "end": 59.584659,
+          "score": 0.9829997197337849,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "encoded",
+        "text": "I",
+        "start": 59.622083,
+        "end": 59.642095,
+        "score": 0.9948059901696578,
+        "startDelta": 0,
+        "endDelta": 0,
+        "note": "Role derived from paired AAC input. Raw report mistakenly labels this projected object source; input-role artifacts below are authoritative."
+      },
+      "actualPassArtifacts": [
+        {
+          "input": "source",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 58.321326000000006,
+            "end": 81.514822
+          },
+          "start": 59.522025,
+          "end": 59.542037,
+          "confidence": 0.03816466090413092,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0045-dd1a6442-11bc-49dc-ab6c-03ec1c39a6ff-df83391a51b15a8b01d98e0b38a5387d03cd0d1e6bc8cd758e4e2358c5b68fde.json",
+          "artifactSha256": "438ef6ecbe3791b8a15bedf6fb34f785dddc04051829b3d00a87c1d87a283f4e"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 58.321326000000006,
+            "end": 81.514822
+          },
+          "start": 59.522025,
+          "end": 59.542037,
+          "confidence": 0.07547296255481223,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0046-321a5d14-51a4-4406-ab94-297f30bd800a-3b0dcafee18419af4884f3891a5d8e0a834d4d00a90b6cd94f575ee249a3ba32.json",
+          "artifactSha256": "1b7ef10c1d26cec66466dac70d6c2e9c300334d9f6c74728590a57644be5889a"
+        },
+        {
+          "input": "source",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 58.321326000000006,
+            "end": 81.514822
+          },
+          "start": 59.622083,
+          "end": 59.642095,
+          "confidence": 0.9871734417469029,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0047-511dd413-4f73-4729-bb56-56129a1a6eaf-b6d55d2f28b0ef8c00129d22ca2c3544d0976912569b3c575de1d071a085e53e.json",
+          "artifactSha256": "f132d8cae052359a5cd8fb82ca06f81b290c7c8cce38dc2136666b5aab7b7852"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 58.321326000000006,
+            "end": 81.514822
+          },
+          "start": 59.622083,
+          "end": 59.642095,
+          "confidence": 0.9948059901696578,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0048-d8674778-7a20-4d91-86b1-c444182ec0b9-ae8cebfb015bd1956768e934f828f1409164db5af9f003f6957c5c67ea0cad0a.json",
+          "artifactSha256": "1ff43d80cfb7bb6c31b2018ad7a3b35e3ddc8a4f6e03b7f96a37da66a3d4402c"
+        },
+        {
+          "input": "source",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 58.721326,
+            "end": 61.311326
+          },
+          "start": 59.544504,
+          "end": 59.564582,
+          "confidence": 0.9522679088308557,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0049-2a5d1548-b60f-4f16-a8e8-65bf632711f5-a3a6924e265b3511e78f126e471d1313a1cef9ee4a3bae83fc90a22d4260542a.json",
+          "artifactSha256": "6d3d29a8242de129bec656ca89672cff8ef189d5367dd15cabda20044cbc1371"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 58.721326,
+            "end": 61.311326
+          },
+          "start": 59.524427,
+          "end": 59.544504,
+          "confidence": 0.8191670426345133,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0050-82d9661c-6880-4559-ac5c-2b10a6e513ed-84ae3415140774b532410928cdd62211566bc132ba3898e54a81f2dd4e80f660.json",
+          "artifactSha256": "eb7c9c994703bcfdb760746c0c51a70af9e729fcfb7018ce1bbb7cb487afb2ac"
+        },
+        {
+          "input": "source",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 58.721326,
+            "end": 61.311326
+          },
+          "start": 59.564582,
+          "end": 59.584659,
+          "confidence": 0.9829997197337849,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0051-68307910-8ae1-45a0-bd36-3af4554d2198-b03f455f990dc22a4c9af01c7100acda956e9673dd3eb1f645e06fcf5415b2d2.json",
+          "artifactSha256": "04e352a59c2829b158bfbac3b7f2134ee003eb7d11262fa9a259008e39275f30"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 58.721326,
+            "end": 61.311326
+          },
+          "start": 59.584659,
+          "end": 59.604737,
+          "confidence": 0.9894132900316931,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0052-741d8a16-064d-47fb-b4f1-d77848f4c378-44f41ccda048f459d614ebe3f39c5e5d606e434530bfa30f503121aef42e3ba5.json",
+          "artifactSha256": "b6992ea7a66998ee2c47a1da58c546a3bbe961a2ff98884746f9944494638792"
+        }
+      ],
+      "decision": "do_not_apply",
+      "rationale": "Boundary disagreement across context: two high-confidence whole-phrase CTC checkpoints locate I at59.544504\u201359.564582 (score.9523) and59.564582\u201359.584659 (score.9830), both support the current59.555589\u201359.575649. The selected full-window alternative59.622083\u201359.642095 has higher probability by only.0042. No defensible reason to move the cue66ms merely to match that selection; retain and report unresolved gate disagreement."
+    },
+    {
+      "id": "p23-l030-w05",
+      "text": "my",
+      "oldStart": 151.220279,
+      "oldEnd": 151.500801,
+      "rawSupported": true,
+      "rawRoute": "official_ctc_asr",
+      "rawSelectedInterval": {
+        "start": 165.552464,
+        "end": 166.073067,
+        "confidence": 0.285593,
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "my",
+          "start": 151.247458,
+          "end": 151.587701,
+          "score": 0.08842761606272626,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "my",
+          "start": 151.20743,
+          "end": 151.527658,
+          "score": 0.12245470410682295,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "my",
+          "start": 165.572487,
+          "end": 166.133136,
+          "score": 0.06469226962139646,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "my",
+          "start": 165.552464,
+          "end": 166.073067,
+          "score": 0.28559334905013245,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "encoded",
+        "text": "my",
+        "start": 165.552464,
+        "end": 166.073067,
+        "score": 0.24261189661176286,
+        "startDelta": 0,
+        "endDelta": 0,
+        "note": "Role derived from paired AAC input. Raw report mistakenly labels this projected object source; input-role artifacts below are authoritative."
+      },
+      "actualPassArtifacts": [
+        {
+          "input": "source",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 148.50550299999998,
+            "end": 171.82212900000002
+          },
+          "start": 151.247458,
+          "end": 151.587701,
+          "confidence": 0.08842761606272626,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0144-0b3741ca-1c8f-49ed-bd4e-ade3a9504908-7664b57f891dccde202d94dfea34f3f45825cf4b22e4a3daf6516b7afe769284.json",
+          "artifactSha256": "132eb65f4fd825d1c7ec141ee728105a9ba568c4a35892674b2a492745f93fdf"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 148.50550299999998,
+            "end": 171.82212900000002
+          },
+          "start": 151.20743,
+          "end": 155.230298,
+          "confidence": 0.26739666273069296,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0145-cf52e017-d3f5-48cc-b9d5-2cf06f0d3273-a48723c2f201e158d28305ecb304073ba5ca7b70775ae18e949c561b00c2ef04.json",
+          "artifactSha256": "9d4fe0bd3c0e9bfb97a6f73180aed382b4876860fcdfa6ff0ecf9c27636ad434"
+        },
+        {
+          "input": "source",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 148.50550299999998,
+            "end": 171.82212900000002
+          },
+          "start": 151.20743,
+          "end": 151.527658,
+          "confidence": 0.12245470410682295,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0146-c6b5377c-81f2-4ed3-b5e4-59cd644d5a41-ca4521c08f2e643705ac6f123912c9184893a1e2615b5a932e5a83a791893389.json",
+          "artifactSha256": "63e4cebb296801e08d5d4162928a85ca1313cba3184a728b775fa9640d6253cf"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "original",
+          "window": {
+            "start": 148.50550299999998,
+            "end": 171.82212900000002
+          },
+          "start": 151.20743,
+          "end": 151.527658,
+          "confidence": 0.03965857669636829,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0147-9b659321-74c2-4cfe-a7ba-d365b68e6be3-b80466b587cc08a746fe7aba50392899176603eb76a338430285873bb8009e6a.json",
+          "artifactSha256": "4809af24741fb14ed5892c7ae7844542e189d2157a4f5cc35179b2ab37cecd04"
+        },
+        {
+          "input": "source",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 159.54550300000002,
+            "end": 168.175503
+          },
+          "start": 165.572487,
+          "end": 166.133136,
+          "confidence": 0.06469226962139646,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0148-298871dc-ef67-493e-90e4-a90053ea46b9-d64a7484dd42be017c2305754d988a3aa3dec506fdc8910d13e90c25743a8815.json",
+          "artifactSha256": "876ec6c439e1adb6591d55fb8380937696b901815ccda23a257da5c431086766"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 159.54550300000002,
+            "end": 168.175503
+          },
+          "start": 165.572487,
+          "end": 166.133136,
+          "confidence": 0.046651040179292634,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0149-16aaa6ef-f072-4715-839f-8724dde91971-02655373512170e3baa13246dd1695cf2a4eaea3579bb88ce48a473a2e89691a.json",
+          "artifactSha256": "5e1c617cb90232dbbe39613b27593baf76189a86fe2b4cf0c3007f5d8d792bf6"
+        },
+        {
+          "input": "source",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 159.54550300000002,
+            "end": 168.175503
+          },
+          "start": 165.552464,
+          "end": 166.073067,
+          "confidence": 0.28559334905013245,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0150-6325f409-0667-4a70-957e-8fb9dec22a82-aeddf52cf77e925cbdcde31d1412e8eb14597f3e60517756d64a8e90c040f2b1.json",
+          "artifactSha256": "82b86d8bcee71c1204ec188ddb5d451768904af8f42999c1f44a46ef8bd6fc27"
+        },
+        {
+          "input": "encoded",
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+          "variant": "official-phrase-retry",
+          "window": {
+            "start": 159.54550300000002,
+            "end": 168.175503
+          },
+          "start": 165.552464,
+          "end": 166.073067,
+          "confidence": 0.24261189661176286,
+          "artifact": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v1/audio-followup/passes/0151-d6b30d7c-6a89-4d71-9035-875bd6e4071e-24d9bd3e62350ef9b0dd4d8a0ef06aa4d59fbb0522717fbd88ff4e3027a21951.json",
+          "artifactSha256": "0c691c667bc9acbf7e7d89afef6f24240cb64cec884a442fb34e6d85b5a0952f"
+        }
+      ],
+      "decision": "do_not_apply",
+      "rationale": "Repeated phrase identity mismatch: selected retry interval165.552464\u2013166.073067 belongs to later p23-l032-w05 my (165.555660\u2013166.035960),14.33s after this word and after its own next word life. Preserve151.220279\u2013151.500801; do not apply the automated repair."
+    }
+  ],
+  "unsupportedRetainedIds": [
+    "p23-l001-w05",
+    "p23-l005-w01",
+    "p23-l006-w04",
+    "p23-l006-w05",
+    "p23-l007-w05",
+    "p23-l008-w02",
+    "p23-l008-w03",
+    "p23-l008-w04",
+    "p23-l009-w03",
+    "p23-l011-w05",
+    "p23-l012-w01",
+    "p23-l012-w04",
+    "p23-l013-w01",
+    "p23-l013-w04",
+    "p23-l013-w05",
+    "p23-l014-w03",
+    "p23-l015-w01",
+    "p23-l015-w02",
+    "p23-l015-w03",
+    "p23-l015-w04",
+    "p23-l015-w05",
+    "p23-l017-w01",
+    "p23-l017-w05",
+    "p23-l018-w06",
+    "p23-l018-w07",
+    "p23-l020-w03",
+    "p23-l020-w07",
+    "p23-l021-w09",
+    "p23-l022-w03",
+    "p23-l024-w05",
+    "p23-l025-w03",
+    "p23-l025-w05",
+    "p23-l026-w01",
+    "p23-l026-w02",
+    "p23-l026-w05",
+    "p23-l028-w01",
+    "p23-l028-w05",
+    "p23-l029-w01",
+    "p23-l029-w03",
+    "p23-l030-w06",
+    "p23-l031-w01",
+    "p23-l031-w02",
+    "p23-l031-w03",
+    "p23-l031-w05",
+    "p23-l032-w04",
+    "p23-l032-w06",
+    "p23-l033-w01",
+    "p23-l033-w05",
+    "p23-l034-w03",
+    "p23-l035-w05",
+    "p23-l036-w01",
+    "p23-l037-w05",
+    "p23-l037-w08",
+    "p23-l038-w02",
+    "p23-l039-w05"
+  ],
+  "notes": [
+    "No source files edited. Seven proposed corrections; two raw supported failures deliberately withheld.",
+    "All55 unsupported cues remain unchanged. This file does not override or mark the strict failed report passed.",
+    "Rebuild and fresh exact-encode review are required after any timing change.",
+    "Raw encodedEvidence role label is wrong in current evaluator projection; actual attempt input and artifacts identify source versus encoded."
+  ]
+}

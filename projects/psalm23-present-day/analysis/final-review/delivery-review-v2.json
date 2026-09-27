@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "status": "accepted_for_user_review",
+  "videoSha256": "e483e690ef13766ee4e04414711d0826209151d3beab5a91864c113758f3e4f2",
+  "posterSha256": "64828051f8c35755d8bbe2e72635f131da28338e0067dc01b28427c5a451ffd6",
+  "sourceAudioSha256": "3669040e797c9d2bf8b4136dc4c029c6e1ed51f302ccc411d1888ae50da80c8f",
+  "technical": {
+    "status": "passed",
+    "reportPath": "/Users/shanefisher/Movies/Psalm23/review-work/review-v2/review.json",
+    "reportSha256": "0e7ec183504ff9ba62308990c4696954a3aeec6d756673df7eb79891ba300d97"
+  },
+  "visual": {
+    "status": "accepted",
+    "reportPath": "/Users/shanefisher/Movies/Psalm23/review-work/independent-visual-v2.json",
+    "reportSha256": "1fbb467fc25bdefac7b45169f1825dcc0754007b7f4e5dfde151b325dab0cd1b"
+  },
+  "audio": {
+    "status": "documented_exception",
+    "reportPath": "/Users/shanefisher/Movies/Psalm23/review-work/review-v2/audio/audio-review.json",
+    "reportSha256": "f4c2233394188e622e0a1b21649d8e930ed77dc04068832bebb51a967df1844b",
+    "exception": "Strict singing-sync remains failed:153/210 words passed,55 unsupported,2 supported model-disagreement flags. The I flag differs66ms from the selected match despite source phrase-context support for the retained cue. The my flag selects the later repetition14.332s away. Seven defensible timing corrections all pass in v2. No further model retries or manual automatic-pass relabeling. Source/encoded PCM correlation0.999414, minimum segment0.998761, lag0, gain\u22120.048188dB; audio content preserved. This is a review candidate with unresolved word-level certification, not a perfect-sync claim."
+  },
+  "auditNote": "Full Psalm23 Held in the Ordinary v2:219.966667s,6599frames,1920x1080,30fps,H264/AAC. Exact source song preserved. Twelve original photographs show present-day protection and care; three locally generated inserts integrate shelter, water and a prominent golden mercy word. Independent encoded visual review accepted31 conservative distinct mechanisms,max3 equivalent uses. Scores:legibility8.5,semantic motion8.2,photorealism8.8,composition8.4,continuity8.3. All55 chronological sheets,8native and8phone-size samples inspected; no uninterrupted watching or hearing claim. V1 rejected and retained; v2 repairs grass growth, projected shadows, letter arch, generated mercy handoff, cup/wine collision, shall/follow spacing, no/you visibility. Technical decode/provenance, OCR210/210 and temporal checks passed. Seven timing corrections pass. STRICT SINGING SYNC IS NOT FULLY CERTIFIED:153/210pass,55unsupported,2 disputed model matches; detailed raw failures preserved. PCM correlation0.999414,min0.998761,lag0. Photos album has1movie; actual local playback verified. Awaiting Shane review; not user approved. SHA256 e483e690ef13766ee4e04414711d0826209151d3beab5a91864c113758f3e4f2."
+}

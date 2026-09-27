@@ -1,0 +1,356 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "transcribe",
+  "method": "local-openai-whisper-transcribe; machine estimates",
+  "source": {
+    "audio": "32885123-f4b6-42e6-a546-f4acba404829.m4a",
+    "offset": 185.0,
+    "duration": 26.0,
+    "audioDuration": 219.96,
+    "model": "/Volumes/DATA/AI/Models/Whisper/medium.en.pt",
+    "backend": "openai-whisper",
+    "language": "en"
+  },
+  "transcript": "And I shall dwell in the house of the Lord for a very long time The Lord is my shepherd",
+  "words": [
+    {
+      "id": "w_5c50315dccfd7719",
+      "text": "And",
+      "start": 185.0,
+      "end": 186.84,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.48519060015678406,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_e3be3a5881021551",
+      "text": "I",
+      "start": 186.84,
+      "end": 187.12,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9862459897994995,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_a49842412153bec2",
+      "text": "shall",
+      "start": 187.12,
+      "end": 187.54,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9630191922187805,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_93c52b0aab443304",
+      "text": "dwell",
+      "start": 187.54,
+      "end": 187.98,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9989042282104492,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_38f72631eebe6760",
+      "text": "in",
+      "start": 187.98,
+      "end": 189.32,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8592204451560974,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_67eb10827a7b1972",
+      "text": "the",
+      "start": 189.32,
+      "end": 189.62,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9929470419883728,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_b04248e5085a447a",
+      "text": "house",
+      "start": 189.62,
+      "end": 189.96,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9175074100494385,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_89284859392606f5",
+      "text": "of",
+      "start": 189.96,
+      "end": 190.5,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9983165264129639,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_45a87f2f43f4064f",
+      "text": "the",
+      "start": 190.5,
+      "end": 190.94,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9958433508872986,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_89a2f1a04d7ba276",
+      "text": "Lord",
+      "start": 190.94,
+      "end": 191.38,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9614003300666809,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_c0b2132a9dd8a024",
+      "text": "for",
+      "start": 191.38,
+      "end": 193.0,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.549599826335907,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_c90f9b85ea0cd1a8",
+      "text": "a",
+      "start": 193.0,
+      "end": 193.28,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9887775778770447,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_af96e31dbd3e7dcd",
+      "text": "very",
+      "start": 193.28,
+      "end": 193.68,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9914098381996155,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_3737334086740604",
+      "text": "long",
+      "start": 193.68,
+      "end": 194.68,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9973810315132141,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_c1288efff6b65d29",
+      "text": "time",
+      "start": 194.68,
+      "end": 196.4,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9977602958679199,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_7b028b021f55566a",
+      "text": "The",
+      "start": 199.46,
+      "end": 200.44,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.6306759119033813,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_298225fbd3605131",
+      "text": "Lord",
+      "start": 200.44,
+      "end": 200.98,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9722832441329956,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_cc1d2e931bb8112b",
+      "text": "is",
+      "start": 200.98,
+      "end": 201.3,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9956984519958496,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_996fe8e0ab7d0a7d",
+      "text": "my",
+      "start": 201.3,
+      "end": 202.04,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.993615984916687,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_6680252e443fef26",
+      "text": "shepherd",
+      "start": 202.04,
+      "end": 202.92,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8046767115592957,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "And I shall dwell in the house of the Lord for a very long time",
+      "wordIds": [
+        "w_5c50315dccfd7719",
+        "w_e3be3a5881021551",
+        "w_a49842412153bec2",
+        "w_93c52b0aab443304",
+        "w_38f72631eebe6760",
+        "w_67eb10827a7b1972",
+        "w_b04248e5085a447a",
+        "w_89284859392606f5",
+        "w_45a87f2f43f4064f",
+        "w_89a2f1a04d7ba276",
+        "w_c0b2132a9dd8a024",
+        "w_c90f9b85ea0cd1a8",
+        "w_af96e31dbd3e7dcd",
+        "w_3737334086740604",
+        "w_c1288efff6b65d29"
+      ]
+    },
+    {
+      "id": "phrase-0002",
+      "text": "The Lord is my shepherd",
+      "wordIds": [
+        "w_7b028b021f55566a",
+        "w_298225fbd3605131",
+        "w_cc1d2e931bb8112b",
+        "w_996fe8e0ab7d0a7d",
+        "w_6680252e443fef26"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ]
+}

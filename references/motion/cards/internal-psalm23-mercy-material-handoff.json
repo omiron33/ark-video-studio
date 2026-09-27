@@ -1,0 +1,157 @@
+{
+  "version": 1,
+  "id": "internal-psalm23-mercy-material-handoff",
+  "title": "A readable word hands off to luminous material",
+  "source": {
+    "kind": "internal",
+    "path": "/Volumes/DATA/ArkRender/psalm23-present-day/psalm23-held-in-the-ordinary-v2.mp4",
+    "projectPath": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/project.json",
+    "start": 157.2,
+    "end": 162.1,
+    "sectionIds": [
+      "p23-l031"
+    ],
+    "videoSha256": "e483e690ef13766ee4e04414711d0826209151d3beab5a91864c113758f3e4f2",
+    "projectRevision": "2e18115e199808003cf4dcae527fe15c105e254a4e70bdf3b19701557fc07787",
+    "projectRevisionType": "frozen render source revision supplied by final-review parent",
+    "generatedAsset": {
+      "path": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/assets/video/mercy-motion.mp4",
+      "sha256": "574752ea503e8743184306c6a29a03cd7d7d9436f2585dc09c9c9ff63e5ebd32",
+      "finishedWidth": 960,
+      "finishedHeight": 540,
+      "fps": 24,
+      "provenancePath": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/mercy-provenance.json"
+    }
+  },
+  "intent": [
+    "mercy made tangible",
+    "protection in present-day life",
+    "reassurance",
+    "readable lyric becoming physical material"
+  ],
+  "tags": [
+    "canonical typography",
+    "generated word material",
+    "golden filaments",
+    "same-station handoff",
+    "warm contemporary photography",
+    "negative space",
+    "post-reading transformation"
+  ],
+  "motion": {
+    "summary": "A large editable cream mercy holds clearly beside two women sharing an umbrella. Fine gold filaments develop beneath its reading station. After the word has been read, the cream face fades into a fully formed generated mercy occupying the same place; the neighboring canonical words remain readable while internal strands continue moving.",
+    "phases": [
+      "157.2\u2013157.8s: establish the large intact cream word while the two people remain unobstructed on the left.",
+      "158\u2013159.8s: preserve the exact word while the remaining phrase completes and gold strands gather below the reading station.",
+      "Approximately 159.8\u2013160.4s: hand off the canonical face to the completed generated word in the same position.",
+      "160.4\u2013162.1s: hold the luminous word and readable supporting line; fine material motion continues within the letters."
+    ],
+    "transferablePrinciple": "Give the audience an unobstructed canonical reading first, then change the word\u2019s material at the same visual station so transformation reinforces meaning without requiring generated glyph formation to carry sung timing.",
+    "variations": [
+      "Let an already-read shelter word become woven fibers above a contemporary doorway.",
+      "Turn an already-read peace word into restrained water caustics at the same scale and baseline.",
+      "Resolve an already-read path word into a newly generated contour while its neighboring words remain editable and still."
+    ],
+    "cautions": [
+      "Do not reuse this generated mercy artwork or the source scene as a preset; create a new material relationship for the next lyric and its image space.",
+      "Use generated lettering only after exact canonical reading is secure; generated source has no per-letter timing control.",
+      "Align shape, size and position carefully: a crossfade between different glyph outlines creates temporary double edges.",
+      "Keep the transformation away from faces and avoid repeating this handoff as the default treatment across a film."
+    ]
+  },
+  "quality": {
+    "status": "observed",
+    "reviewer": "Rook and independent visual critic; actual v2 encoded sequence, native frames and captured six-frame sheet",
+    "userPreference": "unknown",
+    "userPreferenceScope": "Shane chose Theme 1 for Psalm 23 and requested ambitious integrated animation. No individual approval of this generated-mercy treatment or reference card is recorded.",
+    "observationStatus": "Actual encoded sequence and six captured library frames inspected on2026-09-27. Agent-observed principle; no Shane approval or audio-sync claim.",
+    "strengths": [
+      "The canonical word remains large and readable before transformation, including at phone-sized decoded review.",
+      "The same reading station connects editable type to luminous material instead of adding a detached competing word.",
+      "The warm filaments suit the rainy amber photographic world while the two people stay unobstructed."
+    ],
+    "limitations": [
+      "Brief double edges are visible during the crossfade because canonical and generated outlines do not match exactly.",
+      "The finished generated source is 960x540 at 24fps, enlarged to a 1160px-wide layer in the 1920x1080 composite; the final frame size does not make its material natively 1080p.",
+      "The effect depends on a clear reading interval before transformation; it is unsuitable when generated formation must deliver the initial sung word.",
+      "The inspected 5fps sheet and selected native frames do not certify every frame, full-speed smoothness, audio sync or hearing.",
+      "This is an observed reusable visual principle, not a claim of Shane approval or full automatic-film acceptance."
+    ]
+  },
+  "capturePlan": {
+    "status": "Completed by capture-reference; six-frame contact sheet opened and inspected by root",
+    "suggestedTimesSeconds": [
+      157.4,
+      159.6,
+      159.8,
+      160,
+      160.4,
+      161.8
+    ],
+    "reasons": [
+      "intact canonical hero word",
+      "supporting phrase completing before handoff",
+      "last clearly canonical state",
+      "visible handoff and double-edge limitation",
+      "completed generated material",
+      "generated hold with unobstructed full phrase"
+    ]
+  },
+  "observationEvidence": [
+    {
+      "path": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/generated-mercy.jpg",
+      "kind": "chronological 5fps decoded sheet",
+      "sha256": "d2e09f3d9ea58e825d69e392591e162593fd1a66b87ce246422ff7f2ca700024"
+    },
+    {
+      "path": "/Users/shanefisher/Movies/Psalm23/review-work/native-v2/frame-159.5.png",
+      "kind": "native decoded frame, canonical word",
+      "sha256": "a6366d026b7e5bf57d0d333569b3f2cd2733b5c7edc293083b7731552de0919d"
+    },
+    {
+      "path": "/Users/shanefisher/Movies/Psalm23/review-work/native-v2/frame-160.5.png",
+      "kind": "native decoded frame, generated word",
+      "sha256": "5050b387644e3fd1bafe3ff920e5ee66976e55e4e7a7e63b4a5a7746624377f8"
+    }
+  ],
+  "frames": [
+    {
+      "path": "images/internal-psalm23-mercy-material-handoff/frame-01.jpg",
+      "timeSeconds": 157.4,
+      "sha256": "30a8e978dc5a94665d258e3a47d81f12dbdb532d3559b3b350e295e049d9d58d"
+    },
+    {
+      "path": "images/internal-psalm23-mercy-material-handoff/frame-02.jpg",
+      "timeSeconds": 159.6,
+      "sha256": "4936093f4ad52a899361d806cea0cc7d0c7de3618b14665364e8f0a340cf0bc6"
+    },
+    {
+      "path": "images/internal-psalm23-mercy-material-handoff/frame-03.jpg",
+      "timeSeconds": 159.8,
+      "sha256": "9a1d2914e6c37d19dfeffd4511e47625d4ae02dc1aa38009fd57ed0d1707c701"
+    },
+    {
+      "path": "images/internal-psalm23-mercy-material-handoff/frame-04.jpg",
+      "timeSeconds": 160,
+      "sha256": "eba8f6ecbd4443cbb1e9cb06b5d5d3144e1228d3e4aefb2feaf574e48b14a72c"
+    },
+    {
+      "path": "images/internal-psalm23-mercy-material-handoff/frame-05.jpg",
+      "timeSeconds": 160.4,
+      "sha256": "f843909bf0cc96b72f7da235dea61363871a954eeb4f46ca83c16cc1676d37ec"
+    },
+    {
+      "path": "images/internal-psalm23-mercy-material-handoff/frame-06.jpg",
+      "timeSeconds": 161.8,
+      "sha256": "65f61a5a3eee01ed9d07714e983bbe57a3fa25d515a1f7b3301a8ce09af6327a"
+    }
+  ],
+  "contactSheet": "images/internal-psalm23-mercy-material-handoff/sheet.jpg",
+  "capture": {
+    "method": "ffmpeg-frame-sequence-v1",
+    "videoDuration": 219.966667,
+    "fps": 30,
+    "sampledFrames": 6,
+    "contactSheetSha256": "fc553555d524c2261231aed56976c34b8e0c18e1d9066a46574cf485b8b305b7"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "status": "scratch_implementation_and_targeted_encoded_proofs_complete",
+  "productionSemanticUnchanged": true,
+  "semanticSHA256": "86309f197ed2610bde8c4e9be51e8f9154a1c373b604e4ea928eed70df14703e",
+  "currentCanonicalSHA256": "a0457cf99af4c446721bde09a9f2aa287072d6a3bc478c92a002ff6aa0e3da2c",
+  "canonicalCount": 210,
+  "canonicalTextAndTimingUnchanged": true,
+  "effectiveHandlers": 13,
+  "allHandlersDispatch": true,
+  "notes": "Proofs isolate the five semantic repairs. Shadow was re-encoded after current shadow timing reconciliation. Other excerpt timing fields that affect visible behavior are unchanged; cheers finishes before the cup excerpt begins. These are not full-film acceptance artifacts.",
+  "artifacts": [
+    {
+      "name": "grass",
+      "file": "/tmp/ps23-semantic-v2/proof-grass.mp4",
+      "sha256": "b8d18f55e0ab3a843b87312014b665164925799cc8dcc4bd37ac1b6ee95b64e8",
+      "codec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "frameRate": "30/1",
+      "frames": 103,
+      "duration": 3.433333,
+      "sourceRanges": {
+        "name": "grass",
+        "sourceStart": 22.35,
+        "sourceEnd": 25.78,
+        "duration": 3.4299999999999997
+      }
+    },
+    {
+      "name": "shadow",
+      "file": "/tmp/ps23-semantic-v2/proof-shadow.mp4",
+      "sha256": "b6e63d596baf90ae01a6c5d4ebee64d45eaec085738d616b4029551ab0f0fd7b",
+      "codec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "frameRate": "30/1",
+      "frames": 106,
+      "duration": 3.533333,
+      "sourceRanges": {
+        "name": "shadow",
+        "sourceStart": 62.23,
+        "sourceEnd": 65.74,
+        "duration": 3.509999999999998
+      }
+    },
+    {
+      "name": "cup",
+      "file": "/tmp/ps23-semantic-v2/proof-cup.mp4",
+      "sha256": "585dc9398404f7f247e47b24a6976e0b2c63c6720e9db3257728484b80303834",
+      "codec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "frameRate": "30/1",
+      "frames": 54,
+      "duration": 1.8,
+      "sourceRanges": {
+        "name": "cup",
+        "sourceStart": 111.15,
+        "sourceEnd": 112.95,
+        "duration": 1.7999999999999972
+      }
+    },
+    {
+      "name": "bridge",
+      "file": "/tmp/ps23-semantic-v2/proof-bridge.mp4",
+      "sha256": "87ca0711bc3dfc7aedce92d4887b8590ce9c87b8be0836a3e2271fee3d6c5714",
+      "codec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "frameRate": "30/1",
+      "frames": 220,
+      "duration": 7.333333,
+      "sourceRanges": {
+        "name": "bridge",
+        "sourceStart": 134.78,
+        "sourceEnd": 142.1,
+        "duration": 7.319999999999993
+      }
+    },
+    {
+      "name": "following",
+      "file": "/tmp/ps23-semantic-v2/proof-following.mp4",
+      "sha256": "287b57d71e3de071ecc315ea74f2aaf66615c5bdb3bc64c8aaba45b697a71faa",
+      "codec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "frameRate": "30/1",
+      "frames": 117,
+      "duration": 3.9,
+      "sourceRanges": {
+        "name": "following",
+        "sourceStart": 143.3,
+        "sourceEnd": 147.2,
+        "duration": 3.8999999999999773
+      }
+    }
+  ]
+}

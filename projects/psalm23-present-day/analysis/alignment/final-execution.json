@@ -1,0 +1,562 @@
+[
+  {
+    "id": "window-01-whisper-medium",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/window-01-whisper-medium.json",
+    "status": "machine_estimate",
+    "seconds": 32.399315332993865,
+    "modelCacheHit": false,
+    "modelsHeld": 1
+  },
+  {
+    "id": "window-02-whisper-medium",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/window-02-whisper-medium.json",
+    "status": "machine_estimate",
+    "seconds": 10.426883958280087,
+    "modelCacheHit": true,
+    "modelsHeld": 1
+  },
+  {
+    "id": "window-03-whisper-medium",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/window-03-whisper-medium.json",
+    "status": "machine_estimate",
+    "seconds": 16.45215104194358,
+    "modelCacheHit": true,
+    "modelsHeld": 1
+  },
+  {
+    "id": "window-04-whisper-medium",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/window-04-whisper-medium.json",
+    "status": "machine_estimate",
+    "seconds": 16.92569875018671,
+    "modelCacheHit": true,
+    "modelsHeld": 1
+  },
+  {
+    "id": "window-05-whisper-medium",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/window-05-whisper-medium.json",
+    "status": "machine_estimate",
+    "seconds": 17.24787079077214,
+    "modelCacheHit": true,
+    "modelsHeld": 1
+  },
+  {
+    "id": "window-06-whisper-medium",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/window-06-whisper-medium.json",
+    "status": "machine_estimate",
+    "seconds": 16.852296042256057,
+    "modelCacheHit": true,
+    "modelsHeld": 1
+  },
+  {
+    "id": "window-07-whisper-medium",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/window-07-whisper-medium.json",
+    "status": "machine_estimate",
+    "seconds": 9.085322000086308,
+    "modelCacheHit": true,
+    "modelsHeld": 1
+  },
+  {
+    "id": "window-08-whisper-medium",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/window-08-whisper-medium.json",
+    "status": "machine_estimate",
+    "seconds": 8.89275429211557,
+    "modelCacheHit": true,
+    "modelsHeld": 1
+  },
+  {
+    "id": "p23-l003-final-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l003-final-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 10.804386916104704,
+    "modelCacheHit": false,
+    "modelsHeld": 2
+  },
+  {
+    "id": "p23-l005-final-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l005-final-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 0.5205399999395013,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  {
+    "id": "p23-l006-final-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l006-final-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 0.8809226248413324,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  {
+    "id": "p23-l007-final-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l007-final-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 0.8365159588865936,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  {
+    "id": "p23-l008-final-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l008-final-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 0.4216710841283202,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  {
+    "id": "p23-l009-final-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l009-final-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 0.5123938750475645,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  {
+    "id": "p23-l010-final-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l010-final-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 0.48374675028026104,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  {
+    "id": "p23-l012-final-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l012-final-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 0.6967746666632593,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  {
+    "id": "p23-l013-final-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l013-final-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 0.6321519580669701,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  {
+    "id": "p23-l014-final-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l014-final-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 0.5082925409078598,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  {
+    "id": "p23-l015-final-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l015-final-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 0.5594193330034614,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  {
+    "id": "p23-l017-final-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l017-final-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 0.6357847922481596,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  {
+    "id": "p23-l020-final-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l020-final-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 0.7874764576554298,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  {
+    "id": "p23-l021-final-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l021-final-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 1.2392844590358436,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  {
+    "id": "p23-l022-final-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l022-final-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 0.8935000002384186,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  {
+    "id": "p23-l023-final-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l023-final-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 0.812796208076179,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  {
+    "id": "p23-l024-final-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l024-final-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 0.9369037500582635,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  {
+    "id": "p23-l025-final-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l025-final-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 0.5944573748856783,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  {
+    "id": "p23-l026-final-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l026-final-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 0.6465718750841916,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  {
+    "id": "p23-l028-final-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l028-final-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 0.9380709170363843,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  {
+    "id": "p23-l029-final-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l029-final-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 0.9477160419337451,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  {
+    "id": "p23-l030-final-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l030-final-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 1.3933027908205986,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  {
+    "id": "p23-l031-final-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l031-final-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 1.0682951668277383,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  {
+    "id": "p23-l032-final-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l032-final-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 1.4076698748394847,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  {
+    "id": "p23-l033-final-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l033-final-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 0.9309704997576773,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  {
+    "id": "p23-l034-final-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l034-final-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 0.9073136248625815,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  {
+    "id": "p23-l035-final-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l035-final-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 0.6913954578340054,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  {
+    "id": "p23-l036-final-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l036-final-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 0.7929168748669326,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  {
+    "id": "p23-l037-final-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l037-final-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 1.069585916120559,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  {
+    "id": "p23-l038-final-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l038-final-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 1.0401289579458535,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  {
+    "id": "p23-l039-final-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l039-final-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 0.753696708008647,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  {
+    "id": "p23-l003-final-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l003-final-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 2.8053652090020478,
+    "modelCacheHit": false,
+    "modelsHeld": 3
+  },
+  {
+    "id": "p23-l005-final-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l005-final-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.28862912533804774,
+    "modelCacheHit": true,
+    "modelsHeld": 3
+  },
+  {
+    "id": "p23-l006-final-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l006-final-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.4366071247495711,
+    "modelCacheHit": true,
+    "modelsHeld": 3
+  },
+  {
+    "id": "p23-l007-final-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l007-final-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.4189359159208834,
+    "modelCacheHit": true,
+    "modelsHeld": 3
+  },
+  {
+    "id": "p23-l008-final-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l008-final-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.2575695002451539,
+    "modelCacheHit": true,
+    "modelsHeld": 3
+  },
+  {
+    "id": "p23-l009-final-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l009-final-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.2990789166651666,
+    "modelCacheHit": true,
+    "modelsHeld": 3
+  },
+  {
+    "id": "p23-l010-final-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l010-final-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.2955959578976035,
+    "modelCacheHit": true,
+    "modelsHeld": 3
+  },
+  {
+    "id": "p23-l012-final-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l012-final-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.3815023326314986,
+    "modelCacheHit": true,
+    "modelsHeld": 3
+  },
+  {
+    "id": "p23-l013-final-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l013-final-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.3721979157999158,
+    "modelCacheHit": true,
+    "modelsHeld": 3
+  },
+  {
+    "id": "p23-l014-final-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l014-final-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.315185165964067,
+    "modelCacheHit": true,
+    "modelsHeld": 3
+  },
+  {
+    "id": "p23-l015-final-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l015-final-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.3369782501831651,
+    "modelCacheHit": true,
+    "modelsHeld": 3
+  },
+  {
+    "id": "p23-l017-final-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l017-final-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.3785226671025157,
+    "modelCacheHit": true,
+    "modelsHeld": 3
+  },
+  {
+    "id": "p23-l020-final-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l020-final-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.45778920827433467,
+    "modelCacheHit": true,
+    "modelsHeld": 3
+  },
+  {
+    "id": "p23-l021-final-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l021-final-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.6472282502800226,
+    "modelCacheHit": true,
+    "modelsHeld": 3
+  },
+  {
+    "id": "p23-l022-final-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l022-final-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.5039584171026945,
+    "modelCacheHit": true,
+    "modelsHeld": 3
+  },
+  {
+    "id": "p23-l023-final-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l023-final-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.4742359579540789,
+    "modelCacheHit": true,
+    "modelsHeld": 3
+  },
+  {
+    "id": "p23-l024-final-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l024-final-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.5453151669353247,
+    "modelCacheHit": true,
+    "modelsHeld": 3
+  },
+  {
+    "id": "p23-l025-final-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l025-final-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.3972119162790477,
+    "modelCacheHit": true,
+    "modelsHeld": 3
+  },
+  {
+    "id": "p23-l026-final-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l026-final-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.4198289578780532,
+    "modelCacheHit": true,
+    "modelsHeld": 3
+  },
+  {
+    "id": "p23-l028-final-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l028-final-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.5474135000258684,
+    "modelCacheHit": true,
+    "modelsHeld": 3
+  },
+  {
+    "id": "p23-l029-final-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l029-final-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.5705505423247814,
+    "modelCacheHit": true,
+    "modelsHeld": 3
+  },
+  {
+    "id": "p23-l030-final-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l030-final-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.7715817089192569,
+    "modelCacheHit": true,
+    "modelsHeld": 3
+  },
+  {
+    "id": "p23-l031-final-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l031-final-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.5846959161572158,
+    "modelCacheHit": true,
+    "modelsHeld": 3
+  },
+  {
+    "id": "p23-l032-final-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l032-final-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.7672749999910593,
+    "modelCacheHit": true,
+    "modelsHeld": 3
+  },
+  {
+    "id": "p23-l033-final-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l033-final-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.5769258327782154,
+    "modelCacheHit": true,
+    "modelsHeld": 3
+  },
+  {
+    "id": "p23-l034-final-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l034-final-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.5865913340821862,
+    "modelCacheHit": true,
+    "modelsHeld": 3
+  },
+  {
+    "id": "p23-l035-final-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l035-final-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.4929170408286154,
+    "modelCacheHit": true,
+    "modelsHeld": 3
+  },
+  {
+    "id": "p23-l036-final-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l036-final-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.5281444997526705,
+    "modelCacheHit": true,
+    "modelsHeld": 3
+  },
+  {
+    "id": "p23-l037-final-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l037-final-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.6437997077591717,
+    "modelCacheHit": true,
+    "modelsHeld": 3
+  },
+  {
+    "id": "p23-l038-final-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l038-final-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.6341641251929104,
+    "modelCacheHit": true,
+    "modelsHeld": 3
+  },
+  {
+    "id": "p23-l039-final-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l039-final-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.5347330826334655,
+    "modelCacheHit": true,
+    "modelsHeld": 3
+  }
+]

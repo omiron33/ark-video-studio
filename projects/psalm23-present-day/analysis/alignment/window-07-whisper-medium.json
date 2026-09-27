@@ -1,0 +1,426 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "transcribe",
+  "method": "local-openai-whisper-transcribe; machine estimates",
+  "source": {
+    "audio": "32885123-f4b6-42e6-a546-f4acba404829.m4a",
+    "offset": 169.0,
+    "duration": 19.0,
+    "audioDuration": 219.96,
+    "model": "/Volumes/DATA/AI/Models/Whisper/medium.en.pt",
+    "backend": "openai-whisper",
+    "language": "en"
+  },
+  "transcript": "I will fear no evil for you are with me. The Lord is my shepherd and I shall want nothing. And I shall dwell.",
+  "words": [
+    {
+      "id": "w_9e4b44a852b7ea6f",
+      "text": "I",
+      "start": 170.14,
+      "end": 171.1,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.5026125907897949,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_ca4c4237fcd1be49",
+      "text": "will",
+      "start": 171.1,
+      "end": 171.38,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9397891759872437,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_c5a11ee896c66106",
+      "text": "fear",
+      "start": 171.38,
+      "end": 172.14,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9739876389503479,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_351e74d56c961432",
+      "text": "no",
+      "start": 172.14,
+      "end": 173.02,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9413104057312012,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_7940cd88e3e61db6",
+      "text": "evil",
+      "start": 173.02,
+      "end": 174.16,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9532558917999268,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_c97c4030c02c232c",
+      "text": "for",
+      "start": 174.16,
+      "end": 175.14,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.4088437259197235,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_f8b06f445126daf7",
+      "text": "you",
+      "start": 175.14,
+      "end": 175.54,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.7630859017372131,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_856edbeabc05b738",
+      "text": "are",
+      "start": 175.54,
+      "end": 176.28,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9920831918716431,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_2aa3ca89576f8612",
+      "text": "with",
+      "start": 176.28,
+      "end": 176.6,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9939239621162415,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_a383b894ab144c61",
+      "text": "me.",
+      "start": 176.6,
+      "end": 178.08,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9885574579238892,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_21022788cd5fcac6",
+      "text": "The",
+      "start": 178.58,
+      "end": 178.84,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9710672497749329,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_d9001717b1f78847",
+      "text": "Lord",
+      "start": 178.84,
+      "end": 179.22,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9419252276420593,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_6cf6f08a5c47eb8e",
+      "text": "is",
+      "start": 179.22,
+      "end": 179.5,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9966373443603516,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_6b166918eb875dcc",
+      "text": "my",
+      "start": 179.5,
+      "end": 180.02,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.99683678150177,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_83dd459d9fb3f01f",
+      "text": "shepherd",
+      "start": 180.02,
+      "end": 181.02,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8859292268753052,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_e8a03265fa238610",
+      "text": "and",
+      "start": 181.02,
+      "end": 182.42,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.6618972420692444,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_52e4be88c9d227a4",
+      "text": "I",
+      "start": 182.42,
+      "end": 182.72,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9891008734703064,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_50a4dc3eafa6f4cd",
+      "text": "shall",
+      "start": 182.72,
+      "end": 183.2,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9927323460578918,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_c7a59cc2152a02ca",
+      "text": "want",
+      "start": 183.2,
+      "end": 183.66,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9939796924591064,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_db9215a026e7e54c",
+      "text": "nothing.",
+      "start": 183.66,
+      "end": 184.16,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.956041693687439,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_691702c48670a0b0",
+      "text": "And",
+      "start": 186.58,
+      "end": 186.9,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8279625177383423,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_3c7c3a91ac82c658",
+      "text": "I",
+      "start": 186.9,
+      "end": 187.14,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9944032430648804,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_a3b921e1c6d97928",
+      "text": "shall",
+      "start": 187.14,
+      "end": 187.56,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9927945733070374,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_966c14439d72b267",
+      "text": "dwell.",
+      "start": 187.56,
+      "end": 187.88,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9917198419570923,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "I will fear no evil for you are with me.",
+      "wordIds": [
+        "w_9e4b44a852b7ea6f",
+        "w_ca4c4237fcd1be49",
+        "w_c5a11ee896c66106",
+        "w_351e74d56c961432",
+        "w_7940cd88e3e61db6",
+        "w_c97c4030c02c232c",
+        "w_f8b06f445126daf7",
+        "w_856edbeabc05b738",
+        "w_2aa3ca89576f8612",
+        "w_a383b894ab144c61"
+      ]
+    },
+    {
+      "id": "phrase-0002",
+      "text": "The Lord is my shepherd and I shall want nothing.",
+      "wordIds": [
+        "w_21022788cd5fcac6",
+        "w_d9001717b1f78847",
+        "w_6cf6f08a5c47eb8e",
+        "w_6b166918eb875dcc",
+        "w_83dd459d9fb3f01f",
+        "w_e8a03265fa238610",
+        "w_52e4be88c9d227a4",
+        "w_50a4dc3eafa6f4cd",
+        "w_c7a59cc2152a02ca",
+        "w_db9215a026e7e54c"
+      ]
+    },
+    {
+      "id": "phrase-0003",
+      "text": "And I shall dwell.",
+      "wordIds": [
+        "w_691702c48670a0b0",
+        "w_3c7c3a91ac82c658",
+        "w_a3b921e1c6d97928",
+        "w_966c14439d72b267"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ]
+}

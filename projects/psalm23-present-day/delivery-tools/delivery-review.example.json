@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "status": "pending_review_completion",
+  "videoSha256": "REPLACE_AFTER_FINAL_ENCODE_REVIEW",
+  "posterSha256": "REPLACE_WITH_POSTER_SHA256",
+  "sourceAudioSha256": "3669040e797c9d2bf8b4136dc4c029c6e1ed51f302ccc411d1888ae50da80c8f",
+  "technical": {"status": "pending", "reportPath": "path/to/technical.json", "reportSha256": "REPLACE"},
+  "visual": {"status": "pending", "reportPath": "path/to/independent-visual.json", "reportSha256": "REPLACE"},
+  "audio": {"status": "pending", "reportPath": "path/to/audio.json", "reportSha256": "REPLACE"},
+  "auditNote": "Replace with the exact verified outcome and candid remaining limitations. Never claim a strict gate passed if it failed."
+}

@@ -1,0 +1,8 @@
+{
+  "running": 0,
+  "pending": 0,
+  "gpu": "NVIDIA GeForce RTX 3080 Ti, 10160 MiB, 12288 MiB, 4 %",
+  "checkedAt": "2026-09-27T16:09:24.368358+00:00",
+  "serverStartedByThisTask": false,
+  "processesInterrupted": false
+}

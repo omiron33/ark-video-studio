@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "songId": "32885123-f4b6-42e6-a546-f4acba404829",
+  "basis": "Exact canonical lyrics verified between Suno song and OmiPC workflow; exact source audio archived and decoded; narrative plus machine energy analysis only.",
+  "listened": false,
+  "audioAnalysisStatus": "completed_lightweight_energy_and_attack_analysis",
+  "durationMetadataSeconds": 219.96,
+  "durationProbeSeconds": 219.96,
+  "meterPrompt": "6/8",
+  "bpmPrompt": 68,
+  "measuredBpm": null,
+  "lyricStructure": [
+    {
+      "label": "Intro",
+      "lines": [],
+      "timingStatus": "unmeasured"
+    },
+    {
+      "label": "Verse 1",
+      "lines": [
+        "The Lord is my shepherd,",
+        "and I shall want nothing.",
+        "In a place of green grass",
+        "there he has made me dwell.",
+        "He has nourished me",
+        "by the water of rest."
+      ],
+      "timingStatus": "unmeasured"
+    },
+    {
+      "label": "Verse 2",
+      "lines": [
+        "He has restored my soul,",
+        "he has guided me",
+        "in the paths of righteousness",
+        "for his name's sake."
+      ],
+      "timingStatus": "unmeasured"
+    },
+    {
+      "label": "Chorus",
+      "lines": [
+        "Even if I should walk",
+        "in the shadow of death,",
+        "I will fear no evil,",
+        "for you are with me.",
+        "Your rod and your staff,",
+        "they have comforted me.",
+        "I will fear no evil."
+      ],
+      "timingStatus": "unmeasured"
+    },
+    {
+      "label": "Verse 3",
+      "lines": [
+        "You have prepared a table before me",
+        "in the presence of those who afflict me.",
+        "You have anointed my head with oil,",
+        "and your cup cheers me like the best wine."
+      ],
+      "timingStatus": "unmeasured"
+    },
+    {
+      "label": "Chorus",
+      "lines": [
+        "Even if I should walk",
+        "in the shadow of death,",
+        "I will fear no evil,",
+        "for you are with me.",
+        "Your rod and your staff,",
+        "they have comforted me.",
+        "I will fear no evil."
+      ],
+      "timingStatus": "unmeasured"
+    },
+    {
+      "label": "Bridge",
+      "lines": [
+        "Your mercy shall follow me",
+        "all the days of my life.",
+        "Your mercy shall follow me",
+        "all the days of my life."
+      ],
+      "timingStatus": "unmeasured"
+    },
+    {
+      "label": "Final Chorus",
+      "lines": [
+        "I will fear no evil,",
+        "for you are with me.",
+        "The Lord is my shepherd,",
+        "and I shall want nothing."
+      ],
+      "timingStatus": "unmeasured"
+    },
+    {
+      "label": "Outro",
+      "lines": [
+        "And I shall dwell in the house of the Lord",
+        "for a very long time.",
+        "The Lord is my shepherd."
+      ],
+      "timingStatus": "unmeasured"
+    },
+    {
+      "label": "End",
+      "lines": [],
+      "timingStatus": "unmeasured"
+    }
+  ],
+  "storyArc": [
+    "Rest and provision: shepherd, green grass, water of rest.",
+    "Inner restoration and direction: soul, paths of righteousness.",
+    "Danger acknowledged with calm companionship: valley, no fear, presence, comfort.",
+    "Dignity and sustenance despite adversity: table, oil, cup.",
+    "Mercy accompanies the person through daily life; choir is requested in the authored bridge style.",
+    "Durable home and belonging; return to the shepherd declaration."
+  ],
+  "themeImplications": [
+    "Depict ordinary present-day people in recognizable contemporary settings rather than ancient biblical costume.",
+    "Protection should read as companionship and steadiness while difficulty remains real, not invincibility or a decorative fantasy force field.",
+    "The authored slow soul/Americana 6/8 prompt favors patient, breathing transformations and rich layer interactions over constant strobe edits. Actual performance remains unverified.",
+    "The repeated chorus permits evolving interpretations of walking through difficulty: visible path, human presence, and a sheltered space.",
+    "Use canonical complete lyric phrases; no alternative translation or invented devotional slogan.",
+    "Generate motion-word experiments only after explicit theme choice. Static raster concepts cannot certify animation or sync."
+  ],
+  "candidateCanonicalLyricLines": [
+    "I will fear no evil,",
+    "for you are with me.",
+    "Your mercy shall follow me",
+    "all the days of my life.",
+    "The Lord is my shepherd,",
+    "and I shall want nothing."
+  ],
+  "timingCautions": [
+    "Do not assign phrase starts from section tags or the prompt BPM.",
+    "Musical attacks are not vocal onsets.",
+    "Machine analysis must remain separate from listening judgments."
+  ],
+  "sourceAudioSha256": "3669040e797c9d2bf8b4136dc4c029c6e1ed51f302ccc411d1888ae50da80c8f"
+}

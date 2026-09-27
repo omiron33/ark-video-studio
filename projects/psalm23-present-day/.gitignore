@@ -1,0 +1,5 @@
+# Generated inspection frames stay local; encoded evidence is on the data volume.
+snapshots*/
+.hyperframes/
+# Read-only copies of another application's implementation are consultation data.
+delivery-tools/remote-source/

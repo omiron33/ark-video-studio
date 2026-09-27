@@ -1,0 +1,14 @@
+{
+  "videoSha256": "e483e690ef13766ee4e04414711d0826209151d3beab5a91864c113758f3e4f2",
+  "importedFrom": "/Users/shanefisher/Movies/Psalm23/Psalm 23 - Held in the Ordinary.mp4",
+  "album": "Psalm 23 - Held in the Ordinary",
+  "itemCount": 1,
+  "durationShown": "3:40",
+  "duplicateCheck": "Exact filename and title searches showed0Photos/0Collections before first import; Photos indexing caveat recorded.",
+  "playback": "Actual Photos screenshot showed opening at00:01 and a different green-path lyric frame at00:28, timeline advanced0\u219227seconds; exited player to album after test.",
+  "formatBadge": "Accessibility exposed Low Resolution File / Unsupported File Format badge. It did not block actual playback and no visible warning dialog was observed. Independent QuickTime playback also advanced0\u219246.689\u219258.722seconds.",
+  "limitations": [
+    "Does not prove iCloud/iPhone synchronization.",
+    "No uninterrupted watch or listening claim."
+  ]
+}

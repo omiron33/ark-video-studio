@@ -1,0 +1,378 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "transcribe",
+  "method": "local-openai-whisper-transcribe; machine estimates",
+  "source": {
+    "audio": "32885123-f4b6-42e6-a546-f4acba404829.m4a",
+    "offset": 42.0,
+    "duration": 18.0,
+    "audioDuration": 219.96,
+    "model": "/Volumes/DATA/AI/Models/Whisper/small.en.pt",
+    "backend": "openai-whisper",
+    "language": "en"
+  },
+  "transcript": "He has restored my soul, He has guided me In the pairs of righteousness, for His name's sake Even if I",
+  "words": [
+    {
+      "id": "w_ba81a979fc6418aa",
+      "text": "He",
+      "start": 42.0,
+      "end": 44.0,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.4954236149787903,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_b376f48a56d4f81e",
+      "text": "has",
+      "start": 44.0,
+      "end": 44.26,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9826347231864929,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_49194464547e3e06",
+      "text": "restored",
+      "start": 44.26,
+      "end": 44.96,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9909422993659973,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_be7cb979d906a257",
+      "text": "my",
+      "start": 44.96,
+      "end": 45.56,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.986985981464386,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_1d53bb74348211ae",
+      "text": "soul,",
+      "start": 45.56,
+      "end": 46.84,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.997798502445221,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_98602aa09d39fe41",
+      "text": "He",
+      "start": 48.1,
+      "end": 48.58,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.5972464084625244,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_e00c58b6c3b2fdaf",
+      "text": "has",
+      "start": 48.58,
+      "end": 48.76,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9865450263023376,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_0650f905ee9aabf8",
+      "text": "guided",
+      "start": 48.76,
+      "end": 49.52,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9994915723800659,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_91c6080a93e0c5d2",
+      "text": "me",
+      "start": 49.52,
+      "end": 50.58,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9971743822097778,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_6702e2cd66c24868",
+      "text": "In",
+      "start": 50.58,
+      "end": 51.6,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.19389526546001434,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_9cc376585ae1afd6",
+      "text": "the",
+      "start": 51.6,
+      "end": 51.76,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9706677794456482,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_585e6bd542bd1c5e",
+      "text": "pairs",
+      "start": 51.76,
+      "end": 52.3,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.737956166267395,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_57c24cf0bc781ffd",
+      "text": "of",
+      "start": 52.3,
+      "end": 52.74,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9955880641937256,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_b1218a4251d5405c",
+      "text": "righteousness,",
+      "start": 52.74,
+      "end": 53.64,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9210434556007385,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_0cd6ea262e18ca6d",
+      "text": "for",
+      "start": 55.46,
+      "end": 55.82,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.5192697048187256,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_ba627eb99ca3eb2c",
+      "text": "His",
+      "start": 55.82,
+      "end": 56.1,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9033827185630798,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_03cd05590b603f9c",
+      "text": "name's",
+      "start": 56.1,
+      "end": 57.18,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.6471092849969864,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_53050c7f2fca6113",
+      "text": "sake",
+      "start": 57.18,
+      "end": 57.76,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.6100338101387024,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_86653338abd8782a",
+      "text": "Even",
+      "start": 57.76,
+      "end": 58.92,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.3392452895641327,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_6159a17ed03dd72e",
+      "text": "if",
+      "start": 58.92,
+      "end": 59.24,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9490596055984497,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_9d9a0d7f2352c74c",
+      "text": "I",
+      "start": 59.24,
+      "end": 59.68,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9569834470748901,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "He has restored my soul, He has guided me",
+      "wordIds": [
+        "w_ba81a979fc6418aa",
+        "w_b376f48a56d4f81e",
+        "w_49194464547e3e06",
+        "w_be7cb979d906a257",
+        "w_1d53bb74348211ae",
+        "w_98602aa09d39fe41",
+        "w_e00c58b6c3b2fdaf",
+        "w_0650f905ee9aabf8",
+        "w_91c6080a93e0c5d2"
+      ]
+    },
+    {
+      "id": "phrase-0002",
+      "text": "In the pairs of righteousness, for His name's sake",
+      "wordIds": [
+        "w_6702e2cd66c24868",
+        "w_9cc376585ae1afd6",
+        "w_585e6bd542bd1c5e",
+        "w_57c24cf0bc781ffd",
+        "w_b1218a4251d5405c",
+        "w_0cd6ea262e18ca6d",
+        "w_ba627eb99ca3eb2c",
+        "w_03cd05590b603f9c",
+        "w_53050c7f2fca6113"
+      ]
+    },
+    {
+      "id": "phrase-0003",
+      "text": "Even if I",
+      "wordIds": [
+        "w_86653338abd8782a",
+        "w_6159a17ed03dd72e",
+        "w_9d9a0d7f2352c74c"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ]
+}

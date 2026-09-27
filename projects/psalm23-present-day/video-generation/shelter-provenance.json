@@ -1,0 +1,49 @@
+{
+  "name": "shelter",
+  "job": "shelter-v1",
+  "provider": "local OmiPC ComfyUI",
+  "model": "MiniMax H3 FL2VA int8 convrot",
+  "checkpoint": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+  "turboLora": "minimax_h3_turbo_v4_step600_ema_pruned_comfyui.safetensors",
+  "steps": 4,
+  "sampler": "MiniMaxH3TurboSampler",
+  "sourceRevision": "1b7316690952a1bdee3cc9da5cdbb6449529aa95",
+  "promptId": "c8be6433-8e22-40e5-a71d-cf67ee5cfb07",
+  "conditioning": "last_frame_only",
+  "seed": 20260927231,
+  "input": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/inputs/shelter-end.png",
+  "inputSha256": "efeba980cd16ff9ee5fa19078fe764e41ea04f5d9defe6c4bdb88bc41af20130",
+  "imageProvider": "built-in GPT Image",
+  "rawPath": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/raw/shelter-v1.mp4",
+  "rawSha256": "6115bdd37b0632e2a3182a453eaff2812fbc752d546e818277d5c641aaa14931",
+  "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/assets/video/shelter-motion.mp4",
+  "sha256": "4c285fcc91c659f4d5bd1257610c6534a8e65256e9d7e2ee224d5a1c77c96188",
+  "native": {
+    "width": 960,
+    "height": 544,
+    "fps": 24,
+    "frames": 124
+  },
+  "finished": {
+    "width": 960,
+    "height": 540,
+    "fps": 24,
+    "frames": 124,
+    "duration": 5.166666666666667,
+    "audio": false
+  },
+  "processing": "Center crop 2px top/bottom, silent H264 CRF17, no frame interpolation, no speed change, no upscale",
+  "decode": "pass",
+  "firstPoster": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/assets/video/shelter-first.png",
+  "lastPoster": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/assets/video/shelter-last.png",
+  "reviewSheet": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/review/shelter-v1-6fps.jpg",
+  "reviewStatus": "accepted_as_raw_supporting_insert",
+  "completedAt": "2026-09-27T16:05:17.777916+00:00",
+  "cost": "local GPU only; no paid API",
+  "review": {
+    "method": "All 31 decoded chronological samples at 6fps plus full decode; no audio in asset",
+    "observations": "Two grounded filament roots rise gradually and meet into one shelter arch by roughly 2.7s; arch thickens gently to final frame. Large center remains dark and readable. Sampled frames show no cuts, duplicating shapes, abrupt flash or unwanted letters. Frame edges stay clear except a low line at bases near margins.",
+    "limitations": "Sparse frames do not certify every frame or full-speed smoothness. Final composite still requires encoded review; generated video must have active coded foreground even in instrumental opening.",
+    "recommendedComposite": "Screen or luma blend with soft outer edge mask, matched amber/ivory foreground contours and contemporary photo beneath central dark negative space; keep title/lyrics away from bright arch crest."
+  }
+}

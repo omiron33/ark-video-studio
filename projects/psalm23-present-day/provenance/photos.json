@@ -1,0 +1,173 @@
+{
+  "version": 1,
+  "photos": [
+    {
+      "id": "p01",
+      "src": "assets/photos/p01.png",
+      "original": "/Users/shanefisher/.codex/generated_images/01a0e375-16ce-77f1-b2a0-24a39b4ab96d/exec-fdd83838-34d0-49a5-a356-456889ef0702.png",
+      "prompt": "provenance/photo-prompts/p01.txt",
+      "generator": "built-in GPT Image",
+      "review": "Root inspected actual generated photograph: correct contemporary subject and no lettering.",
+      "sha256": "c9262d8c7890aa07bc4320a1f573942f5809c9de338d94142008b7290cc8618c",
+      "bytes": 2320691,
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "id": "p02",
+      "src": "assets/photos/p02.png",
+      "original": "/Users/shanefisher/.codex/generated_images/01a0e375-16ce-77f1-b2a0-24a39b4ab96d/exec-0eb3521b-7d63-4aef-8dec-f5e5a5a5a438.png",
+      "prompt": "provenance/photo-prompts/p02.txt",
+      "generator": "built-in GPT Image",
+      "review": "Root inspected actual generated photograph: correct contemporary subject and no lettering.",
+      "sha256": "5e7565a710d2b9452c1ca0273e9aa0005b40a3c20b937b270ef8bb2369623798",
+      "bytes": 2633041,
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "id": "p03",
+      "src": "assets/photos/p03.png",
+      "original": "/Users/shanefisher/.codex/generated_images/01a0e375-16ce-77f1-b2a0-24a39b4ab96d/exec-3b919436-a031-4c5b-a6be-ed35da7c718f.png",
+      "prompt": "provenance/photo-prompts/p03.txt",
+      "generator": "built-in GPT Image",
+      "review": "Root inspected generated photograph: contemporary subject, no lettering, suitable anatomy.",
+      "sha256": "2233126c18e5d9e5c3c1134d46a8aea8ada7e3edaecf3f559cd6ea02ea10ae29",
+      "bytes": 2384714,
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "id": "p04",
+      "src": "assets/photos/p04.png",
+      "original": "/Users/shanefisher/.codex/generated_images/01a0e375-16ce-77f1-b2a0-24a39b4ab96d/exec-7a08a4e0-efb2-4f02-b2f6-67d725323c25.png",
+      "prompt": "provenance/photo-prompts/p04.txt",
+      "generator": "built-in GPT Image",
+      "review": "Root inspected generated photograph: contemporary subject, no lettering, suitable anatomy.",
+      "sha256": "85f853b0a3a998663a3e6014a9d5e8430d83b4d5b9237ac9b80368fa9f2c88d5",
+      "bytes": 1746442,
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "id": "p05",
+      "src": "assets/photos/p05.png",
+      "original": "/Users/shanefisher/.codex/generated_images/01a0e375-16ce-77f1-b2a0-24a39b4ab96d/exec-2048490d-9f2f-4bab-b212-fbc4f4be1ce4.png",
+      "prompt": "provenance/photo-prompts/p05.txt",
+      "generator": "built-in GPT Image",
+      "review": "Root inspected actual photograph: contemporary shelter/companionship, plausible hands and no lettering.",
+      "sha256": "8e5f3409709f76e553df3decb8a16d07460c87b034fc60b5d44999f922a622fa",
+      "bytes": 2281258,
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "id": "p06",
+      "src": "assets/photos/p06.png",
+      "original": "/Users/shanefisher/.codex/generated_images/01a0e375-16ce-77f1-b2a0-24a39b4ab96d/exec-2dd8afe7-c9b6-4f26-9415-04cb0392c4a5.png",
+      "prompt": "provenance/photo-prompts/p06.txt",
+      "generator": "built-in GPT Image",
+      "review": "Root inspected actual photograph: contemporary shelter/companionship, plausible hands and no lettering.",
+      "sha256": "e577b291f27f6f1a25202de92b63cd55b3311684704178b0c2beffbbbdf9b5a1",
+      "bytes": 1931790,
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "id": "p07",
+      "src": "assets/photos/p07.png",
+      "original": "/Users/shanefisher/.codex/generated_images/01a0e375-16ce-77f1-b2a0-24a39b4ab96d/exec-36f2bdb4-0367-4327-85a9-fb51464f7c21.png",
+      "prompt": "provenance/photo-prompts/p07.txt",
+      "generator": "built-in GPT Image",
+      "review": "Root inspected actual photograph: modern meal/passage, suitable negative space, no lettering.",
+      "sha256": "182f11b4eec6cd7c61900fe0f62c562b9bfadac2fba9a44a11fc0f23047ebc84",
+      "bytes": 1921324,
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "id": "p08",
+      "src": "assets/photos/p08.png",
+      "original": "/Users/shanefisher/.codex/generated_images/01a0e375-16ce-77f1-b2a0-24a39b4ab96d/exec-2bf66a4b-5fb6-476a-993a-76685ebb3763.png",
+      "prompt": "provenance/photo-prompts/p08.txt",
+      "generator": "built-in GPT Image",
+      "review": "Root inspected actual photograph: modern meal/passage, suitable negative space, no lettering.",
+      "sha256": "b3889dc352397cd7f73ef3341ac69450fa06f4fae61fba0705e45774ce2372f4",
+      "bytes": 2275196,
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "id": "p09",
+      "src": "assets/photos/p09.png",
+      "original": "/Users/shanefisher/.codex/generated_images/01a0e375-16ce-77f1-b2a0-24a39b4ab96d/exec-d10b3c5e-6eab-41ad-8e4f-9110257d0dbe.png",
+      "prompt": "provenance/photo-prompts/p09.txt",
+      "generator": "built-in GPT Image",
+      "review": "Root inspected actual photograph: plausible care and everyday mercy, suitable lyric regions and no lettering.",
+      "sha256": "1e10c3ee54c623cf86ae57904774a049c493444694b1696493d1a00965ad9a2a",
+      "bytes": 1760977,
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "id": "p10",
+      "src": "assets/photos/p10.png",
+      "original": "/Users/shanefisher/.codex/generated_images/01a0e375-16ce-77f1-b2a0-24a39b4ab96d/exec-bc298eeb-1ac5-4f94-96e2-f3fbac411bf4.png",
+      "prompt": "provenance/photo-prompts/p10.txt",
+      "generator": "built-in GPT Image",
+      "review": "Root inspected actual photograph: plausible care and everyday mercy, suitable lyric regions and no lettering.",
+      "sha256": "eab82e1b7fcec6dc089fe173cf00b4b2d16178db230f25a735b3c54ffad8020e",
+      "bytes": 2267465,
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "id": "p11",
+      "src": "assets/photos/p11.png",
+      "original": "/Users/shanefisher/.codex/generated_images/01a0e375-16ce-77f1-b2a0-24a39b4ab96d/exec-85a55de3-daaf-491a-a421-8b807a417d78.png",
+      "prompt": "provenance/photo-prompts/p11.txt",
+      "generator": "built-in GPT Image",
+      "review": "Root inspected actual photograph: credible contemporary homecoming/belonging, no text or anatomy defects at plate size.",
+      "sha256": "cc38b2364f33cbe7305cf948b5f64cead7f5899adbf2b89999e7394df592971b",
+      "bytes": 1817590,
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "id": "p12",
+      "src": "assets/photos/p12.png",
+      "original": "/Users/shanefisher/.codex/generated_images/01a0e375-16ce-77f1-b2a0-24a39b4ab96d/exec-453ef075-0537-4fb9-b218-1a97c68c8eac.png",
+      "prompt": "provenance/photo-prompts/p12.txt",
+      "generator": "built-in GPT Image",
+      "review": "Root inspected actual photograph: credible contemporary homecoming/belonging, no text or anatomy defects at plate size.",
+      "sha256": "9c8db8266e02af42e46d7581cacb9d6fb8f1134e01496d07e31660ac42bc57cc",
+      "bytes": 1803815,
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      }
+    }
+  ]
+}

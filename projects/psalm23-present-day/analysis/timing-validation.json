@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "status": "schema_and_provenance_passed",
+  "audioSha256": "3669040e797c9d2bf8b4136dc4c029c6e1ed51f302ccc411d1888ae50da80c8f",
+  "timingSha256": "a0457cf99af4c446721bde09a9f2aa287072d6a3bc478c92a002ff6aa0e3da2c",
+  "canonicalExact": true,
+  "words": 210,
+  "phrases": 39,
+  "firstVocalStart": 15.193455,
+  "lastVocalEnd": 202.909313,
+  "issues": [],
+  "sourceSupportedWords": 166,
+  "unsupportedWords": 44,
+  "encodedAudioGate": "pending",
+  "listened": false,
+  "note": "Valid canonical content, durable IDs and actual acoustic intervals. This report does not certify all sung-word boundaries or encoded audio."
+}

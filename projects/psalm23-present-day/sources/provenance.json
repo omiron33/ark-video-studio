@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "status": "source_archived_verified_ready_for_theme_choice",
+  "shareUrl": "https://suno.com/s/3wWZe2iEOVtgCNPP",
+  "canonicalUrl": "https://suno.com/song/32885123-f4b6-42e6-a546-f4acba404829",
+  "songId": "32885123-f4b6-42e6-a546-f4acba404829",
+  "title": "Psalm 23 (LXX 22) The Lord Is My Shepherd",
+  "app": {
+    "host": "omipc.taild60b4e.ts.net",
+    "repo": "C:\\Users\\sjfis\\Documents\\Codex\\orthodox-songbook",
+    "workflowId": "psalm-23-lxx-22-shepherd",
+    "sourceFile": "data/suno-workflows.json",
+    "matchingTakeRecordedAt": "2026-09-27T02:57:41.267Z",
+    "audioRecordFound": false,
+    "sourceAudioArchived": true,
+    "sourceAudioPath": "C:\\Users\\sjfis\\Documents\\Codex\\orthodox-songbook\\media\\suno\\workflows\\psalm-23-lxx-22-shepherd\\32885123-f4b6-42e6-a546-f4acba404829.m4a",
+    "archivePatternEvidence": "Existing psalm-91-lxx-90-shelter workflow archive plus workflow notes source reference",
+    "apiState": "Loopback 4317 connection refused during intake; archival filesystem verified, app page not verified",
+    "sourceReferenceVerified": true,
+    "sourceReferencePath": "workflow.notes",
+    "sourceReferenceUpdatedAt": "2026-09-27T15:32:03.220Z"
+  },
+  "lyrics": {
+    "path": "sources/canonical-lyrics.txt",
+    "sha256": "021492487b56a3ac1dac962cc4c75658b250d8a05ac925f0aebc9a72a09f385a",
+    "matchesStoredHash": true,
+    "matchesSunoSongField": true
+  },
+  "audio": {
+    "status": "verified_source_decode_passed",
+    "path": "sources/32885123-f4b6-42e6-a546-f4acba404829.m4a",
+    "sha256": "3669040e797c9d2bf8b4136dc4c029c6e1ed51f302ccc411d1888ae50da80c8f",
+    "bytes": 3643492,
+    "durationSeconds": 219.96,
+    "sampleRate": 48000,
+    "channels": 2,
+    "codec": "opus",
+    "container": "M4A",
+    "downloadMethod": "Signed-in Suno exact song page More options > Download > M4A > Unlock & Download, completed by parent agent using existing Pro allowance; no purchase",
+    "fullDecodePassed": true,
+    "embeddedSongIdentityMatches": true,
+    "storedAndRetrievedVia": "SSH/SCP OmiPC app archive with independent remote SHA256 and matching pulled copy",
+    "listened": false
+  },
+  "styleEvidence": {
+    "source": "app workflow authored style, not measured performance",
+    "bpmPrompt": 68,
+    "meterPrompt": "6/8"
+  },
+  "sourceMetadataDurationSeconds": 219.96,
+  "verifiedAt": "2026-09-27T15:31:31.998183+00:00",
+  "gate": "awaiting_theme_choice_no_production",
+  "timing": {
+    "source": "sources/suno-embedded-lyrics.srt",
+    "status": "approximate_unverified_provider_captions",
+    "caution": "First chorus I will fear no evil spans only 64.069-64.947 while next phrase spans 64.947-73.324. Independent acoustic alignment required; not validated word onsets."
+  },
+  "analysis": {
+    "path": "analysis/audio-energy-attacks.json",
+    "listened": false,
+    "measuredTempoBpm": null,
+    "note": "Measured whole-source RMS and positive spectral flux attacks, not vocal onsets or beat grid."
+  }
+}

@@ -1,0 +1,306 @@
+[
+  {
+    "start": 21.14,
+    "end": 25.19,
+    "confidence": 0.8854627658923467,
+    "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+    "method": "complete-exact-recognized-phrase",
+    "id": "p23-l003",
+    "text": "In a place of green grass",
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l003-lyrics.txt"
+  },
+  {
+    "start": 29.44,
+    "end": 32.87,
+    "confidence": 0.9940074384212494,
+    "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+    "method": "complete-exact-recognized-phrase",
+    "id": "p23-l005",
+    "text": "He has nourished me",
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l005-lyrics.txt"
+  },
+  {
+    "start": 33.9,
+    "end": 39.73,
+    "confidence": 0.9471599340438843,
+    "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+    "method": "complete-exact-recognized-phrase",
+    "id": "p23-l006",
+    "text": "by the water of rest.",
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l006-lyrics.txt"
+  },
+  {
+    "start": 41.8,
+    "end": 47.09,
+    "confidence": 0.9250769853591919,
+    "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+    "method": "complete-exact-recognized-phrase",
+    "id": "p23-l007",
+    "text": "He has restored my soul,",
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l007-lyrics.txt"
+  },
+  {
+    "start": 48.279999999999994,
+    "end": 50.39,
+    "confidence": 0.9315150827169418,
+    "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+    "method": "complete-exact-recognized-phrase",
+    "id": "p23-l008",
+    "text": "he has guided me",
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l008-lyrics.txt"
+  },
+  {
+    "start": 50.64,
+    "end": 53.83,
+    "confidence": 0.897977089881897,
+    "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+    "method": "complete-exact-recognized-phrase",
+    "id": "p23-l009",
+    "text": "in the paths of righteousness",
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l009-lyrics.txt"
+  },
+  {
+    "start": 55.4,
+    "end": 58.11,
+    "confidence": 0.9342104196548462,
+    "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+    "method": "complete-exact-recognized-phrase",
+    "id": "p23-l010",
+    "text": "for his name's sake.",
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l010-lyrics.txt"
+  },
+  {
+    "start": 60.94,
+    "end": 64.91,
+    "confidence": 0.914170217514038,
+    "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+    "method": "complete-exact-recognized-phrase",
+    "id": "p23-l012",
+    "text": "in the shadow of death,",
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l012-lyrics.txt"
+  },
+  {
+    "start": 79.74,
+    "end": 83.39,
+    "confidence": 0.993223226070404,
+    "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+    "method": "complete-exact-recognized-phrase",
+    "id": "p23-l013",
+    "text": "I will fear no evil,",
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l013-lyrics.txt"
+  },
+  {
+    "start": 69.36991400000001,
+    "end": 72.079206,
+    "method": "authored-phrase-bounds",
+    "id": "p23-l014",
+    "text": "for you are with me.",
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l014-lyrics.txt"
+  },
+  {
+    "start": 72.72,
+    "end": 75.83,
+    "confidence": 0.8251810967922211,
+    "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+    "method": "complete-exact-recognized-phrase",
+    "id": "p23-l015",
+    "text": "Your rod and your staff,",
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l015-lyrics.txt"
+  },
+  {
+    "start": 79.74,
+    "end": 83.39,
+    "confidence": 0.993223226070404,
+    "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+    "method": "complete-exact-recognized-phrase",
+    "id": "p23-l017",
+    "text": "I will fear no evil.",
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l017-lyrics.txt"
+  },
+  {
+    "start": 101.46,
+    "end": 105.65,
+    "confidence": 0.934341162443161,
+    "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+    "method": "complete-exact-recognized-phrase",
+    "id": "p23-l020",
+    "text": "You have anointed my head with oil,",
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l020-lyrics.txt"
+  },
+  {
+    "start": 105.24,
+    "end": 112.77,
+    "confidence": 0.9572190774811639,
+    "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+    "method": "complete-exact-recognized-phrase",
+    "id": "p23-l021",
+    "text": "and your cup cheers me like the best wine.",
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l021-lyrics.txt"
+  },
+  {
+    "start": 111.3,
+    "end": 116.01,
+    "confidence": 0.9546262860298157,
+    "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+    "method": "complete-exact-recognized-phrase",
+    "id": "p23-l022",
+    "text": "Even if I should walk",
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l022-lyrics.txt"
+  },
+  {
+    "start": 115.08,
+    "end": 119.09,
+    "confidence": 0.9249248623847961,
+    "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+    "method": "complete-exact-recognized-phrase",
+    "id": "p23-l023",
+    "text": "in the shadow of death,",
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l023-lyrics.txt"
+  },
+  {
+    "start": 133.34,
+    "end": 138.49,
+    "confidence": 0.8415696382522583,
+    "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+    "method": "complete-exact-recognized-phrase",
+    "id": "p23-l024",
+    "text": "I will fear no evil,",
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l024-lyrics.txt"
+  },
+  {
+    "start": 123.849714,
+    "end": 126.559052,
+    "method": "authored-phrase-bounds",
+    "id": "p23-l025",
+    "text": "for you are with me.",
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l025-lyrics.txt"
+  },
+  {
+    "start": 127.03999999999999,
+    "end": 130.15,
+    "confidence": 0.843983256816864,
+    "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+    "method": "complete-exact-recognized-phrase",
+    "id": "p23-l026",
+    "text": "Your rod and your staff,",
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l026-lyrics.txt"
+  },
+  {
+    "start": 133.34,
+    "end": 138.49,
+    "confidence": 0.8415696382522583,
+    "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+    "method": "complete-exact-recognized-phrase",
+    "id": "p23-l028",
+    "text": "I will fear no evil.",
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l028-lyrics.txt"
+  },
+  {
+    "start": 155.18,
+    "end": 159.95,
+    "confidence": 0.9847582221031189,
+    "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+    "method": "complete-exact-recognized-phrase",
+    "id": "p23-l029",
+    "text": "Your mercy shall follow me",
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l029-lyrics.txt"
+  },
+  {
+    "start": 160.68,
+    "end": 168.97,
+    "confidence": 0.9983978470166525,
+    "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+    "method": "complete-exact-recognized-phrase",
+    "id": "p23-l030",
+    "text": "all the days of my life.",
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l030-lyrics.txt"
+  },
+  {
+    "start": 155.18,
+    "end": 159.95,
+    "confidence": 0.9847582221031189,
+    "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+    "method": "complete-exact-recognized-phrase",
+    "id": "p23-l031",
+    "text": "Your mercy shall follow me",
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l031-lyrics.txt"
+  },
+  {
+    "start": 160.68,
+    "end": 168.97,
+    "confidence": 0.9983978470166525,
+    "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+    "method": "complete-exact-recognized-phrase",
+    "id": "p23-l032",
+    "text": "all the days of my life.",
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l032-lyrics.txt"
+  },
+  {
+    "start": 169.9,
+    "end": 174.31,
+    "confidence": 0.8814040541648864,
+    "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+    "method": "complete-exact-recognized-phrase",
+    "id": "p23-l033",
+    "text": "I will fear no evil,",
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l033-lyrics.txt"
+  },
+  {
+    "start": 173.86,
+    "end": 178.11,
+    "confidence": 0.8573109865188598,
+    "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+    "method": "complete-exact-recognized-phrase",
+    "id": "p23-l034",
+    "text": "for you are with me.",
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l034-lyrics.txt"
+  },
+  {
+    "start": 178.38000000000002,
+    "end": 181.27,
+    "confidence": 0.9584791660308838,
+    "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+    "method": "complete-exact-recognized-phrase",
+    "id": "p23-l035",
+    "text": "The Lord is my shepherd,",
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l035-lyrics.txt"
+  },
+  {
+    "start": 180.82000000000002,
+    "end": 184.41,
+    "confidence": 0.9187503695487976,
+    "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+    "method": "complete-exact-recognized-phrase",
+    "id": "p23-l036",
+    "text": "and I shall want nothing.",
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l036-lyrics.txt"
+  },
+  {
+    "start": 186.342783,
+    "end": 191.693255,
+    "method": "authored-phrase-bounds",
+    "id": "p23-l037",
+    "text": "And I shall dwell in the house of the Lord",
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l037-lyrics.txt"
+  },
+  {
+    "start": 190.92000000000002,
+    "end": 195.79,
+    "confidence": 0.9446394205093384,
+    "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+    "method": "complete-exact-recognized-phrase",
+    "id": "p23-l038",
+    "text": "for a very long time.",
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l038-lyrics.txt"
+  },
+  {
+    "start": 199.92000000000002,
+    "end": 203.13,
+    "confidence": 0.9544689178466796,
+    "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+    "method": "complete-exact-recognized-phrase",
+    "id": "p23-l039",
+    "text": "The Lord is my shepherd.",
+    "lyrics": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/analysis/alignment/p23-l039-lyrics.txt"
+  }
+]

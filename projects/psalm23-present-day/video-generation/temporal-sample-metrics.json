@@ -1,0 +1,26 @@
+{
+  "shelter": {
+    "method": "mean absolute RGB difference of chronological decoded6fps samples, codevalue0-255; proves pixel change only, not visual quality",
+    "sampleCount": 31,
+    "minimumPairDifference": 0.4280497685185185,
+    "maximumPairDifference": 2.1218749999999997,
+    "meanPairDifference": 1.1232422839506173,
+    "firstLastDifference": 18.067627314814814
+  },
+  "water": {
+    "method": "mean absolute RGB difference of chronological decoded6fps samples, codevalue0-255; proves pixel change only, not visual quality",
+    "sampleCount": 31,
+    "minimumPairDifference": 0.7455439814814815,
+    "maximumPairDifference": 1.3574652777777778,
+    "meanPairDifference": 0.9739091435185185,
+    "firstLastDifference": 6.0053530092592595
+  },
+  "mercy": {
+    "method": "mean absolute RGB difference of chronological decoded6fps samples, codevalue0-255; proves pixel change only, not visual quality",
+    "sampleCount": 31,
+    "minimumPairDifference": 0.22603587962962965,
+    "maximumPairDifference": 2.2519155092592595,
+    "meanPairDifference": 1.3637029320987653,
+    "firstLastDifference": 18.65230324074074
+  }
+}
