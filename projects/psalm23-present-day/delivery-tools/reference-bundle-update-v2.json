@@ -1,0 +1,519 @@
+{
+  "wrapperSha256": "288aab9b56c19240195da751765ff3445603a5aef50c4e92866d73ef952a090f",
+  "sourceCommit": "d9fcbcf7dab6f502c8b86b5b0b85498257833a11",
+  "wrapperPreserved": true,
+  "preservedExistingFiles": 196,
+  "previousManifestSha256": "34129d4ec1387992747036f458457e86bd65321daaadf7eaec2cefe03f602885",
+  "cards": 20,
+  "stage": "C:/Users/sjfis/Documents/Codex/ark-reference-addition-d9fcbcf7dab6-18c759",
+  "frames": 120,
+  "status": "hash_verified",
+  "manifestSha256": "2d4166c1243b75987650e6d7d9820981e2642ce7b067e6be5f691a1cfcf139fc",
+  "addedFiles": [
+    "references/motion/cards/internal-psalm23-mercy-material-handoff.json",
+    "references/motion/images/internal-psalm23-mercy-material-handoff/frame-01.jpg",
+    "references/motion/images/internal-psalm23-mercy-material-handoff/frame-02.jpg",
+    "references/motion/images/internal-psalm23-mercy-material-handoff/frame-03.jpg",
+    "references/motion/images/internal-psalm23-mercy-material-handoff/frame-04.jpg",
+    "references/motion/images/internal-psalm23-mercy-material-handoff/frame-05.jpg",
+    "references/motion/images/internal-psalm23-mercy-material-handoff/frame-06.jpg",
+    "references/motion/images/internal-psalm23-mercy-material-handoff/sheet.jpg"
+  ],
+  "verifiedFiles": 204,
+  "verifiedAt": "2026-09-27T18:18:17.4814149Z",
+  "baseSourceCommit": "c90aebc74e74eabfa74c2edc1442db42a8197db6",
+  "remoteBundle": "C:/Users/sjfis/Documents/Codex/ark-motion-references",
+  "localSourceCheckout": "/Volumes/Code/ark-video-studio",
+  "localSourceCommit": "d9fcbcf7dab6f502c8b86b5b0b85498257833a11",
+  "additions": {
+    "references/motion/cards/internal-psalm23-mercy-material-handoff.json": "57c3b8158bd45899bd3dbc723c0d6d281c462ff4ab8e94541e5b96b3f6ac3029",
+    "references/motion/images/internal-psalm23-mercy-material-handoff/frame-01.jpg": "30a8e978dc5a94665d258e3a47d81f12dbdb532d3559b3b350e295e049d9d58d",
+    "references/motion/images/internal-psalm23-mercy-material-handoff/frame-02.jpg": "4936093f4ad52a899361d806cea0cc7d0c7de3618b14665364e8f0a340cf0bc6",
+    "references/motion/images/internal-psalm23-mercy-material-handoff/frame-03.jpg": "9a1d2914e6c37d19dfeffd4511e47625d4ae02dc1aa38009fd57ed0d1707c701",
+    "references/motion/images/internal-psalm23-mercy-material-handoff/frame-04.jpg": "eba8f6ecbd4443cbb1e9cb06b5d5d3144e1228d3e4aefb2feaf574e48b14a72c",
+    "references/motion/images/internal-psalm23-mercy-material-handoff/frame-05.jpg": "f843909bf0cc96b72f7da235dea61363871a954eeb4f46ca83c16cc1676d37ec",
+    "references/motion/images/internal-psalm23-mercy-material-handoff/frame-06.jpg": "65f61a5a3eee01ed9d07714e983bbe57a3fa25d515a1f7b3301a8ce09af6327a",
+    "references/motion/images/internal-psalm23-mercy-material-handoff/sheet.jpg": "fc553555d524c2261231aed56976c34b8e0c18e1d9066a46574cf485b8b305b7"
+  },
+  "searchQuery": "mercy readable canonical word generated luminous material handoff modern protection",
+  "searchResult": {
+    "query": "mercy readable canonical word generated luminous material handoff modern protection",
+    "method": "local-lexical-concept-search-v1",
+    "results": [
+      {
+        "card": {
+          "version": 1,
+          "id": "internal-psalm23-mercy-material-handoff",
+          "title": "A readable word hands off to luminous material",
+          "source": {
+            "kind": "internal",
+            "path": "/Volumes/DATA/ArkRender/psalm23-present-day/psalm23-held-in-the-ordinary-v2.mp4",
+            "projectPath": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/project.json",
+            "start": 157.2,
+            "end": 162.1,
+            "sectionIds": [
+              "p23-l031"
+            ],
+            "videoSha256": "e483e690ef13766ee4e04414711d0826209151d3beab5a91864c113758f3e4f2",
+            "projectRevision": "2e18115e199808003cf4dcae527fe15c105e254a4e70bdf3b19701557fc07787",
+            "projectRevisionType": "frozen render source revision supplied by final-review parent",
+            "generatedAsset": {
+              "path": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/assets/video/mercy-motion.mp4",
+              "sha256": "574752ea503e8743184306c6a29a03cd7d7d9436f2585dc09c9c9ff63e5ebd32",
+              "finishedWidth": 960,
+              "finishedHeight": 540,
+              "fps": 24,
+              "provenancePath": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/mercy-provenance.json"
+            }
+          },
+          "intent": [
+            "mercy made tangible",
+            "protection in present-day life",
+            "reassurance",
+            "readable lyric becoming physical material"
+          ],
+          "tags": [
+            "canonical typography",
+            "generated word material",
+            "golden filaments",
+            "same-station handoff",
+            "warm contemporary photography",
+            "negative space",
+            "post-reading transformation"
+          ],
+          "motion": {
+            "summary": "A large editable cream mercy holds clearly beside two women sharing an umbrella. Fine gold filaments develop beneath its reading station. After the word has been read, the cream face fades into a fully formed generated mercy occupying the same place; the neighboring canonical words remain readable while internal strands continue moving.",
+            "phases": [
+              "157.2\u2013157.8s: establish the large intact cream word while the two people remain unobstructed on the left.",
+              "158\u2013159.8s: preserve the exact word while the remaining phrase completes and gold strands gather below the reading station.",
+              "Approximately 159.8\u2013160.4s: hand off the canonical face to the completed generated word in the same position.",
+              "160.4\u2013162.1s: hold the luminous word and readable supporting line; fine material motion continues within the letters."
+            ],
+            "transferablePrinciple": "Give the audience an unobstructed canonical reading first, then change the word\u2019s material at the same visual station so transformation reinforces meaning without requiring generated glyph formation to carry sung timing.",
+            "variations": [
+              "Let an already-read shelter word become woven fibers above a contemporary doorway.",
+              "Turn an already-read peace word into restrained water caustics at the same scale and baseline.",
+              "Resolve an already-read path word into a newly generated contour while its neighboring words remain editable and still."
+            ],
+            "cautions": [
+              "Do not reuse this generated mercy artwork or the source scene as a preset; create a new material relationship for the next lyric and its image space.",
+              "Use generated lettering only after exact canonical reading is secure; generated source has no per-letter timing control.",
+              "Align shape, size and position carefully: a crossfade between different glyph outlines creates temporary double edges.",
+              "Keep the transformation away from faces and avoid repeating this handoff as the default treatment across a film."
+            ]
+          },
+          "quality": {
+            "status": "observed",
+            "reviewer": "Rook and independent visual critic; actual v2 encoded sequence, native frames and captured six-frame sheet",
+            "userPreference": "unknown",
+            "userPreferenceScope": "Shane chose Theme 1 for Psalm 23 and requested ambitious integrated animation. No individual approval of this generated-mercy treatment or reference card is recorded.",
+            "observationStatus": "Actual encoded sequence and six captured library frames inspected on2026-09-27. Agent-observed principle; no Shane approval or audio-sync claim.",
+            "strengths": [
+              "The canonical word remains large and readable before transformation, including at phone-sized decoded review.",
+              "The same reading station connects editable type to luminous material instead of adding a detached competing word.",
+              "The warm filaments suit the rainy amber photographic world while the two people stay unobstructed."
+            ],
+            "limitations": [
+              "Brief double edges are visible during the crossfade because canonical and generated outlines do not match exactly.",
+              "The finished generated source is 960x540 at 24fps, enlarged to a 1160px-wide layer in the 1920x1080 composite; the final frame size does not make its material natively 1080p.",
+              "The effect depends on a clear reading interval before transformation; it is unsuitable when generated formation must deliver the initial sung word.",
+              "The inspected 5fps sheet and selected native frames do not certify every frame, full-speed smoothness, audio sync or hearing.",
+              "This is an observed reusable visual principle, not a claim of Shane approval or full automatic-film acceptance."
+            ]
+          },
+          "capturePlan": {
+            "status": "Completed by capture-reference; six-frame contact sheet opened and inspected by root",
+            "suggestedTimesSeconds": [
+              157.4,
+              159.6,
+              159.8,
+              160,
+              160.4,
+              161.8
+            ],
+            "reasons": [
+              "intact canonical hero word",
+              "supporting phrase completing before handoff",
+              "last clearly canonical state",
+              "visible handoff and double-edge limitation",
+              "completed generated material",
+              "generated hold with unobstructed full phrase"
+            ]
+          },
+          "observationEvidence": [
+            {
+              "path": "/Users/shanefisher/Movies/Psalm23/review-work/decoded-v2/generated-mercy.jpg",
+              "kind": "chronological 5fps decoded sheet",
+              "sha256": "d2e09f3d9ea58e825d69e392591e162593fd1a66b87ce246422ff7f2ca700024"
+            },
+            {
+              "path": "/Users/shanefisher/Movies/Psalm23/review-work/native-v2/frame-159.5.png",
+              "kind": "native decoded frame, canonical word",
+              "sha256": "a6366d026b7e5bf57d0d333569b3f2cd2733b5c7edc293083b7731552de0919d"
+            },
+            {
+              "path": "/Users/shanefisher/Movies/Psalm23/review-work/native-v2/frame-160.5.png",
+              "kind": "native decoded frame, generated word",
+              "sha256": "5050b387644e3fd1bafe3ff920e5ee66976e55e4e7a7e63b4a5a7746624377f8"
+            }
+          ],
+          "frames": [
+            {
+              "path": "images/internal-psalm23-mercy-material-handoff/frame-01.jpg",
+              "timeSeconds": 157.4,
+              "sha256": "30a8e978dc5a94665d258e3a47d81f12dbdb532d3559b3b350e295e049d9d58d"
+            },
+            {
+              "path": "images/internal-psalm23-mercy-material-handoff/frame-02.jpg",
+              "timeSeconds": 159.6,
+              "sha256": "4936093f4ad52a899361d806cea0cc7d0c7de3618b14665364e8f0a340cf0bc6"
+            },
+            {
+              "path": "images/internal-psalm23-mercy-material-handoff/frame-03.jpg",
+              "timeSeconds": 159.8,
+              "sha256": "9a1d2914e6c37d19dfeffd4511e47625d4ae02dc1aa38009fd57ed0d1707c701"
+            },
+            {
+              "path": "images/internal-psalm23-mercy-material-handoff/frame-04.jpg",
+              "timeSeconds": 160,
+              "sha256": "eba8f6ecbd4443cbb1e9cb06b5d5d3144e1228d3e4aefb2feaf574e48b14a72c"
+            },
+            {
+              "path": "images/internal-psalm23-mercy-material-handoff/frame-05.jpg",
+              "timeSeconds": 160.4,
+              "sha256": "f843909bf0cc96b72f7da235dea61363871a954eeb4f46ca83c16cc1676d37ec"
+            },
+            {
+              "path": "images/internal-psalm23-mercy-material-handoff/frame-06.jpg",
+              "timeSeconds": 161.8,
+              "sha256": "65f61a5a3eee01ed9d07714e983bbe57a3fa25d515a1f7b3301a8ce09af6327a"
+            }
+          ],
+          "contactSheet": "images/internal-psalm23-mercy-material-handoff/sheet.jpg",
+          "capture": {
+            "method": "ffmpeg-frame-sequence-v1",
+            "videoDuration": 219.966667,
+            "fps": 30,
+            "sampledFrames": 6,
+            "contactSheetSha256": "fc553555d524c2261231aed56976c34b8e0c18e1d9066a46574cf485b8b305b7"
+          }
+        },
+        "fit": {
+          "score": 40,
+          "lexicalScore": 40,
+          "matchedConcepts": [
+            {
+              "queryTerm": "mercy",
+              "referenceTerm": "mercy",
+              "kind": "exact"
+            },
+            {
+              "queryTerm": "readable",
+              "referenceTerm": "readable",
+              "kind": "exact"
+            },
+            {
+              "queryTerm": "canonical",
+              "referenceTerm": "canonical",
+              "kind": "exact"
+            },
+            {
+              "queryTerm": "word",
+              "referenceTerm": "word",
+              "kind": "exact"
+            },
+            {
+              "queryTerm": "generat",
+              "referenceTerm": "generat",
+              "kind": "exact"
+            },
+            {
+              "queryTerm": "luminou",
+              "referenceTerm": "luminou",
+              "kind": "exact"
+            },
+            {
+              "queryTerm": "material",
+              "referenceTerm": "material",
+              "kind": "exact"
+            },
+            {
+              "queryTerm": "handoff",
+              "referenceTerm": "handoff",
+              "kind": "exact"
+            },
+            {
+              "queryTerm": "protection",
+              "referenceTerm": "protection",
+              "kind": "exact"
+            }
+          ],
+          "durationFit": null,
+          "repetitionPenalty": 0,
+          "diversityPenalty": 0
+        }
+      },
+      {
+        "card": {
+          "version": 1,
+          "id": "internal-genesis1-whale-word-composite",
+          "title": "A creature forms beneath its spoken name",
+          "source": {
+            "kind": "internal",
+            "path": "/Volumes/DATA/ArkRender/genesis1/genesis1-breath-earth-v1.mp4",
+            "projectPath": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/project.json",
+            "start": 195.35,
+            "end": 203.5,
+            "sectionIds": [
+              "g1-l057",
+              "g1-l058",
+              "g1-l059"
+            ],
+            "videoSha256": "b946c097f0902c0f3b4eda3a330aceca2ef893c29bd5a7eb511cc34101d130db"
+          },
+          "intent": [
+            "creation",
+            "material acquiring identity",
+            "spoken command",
+            "great whales"
+          ],
+          "tags": [
+            "organic line art",
+            "generated video integration",
+            "typography foreground",
+            "whale",
+            "bone and rust",
+            "contour continuity"
+          ],
+          "motion": {
+            "summary": "Loose bone filaments form a whale behind the measured canonical words; authored foreground strokes continue the same material into the frame.",
+            "phases": [
+              "Loose filaments appear beneath the preceding command.",
+              "A coherent whale resolves as its name is sung.",
+              "The recognizable form continues breathing while the next creature phrase begins."
+            ],
+            "transferablePrinciple": "Use generated motion for organic topology and authored exact type for words, joining them with a common contour vocabulary.",
+            "variations": [
+              "Resolve root filaments into a tree beneath a separately timed growth command.",
+              "Gather star trails into a night sky with exact lyric stations."
+            ],
+            "cautions": [
+              "Generate new scene artwork; never recycle this whale across unrelated passages.",
+              "Sparse frames do not certify motion smoothness or vocal synchronization.",
+              "Fine generated strokes need matched brightness and a continuous native last frame."
+            ]
+          },
+          "quality": {
+            "status": "observed",
+            "reviewer": "Rook; six actual encoded film frames at195.6,196.8,198,199.55,200.9,202.3seconds",
+            "userPreference": "unknown",
+            "userPreferenceScope": "Shane chose the overall Breath & Earth direction, not this extracted moment.",
+            "strengths": [
+              "The same sparse bone contours become a recognizable animal behind a separate, readable GREAT WHALES lyric.",
+              "Foreground contour strokes cross the video boundary without a rectangular cutaway.",
+              "Large cream words retain priority over thin animal lines and rust accents."
+            ],
+            "limitations": [
+              "Six still samples demonstrate composition and transformation stages, not complete motion smoothness or vocal-sync certification.",
+              "Generated source24fps is embedded in30fps1080p output.",
+              "The contour vocabulary supports one short creation passage; repeated use would dilute its effect."
+            ]
+          },
+          "frames": [
+            {
+              "path": "images/internal-genesis1-whale-word-composite/frame-01.jpg",
+              "timeSeconds": 195.6,
+              "sha256": "aff6dbd2c072fc7547668ec398f71b4c1e6616bc4f00e0ec7f8d62cdb70f6dfa"
+            },
+            {
+              "path": "images/internal-genesis1-whale-word-composite/frame-02.jpg",
+              "timeSeconds": 196.8,
+              "sha256": "eaee1baba4e1704183c73ddb320af8b2109d20a358d837037ebc17ee493485ce"
+            },
+            {
+              "path": "images/internal-genesis1-whale-word-composite/frame-03.jpg",
+              "timeSeconds": 198,
+              "sha256": "83ce30ebdc6c0e85cd940a4dc8016657859bf534eb81e6dd1e7eeb9c0ad28184"
+            },
+            {
+              "path": "images/internal-genesis1-whale-word-composite/frame-04.jpg",
+              "timeSeconds": 199.55,
+              "sha256": "5caa2a2e68f3527f891719eea20c4cfca0e3af7efa41e0f8fb94feffa7198d02"
+            },
+            {
+              "path": "images/internal-genesis1-whale-word-composite/frame-05.jpg",
+              "timeSeconds": 200.9,
+              "sha256": "a43463a331e188bab78da5e6c9368d45552fe9620a621ef13d580fa855bf0206"
+            },
+            {
+              "path": "images/internal-genesis1-whale-word-composite/frame-06.jpg",
+              "timeSeconds": 202.3,
+              "sha256": "ef5ee59f9f1c62f75b84463c24325532ba5a782f97234b028062b2ef3f326e61"
+            }
+          ],
+          "contactSheet": "images/internal-genesis1-whale-word-composite/sheet.jpg",
+          "capture": {
+            "method": "ffmpeg-frame-sequence-v1",
+            "videoDuration": 304.733333,
+            "fps": 30,
+            "sampledFrames": 6,
+            "contactSheetSha256": "f6b21c4a80a3c3dd1f9ced2f4206e9426c060446976691fed38abe69d399992b"
+          }
+        },
+        "fit": {
+          "score": 13.58,
+          "lexicalScore": 14,
+          "matchedConcepts": [
+            {
+              "queryTerm": "canonical",
+              "referenceTerm": "canonical",
+              "kind": "exact"
+            },
+            {
+              "queryTerm": "word",
+              "referenceTerm": "word",
+              "kind": "exact"
+            },
+            {
+              "queryTerm": "generat",
+              "referenceTerm": "generat",
+              "kind": "exact"
+            },
+            {
+              "queryTerm": "material",
+              "referenceTerm": "material",
+              "kind": "exact"
+            }
+          ],
+          "durationFit": null,
+          "repetitionPenalty": 0,
+          "diversityPenalty": 0.03
+        }
+      },
+      {
+        "card": {
+          "version": 1,
+          "id": "external-microtype-image-world",
+          "title": "Images built from a common microtype material",
+          "source": {
+            "kind": "external",
+            "url": "https://x.com/ptrubey/status/2104062055712260161",
+            "originalPostUrl": "https://x.com/johnknopf/status/2103698854399099057",
+            "path": "/tmp/ark-motion-external-2104062055712260161/source.mp4",
+            "videoSha256": "be382235c890a99cd4bb8e7448123646cf7bb4a1e52939c2566646f6c22bb395",
+            "start": 75,
+            "end": 85.033333,
+            "creator": "John Knopf (@johnknopf), original poster; shared by Phil Trubey (@PTrubey)",
+            "title": "All the Way Here"
+          },
+          "intent": [
+            "connect words to memory",
+            "unify varied scenes",
+            "show knowledge becoming imagery",
+            "intimate human recollection"
+          ],
+          "tags": [
+            "microtypography",
+            "ascii texture",
+            "typographic image",
+            "semantic montage",
+            "silhouette",
+            "photographic composition",
+            "dark",
+            "memory",
+            "letters"
+          ],
+          "motion": {
+            "summary": "A sparse title gives way to figurative scenes represented through dense small characters. Different subjects share the same text-like surface while a separate bottom lyric line remains readable.",
+            "phases": [
+              "A restrained title holds against near-black.",
+              "A large figurative image appears through a dense character grid.",
+              "The subject changes while the microtype material and bottom lyric band carry continuity."
+            ],
+            "transferablePrinciple": "Use one meaningful visual material across different compositions, so the material expresses the story while the subjects keep changing.",
+            "variations": [
+              "For ancestry, build new silhouettes from short verified family-record fragments, keeping the primary lyric separate.",
+              "For a flood story, let original maps or contour marks become the shared surface of distinct images.",
+              "Use changing marks only where they support form; a still readable silhouette can contrast with a later active transition."
+            ],
+            "cautions": [
+              "Borrow the idea of a shared semantic material, not this video's exact imagery, phrases or character patterns.",
+              "Dense small marks collapse on phones and video compression; test the encoded output at real display size.",
+              "Do not substitute changing textures for genuinely different choreography.",
+              "This sample establishes a visual treatment and scene succession, not a measured morph algorithm."
+            ]
+          },
+          "quality": {
+            "status": "observed",
+            "reviewer": "agent visual inspection of decoded frame sequence",
+            "strengths": [
+              "A consistent material ties different subjects to a story about language.",
+              "Large light-and-shadow shapes remain recognizable even when individual characters are too small to read."
+            ],
+            "limitations": [
+              "The sampled scenes are dark and very fine grained; small-screen contrast may be weak.",
+              "Primary lyrics are comparatively small; engine adaptation must use its own legibility requirements."
+            ],
+            "userPreference": "liked",
+            "userPreferenceScope": "Source video only. Shane noted cool ideas in the video; this individual excerpt has not been approved. No numerical craft or timing score assigned."
+          },
+          "frames": [
+            {
+              "path": "images/external-microtype-image-world/01.jpg",
+              "timeSeconds": 75
+            },
+            {
+              "path": "images/external-microtype-image-world/02.jpg",
+              "timeSeconds": 77
+            },
+            {
+              "path": "images/external-microtype-image-world/03.jpg",
+              "timeSeconds": 79
+            },
+            {
+              "path": "images/external-microtype-image-world/04.jpg",
+              "timeSeconds": 81
+            },
+            {
+              "path": "images/external-microtype-image-world/05.jpg",
+              "timeSeconds": 83
+            },
+            {
+              "path": "images/external-microtype-image-world/06.jpg",
+              "timeSeconds": 85
+            }
+          ],
+          "contactSheet": "images/external-microtype-image-world/sheet.jpg"
+        },
+        "fit": {
+          "score": 10.813,
+          "lexicalScore": 11,
+          "matchedConcepts": [
+            {
+              "queryTerm": "readable",
+              "referenceTerm": "readable",
+              "kind": "exact"
+            },
+            {
+              "queryTerm": "word",
+              "referenceTerm": "word",
+              "kind": "exact"
+            },
+            {
+              "queryTerm": "material",
+              "referenceTerm": "material",
+              "kind": "exact"
+            }
+          ],
+          "durationFit": null,
+          "repetitionPenalty": 0,
+          "diversityPenalty": 0.017
+        }
+      }
+    ],
+    "warnings": []
+  },
+  "searchVerified": true,
+  "receiptCreatedAt": "2026-09-27T18:18:19.690959+00:00",
+  "notes": "Only eight committed card/image additions and the bundle manifest were changed. All196 preexisting listed files and the machine-specific Node24 wrapper are preserved. No rendered inputs or production sources changed."
+}
