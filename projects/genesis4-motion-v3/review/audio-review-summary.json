@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "kind": "final-audio-review-summary",
+  "createdAt": "2026-09-27T07:41:25.268379+00:00",
+  "sourceReport": {
+    "path": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/audio/audio-review.json",
+    "sha256": "a920b79f8d8027b72255047bc3a07c4910717d1f30cc508c94a9db53b86614d4",
+    "bytes": 1712549
+  },
+  "binding": {
+    "videoSha256": "6f1d33843be71917ff109d834d536452fa6e8bba9d7b195c156cc7ea235097ca",
+    "projectHash": "1e2ad1d495bb1401546b82ba810fbf6fdffc37978bb6b802fccab5f2abf9c2aa",
+    "audioSha256": "c26b0dfd26850b091b408953120f2a0e07188f7415c6b03792320bf2b422cc2b"
+  },
+  "status": "failed",
+  "methods": [
+    "Decoded mono PCM correlation and lag search across the exact source interval",
+    "Independent local Whisper base.en and small.en lyric recognition",
+    "Official local wav2vec2 CTC forced alignment with explicit instrumental blank states",
+    "Source versus AAC-decoded acoustic alignment stability",
+    "Official lyrics: independent base and large wav2vec2 checkpoints with paired onset AND end agreement; transparent ASR lexical disagreement"
+  ],
+  "checks": [
+    {
+      "id": "decoded_audio_match",
+      "passed": true,
+      "threshold": {
+        "minCorrelation": 0.985,
+        "minSegmentCorrelation": 0.97,
+        "maxAbsoluteGainDb": 0.75
+      },
+      "measured": {
+        "correlation": 0.999583,
+        "minSegmentCorrelation": 0.998018,
+        "gainDb": -0.026246,
+        "segmentsCount": 156
+      }
+    },
+    {
+      "id": "audio_offset",
+      "passed": true,
+      "threshold": {
+        "maxAbsoluteSeconds": 0.035
+      },
+      "measured": {
+        "offsetSeconds": 0
+      }
+    },
+    {
+      "id": "audio_duration",
+      "passed": true,
+      "threshold": {
+        "maxErrorSeconds": 0.08
+      },
+      "measured": {
+        "encodedSeconds": 312,
+        "sourceSeconds": 312,
+        "expectedSeconds": 312
+      }
+    },
+    {
+      "id": "lyric_phrase_match",
+      "passed": false,
+      "threshold": {
+        "policy": "Literal supplied lyrics preserved; every word requires independent paired acoustic evidence and AAC stability",
+        "minDualCtcConfidence": 0.7,
+        "maxSourceOnsetSpread": 0.08,
+        "maxSourceEndSpread": 0.12,
+        "minRecognitionProbability": 0.6,
+        "maxRecognitionOnsetDelta": 0.25,
+        "maxRecognitionEndDelta": 0.25
+      },
+      "measured": {
+        "error": null,
+        "canonicalTextReconciled": false,
+        "windowsCount": 13
+      }
+    },
+    {
+      "id": "word_sync",
+      "passed": false,
+      "threshold": {
+        "maxCueDelta": 0.04,
+        "maxEndDelta": 0.08,
+        "minWordAcousticConfidence": 0.2,
+        "minMeanAcousticConfidence": 0.55,
+        "maxCodecAlignmentSpread": 0.12,
+        "maxCrossModelBoundaryDelta": 0.45
+      },
+      "measured": {
+        "wordCount": 498,
+        "verifiedWords": 248,
+        "maxCueDelta": 2.265936,
+        "maxEndDelta": 2.446361,
+        "meanAcousticConfidence": 0.548848,
+        "error": null,
+        "unsupportedWordsCount": 243,
+        "repairsCount": 244
+      }
+    }
+  ],
+  "counts": {
+    "canonicalWords": 498,
+    "supportedWords": 255,
+    "strictlyVerifiedWords": 248,
+    "unsupportedWords": 243,
+    "supportedButOutsideStrictTolerance": 7
+  },
+  "correctedWords": [
+    {
+      "id": "g4-l043-w02",
+      "text": "to",
+      "currentStart": 148.875302,
+      "currentEnd": 148.995414,
+      "acousticStart": 148.875302,
+      "acousticEnd": 148.995414,
+      "cueDelta": 0,
+      "endDelta": 0,
+      "route": "official_ctc_asr",
+      "supported": true,
+      "passed": true
+    },
+    {
+      "id": "g4-l043-w03",
+      "text": "the",
+      "currentStart": 149.055471,
+      "currentEnd": 149.155564,
+      "acousticStart": 149.055471,
+      "acousticEnd": 149.155564,
+      "cueDelta": 0,
+      "endDelta": 0,
+      "route": "official_ctc_asr",
+      "supported": true,
+      "passed": true
+    }
+  ],
+  "projectChanged": false,
+  "runtime": {
+    "attemptCount": 89,
+    "cache": {
+      "directory": "/Volumes/Code/ark-video-studio/projects/genesis4-motion-v3/.review-cache/audio",
+      "hits": 89,
+      "misses": 0,
+      "rejectedEntries": 0
+    },
+    "maxAttemptsRequested": 2,
+    "repairRequested": false,
+    "repairProposalsNotApplied": 244
+  },
+  "inputIntegrity": {
+    "videoSha256VerifiedAfterReview": "6f1d33843be71917ff109d834d536452fa6e8bba9d7b195c156cc7ea235097ca",
+    "projectFileSha256BeforeAndAfter": "88e9c2f494ed44416631243500f3da06285d4db64761b6fc5a10844535a15817",
+    "sourceAudioSha256VerifiedAfterReview": "c26b0dfd26850b091b408953120f2a0e07188f7415c6b03792320bf2b422cc2b",
+    "projectRevisionMatchesRenderStartAndEnd": true,
+    "movieAndProjectUnchangedDuringReview": true,
+    "renderReport": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/film.mp4.render.json",
+    "snapshot": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/audio-input-snapshot.json"
+  },
+  "conclusion": "Decoded audio source matching, zero lag and 312-second duration pass. Both targeted corrected words pass with exact measured endpoints. Strict whole-song phrase/word certification remains failed: 243 words lack required independent support and 7 supported words retain previously assessed smaller or endpoint differences. This report does not change project timing or assert perfect sync.",
+  "limitations": [
+    "Machine evidence assesses content, sample alignment and word boundaries; it does not claim subjective hearing or mathematical perfection.",
+    "CTC model is English speech trained; low-confidence sung words fail and trigger bounded retries.",
+    "Full per-word acoustic evidence, model identities and inference records remain in sourceReport.path; this bounded archive retains the source report hash.",
+    "No subjective hearing claim. Unsupported model disagreement does not establish that the rendered cue is wrong.",
+    "The immediate-onset and settled-camera rendering improvements require visual encoded review; acoustic correlation alone cannot validate displayed lyric timing.",
+    "Previously deferred seven candidate refinements remain unapplied; no new exploratory corrections were made."
+  ]
+}

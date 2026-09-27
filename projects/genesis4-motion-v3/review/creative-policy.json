@@ -1,0 +1,2112 @@
+{
+  "required": true,
+  "passed": true,
+  "issues": [],
+  "warnings": [
+    "Scenes through g4-scene-003 sustain flow pacing for at least 20 seconds; inspect the encoded film for monotonous phrasing.",
+    "No supported three-word accent burst is planned; do not invent beats to force one. Review phrase contrast through holds, semantic motion and scene length."
+  ],
+  "assetRequests": [],
+  "artwork": {
+    "policy": "unique-scene-artwork-v1",
+    "passed": true,
+    "status": "passed",
+    "issues": [],
+    "missing": [],
+    "duplicates": [],
+    "uses": [
+      {
+        "sectionId": "g4-opening-eclipse",
+        "assetId": "eden-altars-opening",
+        "src": "assets/eden-altars-opening.png",
+        "sha256": "d69a3d59a5cbfbf64502f74e75d42681861a980dc864c0e2eccb62d28cca61e9"
+      },
+      {
+        "sectionId": "g4-scene-003",
+        "assetId": "brothers",
+        "src": "assets/brothers-7dff1a33eacf.png",
+        "sha256": "7dff1a33eacf24fd5003954862481f8b24311c39a1420cadaf4bcce57fcd4d72"
+      },
+      {
+        "sectionId": "g4-scene-012",
+        "assetId": "offering",
+        "src": "assets/offering-c290a1051bc4.png",
+        "sha256": "c290a1051bc49261a99b4eecf3baa00e382df992ff0184251d0d3de83f31d8a8"
+      },
+      {
+        "sectionId": "g4-scene-027",
+        "assetId": "brother-struggle",
+        "src": "assets/brother-struggle.png",
+        "sha256": "82c2e8c87fa287b089d83293498afa64e2ec6a7434da4325f4814ecdcb4c2dc9"
+      },
+      {
+        "sectionId": "g4-scene-028",
+        "assetId": "christ-judgment",
+        "src": "assets/christ-judgment.png",
+        "sha256": "b98763f0bcd2efd17a54231bd3dae69c555edab4571731374af160fb0dcd316c"
+      },
+      {
+        "sectionId": "g4-scene-033",
+        "assetId": "blood-earth",
+        "src": "assets/blood-earth-2565335e763a.png",
+        "sha256": "2565335e763a37ed9d4bf16aa644b0de4867f27c5a7cf0e3fc651c717a37cbb3"
+      },
+      {
+        "sectionId": "g4-scene-056",
+        "assetId": "exile",
+        "src": "assets/exile-e62ffceb3415.png",
+        "sha256": "e62ffceb3415a767edcc0786ee2adfca3cb4a7db5551a21501539c8ffb59a06f"
+      },
+      {
+        "sectionId": "g4-scene-061",
+        "assetId": "city",
+        "src": "assets/city-e43b94078b30.png",
+        "sha256": "e43b94078b30c4c336086ef0c841187f0f9db8b3afcc703da3fe0f8ace612f76"
+      },
+      {
+        "sectionId": "g4-scene-077",
+        "assetId": "forge",
+        "src": "assets/forge-ccbb4ef17685.png",
+        "sha256": "ccbb4ef1768569105c26f556d147ffdd20dbd863d95f02fa6ffd5d60042bb43d"
+      },
+      {
+        "sectionId": "g4-scene-087",
+        "assetId": "christ-mercy",
+        "src": "assets/christ-mercy.png",
+        "sha256": "e3279a6f52047deb4dbd4883f35a43a2af2e5537828b8fdd0f87bd83f5087ffd"
+      },
+      {
+        "sectionId": "g4-scene-088",
+        "assetId": "new-seed",
+        "src": "assets/new-seed-88750c215df8.png",
+        "sha256": "88750c215df87a7f8793f6ee2c0be10614d7ff24f51a9b823d61ec5972fe5862"
+      },
+      {
+        "sectionId": "g4-scene-093",
+        "assetId": "christ-hope",
+        "src": "assets/christ-hope.png",
+        "sha256": "f284d47ec894bf0d09dc982286feaa8c4c367494abe0d4ac661ff576f82390f2"
+      }
+    ],
+    "assetRequests": [],
+    "limitations": [
+      "SHA-256 detects byte-identical reuse, including renamed/copied files; re-encoded, cropped, or visually similar derivatives still require independent visual review. Fonts, explicitly marked textures/procedural assets, and transition-only dependencies are excluded from scene-artwork reuse counting."
+    ]
+  },
+  "pacing": {
+    "passed": true,
+    "status": "supported-plan",
+    "issues": [],
+    "errors": [],
+    "warnings": [
+      "Scenes through g4-scene-003 sustain flow pacing for at least 20 seconds; inspect the encoded film for monotonous phrasing.",
+      "No supported three-word accent burst is planned; do not invent beats to force one. Review phrase contrast through holds, semantic motion and scene length."
+    ],
+    "evidence": {
+      "policy": "measured-phrase-contrast-v1",
+      "counts": {
+        "flow": 80,
+        "accent-burst": 0,
+        "held": 0,
+        "slow-dissolve": 0,
+        "opening-hook": 1
+      },
+      "scenes": [
+        {
+          "sectionId": "g4-opening-strike",
+          "duration": 2.4,
+          "wordCount": 0,
+          "density": 0,
+          "phraseIds": [],
+          "lastWordEnd": 0,
+          "readingTail": 2.4,
+          "longestSustain": null,
+          "calmCompatible": false,
+          "mode": "opening-hook",
+          "rationale": "Use the real song or authored chapter title for immediate kinetic action, then transform the composition throughout the instrumental runway and clear it before the first vocal. No lyric or musical accent is invented.",
+          "hook": {
+            "title": "GENESIS 4",
+            "start": 0,
+            "end": 2.4,
+            "settleAt": 0.576,
+            "transformAt": 1.008,
+            "releaseAt": 2.08,
+            "firstVocalAt": 10.940891
+          }
+        },
+        {
+          "sectionId": "g4-opening-blood",
+          "duration": 3.3,
+          "wordCount": 0,
+          "density": 0,
+          "phraseIds": [],
+          "lastWordEnd": 2.4,
+          "readingTail": 3.3,
+          "longestSustain": null,
+          "calmCompatible": true,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-opening-eclipse",
+          "duration": 5.166667,
+          "wordCount": 0,
+          "density": 0,
+          "phraseIds": [],
+          "lastWordEnd": 5.7,
+          "readingTail": 5.166667,
+          "longestSustain": null,
+          "calmCompatible": true,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-000",
+          "duration": 4.566667,
+          "wordCount": 5,
+          "density": 1.094891,
+          "phraseIds": [
+            "g4-l000"
+          ],
+          "lastWordEnd": 14.387854,
+          "readingTail": 1.045479,
+          "longestSustain": {
+            "wordId": "g4-l000-w00",
+            "start": 10.940891,
+            "end": 12.624291,
+            "duration": 1.6834
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-001",
+          "duration": 6.666667,
+          "wordCount": 5,
+          "density": 0.75,
+          "phraseIds": [
+            "g4-l001"
+          ],
+          "lastWordEnd": 20.216156,
+          "readingTail": 1.883844,
+          "longestSustain": {
+            "wordId": "g4-l001-w01",
+            "start": 16.752012,
+            "end": 19.07479,
+            "duration": 2.322778
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-002",
+          "duration": 5.366667,
+          "wordCount": 9,
+          "density": 1.677019,
+          "phraseIds": [
+            "g4-l002"
+          ],
+          "lastWordEnd": 26.944204,
+          "readingTail": 0.522463,
+          "longestSustain": {
+            "wordId": "g4-l002-w06",
+            "start": 25.722743,
+            "end": 26.123222,
+            "duration": 0.400479
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-003",
+          "duration": 4.833333,
+          "wordCount": 6,
+          "density": 1.241379,
+          "phraseIds": [
+            "g4-l003"
+          ],
+          "lastWordEnd": 31.429569,
+          "readingTail": 0.870431,
+          "longestSustain": {
+            "wordId": "g4-l003-w02",
+            "start": 28.606192,
+            "end": 29.126814,
+            "duration": 0.520622
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-004",
+          "duration": 2.733333,
+          "wordCount": 4,
+          "density": 1.463415,
+          "phraseIds": [
+            "g4-l004"
+          ],
+          "lastWordEnd": 34.471347,
+          "readingTail": 0.561986,
+          "longestSustain": {
+            "wordId": "g4-l004-w03",
+            "start": 34.071108,
+            "end": 34.471347,
+            "duration": 0.400239
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-005",
+          "duration": 2.933333,
+          "wordCount": 5,
+          "density": 1.704545,
+          "phraseIds": [
+            "g4-l005"
+          ],
+          "lastWordEnd": 37.593206,
+          "readingTail": 0.373461,
+          "longestSustain": {
+            "wordId": "g4-l005-w04",
+            "start": 36.992849,
+            "end": 37.593206,
+            "duration": 0.600357
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-006",
+          "duration": 2.2,
+          "wordCount": 5,
+          "density": 2.272727,
+          "phraseIds": [
+            "g4-l006"
+          ],
+          "lastWordEnd": 40.114708,
+          "readingTail": 0.051959,
+          "longestSustain": {
+            "wordId": "g4-l006-w02",
+            "start": 38.773909,
+            "end": 39.234184,
+            "duration": 0.460275
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-007",
+          "duration": 1.233333,
+          "wordCount": 4,
+          "density": 3.243243,
+          "phraseIds": [
+            "g4-l007"
+          ],
+          "lastWordEnd": 41.335435,
+          "readingTail": 0.064565,
+          "longestSustain": {
+            "wordId": "g4-l007-w00",
+            "start": 40.214768,
+            "end": 40.615006,
+            "duration": 0.400238
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-008",
+          "duration": 2.5,
+          "wordCount": 6,
+          "density": 2.4,
+          "phraseIds": [
+            "g4-l008"
+          ],
+          "lastWordEnd": 43.136508,
+          "readingTail": 0.763492,
+          "longestSustain": {
+            "wordId": "g4-l008-w02",
+            "start": 41.795709,
+            "end": 42.316019,
+            "duration": 0.52031
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-009",
+          "duration": 5.466667,
+          "wordCount": 10,
+          "density": 1.829268,
+          "phraseIds": [
+            "g4-l009",
+            "g4-l010"
+          ],
+          "lastWordEnd": 48.779869,
+          "readingTail": 0.586798,
+          "longestSustain": {
+            "wordId": "g4-l009-w03",
+            "start": 45.257771,
+            "end": 45.998212,
+            "duration": 0.740441
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-011",
+          "duration": 5.666667,
+          "wordCount": 7,
+          "density": 1.235294,
+          "phraseIds": [
+            "g4-l011"
+          ],
+          "lastWordEnd": 54.267285,
+          "readingTail": 0.766048,
+          "longestSustain": {
+            "wordId": "g4-l011-w00",
+            "start": 49.921536,
+            "end": 50.682543,
+            "duration": 0.761007
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-012",
+          "duration": 6.266667,
+          "wordCount": 9,
+          "density": 1.43617,
+          "phraseIds": [
+            "g4-l012",
+            "g4-l013"
+          ],
+          "lastWordEnd": 60.976159,
+          "readingTail": 0.323841,
+          "longestSustain": {
+            "wordId": "g4-l012-w04",
+            "start": 56.770596,
+            "end": 58.23253,
+            "duration": 1.461934
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-014",
+          "duration": 2.666667,
+          "wordCount": 4,
+          "density": 1.5,
+          "phraseIds": [
+            "g4-l014"
+          ],
+          "lastWordEnd": 63.639682,
+          "readingTail": 0.326985,
+          "longestSustain": {
+            "wordId": "g4-l014-w03",
+            "start": 63.038887,
+            "end": 63.639682,
+            "duration": 0.600795
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-015",
+          "duration": 2.7,
+          "wordCount": 4,
+          "density": 1.481481,
+          "phraseIds": [
+            "g4-l015"
+          ],
+          "lastWordEnd": 66.00298,
+          "readingTail": 0.663687,
+          "longestSustain": {
+            "wordId": "g4-l015-w02",
+            "start": 65.161919,
+            "end": 65.582449,
+            "duration": 0.42053
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-016",
+          "duration": 3.733333,
+          "wordCount": 5,
+          "density": 1.339286,
+          "phraseIds": [
+            "g4-l016"
+          ],
+          "lastWordEnd": 69.667601,
+          "readingTail": 0.732399,
+          "longestSustain": {
+            "wordId": "g4-l016-w03",
+            "start": 68.546187,
+            "end": 69.106894,
+            "duration": 0.560707
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-017",
+          "duration": 2.766667,
+          "wordCount": 5,
+          "density": 1.807229,
+          "phraseIds": [
+            "g4-l017"
+          ],
+          "lastWordEnd": 73.071894,
+          "readingTail": 0.094773,
+          "longestSustain": {
+            "wordId": "g4-l017-w04",
+            "start": 72.310934,
+            "end": 73.071894,
+            "duration": 0.76096
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-018",
+          "duration": 3.533333,
+          "wordCount": 5,
+          "density": 1.415094,
+          "phraseIds": [
+            "g4-l018"
+          ],
+          "lastWordEnd": 75.95553,
+          "readingTail": 0.74447,
+          "longestSustain": {
+            "wordId": "g4-l018-w04",
+            "start": 74.493687,
+            "end": 75.95553,
+            "duration": 1.461843
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-019",
+          "duration": 2.8,
+          "wordCount": 5,
+          "density": 1.785714,
+          "phraseIds": [
+            "g4-l019"
+          ],
+          "lastWordEnd": 79.319773,
+          "readingTail": 0.180227,
+          "longestSustain": {
+            "wordId": "g4-l019-w04",
+            "start": 78.819141,
+            "end": 79.319773,
+            "duration": 0.500632
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-020",
+          "duration": 2.3,
+          "wordCount": 6,
+          "density": 2.608696,
+          "phraseIds": [
+            "g4-l020"
+          ],
+          "lastWordEnd": 81.522571,
+          "readingTail": 0.277429,
+          "longestSustain": {
+            "wordId": "g4-l020-w05",
+            "start": 81.082071,
+            "end": 81.522571,
+            "duration": 0.4405
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-021",
+          "duration": 2.533333,
+          "wordCount": 4,
+          "density": 1.578947,
+          "phraseIds": [
+            "g4-l021"
+          ],
+          "lastWordEnd": 84.305734,
+          "readingTail": 0.027599,
+          "longestSustain": {
+            "wordId": "g4-l021-w03",
+            "start": 83.084346,
+            "end": 84.305734,
+            "duration": 1.221388
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-022",
+          "duration": 2.6,
+          "wordCount": 7,
+          "density": 2.692308,
+          "phraseIds": [
+            "g4-l022"
+          ],
+          "lastWordEnd": 86.648396,
+          "readingTail": 0.284937,
+          "longestSustain": {
+            "wordId": "g4-l022-w01",
+            "start": 84.626098,
+            "end": 85.086621,
+            "duration": 0.460523
+          },
+          "calmCompatible": true,
+          "mode": "flow",
+          "rationale": "A continuous authored camera or semantic move follows the phrase at its original musical pace."
+        },
+        {
+          "sectionId": "g4-scene-023",
+          "duration": 4.6,
+          "wordCount": 6,
+          "density": 1.304348,
+          "phraseIds": [
+            "g4-l023"
+          ],
+          "lastWordEnd": 91.173538,
+          "readingTail": 0.359795,
+          "longestSustain": {
+            "wordId": "g4-l023-w04",
+            "start": 90.052264,
+            "end": 90.632924,
+            "duration": 0.58066
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-024",
+          "duration": 8.3,
+          "wordCount": 21,
+          "density": 2.53012,
+          "phraseIds": [
+            "g4-l024",
+            "g4-l025",
+            "g4-l026"
+          ],
+          "lastWordEnd": 99.701842,
+          "readingTail": 0.131491,
+          "longestSustain": {
+            "wordId": "g4-l025-w06",
+            "start": 96.179226,
+            "end": 96.739863,
+            "duration": 0.560637
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-027",
+          "duration": 2.433333,
+          "wordCount": 4,
+          "density": 1.643836,
+          "phraseIds": [
+            "g4-l027"
+          ],
+          "lastWordEnd": 102.243361,
+          "readingTail": 0.023306,
+          "longestSustain": {
+            "wordId": "g4-l027-w01",
+            "start": 100.462297,
+            "end": 101.242763,
+            "duration": 0.780466
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-028",
+          "duration": 2.866667,
+          "wordCount": 5,
+          "density": 1.744186,
+          "phraseIds": [
+            "g4-l028"
+          ],
+          "lastWordEnd": 104.357258,
+          "readingTail": 0.776075,
+          "longestSustain": {
+            "wordId": "g4-l028-w01",
+            "start": 102.503517,
+            "end": 102.923768,
+            "duration": 0.420251
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-029",
+          "duration": 3.133333,
+          "wordCount": 5,
+          "density": 1.595745,
+          "phraseIds": [
+            "g4-l029"
+          ],
+          "lastWordEnd": 108.006806,
+          "readingTail": 0.259861,
+          "longestSustain": {
+            "wordId": "g4-l029-w00",
+            "start": 105.885538,
+            "end": 106.245754,
+            "duration": 0.360216
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-030",
+          "duration": 2.766667,
+          "wordCount": 6,
+          "density": 2.168675,
+          "phraseIds": [
+            "g4-l030"
+          ],
+          "lastWordEnd": 110.928553,
+          "readingTail": 0.10478,
+          "longestSustain": {
+            "wordId": "g4-l030-w05",
+            "start": 109.787871,
+            "end": 110.928553,
+            "duration": 1.140682
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-031",
+          "duration": 2.5,
+          "wordCount": 5,
+          "density": 2,
+          "phraseIds": [
+            "g4-l031"
+          ],
+          "lastWordEnd": 112.929749,
+          "readingTail": 0.603584,
+          "longestSustain": {
+            "wordId": "g4-l031-w04",
+            "start": 112.449462,
+            "end": 112.929749,
+            "duration": 0.480287
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-032",
+          "duration": 3.033333,
+          "wordCount": 7,
+          "density": 2.307692,
+          "phraseIds": [
+            "g4-l032"
+          ],
+          "lastWordEnd": 116.311762,
+          "readingTail": 0.254905,
+          "longestSustain": {
+            "wordId": "g4-l032-w03",
+            "start": 114.650732,
+            "end": 115.171055,
+            "duration": 0.520323
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-033",
+          "duration": 4.4,
+          "wordCount": 13,
+          "density": 2.954545,
+          "phraseIds": [
+            "g4-l033",
+            "g4-l034"
+          ],
+          "lastWordEnd": 120.934628,
+          "readingTail": 0.032039,
+          "longestSustain": {
+            "wordId": "g4-l034-w01",
+            "start": 119.093486,
+            "end": 119.633821,
+            "duration": 0.540335
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-035",
+          "duration": 3.033333,
+          "wordCount": 7,
+          "density": 2.307692,
+          "phraseIds": [
+            "g4-l035"
+          ],
+          "lastWordEnd": 123.976514,
+          "readingTail": 0.023486,
+          "longestSustain": {
+            "wordId": "g4-l035-w00",
+            "start": 121.014677,
+            "end": 121.735124,
+            "duration": 0.720447
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-036",
+          "duration": 1.033333,
+          "wordCount": 4,
+          "density": 3.870968,
+          "phraseIds": [
+            "g4-l036"
+          ],
+          "lastWordEnd": 125.017159,
+          "readingTail": 0.016174,
+          "longestSustain": {
+            "wordId": "g4-l036-w01",
+            "start": 124.19665,
+            "end": 124.516849,
+            "duration": 0.320199
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-037",
+          "duration": 4.666667,
+          "wordCount": 8,
+          "density": 1.714286,
+          "phraseIds": [
+            "g4-l037",
+            "g4-l038"
+          ],
+          "lastWordEnd": 129.159727,
+          "readingTail": 0.540273,
+          "longestSustain": {
+            "wordId": "g4-l037-w04",
+            "start": 126.097829,
+            "end": 127.978995,
+            "duration": 1.881166
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-039",
+          "duration": 2.766667,
+          "wordCount": 5,
+          "density": 1.807229,
+          "phraseIds": [
+            "g4-l039"
+          ],
+          "lastWordEnd": 132.061807,
+          "readingTail": 0.40486,
+          "longestSustain": {
+            "wordId": "g4-l039-w04",
+            "start": 131.681553,
+            "end": 132.061807,
+            "duration": 0.380254
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-040",
+          "duration": 3.133333,
+          "wordCount": 7,
+          "density": 2.234043,
+          "phraseIds": [
+            "g4-l040"
+          ],
+          "lastWordEnd": 135.384029,
+          "readingTail": 0.215971,
+          "longestSustain": {
+            "wordId": "g4-l040-w06",
+            "start": 134.803641,
+            "end": 135.384029,
+            "duration": 0.580388
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-041",
+          "duration": 5.433333,
+          "wordCount": 5,
+          "density": 0.920245,
+          "phraseIds": [
+            "g4-l041"
+          ],
+          "lastWordEnd": 140.327336,
+          "readingTail": 0.705997,
+          "longestSustain": {
+            "wordId": "g4-l041-w04",
+            "start": 137.705582,
+            "end": 140.327336,
+            "duration": 2.621754
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-042",
+          "duration": 4.566667,
+          "wordCount": 3,
+          "density": 0.656934,
+          "phraseIds": [
+            "g4-l042"
+          ],
+          "lastWordEnd": 143.429411,
+          "readingTail": 2.170589,
+          "longestSustain": {
+            "wordId": "g4-l042-w00",
+            "start": 141.7683,
+            "end": 142.688916,
+            "duration": 0.920616
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-043",
+          "duration": 5.066667,
+          "wordCount": 6,
+          "density": 1.184211,
+          "phraseIds": [
+            "g4-l043"
+          ],
+          "lastWordEnd": 150.35516,
+          "readingTail": 0.311507,
+          "longestSustain": {
+            "wordId": "g4-l043-w00",
+            "start": 147.753499,
+            "end": 148.373895,
+            "duration": 0.620396
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-044",
+          "duration": 5,
+          "wordCount": 10,
+          "density": 2,
+          "phraseIds": [
+            "g4-l044",
+            "g4-l045"
+          ],
+          "lastWordEnd": 155.238276,
+          "readingTail": 0.428391,
+          "longestSustain": {
+            "wordId": "g4-l045-w04",
+            "start": 154.597867,
+            "end": 155.238276,
+            "duration": 0.640409
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-046",
+          "duration": 2.733333,
+          "wordCount": 6,
+          "density": 2.195122,
+          "phraseIds": [
+            "g4-l046"
+          ],
+          "lastWordEnd": 158.04281,
+          "readingTail": 0.35719,
+          "longestSustain": {
+            "wordId": "g4-l046-w05",
+            "start": 157.502342,
+            "end": 158.04281,
+            "duration": 0.540468
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-047",
+          "duration": 2.466667,
+          "wordCount": 6,
+          "density": 2.432432,
+          "phraseIds": [
+            "g4-l047"
+          ],
+          "lastWordEnd": 160.663854,
+          "readingTail": 0.202813,
+          "longestSustain": {
+            "wordId": "g4-l047-w02",
+            "start": 159.262031,
+            "end": 159.602474,
+            "duration": 0.340443
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-048",
+          "duration": 1.866667,
+          "wordCount": 4,
+          "density": 2.142857,
+          "phraseIds": [
+            "g4-l048"
+          ],
+          "lastWordEnd": 162.606764,
+          "readingTail": 0.126569,
+          "longestSustain": {
+            "wordId": "g4-l048-w03",
+            "start": 162.166382,
+            "end": 162.606764,
+            "duration": 0.440382
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-049",
+          "duration": 2.433333,
+          "wordCount": 6,
+          "density": 2.465753,
+          "phraseIds": [
+            "g4-l049"
+          ],
+          "lastWordEnd": 165.109635,
+          "readingTail": 0.057032,
+          "longestSustain": {
+            "wordId": "g4-l049-w02",
+            "start": 163.56763,
+            "end": 164.148385,
+            "duration": 0.580755
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-050",
+          "duration": 3.733333,
+          "wordCount": 6,
+          "density": 1.607143,
+          "phraseIds": [
+            "g4-l050"
+          ],
+          "lastWordEnd": 168.614193,
+          "readingTail": 0.285807,
+          "longestSustain": {
+            "wordId": "g4-l050-w01",
+            "start": 165.750469,
+            "end": 166.25112,
+            "duration": 0.500651
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-051",
+          "duration": 2.833333,
+          "wordCount": 6,
+          "density": 2.117647,
+          "phraseIds": [
+            "g4-l051"
+          ],
+          "lastWordEnd": 171.698203,
+          "readingTail": 0.03513,
+          "longestSustain": {
+            "wordId": "g4-l051-w02",
+            "start": 169.735651,
+            "end": 170.276354,
+            "duration": 0.540703
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-052",
+          "duration": 1.233333,
+          "wordCount": 3,
+          "density": 2.432432,
+          "phraseIds": [
+            "g4-l052"
+          ],
+          "lastWordEnd": 172.919792,
+          "readingTail": 0.046875,
+          "longestSustain": {
+            "wordId": "g4-l052-w01",
+            "start": 172.238906,
+            "end": 172.679479,
+            "duration": 0.440573
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-053",
+          "duration": 3.533333,
+          "wordCount": 4,
+          "density": 1.132075,
+          "phraseIds": [
+            "g4-l053"
+          ],
+          "lastWordEnd": 176.301532,
+          "readingTail": 0.198468,
+          "longestSustain": {
+            "wordId": "g4-l053-w03",
+            "start": 175.100344,
+            "end": 176.301532,
+            "duration": 1.201188
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-054",
+          "duration": 2.7,
+          "wordCount": 7,
+          "density": 2.592593,
+          "phraseIds": [
+            "g4-l054"
+          ],
+          "lastWordEnd": 179.145567,
+          "readingTail": 0.054433,
+          "longestSustain": {
+            "wordId": "g4-l054-w06",
+            "start": 178.484982,
+            "end": 179.145567,
+            "duration": 0.660585
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-055",
+          "duration": 4.833333,
+          "wordCount": 8,
+          "density": 1.655172,
+          "phraseIds": [
+            "g4-l055"
+          ],
+          "lastWordEnd": 183.569486,
+          "readingTail": 0.463847,
+          "longestSustain": {
+            "wordId": "g4-l055-w03",
+            "start": 180.827057,
+            "end": 181.407571,
+            "duration": 0.580514
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-rest-50-a",
+          "duration": 5.5,
+          "wordCount": 0,
+          "density": 0,
+          "phraseIds": [],
+          "lastWordEnd": 184.033333,
+          "readingTail": 5.5,
+          "longestSustain": null,
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-rest-50-b",
+          "duration": 5.5,
+          "wordCount": 0,
+          "density": 0,
+          "phraseIds": [],
+          "lastWordEnd": 189.533333,
+          "readingTail": 5.5,
+          "longestSustain": null,
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-056",
+          "duration": 7.6,
+          "wordCount": 16,
+          "density": 2.105263,
+          "phraseIds": [
+            "g4-l056",
+            "g4-l057",
+            "g4-l058"
+          ],
+          "lastWordEnd": 201.414681,
+          "readingTail": 1.218652,
+          "longestSustain": {
+            "wordId": "g4-l056-w00",
+            "start": 195.150763,
+            "end": 195.711114,
+            "duration": 0.560351
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-059",
+          "duration": 6.3,
+          "wordCount": 9,
+          "density": 1.428571,
+          "phraseIds": [
+            "g4-l059",
+            "g4-l060"
+          ],
+          "lastWordEnd": 208.739262,
+          "readingTail": 0.194071,
+          "longestSustain": {
+            "wordId": "g4-l060-w01",
+            "start": 206.217685,
+            "end": 207.158273,
+            "duration": 0.940588
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-061",
+          "duration": 3.233333,
+          "wordCount": 11,
+          "density": 3.402062,
+          "phraseIds": [
+            "g4-l061",
+            "g4-l062"
+          ],
+          "lastWordEnd": 212.142929,
+          "readingTail": 0.023738,
+          "longestSustain": {
+            "wordId": "g4-l062-w06",
+            "start": 211.582262,
+            "end": 212.142929,
+            "duration": 0.560667
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-063",
+          "duration": 9.133333,
+          "wordCount": 15,
+          "density": 1.642336,
+          "phraseIds": [
+            "g4-l063",
+            "g4-l064",
+            "g4-l065",
+            "g4-l066"
+          ],
+          "lastWordEnd": 221.053524,
+          "readingTail": 0.246476,
+          "longestSustain": {
+            "wordId": "g4-l063-w04",
+            "start": 213.644714,
+            "end": 214.746024,
+            "duration": 1.10131
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-067",
+          "duration": 1.933333,
+          "wordCount": 4,
+          "density": 2.068966,
+          "phraseIds": [
+            "g4-l067"
+          ],
+          "lastWordEnd": 223.115976,
+          "readingTail": 0.117357,
+          "longestSustain": {
+            "wordId": "g4-l067-w00",
+            "start": 221.570364,
+            "end": 222.050546,
+            "duration": 0.480182
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-068",
+          "duration": 2.366667,
+          "wordCount": 7,
+          "density": 2.957746,
+          "phraseIds": [
+            "g4-l068",
+            "g4-l069"
+          ],
+          "lastWordEnd": 225.518833,
+          "readingTail": 0.081167,
+          "longestSustain": {
+            "wordId": "g4-l068-w02",
+            "start": 223.776762,
+            "end": 224.117167,
+            "duration": 0.340405
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-070",
+          "duration": 0.966667,
+          "wordCount": 3,
+          "density": 3.103448,
+          "phraseIds": [
+            "g4-l070"
+          ],
+          "lastWordEnd": 226.479976,
+          "readingTail": 0.086691,
+          "longestSustain": {
+            "wordId": "g4-l070-w01",
+            "start": 225.959357,
+            "end": 226.219667,
+            "duration": 0.26031
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-071",
+          "duration": 2,
+          "wordCount": 7,
+          "density": 3.5,
+          "phraseIds": [
+            "g4-l071"
+          ],
+          "lastWordEnd": 228.462853,
+          "readingTail": 0.103814,
+          "longestSustain": {
+            "wordId": "g4-l071-w06",
+            "start": 228.082305,
+            "end": 228.462853,
+            "duration": 0.380548
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-072",
+          "duration": 1.033333,
+          "wordCount": 4,
+          "density": 3.870968,
+          "phraseIds": [
+            "g4-l072"
+          ],
+          "lastWordEnd": 229.544409,
+          "readingTail": 0.055591,
+          "longestSustain": {
+            "wordId": "g4-l072-w03",
+            "start": 229.163862,
+            "end": 229.544409,
+            "duration": 0.380547
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-073",
+          "duration": 2.133333,
+          "wordCount": 5,
+          "density": 2.34375,
+          "phraseIds": [
+            "g4-l073"
+          ],
+          "lastWordEnd": 231.647435,
+          "readingTail": 0.085898,
+          "longestSustain": {
+            "wordId": "g4-l073-w04",
+            "start": 230.946427,
+            "end": 231.647435,
+            "duration": 0.701008
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-074",
+          "duration": 2.433333,
+          "wordCount": 7,
+          "density": 2.876712,
+          "phraseIds": [
+            "g4-l074",
+            "g4-l075"
+          ],
+          "lastWordEnd": 234.131009,
+          "readingTail": 0.035658,
+          "longestSustain": {
+            "wordId": "g4-l074-w03",
+            "start": 232.548732,
+            "end": 233.43,
+            "duration": 0.881268
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-076",
+          "duration": 1.2,
+          "wordCount": 3,
+          "density": 2.5,
+          "phraseIds": [
+            "g4-l076"
+          ],
+          "lastWordEnd": 235.275537,
+          "readingTail": 0.09113,
+          "longestSustain": {
+            "wordId": "g4-l076-w00",
+            "start": 234.191095,
+            "end": 234.531585,
+            "duration": 0.34049
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-077",
+          "duration": 2.2,
+          "wordCount": 6,
+          "density": 2.727273,
+          "phraseIds": [
+            "g4-l077"
+          ],
+          "lastWordEnd": 237.315591,
+          "readingTail": 0.251076,
+          "longestSustain": {
+            "wordId": "g4-l077-w01",
+            "start": 235.613141,
+            "end": 235.913573,
+            "duration": 0.300432
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-078",
+          "duration": 2.766667,
+          "wordCount": 4,
+          "density": 1.445783,
+          "phraseIds": [
+            "g4-l078"
+          ],
+          "lastWordEnd": 240.139654,
+          "readingTail": 0.193679,
+          "longestSustain": {
+            "wordId": "g4-l078-w03",
+            "start": 239.478703,
+            "end": 240.139654,
+            "duration": 0.660951
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-079",
+          "duration": 3.166667,
+          "wordCount": 6,
+          "density": 1.894737,
+          "phraseIds": [
+            "g4-l079"
+          ],
+          "lastWordEnd": 243.382402,
+          "readingTail": 0.117598,
+          "longestSustain": {
+            "wordId": "g4-l079-w05",
+            "start": 242.541767,
+            "end": 243.382402,
+            "duration": 0.840635
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-080",
+          "duration": 2.7,
+          "wordCount": 6,
+          "density": 2.222222,
+          "phraseIds": [
+            "g4-l080"
+          ],
+          "lastWordEnd": 246.004381,
+          "readingTail": 0.195619,
+          "longestSustain": {
+            "wordId": "g4-l080-w05",
+            "start": 245.223792,
+            "end": 246.004381,
+            "duration": 0.780589
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-081",
+          "duration": 1.8,
+          "wordCount": 4,
+          "density": 2.222222,
+          "phraseIds": [
+            "g4-l081"
+          ],
+          "lastWordEnd": 247.80574,
+          "readingTail": 0.19426,
+          "longestSustain": {
+            "wordId": "g4-l081-w03",
+            "start": 247.405438,
+            "end": 247.80574,
+            "duration": 0.400302
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-082",
+          "duration": 2.933333,
+          "wordCount": 8,
+          "density": 2.727273,
+          "phraseIds": [
+            "g4-l082"
+          ],
+          "lastWordEnd": 250.808006,
+          "readingTail": 0.125327,
+          "longestSustain": {
+            "wordId": "g4-l082-w07",
+            "start": 250.107477,
+            "end": 250.808006,
+            "duration": 0.700529
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-083",
+          "duration": 2.566667,
+          "wordCount": 6,
+          "density": 2.337662,
+          "phraseIds": [
+            "g4-l083"
+          ],
+          "lastWordEnd": 253.069713,
+          "readingTail": 0.430287,
+          "longestSustain": {
+            "wordId": "g4-l083-w02",
+            "start": 251.768731,
+            "end": 252.229079,
+            "duration": 0.460348
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-084",
+          "duration": 12.566667,
+          "wordCount": 16,
+          "density": 1.27321,
+          "phraseIds": [
+            "g4-l084",
+            "g4-l085",
+            "g4-l086"
+          ],
+          "lastWordEnd": 264.563452,
+          "readingTail": 1.503215,
+          "longestSustain": {
+            "wordId": "g4-l084-w01",
+            "start": 254.411423,
+            "end": 255.172325,
+            "duration": 0.760902
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-087",
+          "duration": 4.833333,
+          "wordCount": 6,
+          "density": 1.241379,
+          "phraseIds": [
+            "g4-l087"
+          ],
+          "lastWordEnd": 269.549359,
+          "readingTail": 1.350641,
+          "longestSustain": {
+            "wordId": "g4-l087-w01",
+            "start": 267.847343,
+            "end": 268.227794,
+            "duration": 0.380451
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-088",
+          "duration": 9.066667,
+          "wordCount": 15,
+          "density": 1.654412,
+          "phraseIds": [
+            "g4-l088",
+            "g4-l089"
+          ],
+          "lastWordEnd": 278.985207,
+          "readingTail": 0.98146,
+          "longestSustain": {
+            "wordId": "g4-l089-w02",
+            "start": 276.483534,
+            "end": 277.40415,
+            "duration": 0.920616
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-090",
+          "duration": 6.333333,
+          "wordCount": 7,
+          "density": 1.105263,
+          "phraseIds": [
+            "g4-l090"
+          ],
+          "lastWordEnd": 285.289424,
+          "readingTail": 1.010576,
+          "longestSustain": {
+            "wordId": "g4-l090-w05",
+            "start": 284.088621,
+            "end": 284.648996,
+            "duration": 0.560375
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-091",
+          "duration": 6.8,
+          "wordCount": 9,
+          "density": 1.323529,
+          "phraseIds": [
+            "g4-l091",
+            "g4-l092"
+          ],
+          "lastWordEnd": 292.764887,
+          "readingTail": 0.335113,
+          "longestSustain": {
+            "wordId": "g4-l092-w03",
+            "start": 292.044344,
+            "end": 292.764887,
+            "duration": 0.720543
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-scene-093",
+          "duration": 6.633333,
+          "wordCount": 11,
+          "density": 1.658291,
+          "phraseIds": [
+            "g4-l093",
+            "g4-l094"
+          ],
+          "lastWordEnd": 299.149698,
+          "readingTail": 0.583635,
+          "longestSustain": {
+            "wordId": "g4-l094-w04",
+            "start": 297.768658,
+            "end": 298.509216,
+            "duration": 0.740558
+          },
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-ending-life",
+          "duration": 5.9,
+          "wordCount": 0,
+          "density": 0,
+          "phraseIds": [],
+          "lastWordEnd": 299.733333,
+          "readingTail": 5.9,
+          "longestSustain": null,
+          "calmCompatible": false,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        },
+        {
+          "sectionId": "g4-ending-title",
+          "duration": 6.366667,
+          "wordCount": 0,
+          "density": 0,
+          "phraseIds": [],
+          "lastWordEnd": 305.633333,
+          "readingTail": 6.366667,
+          "longestSustain": null,
+          "calmCompatible": true,
+          "mode": "flow",
+          "rationale": "Keep the authored visual phrase; no supported contrast opportunity justifies interrupting it."
+        }
+      ],
+      "limits": {
+        "onsetToleranceSeconds": 0.09,
+        "wordGapSeconds": [
+          0.16,
+          0.5
+        ],
+        "burstCooldownSeconds": 8,
+        "burstSceneSeparation": 3
+      },
+      "aestheticApproval": false
+    }
+  },
+  "choreography": {
+    "required": true,
+    "passed": true,
+    "issues": [],
+    "counts": {
+      "branching-seed": 1,
+      "camera-micro": 3,
+      "camera-pullback": 2,
+      "balance-offering": 2,
+      "word-orbit": 1,
+      "camera-canyon": 2,
+      "camera-rail": 1,
+      "forge-assembly": 3,
+      "camera-wall": 1,
+      "camera-rack": 2,
+      "refusal-bar": 1,
+      "falling-weight": 2,
+      "camera-stairwell": 2,
+      "camera-dolly": 2,
+      "negative-space": 2,
+      "stone-crush": 1,
+      "camera-runway": 1,
+      "split-verdict": 3,
+      "incision": 3,
+      "breath-resolve": 2,
+      "camera-horizon": 1,
+      "camera-switchback": 2,
+      "photographic-club-strike": 1,
+      "photographic-divine-question": 1,
+      "camera-tunnel": 2,
+      "redaction-slab": 1,
+      "camera-hinge": 2,
+      "echo-cry": 2,
+      "concentric-rupture": 1,
+      "camera-spiral": 2,
+      "torn-monument": 1,
+      "string-pluck": 2,
+      "shadow-procession": 1,
+      "threshold-exile": 3,
+      "eclipse-disc": 1,
+      "word-strike": 2,
+      "tally-vengeance": 1,
+      "mark-seal": 1,
+      "monolith-rise": 1,
+      "genesis-lineage-cain": 2,
+      "crescent-sweep": 1,
+      "chain-lineage": 1,
+      "camera-arc": 1,
+      "genesis-vengeance": 1,
+      "genesis-forgiveness": 1,
+      "genesis-lineage-seed": 1,
+      "genesis-lineage-prayer": 1
+    },
+    "unique": 47,
+    "total": 74,
+    "sequences": [
+      [
+        {
+          "sectionId": "g4-scene-000",
+          "id": "branching-seed"
+        },
+        {
+          "sectionId": "g4-scene-001",
+          "id": "camera-micro"
+        },
+        {
+          "sectionId": "g4-scene-002",
+          "id": "camera-pullback"
+        },
+        {
+          "sectionId": "g4-scene-003",
+          "id": "balance-offering"
+        },
+        {
+          "sectionId": "g4-scene-004",
+          "id": "word-orbit"
+        },
+        {
+          "sectionId": "g4-scene-005",
+          "id": "camera-canyon"
+        },
+        {
+          "sectionId": "g4-scene-006",
+          "id": "camera-rail"
+        },
+        {
+          "sectionId": "g4-scene-007",
+          "id": "forge-assembly"
+        },
+        {
+          "sectionId": "g4-scene-008",
+          "id": "balance-offering"
+        },
+        {
+          "sectionId": "g4-scene-009",
+          "id": "camera-wall"
+        },
+        {
+          "sectionId": "g4-scene-011",
+          "id": "camera-rack"
+        },
+        {
+          "sectionId": "g4-scene-012",
+          "id": "refusal-bar"
+        },
+        {
+          "sectionId": "g4-scene-014",
+          "id": "falling-weight"
+        },
+        {
+          "sectionId": "g4-scene-015",
+          "id": "camera-stairwell"
+        },
+        {
+          "sectionId": "g4-scene-016",
+          "id": "camera-dolly"
+        },
+        {
+          "sectionId": "g4-scene-017",
+          "id": "negative-space"
+        },
+        {
+          "sectionId": "g4-scene-018",
+          "id": "stone-crush"
+        },
+        {
+          "sectionId": "g4-scene-019",
+          "id": "camera-runway"
+        },
+        {
+          "sectionId": "g4-scene-020",
+          "id": "split-verdict"
+        },
+        {
+          "sectionId": "g4-scene-021",
+          "id": "incision"
+        },
+        {
+          "sectionId": "g4-scene-022",
+          "id": "breath-resolve"
+        },
+        {
+          "sectionId": "g4-scene-023",
+          "id": "camera-horizon"
+        },
+        {
+          "sectionId": "g4-scene-024",
+          "id": "camera-switchback"
+        },
+        {
+          "sectionId": "g4-scene-027",
+          "id": "photographic-club-strike"
+        },
+        {
+          "sectionId": "g4-scene-028",
+          "id": "photographic-divine-question"
+        },
+        {
+          "sectionId": "g4-scene-029",
+          "id": "camera-tunnel"
+        },
+        {
+          "sectionId": "g4-scene-030",
+          "id": "redaction-slab"
+        },
+        {
+          "sectionId": "g4-scene-031",
+          "id": "camera-hinge"
+        },
+        {
+          "sectionId": "g4-scene-032",
+          "id": "incision"
+        },
+        {
+          "sectionId": "g4-scene-033",
+          "id": "echo-cry"
+        },
+        {
+          "sectionId": "g4-scene-035",
+          "id": "concentric-rupture"
+        },
+        {
+          "sectionId": "g4-scene-036",
+          "id": "camera-micro"
+        },
+        {
+          "sectionId": "g4-scene-037",
+          "id": "camera-spiral"
+        },
+        {
+          "sectionId": "g4-scene-039",
+          "id": "torn-monument"
+        },
+        {
+          "sectionId": "g4-scene-040",
+          "id": "negative-space"
+        },
+        {
+          "sectionId": "g4-scene-041",
+          "id": "string-pluck"
+        },
+        {
+          "sectionId": "g4-scene-042",
+          "id": "shadow-procession"
+        },
+        {
+          "sectionId": "g4-scene-043",
+          "id": "camera-dolly"
+        },
+        {
+          "sectionId": "g4-scene-044",
+          "id": "falling-weight"
+        },
+        {
+          "sectionId": "g4-scene-046",
+          "id": "threshold-exile"
+        },
+        {
+          "sectionId": "g4-scene-047",
+          "id": "camera-pullback"
+        },
+        {
+          "sectionId": "g4-scene-048",
+          "id": "eclipse-disc"
+        },
+        {
+          "sectionId": "g4-scene-049",
+          "id": "camera-stairwell"
+        },
+        {
+          "sectionId": "g4-scene-050",
+          "id": "word-strike"
+        },
+        {
+          "sectionId": "g4-scene-051",
+          "id": "split-verdict"
+        },
+        {
+          "sectionId": "g4-scene-052",
+          "id": "camera-rack"
+        },
+        {
+          "sectionId": "g4-scene-053",
+          "id": "tally-vengeance"
+        },
+        {
+          "sectionId": "g4-scene-054",
+          "id": "mark-seal"
+        },
+        {
+          "sectionId": "g4-scene-055",
+          "id": "monolith-rise"
+        }
+      ],
+      [
+        {
+          "sectionId": "g4-scene-056",
+          "id": "threshold-exile"
+        },
+        {
+          "sectionId": "g4-scene-059",
+          "id": "genesis-lineage-cain"
+        },
+        {
+          "sectionId": "g4-scene-061",
+          "id": "forge-assembly"
+        },
+        {
+          "sectionId": "g4-scene-063",
+          "id": "genesis-lineage-cain"
+        },
+        {
+          "sectionId": "g4-scene-067",
+          "id": "split-verdict"
+        },
+        {
+          "sectionId": "g4-scene-068",
+          "id": "crescent-sweep"
+        },
+        {
+          "sectionId": "g4-scene-070",
+          "id": "camera-micro"
+        },
+        {
+          "sectionId": "g4-scene-071",
+          "id": "threshold-exile"
+        },
+        {
+          "sectionId": "g4-scene-072",
+          "id": "camera-canyon"
+        },
+        {
+          "sectionId": "g4-scene-073",
+          "id": "string-pluck"
+        },
+        {
+          "sectionId": "g4-scene-074",
+          "id": "camera-spiral"
+        },
+        {
+          "sectionId": "g4-scene-076",
+          "id": "chain-lineage"
+        },
+        {
+          "sectionId": "g4-scene-077",
+          "id": "forge-assembly"
+        },
+        {
+          "sectionId": "g4-scene-078",
+          "id": "camera-arc"
+        },
+        {
+          "sectionId": "g4-scene-079",
+          "id": "camera-hinge"
+        },
+        {
+          "sectionId": "g4-scene-080",
+          "id": "echo-cry"
+        },
+        {
+          "sectionId": "g4-scene-081",
+          "id": "camera-tunnel"
+        },
+        {
+          "sectionId": "g4-scene-082",
+          "id": "word-strike"
+        },
+        {
+          "sectionId": "g4-scene-083",
+          "id": "incision"
+        },
+        {
+          "sectionId": "g4-scene-084",
+          "id": "genesis-vengeance"
+        },
+        {
+          "sectionId": "g4-scene-087",
+          "id": "genesis-forgiveness"
+        },
+        {
+          "sectionId": "g4-scene-088",
+          "id": "genesis-lineage-seed"
+        },
+        {
+          "sectionId": "g4-scene-090",
+          "id": "camera-switchback"
+        },
+        {
+          "sectionId": "g4-scene-091",
+          "id": "genesis-lineage-prayer"
+        },
+        {
+          "sectionId": "g4-scene-093",
+          "id": "breath-resolve"
+        }
+      ]
+    ],
+    "policy": {
+      "version": 1,
+      "minDistinct": 30,
+      "maxUses": 3,
+      "noRepeatedTriples": true
+    },
+    "minDistinct": 30,
+    "adjacentDuplicates": [],
+    "repeatedTriples": [],
+    "legacyModes": {
+      "lineage": 16,
+      "fracture": 30,
+      "strings": 5,
+      "eclipse": 8,
+      "vortex": 9,
+      "breath": 1,
+      "count": 2,
+      "scorch": 3
+    },
+    "limitations": [
+      "Distinct IDs and descriptions do not prove distinct rendered motion or compelling artistry. Independent review of the encoded scenes is still required."
+    ]
+  },
+  "limitations": [
+    "Unique file bytes, distinct choreography IDs and supported timing do not establish originality or compelling rhythm. The encoded film still requires visual and measured audio review."
+  ]
+}

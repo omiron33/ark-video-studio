@@ -123,7 +123,7 @@ function cameraAtStation(mode,g,n){
  return base;
 }
 
-export function cameraAtTime(mode,groups,t,start=0,end=1){
+export function cameraAtTime(mode,groups,t,start=0,end=1,{settleAtOnset=false}={}){
  if(!groups.length){
   const travel=smooth((t-start)/Math.max(.01,end-start))*1.65,index=Math.floor(travel),part=smooth(travel-index);
   const a=cameraAtStation(mode,index,4),b=cameraAtStation(mode,index+1,4),result={station:travel};
@@ -133,7 +133,7 @@ export function cameraAtTime(mode,groups,t,start=0,end=1){
  let current=0,blend=0;
  for(let i=1;i<groups.length;i++){
   const at=groups[i][0].start,prior=groups[i-1].at(-1),travel=Math.min(.58,Math.max(.24,(at-prior.start)*.42));
-  const begin=Math.max(prior.start+.11,at-travel),finish=at+.055;
+  const finish=at+(settleAtOnset?0:.055),begin=Math.min(finish-.02,Math.max(prior.start+.11,at-travel));
   if(t<begin)break;
   current=i-1;blend=smooth((t-begin)/(finish-begin));
   if(t>=finish){current=i;blend=0;}else break;
@@ -218,7 +218,7 @@ export function sampleCameraChoreography(c,e,h){
  if(!ids.has(mode))return null;
  const ws=cameraWords(e),groups=cameraStations(ws,mode,e.s.direction?.cameraGroups),world=measuredWorld(c,e,h,mode,groups);
  if(!world.stations.length)world.stations=Array.from({length:4},(_,g)=>cameraStationPosition(mode,g,4));
- const camera=cameraAtTime(mode,groups,e.t,e.s.start,e.s.end);
+ const camera=cameraAtTime(mode,groups,e.t,e.s.start,e.s.end,{settleAtOnset:e.s.direction?.lyricOnset==='immediate'});
  const active=ws.findLast(w=>w.start<=e.t),activeWorld=world.points.find(p=>p.w.id===active?.id);
  if(activeWorld){
   let q=projectCameraPoint(activeWorld.world,camera);

@@ -1,7 +1,9 @@
 /** The long-form film vocabulary. All motion is evaluated from absolute song time. */
 const {CAMERA_CATALOG,drawCameraBackground,drawCameraTypography}=await import(new URL('./camera-choreography.mjs'+new URL(import.meta.url).search,import.meta.url));
 const {SEMANTIC_CATALOG,drawSemanticBackground,drawSemanticTypography}=await import(new URL('./semantic-choreography.mjs'+new URL(import.meta.url).search,import.meta.url));
-export const CHOREOGRAPHY_CATALOG={...CAMERA_CATALOG,...SEMANTIC_CATALOG};
+const {SCULPTURAL_CATALOG,drawSculpturalBackground,drawSculpturalTypography}=await import(new URL('./sculptural-choreography.mjs'+new URL(import.meta.url).search,import.meta.url));
+const {GENESIS_CATALOG,drawGenesisBackground,drawGenesisTypography}=await import(new URL('./genesis-choreography.mjs'+new URL(import.meta.url).search,import.meta.url));
+export const CHOREOGRAPHY_CATALOG={...CAMERA_CATALOG,...SEMANTIC_CATALOG,...SCULPTURAL_CATALOG,...GENESIS_CATALOG};
 export const STORY_CATALOG={story:'Authored lyric tableaux and procedural fracture, vortex, scorch, eclipse, lineage and plucked-string line art.'};
 const clamp=(v,a=0,b=1)=>Math.max(a,Math.min(b,v)),mix=(a,b,p)=>a+(b-a)*p;
 const ease=v=>1-Math.pow(1-clamp(v),3),smooth=v=>{v=clamp(v);return v*v*(3-2*v)};
@@ -198,12 +200,12 @@ export function installStoryStyles(register,h){
  function background(c,e){
   const d=e.s.direction,mode=d.mode||'statement',light=d.light===true,fg=light?e.ink:e.paper;
   if(photo(c,e)){
-   if(d.choreography){drawCameraBackground(c,e,h);drawSemanticBackground(c,e,h);}
+   if(d.choreography){drawCameraBackground(c,e,h);drawSemanticBackground(c,e,h);drawSculpturalBackground(c,e,h);drawGenesisBackground(c,e,h);}
    return;
   }
   c.fillStyle=light?e.paper:e.ink;c.fillRect(0,0,1920,1080);
   if(!light){const g=c.createRadialGradient(960,570,70,960,570,1150);g.addColorStop(0,d.colorGrade==='red-black-white'?'#141414':d.gritty?'#182126':'#12373d');g.addColorStop(1,e.ink);c.fillStyle=g;c.fillRect(0,0,1920,1080)}
-  if(d.choreography&&(drawCameraBackground(c,e,h)||drawSemanticBackground(c,e,h))){h.grain(c,e.t,light);h.label(c,e,light);return;}
+  if(d.choreography&&(drawCameraBackground(c,e,h)||drawSemanticBackground(c,e,h)||drawSculpturalBackground(c,e,h)||drawGenesisBackground(c,e,h))){h.grain(c,e.t,light);h.label(c,e,light);return;}
   const elapsed=e.t-e.s.start,phase=elapsed*.23;
   c.save();c.globalAlpha=d.graphicStrength??(light?.28:.34);
   if(['fracture','vortex','scorch','eclipse','lineage','strings'].includes(mode)){
@@ -284,7 +286,7 @@ export function installStoryStyles(register,h){
  }
  function typography(c,e){
   const d=e.s.direction,mode=d.mode||'statement',ws=words(e),light=d.light===true,ink=light?e.ink:e.paper;
-  if(ws.length&&d.choreography&&(drawCameraTypography(c,e,h,layout)||drawSemanticTypography(c,e,h,layout)))return;
+  if(d.choreography&&((ws.length&&(drawCameraTypography(c,e,h,layout)||drawSemanticTypography(c,e,h,layout)||drawSculpturalTypography(c,e,h,layout)))||drawGenesisTypography(c,e,h,layout)))return;
   if(!ws.length){
    const title=d.title;if(title){const elapsed=e.t-e.s.start,p=ease((elapsed-.3)/1.2),fade=d.fadeOut?smooth((e.s.end-e.t)/2):1;c.save();c.globalAlpha=p*fade;
     if(d.titleMotion==='modern-chapter'){

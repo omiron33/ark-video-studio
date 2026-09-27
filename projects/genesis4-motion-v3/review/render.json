@@ -1,0 +1,1675 @@
+{
+  "version": 1,
+  "projectPath": "/Volumes/Code/ark-video-studio/projects/genesis4-motion-v3/project.json",
+  "output": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/film.mp4",
+  "sha256": "6f1d33843be71917ff109d834d536452fa6e8bba9d7b195c156cc7ea235097ca",
+  "sourceRevision": {
+    "projectHash": "1e2ad1d495bb1401546b82ba810fbf6fdffc37978bb6b802fccab5f2abf9c2aa",
+    "rendererHash": "5c7e41a60c660b21bb7c4fbc192a3c62afd21ec853a02b86a7ba388b509aca8b",
+    "revisionHash": "0a49498b11ef55883e30879a9976f14c4b2ddce41a0328326aa5b8e43c359bff",
+    "projectFiles": [
+      {
+        "path": "$manifest",
+        "sha256": "88e9c2f494ed44416631243500f3da06285d4db64761b6fc5a10844535a15817"
+      },
+      {
+        "path": "assets/ArchivoBlack-Regular.ttf",
+        "sha256": "dd9a89a019b4849f66ab75455fe7bdf931311042cbb0f0f97acc061539703180",
+        "bytes": 90988
+      },
+      {
+        "path": "assets/BebasNeue-Regular.ttf",
+        "sha256": "08e4623805102d819f58601e46e345648846075e363b2ceb23313c2d1c83ec73",
+        "bytes": 61400
+      },
+      {
+        "path": "assets/Cinzel-Variable.ttf",
+        "sha256": "f4d83d34d1f6c741193e4acf4b3dff9531e5a67b6aa65228d00a7db72a4e0f34",
+        "bytes": 125468
+      },
+      {
+        "path": "assets/CormorantGaramond.ttf",
+        "sha256": "b20b7d9626dd956b2c5e558692ad328b1f19e3275e2782db4fa07670d83f35e0",
+        "bytes": 1195560
+      },
+      {
+        "path": "assets/EBGaramond-Italic-Variable.ttf",
+        "sha256": "bba2c4499c93c9612b90b9825d32b07da52fce2fe57562a1eb6b833553f93c4e",
+        "bytes": 754468
+      },
+      {
+        "path": "assets/RubikDirt-Regular.ttf",
+        "sha256": "9de3d928e434a47ec85d759012c8a0ebfeab0860076eea4e3989a47c5e213123",
+        "bytes": 1492292
+      },
+      {
+        "path": "assets/StardosStencil-Bold.ttf",
+        "sha256": "6b15f50b1b358512d922b5f11937af17e90704587e1d7fb009f1715d2d5dfa74",
+        "bytes": 33044
+      },
+      {
+        "path": "assets/aftermath-d23a3e0cf456.png",
+        "sha256": "d23a3e0cf456862abe68efa72687167ff7a3e295c625085f266731cf5a9cfd5b",
+        "bytes": 1841809
+      },
+      {
+        "path": "assets/blood-earth-2565335e763a.png",
+        "sha256": "2565335e763a37ed9d4bf16aa644b0de4867f27c5a7cf0e3fc651c717a37cbb3",
+        "bytes": 2229375
+      },
+      {
+        "path": "assets/brother-struggle.png",
+        "sha256": "82c2e8c87fa287b089d83293498afa64e2ec6a7434da4325f4814ecdcb4c2dc9",
+        "bytes": 2198934
+      },
+      {
+        "path": "assets/brothers-7dff1a33eacf.png",
+        "sha256": "7dff1a33eacf24fd5003954862481f8b24311c39a1420cadaf4bcce57fcd4d72",
+        "bytes": 2391170
+      },
+      {
+        "path": "assets/christ-eden.png",
+        "sha256": "04e733aefbfee7cd7909e53fd90a8282b581d86b3c2546e7e417977e0a1b7aa3",
+        "bytes": 2494394
+      },
+      {
+        "path": "assets/christ-hope.png",
+        "sha256": "f284d47ec894bf0d09dc982286feaa8c4c367494abe0d4ac661ff576f82390f2",
+        "bytes": 2176331
+      },
+      {
+        "path": "assets/christ-judgment.png",
+        "sha256": "b98763f0bcd2efd17a54231bd3dae69c555edab4571731374af160fb0dcd316c",
+        "bytes": 2491245
+      },
+      {
+        "path": "assets/christ-mercy.png",
+        "sha256": "e3279a6f52047deb4dbd4883f35a43a2af2e5537828b8fdd0f87bd83f5087ffd",
+        "bytes": 1995955
+      },
+      {
+        "path": "assets/city-e43b94078b30.png",
+        "sha256": "e43b94078b30c4c336086ef0c841187f0f9db8b3afcc703da3fe0f8ace612f76",
+        "bytes": 2118217
+      },
+      {
+        "path": "assets/eden-altars-opening.png",
+        "sha256": "d69a3d59a5cbfbf64502f74e75d42681861a980dc864c0e2eccb62d28cca61e9",
+        "bytes": 2167392
+      },
+      {
+        "path": "assets/exile-e62ffceb3415.png",
+        "sha256": "e62ffceb3415a767edcc0786ee2adfca3cb4a7db5551a21501539c8ffb59a06f",
+        "bytes": 2065890
+      },
+      {
+        "path": "assets/forge-ccbb4ef17685.png",
+        "sha256": "ccbb4ef1768569105c26f556d147ffdd20dbd863d95f02fa6ffd5d60042bb43d",
+        "bytes": 1887941
+      },
+      {
+        "path": "assets/new-seed-88750c215df8.png",
+        "sha256": "88750c215df87a7f8793f6ee2c0be10614d7ff24f51a9b823d61ec5972fe5862",
+        "bytes": 1823321
+      },
+      {
+        "path": "assets/offering-c290a1051bc4.png",
+        "sha256": "c290a1051bc49261a99b4eecf3baa00e382df992ff0184251d0d3de83f31d8a8",
+        "bytes": 2044048
+      },
+      {
+        "path": "assets/source-c26b0dfd26850b09.mp3",
+        "sha256": "c26b0dfd26850b091b408953120f2a0e07188f7415c6b03792320bf2b422cc2b",
+        "bytes": 7067792
+      },
+      {
+        "path": "sources/beats.json",
+        "sha256": "47337f50200ee3df42e15b750a4a9634cb293a58b776260cb852767fbc809203",
+        "bytes": 333689
+      },
+      {
+        "path": "sources/lyrics.txt",
+        "sha256": "782fe4b17f932103e569aaf177587b024aa1ac586d0a5cdd6448a3dcf455ac4c",
+        "bytes": 2595
+      },
+      {
+        "path": "sources/timing.json",
+        "sha256": "6edd0c1e10e554f53408206b1c77bdd013dcb7189b2e9b42ff14dd145d96eba8",
+        "bytes": 637245
+      }
+    ],
+    "rendererFiles": [
+      {
+        "path": "align.py",
+        "sha256": "50823f56a3abf85bcaa67df10abece9d3052ff438330a07f8caf81bc46566f9a"
+      },
+      {
+        "path": "artwork.mjs",
+        "sha256": "bdfaffe46fffb9ee34206607e6c93cebb4ae45ab24361af7252ee61085751c91"
+      },
+      {
+        "path": "audio-review.mjs",
+        "sha256": "e61db248eb54ac3c0e0b8be3dec79bd7d87bba2b95db10a2d1db9947fd3b4d77"
+      },
+      {
+        "path": "audio-worker.py",
+        "sha256": "f79248815aeac1418c2de993edddc61a855af2c93c95043354196c07993efc18"
+      },
+      {
+        "path": "cache.mjs",
+        "sha256": "96af67170803708b61fdf99148243cec2f416b6f083e7e81f562690205642818"
+      },
+      {
+        "path": "camera-choreography.mjs",
+        "sha256": "31377235b421fa55d617a2bd06e45f4c5e05bc65956cba5f7527afba5b389ddb"
+      },
+      {
+        "path": "choreography-policy.mjs",
+        "sha256": "667719aa2ae6bd714c7667f52f98f569c380f30a23ccb14fe9b8b677f580eb1f"
+      },
+      {
+        "path": "cli.mjs",
+        "sha256": "7ca885fabe21c1c665bd7654b64c9570bfea22418bcc4e6f6fb919de6006bb90"
+      },
+      {
+        "path": "create.mjs",
+        "sha256": "f7509f0e103a701692830855f93381ea4c3fa56e3b442e4d3a0b3fcc0e7cdda2"
+      },
+      {
+        "path": "creative-policy.mjs",
+        "sha256": "35f6c6ac4a5c46ea954bc3b610775691fed9c5da88bbd1e9052ec093088a074e"
+      },
+      {
+        "path": "director.mjs",
+        "sha256": "594c062d01f007c6066078702e578dca042afa6d1e5c88e55955cb4072427697"
+      },
+      {
+        "path": "export.mjs",
+        "sha256": "3013b61ad2b14d0c026d938a0b811a640df65703ec23510eb4ced5bfb8a45083"
+      },
+      {
+        "path": "fullsong-review.mjs",
+        "sha256": "70bcaac3ae56f820b95ba3de34384ed1d6afce7d34c81b0c30d28cea3736fcc1"
+      },
+      {
+        "path": "gauntlet.mjs",
+        "sha256": "5665202f7e70c317f2800c098429b1d245b8e76fcca950825aa94641690c296a"
+      },
+      {
+        "path": "genesis-choreography.mjs",
+        "sha256": "c5e74c5112f9d7ecf563532092f756a06cb98c6817dd741b8f0dfce9e74bde11"
+      },
+      {
+        "path": "import.mjs",
+        "sha256": "4f3bbf58799a4b4b6f99cb6fb6f5166e41d60d142efa9ef3849b7c8d2fbddcbd"
+      },
+      {
+        "path": "ocr.mjs",
+        "sha256": "2f901db34e5ba4627e9037eb721a420d0a7b9832bd517ac03627f4a0dabdc81f"
+      },
+      {
+        "path": "ocr.swift",
+        "sha256": "efc79b7e743c881bfc77f91726bf0f77ebdee04b7393b6ae725fb93fde2b3e6f"
+      },
+      {
+        "path": "pacing.mjs",
+        "sha256": "0297b01d9241c6e2af64ea185579269c2efdaf67c1002af95f8d581f940adaee"
+      },
+      {
+        "path": "preview.html",
+        "sha256": "2696a7fde5a724c56a7e5dfda7f5180d263d16d15df3b4e79ad5081f0d75c88e"
+      },
+      {
+        "path": "project.mjs",
+        "sha256": "cc2e7a56ea5783dd7cdf98d6876567032e9c564b4c9599fb40395962cd5bed16"
+      },
+      {
+        "path": "sculptural-choreography.mjs",
+        "sha256": "c8b8f56cfcca7327bab954f2527fcabb9760c4e7c291e2ef729eafeda17f3f0b"
+      },
+      {
+        "path": "semantic-choreography.mjs",
+        "sha256": "675837d4537f8a336c8cb9d57b0e22c5966342cd43207d283196d3aaaadea916"
+      },
+      {
+        "path": "server.mjs",
+        "sha256": "ef2015a430f3a1a2e84e47829f51dd63f80e0703cfa7f389b9d01f4b8c55e0d6"
+      },
+      {
+        "path": "story-visual.mjs",
+        "sha256": "76f452de205b43fc18623e4a0db7a60c93382c90711e7ce3efcf1dceebb050b3"
+      },
+      {
+        "path": "temporal-review.mjs",
+        "sha256": "604f8aafb663282b21a51b5a70be2f10838b8324bb167bdc99572aa9066fef0b"
+      },
+      {
+        "path": "visual.mjs",
+        "sha256": "2661222302592cbeaaff0018773dafc20fab85b92a0eeddef3e01076b24a6495"
+      }
+    ],
+    "assets": [
+      {
+        "path": "assets/ArchivoBlack-Regular.ttf",
+        "sha256": "dd9a89a019b4849f66ab75455fe7bdf931311042cbb0f0f97acc061539703180",
+        "bytes": 90988
+      },
+      {
+        "path": "assets/BebasNeue-Regular.ttf",
+        "sha256": "08e4623805102d819f58601e46e345648846075e363b2ceb23313c2d1c83ec73",
+        "bytes": 61400
+      },
+      {
+        "path": "assets/Cinzel-Variable.ttf",
+        "sha256": "f4d83d34d1f6c741193e4acf4b3dff9531e5a67b6aa65228d00a7db72a4e0f34",
+        "bytes": 125468
+      },
+      {
+        "path": "assets/CormorantGaramond.ttf",
+        "sha256": "b20b7d9626dd956b2c5e558692ad328b1f19e3275e2782db4fa07670d83f35e0",
+        "bytes": 1195560
+      },
+      {
+        "path": "assets/EBGaramond-Italic-Variable.ttf",
+        "sha256": "bba2c4499c93c9612b90b9825d32b07da52fce2fe57562a1eb6b833553f93c4e",
+        "bytes": 754468
+      },
+      {
+        "path": "assets/RubikDirt-Regular.ttf",
+        "sha256": "9de3d928e434a47ec85d759012c8a0ebfeab0860076eea4e3989a47c5e213123",
+        "bytes": 1492292
+      },
+      {
+        "path": "assets/StardosStencil-Bold.ttf",
+        "sha256": "6b15f50b1b358512d922b5f11937af17e90704587e1d7fb009f1715d2d5dfa74",
+        "bytes": 33044
+      },
+      {
+        "path": "assets/aftermath-d23a3e0cf456.png",
+        "sha256": "d23a3e0cf456862abe68efa72687167ff7a3e295c625085f266731cf5a9cfd5b",
+        "bytes": 1841809
+      },
+      {
+        "path": "assets/blood-earth-2565335e763a.png",
+        "sha256": "2565335e763a37ed9d4bf16aa644b0de4867f27c5a7cf0e3fc651c717a37cbb3",
+        "bytes": 2229375
+      },
+      {
+        "path": "assets/brother-struggle.png",
+        "sha256": "82c2e8c87fa287b089d83293498afa64e2ec6a7434da4325f4814ecdcb4c2dc9",
+        "bytes": 2198934
+      },
+      {
+        "path": "assets/brothers-7dff1a33eacf.png",
+        "sha256": "7dff1a33eacf24fd5003954862481f8b24311c39a1420cadaf4bcce57fcd4d72",
+        "bytes": 2391170
+      },
+      {
+        "path": "assets/christ-eden.png",
+        "sha256": "04e733aefbfee7cd7909e53fd90a8282b581d86b3c2546e7e417977e0a1b7aa3",
+        "bytes": 2494394
+      },
+      {
+        "path": "assets/christ-hope.png",
+        "sha256": "f284d47ec894bf0d09dc982286feaa8c4c367494abe0d4ac661ff576f82390f2",
+        "bytes": 2176331
+      },
+      {
+        "path": "assets/christ-judgment.png",
+        "sha256": "b98763f0bcd2efd17a54231bd3dae69c555edab4571731374af160fb0dcd316c",
+        "bytes": 2491245
+      },
+      {
+        "path": "assets/christ-mercy.png",
+        "sha256": "e3279a6f52047deb4dbd4883f35a43a2af2e5537828b8fdd0f87bd83f5087ffd",
+        "bytes": 1995955
+      },
+      {
+        "path": "assets/city-e43b94078b30.png",
+        "sha256": "e43b94078b30c4c336086ef0c841187f0f9db8b3afcc703da3fe0f8ace612f76",
+        "bytes": 2118217
+      },
+      {
+        "path": "assets/eden-altars-opening.png",
+        "sha256": "d69a3d59a5cbfbf64502f74e75d42681861a980dc864c0e2eccb62d28cca61e9",
+        "bytes": 2167392
+      },
+      {
+        "path": "assets/exile-e62ffceb3415.png",
+        "sha256": "e62ffceb3415a767edcc0786ee2adfca3cb4a7db5551a21501539c8ffb59a06f",
+        "bytes": 2065890
+      },
+      {
+        "path": "assets/forge-ccbb4ef17685.png",
+        "sha256": "ccbb4ef1768569105c26f556d147ffdd20dbd863d95f02fa6ffd5d60042bb43d",
+        "bytes": 1887941
+      },
+      {
+        "path": "assets/new-seed-88750c215df8.png",
+        "sha256": "88750c215df87a7f8793f6ee2c0be10614d7ff24f51a9b823d61ec5972fe5862",
+        "bytes": 1823321
+      },
+      {
+        "path": "assets/offering-c290a1051bc4.png",
+        "sha256": "c290a1051bc49261a99b4eecf3baa00e382df992ff0184251d0d3de83f31d8a8",
+        "bytes": 2044048
+      },
+      {
+        "path": "assets/source-c26b0dfd26850b09.mp3",
+        "sha256": "c26b0dfd26850b091b408953120f2a0e07188f7415c6b03792320bf2b422cc2b",
+        "bytes": 7067792
+      },
+      {
+        "path": "sources/beats.json",
+        "sha256": "47337f50200ee3df42e15b750a4a9634cb293a58b776260cb852767fbc809203",
+        "bytes": 333689
+      },
+      {
+        "path": "sources/lyrics.txt",
+        "sha256": "782fe4b17f932103e569aaf177587b024aa1ac586d0a5cdd6448a3dcf455ac4c",
+        "bytes": 2595
+      },
+      {
+        "path": "sources/timing.json",
+        "sha256": "6edd0c1e10e554f53408206b1c77bdd013dcb7189b2e9b42ff14dd145d96eba8",
+        "bytes": 637245
+      }
+    ],
+    "rendererDir": "/Volumes/Code/ark-video-studio/engine"
+  },
+  "sourceRevisionEnd": {
+    "projectHash": "1e2ad1d495bb1401546b82ba810fbf6fdffc37978bb6b802fccab5f2abf9c2aa",
+    "rendererHash": "5c7e41a60c660b21bb7c4fbc192a3c62afd21ec853a02b86a7ba388b509aca8b",
+    "revisionHash": "0a49498b11ef55883e30879a9976f14c4b2ddce41a0328326aa5b8e43c359bff",
+    "projectFiles": [
+      {
+        "path": "$manifest",
+        "sha256": "88e9c2f494ed44416631243500f3da06285d4db64761b6fc5a10844535a15817"
+      },
+      {
+        "path": "assets/ArchivoBlack-Regular.ttf",
+        "sha256": "dd9a89a019b4849f66ab75455fe7bdf931311042cbb0f0f97acc061539703180",
+        "bytes": 90988
+      },
+      {
+        "path": "assets/BebasNeue-Regular.ttf",
+        "sha256": "08e4623805102d819f58601e46e345648846075e363b2ceb23313c2d1c83ec73",
+        "bytes": 61400
+      },
+      {
+        "path": "assets/Cinzel-Variable.ttf",
+        "sha256": "f4d83d34d1f6c741193e4acf4b3dff9531e5a67b6aa65228d00a7db72a4e0f34",
+        "bytes": 125468
+      },
+      {
+        "path": "assets/CormorantGaramond.ttf",
+        "sha256": "b20b7d9626dd956b2c5e558692ad328b1f19e3275e2782db4fa07670d83f35e0",
+        "bytes": 1195560
+      },
+      {
+        "path": "assets/EBGaramond-Italic-Variable.ttf",
+        "sha256": "bba2c4499c93c9612b90b9825d32b07da52fce2fe57562a1eb6b833553f93c4e",
+        "bytes": 754468
+      },
+      {
+        "path": "assets/RubikDirt-Regular.ttf",
+        "sha256": "9de3d928e434a47ec85d759012c8a0ebfeab0860076eea4e3989a47c5e213123",
+        "bytes": 1492292
+      },
+      {
+        "path": "assets/StardosStencil-Bold.ttf",
+        "sha256": "6b15f50b1b358512d922b5f11937af17e90704587e1d7fb009f1715d2d5dfa74",
+        "bytes": 33044
+      },
+      {
+        "path": "assets/aftermath-d23a3e0cf456.png",
+        "sha256": "d23a3e0cf456862abe68efa72687167ff7a3e295c625085f266731cf5a9cfd5b",
+        "bytes": 1841809
+      },
+      {
+        "path": "assets/blood-earth-2565335e763a.png",
+        "sha256": "2565335e763a37ed9d4bf16aa644b0de4867f27c5a7cf0e3fc651c717a37cbb3",
+        "bytes": 2229375
+      },
+      {
+        "path": "assets/brother-struggle.png",
+        "sha256": "82c2e8c87fa287b089d83293498afa64e2ec6a7434da4325f4814ecdcb4c2dc9",
+        "bytes": 2198934
+      },
+      {
+        "path": "assets/brothers-7dff1a33eacf.png",
+        "sha256": "7dff1a33eacf24fd5003954862481f8b24311c39a1420cadaf4bcce57fcd4d72",
+        "bytes": 2391170
+      },
+      {
+        "path": "assets/christ-eden.png",
+        "sha256": "04e733aefbfee7cd7909e53fd90a8282b581d86b3c2546e7e417977e0a1b7aa3",
+        "bytes": 2494394
+      },
+      {
+        "path": "assets/christ-hope.png",
+        "sha256": "f284d47ec894bf0d09dc982286feaa8c4c367494abe0d4ac661ff576f82390f2",
+        "bytes": 2176331
+      },
+      {
+        "path": "assets/christ-judgment.png",
+        "sha256": "b98763f0bcd2efd17a54231bd3dae69c555edab4571731374af160fb0dcd316c",
+        "bytes": 2491245
+      },
+      {
+        "path": "assets/christ-mercy.png",
+        "sha256": "e3279a6f52047deb4dbd4883f35a43a2af2e5537828b8fdd0f87bd83f5087ffd",
+        "bytes": 1995955
+      },
+      {
+        "path": "assets/city-e43b94078b30.png",
+        "sha256": "e43b94078b30c4c336086ef0c841187f0f9db8b3afcc703da3fe0f8ace612f76",
+        "bytes": 2118217
+      },
+      {
+        "path": "assets/eden-altars-opening.png",
+        "sha256": "d69a3d59a5cbfbf64502f74e75d42681861a980dc864c0e2eccb62d28cca61e9",
+        "bytes": 2167392
+      },
+      {
+        "path": "assets/exile-e62ffceb3415.png",
+        "sha256": "e62ffceb3415a767edcc0786ee2adfca3cb4a7db5551a21501539c8ffb59a06f",
+        "bytes": 2065890
+      },
+      {
+        "path": "assets/forge-ccbb4ef17685.png",
+        "sha256": "ccbb4ef1768569105c26f556d147ffdd20dbd863d95f02fa6ffd5d60042bb43d",
+        "bytes": 1887941
+      },
+      {
+        "path": "assets/new-seed-88750c215df8.png",
+        "sha256": "88750c215df87a7f8793f6ee2c0be10614d7ff24f51a9b823d61ec5972fe5862",
+        "bytes": 1823321
+      },
+      {
+        "path": "assets/offering-c290a1051bc4.png",
+        "sha256": "c290a1051bc49261a99b4eecf3baa00e382df992ff0184251d0d3de83f31d8a8",
+        "bytes": 2044048
+      },
+      {
+        "path": "assets/source-c26b0dfd26850b09.mp3",
+        "sha256": "c26b0dfd26850b091b408953120f2a0e07188f7415c6b03792320bf2b422cc2b",
+        "bytes": 7067792
+      },
+      {
+        "path": "sources/beats.json",
+        "sha256": "47337f50200ee3df42e15b750a4a9634cb293a58b776260cb852767fbc809203",
+        "bytes": 333689
+      },
+      {
+        "path": "sources/lyrics.txt",
+        "sha256": "782fe4b17f932103e569aaf177587b024aa1ac586d0a5cdd6448a3dcf455ac4c",
+        "bytes": 2595
+      },
+      {
+        "path": "sources/timing.json",
+        "sha256": "6edd0c1e10e554f53408206b1c77bdd013dcb7189b2e9b42ff14dd145d96eba8",
+        "bytes": 637245
+      }
+    ],
+    "rendererFiles": [
+      {
+        "path": "align.py",
+        "sha256": "50823f56a3abf85bcaa67df10abece9d3052ff438330a07f8caf81bc46566f9a"
+      },
+      {
+        "path": "artwork.mjs",
+        "sha256": "bdfaffe46fffb9ee34206607e6c93cebb4ae45ab24361af7252ee61085751c91"
+      },
+      {
+        "path": "audio-review.mjs",
+        "sha256": "e61db248eb54ac3c0e0b8be3dec79bd7d87bba2b95db10a2d1db9947fd3b4d77"
+      },
+      {
+        "path": "audio-worker.py",
+        "sha256": "f79248815aeac1418c2de993edddc61a855af2c93c95043354196c07993efc18"
+      },
+      {
+        "path": "cache.mjs",
+        "sha256": "96af67170803708b61fdf99148243cec2f416b6f083e7e81f562690205642818"
+      },
+      {
+        "path": "camera-choreography.mjs",
+        "sha256": "31377235b421fa55d617a2bd06e45f4c5e05bc65956cba5f7527afba5b389ddb"
+      },
+      {
+        "path": "choreography-policy.mjs",
+        "sha256": "667719aa2ae6bd714c7667f52f98f569c380f30a23ccb14fe9b8b677f580eb1f"
+      },
+      {
+        "path": "cli.mjs",
+        "sha256": "7ca885fabe21c1c665bd7654b64c9570bfea22418bcc4e6f6fb919de6006bb90"
+      },
+      {
+        "path": "create.mjs",
+        "sha256": "f7509f0e103a701692830855f93381ea4c3fa56e3b442e4d3a0b3fcc0e7cdda2"
+      },
+      {
+        "path": "creative-policy.mjs",
+        "sha256": "35f6c6ac4a5c46ea954bc3b610775691fed9c5da88bbd1e9052ec093088a074e"
+      },
+      {
+        "path": "director.mjs",
+        "sha256": "594c062d01f007c6066078702e578dca042afa6d1e5c88e55955cb4072427697"
+      },
+      {
+        "path": "export.mjs",
+        "sha256": "3013b61ad2b14d0c026d938a0b811a640df65703ec23510eb4ced5bfb8a45083"
+      },
+      {
+        "path": "fullsong-review.mjs",
+        "sha256": "70bcaac3ae56f820b95ba3de34384ed1d6afce7d34c81b0c30d28cea3736fcc1"
+      },
+      {
+        "path": "gauntlet.mjs",
+        "sha256": "5665202f7e70c317f2800c098429b1d245b8e76fcca950825aa94641690c296a"
+      },
+      {
+        "path": "genesis-choreography.mjs",
+        "sha256": "c5e74c5112f9d7ecf563532092f756a06cb98c6817dd741b8f0dfce9e74bde11"
+      },
+      {
+        "path": "import.mjs",
+        "sha256": "4f3bbf58799a4b4b6f99cb6fb6f5166e41d60d142efa9ef3849b7c8d2fbddcbd"
+      },
+      {
+        "path": "ocr.mjs",
+        "sha256": "2f901db34e5ba4627e9037eb721a420d0a7b9832bd517ac03627f4a0dabdc81f"
+      },
+      {
+        "path": "ocr.swift",
+        "sha256": "efc79b7e743c881bfc77f91726bf0f77ebdee04b7393b6ae725fb93fde2b3e6f"
+      },
+      {
+        "path": "pacing.mjs",
+        "sha256": "0297b01d9241c6e2af64ea185579269c2efdaf67c1002af95f8d581f940adaee"
+      },
+      {
+        "path": "preview.html",
+        "sha256": "2696a7fde5a724c56a7e5dfda7f5180d263d16d15df3b4e79ad5081f0d75c88e"
+      },
+      {
+        "path": "project.mjs",
+        "sha256": "cc2e7a56ea5783dd7cdf98d6876567032e9c564b4c9599fb40395962cd5bed16"
+      },
+      {
+        "path": "sculptural-choreography.mjs",
+        "sha256": "c8b8f56cfcca7327bab954f2527fcabb9760c4e7c291e2ef729eafeda17f3f0b"
+      },
+      {
+        "path": "semantic-choreography.mjs",
+        "sha256": "675837d4537f8a336c8cb9d57b0e22c5966342cd43207d283196d3aaaadea916"
+      },
+      {
+        "path": "server.mjs",
+        "sha256": "ef2015a430f3a1a2e84e47829f51dd63f80e0703cfa7f389b9d01f4b8c55e0d6"
+      },
+      {
+        "path": "story-visual.mjs",
+        "sha256": "76f452de205b43fc18623e4a0db7a60c93382c90711e7ce3efcf1dceebb050b3"
+      },
+      {
+        "path": "temporal-review.mjs",
+        "sha256": "604f8aafb663282b21a51b5a70be2f10838b8324bb167bdc99572aa9066fef0b"
+      },
+      {
+        "path": "visual.mjs",
+        "sha256": "2661222302592cbeaaff0018773dafc20fab85b92a0eeddef3e01076b24a6495"
+      }
+    ],
+    "assets": [
+      {
+        "path": "assets/ArchivoBlack-Regular.ttf",
+        "sha256": "dd9a89a019b4849f66ab75455fe7bdf931311042cbb0f0f97acc061539703180",
+        "bytes": 90988
+      },
+      {
+        "path": "assets/BebasNeue-Regular.ttf",
+        "sha256": "08e4623805102d819f58601e46e345648846075e363b2ceb23313c2d1c83ec73",
+        "bytes": 61400
+      },
+      {
+        "path": "assets/Cinzel-Variable.ttf",
+        "sha256": "f4d83d34d1f6c741193e4acf4b3dff9531e5a67b6aa65228d00a7db72a4e0f34",
+        "bytes": 125468
+      },
+      {
+        "path": "assets/CormorantGaramond.ttf",
+        "sha256": "b20b7d9626dd956b2c5e558692ad328b1f19e3275e2782db4fa07670d83f35e0",
+        "bytes": 1195560
+      },
+      {
+        "path": "assets/EBGaramond-Italic-Variable.ttf",
+        "sha256": "bba2c4499c93c9612b90b9825d32b07da52fce2fe57562a1eb6b833553f93c4e",
+        "bytes": 754468
+      },
+      {
+        "path": "assets/RubikDirt-Regular.ttf",
+        "sha256": "9de3d928e434a47ec85d759012c8a0ebfeab0860076eea4e3989a47c5e213123",
+        "bytes": 1492292
+      },
+      {
+        "path": "assets/StardosStencil-Bold.ttf",
+        "sha256": "6b15f50b1b358512d922b5f11937af17e90704587e1d7fb009f1715d2d5dfa74",
+        "bytes": 33044
+      },
+      {
+        "path": "assets/aftermath-d23a3e0cf456.png",
+        "sha256": "d23a3e0cf456862abe68efa72687167ff7a3e295c625085f266731cf5a9cfd5b",
+        "bytes": 1841809
+      },
+      {
+        "path": "assets/blood-earth-2565335e763a.png",
+        "sha256": "2565335e763a37ed9d4bf16aa644b0de4867f27c5a7cf0e3fc651c717a37cbb3",
+        "bytes": 2229375
+      },
+      {
+        "path": "assets/brother-struggle.png",
+        "sha256": "82c2e8c87fa287b089d83293498afa64e2ec6a7434da4325f4814ecdcb4c2dc9",
+        "bytes": 2198934
+      },
+      {
+        "path": "assets/brothers-7dff1a33eacf.png",
+        "sha256": "7dff1a33eacf24fd5003954862481f8b24311c39a1420cadaf4bcce57fcd4d72",
+        "bytes": 2391170
+      },
+      {
+        "path": "assets/christ-eden.png",
+        "sha256": "04e733aefbfee7cd7909e53fd90a8282b581d86b3c2546e7e417977e0a1b7aa3",
+        "bytes": 2494394
+      },
+      {
+        "path": "assets/christ-hope.png",
+        "sha256": "f284d47ec894bf0d09dc982286feaa8c4c367494abe0d4ac661ff576f82390f2",
+        "bytes": 2176331
+      },
+      {
+        "path": "assets/christ-judgment.png",
+        "sha256": "b98763f0bcd2efd17a54231bd3dae69c555edab4571731374af160fb0dcd316c",
+        "bytes": 2491245
+      },
+      {
+        "path": "assets/christ-mercy.png",
+        "sha256": "e3279a6f52047deb4dbd4883f35a43a2af2e5537828b8fdd0f87bd83f5087ffd",
+        "bytes": 1995955
+      },
+      {
+        "path": "assets/city-e43b94078b30.png",
+        "sha256": "e43b94078b30c4c336086ef0c841187f0f9db8b3afcc703da3fe0f8ace612f76",
+        "bytes": 2118217
+      },
+      {
+        "path": "assets/eden-altars-opening.png",
+        "sha256": "d69a3d59a5cbfbf64502f74e75d42681861a980dc864c0e2eccb62d28cca61e9",
+        "bytes": 2167392
+      },
+      {
+        "path": "assets/exile-e62ffceb3415.png",
+        "sha256": "e62ffceb3415a767edcc0786ee2adfca3cb4a7db5551a21501539c8ffb59a06f",
+        "bytes": 2065890
+      },
+      {
+        "path": "assets/forge-ccbb4ef17685.png",
+        "sha256": "ccbb4ef1768569105c26f556d147ffdd20dbd863d95f02fa6ffd5d60042bb43d",
+        "bytes": 1887941
+      },
+      {
+        "path": "assets/new-seed-88750c215df8.png",
+        "sha256": "88750c215df87a7f8793f6ee2c0be10614d7ff24f51a9b823d61ec5972fe5862",
+        "bytes": 1823321
+      },
+      {
+        "path": "assets/offering-c290a1051bc4.png",
+        "sha256": "c290a1051bc49261a99b4eecf3baa00e382df992ff0184251d0d3de83f31d8a8",
+        "bytes": 2044048
+      },
+      {
+        "path": "assets/source-c26b0dfd26850b09.mp3",
+        "sha256": "c26b0dfd26850b091b408953120f2a0e07188f7415c6b03792320bf2b422cc2b",
+        "bytes": 7067792
+      },
+      {
+        "path": "sources/beats.json",
+        "sha256": "47337f50200ee3df42e15b750a4a9634cb293a58b776260cb852767fbc809203",
+        "bytes": 333689
+      },
+      {
+        "path": "sources/lyrics.txt",
+        "sha256": "782fe4b17f932103e569aaf177587b024aa1ac586d0a5cdd6448a3dcf455ac4c",
+        "bytes": 2595
+      },
+      {
+        "path": "sources/timing.json",
+        "sha256": "6edd0c1e10e554f53408206b1c77bdd013dcb7189b2e9b42ff14dd145d96eba8",
+        "bytes": 637245
+      }
+    ],
+    "rendererDir": "/Volumes/Code/ark-video-studio/engine"
+  },
+  "audioSha256": "c26b0dfd26850b091b408953120f2a0e07188f7415c6b03792320bf2b422cc2b",
+  "audioStart": 0,
+  "sourceStart": 0,
+  "sourceEnd": 312,
+  "duration": 312,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "profile": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "codec": "libx264",
+    "pixelFormat": "yuv420p",
+    "crf": 20,
+    "preset": "veryfast",
+    "scale": 1
+  },
+  "sectionId": null,
+  "frames": 9360,
+  "sections": [
+    {
+      "id": "g4-opening-strike",
+      "key": "014c82649318bd207623ef6693fbc4093de21709f4ab36a90f66da499171a7f7",
+      "cacheHit": false,
+      "frames": 72,
+      "startFrame": 0,
+      "endFrame": 72,
+      "seconds": 0.8579077500000001,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-opening-strike/014c82649318bd207623ef6693fbc4093de21709f4ab36a90f66da499171a7f7/video.mp4",
+      "sha256": "2eb4938b130573c25651de0b5ed0b9dbd2db334c005e6b7e74b03f7b167a88b4"
+    },
+    {
+      "id": "g4-opening-blood",
+      "key": "d3bed8c5f405d0cf4d5945332d8e62ed7210aaf7d6f2d2fe688f164a9ebd8fc4",
+      "cacheHit": false,
+      "frames": 99,
+      "startFrame": 72,
+      "endFrame": 171,
+      "seconds": 0.7150181669999998,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-opening-blood/d3bed8c5f405d0cf4d5945332d8e62ed7210aaf7d6f2d2fe688f164a9ebd8fc4/video.mp4",
+      "sha256": "7371eff6e4f067117c34290d08f64ba11373024e4bb394c0435b3b30ef7c0bc2"
+    },
+    {
+      "id": "g4-opening-eclipse",
+      "key": "4f8ed84347381061d3265324427f153775b191148dfd1a05ecafef401b8d0a49",
+      "cacheHit": false,
+      "frames": 155,
+      "startFrame": 171,
+      "endFrame": 326,
+      "seconds": 4.130263542000001,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-opening-eclipse/4f8ed84347381061d3265324427f153775b191148dfd1a05ecafef401b8d0a49/video.mp4",
+      "sha256": "eaf97994782c6f8a5ae64e28da5154f04f3e3d6ec094922db2eb7cde9a175eec"
+    },
+    {
+      "id": "g4-scene-000",
+      "key": "02ea6293e0b71f3bf3ae19002d7068c208ca19c56211b6de9fe6e7a48c57624b",
+      "cacheHit": false,
+      "frames": 137,
+      "startFrame": 326,
+      "endFrame": 463,
+      "seconds": 0.9753986670000004,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-000/02ea6293e0b71f3bf3ae19002d7068c208ca19c56211b6de9fe6e7a48c57624b/video.mp4",
+      "sha256": "b5795fe8e2f6c7a0673753966ea2c8d457da51e1f56c1163271b83e6afd61e76"
+    },
+    {
+      "id": "g4-scene-001",
+      "key": "77ec70186f53dfbd9a09631db25157de0736f36d49ae1b8275bc8a9e3492826c",
+      "cacheHit": false,
+      "frames": 200,
+      "startFrame": 463,
+      "endFrame": 663,
+      "seconds": 1.4505327920000008,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-001/77ec70186f53dfbd9a09631db25157de0736f36d49ae1b8275bc8a9e3492826c/video.mp4",
+      "sha256": "68112eb2b287a4bda39dce6a64b38fc5c690fbc7a26bf091ea8417d41931c297"
+    },
+    {
+      "id": "g4-scene-002",
+      "key": "28a40f82a1c67873d4420acffdc11fd354e4d79a317bf407055121dfa8f8a9ef",
+      "cacheHit": false,
+      "frames": 161,
+      "startFrame": 663,
+      "endFrame": 824,
+      "seconds": 1.1864159170000002,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-002/28a40f82a1c67873d4420acffdc11fd354e4d79a317bf407055121dfa8f8a9ef/video.mp4",
+      "sha256": "0939769df7fb18ae56290fa725745c883d2683961459ca2dcea7167aae01497a"
+    },
+    {
+      "id": "g4-scene-003",
+      "key": "d881a494e7b3cd4f040836456a7b6330a9dd6f1ee1814135c7c56441db5b61a6",
+      "cacheHit": false,
+      "frames": 145,
+      "startFrame": 824,
+      "endFrame": 969,
+      "seconds": 3.9698970829999998,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-003/d881a494e7b3cd4f040836456a7b6330a9dd6f1ee1814135c7c56441db5b61a6/video.mp4",
+      "sha256": "0fb3492529ab31462f154d25855dae4be1d4a367893af0a3189f005113af1981"
+    },
+    {
+      "id": "g4-scene-004",
+      "key": "d19dd39ccfcf4792834e4a2c33221b2c83bc1018c7620cc62b33c4f2864469e2",
+      "cacheHit": false,
+      "frames": 82,
+      "startFrame": 969,
+      "endFrame": 1051,
+      "seconds": 0.6377537920000014,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-004/d19dd39ccfcf4792834e4a2c33221b2c83bc1018c7620cc62b33c4f2864469e2/video.mp4",
+      "sha256": "78728b47829d473de30e0202f4457410fbf6a386d78f5bffb963675e5daf13e8"
+    },
+    {
+      "id": "g4-scene-005",
+      "key": "3c3c60248e94080cf12b465142f94a2671c6fe3ddbc877dce28842643ce99af9",
+      "cacheHit": false,
+      "frames": 88,
+      "startFrame": 1051,
+      "endFrame": 1139,
+      "seconds": 0.9443888329999991,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-005/3c3c60248e94080cf12b465142f94a2671c6fe3ddbc877dce28842643ce99af9/video.mp4",
+      "sha256": "6c19d2fcf14e42964949b53d6c65b07ceca6ac60943c8232aa9c776205466f0b"
+    },
+    {
+      "id": "g4-scene-006",
+      "key": "bd8690a26ab1ffa65ee02b61dee4f122132c51c3575042c187f14e198f66760c",
+      "cacheHit": false,
+      "frames": 66,
+      "startFrame": 1139,
+      "endFrame": 1205,
+      "seconds": 0.5211701249999987,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-006/bd8690a26ab1ffa65ee02b61dee4f122132c51c3575042c187f14e198f66760c/video.mp4",
+      "sha256": "e752f345031bdc07f83956da6302c7531cb6bf2def6a3c03455ee74612604e57"
+    },
+    {
+      "id": "g4-scene-007",
+      "key": "94a95d563ee72ddffef1167ff62da4449120274ec6b862e9f4eae1408647084f",
+      "cacheHit": false,
+      "frames": 37,
+      "startFrame": 1205,
+      "endFrame": 1242,
+      "seconds": 0.31202395799999977,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-007/94a95d563ee72ddffef1167ff62da4449120274ec6b862e9f4eae1408647084f/video.mp4",
+      "sha256": "8bc3cd4718a82de9e6e7c2ccaaaf45875a917f898620cd79bb43fed1cf9853bd"
+    },
+    {
+      "id": "g4-scene-008",
+      "key": "96eb18cde677a8d6c1f3bad9eb92d60eb0e8754ddb8bbd4e833ce80e6522bf2b",
+      "cacheHit": false,
+      "frames": 75,
+      "startFrame": 1242,
+      "endFrame": 1317,
+      "seconds": 0.5693962499999998,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-008/96eb18cde677a8d6c1f3bad9eb92d60eb0e8754ddb8bbd4e833ce80e6522bf2b/video.mp4",
+      "sha256": "e5e9b0fa2ae595590c7b27382a317729955d7590a7c609cf72891d32f168cb31"
+    },
+    {
+      "id": "g4-scene-009",
+      "key": "700bee67089bd6a7b1ad4973c9be66f3698e2cc4a72e3018f34bc269f8c76599",
+      "cacheHit": false,
+      "frames": 164,
+      "startFrame": 1317,
+      "endFrame": 1481,
+      "seconds": 1.260851040999998,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-009/700bee67089bd6a7b1ad4973c9be66f3698e2cc4a72e3018f34bc269f8c76599/video.mp4",
+      "sha256": "3bf706cc2c946892006ee25c4e98a78a8957e3e92bde5d363a2cf93872179fe5"
+    },
+    {
+      "id": "g4-scene-011",
+      "key": "3addca562b117cea6613573ec899e173ff5f5023f91dd1b10928141ada4c0364",
+      "cacheHit": false,
+      "frames": 170,
+      "startFrame": 1481,
+      "endFrame": 1651,
+      "seconds": 1.2263183750000026,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-011/3addca562b117cea6613573ec899e173ff5f5023f91dd1b10928141ada4c0364/video.mp4",
+      "sha256": "2b237fe6206a00d2d4e5b36d2c40c514089bea758c1fc476624ef248476202ab"
+    },
+    {
+      "id": "g4-scene-012",
+      "key": "7855ff4a4ff6d9ddf6dc5ee208498a3ee0cfb3501fb61778ea4f38fd7a1129cb",
+      "cacheHit": false,
+      "frames": 188,
+      "startFrame": 1651,
+      "endFrame": 1839,
+      "seconds": 5.182786541999998,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-012/7855ff4a4ff6d9ddf6dc5ee208498a3ee0cfb3501fb61778ea4f38fd7a1129cb/video.mp4",
+      "sha256": "6575fe447a4afa7a9bc2378daa524e440b44f2d06c092b59e2836ae74f0febfe"
+    },
+    {
+      "id": "g4-scene-014",
+      "key": "881089bb45d3bda7375ba5d1d6a806ea7414974f29b9b47628dba476a3b39f8a",
+      "cacheHit": false,
+      "frames": 80,
+      "startFrame": 1839,
+      "endFrame": 1919,
+      "seconds": 0.5894510829999999,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-014/881089bb45d3bda7375ba5d1d6a806ea7414974f29b9b47628dba476a3b39f8a/video.mp4",
+      "sha256": "f72ee73b72ccee09400734754d594f7ce0f07a5245859f5acfa83aa6e5baed29"
+    },
+    {
+      "id": "g4-scene-015",
+      "key": "a2abf72b07d9001083106321d4ffa8df5775b69ba929901c1e62f4c51da681c1",
+      "cacheHit": false,
+      "frames": 81,
+      "startFrame": 1919,
+      "endFrame": 2000,
+      "seconds": 0.6334999580000004,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-015/a2abf72b07d9001083106321d4ffa8df5775b69ba929901c1e62f4c51da681c1/video.mp4",
+      "sha256": "d7b052fc66eed382b4159e1a5b43aa51c645f694488e3aabdb6b973f27600110"
+    },
+    {
+      "id": "g4-scene-016",
+      "key": "fbc666a334c3ea662c4062f9b23460932d141a8233d81958bc9f8369e127e27e",
+      "cacheHit": false,
+      "frames": 112,
+      "startFrame": 2000,
+      "endFrame": 2112,
+      "seconds": 0.8525089999999982,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-016/fbc666a334c3ea662c4062f9b23460932d141a8233d81958bc9f8369e127e27e/video.mp4",
+      "sha256": "842ecb910413a03ffbc3020419a4e390361fcd406a3fcbf1749582badaad1ec8"
+    },
+    {
+      "id": "g4-scene-017",
+      "key": "f4c7d66a22be97852da494e3204668a688e98c63bd6f3b467122cb0f93676073",
+      "cacheHit": false,
+      "frames": 83,
+      "startFrame": 2112,
+      "endFrame": 2195,
+      "seconds": 0.6086984580000026,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-017/f4c7d66a22be97852da494e3204668a688e98c63bd6f3b467122cb0f93676073/video.mp4",
+      "sha256": "3ff9df497504570c80a79475b1bd1a3e4cbe74ef96bdd62775cf2d9c27b1e635"
+    },
+    {
+      "id": "g4-scene-018",
+      "key": "6a3b0ffdb7e040d72a641fb98887d06b58a3e68ba49e335aac648eedae54b9b1",
+      "cacheHit": false,
+      "frames": 106,
+      "startFrame": 2195,
+      "endFrame": 2301,
+      "seconds": 0.8654494999999988,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-018/6a3b0ffdb7e040d72a641fb98887d06b58a3e68ba49e335aac648eedae54b9b1/video.mp4",
+      "sha256": "6802090c18e9817fed65fd6b0397f3f6365ecba597ff88b048577158848aa086"
+    },
+    {
+      "id": "g4-scene-019",
+      "key": "b2905af62d46b30affb4e930c13db389ac45500db4eeb18a8a6951907ee11d3c",
+      "cacheHit": false,
+      "frames": 84,
+      "startFrame": 2301,
+      "endFrame": 2385,
+      "seconds": 0.6844080829999984,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-019/b2905af62d46b30affb4e930c13db389ac45500db4eeb18a8a6951907ee11d3c/video.mp4",
+      "sha256": "4cefc5bdab4acedd1cb51b67888154efbcd525d5cc8187971129b3be95372c1d"
+    },
+    {
+      "id": "g4-scene-020",
+      "key": "dae7aeb2fc6dba9dc75d3e18001b5f08222c50989e62457772696079d03c17c6",
+      "cacheHit": false,
+      "frames": 69,
+      "startFrame": 2385,
+      "endFrame": 2454,
+      "seconds": 0.5264436249999999,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-020/dae7aeb2fc6dba9dc75d3e18001b5f08222c50989e62457772696079d03c17c6/video.mp4",
+      "sha256": "4523ed17bb98b49b7c350204682868bdb3b7d21ed1e3e366714d7e754a801045"
+    },
+    {
+      "id": "g4-scene-021",
+      "key": "826bafc5fb33654edcd1e5fffc1bd60ce53d040b1cf5df4a0f9d9693632ea818",
+      "cacheHit": false,
+      "frames": 76,
+      "startFrame": 2454,
+      "endFrame": 2530,
+      "seconds": 0.5749159579999977,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-021/826bafc5fb33654edcd1e5fffc1bd60ce53d040b1cf5df4a0f9d9693632ea818/video.mp4",
+      "sha256": "5a3f51119e655a48c2ec2528b8ee63abb8fec26f0501a0e8bf644c4df2eb48b0"
+    },
+    {
+      "id": "g4-scene-022",
+      "key": "07d3c9a4462d7df34ec94119e7af07030cc7335d3309bab37775ce06a5cad395",
+      "cacheHit": false,
+      "frames": 78,
+      "startFrame": 2530,
+      "endFrame": 2608,
+      "seconds": 0.5890803750000013,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-022/07d3c9a4462d7df34ec94119e7af07030cc7335d3309bab37775ce06a5cad395/video.mp4",
+      "sha256": "67d88627e7ec3477fab839c896352b212a1d4011d4148bceae8cc93f7ad4e5c3"
+    },
+    {
+      "id": "g4-scene-023",
+      "key": "b8357dbea2967a37f6a742ebbc0f097c1194247a69384a9f53a969fbac0a19cf",
+      "cacheHit": false,
+      "frames": 138,
+      "startFrame": 2608,
+      "endFrame": 2746,
+      "seconds": 1.1559236670000028,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-023/b8357dbea2967a37f6a742ebbc0f097c1194247a69384a9f53a969fbac0a19cf/video.mp4",
+      "sha256": "3f0ba3aadbc17552162707a48af27c7dad5836f90e618740dd99b463aab70a0d"
+    },
+    {
+      "id": "g4-scene-024",
+      "key": "14d6fc13a96a52b3e00cdd9899278c9a829bc446b1dbb27b45fcb27283a4183d",
+      "cacheHit": false,
+      "frames": 249,
+      "startFrame": 2746,
+      "endFrame": 2995,
+      "seconds": 2.1157817499999982,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-024/14d6fc13a96a52b3e00cdd9899278c9a829bc446b1dbb27b45fcb27283a4183d/video.mp4",
+      "sha256": "07b4214f4d7b02d559dbad2e0a2223f0fd65daab0640c79211ecde7bf61439c7"
+    },
+    {
+      "id": "g4-scene-027",
+      "key": "da27daf9dd6fd467987c5d536d94a51a96e53d3314b26fefb8988ed72ecd5e70",
+      "cacheHit": false,
+      "frames": 73,
+      "startFrame": 2995,
+      "endFrame": 3068,
+      "seconds": 2.143027666000002,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-027/da27daf9dd6fd467987c5d536d94a51a96e53d3314b26fefb8988ed72ecd5e70/video.mp4",
+      "sha256": "fa90758110845a6a08b62bd8a9c6126c46b8ef4149982df8d0e1530656130e87"
+    },
+    {
+      "id": "g4-scene-028",
+      "key": "012d39cb987f64335490ef4445750c2d0cb838065614e829bdb47e263adedee8",
+      "cacheHit": false,
+      "frames": 86,
+      "startFrame": 3068,
+      "endFrame": 3154,
+      "seconds": 2.4242114169999986,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-028/012d39cb987f64335490ef4445750c2d0cb838065614e829bdb47e263adedee8/video.mp4",
+      "sha256": "6a424cb3242f26586726a7658c12db86bec8fb8a8b0ba9d08c1ef66be68209ad"
+    },
+    {
+      "id": "g4-scene-029",
+      "key": "0514de2b4eb9b7fff083778bfbeeefe6d7b485b9b978c8355b1e93f10bc3e172",
+      "cacheHit": false,
+      "frames": 94,
+      "startFrame": 3154,
+      "endFrame": 3248,
+      "seconds": 0.7985227499999964,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-029/0514de2b4eb9b7fff083778bfbeeefe6d7b485b9b978c8355b1e93f10bc3e172/video.mp4",
+      "sha256": "2552ca22dd95cb80767903cf1739f5bab65a1389d39172aff635746e92eac88a"
+    },
+    {
+      "id": "g4-scene-030",
+      "key": "cc4cfd5a289cfe5dd08b863bcc958866cb5daf6a84dd05c2197d563dbbff81b7",
+      "cacheHit": false,
+      "frames": 83,
+      "startFrame": 3248,
+      "endFrame": 3331,
+      "seconds": 0.6801961669999946,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-030/cc4cfd5a289cfe5dd08b863bcc958866cb5daf6a84dd05c2197d563dbbff81b7/video.mp4",
+      "sha256": "95e7aa3b5b07516c3d9c28b7d5580b29a329bd09801da3a936623c2f5e8abf0a"
+    },
+    {
+      "id": "g4-scene-031",
+      "key": "d7d486fd2b0c0cd70f305d80648cf8074dc2c7d642433402bafd96c82ef4fd8c",
+      "cacheHit": false,
+      "frames": 75,
+      "startFrame": 3331,
+      "endFrame": 3406,
+      "seconds": 0.5879924579999933,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-031/d7d486fd2b0c0cd70f305d80648cf8074dc2c7d642433402bafd96c82ef4fd8c/video.mp4",
+      "sha256": "689376ab336fea82384809e38db66d67045d7377287e2fc1d649548a56ba3189"
+    },
+    {
+      "id": "g4-scene-032",
+      "key": "08c219e49c35274fec886ae866b0fb875b65b6ba05299ced39f86e78cd2501cb",
+      "cacheHit": false,
+      "frames": 91,
+      "startFrame": 3406,
+      "endFrame": 3497,
+      "seconds": 0.6992533330000006,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-032/08c219e49c35274fec886ae866b0fb875b65b6ba05299ced39f86e78cd2501cb/video.mp4",
+      "sha256": "9c9d6be1d694b1b2f5090471b04539a22341b2f87752650d20a4c39ed9cf475d"
+    },
+    {
+      "id": "g4-scene-033",
+      "key": "422bb2932996c81a90b32ff3ef15f9261fc5ccb3a90b48372ef0f5da59543004",
+      "cacheHit": false,
+      "frames": 132,
+      "startFrame": 3497,
+      "endFrame": 3629,
+      "seconds": 3.967092417,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-033/422bb2932996c81a90b32ff3ef15f9261fc5ccb3a90b48372ef0f5da59543004/video.mp4",
+      "sha256": "36ce17a361b0b5e74684be6f7c4e13450e21a2f60ccc78c0c88a9fe73e41ccaa"
+    },
+    {
+      "id": "g4-scene-035",
+      "key": "9a074f5e7ccf63abe73a726d03eaa671b8c9cf88eaf02c4cc65c036f19d6ccde",
+      "cacheHit": false,
+      "frames": 91,
+      "startFrame": 3629,
+      "endFrame": 3720,
+      "seconds": 0.757578125,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-035/9a074f5e7ccf63abe73a726d03eaa671b8c9cf88eaf02c4cc65c036f19d6ccde/video.mp4",
+      "sha256": "a61feead91e4100cd3bcc16902294d5849e37eb10c942e0959dba647e98a9b3c"
+    },
+    {
+      "id": "g4-scene-036",
+      "key": "508c693c015014004d1b66ee3f28b66f240efbf8532aeca2df2c1c7c675bc01e",
+      "cacheHit": false,
+      "frames": 31,
+      "startFrame": 3720,
+      "endFrame": 3751,
+      "seconds": 0.283408875000001,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-036/508c693c015014004d1b66ee3f28b66f240efbf8532aeca2df2c1c7c675bc01e/video.mp4",
+      "sha256": "c36a9532c2d8054b9fb739a0af7ef5b06ef9908d17c84be60324684fa7fb2481"
+    },
+    {
+      "id": "g4-scene-037",
+      "key": "e2304a0d8b2c342ec50dd7edefdd11e6f3c923f7d1bd23a16ba5ca6f01d8731f",
+      "cacheHit": false,
+      "frames": 140,
+      "startFrame": 3751,
+      "endFrame": 3891,
+      "seconds": 1.1681102089999986,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-037/e2304a0d8b2c342ec50dd7edefdd11e6f3c923f7d1bd23a16ba5ca6f01d8731f/video.mp4",
+      "sha256": "a5d14a329277e110abac29140f8cbecd32ef6c4b95f5aef4fecf9582d30b54c8"
+    },
+    {
+      "id": "g4-scene-039",
+      "key": "cc2f1fec71565c13ac701173c1f886225dc4da23e43b945b1a767ecedb69752c",
+      "cacheHit": false,
+      "frames": 83,
+      "startFrame": 3891,
+      "endFrame": 3974,
+      "seconds": 0.7082331249999988,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-039/cc2f1fec71565c13ac701173c1f886225dc4da23e43b945b1a767ecedb69752c/video.mp4",
+      "sha256": "6669c3ce491fcc40a3bcce2b2cc40e46db277850fabd2db6b79e96065c4221c5"
+    },
+    {
+      "id": "g4-scene-040",
+      "key": "5f4e2d36c5eeb64881ff2d2bad1706c50a1ebb4f459c51312d14455fd6a24bd9",
+      "cacheHit": false,
+      "frames": 94,
+      "startFrame": 3974,
+      "endFrame": 4068,
+      "seconds": 0.7005641249999971,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-040/5f4e2d36c5eeb64881ff2d2bad1706c50a1ebb4f459c51312d14455fd6a24bd9/video.mp4",
+      "sha256": "0309fe997f2102122ff169f7485bfa69101bdb4921a11a275f3b01083ce964b4"
+    },
+    {
+      "id": "g4-scene-041",
+      "key": "701326eb9946724d3afc8fcc667891fc13c3fb805dc2b305393df15bd8175c60",
+      "cacheHit": false,
+      "frames": 163,
+      "startFrame": 4068,
+      "endFrame": 4231,
+      "seconds": 1.2832141669999984,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-041/701326eb9946724d3afc8fcc667891fc13c3fb805dc2b305393df15bd8175c60/video.mp4",
+      "sha256": "50af569377fd3fb9c58a6043704e58e68b47deb0276f46d4e953b2959f512442"
+    },
+    {
+      "id": "g4-scene-042",
+      "key": "cdd6397801661e7f5bedebae7f917ea22f9fa016ef680285aac5ad2555394b5b",
+      "cacheHit": false,
+      "frames": 137,
+      "startFrame": 4231,
+      "endFrame": 4368,
+      "seconds": 1.092124708000003,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-042/cdd6397801661e7f5bedebae7f917ea22f9fa016ef680285aac5ad2555394b5b/video.mp4",
+      "sha256": "68ce60b6e154afb45da9f4b2d7ba845dbd184d2f996e8e6deab9e6131748cb56"
+    },
+    {
+      "id": "g4-scene-043",
+      "key": "6c0563a2c75f2f8476b7a88e980d62a27261ab25322542d6c078ab8ce4cfd85c",
+      "cacheHit": false,
+      "frames": 152,
+      "startFrame": 4368,
+      "endFrame": 4520,
+      "seconds": 1.1412376250000016,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-043/6c0563a2c75f2f8476b7a88e980d62a27261ab25322542d6c078ab8ce4cfd85c/video.mp4",
+      "sha256": "f7c4bca726ed7297f900974e82cdd77688b047449070b15ae39bcce797558684"
+    },
+    {
+      "id": "g4-scene-044",
+      "key": "14db41625157aa0195271b8f1a12387b4d06ebc528fd881b31d6bea4863bcaa9",
+      "cacheHit": false,
+      "frames": 150,
+      "startFrame": 4520,
+      "endFrame": 4670,
+      "seconds": 1.1203568749999977,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-044/14db41625157aa0195271b8f1a12387b4d06ebc528fd881b31d6bea4863bcaa9/video.mp4",
+      "sha256": "9af9a8bf147a758e3d40360d86b247359a6ec4e0150072409ce65064c32447c7"
+    },
+    {
+      "id": "g4-scene-046",
+      "key": "5ac0b59c4a784bb2aeb2d4a4edd1d00e97697f763b76441eaeead32c1759d15e",
+      "cacheHit": false,
+      "frames": 82,
+      "startFrame": 4670,
+      "endFrame": 4752,
+      "seconds": 0.6390254159999967,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-046/5ac0b59c4a784bb2aeb2d4a4edd1d00e97697f763b76441eaeead32c1759d15e/video.mp4",
+      "sha256": "3d610da1b09d930f283ad0de8059a015c7902470b985b3e4120620bd20367001"
+    },
+    {
+      "id": "g4-scene-047",
+      "key": "d09f4b34f19ecff381f219b1ea0598029133e14e9a805110fa3893bd4ebe3488",
+      "cacheHit": false,
+      "frames": 74,
+      "startFrame": 4752,
+      "endFrame": 4826,
+      "seconds": 0.5574464579999985,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-047/d09f4b34f19ecff381f219b1ea0598029133e14e9a805110fa3893bd4ebe3488/video.mp4",
+      "sha256": "1744a82c43c90a5076c2797dfbbed4ff30ba9717803fd2396650a59ac11315cd"
+    },
+    {
+      "id": "g4-scene-048",
+      "key": "fddcd8ed515789dc49304001bdc415d2286b214d5f689567971f05eea6cadcc2",
+      "cacheHit": false,
+      "frames": 56,
+      "startFrame": 4826,
+      "endFrame": 4882,
+      "seconds": 0.49240149999999994,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-048/fddcd8ed515789dc49304001bdc415d2286b214d5f689567971f05eea6cadcc2/video.mp4",
+      "sha256": "e567d6059a0917e00be881ab1bf91b5664f1644a0c7a6d03ab840b1e8be9bad2"
+    },
+    {
+      "id": "g4-scene-049",
+      "key": "d7011e9514c9c57aa4f60e4578033da3091796d429f9ef28cd35bdf9c192277a",
+      "cacheHit": false,
+      "frames": 73,
+      "startFrame": 4882,
+      "endFrame": 4955,
+      "seconds": 0.5845115409999998,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-049/d7011e9514c9c57aa4f60e4578033da3091796d429f9ef28cd35bdf9c192277a/video.mp4",
+      "sha256": "f3c40910eae969d46f2948e8528e6820c7959efbdc8be7e19b84059f1f2cf3ee"
+    },
+    {
+      "id": "g4-scene-050",
+      "key": "5b1f2c4ae5cfce0730b2135d473145afb2ae9d1fc5e0618d90d9105708576aa5",
+      "cacheHit": false,
+      "frames": 112,
+      "startFrame": 4955,
+      "endFrame": 5067,
+      "seconds": 0.826832875,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-050/5b1f2c4ae5cfce0730b2135d473145afb2ae9d1fc5e0618d90d9105708576aa5/video.mp4",
+      "sha256": "88ae038a884ec2c0575264ab155ba31fe993cc4871ba1950d02911db0363f74c"
+    },
+    {
+      "id": "g4-scene-051",
+      "key": "ffeca33b9f5388f8203e58da5b997048f62415372464eb33632b3782855a8691",
+      "cacheHit": false,
+      "frames": 85,
+      "startFrame": 5067,
+      "endFrame": 5152,
+      "seconds": 0.6447659580000036,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-051/ffeca33b9f5388f8203e58da5b997048f62415372464eb33632b3782855a8691/video.mp4",
+      "sha256": "f350cbd3af29a43cd914dae6a353fa949615ca5b71da2a608942d22607e29cfb"
+    },
+    {
+      "id": "g4-scene-052",
+      "key": "1db27c2e97e61249314617fa4c7553db6bbc5189e1fa8f2d36dd3b4c8b983c96",
+      "cacheHit": false,
+      "frames": 37,
+      "startFrame": 5152,
+      "endFrame": 5189,
+      "seconds": 0.3210758329999953,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-052/1db27c2e97e61249314617fa4c7553db6bbc5189e1fa8f2d36dd3b4c8b983c96/video.mp4",
+      "sha256": "f225f19bd24f416a8d03a698eca2281fde84b8e75afc414803d62aae925495e0"
+    },
+    {
+      "id": "g4-scene-053",
+      "key": "91df725c9fc48661d6fd13a3f8c3ef660c80a10407f9cb2ac28eb2b59696384b",
+      "cacheHit": false,
+      "frames": 106,
+      "startFrame": 5189,
+      "endFrame": 5295,
+      "seconds": 0.7799044579999973,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-053/91df725c9fc48661d6fd13a3f8c3ef660c80a10407f9cb2ac28eb2b59696384b/video.mp4",
+      "sha256": "091d8930ccf97731123ddd2e9da67633006e1b2e4737d6fb67c8e5f918131758"
+    },
+    {
+      "id": "g4-scene-054",
+      "key": "befb9f2bb5c8942d4e13450e6755fa2c34e0a296d43fef65ac528463b55c124d",
+      "cacheHit": false,
+      "frames": 81,
+      "startFrame": 5295,
+      "endFrame": 5376,
+      "seconds": 0.6907246659999946,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-054/befb9f2bb5c8942d4e13450e6755fa2c34e0a296d43fef65ac528463b55c124d/video.mp4",
+      "sha256": "3d229e8ffb6611851f7fd0c9088632be70409349e5007a32f4636863e442ab13"
+    },
+    {
+      "id": "g4-scene-055",
+      "key": "d807605331bfe1a77dc17e7389cf8681173afbf09467ff6480e9a6684d72bd6f",
+      "cacheHit": false,
+      "frames": 145,
+      "startFrame": 5376,
+      "endFrame": 5521,
+      "seconds": 1.132462625,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-055/d807605331bfe1a77dc17e7389cf8681173afbf09467ff6480e9a6684d72bd6f/video.mp4",
+      "sha256": "04c28b0e78778b208a846c5d0866016b8a13bb03537437e6658f310ef6655ac8"
+    },
+    {
+      "id": "g4-rest-50-a",
+      "key": "1f0e3ff6e9fc8baf5aa863d006e0a7f4ba04a75c3e7b69081ae801c95391349b",
+      "cacheHit": false,
+      "frames": 165,
+      "startFrame": 5521,
+      "endFrame": 5686,
+      "seconds": 1.371099500000004,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-rest-50-a/1f0e3ff6e9fc8baf5aa863d006e0a7f4ba04a75c3e7b69081ae801c95391349b/video.mp4",
+      "sha256": "20c61e7897b5786a6a511c2dde16bc31e8aa1036b800027ed8b3eba38e5274fc"
+    },
+    {
+      "id": "g4-rest-50-b",
+      "key": "dd6822f80b7cbe3eb03861fafeadf4fd392cf272f3af744a6a1c8c0342ac0c05",
+      "cacheHit": false,
+      "frames": 165,
+      "startFrame": 5686,
+      "endFrame": 5851,
+      "seconds": 1.3422547090000008,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-rest-50-b/dd6822f80b7cbe3eb03861fafeadf4fd392cf272f3af744a6a1c8c0342ac0c05/video.mp4",
+      "sha256": "a33764a28b4ac23719ff66a18350124aafe141024ce9fb44eea479508886f165"
+    },
+    {
+      "id": "g4-scene-056",
+      "key": "94dec791694110770a741673809e33a8b21b5b5395775b5975e594b478a8af9a",
+      "cacheHit": false,
+      "frames": 228,
+      "startFrame": 5851,
+      "endFrame": 6079,
+      "seconds": 6.570443999999996,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-056/94dec791694110770a741673809e33a8b21b5b5395775b5975e594b478a8af9a/video.mp4",
+      "sha256": "0d6b936cc01b5b03686aea7575b4b7cbe951648b27d68774a91e860749f9c64d"
+    },
+    {
+      "id": "g4-scene-059",
+      "key": "ed9f3eca07ed6aa594d3fb9dd38c004b0f1539d62e7db831f6c0ae1e49e966e1",
+      "cacheHit": false,
+      "frames": 189,
+      "startFrame": 6079,
+      "endFrame": 6268,
+      "seconds": 1.5701985419999982,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-059/ed9f3eca07ed6aa594d3fb9dd38c004b0f1539d62e7db831f6c0ae1e49e966e1/video.mp4",
+      "sha256": "ac40b57a4168ccb48cd928cbb09faab3b18812690f9adfedb4cd33d4e0e3d2bd"
+    },
+    {
+      "id": "g4-scene-061",
+      "key": "4b2d28fe41469ba55ca4abf18d3acfca0d7e4161b7e84cb73eaf0d9b9797c5ed",
+      "cacheHit": false,
+      "frames": 97,
+      "startFrame": 6268,
+      "endFrame": 6365,
+      "seconds": 2.8147591669999965,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-061/4b2d28fe41469ba55ca4abf18d3acfca0d7e4161b7e84cb73eaf0d9b9797c5ed/video.mp4",
+      "sha256": "eb0ad135ee514fed69f225f31999cbf89a8451f21b5e7df3c7c713d0643fb623"
+    },
+    {
+      "id": "g4-scene-063",
+      "key": "4e429a5f8ca5287dfb48d220366d173d7a1a178eb06134e5b0ee7cc0a4be19b2",
+      "cacheHit": false,
+      "frames": 274,
+      "startFrame": 6365,
+      "endFrame": 6639,
+      "seconds": 2.6374878750000064,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-063/4e429a5f8ca5287dfb48d220366d173d7a1a178eb06134e5b0ee7cc0a4be19b2/video.mp4",
+      "sha256": "4c29d5be4fbf3de00cfe364dd13c1e96827de9b53aebeac9edabd76573fc7622"
+    },
+    {
+      "id": "g4-scene-067",
+      "key": "36f73ff570d51b0f7717a8045297715947f3009874ebf012ac9fe7fbc6b6bece",
+      "cacheHit": false,
+      "frames": 58,
+      "startFrame": 6639,
+      "endFrame": 6697,
+      "seconds": 0.4634290420000034,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-067/36f73ff570d51b0f7717a8045297715947f3009874ebf012ac9fe7fbc6b6bece/video.mp4",
+      "sha256": "115f4f5ded0f5790105d17ded26400d1c5a9176d4287c09a5f8e27cd1c6fc54c"
+    },
+    {
+      "id": "g4-scene-068",
+      "key": "862d37401d8e0223612b13422033670fead911a2293b7c4203f1827ef0ad9748",
+      "cacheHit": false,
+      "frames": 71,
+      "startFrame": 6697,
+      "endFrame": 6768,
+      "seconds": 0.619502999999997,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-068/862d37401d8e0223612b13422033670fead911a2293b7c4203f1827ef0ad9748/video.mp4",
+      "sha256": "3fdac2d38fb7d759503d1b39f57f6e151a23f4622dcb8886e09645f858351fe3"
+    },
+    {
+      "id": "g4-scene-070",
+      "key": "a858beb8d2731623065a34d4ec7165812b41a2e329a8ff14a9834dad9c9f974e",
+      "cacheHit": false,
+      "frames": 29,
+      "startFrame": 6768,
+      "endFrame": 6797,
+      "seconds": 0.2858365000000049,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-070/a858beb8d2731623065a34d4ec7165812b41a2e329a8ff14a9834dad9c9f974e/video.mp4",
+      "sha256": "e0b9e0a06c9700599e82359924e5e212311cb54f4c478fb6384ee12f636e568c"
+    },
+    {
+      "id": "g4-scene-071",
+      "key": "423f0eb1c1393551a3249ae55cffacea011c15705c8d983b327174d93e641697",
+      "cacheHit": false,
+      "frames": 60,
+      "startFrame": 6797,
+      "endFrame": 6857,
+      "seconds": 0.49248054099999716,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-071/423f0eb1c1393551a3249ae55cffacea011c15705c8d983b327174d93e641697/video.mp4",
+      "sha256": "2c6fdcf97369ac1c8b33e1f344fc4c822b4e141d0184cbce0c19de87330c8416"
+    },
+    {
+      "id": "g4-scene-072",
+      "key": "6ee15635ea3c9aa7d77a358c3608ea352e2f09a4d9d9c2c051cfa540819b6935",
+      "cacheHit": false,
+      "frames": 31,
+      "startFrame": 6857,
+      "endFrame": 6888,
+      "seconds": 0.37795129199999794,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-072/6ee15635ea3c9aa7d77a358c3608ea352e2f09a4d9d9c2c051cfa540819b6935/video.mp4",
+      "sha256": "671c47034c6e4f0e4c9d0549c2ad4d80dc14dfd332b0e87ba652d35e5ae0d7cb"
+    },
+    {
+      "id": "g4-scene-073",
+      "key": "71dd927399cee94838c687b8efce88fd36d9f267fd68b228ea9807fe26fc7dda",
+      "cacheHit": false,
+      "frames": 64,
+      "startFrame": 6888,
+      "endFrame": 6952,
+      "seconds": 0.5742918750000099,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-073/71dd927399cee94838c687b8efce88fd36d9f267fd68b228ea9807fe26fc7dda/video.mp4",
+      "sha256": "35b5efd176ba4fb839e103eacebecff4c4535e71b5755008308e616c16a9e24a"
+    },
+    {
+      "id": "g4-scene-074",
+      "key": "9abb1deaab5f1d29404826f061d3c4dca63a457cc57aaee0f9c980304127818e",
+      "cacheHit": false,
+      "frames": 73,
+      "startFrame": 6952,
+      "endFrame": 7025,
+      "seconds": 0.6461515830000135,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-074/9abb1deaab5f1d29404826f061d3c4dca63a457cc57aaee0f9c980304127818e/video.mp4",
+      "sha256": "a8bb77bfb1e63738b0c2e747ebb5551425658e8002d14864a4b7a0d64349028a"
+    },
+    {
+      "id": "g4-scene-076",
+      "key": "e7d348836dbda5a11ede70fdb70bab11cd19f396548d1148513335abd4ac901f",
+      "cacheHit": false,
+      "frames": 36,
+      "startFrame": 7025,
+      "endFrame": 7061,
+      "seconds": 0.30903570800001035,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-076/e7d348836dbda5a11ede70fdb70bab11cd19f396548d1148513335abd4ac901f/video.mp4",
+      "sha256": "19b54f13d9ff122cb0b3392a59a7074c1b99af729dd340d248582439e108f23b"
+    },
+    {
+      "id": "g4-scene-077",
+      "key": "09af9e665aab122e2000c25543ed9eeb35b8aba96bce2c1821144970d1892db1",
+      "cacheHit": false,
+      "frames": 66,
+      "startFrame": 7061,
+      "endFrame": 7127,
+      "seconds": 1.9182493749999994,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-077/09af9e665aab122e2000c25543ed9eeb35b8aba96bce2c1821144970d1892db1/video.mp4",
+      "sha256": "6f3fd0b57d27bef9eb059a13cd4558b1af3e77e9614a1f5b8c5cfd6032d2761d"
+    },
+    {
+      "id": "g4-scene-078",
+      "key": "91b3f0310121f90267742f16d7d7607a9c66a0c6d560e72da7b2dc947e184fee",
+      "cacheHit": false,
+      "frames": 83,
+      "startFrame": 7127,
+      "endFrame": 7210,
+      "seconds": 0.8297065000000002,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-078/91b3f0310121f90267742f16d7d7607a9c66a0c6d560e72da7b2dc947e184fee/video.mp4",
+      "sha256": "13a530b30be09326dee09ead249b05b095ea43fced114ad78b2fc7134bd11975"
+    },
+    {
+      "id": "g4-scene-079",
+      "key": "c2bd1b17d8fbd125d0926eefd481204a4263fad35b84975fc619d95053a88feb",
+      "cacheHit": false,
+      "frames": 95,
+      "startFrame": 7210,
+      "endFrame": 7305,
+      "seconds": 0.8015619579999911,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-079/c2bd1b17d8fbd125d0926eefd481204a4263fad35b84975fc619d95053a88feb/video.mp4",
+      "sha256": "df2d793b84652a423f02e47989cea53a301f22513a50dda5d799e755f87b2a95"
+    },
+    {
+      "id": "g4-scene-080",
+      "key": "a2730d8c908fa773ce719c8b320d181886e135a8e05a38e057f038b8c98ac3a9",
+      "cacheHit": false,
+      "frames": 81,
+      "startFrame": 7305,
+      "endFrame": 7386,
+      "seconds": 0.7227989159999997,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-080/a2730d8c908fa773ce719c8b320d181886e135a8e05a38e057f038b8c98ac3a9/video.mp4",
+      "sha256": "b4b7cea27c88c71be7a932a4a34e4bd11066c6fec99a9ae7189ae2e98c89880e"
+    },
+    {
+      "id": "g4-scene-081",
+      "key": "833ab3a357ec51d9a458c6360b6f6070d007a5657017edeca1d9da57e92d4337",
+      "cacheHit": false,
+      "frames": 54,
+      "startFrame": 7386,
+      "endFrame": 7440,
+      "seconds": 0.4839261669999978,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-081/833ab3a357ec51d9a458c6360b6f6070d007a5657017edeca1d9da57e92d4337/video.mp4",
+      "sha256": "13390327495a4542742215db52174173906d6557531ac3330b32f1ea92614cc9"
+    },
+    {
+      "id": "g4-scene-082",
+      "key": "e06de2545c405e9f331a9dc2fa74c91f090b6e1a4be0339d086737d5c572ed7e",
+      "cacheHit": false,
+      "frames": 88,
+      "startFrame": 7440,
+      "endFrame": 7528,
+      "seconds": 0.681241584000003,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-082/e06de2545c405e9f331a9dc2fa74c91f090b6e1a4be0339d086737d5c572ed7e/video.mp4",
+      "sha256": "d3aaf9984c38e4ac88a921bec860945bb08773b388c01fd5a9a8a1e24313ee49"
+    },
+    {
+      "id": "g4-scene-083",
+      "key": "a167abba194ae876b2e29137383092916f3aaee07c53daa339e2aacd7db7c0f8",
+      "cacheHit": false,
+      "frames": 77,
+      "startFrame": 7528,
+      "endFrame": 7605,
+      "seconds": 0.6203507919999974,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-083/a167abba194ae876b2e29137383092916f3aaee07c53daa339e2aacd7db7c0f8/video.mp4",
+      "sha256": "4b349b77e460a8ba4d968d0a731a4a9e67aef629bf9c703a9584acd8f5ba8981"
+    },
+    {
+      "id": "g4-scene-084",
+      "key": "5f68ed946238b054a2efd17c4aa9bf46bc8312e45eb7f62b449e784cfb33d23c",
+      "cacheHit": false,
+      "frames": 377,
+      "startFrame": 7605,
+      "endFrame": 7982,
+      "seconds": 3.264486667000005,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-084/5f68ed946238b054a2efd17c4aa9bf46bc8312e45eb7f62b449e784cfb33d23c/video.mp4",
+      "sha256": "5f9c6a1658a42dfea2c243753b8486c5de99ef06e09077f834211293d5039d79"
+    },
+    {
+      "id": "g4-scene-087",
+      "key": "d4ebc4834123b86ae97b4180a9bd4e76cdeb7f5392b9e0cd1d2ef66ea06e36dc",
+      "cacheHit": false,
+      "frames": 145,
+      "startFrame": 7982,
+      "endFrame": 8127,
+      "seconds": 4.438198208000002,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-087/d4ebc4834123b86ae97b4180a9bd4e76cdeb7f5392b9e0cd1d2ef66ea06e36dc/video.mp4",
+      "sha256": "9856a97daece387a6381d029366543a76d9fa45d32c8fb4d2f55ae253a0d14bf"
+    },
+    {
+      "id": "g4-scene-088",
+      "key": "ea0c327e9c31e9bee0975e8da3e4663cb0e194285ffcc1362dd42b76f43a58c8",
+      "cacheHit": false,
+      "frames": 272,
+      "startFrame": 8127,
+      "endFrame": 8399,
+      "seconds": 8.195210833000004,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-088/ea0c327e9c31e9bee0975e8da3e4663cb0e194285ffcc1362dd42b76f43a58c8/video.mp4",
+      "sha256": "75e665a33ba677e16be84f4c3c88272d71ebddb1d6cb4ee9533aa72e88729e79"
+    },
+    {
+      "id": "g4-scene-090",
+      "key": "4f7598283e4a05c488908e493e8be58981c54d723313c033ec1499a64f67658e",
+      "cacheHit": false,
+      "frames": 190,
+      "startFrame": 8399,
+      "endFrame": 8589,
+      "seconds": 1.5257609170000068,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-090/4f7598283e4a05c488908e493e8be58981c54d723313c033ec1499a64f67658e/video.mp4",
+      "sha256": "112a61f3c4153bb04a4666b38056224078fc01f90237e3a661b8d91548f68b2a"
+    },
+    {
+      "id": "g4-scene-091",
+      "key": "7913d88385b6836665dd25417eb7ca0fd3d25dcbcc97d1907aa7fc468f5057ba",
+      "cacheHit": false,
+      "frames": 204,
+      "startFrame": 8589,
+      "endFrame": 8793,
+      "seconds": 1.7175996670000022,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-091/7913d88385b6836665dd25417eb7ca0fd3d25dcbcc97d1907aa7fc468f5057ba/video.mp4",
+      "sha256": "004b5bf15160f864202ced1b6cf7f74b3b53f2f38d242a0d12633ad0a4854803"
+    },
+    {
+      "id": "g4-scene-093",
+      "key": "e12eb2416e2a81278922ed1790116febca4d29e85d2ed0339d5cc0f09dd9d67e",
+      "cacheHit": false,
+      "frames": 199,
+      "startFrame": 8793,
+      "endFrame": 8992,
+      "seconds": 5.697825249999995,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-scene-093/e12eb2416e2a81278922ed1790116febca4d29e85d2ed0339d5cc0f09dd9d67e/video.mp4",
+      "sha256": "4b93e33477d6654443634c6fff6d073c93f63e731b2d4ef9086ebcd4ebfe3f3b"
+    },
+    {
+      "id": "g4-ending-life",
+      "key": "edb10dc4101c2209ffdc877ec84036248b4e9ccfac64829643b866778ccbf2ea",
+      "cacheHit": false,
+      "frames": 177,
+      "startFrame": 8992,
+      "endFrame": 9169,
+      "seconds": 1.8915455419999925,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-ending-life/edb10dc4101c2209ffdc877ec84036248b4e9ccfac64829643b866778ccbf2ea/video.mp4",
+      "sha256": "9dd662813ac2c615ce7c53e072a76a5d88a489b7e0761ff040ec061d1d3859bc"
+    },
+    {
+      "id": "g4-ending-title",
+      "key": "fd523e954171e95711470a15e2ac8f931c9ea4182cecfefb16513cd9442dce65",
+      "cacheHit": false,
+      "frames": 191,
+      "startFrame": 9169,
+      "endFrame": 9360,
+      "seconds": 1.410030209000004,
+      "artifact": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/render-cache/g4-ending-title/fd523e954171e95711470a15e2ac8f931c9ea4182cecfefb16513cd9442dce65/video.mp4",
+      "sha256": "f2225916d93bbbedb561eb0626d2a4fd84b59e0dfdf263ea072496bb50cfb148"
+    }
+  ],
+  "startedAt": "2026-09-27T07:35:37.166Z",
+  "completedAt": "2026-09-27T07:37:35.495Z",
+  "seconds": 118.329163625,
+  "bytes": 33661545,
+  "validation": {
+    "technical": "passed",
+    "visual": "pending-independent-review"
+  }
+}

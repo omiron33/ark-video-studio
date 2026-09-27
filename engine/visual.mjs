@@ -28,10 +28,10 @@ function role(e,name){
  return index===undefined?undefined:e.p.words.find(w=>w.id===e.s.wordIds[index]);
 }
 function alpha(w,t,d=.11){return w?ease((t-w.start)/d):0}
-function word(c,w,t,x,y,size,{color='#e8e1ce',family='Bebas Neue',motion='lift',scale=1,opacity=1,tracking=0,rotate=0,curve=0,fragment=0}={}){
+function word(c,w,t,x,y,size,{color='#e8e1ce',family='Bebas Neue',motion='lift',scale=1,opacity=1,tracking=0,rotate=0,curve=0,fragment=0,immediate=false}={}){
   const pacing=w?._visualPacing,hit=pacing?.hit;
   const pulse=hit&&t>=hit.at&&t-hit.at<pacing.pulseSeconds?Math.pow(1-(t-hit.at)/pacing.pulseSeconds,2):0;
-  const a=pulse&&t>=w.start?1:alpha(w,t);if(a<=0)return;
+  const a=w&&(immediate||w._visualImmediate)?(t>=w.start?1:0):pulse&&t>=w.start?1:alpha(w,t);if(a<=0)return;
   if(pacing?.mode==='held'){motion='none';scale=1+(scale-1)*.12;}
   if(pulse){color=pacing.accent;scale*=1+.065*pulse;}
   c.save();c.globalAlpha*=a*opacity;c.translate(x,y+(motion==='lift'?24*(1-a):0));c.rotate(rotate);c.scale(scale,scale);setFont(c,size,family);c.fillStyle=color;
@@ -239,7 +239,8 @@ export function drawFrame(ctx,project,assets,t,{layer='all'}={}){
  const palette={ink:'#061a20',paper:'#e8e1ce',accent:'#e77951',...project.palette,...s.direction?.palette};
  const pacing=s.direction?.pacing,activePacing=pacing?.version===1&&pacing.mode!=='flow';
  const accent=s.direction?.accent||palette.accent;
- const visualProject=activePacing?{...project,words:project.words.map(w=>s.wordIds.includes(w.id)?{...w,_visualPacing:{mode:pacing.mode,hit:pacing.hits?.find(h=>h.wordId===w.id),pulseSeconds:pacing.pulseSeconds??.16,accent}}:w)}:project;
+ const immediate=s.direction?.lyricOnset==='immediate';
+ const visualProject=activePacing||immediate?{...project,words:project.words.map(w=>s.wordIds.includes(w.id)?{...w,_visualImmediate:immediate,...(activePacing?{_visualPacing:{mode:pacing.mode,hit:pacing.hits?.find(h=>h.wordId===w.id),pulseSeconds:pacing.pulseSeconds??.16,accent}}:{})}:w)}:project;
  const e={p:visualProject,s,assets,t,seed:s.seed||1,...palette,accent,beat:pacing?.version===1&&['held','slow-dissolve'].includes(pacing.mode)?0:beat(project,t)};
  const hook=activeOpening(e);
  const sx=ctx.canvas.width/1920,sy=ctx.canvas.height/1080;

@@ -1,0 +1,653 @@
+{
+  "parentVideo": "21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777",
+  "measuredCueRepairs": [
+    {
+      "id": "g4-l043-w02",
+      "old": 148.734125,
+      "new": 148.875302
+    },
+    {
+      "id": "g4-l043-w03",
+      "old": 148.894227,
+      "new": 149.055471
+    }
+  ],
+  "distinctTreatments": 47,
+  "maxUses": 3,
+  "counts": {
+    "branching-seed": 1,
+    "camera-micro": 3,
+    "camera-pullback": 2,
+    "balance-offering": 2,
+    "word-orbit": 1,
+    "camera-canyon": 2,
+    "camera-rail": 1,
+    "forge-assembly": 3,
+    "camera-wall": 1,
+    "camera-rack": 2,
+    "refusal-bar": 1,
+    "falling-weight": 2,
+    "camera-stairwell": 2,
+    "camera-dolly": 2,
+    "negative-space": 2,
+    "stone-crush": 1,
+    "camera-runway": 1,
+    "split-verdict": 3,
+    "incision": 3,
+    "breath-resolve": 2,
+    "camera-horizon": 1,
+    "camera-switchback": 2,
+    "photographic-club-strike": 1,
+    "photographic-divine-question": 1,
+    "camera-tunnel": 2,
+    "redaction-slab": 1,
+    "camera-hinge": 2,
+    "echo-cry": 2,
+    "concentric-rupture": 1,
+    "camera-spiral": 2,
+    "torn-monument": 1,
+    "string-pluck": 2,
+    "shadow-procession": 1,
+    "threshold-exile": 3,
+    "eclipse-disc": 1,
+    "word-strike": 2,
+    "tally-vengeance": 1,
+    "mark-seal": 1,
+    "monolith-rise": 1,
+    "genesis-lineage-cain": 2,
+    "crescent-sweep": 1,
+    "chain-lineage": 1,
+    "camera-arc": 1,
+    "genesis-vengeance": 1,
+    "genesis-forgiveness": 1,
+    "genesis-lineage-seed": 1,
+    "genesis-lineage-prayer": 1
+  },
+  "replacedLinearScenes": {
+    "g4-scene-004": "word-orbit",
+    "g4-scene-018": "stone-crush",
+    "g4-scene-030": "redaction-slab",
+    "g4-scene-035": "concentric-rupture",
+    "g4-scene-039": "torn-monument",
+    "g4-scene-042": "shadow-procession",
+    "g4-scene-048": "eclipse-disc",
+    "g4-scene-054": "mark-seal",
+    "g4-scene-055": "monolith-rise",
+    "g4-scene-068": "crescent-sweep"
+  },
+  "scenes": [
+    {
+      "id": "g4-opening-strike",
+      "start": 0,
+      "end": 2.4,
+      "treatment": "fracture",
+      "lyrics": ""
+    },
+    {
+      "id": "g4-opening-blood",
+      "start": 2.4,
+      "end": 5.7,
+      "treatment": "statement",
+      "lyrics": ""
+    },
+    {
+      "id": "g4-opening-eclipse",
+      "start": 5.7,
+      "end": 10.866666666666667,
+      "treatment": "statement",
+      "lyrics": ""
+    },
+    {
+      "id": "g4-scene-000",
+      "start": 10.866666666666667,
+      "end": 15.433333333333334,
+      "treatment": "branching-seed",
+      "lyrics": "Adam knew his wife Eve;"
+    },
+    {
+      "id": "g4-scene-001",
+      "start": 15.433333333333334,
+      "end": 22.1,
+      "treatment": "camera-micro",
+      "lyrics": "she conceived and bore Cain."
+    },
+    {
+      "id": "g4-scene-002",
+      "start": 22.1,
+      "end": 27.466666666666665,
+      "treatment": "camera-pullback",
+      "lyrics": "I have gained a man through God, she said."
+    },
+    {
+      "id": "g4-scene-003",
+      "start": 27.466666666666665,
+      "end": 32.3,
+      "treatment": "balance-offering",
+      "lyrics": "Again she bore, his brother Abel."
+    },
+    {
+      "id": "g4-scene-004",
+      "start": 32.3,
+      "end": 35.03333333333333,
+      "treatment": "word-orbit",
+      "lyrics": "Abel kept the sheep,"
+    },
+    {
+      "id": "g4-scene-005",
+      "start": 35.03333333333333,
+      "end": 37.96666666666667,
+      "treatment": "camera-canyon",
+      "lyrics": "while Cain worked the ground."
+    },
+    {
+      "id": "g4-scene-006",
+      "start": 37.96666666666667,
+      "end": 40.166666666666664,
+      "treatment": "camera-rail",
+      "lyrics": "After a time Cain brought"
+    },
+    {
+      "id": "g4-scene-007",
+      "start": 40.166666666666664,
+      "end": 41.4,
+      "treatment": "forge-assembly",
+      "lyrics": "fruit of the earth"
+    },
+    {
+      "id": "g4-scene-008",
+      "start": 41.4,
+      "end": 43.9,
+      "treatment": "balance-offering",
+      "lyrics": "as an offering to the Lord."
+    },
+    {
+      "id": "g4-scene-009",
+      "start": 43.9,
+      "end": 49.36666666666667,
+      "treatment": "camera-wall",
+      "lyrics": "Abel brought the firstborn of his sheep, and his fatlings."
+    },
+    {
+      "id": "g4-scene-011",
+      "start": 49.36666666666667,
+      "end": 55.03333333333333,
+      "treatment": "camera-rack",
+      "lyrics": "God looked upon Abel and his gifts."
+    },
+    {
+      "id": "g4-scene-012",
+      "start": 55.03333333333333,
+      "end": 61.3,
+      "treatment": "refusal-bar",
+      "lyrics": "But Cain and his sacrifices He did not regard."
+    },
+    {
+      "id": "g4-scene-014",
+      "start": 61.3,
+      "end": 63.96666666666667,
+      "treatment": "falling-weight",
+      "lyrics": "Cain was deeply grieved;"
+    },
+    {
+      "id": "g4-scene-015",
+      "start": 63.96666666666667,
+      "end": 66.66666666666667,
+      "treatment": "camera-stairwell",
+      "lyrics": "his face fell low."
+    },
+    {
+      "id": "g4-scene-016",
+      "start": 66.66666666666667,
+      "end": 70.4,
+      "treatment": "camera-dolly",
+      "lyrics": "The Lord God asked Cain,"
+    },
+    {
+      "id": "g4-scene-017",
+      "start": 70.4,
+      "end": 73.16666666666667,
+      "treatment": "negative-space",
+      "lyrics": "Why are you so sorrowful?"
+    },
+    {
+      "id": "g4-scene-018",
+      "start": 73.16666666666667,
+      "end": 76.7,
+      "treatment": "stone-crush",
+      "lyrics": "Why has your face fallen?"
+    },
+    {
+      "id": "g4-scene-019",
+      "start": 76.7,
+      "end": 79.5,
+      "treatment": "camera-runway",
+      "lyrics": "If you brought it rightly"
+    },
+    {
+      "id": "g4-scene-020",
+      "start": 79.5,
+      "end": 81.8,
+      "treatment": "split-verdict",
+      "lyrics": "but did not divide it rightly,"
+    },
+    {
+      "id": "g4-scene-021",
+      "start": 81.8,
+      "end": 84.33333333333333,
+      "treatment": "incision",
+      "lyrics": "have you not sinned?"
+    },
+    {
+      "id": "g4-scene-022",
+      "start": 84.33333333333333,
+      "end": 86.93333333333334,
+      "treatment": "breath-resolve",
+      "lyrics": "Be still; he shall submit to you,"
+    },
+    {
+      "id": "g4-scene-023",
+      "start": 86.93333333333334,
+      "end": 91.53333333333333,
+      "treatment": "camera-horizon",
+      "lyrics": "and you shall rule over him."
+    },
+    {
+      "id": "g4-scene-024",
+      "start": 91.53333333333333,
+      "end": 99.83333333333333,
+      "treatment": "camera-switchback",
+      "lyrics": "Cain said to Abel his brother, Let us go out to the plain. There in the plain he rose against Abel"
+    },
+    {
+      "id": "g4-scene-027",
+      "start": 99.83333333333333,
+      "end": 102.26666666666667,
+      "treatment": {
+        "id": "photographic-club-strike",
+        "description": "Preserved club attack: hard upper-left word strikes leave the physical struggle visible."
+      },
+      "lyrics": "and killed his brother."
+    },
+    {
+      "id": "g4-scene-028",
+      "start": 102.26666666666667,
+      "end": 105.13333333333334,
+      "treatment": {
+        "id": "photographic-divine-question",
+        "description": "Preserved embodied judgment: restrained left-aligned questioning over the accepted human Christophany."
+      },
+      "lyrics": "The Lord God asked Cain,"
+    },
+    {
+      "id": "g4-scene-029",
+      "start": 105.13333333333334,
+      "end": 108.26666666666667,
+      "treatment": "camera-tunnel",
+      "lyrics": "Where is Abel, your brother?"
+    },
+    {
+      "id": "g4-scene-030",
+      "start": 108.26666666666667,
+      "end": 111.03333333333333,
+      "treatment": "redaction-slab",
+      "lyrics": "I do not know, he said;"
+    },
+    {
+      "id": "g4-scene-031",
+      "start": 111.03333333333333,
+      "end": 113.53333333333333,
+      "treatment": "camera-hinge",
+      "lyrics": "am I my brother's keeper?"
+    },
+    {
+      "id": "g4-scene-032",
+      "start": 113.53333333333333,
+      "end": 116.56666666666666,
+      "treatment": "incision",
+      "lyrics": "What have you done? the Lord said."
+    },
+    {
+      "id": "g4-scene-033",
+      "start": 116.56666666666666,
+      "end": 120.96666666666667,
+      "treatment": "echo-cry",
+      "lyrics": "Your brother's blood has a voice; it cries to Me from the ground."
+    },
+    {
+      "id": "g4-scene-035",
+      "start": 120.96666666666667,
+      "end": 124,
+      "treatment": "concentric-rupture",
+      "lyrics": "Now you are cursed from the earth;"
+    },
+    {
+      "id": "g4-scene-036",
+      "start": 124,
+      "end": 125.03333333333333,
+      "treatment": "camera-micro",
+      "lyrics": "she opened her mouth"
+    },
+    {
+      "id": "g4-scene-037",
+      "start": 125.03333333333333,
+      "end": 129.7,
+      "treatment": "camera-spiral",
+      "lyrics": "to take your brother's blood from your hand."
+    },
+    {
+      "id": "g4-scene-039",
+      "start": 129.7,
+      "end": 132.46666666666667,
+      "treatment": "torn-monument",
+      "lyrics": "When you till the earth,"
+    },
+    {
+      "id": "g4-scene-040",
+      "start": 132.46666666666667,
+      "end": 135.6,
+      "treatment": "negative-space",
+      "lyrics": "she will no longer yield her strength."
+    },
+    {
+      "id": "g4-scene-041",
+      "start": 135.6,
+      "end": 141.03333333333333,
+      "treatment": "string-pluck",
+      "lyrics": "You will groan and tremble"
+    },
+    {
+      "id": "g4-scene-042",
+      "start": 141.03333333333333,
+      "end": 145.6,
+      "treatment": "shadow-procession",
+      "lyrics": "upon the earth."
+    },
+    {
+      "id": "g4-scene-043",
+      "start": 145.6,
+      "end": 150.66666666666666,
+      "treatment": "camera-dolly",
+      "lyrics": "Cain said to the Lord God,"
+    },
+    {
+      "id": "g4-scene-044",
+      "start": 150.66666666666666,
+      "end": 155.66666666666666,
+      "treatment": "falling-weight",
+      "lyrics": "My crime is too great for me to be forgiven."
+    },
+    {
+      "id": "g4-scene-046",
+      "start": 155.66666666666666,
+      "end": 158.4,
+      "treatment": "threshold-exile",
+      "lyrics": "If You cast me out today"
+    },
+    {
+      "id": "g4-scene-047",
+      "start": 158.4,
+      "end": 160.86666666666667,
+      "treatment": "camera-pullback",
+      "lyrics": "from the face of the earth,"
+    },
+    {
+      "id": "g4-scene-048",
+      "start": 160.86666666666667,
+      "end": 162.73333333333332,
+      "treatment": "eclipse-disc",
+      "lyrics": "hidden from Your presence,"
+    },
+    {
+      "id": "g4-scene-049",
+      "start": 162.73333333333332,
+      "end": 165.16666666666666,
+      "treatment": "camera-stairwell",
+      "lyrics": "groaning and trembling on the earth,"
+    },
+    {
+      "id": "g4-scene-050",
+      "start": 165.16666666666666,
+      "end": 168.9,
+      "treatment": "word-strike",
+      "lyrics": "whoever finds me will kill me."
+    },
+    {
+      "id": "g4-scene-051",
+      "start": 168.9,
+      "end": 171.73333333333332,
+      "treatment": "split-verdict",
+      "lyrics": "The Lord God said, Not so."
+    },
+    {
+      "id": "g4-scene-052",
+      "start": 171.73333333333332,
+      "end": 172.96666666666667,
+      "treatment": "camera-rack",
+      "lyrics": "Whoever kills Cain"
+    },
+    {
+      "id": "g4-scene-053",
+      "start": 172.96666666666667,
+      "end": 176.5,
+      "treatment": "tally-vengeance",
+      "lyrics": "will suffer vengeance sevenfold."
+    },
+    {
+      "id": "g4-scene-054",
+      "start": 176.5,
+      "end": 179.2,
+      "treatment": "mark-seal",
+      "lyrics": "The Lord set a mark upon Cain,"
+    },
+    {
+      "id": "g4-scene-055",
+      "start": 179.2,
+      "end": 184.03333333333333,
+      "treatment": "monolith-rise",
+      "lyrics": "so none who found him would kill him."
+    },
+    {
+      "id": "g4-rest-50-a",
+      "start": 184.03333333333333,
+      "end": 189.53333333333333,
+      "treatment": "camera-tunnel",
+      "lyrics": ""
+    },
+    {
+      "id": "g4-rest-50-b",
+      "start": 189.53333333333333,
+      "end": 195.03333333333333,
+      "treatment": "camera-horizon",
+      "lyrics": ""
+    },
+    {
+      "id": "g4-scene-056",
+      "start": 195.03333333333333,
+      "end": 202.63333333333333,
+      "treatment": "threshold-exile",
+      "lyrics": "Cain went out from God's presence and lived in the land of Nod, across from Edem."
+    },
+    {
+      "id": "g4-scene-059",
+      "start": 202.63333333333333,
+      "end": 208.93333333333334,
+      "treatment": "genesis-lineage-cain",
+      "lyrics": "Cain knew his wife; she conceived and bore Enoch."
+    },
+    {
+      "id": "g4-scene-061",
+      "start": 208.93333333333334,
+      "end": 212.16666666666666,
+      "treatment": "forge-assembly",
+      "lyrics": "He built a city and named it for his son, Enoch."
+    },
+    {
+      "id": "g4-scene-063",
+      "start": 212.16666666666666,
+      "end": 221.3,
+      "treatment": "genesis-lineage-cain",
+      "lyrics": "To Enoch was born Gaidad. Gaidad fathered Maleleel, Maleleel fathered Mathusala, and Mathusala fathered Lamech."
+    },
+    {
+      "id": "g4-scene-067",
+      "start": 221.3,
+      "end": 223.23333333333332,
+      "treatment": "split-verdict",
+      "lyrics": "Lamech took two wives:"
+    },
+    {
+      "id": "g4-scene-068",
+      "start": 223.23333333333332,
+      "end": 225.6,
+      "treatment": "crescent-sweep",
+      "lyrics": "one was named Ada, the other Sella."
+    },
+    {
+      "id": "g4-scene-070",
+      "start": 225.6,
+      "end": 226.56666666666666,
+      "treatment": "camera-micro",
+      "lyrics": "Ada bore Jobel,"
+    },
+    {
+      "id": "g4-scene-071",
+      "start": 226.56666666666666,
+      "end": 228.56666666666666,
+      "treatment": "threshold-exile",
+      "lyrics": "father of those who live in tents"
+    },
+    {
+      "id": "g4-scene-072",
+      "start": 228.56666666666666,
+      "end": 229.6,
+      "treatment": "camera-canyon",
+      "lyrics": "and tend the cattle."
+    },
+    {
+      "id": "g4-scene-073",
+      "start": 229.6,
+      "end": 231.73333333333332,
+      "treatment": "string-pluck",
+      "lyrics": "His brother's name was Jubal;"
+    },
+    {
+      "id": "g4-scene-074",
+      "start": 231.73333333333332,
+      "end": 234.16666666666666,
+      "treatment": "camera-spiral",
+      "lyrics": "he invented the psaltery and the harp."
+    },
+    {
+      "id": "g4-scene-076",
+      "start": 234.16666666666666,
+      "end": 235.36666666666667,
+      "treatment": "chain-lineage",
+      "lyrics": "Sella bore Thobel,"
+    },
+    {
+      "id": "g4-scene-077",
+      "start": 235.36666666666667,
+      "end": 237.56666666666666,
+      "treatment": "forge-assembly",
+      "lyrics": "a smith of brass and iron."
+    },
+    {
+      "id": "g4-scene-078",
+      "start": 237.56666666666666,
+      "end": 240.33333333333334,
+      "treatment": "camera-arc",
+      "lyrics": "Thobel's sister was Noëma."
+    },
+    {
+      "id": "g4-scene-079",
+      "start": 240.33333333333334,
+      "end": 243.5,
+      "treatment": "camera-hinge",
+      "lyrics": "Lamech said to Ada and Sella,"
+    },
+    {
+      "id": "g4-scene-080",
+      "start": 243.5,
+      "end": 246.2,
+      "treatment": "echo-cry",
+      "lyrics": "Hear my voice, wives of Lamech;"
+    },
+    {
+      "id": "g4-scene-081",
+      "start": 246.2,
+      "end": 248,
+      "treatment": "camera-tunnel",
+      "lyrics": "listen to my words."
+    },
+    {
+      "id": "g4-scene-082",
+      "start": 248,
+      "end": 250.93333333333334,
+      "treatment": "word-strike",
+      "lyrics": "I have killed a man to my sorrow,"
+    },
+    {
+      "id": "g4-scene-083",
+      "start": 250.93333333333334,
+      "end": 253.5,
+      "treatment": "incision",
+      "lyrics": "a young man to my grief."
+    },
+    {
+      "id": "g4-scene-084",
+      "start": 253.5,
+      "end": 266.06666666666666,
+      "treatment": "genesis-vengeance",
+      "lyrics": "Because vengeance was taken seven times for Cain, for Lamech it will be seventy times seven."
+    },
+    {
+      "id": "g4-scene-087",
+      "start": 266.06666666666666,
+      "end": 270.9,
+      "treatment": "genesis-forgiveness",
+      "lyrics": "Adam knew Eve his wife again."
+    },
+    {
+      "id": "g4-scene-088",
+      "start": 270.9,
+      "end": 279.96666666666664,
+      "treatment": "genesis-lineage-seed",
+      "lyrics": "She bore a son and named him Seth: God has raised another seed for me"
+    },
+    {
+      "id": "g4-scene-090",
+      "start": 279.96666666666664,
+      "end": 286.3,
+      "treatment": "camera-switchback",
+      "lyrics": "in place of Abel, whom Cain killed."
+    },
+    {
+      "id": "g4-scene-091",
+      "start": 286.3,
+      "end": 293.1,
+      "treatment": "genesis-lineage-prayer",
+      "lyrics": "Seth also had a son and named him Enos."
+    },
+    {
+      "id": "g4-scene-093",
+      "start": 293.1,
+      "end": 299.73333333333335,
+      "treatment": "breath-resolve",
+      "lyrics": "He hoped to call upon the name of the Lord God."
+    },
+    {
+      "id": "g4-ending-life",
+      "start": 299.73333333333335,
+      "end": 305.6333333333333,
+      "treatment": "genesis-lineage-resolution",
+      "lyrics": ""
+    },
+    {
+      "id": "g4-ending-title",
+      "start": 305.6333333333333,
+      "end": 312,
+      "treatment": "statement",
+      "lyrics": ""
+    }
+  ]
+}

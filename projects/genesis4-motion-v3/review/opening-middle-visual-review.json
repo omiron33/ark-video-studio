@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "kind": "encoded-visual-review",
+  "reviewer": "Rook primary editor",
+  "independent": false,
+  "videoSha256": "6f1d33843be71917ff109d834d536452fa6e8bba9d7b195c156cc7ea235097ca",
+  "videoPath": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/film.mp4",
+  "range": [
+    0,
+    203
+  ],
+  "method": "Actual encoded overview frames for every scene in the range; chronological eight-sample sheets for every newly replaced sculptural scene in this range plus cue-repaired scene043 and two short phrase exits. Six-fps frame extraction, sampled visual judgment without hearing claim.",
+  "scores": {
+    "lyricLegibility": 8.5,
+    "semanticMotion": 8.4,
+    "photorealism": 9,
+    "composition": 8.5,
+    "continuity": 8.5
+  },
+  "blockers": [],
+  "evidence": [
+    "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/overview-0.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/overview-1.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/overview-2.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/overview-3.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/overview-4.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/07-g4-scene-004.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/10-g4-scene-007.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/19-g4-scene-018.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/29-g4-scene-030.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/33-g4-scene-035.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/36-g4-scene-039.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/39-g4-scene-042.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/40-g4-scene-043.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/44-g4-scene-048.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/47-g4-scene-051.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/50-g4-scene-054.jpg",
+    "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/51-g4-scene-055.jpg"
+  ],
+  "findings": [
+    "The new filled discs, crushing slabs, rupture rings, typographic shadows and monoliths provide distinctly heavier visual weight between retained camera scenes.",
+    "Primary words remain separate and readable in the inspected sequences; red-on-dark-red KILL has less contrast than white but remains clearly legible.",
+    "The measured scene043 corrections preserve a clean camera move into THE LORD GOD; this visual check does not independently establish acoustic correctness.",
+    "The accepted club attack and human Christophany images remain intact.",
+    "Frame-level blank moments in scenes007/051 are intentional scene changes after readable lyric frames, not missing whole phrases."
+  ],
+  "limitations": [
+    "Most unchanged scenes were inspected as overview frames rather than exhaustive playback.",
+    "Timing, exact-frame visibility and continuous media integrity are separately measured by engine reports.",
+    "No subjective listening or perfect full-song sync claim."
+  ],
+  "createdAt": "2026-09-27T07:39:34.832Z"
+}

@@ -1,0 +1,46 @@
+{
+  "duplicate": false,
+  "video": {
+    "id": "vid-20260927-d1bfc5f0",
+    "project": "Genesis Chapter 4 music video",
+    "title": "Genesis 4 - The Brother's Blood",
+    "version": "Vengeance, mercy and lineage v3",
+    "sourceAgent": "Codex",
+    "sourceMachine": "Mac mini",
+    "sourcePath": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/film.mp4",
+    "ingestedFrom": "C:\\Users\\sjfis\\Videos\\Genesis4\\genesis4-dark-kinetic-6f1d33843be7.mp4",
+    "notes": "Genesis 4 revision: vengeance, mercy and lineage. Keeps the 312-second source song, all 498 literal lyric words, and accepted story photographs. Applies two paired-local-alignment cue corrections near 2:29 and removes the avoidable 110ms lyric fade delay. Replaces ten repeated linear treatments with filled circular masses, broad crescents, monoliths, seals and typographic silhouettes. The pivotal 7-to-77 sequence becomes one continuous 13-second escalation, followed by an explicitly labeled Matthew 18:22 forgiveness inversion with a unique photoreal Christ composition. Sung wording remains 'seventy times seven'; 77 is an interpretive visual. Genealogy scenes show correct Cain and Seth/Enos relationships with luminous name transitions. Orthodox direction and readings are archived with the project. Pending Shane's review; prior candidates retained. Strict machine sung-word certification is reported separately from visual judgment. Film SHA256 6f1d33843be71917ff109d834d536452fa6e8bba9d7b195c156cc7ea235097ca.",
+    "supersedes": null,
+    "supersededBy": null,
+    "chapter": 4,
+    "md5": "d1bfc5f0d24f25829dc6471f485f6b3d",
+    "sha256": "6f1d33843be71917ff109d834d536452fa6e8bba9d7b195c156cc7ea235097ca",
+    "bytes": 33661545,
+    "mimeType": "video/mp4",
+    "file": "media/videos/genesis-chapter-4-music-video/vid-20260927-d1bfc5f0/video.mp4",
+    "thumbnail": {
+      "file": "media/videos/genesis-chapter-4-music-video/vid-20260927-d1bfc5f0/thumbnail.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "probe": null,
+    "status": "pending_review",
+    "ingestedAt": "2026-09-27T07:41:16.843Z",
+    "updatedAt": "2026-09-27T07:41:16.843Z",
+    "history": [
+      {
+        "at": "2026-09-27T07:41:16.843Z",
+        "status": "pending_review",
+        "note": "Genesis 4 revision: vengeance, mercy and lineage. Keeps the 312-second source song, all 498 literal lyric words, and accepted story photographs. Applies two paired-local-alignment cue corrections near 2:29 and removes the avoidable 110ms lyric fade delay. Replaces ten repeated linear treatments with filled circular masses, broad crescents, monoliths, seals and typographic silhouettes. The pivotal 7-to-77 sequence becomes one continuous 13-second escalation, followed by an explicitly labeled Matthew 18:22 forgiveness inversion with a unique photoreal Christ composition. Sung wording remains 'seventy times seven'; 77 is an interpretive visual. Genealogy scenes show correct Cain and Seth/Enos relationships with luminous name transitions. Orthodox direction and readings are archived with the project. Pending Shane's review; prior candidates retained. Strict machine sung-word certification is reported separately from visual judgment. Film SHA256 6f1d33843be71917ff109d834d536452fa6e8bba9d7b195c156cc7ea235097ca.",
+        "by": "Codex"
+      }
+    ]
+  },
+  "verified": {
+    "sha256": "6f1d33843be71917ff109d834d536452fa6e8bba9d7b195c156cc7ea235097ca",
+    "servedSha256": "6f1d33843be71917ff109d834d536452fa6e8bba9d7b195c156cc7ea235097ca",
+    "rangeStatus": 206,
+    "localFile": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/film.mp4"
+  },
+  "reviewUrl": "https://omipc.taild60b4e.ts.net/studio#videos",
+  "downloadUrl": "https://omipc.taild60b4e.ts.net/api/admin/videos/vid-20260927-d1bfc5f0/media?download=1"
+}

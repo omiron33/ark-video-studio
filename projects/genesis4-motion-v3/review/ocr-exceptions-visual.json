@@ -1,0 +1,44 @@
+{
+  "videoSha256": "6f1d33843be71917ff109d834d536452fa6e8bba9d7b195c156cc7ea235097ca",
+  "reviewer": "Rook",
+  "method": "Direct visual inspection of native-resolution frames decoded from the final movie; this does not alter raw OCR observations.",
+  "items": [
+    {
+      "id": "g4-l015-w03",
+      "text": "low.",
+      "time": 66.333333,
+      "frame": "ocr-exceptions/frame-0001990-sample-0000278.png",
+      "sha256": "1a039eccaeaab866cb8c00978725e16b9960e0419913001df14b276d6724aeb7",
+      "visuallyVisible": true,
+      "observation": "Complete word visible and unobstructed in the actual encoded frame. Tight neighboring word spacing is retained from accepted v2 where applicable."
+    },
+    {
+      "id": "g4-l020-w05",
+      "text": "rightly,",
+      "time": 81.466667,
+      "frame": "ocr-exceptions/frame-0002444-sample-0000372.png",
+      "sha256": "6404cc21b524faa0f8ff56d077cdce993664464ea50cf5a59d2206516605abca",
+      "visuallyVisible": true,
+      "observation": "Complete word visible and unobstructed in the actual encoded frame. Tight neighboring word spacing is retained from accepted v2 where applicable."
+    },
+    {
+      "id": "g4-l051-w05",
+      "text": "so.",
+      "time": 171.566667,
+      "frame": "ocr-exceptions/frame-0005147-sample-0000971.png",
+      "sha256": "60d632915d3a5d4059d9c2d2d805e3872b0cefeee1b40862490d2d5cfbc63157",
+      "visuallyVisible": true,
+      "observation": "Complete word visible and unobstructed in the actual encoded frame. Tight neighboring word spacing is retained from accepted v2 where applicable."
+    },
+    {
+      "id": "g4-l067-w03",
+      "text": "wives:",
+      "time": 222.9,
+      "frame": "ocr-exceptions/frame-0006687-sample-0001240.png",
+      "sha256": "6c52d7ad0e50f932b80c7f183becfe7bc81c784ca081c9cb1f63166abf9678a4",
+      "visuallyVisible": true,
+      "observation": "Complete word visible and unobstructed in the actual encoded frame. Tight neighboring word spacing is retained from accepted v2 where applicable."
+    }
+  ],
+  "strictOCRStatus": "failed"
+}

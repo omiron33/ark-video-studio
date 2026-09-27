@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "reviewer": "independent-ending-visual-review",
+  "status": "pass",
+  "videoPath": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/film.mp4",
+  "videoSha256": "6f1d33843be71917ff109d834d536452fa6e8bba9d7b195c156cc7ea235097ca",
+  "videoSha256IndependentlyVerified": true,
+  "rangeSeconds": {
+    "start": 200,
+    "end": 312
+  },
+  "method": "Independent sampled visual inspection of all 27 chronological per-scene contact sheets overlapping 200–312 seconds, drawn from the actual final MP4 decoded at 6 fps, plus 10 targeted standalone decoded 960x540 frames. Source theology and genealogy notes were reviewed separately. No source edits were made.",
+  "scores": {
+    "lyricLegibility": 8.7,
+    "semanticMotion": 8.8,
+    "photorealism": 8.5,
+    "composition": 8.6,
+    "continuity": 8.7
+  },
+  "scoreScale": {
+    "minimum": 1,
+    "maximum": 10
+  },
+  "findings": [
+    {
+      "range": [
+        202.633,
+        221.3
+      ],
+      "finding": "Cain to Enoch and the subsequent Enoch–Gaidad–Maleleel–Mathusala–Lamech chain are readable and genealogically coherent. Names illuminate while the main lyric stays in a separate upper band."
+    },
+    {
+      "range": [
+        223.233,
+        225.6
+      ],
+      "finding": "The substantial red crescent and pale outer arc provide a materially different curved composition; Ada and Sella remain legible."
+    },
+    {
+      "range": [
+        248,
+        266.067
+      ],
+      "finding": "SORROW and GRIEF remain visible before the vengeance sequence. Seven becomes a large fractured 77 while the literal SEVENTY TIMES SEVEN lyric remains large, complete and unobscured. The scene reads as weight and rupture, without a depicted victim tally."
+    },
+    {
+      "range": [
+        266.067,
+        270.9
+      ],
+      "finding": "The 77 releases into open pale arcs beside a recognizably human Christ. CHRIST · MATTHEW 18:22 and FORGIVE WITHOUT LIMIT are legible, and the separate canonical Adam/Eve lyric continues below. This visibly frames the mercy passage as a scriptural allusion and unlimited forgiveness."
+    },
+    {
+      "range": [
+        270.9,
+        305.633
+      ],
+      "finding": "Adam and Eve visibly join above Seth, followed by Seth to Enos. The final tree correctly places Cain, Abel and Seth on sibling branches and preserves Cain’s separate chain. Dimming provides visual contrast without an extinction or damnation label. All labels remain readable."
+    },
+    {
+      "range": [
+        293.1,
+        312
+      ],
+      "finding": "The final human Christ photograph, restrained light, illuminated lineage and fading chapter title form a coherent visual resolution. No missing image, sustained lyric occlusion or visibly broken transition was found in the sampled ending."
+    }
+  ],
+  "blockers": [],
+  "limitations": [
+    "This is sampled visual review, not continuous real-time playback; between-sample defects cannot be ruled out.",
+    "No audio was heard, and no listening score, musical pacing verification or sung-word synchronization claim is made. Those remain the responsibility of the separate machine audio gate.",
+    "The photorealism score applies to the supporting generated photographic scenes; the typography and genealogy are intentionally graphic.",
+    "Review acceptance applies only to the exact MP4 SHA256 above and the ending range; root review covers 0–200 seconds."
+  ],
+  "evidence": {
+    "index": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/index.json",
+    "sheets": [
+      "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/54-g4-scene-056.jpg",
+      "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/55-g4-scene-059.jpg",
+      "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/56-g4-scene-061.jpg",
+      "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/57-g4-scene-063.jpg",
+      "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/58-g4-scene-067.jpg",
+      "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/59-g4-scene-068.jpg",
+      "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/60-g4-scene-070.jpg",
+      "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/61-g4-scene-071.jpg",
+      "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/62-g4-scene-072.jpg",
+      "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/63-g4-scene-073.jpg",
+      "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/64-g4-scene-074.jpg",
+      "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/65-g4-scene-076.jpg",
+      "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/66-g4-scene-077.jpg",
+      "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/67-g4-scene-078.jpg",
+      "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/68-g4-scene-079.jpg",
+      "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/69-g4-scene-080.jpg",
+      "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/70-g4-scene-081.jpg",
+      "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/71-g4-scene-082.jpg",
+      "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/72-g4-scene-083.jpg",
+      "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/73-g4-scene-084.jpg",
+      "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/74-g4-scene-087.jpg",
+      "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/75-g4-scene-088.jpg",
+      "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/76-g4-scene-090.jpg",
+      "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/77-g4-scene-091.jpg",
+      "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/78-g4-scene-093.jpg",
+      "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/79-g4-ending-life.jpg",
+      "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/80-g4-ending-title.jpg"
+    ],
+    "targetedFrames": [
+      {
+        "timeSeconds": 221.166667,
+        "path": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/frames/frame-01328.jpg"
+      },
+      {
+        "timeSeconds": 263.0,
+        "path": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/frames/frame-01579.jpg"
+      },
+      {
+        "timeSeconds": 263.5,
+        "path": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/frames/frame-01582.jpg"
+      },
+      {
+        "timeSeconds": 264.166667,
+        "path": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/frames/frame-01586.jpg"
+      },
+      {
+        "timeSeconds": 264.666667,
+        "path": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/frames/frame-01589.jpg"
+      },
+      {
+        "timeSeconds": 267.833333,
+        "path": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/frames/frame-01608.jpg"
+      },
+      {
+        "timeSeconds": 270.166667,
+        "path": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/frames/frame-01622.jpg"
+      },
+      {
+        "timeSeconds": 279.833333,
+        "path": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/frames/frame-01680.jpg"
+      },
+      {
+        "timeSeconds": 298.666667,
+        "path": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/frames/frame-01793.jpg"
+      },
+      {
+        "timeSeconds": 305.5,
+        "path": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/visual/frames/frame-01834.jpg"
+      }
+    ]
+  }
+}

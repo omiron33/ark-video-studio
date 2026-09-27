@@ -1,0 +1,65 @@
+{
+  "source": {
+    "path": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/ocr/lyric-visibility.json",
+    "sha256": "887edc1ff4a855797a3127632af243be26da818a732b190434bff16de0ca6d57",
+    "bytes": 4251089
+  },
+  "binding": {
+    "videoSha256": "6f1d33843be71917ff109d834d536452fa6e8bba9d7b195c156cc7ea235097ca",
+    "projectHash": "1e2ad1d495bb1401546b82ba810fbf6fdffc37978bb6b802fccab5f2abf9c2aa"
+  },
+  "status": "failed",
+  "coverage": {
+    "required": 498,
+    "observed": 494,
+    "ratio": 0.9919678714859438,
+    "unresolved": [
+      "g4-l015-w03",
+      "g4-l020-w05",
+      "g4-l051-w05",
+      "g4-l067-w03"
+    ]
+  },
+  "checks": [
+    {
+      "id": "native_ocr_available",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "required_lyrics_visible",
+      "passed": false,
+      "measured": {
+        "required": 498,
+        "observed": 494,
+        "ratio": 0.9919678714859438,
+        "unresolved": [
+          "g4-l015-w03",
+          "g4-l020-w05",
+          "g4-l051-w05",
+          "g4-l067-w03"
+        ]
+      },
+      "threshold": {
+        "requiredRatio": 1
+      }
+    },
+    {
+      "id": "evidence_integrity",
+      "passed": true,
+      "checkedFrames": 1733,
+      "errors": []
+    },
+    {
+      "id": "unchanged_inputs",
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "OCR proves sampled word recognition, not perfect legibility or aesthetic quality.",
+    "OCR may miss arced, heavily stylized or occluded letters; an unresolved word is reported, never silently counted as visible.",
+    "Only top recognizer candidates are used, without lyric dictionary hints or language correction.",
+    "English recognition is configured for this Bible-song workflow.",
+    "Bounding boxes use each oriented image coordinate space."
+  ]
+}

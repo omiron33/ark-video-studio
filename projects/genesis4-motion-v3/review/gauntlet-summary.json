@@ -1,0 +1,168 @@
+{
+  "source": {
+    "path": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/gauntlet/review.json",
+    "sha256": "18c8903a50c9eadcfdd04373d13786ee69de2e2b2548fbae1e92ac57761e7f97",
+    "bytes": 2665130
+  },
+  "binding": {
+    "videoSha256": "6f1d33843be71917ff109d834d536452fa6e8bba9d7b195c156cc7ea235097ca",
+    "projectHash": "1e2ad1d495bb1401546b82ba810fbf6fdffc37978bb6b802fccab5f2abf9c2aa",
+    "rendererHash": "5c7e41a60c660b21bb7c4fbc192a3c62afd21ec853a02b86a7ba388b509aca8b",
+    "revisionHash": "0a49498b11ef55883e30879a9976f14c4b2ddce41a0328326aa5b8e43c359bff"
+  },
+  "status": "machine_audio_review_failed",
+  "quality": {
+    "technicalVerified": true,
+    "temporalActivityVerified": false,
+    "machineAudioVerified": false,
+    "machineVisualVerified": false,
+    "independentVisualReviewed": true,
+    "machineQualityVerified": false,
+    "syncBasis": "unverified",
+    "aestheticJudgment": "independent_review_passed",
+    "creativePolicyVerified": true
+  },
+  "technical": [
+    {
+      "name": "probe",
+      "passed": true,
+      "observed": "ffprobe completed",
+      "expected": null
+    },
+    {
+      "name": "videoStream",
+      "passed": true,
+      "observed": "h264",
+      "expected": null
+    },
+    {
+      "name": "audioStream",
+      "passed": true,
+      "observed": "aac",
+      "expected": null
+    },
+    {
+      "name": "frameCount",
+      "passed": true,
+      "observed": 9360,
+      "expected": 9360
+    },
+    {
+      "name": "frameRate",
+      "passed": true,
+      "observed": 30.000438207522564,
+      "expected": 30
+    },
+    {
+      "name": "duration",
+      "passed": true,
+      "observed": 311.995443,
+      "expected": 312
+    },
+    {
+      "name": "dimensions",
+      "passed": true,
+      "observed": [
+        1920,
+        1080
+      ],
+      "expected": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "name": "audioDuration",
+      "passed": true,
+      "observed": 312,
+      "expected": 312
+    },
+    {
+      "name": "safeDecode",
+      "passed": true,
+      "observed": "All video and audio packets decoded without errors",
+      "expected": null
+    },
+    {
+      "name": "renderOutputBinding",
+      "passed": true,
+      "observed": "6f1d33843be71917ff109d834d536452fa6e8bba9d7b195c156cc7ea235097ca",
+      "expected": "6f1d33843be71917ff109d834d536452fa6e8bba9d7b195c156cc7ea235097ca"
+    },
+    {
+      "name": "renderRevisionBinding",
+      "passed": true,
+      "observed": {
+        "start": "0a49498b11ef55883e30879a9976f14c4b2ddce41a0328326aa5b8e43c359bff",
+        "end": "0a49498b11ef55883e30879a9976f14c4b2ddce41a0328326aa5b8e43c359bff"
+      },
+      "expected": "0a49498b11ef55883e30879a9976f14c4b2ddce41a0328326aa5b8e43c359bff"
+    },
+    {
+      "name": "evidenceCapture",
+      "passed": true,
+      "observed": "1800 frames, 80 transition strips",
+      "expected": null
+    },
+    {
+      "name": "unchangedDuringReview",
+      "passed": true,
+      "observed": "0a49498b11ef55883e30879a9976f14c4b2ddce41a0328326aa5b8e43c359bff",
+      "expected": "0a49498b11ef55883e30879a9976f14c4b2ddce41a0328326aa5b8e43c359bff"
+    }
+  ],
+  "temporalActivity": {
+    "required": false,
+    "passed": true,
+    "present": false,
+    "errors": []
+  },
+  "creativeDirection": {
+    "passed": true
+  },
+  "visual": {
+    "status": "approved",
+    "threshold": 8,
+    "rubric": [
+      "lyricLegibility",
+      "semanticMotion",
+      "photorealism",
+      "composition",
+      "continuity"
+    ],
+    "reviews": [
+      {
+        "scope": "visual-only",
+        "reviewer": "Rook visual review, with independent ending reviewer",
+        "scores": {
+          "lyricLegibility": 8.5,
+          "semanticMotion": 8.4,
+          "photorealism": 8.5,
+          "composition": 8.5,
+          "continuity": 8.5
+        },
+        "notes": "Actual encoded overview frames cover 0\u2013203s with detailed chronological checks of new sculptural scenes, corrected camera scene043 and short phrase exits. Independent non-author reviewer inspected all 27 ending sheets from200\u2013312s and10 detailed frames; no blockers. See project review JSON files for exact scope and evidence. Sampled visual judgment only: no subjective hearing or perfect-sync claim. Root authored integration, while ending reviewer did not author the code.",
+        "binding": {
+          "videoSha256": "6f1d33843be71917ff109d834d536452fa6e8bba9d7b195c156cc7ea235097ca",
+          "projectHash": "1e2ad1d495bb1401546b82ba810fbf6fdffc37978bb6b802fccab5f2abf9c2aa",
+          "rendererHash": "5c7e41a60c660b21bb7c4fbc192a3c62afd21ec853a02b86a7ba388b509aca8b",
+          "revisionHash": "0a49498b11ef55883e30879a9976f14c4b2ddce41a0328326aa5b8e43c359bff"
+        },
+        "reviewedAt": "2026-09-27T07:43:34.375Z"
+      }
+    ],
+    "note": "An independent agent or person judges decoded visual evidence. Audio/sync can be verified by the separate local machine-measurement gate; a human listening score is not required. Machine verification does not establish artistic excellence."
+  },
+  "machineAudio": {
+    "passed": false,
+    "errors": [
+      "Machine audio lyric_phrase_match did not pass",
+      "Machine audio word_sync did not pass",
+      "Machine audio status is failed"
+    ]
+  },
+  "limitations": [
+    "This manifest does not require the optional temporal-activity gate; its absent report is not represented as a temporal pass.",
+    "Visual approval does not override failed strict machine sung-word certification."
+  ]
+}

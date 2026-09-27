@@ -1,0 +1,515 @@
+{
+  "schemaVersion": 1,
+  "kind": "measured-cue-repair-proposal",
+  "status": "proposal_only_no_project_mutation",
+  "createdAt": "2026-09-27T07:17:34.201822+00:00",
+  "targetProject": "projects/genesis4-motion-v3/project.json",
+  "baseline": {
+    "projectPath": "/Volumes/Code/ark-video-studio/projects/genesis4-motion-v2/project.json",
+    "projectFileSha256": "d1836a9cd2e96df991c36b4af70aac8ee6ff77422a0aa877e00eda9618f002d0",
+    "videoSha256": "21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777",
+    "audioSourceSha256": "c26b0dfd26850b091b408953120f2a0e07188f7415c6b03792320bf2b422cc2b",
+    "audioReportPath": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/audio-final/audio-review.json",
+    "audioReportSha256": "2aa198d980a1f01c930fc93e4e3c5865090f88735fe7f60e4d5eb70615f4e53c",
+    "reportBinding": {
+      "videoSha256": "21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777",
+      "projectHash": "6175e69248abc8b9e640ee850ad0bec66f13b0d1eaf5cf6ad50ef30d549cf4c5",
+      "audioSha256": "c26b0dfd26850b091b408953120f2a0e07188f7415c6b03792320bf2b422cc2b"
+    },
+    "originalTimingPath": "projects/genesis4-source/sources/timing.json",
+    "priorAppliedRepairsPath": "projects/genesis4-source/sources/applied-timing-repairs.json",
+    "rendererCommit": "dc1b292"
+  },
+  "summary": {
+    "canonicalWords": 498,
+    "supportedWords": 255,
+    "supportedOutOfToleranceCandidates": 9,
+    "recommendedRepairs": 2,
+    "deferredCandidates": 7,
+    "affectedSections": [
+      "g4-scene-043"
+    ],
+    "diagnosis": "Two early word cues in Cain said to the Lord, plus a systematic visual opacity ramp. No global audio offset. Unsupported large CTC errors are not safe corrections."
+  },
+  "selectionPolicy": {
+    "method": "Preserve canonical lyrics, audio and beats. Require engine paired source-CTC/ASR/AAC support, a practical onset discrepancy, fresh bounded phrase corroboration across both acoustic checkpoints, and no new overlap or section crossing. Select existing actual measured endpoints, never averages or interpolations.",
+    "boundedFreshWindow": {
+      "start": 147.5,
+      "duration": 3.05,
+      "lyrics": "Cain said to the Lord"
+    },
+    "noWholeSongRefinement": true
+  },
+  "repairs": [
+    {
+      "id": "g4-l043-w02",
+      "text": "to",
+      "sectionId": "g4-scene-043",
+      "expectedStart": 148.734125,
+      "expectedEnd": 148.814176,
+      "start": 148.875302,
+      "end": 148.995414,
+      "onsetDeltaSeconds": 0.141177,
+      "endDeltaSeconds": 0.181238,
+      "method": "official_ctc_asr",
+      "reason": "Old onset is 140-160ms earlier than both current source CTC checkpoints. The paired source/AAC plus ASR evidence passes the engine official-lyrics support rules. A new bounded complete-phrase alignment independently reproduces the later onset in both checkpoints; no lyric text or guessed interpolation is used.",
+      "provenance": {
+        "reviewPath": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/audio-final/audio-review.json",
+        "reviewSha256": "2aa198d980a1f01c930fc93e4e3c5865090f88735fe7f60e4d5eb70615f4e53c",
+        "videoSha256": "21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777",
+        "sourceAudioSha256": "c26b0dfd26850b091b408953120f2a0e07188f7415c6b03792320bf2b422cc2b",
+        "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "sourceAcousticEvidence": [
+          {
+            "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+            "role": "source",
+            "text": "to",
+            "start": 148.89532,
+            "end": 148.995414,
+            "score": 0.3333375785469973,
+            "startDelta": null,
+            "endDelta": null
+          },
+          {
+            "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+            "role": "source",
+            "text": "to",
+            "start": 148.875302,
+            "end": 148.995414,
+            "score": 0.5708219464064939,
+            "startDelta": null,
+            "endDelta": null
+          }
+        ],
+        "pairedCheckpointEvidence": [
+          {
+            "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+            "role": "source",
+            "text": "to",
+            "start": 148.89532,
+            "end": 148.995414,
+            "score": 0.3333375785469973,
+            "startDelta": 0.020018,
+            "endDelta": 0
+          }
+        ],
+        "recognitionCorroboration": [
+          {
+            "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+            "role": "source",
+            "text": "to",
+            "start": 148.713499,
+            "end": 149.033499,
+            "score": 0.9188212156295776,
+            "startDelta": 0.161803,
+            "endDelta": 0.038085
+          },
+          {
+            "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+            "role": "source",
+            "text": "to",
+            "start": 148.773499,
+            "end": 149.073499,
+            "score": 0.9625245928764343,
+            "startDelta": 0.101803,
+            "endDelta": 0.078085
+          }
+        ],
+        "encodedEvidence": {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "to",
+          "start": 148.875302,
+          "end": 148.995414,
+          "score": 0.5508015841205034,
+          "startDelta": 0,
+          "endDelta": 0
+        },
+        "freshBoundedPhraseEvidence": [
+          {
+            "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+            "artifact": "/tmp/genesis4-v3-sync-audit/bridge-base.json",
+            "artifactSha256": "fc1c84fff3be724eb5087a0c67760f16e698a84642fedbd3e43b5df81dee6137",
+            "text": "to",
+            "start": 148.884539,
+            "end": 149.004934,
+            "tokenProbability": 0.20383259243991575,
+            "startDifferenceFromProposal": 0.009237,
+            "endDifferenceFromProposal": 0.00952
+          },
+          {
+            "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+            "artifact": "/tmp/genesis4-v3-sync-audit/bridge-large.json",
+            "artifactSha256": "31e1fa46e01299e993428e2c4207f7cd71f597d74d3f262f78515f47e2719bba",
+            "text": "to",
+            "start": 148.884539,
+            "end": 148.984868,
+            "tokenProbability": 0.41626300627991364,
+            "startDifferenceFromProposal": 0.009237,
+            "endDifferenceFromProposal": -0.010546
+          }
+        ],
+        "originalTimingEvidence": "/tmp/genesis4-new-film/alignment/window-009-large.json",
+        "originalAlternateEvidence": "/tmp/genesis4-new-film/alignment/window-009-base.json"
+      },
+      "confidence": "conservatively corroborated machine correction; not whole-song certification"
+    },
+    {
+      "id": "g4-l043-w03",
+      "text": "the",
+      "sectionId": "g4-scene-043",
+      "expectedStart": 148.894227,
+      "expectedEnd": 149.014304,
+      "start": 149.055471,
+      "end": 149.155564,
+      "onsetDeltaSeconds": 0.161244,
+      "endDeltaSeconds": 0.14126,
+      "method": "official_ctc_asr",
+      "reason": "Old onset is 140-160ms earlier than both current source CTC checkpoints. The paired source/AAC plus ASR evidence passes the engine official-lyrics support rules. A new bounded complete-phrase alignment independently reproduces the later onset in both checkpoints; no lyric text or guessed interpolation is used.",
+      "provenance": {
+        "reviewPath": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/audio-final/audio-review.json",
+        "reviewSha256": "2aa198d980a1f01c930fc93e4e3c5865090f88735fe7f60e4d5eb70615f4e53c",
+        "videoSha256": "21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777",
+        "sourceAudioSha256": "c26b0dfd26850b091b408953120f2a0e07188f7415c6b03792320bf2b422cc2b",
+        "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "sourceAcousticEvidence": [
+          {
+            "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+            "role": "source",
+            "text": "the",
+            "start": 149.075489,
+            "end": 149.175583,
+            "score": 0.2032091754552947,
+            "startDelta": null,
+            "endDelta": null
+          },
+          {
+            "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+            "role": "source",
+            "text": "the",
+            "start": 149.055471,
+            "end": 149.155564,
+            "score": 0.5614306890131953,
+            "startDelta": null,
+            "endDelta": null
+          }
+        ],
+        "pairedCheckpointEvidence": [
+          {
+            "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+            "role": "source",
+            "text": "the",
+            "start": 149.075489,
+            "end": 149.175583,
+            "score": 0.2032091754552947,
+            "startDelta": 0.020018,
+            "endDelta": 0.020019
+          }
+        ],
+        "recognitionCorroboration": [
+          {
+            "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+            "role": "source",
+            "text": "the",
+            "start": 148.933499,
+            "end": 149.113499,
+            "score": 0.9761222004890442,
+            "startDelta": 0.121972,
+            "endDelta": 0.042065
+          },
+          {
+            "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+            "role": "source",
+            "text": "the",
+            "start": 149.033499,
+            "end": 149.293499,
+            "score": 0.9829811453819275,
+            "startDelta": 0.021972,
+            "endDelta": 0.137935
+          },
+          {
+            "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+            "role": "source",
+            "text": "the",
+            "start": 149.073499,
+            "end": 149.393499,
+            "score": 0.9864405989646912,
+            "startDelta": 0.018028,
+            "endDelta": 0.237935
+          }
+        ],
+        "encodedEvidence": {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "the",
+          "start": 149.055471,
+          "end": 149.155564,
+          "score": 0.6086197099054189,
+          "startDelta": 0,
+          "endDelta": 0
+        },
+        "freshBoundedPhraseEvidence": [
+          {
+            "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+            "artifact": "/tmp/genesis4-v3-sync-audit/bridge-base.json",
+            "artifactSha256": "fc1c84fff3be724eb5087a0c67760f16e698a84642fedbd3e43b5df81dee6137",
+            "text": "the",
+            "start": 149.085197,
+            "end": 149.205592,
+            "tokenProbability": 0.13307180743856978,
+            "startDifferenceFromProposal": 0.029726,
+            "endDifferenceFromProposal": 0.050028
+          },
+          {
+            "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+            "artifact": "/tmp/genesis4-v3-sync-audit/bridge-large.json",
+            "artifactSha256": "31e1fa46e01299e993428e2c4207f7cd71f597d74d3f262f78515f47e2719bba",
+            "text": "the",
+            "start": 149.065132,
+            "end": 149.165461,
+            "tokenProbability": 0.30941784626100605,
+            "startDifferenceFromProposal": 0.009661,
+            "endDifferenceFromProposal": 0.009897
+          }
+        ],
+        "originalTimingEvidence": "/tmp/genesis4-new-film/alignment/window-009-large.json",
+        "originalAlternateEvidence": "/tmp/genesis4-new-film/alignment/window-009-base.json"
+      },
+      "confidence": "conservatively corroborated machine correction; not whole-song certification"
+    }
+  ],
+  "deferredCandidates": [
+    {
+      "id": "g4-l026-w02",
+      "text": "the",
+      "currentStart": 97.420478,
+      "currentEnd": 97.520538,
+      "candidateStart": 97.478625,
+      "candidateEnd": 97.538686,
+      "supportedRoute": "official_dual_ctc",
+      "reason": "58ms candidate, but onset shifts about 20ms between review windows and the original large checkpoint/medium ASR agree near the current cue. Below the practical correction priority; preserve rather than chase frame-scale estimator differences."
+    },
+    {
+      "id": "g4-l026-w06",
+      "text": "against",
+      "currentStart": 98.641208,
+      "currentEnd": 98.981411,
+      "candidateStart": 98.699859,
+      "candidateEnd": 99.000163,
+      "supportedRoute": "official_dual_ctc",
+      "reason": "59ms candidate, but prior supported review measured only +19ms; initial base and large checkpoints agree near current cue. Preserve rather than introduce an uncertain later cue."
+    },
+    {
+      "id": "g4-l043-w01",
+      "text": "said",
+      "currentStart": 148.433934,
+      "currentEnd": 148.714112,
+      "candidateStart": 148.474926,
+      "candidateEnd": 148.795226,
+      "supportedRoute": "official_ctc_asr",
+      "reason": "41ms onset/81ms tail candidate, but fresh complete-phrase checkpoints span 60ms onset and 161ms end; large-checkpoint onset is only 9ms from current. Preserve said; repair the clearly displaced following to/the only."
+    },
+    {
+      "id": "g4-l053-w03",
+      "text": "sevenfold.",
+      "currentStart": 175.100344,
+      "currentEnd": 176.301532,
+      "candidateStart": 175.081151,
+      "candidateEnd": 176.182136,
+      "supportedRoute": "official_ctc_asr",
+      "reason": "End-only refinement reverses a previous supported repair, with 119ms window-dependent variation and weak alternate CTC posterior. Preserve sustained tail."
+    },
+    {
+      "id": "g4-l054-w01",
+      "text": "Lord",
+      "currentStart": 176.903582,
+      "currentEnd": 177.203848,
+      "candidateStart": 176.902781,
+      "candidateEnd": 177.122978,
+      "supportedRoute": "official_ctc_asr",
+      "reason": "End-only 81ms refinement; onset differs by less than 1ms, and it does not address the reported visible onset slips. Do not shorten the reading interval merely to satisfy a borderline end threshold."
+    },
+    {
+      "id": "g4-l054-w02",
+      "text": "set",
+      "currentStart": 177.223865,
+      "currentEnd": 177.343972,
+      "candidateStart": 177.223068,
+      "candidateEnd": 177.503319,
+      "supportedRoute": "official_ctc_asr",
+      "reason": "End-only 159ms extension has weak alternate CTC score (0.071) and only one qualifying ASR checkpoint. Defer rather than call it high confidence."
+    },
+    {
+      "id": "g4-l055-w03",
+      "text": "found",
+      "currentStart": 180.827057,
+      "currentEnd": 181.407571,
+      "candidateStart": 180.886346,
+      "candidateEnd": 181.386794,
+      "supportedRoute": "official_ctc_asr",
+      "reason": "59ms onset candidate conflicts with the earlier supported window and original stronger large-checkpoint measurement, both at the current onset. Preserve."
+    }
+  ],
+  "displayLatency": {
+    "baselineCode": [
+      {
+        "path": "engine/visual.mjs",
+        "lines": "30-34",
+        "finding": "alpha(w,t,d=.11) applies cubic opacity after onset; onset frame is transparent. This is visual latency, not an audio cue error."
+      },
+      {
+        "path": "engine/camera-choreography.mjs",
+        "lines": "137-139",
+        "finding": "cameraAtTime finishes each station move at next group onset + .055 seconds."
+      }
+    ],
+    "measuredFromActualCueTimesAt30fps": {
+      "0.5": {
+        "minimumSeconds": 0.022719999999992524,
+        "medianSeconds": 0.039033166666662567,
+        "maximumSeconds": 0.05597633333334784
+      },
+      "0.9": {
+        "minimumSeconds": 0.05895966666668073,
+        "medianSeconds": 0.07619283333333726,
+        "maximumSeconds": 0.0922606666666752
+      },
+      "1.0": {
+        "minimumSeconds": 0.11011899999999741,
+        "medianSeconds": 0.1261245000000102,
+        "maximumSeconds": 0.1432446666666749
+      }
+    },
+    "wordsShorterThanOpacityRamp": 112,
+    "recommendation": "Use the parent-owned opt-in immediate lyric onset for v3 and camera arrival settled by the cue; retain movement after onset as supporting motion. Do not shift canonical timing earlier to compensate for rendering latency."
+  },
+  "audioIntegrity": {
+    "decodedCorrelation": 0.999583,
+    "measuredLagSeconds": 0,
+    "sourceAndEncodedDurationSeconds": 312,
+    "strictOriginalReportStatus": "failed"
+  },
+  "additionalMeasurements": [
+    {
+      "path": "/tmp/genesis4-v3-sync-audit/bridge-base.json",
+      "sha256": "fc1c84fff3be724eb5087a0c67760f16e698a84642fedbd3e43b5df81dee6137",
+      "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+      "source": {
+        "audio": "source-c26b0dfd26850b09.mp3",
+        "offset": 147.5,
+        "duration": 3.05,
+        "audioDuration": 312.0,
+        "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "backend": "torchaudio-ctc",
+        "language": "en"
+      },
+      "status": "machine_estimate",
+      "method": "local-torchaudio-ctc-force-align; machine estimates",
+      "literalLyrics": "Cain said to the Lord",
+      "words": [
+        {
+          "text": "Cain",
+          "start": 147.800987,
+          "end": 148.302632,
+          "tokenProbability": 0.140492101535883
+        },
+        {
+          "text": "said",
+          "start": 148.503289,
+          "end": 148.683882,
+          "tokenProbability": 0.20787156619598937
+        },
+        {
+          "text": "to",
+          "start": 148.884539,
+          "end": 149.004934,
+          "tokenProbability": 0.20383259243991575
+        },
+        {
+          "text": "the",
+          "start": 149.085197,
+          "end": 149.205592,
+          "tokenProbability": 0.13307180743856978
+        },
+        {
+          "text": "Lord",
+          "start": 149.386184,
+          "end": 149.7875,
+          "tokenProbability": 0.7795265178053712
+        }
+      ]
+    },
+    {
+      "path": "/tmp/genesis4-v3-sync-audit/bridge-large.json",
+      "sha256": "31e1fa46e01299e993428e2c4207f7cd71f597d74d3f262f78515f47e2719bba",
+      "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+      "source": {
+        "audio": "source-c26b0dfd26850b09.mp3",
+        "offset": 147.5,
+        "duration": 3.05,
+        "audioDuration": 312.0,
+        "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "backend": "torchaudio-ctc",
+        "language": "en"
+      },
+      "status": "machine_estimate",
+      "method": "local-torchaudio-ctc-force-align; machine estimates",
+      "literalLyrics": "Cain said to the Lord",
+      "words": [
+        {
+          "text": "Cain",
+          "start": 147.740789,
+          "end": 148.362829,
+          "tokenProbability": 0.23824612017650518
+        },
+        {
+          "text": "said",
+          "start": 148.443092,
+          "end": 148.844408,
+          "tokenProbability": 0.2468301237501909
+        },
+        {
+          "text": "to",
+          "start": 148.884539,
+          "end": 148.984868,
+          "tokenProbability": 0.41626300627991364
+        },
+        {
+          "text": "the",
+          "start": 149.065132,
+          "end": 149.165461,
+          "tokenProbability": 0.30941784626100605
+        },
+        {
+          "text": "Lord",
+          "start": 149.386184,
+          "end": 149.948026,
+          "tokenProbability": 0.5097700507206349
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "sourceAudioHashMatchesReview": true,
+    "v2CueTimesMatchBoundReport": true,
+    "literalWordsAndIdsPreserved": true,
+    "noNewOverlapAroundProposedWords": true,
+    "allProposedWordsWithinExistingSection": true,
+    "newTimesFiniteOrderedAndInDuration": true,
+    "freshDualCheckpointOnsetsWithin31msOfProposal": true,
+    "freshDualCheckpointEndsWithin51msOfProposal": true,
+    "sourceProjectNotModified": true
+  },
+  "postApplyChecks": [
+    "Record each previous interval and this proposal hash in word provenance.",
+    "Rebuild section g4-scene-043 and review actual encoded words around 147.5-150.55 seconds with opt-in onset behavior.",
+    "Re-run bound engine audio review on the new encode; preserve unresolved machine limits and do not equate two corrected cues with perfect whole-song synchronization."
+  ],
+  "limitations": [
+    "No subjective audio listening claim. All timing claims derive from local measured acoustic evidence.",
+    "Fresh narrow alignment corroborates a boundary across new windows; it is not a new model family or independent human hearing.",
+    "Both checkpoints remain speech-trained; supported scores are raw model posteriors, not calibrated probabilities.",
+    "243 existing unsupported words and other model disagreements remain unresolved. Largest unsupported deltas were explicitly not applied.",
+    "End-only changes with unstable or weak evidence are deferred."
+  ]
+}
