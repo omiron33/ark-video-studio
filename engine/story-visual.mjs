@@ -1,11 +1,24 @@
 /** The long-form film vocabulary. All motion is evaluated from absolute song time. */
-export const STORY_CATALOG={story:'Authored lyric tableaux: threshold, pairing, calendar, rain, rupture, shelter and absence.'};
+export const STORY_CATALOG={story:'Authored lyric tableaux and procedural fracture, vortex, scorch, eclipse, lineage and plucked-string line art.'};
 const clamp=(v,a=0,b=1)=>Math.max(a,Math.min(b,v)),mix=(a,b,p)=>a+(b-a)*p;
 const ease=v=>1-Math.pow(1-clamp(v),3),smooth=v=>{v=clamp(v);return v*v*(3-2*v)};
 const tau=Math.PI*2,random=n=>{const v=Math.sin(n*127.1+311.7)*43758.5453;return v-Math.floor(v)};
 const key=w=>String(w?.text||'').toLowerCase().replace(/[^a-z0-9]/g,'');
 const words=e=>e.p.words.filter(w=>e.s.wordIds.includes(w.id));
 const afterPhrase=e=>{const end=Math.max(e.s.start,...words(e).map(w=>w.end));return smooth((e.t-end-.22)/Math.max(.45,e.s.end-end-.22))};
+
+/** Short entrances end at the same authored reading position. Canonical lyric
+ * onsets are still enforced by word(); nothing here changes a cue or time. */
+export function applyStoryKinetics(direction,word,index,t,pose){
+ const config=direction?.kinetic,mode=typeof config==='string'?config:config?.mode;
+ if(!['strike','split','cascade'].includes(mode)||t<word.start)return {...pose};
+ const seconds=clamp(config?.seconds??.18,.08,.2),amount=clamp(config?.amount??1,.35,1.5),p=1-ease((t-word.start)/seconds),side=index%2?1:-1;
+ const result={...pose};
+ if(mode==='strike'){result.x+=side*42*p*amount;result.y-=15*p*amount;result.scale*=1+.085*p*amount;result.rotate+=side*.022*p*amount;}
+ if(mode==='split'){const outward=pose.x<960?-1:1;result.x+=outward*70*p*amount;result.y+=side*16*p*amount;result.rotate+=outward*.036*p*amount;}
+ if(mode==='cascade'){result.y+=58*p*amount;result.x-=side*16*p*amount;result.rotate-=side*.026*p*amount;result.scale*=1-.035*p*amount;}
+ return result;
+}
 
 /** Lyric-triggered relationships, independent of where a word sits in the layout.
  * Agents may replace an action without altering text, audio or adjacent scenes. */
@@ -40,6 +53,103 @@ export function installStoryStyles(register,h){
  }
  function weather(c,e,strength=1){
   c.save();for(let i=0;i<125*strength;i++){const x=random(i+e.seed)*2040-60,y=(random(i+811)*1260+e.t*(190+random(i+90)*220))%1260-90;stroke(c,[[x,y],[x-11,y+38+random(i+70)*30]],`rgba(183,216,214,${.045+random(i+22)*.10})`,.8)}c.restore();
+ }
+ /** Each family has a continuously evolving silhouette plus cue-driven local
+  * accents. All state derives from absolute song time, so section caches and
+  * out-of-order frame rendering produce exactly the same picture. */
+ function energyLines(c,e,mode,fg){
+  const elapsed=Math.max(0,e.t-e.s.start),duration=Math.max(.01,e.s.end-e.s.start),progress=clamp(elapsed/duration);
+  const hits=words(e).filter(w=>e.t>=w.start&&e.t-w.start<.32),hit=Math.max(0,...hits.map(w=>Math.pow(1-(e.t-w.start)/.32,2)));
+  if(mode==='fracture'){
+   // Broken lithographic planes open out from a jagged fault. The center stays
+   // comparatively quiet while the external silhouettes carry the violence.
+   for(let side of [-1,1])for(let j=0;j<7;j++){
+    const seed=e.seed+j*23+(side+1)*71,y=-100+j*193,angle=side*(.025+progress*.10),split=40+ease(elapsed/.42)*80+progress*155+hit*24;
+    c.save();c.translate(960+side*split,y);c.rotate(angle);
+    const ridge=side*(45+random(seed)*125),edge=side*(400+random(seed+1)*150),outer=side*1100;
+    const points=[[ridge,-105],[edge,-65],[outer,-150],[outer,210],[edge+side*110,135],[ridge+side*34,35],[ridge,-105]];
+    stroke(c,points,j%3===0?e.accent:fg,j%3===0?2.8:1.3);
+    for(let k=0;k<6;k++){
+     const q=k/6,from=[mix(ridge,edge,q),mix(-105,-65,q)],to=[mix(ridge+side*34,outer,.3+q*.7),mix(35,160,q)];
+     c.globalAlpha*=.82;stroke(c,[from,to],fg,.65);
+    }
+    c.restore();
+   }
+   // A drawn, irregular fault advances rather than flickering frame-wide.
+   c.save();c.globalAlpha*=.72;const n=Math.floor(26*ease(elapsed/.65));
+   for(let side of [-1,1]){const points=[];for(let k=0;k<=n;k++){const y=k*45-30,x=960+side*(92+progress*145)+side*(random(k+e.seed)*48);points.push([x,y]);}if(points.length>1)stroke(c,points,e.accent,1.5+hit*1.8);}
+   c.restore();
+  }else if(mode==='vortex'){
+   // A twisted architectural tunnel accelerates into a displaced vanishing
+   // point, then opens again. Thin perspective ribs are kept behind the type.
+   const turn=elapsed*.18,centerX=960+Math.sin(elapsed*.34)*180,centerY=520+Math.cos(elapsed*.4)*48,drive=elapsed*.39+progress*progress*.8;
+   for(let j=0;j<24;j++){
+    const z=(j/24+drive)%1,r=55+z*z*1420,tilt=turn+(1-z)*1.05,points=[];
+    for(let k=0;k<=8;k++){const a=k*tau/8+tilt;points.push([centerX+Math.cos(a)*r,centerY+Math.sin(a)*r*.64]);}
+    c.save();c.globalAlpha*=Math.sin(z*Math.PI)*(.28+.72*z);stroke(c,points,j%5===0?e.accent:fg,j%5===0?2.1+hit:1);c.restore();
+   }
+   for(let k=0;k<8;k++){
+    const points=[];for(let j=0;j<=22;j++){const z=j/22,r=55+z*z*1600,a=k*tau/8+turn+(1-z)*1.05;points.push([centerX+Math.cos(a)*r,centerY+Math.sin(a)*r*.64]);}
+    c.save();c.globalAlpha*=.55;stroke(c,points,e.accent,k%2?1:1.8);c.restore();
+   }
+  }else if(mode==='scorch'){
+   // Etched tongues of fire grow from the margins and peel upward; no wash or
+   // bright flash ever covers the lyric plane.
+   for(let i=0;i<42;i++){
+    const seed=i*19+e.seed,x=20+i*46,side=Math.abs(x-960)/960,period=1.1+random(seed)*1.1,life=(elapsed/period+random(seed+3))%1;
+    const length=170+side*350+random(seed+4)*220,base=1140-life*200,sway=Math.sin(elapsed*1.6+seed)*30,points=[];
+    for(let j=0;j<=30;j++){
+     const q=j/30,spread=Math.sin(q*Math.PI),xx=x+sway*q+Math.sin(q*6.3+elapsed*2+seed)*spread*(16+q*40),yy=base-q*length*(.45+.55*Math.sin(life*Math.PI));points.push([xx,yy]);
+    }
+    c.save();c.globalAlpha*=Math.sin(life*Math.PI)*(.35+.65*side);stroke(c,points,i%4===0?e.accent:fg,i%4===0?2.2+hit*.8:.9);
+    const mirror=points.map(([xx,yy],j)=>[xx+(1-j/30)*10,yy+9]);stroke(c,mirror,e.accent,.6);c.restore();
+   }
+   for(let i=0;i<30;i++){
+    const seed=i*13+e.seed,life=(elapsed*(.14+random(seed)*.12)+random(seed+80))%1,x=random(seed+2)*1920+Math.sin(elapsed+i)*18,y=1110-life*1080;
+    c.save();c.globalAlpha*=Math.sin(life*Math.PI)*.8;stroke(c,[[x,y],[x+Math.sin(i)*7,y-8-random(seed+4)*16]],e.accent,1.2);c.restore();
+   }
+  }else if(mode==='eclipse'){
+   // A moving occulting disk removes arcs from the corona. Its knife-edge
+   // shadow sweeps across the geometry while words remain in their own layer.
+   const cx=960,cy=520,r=355+Math.sin(elapsed*.65)*18,occult=mix(-670,670,smooth(progress)),orbit=elapsed*.15;
+   for(let i=0;i<19;i++){
+    const radius=r+i*10;c.save();c.globalAlpha*=.35+.65*(1-i/19);c.beginPath();c.arc(cx,cy,radius,orbit+i*.045,orbit+i*.045+Math.PI*(1.3+random(i+e.seed)*.6));c.strokeStyle=i%4?fg:e.accent;c.lineWidth=i%4?.75:2;c.stroke();c.restore();
+   }
+   for(let i=0;i<76;i++){
+    const a=i*tau/76+orbit*.36,outer=r+60+random(i+e.seed)*150+hit*35;
+    c.save();c.globalAlpha*=.25+.7*random(i+84);stroke(c,[[cx+Math.cos(a)*(r+48),cy+Math.sin(a)*(r+48)],[cx+Math.cos(a)*outer,cy+Math.sin(a)*outer]],i%6?fg:e.accent,i%6?.7:1.6);c.restore();
+   }
+   c.save();c.globalAlpha=1;c.fillStyle=e.ink;c.beginPath();c.arc(cx+occult,cy-30,r*.98,0,tau);c.fill();c.globalAlpha=.5;circle(c,cx+occult,cy-30,r*.98,e.accent,1.1);c.restore();
+   c.save();c.globalAlpha*=.5;const sweep=170+progress*640;stroke(c,[[0,sweep+190],[1920,sweep-190]],e.accent,1.6+hit);stroke(c,[[0,sweep+198],[1920,sweep-182]],fg,.55);c.restore();
+  }else if(mode==='lineage'){
+   // A sparse genealogy grows across generations. Anonymous nodes preserve
+   // the actual sung names as the only text, while new branches trace outward.
+   const generations=4;
+   for(let g=0;g<generations;g++){
+    const x=230+g*475,arrival=ease((elapsed-g*duration*.15)/.48),offset=g%2?45:-45;
+    for(let branch=0;branch<2;branch++){
+     const y=branch?820-offset:210+offset,parentY=branch?820-(g?-(offset):0):210+(g?-(offset):0);
+     if(g){const px=x-475,points=[];for(let j=0;j<=36;j++){const q=j/36*arrival,xx=mix(px,x,q),yy=mix(parentY,y,smooth(q))+Math.sin(q*Math.PI)*Math.sin(g+branch)*36;points.push([xx,yy]);}stroke(c,points,g===generations-1?e.accent:fg,1.8);}
+     c.save();c.globalAlpha*=arrival;circle(c,x,y,8+hit*(g===Math.min(generations-1,Math.floor(progress*generations))?4:0),e.accent,2.3);circle(c,x,y,18,fg,.65);
+     if(g&&g<3){const p=ease((elapsed-g*duration*.15-.2)/.7),side=branch?1:-1;stroke(c,[[x,y],[x+70*p,y+side*70*p],[x+150*p,y+side*92*p]],fg,.8);circle(c,x+150*p,y+side*92*p,3*arrival,e.accent,1);}
+     c.restore();
+    }
+   }
+  }else if(mode==='strings'){
+   // The sound is implied through plucked geometry, never synthetic beat data.
+   // Each visible oscillation is excited only by an existing lyric onset.
+   const ws=words(e),reveal=ease(elapsed/.6);
+   for(let i=0;i<23;i++){
+    const x=150+i*74,top=170+Math.sin(i/22*Math.PI)*60,bottom=940-Math.sin(i/22*Math.PI)*30,points=[];
+    let displacement=0;for(const [wi,w]of ws.entries()){
+     const age=e.t-w.start;if(age<0||age>1.15)continue;
+     const proximity=Math.max(0,1-Math.abs(i-(wi*7+3)%23)/6);displacement+=Math.sin(age*32+i*.23)*Math.exp(-age*4.3)*proximity*38;
+    }
+    for(let j=0;j<=44;j++){const q=j/44*reveal;points.push([x+Math.sin(q*Math.PI)*displacement, mix(top,bottom,q)]);}
+    c.save();c.globalAlpha*=i%4?.48:.85;stroke(c,points,i%4?fg:e.accent,i%4?.85:1.6);circle(c,x,top,3,e.accent,1);circle(c,x,bottom,3,fg,.8);c.restore();
+   }
+   const rail=[];for(let i=0;i<=23;i++){const x=140+i*74;rail.push([x,165+Math.sin(i/23*Math.PI)*60]);}stroke(c,rail,e.accent,2.5);
+  }
  }
  function photo(c,e){
   const d=e.s.direction,img=e.assets[d.photo||e.s.assetIds?.find(id=>e.assets[id])];
@@ -80,7 +190,9 @@ export function installStoryStyles(register,h){
   if(!light){const g=c.createRadialGradient(960,570,70,960,570,1150);g.addColorStop(0,d.gritty?'#182126':'#12373d');g.addColorStop(1,e.ink);c.fillStyle=g;c.fillRect(0,0,1920,1080)}
   const elapsed=e.t-e.s.start,phase=elapsed*.23;
   c.save();c.globalAlpha=d.graphicStrength??(light?.28:.34);
-  if(['gateway','seal','shelter','overture','names'].includes(mode)){
+  if(['fracture','vortex','scorch','eclipse','lineage','strings'].includes(mode)){
+   energyLines(c,e,mode,fg);
+  }else if(['gateway','seal','shelter','overture','names'].includes(mode)){
    const reveal=ease(elapsed/1.7);ark(c,960,790,1420,fg,reveal);
    if(mode==='gateway'||mode==='seal'){const width=mode==='seal'?mix(480,16,afterPhrase(e)):mix(36,470,ease(elapsed/2));stroke(c,[[960-width/2,750],[960-width/2,180],[960+width/2,180],[960+width/2,750]],e.accent,2);for(let i=0;i<9;i++)stroke(c,[[960+(i-4)*width/9,750],[960+(i-4)*165,1080]],e.accent,.8)}
    if(mode==='shelter')for(let i=0;i<6;i++){const x=360+i*240;circle(c,x,808,12,e.accent);stroke(c,[[x,820],[x,853]],fg,1)}
@@ -192,12 +304,14 @@ export function installStoryStyles(register,h){
    if(mode==='absence'&&e.t>end+.2){opacity=1-tail;}
    if(mode==='engulf'){y+=tail*220;}
    if(mode==='seal'){x=mix(x,960+(x-960)*.45,tail);scale*=1-tail*.55;opacity=1-tail;}
+   ({x,y,rotate,opacity,scale}=applyStoryKinetics(d,o.w,i,e.t,{x,y,rotate,opacity,scale}));
    ({x,y,rotate,opacity,scale}=applyStoryActions(e.s,o.w,e.p.words,e.t,{x,y,rotate,opacity,scale}));
    const color=o.hero?e.accent:ink;
    const tracking=native&&mode==='rupture'&&o.hero?tail*14:0,curve=d.curves?.[o.w.id]?.amplitude||0;
    const frag=d.fragments?.[o.w.id],fragTrigger=frag?e.p.words.find(w=>w.id===frag.triggerId):null;
    const fragment=fragTrigger?clamp((e.t-Math.max(o.w.end+.18,fragTrigger.end+(frag.delay??.2)))/(frag.duration||.8)):0;
-   h.word(c,o.w,e.t,x,y,o.size,{family:o.family,color,rotate,opacity,scale,tracking,curve,fragment,motion:['rain','pairs','family','gateway'].includes(mode)?'none':'lift'});
+   const kinetic=typeof d.kinetic==='string'?d.kinetic:d.kinetic?.mode;
+   h.word(c,o.w,e.t,x,y,o.size,{family:o.family,color,rotate,opacity,scale,tracking,curve,fragment,motion:['strike','split','cascade'].includes(kinetic)||['rain','pairs','family','gateway'].includes(mode)?'none':'lift'});
   }
   c.restore();
   if(mode==='calendar'||mode==='count'){
