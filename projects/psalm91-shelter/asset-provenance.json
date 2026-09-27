@@ -133,5 +133,23 @@
     "visuallyInspected": true,
     "asset": "assets/arrow-dissolution.png",
     "sha256": "629488598f1a1731354c60785e2d8065837164d4ce84fa885be6a6d7b5986a8f"
+  },
+  {
+    "id": "storm-refuge-end",
+    "prompt": "Use case: photorealistic-natural. One single 16:9 widescreen live-action cinematic FINAL FRAME for an artsy Psalm91 shelter-from-storm transformation. Primordial rocky wilderness under a vast violent charcoal storm, copper light grazing real rock. Center-right, a monumental organically shaped weathered sandstone refuge has newly formed: two thick natural buttresses support an irregular protective rock canopy, a deep dark recess beneath, believable geological stone with physical weight, rough gritty strata, NOT a symmetrical keyhole or polished architecture. Dry quiet ground lies under its shelter, while powerful wind carries curtains of rain and copper mineral dust around the exposed outer side. Some final loose grains still stream up around the refuge's outer edges as if raw dust has just gathered into this strong solid shelter. A narrow ivory natural light opening beyond the storm at far right provides uplifting contrast. Cinematic wide view, ground and canopy fully in frame, magnificent simple sculptural mass against atmospheric sky. Entire composition rich photographic realism, large-format cinema still, real stone grain and dust suspended in natural light, deep shadows and controlled burnt-copper/ivory highlights, no saturated orange or neon. No people, no human silhouettes, no animals, no magic shields or energy beams, no runes, no text, no logos. No illustration, painting, cartoon, game-art render or fantasy castle. A tactile refuge amid chaos, all created from earth and photographed as real.",
+    "original": "/Users/shanefisher/.codex/generated_images/01a0e02c-244c-7eb3-889c-9ed4fef66443/exec-4f304a69-c369-481b-9374-4fc819e334d5.png",
+    "provider": "built-in GPT Image",
+    "visuallyInspected": true,
+    "asset": "assets/storm-refuge-end.png",
+    "sha256": "0d4e52c4d9fdd7b52d87b47181fb87a0874bd6accedcc6d6c8a6fe2b24c03676"
+  },
+  {
+    "id": "storm-refuge-start",
+    "prompt": "Edit this exact frame into the matching FIRST FRAME before the stone refuge forms. Remove ONLY the large central-right overhead rock canopy and its two supporting buttresses, replacing the entire refuge volume with empty stormy air and a low rough bed of loose mineral dust, gravel and small scattered rocks on the ground. No arch, pillars, roof, shelter shape or human exists yet. Keep the camera, framing, foreground rocks, left distant mountains, storm cloud ceiling, left rain curtains, right ivory dawn opening, color, light direction, realistic material texture and landscape positions unchanged. Continue the distant storm landscape naturally through the removed rock volume. Fine copper dust remains close to the ground at the exact location the shelter will form, not levitating into a form yet. Wide photorealistic cinema frame, no text, no symbols, no people, no magical light.",
+    "original": "/Users/shanefisher/.codex/generated_images/01a0e02c-244c-7eb3-889c-9ed4fef66443/exec-58f78a29-a9dc-4cfb-b68d-d424ee8e7901.png",
+    "provider": "built-in GPT Image",
+    "visuallyInspected": true,
+    "asset": "assets/storm-refuge-start.png",
+    "sha256": "dd8d74dadc92b9caf24e96ddf5411613a69e5e2ba2bee57e209e6d348044a472"
   }
 ]

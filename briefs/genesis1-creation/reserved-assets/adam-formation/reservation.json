@@ -1,0 +1,52 @@
+{
+  "status": "reserved_for_next_genesis1_creation_video",
+  "requestedBy": "Shane",
+  "request": "Remove the human creation dust shot from Psalm 91, replace it, and reserve this shot for the next Genesis 1 creation video.",
+  "reservedAt": "2026-09-27",
+  "productionStarted": false,
+  "shot": "Embodied Creator forms Adam from dust",
+  "durationSeconds": 9.416666666666666,
+  "appCandidateId": "vid-20260927-f9c0005a",
+  "appReviewUrl": "https://omipc.taild60b4e.ts.net/studio#videos",
+  "mediaUrl": "https://omipc.taild60b4e.ts.net/api/admin/videos/vid-20260927-f9c0005a/media",
+  "files": [
+    {
+      "file": "artsy-adam-formation-motion.mp4",
+      "sha256": "c0465fd2b0ed1723a75cfaafb6c0b312626e6ef15e7cd2872d210fdb5975c43a",
+      "copiedFrom": "projects/psalm91-shelter/assets/artsy-adam-formation-motion.mp4"
+    },
+    {
+      "file": "artsy-adam-formation-last.jpg",
+      "sha256": "9d303f2d68431c89ae84e54efbaba3ff83b8b36a2c89fbe21be8cd14b121d421",
+      "copiedFrom": "projects/psalm91-shelter/assets/artsy-adam-formation-last.jpg"
+    },
+    {
+      "file": "adam-formation-start.png",
+      "sha256": "d8fe01352836ed584efde5ff3374a86d2796134ec71ac53a453e27505aeeb858",
+      "copiedFrom": "projects/psalm91-shelter/assets/adam-formation-start.png"
+    },
+    {
+      "file": "adam-formation-end.png",
+      "sha256": "0652bb0b24a309ca15542f049b9cc8f07f1689216fb42f3b9a7633de49c55235",
+      "copiedFrom": "projects/psalm91-shelter/assets/adam-formation-end.png"
+    },
+    {
+      "file": "artsy-adam-formation-prompt.txt",
+      "sha256": "6ab8067b262274a8d1d51b21fa9e7eec06c035b93b83b15a16c211fe60c0de7e",
+      "copiedFrom": "projects/psalm91-shelter/provenance/local-video/artsy-adam-formation-prompt.txt"
+    },
+    {
+      "file": "artsy-adam-formation-provenance.json",
+      "sha256": "21af553e5e06b671b94c2b974dee658947774f424fa871b36da47c5e463f8059",
+      "copiedFrom": "projects/psalm91-shelter/provenance/local-video/artsy-adam-formation-provenance.json"
+    },
+    {
+      "file": "artsy-adam-formation-workflow.json",
+      "sha256": "4490bdc8b1bfa09676dea6d0fb7cc1a150597b283f68e9291da895ebfbab7701",
+      "copiedFrom": "projects/psalm91-shelter/provenance/local-video/artsy-adam-formation-workflow.json"
+    }
+  ],
+  "nextFilmNotes": "Reserve this approved generated shot and all generation inputs. Resolve the new song and present three GPT Image theme mockups for Shane to choose before building the next film.",
+  "photosAlbum": "Genesis 1 - Reserved Creation Shots",
+  "photosAlbumVerified": "2026-09-27; one existing 9-second Adam clip added without duplicating the library file or deleting the Psalm album reference."
+}

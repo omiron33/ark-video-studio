@@ -1,0 +1,50 @@
+{
+  "shot": "artsy-stone-refuge",
+  "provider": "local OmiPC ComfyUI",
+  "model": "MiniMax H3 FL2VA int8 convrot",
+  "checkpoint": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+  "turboLora": "minimax_h3_turbo_v4_step600_ema_pruned_comfyui.safetensors",
+  "steps": 4,
+  "sampler": "MiniMaxH3TurboSampler",
+  "seed": 910091237,
+  "conditioning": "first_frame+last_frame",
+  "input": "projects/psalm91-shelter/assets/storm-refuge-end.png",
+  "inputSha256": "0d4e52c4d9fdd7b52d87b47181fb87a0874bd6accedcc6d6c8a6fe2b24c03676",
+  "firstFrameImage": "projects/psalm91-shelter/assets/storm-refuge-start.png",
+  "firstFrameImageSha256": "dd8d74dadc92b9caf24e96ddf5411613a69e5e2ba2bee57e209e6d348044a472",
+  "initProvider": "GPT Image supplied by root",
+  "successfulPromptId": "98fc410f-a09c-4067-acc0-be910c7b673d",
+  "renderRuntimeSeconds": 222.728,
+  "native": {
+    "width": 960,
+    "height": 544,
+    "fps": 24,
+    "frames": 226
+  },
+  "workflow": "/Volumes/Code/ark-video-studio/output/psalm91-production/local-video/artsy-stone-refuge-workflow.json",
+  "cost": "local GPU only; no paid API",
+  "output": "/Volumes/Code/ark-video-studio/projects/psalm91-shelter/assets/artsy-stone-refuge-motion.mp4",
+  "sha256": "6ed4edf6cc228930fdfb936615986d536b16b4e2a4b2b6582d818f6782e64fbf",
+  "duration": 9.416667,
+  "width": 960,
+  "height": 540,
+  "audio": false,
+  "processing": "Center crop4px height; H264 CRF17. No upscale, retiming, interpolation or reversal.",
+  "review": {
+    "decode": "pass",
+    "visualStatus": "accepted",
+    "method": "57 decodedframes at6fps spanning the native9.4167s output",
+    "sheets": [
+      "/Volumes/Code/ark-video-studio/output/psalm91-production/local-video/artsy-stone-refuge-review-00.jpg",
+      "/Volumes/Code/ark-video-studio/output/psalm91-production/local-video/artsy-stone-refuge-review-01.jpg"
+    ],
+    "observations": "Actual exposed ground becomes two low granular mounds, then broad rock supports and an overhanging canopy build progressively. The dark dry interior becomes legible while storm curtains remain outside. Horizon and peripheral ground stay stable. No person, animal, face, symbols, sudden cut or magical beam appears in the sampled sequence. Large rock forms change their silhouette continuously rather than dissolving from one complete still into another.",
+    "limitation": "The growth is an intentional fantastical geological formation. Some granular detail is smoothed into broad rock surfaces during coalescence; it is not individual masonry placement or documentary geology. Sampled6fps inspection does not certify every encoded frame.",
+    "verdict": "Accepted for the single9.4167s Psalm91 instrumental refuge replacement.",
+    "reviewedAt": "2026-09-27T10:13:23.252751+00:00"
+  },
+  "inspiration": "/Volumes/Code/ark-video-studio/output/psalm91-production/local-video/refuge-reference-evidence.json",
+  "finalFramePoster": "/Volumes/Code/ark-video-studio/projects/psalm91-shelter/assets/artsy-stone-refuge-last.jpg",
+  "finalFramePosterSha256": "025dfdc55bf220e35ae6c515351d104ffe72362ecfeb5357a207ba24a9e2944d",
+  "photosPreviewCopy": "/Users/shanefisher/Movies/Psalm91/Psalm 91 - Refuge in the Storm.mp4"
+}

@@ -71,14 +71,14 @@
       "reveal": "full",
       "alt": "Ivory feathers and copper dust gather into a protective wing"
     },
-    "p91-adam-formation": {
-      "src": "assets/artsy-adam-formation-motion.mp4",
+    "p91-storm-refuge": {
+      "src": "assets/artsy-stone-refuge-motion.mp4",
       "type": "video",
       "start": 237.25,
       "duration": 9.416666666666666,
-      "poster": "assets/artsy-adam-formation-last.jpg",
+      "poster": "assets/artsy-stone-refuge-last.jpg",
       "reveal": "full",
-      "alt": "The embodied Creator forms adult Adam from loose earth and dust"
+      "alt": "Heavy stone gathers into a protective refuge as the storm passes outside"
     }
   }
 }

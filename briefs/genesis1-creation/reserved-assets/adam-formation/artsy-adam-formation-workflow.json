@@ -1,0 +1,215 @@
+{
+  "1": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "2": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "_meta": {
+      "title": "Load Video VAE"
+    }
+  },
+  "5": {
+    "class_type": "MiniMaxH3SigmaShift",
+    "inputs": {
+      "model": [
+        "17",
+        0
+      ],
+      "shift_video": 12,
+      "shift_audio": 3
+    },
+    "_meta": {
+      "title": "Sigma Shift"
+    }
+  },
+  "6": {
+    "class_type": "MiniMaxH3ImageToVideo",
+    "inputs": {
+      "clip": [
+        "1",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "prompt": "One uninterrupted nine-second photoreal cinematic shot of the creation of Adam from the dust of the earth. The first reference is the exact starting scene and the final reference is the exact completed scene. Keep the SAME human divine figure, face, clothing, location and natural lighting throughout. He is a tangible adult man with a compassionate and solemn presence, standing solidly on real ground. He is never an ethereal cloud, never an illustration, never a magician. His hands remain relaxed and natural. No beams or energy come from his fingers.\nAt the beginning there is only low loose earth where Adam will be, not an existing hidden man. During seconds zero to two, fine copper-lit dust lifts in slow ribbons from that exact patch of earth. During seconds two to six the thousands of individual grains converge into ONE coherent kneeling adult human silhouette, beginning as a granular outline and becoming denser. Facial features, dark hair, shoulders and folded clothed body resolve progressively from grains into tangible human form. The transition is visibly dust becoming a person, not merely wind around an existing person. No exposure of organs or interior anatomy. Adam remains modestly covered by the pose, dust and the same plain rough linen wrapping of the final image throughout the moment he becomes recognizable. He is clearly an adult, reverent and nonsexual.\nDuring seconds six to eight Adam's face and linen finish resolving, the dust falls away, and he draws a small first breath and gently lifts his head. The standing divine figure inclines his face toward Adam with quiet compassion. Finish by holding the supplied final composition, a newly living adult kneeling before his Creator, particles settling gently around him. Maintain a physically believable real-world set with copper sunlight, charcoal shadows, ivory fabric and sharply textured mineral grains. A fixed camera with at most an almost imperceptible push forward. No cuts, no montage, no storm explosion, no neon, no rays from hands, no glowing runes, no glowing eyes, no duplicates, no extra limbs, no swirling human bodies, no body horror, no text or glyphs. Audio is not needed.\n",
+      "width": 960,
+      "height": 544,
+      "length": 226,
+      "last_frame": [
+        "16",
+        0
+      ],
+      "first_frame": [
+        "18",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "H3 Conditioning"
+    }
+  },
+  "7": {
+    "class_type": "BasicGuider",
+    "inputs": {
+      "model": [
+        "5",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "8": {
+    "class_type": "RandomNoise",
+    "inputs": {
+      "noise_seed": 2026092721
+    },
+    "_meta": {
+      "title": "Noise"
+    }
+  },
+  "9": {
+    "class_type": "BasicScheduler",
+    "inputs": {
+      "model": [
+        "5",
+        0
+      ],
+      "scheduler": "simple",
+      "steps": 4,
+      "denoise": 1
+    },
+    "_meta": {
+      "title": "Scheduler"
+    }
+  },
+  "10": {
+    "class_type": "MiniMaxH3TurboSampler",
+    "inputs": {}
+  },
+  "11": {
+    "class_type": "SamplerCustomAdvanced",
+    "inputs": {
+      "noise": [
+        "8",
+        0
+      ],
+      "guider": [
+        "7",
+        0
+      ],
+      "sampler": [
+        "10",
+        0
+      ],
+      "sigmas": [
+        "9",
+        0
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Sampler Custom Advanced"
+    }
+  },
+  "12": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "11",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "14": {
+    "class_type": "CreateVideo",
+    "inputs": {
+      "images": [
+        "12",
+        0
+      ],
+      "fps": 24,
+      "bit_depth": 8
+    },
+    "_meta": {
+      "title": "Create Video"
+    }
+  },
+  "15": {
+    "class_type": "SaveVideo",
+    "inputs": {
+      "video": [
+        "14",
+        0
+      ],
+      "filename_prefix": "psalm91-production/artsy-adam-formation",
+      "format": "auto",
+      "codec": "auto"
+    },
+    "_meta": {
+      "title": "Save Video"
+    }
+  },
+  "16": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "psalm91-artsy-adam-formation.png"
+    }
+  },
+  "17": {
+    "class_type": "MiniMaxH3TurboLoRA",
+    "inputs": {
+      "model": [
+        "2",
+        0
+      ],
+      "lora_name": "minimax_h3_turbo_v4_step600_ema_pruned_comfyui.safetensors",
+      "strength": 1.0,
+      "low_vram": true
+    }
+  },
+  "18": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "psalm91-artsy-adam-formation-first.png"
+    }
+  }
+}

@@ -621,9 +621,9 @@ window.buildPsalm91Narrative=function({tl,stage,data}){
  function instrumentalScore(scene,start,end){
   if(!scene||start>=data.duration)return;end=Math.min(end,data.duration);
   const space=make('div','p91-instrumental',scene.camera,{position:'absolute',inset:'0',opacity:'0',zIndex:'6',overflow:'hidden',background:'#090909'});
-  const adamArt=data.assets['p91-adam-formation'];
-  const adamMovie=adamArt&&document.getElementById('p91-adam-formation-art');
-  space.dataset.sceneId='p91-instrumental-passage';space.dataset.choreography=adamMovie?'corridor-to-wing-to-creation':'corridor-to-dust-wing-to-refuge';
+  const refugeArt=data.assets['p91-storm-refuge'];
+  const refugeMovie=refugeArt&&document.getElementById('p91-storm-refuge-art');
+  space.dataset.sceneId='p91-instrumental-passage';space.dataset.choreography=refugeMovie?'corridor-to-wing-to-storm-refuge':'corridor-to-dust-wing-to-refuge';
   tl.to(scene.type,{opacity:0,duration:.75,ease:'sine.inOut'},start+.2);
   tl.to(space,{opacity:1,duration:.8,ease:'sine.inOut'},start+.5);
   const chamber=make('div','p91-chamber',space,{position:'absolute',inset:'0',perspective:'1400px',transformStyle:'preserve-3d'});
@@ -640,17 +640,17 @@ window.buildPsalm91Narrative=function({tl,stage,data}){
    if(movie){const pane=make('div','p91-artsy-wing',space,{position:'absolute',inset:'0',opacity:'0',background:'#070706',zIndex:'7'});pane.appendChild(movie);Object.assign(movie.style,{position:'absolute',inset:'0',width:'100%',height:'100%',objectFit:'cover'});
     if(art.poster){const poster=make('img','',pane,{position:'absolute',inset:'0',width:'100%',height:'100%',objectFit:'cover',zIndex:'-1'});poster.src=art.poster;}
     const a=Number(art.start??232),b=a+Number(art.duration??5.1667);tl.to(pane,{opacity:1,duration:.45,ease:'sine.inOut'},a);
-    tl.to(pane,{opacity:0,duration:adamMovie?.45:.6,ease:'sine.inOut'},adamMovie?Number(adamArt.start):b-.35);
+    tl.to(pane,{opacity:0,duration:refugeMovie?.45:.6,ease:'sine.inOut'},refugeMovie?Number(refugeArt.start):b-.35);
    }
   }
-  if(adamMovie){
-   // A wordless poetic bridge: the Creator's care precedes the sung promise of
-   // rescue. No Genesis caption is added to this Psalm, and no lyric is replaced.
-   const pane=make('div','p91-artsy-creation',space,{position:'absolute',inset:'0',opacity:'0',background:'#070706',zIndex:'8'});
-   pane.dataset.sceneId='p91-adam-formation';pane.dataset.choreography='dust-to-human-creation';
-   if(adamArt.poster){const poster=make('img','p91-creation-poster',pane,{position:'absolute',inset:'0',width:'100%',height:'100%',objectFit:'cover',zIndex:'0'});poster.src=adamArt.poster;poster.alt=adamArt.alt||'The completed creation held for the return to the lyric';}
-   pane.appendChild(adamMovie);Object.assign(adamMovie.style,{position:'absolute',inset:'0',width:'100%',height:'100%',objectFit:'cover',zIndex:'1'});
-   tl.to(pane,{opacity:1,duration:.45,ease:'sine.inOut'},Number(adamArt.start));
+  if(refugeMovie){
+   // A wordless shelter forms against the storm before the sung promise of
+   // rescue. Keep this instrumental view clear; no lyric is replaced.
+   const pane=make('div','p91-artsy-storm-refuge',space,{position:'absolute',inset:'0',opacity:'0',background:'#070706',zIndex:'8'});
+   pane.dataset.sceneId='p91-storm-refuge';pane.dataset.choreography='stone-shelter-against-storm';
+   if(refugeArt.poster){const poster=make('img','p91-storm-refuge-poster',pane,{position:'absolute',inset:'0',width:'100%',height:'100%',objectFit:'cover',zIndex:'0'});poster.src=refugeArt.poster;poster.alt=refugeArt.alt||'The completed shelter held for the return to the lyric';}
+   pane.appendChild(refugeMovie);Object.assign(refugeMovie.style,{position:'absolute',inset:'0',width:'100%',height:'100%',objectFit:'cover',zIndex:'1'});
+   tl.to(pane,{opacity:1,duration:.45,ease:'sine.inOut'},Number(refugeArt.start));
    // Last decoded frame holds through the brief camera departure. Fading this
    // whole layer early would reveal the older lion scene underneath the film.
    return;

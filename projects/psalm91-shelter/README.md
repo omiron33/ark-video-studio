@@ -37,6 +37,6 @@ node projects/psalm91-shelter/review.mjs --video /absolute/output.mp4 --capture-
 node projects/psalm91-shelter/review.mjs --video /absolute/output.mp4 --out /absolute/review-directory
 ```
 
-The local H3 supporting clips include physical guardian footage and four material transformations: a lion, a gathering wing, disintegrating arrows, and Adam formed from dust. Adam is a requested poetic creation interlude, not a claim that Psalm 91 narrates Genesis. All depicted divine presence remains embodied and photographic. Use decoded final-frame posters behind timed video elements so a completed insert never jumps back to its initial pose.
+The local H3 supporting clips include physical guardian footage and four material transformations: a lion, a gathering wing, disintegrating arrows, and a stone refuge forming against the storm. The Adam-from-dust shot is removed from this film and reserved with its source inputs and generation settings in `../../briefs/genesis1-creation/reserved-assets/adam-formation/`. All depicted divine presence remains embodied and photographic. Use decoded final-frame posters behind timed video elements so a completed insert never jumps back to its initial pose.
 
 Production and review evidence is under `output/psalm91-production/`. Finished film and review previews belong in the Photos album **Psalm 91 - Shelter** and the OmiPC app as separate review candidates. A Photos import does not establish iPhone synchronization.

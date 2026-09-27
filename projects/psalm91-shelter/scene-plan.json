@@ -1,7 +1,7 @@
 {
   "version": 1,
   "project": "psalm91-shelter",
-  "status": "implemented-awaiting-encoded-review",
+  "status": "implemented-awaiting-v3-encoded-review",
   "chosenTheme": "Shelter palette; approved mockup2 Word Journey plus3 Photo Reveal; sparse keyholes",
   "palette": {
     "copper": "#c77746",
@@ -115,6 +115,62 @@
       ],
       "userPreference": "unknown",
       "inspection": "Actual contact sheet opened in this creative pass. Camera-path concept adapted into downward and upward Psalm reading spaces, not copied genealogical rails."
+    },
+    {
+      "id": "internal-psalm91-dust-lion",
+      "contactSheet": "references/motion/images/internal-psalm91-dust-lion/sheet.jpg",
+      "source": {
+        "kind": "internal",
+        "path": "/Volumes/Code/ark-video-studio/projects/psalm91-shelter/assets/artsy-dust-lion-motion.mp4",
+        "projectPath": "/Volumes/Code/ark-video-studio/projects/psalm91-shelter/project.json",
+        "start": 0,
+        "end": 5.1667,
+        "sectionIds": [
+          "p91-l041"
+        ],
+        "videoSha256": "c19868bd50520ede0828784d2250b4504f3c772879c94c97823c0aaca19e53eb"
+      },
+      "principle": "Let a physical material acquire identity gradually, reserving a quiet region for lyric typography.",
+      "strengths": [
+        "Material visibly resolves into a recognizable animal.",
+        "Broad quiet black space supports separate readable text.",
+        "Photographic dust, light and fur stay within the approved palette."
+      ],
+      "cautions": [
+        "Do not reuse this actual lion artwork in another scene.",
+        "Use sparingly between authored word mechanics; generation is supporting footage.",
+        "Preserve a continuous decoded last frame when the insert ends."
+      ],
+      "userPreference": "liked",
+      "userPreferenceScope": "Shane explicitly liked the two standalone dust clips and requested two additional transformations. This is not approval of the final film or its sync.",
+      "inspection": "Actual six-frame contact sheet visually inspected for the storm-refuge replacement. Sampled frames establish visible composition and formation stages, not continuous motion or audio sync."
+    },
+    {
+      "id": "internal-wide-to-threshold",
+      "contactSheet": "references/motion/images/internal-wide-to-threshold/sheet.jpg",
+      "source": {
+        "kind": "internal",
+        "path": "/Users/shanefisher/Movies/Genesis 7 - music video v3.mp4",
+        "videoSha256": "ba363e5de17be904f40910aca6a71c585c7599da5bb5323851750ffb4c16660a",
+        "start": 187,
+        "end": 193,
+        "sectionIds": [
+          "s41",
+          "s42"
+        ]
+      },
+      "principle": "Use a consistent visual anchor to make a large change of scale feel narratively connected.",
+      "strengths": [
+        "The warm entrance is easy to locate within both scales.",
+        "The world-to-detail edit directs attention to a specific narrative boundary."
+      ],
+      "cautions": [
+        "Do not present this sequence as proof of a door slam: the warm seam remains visible in these frames.",
+        "Give the close composition its own designed text clearance.",
+        "Avoid a repeated zoom on one source image when a genuinely new composition is called for."
+      ],
+      "userPreference": "unknown",
+      "inspection": "Actual six-frame contact sheet visually inspected for the storm-refuge replacement. Sampled frames establish visible composition and formation stages, not continuous motion or audio sync."
     }
   ],
   "opening": {
@@ -1870,26 +1926,38 @@
       "id": "p91-instrumental-passage",
       "start": 223.67,
       "end": 247.02,
-      "family": "corridor-to-wing-to-creation",
+      "family": "corridor-to-wing-to-storm-refuge",
       "artsyVideoWindow": [
         232,
         237.1667
       ],
-      "action": "Brief camera corridor gives way to the generated dust-wing shot, then to the full-frame formation of Adam from earth. Creation is a wordless poetic bridge into the protective divine response; no Genesis claim or added lyric appears.",
-      "status": "creative-pass-implemented-awaiting-encoded-review",
+      "action": "Brief camera corridor gives way to the generated dust-wing shot, then a full-frame stone shelter forms against the storm. The wordless refuge leads into the protective divine response without replacing or adding any lyric.",
+      "status": "replacement-runtime-reviewed-awaiting-v3-encoded-review",
       "additionalVideo": {
-        "id": "p91-adam-formation",
+        "id": "p91-storm-refuge",
         "start": 237.25,
         "end": 246.66666666666666,
         "duration": 9.416666666666666,
-        "meaning": "A wordless Creator-and-care bridge into the divine promise of rescue; no Genesis caption or change to Psalm lyrics.",
-        "integration": "Implemented; standalone generation reviewed, integrated runtime checks passed, and composite boundary snapshots inspected. Final encoded review remains pending root.",
-        "src": "assets/artsy-adam-formation-motion.mp4",
-        "poster": "assets/artsy-adam-formation-last.jpg",
+        "meaning": "A material refuge remains secure against the surrounding storm, preparing the sung promise of rescue.",
+        "integration": "Replacement generation accepted; focused runtime, layout and contrast checks passed. Eight integrated transition snapshots visually inspected. Final v3 encoded review remains pending.",
+        "src": "assets/artsy-stone-refuge-motion.mp4",
+        "poster": "assets/artsy-stone-refuge-last.jpg",
         "integrationEvidence": {
-          "check": "output/psalm91-production/v3-video-integration-focused-check.json",
-          "contactSheet": "output/psalm91-production/v3-video-integration-shots/contact-sheet.jpg",
-          "encodedReview": "pending"
+          "check": "output/psalm91-production/v3-storm-refuge-integration-check.json",
+          "contactSheet": "output/psalm91-production/v3-storm-refuge-integration-shots/contact-sheet.jpg",
+          "encodedReview": "pending-v3"
+        }
+      },
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "internal-psalm91-dust-lion",
+            "internal-wide-to-threshold"
+          ],
+          "principle": "A physical material gradually resolves into a protective structure; a sheltered focal point remains clear against the surrounding threat.",
+          "adaptation": "A new stone shelter forms against a storm during the wordless 9.416667-second interval, with no repeated lion footage, ark imagery, or extra overlays. Preserve the completed last frame into the next measured lyric onset.",
+          "cautions": "Do not copy a reference sequence or add a zoom merely to fill time. A liked standalone source does not approve this film or its synchronization.",
+          "status": "replacement-runtime-reviewed-awaiting-v3-encoded-review"
         }
       }
     },

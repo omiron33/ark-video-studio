@@ -70,6 +70,10 @@
       "type": "image",
       "src": "assets/artsy-dust-wing-motion-last.png"
     },
+    "artsy-stone-refuge-last": {
+      "type": "image",
+      "src": "assets/artsy-stone-refuge-last.jpg"
+    },
     "dawn-road": {
       "type": "image",
       "src": "assets/dawn-road.png"
@@ -114,6 +118,14 @@
       "type": "image",
       "src": "assets/opening-refuge.png"
     },
+    "storm-refuge-end": {
+      "type": "image",
+      "src": "assets/storm-refuge-end.png"
+    },
+    "storm-refuge-start": {
+      "type": "image",
+      "src": "assets/storm-refuge-start.png"
+    },
     "wing-refuge-motion5s-last": {
       "type": "image",
       "src": "assets/wing-refuge-motion5s-last.png"
@@ -139,6 +151,10 @@
     "artsy-dust-wing-motion": {
       "type": "video",
       "src": "assets/artsy-dust-wing-motion.mp4"
+    },
+    "artsy-stone-refuge-motion": {
+      "type": "video",
+      "src": "assets/artsy-stone-refuge-motion.mp4"
     },
     "guardian-road-motion5s": {
       "type": "video",
