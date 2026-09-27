@@ -1,0 +1,1695 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "phrases": [
+    {
+      "id": "p91-l001",
+      "text": "Under the Highest's shelter.",
+      "start": 9.863586,
+      "end": 11.777622,
+      "wordIds": [
+        "p91-l001-w01",
+        "p91-l001-w02",
+        "p91-l001-w03",
+        "p91-l001-w04"
+      ],
+      "sectionName": "Intro",
+      "sourceLineIndex": 2,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 9.973,
+        "sourceEnd": 19.973,
+        "providerStart": 9.973,
+        "providerEnd": 19.973
+      }
+    },
+    {
+      "id": "p91-l002",
+      "text": "Whoever makes the Most High his dwelling",
+      "start": 29.202253,
+      "end": 32.123241,
+      "wordIds": [
+        "p91-l002-w01",
+        "p91-l002-w02",
+        "p91-l002-w03",
+        "p91-l002-w04",
+        "p91-l002-w05",
+        "p91-l002-w06",
+        "p91-l002-w07"
+      ],
+      "sectionName": "Verse 1",
+      "sourceLineIndex": 4,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 29.202,
+        "sourceEnd": 33.91,
+        "providerStart": 29.202,
+        "providerEnd": 33.91
+      }
+    },
+    {
+      "id": "p91-l003",
+      "text": "will rest beneath the God of heaven's care.",
+      "start": 33.84323,
+      "end": 37.170566,
+      "wordIds": [
+        "p91-l003-w01",
+        "p91-l003-w02",
+        "p91-l003-w03",
+        "p91-l003-w04",
+        "p91-l003-w05",
+        "p91-l003-w06",
+        "p91-l003-w07",
+        "p91-l003-w08"
+      ],
+      "sectionName": "Verse 1",
+      "sourceLineIndex": 5,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 33.91,
+        "sourceEnd": 38.856,
+        "providerStart": 33.91,
+        "providerEnd": 38.856
+      }
+    },
+    {
+      "id": "p91-l004",
+      "text": "I say, Lord, you are my helper;",
+      "start": 38.9243,
+      "end": 42.602,
+      "wordIds": [
+        "p91-l004-w01",
+        "p91-l004-w02",
+        "p91-l004-w03",
+        "p91-l004-w04",
+        "p91-l004-w05",
+        "p91-l004-w06",
+        "p91-l004-w07"
+      ],
+      "sectionName": "Verse 1",
+      "sourceLineIndex": 6,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 38.856,
+        "sourceEnd": 44.601,
+        "providerStart": 38.856,
+        "providerEnd": 44.601
+      }
+    },
+    {
+      "id": "p91-l005",
+      "text": "my refuge and my God, I trust in you.",
+      "start": 44.591674,
+      "end": 47.860825,
+      "wordIds": [
+        "p91-l005-w01",
+        "p91-l005-w02",
+        "p91-l005-w03",
+        "p91-l005-w04",
+        "p91-l005-w05",
+        "p91-l005-w06",
+        "p91-l005-w07",
+        "p91-l005-w08",
+        "p91-l005-w09"
+      ],
+      "sectionName": "Verse 1",
+      "sourceLineIndex": 7,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 44.601,
+        "sourceEnd": 49.947,
+        "providerStart": 44.601,
+        "providerEnd": 49.947
+      }
+    },
+    {
+      "id": "p91-l006",
+      "text": "You draw me from the hunter's hidden net",
+      "start": 49.948129,
+      "end": 53.352369,
+      "wordIds": [
+        "p91-l006-w01",
+        "p91-l006-w02",
+        "p91-l006-w03",
+        "p91-l006-w04",
+        "p91-l006-w05",
+        "p91-l006-w06",
+        "p91-l006-w07",
+        "p91-l006-w08"
+      ],
+      "sectionName": "Verse 1",
+      "sourceLineIndex": 8,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 49.947,
+        "sourceEnd": 54.096,
+        "providerStart": 49.947,
+        "providerEnd": 54.096
+      }
+    },
+    {
+      "id": "p91-l007",
+      "text": "and bring me through the trouble in my way.",
+      "start": 54.212138,
+      "end": 56.971364,
+      "wordIds": [
+        "p91-l007-w01",
+        "p91-l007-w02",
+        "p91-l007-w03",
+        "p91-l007-w04",
+        "p91-l007-w05",
+        "p91-l007-w06",
+        "p91-l007-w07",
+        "p91-l007-w08",
+        "p91-l007-w09"
+      ],
+      "sectionName": "Verse 1",
+      "sourceLineIndex": 9,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 54.096,
+        "sourceEnd": 60.718,
+        "providerStart": 54.096,
+        "providerEnd": 60.718
+      }
+    },
+    {
+      "id": "p91-l008",
+      "text": "Your shoulders cast their shadow over me;",
+      "start": 60.648461,
+      "end": 63.977,
+      "wordIds": [
+        "p91-l008-w01",
+        "p91-l008-w02",
+        "p91-l008-w03",
+        "p91-l008-w04",
+        "p91-l008-w05",
+        "p91-l008-w06",
+        "p91-l008-w07"
+      ],
+      "sectionName": "Verse 2",
+      "sourceLineIndex": 11,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 60.718,
+        "sourceEnd": 66.223,
+        "providerStart": 60.718,
+        "providerEnd": 66.223
+      }
+    },
+    {
+      "id": "p91-l009",
+      "text": "beneath your wings my fear grows still.",
+      "start": 65.647,
+      "end": 69.057,
+      "wordIds": [
+        "p91-l009-w01",
+        "p91-l009-w02",
+        "p91-l009-w03",
+        "p91-l009-w04",
+        "p91-l009-w05",
+        "p91-l009-w06",
+        "p91-l009-w07"
+      ],
+      "sectionName": "Verse 2",
+      "sourceLineIndex": 12,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 66.223,
+        "sourceEnd": 71.41,
+        "providerStart": 66.223,
+        "providerEnd": 71.41
+      }
+    },
+    {
+      "id": "p91-l010",
+      "text": "Your faithfulness surrounds me like a shield;",
+      "start": 71.340474,
+      "end": 74.93,
+      "wordIds": [
+        "p91-l010-w01",
+        "p91-l010-w02",
+        "p91-l010-w03",
+        "p91-l010-w04",
+        "p91-l010-w05",
+        "p91-l010-w06",
+        "p91-l010-w07"
+      ],
+      "sectionName": "Verse 2",
+      "sourceLineIndex": 13,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 71.41,
+        "sourceEnd": 76.755,
+        "providerStart": 71.41,
+        "providerEnd": 76.755
+      }
+    },
+    {
+      "id": "p91-l011",
+      "text": "your faithful word is guarding me.",
+      "start": 76.725618,
+      "end": 81.680316,
+      "wordIds": [
+        "p91-l011-w01",
+        "p91-l011-w02",
+        "p91-l011-w03",
+        "p91-l011-w04",
+        "p91-l011-w05",
+        "p91-l011-w06"
+      ],
+      "sectionName": "Verse 2",
+      "sourceLineIndex": 14,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 76.755,
+        "sourceEnd": 82.101,
+        "providerStart": 76.755,
+        "providerEnd": 82.101
+      }
+    },
+    {
+      "id": "p91-l012",
+      "text": "The dread that comes at night cannot command me;",
+      "start": 82.15183,
+      "end": 86.05,
+      "wordIds": [
+        "p91-l012-w01",
+        "p91-l012-w02",
+        "p91-l012-w03",
+        "p91-l012-w04",
+        "p91-l012-w05",
+        "p91-l012-w06",
+        "p91-l012-w07",
+        "p91-l012-w08",
+        "p91-l012-w09"
+      ],
+      "sectionName": "Pre-Chorus",
+      "sourceLineIndex": 16,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 82.101,
+        "sourceEnd": 87.527,
+        "providerStart": 82.101,
+        "providerEnd": 87.527
+      }
+    },
+    {
+      "id": "p91-l013",
+      "text": "the flying arrow cannot rule my day.",
+      "start": 87.597842,
+      "end": 91.13,
+      "wordIds": [
+        "p91-l013-w01",
+        "p91-l013-w02",
+        "p91-l013-w03",
+        "p91-l013-w04",
+        "p91-l013-w05",
+        "p91-l013-w06",
+        "p91-l013-w07"
+      ],
+      "sectionName": "Pre-Chorus",
+      "sourceLineIndex": 17,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 87.527,
+        "sourceEnd": 92.872,
+        "providerStart": 87.527,
+        "providerEnd": 92.872
+      }
+    },
+    {
+      "id": "p91-l014",
+      "text": "The darkness carries no power over me,",
+      "start": 92.862867,
+      "end": 96.852,
+      "wordIds": [
+        "p91-l014-w01",
+        "p91-l014-w02",
+        "p91-l014-w03",
+        "p91-l014-w04",
+        "p91-l014-w05",
+        "p91-l014-w06",
+        "p91-l014-w07"
+      ],
+      "sectionName": "Pre-Chorus",
+      "sourceLineIndex": 18,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 92.872,
+        "sourceEnd": 97.5,
+        "providerStart": 92.872,
+        "providerEnd": 97.5
+      }
+    },
+    {
+      "id": "p91-l015",
+      "text": "nor does the evil striking at high noon.",
+      "start": 97.49059,
+      "end": 103.012,
+      "wordIds": [
+        "p91-l015-w01",
+        "p91-l015-w02",
+        "p91-l015-w03",
+        "p91-l015-w04",
+        "p91-l015-w05",
+        "p91-l015-w06",
+        "p91-l015-w07",
+        "p91-l015-w08"
+      ],
+      "sectionName": "Pre-Chorus",
+      "sourceLineIndex": 19,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 97.5,
+        "sourceEnd": 103.245,
+        "providerStart": 97.5,
+        "providerEnd": 103.245
+      }
+    },
+    {
+      "id": "p91-l016",
+      "text": "Though a thousand fall beside me",
+      "start": 103.156121,
+      "end": 105.992,
+      "wordIds": [
+        "p91-l016-w01",
+        "p91-l016-w02",
+        "p91-l016-w03",
+        "p91-l016-w04",
+        "p91-l016-w05",
+        "p91-l016-w06"
+      ],
+      "sectionName": "Chorus",
+      "sourceLineIndex": 21,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 103.245,
+        "sourceEnd": 106.037,
+        "providerStart": 103.245,
+        "providerEnd": 106.037
+      }
+    },
+    {
+      "id": "p91-l017",
+      "text": "and ten thousand at my right,",
+      "start": 106.089315,
+      "end": 108.492,
+      "wordIds": [
+        "p91-l017-w01",
+        "p91-l017-w02",
+        "p91-l017-w03",
+        "p91-l017-w04",
+        "p91-l017-w05",
+        "p91-l017-w06"
+      ],
+      "sectionName": "Chorus",
+      "sourceLineIndex": 22,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 106.037,
+        "sourceEnd": 108.67,
+        "providerStart": 106.037,
+        "providerEnd": 108.67
+      }
+    },
+    {
+      "id": "p91-l018",
+      "text": "your shelter will stand around me;",
+      "start": 108.702051,
+      "end": 111.452,
+      "wordIds": [
+        "p91-l018-w01",
+        "p91-l018-w02",
+        "p91-l018-w03",
+        "p91-l018-w04",
+        "p91-l018-w05",
+        "p91-l018-w06"
+      ],
+      "sectionName": "Chorus",
+      "sourceLineIndex": 23,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 108.67,
+        "sourceEnd": 111.463,
+        "providerStart": 108.67,
+        "providerEnd": 111.463
+      }
+    },
+    {
+      "id": "p91-l019",
+      "text": "that harm will never reach me.",
+      "start": 111.452,
+      "end": 113.812,
+      "wordIds": [
+        "p91-l019-w01",
+        "p91-l019-w02",
+        "p91-l019-w03",
+        "p91-l019-w04",
+        "p91-l019-w05",
+        "p91-l019-w06"
+      ],
+      "sectionName": "Chorus",
+      "sourceLineIndex": 24,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 111.463,
+        "sourceEnd": 113.936,
+        "providerStart": 111.463,
+        "providerEnd": 113.936
+      }
+    },
+    {
+      "id": "p91-l020",
+      "text": "Though a thousand fall beside me,",
+      "start": 113.8,
+      "end": 116.54,
+      "wordIds": [
+        "p91-l020-w01",
+        "p91-l020-w02",
+        "p91-l020-w03",
+        "p91-l020-w04",
+        "p91-l020-w05",
+        "p91-l020-w06"
+      ],
+      "sectionName": "Chorus",
+      "sourceLineIndex": 25,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 113.936,
+        "sourceEnd": 123.431,
+        "providerStart": 113.936,
+        "providerEnd": 123.431
+      }
+    },
+    {
+      "id": "p91-l021-r01",
+      "text": "I will trust you through the fight.",
+      "start": 116.54,
+      "end": 120.48,
+      "wordIds": [
+        "p91-l021-r01-w01",
+        "p91-l021-r01-w02",
+        "p91-l021-r01-w03",
+        "p91-l021-r01-w04",
+        "p91-l021-r01-w05",
+        "p91-l021-r01-w06",
+        "p91-l021-r01-w07"
+      ],
+      "sectionName": "Chorus",
+      "sourceLineIndex": null,
+      "provenance": {
+        "method": "Extra sung repeat absent from provider subtitle and written lyric; independently recognized by base.en,small.en,medium.en checkpoints",
+        "evidence": "/Volumes/Code/ark-video-studio/output/psalm91-production/alignment/repeat-confirmation-retry-whisper-medium.json",
+        "preserveOriginalLyrics": true,
+        "providerStart": 116.45,
+        "providerEnd": 121.8,
+        "timingVerified": false
+      },
+      "performanceRepeatOf": "p91-l021"
+    },
+    {
+      "id": "p91-l021",
+      "text": "I will trust you through the fight.",
+      "start": 123.50252,
+      "end": 125.98,
+      "wordIds": [
+        "p91-l021-w01",
+        "p91-l021-w02",
+        "p91-l021-w03",
+        "p91-l021-w04",
+        "p91-l021-w05",
+        "p91-l021-w06",
+        "p91-l021-w07"
+      ],
+      "sectionName": "Chorus",
+      "sourceLineIndex": 26,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 123.431,
+        "sourceEnd": 131.011,
+        "providerStart": 123.431,
+        "providerEnd": 131.011
+      }
+    },
+    {
+      "id": "p91-l022",
+      "text": "I may see the wicked face their wages,",
+      "start": 131.102107,
+      "end": 134.016,
+      "wordIds": [
+        "p91-l022-w01",
+        "p91-l022-w02",
+        "p91-l022-w03",
+        "p91-l022-w04",
+        "p91-l022-w05",
+        "p91-l022-w06",
+        "p91-l022-w07",
+        "p91-l022-w08"
+      ],
+      "sectionName": "Verse 3",
+      "sourceLineIndex": 28,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 131.011,
+        "sourceEnd": 135.878,
+        "providerStart": 131.011,
+        "providerEnd": 135.878
+      }
+    },
+    {
+      "id": "p91-l023",
+      "text": "but I have called the Highest one my home.",
+      "start": 135.948808,
+      "end": 139.698,
+      "wordIds": [
+        "p91-l023-w01",
+        "p91-l023-w02",
+        "p91-l023-w03",
+        "p91-l023-w04",
+        "p91-l023-w05",
+        "p91-l023-w06",
+        "p91-l023-w07",
+        "p91-l023-w08",
+        "p91-l023-w09"
+      ],
+      "sectionName": "Verse 3",
+      "sourceLineIndex": 29,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 135.878,
+        "sourceEnd": 141.463,
+        "providerStart": 135.878,
+        "providerEnd": 141.463
+      }
+    },
+    {
+      "id": "p91-l024",
+      "text": "Lord, you are the hope I hold.",
+      "start": 141.434847,
+      "end": 143.738,
+      "wordIds": [
+        "p91-l024-w01",
+        "p91-l024-w02",
+        "p91-l024-w03",
+        "p91-l024-w04",
+        "p91-l024-w05",
+        "p91-l024-w06",
+        "p91-l024-w07"
+      ],
+      "sectionName": "Verse 3",
+      "sourceLineIndex": 30,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 141.463,
+        "sourceEnd": 143.856,
+        "providerStart": 141.463,
+        "providerEnd": 143.856
+      }
+    },
+    {
+      "id": "p91-l025",
+      "text": "No evil can claim my dwelling;",
+      "start": 143.86657,
+      "end": 145.958,
+      "wordIds": [
+        "p91-l025-w01",
+        "p91-l025-w02",
+        "p91-l025-w03",
+        "p91-l025-w04",
+        "p91-l025-w05",
+        "p91-l025-w06"
+      ],
+      "sectionName": "Verse 3",
+      "sourceLineIndex": 31,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 143.856,
+        "sourceEnd": 145.77100000000002,
+        "providerStart": 143.856,
+        "providerEnd": 145.77100000000002
+      }
+    },
+    {
+      "id": "p91-l026",
+      "text": "no scourge will settle by my door.",
+      "start": 146.543197,
+      "end": 149.978,
+      "wordIds": [
+        "p91-l026-w01",
+        "p91-l026-w02",
+        "p91-l026-w03",
+        "p91-l026-w04",
+        "p91-l026-w05",
+        "p91-l026-w06",
+        "p91-l026-w07"
+      ],
+      "sectionName": "Verse 3",
+      "sourceLineIndex": 32,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 145.77100000000002,
+        "sourceEnd": 151.915,
+        "providerStart": 145.77100000000002,
+        "providerEnd": 151.915
+      }
+    },
+    {
+      "id": "p91-l027",
+      "text": "The dread that comes at night cannot command me;",
+      "start": 151.985898,
+      "end": 155.738,
+      "wordIds": [
+        "p91-l027-w01",
+        "p91-l027-w02",
+        "p91-l027-w03",
+        "p91-l027-w04",
+        "p91-l027-w05",
+        "p91-l027-w06",
+        "p91-l027-w07",
+        "p91-l027-w08",
+        "p91-l027-w09"
+      ],
+      "sectionName": "Pre-Chorus",
+      "sourceLineIndex": 34,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 151.915,
+        "sourceEnd": 157.261,
+        "providerStart": 151.915,
+        "providerEnd": 157.261
+      }
+    },
+    {
+      "id": "p91-l028",
+      "text": "the flying arrow cannot rule my day.",
+      "start": 157.171415,
+      "end": 160.881,
+      "wordIds": [
+        "p91-l028-w01",
+        "p91-l028-w02",
+        "p91-l028-w03",
+        "p91-l028-w04",
+        "p91-l028-w05",
+        "p91-l028-w06",
+        "p91-l028-w07"
+      ],
+      "sectionName": "Pre-Chorus",
+      "sourceLineIndex": 35,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 157.261,
+        "sourceEnd": 162.686,
+        "providerStart": 157.261,
+        "providerEnd": 162.686
+      }
+    },
+    {
+      "id": "p91-l029",
+      "text": "The darkness carries no power over me,",
+      "start": 162.716996,
+      "end": 166.061,
+      "wordIds": [
+        "p91-l029-w01",
+        "p91-l029-w02",
+        "p91-l029-w03",
+        "p91-l029-w04",
+        "p91-l029-w05",
+        "p91-l029-w06",
+        "p91-l029-w07"
+      ],
+      "sectionName": "Pre-Chorus",
+      "sourceLineIndex": 36,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 162.686,
+        "sourceEnd": 167.394,
+        "providerStart": 162.686,
+        "providerEnd": 167.394
+      }
+    },
+    {
+      "id": "p91-l030",
+      "text": "nor does the evil striking at high noon.",
+      "start": 167.344498,
+      "end": 172.061,
+      "wordIds": [
+        "p91-l030-w01",
+        "p91-l030-w02",
+        "p91-l030-w03",
+        "p91-l030-w04",
+        "p91-l030-w05",
+        "p91-l030-w06",
+        "p91-l030-w07",
+        "p91-l030-w08"
+      ],
+      "sectionName": "Pre-Chorus",
+      "sourceLineIndex": 37,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 167.394,
+        "sourceEnd": 173.059,
+        "providerStart": 167.394,
+        "providerEnd": 173.059
+      }
+    },
+    {
+      "id": "p91-l031",
+      "text": "Though a thousand fall beside me",
+      "start": 173.001,
+      "end": 175.291884,
+      "wordIds": [
+        "p91-l031-w01",
+        "p91-l031-w02",
+        "p91-l031-w03",
+        "p91-l031-w04",
+        "p91-l031-w05",
+        "p91-l031-w06"
+      ],
+      "sectionName": "Chorus",
+      "sourceLineIndex": 39,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 173.059,
+        "sourceEnd": 175.293,
+        "providerStart": 173.059,
+        "providerEnd": 175.293
+      }
+    },
+    {
+      "id": "p91-l032",
+      "text": "and ten thousand at my right,",
+      "start": 175.821,
+      "end": 178.341,
+      "wordIds": [
+        "p91-l032-w01",
+        "p91-l032-w02",
+        "p91-l032-w03",
+        "p91-l032-w04",
+        "p91-l032-w05",
+        "p91-l032-w06"
+      ],
+      "sectionName": "Chorus",
+      "sourceLineIndex": 40,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 175.293,
+        "sourceEnd": 178.644,
+        "providerStart": 175.293,
+        "providerEnd": 178.644,
+        "finalTimingAudit": "/Volumes/Code/ark-video-studio/output/psalm91-production/alignment/final-timing-audit.json"
+      }
+    },
+    {
+      "id": "p91-l033",
+      "text": "your shelter will stand around me;",
+      "start": 178.341,
+      "end": 181.364,
+      "wordIds": [
+        "p91-l033-w01",
+        "p91-l033-w02",
+        "p91-l033-w03",
+        "p91-l033-w04",
+        "p91-l033-w05",
+        "p91-l033-w06"
+      ],
+      "sectionName": "Chorus",
+      "sourceLineIndex": 41,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 178.644,
+        "sourceEnd": 181.436,
+        "providerStart": 178.644,
+        "providerEnd": 181.436
+      }
+    },
+    {
+      "id": "p91-l034",
+      "text": "that harm will never reach me.",
+      "start": 181.364,
+      "end": 183.744,
+      "wordIds": [
+        "p91-l034-w01",
+        "p91-l034-w02",
+        "p91-l034-w03",
+        "p91-l034-w04",
+        "p91-l034-w05",
+        "p91-l034-w06"
+      ],
+      "sectionName": "Chorus",
+      "sourceLineIndex": 42,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 181.436,
+        "sourceEnd": 183.91,
+        "providerStart": 181.436,
+        "providerEnd": 183.91
+      }
+    },
+    {
+      "id": "p91-l035",
+      "text": "Though a thousand fall beside me,",
+      "start": 183.744,
+      "end": 186.424,
+      "wordIds": [
+        "p91-l035-w01",
+        "p91-l035-w02",
+        "p91-l035-w03",
+        "p91-l035-w04",
+        "p91-l035-w05",
+        "p91-l035-w06"
+      ],
+      "sectionName": "Chorus",
+      "sourceLineIndex": 43,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 183.91,
+        "sourceEnd": 186.463,
+        "providerStart": 183.91,
+        "providerEnd": 186.463
+      }
+    },
+    {
+      "id": "p91-l036",
+      "text": "I will trust you through the fight.",
+      "start": 186.424,
+      "end": 192.179688,
+      "wordIds": [
+        "p91-l036-w01",
+        "p91-l036-w02",
+        "p91-l036-w03",
+        "p91-l036-w04",
+        "p91-l036-w05",
+        "p91-l036-w06",
+        "p91-l036-w07"
+      ],
+      "sectionName": "Chorus",
+      "sourceLineIndex": 44,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 186.463,
+        "sourceEnd": 194.122,
+        "providerStart": 186.463,
+        "providerEnd": 194.122
+      }
+    },
+    {
+      "id": "p91-l037",
+      "text": "You send your angels out to watch my steps",
+      "start": 194.159768,
+      "end": 198.504,
+      "wordIds": [
+        "p91-l037-w01",
+        "p91-l037-w02",
+        "p91-l037-w03",
+        "p91-l037-w04",
+        "p91-l037-w05",
+        "p91-l037-w06",
+        "p91-l037-w07",
+        "p91-l037-w08",
+        "p91-l037-w09"
+      ],
+      "sectionName": "Bridge",
+      "sourceLineIndex": 46,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 194.122,
+        "sourceEnd": 200.027,
+        "providerStart": 194.122,
+        "providerEnd": 200.027
+      }
+    },
+    {
+      "id": "p91-l038",
+      "text": "and keep me on the road ahead.",
+      "start": 200.128799,
+      "end": 203.167,
+      "wordIds": [
+        "p91-l038-w01",
+        "p91-l038-w02",
+        "p91-l038-w03",
+        "p91-l038-w04",
+        "p91-l038-w05",
+        "p91-l038-w06",
+        "p91-l038-w07"
+      ],
+      "sectionName": "Bridge",
+      "sourceLineIndex": 47,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 200.027,
+        "sourceEnd": 202.899,
+        "providerStart": 200.027,
+        "providerEnd": 202.899
+      }
+    },
+    {
+      "id": "p91-l039",
+      "text": "They lift me high above the jagged stone.",
+      "start": 203.807,
+      "end": 209.447,
+      "wordIds": [
+        "p91-l039-w01",
+        "p91-l039-w02",
+        "p91-l039-w03",
+        "p91-l039-w04",
+        "p91-l039-w05",
+        "p91-l039-w06",
+        "p91-l039-w07",
+        "p91-l039-w08"
+      ],
+      "sectionName": "Bridge",
+      "sourceLineIndex": 48,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 202.899,
+        "sourceEnd": 210.319,
+        "providerStart": 202.899,
+        "providerEnd": 210.319
+      }
+    },
+    {
+      "id": "p91-l040",
+      "text": "The viper and the basilisk lie beneath my feet;",
+      "start": 210.350589,
+      "end": 213.527,
+      "wordIds": [
+        "p91-l040-w01",
+        "p91-l040-w02",
+        "p91-l040-w03",
+        "p91-l040-w04",
+        "p91-l040-w05",
+        "p91-l040-w06",
+        "p91-l040-w07",
+        "p91-l040-w08",
+        "p91-l040-w09"
+      ],
+      "sectionName": "Bridge",
+      "sourceLineIndex": 49,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 210.319,
+        "sourceEnd": 213.67000000000002,
+        "providerStart": 210.319,
+        "providerEnd": 213.67000000000002
+      }
+    },
+    {
+      "id": "p91-l041",
+      "text": "the lion and the dragon cannot bar the way.",
+      "start": 213.527,
+      "end": 217.237431,
+      "wordIds": [
+        "p91-l041-w01",
+        "p91-l041-w02",
+        "p91-l041-w03",
+        "p91-l041-w04",
+        "p91-l041-w05",
+        "p91-l041-w06",
+        "p91-l041-w07",
+        "p91-l041-w08",
+        "p91-l041-w09"
+      ],
+      "sectionName": "Bridge",
+      "sourceLineIndex": 50,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 213.67000000000002,
+        "sourceEnd": 223.67000000000002,
+        "providerStart": 213.67000000000002,
+        "providerEnd": 223.67000000000002
+      }
+    },
+    {
+      "id": "p91-l042",
+      "text": "Because you have held on to me, I will rescue you.",
+      "start": 247.02,
+      "end": 252.301129,
+      "wordIds": [
+        "p91-l042-w01",
+        "p91-l042-w02",
+        "p91-l042-w03",
+        "p91-l042-w04",
+        "p91-l042-w05",
+        "p91-l042-w06",
+        "p91-l042-w07",
+        "p91-l042-w08",
+        "p91-l042-w09",
+        "p91-l042-w10",
+        "p91-l042-w11"
+      ],
+      "sectionName": "Final Verse",
+      "sourceLineIndex": 53,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 247.5,
+        "sourceEnd": 253.484,
+        "providerStart": 247.5,
+        "providerEnd": 253.484,
+        "finalTimingAudit": "/Volumes/Code/ark-video-studio/output/psalm91-production/alignment/final-timing-audit.json"
+      }
+    },
+    {
+      "id": "p91-l043",
+      "text": "You know my name; I will guard your life.",
+      "start": 253.486779,
+      "end": 257.16,
+      "wordIds": [
+        "p91-l043-w01",
+        "p91-l043-w02",
+        "p91-l043-w03",
+        "p91-l043-w04",
+        "p91-l043-w05",
+        "p91-l043-w06",
+        "p91-l043-w07",
+        "p91-l043-w08",
+        "p91-l043-w09"
+      ],
+      "sectionName": "Final Verse",
+      "sourceLineIndex": 54,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 253.484,
+        "sourceEnd": 258.191,
+        "providerStart": 253.484,
+        "providerEnd": 258.191
+      }
+    },
+    {
+      "id": "p91-l044",
+      "text": "Call, and I will answer.",
+      "start": 258.162698,
+      "end": 259.9,
+      "wordIds": [
+        "p91-l044-w01",
+        "p91-l044-w02",
+        "p91-l044-w03",
+        "p91-l044-w04",
+        "p91-l044-w05"
+      ],
+      "sectionName": "Final Verse",
+      "sourceLineIndex": 55,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 258.191,
+        "sourceEnd": 260.824,
+        "providerStart": 258.191,
+        "providerEnd": 260.824
+      }
+    },
+    {
+      "id": "p91-l045",
+      "text": "When trouble comes, I will be there.",
+      "start": 260.836007,
+      "end": 263.4,
+      "wordIds": [
+        "p91-l045-w01",
+        "p91-l045-w02",
+        "p91-l045-w03",
+        "p91-l045-w04",
+        "p91-l045-w05",
+        "p91-l045-w06",
+        "p91-l045-w07"
+      ],
+      "sectionName": "Final Verse",
+      "sourceLineIndex": 56,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 260.824,
+        "sourceEnd": 263.457,
+        "providerStart": 260.824,
+        "providerEnd": 263.457
+      }
+    },
+    {
+      "id": "p91-l046",
+      "text": "I'll bring you through and raise you up.",
+      "start": 263.576296,
+      "end": 265.96,
+      "wordIds": [
+        "p91-l046-w01",
+        "p91-l046-w02",
+        "p91-l046-w03",
+        "p91-l046-w04",
+        "p91-l046-w05",
+        "p91-l046-w06",
+        "p91-l046-w07",
+        "p91-l046-w08"
+      ],
+      "sectionName": "Final Verse",
+      "sourceLineIndex": 57,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 263.457,
+        "sourceEnd": 265.691,
+        "providerStart": 263.457,
+        "providerEnd": 265.691
+      }
+    },
+    {
+      "id": "p91-l047",
+      "text": "I'll fill your days and let you see",
+      "start": 265.96,
+      "end": 268.74,
+      "wordIds": [
+        "p91-l047-w01",
+        "p91-l047-w02",
+        "p91-l047-w03",
+        "p91-l047-w04",
+        "p91-l047-w05",
+        "p91-l047-w06",
+        "p91-l047-w07",
+        "p91-l047-w08"
+      ],
+      "sectionName": "Final Verse",
+      "sourceLineIndex": 58,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 265.691,
+        "sourceEnd": 268.883,
+        "providerStart": 265.691,
+        "providerEnd": 268.883
+      }
+    },
+    {
+      "id": "p91-l048",
+      "text": "the saving work of my hand.",
+      "start": 268.874562,
+      "end": 271.703,
+      "wordIds": [
+        "p91-l048-w01",
+        "p91-l048-w02",
+        "p91-l048-w03",
+        "p91-l048-w04",
+        "p91-l048-w05",
+        "p91-l048-w06"
+      ],
+      "sectionName": "Final Verse",
+      "sourceLineIndex": 59,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 268.883,
+        "sourceEnd": 271.915,
+        "providerStart": 268.883,
+        "providerEnd": 271.915
+      }
+    },
+    {
+      "id": "p91-l049",
+      "text": "Though a thousand fall beside me",
+      "start": 271.846353,
+      "end": 274.288826,
+      "wordIds": [
+        "p91-l049-w01",
+        "p91-l049-w02",
+        "p91-l049-w03",
+        "p91-l049-w04",
+        "p91-l049-w05",
+        "p91-l049-w06"
+      ],
+      "sectionName": "Final Chorus",
+      "sourceLineIndex": 61,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 271.915,
+        "sourceEnd": 274.628,
+        "providerStart": 271.915,
+        "providerEnd": 274.628
+      }
+    },
+    {
+      "id": "p91-l050",
+      "text": "and ten thousand at my right,",
+      "start": 274.700301,
+      "end": 277.083,
+      "wordIds": [
+        "p91-l050-w01",
+        "p91-l050-w02",
+        "p91-l050-w03",
+        "p91-l050-w04",
+        "p91-l050-w05",
+        "p91-l050-w06"
+      ],
+      "sectionName": "Final Chorus",
+      "sourceLineIndex": 62,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 274.628,
+        "sourceEnd": 277.34000000000003,
+        "providerStart": 274.628,
+        "providerEnd": 277.34000000000003
+      }
+    },
+    {
+      "id": "p91-l051",
+      "text": "your shelter will stand around me;",
+      "start": 277.331509,
+      "end": 280.043,
+      "wordIds": [
+        "p91-l051-w01",
+        "p91-l051-w02",
+        "p91-l051-w03",
+        "p91-l051-w04",
+        "p91-l051-w05",
+        "p91-l051-w06"
+      ],
+      "sectionName": "Final Chorus",
+      "sourceLineIndex": 63,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 277.34000000000003,
+        "sourceEnd": 280.133,
+        "providerStart": 277.34000000000003,
+        "providerEnd": 280.133
+      }
+    },
+    {
+      "id": "p91-l052",
+      "text": "that harm will never reach me.",
+      "start": 280.165453,
+      "end": 282.255852,
+      "wordIds": [
+        "p91-l052-w01",
+        "p91-l052-w02",
+        "p91-l052-w03",
+        "p91-l052-w04",
+        "p91-l052-w05",
+        "p91-l052-w06"
+      ],
+      "sectionName": "Final Chorus",
+      "sourceLineIndex": 64,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 280.133,
+        "sourceEnd": 282.527,
+        "providerStart": 280.133,
+        "providerEnd": 282.527
+      }
+    },
+    {
+      "id": "p91-l053",
+      "text": "Though a thousand fall beside me,",
+      "start": 282.337463,
+      "end": 285.103,
+      "wordIds": [
+        "p91-l053-w01",
+        "p91-l053-w02",
+        "p91-l053-w03",
+        "p91-l053-w04",
+        "p91-l053-w05",
+        "p91-l053-w06"
+      ],
+      "sectionName": "Final Chorus",
+      "sourceLineIndex": 65,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 282.527,
+        "sourceEnd": 285.15999999999997,
+        "providerStart": 282.527,
+        "providerEnd": 285.15999999999997
+      }
+    },
+    {
+      "id": "p91-l054",
+      "text": "I will trust you through the fight.",
+      "start": 285.103,
+      "end": 290.28,
+      "wordIds": [
+        "p91-l054-w01",
+        "p91-l054-w02",
+        "p91-l054-w03",
+        "p91-l054-w04",
+        "p91-l054-w05",
+        "p91-l054-w06",
+        "p91-l054-w07"
+      ],
+      "sectionName": "Final Chorus",
+      "sourceLineIndex": 66,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 285.15999999999997,
+        "sourceEnd": 292.021,
+        "providerStart": 285.15999999999997,
+        "providerEnd": 292.021
+      }
+    },
+    {
+      "id": "p91-l055",
+      "text": "Under the Highest's shelter.",
+      "start": 291.971888,
+      "end": 294.36,
+      "wordIds": [
+        "p91-l055-w01",
+        "p91-l055-w02",
+        "p91-l055-w03",
+        "p91-l055-w04"
+      ],
+      "sectionName": "Outro",
+      "sourceLineIndex": 68,
+      "provenance": {
+        "method": "Selected measured first/last canonical word",
+        "timingVerified": false,
+        "sourceStart": 292.021,
+        "sourceEnd": 293.617,
+        "providerStart": 292.021,
+        "providerEnd": 293.617
+      }
+    }
+  ],
+  "instrumentalIntervals": [
+    {
+      "start": 0,
+      "end": 9.863586,
+      "duration": 9.863586,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Measured lyric intervals; not silence classifier"
+      }
+    },
+    {
+      "start": 11.777622,
+      "end": 29.202253,
+      "duration": 17.424630999999998,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Measured lyric intervals; not silence classifier"
+      }
+    },
+    {
+      "start": 32.123241,
+      "end": 33.84323,
+      "duration": 1.7199889999999982,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Measured lyric intervals; not silence classifier"
+      }
+    },
+    {
+      "start": 37.170566,
+      "end": 38.9243,
+      "duration": 1.7537340000000015,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Measured lyric intervals; not silence classifier"
+      }
+    },
+    {
+      "start": 42.602,
+      "end": 44.591674,
+      "duration": 1.9896740000000008,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Measured lyric intervals; not silence classifier"
+      }
+    },
+    {
+      "start": 47.860825,
+      "end": 49.948129,
+      "duration": 2.087304000000003,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Measured lyric intervals; not silence classifier"
+      }
+    },
+    {
+      "start": 53.352369,
+      "end": 54.212138,
+      "duration": 0.859769,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Measured lyric intervals; not silence classifier"
+      }
+    },
+    {
+      "start": 56.971364,
+      "end": 60.648461,
+      "duration": 3.6770969999999963,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Measured lyric intervals; not silence classifier"
+      }
+    },
+    {
+      "start": 63.977,
+      "end": 65.647,
+      "duration": 1.6700000000000088,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Measured lyric intervals; not silence classifier"
+      }
+    },
+    {
+      "start": 69.057,
+      "end": 71.340474,
+      "duration": 2.2834739999999982,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Measured lyric intervals; not silence classifier"
+      }
+    },
+    {
+      "start": 74.93,
+      "end": 76.725618,
+      "duration": 1.7956179999999904,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Measured lyric intervals; not silence classifier"
+      }
+    },
+    {
+      "start": 86.05,
+      "end": 87.597842,
+      "duration": 1.5478420000000028,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Measured lyric intervals; not silence classifier"
+      }
+    },
+    {
+      "start": 91.13,
+      "end": 92.862867,
+      "duration": 1.7328669999999988,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Measured lyric intervals; not silence classifier"
+      }
+    },
+    {
+      "start": 120.48,
+      "end": 123.50252,
+      "duration": 3.02252,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Measured lyric intervals; not silence classifier"
+      }
+    },
+    {
+      "start": 125.98,
+      "end": 131.102107,
+      "duration": 5.1221069999999855,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Measured lyric intervals; not silence classifier"
+      }
+    },
+    {
+      "start": 134.016,
+      "end": 135.948808,
+      "duration": 1.9328080000000227,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Measured lyric intervals; not silence classifier"
+      }
+    },
+    {
+      "start": 139.698,
+      "end": 141.434847,
+      "duration": 1.7368469999999832,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Measured lyric intervals; not silence classifier"
+      }
+    },
+    {
+      "start": 149.978,
+      "end": 151.985898,
+      "duration": 2.007897999999983,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Measured lyric intervals; not silence classifier"
+      }
+    },
+    {
+      "start": 155.738,
+      "end": 157.171415,
+      "duration": 1.4334149999999966,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Measured lyric intervals; not silence classifier"
+      }
+    },
+    {
+      "start": 160.881,
+      "end": 162.716996,
+      "duration": 1.8359959999999944,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Measured lyric intervals; not silence classifier"
+      }
+    },
+    {
+      "start": 166.061,
+      "end": 167.344498,
+      "duration": 1.2834979999999803,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Measured lyric intervals; not silence classifier"
+      }
+    },
+    {
+      "start": 172.061,
+      "end": 173.001,
+      "duration": 0.9399999999999977,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Measured lyric intervals; not silence classifier"
+      }
+    },
+    {
+      "start": 192.179688,
+      "end": 194.159768,
+      "duration": 1.9800800000000152,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Measured lyric intervals; not silence classifier"
+      }
+    },
+    {
+      "start": 198.504,
+      "end": 200.128799,
+      "duration": 1.6247989999999959,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Measured lyric intervals; not silence classifier"
+      }
+    },
+    {
+      "start": 209.447,
+      "end": 210.350589,
+      "duration": 0.9035890000000109,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Measured lyric intervals; not silence classifier"
+      }
+    },
+    {
+      "start": 217.237431,
+      "end": 247.02,
+      "duration": 29.782569000000024,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Measured lyric intervals; not silence classifier"
+      }
+    },
+    {
+      "start": 252.301129,
+      "end": 253.486779,
+      "duration": 1.1856500000000096,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Measured lyric intervals; not silence classifier"
+      }
+    },
+    {
+      "start": 257.16,
+      "end": 258.162698,
+      "duration": 1.0026979999999526,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Measured lyric intervals; not silence classifier"
+      }
+    },
+    {
+      "start": 259.9,
+      "end": 260.836007,
+      "duration": 0.9360070000000178,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Measured lyric intervals; not silence classifier"
+      }
+    },
+    {
+      "start": 290.28,
+      "end": 291.971888,
+      "duration": 1.6918880000000058,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Measured lyric intervals; not silence classifier"
+      }
+    },
+    {
+      "start": 294.36,
+      "end": 327.6,
+      "duration": 33.24000000000001,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Instrumental tail after final measured phrase"
+      }
+    }
+  ],
+  "finalTimingAudit": "/Volumes/Code/ark-video-studio/output/psalm91-production/alignment/final-timing-audit.json"
+}

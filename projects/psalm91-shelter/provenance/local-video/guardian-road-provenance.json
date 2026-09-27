@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "shot": "guardian-road",
+  "provider": "local OmiPC ComfyUI",
+  "model": "MiniMax H3 FL2VA int8 convrot",
+  "checkpoint": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+  "turboLora": "minimax_h3_turbo_v4_step600_ema_pruned_comfyui.safetensors",
+  "sampler": "MiniMaxH3TurboSampler",
+  "steps": 4,
+  "seed": 2026092702,
+  "native": {
+    "width": 960,
+    "height": 544,
+    "fps": 24,
+    "frames": 124,
+    "duration": 5.166666666666667
+  },
+  "input": "/Volumes/Code/ark-video-studio/projects/psalm91-shelter/assets/guardian-road.png",
+  "inputSha256": "8bb21b40963134b4bbd68300a3c6a9ff94b002e00169e7d6c482415307155fa3",
+  "initProvider": "GPT Image, supplied by root agent",
+  "promptFile": "/Volumes/Code/ark-video-studio/output/psalm91-production/local-video/guardian-road-workflow.json",
+  "successfulPromptId": "e18bd490-cee9-47dc-a8a6-9a3d5c11de4d",
+  "renderRuntimeSeconds": 92.409,
+  "cost": "Local GPU only; no paid API generation",
+  "remoteOutput": "C:\\AI\\ComfyUI-Music3\\output\\psalm91-production\\guardian-road_00001_.mp4",
+  "derivatives": [
+    {
+      "path": "/Volumes/Code/ark-video-studio/projects/psalm91-shelter/assets/guardian-road-motion5s.mp4",
+      "sha256": "485f7bc074f060d5f7af0c2456118db9596adbce6fb81277415c74c06c85cb9a",
+      "duration": 5.166666666666667,
+      "width": 960,
+      "height": 540,
+      "audio": false,
+      "processing": "center crop4px height, H264 CRF17, no upscale or interpolation"
+    }
+  ],
+  "review": {
+    "decode": "pass",
+    "visualMethod": "5 fps contact sheet spanning whole source plus 1 fps larger images",
+    "observations": "Three figures maintain identity, wardrobe and their path; walking poses change and road dust rises naturally. Wing shape remains stable. No sampled body melting, extra limbs or new figures. Gritty sunset palette consistent with source. Motion stays in right third, preserving left lyric space.",
+    "limitation": "Sampled review cannot certify every interpolated motion frame or subjective full-speed smoothness. Final film playback review remains with root.",
+    "verdict": "accepted for one sparse scene background; full5.167s usable",
+    "reviewer": "psalm91_local_video agent",
+    "sheet": "/Volumes/Code/ark-video-studio/output/psalm91-production/local-video/guardian-review-dense.jpg"
+  }
+}

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=1920,height=1080"><title>Psalm 91 — Shelter</title><script src="vendor/gsap.min.js"></script>
+<style>
+@font-face{font-family:Bebas;src:url('assets/BebasNeue-Regular.ttf')}
+@font-face{font-family:Archivo;src:url('assets/ArchivoBlack-Regular.ttf')}
+@font-face{font-family:Elegy;src:url('assets/EBGaramond-Italic-Variable.ttf');font-style:italic;font-weight:100 900}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;background:#090909;color:#f4ead6}
+#root{position:relative;width:100%;height:100%;overflow:hidden;background:#090909;font-family:Bebas,sans-serif}
+#opening,#narrative{position:absolute;inset:0;overflow:hidden}
+#narrative{perspective:1600px;perspective-origin:50% 48%}
+.p91-scene{position:absolute;inset:0;opacity:0;overflow:hidden;background:radial-gradient(ellipse at 62% 40%,#211911,#0c0b0a 68%);transform-origin:50% 50%;perspective:1500px}
+.p91-camera,.p91-shapes,.p91-type,.p91-photo-zone{position:absolute;inset:0;transform-style:preserve-3d}
+.p91-shapes{z-index:1;pointer-events:none}.p91-photo-zone{z-index:0}.p91-type{z-index:3}
+.p91-word{display:block;position:absolute;line-height:1;white-space:nowrap;opacity:0;transform-origin:50% 60%;font-kerning:normal;text-shadow:0 3px 14px #0005}
+.p91-word.serif{font-family:Elegy,serif;font-style:italic}.p91-word.heavy{font-family:Archivo,sans-serif}.p91-word.condensed{font-family:Bebas,sans-serif}
+.p91-form{position:absolute;display:block;pointer-events:none;transform-origin:50% 50%}
+.p91-vignette{position:absolute;inset:0;background:radial-gradient(ellipse,transparent 52%,#0009 100%);z-index:2;pointer-events:none}
+.p91-photo-mask{position:absolute;inset:0;overflow:hidden;opacity:0;background:#100d0a}
+.p91-photo-mask img,.p91-photo-mask video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:65% 50%;filter:saturate(.60) contrast(1.09)}
+.p91-photo-shade{position:absolute;inset:0;background:linear-gradient(90deg,#090909 0%,#090909f0 26%,#09090990 53%,#09090900 80%)}
+.p91-grain{position:absolute;inset:0;z-index:9;pointer-events:none;opacity:.17;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 240 240' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch' seed='9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' opacity='.23' filter='url(%23n)'/%3E%3C/svg%3E")}
+</style></head><body>
+<div id="root" data-composition-id="p91-shelter" data-width="1920" data-height="1080" data-duration="__DURATION__">
+<div id="p91-static-media" style="display:none">__MEDIA__</div>
+<div id="opening"></div><div id="narrative"></div><div class="p91-grain" aria-hidden="true"></div>
+<audio id="p91-source-song" src="assets/song.m4a" data-start="0" data-duration="__DURATION__" data-track-index="10" data-volume="1"></audio>
+</div>
+<script>window.P91_DATA=__DATA__;</script>
+<script>__OPENING__</script><script>__NARRATIVE__</script>
+<script>
+Promise.all([document.fonts.load('100px Bebas'),document.fonts.load('100px Archivo'),document.fonts.load('italic 100px Elegy')]).then(()=>document.fonts.ready).then(()=>{
+ const tl=gsap.timeline({paused:true});const data=window.P91_DATA;
+ if(typeof window.buildPsalm91Opening!=='function')throw new Error('Opening composition is missing');
+ window.buildPsalm91Opening({tl,stage:document.getElementById('opening'),data});
+ window.buildPsalm91Narrative({tl,stage:document.getElementById('narrative'),data});
+ window.__timelines=window.__timelines||{};window.__timelines['p91-shelter']=tl;
+});
+</script></body></html>

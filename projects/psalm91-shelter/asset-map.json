@@ -1,0 +1,84 @@
+{
+  "assets": {
+    "p91-l006": {
+      "src": "assets/net-release.png",
+      "type": "image",
+      "reveal": "diagonal",
+      "alt": "A traveler freed from the hunter's net"
+    },
+    "p91-l009": {
+      "src": "assets/wing-refuge-motion5s.mp4",
+      "type": "video",
+      "duration": 5.1667,
+      "poster": "assets/wing-refuge-motion5s-last.png",
+      "reveal": "round",
+      "alt": "A traveler sheltered beneath a guardian's wing"
+    },
+    "p91-l013": {
+      "src": "assets/artsy-arrows-dissolution-motion.mp4",
+      "type": "video",
+      "duration": 5.166666666666667,
+      "poster": "assets/artsy-arrows-dissolution-last.jpg",
+      "reveal": "full",
+      "alt": "Hostile arrows crumble into harmless copper dust"
+    },
+    "p91-l023": {
+      "src": "assets/home-threshold.png",
+      "type": "image",
+      "reveal": "diagonal",
+      "alt": "A family sheltered inside their dwelling"
+    },
+    "p91-l037": {
+      "src": "assets/guardian-road-motion5s.mp4",
+      "type": "video",
+      "duration": 5.1667,
+      "poster": "assets/guardian-road-motion5s-last.png",
+      "reveal": "diagonal",
+      "alt": "Angelic guardians accompanying a traveler on the road"
+    },
+    "p91-l041": {
+      "src": "assets/artsy-dust-lion-motion.mp4",
+      "type": "video",
+      "duration": 5.1667,
+      "poster": "assets/artsy-dust-lion-motion-last.png",
+      "reveal": "full",
+      "alt": "A lion coalesces from windblown copper dust"
+    },
+    "p91-l043": {
+      "src": "assets/divine-guardian.png",
+      "type": "image",
+      "reveal": "keyhole",
+      "alt": "Embodied divine protection beside the traveler"
+    },
+    "p91-l046": {
+      "src": "assets/lifted-hand.png",
+      "type": "image",
+      "reveal": "round",
+      "alt": "A strong hand raises the traveler from the ledge"
+    },
+    "p91-l055": {
+      "src": "assets/dawn-road.png",
+      "type": "image",
+      "reveal": "diagonal",
+      "alt": "The traveler continues safely into dawn"
+    },
+    "p91-dust-wing": {
+      "src": "assets/artsy-dust-wing-motion.mp4",
+      "type": "video",
+      "start": 232,
+      "duration": 5.1667,
+      "poster": "assets/artsy-dust-wing-motion-last.png",
+      "reveal": "full",
+      "alt": "Ivory feathers and copper dust gather into a protective wing"
+    },
+    "p91-adam-formation": {
+      "src": "assets/artsy-adam-formation-motion.mp4",
+      "type": "video",
+      "start": 237.25,
+      "duration": 9.416666666666666,
+      "poster": "assets/artsy-adam-formation-last.jpg",
+      "reveal": "full",
+      "alt": "The embodied Creator forms adult Adam from loose earth and dust"
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "id": "internal-psalm91-dust-lion",
+  "title": "Loose dust resolves into a living animal",
+  "source": {
+    "kind": "internal",
+    "path": "/Volumes/Code/ark-video-studio/projects/psalm91-shelter/assets/artsy-dust-lion-motion.mp4",
+    "projectPath": "/Volumes/Code/ark-video-studio/projects/psalm91-shelter/project.json",
+    "start": 0,
+    "end": 5.1667,
+    "sectionIds": [
+      "p91-l041"
+    ],
+    "videoSha256": "c19868bd50520ede0828784d2250b4504f3c772879c94c97823c0aaca19e53eb"
+  },
+  "intent": [
+    "formation",
+    "identity emerging",
+    "threat contained",
+    "biblical protection"
+  ],
+  "tags": [
+    "photorealistic transformation",
+    "local video generation",
+    "particles",
+    "dust",
+    "lion",
+    "negative space"
+  ],
+  "motion": {
+    "summary": "Copper dust rises from dark ground and progressively resolves into a seated lion. The head and forelegs become recognizable while the trailing body retains airborne grains.",
+    "phases": [
+      "Begin with loose earth and an indistinct rising mass.",
+      "Resolve the head, mane and front legs progressively.",
+      "Hold the recognizable animal while remaining dust settles."
+    ],
+    "transferablePrinciple": "Let a physical material acquire identity gradually, reserving a quiet region for lyric typography.",
+    "variations": [
+      "Gather rain into an architectural shelter.",
+      "Resolve ash into a protected human silhouette.",
+      "Disintegrate a threat in reverse narrative direction using a newly generated shot."
+    ],
+    "cautions": [
+      "Do not reuse this actual lion artwork in another scene.",
+      "Use sparingly between authored word mechanics; generation is supporting footage.",
+      "Preserve a continuous decoded last frame when the insert ends."
+    ]
+  },
+  "quality": {
+    "status": "observed",
+    "reviewer": "Rook and independent local-video agent, decoded 5fps sequence",
+    "userPreference": "liked",
+    "userPreferenceScope": "Shane explicitly liked the two standalone dust clips and requested two additional transformations. This is not approval of the final film or its sync.",
+    "strengths": [
+      "Material visibly resolves into a recognizable animal.",
+      "Broad quiet black space supports separate readable text.",
+      "Photographic dust, light and fur stay within the approved palette."
+    ],
+    "limitations": [
+      "Generated source is 960x540 at24fps, used sparingly within1080p output.",
+      "The body is a sculptural seated form, not walking wildlife footage.",
+      "This card captures image motion only and does not certify sung synchronization."
+    ]
+  },
+  "frames": [
+    {
+      "path": "images/internal-psalm91-dust-lion/frame-01.jpg",
+      "timeSeconds": 0,
+      "sha256": "8122ca5ba5b91878681de6e248a47cecfb880cd1f5fe6379ad11983cdcbc8757"
+    },
+    {
+      "path": "images/internal-psalm91-dust-lion/frame-02.jpg",
+      "timeSeconds": 0.8,
+      "sha256": "d1fbb074a82a2be7c98034020eab677349a91efcbbf6b99159641ca2873da836"
+    },
+    {
+      "path": "images/internal-psalm91-dust-lion/frame-03.jpg",
+      "timeSeconds": 1.7,
+      "sha256": "2cc4461127c3213d3c75157f8b7921e386753775cdf3a91d982d811e383dfd2c"
+    },
+    {
+      "path": "images/internal-psalm91-dust-lion/frame-04.jpg",
+      "timeSeconds": 2.6,
+      "sha256": "c84ac525886d262f31e8e4f79a1c564aa75ea39d462c5381d7c7f553cef2b4a5"
+    },
+    {
+      "path": "images/internal-psalm91-dust-lion/frame-05.jpg",
+      "timeSeconds": 3.7,
+      "sha256": "b0bfdadaeaa4f27a7c02c2febc80153c557972a6633c5fec2b831ac6f8763c6a"
+    },
+    {
+      "path": "images/internal-psalm91-dust-lion/frame-06.jpg",
+      "timeSeconds": 5,
+      "sha256": "43a73e21ae23f1bf5b38d0eead18cba07f8f894173d6b72a9427394d38f81137"
+    }
+  ],
+  "contactSheet": "images/internal-psalm91-dust-lion/sheet.jpg",
+  "capture": {
+    "method": "ffmpeg-frame-sequence-v1",
+    "videoDuration": 5.166667,
+    "fps": 24,
+    "sampledFrames": 6,
+    "contactSheetSha256": "6ddbd538bc96d75f465a7fad577f86dfadb581f1705244d80bdd6d879efbc181"
+  }
+}

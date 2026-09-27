@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "status": "awaiting_user_choice",
+  "status": "chosen",
   "source": {
     "shareUrl": "https://suno.com/s/ErRXnhOwTS3IZm7W",
     "canonicalUrl": "https://suno.com/song/5d78a5c1-4341-4867-b25e-c3698b1ffe54",
@@ -34,9 +34,12 @@
       "implementationBasis": "Existing photo layer, gradient reading matte, circle clip-path reveal and image scale; new photographic asset required after choice."
     }
   ],
-  "selected": null,
-  "userSelection": null,
-  "productionAuthorized": false,
+  "selected": [
+    2,
+    3
+  ],
+  "userSelection": "I like both 2 and 3. Those keyhole effects are really cool sparingly. Ok go make the video and place it in photos when done per our skill and using our new libraries and the heygen thing.",
+  "productionAuthorized": true,
   "intakeDirectory": "/Volumes/Code/ark-video-studio/output/psalm91-theme-intake",
   "appWorkflowUrl": "https://omipc.taild60b4e.ts.net/studio#workflows",
   "appWorkflowId": "psalm-91-lxx-90-shelter",
@@ -48,5 +51,12 @@
     "Shelter meaning",
     "charcoal, copper, ivory palette"
   ],
-  "supersedes": "theme-options.png"
+  "supersedes": "theme-options.png",
+  "constraints": [
+    "Blend Word Journey and Photo Reveal",
+    "Use keyhole effects sparingly",
+    "Use HyperFrames and motion reference library",
+    "Finish full song and deliver to Photos and OmiPC review app",
+    "Consider sparse locally generated video on OmiPC in parallel"
+  ]
 }

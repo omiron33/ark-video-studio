@@ -1,0 +1,205 @@
+{
+  "1": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "2": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "_meta": {
+      "title": "Load Video VAE"
+    }
+  },
+  "5": {
+    "class_type": "MiniMaxH3SigmaShift",
+    "inputs": {
+      "model": [
+        "17",
+        0
+      ],
+      "shift_video": 12,
+      "shift_audio": 3
+    },
+    "_meta": {
+      "title": "Sigma Shift"
+    }
+  },
+  "6": {
+    "class_type": "MiniMaxH3ImageToVideo",
+    "inputs": {
+      "clip": [
+        "1",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "prompt": "A single uninterrupted five-second photoreal cinematic transformation with a fixed wide camera. The provided image is the FINAL frame. At the beginning the RIGHT half contains disconnected ivory feathers and scattered copper mineral dust suspended against charcoal black; there is no assembled wing yet. The isolated feathers slowly rotate and sweep inward along a broad curved path. Over the next three seconds rows of feathers connect progressively from the lower right root outward, forming a single huge anatomically convincing ivory feathered wing that opens in a protective arch. Show unmistakable assembly: disconnected fragments become one coherent protective wing, not an already-completed wing simply waving. Finish in the supplied image, with layered flight feathers held open and the last loose feathers joining its edge while dust settles. The motion is graceful, weighty and materially real. Photographic macro feather texture, copper sunlight, deep soft shadows, mineral grains and real motion blur. The LEFT forty percent stays very dark and mostly vacant for later typography. No bird body, no human, no extra wings, no flapping flight, no magic beam, no neon, no animated illustration, no text, no letters, no symbols, no camera cuts. Audio is not needed.\n",
+      "width": 960,
+      "height": 544,
+      "length": 124,
+      "last_frame": [
+        "16",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "H3 Conditioning"
+    }
+  },
+  "7": {
+    "class_type": "BasicGuider",
+    "inputs": {
+      "model": [
+        "5",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "8": {
+    "class_type": "RandomNoise",
+    "inputs": {
+      "noise_seed": 2026092712
+    },
+    "_meta": {
+      "title": "Noise"
+    }
+  },
+  "9": {
+    "class_type": "BasicScheduler",
+    "inputs": {
+      "model": [
+        "5",
+        0
+      ],
+      "scheduler": "simple",
+      "steps": 4,
+      "denoise": 1
+    },
+    "_meta": {
+      "title": "Scheduler"
+    }
+  },
+  "10": {
+    "class_type": "MiniMaxH3TurboSampler",
+    "inputs": {}
+  },
+  "11": {
+    "class_type": "SamplerCustomAdvanced",
+    "inputs": {
+      "noise": [
+        "8",
+        0
+      ],
+      "guider": [
+        "7",
+        0
+      ],
+      "sampler": [
+        "10",
+        0
+      ],
+      "sigmas": [
+        "9",
+        0
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Sampler Custom Advanced"
+    }
+  },
+  "12": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "11",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "14": {
+    "class_type": "CreateVideo",
+    "inputs": {
+      "images": [
+        "12",
+        0
+      ],
+      "fps": 24,
+      "bit_depth": 8
+    },
+    "_meta": {
+      "title": "Create Video"
+    }
+  },
+  "15": {
+    "class_type": "SaveVideo",
+    "inputs": {
+      "video": [
+        "14",
+        0
+      ],
+      "filename_prefix": "psalm91-production/artsy-dust-wing",
+      "format": "auto",
+      "codec": "auto"
+    },
+    "_meta": {
+      "title": "Save Video"
+    }
+  },
+  "16": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "psalm91-artsy-dust-wing.png"
+    }
+  },
+  "17": {
+    "class_type": "MiniMaxH3TurboLoRA",
+    "inputs": {
+      "model": [
+        "2",
+        0
+      ],
+      "lora_name": "minimax_h3_turbo_v4_step600_ema_pruned_comfyui.safetensors",
+      "strength": 1.0,
+      "low_vram": true
+    }
+  }
+}

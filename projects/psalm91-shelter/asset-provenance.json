@@ -1,0 +1,137 @@
+[
+  {
+    "id": "wing-refuge",
+    "prompt": "Photorealistic widescreen 16:9 cinematic still to serve as an image-to-video starting frame for Psalm 91. Grounded ancient Near Eastern rocky ridge at dusk, one weathered traveler seen from behind in coarse dark woven cloak standing securely near the right third, a gigantic physically plausible feathered angel wing arches protectively above and slightly behind him from the far right, wing belongs to an embodied guardian just outside the frame, no floating detached object. The feathers are tactile, individually detailed, wind gently ruffles their tips. Below, a broad dark valley and distant storm. Charcoal blacks, deep earthy browns, restrained burnt-copper setting sun grazing feather edges, dusty ivory highlights. Real photographic textures and anatomy, restrained natural light, shot with a large-format cinema camera, no illustration, no game-render look, no magic from hands, no glowing shield bubbles, no text, letters, numbers or symbols. Composition: nearly black atmospheric negative space across LEFT 55 percent for future live lyric overlays. Detailed wing and traveler occupy RIGHT 40 percent, complete traveler silhouette visible, moderate distance, strong legible simple silhouette. Uncluttered clear silhouette, dignified protective mood, not fantasy poster hyperbole. No architecture, no weapons, no lightning. Sharp subject and subtle depth, no extreme bokeh. This is a production backdrop; ALL lyric typography will be drawn separately.",
+    "original": "/Users/shanefisher/.codex/generated_images/01a0e02c-244c-7eb3-889c-9ed4fef66443/exec-a8c1331f-209c-4e13-b0fd-d2fd04177e12.png",
+    "provider": "built-in GPT Image",
+    "visuallyInspected": true,
+    "asset": "assets/wing-refuge.png",
+    "sha256": "454a1ae34af1c0a64c5b7cfd980fe6cddfa686e6130b4c1a8b30197f232e48c9"
+  },
+  {
+    "id": "opening-refuge",
+    "prompt": "Photorealistic cinematic 16:9 production backdrop for Psalm91, no text. Inside the deep shadow of a rough ancient sandstone cleft looking toward a distant copper-lit mountain wilderness after a storm. One small traveler in simple coarse dark woven cloth stands at the right edge of the sheltered rock opening, facing the horizon. Solid natural rock roof above, real ground, dust catching a narrow shaft of ordinary warm sunlight, everything tactile and photographed. Palette predominantly charcoal black, restrained burnt copper on stone edges, desaturated ivory sky. LEFT 60% extremely dark quiet cave wall and shadow reserved for large overlaid lyric typography. Opening is on RIGHT third, traveler small for scale, outdoors stormclouds dramatic but real. Landscape and light feel like an expensive large-format live-action biblical film, not illustration, painting, fantasy game or a decorative poster. No torches, no magic, no angels, no lettering or symbols. Keep importantphoto action away from centerleft, use a strong simple composition. Natural material imperfections, grounded dust and cloth, photoreal realism, not excessiveHDR.",
+    "original": "/Users/shanefisher/.codex/generated_images/01a0e02c-244c-7eb3-889c-9ed4fef66443/exec-a8570c8f-5389-4b7c-83f8-f3b4d41b8eae.png",
+    "provider": "built-in GPT Image",
+    "visuallyInspected": true,
+    "asset": "assets/opening-refuge.png",
+    "sha256": "92ef883562e407708c900bd20919eae45c35e23973748474014e91e19f3df4f5"
+  },
+  {
+    "id": "net-release",
+    "prompt": "Photorealistic 16:9 widescreen biblical lyric-video background, entirely photographic, no text. Close low camera beside a rough ancient hunter's rope net on dark rocky ground. A weathered human hand on the RIGHT pulls loose the heavy natural hemp knot and releases a trapped sandal-clad foot; anatomy natural, no injury or blood, simple coarse linen clothing. Physical stretched rope, dust, skin texture, angular shadows, restraint and deliverance. Right45percent contains the clear tactile action, left55percent falls into calm near-black shadow with sparse copper rim light, intended for separately overlaid large typography. Colors charcoal, burnt copper sunlight, desaturated warm ivory. Real ancientNearEastlandscape, not medieval illustration, no magic, no glowing hands, no futuristic objects, no words, noletters, no symbols. Large-formatcinemacamera realism; unobtrusive photographiccomposition, restrainedcontrast, detailednotplastic.",
+    "original": "/Users/shanefisher/.codex/generated_images/01a0e02c-244c-7eb3-889c-9ed4fef66443/exec-d29c7c20-c44a-45e8-b4aa-646bcb13cdcb.png",
+    "provider": "built-in GPT Image",
+    "visuallyInspected": true,
+    "asset": "assets/net-release.png",
+    "sha256": "c8dd1cede72ce82d76a175f51811fc91b334862901477854f13bf493ae85bc49"
+  },
+  {
+    "id": "guardian-road",
+    "prompt": "Photorealistic 16:9 widescreen cinematic biblical scene on an ancient rocky mountain road at dark dawn. One modest traveler in worn brown linen walks on the RIGHT third, guided by two clearly embodied HUMAN angelic guardians several steps ahead, one near and one in middle distance. Guardians wear practical ancient bronze scale armor over weathered pale linen, with believable immense pale feathered wings folded mostly behind their shoulders. No magic or energyfromhands. Faces human and calm, naturalanatomy, actualweight and groundedfeet. Subtle natural copper sunrise touches edges of feathers/armor;deepcharcoalshadecoversLEFT55percent forlive lyric text. Camera lowandwide, roadcurvesintostormyvalley, grittygroundrealstone, realclothandfeathers, truephotographnotCGIfantasyillustration. Powerful protective mood, not militaristic gameposter. No text, numerals, halos, lightning, cartoonstyle, magicalsymbols. Everyfigure smallenoughwithinframe tofeel realandsecondarytolaterlyrics.",
+    "original": "/Users/shanefisher/.codex/generated_images/01a0e02c-244c-7eb3-889c-9ed4fef66443/exec-4fbfaeea-d2a9-443f-bab0-54128213a327.png",
+    "provider": "built-in GPT Image",
+    "visuallyInspected": true,
+    "asset": "assets/guardian-road.png",
+    "sha256": "8bb21b40963134b4bbd68300a3c6a9ff94b002e00169e7d6c482415307155fa3"
+  },
+  {
+    "id": "arrow-dusk",
+    "prompt": "Photorealistic cinematic 16:9 background for a Psalm 91 lyric film. Ancient Near Eastern desolate valley beneath storm cloud at dusk; several real wooden arrows crossing high through the RIGHT third of the frame, feather fletching and iron tips sharp, receding into depth. A small solitary traveler stands unharmed beneath a massive weathered stone overhang at bottom right, physical protection. No violence injuries. Left55percent remains quiet near-black cloud and shadow for large separately typeset lyrics. Gritty documentary cinema photograph, charcoal black, restrained copper dusk and warm ivory highlights, believable scale and atmosphere, real textures and lens, not illustration or videogame CGI. No text, no symbols, no fantasy spells or glowing hands.",
+    "original": "/Users/shanefisher/.codex/generated_images/01a0e02c-244c-7eb3-889c-9ed4fef66443/exec-a0ba129e-93b8-4c55-9ee3-7d28c013bfe3.png",
+    "provider": "built-in GPT Image",
+    "visuallyInspected": true,
+    "asset": "assets/arrow-dusk.png",
+    "sha256": "acbc24539b6b2a157f4b86ca9235b544566e35c9414c226e093de4f761582628"
+  },
+  {
+    "id": "home-threshold",
+    "prompt": "16:9 wide truly photoreal cinematic ancient Near Eastern home threshold for Psalm 91. Camera low inside a dark modest rough-stone dwelling; enormous weathered timber door stands open on RIGHT side. Beyond is copper evening light and a violent dust storm that cannot enter. Small real human family silhouettes safely sitting well inside by warm oil lamp at far right, human natural proportions, rough linen clothes. Substantial stone floor and carved timber details, realworld grounded historical setting. Entire LEFT half calm charcoal shadow, negative space to support separate animated typography. Strong inside safety/outside turmoil contrast, no magical barrier, no glowing symbols, no halos. Desaturated charcoal, burnt copper, warm ivory. Cinema photography not painted fantasy, no embedded text.",
+    "original": "/Users/shanefisher/.codex/generated_images/01a0e02c-244c-7eb3-889c-9ed4fef66443/exec-c6011375-4d5d-484a-9dc5-5b30f00c8091.png",
+    "provider": "built-in GPT Image",
+    "visuallyInspected": true,
+    "asset": "assets/home-threshold.png",
+    "sha256": "2ac9cb1129ce81c1434d66d8abb3e2b8cbd2d49b68bb2f6f99c20ca36149f1d4"
+  },
+  {
+    "id": "lion-dragon",
+    "prompt": "Single photorealistic 16:9 cinematic biblical wilderness photograph for Psalm91 lion and dragon lyric. A huge real lion stands in profile on RIGHT hillside, mane windblown, its feet planted on rough stone. Farther behind it on the same RIGHT side, a massive physically believable serpent-like dragon, dark weathered scales, coiled low along the rocky ridge, no wings, no fire, resembles an enormous ancient reptile. A small confident human traveler in rough pale ancient linen is seen from rear on the rightward path between the creatures, unharmed. Wide camera, realistic animals and human anatomy, volumetric copper sunrise behind storm clouds, ancient Near East terrain, terrifying grandeur but ultimately reassurance. LEFT55percent dark open valley and quiet shadow with space for big separate words. Charcoal, muted copper, ivory palette. Photographic realworld grit, no cartoon, no illustration, no high-saturation fantasy game aesthetic, no text, no symbols.",
+    "original": "/Users/shanefisher/.codex/generated_images/01a0e02c-244c-7eb3-889c-9ed4fef66443/exec-9f8ad5bc-cfe6-4b96-a463-3cd5e4fab5c9.png",
+    "provider": "built-in GPT Image",
+    "visuallyInspected": true,
+    "asset": "assets/lion-dragon.png",
+    "sha256": "b28766d3c21adeb6ccc2886529e5b7bf5f964eed5f749444d9e0e481e313a809"
+  },
+  {
+    "id": "divine-guardian",
+    "prompt": "Photorealistic 16:9 biblical christophany scene, Psalm91 protecting a traveler. On RIGHT third, embodied Jesus as a physically real first-century Middle Eastern human man with olive skin, shoulderlength dark hair, short full beard, calm powerful compassionate gaze. He wears weathered ivory tunic with a substantial ancient bronze breastplate and leather belt, natural cloth and metal, no modern or medieval fantasy costume. Beside him a worn traveler in brown linen stands reassured. Both grounded on rocky wilderness ground, no floating. Divine presence communicated by physically realistic bright white-gold sun emerging through clouds directly behind Jesus and strong rimlight, rainlit atmosphere, subtle illuminated dust. NO energy beams from hands, NO wizardry, NO ethereal ghost form, no sith lightning. Moody charcoal storm on LEFT55percent kept visually quiet for live typeset words, warm ivory and subtle burnt copper on right. Human figures secondary in broad photographed landscape, cinematic largeformat realism, no painted texture or illustration, no text/lettering/symbols.",
+    "original": "/Users/shanefisher/.codex/generated_images/01a0e02c-244c-7eb3-889c-9ed4fef66443/exec-ad8b06c2-3c49-43d1-9a62-ca0202e5ebc7.png",
+    "provider": "built-in GPT Image",
+    "visuallyInspected": true,
+    "asset": "assets/divine-guardian.png",
+    "sha256": "42df9dd344ff295ba0bcd17faaddcedaeffa9cea9c75d8e9659577e3958390ce"
+  },
+  {
+    "id": "lifted-hand",
+    "prompt": "Photorealistic cinematic 16:9 biblical deliverance background. Close tactile scene on RIGHT third: one strong human hand with weathered bronze wrist guard grasps another man's forearm firmly and helps him up from a dark rocky ledge; anatomically correct hands and arms, five normal fingers each, rough ivory linen sleeve above wrist guard and brown worn linen sleeve on traveler. Weight and effort physically plausible, a reassuring human rescue, no wounds or gore. Copper early sunlight breaks onto gritty stone and skin, huge LEFT half quiet charcoal cliff shadow suitable for big animated lyrics. Sharp natural skin texture, believable cloth, real cinema lens, desaturated burnt copper and warm ivory; photographic realism not illustration. No sparks from fingertips, no magic aura, no text, no symbols, no modern objects.",
+    "original": "/Users/shanefisher/.codex/generated_images/01a0e02c-244c-7eb3-889c-9ed4fef66443/exec-37d169af-6e08-4276-894e-cb054c367206.png",
+    "provider": "built-in GPT Image",
+    "visuallyInspected": true,
+    "asset": "assets/lifted-hand.png",
+    "sha256": "79a189c82b27bda03e7049c9bd7ecd5a1aea4eebd33ea38b222a7dd89a6927d1"
+  },
+  {
+    "id": "dawn-road",
+    "prompt": "Truly photorealistic 16:9 widescreen biblical wilderness at dawn, for closing Psalm91 lyric-film. A narrow rough ancient road begins low right and winds toward a luminous sunlit break in a vast stormy mountain valley on RIGHT third. A lone small human traveler in simple weathered ivory linen walks away safely into the light, grounded, no wings. LEFT half a deep dark near-black cliff wall and layered charcoal valley shade, calm negative space to support large separately animated lyrics. Warm copper low sunlight reveals real stone and mist, ivory clouds, muted earthy landscape, sense of refuge after danger and continued life. Big real photographed landscape with natural lens depth and weather, cinematic realism not fantasy illustration, no architectural marvels or modern objects, no text, symbols, or magic.",
+    "original": "/Users/shanefisher/.codex/generated_images/01a0e02c-244c-7eb3-889c-9ed4fef66443/exec-b9896dca-bbc8-4773-a985-c2be4b97eeb3.png",
+    "provider": "built-in GPT Image",
+    "visuallyInspected": true,
+    "asset": "assets/dawn-road.png",
+    "sha256": "ac137cffb035dd4a84d2d14fae8c8ff78434b706bec9163d72378fec4a07b2e9"
+  },
+  {
+    "id": "dust-lion",
+    "prompt": "Photorealistic cinematic 16:9 abstract biblical lyric-film asset. On the RIGHT half, a magnificent real lion in profile is materializing from an enormous swirling cloud of fine burnt-copper desert dust. Head and front paws solid and unmistakably photographic fur, midbody and hindquarters progressively separate into thousands of granular dust particles and wind ribbons suspended in the air. Animal anatomy believable, severe calm expression. Black charcoal void background, gritty illuminated sand on ground below, single ivory sidelight from upper right picks up fur and every particle. LEFT half almost pure quiet black with only very faint dust; leave generous space for live typographic lyrics. Surreal event rendered as an actual high-speed largeformat photograph with real physical dust and animal, not illustration or fantasy videogame CGI. No people, no magic symbols, no glowy neon outlines, no color except copper sand, ivory light, charcoal shadows. Beautiful ominous restrained sculptural composition. No text, letters, watermark, border, or logo.",
+    "original": "/Users/shanefisher/.codex/generated_images/01a0e02c-244c-7eb3-889c-9ed4fef66443/exec-a88d8998-a435-4079-bb6b-9bc992f18220.png",
+    "provider": "built-in GPT Image",
+    "visuallyInspected": true,
+    "asset": "assets/dust-lion.png",
+    "sha256": "33aa6f3f9c6478df2c09e889f8ba97b69aee2a523325642364ca502ad3d784fa"
+  },
+  {
+    "id": "dust-wing",
+    "prompt": "Single photorealistic 16:9 abstract cinematic shot for a biblical lyric film. A vast curved protective bird wing emerges on the RIGHT from a slow cyclone of windblown fine copper dust and individually suspended ivory feathers. Large elegant coherent feathered wing arcs overhead like a canopy, its leftmost tips dissolving into grain and smaller feathers as if gathering from nothing. Real feather microtexture, a photographed physically plausible sculptural installation in a black void, no body or face, no cartoon. Strong chiaroscuro: charcoal black background, warm ivory feather edges and sparse copper particles lit by one narrow natural beam. All action on RIGHT two thirds, LEFT third quiet dark space for animated text. Both mysterious and uplifting, subtle holiness throughlightandform not spells, no lightning, no fluorescent magic, no runes. Highspeedphotography of dust grains in air, real lens depth, no painting, no illustration, no text/logos.",
+    "original": "/Users/shanefisher/.codex/generated_images/01a0e02c-244c-7eb3-889c-9ed4fef66443/exec-1baced18-2b4a-47ec-886e-c377bac67dfd.png",
+    "provider": "built-in GPT Image",
+    "visuallyInspected": true,
+    "asset": "assets/dust-wing.png",
+    "sha256": "d06dc51e734596a4f8f864dd55177494249a72a2de813fd58cd0a4cf62fe599d"
+  },
+  {
+    "id": "adam-formation-end",
+    "prompt": "Use case: historical-scene. Single widescreen 16:9 photorealistic cinematic biblical image, FINAL FRAME for a short creation-from-dust film. In a primordial dark earthen landscape, God portrayed as an embodied human Christophany stands at the left third: a real Middle Eastern man with shoulder-length dark hair, beard, dignified powerful gentle presence, rough ivory ancient tunic, weathered bronze breastplate and leather belt, grounded feet, arms relaxed, hands NOT making spells. At right center an adult man Adam has just been formed from earth and kneels on the ground, head lifted toward the Creator with wonder; athletic but ordinary human anatomy, warm natural skin with traces of copper earth, modest plain rough linen wrapped completely around hips and upper legs, bare upper torso, arms naturally bent by his sides, fully human. Fine copper dust still streams naturally from the ground around Adam's lower silhouette, a few floating grains caught in side light. Presence, compassion, sacred creation. Broad real white-gold dawn opening in storm clouds behind the Creator, not an ethereal figure or disembodied rays, no magic beams from fingertips, no wizardry. Real physical light and dust, charcoal earth, restrained burnt copper, warm ivory. Both figures fully visible in a wide static establishing composition, enough empty space between them to read two silhouettes, tactile rocks soil cloth skin and bronze. Camera about human waist height, large format live-action film photograph, not illustration, painting, game render, cartoon, fantasy poster or plastic CGI. No wings, no modern objects, no text, no watermark, no symbols. Photographic light-dark dichotomy with sharp human detail and atmospheric far mountains. One final image, not a sheet.",
+    "original": "/Users/shanefisher/.codex/generated_images/01a0e02c-244c-7eb3-889c-9ed4fef66443/exec-30d0343f-0aff-45f3-85f5-0888a794a15b.png",
+    "provider": "built-in GPT Image",
+    "visuallyInspected": true,
+    "asset": "assets/adam-formation-end.png",
+    "sha256": "0652bb0b24a309ca15542f049b9cc8f07f1689216fb42f3b9a7633de49c55235"
+  },
+  {
+    "id": "adam-formation-start",
+    "prompt": "Edit this exact photorealistic film frame to create its matching FIRST FRAME before Adam is created. Change ONLY the kneeling man Adam on the right: remove his complete body, all limbs, hair, skin and cloth, and replace his entire occupied space with empty clear air and a low shapeless mound of ordinary loose copper-brown dust and earth on the same ground. There is NO human-shaped dust figure or silhouette on the right yet. Preserve exactly the standing embodied Creator on the left including face, bronze armor, robe, relaxed hands, stance, lighting and position. Preserve camera, every landscape rock, mountains, sky, light direction, colors, atmosphere and composition. Same wide aspect and photoreal quality. No text, no symbols, no additional person. The sole difference should be Adam's total absence, with raw earth at the exact position he will later form.",
+    "original": "/Users/shanefisher/.codex/generated_images/01a0e02c-244c-7eb3-889c-9ed4fef66443/exec-6a5efcd6-a5ec-443f-a25b-db6860ce8909.png",
+    "provider": "built-in GPT Image",
+    "visuallyInspected": true,
+    "asset": "assets/adam-formation-start.png",
+    "sha256": "d8fe01352836ed584efde5ff3374a86d2796134ec71ac53a453e27505aeeb858"
+  },
+  {
+    "id": "arrow-dissolution",
+    "prompt": "Single 16:9 widescreen photorealistic cinematic frame for an artsy Psalm 91 film, to animate into arrows dissolving harmlessly into dust. In a deep charcoal atmospheric void above rough black earth, THREE real ancient wooden arrows travel horizontally from right to left across the RIGHT half of the frame. The wooden shafts, dark feather fletching and forged iron tips are crisp tactile objects with correct anatomy; different depths, not touching. At right-center the foremost arrow's iron point has JUST begun to fracture into a few copper-lit granular fragments and fine dust, physical material disruption without a visible barrier. Most of all three arrows remains solid, providing clear shapes to disintegrate during animation. LEFT45percent calm nearly black negative space for large separately composited lyric typography. Copper dust grains trail and hang below right-center, ivory narrow edge lighting, desaturated earthy palette. Very controlled minimal high speed practical-effects photographic art, believable material texture, beautiful chiaroscuro, no orange explosion, no fire, no lightning, no spellcasting, no energy dome or laser wall. No human bodies, no blood, no injuries, no text or symbols. Not an illustration, not cartoon, not computer game fantasy. One image only, no contact sheet.",
+    "original": "/Users/shanefisher/.codex/generated_images/01a0e02c-244c-7eb3-889c-9ed4fef66443/exec-6c7fdf9a-6628-4285-b785-02cd5b7704af.png",
+    "provider": "built-in GPT Image",
+    "visuallyInspected": true,
+    "asset": "assets/arrow-dissolution.png",
+    "sha256": "629488598f1a1731354c60785e2d8065837164d4ce84fa885be6a6d7b5986a8f"
+  }
+]

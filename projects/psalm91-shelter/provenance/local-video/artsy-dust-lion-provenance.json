@@ -1,0 +1,40 @@
+{
+  "shot": "artsy-dust-lion",
+  "provider": "local OmiPC ComfyUI",
+  "model": "MiniMax H3 FL2VA int8 convrot",
+  "checkpoint": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+  "turboLora": "minimax_h3_turbo_v4_step600_ema_pruned_comfyui.safetensors",
+  "steps": 4,
+  "sampler": "MiniMaxH3TurboSampler",
+  "seed": 2026092711,
+  "conditioning": "last_frame only; no first-frame image",
+  "input": "projects/psalm91-shelter/assets/dust-lion.png",
+  "inputSha256": "33aa6f3f9c6478df2c09e889f8ba97b69aee2a523325642364ca502ad3d784fa",
+  "initProvider": "GPT Image supplied by root",
+  "successfulPromptId": "1ade4db7-bda5-45e3-ac06-bf2f4317cbb4",
+  "renderRuntimeSeconds": 91.988,
+  "native": {
+    "width": 960,
+    "height": 544,
+    "fps": 24,
+    "frames": 124
+  },
+  "workflow": "/Volumes/Code/ark-video-studio/output/psalm91-production/local-video/artsy-dust-lion-workflow.json",
+  "cost": "local GPU only; no paid API",
+  "output": "/Volumes/Code/ark-video-studio/projects/psalm91-shelter/assets/artsy-dust-lion-motion.mp4",
+  "sha256": "c19868bd50520ede0828784d2250b4504f3c772879c94c97823c0aaca19e53eb",
+  "duration": 5.166666666666667,
+  "width": 960,
+  "height": 540,
+  "audio": false,
+  "processing": "Center crop 4px height, H264 CRF17, no upscale, interpolation or reversal",
+  "review": {
+    "decode": "pass",
+    "method": "5fps whole-source contact sheet, 26 decoded frames",
+    "observations": "Grainy partial form rises and visibly resolves into a single lion head, mane and forelegs. Recognition strengthens progressively. Left side remains nearly black; no baked text. Lion stays right with believable photographic material and no sampled duplicate heads or extra limbs.",
+    "limitation": "The initial grain mass already hints at a quadruped silhouette; not wholly empty at frame zero. Sampled visual review does not certify every frame or full-speed smoothness.",
+    "verdict": "accepted for one broad cinematic insert; use whole5.167s so formation reads",
+    "sheet": "/Volumes/Code/ark-video-studio/output/psalm91-production/local-video/artsy-dust-lion-review.jpg"
+  },
+  "inspiration": "/Volumes/Code/ark-video-studio/output/psalm91-production/local-video/artsy-reference.json"
+}

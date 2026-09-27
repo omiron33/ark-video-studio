@@ -1,0 +1,40 @@
+{
+  "shot": "artsy-dust-wing",
+  "provider": "local OmiPC ComfyUI",
+  "model": "MiniMax H3 FL2VA int8 convrot",
+  "checkpoint": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+  "turboLora": "minimax_h3_turbo_v4_step600_ema_pruned_comfyui.safetensors",
+  "steps": 4,
+  "sampler": "MiniMaxH3TurboSampler",
+  "seed": 2026092712,
+  "conditioning": "last_frame only; no first-frame image",
+  "input": "projects/psalm91-shelter/assets/dust-wing.png",
+  "inputSha256": "d06dc51e734596a4f8f864dd55177494249a72a2de813fd58cd0a4cf62fe599d",
+  "initProvider": "GPT Image supplied by root",
+  "successfulPromptId": "2a987b36-3b2b-43b5-b0e3-46cfc345ee39",
+  "renderRuntimeSeconds": 93.032,
+  "native": {
+    "width": 960,
+    "height": 544,
+    "fps": 24,
+    "frames": 124
+  },
+  "workflow": "/Volumes/Code/ark-video-studio/output/psalm91-production/local-video/artsy-dust-wing-workflow.json",
+  "cost": "local GPU only; no paid API",
+  "output": "/Volumes/Code/ark-video-studio/projects/psalm91-shelter/assets/artsy-dust-wing-motion.mp4",
+  "sha256": "8f299a0df0844bece62c2cc1374b09453fb7612408529bf95efaec24897d3192",
+  "duration": 5.166666666666667,
+  "width": 960,
+  "height": 540,
+  "audio": false,
+  "processing": "Center crop 4px height, H264 CRF17, no upscale, interpolation or reversal",
+  "review": {
+    "decode": "pass",
+    "method": "5fps whole-source contact sheet, 26 decoded frames",
+    "observations": "Disconnected feathers and granular ribbons coalesce into a broad protective wing. The layered flight feathers extend progressively leftward from the right-side root until the completed arched wing reads clearly. Photographic feather and dust texture. Left side stays dark with no baked text. No sampled wing duplication or cartoon appearance.",
+    "limitation": "Initial feather plume already suggests a partial wing; it is not wholly absent at frame zero. Sampled review does not certify every frame or full-speed smoothness.",
+    "verdict": "accepted as distinct single insert, spaced apart from dust-lion; use full5.167s",
+    "sheet": "/Volumes/Code/ark-video-studio/output/psalm91-production/local-video/artsy-dust-wing-review.jpg"
+  },
+  "inspiration": "/Volumes/Code/ark-video-studio/output/psalm91-production/local-video/artsy-reference.json"
+}

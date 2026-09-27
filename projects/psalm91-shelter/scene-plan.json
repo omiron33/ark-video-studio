@@ -1,0 +1,1926 @@
+{
+  "version": 1,
+  "project": "psalm91-shelter",
+  "status": "implemented-awaiting-encoded-review",
+  "chosenTheme": "Shelter palette; approved mockup2 Word Journey plus3 Photo Reveal; sparse keyholes",
+  "palette": {
+    "copper": "#c77746",
+    "charcoal": "#090909",
+    "ivory": "#f4ead6"
+  },
+  "referencesInspected": [
+    {
+      "id": "internal-fingerprint-mark",
+      "contactSheet": "references/motion/images/internal-fingerprint-mark/sheet.jpg",
+      "source": {
+        "kind": "internal",
+        "path": "/Users/shanefisher/Movies/Genesis 4 - The Brother's Blood - Motion v2.mp4",
+        "projectPath": "/Volumes/Code/ark-video-studio/projects/genesis4-motion-v2/project.json",
+        "videoSha256": "21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777",
+        "start": 176.5,
+        "end": 179.2,
+        "sectionIds": [
+          "g4-scene-054"
+        ]
+      },
+      "principle": "Prepare a meaningful visual container so a later word arrives as an event instead of another line of text.",
+      "strengths": [
+        "The red keyword has an unambiguous focal position.",
+        "The partially formed and completed emblem states provide anticipation."
+      ],
+      "cautions": [
+        "Avoid repeating nested line rings when the video already has several wireframe scenes.",
+        "A symbol needs a reason to exist in this specific narrative.",
+        "Keep the emblem subordinate to the central word."
+      ],
+      "userPreference": "unknown",
+      "inspection": "Actual contact-sheet image visually inspected during planning; six frames do not certify timing or continuous motion."
+    },
+    {
+      "id": "internal-terrain-typography",
+      "contactSheet": "references/motion/images/internal-terrain-typography/sheet.jpg",
+      "source": {
+        "kind": "internal",
+        "path": "/Users/shanefisher/Movies/Genesis 7 - Lyric Studio - 10s Showcase.mp4",
+        "projectPath": "/Volumes/Code/ark-video-studio/projects/genesis7/project.json",
+        "videoSha256": "042772eae34ff971aecb8f6f5eaceb780bb5551ac8e1442d15c22b255b457d0d",
+        "start": 2.7333333333333334,
+        "end": 6.4,
+        "sectionIds": [
+          "highest-ground"
+        ]
+      },
+      "principle": "Give typography the same spatial logic as its subject, then use its geometry as the doorway to the next world.",
+      "strengths": [
+        "Word shape, terrain and transition all support the same idea of physical scale.",
+        "The pale graphic scene contrasts clearly with the dark photographic destination."
+      ],
+      "cautions": [
+        "Hold the complete words before the push crops them.",
+        "Select a letter opening with enough area to reveal the next scene.",
+        "Do not reuse this exact hill, font arrangement, or photographic destination as a preset."
+      ],
+      "userPreference": "unknown",
+      "inspection": "Actual contact-sheet image visually inspected during planning; six frames do not certify timing or continuous motion."
+    },
+    {
+      "id": "internal-foreground-occlusion",
+      "contactSheet": "references/motion/images/internal-foreground-occlusion/sheet.jpg",
+      "source": {
+        "kind": "internal",
+        "path": "/Users/shanefisher/Movies/Genesis 7 - music video v3.mp4",
+        "videoSha256": "ba363e5de17be904f40910aca6a71c585c7599da5bb5323851750ffb4c16660a",
+        "start": 116.1,
+        "end": 122.787,
+        "sectionIds": [
+          "s24"
+        ]
+      },
+      "principle": "Foreground overlap can make text inhabit a world, but the meaningful words require an unobstructed reading interval.",
+      "strengths": [
+        "Warm lanterns and cool silhouettes establish strong depth and atmosphere.",
+        "The reference exposes a concrete compositing failure useful for future reviews."
+      ],
+      "cautions": [
+        "Treat this as a cautionary example, not an approved legibility treatment.",
+        "Do not place names or essential lyric words behind opaque figures without a clear reading hold.",
+        "Review at phone size; small secondary verse text is already weak in this source."
+      ],
+      "userPreference": "unknown",
+      "inspection": "Actual contact-sheet image visually inspected during planning; six frames do not certify timing or continuous motion."
+    },
+    {
+      "id": "internal-lineage-journey",
+      "contactSheet": "references/motion/images/internal-lineage-journey/sheet.jpg",
+      "source": {
+        "kind": "internal",
+        "path": "/Users/shanefisher/Movies/Genesis 4 - The Brother's Blood - Motion v2.mp4",
+        "projectPath": "/Volumes/Code/ark-video-studio/projects/genesis4-motion-v2/project.json",
+        "videoSha256": "21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777",
+        "start": 212.16666666666666,
+        "end": 221.3,
+        "sectionIds": [
+          "g4-scene-063"
+        ]
+      },
+      "principle": "Give a chain of relationships a shared geography so progression feels like one journey instead of unrelated title cards.",
+      "strengths": [
+        "Repeated relationship language is supported by a single coherent reading direction.",
+        "The early red names establish hierarchy without coloring every later word."
+      ],
+      "cautions": [
+        "Do not move the camera faster than a person can finish the current clause.",
+        "Keep ancestry claims grounded in the source text.",
+        "Give a new project a fresh spatial metaphor rather than copying the rail arrangement."
+      ],
+      "userPreference": "unknown",
+      "inspection": "Actual contact sheet opened in this creative pass. Camera-path concept adapted into downward and upward Psalm reading spaces, not copied genealogical rails."
+    }
+  ],
+  "opening": {
+    "owner": "root opening.js",
+    "keyholes": 1,
+    "status": "root-authoring-and-review"
+  },
+  "narrativeKeyholes": [
+    "p91-l043"
+  ],
+  "sourceBinding": {
+    "wordsSha256": "c7a5b526ce3008fe531a0295d3524220f043aa593ba92680a4282ca228ac8d1e",
+    "note": "Snapshot of canonical input at authoring. build.mjs rereads later timing fixes without changing stable word IDs; final review must bind the final words hash."
+  },
+  "scenes": [
+    {
+      "id": "p91-l002",
+      "text": "Whoever makes the Most High his dwelling",
+      "start": 29.202253,
+      "end": 32.123241,
+      "wordIds": [
+        "p91-l002-w01",
+        "p91-l002-w02",
+        "p91-l002-w03",
+        "p91-l002-w04",
+        "p91-l002-w05",
+        "p91-l002-w06",
+        "p91-l002-w07"
+      ],
+      "family": "ascending-dwelling",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-fingerprint-mark"
+          ],
+          "principle": "Build a protective container using solid copper forms that resolve with the meaningful word, rather than fine fingerprint rings.",
+          "adaptation": "ascending-dwelling; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l003",
+      "text": "will rest beneath the God of heaven's care.",
+      "start": 33.84323,
+      "end": 37.170566,
+      "wordIds": [
+        "p91-l003-w01",
+        "p91-l003-w02",
+        "p91-l003-w03",
+        "p91-l003-w04",
+        "p91-l003-w05",
+        "p91-l003-w06",
+        "p91-l003-w07",
+        "p91-l003-w08"
+      ],
+      "family": "canopy-rest",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-fingerprint-mark"
+          ],
+          "principle": "Build a protective container using solid copper forms that resolve with the meaningful word, rather than fine fingerprint rings.",
+          "adaptation": "canopy-rest; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l004",
+      "text": "I say, Lord, you are my helper;",
+      "start": 38.9243,
+      "end": 42.602,
+      "wordIds": [
+        "p91-l004-w01",
+        "p91-l004-w02",
+        "p91-l004-w03",
+        "p91-l004-w04",
+        "p91-l004-w05",
+        "p91-l004-w06",
+        "p91-l004-w07"
+      ],
+      "family": "spoken-anchor",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-terrain-typography"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "spoken-anchor; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l005",
+      "text": "my refuge and my God, I trust in you.",
+      "start": 44.591674,
+      "end": 47.860825,
+      "wordIds": [
+        "p91-l005-w01",
+        "p91-l005-w02",
+        "p91-l005-w03",
+        "p91-l005-w04",
+        "p91-l005-w05",
+        "p91-l005-w06",
+        "p91-l005-w07",
+        "p91-l005-w08",
+        "p91-l005-w09"
+      ],
+      "family": "trust-spanning-word-bridge",
+      "renderer": "narrative.js:heroChoreography",
+      "status": "creative-pass-implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "creative-pass-implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-fingerprint-mark"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "trust-spanning-word-bridge; canonical word nodes themselves form the action rather than another decorative background. Opacity retains source onset. Complete words remain readable at the end of the phrase.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l006",
+      "text": "You draw me from the hunter's hidden net",
+      "start": 49.948129,
+      "end": 53.352369,
+      "wordIds": [
+        "p91-l006-w01",
+        "p91-l006-w02",
+        "p91-l006-w03",
+        "p91-l006-w04",
+        "p91-l006-w05",
+        "p91-l006-w06",
+        "p91-l006-w07",
+        "p91-l006-w08"
+      ],
+      "family": "net-release",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": true,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-terrain-typography",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "net-release; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l007",
+      "text": "and bring me through the trouble in my way.",
+      "start": 54.212138,
+      "end": 56.971364,
+      "wordIds": [
+        "p91-l007-w01",
+        "p91-l007-w02",
+        "p91-l007-w03",
+        "p91-l007-w04",
+        "p91-l007-w05",
+        "p91-l007-w06",
+        "p91-l007-w07",
+        "p91-l007-w08",
+        "p91-l007-w09"
+      ],
+      "family": "descending-word-passage",
+      "renderer": "narrative.js:heroChoreography",
+      "status": "creative-pass-implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "creative-pass-implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-lineage-journey"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "descending-word-passage; canonical word nodes themselves form the action rather than another decorative background. Opacity retains source onset. Complete words remain readable at the end of the phrase.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l008",
+      "text": "Your shoulders cast their shadow over me;",
+      "start": 60.648461,
+      "end": 63.977,
+      "wordIds": [
+        "p91-l008-w01",
+        "p91-l008-w02",
+        "p91-l008-w03",
+        "p91-l008-w04",
+        "p91-l008-w05",
+        "p91-l008-w06",
+        "p91-l008-w07"
+      ],
+      "family": "shoulder-shadow",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-fingerprint-mark"
+          ],
+          "principle": "Build a protective container using solid copper forms that resolve with the meaningful word, rather than fine fingerprint rings.",
+          "adaptation": "shoulder-shadow; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l009",
+      "text": "beneath your wings my fear grows still.",
+      "start": 65.647,
+      "end": 69.057,
+      "wordIds": [
+        "p91-l009-w01",
+        "p91-l009-w02",
+        "p91-l009-w03",
+        "p91-l009-w04",
+        "p91-l009-w05",
+        "p91-l009-w06",
+        "p91-l009-w07"
+      ],
+      "family": "wing-stillness",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": true,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-terrain-typography",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "wing-stillness; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l010",
+      "text": "Your faithfulness surrounds me like a shield;",
+      "start": 71.340474,
+      "end": 74.93,
+      "wordIds": [
+        "p91-l010-w01",
+        "p91-l010-w02",
+        "p91-l010-w03",
+        "p91-l010-w04",
+        "p91-l010-w05",
+        "p91-l010-w06",
+        "p91-l010-w07"
+      ],
+      "family": "surrounds-typographic-arch",
+      "renderer": "narrative.js:heroChoreography",
+      "status": "creative-pass-implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "creative-pass-implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-fingerprint-mark"
+          ],
+          "principle": "Build a protective container using solid copper forms that resolve with the meaningful word, rather than fine fingerprint rings.",
+          "adaptation": "surrounds-typographic-arch; canonical word nodes themselves form the action rather than another decorative background. Opacity retains source onset. Complete words remain readable at the end of the phrase.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l011",
+      "text": "your faithful word is guarding me.",
+      "start": 76.725618,
+      "end": 81.680316,
+      "wordIds": [
+        "p91-l011-w01",
+        "p91-l011-w02",
+        "p91-l011-w03",
+        "p91-l011-w04",
+        "p91-l011-w05",
+        "p91-l011-w06"
+      ],
+      "family": "word-sentinels",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-fingerprint-mark"
+          ],
+          "principle": "Build a protective container using solid copper forms that resolve with the meaningful word, rather than fine fingerprint rings.",
+          "adaptation": "word-sentinels; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l012",
+      "text": "The dread that comes at night cannot command me;",
+      "start": 82.15183,
+      "end": 86.05,
+      "wordIds": [
+        "p91-l012-w01",
+        "p91-l012-w02",
+        "p91-l012-w03",
+        "p91-l012-w04",
+        "p91-l012-w05",
+        "p91-l012-w06",
+        "p91-l012-w07",
+        "p91-l012-w08",
+        "p91-l012-w09"
+      ],
+      "family": "night-rejection",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-terrain-typography"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "night-rejection; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l013",
+      "text": "the flying arrow cannot rule my day.",
+      "start": 87.597842,
+      "end": 91.13,
+      "wordIds": [
+        "p91-l013-w01",
+        "p91-l013-w02",
+        "p91-l013-w03",
+        "p91-l013-w04",
+        "p91-l013-w05",
+        "p91-l013-w06",
+        "p91-l013-w07"
+      ],
+      "family": "arrow-dissolution",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": true,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-terrain-typography",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "arrow-deflection; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      },
+      "additionalVideo": {
+        "start": 87.597842,
+        "duration": 5.166666666666667,
+        "meaning": "Incoming arrows disintegrate into harmless copper dust while the protective lyric remains clear on the left.",
+        "integration": "Implemented; standalone generation reviewed, integrated runtime checks passed, and composite boundary snapshots inspected. Final encoded review remains pending root.",
+        "src": "assets/artsy-arrows-dissolution-motion.mp4",
+        "poster": "assets/artsy-arrows-dissolution-last.jpg",
+        "integrationEvidence": {
+          "check": "output/psalm91-production/v3-video-integration-focused-check.json",
+          "contactSheet": "output/psalm91-production/v3-video-integration-shots/contact-sheet.jpg",
+          "encodedReview": "pending"
+        }
+      }
+    },
+    {
+      "id": "p91-l014",
+      "text": "The darkness carries no power over me,",
+      "start": 92.862867,
+      "end": 96.852,
+      "wordIds": [
+        "p91-l014-w01",
+        "p91-l014-w02",
+        "p91-l014-w03",
+        "p91-l014-w04",
+        "p91-l014-w05",
+        "p91-l014-w06",
+        "p91-l014-w07"
+      ],
+      "family": "no-power-word-separation",
+      "renderer": "narrative.js:heroChoreography",
+      "status": "creative-pass-implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "creative-pass-implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-fingerprint-mark"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "no-power-word-separation; canonical word nodes themselves form the action rather than another decorative background. Opacity retains source onset. Complete words remain readable at the end of the phrase.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l015",
+      "text": "nor does the evil striking at high noon.",
+      "start": 97.49059,
+      "end": 103.012,
+      "wordIds": [
+        "p91-l015-w01",
+        "p91-l015-w02",
+        "p91-l015-w03",
+        "p91-l015-w04",
+        "p91-l015-w05",
+        "p91-l015-w06",
+        "p91-l015-w07",
+        "p91-l015-w08"
+      ],
+      "family": "noon-impact",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-terrain-typography"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "noon-impact; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l016",
+      "text": "Though a thousand fall beside me",
+      "start": 103.156121,
+      "end": 105.992,
+      "wordIds": [
+        "p91-l016-w01",
+        "p91-l016-w02",
+        "p91-l016-w03",
+        "p91-l016-w04",
+        "p91-l016-w05",
+        "p91-l016-w06"
+      ],
+      "family": "fall-tier-glyph-drop",
+      "renderer": "narrative.js:heroChoreography",
+      "status": "creative-pass-implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "creative-pass-implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-fingerprint-mark"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "fall-tier-glyph-drop; canonical word nodes themselves form the action rather than another decorative background. Opacity retains source onset. Complete words remain readable at the end of the phrase.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l017",
+      "text": "and ten thousand at my right,",
+      "start": 106.089315,
+      "end": 108.492,
+      "wordIds": [
+        "p91-l017-w01",
+        "p91-l017-w02",
+        "p91-l017-w03",
+        "p91-l017-w04",
+        "p91-l017-w05",
+        "p91-l017-w06"
+      ],
+      "family": "tenfold-radial",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-terrain-typography"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "tenfold-radial; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l018",
+      "text": "your shelter will stand around me;",
+      "start": 108.702051,
+      "end": 111.452,
+      "wordIds": [
+        "p91-l018-w01",
+        "p91-l018-w02",
+        "p91-l018-w03",
+        "p91-l018-w04",
+        "p91-l018-w05",
+        "p91-l018-w06"
+      ],
+      "family": "shelter-word-roof",
+      "renderer": "narrative.js:heroChoreography",
+      "status": "creative-pass-implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "creative-pass-implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-fingerprint-mark"
+          ],
+          "principle": "Build a protective container using solid copper forms that resolve with the meaningful word, rather than fine fingerprint rings.",
+          "adaptation": "shelter-word-roof; canonical word nodes themselves form the action rather than another decorative background. Opacity retains source onset. Complete words remain readable at the end of the phrase.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l019",
+      "text": "that harm will never reach me.",
+      "start": 111.452,
+      "end": 113.812,
+      "wordIds": [
+        "p91-l019-w01",
+        "p91-l019-w02",
+        "p91-l019-w03",
+        "p91-l019-w04",
+        "p91-l019-w05",
+        "p91-l019-w06"
+      ],
+      "family": "stopping-distance",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-terrain-typography"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "stopping-distance; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l020",
+      "text": "Though a thousand fall beside me,",
+      "start": 113.8,
+      "end": 116.54,
+      "wordIds": [
+        "p91-l020-w01",
+        "p91-l020-w02",
+        "p91-l020-w03",
+        "p91-l020-w04",
+        "p91-l020-w05",
+        "p91-l020-w06"
+      ],
+      "family": "falling-field",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-terrain-typography"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "falling-field; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l021-r01",
+      "text": "I will trust you through the fight.",
+      "start": 116.54,
+      "end": 120.48,
+      "wordIds": [
+        "p91-l021-r01-w01",
+        "p91-l021-r01-w02",
+        "p91-l021-r01-w03",
+        "p91-l021-r01-w04",
+        "p91-l021-r01-w05",
+        "p91-l021-r01-w06",
+        "p91-l021-r01-w07"
+      ],
+      "family": "suspended-trust-sentence",
+      "renderer": "narrative.js:heroChoreography",
+      "status": "creative-pass-implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "creative-pass-implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-lineage-journey"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "suspended-trust-sentence; canonical word nodes themselves form the action rather than another decorative background. Opacity retains source onset. Complete words remain readable at the end of the phrase.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l021",
+      "text": "I will trust you through the fight.",
+      "start": 123.50252,
+      "end": 125.98,
+      "wordIds": [
+        "p91-l021-w01",
+        "p91-l021-w02",
+        "p91-l021-w03",
+        "p91-l021-w04",
+        "p91-l021-w05",
+        "p91-l021-w06",
+        "p91-l021-w07"
+      ],
+      "family": "trust-three-station-camera",
+      "renderer": "narrative.js:heroChoreography",
+      "status": "creative-pass-implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "creative-pass-implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-lineage-journey"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "trust-three-station-camera; canonical word nodes themselves form the action rather than another decorative background. Opacity retains source onset. Complete words remain readable at the end of the phrase.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l022",
+      "text": "I may see the wicked face their wages,",
+      "start": 131.102107,
+      "end": 134.016,
+      "wordIds": [
+        "p91-l022-w01",
+        "p91-l022-w02",
+        "p91-l022-w03",
+        "p91-l022-w04",
+        "p91-l022-w05",
+        "p91-l022-w06",
+        "p91-l022-w07",
+        "p91-l022-w08"
+      ],
+      "family": "weight-of-wages",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-terrain-typography"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "weight-of-wages; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l023",
+      "text": "but I have called the Highest one my home.",
+      "start": 135.948808,
+      "end": 139.698,
+      "wordIds": [
+        "p91-l023-w01",
+        "p91-l023-w02",
+        "p91-l023-w03",
+        "p91-l023-w04",
+        "p91-l023-w05",
+        "p91-l023-w06",
+        "p91-l023-w07",
+        "p91-l023-w08",
+        "p91-l023-w09"
+      ],
+      "family": "home-threshold",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": true,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-terrain-typography",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "home-threshold; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l024",
+      "text": "Lord, you are the hope I hold.",
+      "start": 141.434847,
+      "end": 143.738,
+      "wordIds": [
+        "p91-l024-w01",
+        "p91-l024-w02",
+        "p91-l024-w03",
+        "p91-l024-w04",
+        "p91-l024-w05",
+        "p91-l024-w06",
+        "p91-l024-w07"
+      ],
+      "family": "held-hope",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-fingerprint-mark"
+          ],
+          "principle": "Build a protective container using solid copper forms that resolve with the meaningful word, rather than fine fingerprint rings.",
+          "adaptation": "held-hope; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l025",
+      "text": "No evil can claim my dwelling;",
+      "start": 143.86657,
+      "end": 145.958,
+      "wordIds": [
+        "p91-l025-w01",
+        "p91-l025-w02",
+        "p91-l025-w03",
+        "p91-l025-w04",
+        "p91-l025-w05",
+        "p91-l025-w06"
+      ],
+      "family": "unclaimed-ground",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-terrain-typography"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "unclaimed-ground; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l026",
+      "text": "no scourge will settle by my door.",
+      "start": 146.543197,
+      "end": 149.978,
+      "wordIds": [
+        "p91-l026-w01",
+        "p91-l026-w02",
+        "p91-l026-w03",
+        "p91-l026-w04",
+        "p91-l026-w05",
+        "p91-l026-w06",
+        "p91-l026-w07"
+      ],
+      "family": "sealed-door",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-fingerprint-mark"
+          ],
+          "principle": "Build a protective container using solid copper forms that resolve with the meaningful word, rather than fine fingerprint rings.",
+          "adaptation": "sealed-door; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l027",
+      "text": "The dread that comes at night cannot command me;",
+      "start": 151.985898,
+      "end": 155.738,
+      "wordIds": [
+        "p91-l027-w01",
+        "p91-l027-w02",
+        "p91-l027-w03",
+        "p91-l027-w04",
+        "p91-l027-w05",
+        "p91-l027-w06",
+        "p91-l027-w07",
+        "p91-l027-w08",
+        "p91-l027-w09"
+      ],
+      "family": "night-clock",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-terrain-typography"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "night-clock; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l028",
+      "text": "the flying arrow cannot rule my day.",
+      "start": 157.171415,
+      "end": 160.881,
+      "wordIds": [
+        "p91-l028-w01",
+        "p91-l028-w02",
+        "p91-l028-w03",
+        "p91-l028-w04",
+        "p91-l028-w05",
+        "p91-l028-w06",
+        "p91-l028-w07"
+      ],
+      "family": "arrow-word-projectile",
+      "renderer": "narrative.js:heroChoreography",
+      "status": "creative-pass-implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "creative-pass-implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-fingerprint-mark"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "arrow-word-projectile; canonical word nodes themselves form the action rather than another decorative background. Opacity retains source onset. Complete words remain readable at the end of the phrase.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l029",
+      "text": "The darkness carries no power over me,",
+      "start": 162.716996,
+      "end": 166.061,
+      "wordIds": [
+        "p91-l029-w01",
+        "p91-l029-w02",
+        "p91-l029-w03",
+        "p91-l029-w04",
+        "p91-l029-w05",
+        "p91-l029-w06",
+        "p91-l029-w07"
+      ],
+      "family": "shadow-unbinding",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-terrain-typography"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "shadow-unbinding; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l030",
+      "text": "nor does the evil striking at high noon.",
+      "start": 167.344498,
+      "end": 172.061,
+      "wordIds": [
+        "p91-l030-w01",
+        "p91-l030-w02",
+        "p91-l030-w03",
+        "p91-l030-w04",
+        "p91-l030-w05",
+        "p91-l030-w06",
+        "p91-l030-w07",
+        "p91-l030-w08"
+      ],
+      "family": "solar-shutter",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-terrain-typography"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "solar-shutter; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l031",
+      "text": "Though a thousand fall beside me",
+      "start": 173.001,
+      "end": 175.321,
+      "wordIds": [
+        "p91-l031-w01",
+        "p91-l031-w02",
+        "p91-l031-w03",
+        "p91-l031-w04",
+        "p91-l031-w05",
+        "p91-l031-w06"
+      ],
+      "family": "thousand-tilt",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-terrain-typography"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "thousand-tilt; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l032",
+      "text": "and ten thousand at my right,",
+      "start": 175.821,
+      "end": 178.341,
+      "wordIds": [
+        "p91-l032-w01",
+        "p91-l032-w02",
+        "p91-l032-w03",
+        "p91-l032-w04",
+        "p91-l032-w05",
+        "p91-l032-w06"
+      ],
+      "family": "right-ranks",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-terrain-typography"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "right-ranks; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l033",
+      "text": "your shelter will stand around me;",
+      "start": 178.341,
+      "end": 181.364,
+      "wordIds": [
+        "p91-l033-w01",
+        "p91-l033-w02",
+        "p91-l033-w03",
+        "p91-l033-w04",
+        "p91-l033-w05",
+        "p91-l033-w06"
+      ],
+      "family": "shelter-buttress",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-fingerprint-mark"
+          ],
+          "principle": "Build a protective container using solid copper forms that resolve with the meaningful word, rather than fine fingerprint rings.",
+          "adaptation": "shelter-buttress; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l034",
+      "text": "that harm will never reach me.",
+      "start": 181.364,
+      "end": 183.744,
+      "wordIds": [
+        "p91-l034-w01",
+        "p91-l034-w02",
+        "p91-l034-w03",
+        "p91-l034-w04",
+        "p91-l034-w05",
+        "p91-l034-w06"
+      ],
+      "family": "harm-versus-never-barrier",
+      "renderer": "narrative.js:heroChoreography",
+      "status": "creative-pass-implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "creative-pass-implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-fingerprint-mark"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "harm-versus-never-barrier; canonical word nodes themselves form the action rather than another decorative background. Opacity retains source onset. Complete words remain readable at the end of the phrase.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l035",
+      "text": "Though a thousand fall beside me,",
+      "start": 183.744,
+      "end": 186.424,
+      "wordIds": [
+        "p91-l035-w01",
+        "p91-l035-w02",
+        "p91-l035-w03",
+        "p91-l035-w04",
+        "p91-l035-w05",
+        "p91-l035-w06"
+      ],
+      "family": "thousand-domino",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-terrain-typography"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "thousand-domino; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l036",
+      "text": "I will trust you through the fight.",
+      "start": 186.424,
+      "end": 192.179688,
+      "wordIds": [
+        "p91-l036-w01",
+        "p91-l036-w02",
+        "p91-l036-w03",
+        "p91-l036-w04",
+        "p91-l036-w05",
+        "p91-l036-w06",
+        "p91-l036-w07"
+      ],
+      "family": "trust-keystone",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-fingerprint-mark"
+          ],
+          "principle": "Build a protective container using solid copper forms that resolve with the meaningful word, rather than fine fingerprint rings.",
+          "adaptation": "trust-keystone; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l037",
+      "text": "You send your angels out to watch my steps",
+      "start": 194.159768,
+      "end": 198.504,
+      "wordIds": [
+        "p91-l037-w01",
+        "p91-l037-w02",
+        "p91-l037-w03",
+        "p91-l037-w04",
+        "p91-l037-w05",
+        "p91-l037-w06",
+        "p91-l037-w07",
+        "p91-l037-w08",
+        "p91-l037-w09"
+      ],
+      "family": "guardian-steps",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": true,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-terrain-typography",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "guardian-steps; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l038",
+      "text": "and keep me on the road ahead.",
+      "start": 200.128799,
+      "end": 203.167,
+      "wordIds": [
+        "p91-l038-w01",
+        "p91-l038-w02",
+        "p91-l038-w03",
+        "p91-l038-w04",
+        "p91-l038-w05",
+        "p91-l038-w06",
+        "p91-l038-w07"
+      ],
+      "family": "road-word-camera-descent",
+      "renderer": "narrative.js:heroChoreography",
+      "status": "creative-pass-implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "creative-pass-implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-lineage-journey"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "road-word-camera-descent; canonical word nodes themselves form the action rather than another decorative background. Opacity retains source onset. Complete words remain readable at the end of the phrase.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l039",
+      "text": "They lift me high above the jagged stone.",
+      "start": 203.807,
+      "end": 209.447,
+      "wordIds": [
+        "p91-l039-w01",
+        "p91-l039-w02",
+        "p91-l039-w03",
+        "p91-l039-w04",
+        "p91-l039-w05",
+        "p91-l039-w06",
+        "p91-l039-w07",
+        "p91-l039-w08"
+      ],
+      "family": "lifted-phrase-above-stone",
+      "renderer": "narrative.js:heroChoreography",
+      "status": "creative-pass-implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "creative-pass-implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-fingerprint-mark"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "lifted-phrase-above-stone; canonical word nodes themselves form the action rather than another decorative background. Opacity retains source onset. Complete words remain readable at the end of the phrase.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l040",
+      "text": "The viper and the basilisk lie beneath my feet;",
+      "start": 210.350589,
+      "end": 213.527,
+      "wordIds": [
+        "p91-l040-w01",
+        "p91-l040-w02",
+        "p91-l040-w03",
+        "p91-l040-w04",
+        "p91-l040-w05",
+        "p91-l040-w06",
+        "p91-l040-w07",
+        "p91-l040-w08",
+        "p91-l040-w09"
+      ],
+      "family": "viper-floor",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-terrain-typography"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "viper-floor; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l041",
+      "text": "the lion and the dragon cannot bar the way.",
+      "start": 213.527,
+      "end": 217.237431,
+      "wordIds": [
+        "p91-l041-w01",
+        "p91-l041-w02",
+        "p91-l041-w03",
+        "p91-l041-w04",
+        "p91-l041-w05",
+        "p91-l041-w06",
+        "p91-l041-w07",
+        "p91-l041-w08",
+        "p91-l041-w09"
+      ],
+      "family": "lion-gate",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": true,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-terrain-typography",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "lion-gate; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l042",
+      "text": "Because you have held on to me, I will rescue you.",
+      "start": 247.02,
+      "end": 252.301129,
+      "wordIds": [
+        "p91-l042-w01",
+        "p91-l042-w02",
+        "p91-l042-w03",
+        "p91-l042-w04",
+        "p91-l042-w05",
+        "p91-l042-w06",
+        "p91-l042-w07",
+        "p91-l042-w08",
+        "p91-l042-w09",
+        "p91-l042-w10",
+        "p91-l042-w11"
+      ],
+      "family": "held-and-rescue-tether",
+      "renderer": "narrative.js:heroChoreography",
+      "status": "creative-pass-implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "creative-pass-implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-fingerprint-mark"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "held-and-rescue-tether; canonical word nodes themselves form the action rather than another decorative background. Opacity retains source onset. Complete words remain readable at the end of the phrase.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l043",
+      "text": "You know my name; I will guard your life.",
+      "start": 253.486779,
+      "end": 257.16,
+      "wordIds": [
+        "p91-l043-w01",
+        "p91-l043-w02",
+        "p91-l043-w03",
+        "p91-l043-w04",
+        "p91-l043-w05",
+        "p91-l043-w06",
+        "p91-l043-w07",
+        "p91-l043-w08",
+        "p91-l043-w09"
+      ],
+      "family": "name-revelation",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": true,
+      "keyhole": true,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-fingerprint-mark",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Build a protective container using solid copper forms that resolve with the meaningful word, rather than fine fingerprint rings.",
+          "adaptation": "name-revelation; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l044",
+      "text": "Call, and I will answer.",
+      "start": 258.162698,
+      "end": 259.9,
+      "wordIds": [
+        "p91-l044-w01",
+        "p91-l044-w02",
+        "p91-l044-w03",
+        "p91-l044-w04",
+        "p91-l044-w05"
+      ],
+      "family": "call-meets-answer",
+      "renderer": "narrative.js:heroChoreography",
+      "status": "creative-pass-implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "creative-pass-implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-fingerprint-mark"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "call-meets-answer; canonical word nodes themselves form the action rather than another decorative background. Opacity retains source onset. Complete words remain readable at the end of the phrase.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l045",
+      "text": "When trouble comes, I will be there.",
+      "start": 260.836007,
+      "end": 263.4,
+      "wordIds": [
+        "p91-l045-w01",
+        "p91-l045-w02",
+        "p91-l045-w03",
+        "p91-l045-w04",
+        "p91-l045-w05",
+        "p91-l045-w06",
+        "p91-l045-w07"
+      ],
+      "family": "presence-gap",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-terrain-typography"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "presence-gap; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l046",
+      "text": "I'll bring you through and raise you up.",
+      "start": 263.576296,
+      "end": 265.96,
+      "wordIds": [
+        "p91-l046-w01",
+        "p91-l046-w02",
+        "p91-l046-w03",
+        "p91-l046-w04",
+        "p91-l046-w05",
+        "p91-l046-w06",
+        "p91-l046-w07",
+        "p91-l046-w08"
+      ],
+      "family": "raised-hand",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": true,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-terrain-typography",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "raised-hand; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l047",
+      "text": "I'll fill your days and let you see",
+      "start": 265.96,
+      "end": 268.74,
+      "wordIds": [
+        "p91-l047-w01",
+        "p91-l047-w02",
+        "p91-l047-w03",
+        "p91-l047-w04",
+        "p91-l047-w05",
+        "p91-l047-w06",
+        "p91-l047-w07",
+        "p91-l047-w08"
+      ],
+      "family": "days-unfold",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-terrain-typography"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "days-unfold; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l048",
+      "text": "the saving work of my hand.",
+      "start": 268.874562,
+      "end": 271.703,
+      "wordIds": [
+        "p91-l048-w01",
+        "p91-l048-w02",
+        "p91-l048-w03",
+        "p91-l048-w04",
+        "p91-l048-w05",
+        "p91-l048-w06"
+      ],
+      "family": "hand-print",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-terrain-typography"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "hand-print; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l049",
+      "text": "Though a thousand fall beside me",
+      "start": 271.846353,
+      "end": 274.288826,
+      "wordIds": [
+        "p91-l049-w01",
+        "p91-l049-w02",
+        "p91-l049-w03",
+        "p91-l049-w04",
+        "p91-l049-w05",
+        "p91-l049-w06"
+      ],
+      "family": "thousand-letter-avalanche",
+      "renderer": "narrative.js:heroChoreography",
+      "status": "creative-pass-implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "creative-pass-implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-fingerprint-mark"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "thousand-letter-avalanche; canonical word nodes themselves form the action rather than another decorative background. Opacity retains source onset. Complete words remain readable at the end of the phrase.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l050",
+      "text": "and ten thousand at my right,",
+      "start": 274.700301,
+      "end": 277.083,
+      "wordIds": [
+        "p91-l050-w01",
+        "p91-l050-w02",
+        "p91-l050-w03",
+        "p91-l050-w04",
+        "p91-l050-w05",
+        "p91-l050-w06"
+      ],
+      "family": "ten-thousand-sweep",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-terrain-typography"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "ten-thousand-sweep; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l051",
+      "text": "your shelter will stand around me;",
+      "start": 277.331509,
+      "end": 280.043,
+      "wordIds": [
+        "p91-l051-w01",
+        "p91-l051-w02",
+        "p91-l051-w03",
+        "p91-l051-w04",
+        "p91-l051-w05",
+        "p91-l051-w06"
+      ],
+      "family": "shelter-letter-crown",
+      "renderer": "narrative.js:heroChoreography",
+      "status": "creative-pass-implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "creative-pass-implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-fingerprint-mark"
+          ],
+          "principle": "Build a protective container using solid copper forms that resolve with the meaningful word, rather than fine fingerprint rings.",
+          "adaptation": "shelter-letter-crown; canonical word nodes themselves form the action rather than another decorative background. Opacity retains source onset. Complete words remain readable at the end of the phrase.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l052",
+      "text": "that harm will never reach me.",
+      "start": 280.165453,
+      "end": 282.255852,
+      "wordIds": [
+        "p91-l052-w01",
+        "p91-l052-w02",
+        "p91-l052-w03",
+        "p91-l052-w04",
+        "p91-l052-w05",
+        "p91-l052-w06"
+      ],
+      "family": "unreachable-island",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-terrain-typography"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "unreachable-island; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l053",
+      "text": "Though a thousand fall beside me,",
+      "start": 282.337463,
+      "end": 285.103,
+      "wordIds": [
+        "p91-l053-w01",
+        "p91-l053-w02",
+        "p91-l053-w03",
+        "p91-l053-w04",
+        "p91-l053-w05",
+        "p91-l053-w06"
+      ],
+      "family": "falling-copper-rain",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-terrain-typography"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "falling-copper-rain; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l054",
+      "text": "I will trust you through the fight.",
+      "start": 285.103,
+      "end": 290.28,
+      "wordIds": [
+        "p91-l054-w01",
+        "p91-l054-w02",
+        "p91-l054-w03",
+        "p91-l054-w04",
+        "p91-l054-w05",
+        "p91-l054-w06",
+        "p91-l054-w07"
+      ],
+      "family": "trust-lyric-ascent",
+      "renderer": "narrative.js:heroChoreography",
+      "status": "creative-pass-implemented-awaiting-encoded-review",
+      "photoPlanned": false,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "creative-pass-implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-lineage-journey"
+          ],
+          "principle": "Give the word arrangement the physical meaning of its lyric; connect this reading station to the next only after its final measured word ends.",
+          "adaptation": "trust-lyric-ascent; canonical word nodes themselves form the action rather than another decorative background. Opacity retains source onset. Complete words remain readable at the end of the phrase.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    },
+    {
+      "id": "p91-l055",
+      "text": "Under the Highest's shelter.",
+      "start": 291.971888,
+      "end": 294.36,
+      "wordIds": [
+        "p91-l055-w01",
+        "p91-l055-w02",
+        "p91-l055-w03",
+        "p91-l055-w04"
+      ],
+      "family": "shelter-dawn",
+      "renderer": "narrative.js:choreograph",
+      "status": "implemented-awaiting-encoded-review",
+      "photoPlanned": true,
+      "keyhole": false,
+      "direction": {
+        "inspiration": {
+          "status": "implemented-awaiting-encoded-review",
+          "referenceIds": [
+            "internal-fingerprint-mark",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Build a protective container using solid copper forms that resolve with the meaningful word, rather than fine fingerprint rings.",
+          "adaptation": "shelter-dawn; exact sung words stay above the photographic and geometric layers. Camera travel uses source-word end to next-onset gaps, or a direct cut when no safe gap exists.",
+          "cautions": "Do not cover canonical words, copy a reference frame, or repeat the reference typography/terrain as a preset."
+        }
+      }
+    }
+  ],
+  "instrumentals": [
+    {
+      "id": "p91-instrumental-passage",
+      "start": 223.67,
+      "end": 247.02,
+      "family": "corridor-to-wing-to-creation",
+      "artsyVideoWindow": [
+        232,
+        237.1667
+      ],
+      "action": "Brief camera corridor gives way to the generated dust-wing shot, then to the full-frame formation of Adam from earth. Creation is a wordless poetic bridge into the protective divine response; no Genesis claim or added lyric appears.",
+      "status": "creative-pass-implemented-awaiting-encoded-review",
+      "additionalVideo": {
+        "id": "p91-adam-formation",
+        "start": 237.25,
+        "end": 246.66666666666666,
+        "duration": 9.416666666666666,
+        "meaning": "A wordless Creator-and-care bridge into the divine promise of rescue; no Genesis caption or change to Psalm lyrics.",
+        "integration": "Implemented; standalone generation reviewed, integrated runtime checks passed, and composite boundary snapshots inspected. Final encoded review remains pending root.",
+        "src": "assets/artsy-adam-formation-motion.mp4",
+        "poster": "assets/artsy-adam-formation-last.jpg",
+        "integrationEvidence": {
+          "check": "output/psalm91-production/v3-video-integration-focused-check.json",
+          "contactSheet": "output/psalm91-production/v3-video-integration-shots/contact-sheet.jpg",
+          "encodedReview": "pending"
+        }
+      }
+    },
+    {
+      "id": "p91-outro-horizon",
+      "start": 294.61,
+      "end": 327.6,
+      "family": "dawn-panorama-and-typographic-horizon",
+      "action": "Existing dawn shot opens from diagonal mask to panorama. PSALM letters rise onto a curved horizon; broad geographic silhouettes shift underneath, then the chapter title and scene resolve together. No corridor, repeated wing slabs, or second title sequence.",
+      "status": "creative-pass-implemented-awaiting-encoded-review"
+    }
+  ],
+  "mechanicalAudit": {
+    "scope": "Scene construction with stub DOM to catch phrase token counts and missing choreography cases; not visual acceptance.",
+    "result": "pass",
+    "lyricSceneCount": 55,
+    "uniqueLyricFamilies": 54,
+    "maximumFamilyUses": 2,
+    "allWordsUseCanonicalOpacityOnsets": true,
+    "finalEncodedAcceptance": "pending root review"
+  },
+  "creativePass": {
+    "status": "source-implemented-awaiting-encoded-review",
+    "heroPassages": 17,
+    "removedRepeatedWordEntryForHeroes": true,
+    "distinctAdjacentTrustRepeats": true,
+    "posterContinuity": "Video and last-frame poster receive identical transform keyframes",
+    "readabilityRepairs": "Base word spacing widened; isolated CANNOT and short FALL nudges removed where they compressed neighboring words."
+  },
+  "mediaContinuity": {
+    "camera": "Incoming camera travel starts after the previous phrase and any active video complete; canonical next lyric onset is unchanged.",
+    "poster": "Video and decoded-last-frame poster keep identical transforms. Instrumental inserts use matching untransformed full-frame media and posters."
+  }
+}

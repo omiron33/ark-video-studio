@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "shot": "wing-refuge",
+  "provider": "local OmiPC ComfyUI",
+  "model": "MiniMax H3 FL2VA int8 convrot",
+  "checkpoint": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+  "turboLora": "minimax_h3_turbo_v4_step600_ema_pruned_comfyui.safetensors",
+  "sampler": "MiniMaxH3TurboSampler",
+  "steps": 4,
+  "seed": 2026092701,
+  "native": {
+    "width": 960,
+    "height": 544,
+    "fps": 24,
+    "frames": 124,
+    "duration": 5.166666666666667
+  },
+  "input": "/Volumes/Code/ark-video-studio/projects/psalm91-shelter/assets/wing-refuge.png",
+  "inputSha256": "454a1ae34af1c0a64c5b7cfd980fe6cddfa686e6130b4c1a8b30197f232e48c9",
+  "initProvider": "GPT Image, supplied by root agent",
+  "promptFile": "/Volumes/Code/ark-video-studio/output/psalm91-production/local-video/wing-refuge-workflow.json",
+  "successfulPromptId": "dcd82e0f-9097-48c2-9b66-44af3b06e356",
+  "renderRuntimeSeconds": 96.668,
+  "cost": "Local GPU only; no paid API generation",
+  "remoteOutput": "C:\\AI\\ComfyUI-Music3\\output\\psalm91-production\\wing-refuge_00001_.mp4",
+  "derivatives": [
+    {
+      "path": "/Volumes/Code/ark-video-studio/projects/psalm91-shelter/assets/wing-refuge-motion.mp4",
+      "sha256": "88576356600c6ae2ca246c6d6a1297ed1097188bddb9264942f343f1b7758449",
+      "duration": 4,
+      "width": 960,
+      "height": 540,
+      "audio": false,
+      "processing": "center crop4px height, H264 CRF17, no upscale or interpolation"
+    },
+    {
+      "path": "/Volumes/Code/ark-video-studio/projects/psalm91-shelter/assets/wing-refuge-motion5s.mp4",
+      "sha256": "479ec46a6220327f9c499ec577b8a46da37c939e68b972c744bb865ea0bc0118",
+      "duration": 5.166666666666667,
+      "width": 960,
+      "height": 540,
+      "audio": false,
+      "processing": "center crop4px height, H264 CRF17, no upscale or interpolation"
+    }
+  ],
+  "review": {
+    "decode": "pass",
+    "visualMethod": "5 fps contact sheet spanning whole source plus 1 fps larger images",
+    "observations": "Same traveler silhouette, wing, terrain preserved. Wind/dust/cloud/wing tip changes are restrained. No sampled melting, extra limbs, scene cuts, unreadable text because there is no baked text. Suitable as subtle background to lyrics.",
+    "limitation": "Sampled review cannot certify every interpolated motion frame or subjective full-speed smoothness. Final film playback review remains with root.",
+    "verdict": "accepted for single scene background; full-length5.167s recommended",
+    "reviewer": "psalm91_local_video agent",
+    "sheet": "/Volumes/Code/ark-video-studio/output/psalm91-production/local-video/wing-review-dense.jpg"
+  }
+}

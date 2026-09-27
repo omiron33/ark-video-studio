@@ -1,0 +1,43 @@
+{
+  "shot": "artsy-arrows-dissolution",
+  "provider": "local OmiPC ComfyUI",
+  "model": "MiniMax H3 FL2VA int8 convrot",
+  "checkpoint": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+  "turboLora": "minimax_h3_turbo_v4_step600_ema_pruned_comfyui.safetensors",
+  "steps": 4,
+  "sampler": "MiniMaxH3TurboSampler",
+  "seed": 2026092722,
+  "conditioning": "first_frame",
+  "input": "projects/psalm91-shelter/assets/arrow-dissolution.png",
+  "inputSha256": "629488598f1a1731354c60785e2d8065837164d4ce84fa885be6a6d7b5986a8f",
+  "initProvider": "GPT Image supplied by root",
+  "successfulPromptId": "22c1a234-22bd-4d7e-a1f9-feea656225f6",
+  "renderRuntimeSeconds": 94.068,
+  "native": {
+    "width": 960,
+    "height": 544,
+    "fps": 24,
+    "frames": 124
+  },
+  "workflow": "/Volumes/Code/ark-video-studio/output/psalm91-production/local-video/artsy-arrows-dissolution-workflow.json",
+  "cost": "local GPU only; no paid API",
+  "output": "/Volumes/Code/ark-video-studio/projects/psalm91-shelter/assets/artsy-arrows-dissolution-motion.mp4",
+  "sha256": "84b763b85468e06ccfa9be931ddc66a04400ba1e0145419839ec66372552bfec",
+  "duration": 5.166666666666667,
+  "width": 960,
+  "height": 540,
+  "audio": false,
+  "processing": "Center crop 4px height, H264 CRF17, no upscale, interpolation or reversal",
+  "review": {
+    "decode": "pass",
+    "method": "26 decoded frames at5fps spanning whole source",
+    "observations": "Three arrows visibly break apart from iron tips through wood and feathered ends into a falling copper-lit dust cloud. Recognizable arrows progressively disappear; left side remains dark and mostly empty. No target, injuries, people, magic beam, visible force field, added arrows or sudden cut.",
+    "limitation": "The final dust plume is still present; it does not become completely empty black by clip end. Sampled review does not certify every frame or full-speed smoothness.",
+    "verdict": "accepted as distinct single5.167s arrow-lyric insert",
+    "sheet": "/Volumes/Code/ark-video-studio/output/psalm91-production/local-video/artsy-arrows-dissolution-review.jpg"
+  },
+  "inspiration": "/Volumes/Code/ark-video-studio/output/psalm91-production/local-video/adam-reference-evidence.json",
+  "finalFramePoster": "/Volumes/Code/ark-video-studio/projects/psalm91-shelter/assets/artsy-arrows-dissolution-last.jpg",
+  "finalFramePosterSha256": "df3f2d49c9e8197c58f8523622666232775d0f4171acf624aeeebebebb98cb08",
+  "photosPreviewCopy": "/Users/shanefisher/Movies/Psalm91/Psalm 91 - Arrows Become Dust.mp4"
+}
