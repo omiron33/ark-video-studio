@@ -1,0 +1,341 @@
+{
+  "kind": "outside-edit-frame-ssim-diagnostics",
+  "baseline": "b946c097f0902c0f3b4eda3a330aceca2ef893c29bd5a7eb511cc34101d130db",
+  "candidate": "bd147120463a4852418e1ca76ab4d4bfefceff80d9ac8c4ec67ac3f93d6e6f45",
+  "sourceReport": "/Volumes/DATA/ArkRender/genesis1/review-v2/delta-review.json",
+  "sourceReportSha256": "d913554550b6f37ffe8c6cb7293cd94faf8cee301027de5d867d0c9bf70087b5",
+  "notAnAcceptance": true,
+  "note": "One worst native frame per differing interval outside the authorized edit. Metrics describe pixel similarity and do not prove compression-only differences.",
+  "groups": [
+    {
+      "firstFrame": 30,
+      "lastFrame": 499,
+      "count": 470,
+      "start": 1,
+      "end": 16.666666666666668,
+      "endExclusive": true,
+      "worst": {
+        "frame": 364,
+        "time": 12.133333333333333,
+        "ssim": 0.998671
+      },
+      "median": 0.999035,
+      "mean": 0.9991513872340423
+    },
+    {
+      "firstFrame": 840,
+      "lastFrame": 891,
+      "count": 52,
+      "start": 28,
+      "end": 29.733333333333334,
+      "endExclusive": true,
+      "worst": {
+        "frame": 890,
+        "time": 29.666666666666668,
+        "ssim": 0.999887
+      },
+      "median": 0.999918,
+      "mean": 0.9999179615384615
+    },
+    {
+      "firstFrame": 907,
+      "lastFrame": 907,
+      "count": 1,
+      "start": 30.233333333333334,
+      "end": 30.266666666666666,
+      "endExclusive": true,
+      "worst": {
+        "frame": 907,
+        "time": 30.233333333333334,
+        "ssim": 1
+      },
+      "median": 1,
+      "mean": 1
+    },
+    {
+      "firstFrame": 915,
+      "lastFrame": 1141,
+      "count": 227,
+      "start": 30.5,
+      "end": 38.06666666666666,
+      "endExclusive": true,
+      "worst": {
+        "frame": 1109,
+        "time": 36.96666666666667,
+        "ssim": 0.999374
+      },
+      "median": 0.999724,
+      "mean": 0.9997029471365647
+    },
+    {
+      "firstFrame": 1468,
+      "lastFrame": 1641,
+      "count": 174,
+      "start": 48.93333333333333,
+      "end": 54.733333333333334,
+      "endExclusive": true,
+      "worst": {
+        "frame": 1641,
+        "time": 54.7,
+        "ssim": 0.992507
+      },
+      "median": 0.999827,
+      "mean": 0.9981758390804594
+    },
+    {
+      "firstFrame": 1772,
+      "lastFrame": 2141,
+      "count": 370,
+      "start": 59.06666666666666,
+      "end": 71.4,
+      "endExclusive": true,
+      "worst": {
+        "frame": 1994,
+        "time": 66.46666666666667,
+        "ssim": 0.992653
+      },
+      "median": 0.995488,
+      "mean": 0.9959404351351346
+    },
+    {
+      "firstFrame": 2198,
+      "lastFrame": 2391,
+      "count": 194,
+      "start": 73.26666666666667,
+      "end": 79.73333333333333,
+      "endExclusive": true,
+      "worst": {
+        "frame": 2348,
+        "time": 78.26666666666667,
+        "ssim": 0.999457
+      },
+      "median": 0.999468,
+      "mean": 0.999564479381441
+    },
+    {
+      "firstFrame": 3036,
+      "lastFrame": 3141,
+      "count": 106,
+      "start": 101.2,
+      "end": 104.73333333333333,
+      "endExclusive": true,
+      "worst": {
+        "frame": 3103,
+        "time": 103.43333333333334,
+        "ssim": 0.999275
+      },
+      "median": 0.999539,
+      "mean": 0.999584509433963
+    },
+    {
+      "firstFrame": 3195,
+      "lastFrame": 3641,
+      "count": 447,
+      "start": 106.5,
+      "end": 121.39999999999999,
+      "endExclusive": true,
+      "worst": {
+        "frame": 3641,
+        "time": 121.36666666666666,
+        "ssim": 0.991705
+      },
+      "median": 0.999409,
+      "mean": 0.9974797829977613
+    },
+    {
+      "firstFrame": 3711,
+      "lastFrame": 3749,
+      "count": 39,
+      "start": 123.7,
+      "end": 125,
+      "endExclusive": true,
+      "worst": {
+        "frame": 3748,
+        "time": 124.93333333333334,
+        "ssim": 0.996753
+      },
+      "median": 0.99967,
+      "mean": 0.9994294871794872
+    },
+    {
+      "firstFrame": 3752,
+      "lastFrame": 4249,
+      "count": 498,
+      "start": 125.06666666666666,
+      "end": 141.66666666666666,
+      "endExclusive": true,
+      "worst": {
+        "frame": 3997,
+        "time": 133.23333333333332,
+        "ssim": 0.998787
+      },
+      "median": 0.999321,
+      "mean": 0.9993195943775092
+    },
+    {
+      "firstFrame": 4286,
+      "lastFrame": 4499,
+      "count": 214,
+      "start": 142.86666666666667,
+      "end": 150,
+      "endExclusive": true,
+      "worst": {
+        "frame": 4397,
+        "time": 146.56666666666666,
+        "ssim": 0.99895
+      },
+      "median": 0.999572,
+      "mean": 0.9995281028037394
+    },
+    {
+      "firstFrame": 4530,
+      "lastFrame": 4619,
+      "count": 90,
+      "start": 151,
+      "end": 154,
+      "endExclusive": true,
+      "worst": {
+        "frame": 4619,
+        "time": 153.96666666666667,
+        "ssim": 0.999397
+      },
+      "median": 0.999766,
+      "mean": 0.9997353333333341
+    },
+    {
+      "firstFrame": 4830,
+      "lastFrame": 5240,
+      "count": 411,
+      "start": 161,
+      "end": 174.7,
+      "endExclusive": true,
+      "worst": {
+        "frame": 5051,
+        "time": 168.36666666666667,
+        "ssim": 0.989555
+      },
+      "median": 0.998412,
+      "mean": 0.9955880243309013
+    },
+    {
+      "firstFrame": 5603,
+      "lastFrame": 5990,
+      "count": 388,
+      "start": 186.76666666666665,
+      "end": 199.7,
+      "endExclusive": true,
+      "worst": {
+        "frame": 5740,
+        "time": 191.33333333333334,
+        "ssim": 0.99189
+      },
+      "median": 0.995974,
+      "mean": 0.9957571262886604
+    },
+    {
+      "firstFrame": 5997,
+      "lastFrame": 6740,
+      "count": 744,
+      "start": 199.9,
+      "end": 224.7,
+      "endExclusive": true,
+      "worst": {
+        "frame": 6100,
+        "time": 203.33333333333334,
+        "ssim": 0.995509
+      },
+      "median": 0.999257,
+      "mean": 0.9991260201612944
+    },
+    {
+      "firstFrame": 6742,
+      "lastFrame": 7240,
+      "count": 499,
+      "start": 224.73333333333332,
+      "end": 241.36666666666667,
+      "endExclusive": true,
+      "worst": {
+        "frame": 7201,
+        "time": 240.03333333333333,
+        "ssim": 0.991528
+      },
+      "median": 0.999073,
+      "mean": 0.9970109378757546
+    },
+    {
+      "firstFrame": 7253,
+      "lastFrame": 7490,
+      "count": 238,
+      "start": 241.76666666666665,
+      "end": 249.7,
+      "endExclusive": true,
+      "worst": {
+        "frame": 7299,
+        "time": 243.3,
+        "ssim": 0.992307
+      },
+      "median": 0.996636,
+      "mean": 0.996451105042017
+    },
+    {
+      "firstFrame": 7669,
+      "lastFrame": 7669,
+      "count": 1,
+      "start": 255.63333333333333,
+      "end": 255.66666666666666,
+      "endExclusive": true,
+      "worst": {
+        "frame": 7669,
+        "time": 255.63333333333333,
+        "ssim": 1
+      },
+      "median": 1,
+      "mean": 1
+    },
+    {
+      "firstFrame": 7680,
+      "lastFrame": 8240,
+      "count": 561,
+      "start": 256,
+      "end": 274.7,
+      "endExclusive": true,
+      "worst": {
+        "frame": 7693,
+        "time": 256.43333333333334,
+        "ssim": 0.997262
+      },
+      "median": 0.999562,
+      "mean": 0.9994996880570429
+    },
+    {
+      "firstFrame": 8334,
+      "lastFrame": 8740,
+      "count": 407,
+      "start": 277.8,
+      "end": 291.3666666666667,
+      "endExclusive": true,
+      "worst": {
+        "frame": 8669,
+        "time": 288.96666666666664,
+        "ssim": 0.998874
+      },
+      "median": 0.999473,
+      "mean": 0.9994388771498758
+    },
+    {
+      "firstFrame": 8748,
+      "lastFrame": 9141,
+      "count": 394,
+      "start": 291.6,
+      "end": 304.73333333333335,
+      "endExclusive": true,
+      "worst": {
+        "frame": 8978,
+        "time": 299.26666666666665,
+        "ssim": 0.997563
+      },
+      "median": 0.999248,
+      "mean": 0.9986591192893427
+    }
+  ]
+}

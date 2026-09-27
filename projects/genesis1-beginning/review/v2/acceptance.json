@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "kind": "bounded-delivery-disposition",
+  "createdAt": "2026-09-27T12:21:36.460841+00:00",
+  "videoPath": "/Volumes/DATA/ArkRender/genesis1/genesis1-breath-earth-v2.mp4",
+  "sha256": "bd147120463a4852418e1ca76ab4d4bfefceff80d9ac8c4ec67ac3f93d6e6f45",
+  "sourceRevisionHash": "ffc1b067c1f04d3b21f482c03f88d03e9a7b2117cc9bd5e99c012efb77b81a11",
+  "disposition": "delivered_for_Shane_review_with_documented_manual_exceptions",
+  "automaticGauntletPassed": false,
+  "userBasis": "Finish at approximately98percent quality; avoid endless late polish. Theme3 explicitly chosen with restrained colors, supporting regular and generated footage, and foreground lyrics.",
+  "confirmedFix": "Only g1-l045-w01 moved157.700\u2013158.200 to158.016318\u2013158.096385; paired source/AAC CTC and independent small.en support it. Corrected cue passes final acoustic check.",
+  "verification": {
+    "fullFramesDecoded": 9142,
+    "format": "1920x1080 H264 at30fps; one AAC;304.733333s",
+    "canonicalWords": 462,
+    "canonicalPhrases": 86,
+    "unchangedOtherCompleteWordRecords": 461,
+    "PCMIdenticalToV1": true,
+    "sourceAudioCorrelation": 0.998748,
+    "globalLagSeconds": 0,
+    "visual": "Independent fullV1 review plus V2changed-region and worst/representative outside comparison accepted; no required artistic fixes."
+  },
+  "rawLimitations": {
+    "strictAudio": {
+      "status": "failed",
+      "passedWords": 149,
+      "unsupportedWords": 299,
+      "supportedOutsideTolerance": 14,
+      "retainedModelDisagreement": "g1-l048-w01 He; pairedCTC and ASRonsets disagree, unchanged."
+    },
+    "OCR": "V1automatic458/462; actual four missed frames independently confirmed visible. V2 only exact identical frames inherit automatic observations; no new fullOCRpass asserted.",
+    "temporal": "V1near-static5.4s closing instrumental composition accepted manually; raw failure preserved.",
+    "pixelIdentity": "V2strictdelta_scopefailed:2474identicalframes,6668different,6525outside154\u2013161s. OutsideSSIMmin.989555; independent worst/representative pairs show no semantic/readability regression. Cause not established; manual visual continuation accepted, not automatic pass."
+  },
+  "evidence": [
+    "audio-summary.json",
+    "audio-review.json",
+    "render-provenance.json",
+    "layout.json",
+    "delta-review.json",
+    "delta-ssim-diagnostics.json",
+    "delta-evidence-carry-forward.json",
+    "independent-visual-review.json",
+    "../v1/manual-exceptions.json"
+  ]
+}

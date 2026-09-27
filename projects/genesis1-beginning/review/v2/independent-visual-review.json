@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "kind": "independent-encoded-visual-delta-review",
+  "scope": "visual-only",
+  "reviewer": "Rook independent composition reviewer /root/psalm91_local_video",
+  "reviewedAt": "2026-09-27T12:19:47.038085+00:00",
+  "videoPath": "/Volumes/DATA/ArkRender/genesis1/genesis1-breath-earth-v2.mp4",
+  "sha256": "bd147120463a4852418e1ca76ab4d4bfefceff80d9ac8c4ec67ac3f93d6e6f45",
+  "binding": {
+    "videoSha256": "bd147120463a4852418e1ca76ab4d4bfefceff80d9ac8c4ec67ac3f93d6e6f45",
+    "projectHash": "879e39a2b371664b4703b56d5c5c2647dcb6aea68c8af9e23afce5f7813cc3d9",
+    "rendererHash": "4a279e37bc6bb3a1d2df216a8adc28a6c35974724f15419922adbb1d616a0a39",
+    "revisionHash": "ffc1b067c1f04d3b21f482c03f88d03e9a7b2117cc9bd5e99c012efb77b81a11",
+    "renderProvenancePath": "/Volumes/DATA/ArkRender/genesis1/genesis1-breath-earth-v2.mp4.render.json"
+  },
+  "changedRegionStatus": "accepted",
+  "blockingIssues": [],
+  "requiredFixes": [],
+  "changedRegionObservations": [
+    "At154-157.8s the preceding His word took hold and TWO GREAT lights He fashioned phrases remain readable and transition into the larger ring without a blank gap.",
+    "At native30fps the corrected first the is not visible through158.000s and is visible at158.033s. It remains readable before GREATER enters at158.167s. This verifies visual entrance only, not a listening/sync claim.",
+    "The remaining to command the DAY phrase is separated and legible; transition to LESSER remains continuous. No new clipping, broken media, or missing word observed."
+  ],
+  "reviewCoverage": {
+    "changedInterval": [
+      154,
+      161
+    ],
+    "denseFrames": 42,
+    "denseFps": 6,
+    "nativeInterval": [
+      157.6,
+      158.6
+    ],
+    "nativeFrames": 30,
+    "nativeFps": 30,
+    "contactSheets": 5
+  },
+  "evidence": [
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v2/changed-sheet-00.jpg",
+      "sha256": "2fd87ff4a1c568cdb38af8c705c08a1ebd0da44c9097fa46217485c5a7745f44",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v2/changed-sheet-01.jpg",
+      "sha256": "05c93c34fb31455dcc58991947131ec60113477141756c4f6a58a9aacd50c51d",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v2/changed-sheet-02.jpg",
+      "sha256": "71e7af15e490145a48b8787116a59683fa6cff936d90588009a8163dab4b6db3",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v2/cue-native-sheet-00.jpg",
+      "sha256": "70257e66f7a5388e577fa4d72bb9ee2ea1180f7a1fc94e50b87fee16382fa109",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v2/cue-native-sheet-01.jpg",
+      "sha256": "ae1908a4aad895d5dbe606b01bb134e3a640afbeb1a9c8985e006162c864fa8a",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v2/outside-pair-00364.jpg",
+      "sha256": "c6caf1e08424c2916554667452b28d1bfc3ab92066308a13cd409b6db8ff0926",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v2/outside-pair-01641.jpg",
+      "sha256": "e3103e08f6bc32514b12157ec4afb7b11822816c0e026addc1126e34fbb5d5e5",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v2/outside-pair-01994.jpg",
+      "sha256": "caa4b47fa7e5abccdb74d342b046c479fd394f7f9ae7e60e501bc8937d015aaf",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v2/outside-pair-03597.jpg",
+      "sha256": "35dca6675c56d0bce7916550782cf26aae9a09fe9c1d239ba1bc56e3837c90ec",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v2/outside-pair-03641.jpg",
+      "sha256": "2f78ae06bbb4a441f4b9d12e074ea1885b421e871d7bda14886901c392b6193e",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v2/outside-pair-05051.jpg",
+      "sha256": "a300161a1d516fa6e4000512537b83046b650b755ca14943c20f0cec7cac5b4a",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v2/outside-pair-05740.jpg",
+      "sha256": "9c7f2cefaedba835e6288273e9ef4ddea5ce2088b3f1768456733da2fee14b54",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v2/outside-pair-07198.jpg",
+      "sha256": "3fb29bcbe394c9c2a32e365b52975dc293310819f1beab1fa221413c97a302a1",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v2/outside-pair-07201.jpg",
+      "sha256": "9d915b9d115d3c7311b2903a3d05469aaadab2e02e7197919ceefb5baf039441",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v2/outside-pair-08978.jpg",
+      "sha256": "99c5da1f52c2a77b99b6eadbf8a26e6676ef53d6d91939daf7a9693a94321c8a",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v2/outside-pair-09139.jpg",
+      "sha256": "06e9bc71b4435f660067913a23427cef1327a680f76202138ebf9010bd453729",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v2/outside-dense-early.jpg",
+      "sha256": "98e77554f49ffd26ede694bd650003955d62722bd5717307b6912fb7c940d6a5",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v2/outside-dense-worst.jpg",
+      "sha256": "ad6564187819e41b0270f8f2ab7207126da5c21b871e8fd55513430bbf77f8ce",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v2/outside-dense-ending.jpg",
+      "sha256": "d97b5f19e0d1b0890c01e18e7185ffe416cbdb0f2bf4975715c3197365b13072",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v2/outside-worst-difference-x8.jpg",
+      "sha256": "5da906330921fb2989bad6c80b015e5e7c2b4d9fa94d11ed0fbc33f9314b76a3",
+      "visuallyInspected": true
+    }
+  ],
+  "baseline": {
+    "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/independent-visual-review.json",
+    "sha256": "b5a99b57b2231a2cc4ba37c4959347fab1e31bfe25be0b5b94866f32c1707a7c",
+    "videoSha256": "b946c097f0902c0f3b4eda3a330aceca2ef893c29bd5a7eb511cc34101d130db"
+  },
+  "wholeFilmInheritance": {
+    "verified": true,
+    "method": "manual visual continuation after bounded decoded comparison plus exact source delta",
+    "pixelIdentical": false,
+    "rawDeltaChecksPassed": false,
+    "rawDeltaReport": {
+      "path": "/Volumes/DATA/ArkRender/genesis1/review-v2/delta-review.json",
+      "sha256": "d913554550b6f37ffe8c6cb7293cd94faf8cee301027de5d867d0c9bf70087b5"
+    },
+    "nativeFrames": {
+      "total": 9142,
+      "identical": 2474,
+      "different": 6668,
+      "differentOutside154to161": 6525
+    },
+    "outsideSsimMinimum": 0.989555,
+    "outsideSsimWorstTime": 168.36666666666667,
+    "manualVisualComparison": {
+      "manifest": "/Volumes/DATA/ArkRender/genesis1/visual-v2/outside-comparison-manifest.json",
+      "sha256": "99860a9b3f8d0fc9babfe84c91209f955f60921927eb3e87683e896ed6ff37d4",
+      "representativeExactIndexPairs": 11,
+      "densePairedSamples": 18,
+      "denseIntervals": [
+        [
+          5,
+          6
+        ],
+        [
+          168,
+          169
+        ],
+        [
+          300,
+          301
+        ]
+      ],
+      "observations": [
+        "Eleven paired frames at the lowest SSIM in each30-second block show the same word content, type positions and artwork/framing.",
+        "At worst frame5051/168.366667s both show to send their LIGHT with the same fading ophanim and continuous orbit accents. The x8 difference highlights fine texture/edge variation; no visible semantic change.",
+        "Dense early/worst/ending samples show the same reveal phases and transitions, without a new blank or displaced word.",
+        "Vegetation, ocean, bird and wildlife paired frames preserve the same foreground hierarchy and composition."
+      ],
+      "differenceCause": "not established; do not label this pure compression or exact render determinism"
+    },
+    "disposition": "Accept visual continuity and inherit prior artistic assessment as a documented manual exception. Preserve raw failed native-frame scope check unchanged; this exception does not certify strict lyric sync or erase OCR/static failures."
+  },
+  "audioListening": false,
+  "projectChanged": false,
+  "limitations": [
+    "Direct V2 review covers154-161s plus native cue and bounded outside comparisons. Whole-film artistic observations rely on the prior V1 review plus source binding, SSIM diagnostics and manual continuation judgment; most native frames are not pixel-identical.",
+    "No audio, strict word-level sync, OCR, or whole-gauntlet score is asserted.",
+    "6fps timestamps are nominal sampling labels. The corrected entrance was also inspected with30fps samples.",
+    "This manual visual exception is not an automatic engine gate pass; raw delta_checks_failed remains in its original report."
+  ],
+  "status": "accepted_with_documented_manual_visual_continuation_exception",
+  "scores": {
+    "lyricLegibility": 9.1,
+    "semanticMotion": 8.6,
+    "photorealism": 8.8,
+    "composition": 8.9,
+    "continuity": 9.2
+  },
+  "scoreBasis": "V1 independent full-progression visual scores retained by judgment after changed-region V2 inspection and bounded exact-index V1/V2 visual comparisons. Source binding confirms one cue change; full-native SSIM quantifies small visual differences. This is not a claim of pixel identity or a new full-film real-time watch."
+}

@@ -1,0 +1,330 @@
+{
+  "version": 1,
+  "kind": "bounded-manual-cue-correction",
+  "createdAt": "2026-09-27T12:05:58.680450+00:00",
+  "sourceAudioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2",
+  "preservedV1Commit": "020644c",
+  "v1Artifact": "/Volumes/DATA/ArkRender/genesis1/genesis1-breath-earth-v1.mp4",
+  "v1ArtifactSha256": "b946c097f0902c0f3b4eda3a330aceca2ef893c29bd5a7eb511cc34101d130db",
+  "priorWordsSha256": "cd7f2602f86fc72adbaa6dac9e1c790647b28352ca2e49233f43032513bff488",
+  "correctedWordsSha256": "a7f4b52706f837bad3cdcda1abe26751be33f523d59e1372653ebd021658edaa",
+  "rawAudioReview": "/Volumes/DATA/ArkRender/genesis1/review-v1/audio/audio-review.json",
+  "rawPasses": [
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/review-v1/audio/passes/0036-7a2262ac-110f-48b9-9c67-20beaf30ea95-7d8a7ec175d855dab090a6be97f59aca6f42fc4a75b5e988ffe730d2325428d8.json",
+      "sha256": "e4005878c6e18ef6e9d93f78bb1751e0ccb3e569e9f3a61966a90486e700d5e0"
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/review-v1/audio/passes/0037-e24690ac-16d7-4dba-a0f2-1f9059d48bd2-200f3b42a4ce7b6ca7a730564f8c41fdd4bc4560f811196bd1e6cf0b34746274.json",
+      "sha256": "b32e6af728d149610717d695fa04baeb63f376a16bb849e16ce44562439fd6a6"
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/review-v1/audio/passes/0038-0b7a4667-eeea-4736-b32b-801332a0a394-9483f48c15fadd55550daf16485f7b9fbf966f019faeff5b6fd559f0f31928ba.json",
+      "sha256": "5a19ff29e8808dfc8a0b238cfd5ee0e0a57e639363c56a6d00e0a94f841ef232"
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/review-v1/audio/passes/0039-b7864c3c-b826-4a3d-afeb-5f932e64699f-a58cc06a8647a295ec3b0a147c11b03694290151d02aeeacd2f0f6e76b6e1971.json",
+      "sha256": "17fb289024699a771b19094a8484560c92978ce35db15ecbfe8a0e4d3ec9d8a7"
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/review-v1/audio/passes/0040-36071174-a84a-4fd7-8759-c460c1d6f26d-b58612bf0fa4d9ec94318500e4363b228f00518630575d1153714111ff43c544.json",
+      "sha256": "cf8497807e8c077471acd391a6331e315d331c3958b4b87415386fd6ffbfdd3e"
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/review-v1/audio/passes/0041-32f2e475-4d10-4503-a737-b6ef281ea751-9fd0f7b2aae322608e09d37c552d8fa6bb6fdd5b0bacc63efb833dea8f3cefff.json",
+      "sha256": "1a2faa987db63864e01c116d5a42c5e5886183090218582ba71b188748d0193d"
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/review-v1/audio/passes/0042-3a1ca225-fb63-4931-a922-7d7ce1ae3848-410f4bdd76d6b76fedcd46d21e26813a3a670a1cb35676fedccaa16e57ae6987.json",
+      "sha256": "2d2f094265f9ade947b71a2911ff44c1b94a09c97fce378a29284c0de1559e5b"
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/review-v1/audio/passes/0043-a817fba5-b1fb-46b7-8941-c2ca058a03a1-77cc445898b7838887d968ac384fa5ece3c2c0057c1ea86f7101f2cc7bfc16ec.json",
+      "sha256": "9aeda235e3e85b51e0d5c745d6d0b0ac72b2d525d3233dea23c5db56a3993c6c"
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/review-v1/audio/passes/0044-c72de19b-e219-42b1-b31f-697628276255-174223be3068261e2f30ee29b3590d83d8b6263f5f5cb6b71e55455903b2f0e8.json",
+      "sha256": "e844fafd514b3532144f8cbba6c5db3ad1f684f8011305cf2e349dfb05d6b3bf"
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/review-v1/audio/passes/0045-df1bf5ca-9e1f-45c3-a712-c773748757c7-a2402c8c8d12e8936188c9647cbfc7b138267d7c3dc65954fa67da9cacbf9056.json",
+      "sha256": "4af3e3b25f43acad6573c1f93affcdd702b8690837977bbedd4268fc3814578b"
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/review-v1/audio/passes/0046-75644bac-ba6f-44c5-8055-cd6a8dc345cd-29c69f93b8b204d7fc55ada439f512e55d3bd4a9441417a427b292f4bb498e16.json",
+      "sha256": "15d049b3602537f98ca18db46942379d52d0baec3ad18e356ef4e3fe0ecc87a4"
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/review-v1/audio/passes/0047-b6238f28-5801-4a50-a78c-7b1c5d4d6454-4fc65e1b8b287c12400a5f9b9c953a1e998445f339cb28979ab812f1274f753d.json",
+      "sha256": "ba6f2b97a2d1d2682d6a80f23313a2288cad32088fac023ba4072879841275e6"
+    }
+  ],
+  "changed": [
+    {
+      "id": "g1-l045-w01",
+      "previous": {
+        "id": "g1-l045-w01",
+        "text": "the",
+        "phraseId": "g1-l045",
+        "sourcePhraseId": "g1-l045",
+        "start": 157.7,
+        "end": 158.2,
+        "confidence": "machine_estimate",
+        "provenance": {
+          "method": "local-openai-whisper; canonical exact token match",
+          "model": "medium.en.pt",
+          "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+          "tokenProbability": 0.878606379032135,
+          "timingVerified": false,
+          "sourceAcousticSupported": false,
+          "sourcePairedCheckpoints": false,
+          "independentRecognitionSupport": true,
+          "forcedAlignment": false,
+          "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/full-whisper-medium-diagnostic.json",
+          "encodedReview": "pending",
+          "note": "One unchanged measured acoustic interval selected. No interpolation or beat quantization."
+        }
+      },
+      "selected": {
+        "start": 158.016318,
+        "end": 158.096385
+      },
+      "evidence": {
+        "id": "g1-l045-w01",
+        "text": "the",
+        "currentStart": 157.7,
+        "currentEnd": 158.2,
+        "acousticStart": 158.016318,
+        "acousticEnd": 158.096385,
+        "acousticConfidence": 0.987117,
+        "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "codecAlignmentSpread": 0,
+        "sourceAcousticEvidence": [
+          {
+            "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+            "role": "source",
+            "text": "the",
+            "start": 158.036335,
+            "end": 158.096385,
+            "score": 0.9008365719148966,
+            "startDelta": null,
+            "endDelta": null
+          },
+          {
+            "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+            "role": "source",
+            "text": "the",
+            "start": 158.016318,
+            "end": 158.096385,
+            "score": 0.9871167804885002,
+            "startDelta": null,
+            "endDelta": null
+          }
+        ],
+        "pairedCheckpointEvidence": [
+          {
+            "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+            "role": "source",
+            "text": "the",
+            "start": 158.036335,
+            "end": 158.096385,
+            "score": 0.9008365719148966,
+            "startDelta": 0.020017,
+            "endDelta": 0
+          }
+        ],
+        "corroboration": [
+          {
+            "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+            "role": "source",
+            "text": "the",
+            "start": 158.02,
+            "end": 158.1,
+            "score": 0.9538034796714783,
+            "startDelta": 0.003682,
+            "endDelta": 0.003615
+          }
+        ],
+        "encodedEvidence": {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "the",
+          "start": 158.016318,
+          "end": 158.096385,
+          "score": 0.9859544914552306,
+          "startDelta": 0,
+          "endDelta": 0
+        },
+        "lexicalEvidence": {
+          "matchedCheckpointIds": [
+            "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+            "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872"
+          ],
+          "mismatches": [],
+          "rejectedPasses": 0
+        },
+        "route": "official_dual_ctc",
+        "supported": true,
+        "cueDelta": 0.316318,
+        "endDelta": 0.103615,
+        "passed": false,
+        "repair": {
+          "id": "g1-l045-w01",
+          "start": 158.016318,
+          "end": 158.096385,
+          "previousStart": 157.7,
+          "previousEnd": 158.2
+        }
+      },
+      "encodedFramesViewed": [
+        {
+          "path": "/Volumes/DATA/ArkRender/genesis1/review-v1/ocr/frames/frame-0004736-sample-0000823.png",
+          "time": 157.866667,
+          "observation": "The word the is fully legible before the independently corroborated acoustic onset."
+        },
+        {
+          "path": "/Volumes/DATA/ArkRender/genesis1/review-v1/ocr/frames/frame-0004745-sample-0000825.png",
+          "time": 158.166667,
+          "observation": "The word the remains legible with following GREATER."
+        }
+      ],
+      "neighborImpact": {
+        "previousWordEnd": 157.7,
+        "nextWordStart": 158.136627,
+        "gapBeforeNextWord": 0.040242,
+        "otherWordChanges": 0,
+        "phraseStartBefore": 157.7,
+        "phraseStartAfter": 158.016318
+      },
+      "independentASR": {
+        "small.en": {
+          "start": 158.02,
+          "end": 158.1,
+          "probability": 0.9538034796714783
+        },
+        "base.en": {
+          "start": 157.46,
+          "end": 158.06,
+          "probability": 0.50579745
+        }
+      },
+      "reason": "Two distinct CTC checkpoints agree across source and V1 encoded AAC; independent unprompted small.en agrees within 4 ms. Selected one actual measured interval."
+    }
+  ],
+  "unchangedDisagreement": [
+    {
+      "id": "g1-l048-w01",
+      "retainedStart": 164.8,
+      "retainedEnd": 165.28,
+      "proposedCTCStart": 165.165519,
+      "proposedCTCEnd": 165.225588,
+      "rawEvidence": {
+        "id": "g1-l048-w01",
+        "text": "He",
+        "currentStart": 164.8,
+        "currentEnd": 165.28,
+        "acousticStart": 165.165519,
+        "acousticEnd": 165.225588,
+        "acousticConfidence": 0.984027,
+        "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "codecAlignmentSpread": 0,
+        "sourceAcousticEvidence": [
+          {
+            "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+            "role": "source",
+            "text": "He",
+            "start": 165.165519,
+            "end": 165.245611,
+            "score": 0.9451519406717944,
+            "startDelta": null,
+            "endDelta": null
+          },
+          {
+            "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+            "role": "source",
+            "text": "He",
+            "start": 165.165519,
+            "end": 165.225588,
+            "score": 0.9840269115166222,
+            "startDelta": null,
+            "endDelta": null
+          }
+        ],
+        "pairedCheckpointEvidence": [
+          {
+            "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+            "role": "source",
+            "text": "He",
+            "start": 165.165519,
+            "end": 165.245611,
+            "score": 0.9451519406717944,
+            "startDelta": 0,
+            "endDelta": 0.020023
+          }
+        ],
+        "corroboration": [],
+        "encodedEvidence": {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "He",
+          "start": 165.165519,
+          "end": 165.225588,
+          "score": 0.9713211478282789,
+          "startDelta": 0,
+          "endDelta": 0
+        },
+        "lexicalEvidence": {
+          "matchedCheckpointIds": [
+            "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+            "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872"
+          ],
+          "mismatches": [],
+          "rejectedPasses": 0
+        },
+        "route": "official_dual_ctc",
+        "supported": true,
+        "cueDelta": 0.365519,
+        "endDelta": 0.054412,
+        "passed": false,
+        "repair": {
+          "id": "g1-l048-w01",
+          "start": 165.165519,
+          "end": 165.225588,
+          "previousStart": 164.8,
+          "previousEnd": 165.28
+        }
+      },
+      "independentASR": [
+        {
+          "model": "base.en",
+          "start": 164.659845,
+          "end": 165.219845
+        },
+        {
+          "model": "small.en",
+          "start": 164.799845,
+          "end": 165.259845
+        }
+      ],
+      "encodedFramesViewed": [
+        {
+          "path": "/Volumes/DATA/ArkRender/genesis1/review-v1/ocr/frames/frame-0004949-sample-0000887.png",
+          "time": 164.966667,
+          "observation": "He is fully legible, as authored."
+        },
+        {
+          "path": "/Volumes/DATA/ArkRender/genesis1/review-v1/ocr/frames/frame-0004957-sample-0000889.png",
+          "time": 165.233333,
+          "observation": "He remains legible."
+        }
+      ],
+      "decision": "Retain current onset. Paired CTC suggests later onset, but independent ASR does not agree. Unresolved model disagreement, not a confirmed perceptual defect. Root explicitly selected this bounded outcome."
+    }
+  ],
+  "limits": [
+    "No new inference was run. No other words, source audio, scenes or renderer files were edited.",
+    "The original strict-audio failures and four OCR false negatives remain unchanged in the V1 raw review.",
+    "encodedEvidence.role in the summary serializer says source; separate encoded raw passes have the actual MP4 audio identity and their own PCM fingerprint.",
+    "Whole-film automatic strict singing certification remains failed; this local repair does not assert a full pass."
+  ]
+}

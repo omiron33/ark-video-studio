@@ -1,0 +1,67 @@
+{
+  "id": "full-v2",
+  "title": "Genesis 1 \u2014 Breath & Earth \u2014 Final Full Film v2",
+  "candidateId": "vid-20260927-63932a93",
+  "status": "pending_review",
+  "reviewUrl": "https://omipc.taild60b4e.ts.net/studio#videos",
+  "watchUrl": "https://omipc.taild60b4e.ts.net/api/admin/videos/vid-20260927-63932a93/media",
+  "downloadUrl": "https://omipc.taild60b4e.ts.net/api/admin/videos/vid-20260927-63932a93/media?download=1",
+  "localFile": "/Volumes/DATA/ArkRender/genesis1/genesis1-breath-earth-v2.mp4",
+  "localSha256": "bd147120463a4852418e1ca76ab4d4bfefceff80d9ac8c4ec67ac3f93d6e6f45",
+  "remoteCopiedSha256": "bd147120463a4852418e1ca76ab4d4bfefceff80d9ac8c4ec67ac3f93d6e6f45",
+  "remoteDownloadSha256": "bd147120463a4852418e1ca76ab4d4bfefceff80d9ac8c4ec67ac3f93d6e6f45",
+  "bytes": 163555795,
+  "rangeStatus": 206,
+  "contentRange": "bytes 0-1023/163555795",
+  "duplicate": false,
+  "thumbnail": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/full-v2-thumbnail.jpg",
+  "thumbnailAtSeconds": 2,
+  "thumbnailSha256": "0f1f14c10f6b21183915cc0b0cb2c1aed5646fb11541e2a34820b3dfa7665a94",
+  "visualReview": "/Volumes/DATA/ArkRender/genesis1/visual-v2/independent-visual-review.json",
+  "visualReviewSha256": "9c15f21c3978337991448243810b355ca21257828bde990fae65fb5abb6a1d10",
+  "audioEvidence": "/Volumes/DATA/ArkRender/genesis1/review-v2/audio/bounded-summary.json",
+  "audioEvidenceSha256": "7be0ae118282fb9f065d17197e69aa18e44f7851993961f6b6f4bde547502f4d",
+  "supersedes": "vid-20260927-d43880e9",
+  "oldCandidateAfterIngest": {
+    "id": "vid-20260927-d43880e9",
+    "title": "Genesis 1 - Breath & Earth - Full Film v1",
+    "status": "superseded",
+    "supersedes": null,
+    "supersededBy": "vid-20260927-63932a93"
+  },
+  "preservedPreviewCandidates": [
+    {
+      "id": "vid-20260927-e6050c02",
+      "title": "Genesis 1 - Opening 32 seconds (lyric film preview)",
+      "status": "pending_review",
+      "supersedes": null,
+      "supersededBy": null
+    },
+    {
+      "id": "vid-20260927-eee760b7",
+      "title": "Genesis 1 - Life from the Earth (source preview)",
+      "status": "pending_review",
+      "supersedes": null,
+      "supersededBy": null
+    },
+    {
+      "id": "vid-20260927-e0aa88b1",
+      "title": "Genesis 1 - Land Emerges (source preview)",
+      "status": "pending_review",
+      "supersedes": null,
+      "supersededBy": null
+    },
+    {
+      "id": "vid-20260927-6eed3523",
+      "title": "Genesis 1 - Whale from Lines (source preview)",
+      "status": "pending_review",
+      "supersedes": null,
+      "supersededBy": null
+    }
+  ],
+  "finalAuditUpdatePending": false,
+  "verifiedAt": "2026-09-27T12:20:45.969037+00:00",
+  "httpStatus": 200,
+  "contentType": "video/mp4",
+  "contentDisposition": "attachment; filename=\"Genesis1 - The Beginning Final Full Film v2.mp4\"; filename*=UTF-8''Genesis1%20-%20The%20Beginning%20Final%20Full%20Film%20v2.mp4"
+}

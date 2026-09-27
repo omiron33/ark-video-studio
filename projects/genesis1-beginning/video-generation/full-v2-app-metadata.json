@@ -1,0 +1,14 @@
+{
+  "project": "Genesis1 - The Beginning",
+  "title": "Genesis 1 \u2014 Breath & Earth \u2014 Final Full Film v2",
+  "version": "Final Full Film v2",
+  "sourceAgent": "Codex",
+  "sourceMachine": "Mac mini",
+  "sourcePath": "/Volumes/DATA/ArkRender/genesis1/genesis1-breath-earth-v2.mp4",
+  "notes": "Final corrected Genesis 1 lyric film, 304.733333 seconds / 9142 frames, 1080p30. Approved theme 3: restrained charcoal, bone, rust and amber; 63 authored animation families, four generated motion inserts, and active foreground words/graphics. V2 moves the supported first 'the' in 'the greater to command the day' from157.700 to158.016318 seconds; all other461word records and choreography remain unchanged. Independent encoded delta review accepted; prior full-film visual acceptance is carried forward with a documented manual visual-continuation exception: source inputs differ only for this cue, outside-region SSIM minimum0.989555 and worst/representative paired frames show no semantic regression. Native pixel identity failed and remains a recorded failure; its cause is not established. PCM correlation0.998748, minimum segment0.996351, zero global lag, gain-0.067581dB. Corrected cue passes the bounded acoustic check. STRICT SINGING SYNC IS NOT CERTIFIED:149/462 words passed,299unsupported,14supported outside tolerance; the unchanged 'He' is a model-disagreement case. Prior full OCR found458/462 automatically; four remaining words were visually confirmed and remain documented manual exceptions, not automatic passes. The intentional final5.4-second compositional hold is retained as a reviewed exception. No perfect-sync or full automatic-gauntlet-pass claim. Pending Shane review. Supersedes full-film V1 vid-20260927-d43880e9, preserving its file/history and all preview candidates. SHA256 bd147120463a4852418e1ca76ab4d4bfefceff80d9ac8c4ec67ac3f93d6e6f45.",
+  "status": "pending_review",
+  "path": "C:\\Users\\sjfis\\Videos\\Genesis1\\full-v2-bd147120463a.mp4",
+  "thumbnail": "C:\\Users\\sjfis\\Videos\\Genesis1\\full-v2-bd147120463a.jpg",
+  "expectedMd5": "63932a9355684a8d69a997fc957a0d19",
+  "supersedes": "vid-20260927-d43880e9"
+}

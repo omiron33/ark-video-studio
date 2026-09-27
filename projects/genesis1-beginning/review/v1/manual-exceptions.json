@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "videoSha256": "b946c097f0902c0f3b4eda3a330aceca2ef893c29bd5a7eb511cc34101d130db",
+  "createdAt": "2026-09-27T12:06:15.875695+00:00",
+  "status": "manual_exceptions_recorded_not_automatic_pass",
+  "reviewers": [
+    "/root/psalm91_alignment",
+    "/root/psalm91_composition"
+  ],
+  "automaticOCR": {
+    "observed": 458,
+    "required": 462,
+    "status": "failed"
+  },
+  "manuallyVisibleWords": [
+    {
+      "wordId": "g1-l010-w03",
+      "text": "the",
+      "time": 43.233333,
+      "path": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/review/v1/manual-visibility/frame-0001297-sample-0000187.png",
+      "sha256": "c14f6e21f7601341228ed36d3152876f7af6f5e96c340ea2b01974f6d48c25c0",
+      "finding": "Plainly recognizable, fully within frame, unobscured. OCR false negative; no timing claim."
+    },
+    {
+      "wordId": "g1-l051-w06",
+      "text": "from",
+      "time": 173.6,
+      "path": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/review/v1/manual-visibility/frame-0005208-sample-0000962.png",
+      "sha256": "4f165f0e9dd0883736081047710b2b1d3fc4a6d2ad1c2c2e4c1372a4272adcf2",
+      "finding": "Plainly recognizable, fully within frame, unobscured. OCR false negative; no timing claim."
+    },
+    {
+      "wordId": "g1-l068-w06",
+      "text": "kind!",
+      "time": 231.5,
+      "path": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/review/v1/manual-visibility/frame-0006945-sample-0001263.png",
+      "sha256": "6cf323e8b8b143df23155bbc0951bb23de307d4311d296646a7a882555d9f186",
+      "finding": "Plainly recognizable, fully within frame, unobscured. OCR false negative; no timing claim."
+    },
+    {
+      "wordId": "g1-l069-w04",
+      "text": "hold.",
+      "time": 234.333333,
+      "path": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/review/v1/manual-visibility/frame-0007030-sample-0001277.png",
+      "sha256": "829d3e9a379a35d295122895fa596acb1f70c56d0d6cc95e3ef94ffaf3b33f3c",
+      "finding": "Plainly recognizable, fully within frame, unobscured. OCR false negative; no timing claim."
+    }
+  ],
+  "temporalException": {
+    "start": 299.266667,
+    "end": 304.666667,
+    "automaticStatus": "failed",
+    "manualDisposition": "Accepted final instrumental closing settle; clear held words and gradually resolving geometry. Not an opening or sung-word freeze. Root inspected295\u2013304s plus independent full-film visual review."
+  },
+  "strictAudio": "Raw148verified299unsupported15outside-tolerance preserved. A separate final version fixes the one conclusive early entrance. No full song synchronization certification."
+}

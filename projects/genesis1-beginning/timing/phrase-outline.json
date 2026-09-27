@@ -1318,7 +1318,7 @@
       "sectionName": "Verse 3",
       "deliveryStyle": "Breakdown",
       "sourceLineIndex": 69,
-      "start": 157.7,
+      "start": 158.016318,
       "end": 159.665621,
       "provenance": {
         "method": "First and last selected actual acoustic word interval",
@@ -1328,7 +1328,8 @@
           "analysis/full-whisper-small.json",
           "analysis/full-whisper-medium-diagnostic.json"
         ],
-        "performanceRepeatOf": null
+        "performanceRepeatOf": null,
+        "boundedCorrectionEvidence": "../analysis/v1-bounded-cue-correction.json"
       },
       "performanceIndex": 45,
       "sourcePhraseId": "g1-l045",

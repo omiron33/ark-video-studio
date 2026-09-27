@@ -1,0 +1,19 @@
+{
+  "version": "full-final-v2",
+  "sourcePath": "/Volumes/DATA/ArkRender/genesis1/genesis1-breath-earth-v2.mp4",
+  "importPath": "/Users/shanefisher/Movies/Genesis1/Genesis 1 - Breath and Earth - Final.mp4",
+  "sha256": "bd147120463a4852418e1ca76ab4d4bfefceff80d9ac8c4ec67ac3f93d6e6f45",
+  "album": "Genesis 1 - Breath & Earth",
+  "verifiedAt": "2026-09-27T12:16:32.233179+00:00",
+  "importMethod": "Photos native UI File Import exact final filename",
+  "verification": {
+    "fileDialog": "Final.mp4;163.6MB",
+    "albumVideoCount": 6,
+    "selectedItem": "September27,2026 at7:12:38AM;6of6;duration5:05",
+    "playback": "Advanced00:00 to00:35 with visible Then God and He looked foreground words",
+    "leftOpen": true,
+    "leftPausedAtSeconds": 35
+  },
+  "priorVersionsPreserved": true,
+  "iCloudOrIPhoneSyncVerified": false
+}

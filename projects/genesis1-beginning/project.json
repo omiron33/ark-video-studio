@@ -5642,22 +5642,46 @@
       "text": "the",
       "phraseId": "g1-l045",
       "sourcePhraseId": "g1-l045",
-      "start": 157.7,
-      "end": 158.2,
+      "start": 158.016318,
+      "end": 158.096385,
       "confidence": "machine_estimate",
       "provenance": {
-        "method": "local-openai-whisper; canonical exact token match",
-        "model": "medium.en.pt",
-        "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
-        "tokenProbability": 0.878606379032135,
+        "method": "local-torchaudio-ctc selected actual interval; paired source and encoded AAC with independent ASR corroboration",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "tokenProbability": 0.9871167804885002,
         "timingVerified": false,
-        "sourceAcousticSupported": false,
-        "sourcePairedCheckpoints": false,
+        "sourceAcousticSupported": true,
+        "sourcePairedCheckpoints": true,
         "independentRecognitionSupport": true,
-        "forcedAlignment": false,
-        "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/full-whisper-medium-diagnostic.json",
-        "encodedReview": "pending",
-        "note": "One unchanged measured acoustic interval selected. No interpolation or beat quantization."
+        "forcedAlignment": true,
+        "artifact": "/Volumes/DATA/ArkRender/genesis1/review-v1/audio/passes/0040-36071174-a84a-4fd7-8759-c460c1d6f26d-b58612bf0fa4d9ec94318500e4363b228f00518630575d1153714111ff43c544.json",
+        "encodedReview": "V1 measured evidence; rebuilt V2 encoded visibility remains pending",
+        "correctionEvidence": "../analysis/v1-bounded-cue-correction.json",
+        "previous": {
+          "id": "g1-l045-w01",
+          "text": "the",
+          "phraseId": "g1-l045",
+          "sourcePhraseId": "g1-l045",
+          "start": 157.7,
+          "end": 158.2,
+          "confidence": "machine_estimate",
+          "provenance": {
+            "method": "local-openai-whisper; canonical exact token match",
+            "model": "medium.en.pt",
+            "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+            "tokenProbability": 0.878606379032135,
+            "timingVerified": false,
+            "sourceAcousticSupported": false,
+            "sourcePairedCheckpoints": false,
+            "independentRecognitionSupport": true,
+            "forcedAlignment": false,
+            "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/full-whisper-medium-diagnostic.json",
+            "encodedReview": "pending",
+            "note": "One unchanged measured acoustic interval selected. No interpolation or beat quantization."
+          }
+        },
+        "note": "One unchanged measured acoustic interval selected. No interpolation, snapping, averaging or neighbor retiming. Selected source and V1 AAC intervals agree; small.en agrees within 4 ms. Whole-film strict singing certification remains failed."
       }
     },
     {
@@ -12187,7 +12211,7 @@
       "sectionName": "Verse 3",
       "deliveryStyle": "Breakdown",
       "sourceLineIndex": 69,
-      "start": 157.7,
+      "start": 158.016318,
       "end": 159.665621,
       "provenance": {
         "method": "First and last selected actual acoustic word interval",
@@ -12197,7 +12221,8 @@
           "analysis/full-whisper-small.json",
           "analysis/full-whisper-medium-diagnostic.json"
         ],
-        "performanceRepeatOf": null
+        "performanceRepeatOf": null,
+        "boundedCorrectionEvidence": "../analysis/v1-bounded-cue-correction.json"
       },
       "performanceIndex": 45,
       "sourcePhraseId": "g1-l045",
@@ -26125,7 +26150,7 @@
     {
       "id": "g1-l044",
       "start": 155.75627,
-      "end": 157.7,
+      "end": 158.016318,
       "style": "verse",
       "seed": 91043,
       "wordIds": [
@@ -26156,7 +26181,7 @@
     },
     {
       "id": "g1-l045",
-      "start": 157.7,
+      "start": 158.016318,
       "end": 160.396632,
       "style": "verse",
       "seed": 91044,

@@ -1,0 +1,1545 @@
+{
+  "schemaVersion": 1,
+  "kind": "hyperframes-render-provenance",
+  "sha256": "bd147120463a4852418e1ca76ab4d4bfefceff80d9ac8c4ec67ac3f93d6e6f45",
+  "sourceRevision": {
+    "projectHash": "879e39a2b371664b4703b56d5c5c2647dcb6aea68c8af9e23afce5f7813cc3d9",
+    "rendererHash": "4a279e37bc6bb3a1d2df216a8adc28a6c35974724f15419922adbb1d616a0a39",
+    "revisionHash": "ffc1b067c1f04d3b21f482c03f88d03e9a7b2117cc9bd5e99c012efb77b81a11",
+    "projectFiles": [
+      {
+        "path": "$manifest",
+        "sha256": "e2bf64f09cfc248c1b8abf4ee76619f53081814f99ce96b2fa12f0e80f679e59"
+      },
+      {
+        "path": "asset-map.json",
+        "sha256": "6f6d45b7e97a3829cb1fe804189cddd40b9ba819722837a40db3e6b4170de564",
+        "bytes": 3432
+      },
+      {
+        "path": "assets/AndaleMono.ttf",
+        "sha256": "ca436a8f07f6699107542ebe19dcc9478f12aa666927699e9fa10115e7d2ee95",
+        "bytes": 109700
+      },
+      {
+        "path": "assets/ArchivoBlack-Regular.ttf",
+        "sha256": "dd9a89a019b4849f66ab75455fe7bdf931311042cbb0f0f97acc061539703180",
+        "bytes": 90988
+      },
+      {
+        "path": "assets/BebasNeue-Regular.ttf",
+        "sha256": "08e4623805102d819f58601e46e345648846075e363b2ceb23313c2d1c83ec73",
+        "bytes": 61400
+      },
+      {
+        "path": "assets/EBGaramond-Italic-Variable.ttf",
+        "sha256": "bba2c4499c93c9612b90b9825d32b07da52fce2fe57562a1eb6b833553f93c4e",
+        "bytes": 754468
+      },
+      {
+        "path": "assets/adam-formation-first.jpg",
+        "sha256": "dd73f652ac9578ad11c0b63168f8889192d05674d4e6f0613be5cfd99308044c",
+        "bytes": 56017
+      },
+      {
+        "path": "assets/adam-formation-last.jpg",
+        "sha256": "9d303f2d68431c89ae84e54efbaba3ff83b8b36a2c89fbe21be8cd14b121d421",
+        "bytes": 67109
+      },
+      {
+        "path": "assets/adam-formation-motion.mp4",
+        "sha256": "c0465fd2b0ed1723a75cfaafb6c0b312626e6ef15e7cd2872d210fdb5975c43a",
+        "bytes": 2010090
+      },
+      {
+        "path": "assets/land-emergence-end.png",
+        "sha256": "c3aeb138af45b8dddcfd0e1c3b9ee76b7863bf9743066f871a9f99573c31e75e",
+        "bytes": 2544457
+      },
+      {
+        "path": "assets/land-emergence-start.png",
+        "sha256": "fa9d4d9e99f392b5316dd5dfe5d8a53dd3a123bb01ac8c3059ae4921249c668a",
+        "bytes": 2325233
+      },
+      {
+        "path": "assets/land-emergence-v1-first.jpg",
+        "sha256": "a82b2ac9304285d11fff8a4db1839a577ccf467675f9f9e60a18835ab62b91aa",
+        "bytes": 65283
+      },
+      {
+        "path": "assets/land-emergence-v1-last.jpg",
+        "sha256": "9b4510344d8965f44d4eb64e26699b4ba1ba937b7f4a15bd423401f6fa7bb813",
+        "bytes": 90317
+      },
+      {
+        "path": "assets/land-emergence-v1-motion.mp4",
+        "sha256": "d24c0689cd23fb5bbba0b22fac8812696f26450def02bf3ad5dd48998485d7d7",
+        "bytes": 3031415
+      },
+      {
+        "path": "assets/ophanim-gentle-v1-first.jpg",
+        "sha256": "cbd59340fc8422fca9b375e45303489c5b7e960b63c08340b21b23dda8c2e369",
+        "bytes": 94823
+      },
+      {
+        "path": "assets/ophanim-gentle-v1-last.jpg",
+        "sha256": "9a694f51da4ebdff54fb7b0aae5a685ddba3e14d0f5d8831a7e4219c01d8a52e",
+        "bytes": 92835
+      },
+      {
+        "path": "assets/ophanim-gentle-v1-motion.mp4",
+        "sha256": "9a69a59bf97402940b59679ac23d3a3f591567f0ebd60ddd13896a0ede145da8",
+        "bytes": 3006083
+      },
+      {
+        "path": "assets/ophanim-gentle-v2-first.jpg",
+        "sha256": "8185a66971ea157280defc396fabb9174b887eddb38f0cc0c5445f8568961093",
+        "bytes": 98256
+      },
+      {
+        "path": "assets/ophanim-gentle-v2-last.jpg",
+        "sha256": "1d0ce45f18479fefc378097dcf8d058dd19ce6235ce32a83ea70dc12f3620eb8",
+        "bytes": 109984
+      },
+      {
+        "path": "assets/ophanim-gentle-v2-motion.mp4",
+        "sha256": "3a3f71e531681c7ec693a0ec0080a116f12b2461ff4504876b70ff164f23f9d8",
+        "bytes": 3338884
+      },
+      {
+        "path": "assets/ophanim-subdued.png",
+        "sha256": "d4f6fdca164b8ef979fe30d2d7257e50d9dab71fd347a046be3ea57d7166554c",
+        "bytes": 2475388
+      },
+      {
+        "path": "assets/primordial-ocean.png",
+        "sha256": "4d086df5a97ced35bb41ab5a9d54ad2f2c027188e603077bb6fe2a023a6e5a8a",
+        "bytes": 1970896
+      },
+      {
+        "path": "assets/seraphim-breath-v1-first.jpg",
+        "sha256": "82c091c42fa53515624fb29823b37fc551d3f8340b5774a4ad1f3ff77821464a",
+        "bytes": 92992
+      },
+      {
+        "path": "assets/seraphim-breath-v1-last.jpg",
+        "sha256": "39a73e5d42f1b321dbef1cdf2031b5ea422693f2ee369bcced49ad7ee0526fd7",
+        "bytes": 108784
+      },
+      {
+        "path": "assets/seraphim-breath-v1-motion.mp4",
+        "sha256": "78597be7a67faac581ca427184253da4424e9073c3aca2e0336cfca8ec36af6f",
+        "bytes": 2788896
+      },
+      {
+        "path": "assets/seraphim-subdued.png",
+        "sha256": "878197cbf65d6d49683f9ea534fcc5b8f4c81670a0fb4ae1e2536938f539ebf4",
+        "bytes": 2382540
+      },
+      {
+        "path": "assets/song.mp3",
+        "sha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2",
+        "bytes": 6676627
+      },
+      {
+        "path": "assets/vegetation-end.png",
+        "sha256": "a4ee0eb33616e447ba16ac5a6e22712e30a2d135dc81da892c89a93ebf8ac830",
+        "bytes": 2824123
+      },
+      {
+        "path": "assets/vegetation-start.png",
+        "sha256": "c77d3e49e62a5c5dbfa73b042aac8702ddc1a62365410ac061b5dd3f9bf63fb4",
+        "bytes": 2423264
+      },
+      {
+        "path": "assets/vegetation-v1-first.jpg",
+        "sha256": "2c540dd7c56bc1c7678dce44a1b36c445f9e812c6ea38eae9d9db4c5e54e3258",
+        "bytes": 64902
+      },
+      {
+        "path": "assets/vegetation-v1-last.jpg",
+        "sha256": "1c97dcb80f07c0fb7c33ab3cdccf25b9a00199e46ec159952c45a0f6966bfba0",
+        "bytes": 108146
+      },
+      {
+        "path": "assets/vegetation-v1-motion.mp4",
+        "sha256": "34c360c3ea0b8f943b71cf159fc0ee02ce3412f54b5f571c5d4cc51bad342a15",
+        "bytes": 3794074
+      },
+      {
+        "path": "assets/whale-formation-first.jpg",
+        "sha256": "39dba02adeee3848e6f346f0c314f3dae341e64a5347e8d933c38a93053aff37",
+        "bytes": 26368
+      },
+      {
+        "path": "assets/whale-formation-last.jpg",
+        "sha256": "13a45bc1f1e1810d03d9904201dc36a1bb4dc729639686475d42ce8ed1c80919",
+        "bytes": 57903
+      },
+      {
+        "path": "assets/whale-formation-motion.mp4",
+        "sha256": "22f2d15af909f6c037b1e1a5e5a5459ac30cd51934eaa91947c84b2654d90e85",
+        "bytes": 1338128
+      },
+      {
+        "path": "assets/whale-formation-v1-first.jpg",
+        "sha256": "ea80353b894682ef57df4e4af8ba201b488bfd2a2229381beb2bfe0c09e7c892",
+        "bytes": 24178
+      },
+      {
+        "path": "assets/whale-formation-v1-last.jpg",
+        "sha256": "1cafdea1d03776defa9becfa20fee427c5595e1c2c009cf95e540b9ec8dd8ab4",
+        "bytes": 48380
+      },
+      {
+        "path": "assets/whale-formation-v1-motion.mp4",
+        "sha256": "be4cafe07307ad187e48bf241a43d2c1817d097b665e9b7cfdcb549829b9502c",
+        "bytes": 1244182
+      },
+      {
+        "path": "assets/whale-line-end.png",
+        "sha256": "69b2f23d6fe697ca7b7e82118dfcfeb4343eff5b2aa9790d828ede65ca0c2ade",
+        "bytes": 1007435
+      },
+      {
+        "path": "assets/whale-line-start.png",
+        "sha256": "913d30e3e67f2be94e30c59cf36dec569798af84f1cd165373f2c79cbf8f256f",
+        "bytes": 518481
+      },
+      {
+        "path": "assets/wildlife-first-kinds.png",
+        "sha256": "ce0cd8c2465bba351284d5ff8673811ea5316eb8f402000088ebc575959d1cc8",
+        "bytes": 2186352
+      },
+      {
+        "path": "assets/winged-above-earth.png",
+        "sha256": "2b8e86c3226fccd493718b42c5bb485ad5e00bf643d11b957c9d8eb352efa8c0",
+        "bytes": 2046794
+      },
+      {
+        "path": "build.mjs",
+        "sha256": "76a8717ea90af3b4f5e5ac2747659fb75940d214c8c99c9fb384c668dd51ec65",
+        "bytes": 3308
+      },
+      {
+        "path": "composition.html.txt",
+        "sha256": "0be920bbe54172f4ee2df33b178ec66bb5ad1ea75aa7d787bcbbcc317551b44b",
+        "bytes": 3544
+      },
+      {
+        "path": "hyperframes.json",
+        "sha256": "4b663f4c9d6b036b815632a5ae07edcf5c9cf64b34c0ceffb63e421b6684929e",
+        "bytes": 305
+      },
+      {
+        "path": "index.html",
+        "sha256": "6d0ca4e4f9f2cc6d08c8daeec0826e5b3031acd38f853095876b8972a950ee0f",
+        "bytes": 1154120
+      },
+      {
+        "path": "intake/energy-profile.json",
+        "sha256": "e1b60c6ef9d0ffce205f3a5c2c8e2043521c8af5f4f0a4bfdf7b539795aee564",
+        "bytes": 9242
+      },
+      {
+        "path": "intake/lyrics.txt",
+        "sha256": "d9a699733416732b13fcbeecf0d20627577e18929848b054558d098b1e11cbd9",
+        "bytes": 3244
+      },
+      {
+        "path": "intake/measured-attacks.json",
+        "sha256": "b011e8d6c6097674e7db6a4c9f83b15361a03ff9c8254113adc1f2e1c509cccb",
+        "bytes": 302680
+      },
+      {
+        "path": "opening.js",
+        "sha256": "626ba8204bcd58788bf491cb95422304b357e621501366b65b16e611c2b99d95",
+        "bytes": 7556
+      },
+      {
+        "path": "review.mjs",
+        "sha256": "b617f363be30dc8a021f3b2bc6a98765cc7f0b4ae30b67175152bdea824008ab",
+        "bytes": 18362
+      },
+      {
+        "path": "runtime.js",
+        "sha256": "5f069449ad99585a9ee695e666ae81d0243b1b6189c00b2c05b650e35e705ccb",
+        "bytes": 10492
+      },
+      {
+        "path": "scene-plan.json",
+        "sha256": "9abd2817162b9ec31533aafb2effbdcd502ef438b0928c2805cd9a7221daa8e4",
+        "bytes": 77695
+      },
+      {
+        "path": "scenes/00-body-support.js",
+        "sha256": "5bf87d0e601c1aee7e3468f99170274be225eb02dc112dd3cf5cb970110f9af2",
+        "bytes": 4220
+      },
+      {
+        "path": "scenes/01-divisions.js",
+        "sha256": "8c17c428f9792ee0e834f6eea2476529ccb114a8cb5184f9bb1ec1d69d64f7f1",
+        "bytes": 10258
+      },
+      {
+        "path": "scenes/02-growth.js",
+        "sha256": "f7fe717839b5b9368503da215611a66489e65b3f420cc4416e7eceb85b2a6034",
+        "bytes": 7021
+      },
+      {
+        "path": "scenes/03-luminaries.js",
+        "sha256": "21da726cc87ce19ec8b701da1617513d6cf5567cd10dea6a466aa934cd78f2b7",
+        "bytes": 9716
+      },
+      {
+        "path": "scenes/04-creatures.js",
+        "sha256": "09555d722f68c4d65479e105c64b68c2dfa11f5ea8b39449bce9f5f27b1b0f65",
+        "bytes": 10815
+      },
+      {
+        "path": "scenes/05-humankind-reprise.js",
+        "sha256": "21948028869583db6ed2e60988b69d7cce8dafc98dd65d250e13e0700256d0c7",
+        "bytes": 9968
+      },
+      {
+        "path": "scenes/99-metadata.js",
+        "sha256": "5d3c8cd7755825268fb80e5f586c97098a7313529c586dee136c95c7f6998a5b",
+        "bytes": 41547
+      },
+      {
+        "path": "theme-choice.json",
+        "sha256": "c9637517ee90b0c9a6700e0398bb912eeffa66f22addc131bf97fc576281beac",
+        "bytes": 2731
+      },
+      {
+        "path": "timing/performance-lyrics.txt",
+        "sha256": "01cd4ed3f803946137e2bf8e3a536678fe774a0c34b3d669888ddd9372a63382",
+        "bytes": 2664
+      },
+      {
+        "path": "timing/words.json",
+        "sha256": "a7f4b52706f837bad3cdcda1abe26751be33f523d59e1372653ebd021658edaa",
+        "bytes": 533395
+      },
+      {
+        "path": "vendor/gsap.min.js",
+        "sha256": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+        "bytes": 72779
+      }
+    ],
+    "rendererFiles": [
+      {
+        "path": "align.py",
+        "sha256": "50823f56a3abf85bcaa67df10abece9d3052ff438330a07f8caf81bc46566f9a"
+      },
+      {
+        "path": "artwork.mjs",
+        "sha256": "bdfaffe46fffb9ee34206607e6c93cebb4ae45ab24361af7252ee61085751c91"
+      },
+      {
+        "path": "audio-review.mjs",
+        "sha256": "e61db248eb54ac3c0e0b8be3dec79bd7d87bba2b95db10a2d1db9947fd3b4d77"
+      },
+      {
+        "path": "audio-worker.py",
+        "sha256": "f79248815aeac1418c2de993edddc61a855af2c93c95043354196c07993efc18"
+      },
+      {
+        "path": "cache.mjs",
+        "sha256": "96af67170803708b61fdf99148243cec2f416b6f083e7e81f562690205642818"
+      },
+      {
+        "path": "camera-choreography.mjs",
+        "sha256": "31377235b421fa55d617a2bd06e45f4c5e05bc65956cba5f7527afba5b389ddb"
+      },
+      {
+        "path": "choreography-policy.mjs",
+        "sha256": "667719aa2ae6bd714c7667f52f98f569c380f30a23ccb14fe9b8b677f580eb1f"
+      },
+      {
+        "path": "cli.mjs",
+        "sha256": "28afb782d685b4e295a0314cfbadb3e10ba0176fcb40c7fcaf88cfe4eae43811"
+      },
+      {
+        "path": "create.mjs",
+        "sha256": "ea8269ec4b6ac8143f5149d7f995910ed7eccfca87031a6ea53509b7a74028cf"
+      },
+      {
+        "path": "creative-policy.mjs",
+        "sha256": "35f6c6ac4a5c46ea954bc3b610775691fed9c5da88bbd1e9052ec093088a074e"
+      },
+      {
+        "path": "director.mjs",
+        "sha256": "b892c0d43ed47a5f0f263686b3584d1f9811f8d8c40bc2d66ceda919c5e29349"
+      },
+      {
+        "path": "export.mjs",
+        "sha256": "3013b61ad2b14d0c026d938a0b811a640df65703ec23510eb4ced5bfb8a45083"
+      },
+      {
+        "path": "fullsong-review.mjs",
+        "sha256": "70bcaac3ae56f820b95ba3de34384ed1d6afce7d34c81b0c30d28cea3736fcc1"
+      },
+      {
+        "path": "gauntlet.mjs",
+        "sha256": "5665202f7e70c317f2800c098429b1d245b8e76fcca950825aa94641690c296a"
+      },
+      {
+        "path": "genesis-choreography.mjs",
+        "sha256": "c5e74c5112f9d7ecf563532092f756a06cb98c6817dd741b8f0dfce9e74bde11"
+      },
+      {
+        "path": "import.mjs",
+        "sha256": "4f3bbf58799a4b4b6f99cb6fb6f5166e41d60d142efa9ef3849b7c8d2fbddcbd"
+      },
+      {
+        "path": "ocr.mjs",
+        "sha256": "2f901db34e5ba4627e9037eb721a420d0a7b9832bd517ac03627f4a0dabdc81f"
+      },
+      {
+        "path": "ocr.swift",
+        "sha256": "efc79b7e743c881bfc77f91726bf0f77ebdee04b7393b6ae725fb93fde2b3e6f"
+      },
+      {
+        "path": "pacing.mjs",
+        "sha256": "0297b01d9241c6e2af64ea185579269c2efdaf67c1002af95f8d581f940adaee"
+      },
+      {
+        "path": "preview.html",
+        "sha256": "2696a7fde5a724c56a7e5dfda7f5180d263d16d15df3b4e79ad5081f0d75c88e"
+      },
+      {
+        "path": "project.mjs",
+        "sha256": "cc2e7a56ea5783dd7cdf98d6876567032e9c564b4c9599fb40395962cd5bed16"
+      },
+      {
+        "path": "reference-gallery.html",
+        "sha256": "833cd8b7bce14f73f757b813517115dec0bb0fb5115db627f7289bb4d58fbe63"
+      },
+      {
+        "path": "reference-gallery.mjs",
+        "sha256": "046d72223a8ef2bc2f209179606adc263e347ae08aa6ac864d8b08078a5a2a1b"
+      },
+      {
+        "path": "references.mjs",
+        "sha256": "15ec510a0cdaf8a02c4debbf21e07581c04ef2211f500c8dec7fedd5591d4a97"
+      },
+      {
+        "path": "sculptural-choreography.mjs",
+        "sha256": "c8b8f56cfcca7327bab954f2527fcabb9760c4e7c291e2ef729eafeda17f3f0b"
+      },
+      {
+        "path": "semantic-choreography.mjs",
+        "sha256": "675837d4537f8a336c8cb9d57b0e22c5966342cd43207d283196d3aaaadea916"
+      },
+      {
+        "path": "server.mjs",
+        "sha256": "ef2015a430f3a1a2e84e47829f51dd63f80e0703cfa7f389b9d01f4b8c55e0d6"
+      },
+      {
+        "path": "story-visual.mjs",
+        "sha256": "76f452de205b43fc18623e4a0db7a60c93382c90711e7ce3efcf1dceebb050b3"
+      },
+      {
+        "path": "temporal-review.mjs",
+        "sha256": "604f8aafb663282b21a51b5a70be2f10838b8324bb167bdc99572aa9066fef0b"
+      },
+      {
+        "path": "visual.mjs",
+        "sha256": "2661222302592cbeaaff0018773dafc20fab85b92a0eeddef3e01076b24a6495"
+      }
+    ],
+    "assets": [
+      {
+        "path": "asset-map.json",
+        "sha256": "6f6d45b7e97a3829cb1fe804189cddd40b9ba819722837a40db3e6b4170de564",
+        "bytes": 3432
+      },
+      {
+        "path": "assets/AndaleMono.ttf",
+        "sha256": "ca436a8f07f6699107542ebe19dcc9478f12aa666927699e9fa10115e7d2ee95",
+        "bytes": 109700
+      },
+      {
+        "path": "assets/ArchivoBlack-Regular.ttf",
+        "sha256": "dd9a89a019b4849f66ab75455fe7bdf931311042cbb0f0f97acc061539703180",
+        "bytes": 90988
+      },
+      {
+        "path": "assets/BebasNeue-Regular.ttf",
+        "sha256": "08e4623805102d819f58601e46e345648846075e363b2ceb23313c2d1c83ec73",
+        "bytes": 61400
+      },
+      {
+        "path": "assets/EBGaramond-Italic-Variable.ttf",
+        "sha256": "bba2c4499c93c9612b90b9825d32b07da52fce2fe57562a1eb6b833553f93c4e",
+        "bytes": 754468
+      },
+      {
+        "path": "assets/adam-formation-first.jpg",
+        "sha256": "dd73f652ac9578ad11c0b63168f8889192d05674d4e6f0613be5cfd99308044c",
+        "bytes": 56017
+      },
+      {
+        "path": "assets/adam-formation-last.jpg",
+        "sha256": "9d303f2d68431c89ae84e54efbaba3ff83b8b36a2c89fbe21be8cd14b121d421",
+        "bytes": 67109
+      },
+      {
+        "path": "assets/adam-formation-motion.mp4",
+        "sha256": "c0465fd2b0ed1723a75cfaafb6c0b312626e6ef15e7cd2872d210fdb5975c43a",
+        "bytes": 2010090
+      },
+      {
+        "path": "assets/land-emergence-end.png",
+        "sha256": "c3aeb138af45b8dddcfd0e1c3b9ee76b7863bf9743066f871a9f99573c31e75e",
+        "bytes": 2544457
+      },
+      {
+        "path": "assets/land-emergence-start.png",
+        "sha256": "fa9d4d9e99f392b5316dd5dfe5d8a53dd3a123bb01ac8c3059ae4921249c668a",
+        "bytes": 2325233
+      },
+      {
+        "path": "assets/land-emergence-v1-first.jpg",
+        "sha256": "a82b2ac9304285d11fff8a4db1839a577ccf467675f9f9e60a18835ab62b91aa",
+        "bytes": 65283
+      },
+      {
+        "path": "assets/land-emergence-v1-last.jpg",
+        "sha256": "9b4510344d8965f44d4eb64e26699b4ba1ba937b7f4a15bd423401f6fa7bb813",
+        "bytes": 90317
+      },
+      {
+        "path": "assets/land-emergence-v1-motion.mp4",
+        "sha256": "d24c0689cd23fb5bbba0b22fac8812696f26450def02bf3ad5dd48998485d7d7",
+        "bytes": 3031415
+      },
+      {
+        "path": "assets/ophanim-gentle-v1-first.jpg",
+        "sha256": "cbd59340fc8422fca9b375e45303489c5b7e960b63c08340b21b23dda8c2e369",
+        "bytes": 94823
+      },
+      {
+        "path": "assets/ophanim-gentle-v1-last.jpg",
+        "sha256": "9a694f51da4ebdff54fb7b0aae5a685ddba3e14d0f5d8831a7e4219c01d8a52e",
+        "bytes": 92835
+      },
+      {
+        "path": "assets/ophanim-gentle-v1-motion.mp4",
+        "sha256": "9a69a59bf97402940b59679ac23d3a3f591567f0ebd60ddd13896a0ede145da8",
+        "bytes": 3006083
+      },
+      {
+        "path": "assets/ophanim-gentle-v2-first.jpg",
+        "sha256": "8185a66971ea157280defc396fabb9174b887eddb38f0cc0c5445f8568961093",
+        "bytes": 98256
+      },
+      {
+        "path": "assets/ophanim-gentle-v2-last.jpg",
+        "sha256": "1d0ce45f18479fefc378097dcf8d058dd19ce6235ce32a83ea70dc12f3620eb8",
+        "bytes": 109984
+      },
+      {
+        "path": "assets/ophanim-gentle-v2-motion.mp4",
+        "sha256": "3a3f71e531681c7ec693a0ec0080a116f12b2461ff4504876b70ff164f23f9d8",
+        "bytes": 3338884
+      },
+      {
+        "path": "assets/ophanim-subdued.png",
+        "sha256": "d4f6fdca164b8ef979fe30d2d7257e50d9dab71fd347a046be3ea57d7166554c",
+        "bytes": 2475388
+      },
+      {
+        "path": "assets/primordial-ocean.png",
+        "sha256": "4d086df5a97ced35bb41ab5a9d54ad2f2c027188e603077bb6fe2a023a6e5a8a",
+        "bytes": 1970896
+      },
+      {
+        "path": "assets/seraphim-breath-v1-first.jpg",
+        "sha256": "82c091c42fa53515624fb29823b37fc551d3f8340b5774a4ad1f3ff77821464a",
+        "bytes": 92992
+      },
+      {
+        "path": "assets/seraphim-breath-v1-last.jpg",
+        "sha256": "39a73e5d42f1b321dbef1cdf2031b5ea422693f2ee369bcced49ad7ee0526fd7",
+        "bytes": 108784
+      },
+      {
+        "path": "assets/seraphim-breath-v1-motion.mp4",
+        "sha256": "78597be7a67faac581ca427184253da4424e9073c3aca2e0336cfca8ec36af6f",
+        "bytes": 2788896
+      },
+      {
+        "path": "assets/seraphim-subdued.png",
+        "sha256": "878197cbf65d6d49683f9ea534fcc5b8f4c81670a0fb4ae1e2536938f539ebf4",
+        "bytes": 2382540
+      },
+      {
+        "path": "assets/song.mp3",
+        "sha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2",
+        "bytes": 6676627
+      },
+      {
+        "path": "assets/vegetation-end.png",
+        "sha256": "a4ee0eb33616e447ba16ac5a6e22712e30a2d135dc81da892c89a93ebf8ac830",
+        "bytes": 2824123
+      },
+      {
+        "path": "assets/vegetation-start.png",
+        "sha256": "c77d3e49e62a5c5dbfa73b042aac8702ddc1a62365410ac061b5dd3f9bf63fb4",
+        "bytes": 2423264
+      },
+      {
+        "path": "assets/vegetation-v1-first.jpg",
+        "sha256": "2c540dd7c56bc1c7678dce44a1b36c445f9e812c6ea38eae9d9db4c5e54e3258",
+        "bytes": 64902
+      },
+      {
+        "path": "assets/vegetation-v1-last.jpg",
+        "sha256": "1c97dcb80f07c0fb7c33ab3cdccf25b9a00199e46ec159952c45a0f6966bfba0",
+        "bytes": 108146
+      },
+      {
+        "path": "assets/vegetation-v1-motion.mp4",
+        "sha256": "34c360c3ea0b8f943b71cf159fc0ee02ce3412f54b5f571c5d4cc51bad342a15",
+        "bytes": 3794074
+      },
+      {
+        "path": "assets/whale-formation-first.jpg",
+        "sha256": "39dba02adeee3848e6f346f0c314f3dae341e64a5347e8d933c38a93053aff37",
+        "bytes": 26368
+      },
+      {
+        "path": "assets/whale-formation-last.jpg",
+        "sha256": "13a45bc1f1e1810d03d9904201dc36a1bb4dc729639686475d42ce8ed1c80919",
+        "bytes": 57903
+      },
+      {
+        "path": "assets/whale-formation-motion.mp4",
+        "sha256": "22f2d15af909f6c037b1e1a5e5a5459ac30cd51934eaa91947c84b2654d90e85",
+        "bytes": 1338128
+      },
+      {
+        "path": "assets/whale-formation-v1-first.jpg",
+        "sha256": "ea80353b894682ef57df4e4af8ba201b488bfd2a2229381beb2bfe0c09e7c892",
+        "bytes": 24178
+      },
+      {
+        "path": "assets/whale-formation-v1-last.jpg",
+        "sha256": "1cafdea1d03776defa9becfa20fee427c5595e1c2c009cf95e540b9ec8dd8ab4",
+        "bytes": 48380
+      },
+      {
+        "path": "assets/whale-formation-v1-motion.mp4",
+        "sha256": "be4cafe07307ad187e48bf241a43d2c1817d097b665e9b7cfdcb549829b9502c",
+        "bytes": 1244182
+      },
+      {
+        "path": "assets/whale-line-end.png",
+        "sha256": "69b2f23d6fe697ca7b7e82118dfcfeb4343eff5b2aa9790d828ede65ca0c2ade",
+        "bytes": 1007435
+      },
+      {
+        "path": "assets/whale-line-start.png",
+        "sha256": "913d30e3e67f2be94e30c59cf36dec569798af84f1cd165373f2c79cbf8f256f",
+        "bytes": 518481
+      },
+      {
+        "path": "assets/wildlife-first-kinds.png",
+        "sha256": "ce0cd8c2465bba351284d5ff8673811ea5316eb8f402000088ebc575959d1cc8",
+        "bytes": 2186352
+      },
+      {
+        "path": "assets/winged-above-earth.png",
+        "sha256": "2b8e86c3226fccd493718b42c5bb485ad5e00bf643d11b957c9d8eb352efa8c0",
+        "bytes": 2046794
+      },
+      {
+        "path": "build.mjs",
+        "sha256": "76a8717ea90af3b4f5e5ac2747659fb75940d214c8c99c9fb384c668dd51ec65",
+        "bytes": 3308
+      },
+      {
+        "path": "composition.html.txt",
+        "sha256": "0be920bbe54172f4ee2df33b178ec66bb5ad1ea75aa7d787bcbbcc317551b44b",
+        "bytes": 3544
+      },
+      {
+        "path": "hyperframes.json",
+        "sha256": "4b663f4c9d6b036b815632a5ae07edcf5c9cf64b34c0ceffb63e421b6684929e",
+        "bytes": 305
+      },
+      {
+        "path": "index.html",
+        "sha256": "6d0ca4e4f9f2cc6d08c8daeec0826e5b3031acd38f853095876b8972a950ee0f",
+        "bytes": 1154120
+      },
+      {
+        "path": "intake/energy-profile.json",
+        "sha256": "e1b60c6ef9d0ffce205f3a5c2c8e2043521c8af5f4f0a4bfdf7b539795aee564",
+        "bytes": 9242
+      },
+      {
+        "path": "intake/lyrics.txt",
+        "sha256": "d9a699733416732b13fcbeecf0d20627577e18929848b054558d098b1e11cbd9",
+        "bytes": 3244
+      },
+      {
+        "path": "intake/measured-attacks.json",
+        "sha256": "b011e8d6c6097674e7db6a4c9f83b15361a03ff9c8254113adc1f2e1c509cccb",
+        "bytes": 302680
+      },
+      {
+        "path": "opening.js",
+        "sha256": "626ba8204bcd58788bf491cb95422304b357e621501366b65b16e611c2b99d95",
+        "bytes": 7556
+      },
+      {
+        "path": "review.mjs",
+        "sha256": "b617f363be30dc8a021f3b2bc6a98765cc7f0b4ae30b67175152bdea824008ab",
+        "bytes": 18362
+      },
+      {
+        "path": "runtime.js",
+        "sha256": "5f069449ad99585a9ee695e666ae81d0243b1b6189c00b2c05b650e35e705ccb",
+        "bytes": 10492
+      },
+      {
+        "path": "scene-plan.json",
+        "sha256": "9abd2817162b9ec31533aafb2effbdcd502ef438b0928c2805cd9a7221daa8e4",
+        "bytes": 77695
+      },
+      {
+        "path": "scenes/00-body-support.js",
+        "sha256": "5bf87d0e601c1aee7e3468f99170274be225eb02dc112dd3cf5cb970110f9af2",
+        "bytes": 4220
+      },
+      {
+        "path": "scenes/01-divisions.js",
+        "sha256": "8c17c428f9792ee0e834f6eea2476529ccb114a8cb5184f9bb1ec1d69d64f7f1",
+        "bytes": 10258
+      },
+      {
+        "path": "scenes/02-growth.js",
+        "sha256": "f7fe717839b5b9368503da215611a66489e65b3f420cc4416e7eceb85b2a6034",
+        "bytes": 7021
+      },
+      {
+        "path": "scenes/03-luminaries.js",
+        "sha256": "21da726cc87ce19ec8b701da1617513d6cf5567cd10dea6a466aa934cd78f2b7",
+        "bytes": 9716
+      },
+      {
+        "path": "scenes/04-creatures.js",
+        "sha256": "09555d722f68c4d65479e105c64b68c2dfa11f5ea8b39449bce9f5f27b1b0f65",
+        "bytes": 10815
+      },
+      {
+        "path": "scenes/05-humankind-reprise.js",
+        "sha256": "21948028869583db6ed2e60988b69d7cce8dafc98dd65d250e13e0700256d0c7",
+        "bytes": 9968
+      },
+      {
+        "path": "scenes/99-metadata.js",
+        "sha256": "5d3c8cd7755825268fb80e5f586c97098a7313529c586dee136c95c7f6998a5b",
+        "bytes": 41547
+      },
+      {
+        "path": "theme-choice.json",
+        "sha256": "c9637517ee90b0c9a6700e0398bb912eeffa66f22addc131bf97fc576281beac",
+        "bytes": 2731
+      },
+      {
+        "path": "timing/performance-lyrics.txt",
+        "sha256": "01cd4ed3f803946137e2bf8e3a536678fe774a0c34b3d669888ddd9372a63382",
+        "bytes": 2664
+      },
+      {
+        "path": "timing/words.json",
+        "sha256": "a7f4b52706f837bad3cdcda1abe26751be33f523d59e1372653ebd021658edaa",
+        "bytes": 533395
+      },
+      {
+        "path": "vendor/gsap.min.js",
+        "sha256": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+        "bytes": 72779
+      }
+    ],
+    "rendererDir": "/Volumes/Code/ark-video-studio/engine"
+  },
+  "sourceRevisionEnd": {
+    "projectHash": "879e39a2b371664b4703b56d5c5c2647dcb6aea68c8af9e23afce5f7813cc3d9",
+    "rendererHash": "4a279e37bc6bb3a1d2df216a8adc28a6c35974724f15419922adbb1d616a0a39",
+    "revisionHash": "ffc1b067c1f04d3b21f482c03f88d03e9a7b2117cc9bd5e99c012efb77b81a11",
+    "projectFiles": [
+      {
+        "path": "$manifest",
+        "sha256": "e2bf64f09cfc248c1b8abf4ee76619f53081814f99ce96b2fa12f0e80f679e59"
+      },
+      {
+        "path": "asset-map.json",
+        "sha256": "6f6d45b7e97a3829cb1fe804189cddd40b9ba819722837a40db3e6b4170de564",
+        "bytes": 3432
+      },
+      {
+        "path": "assets/AndaleMono.ttf",
+        "sha256": "ca436a8f07f6699107542ebe19dcc9478f12aa666927699e9fa10115e7d2ee95",
+        "bytes": 109700
+      },
+      {
+        "path": "assets/ArchivoBlack-Regular.ttf",
+        "sha256": "dd9a89a019b4849f66ab75455fe7bdf931311042cbb0f0f97acc061539703180",
+        "bytes": 90988
+      },
+      {
+        "path": "assets/BebasNeue-Regular.ttf",
+        "sha256": "08e4623805102d819f58601e46e345648846075e363b2ceb23313c2d1c83ec73",
+        "bytes": 61400
+      },
+      {
+        "path": "assets/EBGaramond-Italic-Variable.ttf",
+        "sha256": "bba2c4499c93c9612b90b9825d32b07da52fce2fe57562a1eb6b833553f93c4e",
+        "bytes": 754468
+      },
+      {
+        "path": "assets/adam-formation-first.jpg",
+        "sha256": "dd73f652ac9578ad11c0b63168f8889192d05674d4e6f0613be5cfd99308044c",
+        "bytes": 56017
+      },
+      {
+        "path": "assets/adam-formation-last.jpg",
+        "sha256": "9d303f2d68431c89ae84e54efbaba3ff83b8b36a2c89fbe21be8cd14b121d421",
+        "bytes": 67109
+      },
+      {
+        "path": "assets/adam-formation-motion.mp4",
+        "sha256": "c0465fd2b0ed1723a75cfaafb6c0b312626e6ef15e7cd2872d210fdb5975c43a",
+        "bytes": 2010090
+      },
+      {
+        "path": "assets/land-emergence-end.png",
+        "sha256": "c3aeb138af45b8dddcfd0e1c3b9ee76b7863bf9743066f871a9f99573c31e75e",
+        "bytes": 2544457
+      },
+      {
+        "path": "assets/land-emergence-start.png",
+        "sha256": "fa9d4d9e99f392b5316dd5dfe5d8a53dd3a123bb01ac8c3059ae4921249c668a",
+        "bytes": 2325233
+      },
+      {
+        "path": "assets/land-emergence-v1-first.jpg",
+        "sha256": "a82b2ac9304285d11fff8a4db1839a577ccf467675f9f9e60a18835ab62b91aa",
+        "bytes": 65283
+      },
+      {
+        "path": "assets/land-emergence-v1-last.jpg",
+        "sha256": "9b4510344d8965f44d4eb64e26699b4ba1ba937b7f4a15bd423401f6fa7bb813",
+        "bytes": 90317
+      },
+      {
+        "path": "assets/land-emergence-v1-motion.mp4",
+        "sha256": "d24c0689cd23fb5bbba0b22fac8812696f26450def02bf3ad5dd48998485d7d7",
+        "bytes": 3031415
+      },
+      {
+        "path": "assets/ophanim-gentle-v1-first.jpg",
+        "sha256": "cbd59340fc8422fca9b375e45303489c5b7e960b63c08340b21b23dda8c2e369",
+        "bytes": 94823
+      },
+      {
+        "path": "assets/ophanim-gentle-v1-last.jpg",
+        "sha256": "9a694f51da4ebdff54fb7b0aae5a685ddba3e14d0f5d8831a7e4219c01d8a52e",
+        "bytes": 92835
+      },
+      {
+        "path": "assets/ophanim-gentle-v1-motion.mp4",
+        "sha256": "9a69a59bf97402940b59679ac23d3a3f591567f0ebd60ddd13896a0ede145da8",
+        "bytes": 3006083
+      },
+      {
+        "path": "assets/ophanim-gentle-v2-first.jpg",
+        "sha256": "8185a66971ea157280defc396fabb9174b887eddb38f0cc0c5445f8568961093",
+        "bytes": 98256
+      },
+      {
+        "path": "assets/ophanim-gentle-v2-last.jpg",
+        "sha256": "1d0ce45f18479fefc378097dcf8d058dd19ce6235ce32a83ea70dc12f3620eb8",
+        "bytes": 109984
+      },
+      {
+        "path": "assets/ophanim-gentle-v2-motion.mp4",
+        "sha256": "3a3f71e531681c7ec693a0ec0080a116f12b2461ff4504876b70ff164f23f9d8",
+        "bytes": 3338884
+      },
+      {
+        "path": "assets/ophanim-subdued.png",
+        "sha256": "d4f6fdca164b8ef979fe30d2d7257e50d9dab71fd347a046be3ea57d7166554c",
+        "bytes": 2475388
+      },
+      {
+        "path": "assets/primordial-ocean.png",
+        "sha256": "4d086df5a97ced35bb41ab5a9d54ad2f2c027188e603077bb6fe2a023a6e5a8a",
+        "bytes": 1970896
+      },
+      {
+        "path": "assets/seraphim-breath-v1-first.jpg",
+        "sha256": "82c091c42fa53515624fb29823b37fc551d3f8340b5774a4ad1f3ff77821464a",
+        "bytes": 92992
+      },
+      {
+        "path": "assets/seraphim-breath-v1-last.jpg",
+        "sha256": "39a73e5d42f1b321dbef1cdf2031b5ea422693f2ee369bcced49ad7ee0526fd7",
+        "bytes": 108784
+      },
+      {
+        "path": "assets/seraphim-breath-v1-motion.mp4",
+        "sha256": "78597be7a67faac581ca427184253da4424e9073c3aca2e0336cfca8ec36af6f",
+        "bytes": 2788896
+      },
+      {
+        "path": "assets/seraphim-subdued.png",
+        "sha256": "878197cbf65d6d49683f9ea534fcc5b8f4c81670a0fb4ae1e2536938f539ebf4",
+        "bytes": 2382540
+      },
+      {
+        "path": "assets/song.mp3",
+        "sha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2",
+        "bytes": 6676627
+      },
+      {
+        "path": "assets/vegetation-end.png",
+        "sha256": "a4ee0eb33616e447ba16ac5a6e22712e30a2d135dc81da892c89a93ebf8ac830",
+        "bytes": 2824123
+      },
+      {
+        "path": "assets/vegetation-start.png",
+        "sha256": "c77d3e49e62a5c5dbfa73b042aac8702ddc1a62365410ac061b5dd3f9bf63fb4",
+        "bytes": 2423264
+      },
+      {
+        "path": "assets/vegetation-v1-first.jpg",
+        "sha256": "2c540dd7c56bc1c7678dce44a1b36c445f9e812c6ea38eae9d9db4c5e54e3258",
+        "bytes": 64902
+      },
+      {
+        "path": "assets/vegetation-v1-last.jpg",
+        "sha256": "1c97dcb80f07c0fb7c33ab3cdccf25b9a00199e46ec159952c45a0f6966bfba0",
+        "bytes": 108146
+      },
+      {
+        "path": "assets/vegetation-v1-motion.mp4",
+        "sha256": "34c360c3ea0b8f943b71cf159fc0ee02ce3412f54b5f571c5d4cc51bad342a15",
+        "bytes": 3794074
+      },
+      {
+        "path": "assets/whale-formation-first.jpg",
+        "sha256": "39dba02adeee3848e6f346f0c314f3dae341e64a5347e8d933c38a93053aff37",
+        "bytes": 26368
+      },
+      {
+        "path": "assets/whale-formation-last.jpg",
+        "sha256": "13a45bc1f1e1810d03d9904201dc36a1bb4dc729639686475d42ce8ed1c80919",
+        "bytes": 57903
+      },
+      {
+        "path": "assets/whale-formation-motion.mp4",
+        "sha256": "22f2d15af909f6c037b1e1a5e5a5459ac30cd51934eaa91947c84b2654d90e85",
+        "bytes": 1338128
+      },
+      {
+        "path": "assets/whale-formation-v1-first.jpg",
+        "sha256": "ea80353b894682ef57df4e4af8ba201b488bfd2a2229381beb2bfe0c09e7c892",
+        "bytes": 24178
+      },
+      {
+        "path": "assets/whale-formation-v1-last.jpg",
+        "sha256": "1cafdea1d03776defa9becfa20fee427c5595e1c2c009cf95e540b9ec8dd8ab4",
+        "bytes": 48380
+      },
+      {
+        "path": "assets/whale-formation-v1-motion.mp4",
+        "sha256": "be4cafe07307ad187e48bf241a43d2c1817d097b665e9b7cfdcb549829b9502c",
+        "bytes": 1244182
+      },
+      {
+        "path": "assets/whale-line-end.png",
+        "sha256": "69b2f23d6fe697ca7b7e82118dfcfeb4343eff5b2aa9790d828ede65ca0c2ade",
+        "bytes": 1007435
+      },
+      {
+        "path": "assets/whale-line-start.png",
+        "sha256": "913d30e3e67f2be94e30c59cf36dec569798af84f1cd165373f2c79cbf8f256f",
+        "bytes": 518481
+      },
+      {
+        "path": "assets/wildlife-first-kinds.png",
+        "sha256": "ce0cd8c2465bba351284d5ff8673811ea5316eb8f402000088ebc575959d1cc8",
+        "bytes": 2186352
+      },
+      {
+        "path": "assets/winged-above-earth.png",
+        "sha256": "2b8e86c3226fccd493718b42c5bb485ad5e00bf643d11b957c9d8eb352efa8c0",
+        "bytes": 2046794
+      },
+      {
+        "path": "build.mjs",
+        "sha256": "76a8717ea90af3b4f5e5ac2747659fb75940d214c8c99c9fb384c668dd51ec65",
+        "bytes": 3308
+      },
+      {
+        "path": "composition.html.txt",
+        "sha256": "0be920bbe54172f4ee2df33b178ec66bb5ad1ea75aa7d787bcbbcc317551b44b",
+        "bytes": 3544
+      },
+      {
+        "path": "hyperframes.json",
+        "sha256": "4b663f4c9d6b036b815632a5ae07edcf5c9cf64b34c0ceffb63e421b6684929e",
+        "bytes": 305
+      },
+      {
+        "path": "index.html",
+        "sha256": "6d0ca4e4f9f2cc6d08c8daeec0826e5b3031acd38f853095876b8972a950ee0f",
+        "bytes": 1154120
+      },
+      {
+        "path": "intake/energy-profile.json",
+        "sha256": "e1b60c6ef9d0ffce205f3a5c2c8e2043521c8af5f4f0a4bfdf7b539795aee564",
+        "bytes": 9242
+      },
+      {
+        "path": "intake/lyrics.txt",
+        "sha256": "d9a699733416732b13fcbeecf0d20627577e18929848b054558d098b1e11cbd9",
+        "bytes": 3244
+      },
+      {
+        "path": "intake/measured-attacks.json",
+        "sha256": "b011e8d6c6097674e7db6a4c9f83b15361a03ff9c8254113adc1f2e1c509cccb",
+        "bytes": 302680
+      },
+      {
+        "path": "opening.js",
+        "sha256": "626ba8204bcd58788bf491cb95422304b357e621501366b65b16e611c2b99d95",
+        "bytes": 7556
+      },
+      {
+        "path": "review.mjs",
+        "sha256": "b617f363be30dc8a021f3b2bc6a98765cc7f0b4ae30b67175152bdea824008ab",
+        "bytes": 18362
+      },
+      {
+        "path": "runtime.js",
+        "sha256": "5f069449ad99585a9ee695e666ae81d0243b1b6189c00b2c05b650e35e705ccb",
+        "bytes": 10492
+      },
+      {
+        "path": "scene-plan.json",
+        "sha256": "9abd2817162b9ec31533aafb2effbdcd502ef438b0928c2805cd9a7221daa8e4",
+        "bytes": 77695
+      },
+      {
+        "path": "scenes/00-body-support.js",
+        "sha256": "5bf87d0e601c1aee7e3468f99170274be225eb02dc112dd3cf5cb970110f9af2",
+        "bytes": 4220
+      },
+      {
+        "path": "scenes/01-divisions.js",
+        "sha256": "8c17c428f9792ee0e834f6eea2476529ccb114a8cb5184f9bb1ec1d69d64f7f1",
+        "bytes": 10258
+      },
+      {
+        "path": "scenes/02-growth.js",
+        "sha256": "f7fe717839b5b9368503da215611a66489e65b3f420cc4416e7eceb85b2a6034",
+        "bytes": 7021
+      },
+      {
+        "path": "scenes/03-luminaries.js",
+        "sha256": "21da726cc87ce19ec8b701da1617513d6cf5567cd10dea6a466aa934cd78f2b7",
+        "bytes": 9716
+      },
+      {
+        "path": "scenes/04-creatures.js",
+        "sha256": "09555d722f68c4d65479e105c64b68c2dfa11f5ea8b39449bce9f5f27b1b0f65",
+        "bytes": 10815
+      },
+      {
+        "path": "scenes/05-humankind-reprise.js",
+        "sha256": "21948028869583db6ed2e60988b69d7cce8dafc98dd65d250e13e0700256d0c7",
+        "bytes": 9968
+      },
+      {
+        "path": "scenes/99-metadata.js",
+        "sha256": "5d3c8cd7755825268fb80e5f586c97098a7313529c586dee136c95c7f6998a5b",
+        "bytes": 41547
+      },
+      {
+        "path": "theme-choice.json",
+        "sha256": "c9637517ee90b0c9a6700e0398bb912eeffa66f22addc131bf97fc576281beac",
+        "bytes": 2731
+      },
+      {
+        "path": "timing/performance-lyrics.txt",
+        "sha256": "01cd4ed3f803946137e2bf8e3a536678fe774a0c34b3d669888ddd9372a63382",
+        "bytes": 2664
+      },
+      {
+        "path": "timing/words.json",
+        "sha256": "a7f4b52706f837bad3cdcda1abe26751be33f523d59e1372653ebd021658edaa",
+        "bytes": 533395
+      },
+      {
+        "path": "vendor/gsap.min.js",
+        "sha256": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+        "bytes": 72779
+      }
+    ],
+    "rendererFiles": [
+      {
+        "path": "align.py",
+        "sha256": "50823f56a3abf85bcaa67df10abece9d3052ff438330a07f8caf81bc46566f9a"
+      },
+      {
+        "path": "artwork.mjs",
+        "sha256": "bdfaffe46fffb9ee34206607e6c93cebb4ae45ab24361af7252ee61085751c91"
+      },
+      {
+        "path": "audio-review.mjs",
+        "sha256": "e61db248eb54ac3c0e0b8be3dec79bd7d87bba2b95db10a2d1db9947fd3b4d77"
+      },
+      {
+        "path": "audio-worker.py",
+        "sha256": "f79248815aeac1418c2de993edddc61a855af2c93c95043354196c07993efc18"
+      },
+      {
+        "path": "cache.mjs",
+        "sha256": "96af67170803708b61fdf99148243cec2f416b6f083e7e81f562690205642818"
+      },
+      {
+        "path": "camera-choreography.mjs",
+        "sha256": "31377235b421fa55d617a2bd06e45f4c5e05bc65956cba5f7527afba5b389ddb"
+      },
+      {
+        "path": "choreography-policy.mjs",
+        "sha256": "667719aa2ae6bd714c7667f52f98f569c380f30a23ccb14fe9b8b677f580eb1f"
+      },
+      {
+        "path": "cli.mjs",
+        "sha256": "28afb782d685b4e295a0314cfbadb3e10ba0176fcb40c7fcaf88cfe4eae43811"
+      },
+      {
+        "path": "create.mjs",
+        "sha256": "ea8269ec4b6ac8143f5149d7f995910ed7eccfca87031a6ea53509b7a74028cf"
+      },
+      {
+        "path": "creative-policy.mjs",
+        "sha256": "35f6c6ac4a5c46ea954bc3b610775691fed9c5da88bbd1e9052ec093088a074e"
+      },
+      {
+        "path": "director.mjs",
+        "sha256": "b892c0d43ed47a5f0f263686b3584d1f9811f8d8c40bc2d66ceda919c5e29349"
+      },
+      {
+        "path": "export.mjs",
+        "sha256": "3013b61ad2b14d0c026d938a0b811a640df65703ec23510eb4ced5bfb8a45083"
+      },
+      {
+        "path": "fullsong-review.mjs",
+        "sha256": "70bcaac3ae56f820b95ba3de34384ed1d6afce7d34c81b0c30d28cea3736fcc1"
+      },
+      {
+        "path": "gauntlet.mjs",
+        "sha256": "5665202f7e70c317f2800c098429b1d245b8e76fcca950825aa94641690c296a"
+      },
+      {
+        "path": "genesis-choreography.mjs",
+        "sha256": "c5e74c5112f9d7ecf563532092f756a06cb98c6817dd741b8f0dfce9e74bde11"
+      },
+      {
+        "path": "import.mjs",
+        "sha256": "4f3bbf58799a4b4b6f99cb6fb6f5166e41d60d142efa9ef3849b7c8d2fbddcbd"
+      },
+      {
+        "path": "ocr.mjs",
+        "sha256": "2f901db34e5ba4627e9037eb721a420d0a7b9832bd517ac03627f4a0dabdc81f"
+      },
+      {
+        "path": "ocr.swift",
+        "sha256": "efc79b7e743c881bfc77f91726bf0f77ebdee04b7393b6ae725fb93fde2b3e6f"
+      },
+      {
+        "path": "pacing.mjs",
+        "sha256": "0297b01d9241c6e2af64ea185579269c2efdaf67c1002af95f8d581f940adaee"
+      },
+      {
+        "path": "preview.html",
+        "sha256": "2696a7fde5a724c56a7e5dfda7f5180d263d16d15df3b4e79ad5081f0d75c88e"
+      },
+      {
+        "path": "project.mjs",
+        "sha256": "cc2e7a56ea5783dd7cdf98d6876567032e9c564b4c9599fb40395962cd5bed16"
+      },
+      {
+        "path": "reference-gallery.html",
+        "sha256": "833cd8b7bce14f73f757b813517115dec0bb0fb5115db627f7289bb4d58fbe63"
+      },
+      {
+        "path": "reference-gallery.mjs",
+        "sha256": "046d72223a8ef2bc2f209179606adc263e347ae08aa6ac864d8b08078a5a2a1b"
+      },
+      {
+        "path": "references.mjs",
+        "sha256": "15ec510a0cdaf8a02c4debbf21e07581c04ef2211f500c8dec7fedd5591d4a97"
+      },
+      {
+        "path": "sculptural-choreography.mjs",
+        "sha256": "c8b8f56cfcca7327bab954f2527fcabb9760c4e7c291e2ef729eafeda17f3f0b"
+      },
+      {
+        "path": "semantic-choreography.mjs",
+        "sha256": "675837d4537f8a336c8cb9d57b0e22c5966342cd43207d283196d3aaaadea916"
+      },
+      {
+        "path": "server.mjs",
+        "sha256": "ef2015a430f3a1a2e84e47829f51dd63f80e0703cfa7f389b9d01f4b8c55e0d6"
+      },
+      {
+        "path": "story-visual.mjs",
+        "sha256": "76f452de205b43fc18623e4a0db7a60c93382c90711e7ce3efcf1dceebb050b3"
+      },
+      {
+        "path": "temporal-review.mjs",
+        "sha256": "604f8aafb663282b21a51b5a70be2f10838b8324bb167bdc99572aa9066fef0b"
+      },
+      {
+        "path": "visual.mjs",
+        "sha256": "2661222302592cbeaaff0018773dafc20fab85b92a0eeddef3e01076b24a6495"
+      }
+    ],
+    "assets": [
+      {
+        "path": "asset-map.json",
+        "sha256": "6f6d45b7e97a3829cb1fe804189cddd40b9ba819722837a40db3e6b4170de564",
+        "bytes": 3432
+      },
+      {
+        "path": "assets/AndaleMono.ttf",
+        "sha256": "ca436a8f07f6699107542ebe19dcc9478f12aa666927699e9fa10115e7d2ee95",
+        "bytes": 109700
+      },
+      {
+        "path": "assets/ArchivoBlack-Regular.ttf",
+        "sha256": "dd9a89a019b4849f66ab75455fe7bdf931311042cbb0f0f97acc061539703180",
+        "bytes": 90988
+      },
+      {
+        "path": "assets/BebasNeue-Regular.ttf",
+        "sha256": "08e4623805102d819f58601e46e345648846075e363b2ceb23313c2d1c83ec73",
+        "bytes": 61400
+      },
+      {
+        "path": "assets/EBGaramond-Italic-Variable.ttf",
+        "sha256": "bba2c4499c93c9612b90b9825d32b07da52fce2fe57562a1eb6b833553f93c4e",
+        "bytes": 754468
+      },
+      {
+        "path": "assets/adam-formation-first.jpg",
+        "sha256": "dd73f652ac9578ad11c0b63168f8889192d05674d4e6f0613be5cfd99308044c",
+        "bytes": 56017
+      },
+      {
+        "path": "assets/adam-formation-last.jpg",
+        "sha256": "9d303f2d68431c89ae84e54efbaba3ff83b8b36a2c89fbe21be8cd14b121d421",
+        "bytes": 67109
+      },
+      {
+        "path": "assets/adam-formation-motion.mp4",
+        "sha256": "c0465fd2b0ed1723a75cfaafb6c0b312626e6ef15e7cd2872d210fdb5975c43a",
+        "bytes": 2010090
+      },
+      {
+        "path": "assets/land-emergence-end.png",
+        "sha256": "c3aeb138af45b8dddcfd0e1c3b9ee76b7863bf9743066f871a9f99573c31e75e",
+        "bytes": 2544457
+      },
+      {
+        "path": "assets/land-emergence-start.png",
+        "sha256": "fa9d4d9e99f392b5316dd5dfe5d8a53dd3a123bb01ac8c3059ae4921249c668a",
+        "bytes": 2325233
+      },
+      {
+        "path": "assets/land-emergence-v1-first.jpg",
+        "sha256": "a82b2ac9304285d11fff8a4db1839a577ccf467675f9f9e60a18835ab62b91aa",
+        "bytes": 65283
+      },
+      {
+        "path": "assets/land-emergence-v1-last.jpg",
+        "sha256": "9b4510344d8965f44d4eb64e26699b4ba1ba937b7f4a15bd423401f6fa7bb813",
+        "bytes": 90317
+      },
+      {
+        "path": "assets/land-emergence-v1-motion.mp4",
+        "sha256": "d24c0689cd23fb5bbba0b22fac8812696f26450def02bf3ad5dd48998485d7d7",
+        "bytes": 3031415
+      },
+      {
+        "path": "assets/ophanim-gentle-v1-first.jpg",
+        "sha256": "cbd59340fc8422fca9b375e45303489c5b7e960b63c08340b21b23dda8c2e369",
+        "bytes": 94823
+      },
+      {
+        "path": "assets/ophanim-gentle-v1-last.jpg",
+        "sha256": "9a694f51da4ebdff54fb7b0aae5a685ddba3e14d0f5d8831a7e4219c01d8a52e",
+        "bytes": 92835
+      },
+      {
+        "path": "assets/ophanim-gentle-v1-motion.mp4",
+        "sha256": "9a69a59bf97402940b59679ac23d3a3f591567f0ebd60ddd13896a0ede145da8",
+        "bytes": 3006083
+      },
+      {
+        "path": "assets/ophanim-gentle-v2-first.jpg",
+        "sha256": "8185a66971ea157280defc396fabb9174b887eddb38f0cc0c5445f8568961093",
+        "bytes": 98256
+      },
+      {
+        "path": "assets/ophanim-gentle-v2-last.jpg",
+        "sha256": "1d0ce45f18479fefc378097dcf8d058dd19ce6235ce32a83ea70dc12f3620eb8",
+        "bytes": 109984
+      },
+      {
+        "path": "assets/ophanim-gentle-v2-motion.mp4",
+        "sha256": "3a3f71e531681c7ec693a0ec0080a116f12b2461ff4504876b70ff164f23f9d8",
+        "bytes": 3338884
+      },
+      {
+        "path": "assets/ophanim-subdued.png",
+        "sha256": "d4f6fdca164b8ef979fe30d2d7257e50d9dab71fd347a046be3ea57d7166554c",
+        "bytes": 2475388
+      },
+      {
+        "path": "assets/primordial-ocean.png",
+        "sha256": "4d086df5a97ced35bb41ab5a9d54ad2f2c027188e603077bb6fe2a023a6e5a8a",
+        "bytes": 1970896
+      },
+      {
+        "path": "assets/seraphim-breath-v1-first.jpg",
+        "sha256": "82c091c42fa53515624fb29823b37fc551d3f8340b5774a4ad1f3ff77821464a",
+        "bytes": 92992
+      },
+      {
+        "path": "assets/seraphim-breath-v1-last.jpg",
+        "sha256": "39a73e5d42f1b321dbef1cdf2031b5ea422693f2ee369bcced49ad7ee0526fd7",
+        "bytes": 108784
+      },
+      {
+        "path": "assets/seraphim-breath-v1-motion.mp4",
+        "sha256": "78597be7a67faac581ca427184253da4424e9073c3aca2e0336cfca8ec36af6f",
+        "bytes": 2788896
+      },
+      {
+        "path": "assets/seraphim-subdued.png",
+        "sha256": "878197cbf65d6d49683f9ea534fcc5b8f4c81670a0fb4ae1e2536938f539ebf4",
+        "bytes": 2382540
+      },
+      {
+        "path": "assets/song.mp3",
+        "sha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2",
+        "bytes": 6676627
+      },
+      {
+        "path": "assets/vegetation-end.png",
+        "sha256": "a4ee0eb33616e447ba16ac5a6e22712e30a2d135dc81da892c89a93ebf8ac830",
+        "bytes": 2824123
+      },
+      {
+        "path": "assets/vegetation-start.png",
+        "sha256": "c77d3e49e62a5c5dbfa73b042aac8702ddc1a62365410ac061b5dd3f9bf63fb4",
+        "bytes": 2423264
+      },
+      {
+        "path": "assets/vegetation-v1-first.jpg",
+        "sha256": "2c540dd7c56bc1c7678dce44a1b36c445f9e812c6ea38eae9d9db4c5e54e3258",
+        "bytes": 64902
+      },
+      {
+        "path": "assets/vegetation-v1-last.jpg",
+        "sha256": "1c97dcb80f07c0fb7c33ab3cdccf25b9a00199e46ec159952c45a0f6966bfba0",
+        "bytes": 108146
+      },
+      {
+        "path": "assets/vegetation-v1-motion.mp4",
+        "sha256": "34c360c3ea0b8f943b71cf159fc0ee02ce3412f54b5f571c5d4cc51bad342a15",
+        "bytes": 3794074
+      },
+      {
+        "path": "assets/whale-formation-first.jpg",
+        "sha256": "39dba02adeee3848e6f346f0c314f3dae341e64a5347e8d933c38a93053aff37",
+        "bytes": 26368
+      },
+      {
+        "path": "assets/whale-formation-last.jpg",
+        "sha256": "13a45bc1f1e1810d03d9904201dc36a1bb4dc729639686475d42ce8ed1c80919",
+        "bytes": 57903
+      },
+      {
+        "path": "assets/whale-formation-motion.mp4",
+        "sha256": "22f2d15af909f6c037b1e1a5e5a5459ac30cd51934eaa91947c84b2654d90e85",
+        "bytes": 1338128
+      },
+      {
+        "path": "assets/whale-formation-v1-first.jpg",
+        "sha256": "ea80353b894682ef57df4e4af8ba201b488bfd2a2229381beb2bfe0c09e7c892",
+        "bytes": 24178
+      },
+      {
+        "path": "assets/whale-formation-v1-last.jpg",
+        "sha256": "1cafdea1d03776defa9becfa20fee427c5595e1c2c009cf95e540b9ec8dd8ab4",
+        "bytes": 48380
+      },
+      {
+        "path": "assets/whale-formation-v1-motion.mp4",
+        "sha256": "be4cafe07307ad187e48bf241a43d2c1817d097b665e9b7cfdcb549829b9502c",
+        "bytes": 1244182
+      },
+      {
+        "path": "assets/whale-line-end.png",
+        "sha256": "69b2f23d6fe697ca7b7e82118dfcfeb4343eff5b2aa9790d828ede65ca0c2ade",
+        "bytes": 1007435
+      },
+      {
+        "path": "assets/whale-line-start.png",
+        "sha256": "913d30e3e67f2be94e30c59cf36dec569798af84f1cd165373f2c79cbf8f256f",
+        "bytes": 518481
+      },
+      {
+        "path": "assets/wildlife-first-kinds.png",
+        "sha256": "ce0cd8c2465bba351284d5ff8673811ea5316eb8f402000088ebc575959d1cc8",
+        "bytes": 2186352
+      },
+      {
+        "path": "assets/winged-above-earth.png",
+        "sha256": "2b8e86c3226fccd493718b42c5bb485ad5e00bf643d11b957c9d8eb352efa8c0",
+        "bytes": 2046794
+      },
+      {
+        "path": "build.mjs",
+        "sha256": "76a8717ea90af3b4f5e5ac2747659fb75940d214c8c99c9fb384c668dd51ec65",
+        "bytes": 3308
+      },
+      {
+        "path": "composition.html.txt",
+        "sha256": "0be920bbe54172f4ee2df33b178ec66bb5ad1ea75aa7d787bcbbcc317551b44b",
+        "bytes": 3544
+      },
+      {
+        "path": "hyperframes.json",
+        "sha256": "4b663f4c9d6b036b815632a5ae07edcf5c9cf64b34c0ceffb63e421b6684929e",
+        "bytes": 305
+      },
+      {
+        "path": "index.html",
+        "sha256": "6d0ca4e4f9f2cc6d08c8daeec0826e5b3031acd38f853095876b8972a950ee0f",
+        "bytes": 1154120
+      },
+      {
+        "path": "intake/energy-profile.json",
+        "sha256": "e1b60c6ef9d0ffce205f3a5c2c8e2043521c8af5f4f0a4bfdf7b539795aee564",
+        "bytes": 9242
+      },
+      {
+        "path": "intake/lyrics.txt",
+        "sha256": "d9a699733416732b13fcbeecf0d20627577e18929848b054558d098b1e11cbd9",
+        "bytes": 3244
+      },
+      {
+        "path": "intake/measured-attacks.json",
+        "sha256": "b011e8d6c6097674e7db6a4c9f83b15361a03ff9c8254113adc1f2e1c509cccb",
+        "bytes": 302680
+      },
+      {
+        "path": "opening.js",
+        "sha256": "626ba8204bcd58788bf491cb95422304b357e621501366b65b16e611c2b99d95",
+        "bytes": 7556
+      },
+      {
+        "path": "review.mjs",
+        "sha256": "b617f363be30dc8a021f3b2bc6a98765cc7f0b4ae30b67175152bdea824008ab",
+        "bytes": 18362
+      },
+      {
+        "path": "runtime.js",
+        "sha256": "5f069449ad99585a9ee695e666ae81d0243b1b6189c00b2c05b650e35e705ccb",
+        "bytes": 10492
+      },
+      {
+        "path": "scene-plan.json",
+        "sha256": "9abd2817162b9ec31533aafb2effbdcd502ef438b0928c2805cd9a7221daa8e4",
+        "bytes": 77695
+      },
+      {
+        "path": "scenes/00-body-support.js",
+        "sha256": "5bf87d0e601c1aee7e3468f99170274be225eb02dc112dd3cf5cb970110f9af2",
+        "bytes": 4220
+      },
+      {
+        "path": "scenes/01-divisions.js",
+        "sha256": "8c17c428f9792ee0e834f6eea2476529ccb114a8cb5184f9bb1ec1d69d64f7f1",
+        "bytes": 10258
+      },
+      {
+        "path": "scenes/02-growth.js",
+        "sha256": "f7fe717839b5b9368503da215611a66489e65b3f420cc4416e7eceb85b2a6034",
+        "bytes": 7021
+      },
+      {
+        "path": "scenes/03-luminaries.js",
+        "sha256": "21da726cc87ce19ec8b701da1617513d6cf5567cd10dea6a466aa934cd78f2b7",
+        "bytes": 9716
+      },
+      {
+        "path": "scenes/04-creatures.js",
+        "sha256": "09555d722f68c4d65479e105c64b68c2dfa11f5ea8b39449bce9f5f27b1b0f65",
+        "bytes": 10815
+      },
+      {
+        "path": "scenes/05-humankind-reprise.js",
+        "sha256": "21948028869583db6ed2e60988b69d7cce8dafc98dd65d250e13e0700256d0c7",
+        "bytes": 9968
+      },
+      {
+        "path": "scenes/99-metadata.js",
+        "sha256": "5d3c8cd7755825268fb80e5f586c97098a7313529c586dee136c95c7f6998a5b",
+        "bytes": 41547
+      },
+      {
+        "path": "theme-choice.json",
+        "sha256": "c9637517ee90b0c9a6700e0398bb912eeffa66f22addc131bf97fc576281beac",
+        "bytes": 2731
+      },
+      {
+        "path": "timing/performance-lyrics.txt",
+        "sha256": "01cd4ed3f803946137e2bf8e3a536678fe774a0c34b3d669888ddd9372a63382",
+        "bytes": 2664
+      },
+      {
+        "path": "timing/words.json",
+        "sha256": "a7f4b52706f837bad3cdcda1abe26751be33f523d59e1372653ebd021658edaa",
+        "bytes": 533395
+      },
+      {
+        "path": "vendor/gsap.min.js",
+        "sha256": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+        "bytes": 72779
+      }
+    ],
+    "rendererDir": "/Volumes/Code/ark-video-studio/engine"
+  },
+  "duration": 304.73333333333335,
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "renderStartedAt": "2026-09-27T12:07:17.304Z",
+  "renderEndedAt": "2026-09-27T12:12:48.624Z",
+  "renderer": "HyperFrames0.8.79",
+  "note": "Source snapshot captured before rendering and verified after; output encoding is separately decoded by review."
+}
