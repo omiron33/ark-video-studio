@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 129.89,
+    "duration": 3.62,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "Dusk. Dawn. The third day.",
+  "approvedLyrics": "Dusk. Dawn. The third day.",
+  "words": [
+    {
+      "id": "w_0d79140679c009bd",
+      "text": "Dusk.",
+      "start": 130.835222,
+      "end": 131.076556,
+      "phraseId": "g1-l038",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.16369362605692925,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l038-w01"
+    },
+    {
+      "id": "w_0fdddcd2d9f2aefc",
+      "text": "Dawn.",
+      "start": 131.136889,
+      "end": 131.478778,
+      "phraseId": "g1-l038",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.14818957974814584,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l038-w02"
+    },
+    {
+      "id": "w_7b327ce4b95b0ca2",
+      "text": "The",
+      "start": 131.498889,
+      "end": 131.619556,
+      "phraseId": "g1-l038",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.02100836947749519,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l038-w03"
+    },
+    {
+      "id": "w_7e73718e503c923e",
+      "text": "third",
+      "start": 131.7,
+      "end": 132.021778,
+      "phraseId": "g1-l038",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.04559973671217721,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l038-w04"
+    },
+    {
+      "id": "w_840ef5e21b1a9256",
+      "text": "day.",
+      "start": 132.062,
+      "end": 132.303333,
+      "phraseId": "g1-l038",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.14977044550151114,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l038-w05"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "Dusk. Dawn. The third day.",
+      "wordIds": [
+        "w_0d79140679c009bd",
+        "w_0fdddcd2d9f2aefc",
+        "w_7b327ce4b95b0ca2",
+        "w_7e73718e503c923e",
+        "w_840ef5e21b1a9256"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l038-full-ctc-large.json",
+  "executionEvidence": {
+    "id": "g1-l038-full-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l038-full-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 1.2817653748206794,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

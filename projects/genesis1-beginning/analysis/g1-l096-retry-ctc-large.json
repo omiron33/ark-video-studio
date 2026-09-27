@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 290.9,
+    "duration": 5.1,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "Dusk. Dawn. The sixth day.",
+  "approvedLyrics": "Dusk. Dawn. The sixth day.",
+  "words": [
+    {
+      "id": "w_d517f6bdb0009bd7",
+      "text": "Dusk.",
+      "start": 291.642913,
+      "end": 291.843701,
+      "phraseId": "g1-l096",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.039907931093074674,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l096-w01"
+    },
+    {
+      "id": "w_ccdfbff18be218ca",
+      "text": "Dawn.",
+      "start": 291.944094,
+      "end": 292.405906,
+      "phraseId": "g1-l096",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.02854188911512936,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l096-w02"
+    },
+    {
+      "id": "w_c93def32e6736870",
+      "text": "The",
+      "start": 292.546457,
+      "end": 292.606693,
+      "phraseId": "g1-l096",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.2789657668546611,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l096-w03"
+    },
+    {
+      "id": "w_1984ed6ecab988d9",
+      "text": "sixth",
+      "start": 293.12874,
+      "end": 293.791339,
+      "phraseId": "g1-l096",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.07819088863244388,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l096-w04"
+    },
+    {
+      "id": "w_1fe42fd034117401",
+      "text": "day.",
+      "start": 294.915748,
+      "end": 295.337402,
+      "phraseId": "g1-l096",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.10271056627920198,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l096-w05"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "Dusk. Dawn. The sixth day.",
+      "wordIds": [
+        "w_d517f6bdb0009bd7",
+        "w_ccdfbff18be218ca",
+        "w_c93def32e6736870",
+        "w_1984ed6ecab988d9",
+        "w_1fe42fd034117401"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l096-retry-ctc-large.json",
+  "executionEvidence": {
+    "id": "g1-l096-retry-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l096-retry-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 2.0950247501023114,
+    "modelCacheHit": false,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 47.53,
+    "duration": 4.52,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "Dusk. Dawn. The first day.",
+  "approvedLyrics": "Dusk. Dawn. The first day.",
+  "words": [
+    {
+      "id": "w_74a0f6cf4525e46a",
+      "text": "Dusk.",
+      "start": 48.213022,
+      "end": 48.956311,
+      "phraseId": "g1-l012",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.3585857678022855,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l012-w01"
+    },
+    {
+      "id": "w_3d0015c5e1a8d27e",
+      "text": "Dawn.",
+      "start": 49.257644,
+      "end": 49.478622,
+      "phraseId": "g1-l012",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.08263640903079691,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l012-w02"
+    },
+    {
+      "id": "w_397ec741b13d5802",
+      "text": "The",
+      "start": 49.980844,
+      "end": 50.0612,
+      "phraseId": "g1-l012",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.8762836319061532,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l012-w03"
+    },
+    {
+      "id": "w_c19e6fc6fbfcc067",
+      "text": "first",
+      "start": 50.141556,
+      "end": 50.503156,
+      "phraseId": "g1-l012",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9292565647264484,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l012-w04"
+    },
+    {
+      "id": "w_6cd6c7ec49402dd0",
+      "text": "day.",
+      "start": 50.764311,
+      "end": 51.065644,
+      "phraseId": "g1-l012",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.944804572494275,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l012-w05"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "Dusk. Dawn. The first day.",
+      "wordIds": [
+        "w_74a0f6cf4525e46a",
+        "w_3d0015c5e1a8d27e",
+        "w_397ec741b13d5802",
+        "w_c19e6fc6fbfcc067",
+        "w_6cd6c7ec49402dd0"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l012-full-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l012-full-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l012-full-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.9147211667150259,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

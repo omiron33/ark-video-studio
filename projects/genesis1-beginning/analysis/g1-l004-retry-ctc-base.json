@@ -1,0 +1,247 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 16.1,
+    "duration": 8.4,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "blackness covered the deep. Across the water moved the Spirit of God.",
+  "approvedLyrics": "blackness covered the deep. Across the water moved the Spirit of God.",
+  "words": [
+    {
+      "id": "w_9baaefc8c3d2d7a0",
+      "text": "blackness",
+      "start": 17.443198,
+      "end": 18.164916,
+      "phraseId": "g1-l004",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.8564903143619619,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l004-w01"
+    },
+    {
+      "id": "w_4b09ae776a95b7a2",
+      "text": "covered",
+      "start": 18.345346,
+      "end": 18.726253,
+      "phraseId": "g1-l004",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9926623664257307,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l004-w02"
+    },
+    {
+      "id": "w_b37531060a3bd3ed",
+      "text": "the",
+      "start": 18.826492,
+      "end": 18.906683,
+      "phraseId": "g1-l004",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9905933567154879,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l004-w03"
+    },
+    {
+      "id": "w_0e7de0922b971188",
+      "text": "deep.",
+      "start": 18.986874,
+      "end": 19.36778,
+      "phraseId": "g1-l004",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9888097200522137,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l004-w04"
+    },
+    {
+      "id": "w_47f0c3b28ea2eb9f",
+      "text": "Across",
+      "start": 19.748687,
+      "end": 20.350119,
+      "phraseId": "g1-l005",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.648273784611305,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l005-w01"
+    },
+    {
+      "id": "w_3425b92bb6ce6c5b",
+      "text": "the",
+      "start": 20.490453,
+      "end": 20.590692,
+      "phraseId": "g1-l005",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9926323917147747,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l005-w02"
+    },
+    {
+      "id": "w_8346c570f07f2eae",
+      "text": "water",
+      "start": 20.731026,
+      "end": 21.23222,
+      "phraseId": "g1-l005",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.04068015421218435,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l005-w03"
+    },
+    {
+      "id": "w_c45b6958326d1bad",
+      "text": "moved",
+      "start": 21.412649,
+      "end": 21.653222,
+      "phraseId": "g1-l005",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.007423308475368523,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l005-w04"
+    },
+    {
+      "id": "w_a9e711f9f2ec6d51",
+      "text": "the",
+      "start": 21.713365,
+      "end": 21.793556,
+      "phraseId": "g1-l005",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9920677552569103,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l005-w05"
+    },
+    {
+      "id": "w_513c14977116ca6b",
+      "text": "Spirit",
+      "start": 21.873747,
+      "end": 22.55537,
+      "phraseId": "g1-l005",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.93105226110839,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l005-w06"
+    },
+    {
+      "id": "w_4ca0a66145fef1ea",
+      "text": "of",
+      "start": 22.675656,
+      "end": 22.715752,
+      "phraseId": "g1-l005",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9965384998119362,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l005-w07"
+    },
+    {
+      "id": "w_14c2b1a5adaeea60",
+      "text": "God.",
+      "start": 22.876134,
+      "end": 24.159189,
+      "phraseId": "g1-l005",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.0030935333858587684,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l005-w08"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "blackness covered the deep. Across the water moved the Spirit of God.",
+      "wordIds": [
+        "w_9baaefc8c3d2d7a0",
+        "w_4b09ae776a95b7a2",
+        "w_b37531060a3bd3ed",
+        "w_0e7de0922b971188",
+        "w_47f0c3b28ea2eb9f",
+        "w_3425b92bb6ce6c5b",
+        "w_8346c570f07f2eae",
+        "w_c45b6958326d1bad",
+        "w_a9e711f9f2ec6d51",
+        "w_513c14977116ca6b",
+        "w_4ca0a66145fef1ea",
+        "w_14c2b1a5adaeea60"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l004-retry-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l004-retry-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l004-retry-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.5329458750784397,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 206.04999999999998,
+    "duration": 3.8,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "His blessing rang out:",
+  "approvedLyrics": "His blessing rang out:",
+  "words": [
+    {
+      "id": "w_88ee1726e676264b",
+      "text": "His",
+      "start": 206.311376,
+      "end": 206.733598,
+      "phraseId": "g1-l062",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.02215646517696029,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l062-w01"
+    },
+    {
+      "id": "w_06d6d7e92a761213",
+      "text": "blessing",
+      "start": 207.960053,
+      "end": 208.402381,
+      "phraseId": "g1-l062",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.38612325552587073,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l062-w02"
+    },
+    {
+      "id": "w_0a585a6829bb857b",
+      "text": "rang",
+      "start": 208.50291,
+      "end": 208.804497,
+      "phraseId": "g1-l062",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.3939716536409536,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l062-w03"
+    },
+    {
+      "id": "w_0f5acb74d7baee0c",
+      "text": "out:",
+      "start": 208.965344,
+      "end": 209.065873,
+      "phraseId": "g1-l062",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.5696848932570926,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l062-w04"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "His blessing rang out:",
+      "wordIds": [
+        "w_88ee1726e676264b",
+        "w_06d6d7e92a761213",
+        "w_0a585a6829bb857b",
+        "w_0f5acb74d7baee0c"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l062-full-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l062-full-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l062-full-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.6903267079032958,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

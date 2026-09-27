@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "scenes": [
+    {
+      "id": "g1-l001",
+      "family": "before-the-first-count",
+      "direction": {
+        "inspiration": {
+          "references": [
+            "external-microtype-image-world",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Story and words share physical material while active text stays clear.",
+          "adaptation": "before-the-first-count"
+        }
+      }
+    },
+    {
+      "id": "g1-l002",
+      "family": "heaven-earth-into-being",
+      "direction": {
+        "inspiration": {
+          "references": [
+            "external-microtype-image-world",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Story and words share physical material while active text stays clear.",
+          "adaptation": "heaven-earth-into-being"
+        }
+      }
+    },
+    {
+      "id": "g1-l003",
+      "family": "earth-unfinished",
+      "direction": {
+        "inspiration": {
+          "references": [
+            "external-microtype-image-world",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Story and words share physical material while active text stays clear.",
+          "adaptation": "earth-unfinished"
+        }
+      }
+    },
+    {
+      "id": "g1-l004",
+      "family": "blackness-over-deep",
+      "direction": {
+        "inspiration": {
+          "references": [
+            "external-microtype-image-world",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Story and words share physical material while active text stays clear.",
+          "adaptation": "blackness-over-deep"
+        }
+      }
+    },
+    {
+      "id": "g1-l005",
+      "family": "spirit-over-waters",
+      "direction": {
+        "inspiration": {
+          "references": [
+            "external-microtype-image-world",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Story and words share physical material while active text stays clear.",
+          "adaptation": "spirit-over-waters"
+        }
+      }
+    },
+    {
+      "id": "g1-l006",
+      "family": "command-light-cleavage",
+      "direction": {
+        "inspiration": {
+          "references": [
+            "external-microtype-image-world",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Story and words share physical material while active text stays clear.",
+          "adaptation": "command-light-cleavage"
+        }
+      }
+    },
+    {
+      "id": "g1-l007",
+      "family": "brightness-answer",
+      "direction": {
+        "inspiration": {
+          "references": [
+            "external-microtype-image-world",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Story and words share physical material while active text stays clear.",
+          "adaptation": "brightness-answer"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "checkedAt": "2026-09-27T11:08:43.739459+00:00",
+  "query": "Genesis creation organic line art celestial six wings eye wheels restrained bone rust amber code glyphs ocean whale dry land plants continuous formation 5 to 9 seconds active lyric foreground",
+  "method": "local lexical references search; three actual contact sheets opened",
+  "inspected": [
+    {
+      "id": "internal-foreground-occlusion",
+      "sourceInterval": [
+        116.1,
+        122.787
+      ],
+      "contactSheet": "references/motion/images/internal-foreground-occlusion/sheet.jpg",
+      "observed": "Opaque foreground heads hide essential lyric letters.",
+      "principle": "Depth needs protected lyric reading intervals.",
+      "adaptation": "New generated forms remain behind a clear lyric region; foreground masks may consume only already-read words.",
+      "userPreference": "unknown; caution example only"
+    },
+    {
+      "id": "internal-fingerprint-mark",
+      "sourceInterval": [
+        176.5,
+        179.2
+      ],
+      "contactSheet": "references/motion/images/internal-fingerprint-mark/sheet.jpg",
+      "observed": "A fine emblem forms before a decisive central word; the keyword is much more readable than the rings.",
+      "principle": "Anticipatory form makes a word arrival meaningful.",
+      "adaptation": "Whale contours gather coherently before the lyric emphasis; retain substantial readable foreground type rather than using thin contour lines as text.",
+      "userPreference": "unknown; not blanket approval"
+    },
+    {
+      "id": "internal-word-submersion",
+      "sourceInterval": [
+        6.4,
+        10
+      ],
+      "contactSheet": "references/motion/images/internal-word-submersion/sheet.jpg",
+      "observed": "A sea edge masks a phrase only after a readable interval.",
+      "principle": "The environment can explain a transition instead of an arbitrary wipe.",
+      "adaptation": "New land/vegetation media can meet authored contour masks; no preexisting ocean artwork is reused.",
+      "userPreference": "unknown for this exact excerpt"
+    }
+  ],
+  "subjectMatch": "No literal whale/ophanim/seraphim motion match was retrieved. Proposed subject motion is original, based on the root-supplied approved still references and current lyrics.",
+  "status": "proposed_until_generated_and_reviewed",
+  "compositionOwnerNote": "Carry relevant principles into direction.inspiration when authoring each scene; this file does not author placement or timing."
+}

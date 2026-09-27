@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 170.57,
+    "duration": 4.7,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "to keep the bright apart from dark.",
+  "approvedLyrics": "to keep the bright apart from dark.",
+  "words": [
+    {
+      "id": "w_eaa8892012fff45c",
+      "text": "to",
+      "start": 172.116581,
+      "end": 172.156752,
+      "phraseId": "g1-l051",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.5237599813287331,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l051-w01"
+    },
+    {
+      "id": "w_7f7f7072eadf3da9",
+      "text": "keep",
+      "start": 172.237094,
+      "end": 172.357607,
+      "phraseId": "g1-l051",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.450497945019637,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l051-w02"
+    },
+    {
+      "id": "w_5068f04140b55559",
+      "text": "the",
+      "start": 172.437949,
+      "end": 172.498205,
+      "phraseId": "g1-l051",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.831148074329467,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l051-w03"
+    },
+    {
+      "id": "w_2694cc0cacc9415e",
+      "text": "bright",
+      "start": 172.578547,
+      "end": 172.879829,
+      "phraseId": "g1-l051",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.11147929307523896,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l051-w04"
+    },
+    {
+      "id": "w_80ed4979758d9e0b",
+      "text": "apart",
+      "start": 172.960171,
+      "end": 173.482393,
+      "phraseId": "g1-l051",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.1621605204016133,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l051-w05"
+    },
+    {
+      "id": "w_b4e7dfa0641de6df",
+      "text": "from",
+      "start": 173.622991,
+      "end": 173.944359,
+      "phraseId": "g1-l051",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.4078673640716669,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l051-w06"
+    },
+    {
+      "id": "w_f17f1640830cba45",
+      "text": "dark.",
+      "start": 174.064872,
+      "end": 174.707607,
+      "phraseId": "g1-l051",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.5137228243453178,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l051-w07"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "to keep the bright apart from dark.",
+      "wordIds": [
+        "w_eaa8892012fff45c",
+        "w_7f7f7072eadf3da9",
+        "w_5068f04140b55559",
+        "w_2694cc0cacc9415e",
+        "w_80ed4979758d9e0b",
+        "w_b4e7dfa0641de6df",
+        "w_f17f1640830cba45"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l051-full-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l051-full-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l051-full-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 1.285542749799788,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

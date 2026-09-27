@@ -1,0 +1,37 @@
+{
+  "duplicate": false,
+  "video": {
+    "id": "vid-20260927-d43880e9",
+    "project": "Genesis1 - The Beginning",
+    "title": "Genesis 1 - Breath & Earth - Full Film v1",
+    "version": "Full Film v1",
+    "sourceAgent": "Codex",
+    "sourceMachine": "Mac mini",
+    "sourcePath": "/Volumes/DATA/ArkRender/genesis1/genesis1-breath-earth-v1.mp4",
+    "ingestedFrom": "C:\\Users\\sjfis\\Videos\\Genesis1\\full-v1-b946c097f090.mp4",
+    "notes": "Complete Genesis 1 lyric film, 304.733333 seconds / 9142 frames, 1080p30. Approved theme 3: restrained charcoal, bone, rust and amber. 63 authored animation families, four generated motion inserts, and active foreground words/graphics throughout the supporting media. Independent encoded visual review accepted with no blocking issues (legibility 9.1, semantic motion 8.6, photorealism 8.8, composition 8.9, continuity 9.2). Source-versus-encoded PCM correlation 0.998748, minimum segment correlation 0.996351, zero measured global lag, as reported by root review. Audio transport verification does not certify every sung word. Full word-OCR and strict singing-recognition results are still pending; no perfect-sync or complete-gauntlet-pass claim. Pending Shane review. Prior preview candidates preserved. SHA256 b946c097f0902c0f3b4eda3a330aceca2ef893c29bd5a7eb511cc34101d130db.",
+    "supersedes": null,
+    "supersededBy": null,
+    "md5": "d43880e9b3d1193e282e1c1d2c4adaf8",
+    "sha256": "b946c097f0902c0f3b4eda3a330aceca2ef893c29bd5a7eb511cc34101d130db",
+    "bytes": 163523545,
+    "mimeType": "video/mp4",
+    "file": "media/videos/genesis1-the-beginning/vid-20260927-d43880e9/video.mp4",
+    "thumbnail": {
+      "file": "media/videos/genesis1-the-beginning/vid-20260927-d43880e9/thumbnail.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "probe": null,
+    "status": "pending_review",
+    "ingestedAt": "2026-09-27T11:56:59.955Z",
+    "updatedAt": "2026-09-27T11:56:59.955Z",
+    "history": [
+      {
+        "at": "2026-09-27T11:56:59.955Z",
+        "status": "pending_review",
+        "note": "Complete Genesis 1 lyric film, 304.733333 seconds / 9142 frames, 1080p30. Approved theme 3: restrained charcoal, bone, rust and amber. 63 authored animation families, four generated motion inserts, and active foreground words/graphics throughout the supporting media. Independent encoded visual review accepted with no blocking issues (legibility 9.1, semantic motion 8.6, photorealism 8.8, composition 8.9, continuity 9.2). Source-versus-encoded PCM correlation 0.998748, minimum segment correlation 0.996351, zero measured global lag, as reported by root review. Audio transport verification does not certify every sung word. Full word-OCR and strict singing-recognition results are still pending; no perfect-sync or complete-gauntlet-pass claim. Pending Shane review. Prior preview candidates preserved. SHA256 b946c097f0902c0f3b4eda3a330aceca2ef893c29bd5a7eb511cc34101d130db.",
+        "by": "Codex"
+      }
+    ]
+  }
+}

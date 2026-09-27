@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 164.15,
+    "duration": 3.74,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "He set them in Heaven\u2019s span",
+  "approvedLyrics": "He set them in Heaven\u2019s span",
+  "words": [
+    {
+      "id": "w_995c1902e1483e78",
+      "text": "He",
+      "start": 164.451613,
+      "end": 164.672796,
+      "phraseId": "g1-l048",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.01266795594748154,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l048-w01"
+    },
+    {
+      "id": "w_ca36773c4f8bfd61",
+      "text": "set",
+      "start": 165.276022,
+      "end": 165.336344,
+      "phraseId": "g1-l048",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.023850485163605415,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l048-w02"
+    },
+    {
+      "id": "w_7e54ae75ad1bb1af",
+      "text": "them",
+      "start": 165.456989,
+      "end": 165.658065,
+      "phraseId": "g1-l048",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.36932200197905923,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l048-w03"
+    },
+    {
+      "id": "w_533d88c263981eb8",
+      "text": "in",
+      "start": 165.77871,
+      "end": 165.839032,
+      "phraseId": "g1-l048",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.7974567786299456,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l048-w04"
+    },
+    {
+      "id": "w_7fc868058eb713d0",
+      "text": "Heaven\u2019s",
+      "start": 165.959677,
+      "end": 166.402043,
+      "phraseId": "g1-l048",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.7173591918568564,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l048-w05"
+    },
+    {
+      "id": "w_0b70e741cafed6d7",
+      "text": "span",
+      "start": 166.482473,
+      "end": 167.588387,
+      "phraseId": "g1-l048",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.48526745290162937,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l048-w06"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "He set them in Heaven\u2019s span",
+      "wordIds": [
+        "w_995c1902e1483e78",
+        "w_ca36773c4f8bfd61",
+        "w_7e54ae75ad1bb1af",
+        "w_533d88c263981eb8",
+        "w_7fc868058eb713d0",
+        "w_0b70e741cafed6d7"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l048-full-ctc-large.json",
+  "executionEvidence": {
+    "id": "g1-l048-full-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l048-full-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 1.4600777081213892,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

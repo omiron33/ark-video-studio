@@ -1,0 +1,288 @@
+{
+  "841b4461-d867-4734-8e46-c108a35821ef": {
+    "prompt": [
+      100,
+      "841b4461-d867-4734-8e46-c108a35821ef",
+      {
+        "1": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+            "type": "minimax",
+            "device": "default"
+          },
+          "_meta": {
+            "title": "Load CLIP"
+          }
+        },
+        "2": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+            "weight_dtype": "default"
+          },
+          "_meta": {
+            "title": "Load Diffusion Model"
+          }
+        },
+        "3": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+          },
+          "_meta": {
+            "title": "Load Video VAE"
+          }
+        },
+        "5": {
+          "class_type": "MiniMaxH3SigmaShift",
+          "inputs": {
+            "model": [
+              "17",
+              0
+            ],
+            "shift_video": 12.0,
+            "shift_audio": 3.0
+          },
+          "_meta": {
+            "title": "Sigma Shift"
+          }
+        },
+        "6": {
+          "class_type": "MiniMaxH3ImageToVideo",
+          "inputs": {
+            "clip": [
+              "1",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ],
+            "prompt": "A single uninterrupted photoreal shot of primordial waters gathering away from the land. Keep the exact fixed camera, coastline mountains, horizon, charcoal clouds and low warm light of the supplied first and last images. The ocean in the foreground steadily withdraws toward the distant sea, revealing the same heavy black basalt rocks and rugged seabed that were already partly visible. Small foam lines slide back through channels around the fixed rocks, shallow pools drain gradually, wet stone retains realistic amber reflections, and fine ripples continue on the remaining distant water. The gradual emergence proceeds visibly across the entire shot, then settles naturally into the exposed damp coastline of the final image. Rocks do not grow, move, float or transform; it is the water level and shoreline that change. All landscape forms remain geographically consistent. Very subtle continuous cloud drift, stable exposure and a calm beginning and end. Cinematic real-world natural textures, charcoal stone, restrained bone foam and warm amber highlights. No time-lapse jump, no crossfade between photographs, no camera zoom or pan, no sudden dry-land cut, no giant wall of water, no magical glow or beams, no people, animals, buildings, text, symbols or labels. Preserve the dark left sky and broad stable composition for later active lyric typography and coded contour masks.",
+            "width": 960,
+            "height": 544,
+            "length": 172,
+            "first_frame": [
+              "16",
+              0
+            ],
+            "last_frame": [
+              "18",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "H3 Conditioning"
+          }
+        },
+        "7": {
+          "class_type": "BasicGuider",
+          "inputs": {
+            "model": [
+              "5",
+              0
+            ],
+            "conditioning": [
+              "6",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Basic Guider"
+          }
+        },
+        "8": {
+          "class_type": "RandomNoise",
+          "inputs": {
+            "noise_seed": 2026092735
+          },
+          "_meta": {
+            "title": "Noise"
+          }
+        },
+        "9": {
+          "class_type": "BasicScheduler",
+          "inputs": {
+            "model": [
+              "5",
+              0
+            ],
+            "scheduler": "simple",
+            "steps": 4,
+            "denoise": 1.0
+          },
+          "_meta": {
+            "title": "Scheduler"
+          }
+        },
+        "10": {
+          "class_type": "MiniMaxH3TurboSampler",
+          "inputs": {}
+        },
+        "11": {
+          "class_type": "SamplerCustomAdvanced",
+          "inputs": {
+            "noise": [
+              "8",
+              0
+            ],
+            "guider": [
+              "7",
+              0
+            ],
+            "sampler": [
+              "10",
+              0
+            ],
+            "sigmas": [
+              "9",
+              0
+            ],
+            "latent_image": [
+              "6",
+              1
+            ]
+          },
+          "_meta": {
+            "title": "Sampler Custom Advanced"
+          }
+        },
+        "12": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "11",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "VAE Decode"
+          }
+        },
+        "14": {
+          "class_type": "CreateVideo",
+          "inputs": {
+            "images": [
+              "12",
+              0
+            ],
+            "fps": 24.0,
+            "bit_depth": 8
+          },
+          "_meta": {
+            "title": "Create Video"
+          }
+        },
+        "15": {
+          "class_type": "SaveVideo",
+          "inputs": {
+            "video": [
+              "14",
+              0
+            ],
+            "filename_prefix": "genesis1-production/land-emergence-v1",
+            "format": "auto",
+            "codec": "auto"
+          },
+          "_meta": {
+            "title": "Save Video"
+          }
+        },
+        "16": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "genesis1-land-emergence-v1-first.png"
+          }
+        },
+        "17": {
+          "class_type": "MiniMaxH3TurboLoRA",
+          "inputs": {
+            "model": [
+              "2",
+              0
+            ],
+            "lora_name": "minimax_h3_turbo_v4_step600_ema_pruned_comfyui.safetensors",
+            "strength": 1.0,
+            "low_vram": true
+          }
+        },
+        "18": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "genesis1-land-emergence-v1-last.png"
+          }
+        }
+      },
+      {
+        "client_id": "genesis1-video-agent",
+        "create_time": 1790507973342
+      },
+      [
+        "15"
+      ]
+    ],
+    "outputs": {
+      "15": {
+        "images": [
+          {
+            "filename": "land-emergence-v1_00001_.mp4",
+            "subfolder": "genesis1-production",
+            "type": "output"
+          }
+        ],
+        "animated": [
+          true
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "841b4461-d867-4734-8e46-c108a35821ef",
+            "timestamp": 1790507973343
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "1",
+              "2",
+              "3",
+              "5",
+              "9",
+              "10",
+              "17"
+            ],
+            "prompt_id": "841b4461-d867-4734-8e46-c108a35821ef",
+            "timestamp": 1790507973377
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "841b4461-d867-4734-8e46-c108a35821ef",
+            "timestamp": 1790508135733
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "15": {
+        "node_id": "15",
+        "display_node": "15",
+        "parent_node": null,
+        "real_node_id": "15"
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+from pathlib import Path
+import json,hashlib
+P=Path('/Volumes/Code/ark-video-studio/projects/genesis1-beginning');A=P/'analysis';T=P/'timing';timing=json.load(open(T/'words.json'));selection=json.load(open(A/'selection.json'));read=lambda p:json.load(open(p));cases=[]
+for phrase in selection['phrases']:
+ for word in phrase['words']:
+  obs=[{**x,'checkpointId':read(x['artifact'])['checkpointId']} for x in word['alternatives'] if x['kind']=='asr' and x['probability']>=.75]
+  cluster=[x for x in obs if any(x['checkpointId']!=y['checkpointId'] and abs(x['start']-y['start'])<=.12 for y in obs)]
+  if cluster and min(abs(word['start']-x['start']) for x in cluster)>.25:cases.append({'id':word['id'],'text':word['text'],'selectedStart':word['start'],'sourceSupported':word['sourceSupported'],'recognition':cluster,'selectedArtifact':word['artifact'],'disposition':'Preserved measured CTC boundary; paired CTC often locates consonants after ASR absorbed a preceding pause. This is a model disagreement, not a verified failure or proof of accuracy.'})
+(A/'final-source-onset-audit.json').write_text(json.dumps({'status':'source_only_uncertified','method':'Selected onset differs >250ms from exact recognized tokens from two different Whisper checkpoints agreeing within120ms, each posterior>=.75. No new inference, no timestamp mutation.','cases':cases},indent=2)+'\n')
+energy=read(P/'intake/energy-profile.json');attacks=read(P/'intake/measured-attacks.json')['beats'];contexts=[]
+for ph in timing['phrases']:
+ events=[x for x in attacks if ph['start']<=x['time']<=ph['end']];e=[x for x in energy['windows'] if x['end']>ph['start'] and x['start']<ph['end']];contexts.append({'phraseId':ph['id'],'start':ph['start'],'end':ph['end'],'sectionName':ph['sectionName'],'attackCount':len(events),'strongestMeasuredAttacks':[{'time':x['time'],'strength':x['strength']} for x in sorted(events,key=lambda x:-x['strength'])[:3]],'overlappingRmsDbfs':[x['rmsDbfs'] for x in e]})
+(A/'music-phrase-context.json').write_text(json.dumps({'sourceSha256':timing['source']['audioSha256'],'timebase':'source','method':'Reuses source-bound 20ms RMS/low-band energy events and five-second RMS profile; these are attack candidates, not a measured BPM grid or certified musical downbeats.','phrases':contexts},indent=2)+'\n')
+sha=hashlib.sha256((T/'words.json').read_bytes()).hexdigest();summary={**selection['summary'],'timingSha256':sha,'sourceSha256':timing['source']['audioSha256'],'sourceDuration':304.72,'suppliedCanonicalWords':519,'suppliedCanonicalPhrases':96,'performedWords':462,'performedPhrases':86,'performedRepeatPhraseCount':8,'omittedSuppliedPhraseIds':timing['omittedSuppliedPhraseIds'],'rawMediumInvalidTokens':len(read(A/'full-whisper-medium-diagnostic.json')['invalidRawWords']),'modelDisagreementCases':len(cases),'encodedReview':'pending','strictCertified':False};(A/'alignment-summary.json').write_text(json.dumps(summary,indent=2)+'\n');print(json.dumps({k:v for k,v in summary.items() if k not in ['issues','omittedSuppliedPhraseIds']},indent=2))
+(T/'ALIGNMENT.md').write_text('''# Genesis 1 source timing
+
+`words.json` is the performed cue set: 462 exact canonical words in 86 phrases. `phrase-outline.json` provides the same measured phrase starts and ends. `performance-lyrics.txt` is the exact display transcript. Stable source IDs are g1-l001 through g1-l096; inserted performed repeats use -r01 and preserve sourcePhraseId. No source audio was modified.
+
+`canonical-lyrics.txt` and `canonical-phrases.json` preserve the supplied 96-line/519-word lyric sheet. The actual MP3 repeats source lines 64 and 69–75 after line75, then sings lines76,77,96. Supplied lines78–95 are absent from both unprompted full-song Whisper transcripts and the embedded performance text. These omitted lines are not forced into the video. The final refrain is poorly recognized phonetically; exact canonical wording is retained while measured boundaries use CTC and a bounded canonical Whisper alignment.
+
+Timing is selected from unchanged acoustic model intervals, with no interpolation, beat snapping, global shifts, or arbitrary overlap clipping. Two local CTC checkpoints align every phrase; unprompted small.en/medium.en recognition supplies independent lexical evidence. Shared context retries address adjacent-line overlap. The last refrain has a dedicated bounded canonical alignment because the initial broad CTC search borrowed tail audio. Zero-duration tokens and strict wrapper failures remain in analysis; valid raw measurements are explicitly diagnostic rather than relabeled passes.
+
+All 462 words pass engine normalizeTiming with unique IDs and increasing source starts. This is source preparation, not encoded-video certification. Source confidence is not calibrated timestamp accuracy; strict source/encoded audio checks, OCR, and visual acceptance remain pending. See analysis/alignment-summary.json, selection.json, final-source-onset-audit.json and all raw passes. No-canonical-lyric intervals may contain music, reverb, or backing syllables and are not claimed silent.
+
+Musical energy and attack proposals are already source-bound in intake/measured-attacks.json and intake/energy-profile.json. analysis/music-phrase-context.json links them to the final phrases without inventing BPM or downbeat precision.
+''')

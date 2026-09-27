@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 77.35,
+    "duration": 5.8,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "\u2018Waters below Heaven, run to one place;",
+  "approvedLyrics": "\u2018Waters below Heaven, run to one place;",
+  "words": [
+    {
+      "id": "w_c39096923fd1ac21",
+      "text": "\u2018Waters",
+      "start": 78.212976,
+      "end": 80.821972,
+      "phraseId": "g1-l022",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.014038506287471471,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l022-w01"
+    },
+    {
+      "id": "w_e61ba1d76ce1b11c",
+      "text": "below",
+      "start": 81.203287,
+      "end": 81.363841,
+      "phraseId": "g1-l022",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.006027263198993516,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l022-w02"
+    },
+    {
+      "id": "w_069dd544970f9adf",
+      "text": "Heaven,",
+      "start": 82.166609,
+      "end": 82.487716,
+      "phraseId": "g1-l022",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.019543956885243678,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l022-w03"
+    },
+    {
+      "id": "w_07b3541b9a6d49c0",
+      "text": "run",
+      "start": 82.588062,
+      "end": 82.64827,
+      "phraseId": "g1-l022",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.0031681200970966055,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l022-w04"
+    },
+    {
+      "id": "w_9540c89d554d4e3b",
+      "text": "to",
+      "start": 82.708478,
+      "end": 82.768685,
+      "phraseId": "g1-l022",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.00954589906643684,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l022-w05"
+    },
+    {
+      "id": "w_8b076a5bad7e4a88",
+      "text": "one",
+      "start": 82.788754,
+      "end": 82.848962,
+      "phraseId": "g1-l022",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.006836017141278644,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l022-w06"
+    },
+    {
+      "id": "w_e92f6aa9189f7780",
+      "text": "place;",
+      "start": 82.869031,
+      "end": 83.009516,
+      "phraseId": "g1-l022",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.0067362851690738,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l022-w07"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "\u2018Waters below Heaven, run to one place;",
+      "wordIds": [
+        "w_c39096923fd1ac21",
+        "w_e61ba1d76ce1b11c",
+        "w_069dd544970f9adf",
+        "w_07b3541b9a6d49c0",
+        "w_9540c89d554d4e3b",
+        "w_8b076a5bad7e4a88",
+        "w_e92f6aa9189f7780"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l022-full-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l022-full-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l022-full-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.5373610001988709,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

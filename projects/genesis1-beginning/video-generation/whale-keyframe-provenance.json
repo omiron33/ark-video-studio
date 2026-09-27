@@ -1,0 +1,20 @@
+{
+  "shot": "whale-formation",
+  "inputs": [
+    {
+      "image": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/whale-line-start.png",
+      "sha256": "913d30e3e67f2be94e30c59cf36dec569798af84f1cd165373f2c79cbf8f256f",
+      "provider": "GPT Image supplied by root",
+      "providerArtifact": "94ecce36-1296-482f-b58f-7b3f662ada8f.png"
+    },
+    {
+      "image": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/whale-line-end.png",
+      "sha256": "69b2f23d6fe697ca7b7e82118dfcfeb4343eff5b2aa9790d828ede65ca0c2ade",
+      "provider": "GPT Image supplied by root",
+      "providerArtifact": "exec-e018a8d4-2662-40ce-acec-24751f55f975.png"
+    }
+  ],
+  "inspection": "Start has separate bone strands and low rust curves with large clean black space at left. End depicts one proportioned unfilled contour whale, two long attached flippers and divided tail, same black field and low rust curves. No baked lyric text.",
+  "desiredMotion": "Organic coherent line formation, then gentle settle. Fixed camera, no fade/morph shortcut; preserve contour-only appearance.",
+  "status": "inputs_inspected_for_authorized_production"
+}

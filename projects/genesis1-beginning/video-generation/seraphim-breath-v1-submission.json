@@ -1,0 +1,22 @@
+{
+  "prompt_id": "7076bcdd-a049-4243-b92e-c5e9dec54087",
+  "number": 98,
+  "node_errors": {},
+  "name": "seraphim-breath-v1",
+  "submittedAt": "2026-09-27T11:12:53.568350+00:00",
+  "project": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning",
+  "themeChoiceSha256": "c9637517ee90b0c9a6700e0398bb912eeffa66f22addc131bf97fc576281beac",
+  "firstImage": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/seraphim-subdued.png",
+  "firstImageSha256": "878197cbf65d6d49683f9ea534fcc5b8f4c81670a0fb4ae1e2536938f539ebf4",
+  "lastImage": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/seraphim-subdued.png",
+  "lastImageSha256": "878197cbf65d6d49683f9ea534fcc5b8f4c81670a0fb4ae1e2536938f539ebf4",
+  "promptFile": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/seraphim-breath-v1-motion-prompt.txt",
+  "workflow": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/seraphim-breath-v1-workflow.json",
+  "workflowSha256": "ed6cb6c96665dae550fe45d0eeaf40b6a5fc5d1b3bc5d6a04a68b7fc47558eee",
+  "framesRequested": 124,
+  "fpsRequested": 24,
+  "seed": 2026092733,
+  "conditioning": "first_frame+last_frame",
+  "provider": "local OmiPC ComfyUI",
+  "cost": "local GPU; no paid API"
+}

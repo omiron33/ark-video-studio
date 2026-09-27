@@ -1,0 +1,79 @@
+[
+  {
+    "id": "g1-l027",
+    "start": 97.25,
+    "end": 101.2,
+    "words": [
+      {
+        "id": "g1-l027-w01",
+        "text": "He",
+        "phraseId": "g1-l027",
+        "sourcePhraseId": "g1-l027"
+      },
+      {
+        "id": "g1-l027-w02",
+        "text": "looked",
+        "phraseId": "g1-l027",
+        "sourcePhraseId": "g1-l027"
+      },
+      {
+        "id": "g1-l027-w03",
+        "text": "on",
+        "phraseId": "g1-l027",
+        "sourcePhraseId": "g1-l027"
+      },
+      {
+        "id": "g1-l027-w04",
+        "text": "them:",
+        "phraseId": "g1-l027",
+        "sourcePhraseId": "g1-l027"
+      },
+      {
+        "id": "g1-l027-w05",
+        "text": "good.",
+        "phraseId": "g1-l027",
+        "sourcePhraseId": "g1-l027"
+      }
+    ],
+    "provenance": "Bounded retry: full small ASR places He/looked/on/them at97.58\u2013100; prior broad forced window borrowed next Ground syllable for good. Keep gap before Ground103.34 out of this phrase search."
+  },
+  {
+    "id": "g1-l096",
+    "start": 290.9,
+    "end": 296.0,
+    "words": [
+      {
+        "id": "g1-l096-w01",
+        "text": "Dusk.",
+        "phraseId": "g1-l096",
+        "sourcePhraseId": "g1-l096"
+      },
+      {
+        "id": "g1-l096-w02",
+        "text": "Dawn.",
+        "phraseId": "g1-l096",
+        "sourcePhraseId": "g1-l096"
+      },
+      {
+        "id": "g1-l096-w03",
+        "text": "The",
+        "phraseId": "g1-l096",
+        "sourcePhraseId": "g1-l096"
+      },
+      {
+        "id": "g1-l096-w04",
+        "text": "sixth",
+        "phraseId": "g1-l096",
+        "sourcePhraseId": "g1-l096"
+      },
+      {
+        "id": "g1-l096-w05",
+        "text": "day.",
+        "phraseId": "g1-l096",
+        "sourcePhraseId": "g1-l096"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints.",
+    "reason": "Both unprompted ASR checkpoints place final refrain at291.6\u2013294.96. Original broad14s CTC search borrowed unrelated tail audio; restrict search to measured refrain neighborhood."
+  }
+]

@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 157.01,
+    "duration": 3.4,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "the greater to command the day,",
+  "approvedLyrics": "the greater to command the day,",
+  "words": [
+    {
+      "id": "w_13171248e41debe9",
+      "text": "the",
+      "start": 157.211183,
+      "end": 157.392249,
+      "phraseId": "g1-l045",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.16398515311245943,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l045-w01"
+    },
+    {
+      "id": "w_de14618ad558951c",
+      "text": "greater",
+      "start": 158.156746,
+      "end": 158.398166,
+      "phraseId": "g1-l045",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.6558953206518013,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l045-w02"
+    },
+    {
+      "id": "w_3f43d396fc80cf05",
+      "text": "to",
+      "start": 158.458521,
+      "end": 158.559112,
+      "phraseId": "g1-l045",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9565870437833385,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l045-w03"
+    },
+    {
+      "id": "w_232dc355f6510621",
+      "text": "command",
+      "start": 158.639586,
+      "end": 159.021834,
+      "phraseId": "g1-l045",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.6372696711769227,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l045-w04"
+    },
+    {
+      "id": "w_837160eb753b1349",
+      "text": "the",
+      "start": 159.202899,
+      "end": 159.303491,
+      "phraseId": "g1-l045",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.7735130985941602,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l045-w05"
+    },
+    {
+      "id": "w_cc12bafb83c295bc",
+      "text": "day,",
+      "start": 159.363846,
+      "end": 159.625385,
+      "phraseId": "g1-l045",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.8905484991251017,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l045-w06"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "the greater to command the day,",
+      "wordIds": [
+        "w_13171248e41debe9",
+        "w_de14618ad558951c",
+        "w_3f43d396fc80cf05",
+        "w_232dc355f6510621",
+        "w_837160eb753b1349",
+        "w_cc12bafb83c295bc"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l045-full-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l045-full-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l045-full-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.7476853341795504,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 159.10999999999999,
+    "duration": 3.88,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "the lesser to command the night.",
+  "approvedLyrics": "the lesser to command the night.",
+  "words": [
+    {
+      "id": "w_51d3d513075184b3",
+      "text": "the",
+      "start": 160.396632,
+      "end": 160.477047,
+      "phraseId": "g1-l046",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9172955221841126,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l046-w01"
+    },
+    {
+      "id": "w_d643f8bfd0cdfdcf",
+      "text": "lesser",
+      "start": 160.537358,
+      "end": 160.798705,
+      "phraseId": "g1-l046",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.5536556523289993,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l046-w02"
+    },
+    {
+      "id": "w_925a9e56df0a736b",
+      "text": "to",
+      "start": 160.859016,
+      "end": 160.959534,
+      "phraseId": "g1-l046",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9766216014807632,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l046-w03"
+    },
+    {
+      "id": "w_7186e6b62db14e0e",
+      "text": "command",
+      "start": 161.019845,
+      "end": 161.522435,
+      "phraseId": "g1-l046",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.849255450899479,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l046-w04"
+    },
+    {
+      "id": "w_28262b4a12468c67",
+      "text": "the",
+      "start": 161.622953,
+      "end": 161.743575,
+      "phraseId": "g1-l046",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.7708109358432891,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l046-w05"
+    },
+    {
+      "id": "w_3c5fb031286112a7",
+      "text": "night.",
+      "start": 162.085337,
+      "end": 162.366788,
+      "phraseId": "g1-l046",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.8906066617140772,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l046-w06"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "the lesser to command the night.",
+      "wordIds": [
+        "w_51d3d513075184b3",
+        "w_d643f8bfd0cdfdcf",
+        "w_925a9e56df0a736b",
+        "w_7186e6b62db14e0e",
+        "w_28262b4a12468c67",
+        "w_3c5fb031286112a7"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l046-full-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l046-full-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l046-full-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 1.0251397076062858,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "unresolved",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 0.0
+  },
+  "words": [],
+  "phrases": [],
+  "reason": "Local ASR returned an invalid word interval; no guessed timing was substituted",
+  "warnings": [
+    "No timing invented or model downloaded."
+  ],
+  "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/full-whisper-medium.json",
+  "executionEvidence": {
+    "id": "full-whisper-medium",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/full-whisper-medium.json",
+    "status": "unresolved",
+    "seconds": 130.17901370907202,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

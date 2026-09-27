@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 116.71,
+    "duration": 3.26,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "Green surged from the soil:",
+  "approvedLyrics": "Green surged from the soil:",
+  "words": [
+    {
+      "id": "w_d2ca0023d0f78ef3",
+      "text": "Green",
+      "start": 119.004074,
+      "end": 119.185185,
+      "phraseId": "g1-l033",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.0006682155649277472,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l033-w01"
+    },
+    {
+      "id": "w_59c07149f3446ed5",
+      "text": "surged",
+      "start": 119.205309,
+      "end": 119.366296,
+      "phraseId": "g1-l033",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.008082132816196148,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l033-w02"
+    },
+    {
+      "id": "w_c4632a857c86ade9",
+      "text": "from",
+      "start": 119.38642,
+      "end": 119.466914,
+      "phraseId": "g1-l033",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.000157870622101901,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l033-w03"
+    },
+    {
+      "id": "w_650fdca72c533e8c",
+      "text": "the",
+      "start": 119.487037,
+      "end": 119.547407,
+      "phraseId": "g1-l033",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.00012030321490410003,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l033-w04"
+    },
+    {
+      "id": "w_62f7f3000afb069a",
+      "text": "soil:",
+      "start": 119.869383,
+      "end": 119.949877,
+      "phraseId": "g1-l033",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 8.046118318429977e-05,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l033-w05"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "Green surged from the soil:",
+      "wordIds": [
+        "w_d2ca0023d0f78ef3",
+        "w_59c07149f3446ed5",
+        "w_c4632a857c86ade9",
+        "w_650fdca72c533e8c",
+        "w_62f7f3000afb069a"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l033-full-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l033-full-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l033-full-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.35609079198911786,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

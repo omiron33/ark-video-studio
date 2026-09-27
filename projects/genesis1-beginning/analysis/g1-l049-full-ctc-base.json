@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 166.59,
+    "duration": 3.64,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "to send their light across the earth,",
+  "approvedLyrics": "to send their light across the earth,",
+  "words": [
+    {
+      "id": "w_d7a3c58dc9449293",
+      "text": "to",
+      "start": 166.690552,
+      "end": 167.535193,
+      "phraseId": "g1-l049",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.06920114553047184,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l049-w01"
+    },
+    {
+      "id": "w_e2ae64a416f23316",
+      "text": "send",
+      "start": 167.756409,
+      "end": 167.997735,
+      "phraseId": "g1-l049",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.5273480993502325,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l049-w02"
+    },
+    {
+      "id": "w_c43e3757b03bc93b",
+      "text": "their",
+      "start": 168.058066,
+      "end": 168.239061,
+      "phraseId": "g1-l049",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.3646640099201641,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l049-w03"
+    },
+    {
+      "id": "w_aa3b37ca3673b5c5",
+      "text": "light",
+      "start": 168.379834,
+      "end": 168.62116,
+      "phraseId": "g1-l049",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.010938329010173716,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l049-w04"
+    },
+    {
+      "id": "w_c9d096b552556c37",
+      "text": "across",
+      "start": 168.721713,
+      "end": 169.02337,
+      "phraseId": "g1-l049",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9151175061300834,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l049-w05"
+    },
+    {
+      "id": "w_19ec8205b4800bc5",
+      "text": "the",
+      "start": 169.123923,
+      "end": 169.224475,
+      "phraseId": "g1-l049",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.8605979764023782,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l049-w06"
+    },
+    {
+      "id": "w_e51c018d62cdb7ff",
+      "text": "earth,",
+      "start": 169.546243,
+      "end": 170.189779,
+      "phraseId": "g1-l049",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.06339743567824978,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l049-w07"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "to send their light across the earth,",
+      "wordIds": [
+        "w_d7a3c58dc9449293",
+        "w_e2ae64a416f23316",
+        "w_c43e3757b03bc93b",
+        "w_aa3b37ca3673b5c5",
+        "w_c9d096b552556c37",
+        "w_19ec8205b4800bc5",
+        "w_e51c018d62cdb7ff"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l049-full-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l049-full-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l049-full-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.5899244169704616,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

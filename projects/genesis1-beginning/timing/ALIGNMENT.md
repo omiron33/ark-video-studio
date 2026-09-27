@@ -1,0 +1,11 @@
+# Genesis 1 source timing
+
+`words.json` is the performed cue set: 462 exact canonical words in 86 phrases. `phrase-outline.json` provides the same measured phrase starts and ends. `performance-lyrics.txt` is the exact display transcript. Stable source IDs are g1-l001 through g1-l096; inserted performed repeats use -r01 and preserve sourcePhraseId. No source audio was modified.
+
+`canonical-lyrics.txt` and `canonical-phrases.json` preserve the supplied 96-line/519-word lyric sheet. The actual MP3 repeats source lines 64 and 69–75 after line75, then sings lines76,77,96. Supplied lines78–95 are absent from both unprompted full-song Whisper transcripts and the embedded performance text. These omitted lines are not forced into the video. The final refrain is poorly recognized phonetically; exact canonical wording is retained while measured boundaries use CTC and a bounded canonical Whisper alignment.
+
+Timing is selected from unchanged acoustic model intervals, with no interpolation, beat snapping, global shifts, or arbitrary overlap clipping. Two local CTC checkpoints align every phrase; unprompted small.en/medium.en recognition supplies independent lexical evidence. Shared context retries address adjacent-line overlap. The last refrain has a dedicated bounded canonical alignment because the initial broad CTC search borrowed tail audio. Zero-duration tokens and strict wrapper failures remain in analysis; valid raw measurements are explicitly diagnostic rather than relabeled passes.
+
+All 462 words pass engine normalizeTiming with unique IDs and increasing source starts. This is source preparation, not encoded-video certification. Source confidence is not calibrated timestamp accuracy; strict source/encoded audio checks, OCR, and visual acceptance remain pending. See analysis/alignment-summary.json, selection.json, final-source-onset-audit.json and all raw passes. No-canonical-lyric intervals may contain music, reverb, or backing syllables and are not claimed silent.
+
+Musical energy and attack proposals are already source-bound in intake/measured-attacks.json and intake/energy-profile.json. analysis/music-phrase-context.json links them to the final phrases without inventing BPM or downbeat precision.

@@ -1,0 +1,4574 @@
+{
+  "source": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/intake/source.mp3",
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2",
+  "model": "/Volumes/DATA/AI/Models/Whisper/medium.en.pt",
+  "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+  "seconds": 264.2577385418117,
+  "rawWhisper": {
+    "text": " Before the first count of days God brought heaven and earth into being Earth stood bare unfinished Blackness covered the deep Across the water moved the spirit of God Then God called, light come forth Brightness answered He looked on the light good He cut a clear line between it and darkness Day was the night he gave the light Night the night he gave the dark dust On the first day God spoke from a man amid the waters, let water pass from water. His word took hold, he raised that mighty span, flood beneath it, flood above it, he called the former in heaven. He looked on it good, thus dawn the second day. Hey, waters below heaven run to one place Let dry ground show The waters gathered land came clear He named the dry ground earth That gathered water, seas, he looked on them Good, good, good, good, good, good Grounds end up seed-bearing grass in kind and likeness Trees bear fruit with seed within each true to its kind His words are cold Grease urge from the soil, grass with seed in its kind and likeness Fruit wrapped around its seed, tree by tree, kind by kind He looked on it On it Good head Dusk dawn, the third day Lights across heaven's firmament Divide day from night Marks on seasons, days and years From that height shine on the earth His Word took home Two great lights He fashioned The greater took command The day, the lesser took command In the night he made the stars as well He set them in heaven's span To send their light across the earth To rule night and day To keep the bright apart from dark He looked on them Good Dusked on the fourth day Water swarmed with living reptiles Winged creatures fly above the earth Across heaven's firmament His Word took hold God made the great whales Every living water reptile by kind And every winged creature by kind He looked on them good His blessing rang out Increase, multiply Fill the seas Let the winged multiply on earth Dust on the fifth day Ever bring out living kinds Four-footed beasts calling reptiles wild beasts Each after its kind His word took hold He fashioned wild beasts Cattle and the reptiles of the ground Each after its kind He looked on them good, then God said, Let us make humankind, in our image, in our likeness, Let the wing it multiply on earth, God's best word took hold. He fashioned world, beasts, cattle, and the reptiles of the ground, Each after sky. We looked on them, good Then God said, let us make humankind In our image, in our likeness Let them rule the fish, the birds The cattle, all the earth and all that crows Hey, dust on the fish, yeah Good, good, good",
+    "segments": [
+      {
+        "id": 0,
+        "seek": 0,
+        "start": 3.040000000000002,
+        "end": 12.66,
+        "text": " Before the first count of days God brought heaven and earth into being",
+        "tokens": [
+          50363,
+          7413,
+          262,
+          717,
+          954,
+          286,
+          1528,
+          1793,
+          3181,
+          9538,
+          290,
+          4534,
+          656,
+          852,
+          51055
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.3321463267008464,
+        "compression_ratio": 1.36986301369863,
+        "no_speech_prob": 0.604507565498352,
+        "words": [
+          {
+            "word": " Before",
+            "start": 3.040000000000002,
+            "end": 4.080000000000001,
+            "probability": 0.029833348467946053
+          },
+          {
+            "word": " the",
+            "start": 4.080000000000001,
+            "end": 5.12,
+            "probability": 0.9939488172531128
+          },
+          {
+            "word": " first",
+            "start": 5.12,
+            "end": 5.54,
+            "probability": 0.9903558492660522
+          },
+          {
+            "word": " count",
+            "start": 5.54,
+            "end": 6.06,
+            "probability": 0.5173258185386658
+          },
+          {
+            "word": " of",
+            "start": 6.06,
+            "end": 6.48,
+            "probability": 0.8100225329399109
+          },
+          {
+            "word": " days",
+            "start": 6.48,
+            "end": 7.54,
+            "probability": 0.9976677298545837
+          },
+          {
+            "word": " God",
+            "start": 7.54,
+            "end": 9.42,
+            "probability": 0.7405785322189331
+          },
+          {
+            "word": " brought",
+            "start": 9.42,
+            "end": 9.86,
+            "probability": 0.9841135144233704
+          },
+          {
+            "word": " heaven",
+            "start": 9.86,
+            "end": 10.3,
+            "probability": 0.9206922054290771
+          },
+          {
+            "word": " and",
+            "start": 10.3,
+            "end": 10.66,
+            "probability": 0.9920065999031067
+          },
+          {
+            "word": " earth",
+            "start": 10.66,
+            "end": 11.36,
+            "probability": 0.8786997199058533
+          },
+          {
+            "word": " into",
+            "start": 11.36,
+            "end": 11.88,
+            "probability": 0.9786880016326904
+          },
+          {
+            "word": " being",
+            "start": 11.88,
+            "end": 12.66,
+            "probability": 0.9796789884567261
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "seek": 0,
+        "start": 13.84,
+        "end": 19.5,
+        "text": " Earth stood bare unfinished Blackness covered the deep",
+        "tokens": [
+          51055,
+          3668,
+          6204,
+          6247,
+          34419,
+          2619,
+          1108,
+          5017,
+          262,
+          2769,
+          51339
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.3321463267008464,
+        "compression_ratio": 1.36986301369863,
+        "no_speech_prob": 0.604507565498352,
+        "words": [
+          {
+            "word": " Earth",
+            "start": 13.64,
+            "end": 14.16,
+            "probability": 0.7448509931564331
+          },
+          {
+            "word": " stood",
+            "start": 14.16,
+            "end": 14.62,
+            "probability": 0.9981608986854553
+          },
+          {
+            "word": " bare",
+            "start": 14.62,
+            "end": 15.24,
+            "probability": 0.9666428565979004
+          },
+          {
+            "word": " unfinished",
+            "start": 15.24,
+            "end": 16.52,
+            "probability": 0.6462270021438599
+          },
+          {
+            "word": " Blackness",
+            "start": 16.52,
+            "end": 18.2,
+            "probability": 0.9754721522331238
+          },
+          {
+            "word": " covered",
+            "start": 18.2,
+            "end": 18.68,
+            "probability": 0.9936500191688538
+          },
+          {
+            "word": " the",
+            "start": 18.68,
+            "end": 18.98,
+            "probability": 0.9970359802246094
+          },
+          {
+            "word": " deep",
+            "start": 18.98,
+            "end": 19.5,
+            "probability": 0.996416449546814
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "seek": 0,
+        "start": 19.5,
+        "end": 28.48,
+        "text": " Across the water moved the spirit of God Then God called, light come forth",
+        "tokens": [
+          51339,
+          27497,
+          262,
+          1660,
+          3888,
+          262,
+          4437,
+          286,
+          1793,
+          3244,
+          1793,
+          1444,
+          11,
+          1657,
+          1282,
+          6071,
+          51851
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.3321463267008464,
+        "compression_ratio": 1.36986301369863,
+        "no_speech_prob": 0.604507565498352,
+        "words": [
+          {
+            "word": " Across",
+            "start": 19.5,
+            "end": 20.26,
+            "probability": 0.7594954371452332
+          },
+          {
+            "word": " the",
+            "start": 20.26,
+            "end": 20.7,
+            "probability": 0.9969391822814941
+          },
+          {
+            "word": " water",
+            "start": 20.7,
+            "end": 21.14,
+            "probability": 0.9935275912284851
+          },
+          {
+            "word": " moved",
+            "start": 21.14,
+            "end": 21.64,
+            "probability": 0.8959072232246399
+          },
+          {
+            "word": " the",
+            "start": 21.64,
+            "end": 22.02,
+            "probability": 0.9915197491645813
+          },
+          {
+            "word": " spirit",
+            "start": 22.02,
+            "end": 22.38,
+            "probability": 0.6620478630065918
+          },
+          {
+            "word": " of",
+            "start": 22.38,
+            "end": 22.86,
+            "probability": 0.9989038705825806
+          },
+          {
+            "word": " God",
+            "start": 22.86,
+            "end": 24.28,
+            "probability": 0.8918300867080688
+          },
+          {
+            "word": " Then",
+            "start": 24.28,
+            "end": 24.88,
+            "probability": 0.9038122892379761
+          },
+          {
+            "word": " God",
+            "start": 24.88,
+            "end": 25.4,
+            "probability": 0.936129093170166
+          },
+          {
+            "word": " called,",
+            "start": 25.4,
+            "end": 26.14,
+            "probability": 0.9930101037025452
+          },
+          {
+            "word": " light",
+            "start": 26.66,
+            "end": 27.08,
+            "probability": 0.13734640181064606
+          },
+          {
+            "word": " come",
+            "start": 27.08,
+            "end": 27.68,
+            "probability": 0.9195625185966492
+          },
+          {
+            "word": " forth",
+            "start": 27.68,
+            "end": 28.48,
+            "probability": 0.9973207116127014
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "seek": 2848,
+        "start": 29.599999999999994,
+        "end": 30.94,
+        "text": " Brightness answered",
+        "tokens": [
+          50363,
+          17558,
+          1108,
+          9373,
+          50463
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.28139508687532866,
+        "compression_ratio": 1.5294117647058822,
+        "no_speech_prob": 0.6912511587142944,
+        "words": [
+          {
+            "word": " Brightness",
+            "start": 29.599999999999994,
+            "end": 30.36,
+            "probability": 0.5914731845259666
+          },
+          {
+            "word": " answered",
+            "start": 30.36,
+            "end": 30.94,
+            "probability": 0.9736083745956421
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "seek": 2848,
+        "start": 34.35999999999999,
+        "end": 36.98,
+        "text": " He looked on the light good",
+        "tokens": [
+          50663,
+          679,
+          3114,
+          319,
+          262,
+          1657,
+          922,
+          50763
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.28139508687532866,
+        "compression_ratio": 1.5294117647058822,
+        "no_speech_prob": 0.6912511587142944,
+        "words": [
+          {
+            "word": " He",
+            "start": 34.35999999999999,
+            "end": 35.12,
+            "probability": 0.18429170548915863
+          },
+          {
+            "word": " looked",
+            "start": 35.12,
+            "end": 35.4,
+            "probability": 0.9598847031593323
+          },
+          {
+            "word": " on",
+            "start": 35.4,
+            "end": 35.6,
+            "probability": 0.973362922668457
+          },
+          {
+            "word": " the",
+            "start": 35.6,
+            "end": 35.82,
+            "probability": 0.9777024984359741
+          },
+          {
+            "word": " light",
+            "start": 35.82,
+            "end": 36.2,
+            "probability": 0.96189284324646
+          },
+          {
+            "word": " good",
+            "start": 36.2,
+            "end": 36.98,
+            "probability": 0.3753824234008789
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "seek": 2848,
+        "start": 38.239999999999995,
+        "end": 41.16,
+        "text": " He cut a clear line between it and darkness",
+        "tokens": [
+          50863,
+          679,
+          2005,
+          257,
+          1598,
+          1627,
+          1022,
+          340,
+          290,
+          11854,
+          50963
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.28139508687532866,
+        "compression_ratio": 1.5294117647058822,
+        "no_speech_prob": 0.6912511587142944,
+        "words": [
+          {
+            "word": " He",
+            "start": 38.239999999999995,
+            "end": 39.0,
+            "probability": 0.8860659003257751
+          },
+          {
+            "word": " cut",
+            "start": 39.0,
+            "end": 39.22,
+            "probability": 0.9672254323959351
+          },
+          {
+            "word": " a",
+            "start": 39.22,
+            "end": 39.34,
+            "probability": 0.9571607112884521
+          },
+          {
+            "word": " clear",
+            "start": 39.34,
+            "end": 39.58,
+            "probability": 0.9941639304161072
+          },
+          {
+            "word": " line",
+            "start": 39.58,
+            "end": 39.82,
+            "probability": 0.984594464302063
+          },
+          {
+            "word": " between",
+            "start": 39.82,
+            "end": 40.1,
+            "probability": 0.9928919076919556
+          },
+          {
+            "word": " it",
+            "start": 40.1,
+            "end": 40.3,
+            "probability": 0.9862480759620667
+          },
+          {
+            "word": " and",
+            "start": 40.3,
+            "end": 40.58,
+            "probability": 0.9900684952735901
+          },
+          {
+            "word": " darkness",
+            "start": 40.58,
+            "end": 41.16,
+            "probability": 0.9921882152557373
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "seek": 2848,
+        "start": 41.16,
+        "end": 45.92,
+        "text": " Day was the night he gave the light",
+        "tokens": [
+          50963,
+          3596,
+          373,
+          262,
+          1755,
+          339,
+          2921,
+          262,
+          1657,
+          51213
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.28139508687532866,
+        "compression_ratio": 1.5294117647058822,
+        "no_speech_prob": 0.6912511587142944,
+        "words": [
+          {
+            "word": " Day",
+            "start": 41.16,
+            "end": 41.9,
+            "probability": 0.48086124658584595
+          },
+          {
+            "word": " was",
+            "start": 41.9,
+            "end": 43.02,
+            "probability": 0.8635737895965576
+          },
+          {
+            "word": " the",
+            "start": 43.02,
+            "end": 43.34,
+            "probability": 0.9970077872276306
+          },
+          {
+            "word": " night",
+            "start": 43.34,
+            "end": 43.7,
+            "probability": 0.842952311038971
+          },
+          {
+            "word": " he",
+            "start": 43.7,
+            "end": 44.22,
+            "probability": 0.7587474584579468
+          },
+          {
+            "word": " gave",
+            "start": 44.22,
+            "end": 44.9,
+            "probability": 0.9981743097305298
+          },
+          {
+            "word": " the",
+            "start": 44.9,
+            "end": 45.28,
+            "probability": 0.9937113523483276
+          },
+          {
+            "word": " light",
+            "start": 45.28,
+            "end": 45.92,
+            "probability": 0.7097488641738892
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "seek": 2848,
+        "start": 45.92,
+        "end": 48.98,
+        "text": " Night the night he gave the dark dust",
+        "tokens": [
+          51213,
+          5265,
+          262,
+          1755,
+          339,
+          2921,
+          262,
+          3223,
+          8977,
+          51363
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.28139508687532866,
+        "compression_ratio": 1.5294117647058822,
+        "no_speech_prob": 0.6912511587142944,
+        "words": [
+          {
+            "word": " Night",
+            "start": 45.92,
+            "end": 46.52,
+            "probability": 0.5267801880836487
+          },
+          {
+            "word": " the",
+            "start": 46.52,
+            "end": 46.9,
+            "probability": 0.6542761325836182
+          },
+          {
+            "word": " night",
+            "start": 46.9,
+            "end": 47.28,
+            "probability": 0.9890977144241333
+          },
+          {
+            "word": " he",
+            "start": 47.28,
+            "end": 47.68,
+            "probability": 0.9746010899543762
+          },
+          {
+            "word": " gave",
+            "start": 47.68,
+            "end": 48.04,
+            "probability": 0.9984978437423706
+          },
+          {
+            "word": " the",
+            "start": 48.04,
+            "end": 48.22,
+            "probability": 0.9925409555435181
+          },
+          {
+            "word": " dark",
+            "start": 48.22,
+            "end": 48.64,
+            "probability": 0.7287003397941589
+          },
+          {
+            "word": " dust",
+            "start": 48.64,
+            "end": 48.98,
+            "probability": 0.7920787930488586
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "seek": 2848,
+        "start": 48.98,
+        "end": 51.48,
+        "text": " On the first day",
+        "tokens": [
+          51363,
+          1550,
+          262,
+          717,
+          1110,
+          51463
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.28139508687532866,
+        "compression_ratio": 1.5294117647058822,
+        "no_speech_prob": 0.6912511587142944,
+        "words": [
+          {
+            "word": " On",
+            "start": 48.98,
+            "end": 49.66,
+            "probability": 0.07487968355417252
+          },
+          {
+            "word": " the",
+            "start": 49.66,
+            "end": 50.14,
+            "probability": 0.9950804710388184
+          },
+          {
+            "word": " first",
+            "start": 50.14,
+            "end": 50.54,
+            "probability": 0.9961697459220886
+          },
+          {
+            "word": " day",
+            "start": 50.54,
+            "end": 51.48,
+            "probability": 0.9972631931304932
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "seek": 5148,
+        "start": 54.36,
+        "end": 60.86,
+        "text": " God spoke from a man amid the waters, let water pass from water.",
+        "tokens": [
+          50363,
+          1793,
+          5158,
+          422,
+          257,
+          582,
+          10371,
+          262,
+          10150,
+          11,
+          1309,
+          1660,
+          1208,
+          422,
+          1660,
+          13,
+          50813
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.4093121700599545,
+        "compression_ratio": 1.5066666666666666,
+        "no_speech_prob": 0.8024797439575195,
+        "words": [
+          {
+            "word": " God",
+            "start": 54.36,
+            "end": 55.04,
+            "probability": 0.08751212060451508
+          },
+          {
+            "word": " spoke",
+            "start": 55.04,
+            "end": 55.72,
+            "probability": 0.9880498051643372
+          },
+          {
+            "word": " from",
+            "start": 55.72,
+            "end": 56.62,
+            "probability": 0.11703471094369888
+          },
+          {
+            "word": " a",
+            "start": 56.62,
+            "end": 56.82,
+            "probability": 0.2947438359260559
+          },
+          {
+            "word": " man",
+            "start": 56.82,
+            "end": 57.04,
+            "probability": 0.910606861114502
+          },
+          {
+            "word": " amid",
+            "start": 57.04,
+            "end": 57.44,
+            "probability": 0.25253114104270935
+          },
+          {
+            "word": " the",
+            "start": 57.44,
+            "end": 57.68,
+            "probability": 0.9781158566474915
+          },
+          {
+            "word": " waters,",
+            "start": 57.68,
+            "end": 58.54,
+            "probability": 0.9798911213874817
+          },
+          {
+            "word": " let",
+            "start": 58.54,
+            "end": 59.06,
+            "probability": 0.7096672058105469
+          },
+          {
+            "word": " water",
+            "start": 59.06,
+            "end": 59.44,
+            "probability": 0.9909321069717407
+          },
+          {
+            "word": " pass",
+            "start": 59.44,
+            "end": 59.8,
+            "probability": 0.3119957447052002
+          },
+          {
+            "word": " from",
+            "start": 59.8,
+            "end": 60.1,
+            "probability": 0.9062913060188293
+          },
+          {
+            "word": " water.",
+            "start": 60.1,
+            "end": 60.86,
+            "probability": 0.8213579654693604
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "seek": 5148,
+        "start": 61.32,
+        "end": 70.48,
+        "text": " His word took hold, he raised that mighty span, flood beneath it, flood above it, he called the former in heaven.",
+        "tokens": [
+          50813,
+          2399,
+          1573,
+          1718,
+          1745,
+          11,
+          339,
+          4376,
+          326,
+          18680,
+          11506,
+          11,
+          6947,
+          11061,
+          340,
+          11,
+          6947,
+          2029,
+          340,
+          11,
+          339,
+          1444,
+          262,
+          1966,
+          287,
+          9538,
+          13,
+          51313
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.4093121700599545,
+        "compression_ratio": 1.5066666666666666,
+        "no_speech_prob": 0.8024797439575195,
+        "words": [
+          {
+            "word": " His",
+            "start": 61.32,
+            "end": 61.44,
+            "probability": 0.9585983753204346
+          },
+          {
+            "word": " word",
+            "start": 61.44,
+            "end": 61.98,
+            "probability": 0.7731614112854004
+          },
+          {
+            "word": " took",
+            "start": 61.98,
+            "end": 62.52,
+            "probability": 0.970310389995575
+          },
+          {
+            "word": " hold,",
+            "start": 62.52,
+            "end": 64.1,
+            "probability": 0.8926702737808228
+          },
+          {
+            "word": " he",
+            "start": 64.4,
+            "end": 64.56,
+            "probability": 0.4074172079563141
+          },
+          {
+            "word": " raised",
+            "start": 64.56,
+            "end": 64.84,
+            "probability": 0.9398626685142517
+          },
+          {
+            "word": " that",
+            "start": 64.84,
+            "end": 65.16,
+            "probability": 0.8528155088424683
+          },
+          {
+            "word": " mighty",
+            "start": 65.16,
+            "end": 65.46,
+            "probability": 0.8956718444824219
+          },
+          {
+            "word": " span,",
+            "start": 65.46,
+            "end": 65.92,
+            "probability": 0.2896435856819153
+          },
+          {
+            "word": " flood",
+            "start": 66.18,
+            "end": 66.24,
+            "probability": 0.5732903480529785
+          },
+          {
+            "word": " beneath",
+            "start": 66.24,
+            "end": 66.7,
+            "probability": 0.9972034692764282
+          },
+          {
+            "word": " it,",
+            "start": 66.7,
+            "end": 67.2,
+            "probability": 0.9828946590423584
+          },
+          {
+            "word": " flood",
+            "start": 67.4,
+            "end": 67.78,
+            "probability": 0.9728436470031738
+          },
+          {
+            "word": " above",
+            "start": 67.78,
+            "end": 68.2,
+            "probability": 0.9616087079048157
+          },
+          {
+            "word": " it,",
+            "start": 68.2,
+            "end": 68.48,
+            "probability": 0.9224849939346313
+          },
+          {
+            "word": " he",
+            "start": 68.56,
+            "end": 68.76,
+            "probability": 0.9328034520149231
+          },
+          {
+            "word": " called",
+            "start": 68.76,
+            "end": 69.06,
+            "probability": 0.9830611348152161
+          },
+          {
+            "word": " the",
+            "start": 69.06,
+            "end": 69.32,
+            "probability": 0.6858250498771667
+          },
+          {
+            "word": " former",
+            "start": 69.32,
+            "end": 69.6,
+            "probability": 0.6034447550773621
+          },
+          {
+            "word": " in",
+            "start": 69.6,
+            "end": 69.94,
+            "probability": 0.3886241614818573
+          },
+          {
+            "word": " heaven.",
+            "start": 69.94,
+            "end": 70.48,
+            "probability": 0.852545976638794
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "seek": 5148,
+        "start": 71.3,
+        "end": 74.86,
+        "text": " He looked on it good, thus dawn the second day.",
+        "tokens": [
+          51313,
+          679,
+          3114,
+          319,
+          340,
+          922,
+          11,
+          4145,
+          17577,
+          262,
+          1218,
+          1110,
+          13,
+          51513
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.4093121700599545,
+        "compression_ratio": 1.5066666666666666,
+        "no_speech_prob": 0.8024797439575195,
+        "words": [
+          {
+            "word": " He",
+            "start": 71.3,
+            "end": 71.48,
+            "probability": 0.7226843237876892
+          },
+          {
+            "word": " looked",
+            "start": 71.48,
+            "end": 71.74,
+            "probability": 0.9950823783874512
+          },
+          {
+            "word": " on",
+            "start": 71.74,
+            "end": 72.08,
+            "probability": 0.9907354712486267
+          },
+          {
+            "word": " it",
+            "start": 72.08,
+            "end": 72.4,
+            "probability": 0.8916878700256348
+          },
+          {
+            "word": " good,",
+            "start": 72.4,
+            "end": 72.92,
+            "probability": 0.538848340511322
+          },
+          {
+            "word": " thus",
+            "start": 73.34,
+            "end": 73.44,
+            "probability": 0.8008588552474976
+          },
+          {
+            "word": " dawn",
+            "start": 73.44,
+            "end": 73.88,
+            "probability": 0.9121078252792358
+          },
+          {
+            "word": " the",
+            "start": 73.88,
+            "end": 74.16,
+            "probability": 0.6853262186050415
+          },
+          {
+            "word": " second",
+            "start": 74.16,
+            "end": 74.4,
+            "probability": 0.9867997169494629
+          },
+          {
+            "word": " day.",
+            "start": 74.4,
+            "end": 74.86,
+            "probability": 0.9986398816108704
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "seek": 7486,
+        "start": 74.86,
+        "end": 81.86,
+        "text": " Hey, waters below heaven run to one place",
+        "tokens": [
+          50363,
+          14690,
+          11,
+          10150,
+          2174,
+          9538,
+          1057,
+          284,
+          530,
+          1295,
+          50713
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.24918882052103677,
+        "compression_ratio": 1.6046511627906976,
+        "no_speech_prob": 0.7701975107192993,
+        "words": [
+          {
+            "word": " Hey,",
+            "start": 74.86,
+            "end": 77.08,
+            "probability": 0.03658885508775711
+          },
+          {
+            "word": " waters",
+            "start": 78.34,
+            "end": 78.68,
+            "probability": 0.6491743326187134
+          },
+          {
+            "word": " below",
+            "start": 78.68,
+            "end": 79.36,
+            "probability": 0.98847496509552
+          },
+          {
+            "word": " heaven",
+            "start": 79.36,
+            "end": 80.1,
+            "probability": 0.9051823616027832
+          },
+          {
+            "word": " run",
+            "start": 80.1,
+            "end": 81.08,
+            "probability": 0.2712423503398895
+          },
+          {
+            "word": " to",
+            "start": 81.08,
+            "end": 81.38,
+            "probability": 0.9908744096755981
+          },
+          {
+            "word": " one",
+            "start": 81.38,
+            "end": 81.8,
+            "probability": 0.9920570254325867
+          },
+          {
+            "word": " place",
+            "start": 81.8,
+            "end": 82.39999999999999,
+            "probability": 0.9983654618263245
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "seek": 7486,
+        "start": 82.62,
+        "end": 85.2,
+        "text": " Let dry ground show",
+        "tokens": [
+          50713,
+          3914,
+          5894,
+          2323,
+          905,
+          50963
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.24918882052103677,
+        "compression_ratio": 1.6046511627906976,
+        "no_speech_prob": 0.7701975107192993,
+        "words": [
+          {
+            "word": " Let",
+            "start": 82.62,
+            "end": 83.08,
+            "probability": 0.3184868097305298
+          },
+          {
+            "word": " dry",
+            "start": 83.08,
+            "end": 83.52,
+            "probability": 0.9911623001098633
+          },
+          {
+            "word": " ground",
+            "start": 83.52,
+            "end": 83.98,
+            "probability": 0.9445703029632568
+          },
+          {
+            "word": " show",
+            "start": 83.98,
+            "end": 85.2,
+            "probability": 0.9708392024040222
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "seek": 7486,
+        "start": 86.6,
+        "end": 92.16,
+        "text": " The waters gathered land came clear",
+        "tokens": [
+          50963,
+          383,
+          10150,
+          9272,
+          1956,
+          1625,
+          1598,
+          51213
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.24918882052103677,
+        "compression_ratio": 1.6046511627906976,
+        "no_speech_prob": 0.7701975107192993,
+        "words": [
+          {
+            "word": " The",
+            "start": 86.6,
+            "end": 87.8,
+            "probability": 0.7411203384399414
+          },
+          {
+            "word": " waters",
+            "start": 87.8,
+            "end": 88.44,
+            "probability": 0.9573507905006409
+          },
+          {
+            "word": " gathered",
+            "start": 88.44,
+            "end": 89.0,
+            "probability": 0.9427635073661804
+          },
+          {
+            "word": " land",
+            "start": 89.0,
+            "end": 89.82,
+            "probability": 0.9310557246208191
+          },
+          {
+            "word": " came",
+            "start": 89.82,
+            "end": 91.0,
+            "probability": 0.8247308731079102
+          },
+          {
+            "word": " clear",
+            "start": 91.0,
+            "end": 92.16,
+            "probability": 0.9923592209815979
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "seek": 7486,
+        "start": 92.16,
+        "end": 94.86,
+        "text": " He named the dry ground earth",
+        "tokens": [
+          51213,
+          679,
+          3706,
+          262,
+          5894,
+          2323,
+          4534,
+          51363
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.24918882052103677,
+        "compression_ratio": 1.6046511627906976,
+        "no_speech_prob": 0.7701975107192993,
+        "words": [
+          {
+            "word": " He",
+            "start": 92.16,
+            "end": 93.26,
+            "probability": 0.9704539775848389
+          },
+          {
+            "word": " named",
+            "start": 93.26,
+            "end": 93.68,
+            "probability": 0.9882178902626038
+          },
+          {
+            "word": " the",
+            "start": 93.68,
+            "end": 93.98,
+            "probability": 0.9916945099830627
+          },
+          {
+            "word": " dry",
+            "start": 93.98,
+            "end": 94.3,
+            "probability": 0.9926773309707642
+          },
+          {
+            "word": " ground",
+            "start": 94.3,
+            "end": 94.8,
+            "probability": 0.9720398783683777
+          },
+          {
+            "word": " earth",
+            "start": 94.8,
+            "end": 95.39999999999999,
+            "probability": 0.8230606913566589
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "seek": 7486,
+        "start": 95.4,
+        "end": 98.86,
+        "text": " That gathered water, seas, he looked on them",
+        "tokens": [
+          51363,
+          1320,
+          9272,
+          1660,
+          11,
+          21547,
+          11,
+          339,
+          3114,
+          319,
+          606,
+          51563
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.24918882052103677,
+        "compression_ratio": 1.6046511627906976,
+        "no_speech_prob": 0.7701975107192993,
+        "words": [
+          {
+            "word": " That",
+            "start": 95.4,
+            "end": 95.82,
+            "probability": 0.14142926037311554
+          },
+          {
+            "word": " gathered",
+            "start": 95.82,
+            "end": 96.26,
+            "probability": 0.9817059636116028
+          },
+          {
+            "word": " water,",
+            "start": 96.26,
+            "end": 96.92,
+            "probability": 0.7348427772521973
+          },
+          {
+            "word": " seas,",
+            "start": 96.92,
+            "end": 97.62,
+            "probability": 0.9286454916000366
+          },
+          {
+            "word": " he",
+            "start": 98.0,
+            "end": 98.1,
+            "probability": 0.8297867774963379
+          },
+          {
+            "word": " looked",
+            "start": 98.1,
+            "end": 98.42,
+            "probability": 0.9892396926879883
+          },
+          {
+            "word": " on",
+            "start": 98.42,
+            "end": 98.76,
+            "probability": 0.9962050318717957
+          },
+          {
+            "word": " them",
+            "start": 98.76,
+            "end": 99.36,
+            "probability": 0.9951968789100647
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "seek": 7486,
+        "start": 99.66,
+        "end": 103.46,
+        "text": " Good, good, good, good, good, good",
+        "tokens": [
+          51563,
+          4599,
+          11,
+          922,
+          11,
+          922,
+          11,
+          922,
+          11,
+          922,
+          11,
+          922,
+          51763
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.24918882052103677,
+        "compression_ratio": 1.6046511627906976,
+        "no_speech_prob": 0.7701975107192993,
+        "words": [
+          {
+            "word": " Good,",
+            "start": 99.66,
+            "end": 100.58,
+            "probability": 0.6367443203926086
+          },
+          {
+            "word": " good,",
+            "start": 100.6,
+            "end": 101.44,
+            "probability": 0.979195237159729
+          },
+          {
+            "word": " good,",
+            "start": 101.44,
+            "end": 102.1,
+            "probability": 0.9980459213256836
+          },
+          {
+            "word": " good,",
+            "start": 102.1,
+            "end": 102.76,
+            "probability": 0.9946585297584534
+          },
+          {
+            "word": " good,",
+            "start": 102.76,
+            "end": 103.14,
+            "probability": 0.9936951994895935
+          },
+          {
+            "word": " good",
+            "start": 103.14,
+            "end": 103.46,
+            "probability": 0.9832445383071899
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "seek": 10346,
+        "start": 103.46,
+        "end": 107.72,
+        "text": " Grounds end up seed-bearing grass in kind and likeness",
+        "tokens": [
+          50363,
+          44201,
+          886,
+          510,
+          9403,
+          12,
+          28655,
+          8701,
+          287,
+          1611,
+          290,
+          35674,
+          50591
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.4256250666475844,
+        "compression_ratio": 1.6421052631578947,
+        "no_speech_prob": 0.17668701708316803,
+        "words": [
+          {
+            "word": " Grounds",
+            "start": 103.46,
+            "end": 104.06,
+            "probability": 0.4926995635032654
+          },
+          {
+            "word": " end",
+            "start": 104.06,
+            "end": 104.46,
+            "probability": 0.6465405821800232
+          },
+          {
+            "word": " up",
+            "start": 104.46,
+            "end": 104.64,
+            "probability": 0.9584383368492126
+          },
+          {
+            "word": " seed",
+            "start": 104.64,
+            "end": 104.98,
+            "probability": 0.8770688772201538
+          },
+          {
+            "word": "-bearing",
+            "start": 104.98,
+            "end": 105.28,
+            "probability": 0.7567721903324127
+          },
+          {
+            "word": " grass",
+            "start": 105.28,
+            "end": 105.6,
+            "probability": 0.5836284160614014
+          },
+          {
+            "word": " in",
+            "start": 105.6,
+            "end": 105.98,
+            "probability": 0.5857396721839905
+          },
+          {
+            "word": " kind",
+            "start": 105.98,
+            "end": 106.38,
+            "probability": 0.8743869662284851
+          },
+          {
+            "word": " and",
+            "start": 106.38,
+            "end": 106.66,
+            "probability": 0.8518811464309692
+          },
+          {
+            "word": " likeness",
+            "start": 106.66,
+            "end": 107.72,
+            "probability": 0.9869053959846497
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "seek": 10346,
+        "start": 107.72,
+        "end": 112.12,
+        "text": " Trees bear fruit with seed within each true to its kind",
+        "tokens": [
+          50591,
+          34925,
+          6842,
+          8234,
+          351,
+          9403,
+          1626,
+          1123,
+          2081,
+          284,
+          663,
+          1611,
+          50799
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.4256250666475844,
+        "compression_ratio": 1.6421052631578947,
+        "no_speech_prob": 0.17668701708316803,
+        "words": [
+          {
+            "word": " Trees",
+            "start": 107.72,
+            "end": 108.68,
+            "probability": 0.5231778621673584
+          },
+          {
+            "word": " bear",
+            "start": 108.68,
+            "end": 109.16,
+            "probability": 0.807558536529541
+          },
+          {
+            "word": " fruit",
+            "start": 109.16,
+            "end": 109.46,
+            "probability": 0.9980484247207642
+          },
+          {
+            "word": " with",
+            "start": 109.46,
+            "end": 109.76,
+            "probability": 0.9822883605957031
+          },
+          {
+            "word": " seed",
+            "start": 109.76,
+            "end": 109.96,
+            "probability": 0.9901741743087769
+          },
+          {
+            "word": " within",
+            "start": 109.96,
+            "end": 110.42,
+            "probability": 0.9746481776237488
+          },
+          {
+            "word": " each",
+            "start": 110.42,
+            "end": 110.66,
+            "probability": 0.6111013889312744
+          },
+          {
+            "word": " true",
+            "start": 110.66,
+            "end": 111.02,
+            "probability": 0.47499147057533264
+          },
+          {
+            "word": " to",
+            "start": 111.02,
+            "end": 111.4,
+            "probability": 0.9716376066207886
+          },
+          {
+            "word": " its",
+            "start": 111.4,
+            "end": 111.58,
+            "probability": 0.9114217162132263
+          },
+          {
+            "word": " kind",
+            "start": 111.58,
+            "end": 112.12,
+            "probability": 0.9953617453575134
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "seek": 10346,
+        "start": 112.12,
+        "end": 115.42,
+        "text": " His words are cold",
+        "tokens": [
+          50799,
+          2399,
+          2456,
+          389,
+          4692,
+          51067
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.4256250666475844,
+        "compression_ratio": 1.6421052631578947,
+        "no_speech_prob": 0.17668701708316803,
+        "words": [
+          {
+            "word": " His",
+            "start": 112.12,
+            "end": 112.46,
+            "probability": 0.7671644687652588
+          },
+          {
+            "word": " words",
+            "start": 112.46,
+            "end": 112.86,
+            "probability": 0.8261046409606934
+          },
+          {
+            "word": " are",
+            "start": 112.86,
+            "end": 113.1,
+            "probability": 0.7247613668441772
+          },
+          {
+            "word": " cold",
+            "start": 113.1,
+            "end": 115.42,
+            "probability": 0.6928206086158752
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "seek": 10346,
+        "start": 117.30000000000001,
+        "end": 122.06,
+        "text": " Grease urge from the soil, grass with seed in its kind and likeness",
+        "tokens": [
+          51067,
+          11955,
+          589,
+          14960,
+          422,
+          262,
+          9260,
+          11,
+          8701,
+          351,
+          9403,
+          287,
+          663,
+          1611,
+          290,
+          35674,
+          51303
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.4256250666475844,
+        "compression_ratio": 1.6421052631578947,
+        "no_speech_prob": 0.17668701708316803,
+        "words": [
+          {
+            "word": " Grease",
+            "start": 117.30000000000001,
+            "end": 118.04,
+            "probability": 0.29678723961114883
+          },
+          {
+            "word": " urge",
+            "start": 118.04,
+            "end": 118.3,
+            "probability": 0.38098785281181335
+          },
+          {
+            "word": " from",
+            "start": 118.3,
+            "end": 118.64,
+            "probability": 0.9938814640045166
+          },
+          {
+            "word": " the",
+            "start": 118.64,
+            "end": 118.84,
+            "probability": 0.9811514019966125
+          },
+          {
+            "word": " soil,",
+            "start": 118.84,
+            "end": 119.28,
+            "probability": 0.9979535341262817
+          },
+          {
+            "word": " grass",
+            "start": 119.28,
+            "end": 119.74,
+            "probability": 0.9769878387451172
+          },
+          {
+            "word": " with",
+            "start": 119.74,
+            "end": 120.16,
+            "probability": 0.9857494831085205
+          },
+          {
+            "word": " seed",
+            "start": 120.16,
+            "end": 120.6,
+            "probability": 0.9965360164642334
+          },
+          {
+            "word": " in",
+            "start": 120.6,
+            "end": 120.78,
+            "probability": 0.8848032355308533
+          },
+          {
+            "word": " its",
+            "start": 120.78,
+            "end": 120.94,
+            "probability": 0.9618317484855652
+          },
+          {
+            "word": " kind",
+            "start": 120.94,
+            "end": 121.34,
+            "probability": 0.9630306959152222
+          },
+          {
+            "word": " and",
+            "start": 121.34,
+            "end": 121.58,
+            "probability": 0.9251208305358887
+          },
+          {
+            "word": " likeness",
+            "start": 121.58,
+            "end": 122.06,
+            "probability": 0.9954941272735596
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "seek": 10346,
+        "start": 122.06,
+        "end": 126.68,
+        "text": " Fruit wrapped around its seed, tree by tree, kind by kind",
+        "tokens": [
+          51303,
+          22826,
+          12908,
+          1088,
+          663,
+          9403,
+          11,
+          5509,
+          416,
+          5509,
+          11,
+          1611,
+          416,
+          1611,
+          51523
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.4256250666475844,
+        "compression_ratio": 1.6421052631578947,
+        "no_speech_prob": 0.17668701708316803,
+        "words": [
+          {
+            "word": " Fruit",
+            "start": 122.06,
+            "end": 122.64,
+            "probability": 0.971651017665863
+          },
+          {
+            "word": " wrapped",
+            "start": 122.64,
+            "end": 122.98,
+            "probability": 0.9970539808273315
+          },
+          {
+            "word": " around",
+            "start": 122.98,
+            "end": 123.44,
+            "probability": 0.9881768822669983
+          },
+          {
+            "word": " its",
+            "start": 123.44,
+            "end": 123.68,
+            "probability": 0.8773358464241028
+          },
+          {
+            "word": " seed,",
+            "start": 123.68,
+            "end": 124.1,
+            "probability": 0.9951345324516296
+          },
+          {
+            "word": " tree",
+            "start": 124.16,
+            "end": 124.54,
+            "probability": 0.9942381381988525
+          },
+          {
+            "word": " by",
+            "start": 124.54,
+            "end": 124.98,
+            "probability": 0.9686577320098877
+          },
+          {
+            "word": " tree,",
+            "start": 124.98,
+            "end": 125.52,
+            "probability": 0.9975806474685669
+          },
+          {
+            "word": " kind",
+            "start": 125.56,
+            "end": 125.82,
+            "probability": 0.9850109219551086
+          },
+          {
+            "word": " by",
+            "start": 125.82,
+            "end": 126.18,
+            "probability": 0.9981264472007751
+          },
+          {
+            "word": " kind",
+            "start": 126.18,
+            "end": 126.68,
+            "probability": 0.9982118606567383
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "seek": 10346,
+        "start": 126.68,
+        "end": 127.94,
+        "text": " He looked on it",
+        "tokens": [
+          51523,
+          679,
+          3114,
+          319,
+          340,
+          51579
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.4256250666475844,
+        "compression_ratio": 1.6421052631578947,
+        "no_speech_prob": 0.17668701708316803,
+        "words": [
+          {
+            "word": " He",
+            "start": 126.68,
+            "end": 126.94,
+            "probability": 0.7807438373565674
+          },
+          {
+            "word": " looked",
+            "start": 126.94,
+            "end": 127.22,
+            "probability": 0.9948275685310364
+          },
+          {
+            "word": " on",
+            "start": 127.22,
+            "end": 127.56,
+            "probability": 0.9964499473571777
+          },
+          {
+            "word": " it",
+            "start": 127.56,
+            "end": 127.94,
+            "probability": 0.9943261742591858
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "seek": 10346,
+        "start": 127.94,
+        "end": 129.02,
+        "text": " On it",
+        "tokens": [
+          51579,
+          1550,
+          340,
+          51639
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.4256250666475844,
+        "compression_ratio": 1.6421052631578947,
+        "no_speech_prob": 0.17668701708316803,
+        "words": [
+          {
+            "word": " On",
+            "start": 127.94,
+            "end": 127.94,
+            "probability": 0.0006240547518245876
+          },
+          {
+            "word": " it",
+            "start": 127.94,
+            "end": 129.02,
+            "probability": 0.9939712882041931
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "seek": 10346,
+        "start": 129.02,
+        "end": 130.4,
+        "text": " Good head",
+        "tokens": [
+          51639,
+          4599,
+          1182,
+          51727
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.4256250666475844,
+        "compression_ratio": 1.6421052631578947,
+        "no_speech_prob": 0.17668701708316803,
+        "words": [
+          {
+            "word": " Good",
+            "start": 129.02,
+            "end": 129.32,
+            "probability": 0.23057936131954193
+          },
+          {
+            "word": " head",
+            "start": 129.32,
+            "end": 130.4,
+            "probability": 0.015066664665937424
+          }
+        ]
+      },
+      {
+        "id": 26,
+        "seek": 10346,
+        "start": 130.4,
+        "end": 132.36,
+        "text": " Dusk dawn, the third day",
+        "tokens": [
+          51727,
+          42553,
+          17577,
+          11,
+          262,
+          2368,
+          1110,
+          51807
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.4256250666475844,
+        "compression_ratio": 1.6421052631578947,
+        "no_speech_prob": 0.17668701708316803,
+        "words": [
+          {
+            "word": " Dusk",
+            "start": 130.4,
+            "end": 131.06,
+            "probability": 0.21566861867904663
+          },
+          {
+            "word": " dawn,",
+            "start": 131.06,
+            "end": 131.48,
+            "probability": 0.6220201849937439
+          },
+          {
+            "word": " the",
+            "start": 131.72,
+            "end": 131.86,
+            "probability": 0.44851306080818176
+          },
+          {
+            "word": " third",
+            "start": 131.86,
+            "end": 131.98,
+            "probability": 0.957591712474823
+          },
+          {
+            "word": " day",
+            "start": 131.98,
+            "end": 132.36,
+            "probability": 0.9737231135368347
+          }
+        ]
+      },
+      {
+        "id": 27,
+        "seek": 13346,
+        "start": 136.56,
+        "end": 142.52,
+        "text": " Lights across heaven's firmament Divide day from night",
+        "tokens": [
+          50363,
+          22661,
+          1973,
+          9538,
+          338,
+          4081,
+          3263,
+          46894,
+          1110,
+          422,
+          1755,
+          50713
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.3507014380560981,
+        "compression_ratio": 1.5032679738562091,
+        "no_speech_prob": 0.7605846524238586,
+        "words": [
+          {
+            "word": " Lights",
+            "start": 136.56,
+            "end": 137.7,
+            "probability": 0.014221815392374992
+          },
+          {
+            "word": " across",
+            "start": 137.7,
+            "end": 138.3,
+            "probability": 0.8280814290046692
+          },
+          {
+            "word": " heaven's",
+            "start": 138.3,
+            "end": 139.36,
+            "probability": 0.5943863689899445
+          },
+          {
+            "word": " firmament",
+            "start": 139.36,
+            "end": 140.28,
+            "probability": 0.6805514842271805
+          },
+          {
+            "word": " Divide",
+            "start": 140.28,
+            "end": 140.94,
+            "probability": 0.8054874539375305
+          },
+          {
+            "word": " day",
+            "start": 140.94,
+            "end": 141.5,
+            "probability": 0.9925278425216675
+          },
+          {
+            "word": " from",
+            "start": 141.5,
+            "end": 141.84,
+            "probability": 0.9923276305198669
+          },
+          {
+            "word": " night",
+            "start": 141.84,
+            "end": 142.52,
+            "probability": 0.9982216954231262
+          }
+        ]
+      },
+      {
+        "id": 28,
+        "seek": 13346,
+        "start": 142.52,
+        "end": 150.88,
+        "text": " Marks on seasons, days and years From that height shine on the earth",
+        "tokens": [
+          50713,
+          27366,
+          319,
+          7028,
+          11,
+          1528,
+          290,
+          812,
+          3574,
+          326,
+          6001,
+          18340,
+          319,
+          262,
+          4534,
+          51113
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.3507014380560981,
+        "compression_ratio": 1.5032679738562091,
+        "no_speech_prob": 0.7605846524238586,
+        "words": [
+          {
+            "word": " Marks",
+            "start": 142.52,
+            "end": 143.24,
+            "probability": 0.638547420501709
+          },
+          {
+            "word": " on",
+            "start": 143.24,
+            "end": 143.82,
+            "probability": 0.18473774194717407
+          },
+          {
+            "word": " seasons,",
+            "start": 143.82,
+            "end": 144.82,
+            "probability": 0.9756837487220764
+          },
+          {
+            "word": " days",
+            "start": 145.36,
+            "end": 145.74,
+            "probability": 0.9905605912208557
+          },
+          {
+            "word": " and",
+            "start": 145.74,
+            "end": 146.4,
+            "probability": 0.6992691159248352
+          },
+          {
+            "word": " years",
+            "start": 146.4,
+            "end": 146.9,
+            "probability": 0.9978394508361816
+          },
+          {
+            "word": " From",
+            "start": 146.9,
+            "end": 147.38,
+            "probability": 0.9475879073143005
+          },
+          {
+            "word": " that",
+            "start": 147.38,
+            "end": 147.96,
+            "probability": 0.9821069836616516
+          },
+          {
+            "word": " height",
+            "start": 147.96,
+            "end": 148.56,
+            "probability": 0.9697690606117249
+          },
+          {
+            "word": " shine",
+            "start": 148.56,
+            "end": 149.36,
+            "probability": 0.7253150343894958
+          },
+          {
+            "word": " on",
+            "start": 149.36,
+            "end": 149.9,
+            "probability": 0.9976955056190491
+          },
+          {
+            "word": " the",
+            "start": 149.9,
+            "end": 150.44,
+            "probability": 0.992197573184967
+          },
+          {
+            "word": " earth",
+            "start": 150.44,
+            "end": 150.88,
+            "probability": 0.8549486994743347
+          }
+        ]
+      },
+      {
+        "id": 29,
+        "seek": 13346,
+        "start": 150.88,
+        "end": 157.7,
+        "text": " His Word took home Two great lights He fashioned",
+        "tokens": [
+          51113,
+          2399,
+          9678,
+          1718,
+          1363,
+          4930,
+          1049,
+          7588,
+          679,
+          35458,
+          51463
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.3507014380560981,
+        "compression_ratio": 1.5032679738562091,
+        "no_speech_prob": 0.7605846524238586,
+        "words": [
+          {
+            "word": " His",
+            "start": 150.88,
+            "end": 151.26,
+            "probability": 0.9667516946792603
+          },
+          {
+            "word": " Word",
+            "start": 151.26,
+            "end": 152.08,
+            "probability": 0.4858962893486023
+          },
+          {
+            "word": " took",
+            "start": 152.08,
+            "end": 153.52,
+            "probability": 0.6018059849739075
+          },
+          {
+            "word": " home",
+            "start": 153.52,
+            "end": 154.36,
+            "probability": 0.9047954082489014
+          },
+          {
+            "word": " Two",
+            "start": 154.36,
+            "end": 155.94,
+            "probability": 0.7135688066482544
+          },
+          {
+            "word": " great",
+            "start": 155.94,
+            "end": 156.28,
+            "probability": 0.9571296572685242
+          },
+          {
+            "word": " lights",
+            "start": 156.28,
+            "end": 156.8,
+            "probability": 0.9445127844810486
+          },
+          {
+            "word": " He",
+            "start": 156.8,
+            "end": 157.08,
+            "probability": 0.428862601518631
+          },
+          {
+            "word": " fashioned",
+            "start": 157.08,
+            "end": 157.7,
+            "probability": 0.9925251007080078
+          }
+        ]
+      },
+      {
+        "id": 30,
+        "seek": 13346,
+        "start": 157.7,
+        "end": 161.58,
+        "text": " The greater took command The day, the lesser took command",
+        "tokens": [
+          51463,
+          383,
+          3744,
+          1718,
+          3141,
+          383,
+          1110,
+          11,
+          262,
+          14494,
+          1718,
+          3141,
+          51663
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.3507014380560981,
+        "compression_ratio": 1.5032679738562091,
+        "no_speech_prob": 0.7605846524238586,
+        "words": [
+          {
+            "word": " The",
+            "start": 157.7,
+            "end": 158.2,
+            "probability": 0.878606379032135
+          },
+          {
+            "word": " greater",
+            "start": 158.2,
+            "end": 158.36,
+            "probability": 0.36360207200050354
+          },
+          {
+            "word": " took",
+            "start": 158.36,
+            "end": 158.6,
+            "probability": 0.6486688852310181
+          },
+          {
+            "word": " command",
+            "start": 158.6,
+            "end": 159.06,
+            "probability": 0.9232791662216187
+          },
+          {
+            "word": " The",
+            "start": 159.06,
+            "end": 159.32,
+            "probability": 0.5881584286689758
+          },
+          {
+            "word": " day,",
+            "start": 159.32,
+            "end": 159.9,
+            "probability": 0.9232399463653564
+          },
+          {
+            "word": " the",
+            "start": 160.48,
+            "end": 160.58,
+            "probability": 0.9605048894882202
+          },
+          {
+            "word": " lesser",
+            "start": 160.58,
+            "end": 160.74,
+            "probability": 0.9993446469306946
+          },
+          {
+            "word": " took",
+            "start": 160.74,
+            "end": 161.0,
+            "probability": 0.9763153791427612
+          },
+          {
+            "word": " command",
+            "start": 161.0,
+            "end": 161.58,
+            "probability": 0.9870087504386902
+          }
+        ]
+      },
+      {
+        "id": 31,
+        "seek": 16158,
+        "start": 161.58,
+        "end": 164.86,
+        "text": " In the night he made the stars as well",
+        "tokens": [
+          50363,
+          554,
+          262,
+          1755,
+          339,
+          925,
+          262,
+          5788,
+          355,
+          880,
+          50533
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.32856807002314814,
+        "compression_ratio": 1.6057142857142856,
+        "no_speech_prob": 0.8116689324378967,
+        "words": [
+          {
+            "word": " In",
+            "start": 161.58,
+            "end": 161.58,
+            "probability": 0.010050540789961815
+          },
+          {
+            "word": " the",
+            "start": 161.58,
+            "end": 161.82,
+            "probability": 0.9178417325019836
+          },
+          {
+            "word": " night",
+            "start": 161.82,
+            "end": 162.36,
+            "probability": 0.9105665683746338
+          },
+          {
+            "word": " he",
+            "start": 162.36,
+            "end": 162.86,
+            "probability": 0.5447107553482056
+          },
+          {
+            "word": " made",
+            "start": 162.86,
+            "end": 163.32,
+            "probability": 0.9916324019432068
+          },
+          {
+            "word": " the",
+            "start": 163.32,
+            "end": 163.5,
+            "probability": 0.9921237826347351
+          },
+          {
+            "word": " stars",
+            "start": 163.5,
+            "end": 164.02,
+            "probability": 0.989791989326477
+          },
+          {
+            "word": " as",
+            "start": 164.02,
+            "end": 164.46,
+            "probability": 0.9294871091842651
+          },
+          {
+            "word": " well",
+            "start": 164.46,
+            "end": 164.86,
+            "probability": 0.9970546960830688
+          }
+        ]
+      },
+      {
+        "id": 32,
+        "seek": 16158,
+        "start": 164.86,
+        "end": 167.44,
+        "text": " He set them in heaven's span",
+        "tokens": [
+          50533,
+          679,
+          900,
+          606,
+          287,
+          9538,
+          338,
+          11506,
+          50665
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.32856807002314814,
+        "compression_ratio": 1.6057142857142856,
+        "no_speech_prob": 0.8116689324378967,
+        "words": [
+          {
+            "word": " He",
+            "start": 164.86,
+            "end": 165.28,
+            "probability": 0.5964397192001343
+          },
+          {
+            "word": " set",
+            "start": 165.28,
+            "end": 165.48,
+            "probability": 0.978173553943634
+          },
+          {
+            "word": " them",
+            "start": 165.48,
+            "end": 165.7,
+            "probability": 0.9960312247276306
+          },
+          {
+            "word": " in",
+            "start": 165.7,
+            "end": 165.98,
+            "probability": 0.9954620003700256
+          },
+          {
+            "word": " heaven's",
+            "start": 165.98,
+            "end": 166.74,
+            "probability": 0.8352349996566772
+          },
+          {
+            "word": " span",
+            "start": 166.74,
+            "end": 167.44,
+            "probability": 0.7430788278579712
+          }
+        ]
+      },
+      {
+        "id": 33,
+        "seek": 16158,
+        "start": 167.44,
+        "end": 169.6,
+        "text": " To send their light across the earth",
+        "tokens": [
+          50665,
+          1675,
+          3758,
+          511,
+          1657,
+          1973,
+          262,
+          4534,
+          50765
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.32856807002314814,
+        "compression_ratio": 1.6057142857142856,
+        "no_speech_prob": 0.8116689324378967,
+        "words": [
+          {
+            "word": " To",
+            "start": 167.44,
+            "end": 167.76,
+            "probability": 0.761099100112915
+          },
+          {
+            "word": " send",
+            "start": 167.76,
+            "end": 168.02,
+            "probability": 0.9895164370536804
+          },
+          {
+            "word": " their",
+            "start": 168.02,
+            "end": 168.3,
+            "probability": 0.9721075892448425
+          },
+          {
+            "word": " light",
+            "start": 168.3,
+            "end": 168.62,
+            "probability": 0.9948493838310242
+          },
+          {
+            "word": " across",
+            "start": 168.62,
+            "end": 169.02,
+            "probability": 0.9951344132423401
+          },
+          {
+            "word": " the",
+            "start": 169.02,
+            "end": 169.36,
+            "probability": 0.9922747015953064
+          },
+          {
+            "word": " earth",
+            "start": 169.36,
+            "end": 169.6,
+            "probability": 0.8211131691932678
+          }
+        ]
+      },
+      {
+        "id": 34,
+        "seek": 16158,
+        "start": 169.6,
+        "end": 171.3,
+        "text": " To rule night and day",
+        "tokens": [
+          50765,
+          1675,
+          3896,
+          1755,
+          290,
+          1110,
+          50865
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.32856807002314814,
+        "compression_ratio": 1.6057142857142856,
+        "no_speech_prob": 0.8116689324378967,
+        "words": [
+          {
+            "word": " To",
+            "start": 169.6,
+            "end": 169.86,
+            "probability": 0.7225987911224365
+          },
+          {
+            "word": " rule",
+            "start": 169.86,
+            "end": 170.1,
+            "probability": 0.9962676167488098
+          },
+          {
+            "word": " night",
+            "start": 170.1,
+            "end": 170.44,
+            "probability": 0.9930794835090637
+          },
+          {
+            "word": " and",
+            "start": 170.44,
+            "end": 170.74,
+            "probability": 0.9961841702461243
+          },
+          {
+            "word": " day",
+            "start": 170.74,
+            "end": 171.3,
+            "probability": 0.9984775185585022
+          }
+        ]
+      },
+      {
+        "id": 35,
+        "seek": 16158,
+        "start": 171.3,
+        "end": 174.58,
+        "text": " To keep the bright apart from dark",
+        "tokens": [
+          50865,
+          1675,
+          1394,
+          262,
+          6016,
+          5475,
+          422,
+          3223,
+          51015
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.32856807002314814,
+        "compression_ratio": 1.6057142857142856,
+        "no_speech_prob": 0.8116689324378967,
+        "words": [
+          {
+            "word": " To",
+            "start": 171.3,
+            "end": 172.22,
+            "probability": 0.9470803737640381
+          },
+          {
+            "word": " keep",
+            "start": 172.22,
+            "end": 172.42,
+            "probability": 0.9990424513816833
+          },
+          {
+            "word": " the",
+            "start": 172.42,
+            "end": 172.54,
+            "probability": 0.9532414674758911
+          },
+          {
+            "word": " bright",
+            "start": 172.54,
+            "end": 172.88,
+            "probability": 0.8332405686378479
+          },
+          {
+            "word": " apart",
+            "start": 172.88,
+            "end": 173.3,
+            "probability": 0.9678808450698853
+          },
+          {
+            "word": " from",
+            "start": 173.3,
+            "end": 173.92,
+            "probability": 0.9917423725128174
+          },
+          {
+            "word": " dark",
+            "start": 173.92,
+            "end": 174.58,
+            "probability": 0.9664629101753235
+          }
+        ]
+      },
+      {
+        "id": 36,
+        "seek": 16158,
+        "start": 174.58,
+        "end": 176.3,
+        "text": " He looked on them",
+        "tokens": [
+          51015,
+          679,
+          3114,
+          319,
+          606,
+          51115
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.32856807002314814,
+        "compression_ratio": 1.6057142857142856,
+        "no_speech_prob": 0.8116689324378967,
+        "words": [
+          {
+            "word": " He",
+            "start": 174.58,
+            "end": 174.9,
+            "probability": 0.9871565103530884
+          },
+          {
+            "word": " looked",
+            "start": 174.9,
+            "end": 175.22,
+            "probability": 0.9933285713195801
+          },
+          {
+            "word": " on",
+            "start": 175.22,
+            "end": 175.54,
+            "probability": 0.9960651993751526
+          },
+          {
+            "word": " them",
+            "start": 175.54,
+            "end": 176.3,
+            "probability": 0.9938697814941406
+          }
+        ]
+      },
+      {
+        "id": 37,
+        "seek": 16158,
+        "start": 176.3,
+        "end": 177.4,
+        "text": " Good",
+        "tokens": [
+          51115,
+          4599,
+          51215
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.32856807002314814,
+        "compression_ratio": 1.6057142857142856,
+        "no_speech_prob": 0.8116689324378967,
+        "words": [
+          {
+            "word": " Good",
+            "start": 176.3,
+            "end": 177.4,
+            "probability": 0.4859463572502136
+          }
+        ]
+      },
+      {
+        "id": 38,
+        "seek": 16158,
+        "start": 178.48,
+        "end": 180.8,
+        "text": " Dusked on the fourth day",
+        "tokens": [
+          51215,
+          42553,
+          276,
+          319,
+          262,
+          5544,
+          1110,
+          51315
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.32856807002314814,
+        "compression_ratio": 1.6057142857142856,
+        "no_speech_prob": 0.8116689324378967,
+        "words": [
+          {
+            "word": " Dusked",
+            "start": 178.48,
+            "end": 179.22,
+            "probability": 0.4061928689479828
+          },
+          {
+            "word": " on",
+            "start": 179.22,
+            "end": 179.54,
+            "probability": 0.9941028952598572
+          },
+          {
+            "word": " the",
+            "start": 179.54,
+            "end": 179.78,
+            "probability": 0.9454545378684998
+          },
+          {
+            "word": " fourth",
+            "start": 179.78,
+            "end": 179.98,
+            "probability": 0.9437500238418579
+          },
+          {
+            "word": " day",
+            "start": 179.98,
+            "end": 180.8,
+            "probability": 0.9983439445495605
+          }
+        ]
+      },
+      {
+        "id": 39,
+        "seek": 16158,
+        "start": 184.66,
+        "end": 187.44,
+        "text": " Water swarmed with living reptiles",
+        "tokens": [
+          51515,
+          5638,
+          1509,
+          12026,
+          351,
+          2877,
+          46617,
+          51665
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.32856807002314814,
+        "compression_ratio": 1.6057142857142856,
+        "no_speech_prob": 0.8116689324378967,
+        "words": [
+          {
+            "word": " Water",
+            "start": 184.66,
+            "end": 185.4,
+            "probability": 0.397839218378067
+          },
+          {
+            "word": " swarmed",
+            "start": 185.4,
+            "end": 185.98,
+            "probability": 0.7539775967597961
+          },
+          {
+            "word": " with",
+            "start": 185.98,
+            "end": 186.32,
+            "probability": 0.9937925934791565
+          },
+          {
+            "word": " living",
+            "start": 186.32,
+            "end": 186.74,
+            "probability": 0.9969621300697327
+          },
+          {
+            "word": " reptiles",
+            "start": 186.74,
+            "end": 187.44,
+            "probability": 0.9940404295921326
+          }
+        ]
+      },
+      {
+        "id": 40,
+        "seek": 16158,
+        "start": 187.44,
+        "end": 190.04,
+        "text": " Winged creatures fly above the earth",
+        "tokens": [
+          51665,
+          13405,
+          276,
+          8109,
+          6129,
+          2029,
+          262,
+          4534,
+          51765
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.32856807002314814,
+        "compression_ratio": 1.6057142857142856,
+        "no_speech_prob": 0.8116689324378967,
+        "words": [
+          {
+            "word": " Winged",
+            "start": 187.44,
+            "end": 188.06,
+            "probability": 0.7142586708068848
+          },
+          {
+            "word": " creatures",
+            "start": 188.06,
+            "end": 188.42,
+            "probability": 0.9856657385826111
+          },
+          {
+            "word": " fly",
+            "start": 188.42,
+            "end": 188.96,
+            "probability": 0.9915293455123901
+          },
+          {
+            "word": " above",
+            "start": 188.96,
+            "end": 189.4,
+            "probability": 0.9923785924911499
+          },
+          {
+            "word": " the",
+            "start": 189.4,
+            "end": 189.78,
+            "probability": 0.9918618202209473
+          },
+          {
+            "word": " earth",
+            "start": 189.78,
+            "end": 190.04,
+            "probability": 0.9156519770622253
+          }
+        ]
+      },
+      {
+        "id": 41,
+        "seek": 19004,
+        "start": 190.04,
+        "end": 197.1,
+        "text": " Across heaven's firmament His Word took hold",
+        "tokens": [
+          50363,
+          27497,
+          9538,
+          338,
+          4081,
+          3263,
+          2399,
+          9678,
+          1718,
+          1745,
+          50759
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.26146095029769406,
+        "compression_ratio": 1.4705882352941178,
+        "no_speech_prob": 0.5576722621917725,
+        "words": [
+          {
+            "word": " Across",
+            "start": 190.04,
+            "end": 190.56,
+            "probability": 0.6619204878807068
+          },
+          {
+            "word": " heaven's",
+            "start": 190.56,
+            "end": 192.48,
+            "probability": 0.6158477067947388
+          },
+          {
+            "word": " firmament",
+            "start": 192.48,
+            "end": 193.16,
+            "probability": 0.9672378599643707
+          },
+          {
+            "word": " His",
+            "start": 193.16,
+            "end": 193.5,
+            "probability": 0.6644737124443054
+          },
+          {
+            "word": " Word",
+            "start": 193.5,
+            "end": 193.98,
+            "probability": 0.7243404984474182
+          },
+          {
+            "word": " took",
+            "start": 193.98,
+            "end": 194.52,
+            "probability": 0.9924403429031372
+          },
+          {
+            "word": " hold",
+            "start": 194.52,
+            "end": 197.1,
+            "probability": 0.9950783252716064
+          }
+        ]
+      },
+      {
+        "id": 42,
+        "seek": 19004,
+        "start": 197.95999999999998,
+        "end": 201.98,
+        "text": " God made the great whales Every living water reptile by kind",
+        "tokens": [
+          50759,
+          1793,
+          925,
+          262,
+          1049,
+          24635,
+          3887,
+          2877,
+          1660,
+          28761,
+          576,
+          416,
+          1611,
+          50963
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.26146095029769406,
+        "compression_ratio": 1.4705882352941178,
+        "no_speech_prob": 0.5576722621917725,
+        "words": [
+          {
+            "word": " God",
+            "start": 197.84,
+            "end": 198.3,
+            "probability": 0.8482878804206848
+          },
+          {
+            "word": " made",
+            "start": 198.3,
+            "end": 198.6,
+            "probability": 0.9942042231559753
+          },
+          {
+            "word": " the",
+            "start": 198.6,
+            "end": 198.8,
+            "probability": 0.9885799288749695
+          },
+          {
+            "word": " great",
+            "start": 198.8,
+            "end": 199.14,
+            "probability": 0.9492330551147461
+          },
+          {
+            "word": " whales",
+            "start": 199.14,
+            "end": 199.7,
+            "probability": 0.8704941868782043
+          },
+          {
+            "word": " Every",
+            "start": 199.7,
+            "end": 200.14,
+            "probability": 0.8079946637153625
+          },
+          {
+            "word": " living",
+            "start": 200.14,
+            "end": 200.4,
+            "probability": 0.9916061162948608
+          },
+          {
+            "word": " water",
+            "start": 200.4,
+            "end": 200.7,
+            "probability": 0.9838933944702148
+          },
+          {
+            "word": " reptile",
+            "start": 200.7,
+            "end": 201.32,
+            "probability": 0.9823580086231232
+          },
+          {
+            "word": " by",
+            "start": 201.32,
+            "end": 201.54,
+            "probability": 0.9618450999259949
+          },
+          {
+            "word": " kind",
+            "start": 201.54,
+            "end": 201.98,
+            "probability": 0.9753555655479431
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "seek": 19004,
+        "start": 201.98,
+        "end": 206.74,
+        "text": " And every winged creature by kind He looked on them good",
+        "tokens": [
+          50963,
+          843,
+          790,
+          8539,
+          276,
+          7185,
+          416,
+          1611,
+          679,
+          3114,
+          319,
+          606,
+          922,
+          51239
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.26146095029769406,
+        "compression_ratio": 1.4705882352941178,
+        "no_speech_prob": 0.5576722621917725,
+        "words": [
+          {
+            "word": " And",
+            "start": 201.98,
+            "end": 202.3,
+            "probability": 0.8541280627250671
+          },
+          {
+            "word": " every",
+            "start": 202.3,
+            "end": 202.58,
+            "probability": 0.984715461730957
+          },
+          {
+            "word": " winged",
+            "start": 202.58,
+            "end": 203.1,
+            "probability": 0.9900941848754883
+          },
+          {
+            "word": " creature",
+            "start": 203.1,
+            "end": 203.56,
+            "probability": 0.9932246804237366
+          },
+          {
+            "word": " by",
+            "start": 203.56,
+            "end": 203.96,
+            "probability": 0.9858091473579407
+          },
+          {
+            "word": " kind",
+            "start": 203.96,
+            "end": 204.5,
+            "probability": 0.9955216646194458
+          },
+          {
+            "word": " He",
+            "start": 204.5,
+            "end": 205.26,
+            "probability": 0.974837601184845
+          },
+          {
+            "word": " looked",
+            "start": 205.26,
+            "end": 205.52,
+            "probability": 0.994652271270752
+          },
+          {
+            "word": " on",
+            "start": 205.52,
+            "end": 205.86,
+            "probability": 0.997133731842041
+          },
+          {
+            "word": " them",
+            "start": 205.86,
+            "end": 206.22,
+            "probability": 0.9719244241714478
+          },
+          {
+            "word": " good",
+            "start": 206.22,
+            "end": 206.74,
+            "probability": 0.36322763562202454
+          }
+        ]
+      },
+      {
+        "id": 44,
+        "seek": 19004,
+        "start": 207.56,
+        "end": 211.04,
+        "text": " His blessing rang out Increase, multiply",
+        "tokens": [
+          51239,
+          2399,
+          20027,
+          28077,
+          503,
+          25285,
+          11,
+          29162,
+          51431
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.26146095029769406,
+        "compression_ratio": 1.4705882352941178,
+        "no_speech_prob": 0.5576722621917725,
+        "words": [
+          {
+            "word": " His",
+            "start": 207.42,
+            "end": 207.88,
+            "probability": 0.8576112985610962
+          },
+          {
+            "word": " blessing",
+            "start": 207.88,
+            "end": 208.34,
+            "probability": 0.9751647710800171
+          },
+          {
+            "word": " rang",
+            "start": 208.34,
+            "end": 208.76,
+            "probability": 0.9937362670898438
+          },
+          {
+            "word": " out",
+            "start": 208.76,
+            "end": 209.34,
+            "probability": 0.9627578258514404
+          },
+          {
+            "word": " Increase,",
+            "start": 209.34,
+            "end": 210.08,
+            "probability": 0.7930455803871155
+          },
+          {
+            "word": " multiply",
+            "start": 210.42,
+            "end": 211.04,
+            "probability": 0.9462423920631409
+          }
+        ]
+      },
+      {
+        "id": 45,
+        "seek": 19004,
+        "start": 211.04,
+        "end": 215.2,
+        "text": " Fill the seas Let the winged multiply on earth",
+        "tokens": [
+          51431,
+          27845,
+          262,
+          21547,
+          3914,
+          262,
+          8539,
+          276,
+          29162,
+          319,
+          4534,
+          51691
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.26146095029769406,
+        "compression_ratio": 1.4705882352941178,
+        "no_speech_prob": 0.5576722621917725,
+        "words": [
+          {
+            "word": " Fill",
+            "start": 211.04,
+            "end": 211.72,
+            "probability": 0.4469600021839142
+          },
+          {
+            "word": " the",
+            "start": 211.72,
+            "end": 212.02,
+            "probability": 0.9903945326805115
+          },
+          {
+            "word": " seas",
+            "start": 212.02,
+            "end": 212.34,
+            "probability": 0.988989531993866
+          },
+          {
+            "word": " Let",
+            "start": 212.34,
+            "end": 212.62,
+            "probability": 0.6892841458320618
+          },
+          {
+            "word": " the",
+            "start": 212.62,
+            "end": 212.78,
+            "probability": 0.9963123202323914
+          },
+          {
+            "word": " winged",
+            "start": 212.78,
+            "end": 213.12,
+            "probability": 0.939716637134552
+          },
+          {
+            "word": " multiply",
+            "start": 213.12,
+            "end": 213.82,
+            "probability": 0.9929414987564087
+          },
+          {
+            "word": " on",
+            "start": 213.82,
+            "end": 214.28,
+            "probability": 0.9405857920646667
+          },
+          {
+            "word": " earth",
+            "start": 214.28,
+            "end": 215.2,
+            "probability": 0.8841937780380249
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "seek": 21520,
+        "start": 216.54000000000002,
+        "end": 219.26,
+        "text": " Dust on the fifth day",
+        "tokens": [
+          50363,
+          16240,
+          319,
+          262,
+          8150,
+          1110,
+          50563
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.24200670597916943,
+        "compression_ratio": 1.5642857142857143,
+        "no_speech_prob": 0.4993349313735962,
+        "words": [
+          {
+            "word": " Dust",
+            "start": 216.54000000000002,
+            "end": 217.52,
+            "probability": 0.8716846704483032
+          },
+          {
+            "word": " on",
+            "start": 217.52,
+            "end": 217.96,
+            "probability": 0.9787819981575012
+          },
+          {
+            "word": " the",
+            "start": 217.96,
+            "end": 218.16,
+            "probability": 0.9793965816497803
+          },
+          {
+            "word": " fifth",
+            "start": 218.16,
+            "end": 218.4,
+            "probability": 0.9098421335220337
+          },
+          {
+            "word": " day",
+            "start": 218.4,
+            "end": 219.26,
+            "probability": 0.9977282881736755
+          }
+        ]
+      },
+      {
+        "id": 47,
+        "seek": 21520,
+        "start": 222.46,
+        "end": 225.3,
+        "text": " Ever bring out living kinds",
+        "tokens": [
+          50563,
+          10776,
+          2222,
+          503,
+          2877,
+          6982,
+          50863
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.24200670597916943,
+        "compression_ratio": 1.5642857142857143,
+        "no_speech_prob": 0.4993349313735962,
+        "words": [
+          {
+            "word": " Ever",
+            "start": 222.46,
+            "end": 223.44,
+            "probability": 0.026765963062644005
+          },
+          {
+            "word": " bring",
+            "start": 223.44,
+            "end": 224.02,
+            "probability": 0.5815446376800537
+          },
+          {
+            "word": " out",
+            "start": 224.02,
+            "end": 224.28,
+            "probability": 0.9901064038276672
+          },
+          {
+            "word": " living",
+            "start": 224.28,
+            "end": 224.62,
+            "probability": 0.9735656976699829
+          },
+          {
+            "word": " kinds",
+            "start": 224.62,
+            "end": 225.3,
+            "probability": 0.9651824235916138
+          }
+        ]
+      },
+      {
+        "id": 48,
+        "seek": 21520,
+        "start": 225.3,
+        "end": 228.78,
+        "text": " Four-footed beasts calling reptiles wild beasts",
+        "tokens": [
+          50863,
+          6675,
+          12,
+          43127,
+          21930,
+          4585,
+          46617,
+          4295,
+          21930,
+          51063
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.24200670597916943,
+        "compression_ratio": 1.5642857142857143,
+        "no_speech_prob": 0.4993349313735962,
+        "words": [
+          {
+            "word": " Four",
+            "start": 225.3,
+            "end": 225.88,
+            "probability": 0.8235956430435181
+          },
+          {
+            "word": "-footed",
+            "start": 225.88,
+            "end": 226.22,
+            "probability": 0.7888893783092499
+          },
+          {
+            "word": " beasts",
+            "start": 226.22,
+            "end": 226.7,
+            "probability": 0.9315240383148193
+          },
+          {
+            "word": " calling",
+            "start": 226.7,
+            "end": 227.04,
+            "probability": 0.3966396450996399
+          },
+          {
+            "word": " reptiles",
+            "start": 227.04,
+            "end": 227.76,
+            "probability": 0.9212893843650818
+          },
+          {
+            "word": " wild",
+            "start": 227.76,
+            "end": 228.28,
+            "probability": 0.3183358907699585
+          },
+          {
+            "word": " beasts",
+            "start": 228.28,
+            "end": 228.78,
+            "probability": 0.9977338314056396
+          }
+        ]
+      },
+      {
+        "id": 49,
+        "seek": 21520,
+        "start": 228.78,
+        "end": 231.56,
+        "text": " Each after its kind",
+        "tokens": [
+          51063,
+          5501,
+          706,
+          663,
+          1611,
+          51163
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.24200670597916943,
+        "compression_ratio": 1.5642857142857143,
+        "no_speech_prob": 0.4993349313735962,
+        "words": [
+          {
+            "word": " Each",
+            "start": 228.78,
+            "end": 229.44,
+            "probability": 0.8665264844894409
+          },
+          {
+            "word": " after",
+            "start": 229.44,
+            "end": 230.2,
+            "probability": 0.9950888752937317
+          },
+          {
+            "word": " its",
+            "start": 230.2,
+            "end": 230.68,
+            "probability": 0.8449062705039978
+          },
+          {
+            "word": " kind",
+            "start": 230.68,
+            "end": 231.56,
+            "probability": 0.9964543581008911
+          }
+        ]
+      },
+      {
+        "id": 50,
+        "seek": 21520,
+        "start": 231.56,
+        "end": 235.8,
+        "text": " His word took hold",
+        "tokens": [
+          51163,
+          2399,
+          1573,
+          1718,
+          1745,
+          51413
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.24200670597916943,
+        "compression_ratio": 1.5642857142857143,
+        "no_speech_prob": 0.4993349313735962,
+        "words": [
+          {
+            "word": " His",
+            "start": 231.56,
+            "end": 231.9,
+            "probability": 0.8481529355049133
+          },
+          {
+            "word": " word",
+            "start": 231.9,
+            "end": 232.44,
+            "probability": 0.7820307612419128
+          },
+          {
+            "word": " took",
+            "start": 232.44,
+            "end": 232.9,
+            "probability": 0.9927164912223816
+          },
+          {
+            "word": " hold",
+            "start": 232.9,
+            "end": 235.8,
+            "probability": 0.9969673752784729
+          }
+        ]
+      },
+      {
+        "id": 51,
+        "seek": 21520,
+        "start": 235.8,
+        "end": 238.4,
+        "text": " He fashioned wild beasts",
+        "tokens": [
+          51413,
+          679,
+          35458,
+          4295,
+          21930,
+          51513
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.24200670597916943,
+        "compression_ratio": 1.5642857142857143,
+        "no_speech_prob": 0.4993349313735962,
+        "words": [
+          {
+            "word": " He",
+            "start": 235.8,
+            "end": 236.7,
+            "probability": 0.9188210964202881
+          },
+          {
+            "word": " fashioned",
+            "start": 236.7,
+            "end": 237.16,
+            "probability": 0.9903032183647156
+          },
+          {
+            "word": " wild",
+            "start": 237.16,
+            "end": 237.76,
+            "probability": 0.997031569480896
+          },
+          {
+            "word": " beasts",
+            "start": 237.76,
+            "end": 238.4,
+            "probability": 0.9961230158805847
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "seek": 21520,
+        "start": 238.4,
+        "end": 241.8,
+        "text": " Cattle and the reptiles of the ground",
+        "tokens": [
+          51513,
+          327,
+          1999,
+          290,
+          262,
+          46617,
+          286,
+          262,
+          2323,
+          51663
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.24200670597916943,
+        "compression_ratio": 1.5642857142857143,
+        "no_speech_prob": 0.4993349313735962,
+        "words": [
+          {
+            "word": " Cattle",
+            "start": 238.4,
+            "end": 239.18,
+            "probability": 0.6992489695549011
+          },
+          {
+            "word": " and",
+            "start": 239.18,
+            "end": 240.2,
+            "probability": 0.6200485229492188
+          },
+          {
+            "word": " the",
+            "start": 240.2,
+            "end": 240.36,
+            "probability": 0.9828882217407227
+          },
+          {
+            "word": " reptiles",
+            "start": 240.36,
+            "end": 240.84,
+            "probability": 0.9925888776779175
+          },
+          {
+            "word": " of",
+            "start": 240.84,
+            "end": 241.2,
+            "probability": 0.5903143882751465
+          },
+          {
+            "word": " the",
+            "start": 241.2,
+            "end": 241.46,
+            "probability": 0.9955902099609375
+          },
+          {
+            "word": " ground",
+            "start": 241.46,
+            "end": 241.8,
+            "probability": 0.9976741671562195
+          }
+        ]
+      },
+      {
+        "id": 53,
+        "seek": 21520,
+        "start": 241.8,
+        "end": 243.28,
+        "text": " Each after its kind",
+        "tokens": [
+          51663,
+          5501,
+          706,
+          663,
+          1611,
+          51763
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.24200670597916943,
+        "compression_ratio": 1.5642857142857143,
+        "no_speech_prob": 0.4993349313735962,
+        "words": [
+          {
+            "word": " Each",
+            "start": 241.8,
+            "end": 242.16,
+            "probability": 0.8682466745376587
+          },
+          {
+            "word": " after",
+            "start": 242.16,
+            "end": 242.56,
+            "probability": 0.997892439365387
+          },
+          {
+            "word": " its",
+            "start": 242.56,
+            "end": 242.76,
+            "probability": 0.9762253761291504
+          },
+          {
+            "word": " kind",
+            "start": 242.76,
+            "end": 243.28,
+            "probability": 0.9895361661911011
+          }
+        ]
+      },
+      {
+        "id": 54,
+        "seek": 24520,
+        "start": 245.24,
+        "end": 249.96,
+        "text": " He looked on them good, then God said,",
+        "tokens": [
+          50363,
+          679,
+          3114,
+          319,
+          606,
+          922,
+          11,
+          788,
+          1793,
+          531,
+          11,
+          50613
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2940806789674621,
+        "compression_ratio": 1.4251497005988023,
+        "no_speech_prob": 0.4176312983036041,
+        "words": [
+          {
+            "word": " He",
+            "start": 245.24,
+            "end": 246.02,
+            "probability": 0.7791252136230469
+          },
+          {
+            "word": " looked",
+            "start": 246.02,
+            "end": 246.32,
+            "probability": 0.9815649390220642
+          },
+          {
+            "word": " on",
+            "start": 246.32,
+            "end": 246.66,
+            "probability": 0.9972520470619202
+          },
+          {
+            "word": " them",
+            "start": 246.66,
+            "end": 246.96,
+            "probability": 0.9918500185012817
+          },
+          {
+            "word": " good,",
+            "start": 246.96,
+            "end": 247.58,
+            "probability": 0.4974979758262634
+          },
+          {
+            "word": " then",
+            "start": 247.7,
+            "end": 249.3,
+            "probability": 0.8069090843200684
+          },
+          {
+            "word": " God",
+            "start": 249.3,
+            "end": 249.56,
+            "probability": 0.9549833536148071
+          },
+          {
+            "word": " said,",
+            "start": 249.56,
+            "end": 249.96,
+            "probability": 0.998584508895874
+          }
+        ]
+      },
+      {
+        "id": 55,
+        "seek": 24520,
+        "start": 251.38,
+        "end": 256.4,
+        "text": " Let us make humankind, in our image, in our likeness,",
+        "tokens": [
+          50613,
+          3914,
+          514,
+          787,
+          47634,
+          11,
+          287,
+          674,
+          2939,
+          11,
+          287,
+          674,
+          35674,
+          11,
+          50913
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2940806789674621,
+        "compression_ratio": 1.4251497005988023,
+        "no_speech_prob": 0.4176312983036041,
+        "words": [
+          {
+            "word": " Let",
+            "start": 251.38,
+            "end": 251.46,
+            "probability": 0.2065918892621994
+          },
+          {
+            "word": " us",
+            "start": 251.46,
+            "end": 251.7,
+            "probability": 0.9954715967178345
+          },
+          {
+            "word": " make",
+            "start": 251.7,
+            "end": 252.08,
+            "probability": 0.9947353005409241
+          },
+          {
+            "word": " humankind,",
+            "start": 252.08,
+            "end": 252.84,
+            "probability": 0.9341983795166016
+          },
+          {
+            "word": " in",
+            "start": 254.3,
+            "end": 254.58,
+            "probability": 0.39735132455825806
+          },
+          {
+            "word": " our",
+            "start": 254.58,
+            "end": 254.74,
+            "probability": 0.9896564483642578
+          },
+          {
+            "word": " image,",
+            "start": 254.74,
+            "end": 255.16,
+            "probability": 0.9959283471107483
+          },
+          {
+            "word": " in",
+            "start": 255.66,
+            "end": 255.76,
+            "probability": 0.9463202953338623
+          },
+          {
+            "word": " our",
+            "start": 255.76,
+            "end": 256.0,
+            "probability": 0.9977623224258423
+          },
+          {
+            "word": " likeness,",
+            "start": 256.0,
+            "end": 256.4,
+            "probability": 0.9987003803253174
+          }
+        ]
+      },
+      {
+        "id": 56,
+        "seek": 24520,
+        "start": 256.86,
+        "end": 262.44,
+        "text": " Let the wing it multiply on earth, God's best word took hold.",
+        "tokens": [
+          50913,
+          3914,
+          262,
+          8539,
+          340,
+          29162,
+          319,
+          4534,
+          11,
+          1793,
+          338,
+          1266,
+          1573,
+          1718,
+          1745,
+          13,
+          51263
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2940806789674621,
+        "compression_ratio": 1.4251497005988023,
+        "no_speech_prob": 0.4176312983036041,
+        "words": [
+          {
+            "word": " Let",
+            "start": 256.86,
+            "end": 256.98,
+            "probability": 0.44644999504089355
+          },
+          {
+            "word": " the",
+            "start": 256.98,
+            "end": 257.2,
+            "probability": 0.9942944645881653
+          },
+          {
+            "word": " wing",
+            "start": 257.2,
+            "end": 257.44,
+            "probability": 0.939601719379425
+          },
+          {
+            "word": " it",
+            "start": 257.44,
+            "end": 257.84,
+            "probability": 0.3507991433143616
+          },
+          {
+            "word": " multiply",
+            "start": 257.84,
+            "end": 258.48,
+            "probability": 0.9887468218803406
+          },
+          {
+            "word": " on",
+            "start": 258.48,
+            "end": 258.86,
+            "probability": 0.7909743189811707
+          },
+          {
+            "word": " earth,",
+            "start": 258.86,
+            "end": 259.12,
+            "probability": 0.8395605683326721
+          },
+          {
+            "word": " God's",
+            "start": 259.34,
+            "end": 259.6,
+            "probability": 0.8182070553302765
+          },
+          {
+            "word": " best",
+            "start": 259.6,
+            "end": 260.72,
+            "probability": 0.46914809942245483
+          },
+          {
+            "word": " word",
+            "start": 260.72,
+            "end": 261.08,
+            "probability": 0.61976557970047
+          },
+          {
+            "word": " took",
+            "start": 261.08,
+            "end": 261.6,
+            "probability": 0.9376396536827087
+          },
+          {
+            "word": " hold.",
+            "start": 261.6,
+            "end": 262.44,
+            "probability": 0.9038497805595398
+          }
+        ]
+      },
+      {
+        "id": 57,
+        "seek": 24520,
+        "start": 264.1,
+        "end": 269.14,
+        "text": " He fashioned world, beasts, cattle, and the reptiles of the ground,",
+        "tokens": [
+          51263,
+          679,
+          35458,
+          995,
+          11,
+          21930,
+          11,
+          17025,
+          11,
+          290,
+          262,
+          46617,
+          286,
+          262,
+          2323,
+          11,
+          51563
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2940806789674621,
+        "compression_ratio": 1.4251497005988023,
+        "no_speech_prob": 0.4176312983036041,
+        "words": [
+          {
+            "word": " He",
+            "start": 264.1,
+            "end": 264.3,
+            "probability": 0.9878647923469543
+          },
+          {
+            "word": " fashioned",
+            "start": 264.3,
+            "end": 264.76,
+            "probability": 0.9916139841079712
+          },
+          {
+            "word": " world,",
+            "start": 264.76,
+            "end": 265.26,
+            "probability": 0.9748710989952087
+          },
+          {
+            "word": " beasts,",
+            "start": 265.5,
+            "end": 265.88,
+            "probability": 0.9932831525802612
+          },
+          {
+            "word": " cattle,",
+            "start": 266.3,
+            "end": 266.52,
+            "probability": 0.9956608414649963
+          },
+          {
+            "word": " and",
+            "start": 267.1,
+            "end": 267.22,
+            "probability": 0.9282075762748718
+          },
+          {
+            "word": " the",
+            "start": 267.22,
+            "end": 267.4,
+            "probability": 0.7635946273803711
+          },
+          {
+            "word": " reptiles",
+            "start": 267.4,
+            "end": 267.82,
+            "probability": 0.9986439347267151
+          },
+          {
+            "word": " of",
+            "start": 267.82,
+            "end": 268.22,
+            "probability": 0.7643141746520996
+          },
+          {
+            "word": " the",
+            "start": 268.22,
+            "end": 268.58,
+            "probability": 0.9982590079307556
+          },
+          {
+            "word": " ground,",
+            "start": 268.58,
+            "end": 269.14,
+            "probability": 0.9895620942115784
+          }
+        ]
+      },
+      {
+        "id": 58,
+        "seek": 24520,
+        "start": 269.22,
+        "end": 271.28,
+        "text": " Each after sky.",
+        "tokens": [
+          51563,
+          5501,
+          706,
+          6766,
+          13,
+          51663
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.2940806789674621,
+        "compression_ratio": 1.4251497005988023,
+        "no_speech_prob": 0.4176312983036041,
+        "words": [
+          {
+            "word": " Each",
+            "start": 269.22,
+            "end": 270.34,
+            "probability": 0.12607057392597198
+          },
+          {
+            "word": " after",
+            "start": 270.34,
+            "end": 270.78,
+            "probability": 0.9901678562164307
+          },
+          {
+            "word": " sky.",
+            "start": 270.78,
+            "end": 271.28,
+            "probability": 0.930841326713562
+          }
+        ]
+      },
+      {
+        "id": 59,
+        "seek": 27128,
+        "start": 271.28,
+        "end": 273.96,
+        "text": " We looked on them, good",
+        "tokens": [
+          50363,
+          775,
+          3114,
+          319,
+          606,
+          11,
+          922,
+          50513
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.337738037109375,
+        "compression_ratio": 1.4172661870503598,
+        "no_speech_prob": 0.640031099319458,
+        "words": [
+          {
+            "word": " We",
+            "start": 271.28,
+            "end": 272.42,
+            "probability": 0.25964224338531494
+          },
+          {
+            "word": " looked",
+            "start": 272.42,
+            "end": 272.7,
+            "probability": 0.9239509701728821
+          },
+          {
+            "word": " on",
+            "start": 272.7,
+            "end": 273.06,
+            "probability": 0.9947628378868103
+          },
+          {
+            "word": " them,",
+            "start": 273.06,
+            "end": 273.36,
+            "probability": 0.9872738122940063
+          },
+          {
+            "word": " good",
+            "start": 273.36,
+            "end": 273.96,
+            "probability": 0.9552760720252991
+          }
+        ]
+      },
+      {
+        "id": 60,
+        "seek": 27128,
+        "start": 275.62,
+        "end": 279.16,
+        "text": " Then God said, let us make humankind",
+        "tokens": [
+          50513,
+          3244,
+          1793,
+          531,
+          11,
+          1309,
+          514,
+          787,
+          47634,
+          50763
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.337738037109375,
+        "compression_ratio": 1.4172661870503598,
+        "no_speech_prob": 0.640031099319458,
+        "words": [
+          {
+            "word": " Then",
+            "start": 275.62,
+            "end": 276.26,
+            "probability": 0.732181966304779
+          },
+          {
+            "word": " God",
+            "start": 276.26,
+            "end": 276.56,
+            "probability": 0.8592336773872375
+          },
+          {
+            "word": " said,",
+            "start": 276.56,
+            "end": 277.0,
+            "probability": 0.9983748197555542
+          },
+          {
+            "word": " let",
+            "start": 277.52,
+            "end": 277.92,
+            "probability": 0.3951926529407501
+          },
+          {
+            "word": " us",
+            "start": 277.92,
+            "end": 278.12,
+            "probability": 0.9942222237586975
+          },
+          {
+            "word": " make",
+            "start": 278.12,
+            "end": 278.44,
+            "probability": 0.9955130219459534
+          },
+          {
+            "word": " humankind",
+            "start": 278.44,
+            "end": 279.16,
+            "probability": 0.9435394406318665
+          }
+        ]
+      },
+      {
+        "id": 61,
+        "seek": 27128,
+        "start": 279.16,
+        "end": 281.66,
+        "text": " In our image, in our likeness",
+        "tokens": [
+          50763,
+          554,
+          674,
+          2939,
+          11,
+          287,
+          674,
+          35674,
+          50863
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.337738037109375,
+        "compression_ratio": 1.4172661870503598,
+        "no_speech_prob": 0.640031099319458,
+        "words": [
+          {
+            "word": " In",
+            "start": 279.16,
+            "end": 279.82,
+            "probability": 0.48449385166168213
+          },
+          {
+            "word": " our",
+            "start": 279.82,
+            "end": 279.94,
+            "probability": 0.9965194463729858
+          },
+          {
+            "word": " image,",
+            "start": 279.94,
+            "end": 280.36,
+            "probability": 0.9871149063110352
+          },
+          {
+            "word": " in",
+            "start": 280.84,
+            "end": 280.98,
+            "probability": 0.8695423603057861
+          },
+          {
+            "word": " our",
+            "start": 280.98,
+            "end": 281.18,
+            "probability": 0.9969903230667114
+          },
+          {
+            "word": " likeness",
+            "start": 281.18,
+            "end": 281.66,
+            "probability": 0.9987289309501648
+          }
+        ]
+      },
+      {
+        "id": 62,
+        "seek": 27128,
+        "start": 281.66,
+        "end": 284.02,
+        "text": " Let them rule the fish, the birds",
+        "tokens": [
+          50863,
+          3914,
+          606,
+          3896,
+          262,
+          5916,
+          11,
+          262,
+          10087,
+          51013
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.337738037109375,
+        "compression_ratio": 1.4172661870503598,
+        "no_speech_prob": 0.640031099319458,
+        "words": [
+          {
+            "word": " Let",
+            "start": 281.66,
+            "end": 282.2,
+            "probability": 0.9216784238815308
+          },
+          {
+            "word": " them",
+            "start": 282.2,
+            "end": 282.36,
+            "probability": 0.9943249821662903
+          },
+          {
+            "word": " rule",
+            "start": 282.36,
+            "end": 282.56,
+            "probability": 0.9989762306213379
+          },
+          {
+            "word": " the",
+            "start": 282.56,
+            "end": 282.82,
+            "probability": 0.9852105975151062
+          },
+          {
+            "word": " fish,",
+            "start": 282.82,
+            "end": 283.08,
+            "probability": 0.9971680045127869
+          },
+          {
+            "word": " the",
+            "start": 283.28,
+            "end": 283.4,
+            "probability": 0.9981833100318909
+          },
+          {
+            "word": " birds",
+            "start": 283.4,
+            "end": 284.02,
+            "probability": 0.9991387128829956
+          }
+        ]
+      },
+      {
+        "id": 63,
+        "seek": 27128,
+        "start": 285.16,
+        "end": 288.28,
+        "text": " The cattle, all the earth and all that crows",
+        "tokens": [
+          51013,
+          383,
+          17025,
+          11,
+          477,
+          262,
+          4534,
+          290,
+          477,
+          326,
+          269,
+          8516,
+          51213
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.337738037109375,
+        "compression_ratio": 1.4172661870503598,
+        "no_speech_prob": 0.640031099319458,
+        "words": [
+          {
+            "word": " The",
+            "start": 285.16,
+            "end": 285.8,
+            "probability": 0.8668684363365173
+          },
+          {
+            "word": " cattle,",
+            "start": 285.8,
+            "end": 286.26,
+            "probability": 0.9732086658477783
+          },
+          {
+            "word": " all",
+            "start": 286.64,
+            "end": 287.0,
+            "probability": 0.9791707992553711
+          },
+          {
+            "word": " the",
+            "start": 287.0,
+            "end": 287.2,
+            "probability": 0.996085524559021
+          },
+          {
+            "word": " earth",
+            "start": 287.2,
+            "end": 287.44,
+            "probability": 0.9444182515144348
+          },
+          {
+            "word": " and",
+            "start": 287.44,
+            "end": 287.76,
+            "probability": 0.6319872140884399
+          },
+          {
+            "word": " all",
+            "start": 287.76,
+            "end": 288.02,
+            "probability": 0.9951525926589966
+          },
+          {
+            "word": " that",
+            "start": 288.02,
+            "end": 288.26,
+            "probability": 0.9455381035804749
+          },
+          {
+            "word": " crows",
+            "start": 288.26,
+            "end": 288.58,
+            "probability": 0.6598325669765472
+          }
+        ]
+      },
+      {
+        "id": 64,
+        "seek": 27128,
+        "start": 290.74,
+        "end": 294.96,
+        "text": " Hey, dust on the fish, yeah",
+        "tokens": [
+          51213,
+          14690,
+          11,
+          8977,
+          319,
+          262,
+          5916,
+          11,
+          10194,
+          51613
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.337738037109375,
+        "compression_ratio": 1.4172661870503598,
+        "no_speech_prob": 0.640031099319458,
+        "words": [
+          {
+            "word": " Hey,",
+            "start": 290.74,
+            "end": 291.38,
+            "probability": 0.28492897748947144
+          },
+          {
+            "word": " dust",
+            "start": 291.66,
+            "end": 291.9,
+            "probability": 0.9836730360984802
+          },
+          {
+            "word": " on",
+            "start": 291.9,
+            "end": 292.28,
+            "probability": 0.7149676084518433
+          },
+          {
+            "word": " the",
+            "start": 292.28,
+            "end": 292.56,
+            "probability": 0.5507168173789978
+          },
+          {
+            "word": " fish,",
+            "start": 292.56,
+            "end": 292.8,
+            "probability": 0.3214516341686249
+          },
+          {
+            "word": " yeah",
+            "start": 292.82,
+            "end": 294.96,
+            "probability": 0.5084382891654968
+          }
+        ]
+      },
+      {
+        "id": 65,
+        "seek": 29496,
+        "start": 298.26000000000005,
+        "end": 302.79999999999995,
+        "text": " Good, good, good",
+        "tokens": [
+          50363,
+          4599,
+          11,
+          922,
+          11,
+          922,
+          50755
+        ],
+        "temperature": 0.0,
+        "avg_logprob": -0.979107141494751,
+        "compression_ratio": 1.0,
+        "no_speech_prob": 0.6228863596916199,
+        "words": [
+          {
+            "word": " Good,",
+            "start": 298.26000000000005,
+            "end": 299.66,
+            "probability": 0.15505458414554596
+          },
+          {
+            "word": " good,",
+            "start": 299.66,
+            "end": 301.06,
+            "probability": 0.9184005260467529
+          },
+          {
+            "word": " good",
+            "start": 302.68,
+            "end": 303.38,
+            "probability": 0.9666321873664856
+          }
+        ]
+      }
+    ],
+    "language": "en"
+  }
+}

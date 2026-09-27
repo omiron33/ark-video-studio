@@ -1,0 +1,622 @@
+[
+  {
+    "id": "g1-l011",
+    "start": 45.29,
+    "end": 52.05,
+    "words": [
+      {
+        "id": "g1-l011-w01",
+        "text": "Night,",
+        "phraseId": "g1-l011",
+        "sourcePhraseId": "g1-l011"
+      },
+      {
+        "id": "g1-l011-w02",
+        "text": "the",
+        "phraseId": "g1-l011",
+        "sourcePhraseId": "g1-l011"
+      },
+      {
+        "id": "g1-l011-w03",
+        "text": "name",
+        "phraseId": "g1-l011",
+        "sourcePhraseId": "g1-l011"
+      },
+      {
+        "id": "g1-l011-w04",
+        "text": "He",
+        "phraseId": "g1-l011",
+        "sourcePhraseId": "g1-l011"
+      },
+      {
+        "id": "g1-l011-w05",
+        "text": "gave",
+        "phraseId": "g1-l011",
+        "sourcePhraseId": "g1-l011"
+      },
+      {
+        "id": "g1-l011-w06",
+        "text": "the",
+        "phraseId": "g1-l011",
+        "sourcePhraseId": "g1-l011"
+      },
+      {
+        "id": "g1-l011-w07",
+        "text": "dark.",
+        "phraseId": "g1-l011",
+        "sourcePhraseId": "g1-l011"
+      },
+      {
+        "id": "g1-l012-w01",
+        "text": "Dusk.",
+        "phraseId": "g1-l012",
+        "sourcePhraseId": "g1-l012"
+      },
+      {
+        "id": "g1-l012-w02",
+        "text": "Dawn.",
+        "phraseId": "g1-l012",
+        "sourcePhraseId": "g1-l012"
+      },
+      {
+        "id": "g1-l012-w03",
+        "text": "The",
+        "phraseId": "g1-l012",
+        "sourcePhraseId": "g1-l012"
+      },
+      {
+        "id": "g1-l012-w04",
+        "text": "first",
+        "phraseId": "g1-l012",
+        "sourcePhraseId": "g1-l012"
+      },
+      {
+        "id": "g1-l012-w05",
+        "text": "day.",
+        "phraseId": "g1-l012",
+        "sourcePhraseId": "g1-l012"
+      }
+    ],
+    "reason": "Bounded contextual retry after isolated phrase CTC candidates overlapped adjacent lyrics. Preserve actual measured endpoints."
+  },
+  {
+    "id": "g1-l028",
+    "start": 103.19,
+    "end": 108.31,
+    "words": [
+      {
+        "id": "g1-l028-w01",
+        "text": "\u2018Ground,",
+        "phraseId": "g1-l028",
+        "sourcePhraseId": "g1-l028"
+      },
+      {
+        "id": "g1-l028-w02",
+        "text": "send",
+        "phraseId": "g1-l028",
+        "sourcePhraseId": "g1-l028"
+      },
+      {
+        "id": "g1-l028-w03",
+        "text": "up",
+        "phraseId": "g1-l028",
+        "sourcePhraseId": "g1-l028"
+      },
+      {
+        "id": "g1-l028-w04",
+        "text": "seed-bearing",
+        "phraseId": "g1-l028",
+        "sourcePhraseId": "g1-l028"
+      },
+      {
+        "id": "g1-l028-w05",
+        "text": "grass",
+        "phraseId": "g1-l028",
+        "sourcePhraseId": "g1-l028"
+      },
+      {
+        "id": "g1-l029-w01",
+        "text": "in",
+        "phraseId": "g1-l029",
+        "sourcePhraseId": "g1-l029"
+      },
+      {
+        "id": "g1-l029-w02",
+        "text": "kind",
+        "phraseId": "g1-l029",
+        "sourcePhraseId": "g1-l029"
+      },
+      {
+        "id": "g1-l029-w03",
+        "text": "and",
+        "phraseId": "g1-l029",
+        "sourcePhraseId": "g1-l029"
+      },
+      {
+        "id": "g1-l029-w04",
+        "text": "likeness!",
+        "phraseId": "g1-l029",
+        "sourcePhraseId": "g1-l029"
+      }
+    ],
+    "reason": "Bounded contextual retry after isolated phrase CTC candidates overlapped adjacent lyrics. Preserve actual measured endpoints."
+  },
+  {
+    "id": "g1-l042",
+    "start": 146.15,
+    "end": 154.95000000000002,
+    "words": [
+      {
+        "id": "g1-l042-w01",
+        "text": "\u2018From",
+        "phraseId": "g1-l042",
+        "sourcePhraseId": "g1-l042"
+      },
+      {
+        "id": "g1-l042-w02",
+        "text": "that",
+        "phraseId": "g1-l042",
+        "sourcePhraseId": "g1-l042"
+      },
+      {
+        "id": "g1-l042-w03",
+        "text": "height,",
+        "phraseId": "g1-l042",
+        "sourcePhraseId": "g1-l042"
+      },
+      {
+        "id": "g1-l042-w04",
+        "text": "shine",
+        "phraseId": "g1-l042",
+        "sourcePhraseId": "g1-l042"
+      },
+      {
+        "id": "g1-l042-w05",
+        "text": "on",
+        "phraseId": "g1-l042",
+        "sourcePhraseId": "g1-l042"
+      },
+      {
+        "id": "g1-l042-w06",
+        "text": "the",
+        "phraseId": "g1-l042",
+        "sourcePhraseId": "g1-l042"
+      },
+      {
+        "id": "g1-l042-w07",
+        "text": "earth!\u2019",
+        "phraseId": "g1-l042",
+        "sourcePhraseId": "g1-l042"
+      },
+      {
+        "id": "g1-l043-w01",
+        "text": "His",
+        "phraseId": "g1-l043",
+        "sourcePhraseId": "g1-l043"
+      },
+      {
+        "id": "g1-l043-w02",
+        "text": "word",
+        "phraseId": "g1-l043",
+        "sourcePhraseId": "g1-l043"
+      },
+      {
+        "id": "g1-l043-w03",
+        "text": "took",
+        "phraseId": "g1-l043",
+        "sourcePhraseId": "g1-l043"
+      },
+      {
+        "id": "g1-l043-w04",
+        "text": "hold.",
+        "phraseId": "g1-l043",
+        "sourcePhraseId": "g1-l043"
+      }
+    ],
+    "reason": "Bounded contextual retry after isolated phrase CTC candidates overlapped adjacent lyrics. Preserve actual measured endpoints."
+  },
+  {
+    "id": "g1-l055",
+    "start": 186.75,
+    "end": 196.69,
+    "words": [
+      {
+        "id": "g1-l055-w01",
+        "text": "Winged",
+        "phraseId": "g1-l055",
+        "sourcePhraseId": "g1-l055"
+      },
+      {
+        "id": "g1-l055-w02",
+        "text": "creatures,",
+        "phraseId": "g1-l055",
+        "sourcePhraseId": "g1-l055"
+      },
+      {
+        "id": "g1-l055-w03",
+        "text": "fly",
+        "phraseId": "g1-l055",
+        "sourcePhraseId": "g1-l055"
+      },
+      {
+        "id": "g1-l055-w04",
+        "text": "above",
+        "phraseId": "g1-l055",
+        "sourcePhraseId": "g1-l055"
+      },
+      {
+        "id": "g1-l055-w05",
+        "text": "the",
+        "phraseId": "g1-l055",
+        "sourcePhraseId": "g1-l055"
+      },
+      {
+        "id": "g1-l055-w06",
+        "text": "earth",
+        "phraseId": "g1-l055",
+        "sourcePhraseId": "g1-l055"
+      },
+      {
+        "id": "g1-l056-w01",
+        "text": "across",
+        "phraseId": "g1-l056",
+        "sourcePhraseId": "g1-l056"
+      },
+      {
+        "id": "g1-l056-w02",
+        "text": "Heaven\u2019s",
+        "phraseId": "g1-l056",
+        "sourcePhraseId": "g1-l056"
+      },
+      {
+        "id": "g1-l056-w03",
+        "text": "firmament!\u2019",
+        "phraseId": "g1-l056",
+        "sourcePhraseId": "g1-l056"
+      },
+      {
+        "id": "g1-l057-w01",
+        "text": "His",
+        "phraseId": "g1-l057",
+        "sourcePhraseId": "g1-l057"
+      },
+      {
+        "id": "g1-l057-w02",
+        "text": "word",
+        "phraseId": "g1-l057",
+        "sourcePhraseId": "g1-l057"
+      },
+      {
+        "id": "g1-l057-w03",
+        "text": "took",
+        "phraseId": "g1-l057",
+        "sourcePhraseId": "g1-l057"
+      },
+      {
+        "id": "g1-l057-w04",
+        "text": "hold.",
+        "phraseId": "g1-l057",
+        "sourcePhraseId": "g1-l057"
+      }
+    ],
+    "reason": "Bounded contextual retry after isolated phrase CTC candidates overlapped adjacent lyrics. Preserve actual measured endpoints."
+  },
+  {
+    "id": "g1-l068",
+    "start": 227.04999999999998,
+    "end": 235.93,
+    "words": [
+      {
+        "id": "g1-l068-w01",
+        "text": "wild",
+        "phraseId": "g1-l068",
+        "sourcePhraseId": "g1-l068"
+      },
+      {
+        "id": "g1-l068-w02",
+        "text": "beasts,",
+        "phraseId": "g1-l068",
+        "sourcePhraseId": "g1-l068"
+      },
+      {
+        "id": "g1-l068-w03",
+        "text": "each",
+        "phraseId": "g1-l068",
+        "sourcePhraseId": "g1-l068"
+      },
+      {
+        "id": "g1-l068-w04",
+        "text": "after",
+        "phraseId": "g1-l068",
+        "sourcePhraseId": "g1-l068"
+      },
+      {
+        "id": "g1-l068-w05",
+        "text": "its",
+        "phraseId": "g1-l068",
+        "sourcePhraseId": "g1-l068"
+      },
+      {
+        "id": "g1-l068-w06",
+        "text": "kind!\u2019",
+        "phraseId": "g1-l068",
+        "sourcePhraseId": "g1-l068"
+      },
+      {
+        "id": "g1-l069-w01",
+        "text": "His",
+        "phraseId": "g1-l069",
+        "sourcePhraseId": "g1-l069"
+      },
+      {
+        "id": "g1-l069-w02",
+        "text": "word",
+        "phraseId": "g1-l069",
+        "sourcePhraseId": "g1-l069"
+      },
+      {
+        "id": "g1-l069-w03",
+        "text": "took",
+        "phraseId": "g1-l069",
+        "sourcePhraseId": "g1-l069"
+      },
+      {
+        "id": "g1-l069-w04",
+        "text": "hold.",
+        "phraseId": "g1-l069",
+        "sourcePhraseId": "g1-l069"
+      }
+    ],
+    "reason": "Bounded contextual retry after isolated phrase CTC candidates overlapped adjacent lyrics. Preserve actual measured endpoints."
+  },
+  {
+    "id": "g1-l074",
+    "start": 248.17,
+    "end": 259.78999999999996,
+    "words": [
+      {
+        "id": "g1-l074-w01",
+        "text": "Then",
+        "phraseId": "g1-l074",
+        "sourcePhraseId": "g1-l074"
+      },
+      {
+        "id": "g1-l074-w02",
+        "text": "God",
+        "phraseId": "g1-l074",
+        "sourcePhraseId": "g1-l074"
+      },
+      {
+        "id": "g1-l074-w03",
+        "text": "said,",
+        "phraseId": "g1-l074",
+        "sourcePhraseId": "g1-l074"
+      },
+      {
+        "id": "g1-l074-w04",
+        "text": "\u2018Let",
+        "phraseId": "g1-l074",
+        "sourcePhraseId": "g1-l074"
+      },
+      {
+        "id": "g1-l074-w05",
+        "text": "us",
+        "phraseId": "g1-l074",
+        "sourcePhraseId": "g1-l074"
+      },
+      {
+        "id": "g1-l074-w06",
+        "text": "make",
+        "phraseId": "g1-l074",
+        "sourcePhraseId": "g1-l074"
+      },
+      {
+        "id": "g1-l074-w07",
+        "text": "humankind",
+        "phraseId": "g1-l074",
+        "sourcePhraseId": "g1-l074"
+      },
+      {
+        "id": "g1-l075-w01",
+        "text": "in",
+        "phraseId": "g1-l075",
+        "sourcePhraseId": "g1-l075"
+      },
+      {
+        "id": "g1-l075-w02",
+        "text": "our",
+        "phraseId": "g1-l075",
+        "sourcePhraseId": "g1-l075"
+      },
+      {
+        "id": "g1-l075-w03",
+        "text": "image,",
+        "phraseId": "g1-l075",
+        "sourcePhraseId": "g1-l075"
+      },
+      {
+        "id": "g1-l075-w04",
+        "text": "in",
+        "phraseId": "g1-l075",
+        "sourcePhraseId": "g1-l075"
+      },
+      {
+        "id": "g1-l075-w05",
+        "text": "our",
+        "phraseId": "g1-l075",
+        "sourcePhraseId": "g1-l075"
+      },
+      {
+        "id": "g1-l075-w06",
+        "text": "likeness;",
+        "phraseId": "g1-l075",
+        "sourcePhraseId": "g1-l075"
+      },
+      {
+        "id": "g1-l064-r01-w01",
+        "text": "Let",
+        "phraseId": "g1-l064-r01",
+        "sourcePhraseId": "g1-l064"
+      },
+      {
+        "id": "g1-l064-r01-w02",
+        "text": "the",
+        "phraseId": "g1-l064-r01",
+        "sourcePhraseId": "g1-l064"
+      },
+      {
+        "id": "g1-l064-r01-w03",
+        "text": "winged",
+        "phraseId": "g1-l064-r01",
+        "sourcePhraseId": "g1-l064"
+      },
+      {
+        "id": "g1-l064-r01-w04",
+        "text": "multiply",
+        "phraseId": "g1-l064-r01",
+        "sourcePhraseId": "g1-l064"
+      },
+      {
+        "id": "g1-l064-r01-w05",
+        "text": "on",
+        "phraseId": "g1-l064-r01",
+        "sourcePhraseId": "g1-l064"
+      },
+      {
+        "id": "g1-l064-r01-w06",
+        "text": "earth!\u2019",
+        "phraseId": "g1-l064-r01",
+        "sourcePhraseId": "g1-l064"
+      }
+    ],
+    "reason": "Bounded contextual retry after isolated phrase CTC candidates overlapped adjacent lyrics. Preserve actual measured endpoints."
+  },
+  {
+    "id": "g1-l074-r01",
+    "start": 274.91,
+    "end": 284.53,
+    "words": [
+      {
+        "id": "g1-l074-r01-w01",
+        "text": "Then",
+        "phraseId": "g1-l074-r01",
+        "sourcePhraseId": "g1-l074"
+      },
+      {
+        "id": "g1-l074-r01-w02",
+        "text": "God",
+        "phraseId": "g1-l074-r01",
+        "sourcePhraseId": "g1-l074"
+      },
+      {
+        "id": "g1-l074-r01-w03",
+        "text": "said,",
+        "phraseId": "g1-l074-r01",
+        "sourcePhraseId": "g1-l074"
+      },
+      {
+        "id": "g1-l074-r01-w04",
+        "text": "\u2018Let",
+        "phraseId": "g1-l074-r01",
+        "sourcePhraseId": "g1-l074"
+      },
+      {
+        "id": "g1-l074-r01-w05",
+        "text": "us",
+        "phraseId": "g1-l074-r01",
+        "sourcePhraseId": "g1-l074"
+      },
+      {
+        "id": "g1-l074-r01-w06",
+        "text": "make",
+        "phraseId": "g1-l074-r01",
+        "sourcePhraseId": "g1-l074"
+      },
+      {
+        "id": "g1-l074-r01-w07",
+        "text": "humankind",
+        "phraseId": "g1-l074-r01",
+        "sourcePhraseId": "g1-l074"
+      },
+      {
+        "id": "g1-l075-r01-w01",
+        "text": "in",
+        "phraseId": "g1-l075-r01",
+        "sourcePhraseId": "g1-l075"
+      },
+      {
+        "id": "g1-l075-r01-w02",
+        "text": "our",
+        "phraseId": "g1-l075-r01",
+        "sourcePhraseId": "g1-l075"
+      },
+      {
+        "id": "g1-l075-r01-w03",
+        "text": "image,",
+        "phraseId": "g1-l075-r01",
+        "sourcePhraseId": "g1-l075"
+      },
+      {
+        "id": "g1-l075-r01-w04",
+        "text": "in",
+        "phraseId": "g1-l075-r01",
+        "sourcePhraseId": "g1-l075"
+      },
+      {
+        "id": "g1-l075-r01-w05",
+        "text": "our",
+        "phraseId": "g1-l075-r01",
+        "sourcePhraseId": "g1-l075"
+      },
+      {
+        "id": "g1-l075-r01-w06",
+        "text": "likeness;",
+        "phraseId": "g1-l075-r01",
+        "sourcePhraseId": "g1-l075"
+      },
+      {
+        "id": "g1-l076-w01",
+        "text": "let",
+        "phraseId": "g1-l076",
+        "sourcePhraseId": "g1-l076"
+      },
+      {
+        "id": "g1-l076-w02",
+        "text": "them",
+        "phraseId": "g1-l076",
+        "sourcePhraseId": "g1-l076"
+      },
+      {
+        "id": "g1-l076-w03",
+        "text": "rule",
+        "phraseId": "g1-l076",
+        "sourcePhraseId": "g1-l076"
+      },
+      {
+        "id": "g1-l076-w04",
+        "text": "the",
+        "phraseId": "g1-l076",
+        "sourcePhraseId": "g1-l076"
+      },
+      {
+        "id": "g1-l076-w05",
+        "text": "fish,",
+        "phraseId": "g1-l076",
+        "sourcePhraseId": "g1-l076"
+      },
+      {
+        "id": "g1-l076-w06",
+        "text": "the",
+        "phraseId": "g1-l076",
+        "sourcePhraseId": "g1-l076"
+      },
+      {
+        "id": "g1-l076-w07",
+        "text": "birds,",
+        "phraseId": "g1-l076",
+        "sourcePhraseId": "g1-l076"
+      }
+    ],
+    "reason": "Bounded contextual retry after isolated phrase CTC candidates overlapped adjacent lyrics. Preserve actual measured endpoints."
+  }
+]

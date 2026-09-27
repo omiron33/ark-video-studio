@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "status": "awaiting_user_choice",
+  "status": "chosen",
   "songTitle": "Genesis 1 \u2014 The Beginning",
   "sunoId": "b9b82c2c-7c8e-4ef4-9338-942de876644a",
   "sourceUrl": "https://suno.com/song/b9b82c2c-7c8e-4ef4-9338-942de876644a",
@@ -28,8 +28,19 @@
   ],
   "references": "concepts/reference-notes.json",
   "starterFrameManifest": "references/starter-frames/reference-inputs.json",
-  "approvalScope": "The two supplied code-angel starter images are approved static references only. No theme selection, generated motion or scene placement approval yet.",
-  "productionStarted": false,
+  "approvalScope": "Theme3 selected with these refinements; production and delivery authorized. Individual generated motion remains subject to encoded review.",
+  "productionStarted": true,
   "newCapabilityToValidate": "Organic code-character/line-art generated motion preserving clear glyph gaps and anatomy while compositing seamlessly behind custom lyrics and foreground graphics.",
-  "createdAt": "2026-09-27T10:58:51.585948+00:00"
+  "createdAt": "2026-09-27T10:58:51.585948+00:00",
+  "chosenOption": 3,
+  "chosenName": "Breath & Earth",
+  "chosenAt": "2026-09-27T11:03:34.643596+00:00",
+  "userInstruction": "3, but a little less rainbowy and pride parade, and the code stuff is only for the animations and some other stuff, not the entire thing. it should also have regular videos like we did before and the creation of adam, or generate videos you think, but I really want the videos integrated with words on screen. we can even generate the word art animations as videos in places where it works well. continue with your goal of a completed genesis 1 video.",
+  "refinements": [
+    "Restrained charcoal, bone, rust and amber palette; very limited cool accents.",
+    "Code characters are occasional imagery, not the entire film.",
+    "Include regular photoreal footage and reserved Adam formation.",
+    "Generated video always integrates with foreground words/graphics.",
+    "Generated word-art motion may be used selectively if canonical words remain accurate and synchronized."
+  ]
 }

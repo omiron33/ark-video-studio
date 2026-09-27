@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 227.04999999999998,
+    "duration": 4.78,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "wild beasts, each after its kind!\u2019",
+  "approvedLyrics": "wild beasts, each after its kind!\u2019",
+  "words": [
+    {
+      "id": "w_11a8284b855fd71b",
+      "text": "wild",
+      "start": 227.431597,
+      "end": 227.752941,
+      "phraseId": "g1-l068",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.012772109956319458,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l068-w01"
+    },
+    {
+      "id": "w_160607bee17615bd",
+      "text": "beasts,",
+      "start": 228.335378,
+      "end": 228.676807,
+      "phraseId": "g1-l068",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.08374918653615207,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l068-w02"
+    },
+    {
+      "id": "w_caa1f35ea14fd994",
+      "text": "each",
+      "start": 229.259244,
+      "end": 229.460084,
+      "phraseId": "g1-l068",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.08527798128551486,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l068-w03"
+    },
+    {
+      "id": "w_2db40c8bb955f7f9",
+      "text": "after",
+      "start": 229.660924,
+      "end": 230.343782,
+      "phraseId": "g1-l068",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.15742611374693896,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l068-w04"
+    },
+    {
+      "id": "w_10c5bf42edf847e8",
+      "text": "its",
+      "start": 230.464286,
+      "end": 230.665126,
+      "phraseId": "g1-l068",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.06884807496818626,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l068-w05"
+    },
+    {
+      "id": "w_b3f70f9d6e016dfc",
+      "text": "kind!\u2019",
+      "start": 230.725378,
+      "end": 231.769748,
+      "phraseId": "g1-l068",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.022715166555518872,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l068-w06"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "wild beasts, each after its kind!\u2019",
+      "wordIds": [
+        "w_11a8284b855fd71b",
+        "w_160607bee17615bd",
+        "w_caa1f35ea14fd994",
+        "w_2db40c8bb955f7f9",
+        "w_10c5bf42edf847e8",
+        "w_b3f70f9d6e016dfc"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l068-full-ctc-large.json",
+  "executionEvidence": {
+    "id": "g1-l068-full-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l068-full-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 2.511800874955952,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

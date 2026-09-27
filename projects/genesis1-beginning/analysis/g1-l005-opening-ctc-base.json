@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 19.0,
+    "duration": 5.5,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "Across the water moved the Spirit of God.",
+  "approvedLyrics": "Across the water moved the Spirit of God.",
+  "words": [
+    {
+      "id": "w_48d702230c0021bf",
+      "text": "Across",
+      "start": 19.120438,
+      "end": 20.344891,
+      "phraseId": "g1-l005",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.2575190580850565,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l005-w01"
+    },
+    {
+      "id": "w_ed0910dd2ab4e27d",
+      "text": "the",
+      "start": 20.465328,
+      "end": 20.585766,
+      "phraseId": "g1-l005",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9806216176019718,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l005-w02"
+    },
+    {
+      "id": "w_a617f16b9e6f6643",
+      "text": "water",
+      "start": 20.74635,
+      "end": 21.228102,
+      "phraseId": "g1-l005",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.0464638744217705,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l005-w03"
+    },
+    {
+      "id": "w_fedbaf8726edb304",
+      "text": "moved",
+      "start": 21.428832,
+      "end": 21.649635,
+      "phraseId": "g1-l005",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.010803864574086122,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l005-w04"
+    },
+    {
+      "id": "w_5a21596d22ec3025",
+      "text": "the",
+      "start": 21.689781,
+      "end": 21.790146,
+      "phraseId": "g1-l005",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.8445697036047455,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l005-w05"
+    },
+    {
+      "id": "w_185981d23bbcf3b2",
+      "text": "Spirit",
+      "start": 21.870438,
+      "end": 22.55292,
+      "phraseId": "g1-l005",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9645429513071759,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l005-w06"
+    },
+    {
+      "id": "w_1d9aa1175fc85c52",
+      "text": "of",
+      "start": 22.673358,
+      "end": 22.713504,
+      "phraseId": "g1-l005",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9980645156368215,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l005-w07"
+    },
+    {
+      "id": "w_1381b313a60752a5",
+      "text": "God.",
+      "start": 22.874088,
+      "end": 24.138686,
+      "phraseId": "g1-l005",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.005380756427929815,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l005-w08"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "Across the water moved the Spirit of God.",
+      "wordIds": [
+        "w_48d702230c0021bf",
+        "w_ed0910dd2ab4e27d",
+        "w_a617f16b9e6f6643",
+        "w_fedbaf8726edb304",
+        "w_5a21596d22ec3025",
+        "w_185981d23bbcf3b2",
+        "w_1d9aa1175fc85c52",
+        "w_1381b313a60752a5"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l005-opening-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l005-opening-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l005-opening-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.5119654173031449,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

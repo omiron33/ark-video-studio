@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 238.47,
+    "duration": 3.98,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "and the reptiles of the ground,",
+  "approvedLyrics": "and the reptiles of the ground,",
+  "words": [
+    {
+      "id": "w_0a2c8c9aea7493d0",
+      "text": "and",
+      "start": 240.078081,
+      "end": 240.138384,
+      "phraseId": "g1-l071",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9579166545962067,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l071-w01"
+    },
+    {
+      "id": "w_8cddf0e975ff07dd",
+      "text": "the",
+      "start": 240.198687,
+      "end": 240.25899,
+      "phraseId": "g1-l071",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.8207085211664685,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l071-w02"
+    },
+    {
+      "id": "w_31751f7e66701739",
+      "text": "reptiles",
+      "start": 240.359495,
+      "end": 240.922323,
+      "phraseId": "g1-l071",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.18979147181415545,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l071-w03"
+    },
+    {
+      "id": "w_bc275890c29a4bd1",
+      "text": "of",
+      "start": 241.042929,
+      "end": 241.163535,
+      "phraseId": "g1-l071",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.08348994550274692,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l071-w04"
+    },
+    {
+      "id": "w_854ae3e2f43a40f5",
+      "text": "the",
+      "start": 241.284141,
+      "end": 241.344444,
+      "phraseId": "g1-l071",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.8615170234962628,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l071-w05"
+    },
+    {
+      "id": "w_c2dcfdd0b9d92eee",
+      "text": "ground,",
+      "start": 241.404747,
+      "end": 241.84697,
+      "phraseId": "g1-l071",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.09455065574954069,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l071-w06"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "and the reptiles of the ground,",
+      "wordIds": [
+        "w_0a2c8c9aea7493d0",
+        "w_8cddf0e975ff07dd",
+        "w_31751f7e66701739",
+        "w_bc275890c29a4bd1",
+        "w_854ae3e2f43a40f5",
+        "w_c2dcfdd0b9d92eee"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l071-full-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l071-full-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l071-full-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.7136481669731438,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

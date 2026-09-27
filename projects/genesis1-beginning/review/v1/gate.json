@@ -1,0 +1,32 @@
+{
+  "passed": false,
+  "status": "technical_failed",
+  "reasons": [
+    "Temporal activity measurement did not pass",
+    "Temporal max_static_interval measurement is missing or failed",
+    "Temporal report contains failed checks",
+    "Cannot verify temporal evidence: Measured static interval exceeds the project budget",
+    "Technical checks did not all pass",
+    "Machine audio lyric_phrase_match did not pass",
+    "Machine audio word_sync did not pass",
+    "Machine audio status is failed",
+    "Machine visual review has not been generated"
+  ],
+  "quality": {
+    "technicalVerified": false,
+    "temporalActivityVerified": false,
+    "machineAudioVerified": false,
+    "machineVisualVerified": false,
+    "independentVisualReviewed": false,
+    "machineQualityVerified": false,
+    "syncBasis": "unverified",
+    "aestheticJudgment": "not_claimed",
+    "creativePolicyVerified": false
+  },
+  "binding": {
+    "videoSha256": "b946c097f0902c0f3b4eda3a330aceca2ef893c29bd5a7eb511cc34101d130db",
+    "projectHash": "9e96b28898757ac06e19b8b594066c8d3524a1f54dc240f97423572ffb45b62c",
+    "rendererHash": "4a279e37bc6bb3a1d2df216a8adc28a6c35974724f15419922adbb1d616a0a39",
+    "revisionHash": "681306f92ebfe993eba9f2540f7645d8f69952e5e6b47d2d2cb2b867ad8a923a"
+  }
+}

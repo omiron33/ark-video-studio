@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 262.69,
+    "duration": 4.42,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "He fashioned wild beasts, cattle,",
+  "approvedLyrics": "He fashioned wild beasts, cattle,",
+  "words": [
+    {
+      "id": "w_00743465c53e49ee",
+      "text": "He",
+      "start": 264.036091,
+      "end": 264.136545,
+      "phraseId": "g1-l070-r01",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.6064623542709707,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l070-r01-w01"
+    },
+    {
+      "id": "w_e3a88d3067f72ddb",
+      "text": "fashioned",
+      "start": 264.317364,
+      "end": 264.799545,
+      "phraseId": "g1-l070-r01",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.332271037079863,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l070-r01-w02"
+    },
+    {
+      "id": "w_2456e4f5ac3cd6ea",
+      "text": "wild",
+      "start": 265.020545,
+      "end": 265.241545,
+      "phraseId": "g1-l070-r01",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.14116040045947176,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l070-r01-w03"
+    },
+    {
+      "id": "w_270aff11a2f7f82d",
+      "text": "beasts,",
+      "start": 265.422364,
+      "end": 265.804091,
+      "phraseId": "g1-l070-r01",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.4848650426660012,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l070-r01-w04"
+    },
+    {
+      "id": "w_2f1a7a5c8890ee23",
+      "text": "cattle,",
+      "start": 266.165727,
+      "end": 266.567545,
+      "phraseId": "g1-l070-r01",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.06973055759166003,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l070-r01-w05"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "He fashioned wild beasts, cattle,",
+      "wordIds": [
+        "w_00743465c53e49ee",
+        "w_e3a88d3067f72ddb",
+        "w_2456e4f5ac3cd6ea",
+        "w_270aff11a2f7f82d",
+        "w_2f1a7a5c8890ee23"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l070-r01-full-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l070-r01-full-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l070-r01-full-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 1.0297389579936862,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 258.91,
+    "duration": 4.06,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "His word took hold.",
+  "approvedLyrics": "His word took hold.",
+  "words": [
+    {
+      "id": "w_6d0810cdf7cc804b",
+      "text": "His",
+      "start": 259.231584,
+      "end": 259.492871,
+      "phraseId": "g1-l069-r01",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.2227391238534401,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l069-r01-w01"
+    },
+    {
+      "id": "w_2e604231a40daec8",
+      "text": "word",
+      "start": 260.73901,
+      "end": 261.040495,
+      "phraseId": "g1-l069-r01",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.2585598451544966,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l069-r01-w02"
+    },
+    {
+      "id": "w_4ec7e4df4679d0bf",
+      "text": "took",
+      "start": 261.34198,
+      "end": 261.563069,
+      "phraseId": "g1-l069-r01",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.3059849796256108,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l069-r01-w03"
+    },
+    {
+      "id": "w_a782f090402d3554",
+      "text": "hold.",
+      "start": 261.924851,
+      "end": 262.829307,
+      "phraseId": "g1-l069-r01",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.12662568240673502,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l069-r01-w04"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "His word took hold.",
+      "wordIds": [
+        "w_6d0810cdf7cc804b",
+        "w_2e604231a40daec8",
+        "w_4ec7e4df4679d0bf",
+        "w_a782f090402d3554"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l069-r01-full-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l069-r01-full-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l069-r01-full-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 1.101640165783465,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

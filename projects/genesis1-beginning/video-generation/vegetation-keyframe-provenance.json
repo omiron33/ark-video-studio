@@ -1,0 +1,24 @@
+{
+  "provider": "OpenAI GPT Image",
+  "providedBy": "root agent",
+  "subject": "matching fixed-camera rocky valley before and after vegetation growth",
+  "frames": [
+    {
+      "kind": "start",
+      "file": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/vegetation-start.png",
+      "sha256": "c77d3e49e62a5c5dbfa73b042aac8702ddc1a62365410ac061b5dd3f9bf63fb4",
+      "promptFile": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/vegetation-start-prompt.txt"
+    },
+    {
+      "kind": "end",
+      "file": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/vegetation-end.png",
+      "sha256": "a4ee0eb33616e447ba16ac5a6e22712e30a2d135dc81da892c89a93ebf8ac830",
+      "promptFile": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/vegetation-end-prompt.txt"
+    }
+  ],
+  "review": {
+    "status": "accepted_as_I2V_anchors",
+    "observations": "Root inspected both sources. Agent also inspected matching camera, mountains, soil and quiet left space before generation. End introduces tree right and muted grass across terrain."
+  },
+  "providerArtifactIds": "Not supplied in handoff; preserve exact file SHA and root prompt sources without inventing artifact IDs."
+}

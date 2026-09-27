@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 45.29,
+    "duration": 3.54,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "Night, the name He gave the dark.",
+  "approvedLyrics": "Night, the name He gave the dark.",
+  "words": [
+    {
+      "id": "w_d48232567065bf95",
+      "text": "Night,",
+      "start": 45.712386,
+      "end": 46.597386,
+      "phraseId": "g1-l011",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.0014946480396474107,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l011-w01"
+    },
+    {
+      "id": "w_daaf12a0b237cefa",
+      "text": "the",
+      "start": 46.697955,
+      "end": 46.758295,
+      "phraseId": "g1-l011",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.009257691424394076,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l011-w02"
+    },
+    {
+      "id": "w_a3e74bab799c4450",
+      "text": "name",
+      "start": 46.858864,
+      "end": 47.422045,
+      "phraseId": "g1-l011",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.08598155882297112,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l011-w03"
+    },
+    {
+      "id": "w_b2da64654f161f63",
+      "text": "He",
+      "start": 47.5025,
+      "end": 47.603068,
+      "phraseId": "g1-l011",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9514434267221001,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l011-w04"
+    },
+    {
+      "id": "w_7ba811c121dd0c72",
+      "text": "gave",
+      "start": 47.743864,
+      "end": 48.025455,
+      "phraseId": "g1-l011",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.7381764212177586,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l011-w05"
+    },
+    {
+      "id": "w_f79730c972c06a3d",
+      "text": "the",
+      "start": 48.105909,
+      "end": 48.16625,
+      "phraseId": "g1-l011",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.6564245092760574,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l011-w06"
+    },
+    {
+      "id": "w_7758a6df026c680b",
+      "text": "dark.",
+      "start": 48.226591,
+      "end": 48.528295,
+      "phraseId": "g1-l011",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.09011035354806372,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l011-w07"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "Night, the name He gave the dark.",
+      "wordIds": [
+        "w_d48232567065bf95",
+        "w_daaf12a0b237cefa",
+        "w_a3e74bab799c4450",
+        "w_b2da64654f161f63",
+        "w_7ba811c121dd0c72",
+        "w_f79730c972c06a3d",
+        "w_7758a6df026c680b"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l011-full-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l011-full-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l011-full-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.5015364168211818,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

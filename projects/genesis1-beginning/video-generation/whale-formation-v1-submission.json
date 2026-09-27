@@ -1,0 +1,22 @@
+{
+  "prompt_id": "84e7e455-75ec-4a46-8f79-06916a41cf39",
+  "number": 99,
+  "node_errors": {},
+  "name": "whale-formation-v1",
+  "submittedAt": "2026-09-27T11:16:12.060997+00:00",
+  "project": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning",
+  "themeChoiceSha256": "c9637517ee90b0c9a6700e0398bb912eeffa66f22addc131bf97fc576281beac",
+  "firstImage": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/whale-line-start.png",
+  "firstImageSha256": "913d30e3e67f2be94e30c59cf36dec569798af84f1cd165373f2c79cbf8f256f",
+  "lastImage": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/whale-line-end.png",
+  "lastImageSha256": "69b2f23d6fe697ca7b7e82118dfcfeb4343eff5b2aa9790d828ede65ca0c2ade",
+  "promptFile": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/whale-formation-v1-motion-prompt.txt",
+  "workflow": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/whale-formation-v1-workflow.json",
+  "workflowSha256": "429923bb7a8807adc84bd49718d434595810a08c59ac1fcbdfa2438ccc27d6e9",
+  "framesRequested": 172,
+  "fpsRequested": 24,
+  "seed": 2026092734,
+  "conditioning": "first_frame+last_frame",
+  "provider": "local OmiPC ComfyUI",
+  "cost": "local GPU; no paid API"
+}

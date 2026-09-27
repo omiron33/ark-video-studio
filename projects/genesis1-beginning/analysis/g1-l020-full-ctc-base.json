@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 69.69,
+    "duration": 3.88,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "He looked on it: good.",
+  "approvedLyrics": "He looked on it: good.",
+  "words": [
+    {
+      "id": "w_987dccaf28b96eeb",
+      "text": "He",
+      "start": 70.393627,
+      "end": 70.453938,
+      "phraseId": "g1-l020",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.03199842180405056,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l020-w01"
+    },
+    {
+      "id": "w_aec38000e8b18dd9",
+      "text": "looked",
+      "start": 70.474041,
+      "end": 71.418912,
+      "phraseId": "g1-l020",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.015113617261646936,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l020-w02"
+    },
+    {
+      "id": "w_4e95e3eb09cedf7e",
+      "text": "on",
+      "start": 71.981813,
+      "end": 72.243161,
+      "phraseId": "g1-l020",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.05401006057547063,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l020-w03"
+    },
+    {
+      "id": "w_89cc9019d3b05936",
+      "text": "it:",
+      "start": 72.886477,
+      "end": 73.067409,
+      "phraseId": "g1-l020",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.25574842457150876,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l020-w04"
+    },
+    {
+      "id": "w_bc3b911d3bd1c829",
+      "text": "good.",
+      "start": 73.268446,
+      "end": 73.549896,
+      "phraseId": "g1-l020",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.019399420007591255,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l020-w05"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "He looked on it: good.",
+      "wordIds": [
+        "w_987dccaf28b96eeb",
+        "w_aec38000e8b18dd9",
+        "w_4e95e3eb09cedf7e",
+        "w_89cc9019d3b05936",
+        "w_bc3b911d3bd1c829"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l020-full-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l020-full-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l020-full-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.728682791814208,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

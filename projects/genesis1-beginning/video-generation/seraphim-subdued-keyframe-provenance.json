@@ -1,0 +1,9 @@
+{
+  "type": "GPT Image keyframe supplied by root",
+  "image": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/seraphim-subdued.png",
+  "sha256": "878197cbf65d6d49683f9ea534fcc5b8f4c81670a0fb4ae1e2536938f539ebf4",
+  "providerArtifact": "exec-7e87b8b0-2a39-4378-ba1e-1923206c2a98.png",
+  "imageGenerationPrompt": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/seraphim-subdued-prompt.txt",
+  "visualInspection": "Six broad coherent wings assembled from crisp separate bone, amber and rust glyphs against black. Center and halo fixed. Root-supplied restrained palette fits chosen theme.",
+  "motionApproval": "Production authorized after theme3; actual output requires decoded review."
+}

@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 274.91,
+    "duration": 4.8,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "Then God said, \u2018Let us make humankind",
+  "approvedLyrics": "Then God said, \u2018Let us make humankind",
+  "words": [
+    {
+      "id": "w_4231ffaa8839da79",
+      "text": "Then",
+      "start": 276.05477,
+      "end": 276.175272,
+      "phraseId": "g1-l074-r01",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9740477113809307,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l074-r01-w01"
+    },
+    {
+      "id": "w_a91b214de2bc06b5",
+      "text": "God",
+      "start": 276.335941,
+      "end": 276.556862,
+      "phraseId": "g1-l074-r01",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.999723723751658,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l074-r01-w02"
+    },
+    {
+      "id": "w_1b06e99ca993c3fd",
+      "text": "said,",
+      "start": 276.697448,
+      "end": 276.938452,
+      "phraseId": "g1-l074-r01",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9936438992700997,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l074-r01-w03"
+    },
+    {
+      "id": "w_76434ffee079d0da",
+      "text": "\u2018Let",
+      "start": 277.781967,
+      "end": 277.922552,
+      "phraseId": "g1-l074-r01",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9991355976105616,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l074-r01-w04"
+    },
+    {
+      "id": "w_a14cdce9a01a13a9",
+      "text": "us",
+      "start": 278.002887,
+      "end": 278.063138,
+      "phraseId": "g1-l074-r01",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9997957915989244,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l074-r01-w05"
+    },
+    {
+      "id": "w_de256450fdb6770b",
+      "text": "make",
+      "start": 278.163556,
+      "end": 278.34431,
+      "phraseId": "g1-l074-r01",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.999177082286649,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l074-r01-w06"
+    },
+    {
+      "id": "w_53e068d36c82af55",
+      "text": "humankind",
+      "start": 278.444728,
+      "end": 279.448912,
+      "phraseId": "g1-l074-r01",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.99325198134273,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l074-r01-w07"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "Then God said, \u2018Let us make humankind",
+      "wordIds": [
+        "w_4231ffaa8839da79",
+        "w_a91b214de2bc06b5",
+        "w_1b06e99ca993c3fd",
+        "w_76434ffee079d0da",
+        "w_a14cdce9a01a13a9",
+        "w_de256450fdb6770b",
+        "w_53e068d36c82af55"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l074-r01-full-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l074-r01-full-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l074-r01-full-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.716816334053874,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

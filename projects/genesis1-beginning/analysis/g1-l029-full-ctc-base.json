@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 104.94999999999999,
+    "duration": 3.36,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "in kind and likeness!",
+  "approvedLyrics": "in kind and likeness!",
+  "words": [
+    {
+      "id": "w_7719fc3218cfd7f2",
+      "text": "in",
+      "start": 105.251796,
+      "end": 105.292036,
+      "phraseId": "g1-l029",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9697330509601417,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l029-w01"
+    },
+    {
+      "id": "w_196ad19a83e11c48",
+      "text": "kind",
+      "start": 105.955988,
+      "end": 106.358383,
+      "phraseId": "g1-l029",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9250887362386101,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l029-w02"
+    },
+    {
+      "id": "w_ee91e8faee39d5b3",
+      "text": "and",
+      "start": 106.539461,
+      "end": 106.59982,
+      "phraseId": "g1-l029",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.2810793361036556,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l029-w03"
+    },
+    {
+      "id": "w_c5329f1fb148eff5",
+      "text": "likeness!",
+      "start": 106.861377,
+      "end": 107.786886,
+      "phraseId": "g1-l029",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.6190092570547869,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l029-w04"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "in kind and likeness!",
+      "wordIds": [
+        "w_7719fc3218cfd7f2",
+        "w_196ad19a83e11c48",
+        "w_ee91e8faee39d5b3",
+        "w_c5329f1fb148eff5"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l029-full-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l029-full-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l029-full-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.5131628341041505,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

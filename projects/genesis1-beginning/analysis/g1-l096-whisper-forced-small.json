@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-openai-whisper-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 289.8,
+    "duration": 6.2,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/Whisper/small.en.pt",
+    "backend": "openai-whisper",
+    "language": "en"
+  },
+  "transcript": "Dusk. Dawn. The sixth day.",
+  "approvedLyrics": "Dusk. Dawn. The sixth day.",
+  "words": [
+    {
+      "id": "w_8a932c5a2c900ea2",
+      "text": "Dusk.",
+      "start": 289.8,
+      "end": 291.78,
+      "phraseId": "g1-l096",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 1.5975840142345987e-05,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l096-w01"
+    },
+    {
+      "id": "w_6e228b05d3480665",
+      "text": "Dawn.",
+      "start": 292.16,
+      "end": 292.22,
+      "phraseId": "g1-l096",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.13741804659366608,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l096-w02"
+    },
+    {
+      "id": "w_cabd872414610508",
+      "text": "The",
+      "start": 292.4,
+      "end": 292.48,
+      "phraseId": "g1-l096",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.034478120505809784,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l096-w03"
+    },
+    {
+      "id": "w_6a4448fe566e71ba",
+      "text": "sixth",
+      "start": 292.48,
+      "end": 292.82,
+      "phraseId": "g1-l096",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 1.4110873053141404e-05,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l096-w04"
+    },
+    {
+      "id": "w_bac2beb796fb10e3",
+      "text": "day.",
+      "start": 292.82,
+      "end": 293.84,
+      "phraseId": "g1-l096",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9280440807342529,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l096-w05"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "Dusk. Dawn. The sixth day.",
+      "wordIds": [
+        "w_8a932c5a2c900ea2",
+        "w_6e228b05d3480665",
+        "w_cabd872414610508",
+        "w_6a4448fe566e71ba",
+        "w_bac2beb796fb10e3"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "role": "source",
+  "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l096-whisper-forced-small.json",
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2",
+  "executionEvidence": {
+    "id": "g1-l096-whisper-forced-small",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l096-whisper-forced-small.json",
+    "status": "machine_estimate",
+    "seconds": 2.843552208971232,
+    "modelCacheHit": false,
+    "modelsHeld": 1
+  }
+}

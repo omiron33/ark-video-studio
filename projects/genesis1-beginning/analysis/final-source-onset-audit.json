@@ -1,0 +1,155 @@
+{
+  "status": "source_only_uncertified",
+  "method": "Selected onset differs >250ms from exact recognized tokens from two different Whisper checkpoints agreeing within120ms, each posterior>=.75. No new inference, no timestamp mutation.",
+  "cases": [
+    {
+      "id": "g1-l002-w05",
+      "text": "earth",
+      "selectedStart": 11.012945,
+      "sourceSupported": true,
+      "recognition": [
+        {
+          "kind": "asr",
+          "start": 10.6,
+          "end": 11.2,
+          "probability": 0.9757732152938843,
+          "selectionScore": 0.6015464305877685,
+          "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/full-whisper-small.json",
+          "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872"
+        },
+        {
+          "kind": "asr",
+          "start": 10.66,
+          "end": 11.36,
+          "probability": 0.8786997199058533,
+          "selectionScore": 0.5073994398117065,
+          "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/full-whisper-medium-diagnostic.json",
+          "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        }
+      ],
+      "selectedArtifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l002-opening-ctc-large.json",
+      "disposition": "Preserved measured CTC boundary; paired CTC often locates consonants after ASR absorbed a preceding pause. This is a model disagreement, not a verified failure or proof of accuracy."
+    },
+    {
+      "id": "g1-l004-w01",
+      "text": "blackness",
+      "selectedStart": 17.386772,
+      "sourceSupported": true,
+      "recognition": [
+        {
+          "kind": "asr",
+          "start": 16.46,
+          "end": 18.14,
+          "probability": 0.9490100145339966,
+          "selectionScore": 0.5480200290679931,
+          "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/full-whisper-small.json",
+          "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872"
+        },
+        {
+          "kind": "asr",
+          "start": 16.52,
+          "end": 18.2,
+          "probability": 0.9754721522331238,
+          "selectionScore": 0.7009443044662476,
+          "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/full-whisper-medium-diagnostic.json",
+          "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        }
+      ],
+      "selectedArtifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l004-opening-ctc-large.json",
+      "disposition": "Preserved measured CTC boundary; paired CTC often locates consonants after ASR absorbed a preceding pause. This is a model disagreement, not a verified failure or proof of accuracy."
+    },
+    {
+      "id": "g1-l006-w05",
+      "text": "come",
+      "selectedStart": 27.353937,
+      "sourceSupported": false,
+      "recognition": [
+        {
+          "kind": "asr",
+          "start": 27.02,
+          "end": 27.62,
+          "probability": 0.923777163028717,
+          "selectionScore": 0.497554326057434,
+          "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/full-whisper-small.json",
+          "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872"
+        },
+        {
+          "kind": "asr",
+          "start": 27.06,
+          "end": 27.68,
+          "probability": 0.918602705001831,
+          "selectionScore": 0.5872054100036621,
+          "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/opening-whisper-medium.json",
+          "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        },
+        {
+          "kind": "asr",
+          "start": 27.08,
+          "end": 27.68,
+          "probability": 0.9195625185966492,
+          "selectionScore": 0.5891250371932983,
+          "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/full-whisper-medium-diagnostic.json",
+          "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        }
+      ],
+      "selectedArtifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l006-opening-ctc-large.json",
+      "disposition": "Preserved measured CTC boundary; paired CTC often locates consonants after ASR absorbed a preceding pause. This is a model disagreement, not a verified failure or proof of accuracy."
+    },
+    {
+      "id": "g1-l010-w02",
+      "text": "was",
+      "selectedStart": 42.637166,
+      "sourceSupported": true,
+      "recognition": [
+        {
+          "kind": "asr",
+          "start": 41.88,
+          "end": 42.96,
+          "probability": 0.8173156380653381,
+          "selectionScore": 2.284631276130676,
+          "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/full-whisper-small.json",
+          "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872"
+        },
+        {
+          "kind": "asr",
+          "start": 41.9,
+          "end": 43.02,
+          "probability": 0.8635737895965576,
+          "selectionScore": 2.4771475791931152,
+          "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/full-whisper-medium-diagnostic.json",
+          "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        }
+      ],
+      "selectedArtifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l010-full-ctc-base.json",
+      "disposition": "Preserved measured CTC boundary; paired CTC often locates consonants after ASR absorbed a preceding pause. This is a model disagreement, not a verified failure or proof of accuracy."
+    },
+    {
+      "id": "g1-l064-w05",
+      "text": "on",
+      "selectedStart": 214.143516,
+      "sourceSupported": false,
+      "recognition": [
+        {
+          "kind": "asr",
+          "start": 213.74,
+          "end": 214.24,
+          "probability": 0.9648072123527527,
+          "selectionScore": 2.5796144247055053,
+          "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/full-whisper-small.json",
+          "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872"
+        },
+        {
+          "kind": "asr",
+          "start": 213.82,
+          "end": 214.28,
+          "probability": 0.9405857920646667,
+          "selectionScore": 2.6311715841293335,
+          "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/full-whisper-medium-diagnostic.json",
+          "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+        }
+      ],
+      "selectedArtifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l064-full-ctc-large.json",
+      "disposition": "Preserved measured CTC boundary; paired CTC often locates consonants after ASR absorbed a preceding pause. This is a model disagreement, not a verified failure or proof of accuracy."
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 183.76999999999998,
+    "duration": 4.28,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "\u2018Water, swarm with living reptiles!",
+  "approvedLyrics": "\u2018Water, swarm with living reptiles!",
+  "words": [
+    {
+      "id": "w_0bf641f5ee828b73",
+      "text": "\u2018Water,",
+      "start": 186.261643,
+      "end": 186.462582,
+      "phraseId": "g1-l054",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.04302126695583247,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l054-w01"
+    },
+    {
+      "id": "w_833775f0f2f122a2",
+      "text": "swarm",
+      "start": 186.522864,
+      "end": 186.663521,
+      "phraseId": "g1-l054",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.007835715125097915,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l054-w02"
+    },
+    {
+      "id": "w_8df99d57d80c77d8",
+      "text": "with",
+      "start": 186.784085,
+      "end": 186.944836,
+      "phraseId": "g1-l054",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.08835705066374673,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l054-w03"
+    },
+    {
+      "id": "w_085342772980b61b",
+      "text": "living",
+      "start": 186.96493,
+      "end": 187.427089,
+      "phraseId": "g1-l054",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.014638458593153816,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l054-w04"
+    },
+    {
+      "id": "w_c09282cd4261328b",
+      "text": "reptiles!",
+      "start": 187.447183,
+      "end": 187.909343,
+      "phraseId": "g1-l054",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.012069657581859955,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l054-w05"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "\u2018Water, swarm with living reptiles!",
+      "wordIds": [
+        "w_0bf641f5ee828b73",
+        "w_833775f0f2f122a2",
+        "w_8df99d57d80c77d8",
+        "w_085342772980b61b",
+        "w_c09282cd4261328b"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l054-full-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l054-full-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l054-full-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.5083403331227601,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

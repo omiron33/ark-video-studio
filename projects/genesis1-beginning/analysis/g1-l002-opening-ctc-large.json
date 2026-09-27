@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 7.0,
+    "duration": 6.2,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "God brought heaven and earth into being.",
+  "approvedLyrics": "God brought heaven and earth into being.",
+  "words": [
+    {
+      "id": "w_11051c577b2ed269",
+      "text": "God",
+      "start": 9.046602,
+      "end": 9.387702,
+      "phraseId": "g1-l002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9997851990493136,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l002-w01"
+    },
+    {
+      "id": "w_66cd02642a0db1eb",
+      "text": "brought",
+      "start": 9.508091,
+      "end": 9.869256,
+      "phraseId": "g1-l002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9695651421767668,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l002-w02"
+    },
+    {
+      "id": "w_9ae19406778f86d6",
+      "text": "heaven",
+      "start": 9.949515,
+      "end": 10.290615,
+      "phraseId": "g1-l002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9643052202825056,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l002-w03"
+    },
+    {
+      "id": "w_fc05614a4029c93c",
+      "text": "and",
+      "start": 10.431068,
+      "end": 10.551456,
+      "phraseId": "g1-l002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9239632800550073,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l002-w04"
+    },
+    {
+      "id": "w_5a6eac6c5a73396a",
+      "text": "earth",
+      "start": 11.012945,
+      "end": 11.333981,
+      "phraseId": "g1-l002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9863003389787144,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l002-w05"
+    },
+    {
+      "id": "w_b2ed13014517b42c",
+      "text": "into",
+      "start": 11.594822,
+      "end": 11.875728,
+      "phraseId": "g1-l002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.993855973736413,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l002-w06"
+    },
+    {
+      "id": "w_601aeec9b1481aea",
+      "text": "being.",
+      "start": 12.056311,
+      "end": 12.457605,
+      "phraseId": "g1-l002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9732349381605844,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l002-w07"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "God brought heaven and earth into being.",
+      "wordIds": [
+        "w_11051c577b2ed269",
+        "w_66cd02642a0db1eb",
+        "w_9ae19406778f86d6",
+        "w_fc05614a4029c93c",
+        "w_5a6eac6c5a73396a",
+        "w_b2ed13014517b42c",
+        "w_601aeec9b1481aea"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l002-opening-ctc-large.json",
+  "executionEvidence": {
+    "id": "g1-l002-opening-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l002-opening-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 1.0965643753297627,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

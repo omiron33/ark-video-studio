@@ -1,0 +1,77 @@
+{
+  "shot": "land-emergence-v1",
+  "provider": "local OmiPC ComfyUI",
+  "model": "MiniMax H3 FL2VA int8 convrot",
+  "checkpoint": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+  "turboLora": "minimax_h3_turbo_v4_step600_ema_pruned_comfyui.safetensors",
+  "steps": 4,
+  "sampler": "MiniMaxH3TurboSampler",
+  "submission": {
+    "prompt_id": "841b4461-d867-4734-8e46-c108a35821ef",
+    "number": 100,
+    "node_errors": {},
+    "name": "land-emergence-v1",
+    "submittedAt": "2026-09-27T11:19:33.295937+00:00",
+    "project": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning",
+    "themeChoiceSha256": "c9637517ee90b0c9a6700e0398bb912eeffa66f22addc131bf97fc576281beac",
+    "firstImage": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/land-emergence-start.png",
+    "firstImageSha256": "fa9d4d9e99f392b5316dd5dfe5d8a53dd3a123bb01ac8c3059ae4921249c668a",
+    "lastImage": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/land-emergence-end.png",
+    "lastImageSha256": "c3aeb138af45b8dddcfd0e1c3b9ee76b7863bf9743066f871a9f99573c31e75e",
+    "promptFile": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/land-emergence-v1-motion-prompt.txt",
+    "workflow": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/land-emergence-v1-workflow.json",
+    "workflowSha256": "eccb72b4481dfc324a18b892f8a928fc5e125b45bda3e488ff48e93af44659aa",
+    "framesRequested": 172,
+    "fpsRequested": 24,
+    "seed": 2026092735,
+    "conditioning": "first_frame+last_frame",
+    "provider": "local OmiPC ComfyUI",
+    "cost": "local GPU; no paid API"
+  },
+  "promptId": "841b4461-d867-4734-8e46-c108a35821ef",
+  "renderRuntimeSeconds": 162.39,
+  "rawOutput": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/land-emergence-v1-raw.mp4",
+  "rawSha256": "1474bfda4ee8a81ad8e20ab5e7cfab8038345451e7a44cbc515739c54f3cc996",
+  "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/land-emergence-v1-motion.mp4",
+  "sha256": "d24c0689cd23fb5bbba0b22fac8812696f26450def02bf3ad5dd48998485d7d7",
+  "nativeFrames": 175,
+  "nativeFps": 24,
+  "durationSeconds": 7.291666666666667,
+  "width": 960,
+  "height": 540,
+  "audio": false,
+  "processing": "Centered crop of4px height to960x540; H264 CRF17. No retiming, interpolation, reversal or upscale.",
+  "review": {
+    "status": "accepted_as_source_clip",
+    "fullDecode": "pass",
+    "sampleRate": 6,
+    "frames": 44,
+    "sheets": [
+      "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/land-emergence-v1-review-00.jpg",
+      "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/land-emergence-v1-review-01.jpg"
+    ],
+    "limitations": "Motion is deliberately restrained and supports active foreground words or graphics. Source-clip acceptance does not certify the final composite. Chronological 6fps review does not inspect every native frame at playback speed.",
+    "reviewedAt": "2026-09-27T11:29:29.995857+00:00",
+    "observations": "Inspected all 44 chronological 6fps decoded samples on two sheets plus native first and last posters. Shallow water gradually withdraws and reveals stable basalt slabs and channels. Mountains, horizon, sky and foreground rock geometry remain consistent. No sampled jump cut, conspicuous morph or added objects. Photoreal wet texture and subdued charcoal/copper palette fit the selected direction.",
+    "acceptedForFilm": true
+  },
+  "posters": {
+    "first": {
+      "path": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/land-emergence-v1-first.jpg",
+      "sha256": "a82b2ac9304285d11fff8a4db1839a577ccf467675f9f9e60a18835ab62b91aa"
+    },
+    "last": {
+      "path": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/land-emergence-v1-last.jpg",
+      "sha256": "9b4510344d8965f44d4eb64e26699b4ba1ba937b7f4a15bd423401f6fa7bb813"
+    }
+  },
+  "finishedAt": "2026-09-27T11:24:48.834434+00:00",
+  "compositionRequirement": "Active foreground lyrics or meaningful authored graphic strokes with matching palette, masks and continuous transitions. Standalone asset acceptance does not certify composite quality.",
+  "requestedVsActualFrames": {
+    "requested": 172,
+    "actualNative": 175,
+    "difference": 3,
+    "disposition": "Actual native output preserved; no retiming or duplicated frames to force the requested duration."
+  },
+  "photosPreviewCopy": "/Users/shanefisher/Movies/Genesis1/Genesis 1 - Land Emerges.mp4"
+}

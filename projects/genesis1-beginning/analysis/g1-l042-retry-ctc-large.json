@@ -1,0 +1,230 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 146.15,
+    "duration": 8.8,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "\u2018From that height, shine on the earth!\u2019 His word took hold.",
+  "approvedLyrics": "\u2018From that height, shine on the earth!\u2019 His word took hold.",
+  "words": [
+    {
+      "id": "w_2736e3b1d287b603",
+      "text": "\u2018From",
+      "start": 146.991913,
+      "end": 147.312642,
+      "phraseId": "g1-l042",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.16710371865896892,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l042-w01"
+    },
+    {
+      "id": "w_3d027d7793d2c6b1",
+      "text": "that",
+      "start": 147.493052,
+      "end": 147.673462,
+      "phraseId": "g1-l042",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.04797043714859919,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l042-w02"
+    },
+    {
+      "id": "w_3a846c4abb73e92c",
+      "text": "height,",
+      "start": 147.833827,
+      "end": 148.615604,
+      "phraseId": "g1-l042",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.05303346814888605,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l042-w03"
+    },
+    {
+      "id": "w_47667ebcee414083",
+      "text": "shine",
+      "start": 148.816059,
+      "end": 149.457517,
+      "phraseId": "g1-l042",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.13602346664014367,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l042-w04"
+    },
+    {
+      "id": "w_776a9dfbe7b2c24e",
+      "text": "on",
+      "start": 149.57779,
+      "end": 149.617882,
+      "phraseId": "g1-l042",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.02831989084342196,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l042-w05"
+    },
+    {
+      "id": "w_4dd31025b29d8c8c",
+      "text": "the",
+      "start": 149.778246,
+      "end": 150.058884,
+      "phraseId": "g1-l042",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.04659680495134476,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l042-w06"
+    },
+    {
+      "id": "w_424ed0701e6994ad",
+      "text": "earth!\u2019",
+      "start": 150.459795,
+      "end": 151.101253,
+      "phraseId": "g1-l042",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.053479332830620584,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l042-w07"
+    },
+    {
+      "id": "w_1d4d714718b3e43b",
+      "text": "His",
+      "start": 151.261617,
+      "end": 151.321754,
+      "phraseId": "g1-l043",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.07880340586168709,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l043-w01"
+    },
+    {
+      "id": "w_1066b028c746f1b6",
+      "text": "word",
+      "start": 151.401936,
+      "end": 151.542255,
+      "phraseId": "g1-l043",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.015578528084198804,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l043-w02"
+    },
+    {
+      "id": "w_8832d9ad6148e5e4",
+      "text": "took",
+      "start": 151.562301,
+      "end": 153.967768,
+      "phraseId": "g1-l043",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.04796514494868111,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l043-w03"
+    },
+    {
+      "id": "w_feb6626b3ed40903",
+      "text": "hold.",
+      "start": 154.128132,
+      "end": 154.268451,
+      "phraseId": "g1-l043",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.034329909261945415,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l043-w04"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "\u2018From that height, shine on the earth!\u2019 His word took hold.",
+      "wordIds": [
+        "w_2736e3b1d287b603",
+        "w_3d027d7793d2c6b1",
+        "w_3a846c4abb73e92c",
+        "w_47667ebcee414083",
+        "w_776a9dfbe7b2c24e",
+        "w_4dd31025b29d8c8c",
+        "w_424ed0701e6994ad",
+        "w_1d4d714718b3e43b",
+        "w_1066b028c746f1b6",
+        "w_8832d9ad6148e5e4",
+        "w_feb6626b3ed40903"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l042-retry-ctc-large.json",
+  "executionEvidence": {
+    "id": "g1-l042-retry-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l042-retry-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 1.3433494167402387,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

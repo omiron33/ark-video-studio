@@ -1,0 +1,1 @@
+{"name":"genesis1-breath-earth","private":true,"type":"module","scripts":{"build":"node build.mjs","check":"env -u GEMINI_API_KEY npx --yes hyperframes@0.8.79 check","render":"env -u GEMINI_API_KEY npx --yes hyperframes@0.8.79 render"}}

@@ -1,0 +1,77 @@
+{
+  "shot": "vegetation-v1",
+  "provider": "local OmiPC ComfyUI",
+  "model": "MiniMax H3 FL2VA int8 convrot",
+  "checkpoint": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+  "turboLora": "minimax_h3_turbo_v4_step600_ema_pruned_comfyui.safetensors",
+  "steps": 4,
+  "sampler": "MiniMaxH3TurboSampler",
+  "submission": {
+    "prompt_id": "053ce7e2-9302-4441-9393-587643203380",
+    "number": 101,
+    "node_errors": {},
+    "name": "vegetation-v1",
+    "submittedAt": "2026-09-27T11:24:51.686179+00:00",
+    "project": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning",
+    "themeChoiceSha256": "c9637517ee90b0c9a6700e0398bb912eeffa66f22addc131bf97fc576281beac",
+    "firstImage": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/vegetation-start.png",
+    "firstImageSha256": "c77d3e49e62a5c5dbfa73b042aac8702ddc1a62365410ac061b5dd3f9bf63fb4",
+    "lastImage": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/vegetation-end.png",
+    "lastImageSha256": "a4ee0eb33616e447ba16ac5a6e22712e30a2d135dc81da892c89a93ebf8ac830",
+    "promptFile": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/vegetation-v1-motion-prompt.txt",
+    "workflow": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/vegetation-v1-workflow.json",
+    "workflowSha256": "e79a1b0e2a63e2ab42cf5d33bdaa9ae3d00ef1240de3d29a2bc5060c21d96677",
+    "framesRequested": 172,
+    "fpsRequested": 24,
+    "seed": 2026092736,
+    "conditioning": "first_frame+last_frame",
+    "provider": "local OmiPC ComfyUI",
+    "cost": "local GPU; no paid API"
+  },
+  "promptId": "053ce7e2-9302-4441-9393-587643203380",
+  "renderRuntimeSeconds": 163.327,
+  "rawOutput": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/vegetation-v1-raw.mp4",
+  "rawSha256": "4834754105dfd13aae816fa9338ffcc6f022b7e4de889f75a8e3c69cdb5988c4",
+  "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/vegetation-v1-motion.mp4",
+  "sha256": "34c360c3ea0b8f943b71cf159fc0ee02ce3412f54b5f571c5d4cc51bad342a15",
+  "nativeFrames": 175,
+  "nativeFps": 24,
+  "durationSeconds": 7.291666666666667,
+  "width": 960,
+  "height": 540,
+  "audio": false,
+  "processing": "Centered crop of4px height to960x540; H264 CRF17. No retiming, interpolation, reversal or upscale.",
+  "review": {
+    "status": "accepted_as_source_clip",
+    "fullDecode": "pass",
+    "sampleRate": 6,
+    "frames": 44,
+    "sheets": [
+      "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/vegetation-v1-review-00.jpg",
+      "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/vegetation-v1-review-01.jpg"
+    ],
+    "limitations": "Botanical growth is artistically compressed: early leaves resemble fern-like fronds before broad mature foliage. The crown extends above the frame as in the endpoint reference. No conspicuous sampled cut or detached branches. Chronological 6fps samples do not certify every native frame or the eventual authored composite.",
+    "reviewedAt": "2026-09-27T11:30:18.736093+00:00",
+    "observations": "Inspected all 44 chronological 6fps decoded samples on two sheets plus native first and last posters. A rooted plant on the right grows progressively into a substantial tree while ground cover spreads through the valley. Terrain, mountains, horizon and warm dawn lighting stay stable. There is continuous staged growth rather than a dissolve between endpoints. Broad left space remains available for active typography; muted olive and earth textures remain photoreal.",
+    "acceptedForFilm": true
+  },
+  "posters": {
+    "first": {
+      "path": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/vegetation-v1-first.jpg",
+      "sha256": "2c540dd7c56bc1c7678dce44a1b36c445f9e812c6ea38eae9d9db4c5e54e3258"
+    },
+    "last": {
+      "path": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/vegetation-v1-last.jpg",
+      "sha256": "1c97dcb80f07c0fb7c33ab3cdccf25b9a00199e46ec159952c45a0f6966bfba0"
+    }
+  },
+  "finishedAt": "2026-09-27T11:29:10.374754+00:00",
+  "compositionRequirement": "Active foreground lyrics or meaningful authored graphic strokes with matching palette, masks and continuous transitions. Standalone asset acceptance does not certify composite quality.",
+  "requestedVsActualFrames": {
+    "requested": 172,
+    "actualNative": 175,
+    "difference": 3,
+    "disposition": "Actual native output preserved; no retiming or duplicated frames to force the requested duration."
+  },
+  "photosPreviewCopy": "/Users/shanefisher/Movies/Genesis1/Genesis 1 - Life from the Earth.mp4"
+}

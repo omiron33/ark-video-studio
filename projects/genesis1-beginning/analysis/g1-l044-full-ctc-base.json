@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 154.59,
+    "duration": 3.72,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "Two great lights He fashioned:",
+  "approvedLyrics": "Two great lights He fashioned:",
+  "words": [
+    {
+      "id": "w_692efc984a923552",
+      "text": "Two",
+      "start": 155.736162,
+      "end": 155.856811,
+      "phraseId": "g1-l044",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.04868655052046646,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l044-w01"
+    },
+    {
+      "id": "w_04da614f21237f49",
+      "text": "great",
+      "start": 156.078,
+      "end": 156.258973,
+      "phraseId": "g1-l044",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.3448678651038717,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l044-w02"
+    },
+    {
+      "id": "w_8757784db0f7ecaa",
+      "text": "lights",
+      "start": 156.359514,
+      "end": 156.741568,
+      "phraseId": "g1-l044",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.4232834550463398,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l044-w03"
+    },
+    {
+      "id": "w_62035daa3e4dfa17",
+      "text": "He",
+      "start": 156.781784,
+      "end": 156.942649,
+      "phraseId": "g1-l044",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.017994217108140198,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l044-w04"
+    },
+    {
+      "id": "w_7632a43971313255",
+      "text": "fashioned:",
+      "start": 157.224162,
+      "end": 158.31,
+      "phraseId": "g1-l044",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.02717207838688224,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l044-w05"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "Two great lights He fashioned:",
+      "wordIds": [
+        "w_692efc984a923552",
+        "w_04da614f21237f49",
+        "w_8757784db0f7ecaa",
+        "w_62035daa3e4dfa17",
+        "w_7632a43971313255"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l044-full-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l044-full-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l044-full-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.4240663331001997,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

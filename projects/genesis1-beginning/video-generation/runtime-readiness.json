@@ -1,0 +1,23 @@
+{
+  "queueRunning": 0,
+  "queuePending": 0,
+  "h3NodePresent": true,
+  "gpu": "NVIDIA GeForce RTX 3080 Ti, 12288 MiB, 10155 MiB, 7 %",
+  "inputRoot": "C:\\AI\\ComfyUI-Music3\\input",
+  "outputRoot": "C:\\AI\\ComfyUI-Music3\\output",
+  "checkedAt": "2026-09-27T11:04:48.066339+00:00",
+  "host": "omipc.taild60b4e.ts.net",
+  "provider": "local ComfyUI; no paid API",
+  "checkpoint": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+  "turboLora": "minimax_h3_turbo_v4_step600_ema_pruned_comfyui.safetensors",
+  "textEncoder": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+  "steps": 4,
+  "sampler": "MiniMaxH3TurboSampler",
+  "outputNative": {
+    "width": 960,
+    "height": 544,
+    "fps": 24
+  },
+  "productionFinish": "center crop4px to960x540, silentH264; no retiming/interpolation/upscale",
+  "generationSubmittedByThisPrep": false
+}

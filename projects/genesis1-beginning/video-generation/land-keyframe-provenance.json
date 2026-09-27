@@ -1,0 +1,19 @@
+{
+  "shot": "land-emergence",
+  "inputs": [
+    {
+      "image": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/land-emergence-start.png",
+      "sha256": "fa9d4d9e99f392b5316dd5dfe5d8a53dd3a123bb01ac8c3059ae4921249c668a",
+      "provider": "GPT Image supplied by root",
+      "providerArtifact": "07963886-070c-4448-ba73-2edc84d79c83"
+    },
+    {
+      "image": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/land-emergence-end.png",
+      "sha256": "c3aeb138af45b8dddcfd0e1c3b9ee76b7863bf9743066f871a9f99573c31e75e",
+      "provider": "GPT Image supplied by root",
+      "providerArtifact": "0bdec4ec-83e0-4020-817a-753e942b1500"
+    }
+  ],
+  "inspection": "Matching fixed photoreal rock coastline and sky. First image has shallow sea around foreground basalt; final image exposes damp black seabed while water remains at the horizon. Warm amber reflections, muted charcoal surfaces, clear dark upper left for type.",
+  "status": "inputs_inspected_for_authorized_production"
+}

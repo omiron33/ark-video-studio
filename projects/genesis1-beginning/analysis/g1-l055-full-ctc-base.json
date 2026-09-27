@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 186.75,
+    "duration": 3.9,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "Winged creatures, fly above the earth",
+  "approvedLyrics": "Winged creatures, fly above the earth",
+  "words": [
+    {
+      "id": "w_429f5d8c732377c9",
+      "text": "Winged",
+      "start": 187.071649,
+      "end": 187.473711,
+      "phraseId": "g1-l055",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.02676740982396582,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l055-w01"
+    },
+    {
+      "id": "w_9fc0b7b1080f545b",
+      "text": "creatures,",
+      "start": 187.976289,
+      "end": 188.418557,
+      "phraseId": "g1-l055",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.05536134375865562,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l055-w02"
+    },
+    {
+      "id": "w_1a9d1fd40c830652",
+      "text": "fly",
+      "start": 188.579381,
+      "end": 189.021649,
+      "phraseId": "g1-l055",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.00862860430151242,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l055-w03"
+    },
+    {
+      "id": "w_e913b41d5d303156",
+      "text": "above",
+      "start": 189.102062,
+      "end": 189.443814,
+      "phraseId": "g1-l055",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.04573587756826492,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l055-w04"
+    },
+    {
+      "id": "w_d70d39f40a8d8e3e",
+      "text": "the",
+      "start": 189.504124,
+      "end": 189.624742,
+      "phraseId": "g1-l055",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.10478082114751902,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l055-w05"
+    },
+    {
+      "id": "w_11c827e9c60c68fe",
+      "text": "earth",
+      "start": 190.167526,
+      "end": 190.509278,
+      "phraseId": "g1-l055",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.03674006380197486,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l055-w06"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "Winged creatures, fly above the earth",
+      "wordIds": [
+        "w_429f5d8c732377c9",
+        "w_9fc0b7b1080f545b",
+        "w_1a9d1fd40c830652",
+        "w_e913b41d5d303156",
+        "w_d70d39f40a8d8e3e",
+        "w_11c827e9c60c68fe"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l055-full-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l055-full-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l055-full-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.7870989581570029,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

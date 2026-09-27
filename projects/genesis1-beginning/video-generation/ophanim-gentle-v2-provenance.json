@@ -1,0 +1,75 @@
+{
+  "shot": "ophanim-gentle-v2",
+  "provider": "local OmiPC ComfyUI",
+  "model": "MiniMax H3 FL2VA int8 convrot",
+  "checkpoint": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+  "turboLora": "minimax_h3_turbo_v4_step600_ema_pruned_comfyui.safetensors",
+  "steps": 4,
+  "sampler": "MiniMaxH3TurboSampler",
+  "submission": {
+    "prompt_id": "6fad0708-4ded-4a91-93b2-a9c47ebe734a",
+    "number": 97,
+    "node_errors": {},
+    "name": "ophanim-gentle-v2",
+    "submittedAt": "2026-09-27T11:10:05.670248+00:00",
+    "project": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning",
+    "themeChoiceSha256": "c9637517ee90b0c9a6700e0398bb912eeffa66f22addc131bf97fc576281beac",
+    "firstImage": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/ophanim-subdued.png",
+    "firstImageSha256": "d4f6fdca164b8ef979fe30d2d7257e50d9dab71fd347a046be3ea57d7166554c",
+    "lastImage": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/ophanim-subdued.png",
+    "lastImageSha256": "d4f6fdca164b8ef979fe30d2d7257e50d9dab71fd347a046be3ea57d7166554c",
+    "promptFile": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/ophanim-gentle-v2-motion-prompt.txt",
+    "workflow": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/ophanim-gentle-v2-workflow.json",
+    "workflowSha256": "9b7e368405b8233d405cfc12eee607f4e79217b4b94a5000242ee9ec2186b6ee",
+    "framesRequested": 124,
+    "fpsRequested": 24,
+    "seed": 2026092732,
+    "conditioning": "first_frame+last_frame",
+    "provider": "local OmiPC ComfyUI",
+    "cost": "local GPU; no paid API"
+  },
+  "promptId": "6fad0708-4ded-4a91-93b2-a9c47ebe734a",
+  "renderRuntimeSeconds": 106.16,
+  "rawOutput": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/ophanim-gentle-v2-raw.mp4",
+  "rawSha256": "4fbc285a59ba766d7d204ac8d1203dca6bf2feaa0e8afe42f4d0cdbf6f68f610",
+  "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/ophanim-gentle-v2-motion.mp4",
+  "sha256": "3a3f71e531681c7ec693a0ec0080a116f12b2461ff4504876b70ff164f23f9d8",
+  "nativeFrames": 124,
+  "nativeFps": 24,
+  "durationSeconds": 5.166666666666667,
+  "width": 960,
+  "height": 540,
+  "audio": false,
+  "processing": "Centered crop of4px height to960x540; H264 CRF17. No retiming, interpolation, reversal or upscale.",
+  "review": {
+    "status": "rejected",
+    "fullDecode": "pass",
+    "sampleRate": 6,
+    "frames": 31,
+    "sheets": [
+      "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/ophanim-gentle-v2-review-00.jpg",
+      "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/ophanim-gentle-v2-review-01.jpg"
+    ],
+    "limitations": "Chronological6fps samples are not proof of every native frame or full-speed quality.",
+    "reviewedAt": "2026-09-27T11:13:59.462156+00:00",
+    "observations": "All31chronological6fps samples and nativefirst/last posters inspected. Dual anchors bring the outer rings back at the end, but the middle still loses brightness and changes distinct code glyphs into dense etched solid bands. The source texture and stable clarity are not preserved.",
+    "blockingIssues": [
+      "Separate glyph structure not preserved",
+      "Unwanted dim middle and returning orbital detail near end"
+    ],
+    "acceptedForFilm": false,
+    "nextAttempt": "None; two-attempt bound reached. Parent will use sharp approved PNG in code-driven layers."
+  },
+  "posters": {
+    "first": {
+      "path": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/ophanim-gentle-v2-first.jpg",
+      "sha256": "8185a66971ea157280defc396fabb9174b887eddb38f0cc0c5445f8568961093"
+    },
+    "last": {
+      "path": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/ophanim-gentle-v2-last.jpg",
+      "sha256": "1d0ce45f18479fefc378097dcf8d058dd19ce6235ce32a83ea70dc12f3620eb8"
+    }
+  },
+  "finishedAt": "2026-09-27T11:12:51.672097+00:00",
+  "compositionRequirement": "Active foreground lyrics or meaningful authored graphic strokes with matching palette, masks and continuous transitions. Standalone asset acceptance does not certify composite quality."
+}

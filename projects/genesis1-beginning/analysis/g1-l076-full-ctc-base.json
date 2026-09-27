@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 280.99,
+    "duration": 3.54,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "let them rule the fish, the birds,",
+  "approvedLyrics": "let them rule the fish, the birds,",
+  "words": [
+    {
+      "id": "w_ca63e049a43578b8",
+      "text": "let",
+      "start": 281.171023,
+      "end": 281.492841,
+      "phraseId": "g1-l076",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9871577317124784,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l076-w01"
+    },
+    {
+      "id": "w_d89ef7d631185260",
+      "text": "them",
+      "start": 282.015795,
+      "end": 282.3175,
+      "phraseId": "g1-l076",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.14643260017953108,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l076-w02"
+    },
+    {
+      "id": "w_af0761086dde318d",
+      "text": "rule",
+      "start": 282.397955,
+      "end": 282.578977,
+      "phraseId": "g1-l076",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.011881027815707417,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l076-w03"
+    },
+    {
+      "id": "w_67ba65485beb64f4",
+      "text": "the",
+      "start": 282.619205,
+      "end": 282.699659,
+      "phraseId": "g1-l076",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.13048434338579515,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l076-w04"
+    },
+    {
+      "id": "w_d10c4774f3a29be1",
+      "text": "fish,",
+      "start": 282.780114,
+      "end": 283.081818,
+      "phraseId": "g1-l076",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.7483165456124329,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l076-w05"
+    },
+    {
+      "id": "w_561ea879b606911b",
+      "text": "the",
+      "start": 283.242727,
+      "end": 283.323182,
+      "phraseId": "g1-l076",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.5526140705280942,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l076-w06"
+    },
+    {
+      "id": "w_6c8866af0142c1fe",
+      "text": "birds,",
+      "start": 283.403636,
+      "end": 283.966818,
+      "phraseId": "g1-l076",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.5518135678777323,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l076-w07"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "let them rule the fish, the birds,",
+      "wordIds": [
+        "w_ca63e049a43578b8",
+        "w_d89ef7d631185260",
+        "w_af0761086dde318d",
+        "w_67ba65485beb64f4",
+        "w_d10c4774f3a29be1",
+        "w_561ea879b606911b",
+        "w_6c8866af0142c1fe"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l076-full-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l076-full-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l076-full-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 1.2878895411267877,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "status": "body-source-frozen; scoped browser integration passed",
+  "scope": "Custom body modules only; root opening, closing, generated media, final source timing and encoded full-film review are outside this result.",
+  "familyCount": 55,
+  "performedBodyPhrases": 78,
+  "maximumFamilyUse": 3,
+  "fixtureSha256": "4bda878be6da0bd89f238901e805d060ab97bee7327b4624a59c79b26ee7e4c0",
+  "sourceFiles": [
+    {
+      "path": "00-body-support.js",
+      "sha256": "5bf87d0e601c1aee7e3468f99170274be225eb02dc112dd3cf5cb970110f9af2"
+    },
+    {
+      "path": "01-divisions.js",
+      "sha256": "8c17c428f9792ee0e834f6eea2476529ccb114a8cb5184f9bb1ec1d69d64f7f1"
+    },
+    {
+      "path": "02-growth.js",
+      "sha256": "f7fe717839b5b9368503da215611a66489e65b3f420cc4416e7eceb85b2a6034"
+    },
+    {
+      "path": "03-luminaries.js",
+      "sha256": "21da726cc87ce19ec8b701da1617513d6cf5567cd10dea6a466aa934cd78f2b7"
+    },
+    {
+      "path": "04-creatures.js",
+      "sha256": "09555d722f68c4d65479e105c64b68c2dfa11f5ea8b39449bce9f5f27b1b0f65"
+    },
+    {
+      "path": "05-humankind-reprise.js",
+      "sha256": "21948028869583db6ed2e60988b69d7cce8dafc98dd65d250e13e0700256d0c7"
+    },
+    {
+      "path": "99-metadata.js",
+      "sha256": "5d3c8cd7755825268fb80e5f586c97098a7313529c586dee136c95c7f6998a5b"
+    }
+  ],
+  "check": {
+    "path": "body-check.json",
+    "sha256": "a10491615a3f4002831bec156169e2f0b49611c74ab0169df07dce5535e7ce5a",
+    "runtimeErrors": 0,
+    "runtimeWarnings": 0,
+    "layoutErrors": 0,
+    "layoutWarnings": 0,
+    "sampleCount": 78,
+    "lintWarnings": 1,
+    "lintWarningReason": "Single compiled fixture exceeds the recommended line count; production source remains split by narrative module."
+  },
+  "visualInspection": {
+    "directory": "/tmp/g1-body-snapshots",
+    "times": [
+      58.45,
+      105.52,
+      124.02,
+      146.7,
+      164.72,
+      227.68,
+      252.94,
+      279.36
+    ],
+    "assessment": "Type remains readable at selected hero holds; materially varied form, hierarchy and word action. Adjacent phrase collision at 279.36 reported to root for timing/runtime integration repair. Root runtime now clears old words at incoming phrase boundaries; final scoped check has no overlap warnings."
+  },
+  "notAcceptance": [
+    "No claim of final encoded full-film quality.",
+    "No claim of verified audio-word synchronization.",
+    "Generated footage absent from this isolated layout test."
+  ],
+  "finalFixtureSha256": "3c82de08e1a83e18e0646b2204ea6a86a15d581b96350a9b29753fe134fa1e8f",
+  "scopedFollowUp": {
+    "families": [
+      "time-scale-word-journey",
+      "domain-word-tiers",
+      "water-word-separation"
+    ],
+    "changes": [
+      "Real 1710px camera journey with completed overview for time words.",
+      "Vertical and diagonal camera routes for fish/birds and cattle/Earth/crawls.",
+      "Separate readable water/part travel lanes and semantic position for FROM."
+    ],
+    "report": "camera-run-check.json",
+    "sha256": "b869c636198902cbd9e929e4386bbc5e76e79944a25c3134cbc1818ff8a9c980",
+    "samples": 52,
+    "runtimeErrors": 0,
+    "runtimeWarnings": 0,
+    "layoutErrors": 0,
+    "layoutWarnings": 0,
+    "scope": "Exact incoming-word instants and intermediate/held positions; latest root runtime handles old-word overlaps.",
+    "intentionalOverflow": "Only the camera world is explicitly marked; its 3600×1500 bounds match the authored stations. Individual lyric spans retain ordinary layout checks.",
+    "visualEvidence": "/tmp/g1-camera-final-snapshots/contact-sheet.jpg",
+    "review": "The actual traveling views and completed overviews were inspected. A final water-only reading-order spacing correction then passed the final scoped check."
+  }
+}

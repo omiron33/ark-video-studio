@@ -1,0 +1,58 @@
+[
+  {
+    "job": "opening-whisper-small",
+    "status": "machine_estimate",
+    "words": 37,
+    "execution": {
+      "id": "opening-whisper-small",
+      "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/opening-whisper-small.json",
+      "status": "machine_estimate",
+      "seconds": 9.896219667047262,
+      "modelCacheHit": false,
+      "modelsHeld": 1
+    },
+    "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/opening-whisper-small.json"
+  },
+  {
+    "job": "opening-whisper-medium",
+    "status": "machine_estimate",
+    "words": 37,
+    "execution": {
+      "id": "opening-whisper-medium",
+      "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/opening-whisper-medium.json",
+      "status": "machine_estimate",
+      "seconds": 26.71519675012678,
+      "modelCacheHit": false,
+      "modelsHeld": 2
+    },
+    "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/opening-whisper-medium.json"
+  },
+  {
+    "job": "full-whisper-small",
+    "status": "machine_estimate",
+    "words": 479,
+    "execution": {
+      "id": "full-whisper-small",
+      "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/full-whisper-small.json",
+      "status": "machine_estimate",
+      "seconds": 41.98332874989137,
+      "modelCacheHit": true,
+      "modelsHeld": 2
+    },
+    "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/full-whisper-small.json"
+  },
+  {
+    "job": "full-whisper-medium",
+    "status": "unresolved",
+    "words": 0,
+    "execution": {
+      "id": "full-whisper-medium",
+      "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/full-whisper-medium.json",
+      "status": "unresolved",
+      "seconds": 130.17901370907202,
+      "modelCacheHit": true,
+      "modelsHeld": 2
+    },
+    "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/full-whisper-medium.json"
+  }
+]

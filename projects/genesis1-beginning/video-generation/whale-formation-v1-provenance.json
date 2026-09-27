@@ -1,0 +1,73 @@
+{
+  "shot": "whale-formation-v1",
+  "provider": "local OmiPC ComfyUI",
+  "model": "MiniMax H3 FL2VA int8 convrot",
+  "checkpoint": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+  "turboLora": "minimax_h3_turbo_v4_step600_ema_pruned_comfyui.safetensors",
+  "steps": 4,
+  "sampler": "MiniMaxH3TurboSampler",
+  "submission": {
+    "prompt_id": "84e7e455-75ec-4a46-8f79-06916a41cf39",
+    "number": 99,
+    "node_errors": {},
+    "name": "whale-formation-v1",
+    "submittedAt": "2026-09-27T11:16:12.060997+00:00",
+    "project": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning",
+    "themeChoiceSha256": "c9637517ee90b0c9a6700e0398bb912eeffa66f22addc131bf97fc576281beac",
+    "firstImage": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/whale-line-start.png",
+    "firstImageSha256": "913d30e3e67f2be94e30c59cf36dec569798af84f1cd165373f2c79cbf8f256f",
+    "lastImage": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/whale-line-end.png",
+    "lastImageSha256": "69b2f23d6fe697ca7b7e82118dfcfeb4343eff5b2aa9790d828ede65ca0c2ade",
+    "promptFile": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/whale-formation-v1-motion-prompt.txt",
+    "workflow": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/whale-formation-v1-workflow.json",
+    "workflowSha256": "429923bb7a8807adc84bd49718d434595810a08c59ac1fcbdfa2438ccc27d6e9",
+    "framesRequested": 172,
+    "fpsRequested": 24,
+    "seed": 2026092734,
+    "conditioning": "first_frame+last_frame",
+    "provider": "local OmiPC ComfyUI",
+    "cost": "local GPU; no paid API"
+  },
+  "promptId": "84e7e455-75ec-4a46-8f79-06916a41cf39",
+  "renderRuntimeSeconds": 161.074,
+  "rawOutput": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/whale-formation-v1-raw.mp4",
+  "rawSha256": "46b707a230c2b567d51538c74cc89b12b7f846ebede3e670831c3d91a1f714be",
+  "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/whale-formation-v1-motion.mp4",
+  "sha256": "be4cafe07307ad187e48bf241a43d2c1817d097b665e9b7cfdcb549829b9502c",
+  "nativeFrames": 175,
+  "nativeFps": 24,
+  "durationSeconds": 7.291666666666667,
+  "width": 960,
+  "height": 540,
+  "audio": false,
+  "processing": "Centered crop of4px height to960x540; H264 CRF17. No retiming, interpolation, reversal or upscale.",
+  "review": {
+    "status": "pending_actual_visual_inspection",
+    "fullDecode": "pass",
+    "sampleRate": 6,
+    "frames": 44,
+    "sheets": [
+      "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/whale-formation-v1-review-00.jpg",
+      "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/whale-formation-v1-review-01.jpg"
+    ],
+    "limitations": "Chronological6fps samples are not proof of every native frame or full-speed quality."
+  },
+  "posters": {
+    "first": {
+      "path": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/whale-formation-v1-first.jpg",
+      "sha256": "ea80353b894682ef57df4e4af8ba201b488bfd2a2229381beb2bfe0c09e7c892"
+    },
+    "last": {
+      "path": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/whale-formation-v1-last.jpg",
+      "sha256": "1cafdea1d03776defa9becfa20fee427c5595e1c2c009cf95e540b9ec8dd8ab4"
+    }
+  },
+  "finishedAt": "2026-09-27T11:20:49.007436+00:00",
+  "compositionRequirement": "Active foreground lyrics or meaningful authored graphic strokes with matching palette, masks and continuous transitions. Standalone asset acceptance does not certify composite quality.",
+  "requestedVsActualFrames": {
+    "requested": 172,
+    "actualNative": 175,
+    "difference": 3,
+    "disposition": "Actual native output preserved; no retiming or duplicated frames to force the requested duration."
+  }
+}

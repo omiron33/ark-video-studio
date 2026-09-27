@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 109.77,
+    "duration": 2.96,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "each true to its kind!\u2019",
+  "approvedLyrics": "each true to its kind!\u2019",
+  "words": [
+    {
+      "id": "w_0c4809f6211cac0d",
+      "text": "each",
+      "start": 109.890816,
+      "end": 110.132449,
+      "phraseId": "g1-l031",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.04735918721991343,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l031-w01"
+    },
+    {
+      "id": "w_a77521743b6d2714",
+      "text": "true",
+      "start": 110.736531,
+      "end": 111.058707,
+      "phraseId": "g1-l031",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.294951931762881,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l031-w02"
+    },
+    {
+      "id": "w_2a9122c4d2674ff2",
+      "text": "to",
+      "start": 111.179524,
+      "end": 111.30034,
+      "phraseId": "g1-l031",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.08593210827197978,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l031-w03"
+    },
+    {
+      "id": "w_70008e6f75bd6360",
+      "text": "its",
+      "start": 111.40102,
+      "end": 111.501701,
+      "phraseId": "g1-l031",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.03049906393925475,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l031-w04"
+    },
+    {
+      "id": "w_239a065b40fc6f20",
+      "text": "kind!\u2019",
+      "start": 111.642653,
+      "end": 112.266871,
+      "phraseId": "g1-l031",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.18202579374076536,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l031-w05"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "each true to its kind!\u2019",
+      "wordIds": [
+        "w_0c4809f6211cac0d",
+        "w_a77521743b6d2714",
+        "w_2a9122c4d2674ff2",
+        "w_70008e6f75bd6360",
+        "w_239a065b40fc6f20"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l031-full-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l031-full-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l031-full-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.5567654171027243,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

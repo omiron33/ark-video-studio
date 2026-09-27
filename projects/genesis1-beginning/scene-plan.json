@@ -1,0 +1,1758 @@
+{
+  "version": 1,
+  "status": "authored-review-pending",
+  "theme": "Breath & Earth",
+  "scenes": [
+    {
+      "id": "g1-l001",
+      "family": "before-the-first-count",
+      "direction": {
+        "inspiration": {
+          "references": [
+            "external-microtype-image-world",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Story and words share physical material while active text stays clear.",
+          "adaptation": "before-the-first-count"
+        }
+      }
+    },
+    {
+      "id": "g1-l002",
+      "family": "heaven-earth-into-being",
+      "direction": {
+        "inspiration": {
+          "references": [
+            "external-microtype-image-world",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Story and words share physical material while active text stays clear.",
+          "adaptation": "heaven-earth-into-being"
+        }
+      }
+    },
+    {
+      "id": "g1-l003",
+      "family": "earth-unfinished",
+      "direction": {
+        "inspiration": {
+          "references": [
+            "external-microtype-image-world",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Story and words share physical material while active text stays clear.",
+          "adaptation": "earth-unfinished"
+        }
+      }
+    },
+    {
+      "id": "g1-l004",
+      "family": "blackness-over-deep",
+      "direction": {
+        "inspiration": {
+          "references": [
+            "external-microtype-image-world",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Story and words share physical material while active text stays clear.",
+          "adaptation": "blackness-over-deep"
+        }
+      }
+    },
+    {
+      "id": "g1-l005",
+      "family": "spirit-over-waters",
+      "direction": {
+        "inspiration": {
+          "references": [
+            "external-microtype-image-world",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Story and words share physical material while active text stays clear.",
+          "adaptation": "spirit-over-waters"
+        }
+      }
+    },
+    {
+      "id": "g1-l006",
+      "family": "command-light-cleavage",
+      "direction": {
+        "inspiration": {
+          "references": [
+            "external-microtype-image-world",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Story and words share physical material while active text stays clear.",
+          "adaptation": "command-light-cleavage"
+        }
+      }
+    },
+    {
+      "id": "g1-l007",
+      "family": "brightness-answer",
+      "direction": {
+        "inspiration": {
+          "references": [
+            "external-microtype-image-world",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Story and words share physical material while active text stays clear.",
+          "adaptation": "brightness-answer"
+        }
+      }
+    },
+    {
+      "id": "g1-l008",
+      "sourcePhraseId": "g1-l008",
+      "family": "good-afterglow",
+      "text": "He looked on the light: good.",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "GOOD finds the center of a decelerating enclosing disc."
+        },
+        "wordAction": "GOOD finds the center of a decelerating enclosing disc.",
+        "distinctMechanic": "GOOD finds the center of a decelerating enclosing disc."
+      }
+    },
+    {
+      "id": "g1-l009",
+      "sourcePhraseId": "g1-l009",
+      "family": "word-incision",
+      "text": "He cut a clear line between it and darkness.",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "The two sentence halves move apart around an incised interval."
+        },
+        "wordAction": "The two sentence halves move apart around an incised interval.",
+        "distinctMechanic": "The two sentence halves move apart around an incised interval."
+      }
+    },
+    {
+      "id": "g1-l010",
+      "sourcePhraseId": "g1-l010",
+      "family": "day-horizon-rise",
+      "text": "Day was the name He gave the light;",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "DAY rises while its naming sentence follows a broad lower tangent."
+        },
+        "wordAction": "DAY rises while its naming sentence follows a broad lower tangent.",
+        "distinctMechanic": "DAY rises while its naming sentence follows a broad lower tangent."
+      }
+    },
+    {
+      "id": "g1-l011",
+      "sourcePhraseId": "g1-l011",
+      "family": "night-crescent-fold",
+      "text": "Night, the name He gave the dark.",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "NIGHT lowers beside an asymmetrical crescent as the sentence turns around it."
+        },
+        "wordAction": "NIGHT lowers beside an asymmetrical crescent as the sentence turns around it.",
+        "distinctMechanic": "NIGHT lowers beside an asymmetrical crescent as the sentence turns around it."
+      }
+    },
+    {
+      "id": "g1-l012",
+      "sourcePhraseId": "g1-l012",
+      "family": "first-day-shutter",
+      "text": "Dusk. Dawn. The first day.",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "Two large words cross shallow opposing planes before the ordinal resolves."
+        },
+        "wordAction": "Two large words cross shallow opposing planes before the ordinal resolves.",
+        "distinctMechanic": "Two large words cross shallow opposing planes before the ordinal resolves."
+      }
+    },
+    {
+      "id": "g1-l013",
+      "sourcePhraseId": "g1-l013",
+      "family": "firmament-letter-span",
+      "text": "God spoke: \u2018A firmament amid the waters!",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "FIRMAMENT lengthens into a beam and the remaining words occupy its open span."
+        },
+        "wordAction": "FIRMAMENT lengthens into a beam and the remaining words occupy its open span.",
+        "distinctMechanic": "FIRMAMENT lengthens into a beam and the remaining words occupy its open span."
+      }
+    },
+    {
+      "id": "g1-l014",
+      "sourcePhraseId": "g1-l014",
+      "family": "water-word-separation",
+      "text": "Let water part from water!\u2019",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "The actual two WATER words depart vertically from PART into readable opposed levels."
+        },
+        "wordAction": "The actual two WATER words depart vertically from PART into readable opposed levels.",
+        "distinctMechanic": "The actual two WATER words depart vertically from PART into readable opposed levels."
+      }
+    },
+    {
+      "id": "g1-l015",
+      "sourcePhraseId": "g1-l015",
+      "family": "hold-typographic-clamp",
+      "text": "His word took hold.",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "HOLD joins two opposing brackets; other words remain suspended inside their clearance."
+        },
+        "wordAction": "HOLD joins two opposing brackets; other words remain suspended inside their clearance.",
+        "distinctMechanic": "HOLD joins two opposing brackets; other words remain suspended inside their clearance."
+      }
+    },
+    {
+      "id": "g1-l016",
+      "sourcePhraseId": "g1-l016",
+      "family": "raised-span-hinge",
+      "text": "He raised that mighty span;",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "The two final words rise together while earlier words retain a low pivot."
+        },
+        "wordAction": "The two final words rise together while earlier words retain a low pivot.",
+        "distinctMechanic": "The two final words rise together while earlier words retain a low pivot."
+      }
+    },
+    {
+      "id": "g1-l017",
+      "sourcePhraseId": "g1-l017",
+      "family": "flood-level-countermotion",
+      "text": "flood beneath it,",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "The location word pulls the complete short phrase toward its physical level."
+        },
+        "wordAction": "The location word pulls the complete short phrase toward its physical level.",
+        "distinctMechanic": "The location word pulls the complete short phrase toward its physical level."
+      }
+    },
+    {
+      "id": "g1-l018",
+      "sourcePhraseId": "g1-l018",
+      "family": "flood-level-countermotion",
+      "text": "flood above it.",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "The location word pulls the complete short phrase toward its physical level."
+        },
+        "wordAction": "The location word pulls the complete short phrase toward its physical level.",
+        "distinctMechanic": "The location word pulls the complete short phrase toward its physical level."
+      }
+    },
+    {
+      "id": "g1-l019",
+      "sourcePhraseId": "g1-l019",
+      "family": "heaven-vault-resolution",
+      "text": "He called the firmament Heaven.",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "HEAVEN climbs into a high curved word span; GOOD rests centrally when the shorter verdict arrives."
+        },
+        "wordAction": "HEAVEN climbs into a high curved word span; GOOD rests centrally when the shorter verdict arrives.",
+        "distinctMechanic": "HEAVEN climbs into a high curved word span; GOOD rests centrally when the shorter verdict arrives."
+      }
+    },
+    {
+      "id": "g1-l020",
+      "sourcePhraseId": "g1-l020",
+      "family": "heaven-vault-resolution",
+      "text": "He looked on it: good.",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "HEAVEN climbs into a high curved word span; GOOD rests centrally when the shorter verdict arrives."
+        },
+        "wordAction": "HEAVEN climbs into a high curved word span; GOOD rests centrally when the shorter verdict arrives.",
+        "distinctMechanic": "HEAVEN climbs into a high curved word span; GOOD rests centrally when the shorter verdict arrives."
+      }
+    },
+    {
+      "id": "g1-l021",
+      "sourcePhraseId": "g1-l021",
+      "family": "second-day-book-fold",
+      "text": "Dusk. Dawn. The second day.",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "DUSK and DAWN open from two hinged word planes into the second-day reading field."
+        },
+        "wordAction": "DUSK and DAWN open from two hinged word planes into the second-day reading field.",
+        "distinctMechanic": "DUSK and DAWN open from two hinged word planes into the second-day reading field."
+      }
+    },
+    {
+      "id": "g1-l022",
+      "sourcePhraseId": "g1-l022",
+      "family": "waters-confluence",
+      "text": "\u2018Waters below Heaven, run to one place;",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "The sentence follows converging diagonals toward the emphasized ONE PLACE words."
+        },
+        "wordAction": "The sentence follows converging diagonals toward the emphasized ONE PLACE words.",
+        "distinctMechanic": "The sentence follows converging diagonals toward the emphasized ONE PLACE words."
+      }
+    },
+    {
+      "id": "g1-l023",
+      "sourcePhraseId": "g1-l023",
+      "family": "ground-emergence",
+      "text": "let dry ground show!\u2019",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "GROUND or LAND lifts above separating water planes while the surrounding sentence keeps its route."
+        },
+        "wordAction": "GROUND or LAND lifts above separating water planes while the surrounding sentence keeps its route.",
+        "distinctMechanic": "GROUND or LAND lifts above separating water planes while the surrounding sentence keeps its route."
+      }
+    },
+    {
+      "id": "g1-l024",
+      "sourcePhraseId": "g1-l024",
+      "family": "ground-emergence",
+      "text": "The waters gathered. Land came clear.",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "GROUND or LAND lifts above separating water planes while the surrounding sentence keeps its route."
+        },
+        "wordAction": "GROUND or LAND lifts above separating water planes while the surrounding sentence keeps its route.",
+        "distinctMechanic": "GROUND or LAND lifts above separating water planes while the surrounding sentence keeps its route."
+      }
+    },
+    {
+      "id": "g1-l025",
+      "sourcePhraseId": "g1-l025",
+      "family": "earth-name-foundation",
+      "text": "He named the dry ground Earth,",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "EARTH becomes a solid lower foundation receiving the naming phrase."
+        },
+        "wordAction": "EARTH becomes a solid lower foundation receiving the naming phrase.",
+        "distinctMechanic": "EARTH becomes a solid lower foundation receiving the naming phrase."
+      }
+    },
+    {
+      "id": "g1-l026",
+      "sourcePhraseId": "g1-l026",
+      "family": "seas-basin-wrap",
+      "text": "the gathered waters Seas.",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "SEAS descends into an open U contour; the following GOOD balances above its rim."
+        },
+        "wordAction": "SEAS descends into an open U contour; the following GOOD balances above its rim.",
+        "distinctMechanic": "SEAS descends into an open U contour; the following GOOD balances above its rim."
+      }
+    },
+    {
+      "id": "g1-l027",
+      "sourcePhraseId": "g1-l027",
+      "family": "seas-basin-wrap",
+      "text": "He looked on them: good.",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "SEAS descends into an open U contour; the following GOOD balances above its rim."
+        },
+        "wordAction": "SEAS descends into an open U contour; the following GOOD balances above its rim.",
+        "distinctMechanic": "SEAS descends into an open U contour; the following GOOD balances above its rim."
+      }
+    },
+    {
+      "id": "g1-l028",
+      "sourcePhraseId": "g1-l028",
+      "family": "seed-grass-sprouting",
+      "text": "\u2018Ground, send up seed-bearing grass",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "Successive words rise from separate soil slots; the kind phrase locks their root spacing."
+        },
+        "wordAction": "Successive words rise from separate soil slots; the kind phrase locks their root spacing.",
+        "distinctMechanic": "Successive words rise from separate soil slots; the kind phrase locks their root spacing."
+      }
+    },
+    {
+      "id": "g1-l029",
+      "sourcePhraseId": "g1-l029",
+      "family": "seed-grass-sprouting",
+      "text": "in kind and likeness!",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "Successive words rise from separate soil slots; the kind phrase locks their root spacing."
+        },
+        "wordAction": "Successive words rise from separate soil slots; the kind phrase locks their root spacing.",
+        "distinctMechanic": "Successive words rise from separate soil slots; the kind phrase locks their root spacing."
+      }
+    },
+    {
+      "id": "g1-l030",
+      "sourcePhraseId": "g1-l030",
+      "family": "fruit-seed-nesting",
+      "text": "Trees, bear fruit with seed within,",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "FRUIT occupies a broad bowl while SEED nests in its open center; kind resolves to a sealed root."
+        },
+        "wordAction": "FRUIT occupies a broad bowl while SEED nests in its open center; kind resolves to a sealed root.",
+        "distinctMechanic": "FRUIT occupies a broad bowl while SEED nests in its open center; kind resolves to a sealed root."
+      }
+    },
+    {
+      "id": "g1-l031",
+      "sourcePhraseId": "g1-l031",
+      "family": "fruit-seed-nesting",
+      "text": "each true to its kind!\u2019",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "FRUIT occupies a broad bowl while SEED nests in its open center; kind resolves to a sealed root."
+        },
+        "wordAction": "FRUIT occupies a broad bowl while SEED nests in its open center; kind resolves to a sealed root.",
+        "distinctMechanic": "FRUIT occupies a broad bowl while SEED nests in its open center; kind resolves to a sealed root."
+      }
+    },
+    {
+      "id": "g1-l032",
+      "sourcePhraseId": "g1-l032",
+      "family": "root-lock-green-upwelling",
+      "text": "His word took hold.",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "HOLD fastens into a root joint; GREEN rises against an immovable SOIL."
+        },
+        "wordAction": "HOLD fastens into a root joint; GREEN rises against an immovable SOIL.",
+        "distinctMechanic": "HOLD fastens into a root joint; GREEN rises against an immovable SOIL."
+      }
+    },
+    {
+      "id": "g1-l033",
+      "sourcePhraseId": "g1-l033",
+      "family": "root-lock-green-upwelling",
+      "text": "Green surged from the soil:",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "HOLD fastens into a root joint; GREEN rises against an immovable SOIL."
+        },
+        "wordAction": "HOLD fastens into a root joint; GREEN rises against an immovable SOIL.",
+        "distinctMechanic": "HOLD fastens into a root joint; GREEN rises against an immovable SOIL."
+      }
+    },
+    {
+      "id": "g1-l034",
+      "sourcePhraseId": "g1-l034",
+      "family": "grass-typographic-reeds",
+      "text": "grass with seed in its kind and likeness;",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "A tall GRASS leads two alternating-height phrase banks, then their baselines converge."
+        },
+        "wordAction": "A tall GRASS leads two alternating-height phrase banks, then their baselines converge.",
+        "distinctMechanic": "A tall GRASS leads two alternating-height phrase banks, then their baselines converge."
+      }
+    },
+    {
+      "id": "g1-l035",
+      "sourcePhraseId": "g1-l035",
+      "family": "fruit-word-envelope",
+      "text": "fruit wrapped around its seed,",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "FRUIT bends slightly into an envelope; SEED remains upright in a second, lower reading chamber."
+        },
+        "wordAction": "FRUIT bends slightly into an envelope; SEED remains upright in a second, lower reading chamber.",
+        "distinctMechanic": "FRUIT bends slightly into an envelope; SEED remains upright in a second, lower reading chamber."
+      }
+    },
+    {
+      "id": "g1-l036",
+      "sourcePhraseId": "g1-l036",
+      "family": "tree-word-branching",
+      "text": "tree by tree, kind by kind.",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "The two TREE words occupy successive branch levels; the two KIND words grow into a parallel crown."
+        },
+        "wordAction": "The two TREE words occupy successive branch levels; the two KIND words grow into a parallel crown.",
+        "distinctMechanic": "The two TREE words occupy successive branch levels; the two KIND words grow into a parallel crown."
+      }
+    },
+    {
+      "id": "g1-l037",
+      "sourcePhraseId": "g1-l037",
+      "family": "third-day-canopy-turn",
+      "text": "He looked on it: good.",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "GOOD rests under a deep canopy; DUSK and DAWN reveal the dark and lit sides of a broad circular turn."
+        },
+        "wordAction": "GOOD rests under a deep canopy; DUSK and DAWN reveal the dark and lit sides of a broad circular turn.",
+        "distinctMechanic": "GOOD rests under a deep canopy; DUSK and DAWN reveal the dark and lit sides of a broad circular turn."
+      }
+    },
+    {
+      "id": "g1-l038",
+      "sourcePhraseId": "g1-l038",
+      "family": "third-day-canopy-turn",
+      "text": "Dusk. Dawn. The third day.",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "GOOD rests under a deep canopy; DUSK and DAWN reveal the dark and lit sides of a broad circular turn."
+        },
+        "wordAction": "GOOD rests under a deep canopy; DUSK and DAWN reveal the dark and lit sides of a broad circular turn.",
+        "distinctMechanic": "GOOD rests under a deep canopy; DUSK and DAWN reveal the dark and lit sides of a broad circular turn."
+      }
+    },
+    {
+      "id": "g1-l039",
+      "sourcePhraseId": "g1-l039",
+      "family": "lights-suspended-points",
+      "text": "\u2018Lights across Heaven\u2019s firmament!",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "LIGHTS hangs from a broad arc; the remaining phrase descends through two widely separated hanging points."
+        },
+        "wordAction": "LIGHTS hangs from a broad arc; the remaining phrase descends through two widely separated hanging points.",
+        "distinctMechanic": "LIGHTS hangs from a broad arc; the remaining phrase descends through two widely separated hanging points."
+      }
+    },
+    {
+      "id": "g1-l040",
+      "sourcePhraseId": "g1-l040",
+      "family": "day-night-counterweight",
+      "text": "Divide day from night;",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "DIVIDE is a vertical fulcrum; DAY rises as NIGHT descends on an unequal diagonal."
+        },
+        "wordAction": "DIVIDE is a vertical fulcrum; DAY rises as NIGHT descends on an unequal diagonal.",
+        "distinctMechanic": "DIVIDE is a vertical fulcrum; DAY rises as NIGHT descends on an unequal diagonal."
+      }
+    },
+    {
+      "id": "g1-l041",
+      "sourcePhraseId": "g1-l041",
+      "family": "time-scale-word-journey",
+      "text": "mark signs, seasons, days and years!\u2019",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "SIGNS, SEASONS, DAYS and YEARS occupy a widening stepped route while the camera eases outward."
+        },
+        "wordAction": "SIGNS, SEASONS, DAYS and YEARS occupy a widening stepped route while the camera eases outward.",
+        "distinctMechanic": "SIGNS, SEASONS, DAYS and YEARS occupy a widening stepped route while the camera eases outward."
+      }
+    },
+    {
+      "id": "g1-l042",
+      "sourcePhraseId": "g1-l042",
+      "family": "shine-downward-cascade",
+      "text": "\u2018From that height, shine on the earth!\u2019",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "SHINE advances down a large diagonal toward EARTH; the next command closes the ray into a grounded joint."
+        },
+        "wordAction": "SHINE advances down a large diagonal toward EARTH; the next command closes the ray into a grounded joint.",
+        "distinctMechanic": "SHINE advances down a large diagonal toward EARTH; the next command closes the ray into a grounded joint."
+      }
+    },
+    {
+      "id": "g1-l043",
+      "sourcePhraseId": "g1-l043",
+      "family": "shine-downward-cascade",
+      "text": "His word took hold.",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "SHINE advances down a large diagonal toward EARTH; the next command closes the ray into a grounded joint."
+        },
+        "wordAction": "SHINE advances down a large diagonal toward EARTH; the next command closes the ray into a grounded joint.",
+        "distinctMechanic": "SHINE advances down a large diagonal toward EARTH; the next command closes the ray into a grounded joint."
+      }
+    },
+    {
+      "id": "g1-l044",
+      "sourcePhraseId": "g1-l044",
+      "family": "paired-luminary-scales",
+      "text": "Two great lights He fashioned:",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "TWO introduces paired orbits, then GREATER and LESSER take different diameter word fields without shrinking the reading type."
+        },
+        "wordAction": "TWO introduces paired orbits, then GREATER and LESSER take different diameter word fields without shrinking the reading type.",
+        "distinctMechanic": "TWO introduces paired orbits, then GREATER and LESSER take different diameter word fields without shrinking the reading type."
+      }
+    },
+    {
+      "id": "g1-l045",
+      "sourcePhraseId": "g1-l045",
+      "family": "paired-luminary-scales",
+      "text": "the greater to command the day,",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "TWO introduces paired orbits, then GREATER and LESSER take different diameter word fields without shrinking the reading type."
+        },
+        "wordAction": "TWO introduces paired orbits, then GREATER and LESSER take different diameter word fields without shrinking the reading type.",
+        "distinctMechanic": "TWO introduces paired orbits, then GREATER and LESSER take different diameter word fields without shrinking the reading type."
+      }
+    },
+    {
+      "id": "g1-l046",
+      "sourcePhraseId": "g1-l046",
+      "family": "paired-luminary-scales",
+      "text": "the lesser to command the night.",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "TWO introduces paired orbits, then GREATER and LESSER take different diameter word fields without shrinking the reading type."
+        },
+        "wordAction": "TWO introduces paired orbits, then GREATER and LESSER take different diameter word fields without shrinking the reading type.",
+        "distinctMechanic": "TWO introduces paired orbits, then GREATER and LESSER take different diameter word fields without shrinking the reading type."
+      }
+    },
+    {
+      "id": "g1-l047",
+      "sourcePhraseId": "g1-l047",
+      "family": "star-letter-constellation",
+      "text": "He made the stars as well.",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "STARS separates its large letters into a constellation, then returns to a complete word while the supporting phrase stays still."
+        },
+        "wordAction": "STARS separates its large letters into a constellation, then returns to a complete word while the supporting phrase stays still.",
+        "distinctMechanic": "STARS separates its large letters into a constellation, then returns to a complete word while the supporting phrase stays still."
+      }
+    },
+    {
+      "id": "g1-l048",
+      "sourcePhraseId": "g1-l048",
+      "family": "heaven-to-earth-rays",
+      "text": "He set them in Heaven\u2019s span",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "The first phrase hangs on an upper rail; the next phrase descends in three broad angled reading steps."
+        },
+        "wordAction": "The first phrase hangs on an upper rail; the next phrase descends in three broad angled reading steps.",
+        "distinctMechanic": "The first phrase hangs on an upper rail; the next phrase descends in three broad angled reading steps."
+      }
+    },
+    {
+      "id": "g1-l049",
+      "sourcePhraseId": "g1-l049",
+      "family": "heaven-to-earth-rays",
+      "text": "to send their light across the earth,",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "The first phrase hangs on an upper rail; the next phrase descends in three broad angled reading steps."
+        },
+        "wordAction": "The first phrase hangs on an upper rail; the next phrase descends in three broad angled reading steps.",
+        "distinctMechanic": "The first phrase hangs on an upper rail; the next phrase descends in three broad angled reading steps."
+      }
+    },
+    {
+      "id": "g1-l050",
+      "sourcePhraseId": "g1-l050",
+      "family": "bright-dark-gates",
+      "text": "to rule night and day,",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "NIGHT and DAY cross on parallel lanes; BRIGHT and DARK are held apart by two heavy gates."
+        },
+        "wordAction": "NIGHT and DAY cross on parallel lanes; BRIGHT and DARK are held apart by two heavy gates.",
+        "distinctMechanic": "NIGHT and DAY cross on parallel lanes; BRIGHT and DARK are held apart by two heavy gates."
+      }
+    },
+    {
+      "id": "g1-l051",
+      "sourcePhraseId": "g1-l051",
+      "family": "bright-dark-gates",
+      "text": "to keep the bright apart from dark.",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "NIGHT and DAY cross on parallel lanes; BRIGHT and DARK are held apart by two heavy gates."
+        },
+        "wordAction": "NIGHT and DAY cross on parallel lanes; BRIGHT and DARK are held apart by two heavy gates.",
+        "distinctMechanic": "NIGHT and DAY cross on parallel lanes; BRIGHT and DARK are held apart by two heavy gates."
+      }
+    },
+    {
+      "id": "g1-l052",
+      "sourcePhraseId": "g1-l052",
+      "family": "fourth-day-orbital-roll",
+      "text": "He looked on them: good.",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "GOOD becomes the center of an open ellipse; DUSK and DAWN travel along its broad near and far sides."
+        },
+        "wordAction": "GOOD becomes the center of an open ellipse; DUSK and DAWN travel along its broad near and far sides.",
+        "distinctMechanic": "GOOD becomes the center of an open ellipse; DUSK and DAWN travel along its broad near and far sides."
+      }
+    },
+    {
+      "id": "g1-l053",
+      "sourcePhraseId": "g1-l053",
+      "family": "fourth-day-orbital-roll",
+      "text": "Dusk. Dawn. The fourth day.",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "GOOD becomes the center of an open ellipse; DUSK and DAWN travel along its broad near and far sides."
+        },
+        "wordAction": "GOOD becomes the center of an open ellipse; DUSK and DAWN travel along its broad near and far sides.",
+        "distinctMechanic": "GOOD becomes the center of an open ellipse; DUSK and DAWN travel along its broad near and far sides."
+      }
+    },
+    {
+      "id": "g1-l054",
+      "sourcePhraseId": "g1-l054",
+      "family": "living-water-wake",
+      "text": "\u2018Water, swarm with living reptiles!",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "SWARM stretches the phrase into a widening wake; LIVING REPTILES holds on a broad lower bank."
+        },
+        "wordAction": "SWARM stretches the phrase into a widening wake; LIVING REPTILES holds on a broad lower bank.",
+        "distinctMechanic": "SWARM stretches the phrase into a widening wake; LIVING REPTILES holds on a broad lower bank."
+      }
+    },
+    {
+      "id": "g1-l055",
+      "sourcePhraseId": "g1-l055",
+      "family": "winged-word-updraft",
+      "text": "Winged creatures, fly above the earth",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "WINGED CREATURES opens into a rising plane led by FLY; the continuation resolves into a high vault."
+        },
+        "wordAction": "WINGED CREATURES opens into a rising plane led by FLY; the continuation resolves into a high vault.",
+        "distinctMechanic": "WINGED CREATURES opens into a rising plane led by FLY; the continuation resolves into a high vault."
+      }
+    },
+    {
+      "id": "g1-l056",
+      "sourcePhraseId": "g1-l056",
+      "family": "winged-word-updraft",
+      "text": "across Heaven\u2019s firmament!\u2019",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "WINGED CREATURES opens into a rising plane led by FLY; the continuation resolves into a high vault."
+        },
+        "wordAction": "WINGED CREATURES opens into a rising plane led by FLY; the continuation resolves into a high vault.",
+        "distinctMechanic": "WINGED CREATURES opens into a rising plane led by FLY; the continuation resolves into a high vault."
+      }
+    },
+    {
+      "id": "g1-l057",
+      "sourcePhraseId": "g1-l057",
+      "family": "whale-word-displacement",
+      "text": "His word took hold.",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "The command lowers the waterline; GREAT WHALES moves as one massive plane while the wake rises around it."
+        },
+        "wordAction": "The command lowers the waterline; GREAT WHALES moves as one massive plane while the wake rises around it.",
+        "distinctMechanic": "The command lowers the waterline; GREAT WHALES moves as one massive plane while the wake rises around it."
+      }
+    },
+    {
+      "id": "g1-l058",
+      "sourcePhraseId": "g1-l058",
+      "family": "whale-word-displacement",
+      "text": "God made the great whales,",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "The command lowers the waterline; GREAT WHALES moves as one massive plane while the wake rises around it."
+        },
+        "wordAction": "The command lowers the waterline; GREAT WHALES moves as one massive plane while the wake rises around it.",
+        "distinctMechanic": "The command lowers the waterline; GREAT WHALES moves as one massive plane while the wake rises around it."
+      }
+    },
+    {
+      "id": "g1-l059",
+      "sourcePhraseId": "g1-l059",
+      "family": "reptile-winged-stroke-change",
+      "text": "every living water-reptile by kind,",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "WATER-REPTILE follows a low articulated line; WINGED CREATURE rises from its center on the next phrase."
+        },
+        "wordAction": "WATER-REPTILE follows a low articulated line; WINGED CREATURE rises from its center on the next phrase.",
+        "distinctMechanic": "WATER-REPTILE follows a low articulated line; WINGED CREATURE rises from its center on the next phrase."
+      }
+    },
+    {
+      "id": "g1-l060",
+      "sourcePhraseId": "g1-l060",
+      "family": "reptile-winged-stroke-change",
+      "text": "and every winged creature by kind.",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "WATER-REPTILE follows a low articulated line; WINGED CREATURE rises from its center on the next phrase."
+        },
+        "wordAction": "WATER-REPTILE follows a low articulated line; WINGED CREATURE rises from its center on the next phrase.",
+        "distinctMechanic": "WATER-REPTILE follows a low articulated line; WINGED CREATURE rises from its center on the next phrase."
+      }
+    },
+    {
+      "id": "g1-l061",
+      "sourcePhraseId": "g1-l061",
+      "family": "blessing-word-resonance",
+      "text": "He looked on them: good.",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "GOOD rests at the center; BLESSING, RANG, OUT open into three distinct resonance stations."
+        },
+        "wordAction": "GOOD rests at the center; BLESSING, RANG, OUT open into three distinct resonance stations.",
+        "distinctMechanic": "GOOD rests at the center; BLESSING, RANG, OUT open into three distinct resonance stations."
+      }
+    },
+    {
+      "id": "g1-l062",
+      "sourcePhraseId": "g1-l062",
+      "family": "blessing-word-resonance",
+      "text": "His blessing rang out:",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "GOOD rests at the center; BLESSING, RANG, OUT open into three distinct resonance stations."
+        },
+        "wordAction": "GOOD rests at the center; BLESSING, RANG, OUT open into three distinct resonance stations.",
+        "distinctMechanic": "GOOD rests at the center; BLESSING, RANG, OUT open into three distinct resonance stations."
+      }
+    },
+    {
+      "id": "g1-l063",
+      "sourcePhraseId": "g1-l063",
+      "family": "population-expansion",
+      "text": "\u2018Increase! Multiply! Fill the seas!",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "INCREASE and MULTIPLY expand along separate radial axes; FILL resolves across a wider bank."
+        },
+        "wordAction": "INCREASE and MULTIPLY expand along separate radial axes; FILL resolves across a wider bank.",
+        "distinctMechanic": "INCREASE and MULTIPLY expand along separate radial axes; FILL resolves across a wider bank."
+      }
+    },
+    {
+      "id": "g1-l064",
+      "sourcePhraseId": "g1-l064",
+      "family": "population-expansion",
+      "text": "Let the winged multiply on earth!\u2019",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "INCREASE and MULTIPLY expand along separate radial axes; FILL resolves across a wider bank."
+        },
+        "wordAction": "INCREASE and MULTIPLY expand along separate radial axes; FILL resolves across a wider bank.",
+        "distinctMechanic": "INCREASE and MULTIPLY expand along separate radial axes; FILL resolves across a wider bank."
+      }
+    },
+    {
+      "id": "g1-l065",
+      "sourcePhraseId": "g1-l065",
+      "family": "fifth-day-tidal-crossover",
+      "text": "Dusk. Dawn. The fifth day.",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "DUSK and DAWN occupy crossing wave heights, with the ordinal held safely between them."
+        },
+        "wordAction": "DUSK and DAWN occupy crossing wave heights, with the ordinal held safely between them.",
+        "distinctMechanic": "DUSK and DAWN occupy crossing wave heights, with the ordinal held safely between them."
+      }
+    },
+    {
+      "id": "g1-l066",
+      "sourcePhraseId": "g1-l066",
+      "family": "earth-word-aperture",
+      "text": "\u2018Earth, bring out living kinds:",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "EARTH opens a low gate; BRING OUT and LIVING KINDS advance through the space it establishes."
+        },
+        "wordAction": "EARTH opens a low gate; BRING OUT and LIVING KINDS advance through the space it establishes.",
+        "distinctMechanic": "EARTH opens a low gate; BRING OUT and LIVING KINDS advance through the space it establishes."
+      }
+    },
+    {
+      "id": "g1-l067",
+      "sourcePhraseId": "g1-l067",
+      "family": "footfall-and-ground-crawl",
+      "text": "four-footed beasts, crawling reptiles,",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "FOUR-FOOTED BEASTS lands on four heavy contacts; CRAWLING REPTILES takes a separate lower articulated track."
+        },
+        "wordAction": "FOUR-FOOTED BEASTS lands on four heavy contacts; CRAWLING REPTILES takes a separate lower articulated track.",
+        "distinctMechanic": "FOUR-FOOTED BEASTS lands on four heavy contacts; CRAWLING REPTILES takes a separate lower articulated track."
+      }
+    },
+    {
+      "id": "g1-l068",
+      "sourcePhraseId": "g1-l068",
+      "family": "wild-kind-breakout",
+      "text": "wild beasts, each after its kind!\u2019",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "WILD BEASTS spreads away from a narrow origin; the command clamps the resulting field into place."
+        },
+        "wordAction": "WILD BEASTS spreads away from a narrow origin; the command clamps the resulting field into place.",
+        "distinctMechanic": "WILD BEASTS spreads away from a narrow origin; the command clamps the resulting field into place."
+      }
+    },
+    {
+      "id": "g1-l069",
+      "sourcePhraseId": "g1-l069",
+      "family": "wild-kind-breakout",
+      "text": "His word took hold.",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "WILD BEASTS spreads away from a narrow origin; the command clamps the resulting field into place."
+        },
+        "wordAction": "WILD BEASTS spreads away from a narrow origin; the command clamps the resulting field into place.",
+        "distinctMechanic": "WILD BEASTS spreads away from a narrow origin; the command clamps the resulting field into place."
+      }
+    },
+    {
+      "id": "g1-l070",
+      "sourcePhraseId": "g1-l070",
+      "family": "living-kind-branch-map",
+      "text": "He fashioned wild beasts, cattle,",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "BEASTS, CATTLE and REPTILES branch from a shared ground path; KIND closes its junction."
+        },
+        "wordAction": "BEASTS, CATTLE and REPTILES branch from a shared ground path; KIND closes its junction.",
+        "distinctMechanic": "BEASTS, CATTLE and REPTILES branch from a shared ground path; KIND closes its junction."
+      }
+    },
+    {
+      "id": "g1-l071",
+      "sourcePhraseId": "g1-l071",
+      "family": "living-kind-branch-map",
+      "text": "and the reptiles of the ground,",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "BEASTS, CATTLE and REPTILES branch from a shared ground path; KIND closes its junction."
+        },
+        "wordAction": "BEASTS, CATTLE and REPTILES branch from a shared ground path; KIND closes its junction.",
+        "distinctMechanic": "BEASTS, CATTLE and REPTILES branch from a shared ground path; KIND closes its junction."
+      }
+    },
+    {
+      "id": "g1-l072",
+      "sourcePhraseId": "g1-l072",
+      "family": "living-kind-branch-map",
+      "text": "each after its kind.",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "BEASTS, CATTLE and REPTILES branch from a shared ground path; KIND closes its junction."
+        },
+        "wordAction": "BEASTS, CATTLE and REPTILES branch from a shared ground path; KIND closes its junction.",
+        "distinctMechanic": "BEASTS, CATTLE and REPTILES branch from a shared ground path; KIND closes its junction."
+      }
+    },
+    {
+      "id": "g1-l073",
+      "sourcePhraseId": "g1-l073",
+      "family": "good-weighted-equilibrium",
+      "text": "He looked on them: good.",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "GOOD settles between unequal thick arcs, with the preceding words held on an independent upper ledge."
+        },
+        "wordAction": "GOOD settles between unequal thick arcs, with the preceding words held on an independent upper ledge.",
+        "distinctMechanic": "GOOD settles between unequal thick arcs, with the preceding words held on an independent upper ledge."
+      }
+    },
+    {
+      "id": "g1-l074",
+      "sourcePhraseId": "g1-l074",
+      "family": "humankind-correspondence",
+      "text": "Then God said, \u2018Let us make humankind",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "The command occupies a high reading plane; HUMANKIND becomes a broad lower monument over the formation footage."
+        },
+        "wordAction": "The command occupies a high reading plane; HUMANKIND becomes a broad lower monument over the formation footage.",
+        "distinctMechanic": "The command occupies a high reading plane; HUMANKIND becomes a broad lower monument over the formation footage."
+      }
+    },
+    {
+      "id": "g1-l075",
+      "sourcePhraseId": "g1-l075",
+      "family": "image-likeness-correspondence",
+      "text": "in our image, in our likeness;",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "IMAGE and LIKENESS sit on equal open contours; the shared upper language bridges two distinct upright reading planes."
+        },
+        "wordAction": "IMAGE and LIKENESS sit on equal open contours; the shared upper language bridges two distinct upright reading planes.",
+        "distinctMechanic": "IMAGE and LIKENESS sit on equal open contours; the shared upper language bridges two distinct upright reading planes."
+      }
+    },
+    {
+      "id": "g1-l064-r01",
+      "sourcePhraseId": "g1-l064",
+      "family": "winged-reprise-fold",
+      "text": "Let the winged multiply on earth!\u2019",
+      "performedRepeat": true,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "The phrase opens from two folded typographic wings; MULTIPLY stays central while the outer banks lift."
+        },
+        "wordAction": "The phrase opens from two folded typographic wings; MULTIPLY stays central while the outer banks lift.",
+        "distinctMechanic": "The phrase opens from two folded typographic wings; MULTIPLY stays central while the outer banks lift."
+      }
+    },
+    {
+      "id": "g1-l069-r01",
+      "sourcePhraseId": "g1-l069",
+      "family": "command-reprise-spine",
+      "text": "His word took hold.",
+      "performedRepeat": true,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "The words form a vertical locking column, with HOLD spanning and sealing its base."
+        },
+        "wordAction": "The words form a vertical locking column, with HOLD spanning and sealing its base.",
+        "distinctMechanic": "The words form a vertical locking column, with HOLD spanning and sealing its base."
+      }
+    },
+    {
+      "id": "g1-l070-r01",
+      "sourcePhraseId": "g1-l070",
+      "family": "animal-reprise-triptych",
+      "text": "He fashioned wild beasts, cattle,",
+      "performedRepeat": true,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "WILD, BEASTS and CATTLE unfold into three heavy typographic panels with clear continuous reading order."
+        },
+        "wordAction": "WILD, BEASTS and CATTLE unfold into three heavy typographic panels with clear continuous reading order.",
+        "distinctMechanic": "WILD, BEASTS and CATTLE unfold into three heavy typographic panels with clear continuous reading order."
+      }
+    },
+    {
+      "id": "g1-l071-r01",
+      "sourcePhraseId": "g1-l071",
+      "family": "reptile-reprise-contour",
+      "text": "and the reptiles of the ground,",
+      "performedRepeat": true,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "REPTILES stays huge on a low contour while OF THE GROUND sinks into its own separate basin."
+        },
+        "wordAction": "REPTILES stays huge on a low contour while OF THE GROUND sinks into its own separate basin.",
+        "distinctMechanic": "REPTILES stays huge on a low contour while OF THE GROUND sinks into its own separate basin."
+      }
+    },
+    {
+      "id": "g1-l072-r01",
+      "sourcePhraseId": "g1-l072",
+      "family": "kind-reprise-nested-circle",
+      "text": "each after its kind.",
+      "performedRepeat": true,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "KIND rests in the center of an open thick circle while the preceding words follow an independent upper tangent."
+        },
+        "wordAction": "KIND rests in the center of an open thick circle while the preceding words follow an independent upper tangent.",
+        "distinctMechanic": "KIND rests in the center of an open thick circle while the preceding words follow an independent upper tangent."
+      }
+    },
+    {
+      "id": "g1-l073-r01",
+      "sourcePhraseId": "g1-l073",
+      "family": "good-reprise-rising-disc",
+      "text": "He looked on them: good.",
+      "performedRepeat": true,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "GOOD rises against a broad half-disc while its preceding sentence remains an anchored lower baseline."
+        },
+        "wordAction": "GOOD rises against a broad half-disc while its preceding sentence remains an anchored lower baseline.",
+        "distinctMechanic": "GOOD rises against a broad half-disc while its preceding sentence remains an anchored lower baseline."
+      }
+    },
+    {
+      "id": "g1-l074-r01",
+      "sourcePhraseId": "g1-l074",
+      "family": "humankind-reprise-monument",
+      "text": "Then God said, \u2018Let us make humankind",
+      "performedRepeat": true,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "The command walks down three rising shelves; HUMANKIND fills the final lower plane and settles as one monolithic word."
+        },
+        "wordAction": "The command walks down three rising shelves; HUMANKIND fills the final lower plane and settles as one monolithic word.",
+        "distinctMechanic": "The command walks down three rising shelves; HUMANKIND fills the final lower plane and settles as one monolithic word."
+      }
+    },
+    {
+      "id": "g1-l075-r01",
+      "sourcePhraseId": "g1-l075",
+      "family": "likeness-reprise-facing-planes",
+      "text": "in our image, in our likeness;",
+      "performedRepeat": true,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "IMAGE and LIKENESS face one another on separate planes, then align into a common horizontal reading field."
+        },
+        "wordAction": "IMAGE and LIKENESS face one another on separate planes, then align into a common horizontal reading field.",
+        "distinctMechanic": "IMAGE and LIKENESS face one another on separate planes, then align into a common horizontal reading field."
+      }
+    },
+    {
+      "id": "g1-l076",
+      "sourcePhraseId": "g1-l076",
+      "family": "domain-word-tiers",
+      "text": "let them rule the fish, the birds,",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "FISH and BIRDS inhabit separate horizontal territories; EARTH gathers the ground creatures into a broader lower field."
+        },
+        "wordAction": "FISH and BIRDS inhabit separate horizontal territories; EARTH gathers the ground creatures into a broader lower field.",
+        "distinctMechanic": "FISH and BIRDS inhabit separate horizontal territories; EARTH gathers the ground creatures into a broader lower field."
+      }
+    },
+    {
+      "id": "g1-l077",
+      "sourcePhraseId": "g1-l077",
+      "family": "domain-word-tiers",
+      "text": "the cattle, all the earth and all that crawls.\u2019",
+      "performedRepeat": false,
+      "timingSource": "canonical runtime words only",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Shared semantic material, organic formation, unobstructed primary lyrics.",
+          "adaptation": "FISH and BIRDS inhabit separate horizontal territories; EARTH gathers the ground creatures into a broader lower field."
+        },
+        "wordAction": "FISH and BIRDS inhabit separate horizontal territories; EARTH gathers the ground creatures into a broader lower field.",
+        "distinctMechanic": "FISH and BIRDS inhabit separate horizontal territories; EARTH gathers the ground creatures into a broader lower field."
+      }
+    },
+    {
+      "id": "g1-l096",
+      "family": "sixth-day-return",
+      "direction": {
+        "inspiration": {
+          "referenceIds": [
+            "external-microtype-image-world",
+            "internal-psalm91-dust-lion",
+            "internal-foreground-occlusion"
+          ],
+          "principle": "Resolve the musical boundary into an evolving world.",
+          "adaptation": "Last dawn expands into a completed orbital world while the final lyrics remain."
+        }
+      }
+    }
+  ]
+}

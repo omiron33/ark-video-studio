@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 199.04999999999998,
+    "duration": 3.56,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "every living water-reptile by kind,",
+  "approvedLyrics": "every living water-reptile by kind,",
+  "words": [
+    {
+      "id": "w_c283db477efc5ac1",
+      "text": "every",
+      "start": 199.492486,
+      "end": 200.075763,
+      "phraseId": "g1-l059",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.07600152797864705,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l059-w01"
+    },
+    {
+      "id": "w_b4f01af9dd8033b5",
+      "text": "living",
+      "start": 200.156215,
+      "end": 200.397571,
+      "phraseId": "g1-l059",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.4207420233783847,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l059-w02"
+    },
+    {
+      "id": "w_c73017ec6e68d193",
+      "text": "water-reptile",
+      "start": 200.45791,
+      "end": 201.322768,
+      "phraseId": "g1-l059",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.2460528627010373,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l059-w03"
+    },
+    {
+      "id": "w_cf670970c3931513",
+      "text": "by",
+      "start": 201.383107,
+      "end": 201.503785,
+      "phraseId": "g1-l059",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.6653130285052066,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l059-w04"
+    },
+    {
+      "id": "w_1fdf4b64902a8158",
+      "text": "kind,",
+      "start": 201.644576,
+      "end": 201.966384,
+      "phraseId": "g1-l059",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.7456172219132979,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l059-w05"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "every living water-reptile by kind,",
+      "wordIds": [
+        "w_c283db477efc5ac1",
+        "w_b4f01af9dd8033b5",
+        "w_c73017ec6e68d193",
+        "w_cf670970c3931513",
+        "w_1fdf4b64902a8158"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l059-full-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l059-full-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l059-full-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.6470286659896374,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

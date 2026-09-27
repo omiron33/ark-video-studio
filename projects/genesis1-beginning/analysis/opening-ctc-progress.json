@@ -1,0 +1,198 @@
+[
+  {
+    "job": "g1-l001-opening-ctc-base",
+    "status": "machine_estimate",
+    "words": 6,
+    "execution": {
+      "id": "g1-l001-opening-ctc-base",
+      "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l001-opening-ctc-base.json",
+      "status": "machine_estimate",
+      "seconds": 2.753535209223628,
+      "modelCacheHit": false,
+      "modelsHeld": 1
+    },
+    "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l001-opening-ctc-base.json"
+  },
+  {
+    "job": "g1-l001-opening-ctc-large",
+    "status": "machine_estimate",
+    "words": 6,
+    "execution": {
+      "id": "g1-l001-opening-ctc-large",
+      "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l001-opening-ctc-large.json",
+      "status": "machine_estimate",
+      "seconds": 4.347069208044559,
+      "modelCacheHit": false,
+      "modelsHeld": 2
+    },
+    "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l001-opening-ctc-large.json"
+  },
+  {
+    "job": "g1-l002-opening-ctc-base",
+    "status": "machine_estimate",
+    "words": 7,
+    "execution": {
+      "id": "g1-l002-opening-ctc-base",
+      "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l002-opening-ctc-base.json",
+      "status": "machine_estimate",
+      "seconds": 0.5682556661777198,
+      "modelCacheHit": true,
+      "modelsHeld": 2
+    },
+    "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l002-opening-ctc-base.json"
+  },
+  {
+    "job": "g1-l002-opening-ctc-large",
+    "status": "machine_estimate",
+    "words": 7,
+    "execution": {
+      "id": "g1-l002-opening-ctc-large",
+      "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l002-opening-ctc-large.json",
+      "status": "machine_estimate",
+      "seconds": 1.0965643753297627,
+      "modelCacheHit": true,
+      "modelsHeld": 2
+    },
+    "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l002-opening-ctc-large.json"
+  },
+  {
+    "job": "g1-l003-opening-ctc-base",
+    "status": "machine_estimate",
+    "words": 4,
+    "execution": {
+      "id": "g1-l003-opening-ctc-base",
+      "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l003-opening-ctc-base.json",
+      "status": "machine_estimate",
+      "seconds": 0.4198102089576423,
+      "modelCacheHit": true,
+      "modelsHeld": 2
+    },
+    "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l003-opening-ctc-base.json"
+  },
+  {
+    "job": "g1-l003-opening-ctc-large",
+    "status": "machine_estimate",
+    "words": 4,
+    "execution": {
+      "id": "g1-l003-opening-ctc-large",
+      "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l003-opening-ctc-large.json",
+      "status": "machine_estimate",
+      "seconds": 0.8160882913507521,
+      "modelCacheHit": true,
+      "modelsHeld": 2
+    },
+    "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l003-opening-ctc-large.json"
+  },
+  {
+    "job": "g1-l004-opening-ctc-base",
+    "status": "machine_estimate",
+    "words": 4,
+    "execution": {
+      "id": "g1-l004-opening-ctc-base",
+      "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l004-opening-ctc-base.json",
+      "status": "machine_estimate",
+      "seconds": 0.3526124167256057,
+      "modelCacheHit": true,
+      "modelsHeld": 2
+    },
+    "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l004-opening-ctc-base.json"
+  },
+  {
+    "job": "g1-l004-opening-ctc-large",
+    "status": "machine_estimate",
+    "words": 4,
+    "execution": {
+      "id": "g1-l004-opening-ctc-large",
+      "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l004-opening-ctc-large.json",
+      "status": "machine_estimate",
+      "seconds": 0.6797342910431325,
+      "modelCacheHit": true,
+      "modelsHeld": 2
+    },
+    "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l004-opening-ctc-large.json"
+  },
+  {
+    "job": "g1-l005-opening-ctc-base",
+    "status": "machine_estimate",
+    "words": 8,
+    "execution": {
+      "id": "g1-l005-opening-ctc-base",
+      "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l005-opening-ctc-base.json",
+      "status": "machine_estimate",
+      "seconds": 0.5119654173031449,
+      "modelCacheHit": true,
+      "modelsHeld": 2
+    },
+    "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l005-opening-ctc-base.json"
+  },
+  {
+    "job": "g1-l005-opening-ctc-large",
+    "status": "machine_estimate",
+    "words": 8,
+    "execution": {
+      "id": "g1-l005-opening-ctc-large",
+      "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l005-opening-ctc-large.json",
+      "status": "machine_estimate",
+      "seconds": 1.135957249905914,
+      "modelCacheHit": true,
+      "modelsHeld": 2
+    },
+    "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l005-opening-ctc-large.json"
+  },
+  {
+    "job": "g1-l006-opening-ctc-base",
+    "status": "machine_estimate",
+    "words": 6,
+    "execution": {
+      "id": "g1-l006-opening-ctc-base",
+      "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l006-opening-ctc-base.json",
+      "status": "machine_estimate",
+      "seconds": 0.6052007079124451,
+      "modelCacheHit": true,
+      "modelsHeld": 2
+    },
+    "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l006-opening-ctc-base.json"
+  },
+  {
+    "job": "g1-l006-opening-ctc-large",
+    "status": "machine_estimate",
+    "words": 6,
+    "execution": {
+      "id": "g1-l006-opening-ctc-large",
+      "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l006-opening-ctc-large.json",
+      "status": "machine_estimate",
+      "seconds": 1.100582041312009,
+      "modelCacheHit": true,
+      "modelsHeld": 2
+    },
+    "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l006-opening-ctc-large.json"
+  },
+  {
+    "job": "g1-l007-opening-ctc-base",
+    "status": "machine_estimate",
+    "words": 2,
+    "execution": {
+      "id": "g1-l007-opening-ctc-base",
+      "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l007-opening-ctc-base.json",
+      "status": "machine_estimate",
+      "seconds": 0.3214005408808589,
+      "modelCacheHit": true,
+      "modelsHeld": 2
+    },
+    "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l007-opening-ctc-base.json"
+  },
+  {
+    "job": "g1-l007-opening-ctc-large",
+    "status": "machine_estimate",
+    "words": 2,
+    "execution": {
+      "id": "g1-l007-opening-ctc-large",
+      "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l007-opening-ctc-large.json",
+      "status": "machine_estimate",
+      "seconds": 0.6355000417679548,
+      "modelCacheHit": true,
+      "modelsHeld": 2
+    },
+    "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l007-opening-ctc-large.json"
+  }
+]

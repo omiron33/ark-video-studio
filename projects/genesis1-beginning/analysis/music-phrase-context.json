@@ -1,0 +1,2107 @@
+{
+  "sourceSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2",
+  "timebase": "source",
+  "method": "Reuses source-bound 20ms RMS/low-band energy events and five-second RMS profile; these are attack candidates, not a measured BPM grid or certified musical downbeats.",
+  "phrases": [
+    {
+      "phraseId": "g1-l001",
+      "start": 4.348765,
+      "end": 7.317901,
+      "sectionName": "Verse 1",
+      "attackCount": 7,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 5.17,
+          "strength": 0.300481
+        },
+        {
+          "time": 5.48,
+          "strength": 0.214362
+        },
+        {
+          "time": 6.08,
+          "strength": 0.137705
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -23.77,
+        -19.62
+      ]
+    },
+    {
+      "phraseId": "g1-l002",
+      "start": 9.046602,
+      "end": 12.457605,
+      "sectionName": "Verse 1",
+      "attackCount": 9,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 12.09,
+          "strength": 0.239125
+        },
+        {
+          "time": 11.73,
+          "strength": 0.205732
+        },
+        {
+          "time": 11.48,
+          "strength": 0.175233
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -19.62,
+        -18.88
+      ]
+    },
+    {
+      "phraseId": "g1-l003",
+      "start": 13.965464,
+      "end": 16.478351,
+      "sectionName": "Verse 1",
+      "attackCount": 6,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 15.98,
+          "strength": 0.20269
+        },
+        {
+          "time": 15.38,
+          "strength": 0.187786
+        },
+        {
+          "time": 14.35,
+          "strength": 0.177234
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -18.88,
+        -17.74
+      ]
+    },
+    {
+      "phraseId": "g1-l004",
+      "start": 17.386772,
+      "end": 19.296825,
+      "sectionName": "Verse 1",
+      "attackCount": 7,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 18.34,
+          "strength": 0.335534
+        },
+        {
+          "time": 18.08,
+          "strength": 0.099624
+        },
+        {
+          "time": 18.83,
+          "strength": 0.09397
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -17.74
+      ]
+    },
+    {
+      "phraseId": "g1-l005",
+      "start": 19.748687,
+      "end": 23.36,
+      "sectionName": "Verse 1",
+      "attackCount": 10,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 21.96,
+          "strength": 0.398893
+        },
+        {
+          "time": 20.47,
+          "strength": 0.138448
+        },
+        {
+          "time": 22.88,
+          "strength": 0.110573
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -17.74,
+        -18.35
+      ]
+    },
+    {
+      "phraseId": "g1-l006",
+      "start": 24.643307,
+      "end": 28.398031,
+      "sectionName": "Verse 1",
+      "attackCount": 10,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 27.34,
+          "strength": 0.598869
+        },
+        {
+          "time": 25.52,
+          "strength": 0.457143
+        },
+        {
+          "time": 24.67,
+          "strength": 0.316669
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -18.35,
+        -20.13
+      ]
+    },
+    {
+      "phraseId": "g1-l007",
+      "start": 29.75,
+      "end": 30.916667,
+      "sectionName": "Verse 1",
+      "attackCount": 3,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 30.01,
+          "strength": 0.208001
+        },
+        {
+          "time": 30.37,
+          "strength": 0.157496
+        },
+        {
+          "time": 30.62,
+          "strength": 0.032119
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -20.13,
+        -16.65
+      ]
+    },
+    {
+      "phraseId": "g1-l008",
+      "start": 33.96,
+      "end": 36.74,
+      "sectionName": "Verse 1",
+      "attackCount": 8,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 35.76,
+          "strength": 0.125887
+        },
+        {
+          "time": 35.45,
+          "strength": 0.114951
+        },
+        {
+          "time": 36.36,
+          "strength": 0.097328
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -16.65,
+        -16.5
+      ]
+    },
+    {
+      "phraseId": "g1-l009",
+      "start": 38.917037,
+      "end": 41.16,
+      "sectionName": "Verse 1",
+      "attackCount": 6,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 40.56,
+          "strength": 0.087491
+        },
+        {
+          "time": 39.82,
+          "strength": 0.061063
+        },
+        {
+          "time": 39.37,
+          "strength": 0.042072
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -16.5,
+        -16.65
+      ]
+    },
+    {
+      "phraseId": "g1-l010",
+      "start": 41.08,
+      "end": 45.94,
+      "sectionName": "Verse 1",
+      "attackCount": 13,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 43.57,
+          "strength": 0.067585
+        },
+        {
+          "time": 44.63,
+          "strength": 0.053582
+        },
+        {
+          "time": 41.17,
+          "strength": 0.053306
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -16.65,
+        -16.99
+      ]
+    },
+    {
+      "phraseId": "g1-l011",
+      "start": 45.92,
+      "end": 48.559674,
+      "sectionName": "Verse 1",
+      "attackCount": 8,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 46.56,
+          "strength": 0.095024
+        },
+        {
+          "time": 45.96,
+          "strength": 0.077228
+        },
+        {
+          "time": 46.87,
+          "strength": 0.073662
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -16.99
+      ]
+    },
+    {
+      "phraseId": "g1-l012",
+      "start": 48.65997,
+      "end": 51.12727,
+      "sectionName": "Verse 1",
+      "attackCount": 7,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 50.74,
+          "strength": 0.49581
+        },
+        {
+          "time": 50.17,
+          "strength": 0.165559
+        },
+        {
+          "time": 49.41,
+          "strength": 0.062219
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -16.99,
+        -14.75
+      ]
+    },
+    {
+      "phraseId": "g1-l013",
+      "start": 54,
+      "end": 58.54,
+      "sectionName": "Verse 2",
+      "attackCount": 12,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 56.46,
+          "strength": 0.177305
+        },
+        {
+          "time": 57.36,
+          "strength": 0.156903
+        },
+        {
+          "time": 57.96,
+          "strength": 0.092242
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -14.75,
+        -17.11
+      ]
+    },
+    {
+      "phraseId": "g1-l014",
+      "start": 58.54,
+      "end": 61.028396,
+      "sectionName": "Verse 2",
+      "attackCount": 8,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 59.58,
+          "strength": 0.274848
+        },
+        {
+          "time": 58.82,
+          "strength": 0.15574
+        },
+        {
+          "time": 60.36,
+          "strength": 0.120279
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -17.11,
+        -16.65
+      ]
+    },
+    {
+      "phraseId": "g1-l015",
+      "start": 61.256193,
+      "end": 63.34,
+      "sectionName": "Verse 2",
+      "attackCount": 8,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 62.74,
+          "strength": 0.263988
+        },
+        {
+          "time": 62.15,
+          "strength": 0.160371
+        },
+        {
+          "time": 61.26,
+          "strength": 0.121227
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -16.65
+      ]
+    },
+    {
+      "phraseId": "g1-l016",
+      "start": 63.34,
+      "end": 65.92,
+      "sectionName": "Verse 2",
+      "attackCount": 7,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 65.16,
+          "strength": 0.132461
+        },
+        {
+          "time": 64.71,
+          "strength": 0.106859
+        },
+        {
+          "time": 63.67,
+          "strength": 0.073221
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -16.65,
+        -15.78
+      ]
+    },
+    {
+      "phraseId": "g1-l017",
+      "start": 66.18,
+      "end": 67.2,
+      "sectionName": "Verse 2",
+      "attackCount": 2,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 66.67,
+          "strength": 0.068573
+        },
+        {
+          "time": 66.96,
+          "strength": 0.050082
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -15.78
+      ]
+    },
+    {
+      "phraseId": "g1-l018",
+      "start": 67.4,
+      "end": 68.48,
+      "sectionName": "Verse 2",
+      "attackCount": 3,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 68.47,
+          "strength": 0.058994
+        },
+        {
+          "time": 68.02,
+          "strength": 0.055346
+        },
+        {
+          "time": 67.45,
+          "strength": 0.038271
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -15.78
+      ]
+    },
+    {
+      "phraseId": "g1-l019",
+      "start": 68.534052,
+      "end": 70.48,
+      "sectionName": "Verse 2",
+      "attackCount": 5,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 69.97,
+          "strength": 0.07348
+        },
+        {
+          "time": 70.42,
+          "strength": 0.060504
+        },
+        {
+          "time": 69.07,
+          "strength": 0.05506
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -15.78,
+        -15.85
+      ]
+    },
+    {
+      "phraseId": "g1-l020",
+      "start": 71.3,
+      "end": 72.92,
+      "sectionName": "Verse 2",
+      "attackCount": 5,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 71.48,
+          "strength": 0.062452
+        },
+        {
+          "time": 72.68,
+          "strength": 0.060202
+        },
+        {
+          "time": 72.13,
+          "strength": 0.050525
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -15.85
+      ]
+    },
+    {
+      "phraseId": "g1-l021",
+      "start": 73.256323,
+      "end": 74.665355,
+      "sectionName": "Verse 2",
+      "attackCount": 3,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 74.29,
+          "strength": 0.395661
+        },
+        {
+          "time": 73.97,
+          "strength": 0.089018
+        },
+        {
+          "time": 73.58,
+          "strength": 0.0804
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -15.85
+      ]
+    },
+    {
+      "phraseId": "g1-l022",
+      "start": 78.34,
+      "end": 82.39999999999999,
+      "sectionName": "Verse 2",
+      "attackCount": 12,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 79.56,
+          "strength": 0.124053
+        },
+        {
+          "time": 80.47,
+          "strength": 0.051629
+        },
+        {
+          "time": 82.2,
+          "strength": 0.051083
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -14.63,
+        -15.57
+      ]
+    },
+    {
+      "phraseId": "g1-l023",
+      "start": 82.62,
+      "end": 84.926452,
+      "sectionName": "Verse 2",
+      "attackCount": 6,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 84.36,
+          "strength": 0.141052
+        },
+        {
+          "time": 83.92,
+          "strength": 0.075371
+        },
+        {
+          "time": 83.47,
+          "strength": 0.056411
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -15.57
+      ]
+    },
+    {
+      "phraseId": "g1-l024",
+      "start": 87.633333,
+      "end": 92.16,
+      "sectionName": "Verse 2",
+      "attackCount": 12,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 91.57,
+          "strength": 0.055632
+        },
+        {
+          "time": 90.07,
+          "strength": 0.050581
+        },
+        {
+          "time": 89.17,
+          "strength": 0.049917
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -14.93,
+        -14.75
+      ]
+    },
+    {
+      "phraseId": "g1-l025",
+      "start": 92.16,
+      "end": 95.327445,
+      "sectionName": "Verse 2",
+      "attackCount": 9,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 95.16,
+          "strength": 0.410722
+        },
+        {
+          "time": 94.4,
+          "strength": 0.40665
+        },
+        {
+          "time": 92.47,
+          "strength": 0.058946
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -14.75,
+        -15.96
+      ]
+    },
+    {
+      "phraseId": "g1-l026",
+      "start": 95.454667,
+      "end": 97.827778,
+      "sectionName": "Verse 2",
+      "attackCount": 6,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 95.75,
+          "strength": 0.616884
+        },
+        {
+          "time": 97.56,
+          "strength": 0.448203
+        },
+        {
+          "time": 96.96,
+          "strength": 0.426811
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -15.96
+      ]
+    },
+    {
+      "phraseId": "g1-l027",
+      "start": 98,
+      "end": 101.119797,
+      "sectionName": "Verse 2",
+      "attackCount": 10,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 98.76,
+          "strength": 0.392953
+        },
+        {
+          "time": 98.16,
+          "strength": 0.365345
+        },
+        {
+          "time": 98.44,
+          "strength": 0.135306
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -15.96,
+        -12.45
+      ]
+    },
+    {
+      "phraseId": "g1-l028",
+      "start": 103.491176,
+      "end": 105.6,
+      "sectionName": "Verse 2",
+      "attackCount": 5,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 105.36,
+          "strength": 0.129395
+        },
+        {
+          "time": 104.97,
+          "strength": 0.07288
+        },
+        {
+          "time": 103.96,
+          "strength": 0.04184
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -12.45,
+        -15.98
+      ]
+    },
+    {
+      "phraseId": "g1-l029",
+      "start": 105.760039,
+      "end": 107.767882,
+      "sectionName": "Verse 2",
+      "attackCount": 5,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 105.93,
+          "strength": 0.275863
+        },
+        {
+          "time": 107.34,
+          "strength": 0.257847
+        },
+        {
+          "time": 106.56,
+          "strength": 0.07931
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -15.98
+      ]
+    },
+    {
+      "phraseId": "g1-l030",
+      "start": 107.72,
+      "end": 110.426832,
+      "sectionName": "Verse 2",
+      "attackCount": 8,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 110.15,
+          "strength": 0.307926
+        },
+        {
+          "time": 109.81,
+          "strength": 0.124208
+        },
+        {
+          "time": 108.37,
+          "strength": 0.067626
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -15.98,
+        -15.79
+      ]
+    },
+    {
+      "phraseId": "g1-l031",
+      "start": 110.42,
+      "end": 112.246735,
+      "sectionName": "Verse 2",
+      "attackCount": 5,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 110.81,
+          "strength": 0.156623
+        },
+        {
+          "time": 111.19,
+          "strength": 0.151319
+        },
+        {
+          "time": 111.59,
+          "strength": 0.084938
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -15.79
+      ]
+    },
+    {
+      "phraseId": "g1-l032",
+      "start": 112.12,
+      "end": 113.376855,
+      "sectionName": "Verse 2",
+      "attackCount": 3,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 112.26,
+          "strength": 0.089323
+        },
+        {
+          "time": 113.17,
+          "strength": 0.061007
+        },
+        {
+          "time": 112.72,
+          "strength": 0.059333
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -15.79
+      ]
+    },
+    {
+      "phraseId": "g1-l033",
+      "start": 117.655802,
+      "end": 119.28,
+      "sectionName": "Verse 2",
+      "attackCount": 3,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 117.97,
+          "strength": 0.074302
+        },
+        {
+          "time": 118.29,
+          "strength": 0.058673
+        },
+        {
+          "time": 118.87,
+          "strength": 0.05828
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -13.54
+      ]
+    },
+    {
+      "phraseId": "g1-l034",
+      "start": 119.28,
+      "end": 122.04697,
+      "sectionName": "Verse 2",
+      "attackCount": 8,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 120.37,
+          "strength": 0.062797
+        },
+        {
+          "time": 121.27,
+          "strength": 0.055734
+        },
+        {
+          "time": 120.82,
+          "strength": 0.052667
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -13.54,
+        -13.34
+      ]
+    },
+    {
+      "phraseId": "g1-l035",
+      "start": 122.06,
+      "end": 124.1,
+      "sectionName": "Verse 2",
+      "attackCount": 5,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 123.64,
+          "strength": 0.083029
+        },
+        {
+          "time": 122.32,
+          "strength": 0.077644
+        },
+        {
+          "time": 122.77,
+          "strength": 0.074419
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -13.34
+      ]
+    },
+    {
+      "phraseId": "g1-l036",
+      "start": 124.16,
+      "end": 126.68,
+      "sectionName": "Verse 2",
+      "attackCount": 7,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 125.62,
+          "strength": 0.086813
+        },
+        {
+          "time": 124.27,
+          "strength": 0.080258
+        },
+        {
+          "time": 126.07,
+          "strength": 0.064219
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -13.34,
+        -14.28
+      ]
+    },
+    {
+      "phraseId": "g1-l037",
+      "start": 126.793789,
+      "end": 129.32,
+      "sectionName": "Verse 2",
+      "attackCount": 8,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 127.11,
+          "strength": 0.120937
+        },
+        {
+          "time": 127.56,
+          "strength": 0.0921
+        },
+        {
+          "time": 128.17,
+          "strength": 0.058847
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -14.28
+      ]
+    },
+    {
+      "phraseId": "g1-l038",
+      "start": 130.855333,
+      "end": 132.36,
+      "sectionName": "Verse 2",
+      "attackCount": 5,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 131.77,
+          "strength": 0.056655
+        },
+        {
+          "time": 131.17,
+          "strength": 0.052528
+        },
+        {
+          "time": 131.5,
+          "strength": 0.029205
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -14.15
+      ]
+    },
+    {
+      "phraseId": "g1-l039",
+      "start": 136.9,
+      "end": 140.24,
+      "sectionName": "Verse 3",
+      "attackCount": 9,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 139.57,
+          "strength": 0.064679
+        },
+        {
+          "time": 138.07,
+          "strength": 0.062786
+        },
+        {
+          "time": 137.17,
+          "strength": 0.058489
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -13.35,
+        -12.7
+      ]
+    },
+    {
+      "phraseId": "g1-l040",
+      "start": 140.28,
+      "end": 142.52,
+      "sectionName": "Verse 3",
+      "attackCount": 6,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 141.97,
+          "strength": 0.071131
+        },
+        {
+          "time": 140.47,
+          "strength": 0.060956
+        },
+        {
+          "time": 141.07,
+          "strength": 0.050427
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -12.7
+      ]
+    },
+    {
+      "phraseId": "g1-l041",
+      "start": 142.833571,
+      "end": 146.827786,
+      "sectionName": "Verse 3",
+      "attackCount": 11,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 146.32,
+          "strength": 0.103095
+        },
+        {
+          "time": 146.77,
+          "strength": 0.081598
+        },
+        {
+          "time": 143.35,
+          "strength": 0.080094
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -12.7,
+        -12.17
+      ]
+    },
+    {
+      "phraseId": "g1-l042",
+      "start": 146.9,
+      "end": 151.101253,
+      "sectionName": "Verse 3",
+      "attackCount": 12,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 147.67,
+          "strength": 0.070694
+        },
+        {
+          "time": 149.62,
+          "strength": 0.067184
+        },
+        {
+          "time": 149.17,
+          "strength": 0.066762
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -12.17,
+        -12.22
+      ]
+    },
+    {
+      "phraseId": "g1-l043",
+      "start": 150.980979,
+      "end": 154.208314,
+      "sectionName": "Verse 3",
+      "attackCount": 9,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 151.57,
+          "strength": 0.086492
+        },
+        {
+          "time": 153.07,
+          "strength": 0.073774
+        },
+        {
+          "time": 153.55,
+          "strength": 0.061511
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -12.22
+      ]
+    },
+    {
+      "phraseId": "g1-l044",
+      "start": 155.75627,
+      "end": 157.7,
+      "sectionName": "Verse 3",
+      "attackCount": 6,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 157.26,
+          "strength": 0.431541
+        },
+        {
+          "time": 156.96,
+          "strength": 0.125046
+        },
+        {
+          "time": 156.37,
+          "strength": 0.066746
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -15.32
+      ]
+    },
+    {
+      "phraseId": "g1-l045",
+      "start": 157.7,
+      "end": 159.665621,
+      "sectionName": "Verse 3",
+      "attackCount": 5,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 158.59,
+          "strength": 0.475079
+        },
+        {
+          "time": 159.66,
+          "strength": 0.466646
+        },
+        {
+          "time": 158.14,
+          "strength": 0.440544
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -15.32
+      ]
+    },
+    {
+      "phraseId": "g1-l046",
+      "start": 160.396632,
+      "end": 162.366788,
+      "sectionName": "Verse 3",
+      "attackCount": 5,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 160.98,
+          "strength": 0.323753
+        },
+        {
+          "time": 161.61,
+          "strength": 0.195637
+        },
+        {
+          "time": 162.06,
+          "strength": 0.174124
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -17.44
+      ]
+    },
+    {
+      "phraseId": "g1-l047",
+      "start": 162.695348,
+      "end": 164.806578,
+      "sectionName": "Verse 3",
+      "attackCount": 4,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 163.56,
+          "strength": 0.49961
+        },
+        {
+          "time": 164.46,
+          "strength": 0.351911
+        },
+        {
+          "time": 164.01,
+          "strength": 0.253422
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -17.44
+      ]
+    },
+    {
+      "phraseId": "g1-l048",
+      "start": 164.8,
+      "end": 167.56828,
+      "sectionName": "Verse 3",
+      "attackCount": 7,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 164.91,
+          "strength": 0.473737
+        },
+        {
+          "time": 165.96,
+          "strength": 0.209434
+        },
+        {
+          "time": 165.51,
+          "strength": 0.13357
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -17.44,
+        -14.13
+      ]
+    },
+    {
+      "phraseId": "g1-l049",
+      "start": 167.44,
+      "end": 169.58,
+      "sectionName": "Verse 3",
+      "attackCount": 4,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 168.37,
+          "strength": 0.061216
+        },
+        {
+          "time": 169.27,
+          "strength": 0.059517
+        },
+        {
+          "time": 168.82,
+          "strength": 0.058679
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -14.13
+      ]
+    },
+    {
+      "phraseId": "g1-l050",
+      "start": 169.6,
+      "end": 171.165205,
+      "sectionName": "Verse 3",
+      "attackCount": 5,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 170.77,
+          "strength": 0.082347
+        },
+        {
+          "time": 169.71,
+          "strength": 0.07743
+        },
+        {
+          "time": 171.1,
+          "strength": 0.073852
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -14.13,
+        -12.87
+      ]
+    },
+    {
+      "phraseId": "g1-l051",
+      "start": 172.096496,
+      "end": 174.627265,
+      "sectionName": "Verse 3",
+      "attackCount": 7,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 174.06,
+          "strength": 0.092188
+        },
+        {
+          "time": 172.12,
+          "strength": 0.08648
+        },
+        {
+          "time": 173.16,
+          "strength": 0.081745
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -12.87
+      ]
+    },
+    {
+      "phraseId": "g1-l052",
+      "start": 174.6936,
+      "end": 177.3468,
+      "sectionName": "Verse 3",
+      "attackCount": 8,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 176.76,
+          "strength": 0.082475
+        },
+        {
+          "time": 176.17,
+          "strength": 0.074471
+        },
+        {
+          "time": 175.56,
+          "strength": 0.073452
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -12.87,
+        -14.98
+      ]
+    },
+    {
+      "phraseId": "g1-l053",
+      "start": 178.836022,
+      "end": 180.283763,
+      "sectionName": "Verse 3",
+      "attackCount": 5,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 179.76,
+          "strength": 0.101838
+        },
+        {
+          "time": 179.16,
+          "strength": 0.099841
+        },
+        {
+          "time": 178.89,
+          "strength": 0.040992
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -14.98,
+        -12.31
+      ]
+    },
+    {
+      "phraseId": "g1-l054",
+      "start": 184.66,
+      "end": 187.44,
+      "sectionName": "Verse 4",
+      "attackCount": 8,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 184.71,
+          "strength": 0.110057
+        },
+        {
+          "time": 186.54,
+          "strength": 0.064974
+        },
+        {
+          "time": 185.17,
+          "strength": 0.062467
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -12.31,
+        -12.24
+      ]
+    },
+    {
+      "phraseId": "g1-l055",
+      "start": 187.44,
+      "end": 190.04,
+      "sectionName": "Verse 4",
+      "attackCount": 7,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 189.97,
+          "strength": 0.072562
+        },
+        {
+          "time": 188.8,
+          "strength": 0.060325
+        },
+        {
+          "time": 187.57,
+          "strength": 0.054305
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -12.24,
+        -12.36
+      ]
+    },
+    {
+      "phraseId": "g1-l056",
+      "start": 190,
+      "end": 193.223024,
+      "sectionName": "Verse 4",
+      "attackCount": 9,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 192.1,
+          "strength": 0.062541
+        },
+        {
+          "time": 193.09,
+          "strength": 0.062119
+        },
+        {
+          "time": 192.7,
+          "strength": 0.053081
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -12.36
+      ]
+    },
+    {
+      "phraseId": "g1-l057",
+      "start": 193.16,
+      "end": 196.04,
+      "sectionName": "Verse 4",
+      "attackCount": 7,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 195.66,
+          "strength": 0.139975
+        },
+        {
+          "time": 194.77,
+          "strength": 0.064353
+        },
+        {
+          "time": 194.04,
+          "strength": 0.0546
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -12.36,
+        -13.25
+      ]
+    },
+    {
+      "phraseId": "g1-l058",
+      "start": 198.037293,
+      "end": 199.7,
+      "sectionName": "Verse 4",
+      "attackCount": 5,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 198.51,
+          "strength": 0.237712
+        },
+        {
+          "time": 198.06,
+          "strength": 0.233566
+        },
+        {
+          "time": 199.56,
+          "strength": 0.162502
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -13.25
+      ]
+    },
+    {
+      "phraseId": "g1-l059",
+      "start": 199.914859,
+      "end": 202.00661,
+      "sectionName": "Verse 4",
+      "attackCount": 6,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 200.91,
+          "strength": 0.59638
+        },
+        {
+          "time": 201.62,
+          "strength": 0.38581
+        },
+        {
+          "time": 200.46,
+          "strength": 0.173421
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -13.25,
+        -13.89
+      ]
+    },
+    {
+      "phraseId": "g1-l060",
+      "start": 201.98,
+      "end": 204.365833,
+      "sectionName": "Verse 4",
+      "attackCount": 7,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 203.11,
+          "strength": 0.45616
+        },
+        {
+          "time": 203.75,
+          "strength": 0.4026
+        },
+        {
+          "time": 204.01,
+          "strength": 0.339191
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -13.89
+      ]
+    },
+    {
+      "phraseId": "g1-l061",
+      "start": 204.5,
+      "end": 206.746532,
+      "sectionName": "Verse 4",
+      "attackCount": 6,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 205.45,
+          "strength": 0.060426
+        },
+        {
+          "time": 205.15,
+          "strength": 0.053432
+        },
+        {
+          "time": 206.5,
+          "strength": 0.046738
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -13.89,
+        -11.06
+      ]
+    },
+    {
+      "phraseId": "g1-l062",
+      "start": 207.698677,
+      "end": 209.085979,
+      "sectionName": "Verse 4",
+      "attackCount": 4,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 208.45,
+          "strength": 0.071147
+        },
+        {
+          "time": 207.85,
+          "strength": 0.066787
+        },
+        {
+          "time": 208.12,
+          "strength": 0.046868
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -11.06
+      ]
+    },
+    {
+      "phraseId": "g1-l063",
+      "start": 209.514364,
+      "end": 212.347182,
+      "sectionName": "Verse 4",
+      "attackCount": 9,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 210.36,
+          "strength": 0.07754
+        },
+        {
+          "time": 212.16,
+          "strength": 0.076054
+        },
+        {
+          "time": 211.56,
+          "strength": 0.066664
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -11.06,
+        -10.46
+      ]
+    },
+    {
+      "phraseId": "g1-l064",
+      "start": 212.34,
+      "end": 214.606044,
+      "sectionName": "Verse 4",
+      "attackCount": 7,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 213.96,
+          "strength": 0.071958
+        },
+        {
+          "time": 213.36,
+          "strength": 0.064347
+        },
+        {
+          "time": 212.76,
+          "strength": 0.060922
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -10.46
+      ]
+    },
+    {
+      "phraseId": "g1-l065",
+      "start": 217.241808,
+      "end": 218.707196,
+      "sectionName": "Verse 4",
+      "attackCount": 4,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 218.47,
+          "strength": 0.63471
+        },
+        {
+          "time": 218.01,
+          "strength": 0.150005
+        },
+        {
+          "time": 217.6,
+          "strength": 0.064484
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -11.5
+      ]
+    },
+    {
+      "phraseId": "g1-l066",
+      "start": 222.454779,
+      "end": 225.3,
+      "sectionName": "Verse 4",
+      "attackCount": 7,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 224.8,
+          "strength": 0.052067
+        },
+        {
+          "time": 223.57,
+          "strength": 0.046418
+        },
+        {
+          "time": 224.34,
+          "strength": 0.043077
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -11.04,
+        -10.97
+      ]
+    },
+    {
+      "phraseId": "g1-l067",
+      "start": 225.632911,
+      "end": 227.76,
+      "sectionName": "Verse 4",
+      "attackCount": 5,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 226.74,
+          "strength": 0.059141
+        },
+        {
+          "time": 225.85,
+          "strength": 0.054725
+        },
+        {
+          "time": 226.29,
+          "strength": 0.041248
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -10.97
+      ]
+    },
+    {
+      "phraseId": "g1-l068",
+      "start": 227.76,
+      "end": 231.680429,
+      "sectionName": "Verse 4",
+      "attackCount": 12,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 228.69,
+          "strength": 0.079963
+        },
+        {
+          "time": 230.49,
+          "strength": 0.079836
+        },
+        {
+          "time": 231.01,
+          "strength": 0.048153
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -10.97,
+        -11.66
+      ]
+    },
+    {
+      "phraseId": "g1-l069",
+      "start": 231.56,
+      "end": 235.8,
+      "sectionName": "Verse 4",
+      "attackCount": 10,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 235.06,
+          "strength": 0.078342
+        },
+        {
+          "time": 235.56,
+          "strength": 0.076535
+        },
+        {
+          "time": 234.51,
+          "strength": 0.072142
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -11.66,
+        -13.61
+      ]
+    },
+    {
+      "phraseId": "g1-l070",
+      "start": 235.8,
+      "end": 239.18,
+      "sectionName": "Verse 4",
+      "attackCount": 9,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 238.86,
+          "strength": 0.240681
+        },
+        {
+          "time": 237.94,
+          "strength": 0.222719
+        },
+        {
+          "time": 236.76,
+          "strength": 0.19652
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -13.61
+      ]
+    },
+    {
+      "phraseId": "g1-l071",
+      "start": 240.078081,
+      "end": 241.806768,
+      "sectionName": "Verse 4",
+      "attackCount": 4,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 241.26,
+          "strength": 0.29067
+        },
+        {
+          "time": 241.71,
+          "strength": 0.200536
+        },
+        {
+          "time": 240.36,
+          "strength": 0.18751
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -10.45
+      ]
+    },
+    {
+      "phraseId": "g1-l072",
+      "start": 241.8,
+      "end": 243.125194,
+      "sectionName": "Verse 4",
+      "attackCount": 4,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 242.76,
+          "strength": 0.665705
+        },
+        {
+          "time": 242.44,
+          "strength": 0.248378
+        },
+        {
+          "time": 242.16,
+          "strength": 0.245889
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -10.45
+      ]
+    },
+    {
+      "phraseId": "g1-l073",
+      "start": 245.53,
+      "end": 247.528098,
+      "sectionName": "Verse 4",
+      "attackCount": 6,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 246.37,
+          "strength": 0.074582
+        },
+        {
+          "time": 246.7,
+          "strength": 0.074039
+        },
+        {
+          "time": 246.1,
+          "strength": 0.066606
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -9.82
+      ]
+    },
+    {
+      "phraseId": "g1-l074",
+      "start": 249.051517,
+      "end": 253.028906,
+      "sectionName": "Verse 5",
+      "attackCount": 8,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 249.96,
+          "strength": 0.508395
+        },
+        {
+          "time": 252.36,
+          "strength": 0.273926
+        },
+        {
+          "time": 249.57,
+          "strength": 0.169099
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -9.82,
+        -11.66
+      ]
+    },
+    {
+      "phraseId": "g1-l075",
+      "start": 254.500897,
+      "end": 256.48431,
+      "sectionName": "Verse 5",
+      "attackCount": 4,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 254.76,
+          "strength": 0.209528
+        },
+        {
+          "time": 255.97,
+          "strength": 0.070846
+        },
+        {
+          "time": 255.1,
+          "strength": 0.042865
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -11.66,
+        -11.12
+      ]
+    },
+    {
+      "phraseId": "g1-l064-r01",
+      "start": 256.844931,
+      "end": 259.106634,
+      "sectionName": "Verse 4",
+      "attackCount": 4,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 257.16,
+          "strength": 0.27508
+        },
+        {
+          "time": 258.37,
+          "strength": 0.077568
+        },
+        {
+          "time": 258.07,
+          "strength": 0.046657
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -11.12
+      ]
+    },
+    {
+      "phraseId": "g1-l069-r01",
+      "start": 259.231584,
+      "end": 262.44,
+      "sectionName": "Verse 4",
+      "attackCount": 6,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 259.56,
+          "strength": 0.187497
+        },
+        {
+          "time": 261.97,
+          "strength": 0.111855
+        },
+        {
+          "time": 262.44,
+          "strength": 0.087921
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -11.12,
+        -12.37
+      ]
+    },
+    {
+      "phraseId": "g1-l070-r01",
+      "start": 264.1,
+      "end": 266.52,
+      "sectionName": "Verse 4",
+      "attackCount": 8,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 266.33,
+          "strength": 0.068192
+        },
+        {
+          "time": 264.28,
+          "strength": 0.059713
+        },
+        {
+          "time": 265.13,
+          "strength": 0.057716
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -12.37,
+        -10.49
+      ]
+    },
+    {
+      "phraseId": "g1-l071-r01",
+      "start": 267.096632,
+      "end": 269.14,
+      "sectionName": "Verse 4",
+      "attackCount": 7,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 269.03,
+          "strength": 0.077061
+        },
+        {
+          "time": 268.73,
+          "strength": 0.076184
+        },
+        {
+          "time": 267.53,
+          "strength": 0.070937
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -10.49
+      ]
+    },
+    {
+      "phraseId": "g1-l072-r01",
+      "start": 270.123529,
+      "end": 271.448382,
+      "sectionName": "Verse 4",
+      "attackCount": 2,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 270.96,
+          "strength": 0.279764
+        },
+        {
+          "time": 270.51,
+          "strength": 0.254012
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -12.43
+      ]
+    },
+    {
+      "phraseId": "g1-l073-r01",
+      "start": 271.82,
+      "end": 273.925747,
+      "sectionName": "Verse 4",
+      "attackCount": 6,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 273.63,
+          "strength": 0.440615
+        },
+        {
+          "time": 272.73,
+          "strength": 0.375413
+        },
+        {
+          "time": 272.46,
+          "strength": 0.327805
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -12.43
+      ]
+    },
+    {
+      "phraseId": "g1-l074-r01",
+      "start": 276.052375,
+      "end": 279.448912,
+      "sectionName": "Verse 5",
+      "attackCount": 6,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 278.77,
+          "strength": 0.142912
+        },
+        {
+          "time": 276.36,
+          "strength": 0.115856
+        },
+        {
+          "time": 277.3,
+          "strength": 0.062393
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -10.54
+      ]
+    },
+    {
+      "phraseId": "g1-l075-r01",
+      "start": 279.29456,
+      "end": 281.704125,
+      "sectionName": "Verse 5",
+      "attackCount": 4,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 281.17,
+          "strength": 0.126129
+        },
+        {
+          "time": 279.97,
+          "strength": 0.060071
+        },
+        {
+          "time": 279.67,
+          "strength": 0.046254
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -10.54,
+        -10.93
+      ]
+    },
+    {
+      "phraseId": "g1-l076",
+      "start": 281.66,
+      "end": 283.828542,
+      "sectionName": "Verse 5",
+      "attackCount": 3,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 283.57,
+          "strength": 0.079101
+        },
+        {
+          "time": 282.37,
+          "strength": 0.078742
+        },
+        {
+          "time": 282.08,
+          "strength": 0.026439
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -10.93
+      ]
+    },
+    {
+      "phraseId": "g1-l077",
+      "start": 285.16,
+      "end": 290.728024,
+      "sectionName": "Verse 5",
+      "attackCount": 17,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 288.28,
+          "strength": 0.347664
+        },
+        {
+          "time": 287.59,
+          "strength": 0.295296
+        },
+        {
+          "time": 288.03,
+          "strength": 0.27
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -14.47,
+        -10.19
+      ]
+    },
+    {
+      "phraseId": "g1-l096",
+      "start": 291.642913,
+      "end": 294.36,
+      "sectionName": "Outro",
+      "attackCount": 7,
+      "strongestMeasuredAttacks": [
+        {
+          "time": 292.44,
+          "strength": 0.086158
+        },
+        {
+          "time": 292.12,
+          "strength": 0.070194
+        },
+        {
+          "time": 293.18,
+          "strength": 0.069806
+        }
+      ],
+      "overlappingRmsDbfs": [
+        -10.19
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "status": "partial_forced_alignment_diagnostic",
+  "task": "force-align",
+  "words": [
+    {
+      "id": "g1-l096-w01",
+      "canonicalId": "g1-l096-w01",
+      "phraseId": "g1-l096",
+      "text": "Dusk.",
+      "start": 289.8,
+      "end": 291.82,
+      "provenance": {
+        "method": "local-openai-whisper-canonical-force-align",
+        "model": "medium.en.pt",
+        "tokenProbability": 2.3794132175680716e-06,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l096-w04",
+      "canonicalId": "g1-l096-w04",
+      "phraseId": "g1-l096",
+      "text": "sixth",
+      "start": 292.5,
+      "end": 292.86,
+      "provenance": {
+        "method": "local-openai-whisper-canonical-force-align",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.001206388813443482,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l096-w05",
+      "canonicalId": "g1-l096-w05",
+      "phraseId": "g1-l096",
+      "text": "day.",
+      "start": 292.86,
+      "end": 294.36,
+      "provenance": {
+        "method": "local-openai-whisper-canonical-force-align",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9312536120414734,
+        "timingVerified": false
+      }
+    }
+  ],
+  "rawWords": [
+    {
+      "text": " Dusk.",
+      "start": 0.0,
+      "end": 2.02,
+      "probability": 2.3794132175680716e-06
+    },
+    {
+      "text": " Dawn.",
+      "start": 2.38,
+      "end": 2.38,
+      "probability": 0.00039689187542535365
+    },
+    {
+      "text": " The",
+      "start": 2.7,
+      "end": 2.7,
+      "probability": 0.016590293496847153
+    },
+    {
+      "text": " sixth",
+      "start": 2.7,
+      "end": 3.06,
+      "probability": 0.001206388813443482
+    },
+    {
+      "text": " day.",
+      "start": 3.06,
+      "end": 4.56,
+      "probability": 0.9312536120414734
+    }
+  ],
+  "invalidRawWords": [
+    {
+      "text": " Dawn.",
+      "start": 2.38,
+      "end": 2.38,
+      "probability": 0.00039689187542535365
+    },
+    {
+      "text": " The",
+      "start": 2.7,
+      "end": 2.7,
+      "probability": 0.016590293496847153
+    }
+  ],
+  "role": "source",
+  "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l096-whisper-forced-medium-diagnostic.json",
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2",
+  "source": {
+    "model": "/Volumes/DATA/AI/Models/Whisper/medium.en.pt",
+    "offset": 289.8,
+    "duration": 6.2
+  },
+  "warning": "Measured canonical forced alignment; not independent recognition. Invalid intervals omitted without guessed replacements."
+}

@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 253.03,
+    "duration": 4.0,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "in our image, in our likeness;",
+  "approvedLyrics": "in our image, in our likeness;",
+  "words": [
+    {
+      "id": "w_1a3fcb846704e4b3",
+      "text": "in",
+      "start": 254.497337,
+      "end": 254.537538,
+      "phraseId": "g1-l075",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.0820605171945281,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l075-w01"
+    },
+    {
+      "id": "w_1eca88490f358bae",
+      "text": "our",
+      "start": 254.678241,
+      "end": 254.758643,
+      "phraseId": "g1-l075",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.3384025011782834,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l075-w02"
+    },
+    {
+      "id": "w_bb256c1fe95d62ba",
+      "text": "image,",
+      "start": 254.818945,
+      "end": 255.140553,
+      "phraseId": "g1-l075",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.050320344012336544,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l075-w03"
+    },
+    {
+      "id": "w_fdbbd666a3777592",
+      "text": "in",
+      "start": 255.663166,
+      "end": 255.723467,
+      "phraseId": "g1-l075",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.13947696167697635,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l075-w04"
+    },
+    {
+      "id": "w_7fab01a4c3fdfdb5",
+      "text": "our",
+      "start": 255.82397,
+      "end": 255.904372,
+      "phraseId": "g1-l075",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.632823536039924,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l075-w05"
+    },
+    {
+      "id": "w_820bf20eca525eb6",
+      "text": "likeness;",
+      "start": 255.984774,
+      "end": 256.507387,
+      "phraseId": "g1-l075",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.8965881831297076,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l075-w06"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "in our image, in our likeness;",
+      "wordIds": [
+        "w_1a3fcb846704e4b3",
+        "w_1eca88490f358bae",
+        "w_bb256c1fe95d62ba",
+        "w_fdbbd666a3777592",
+        "w_7fab01a4c3fdfdb5",
+        "w_820bf20eca525eb6"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l075-full-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l075-full-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l075-full-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 1.0532573340460658,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

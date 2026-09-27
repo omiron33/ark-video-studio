@@ -1,0 +1,76 @@
+{
+  "shot": "adam-formation",
+  "project": "genesis1-beginning",
+  "status": "reserved_source_adopted_for_chosen_theme",
+  "authorization": "Root reported Shane chose theme3 and explicitly requested reserved Adam formation in Genesis1 on2026-09-27.",
+  "source": "/Volumes/Code/ark-video-studio/projects/psalm91-shelter/assets/artsy-adam-formation-motion.mp4",
+  "sourceSha256": "c0465fd2b0ed1723a75cfaafb6c0b312626e6ef15e7cd2872d210fdb5975c43a",
+  "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/adam-formation-motion.mp4",
+  "sha256": "c0465fd2b0ed1723a75cfaafb6c0b312626e6ef15e7cd2872d210fdb5975c43a",
+  "nativeFrames": 226,
+  "nativeFps": 24,
+  "durationSeconds": 9.416666666666666,
+  "width": 960,
+  "height": 540,
+  "audio": false,
+  "processing": "Exact file copy, no grade, re-encode, crop, retime or interpolation added by Genesis intake. Original remains intact.",
+  "review": {
+    "checkedAt": "2026-09-27T11:04:46.700958+00:00",
+    "fullDecode": "pass",
+    "currentInspection": "Both prior actual decoded contact sheets inspected again: warm bone garment, muted dark earth and amber dust already suit the restrained Breath & Earth palette. Creator and environment stable while Adam coheres from dust; no new color treatment needed.",
+    "limitation": "Formation remains fantastical, with dust obscuring fine detail of intermediate anatomy. Existing sampled review does not certify every frame.",
+    "filmIntegration": "Active foreground words/graphics remain composition owner responsibility. Use clear upper-right dark sky where possible; do not cover either face or the dust-forming silhouette. Never play as an uncomposited standalone insert."
+  },
+  "posters": {
+    "first": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/adam-formation-first.jpg",
+    "last": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/adam-formation-last.jpg"
+  },
+  "priorProvenance": {
+    "shot": "artsy-adam-formation",
+    "provider": "local OmiPC ComfyUI",
+    "model": "MiniMax H3 FL2VA int8 convrot",
+    "checkpoint": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+    "turboLora": "minimax_h3_turbo_v4_step600_ema_pruned_comfyui.safetensors",
+    "steps": 4,
+    "sampler": "MiniMaxH3TurboSampler",
+    "seed": 2026092721,
+    "conditioning": "first_frame+last_frame",
+    "input": "projects/psalm91-shelter/assets/adam-formation-end.png",
+    "inputSha256": "0652bb0b24a309ca15542f049b9cc8f07f1689216fb42f3b9a7633de49c55235",
+    "initProvider": "GPT Image supplied by root",
+    "successfulPromptId": "64de4950-b742-4883-905e-32f72aca0b6e",
+    "renderRuntimeSeconds": 218.549,
+    "native": {
+      "width": 960,
+      "height": 544,
+      "fps": 24,
+      "frames": 226
+    },
+    "workflow": "/Volumes/Code/ark-video-studio/output/psalm91-production/local-video/artsy-adam-formation-workflow.json",
+    "cost": "local GPU only; no paid API",
+    "output": "/Volumes/Code/ark-video-studio/projects/psalm91-shelter/assets/artsy-adam-formation-motion.mp4",
+    "sha256": "c0465fd2b0ed1723a75cfaafb6c0b312626e6ef15e7cd2872d210fdb5975c43a",
+    "duration": 9.416666666666666,
+    "width": 960,
+    "height": 540,
+    "audio": false,
+    "processing": "Center crop 4px height, H264 CRF17, no upscale, interpolation or reversal",
+    "review": {
+      "decode": "pass",
+      "method": "47 decoded frames at5fps spanning0\u20139.4s; two full-source contact sheets",
+      "observations": "Begins with only earth beside the unchanged physically grounded Creator. Earth rises and resolves progressively into a bowed granular human silhouette, then a solid modestly draped adult Adam who lifts his head. Background and Creator remain stable. No sampled duplicate faces, extra limbs, anatomy exposure, finger rays, cartoon textures or abrupt cuts.",
+      "limitation": "A soft dust cloud hides some fine-grain detail while the silhouette forms; this is material emergence rather than visible assembly of individual anatomy. Sampled inspection does not certify every frame or full-speed smoothness.",
+      "verdict": "accepted for single9.417s instrumental creation insert",
+      "sheets": [
+        "/Volumes/Code/ark-video-studio/output/psalm91-production/local-video/artsy-adam-review-01.jpg",
+        "/Volumes/Code/ark-video-studio/output/psalm91-production/local-video/artsy-adam-review-02.jpg"
+      ]
+    },
+    "inspiration": "/Volumes/Code/ark-video-studio/output/psalm91-production/local-video/adam-reference-evidence.json",
+    "firstFrameImage": "projects/psalm91-shelter/assets/adam-formation-start.png",
+    "firstFrameImageSha256": "d8fe01352836ed584efde5ff3374a86d2796134ec71ac53a453e27505aeeb858",
+    "finalFramePoster": "/Volumes/Code/ark-video-studio/projects/psalm91-shelter/assets/artsy-adam-formation-last.jpg",
+    "finalFramePosterSha256": "9d303f2d68431c89ae84e54efbaba3ff83b8b36a2c89fbe21be8cd14b121d421",
+    "photosPreviewCopy": "/Users/shanefisher/Movies/Psalm91/Psalm 91 - Adam Formed from Dust.mp4"
+  }
+}

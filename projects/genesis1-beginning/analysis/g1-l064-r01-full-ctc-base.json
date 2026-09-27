@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 255.73,
+    "duration": 4.06,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "Let the winged multiply on earth!\u2019",
+  "approvedLyrics": "Let the winged multiply on earth!\u2019",
+  "words": [
+    {
+      "id": "w_0b93245ca5fe1ed1",
+      "text": "Let",
+      "start": 255.971188,
+      "end": 256.453564,
+      "phraseId": "g1-l064-r01",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.15126728315954008,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l064-r01-w01"
+    },
+    {
+      "id": "w_14883e5783627fcd",
+      "text": "the",
+      "start": 256.996238,
+      "end": 257.076634,
+      "phraseId": "g1-l064-r01",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.8637834249160078,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l064-r01-w02"
+    },
+    {
+      "id": "w_45a370fadd185f51",
+      "text": "winged",
+      "start": 257.136931,
+      "end": 257.820297,
+      "phraseId": "g1-l064-r01",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.5725872998704766,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l064-r01-w03"
+    },
+    {
+      "id": "w_b0d802953a7d9ec6",
+      "text": "multiply",
+      "start": 257.920792,
+      "end": 258.584059,
+      "phraseId": "g1-l064-r01",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.7996241404453613,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l064-r01-w04"
+    },
+    {
+      "id": "w_f91109741cb23cce",
+      "text": "on",
+      "start": 258.724752,
+      "end": 258.76495,
+      "phraseId": "g1-l064-r01",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9651085225431613,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l064-r01-w05"
+    },
+    {
+      "id": "w_44a5eadfc858e44c",
+      "text": "earth!\u2019",
+      "start": 258.905644,
+      "end": 259.106634,
+      "phraseId": "g1-l064-r01",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.46751516213823346,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l064-r01-w06"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "Let the winged multiply on earth!\u2019",
+      "wordIds": [
+        "w_0b93245ca5fe1ed1",
+        "w_14883e5783627fcd",
+        "w_45a370fadd185f51",
+        "w_b0d802953a7d9ec6",
+        "w_f91109741cb23cce",
+        "w_44a5eadfc858e44c"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l064-r01-full-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l064-r01-full-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l064-r01-full-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 1.2428870000876486,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

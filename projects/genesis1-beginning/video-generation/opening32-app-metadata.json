@@ -1,0 +1,13 @@
+{
+  "project": "Genesis1 - The Beginning",
+  "title": "Genesis 1 - Opening 32 seconds (lyric film preview)",
+  "version": "Opening 32s preview v1",
+  "sourceAgent": "Codex",
+  "sourceMachine": "Mac mini",
+  "sourcePath": "/Volumes/DATA/ArkRender/genesis1/genesis1-opening32.mp4",
+  "notes": "32-second opening direction preview, not the complete song video. Completes the first seven phrases; 960 native rendered frames at1080p30. Composition agent independently accepted the decoded opening visuals; root authorized delivery. Source-versus-encoded audio PCM correlation0.999381, minimum2-second segment0.9977 and zero measured global lag, gain-0.0466dB. These audio transport checks do not certify every sung word timing. No perfect-sync or complete-gauntlet claim. Pending Shane review. SHA256 d151e3868d6400fba550906d7c58907285377b81158ca7f83e1d756ca3a5cf3f.",
+  "status": "pending_review",
+  "path": "C:\\Users\\sjfis\\Videos\\Genesis1\\opening32-d151e3868d64.mp4",
+  "thumbnail": "C:\\Users\\sjfis\\Videos\\Genesis1\\opening32-d151e3868d64.jpg",
+  "expectedMd5": "e6050c028e4153c3504b1a2a973bffcc"
+}

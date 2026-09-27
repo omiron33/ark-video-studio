@@ -1,0 +1,9 @@
+{
+  "type": "GPT Image keyframe supplied by root",
+  "image": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/ophanim-subdued.png",
+  "sha256": "d4f6fdca164b8ef979fe30d2d7257e50d9dab71fd347a046be3ea57d7166554c",
+  "providerArtifact": "exec-4812045d-0e7c-43c7-96f2-3eca9bceb649.png",
+  "imageGenerationPrompt": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/ophanim-subdued-prompt.txt",
+  "visualInspection": "Crisp separate bone, aged amber and rust glyphs on black; multiple coherent eye-covered interlocking rings. Some source rings touch image margins; no extra crop or zoom requested in motion.",
+  "motionApproval": "Production authorized after theme3; actual output still requires decoded review."
+}

@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 12.9,
+    "duration": 3.9,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "Earth stood bare, unfinished;",
+  "approvedLyrics": "Earth stood bare, unfinished;",
+  "words": [
+    {
+      "id": "w_8f9f02c6c29633bd",
+      "text": "Earth",
+      "start": 13.945361,
+      "end": 14.106186,
+      "phraseId": "g1-l003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.08190533481295593,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l003-w01"
+    },
+    {
+      "id": "w_2b5ebc7876c20ff7",
+      "text": "stood",
+      "start": 14.226804,
+      "end": 14.568557,
+      "phraseId": "g1-l003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9744337909139592,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l003-w02"
+    },
+    {
+      "id": "w_6cc0a75f4371acdb",
+      "text": "bare,",
+      "start": 14.769588,
+      "end": 15.071134,
+      "phraseId": "g1-l003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.13983992668470308,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l003-w03"
+    },
+    {
+      "id": "w_7b7680f6ec47ff67",
+      "text": "unfinished;",
+      "start": 15.493299,
+      "end": 16.478351,
+      "phraseId": "g1-l003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9392807784424594,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l003-w04"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "Earth stood bare, unfinished;",
+      "wordIds": [
+        "w_8f9f02c6c29633bd",
+        "w_2b5ebc7876c20ff7",
+        "w_6cc0a75f4371acdb",
+        "w_7b7680f6ec47ff67"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l003-opening-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l003-opening-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l003-opening-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.4198102089576423,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

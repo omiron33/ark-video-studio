@@ -1,0 +1,196 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 103.19,
+    "duration": 5.12,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "\u2018Ground, send up seed-bearing grass in kind and likeness!",
+  "approvedLyrics": "\u2018Ground, send up seed-bearing grass in kind and likeness!",
+  "words": [
+    {
+      "id": "w_593fa1139bbec47b",
+      "text": "\u2018Ground,",
+      "start": 103.491176,
+      "end": 103.993137,
+      "phraseId": "g1-l028",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.051470030182129874,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l028-w01"
+    },
+    {
+      "id": "w_9c311cdaac70c477",
+      "text": "send",
+      "start": 104.093529,
+      "end": 104.414784,
+      "phraseId": "g1-l028",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.06537159052688363,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l028-w02"
+    },
+    {
+      "id": "w_1bb06f1b08dcf93b",
+      "text": "up",
+      "start": 104.535255,
+      "end": 104.575412,
+      "phraseId": "g1-l028",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.0012811071635380235,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l028-w03"
+    },
+    {
+      "id": "w_7beb9c3e17507dc6",
+      "text": "seed-bearing",
+      "start": 104.695882,
+      "end": 105.318314,
+      "phraseId": "g1-l028",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9347719296538938,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l028-w04"
+    },
+    {
+      "id": "w_a6055e1c0eb9fec3",
+      "text": "grass",
+      "start": 105.358471,
+      "end": 105.639569,
+      "phraseId": "g1-l028",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.28086288536509013,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l028-w05"
+    },
+    {
+      "id": "w_a0ccd5e317d02831",
+      "text": "in",
+      "start": 105.760039,
+      "end": 105.820275,
+      "phraseId": "g1-l029",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.7786960289184881,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l029-w01"
+    },
+    {
+      "id": "w_a0a3696ce230a9c7",
+      "text": "kind",
+      "start": 105.940745,
+      "end": 106.362392,
+      "phraseId": "g1-l029",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9979092452539556,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l029-w02"
+    },
+    {
+      "id": "w_ee853283983e4d8f",
+      "text": "and",
+      "start": 106.52302,
+      "end": 106.603333,
+      "phraseId": "g1-l029",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.8445626290556577,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l029-w03"
+    },
+    {
+      "id": "w_e04c9f766cacc2ff",
+      "text": "likeness!",
+      "start": 106.864353,
+      "end": 107.767882,
+      "phraseId": "g1-l029",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9379294158444351,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l029-w04"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "\u2018Ground, send up seed-bearing grass in kind and likeness!",
+      "wordIds": [
+        "w_593fa1139bbec47b",
+        "w_9c311cdaac70c477",
+        "w_1bb06f1b08dcf93b",
+        "w_7beb9c3e17507dc6",
+        "w_a6055e1c0eb9fec3",
+        "w_a0ccd5e317d02831",
+        "w_a0a3696ce230a9c7",
+        "w_ee853283983e4d8f",
+        "w_e04c9f766cacc2ff"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l028-retry-ctc-large.json",
+  "executionEvidence": {
+    "id": "g1-l028-retry-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l028-retry-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 0.8151897499337792,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

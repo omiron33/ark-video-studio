@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 62.690000000000005,
+    "duration": 3.88,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "He raised that mighty span;",
+  "approvedLyrics": "He raised that mighty span;",
+  "words": [
+    {
+      "id": "w_d4d76fa292df6a39",
+      "text": "He",
+      "start": 64.398808,
+      "end": 64.479223,
+      "phraseId": "g1-l016",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.15489835037027866,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l016-w01"
+    },
+    {
+      "id": "w_e1d054d1399a944e",
+      "text": "raised",
+      "start": 64.539534,
+      "end": 64.841088,
+      "phraseId": "g1-l016",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.03588478173584588,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l016-w02"
+    },
+    {
+      "id": "w_8ef18296c3108940",
+      "text": "that",
+      "start": 64.861192,
+      "end": 65.042124,
+      "phraseId": "g1-l016",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.04168765171982133,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l016-w03"
+    },
+    {
+      "id": "w_7757628a0cd397f4",
+      "text": "mighty",
+      "start": 65.303472,
+      "end": 65.705544,
+      "phraseId": "g1-l016",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.022621036574089946,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l016-w04"
+    },
+    {
+      "id": "w_21d0d3ecfe93e69d",
+      "text": "span;",
+      "start": 65.966891,
+      "end": 66.469482,
+      "phraseId": "g1-l016",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.0507285409973104,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l016-w05"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "He raised that mighty span;",
+      "wordIds": [
+        "w_d4d76fa292df6a39",
+        "w_e1d054d1399a944e",
+        "w_8ef18296c3108940",
+        "w_7757628a0cd397f4",
+        "w_21d0d3ecfe93e69d"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l016-full-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l016-full-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l016-full-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.8624842502176762,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

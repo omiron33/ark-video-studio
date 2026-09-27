@@ -1,0 +1,2852 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "source": {
+    "audio": "../intake/source.mp3",
+    "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2",
+    "duration": 304.72,
+    "lyrics": "../intake/lyrics.txt",
+    "lyricsSha256": "d9a699733416732b13fcbeecf0d20627577e18929848b054558d098b1e11cbd9",
+    "sha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2",
+    "canonicalLyrics": "canonical-lyrics.txt",
+    "performanceLyrics": "performance-lyrics.txt",
+    "measuredAttacks": "../intake/measured-attacks.json",
+    "measuredEnergy": "../intake/energy-profile.json"
+  },
+  "phrases": [
+    {
+      "id": "g1-l001",
+      "text": "Before the first count of days,",
+      "wordIds": [
+        "g1-l001-w01",
+        "g1-l001-w02",
+        "g1-l001-w03",
+        "g1-l001-w04",
+        "g1-l001-w05",
+        "g1-l001-w06"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Verse 1",
+      "sourceLineIndex": 3,
+      "start": 4.348765,
+      "end": 7.317901,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 1,
+      "sourcePhraseId": "g1-l001",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l002",
+      "text": "God brought heaven and earth into being.",
+      "wordIds": [
+        "g1-l002-w01",
+        "g1-l002-w02",
+        "g1-l002-w03",
+        "g1-l002-w04",
+        "g1-l002-w05",
+        "g1-l002-w06",
+        "g1-l002-w07"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Verse 1",
+      "sourceLineIndex": 4,
+      "start": 9.046602,
+      "end": 12.457605,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 2,
+      "sourcePhraseId": "g1-l002",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l003",
+      "text": "Earth stood bare, unfinished;",
+      "wordIds": [
+        "g1-l003-w01",
+        "g1-l003-w02",
+        "g1-l003-w03",
+        "g1-l003-w04"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Verse 1",
+      "sourceLineIndex": 5,
+      "start": 13.965464,
+      "end": 16.478351,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 3,
+      "sourcePhraseId": "g1-l003",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l004",
+      "text": "blackness covered the deep.",
+      "wordIds": [
+        "g1-l004-w01",
+        "g1-l004-w02",
+        "g1-l004-w03",
+        "g1-l004-w04"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Verse 1",
+      "sourceLineIndex": 6,
+      "start": 17.386772,
+      "end": 19.296825,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 4,
+      "sourcePhraseId": "g1-l004",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l005",
+      "text": "Across the water moved the Spirit of God.",
+      "wordIds": [
+        "g1-l005-w01",
+        "g1-l005-w02",
+        "g1-l005-w03",
+        "g1-l005-w04",
+        "g1-l005-w05",
+        "g1-l005-w06",
+        "g1-l005-w07",
+        "g1-l005-w08"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Verse 1",
+      "sourceLineIndex": 7,
+      "start": 19.748687,
+      "end": 23.36,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 5,
+      "sourcePhraseId": "g1-l005",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l006",
+      "text": "Then God called, ‘Light, come forth!’",
+      "wordIds": [
+        "g1-l006-w01",
+        "g1-l006-w02",
+        "g1-l006-w03",
+        "g1-l006-w04",
+        "g1-l006-w05",
+        "g1-l006-w06"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 10,
+      "start": 24.643307,
+      "end": 28.398031,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 6,
+      "sourcePhraseId": "g1-l006",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l007",
+      "text": "Brightness answered.",
+      "wordIds": [
+        "g1-l007-w01",
+        "g1-l007-w02"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 11,
+      "start": 29.75,
+      "end": 30.916667,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 7,
+      "sourcePhraseId": "g1-l007",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l008",
+      "text": "He looked on the light: good.",
+      "wordIds": [
+        "g1-l008-w01",
+        "g1-l008-w02",
+        "g1-l008-w03",
+        "g1-l008-w04",
+        "g1-l008-w05",
+        "g1-l008-w06"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 14,
+      "start": 33.96,
+      "end": 36.74,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 8,
+      "sourcePhraseId": "g1-l008",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l009",
+      "text": "He cut a clear line between it and darkness.",
+      "wordIds": [
+        "g1-l009-w01",
+        "g1-l009-w02",
+        "g1-l009-w03",
+        "g1-l009-w04",
+        "g1-l009-w05",
+        "g1-l009-w06",
+        "g1-l009-w07",
+        "g1-l009-w08",
+        "g1-l009-w09"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 15,
+      "start": 38.917037,
+      "end": 41.16,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 9,
+      "sourcePhraseId": "g1-l009",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l010",
+      "text": "Day was the name He gave the light;",
+      "wordIds": [
+        "g1-l010-w01",
+        "g1-l010-w02",
+        "g1-l010-w03",
+        "g1-l010-w04",
+        "g1-l010-w05",
+        "g1-l010-w06",
+        "g1-l010-w07",
+        "g1-l010-w08"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 16,
+      "start": 41.08,
+      "end": 45.94,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 10,
+      "sourcePhraseId": "g1-l010",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l011",
+      "text": "Night, the name He gave the dark.",
+      "wordIds": [
+        "g1-l011-w01",
+        "g1-l011-w02",
+        "g1-l011-w03",
+        "g1-l011-w04",
+        "g1-l011-w05",
+        "g1-l011-w06",
+        "g1-l011-w07"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 17,
+      "start": 45.92,
+      "end": 48.559674,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 11,
+      "sourcePhraseId": "g1-l011",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l012",
+      "text": "Dusk. Dawn. The first day.",
+      "wordIds": [
+        "g1-l012-w01",
+        "g1-l012-w02",
+        "g1-l012-w03",
+        "g1-l012-w04",
+        "g1-l012-w05"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 18,
+      "start": 48.65997,
+      "end": 51.12727,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 12,
+      "sourcePhraseId": "g1-l012",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l013",
+      "text": "God spoke: ‘A firmament amid the waters!",
+      "wordIds": [
+        "g1-l013-w01",
+        "g1-l013-w02",
+        "g1-l013-w03",
+        "g1-l013-w04",
+        "g1-l013-w05",
+        "g1-l013-w06",
+        "g1-l013-w07"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 22,
+      "start": 54,
+      "end": 58.54,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 13,
+      "sourcePhraseId": "g1-l013",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l014",
+      "text": "Let water part from water!’",
+      "wordIds": [
+        "g1-l014-w01",
+        "g1-l014-w02",
+        "g1-l014-w03",
+        "g1-l014-w04",
+        "g1-l014-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 23,
+      "start": 58.54,
+      "end": 61.028396,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 14,
+      "sourcePhraseId": "g1-l014",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l015",
+      "text": "His word took hold.",
+      "wordIds": [
+        "g1-l015-w01",
+        "g1-l015-w02",
+        "g1-l015-w03",
+        "g1-l015-w04"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 24,
+      "start": 61.256193,
+      "end": 63.34,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 15,
+      "sourcePhraseId": "g1-l015",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l016",
+      "text": "He raised that mighty span;",
+      "wordIds": [
+        "g1-l016-w01",
+        "g1-l016-w02",
+        "g1-l016-w03",
+        "g1-l016-w04",
+        "g1-l016-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 27,
+      "start": 63.34,
+      "end": 65.92,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 16,
+      "sourcePhraseId": "g1-l016",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l017",
+      "text": "flood beneath it,",
+      "wordIds": [
+        "g1-l017-w01",
+        "g1-l017-w02",
+        "g1-l017-w03"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 28,
+      "start": 66.18,
+      "end": 67.2,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 17,
+      "sourcePhraseId": "g1-l017",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l018",
+      "text": "flood above it.",
+      "wordIds": [
+        "g1-l018-w01",
+        "g1-l018-w02",
+        "g1-l018-w03"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 29,
+      "start": 67.4,
+      "end": 68.48,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 18,
+      "sourcePhraseId": "g1-l018",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l019",
+      "text": "He called the firmament Heaven.",
+      "wordIds": [
+        "g1-l019-w01",
+        "g1-l019-w02",
+        "g1-l019-w03",
+        "g1-l019-w04",
+        "g1-l019-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 30,
+      "start": 68.534052,
+      "end": 70.48,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 19,
+      "sourcePhraseId": "g1-l019",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l020",
+      "text": "He looked on it: good.",
+      "wordIds": [
+        "g1-l020-w01",
+        "g1-l020-w02",
+        "g1-l020-w03",
+        "g1-l020-w04",
+        "g1-l020-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 31,
+      "start": 71.3,
+      "end": 72.92,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 20,
+      "sourcePhraseId": "g1-l020",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l021",
+      "text": "Dusk. Dawn. The second day.",
+      "wordIds": [
+        "g1-l021-w01",
+        "g1-l021-w02",
+        "g1-l021-w03",
+        "g1-l021-w04",
+        "g1-l021-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 32,
+      "start": 73.256323,
+      "end": 74.665355,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 21,
+      "sourcePhraseId": "g1-l021",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l022",
+      "text": "‘Waters below Heaven, run to one place;",
+      "wordIds": [
+        "g1-l022-w01",
+        "g1-l022-w02",
+        "g1-l022-w03",
+        "g1-l022-w04",
+        "g1-l022-w05",
+        "g1-l022-w06",
+        "g1-l022-w07"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 35,
+      "start": 78.34,
+      "end": 82.39999999999999,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 22,
+      "sourcePhraseId": "g1-l022",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l023",
+      "text": "let dry ground show!’",
+      "wordIds": [
+        "g1-l023-w01",
+        "g1-l023-w02",
+        "g1-l023-w03",
+        "g1-l023-w04"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 36,
+      "start": 82.62,
+      "end": 84.926452,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 23,
+      "sourcePhraseId": "g1-l023",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l024",
+      "text": "The waters gathered. Land came clear.",
+      "wordIds": [
+        "g1-l024-w01",
+        "g1-l024-w02",
+        "g1-l024-w03",
+        "g1-l024-w04",
+        "g1-l024-w05",
+        "g1-l024-w06"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 37,
+      "start": 87.633333,
+      "end": 92.16,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 24,
+      "sourcePhraseId": "g1-l024",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l025",
+      "text": "He named the dry ground Earth,",
+      "wordIds": [
+        "g1-l025-w01",
+        "g1-l025-w02",
+        "g1-l025-w03",
+        "g1-l025-w04",
+        "g1-l025-w05",
+        "g1-l025-w06"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 40,
+      "start": 92.16,
+      "end": 95.327445,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 25,
+      "sourcePhraseId": "g1-l025",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l026",
+      "text": "the gathered waters Seas.",
+      "wordIds": [
+        "g1-l026-w01",
+        "g1-l026-w02",
+        "g1-l026-w03",
+        "g1-l026-w04"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 41,
+      "start": 95.454667,
+      "end": 97.827778,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 26,
+      "sourcePhraseId": "g1-l026",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l027",
+      "text": "He looked on them: good.",
+      "wordIds": [
+        "g1-l027-w01",
+        "g1-l027-w02",
+        "g1-l027-w03",
+        "g1-l027-w04",
+        "g1-l027-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 42,
+      "start": 98,
+      "end": 101.119797,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 27,
+      "sourcePhraseId": "g1-l027",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l028",
+      "text": "‘Ground, send up seed-bearing grass",
+      "wordIds": [
+        "g1-l028-w01",
+        "g1-l028-w02",
+        "g1-l028-w03",
+        "g1-l028-w04",
+        "g1-l028-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Build",
+      "sourceLineIndex": 45,
+      "start": 103.491176,
+      "end": 105.6,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 28,
+      "sourcePhraseId": "g1-l028",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l029",
+      "text": "in kind and likeness!",
+      "wordIds": [
+        "g1-l029-w01",
+        "g1-l029-w02",
+        "g1-l029-w03",
+        "g1-l029-w04"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Build",
+      "sourceLineIndex": 46,
+      "start": 105.760039,
+      "end": 107.767882,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 29,
+      "sourcePhraseId": "g1-l029",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l030",
+      "text": "Trees, bear fruit with seed within,",
+      "wordIds": [
+        "g1-l030-w01",
+        "g1-l030-w02",
+        "g1-l030-w03",
+        "g1-l030-w04",
+        "g1-l030-w05",
+        "g1-l030-w06"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Build",
+      "sourceLineIndex": 47,
+      "start": 107.72,
+      "end": 110.426832,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 30,
+      "sourcePhraseId": "g1-l030",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l031",
+      "text": "each true to its kind!’",
+      "wordIds": [
+        "g1-l031-w01",
+        "g1-l031-w02",
+        "g1-l031-w03",
+        "g1-l031-w04",
+        "g1-l031-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Build",
+      "sourceLineIndex": 48,
+      "start": 110.42,
+      "end": 112.246735,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 31,
+      "sourcePhraseId": "g1-l031",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l032",
+      "text": "His word took hold.",
+      "wordIds": [
+        "g1-l032-w01",
+        "g1-l032-w02",
+        "g1-l032-w03",
+        "g1-l032-w04"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Build",
+      "sourceLineIndex": 49,
+      "start": 112.12,
+      "end": 113.376855,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 32,
+      "sourcePhraseId": "g1-l032",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l033",
+      "text": "Green surged from the soil:",
+      "wordIds": [
+        "g1-l033-w01",
+        "g1-l033-w02",
+        "g1-l033-w03",
+        "g1-l033-w04",
+        "g1-l033-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 52,
+      "start": 117.655802,
+      "end": 119.28,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 33,
+      "sourcePhraseId": "g1-l033",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l034",
+      "text": "grass with seed in its kind and likeness;",
+      "wordIds": [
+        "g1-l034-w01",
+        "g1-l034-w02",
+        "g1-l034-w03",
+        "g1-l034-w04",
+        "g1-l034-w05",
+        "g1-l034-w06",
+        "g1-l034-w07",
+        "g1-l034-w08"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 53,
+      "start": 119.28,
+      "end": 122.04697,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 34,
+      "sourcePhraseId": "g1-l034",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l035",
+      "text": "fruit wrapped around its seed,",
+      "wordIds": [
+        "g1-l035-w01",
+        "g1-l035-w02",
+        "g1-l035-w03",
+        "g1-l035-w04",
+        "g1-l035-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 54,
+      "start": 122.06,
+      "end": 124.1,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 35,
+      "sourcePhraseId": "g1-l035",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l036",
+      "text": "tree by tree, kind by kind.",
+      "wordIds": [
+        "g1-l036-w01",
+        "g1-l036-w02",
+        "g1-l036-w03",
+        "g1-l036-w04",
+        "g1-l036-w05",
+        "g1-l036-w06"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 55,
+      "start": 124.16,
+      "end": 126.68,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 36,
+      "sourcePhraseId": "g1-l036",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l037",
+      "text": "He looked on it: good.",
+      "wordIds": [
+        "g1-l037-w01",
+        "g1-l037-w02",
+        "g1-l037-w03",
+        "g1-l037-w04",
+        "g1-l037-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 56,
+      "start": 126.793789,
+      "end": 129.32,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 37,
+      "sourcePhraseId": "g1-l037",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l038",
+      "text": "Dusk. Dawn. The third day.",
+      "wordIds": [
+        "g1-l038-w01",
+        "g1-l038-w02",
+        "g1-l038-w03",
+        "g1-l038-w04",
+        "g1-l038-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 57,
+      "start": 130.855333,
+      "end": 132.36,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 38,
+      "sourcePhraseId": "g1-l038",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l039",
+      "text": "‘Lights across Heaven’s firmament!",
+      "wordIds": [
+        "g1-l039-w01",
+        "g1-l039-w02",
+        "g1-l039-w03",
+        "g1-l039-w04"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 61,
+      "start": 136.9,
+      "end": 140.24,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 39,
+      "sourcePhraseId": "g1-l039",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l040",
+      "text": "Divide day from night;",
+      "wordIds": [
+        "g1-l040-w01",
+        "g1-l040-w02",
+        "g1-l040-w03",
+        "g1-l040-w04"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 62,
+      "start": 140.28,
+      "end": 142.52,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 40,
+      "sourcePhraseId": "g1-l040",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l041",
+      "text": "mark signs, seasons, days and years!’",
+      "wordIds": [
+        "g1-l041-w01",
+        "g1-l041-w02",
+        "g1-l041-w03",
+        "g1-l041-w04",
+        "g1-l041-w05",
+        "g1-l041-w06"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 63,
+      "start": 142.833571,
+      "end": 146.827786,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 41,
+      "sourcePhraseId": "g1-l041",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l042",
+      "text": "‘From that height, shine on the earth!’",
+      "wordIds": [
+        "g1-l042-w01",
+        "g1-l042-w02",
+        "g1-l042-w03",
+        "g1-l042-w04",
+        "g1-l042-w05",
+        "g1-l042-w06",
+        "g1-l042-w07"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 64,
+      "start": 146.9,
+      "end": 151.101253,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 42,
+      "sourcePhraseId": "g1-l042",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l043",
+      "text": "His word took hold.",
+      "wordIds": [
+        "g1-l043-w01",
+        "g1-l043-w02",
+        "g1-l043-w03",
+        "g1-l043-w04"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 65,
+      "start": 150.980979,
+      "end": 154.208314,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 43,
+      "sourcePhraseId": "g1-l043",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l044",
+      "text": "Two great lights He fashioned:",
+      "wordIds": [
+        "g1-l044-w01",
+        "g1-l044-w02",
+        "g1-l044-w03",
+        "g1-l044-w04",
+        "g1-l044-w05"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 68,
+      "start": 155.75627,
+      "end": 157.7,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 44,
+      "sourcePhraseId": "g1-l044",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l045",
+      "text": "the greater to command the day,",
+      "wordIds": [
+        "g1-l045-w01",
+        "g1-l045-w02",
+        "g1-l045-w03",
+        "g1-l045-w04",
+        "g1-l045-w05",
+        "g1-l045-w06"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 69,
+      "start": 157.7,
+      "end": 159.665621,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 45,
+      "sourcePhraseId": "g1-l045",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l046",
+      "text": "the lesser to command the night.",
+      "wordIds": [
+        "g1-l046-w01",
+        "g1-l046-w02",
+        "g1-l046-w03",
+        "g1-l046-w04",
+        "g1-l046-w05",
+        "g1-l046-w06"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 70,
+      "start": 160.396632,
+      "end": 162.366788,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 46,
+      "sourcePhraseId": "g1-l046",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l047",
+      "text": "He made the stars as well.",
+      "wordIds": [
+        "g1-l047-w01",
+        "g1-l047-w02",
+        "g1-l047-w03",
+        "g1-l047-w04",
+        "g1-l047-w05",
+        "g1-l047-w06"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 71,
+      "start": 162.695348,
+      "end": 164.806578,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 47,
+      "sourcePhraseId": "g1-l047",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l048",
+      "text": "He set them in Heaven’s span",
+      "wordIds": [
+        "g1-l048-w01",
+        "g1-l048-w02",
+        "g1-l048-w03",
+        "g1-l048-w04",
+        "g1-l048-w05",
+        "g1-l048-w06"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 72,
+      "start": 164.8,
+      "end": 167.56828,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 48,
+      "sourcePhraseId": "g1-l048",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l049",
+      "text": "to send their light across the earth,",
+      "wordIds": [
+        "g1-l049-w01",
+        "g1-l049-w02",
+        "g1-l049-w03",
+        "g1-l049-w04",
+        "g1-l049-w05",
+        "g1-l049-w06",
+        "g1-l049-w07"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 73,
+      "start": 167.44,
+      "end": 169.58,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 49,
+      "sourcePhraseId": "g1-l049",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l050",
+      "text": "to rule night and day,",
+      "wordIds": [
+        "g1-l050-w01",
+        "g1-l050-w02",
+        "g1-l050-w03",
+        "g1-l050-w04",
+        "g1-l050-w05"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 74,
+      "start": 169.6,
+      "end": 171.165205,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 50,
+      "sourcePhraseId": "g1-l050",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l051",
+      "text": "to keep the bright apart from dark.",
+      "wordIds": [
+        "g1-l051-w01",
+        "g1-l051-w02",
+        "g1-l051-w03",
+        "g1-l051-w04",
+        "g1-l051-w05",
+        "g1-l051-w06",
+        "g1-l051-w07"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 75,
+      "start": 172.096496,
+      "end": 174.627265,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 51,
+      "sourcePhraseId": "g1-l051",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l052",
+      "text": "He looked on them: good.",
+      "wordIds": [
+        "g1-l052-w01",
+        "g1-l052-w02",
+        "g1-l052-w03",
+        "g1-l052-w04",
+        "g1-l052-w05"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 76,
+      "start": 174.6936,
+      "end": 177.3468,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 52,
+      "sourcePhraseId": "g1-l052",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l053",
+      "text": "Dusk. Dawn. The fourth day.",
+      "wordIds": [
+        "g1-l053-w01",
+        "g1-l053-w02",
+        "g1-l053-w03",
+        "g1-l053-w04",
+        "g1-l053-w05"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 77,
+      "start": 178.836022,
+      "end": 180.283763,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 53,
+      "sourcePhraseId": "g1-l053",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l054",
+      "text": "‘Water, swarm with living reptiles!",
+      "wordIds": [
+        "g1-l054-w01",
+        "g1-l054-w02",
+        "g1-l054-w03",
+        "g1-l054-w04",
+        "g1-l054-w05"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 81,
+      "start": 184.66,
+      "end": 187.44,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 54,
+      "sourcePhraseId": "g1-l054",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l055",
+      "text": "Winged creatures, fly above the earth",
+      "wordIds": [
+        "g1-l055-w01",
+        "g1-l055-w02",
+        "g1-l055-w03",
+        "g1-l055-w04",
+        "g1-l055-w05",
+        "g1-l055-w06"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 82,
+      "start": 187.44,
+      "end": 190.04,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 55,
+      "sourcePhraseId": "g1-l055",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l056",
+      "text": "across Heaven’s firmament!’",
+      "wordIds": [
+        "g1-l056-w01",
+        "g1-l056-w02",
+        "g1-l056-w03"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 83,
+      "start": 190,
+      "end": 193.223024,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 56,
+      "sourcePhraseId": "g1-l056",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l057",
+      "text": "His word took hold.",
+      "wordIds": [
+        "g1-l057-w01",
+        "g1-l057-w02",
+        "g1-l057-w03",
+        "g1-l057-w04"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 84,
+      "start": 193.16,
+      "end": 196.04,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 57,
+      "sourcePhraseId": "g1-l057",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l058",
+      "text": "God made the great whales,",
+      "wordIds": [
+        "g1-l058-w01",
+        "g1-l058-w02",
+        "g1-l058-w03",
+        "g1-l058-w04",
+        "g1-l058-w05"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 87,
+      "start": 198.037293,
+      "end": 199.7,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 58,
+      "sourcePhraseId": "g1-l058",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l059",
+      "text": "every living water-reptile by kind,",
+      "wordIds": [
+        "g1-l059-w01",
+        "g1-l059-w02",
+        "g1-l059-w03",
+        "g1-l059-w04",
+        "g1-l059-w05"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 88,
+      "start": 199.914859,
+      "end": 202.00661,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 59,
+      "sourcePhraseId": "g1-l059",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l060",
+      "text": "and every winged creature by kind.",
+      "wordIds": [
+        "g1-l060-w01",
+        "g1-l060-w02",
+        "g1-l060-w03",
+        "g1-l060-w04",
+        "g1-l060-w05",
+        "g1-l060-w06"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 89,
+      "start": 201.98,
+      "end": 204.365833,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 60,
+      "sourcePhraseId": "g1-l060",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l061",
+      "text": "He looked on them: good.",
+      "wordIds": [
+        "g1-l061-w01",
+        "g1-l061-w02",
+        "g1-l061-w03",
+        "g1-l061-w04",
+        "g1-l061-w05"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 90,
+      "start": 204.5,
+      "end": 206.746532,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 61,
+      "sourcePhraseId": "g1-l061",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l062",
+      "text": "His blessing rang out:",
+      "wordIds": [
+        "g1-l062-w01",
+        "g1-l062-w02",
+        "g1-l062-w03",
+        "g1-l062-w04"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 91,
+      "start": 207.698677,
+      "end": 209.085979,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 62,
+      "sourcePhraseId": "g1-l062",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l063",
+      "text": "‘Increase! Multiply! Fill the seas!",
+      "wordIds": [
+        "g1-l063-w01",
+        "g1-l063-w02",
+        "g1-l063-w03",
+        "g1-l063-w04",
+        "g1-l063-w05"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 92,
+      "start": 209.514364,
+      "end": 212.347182,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 63,
+      "sourcePhraseId": "g1-l063",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l064",
+      "text": "Let the winged multiply on earth!’",
+      "wordIds": [
+        "g1-l064-w01",
+        "g1-l064-w02",
+        "g1-l064-w03",
+        "g1-l064-w04",
+        "g1-l064-w05",
+        "g1-l064-w06"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 93,
+      "start": 212.34,
+      "end": 214.606044,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 64,
+      "sourcePhraseId": "g1-l064",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l065",
+      "text": "Dusk. Dawn. The fifth day.",
+      "wordIds": [
+        "g1-l065-w01",
+        "g1-l065-w02",
+        "g1-l065-w03",
+        "g1-l065-w04",
+        "g1-l065-w05"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 94,
+      "start": 217.241808,
+      "end": 218.707196,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 65,
+      "sourcePhraseId": "g1-l065",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l066",
+      "text": "‘Earth, bring out living kinds:",
+      "wordIds": [
+        "g1-l066-w01",
+        "g1-l066-w02",
+        "g1-l066-w03",
+        "g1-l066-w04",
+        "g1-l066-w05"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 97,
+      "start": 222.454779,
+      "end": 225.3,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 66,
+      "sourcePhraseId": "g1-l066",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l067",
+      "text": "four-footed beasts, crawling reptiles,",
+      "wordIds": [
+        "g1-l067-w01",
+        "g1-l067-w02",
+        "g1-l067-w03",
+        "g1-l067-w04"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 98,
+      "start": 225.632911,
+      "end": 227.76,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 67,
+      "sourcePhraseId": "g1-l067",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l068",
+      "text": "wild beasts, each after its kind!’",
+      "wordIds": [
+        "g1-l068-w01",
+        "g1-l068-w02",
+        "g1-l068-w03",
+        "g1-l068-w04",
+        "g1-l068-w05",
+        "g1-l068-w06"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 99,
+      "start": 227.76,
+      "end": 231.680429,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 68,
+      "sourcePhraseId": "g1-l068",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l069",
+      "text": "His word took hold.",
+      "wordIds": [
+        "g1-l069-w01",
+        "g1-l069-w02",
+        "g1-l069-w03",
+        "g1-l069-w04"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 100,
+      "start": 231.56,
+      "end": 235.8,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 69,
+      "sourcePhraseId": "g1-l069",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l070",
+      "text": "He fashioned wild beasts, cattle,",
+      "wordIds": [
+        "g1-l070-w01",
+        "g1-l070-w02",
+        "g1-l070-w03",
+        "g1-l070-w04",
+        "g1-l070-w05"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 103,
+      "start": 235.8,
+      "end": 239.18,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 70,
+      "sourcePhraseId": "g1-l070",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l071",
+      "text": "and the reptiles of the ground,",
+      "wordIds": [
+        "g1-l071-w01",
+        "g1-l071-w02",
+        "g1-l071-w03",
+        "g1-l071-w04",
+        "g1-l071-w05",
+        "g1-l071-w06"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 104,
+      "start": 240.078081,
+      "end": 241.806768,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 71,
+      "sourcePhraseId": "g1-l071",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l072",
+      "text": "each after its kind.",
+      "wordIds": [
+        "g1-l072-w01",
+        "g1-l072-w02",
+        "g1-l072-w03",
+        "g1-l072-w04"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 105,
+      "start": 241.8,
+      "end": 243.125194,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 72,
+      "sourcePhraseId": "g1-l072",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l073",
+      "text": "He looked on them: good.",
+      "wordIds": [
+        "g1-l073-w01",
+        "g1-l073-w02",
+        "g1-l073-w03",
+        "g1-l073-w04",
+        "g1-l073-w05"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 106,
+      "start": 245.53,
+      "end": 247.528098,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 73,
+      "sourcePhraseId": "g1-l073",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l074",
+      "text": "Then God said, ‘Let us make humankind",
+      "wordIds": [
+        "g1-l074-w01",
+        "g1-l074-w02",
+        "g1-l074-w03",
+        "g1-l074-w04",
+        "g1-l074-w05",
+        "g1-l074-w06",
+        "g1-l074-w07"
+      ],
+      "sectionName": "Verse 5",
+      "deliveryStyle": "Verse 5",
+      "sourceLineIndex": 109,
+      "start": 249.051517,
+      "end": 253.028906,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 74,
+      "sourcePhraseId": "g1-l074",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l075",
+      "text": "in our image, in our likeness;",
+      "wordIds": [
+        "g1-l075-w01",
+        "g1-l075-w02",
+        "g1-l075-w03",
+        "g1-l075-w04",
+        "g1-l075-w05",
+        "g1-l075-w06"
+      ],
+      "sectionName": "Verse 5",
+      "deliveryStyle": "Verse 5",
+      "sourceLineIndex": 110,
+      "start": 254.500897,
+      "end": 256.48431,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 75,
+      "sourcePhraseId": "g1-l075",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l064-r01",
+      "text": "Let the winged multiply on earth!’",
+      "wordIds": [
+        "g1-l064-r01-w01",
+        "g1-l064-r01-w02",
+        "g1-l064-r01-w03",
+        "g1-l064-r01-w04",
+        "g1-l064-r01-w05",
+        "g1-l064-r01-w06"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 93,
+      "start": 256.844931,
+      "end": 259.106634,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": "g1-l064"
+      },
+      "performanceIndex": 76,
+      "sourcePhraseId": "g1-l064",
+      "performedRepeat": true
+    },
+    {
+      "id": "g1-l069-r01",
+      "text": "His word took hold.",
+      "wordIds": [
+        "g1-l069-r01-w01",
+        "g1-l069-r01-w02",
+        "g1-l069-r01-w03",
+        "g1-l069-r01-w04"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 100,
+      "start": 259.231584,
+      "end": 262.44,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": "g1-l069"
+      },
+      "performanceIndex": 77,
+      "sourcePhraseId": "g1-l069",
+      "performedRepeat": true
+    },
+    {
+      "id": "g1-l070-r01",
+      "text": "He fashioned wild beasts, cattle,",
+      "wordIds": [
+        "g1-l070-r01-w01",
+        "g1-l070-r01-w02",
+        "g1-l070-r01-w03",
+        "g1-l070-r01-w04",
+        "g1-l070-r01-w05"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 103,
+      "start": 264.1,
+      "end": 266.52,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": "g1-l070"
+      },
+      "performanceIndex": 78,
+      "sourcePhraseId": "g1-l070",
+      "performedRepeat": true
+    },
+    {
+      "id": "g1-l071-r01",
+      "text": "and the reptiles of the ground,",
+      "wordIds": [
+        "g1-l071-r01-w01",
+        "g1-l071-r01-w02",
+        "g1-l071-r01-w03",
+        "g1-l071-r01-w04",
+        "g1-l071-r01-w05",
+        "g1-l071-r01-w06"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 104,
+      "start": 267.096632,
+      "end": 269.14,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": "g1-l071"
+      },
+      "performanceIndex": 79,
+      "sourcePhraseId": "g1-l071",
+      "performedRepeat": true
+    },
+    {
+      "id": "g1-l072-r01",
+      "text": "each after its kind.",
+      "wordIds": [
+        "g1-l072-r01-w01",
+        "g1-l072-r01-w02",
+        "g1-l072-r01-w03",
+        "g1-l072-r01-w04"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 105,
+      "start": 270.123529,
+      "end": 271.448382,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": "g1-l072"
+      },
+      "performanceIndex": 80,
+      "sourcePhraseId": "g1-l072",
+      "performedRepeat": true
+    },
+    {
+      "id": "g1-l073-r01",
+      "text": "He looked on them: good.",
+      "wordIds": [
+        "g1-l073-r01-w01",
+        "g1-l073-r01-w02",
+        "g1-l073-r01-w03",
+        "g1-l073-r01-w04",
+        "g1-l073-r01-w05"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 106,
+      "start": 271.82,
+      "end": 273.925747,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": "g1-l073"
+      },
+      "performanceIndex": 81,
+      "sourcePhraseId": "g1-l073",
+      "performedRepeat": true
+    },
+    {
+      "id": "g1-l074-r01",
+      "text": "Then God said, ‘Let us make humankind",
+      "wordIds": [
+        "g1-l074-r01-w01",
+        "g1-l074-r01-w02",
+        "g1-l074-r01-w03",
+        "g1-l074-r01-w04",
+        "g1-l074-r01-w05",
+        "g1-l074-r01-w06",
+        "g1-l074-r01-w07"
+      ],
+      "sectionName": "Verse 5",
+      "deliveryStyle": "Verse 5",
+      "sourceLineIndex": 109,
+      "start": 276.052375,
+      "end": 279.448912,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": "g1-l074"
+      },
+      "performanceIndex": 82,
+      "sourcePhraseId": "g1-l074",
+      "performedRepeat": true
+    },
+    {
+      "id": "g1-l075-r01",
+      "text": "in our image, in our likeness;",
+      "wordIds": [
+        "g1-l075-r01-w01",
+        "g1-l075-r01-w02",
+        "g1-l075-r01-w03",
+        "g1-l075-r01-w04",
+        "g1-l075-r01-w05",
+        "g1-l075-r01-w06"
+      ],
+      "sectionName": "Verse 5",
+      "deliveryStyle": "Verse 5",
+      "sourceLineIndex": 110,
+      "start": 279.29456,
+      "end": 281.704125,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": "g1-l075"
+      },
+      "performanceIndex": 83,
+      "sourcePhraseId": "g1-l075",
+      "performedRepeat": true
+    },
+    {
+      "id": "g1-l076",
+      "text": "let them rule the fish, the birds,",
+      "wordIds": [
+        "g1-l076-w01",
+        "g1-l076-w02",
+        "g1-l076-w03",
+        "g1-l076-w04",
+        "g1-l076-w05",
+        "g1-l076-w06",
+        "g1-l076-w07"
+      ],
+      "sectionName": "Verse 5",
+      "deliveryStyle": "Verse 5",
+      "sourceLineIndex": 111,
+      "start": 281.66,
+      "end": 283.828542,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 84,
+      "sourcePhraseId": "g1-l076",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l077",
+      "text": "the cattle, all the earth and all that crawls.’",
+      "wordIds": [
+        "g1-l077-w01",
+        "g1-l077-w02",
+        "g1-l077-w03",
+        "g1-l077-w04",
+        "g1-l077-w05",
+        "g1-l077-w06",
+        "g1-l077-w07",
+        "g1-l077-w08",
+        "g1-l077-w09"
+      ],
+      "sectionName": "Verse 5",
+      "deliveryStyle": "Verse 5",
+      "sourceLineIndex": 112,
+      "start": 285.16,
+      "end": 290.728024,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 85,
+      "sourcePhraseId": "g1-l077",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l096",
+      "text": "Dusk. Dawn. The sixth day.",
+      "wordIds": [
+        "g1-l096-w01",
+        "g1-l096-w02",
+        "g1-l096-w03",
+        "g1-l096-w04",
+        "g1-l096-w05"
+      ],
+      "sectionName": "Outro",
+      "deliveryStyle": "Outro",
+      "sourceLineIndex": 137,
+      "start": 291.642913,
+      "end": 294.36,
+      "provenance": {
+        "method": "First and last selected actual acoustic word interval",
+        "timingVerified": false,
+        "performedSequenceEvidence": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json",
+          "analysis/full-whisper-medium-diagnostic.json"
+        ],
+        "performanceRepeatOf": null
+      },
+      "performanceIndex": 86,
+      "sourcePhraseId": "g1-l096",
+      "performedRepeat": false
+    }
+  ],
+  "instrumentalIntervals": [
+    {
+      "start": 0,
+      "end": 4.348765,
+      "duration": 4.348765,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 7.317901,
+      "end": 9.046602,
+      "duration": 1.728701,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 12.457605,
+      "end": 13.965464,
+      "duration": 1.5078590000000016,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 16.478351,
+      "end": 17.386772,
+      "duration": 0.9084210000000006,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 23.36,
+      "end": 24.643307,
+      "duration": 1.2833070000000006,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 28.398031,
+      "end": 29.75,
+      "duration": 1.3519690000000004,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 30.916667,
+      "end": 33.96,
+      "duration": 3.0433330000000005,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 36.74,
+      "end": 38.917037,
+      "duration": 2.1770369999999986,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 51.12727,
+      "end": 54,
+      "duration": 2.872729999999997,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 70.48,
+      "end": 71.3,
+      "duration": 0.8199999999999932,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 74.665355,
+      "end": 78.34,
+      "duration": 3.674644999999998,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 84.926452,
+      "end": 87.633333,
+      "duration": 2.7068809999999957,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 101.119797,
+      "end": 103.491176,
+      "duration": 2.3713789999999904,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 113.376855,
+      "end": 117.655802,
+      "duration": 4.278946999999988,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 129.32,
+      "end": 130.855333,
+      "duration": 1.5353330000000085,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 132.36,
+      "end": 136.9,
+      "duration": 4.539999999999992,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 154.208314,
+      "end": 155.75627,
+      "duration": 1.5479559999999992,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 171.165205,
+      "end": 172.096496,
+      "duration": 0.9312910000000159,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 177.3468,
+      "end": 178.836022,
+      "duration": 1.4892220000000123,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 180.283763,
+      "end": 184.66,
+      "duration": 4.376237000000003,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 196.04,
+      "end": 198.037293,
+      "duration": 1.9972930000000133,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 206.746532,
+      "end": 207.698677,
+      "duration": 0.9521450000000016,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 214.606044,
+      "end": 217.241808,
+      "duration": 2.6357639999999947,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 218.707196,
+      "end": 222.454779,
+      "duration": 3.7475829999999917,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 239.18,
+      "end": 240.078081,
+      "duration": 0.8980809999999906,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 243.125194,
+      "end": 245.53,
+      "duration": 2.4048060000000078,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 247.528098,
+      "end": 249.051517,
+      "duration": 1.5234189999999899,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 253.028906,
+      "end": 254.500897,
+      "duration": 1.4719910000000027,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 262.44,
+      "end": 264.1,
+      "duration": 1.660000000000025,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 269.14,
+      "end": 270.123529,
+      "duration": 0.9835290000000327,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 273.925747,
+      "end": 276.052375,
+      "duration": 2.1266279999999824,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 283.828542,
+      "end": 285.16,
+      "duration": 1.3314579999999978,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 290.728024,
+      "end": 291.642913,
+      "duration": 0.9148890000000165,
+      "kind": "no-canonical-lyric-gap",
+      "provenance": {
+        "method": "Complement of measured phrase intervals; not a silence or vocal-presence classifier"
+      }
+    },
+    {
+      "start": 294.36,
+      "end": 304.72,
+      "duration": 10.360000000000014,
+      "kind": "no-canonical-lyric-tail",
+      "provenance": {
+        "method": "After final measured canonical line; backing vocals and music may continue"
+      }
+    }
+  ]
+}

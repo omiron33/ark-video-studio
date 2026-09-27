@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "kind": "machine-temporal-review",
+  "createdAt": "2026-09-27T11:59:24.829Z",
+  "reportPath": "/Volumes/DATA/ArkRender/genesis1/review-v1/temporal/temporal-review.json",
+  "videoPath": "/Volumes/DATA/ArkRender/genesis1/genesis1-breath-earth-v1.mp4",
+  "status": "failed",
+  "passed": false,
+  "binding": {
+    "videoSha256": "b946c097f0902c0f3b4eda3a330aceca2ef893c29bd5a7eb511cc34101d130db",
+    "projectObjectHash": "46b1f56624d6c7ab1e214d4b3a6449903fb7ceaee6fe38536cac7e57ca366cce",
+    "detectorSourceSha256": "604f8aafb663282b21a51b5a70be2f10838b8324bb167bdc99572aa9066fef0b",
+    "policySha256": "89c857b65a69e85dc3f20f9ad488fc8b686ba741cfc08a7b4a01534d2ad45673"
+  },
+  "policy": {
+    "schemaVersion": 1,
+    "width": 480,
+    "noise": "-55dB",
+    "method": "ffmpeg-freezedetect-all-frames",
+    "maxStaticSeconds": 4
+  },
+  "intervals": [
+    {
+      "start": 299.266667,
+      "end": 304.666667,
+      "duration": 5.400000000000034,
+      "endedAtEof": false,
+      "exceedsBudget": true,
+      "mapping": {
+        "start": 299.26666666666665,
+        "end": 304.6666666666667,
+        "fps": 30
+      },
+      "sectionIds": [
+        "g1-outro-instrumental-review"
+      ],
+      "sections": [
+        {
+          "id": "g1-outro-instrumental-review",
+          "start": 299.26666666666665,
+          "end": 304.6666666666667,
+          "overlapSeconds": 5.400000000000034
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "full_project_timebase",
+      "passed": true,
+      "measured": {
+        "videoDuration": 304.733333,
+        "projectDuration": 304.73333333333335,
+        "startTime": 0
+      },
+      "threshold": {
+        "durationToleranceSeconds": 0.03833333333333333,
+        "startTimeToleranceSeconds": 0.03333333333333333
+      }
+    },
+    {
+      "id": "all_frames_decoded",
+      "passed": true,
+      "measured": {
+        "decodedFrames": 9142,
+        "declaredFrameCount": 9142,
+        "reachedEof": true
+      },
+      "threshold": {
+        "reachedEof": true,
+        "frameCount": 9142
+      }
+    },
+    {
+      "id": "max_static_interval",
+      "passed": false,
+      "measured": {
+        "longestStaticSeconds": 5.400000000000034,
+        "violations": [
+          {
+            "start": 299.266667,
+            "end": 304.666667,
+            "duration": 5.400000000000034,
+            "endedAtEof": false,
+            "exceedsBudget": true,
+            "mapping": {
+              "start": 299.26666666666665,
+              "end": 304.6666666666667,
+              "fps": 30
+            },
+            "sectionIds": [
+              "g1-outro-instrumental-review"
+            ],
+            "sections": [
+              {
+                "id": "g1-outro-instrumental-review",
+                "start": 299.26666666666665,
+                "end": 304.6666666666667,
+                "overlapSeconds": 5.400000000000034
+              }
+            ]
+          }
+        ]
+      },
+      "threshold": {
+        "maxStaticSeconds": 4,
+        "noise": "-55dB",
+        "width": 480
+      }
+    },
+    {
+      "id": "unchanged_during_review",
+      "passed": true,
+      "measured": "Video, project object and detector source compared before/after review",
+      "threshold": "All unchanged"
+    }
+  ],
+  "limitations": [
+    "Measures near-static pixels at 480px width and -55dB tolerance; it does not establish meaningful choreography, semantic motion or artistic quality.",
+    "Camera movement, animated texture or noise can avoid freeze detection without providing useful word motion. Independent visual review remains necessary.",
+    "Absolute interval times assume this is the complete project video, not a section-only export."
+  ],
+  "ffmpegVersion": "ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers",
+  "video": {
+    "duration": 304.733333,
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "declaredFrameCount": 9142,
+    "startTime": 0,
+    "decodedFrames": 9142
+  },
+  "command": {
+    "executable": "ffmpeg",
+    "args": [
+      "-hide_banner",
+      "-nostdin",
+      "-nostats",
+      "-loglevel",
+      "info",
+      "-xerror",
+      "-progress",
+      "pipe:1",
+      "-i",
+      "/Volumes/DATA/ArkRender/genesis1/genesis1-breath-earth-v1.mp4",
+      "-map",
+      "0:v:0",
+      "-an",
+      "-sn",
+      "-dn",
+      "-vf",
+      "scale=480:-2,freezedetect=n=-55dB:d=4",
+      "-fps_mode",
+      "passthrough",
+      "-f",
+      "null",
+      "-"
+    ]
+  },
+  "evidence": {
+    "logPath": "/Volumes/DATA/ArkRender/genesis1/review-v1/temporal/freezedetect.log",
+    "logSha256": "64b93659a738fb520855c461ea0654108c6341bed48e9ad1f5a44f7a3b94a687",
+    "progressPath": "/Volumes/DATA/ArkRender/genesis1/review-v1/temporal/decode-progress.txt",
+    "progressSha256": "68e6038856e94dfab4b3d3d9ac5f9f6c1474d924df80ad426b99bd9c14fb2e7e"
+  },
+  "summary": {
+    "intervalCount": 1,
+    "violationCount": 1,
+    "longestStaticSeconds": 5.400000000000034,
+    "staticSecondsDetected": 5.400000000000034,
+    "affectedSectionIds": [
+      "g1-outro-instrumental-review"
+    ]
+  },
+  "elapsedSeconds": 4.249413000000058
+}

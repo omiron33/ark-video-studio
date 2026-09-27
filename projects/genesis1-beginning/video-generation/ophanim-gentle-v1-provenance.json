@@ -1,0 +1,75 @@
+{
+  "shot": "ophanim-gentle-v1",
+  "provider": "local OmiPC ComfyUI",
+  "model": "MiniMax H3 FL2VA int8 convrot",
+  "checkpoint": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+  "turboLora": "minimax_h3_turbo_v4_step600_ema_pruned_comfyui.safetensors",
+  "steps": 4,
+  "sampler": "MiniMaxH3TurboSampler",
+  "submission": {
+    "prompt_id": "1fa04be6-3fa5-43ec-8e9a-23ea5bb76bea",
+    "number": 96,
+    "node_errors": {},
+    "name": "ophanim-gentle-v1",
+    "submittedAt": "2026-09-27T11:07:01.217630+00:00",
+    "project": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning",
+    "themeChoiceSha256": "c9637517ee90b0c9a6700e0398bb912eeffa66f22addc131bf97fc576281beac",
+    "firstImage": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/ophanim-subdued.png",
+    "firstImageSha256": "d4f6fdca164b8ef979fe30d2d7257e50d9dab71fd347a046be3ea57d7166554c",
+    "lastImage": null,
+    "lastImageSha256": null,
+    "promptFile": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/ophanim-gentle-v1-motion-prompt.txt",
+    "workflow": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/ophanim-gentle-v1-workflow.json",
+    "workflowSha256": "b23eee137ce4d6beefbf98050e2bae46443d1134608c3a4df666f988a13aef29",
+    "framesRequested": 124,
+    "fpsRequested": 24,
+    "seed": 2026092731,
+    "conditioning": "first_frame",
+    "provider": "local OmiPC ComfyUI",
+    "cost": "local GPU; no paid API"
+  },
+  "promptId": "1fa04be6-3fa5-43ec-8e9a-23ea5bb76bea",
+  "renderRuntimeSeconds": 97.362,
+  "rawOutput": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/ophanim-gentle-v1-raw.mp4",
+  "rawSha256": "166557474193ff5bf84a3436c17076b963252a5c62d22066da40d6579aea8716",
+  "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/ophanim-gentle-v1-motion.mp4",
+  "sha256": "9a69a59bf97402940b59679ac23d3a3f591567f0ebd60ddd13896a0ede145da8",
+  "nativeFrames": 124,
+  "nativeFps": 24,
+  "durationSeconds": 5.166666666666667,
+  "width": 960,
+  "height": 540,
+  "audio": false,
+  "processing": "Centered crop of4px height to960x540; H264 CRF17. No retiming, interpolation, reversal or upscale.",
+  "review": {
+    "status": "rejected",
+    "fullDecode": "pass",
+    "sampleRate": 6,
+    "frames": 31,
+    "sheets": [
+      "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/ophanim-gentle-v1-review-00.jpg",
+      "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/ophanim-gentle-v1-review-01.jpg"
+    ],
+    "limitations": "Chronological6fps samples are not proof of every native frame or full-speed quality.",
+    "reviewedAt": "2026-09-27T11:10:01.217966+00:00",
+    "observations": "All31chronological6fps samples plus nativefirst/last posters inspected. Slow wheel rotation is coherent, but code strokes become filled metallic-looking bands immediately and the subject darkens severely after about1.3s. The final frame is too faint and loses the approved separate-glyph character.",
+    "blockingIssues": [
+      "Glyph texture/style not preserved",
+      "Large unwanted fade/darkening"
+    ],
+    "acceptedForFilm": false,
+    "nextAttempt": "One bounded correction using identical first+last anchors, constant luminance, glyph-only flat marks and smaller motion."
+  },
+  "posters": {
+    "first": {
+      "path": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/ophanim-gentle-v1-first.jpg",
+      "sha256": "cbd59340fc8422fca9b375e45303489c5b7e960b63c08340b21b23dda8c2e369"
+    },
+    "last": {
+      "path": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/ophanim-gentle-v1-last.jpg",
+      "sha256": "9a694f51da4ebdff54fb7b0aae5a685ddba3e14d0f5d8831a7e4219c01d8a52e"
+    }
+  },
+  "finishedAt": "2026-09-27T11:09:02.121277+00:00",
+  "compositionRequirement": "Active foreground lyrics or meaningful authored graphic strokes with matching palette, masks and continuous transitions. Standalone asset acceptance does not certify composite quality."
+}

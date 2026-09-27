@@ -1,0 +1,13 @@
+{
+  "project": "Genesis1 - The Beginning",
+  "title": "Genesis 1 - Whale from Lines (source preview)",
+  "version": "Source insert v1",
+  "sourceAgent": "Codex",
+  "sourceMachine": "OmiPC local GPU / Mac mini finishing",
+  "sourcePath": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/whale-formation-motion.mp4",
+  "notes": "GENERATION SOURCE PREVIEW ONLY, not the finished Genesis1 lyric film. Silent 7.291667-second local MiniMax H3 insert from new GPT Image anchors. Bone strands gather into a whale on black. Fixed RGB gains restore source line brightness. Native 175 generated frames at 24fps. No retiming, interpolation or reversal. Intended final film treatment adds active foreground lyrics and/or authored graphic motion; this standalone source preview intentionally lacks those layers. Agent reviewed chronological6fps decoded frames and endpoints; source acceptance does not certify the final composite. Pending Shane review; no user approval claimed. SHA256 22f2d15af909f6c037b1e1a5e5a5459ac30cd51934eaa91947c84b2654d90e85.",
+  "status": "pending_review",
+  "path": "C:\\Users\\sjfis\\Videos\\Genesis1\\whale-formation-22f2d15af909.mp4",
+  "thumbnail": "C:\\Users\\sjfis\\Videos\\Genesis1\\whale-formation-22f2d15af909.jpg",
+  "expectedMd5": "6eed352301b45d357979b11c4dc49b9f"
+}

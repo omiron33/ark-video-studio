@@ -1,0 +1,58 @@
+[
+  {
+    "job": "g1-l096-retry-ctc-base",
+    "status": "machine_estimate",
+    "words": 5,
+    "execution": {
+      "id": "g1-l096-retry-ctc-base",
+      "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l096-retry-ctc-base.json",
+      "status": "machine_estimate",
+      "seconds": 0.9110364592634141,
+      "modelCacheHit": false,
+      "modelsHeld": 1
+    },
+    "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l096-retry-ctc-base.json"
+  },
+  {
+    "job": "g1-l096-retry-ctc-large",
+    "status": "machine_estimate",
+    "words": 5,
+    "execution": {
+      "id": "g1-l096-retry-ctc-large",
+      "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l096-retry-ctc-large.json",
+      "status": "machine_estimate",
+      "seconds": 2.0950247501023114,
+      "modelCacheHit": false,
+      "modelsHeld": 2
+    },
+    "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l096-retry-ctc-large.json"
+  },
+  {
+    "job": "g1-l004-retry-ctc-base",
+    "status": "machine_estimate",
+    "words": 12,
+    "execution": {
+      "id": "g1-l004-retry-ctc-base",
+      "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l004-retry-ctc-base.json",
+      "status": "machine_estimate",
+      "seconds": 0.5329458750784397,
+      "modelCacheHit": true,
+      "modelsHeld": 2
+    },
+    "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l004-retry-ctc-base.json"
+  },
+  {
+    "job": "g1-l004-retry-ctc-large",
+    "status": "machine_estimate",
+    "words": 12,
+    "execution": {
+      "id": "g1-l004-retry-ctc-large",
+      "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l004-retry-ctc-large.json",
+      "status": "machine_estimate",
+      "seconds": 1.164851333014667,
+      "modelCacheHit": true,
+      "modelsHeld": 2
+    },
+    "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l004-retry-ctc-large.json"
+  }
+]

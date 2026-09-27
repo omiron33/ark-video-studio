@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 33.31,
+    "duration": 4.08,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "He looked on the light: good.",
+  "approvedLyrics": "He looked on the light: good.",
+  "words": [
+    {
+      "id": "w_4a9ef7578f83a600",
+      "text": "He",
+      "start": 34.53601,
+      "end": 34.616404,
+      "phraseId": "g1-l008",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.005486876244968125,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l008-w01"
+    },
+    {
+      "id": "w_c9824156c27ea1ff",
+      "text": "looked",
+      "start": 34.998276,
+      "end": 35.440443,
+      "phraseId": "g1-l008",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.021918028022282574,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l008-w02"
+    },
+    {
+      "id": "w_514299bd434f6bb8",
+      "text": "on",
+      "start": 35.540936,
+      "end": 35.581133,
+      "phraseId": "g1-l008",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.11588371396634632,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l008-w03"
+    },
+    {
+      "id": "w_803fd6049cf428ae",
+      "text": "the",
+      "start": 35.76202,
+      "end": 35.842414,
+      "phraseId": "g1-l008",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.01573456047171003,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l008-w04"
+    },
+    {
+      "id": "w_b94cc20ca28b1b27",
+      "text": "light:",
+      "start": 35.983103,
+      "end": 36.284581,
+      "phraseId": "g1-l008",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.0162674893174912,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l008-w05"
+    },
+    {
+      "id": "w_4f557d59a5037049",
+      "text": "good.",
+      "start": 36.344877,
+      "end": 37.008128,
+      "phraseId": "g1-l008",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.005528497827796324,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l008-w06"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "He looked on the light: good.",
+      "wordIds": [
+        "w_4a9ef7578f83a600",
+        "w_c9824156c27ea1ff",
+        "w_514299bd434f6bb8",
+        "w_803fd6049cf428ae",
+        "w_b94cc20ca28b1b27",
+        "w_4f557d59a5037049"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l008-full-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l008-full-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l008-full-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 1.4427719162777066,
+    "modelCacheHit": false,
+    "modelsHeld": 1
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

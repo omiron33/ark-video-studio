@@ -1,0 +1,213 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 227.04999999999998,
+    "duration": 8.88,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "wild beasts, each after its kind!\u2019 His word took hold.",
+  "approvedLyrics": "wild beasts, each after its kind!\u2019 His word took hold.",
+  "words": [
+    {
+      "id": "w_912746f90be1a3c3",
+      "text": "wild",
+      "start": 228.37298,
+      "end": 228.573431,
+      "phraseId": "g1-l068",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.008068632787318543,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l068-w01"
+    },
+    {
+      "id": "w_0dbd0e3b2f26c864",
+      "text": "beasts,",
+      "start": 228.954289,
+      "end": 229.435372,
+      "phraseId": "g1-l068",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.06599002299639861,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l068-w02"
+    },
+    {
+      "id": "w_44889f6909d6570f",
+      "text": "each",
+      "start": 232.081332,
+      "end": 232.602506,
+      "phraseId": "g1-l068",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.022496451085316917,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l068-w03"
+    },
+    {
+      "id": "w_4178739f6d378abb",
+      "text": "after",
+      "start": 232.742822,
+      "end": 233.524582,
+      "phraseId": "g1-l068",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.06004954579609648,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l068-w04"
+    },
+    {
+      "id": "w_d46a60209e03b88e",
+      "text": "its",
+      "start": 233.664898,
+      "end": 233.765124,
+      "phraseId": "g1-l068",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.007750311623282904,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l068-w05"
+    },
+    {
+      "id": "w_f8bf9bb8647389f1",
+      "text": "kind!\u2019",
+      "start": 234.105892,
+      "end": 234.366479,
+      "phraseId": "g1-l068",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.0032042022070247764,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l068-w06"
+    },
+    {
+      "id": "w_73f5a66a13b89ef3",
+      "text": "His",
+      "start": 234.466704,
+      "end": 234.747336,
+      "phraseId": "g1-l069",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.0133608540008913,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l069-w01"
+    },
+    {
+      "id": "w_96a84ba45d5a46a2",
+      "text": "word",
+      "start": 234.807472,
+      "end": 234.967833,
+      "phraseId": "g1-l069",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.01990219737935311,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l069-w02"
+    },
+    {
+      "id": "w_00239919bf2fdf8e",
+      "text": "took",
+      "start": 235.007923,
+      "end": 235.468962,
+      "phraseId": "g1-l069",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.003874159419377825,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l069-w03"
+    },
+    {
+      "id": "w_5d24a5cceb714d94",
+      "text": "hold.",
+      "start": 235.729549,
+      "end": 235.909955,
+      "phraseId": "g1-l069",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.027616985040529656,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l069-w04"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "wild beasts, each after its kind!\u2019 His word took hold.",
+      "wordIds": [
+        "w_912746f90be1a3c3",
+        "w_0dbd0e3b2f26c864",
+        "w_44889f6909d6570f",
+        "w_4178739f6d378abb",
+        "w_d46a60209e03b88e",
+        "w_f8bf9bb8647389f1",
+        "w_73f5a66a13b89ef3",
+        "w_96a84ba45d5a46a2",
+        "w_00239919bf2fdf8e",
+        "w_5d24a5cceb714d94"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l068-retry-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l068-retry-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l068-retry-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.7053166669793427,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

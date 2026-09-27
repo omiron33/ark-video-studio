@@ -1,0 +1,783 @@
+{
+  "binding": {
+    "videoSha256": "b946c097f0902c0f3b4eda3a330aceca2ef893c29bd5a7eb511cc34101d130db",
+    "projectHash": "9e96b28898757ac06e19b8b594066c8d3524a1f54dc240f97423572ffb45b62c",
+    "rendererHash": "4a279e37bc6bb3a1d2df216a8adc28a6c35974724f15419922adbb1d616a0a39",
+    "revisionHash": "681306f92ebfe993eba9f2540f7645d8f69952e5e6b47d2d2cb2b867ad8a923a"
+  },
+  "sourceAudioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2",
+  "correlation": 0.998748,
+  "offsetSeconds": 0,
+  "gainDb": -0.067581,
+  "sourceDuration": 304.72,
+  "encodedDuration": 304.74675,
+  "sourceRms": 0.213587,
+  "segments": [
+    {
+      "start": 0,
+      "correlation": 0.999383,
+      "gainDb": -0.042785
+    },
+    {
+      "start": 2,
+      "correlation": 0.999705,
+      "gainDb": -0.012384
+    },
+    {
+      "start": 4,
+      "correlation": 0.999491,
+      "gainDb": -0.027462
+    },
+    {
+      "start": 6,
+      "correlation": 0.999735,
+      "gainDb": -0.028355
+    },
+    {
+      "start": 8,
+      "correlation": 0.999719,
+      "gainDb": -0.027444
+    },
+    {
+      "start": 10,
+      "correlation": 0.999651,
+      "gainDb": -0.027874
+    },
+    {
+      "start": 12,
+      "correlation": 0.9997,
+      "gainDb": -0.039707
+    },
+    {
+      "start": 14,
+      "correlation": 0.99959,
+      "gainDb": -0.021994
+    },
+    {
+      "start": 16,
+      "correlation": 0.999137,
+      "gainDb": -0.05391
+    },
+    {
+      "start": 18,
+      "correlation": 0.999324,
+      "gainDb": -0.052649
+    },
+    {
+      "start": 20,
+      "correlation": 0.999354,
+      "gainDb": -0.04926
+    },
+    {
+      "start": 22,
+      "correlation": 0.999496,
+      "gainDb": -0.054262
+    },
+    {
+      "start": 24,
+      "correlation": 0.999807,
+      "gainDb": -0.007416
+    },
+    {
+      "start": 26,
+      "correlation": 0.9977,
+      "gainDb": -0.095068
+    },
+    {
+      "start": 28,
+      "correlation": 0.998986,
+      "gainDb": -0.08736
+    },
+    {
+      "start": 30,
+      "correlation": 0.998676,
+      "gainDb": -0.079659
+    },
+    {
+      "start": 32,
+      "correlation": 0.997957,
+      "gainDb": -0.120548
+    },
+    {
+      "start": 34,
+      "correlation": 0.998767,
+      "gainDb": -0.082454
+    },
+    {
+      "start": 36,
+      "correlation": 0.998067,
+      "gainDb": -0.104842
+    },
+    {
+      "start": 38,
+      "correlation": 0.997996,
+      "gainDb": -0.10055
+    },
+    {
+      "start": 40,
+      "correlation": 0.998379,
+      "gainDb": -0.099286
+    },
+    {
+      "start": 42,
+      "correlation": 0.998813,
+      "gainDb": -0.063418
+    },
+    {
+      "start": 44,
+      "correlation": 0.998479,
+      "gainDb": -0.082121
+    },
+    {
+      "start": 46,
+      "correlation": 0.998011,
+      "gainDb": -0.094564
+    },
+    {
+      "start": 48,
+      "correlation": 0.998803,
+      "gainDb": -0.058747
+    },
+    {
+      "start": 50,
+      "correlation": 0.999769,
+      "gainDb": -0.028079
+    },
+    {
+      "start": 52,
+      "correlation": 0.999755,
+      "gainDb": -0.050483
+    },
+    {
+      "start": 54,
+      "correlation": 0.999352,
+      "gainDb": -0.050256
+    },
+    {
+      "start": 56,
+      "correlation": 0.998239,
+      "gainDb": -0.07827
+    },
+    {
+      "start": 58,
+      "correlation": 0.998521,
+      "gainDb": -0.078304
+    },
+    {
+      "start": 60,
+      "correlation": 0.998901,
+      "gainDb": -0.063716
+    },
+    {
+      "start": 62,
+      "correlation": 0.998379,
+      "gainDb": -0.092968
+    },
+    {
+      "start": 64,
+      "correlation": 0.997882,
+      "gainDb": -0.103722
+    },
+    {
+      "start": 66,
+      "correlation": 0.998312,
+      "gainDb": -0.08893
+    },
+    {
+      "start": 68,
+      "correlation": 0.998238,
+      "gainDb": -0.093519
+    },
+    {
+      "start": 70,
+      "correlation": 0.998524,
+      "gainDb": -0.08052
+    },
+    {
+      "start": 72,
+      "correlation": 0.998872,
+      "gainDb": -0.067862
+    },
+    {
+      "start": 74,
+      "correlation": 0.998567,
+      "gainDb": -0.080926
+    },
+    {
+      "start": 76,
+      "correlation": 0.998024,
+      "gainDb": -0.104464
+    },
+    {
+      "start": 78,
+      "correlation": 0.997617,
+      "gainDb": -0.127934
+    },
+    {
+      "start": 80,
+      "correlation": 0.996787,
+      "gainDb": -0.13722
+    },
+    {
+      "start": 82,
+      "correlation": 0.997613,
+      "gainDb": -0.115603
+    },
+    {
+      "start": 84,
+      "correlation": 0.998264,
+      "gainDb": -0.095905
+    },
+    {
+      "start": 86,
+      "correlation": 0.998787,
+      "gainDb": -0.071213
+    },
+    {
+      "start": 88,
+      "correlation": 0.999029,
+      "gainDb": -0.066385
+    },
+    {
+      "start": 90,
+      "correlation": 0.99912,
+      "gainDb": -0.052583
+    },
+    {
+      "start": 92,
+      "correlation": 0.999302,
+      "gainDb": -0.044671
+    },
+    {
+      "start": 94,
+      "correlation": 0.999554,
+      "gainDb": -0.029797
+    },
+    {
+      "start": 96,
+      "correlation": 0.999775,
+      "gainDb": -0.013192
+    },
+    {
+      "start": 98,
+      "correlation": 0.999838,
+      "gainDb": -0.022588
+    },
+    {
+      "start": 100,
+      "correlation": 0.999823,
+      "gainDb": -0.030568
+    },
+    {
+      "start": 102,
+      "correlation": 0.999455,
+      "gainDb": -0.056828
+    },
+    {
+      "start": 104,
+      "correlation": 0.998232,
+      "gainDb": -0.082159
+    },
+    {
+      "start": 106,
+      "correlation": 0.998638,
+      "gainDb": -0.070287
+    },
+    {
+      "start": 108,
+      "correlation": 0.998935,
+      "gainDb": -0.063122
+    },
+    {
+      "start": 110,
+      "correlation": 0.997279,
+      "gainDb": -0.102662
+    },
+    {
+      "start": 112,
+      "correlation": 0.997688,
+      "gainDb": -0.103698
+    },
+    {
+      "start": 114,
+      "correlation": 0.998196,
+      "gainDb": -0.103025
+    },
+    {
+      "start": 116,
+      "correlation": 0.998041,
+      "gainDb": -0.097922
+    },
+    {
+      "start": 118,
+      "correlation": 0.998272,
+      "gainDb": -0.089061
+    },
+    {
+      "start": 120,
+      "correlation": 0.998838,
+      "gainDb": -0.074941
+    },
+    {
+      "start": 122,
+      "correlation": 0.997906,
+      "gainDb": -0.093845
+    },
+    {
+      "start": 124,
+      "correlation": 0.998164,
+      "gainDb": -0.099794
+    },
+    {
+      "start": 126,
+      "correlation": 0.998145,
+      "gainDb": -0.108802
+    },
+    {
+      "start": 128,
+      "correlation": 0.999506,
+      "gainDb": -0.052964
+    },
+    {
+      "start": 130,
+      "correlation": 0.999332,
+      "gainDb": -0.04739
+    },
+    {
+      "start": 132,
+      "correlation": 0.998748,
+      "gainDb": -0.107093
+    },
+    {
+      "start": 134,
+      "correlation": 0.9985,
+      "gainDb": -0.111238
+    },
+    {
+      "start": 136,
+      "correlation": 0.997622,
+      "gainDb": -0.132287
+    },
+    {
+      "start": 138,
+      "correlation": 0.998345,
+      "gainDb": -0.109122
+    },
+    {
+      "start": 140,
+      "correlation": 0.998204,
+      "gainDb": -0.100355
+    },
+    {
+      "start": 142,
+      "correlation": 0.997973,
+      "gainDb": -0.108997
+    },
+    {
+      "start": 144,
+      "correlation": 0.997937,
+      "gainDb": -0.108425
+    },
+    {
+      "start": 146,
+      "correlation": 0.997211,
+      "gainDb": -0.123742
+    },
+    {
+      "start": 148,
+      "correlation": 0.997806,
+      "gainDb": -0.097021
+    },
+    {
+      "start": 150,
+      "correlation": 0.998113,
+      "gainDb": -0.084088
+    },
+    {
+      "start": 152,
+      "correlation": 0.99826,
+      "gainDb": -0.087238
+    },
+    {
+      "start": 154,
+      "correlation": 0.997978,
+      "gainDb": -0.07897
+    },
+    {
+      "start": 156,
+      "correlation": 0.998084,
+      "gainDb": -0.091516
+    },
+    {
+      "start": 158,
+      "correlation": 0.998749,
+      "gainDb": -0.052869
+    },
+    {
+      "start": 160,
+      "correlation": 0.998417,
+      "gainDb": -0.059178
+    },
+    {
+      "start": 162,
+      "correlation": 0.998929,
+      "gainDb": -0.054341
+    },
+    {
+      "start": 164,
+      "correlation": 0.998939,
+      "gainDb": -0.077065
+    },
+    {
+      "start": 166,
+      "correlation": 0.998992,
+      "gainDb": -0.069602
+    },
+    {
+      "start": 168,
+      "correlation": 0.998854,
+      "gainDb": -0.079619
+    },
+    {
+      "start": 170,
+      "correlation": 0.999054,
+      "gainDb": -0.063516
+    },
+    {
+      "start": 172,
+      "correlation": 0.998967,
+      "gainDb": -0.06729
+    },
+    {
+      "start": 174,
+      "correlation": 0.99917,
+      "gainDb": -0.071103
+    },
+    {
+      "start": 176,
+      "correlation": 0.999658,
+      "gainDb": -0.039607
+    },
+    {
+      "start": 178,
+      "correlation": 0.999517,
+      "gainDb": -0.040927
+    },
+    {
+      "start": 180,
+      "correlation": 0.997242,
+      "gainDb": -0.143321
+    },
+    {
+      "start": 182,
+      "correlation": 0.997796,
+      "gainDb": -0.111895
+    },
+    {
+      "start": 184,
+      "correlation": 0.997095,
+      "gainDb": -0.120345
+    },
+    {
+      "start": 186,
+      "correlation": 0.997686,
+      "gainDb": -0.113975
+    },
+    {
+      "start": 188,
+      "correlation": 0.997913,
+      "gainDb": -0.099393
+    },
+    {
+      "start": 190,
+      "correlation": 0.997637,
+      "gainDb": -0.115418
+    },
+    {
+      "start": 192,
+      "correlation": 0.997832,
+      "gainDb": -0.090119
+    },
+    {
+      "start": 194,
+      "correlation": 0.998321,
+      "gainDb": -0.087573
+    },
+    {
+      "start": 196,
+      "correlation": 0.999223,
+      "gainDb": -0.066931
+    },
+    {
+      "start": 198,
+      "correlation": 0.99898,
+      "gainDb": -0.051969
+    },
+    {
+      "start": 200,
+      "correlation": 0.998837,
+      "gainDb": -0.055491
+    },
+    {
+      "start": 202,
+      "correlation": 0.999001,
+      "gainDb": -0.046083
+    },
+    {
+      "start": 204,
+      "correlation": 0.998609,
+      "gainDb": -0.075624
+    },
+    {
+      "start": 206,
+      "correlation": 0.998476,
+      "gainDb": -0.065494
+    },
+    {
+      "start": 208,
+      "correlation": 0.999189,
+      "gainDb": -0.043887
+    },
+    {
+      "start": 210,
+      "correlation": 0.999733,
+      "gainDb": -0.02534
+    },
+    {
+      "start": 212,
+      "correlation": 0.999767,
+      "gainDb": -0.033396
+    },
+    {
+      "start": 214,
+      "correlation": 0.999806,
+      "gainDb": -0.02299
+    },
+    {
+      "start": 216,
+      "correlation": 0.999793,
+      "gainDb": -0.028884
+    },
+    {
+      "start": 218,
+      "correlation": 0.996351,
+      "gainDb": -0.143783
+    },
+    {
+      "start": 220,
+      "correlation": 0.997214,
+      "gainDb": -0.121695
+    },
+    {
+      "start": 222,
+      "correlation": 0.99732,
+      "gainDb": -0.120981
+    },
+    {
+      "start": 224,
+      "correlation": 0.99742,
+      "gainDb": -0.092643
+    },
+    {
+      "start": 226,
+      "correlation": 0.99796,
+      "gainDb": -0.102769
+    },
+    {
+      "start": 228,
+      "correlation": 0.996931,
+      "gainDb": -0.113024
+    },
+    {
+      "start": 230,
+      "correlation": 0.996957,
+      "gainDb": -0.104663
+    },
+    {
+      "start": 232,
+      "correlation": 0.997815,
+      "gainDb": -0.085139
+    },
+    {
+      "start": 234,
+      "correlation": 0.999145,
+      "gainDb": -0.063047
+    },
+    {
+      "start": 236,
+      "correlation": 0.998059,
+      "gainDb": -0.087684
+    },
+    {
+      "start": 238,
+      "correlation": 0.998017,
+      "gainDb": -0.10538
+    },
+    {
+      "start": 240,
+      "correlation": 0.999356,
+      "gainDb": -0.05782
+    },
+    {
+      "start": 242,
+      "correlation": 0.999554,
+      "gainDb": -0.047308
+    },
+    {
+      "start": 244,
+      "correlation": 0.999783,
+      "gainDb": -0.029916
+    },
+    {
+      "start": 246,
+      "correlation": 0.999809,
+      "gainDb": -0.028157
+    },
+    {
+      "start": 248,
+      "correlation": 0.99986,
+      "gainDb": -0.015431
+    },
+    {
+      "start": 250,
+      "correlation": 0.999826,
+      "gainDb": -0.018327
+    },
+    {
+      "start": 252,
+      "correlation": 0.999873,
+      "gainDb": -0.017939
+    },
+    {
+      "start": 254,
+      "correlation": 0.999876,
+      "gainDb": -0.018734
+    },
+    {
+      "start": 256,
+      "correlation": 0.999836,
+      "gainDb": -0.01319
+    },
+    {
+      "start": 258,
+      "correlation": 0.999849,
+      "gainDb": -0.019301
+    },
+    {
+      "start": 260,
+      "correlation": 0.99977,
+      "gainDb": -0.029619
+    },
+    {
+      "start": 262,
+      "correlation": 0.998553,
+      "gainDb": -0.070624
+    },
+    {
+      "start": 264,
+      "correlation": 0.998943,
+      "gainDb": -0.076165
+    },
+    {
+      "start": 266,
+      "correlation": 0.999094,
+      "gainDb": -0.061159
+    },
+    {
+      "start": 268,
+      "correlation": 0.999058,
+      "gainDb": -0.083517
+    },
+    {
+      "start": 270,
+      "correlation": 0.998858,
+      "gainDb": -0.102884
+    },
+    {
+      "start": 272,
+      "correlation": 0.998481,
+      "gainDb": -0.072932
+    },
+    {
+      "start": 274,
+      "correlation": 0.999978,
+      "gainDb": -0.010159
+    },
+    {
+      "start": 276,
+      "correlation": 0.999939,
+      "gainDb": -0.018146
+    },
+    {
+      "start": 278,
+      "correlation": 0.999876,
+      "gainDb": -0.026323
+    },
+    {
+      "start": 280,
+      "correlation": 0.999845,
+      "gainDb": -0.031941
+    },
+    {
+      "start": 282,
+      "correlation": 0.99979,
+      "gainDb": -0.015127
+    },
+    {
+      "start": 284,
+      "correlation": 0.998501,
+      "gainDb": -0.102829
+    },
+    {
+      "start": 286,
+      "correlation": 0.997108,
+      "gainDb": -0.123662
+    },
+    {
+      "start": 288,
+      "correlation": 0.997895,
+      "gainDb": -0.066906
+    },
+    {
+      "start": 290,
+      "correlation": 0.99781,
+      "gainDb": -0.073086
+    },
+    {
+      "start": 292,
+      "correlation": 0.997385,
+      "gainDb": -0.123471
+    },
+    {
+      "start": 294,
+      "correlation": 0.997853,
+      "gainDb": -0.089314
+    },
+    {
+      "start": 296,
+      "correlation": 0.998252,
+      "gainDb": -0.069629
+    },
+    {
+      "start": 298,
+      "correlation": 0.999819,
+      "gainDb": -0.018446
+    },
+    {
+      "start": 300,
+      "correlation": 0.999896,
+      "gainDb": -0.019334
+    },
+    {
+      "start": 302,
+      "correlation": 0.999691,
+      "gainDb": -0.013923
+    },
+    {
+      "start": 304,
+      "correlation": 0.99999,
+      "gainDb": -0.007536
+    }
+  ],
+  "minSegmentCorrelation": 0.996351
+}

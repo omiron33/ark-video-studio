@@ -1,0 +1,247 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 45.29,
+    "duration": 6.76,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "Night, the name He gave the dark. Dusk. Dawn. The first day.",
+  "approvedLyrics": "Night, the name He gave the dark. Dusk. Dawn. The first day.",
+  "words": [
+    {
+      "id": "w_310f628a4ed94afd",
+      "text": "Night,",
+      "start": 45.811543,
+      "end": 45.972018,
+      "phraseId": "g1-l011",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.013820339785560349,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l011-w01"
+    },
+    {
+      "id": "w_8db1b4ece209ef4b",
+      "text": "the",
+      "start": 46.654036,
+      "end": 46.774392,
+      "phraseId": "g1-l011",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.12142400745185514,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l011-w02"
+    },
+    {
+      "id": "w_e32e203e9b7c7866",
+      "text": "name",
+      "start": 46.854629,
+      "end": 47.43635,
+      "phraseId": "g1-l011",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.063226217365613,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l011-w03"
+    },
+    {
+      "id": "w_1d37275f0c0d7535",
+      "text": "He",
+      "start": 47.476469,
+      "end": 47.596825,
+      "phraseId": "g1-l011",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.5037519700334646,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l011-w04"
+    },
+    {
+      "id": "w_d98962bc71e05c06",
+      "text": "gave",
+      "start": 47.73724,
+      "end": 48.038131,
+      "phraseId": "g1-l011",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.13103404709332886,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l011-w05"
+    },
+    {
+      "id": "w_ac9c0be5c53731d4",
+      "text": "the",
+      "start": 48.078249,
+      "end": 48.138427,
+      "phraseId": "g1-l011",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.5086564528755682,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l011-w06"
+    },
+    {
+      "id": "w_400a4fef8fab3223",
+      "text": "dark.",
+      "start": 48.218665,
+      "end": 48.559674,
+      "phraseId": "g1-l011",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.8990744772942676,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l011-w07"
+    },
+    {
+      "id": "w_fc4a2c1a5982b7ca",
+      "text": "Dusk.",
+      "start": 48.68003,
+      "end": 48.940801,
+      "phraseId": "g1-l012",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.15122657316910032,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l012-w01"
+    },
+    {
+      "id": "w_7c2ed5dbd7aed681",
+      "text": "Dawn.",
+      "start": 49.261751,
+      "end": 49.642878,
+      "phraseId": "g1-l012",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.029469488270869003,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l012-w02"
+    },
+    {
+      "id": "w_db214b0ac6b1df16",
+      "text": "The",
+      "start": 49.963828,
+      "end": 50.044065,
+      "phraseId": "g1-l012",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9827702872263308,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l012-w03"
+    },
+    {
+      "id": "w_bb50e3f132e9d7f6",
+      "text": "first",
+      "start": 50.124303,
+      "end": 50.545549,
+      "phraseId": "g1-l012",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9988354495540418,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l012-w04"
+    },
+    {
+      "id": "w_247487e570efb0c2",
+      "text": "day.",
+      "start": 50.746142,
+      "end": 51.12727,
+      "phraseId": "g1-l012",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9770649223341886,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l012-w05"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "Night, the name He gave the dark. Dusk. Dawn. The first day.",
+      "wordIds": [
+        "w_310f628a4ed94afd",
+        "w_8db1b4ece209ef4b",
+        "w_e32e203e9b7c7866",
+        "w_1d37275f0c0d7535",
+        "w_d98962bc71e05c06",
+        "w_ac9c0be5c53731d4",
+        "w_400a4fef8fab3223",
+        "w_fc4a2c1a5982b7ca",
+        "w_7c2ed5dbd7aed681",
+        "w_db214b0ac6b1df16",
+        "w_bb50e3f132e9d7f6",
+        "w_247487e570efb0c2"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l011-retry-ctc-large.json",
+  "executionEvidence": {
+    "id": "g1-l011-retry-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l011-retry-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 2.141001584008336,
+    "modelCacheHit": false,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

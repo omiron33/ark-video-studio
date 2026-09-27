@@ -1,0 +1,44 @@
+{
+  "reason": "Deduplicate recognition checkpoint votes and retain paired CTC consonants after ASR-absorbed pauses in the opening. Existing acoustic intervals only.",
+  "changes": [
+    {
+      "id": "g1-l001-w04",
+      "text": "count",
+      "previous": [
+        5.42,
+        5.92
+      ],
+      "selected": [
+        5.54,
+        6.06
+      ],
+      "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/full-whisper-medium-diagnostic.json"
+    },
+    {
+      "id": "g1-l005-w04",
+      "text": "moved",
+      "previous": [
+        21.14,
+        21.64
+      ],
+      "selected": [
+        21.372554,
+        21.67327
+      ],
+      "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l004-retry-ctc-large.json"
+    },
+    {
+      "id": "g1-l006-w05",
+      "text": "come",
+      "previous": [
+        27.02,
+        27.62
+      ],
+      "selected": [
+        27.353937,
+        27.574803
+      ],
+      "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l006-opening-ctc-large.json"
+    }
+  ]
+}

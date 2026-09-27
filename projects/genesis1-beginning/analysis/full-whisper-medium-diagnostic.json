@@ -1,0 +1,6755 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "partial_recognition_diagnostic",
+  "role": "source",
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2",
+  "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/full-whisper-medium-diagnostic.json",
+  "source": {
+    "audio": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/intake/source.mp3",
+    "duration": 304.72,
+    "offset": 0,
+    "model": "/Volumes/DATA/AI/Models/Whisper/medium.en.pt",
+    "backend": "openai-whisper",
+    "language": "en"
+  },
+  "transcript": " Before the first count of days God brought heaven and earth into being Earth stood bare unfinished Blackness covered the deep Across the water moved the spirit of God Then God called, light come forth Brightness answered He looked on the light good He cut a clear line between it and darkness Day was the night he gave the light Night the night he gave the dark dust On the first day God spoke from a man amid the waters, let water pass from water. His word took hold, he raised that mighty span, flood beneath it, flood above it, he called the former in heaven. He looked on it good, thus dawn the second day. Hey, waters below heaven run to one place Let dry ground show The waters gathered land came clear He named the dry ground earth That gathered water, seas, he looked on them Good, good, good, good, good, good Grounds end up seed-bearing grass in kind and likeness Trees bear fruit with seed within each true to its kind His words are cold Grease urge from the soil, grass with seed in its kind and likeness Fruit wrapped around its seed, tree by tree, kind by kind He looked on it On it Good head Dusk dawn, the third day Lights across heaven's firmament Divide day from night Marks on seasons, days and years From that height shine on the earth His Word took home Two great lights He fashioned The greater took command The day, the lesser took command In the night he made the stars as well He set them in heaven's span To send their light across the earth To rule night and day To keep the bright apart from dark He looked on them Good Dusked on the fourth day Water swarmed with living reptiles Winged creatures fly above the earth Across heaven's firmament His Word took hold God made the great whales Every living water reptile by kind And every winged creature by kind He looked on them good His blessing rang out Increase, multiply Fill the seas Let the winged multiply on earth Dust on the fifth day Ever bring out living kinds Four-footed beasts calling reptiles wild beasts Each after its kind His word took hold He fashioned wild beasts Cattle and the reptiles of the ground Each after its kind He looked on them good, then God said, Let us make humankind, in our image, in our likeness, Let the wing it multiply on earth, God's best word took hold. He fashioned world, beasts, cattle, and the reptiles of the ground, Each after sky. We looked on them, good Then God said, let us make humankind In our image, in our likeness Let them rule the fish, the birds The cattle, all the earth and all that crows Hey, dust on the fish, yeah Good, good, good",
+  "words": [
+    {
+      "id": "diagnostic-0001",
+      "text": "Before",
+      "start": 3.040000000000002,
+      "end": 4.080000000000001,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.029833348467946053,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0002",
+      "text": "the",
+      "start": 4.080000000000001,
+      "end": 5.12,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9939488172531128,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0003",
+      "text": "first",
+      "start": 5.12,
+      "end": 5.54,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9903558492660522,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0004",
+      "text": "count",
+      "start": 5.54,
+      "end": 6.06,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.5173258185386658,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0005",
+      "text": "of",
+      "start": 6.06,
+      "end": 6.48,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8100225329399109,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0006",
+      "text": "days",
+      "start": 6.48,
+      "end": 7.54,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9976677298545837,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0007",
+      "text": "God",
+      "start": 7.54,
+      "end": 9.42,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.7405785322189331,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0008",
+      "text": "brought",
+      "start": 9.42,
+      "end": 9.86,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9841135144233704,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0009",
+      "text": "heaven",
+      "start": 9.86,
+      "end": 10.3,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9206922054290771,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0010",
+      "text": "and",
+      "start": 10.3,
+      "end": 10.66,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9920065999031067,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0011",
+      "text": "earth",
+      "start": 10.66,
+      "end": 11.36,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8786997199058533,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0012",
+      "text": "into",
+      "start": 11.36,
+      "end": 11.88,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9786880016326904,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0013",
+      "text": "being",
+      "start": 11.88,
+      "end": 12.66,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9796789884567261,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0014",
+      "text": "Earth",
+      "start": 13.64,
+      "end": 14.16,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.7448509931564331,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0015",
+      "text": "stood",
+      "start": 14.16,
+      "end": 14.62,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9981608986854553,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0016",
+      "text": "bare",
+      "start": 14.62,
+      "end": 15.24,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9666428565979004,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0017",
+      "text": "unfinished",
+      "start": 15.24,
+      "end": 16.52,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.6462270021438599,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0018",
+      "text": "Blackness",
+      "start": 16.52,
+      "end": 18.2,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9754721522331238,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0019",
+      "text": "covered",
+      "start": 18.2,
+      "end": 18.68,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9936500191688538,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0020",
+      "text": "the",
+      "start": 18.68,
+      "end": 18.98,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9970359802246094,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0021",
+      "text": "deep",
+      "start": 18.98,
+      "end": 19.5,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.996416449546814,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0022",
+      "text": "Across",
+      "start": 19.5,
+      "end": 20.26,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.7594954371452332,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0023",
+      "text": "the",
+      "start": 20.26,
+      "end": 20.7,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9969391822814941,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0024",
+      "text": "water",
+      "start": 20.7,
+      "end": 21.14,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9935275912284851,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0025",
+      "text": "moved",
+      "start": 21.14,
+      "end": 21.64,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8959072232246399,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0026",
+      "text": "the",
+      "start": 21.64,
+      "end": 22.02,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9915197491645813,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0027",
+      "text": "spirit",
+      "start": 22.02,
+      "end": 22.38,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.6620478630065918,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0028",
+      "text": "of",
+      "start": 22.38,
+      "end": 22.86,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9989038705825806,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0029",
+      "text": "God",
+      "start": 22.86,
+      "end": 24.28,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8918300867080688,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0030",
+      "text": "Then",
+      "start": 24.28,
+      "end": 24.88,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9038122892379761,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0031",
+      "text": "God",
+      "start": 24.88,
+      "end": 25.4,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.936129093170166,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0032",
+      "text": "called,",
+      "start": 25.4,
+      "end": 26.14,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9930101037025452,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0033",
+      "text": "light",
+      "start": 26.66,
+      "end": 27.08,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.13734640181064606,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0034",
+      "text": "come",
+      "start": 27.08,
+      "end": 27.68,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9195625185966492,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0035",
+      "text": "forth",
+      "start": 27.68,
+      "end": 28.48,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9973207116127014,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0036",
+      "text": "Brightness",
+      "start": 29.599999999999994,
+      "end": 30.36,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.5914731845259666,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0037",
+      "text": "answered",
+      "start": 30.36,
+      "end": 30.94,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9736083745956421,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0038",
+      "text": "He",
+      "start": 34.35999999999999,
+      "end": 35.12,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.18429170548915863,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0039",
+      "text": "looked",
+      "start": 35.12,
+      "end": 35.4,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9598847031593323,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0040",
+      "text": "on",
+      "start": 35.4,
+      "end": 35.6,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.973362922668457,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0041",
+      "text": "the",
+      "start": 35.6,
+      "end": 35.82,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9777024984359741,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0042",
+      "text": "light",
+      "start": 35.82,
+      "end": 36.2,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.96189284324646,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0043",
+      "text": "good",
+      "start": 36.2,
+      "end": 36.98,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.3753824234008789,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0044",
+      "text": "He",
+      "start": 38.239999999999995,
+      "end": 39.0,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8860659003257751,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0045",
+      "text": "cut",
+      "start": 39.0,
+      "end": 39.22,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9672254323959351,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0046",
+      "text": "a",
+      "start": 39.22,
+      "end": 39.34,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9571607112884521,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0047",
+      "text": "clear",
+      "start": 39.34,
+      "end": 39.58,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9941639304161072,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0048",
+      "text": "line",
+      "start": 39.58,
+      "end": 39.82,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.984594464302063,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0049",
+      "text": "between",
+      "start": 39.82,
+      "end": 40.1,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9928919076919556,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0050",
+      "text": "it",
+      "start": 40.1,
+      "end": 40.3,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9862480759620667,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0051",
+      "text": "and",
+      "start": 40.3,
+      "end": 40.58,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9900684952735901,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0052",
+      "text": "darkness",
+      "start": 40.58,
+      "end": 41.16,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9921882152557373,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0053",
+      "text": "Day",
+      "start": 41.16,
+      "end": 41.9,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.48086124658584595,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0054",
+      "text": "was",
+      "start": 41.9,
+      "end": 43.02,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8635737895965576,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0055",
+      "text": "the",
+      "start": 43.02,
+      "end": 43.34,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9970077872276306,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0056",
+      "text": "night",
+      "start": 43.34,
+      "end": 43.7,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.842952311038971,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0057",
+      "text": "he",
+      "start": 43.7,
+      "end": 44.22,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.7587474584579468,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0058",
+      "text": "gave",
+      "start": 44.22,
+      "end": 44.9,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9981743097305298,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0059",
+      "text": "the",
+      "start": 44.9,
+      "end": 45.28,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9937113523483276,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0060",
+      "text": "light",
+      "start": 45.28,
+      "end": 45.92,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.7097488641738892,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0061",
+      "text": "Night",
+      "start": 45.92,
+      "end": 46.52,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.5267801880836487,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0062",
+      "text": "the",
+      "start": 46.52,
+      "end": 46.9,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.6542761325836182,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0063",
+      "text": "night",
+      "start": 46.9,
+      "end": 47.28,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9890977144241333,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0064",
+      "text": "he",
+      "start": 47.28,
+      "end": 47.68,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9746010899543762,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0065",
+      "text": "gave",
+      "start": 47.68,
+      "end": 48.04,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9984978437423706,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0066",
+      "text": "the",
+      "start": 48.04,
+      "end": 48.22,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9925409555435181,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0067",
+      "text": "dark",
+      "start": 48.22,
+      "end": 48.64,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.7287003397941589,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0068",
+      "text": "dust",
+      "start": 48.64,
+      "end": 48.98,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.7920787930488586,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0069",
+      "text": "On",
+      "start": 48.98,
+      "end": 49.66,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.07487968355417252,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0070",
+      "text": "the",
+      "start": 49.66,
+      "end": 50.14,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9950804710388184,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0071",
+      "text": "first",
+      "start": 50.14,
+      "end": 50.54,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9961697459220886,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0072",
+      "text": "day",
+      "start": 50.54,
+      "end": 51.48,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9972631931304932,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0073",
+      "text": "God",
+      "start": 54.36,
+      "end": 55.04,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.08751212060451508,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0074",
+      "text": "spoke",
+      "start": 55.04,
+      "end": 55.72,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9880498051643372,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0075",
+      "text": "from",
+      "start": 55.72,
+      "end": 56.62,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.11703471094369888,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0076",
+      "text": "a",
+      "start": 56.62,
+      "end": 56.82,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.2947438359260559,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0077",
+      "text": "man",
+      "start": 56.82,
+      "end": 57.04,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.910606861114502,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0078",
+      "text": "amid",
+      "start": 57.04,
+      "end": 57.44,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.25253114104270935,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0079",
+      "text": "the",
+      "start": 57.44,
+      "end": 57.68,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9781158566474915,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0080",
+      "text": "waters,",
+      "start": 57.68,
+      "end": 58.54,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9798911213874817,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0081",
+      "text": "let",
+      "start": 58.54,
+      "end": 59.06,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.7096672058105469,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0082",
+      "text": "water",
+      "start": 59.06,
+      "end": 59.44,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9909321069717407,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0083",
+      "text": "pass",
+      "start": 59.44,
+      "end": 59.8,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.3119957447052002,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0084",
+      "text": "from",
+      "start": 59.8,
+      "end": 60.1,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9062913060188293,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0085",
+      "text": "water.",
+      "start": 60.1,
+      "end": 60.86,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8213579654693604,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0086",
+      "text": "His",
+      "start": 61.32,
+      "end": 61.44,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9585983753204346,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0087",
+      "text": "word",
+      "start": 61.44,
+      "end": 61.98,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.7731614112854004,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0088",
+      "text": "took",
+      "start": 61.98,
+      "end": 62.52,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.970310389995575,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0089",
+      "text": "hold,",
+      "start": 62.52,
+      "end": 64.1,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8926702737808228,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0090",
+      "text": "he",
+      "start": 64.4,
+      "end": 64.56,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.4074172079563141,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0091",
+      "text": "raised",
+      "start": 64.56,
+      "end": 64.84,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9398626685142517,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0092",
+      "text": "that",
+      "start": 64.84,
+      "end": 65.16,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8528155088424683,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0093",
+      "text": "mighty",
+      "start": 65.16,
+      "end": 65.46,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8956718444824219,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0094",
+      "text": "span,",
+      "start": 65.46,
+      "end": 65.92,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.2896435856819153,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0095",
+      "text": "flood",
+      "start": 66.18,
+      "end": 66.24,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.5732903480529785,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0096",
+      "text": "beneath",
+      "start": 66.24,
+      "end": 66.7,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9972034692764282,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0097",
+      "text": "it,",
+      "start": 66.7,
+      "end": 67.2,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9828946590423584,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0098",
+      "text": "flood",
+      "start": 67.4,
+      "end": 67.78,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9728436470031738,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0099",
+      "text": "above",
+      "start": 67.78,
+      "end": 68.2,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9616087079048157,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0100",
+      "text": "it,",
+      "start": 68.2,
+      "end": 68.48,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9224849939346313,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0101",
+      "text": "he",
+      "start": 68.56,
+      "end": 68.76,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9328034520149231,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0102",
+      "text": "called",
+      "start": 68.76,
+      "end": 69.06,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9830611348152161,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0103",
+      "text": "the",
+      "start": 69.06,
+      "end": 69.32,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.6858250498771667,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0104",
+      "text": "former",
+      "start": 69.32,
+      "end": 69.6,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.6034447550773621,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0105",
+      "text": "in",
+      "start": 69.6,
+      "end": 69.94,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.3886241614818573,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0106",
+      "text": "heaven.",
+      "start": 69.94,
+      "end": 70.48,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.852545976638794,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0107",
+      "text": "He",
+      "start": 71.3,
+      "end": 71.48,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.7226843237876892,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0108",
+      "text": "looked",
+      "start": 71.48,
+      "end": 71.74,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9950823783874512,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0109",
+      "text": "on",
+      "start": 71.74,
+      "end": 72.08,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9907354712486267,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0110",
+      "text": "it",
+      "start": 72.08,
+      "end": 72.4,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8916878700256348,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0111",
+      "text": "good,",
+      "start": 72.4,
+      "end": 72.92,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.538848340511322,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0112",
+      "text": "thus",
+      "start": 73.34,
+      "end": 73.44,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8008588552474976,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0113",
+      "text": "dawn",
+      "start": 73.44,
+      "end": 73.88,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9121078252792358,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0114",
+      "text": "the",
+      "start": 73.88,
+      "end": 74.16,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.6853262186050415,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0115",
+      "text": "second",
+      "start": 74.16,
+      "end": 74.4,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9867997169494629,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0116",
+      "text": "day.",
+      "start": 74.4,
+      "end": 74.86,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9986398816108704,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0117",
+      "text": "Hey,",
+      "start": 74.86,
+      "end": 77.08,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.03658885508775711,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0118",
+      "text": "waters",
+      "start": 78.34,
+      "end": 78.68,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.6491743326187134,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0119",
+      "text": "below",
+      "start": 78.68,
+      "end": 79.36,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.98847496509552,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0120",
+      "text": "heaven",
+      "start": 79.36,
+      "end": 80.1,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9051823616027832,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0121",
+      "text": "run",
+      "start": 80.1,
+      "end": 81.08,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.2712423503398895,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0122",
+      "text": "to",
+      "start": 81.08,
+      "end": 81.38,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9908744096755981,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0123",
+      "text": "one",
+      "start": 81.38,
+      "end": 81.8,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9920570254325867,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0124",
+      "text": "place",
+      "start": 81.8,
+      "end": 82.39999999999999,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9983654618263245,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0125",
+      "text": "Let",
+      "start": 82.62,
+      "end": 83.08,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.3184868097305298,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0126",
+      "text": "dry",
+      "start": 83.08,
+      "end": 83.52,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9911623001098633,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0127",
+      "text": "ground",
+      "start": 83.52,
+      "end": 83.98,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9445703029632568,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0128",
+      "text": "show",
+      "start": 83.98,
+      "end": 85.2,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9708392024040222,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0129",
+      "text": "The",
+      "start": 86.6,
+      "end": 87.8,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.7411203384399414,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0130",
+      "text": "waters",
+      "start": 87.8,
+      "end": 88.44,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9573507905006409,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0131",
+      "text": "gathered",
+      "start": 88.44,
+      "end": 89.0,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9427635073661804,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0132",
+      "text": "land",
+      "start": 89.0,
+      "end": 89.82,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9310557246208191,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0133",
+      "text": "came",
+      "start": 89.82,
+      "end": 91.0,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8247308731079102,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0134",
+      "text": "clear",
+      "start": 91.0,
+      "end": 92.16,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9923592209815979,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0135",
+      "text": "He",
+      "start": 92.16,
+      "end": 93.26,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9704539775848389,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0136",
+      "text": "named",
+      "start": 93.26,
+      "end": 93.68,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9882178902626038,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0137",
+      "text": "the",
+      "start": 93.68,
+      "end": 93.98,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9916945099830627,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0138",
+      "text": "dry",
+      "start": 93.98,
+      "end": 94.3,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9926773309707642,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0139",
+      "text": "ground",
+      "start": 94.3,
+      "end": 94.8,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9720398783683777,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0140",
+      "text": "earth",
+      "start": 94.8,
+      "end": 95.39999999999999,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8230606913566589,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0141",
+      "text": "That",
+      "start": 95.4,
+      "end": 95.82,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.14142926037311554,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0142",
+      "text": "gathered",
+      "start": 95.82,
+      "end": 96.26,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9817059636116028,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0143",
+      "text": "water,",
+      "start": 96.26,
+      "end": 96.92,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.7348427772521973,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0144",
+      "text": "seas,",
+      "start": 96.92,
+      "end": 97.62,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9286454916000366,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0145",
+      "text": "he",
+      "start": 98.0,
+      "end": 98.1,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8297867774963379,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0146",
+      "text": "looked",
+      "start": 98.1,
+      "end": 98.42,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9892396926879883,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0147",
+      "text": "on",
+      "start": 98.42,
+      "end": 98.76,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9962050318717957,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0148",
+      "text": "them",
+      "start": 98.76,
+      "end": 99.36,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9951968789100647,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0149",
+      "text": "Good,",
+      "start": 99.66,
+      "end": 100.58,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.6367443203926086,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0150",
+      "text": "good,",
+      "start": 100.6,
+      "end": 101.44,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.979195237159729,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0151",
+      "text": "good,",
+      "start": 101.44,
+      "end": 102.1,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9980459213256836,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0152",
+      "text": "good,",
+      "start": 102.1,
+      "end": 102.76,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9946585297584534,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0153",
+      "text": "good,",
+      "start": 102.76,
+      "end": 103.14,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9936951994895935,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0154",
+      "text": "good",
+      "start": 103.14,
+      "end": 103.46,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9832445383071899,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0155",
+      "text": "Grounds",
+      "start": 103.46,
+      "end": 104.06,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.4926995635032654,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0156",
+      "text": "end",
+      "start": 104.06,
+      "end": 104.46,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.6465405821800232,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0157",
+      "text": "up",
+      "start": 104.46,
+      "end": 104.64,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9584383368492126,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0158",
+      "text": "seed",
+      "start": 104.64,
+      "end": 104.98,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8770688772201538,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0159",
+      "text": "-bearing",
+      "start": 104.98,
+      "end": 105.28,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.7567721903324127,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0160",
+      "text": "grass",
+      "start": 105.28,
+      "end": 105.6,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.5836284160614014,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0161",
+      "text": "in",
+      "start": 105.6,
+      "end": 105.98,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.5857396721839905,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0162",
+      "text": "kind",
+      "start": 105.98,
+      "end": 106.38,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8743869662284851,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0163",
+      "text": "and",
+      "start": 106.38,
+      "end": 106.66,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8518811464309692,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0164",
+      "text": "likeness",
+      "start": 106.66,
+      "end": 107.72,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9869053959846497,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0165",
+      "text": "Trees",
+      "start": 107.72,
+      "end": 108.68,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.5231778621673584,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0166",
+      "text": "bear",
+      "start": 108.68,
+      "end": 109.16,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.807558536529541,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0167",
+      "text": "fruit",
+      "start": 109.16,
+      "end": 109.46,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9980484247207642,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0168",
+      "text": "with",
+      "start": 109.46,
+      "end": 109.76,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9822883605957031,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0169",
+      "text": "seed",
+      "start": 109.76,
+      "end": 109.96,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9901741743087769,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0170",
+      "text": "within",
+      "start": 109.96,
+      "end": 110.42,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9746481776237488,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0171",
+      "text": "each",
+      "start": 110.42,
+      "end": 110.66,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.6111013889312744,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0172",
+      "text": "true",
+      "start": 110.66,
+      "end": 111.02,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.47499147057533264,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0173",
+      "text": "to",
+      "start": 111.02,
+      "end": 111.4,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9716376066207886,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0174",
+      "text": "its",
+      "start": 111.4,
+      "end": 111.58,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9114217162132263,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0175",
+      "text": "kind",
+      "start": 111.58,
+      "end": 112.12,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9953617453575134,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0176",
+      "text": "His",
+      "start": 112.12,
+      "end": 112.46,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.7671644687652588,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0177",
+      "text": "words",
+      "start": 112.46,
+      "end": 112.86,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8261046409606934,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0178",
+      "text": "are",
+      "start": 112.86,
+      "end": 113.1,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.7247613668441772,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0179",
+      "text": "cold",
+      "start": 113.1,
+      "end": 115.42,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.6928206086158752,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0180",
+      "text": "Grease",
+      "start": 117.30000000000001,
+      "end": 118.04,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.29678723961114883,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0181",
+      "text": "urge",
+      "start": 118.04,
+      "end": 118.3,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.38098785281181335,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0182",
+      "text": "from",
+      "start": 118.3,
+      "end": 118.64,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9938814640045166,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0183",
+      "text": "the",
+      "start": 118.64,
+      "end": 118.84,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9811514019966125,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0184",
+      "text": "soil,",
+      "start": 118.84,
+      "end": 119.28,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9979535341262817,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0185",
+      "text": "grass",
+      "start": 119.28,
+      "end": 119.74,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9769878387451172,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0186",
+      "text": "with",
+      "start": 119.74,
+      "end": 120.16,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9857494831085205,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0187",
+      "text": "seed",
+      "start": 120.16,
+      "end": 120.6,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9965360164642334,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0188",
+      "text": "in",
+      "start": 120.6,
+      "end": 120.78,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8848032355308533,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0189",
+      "text": "its",
+      "start": 120.78,
+      "end": 120.94,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9618317484855652,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0190",
+      "text": "kind",
+      "start": 120.94,
+      "end": 121.34,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9630306959152222,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0191",
+      "text": "and",
+      "start": 121.34,
+      "end": 121.58,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9251208305358887,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0192",
+      "text": "likeness",
+      "start": 121.58,
+      "end": 122.06,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9954941272735596,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0193",
+      "text": "Fruit",
+      "start": 122.06,
+      "end": 122.64,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.971651017665863,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0194",
+      "text": "wrapped",
+      "start": 122.64,
+      "end": 122.98,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9970539808273315,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0195",
+      "text": "around",
+      "start": 122.98,
+      "end": 123.44,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9881768822669983,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0196",
+      "text": "its",
+      "start": 123.44,
+      "end": 123.68,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8773358464241028,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0197",
+      "text": "seed,",
+      "start": 123.68,
+      "end": 124.1,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9951345324516296,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0198",
+      "text": "tree",
+      "start": 124.16,
+      "end": 124.54,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9942381381988525,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0199",
+      "text": "by",
+      "start": 124.54,
+      "end": 124.98,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9686577320098877,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0200",
+      "text": "tree,",
+      "start": 124.98,
+      "end": 125.52,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9975806474685669,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0201",
+      "text": "kind",
+      "start": 125.56,
+      "end": 125.82,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9850109219551086,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0202",
+      "text": "by",
+      "start": 125.82,
+      "end": 126.18,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9981264472007751,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0203",
+      "text": "kind",
+      "start": 126.18,
+      "end": 126.68,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9982118606567383,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0204",
+      "text": "He",
+      "start": 126.68,
+      "end": 126.94,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.7807438373565674,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0205",
+      "text": "looked",
+      "start": 126.94,
+      "end": 127.22,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9948275685310364,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0206",
+      "text": "on",
+      "start": 127.22,
+      "end": 127.56,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9964499473571777,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0207",
+      "text": "it",
+      "start": 127.56,
+      "end": 127.94,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9943261742591858,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0208",
+      "text": "it",
+      "start": 127.94,
+      "end": 129.02,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9939712882041931,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0209",
+      "text": "Good",
+      "start": 129.02,
+      "end": 129.32,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.23057936131954193,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0210",
+      "text": "head",
+      "start": 129.32,
+      "end": 130.4,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.015066664665937424,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0211",
+      "text": "Dusk",
+      "start": 130.4,
+      "end": 131.06,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.21566861867904663,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0212",
+      "text": "dawn,",
+      "start": 131.06,
+      "end": 131.48,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.6220201849937439,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0213",
+      "text": "the",
+      "start": 131.72,
+      "end": 131.86,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.44851306080818176,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0214",
+      "text": "third",
+      "start": 131.86,
+      "end": 131.98,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.957591712474823,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0215",
+      "text": "day",
+      "start": 131.98,
+      "end": 132.36,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9737231135368347,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0216",
+      "text": "Lights",
+      "start": 136.56,
+      "end": 137.7,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.014221815392374992,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0217",
+      "text": "across",
+      "start": 137.7,
+      "end": 138.3,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8280814290046692,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0218",
+      "text": "heaven's",
+      "start": 138.3,
+      "end": 139.36,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.5943863689899445,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0219",
+      "text": "firmament",
+      "start": 139.36,
+      "end": 140.28,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.6805514842271805,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0220",
+      "text": "Divide",
+      "start": 140.28,
+      "end": 140.94,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8054874539375305,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0221",
+      "text": "day",
+      "start": 140.94,
+      "end": 141.5,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9925278425216675,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0222",
+      "text": "from",
+      "start": 141.5,
+      "end": 141.84,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9923276305198669,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0223",
+      "text": "night",
+      "start": 141.84,
+      "end": 142.52,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9982216954231262,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0224",
+      "text": "Marks",
+      "start": 142.52,
+      "end": 143.24,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.638547420501709,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0225",
+      "text": "on",
+      "start": 143.24,
+      "end": 143.82,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.18473774194717407,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0226",
+      "text": "seasons,",
+      "start": 143.82,
+      "end": 144.82,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9756837487220764,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0227",
+      "text": "days",
+      "start": 145.36,
+      "end": 145.74,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9905605912208557,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0228",
+      "text": "and",
+      "start": 145.74,
+      "end": 146.4,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.6992691159248352,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0229",
+      "text": "years",
+      "start": 146.4,
+      "end": 146.9,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9978394508361816,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0230",
+      "text": "From",
+      "start": 146.9,
+      "end": 147.38,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9475879073143005,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0231",
+      "text": "that",
+      "start": 147.38,
+      "end": 147.96,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9821069836616516,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0232",
+      "text": "height",
+      "start": 147.96,
+      "end": 148.56,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9697690606117249,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0233",
+      "text": "shine",
+      "start": 148.56,
+      "end": 149.36,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.7253150343894958,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0234",
+      "text": "on",
+      "start": 149.36,
+      "end": 149.9,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9976955056190491,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0235",
+      "text": "the",
+      "start": 149.9,
+      "end": 150.44,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.992197573184967,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0236",
+      "text": "earth",
+      "start": 150.44,
+      "end": 150.88,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8549486994743347,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0237",
+      "text": "His",
+      "start": 150.88,
+      "end": 151.26,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9667516946792603,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0238",
+      "text": "Word",
+      "start": 151.26,
+      "end": 152.08,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.4858962893486023,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0239",
+      "text": "took",
+      "start": 152.08,
+      "end": 153.52,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.6018059849739075,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0240",
+      "text": "home",
+      "start": 153.52,
+      "end": 154.36,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9047954082489014,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0241",
+      "text": "Two",
+      "start": 154.36,
+      "end": 155.94,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.7135688066482544,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0242",
+      "text": "great",
+      "start": 155.94,
+      "end": 156.28,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9571296572685242,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0243",
+      "text": "lights",
+      "start": 156.28,
+      "end": 156.8,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9445127844810486,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0244",
+      "text": "He",
+      "start": 156.8,
+      "end": 157.08,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.428862601518631,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0245",
+      "text": "fashioned",
+      "start": 157.08,
+      "end": 157.7,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9925251007080078,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0246",
+      "text": "The",
+      "start": 157.7,
+      "end": 158.2,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.878606379032135,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0247",
+      "text": "greater",
+      "start": 158.2,
+      "end": 158.36,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.36360207200050354,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0248",
+      "text": "took",
+      "start": 158.36,
+      "end": 158.6,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.6486688852310181,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0249",
+      "text": "command",
+      "start": 158.6,
+      "end": 159.06,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9232791662216187,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0250",
+      "text": "The",
+      "start": 159.06,
+      "end": 159.32,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.5881584286689758,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0251",
+      "text": "day,",
+      "start": 159.32,
+      "end": 159.9,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9232399463653564,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0252",
+      "text": "the",
+      "start": 160.48,
+      "end": 160.58,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9605048894882202,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0253",
+      "text": "lesser",
+      "start": 160.58,
+      "end": 160.74,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9993446469306946,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0254",
+      "text": "took",
+      "start": 160.74,
+      "end": 161.0,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9763153791427612,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0255",
+      "text": "command",
+      "start": 161.0,
+      "end": 161.58,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9870087504386902,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0256",
+      "text": "the",
+      "start": 161.58,
+      "end": 161.82,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9178417325019836,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0257",
+      "text": "night",
+      "start": 161.82,
+      "end": 162.36,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9105665683746338,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0258",
+      "text": "he",
+      "start": 162.36,
+      "end": 162.86,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.5447107553482056,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0259",
+      "text": "made",
+      "start": 162.86,
+      "end": 163.32,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9916324019432068,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0260",
+      "text": "the",
+      "start": 163.32,
+      "end": 163.5,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9921237826347351,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0261",
+      "text": "stars",
+      "start": 163.5,
+      "end": 164.02,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.989791989326477,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0262",
+      "text": "as",
+      "start": 164.02,
+      "end": 164.46,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9294871091842651,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0263",
+      "text": "well",
+      "start": 164.46,
+      "end": 164.86,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9970546960830688,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0264",
+      "text": "He",
+      "start": 164.86,
+      "end": 165.28,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.5964397192001343,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0265",
+      "text": "set",
+      "start": 165.28,
+      "end": 165.48,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.978173553943634,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0266",
+      "text": "them",
+      "start": 165.48,
+      "end": 165.7,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9960312247276306,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0267",
+      "text": "in",
+      "start": 165.7,
+      "end": 165.98,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9954620003700256,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0268",
+      "text": "heaven's",
+      "start": 165.98,
+      "end": 166.74,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8352349996566772,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0269",
+      "text": "span",
+      "start": 166.74,
+      "end": 167.44,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.7430788278579712,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0270",
+      "text": "To",
+      "start": 167.44,
+      "end": 167.76,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.761099100112915,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0271",
+      "text": "send",
+      "start": 167.76,
+      "end": 168.02,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9895164370536804,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0272",
+      "text": "their",
+      "start": 168.02,
+      "end": 168.3,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9721075892448425,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0273",
+      "text": "light",
+      "start": 168.3,
+      "end": 168.62,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9948493838310242,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0274",
+      "text": "across",
+      "start": 168.62,
+      "end": 169.02,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9951344132423401,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0275",
+      "text": "the",
+      "start": 169.02,
+      "end": 169.36,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9922747015953064,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0276",
+      "text": "earth",
+      "start": 169.36,
+      "end": 169.6,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8211131691932678,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0277",
+      "text": "To",
+      "start": 169.6,
+      "end": 169.86,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.7225987911224365,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0278",
+      "text": "rule",
+      "start": 169.86,
+      "end": 170.1,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9962676167488098,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0279",
+      "text": "night",
+      "start": 170.1,
+      "end": 170.44,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9930794835090637,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0280",
+      "text": "and",
+      "start": 170.44,
+      "end": 170.74,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9961841702461243,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0281",
+      "text": "day",
+      "start": 170.74,
+      "end": 171.3,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9984775185585022,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0282",
+      "text": "To",
+      "start": 171.3,
+      "end": 172.22,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9470803737640381,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0283",
+      "text": "keep",
+      "start": 172.22,
+      "end": 172.42,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9990424513816833,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0284",
+      "text": "the",
+      "start": 172.42,
+      "end": 172.54,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9532414674758911,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0285",
+      "text": "bright",
+      "start": 172.54,
+      "end": 172.88,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8332405686378479,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0286",
+      "text": "apart",
+      "start": 172.88,
+      "end": 173.3,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9678808450698853,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0287",
+      "text": "from",
+      "start": 173.3,
+      "end": 173.92,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9917423725128174,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0288",
+      "text": "dark",
+      "start": 173.92,
+      "end": 174.58,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9664629101753235,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0289",
+      "text": "He",
+      "start": 174.58,
+      "end": 174.9,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9871565103530884,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0290",
+      "text": "looked",
+      "start": 174.9,
+      "end": 175.22,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9933285713195801,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0291",
+      "text": "on",
+      "start": 175.22,
+      "end": 175.54,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9960651993751526,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0292",
+      "text": "them",
+      "start": 175.54,
+      "end": 176.3,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9938697814941406,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0293",
+      "text": "Good",
+      "start": 176.3,
+      "end": 177.4,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.4859463572502136,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0294",
+      "text": "Dusked",
+      "start": 178.48,
+      "end": 179.22,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.4061928689479828,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0295",
+      "text": "on",
+      "start": 179.22,
+      "end": 179.54,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9941028952598572,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0296",
+      "text": "the",
+      "start": 179.54,
+      "end": 179.78,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9454545378684998,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0297",
+      "text": "fourth",
+      "start": 179.78,
+      "end": 179.98,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9437500238418579,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0298",
+      "text": "day",
+      "start": 179.98,
+      "end": 180.8,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9983439445495605,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0299",
+      "text": "Water",
+      "start": 184.66,
+      "end": 185.4,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.397839218378067,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0300",
+      "text": "swarmed",
+      "start": 185.4,
+      "end": 185.98,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.7539775967597961,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0301",
+      "text": "with",
+      "start": 185.98,
+      "end": 186.32,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9937925934791565,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0302",
+      "text": "living",
+      "start": 186.32,
+      "end": 186.74,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9969621300697327,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0303",
+      "text": "reptiles",
+      "start": 186.74,
+      "end": 187.44,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9940404295921326,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0304",
+      "text": "Winged",
+      "start": 187.44,
+      "end": 188.06,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.7142586708068848,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0305",
+      "text": "creatures",
+      "start": 188.06,
+      "end": 188.42,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9856657385826111,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0306",
+      "text": "fly",
+      "start": 188.42,
+      "end": 188.96,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9915293455123901,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0307",
+      "text": "above",
+      "start": 188.96,
+      "end": 189.4,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9923785924911499,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0308",
+      "text": "the",
+      "start": 189.4,
+      "end": 189.78,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9918618202209473,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0309",
+      "text": "earth",
+      "start": 189.78,
+      "end": 190.04,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9156519770622253,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0310",
+      "text": "Across",
+      "start": 190.04,
+      "end": 190.56,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.6619204878807068,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0311",
+      "text": "heaven's",
+      "start": 190.56,
+      "end": 192.48,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.6158477067947388,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0312",
+      "text": "firmament",
+      "start": 192.48,
+      "end": 193.16,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9672378599643707,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0313",
+      "text": "His",
+      "start": 193.16,
+      "end": 193.5,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.6644737124443054,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0314",
+      "text": "Word",
+      "start": 193.5,
+      "end": 193.98,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.7243404984474182,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0315",
+      "text": "took",
+      "start": 193.98,
+      "end": 194.52,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9924403429031372,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0316",
+      "text": "hold",
+      "start": 194.52,
+      "end": 197.1,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9950783252716064,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0317",
+      "text": "God",
+      "start": 197.84,
+      "end": 198.3,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8482878804206848,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0318",
+      "text": "made",
+      "start": 198.3,
+      "end": 198.6,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9942042231559753,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0319",
+      "text": "the",
+      "start": 198.6,
+      "end": 198.8,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9885799288749695,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0320",
+      "text": "great",
+      "start": 198.8,
+      "end": 199.14,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9492330551147461,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0321",
+      "text": "whales",
+      "start": 199.14,
+      "end": 199.7,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8704941868782043,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0322",
+      "text": "Every",
+      "start": 199.7,
+      "end": 200.14,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8079946637153625,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0323",
+      "text": "living",
+      "start": 200.14,
+      "end": 200.4,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9916061162948608,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0324",
+      "text": "water",
+      "start": 200.4,
+      "end": 200.7,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9838933944702148,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0325",
+      "text": "reptile",
+      "start": 200.7,
+      "end": 201.32,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9823580086231232,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0326",
+      "text": "by",
+      "start": 201.32,
+      "end": 201.54,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9618450999259949,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0327",
+      "text": "kind",
+      "start": 201.54,
+      "end": 201.98,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9753555655479431,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0328",
+      "text": "And",
+      "start": 201.98,
+      "end": 202.3,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8541280627250671,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0329",
+      "text": "every",
+      "start": 202.3,
+      "end": 202.58,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.984715461730957,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0330",
+      "text": "winged",
+      "start": 202.58,
+      "end": 203.1,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9900941848754883,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0331",
+      "text": "creature",
+      "start": 203.1,
+      "end": 203.56,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9932246804237366,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0332",
+      "text": "by",
+      "start": 203.56,
+      "end": 203.96,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9858091473579407,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0333",
+      "text": "kind",
+      "start": 203.96,
+      "end": 204.5,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9955216646194458,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0334",
+      "text": "He",
+      "start": 204.5,
+      "end": 205.26,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.974837601184845,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0335",
+      "text": "looked",
+      "start": 205.26,
+      "end": 205.52,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.994652271270752,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0336",
+      "text": "on",
+      "start": 205.52,
+      "end": 205.86,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.997133731842041,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0337",
+      "text": "them",
+      "start": 205.86,
+      "end": 206.22,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9719244241714478,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0338",
+      "text": "good",
+      "start": 206.22,
+      "end": 206.74,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.36322763562202454,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0339",
+      "text": "His",
+      "start": 207.42,
+      "end": 207.88,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8576112985610962,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0340",
+      "text": "blessing",
+      "start": 207.88,
+      "end": 208.34,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9751647710800171,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0341",
+      "text": "rang",
+      "start": 208.34,
+      "end": 208.76,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9937362670898438,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0342",
+      "text": "out",
+      "start": 208.76,
+      "end": 209.34,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9627578258514404,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0343",
+      "text": "Increase,",
+      "start": 209.34,
+      "end": 210.08,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.7930455803871155,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0344",
+      "text": "multiply",
+      "start": 210.42,
+      "end": 211.04,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9462423920631409,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0345",
+      "text": "Fill",
+      "start": 211.04,
+      "end": 211.72,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.4469600021839142,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0346",
+      "text": "the",
+      "start": 211.72,
+      "end": 212.02,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9903945326805115,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0347",
+      "text": "seas",
+      "start": 212.02,
+      "end": 212.34,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.988989531993866,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0348",
+      "text": "Let",
+      "start": 212.34,
+      "end": 212.62,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.6892841458320618,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0349",
+      "text": "the",
+      "start": 212.62,
+      "end": 212.78,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9963123202323914,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0350",
+      "text": "winged",
+      "start": 212.78,
+      "end": 213.12,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.939716637134552,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0351",
+      "text": "multiply",
+      "start": 213.12,
+      "end": 213.82,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9929414987564087,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0352",
+      "text": "on",
+      "start": 213.82,
+      "end": 214.28,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9405857920646667,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0353",
+      "text": "earth",
+      "start": 214.28,
+      "end": 215.2,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8841937780380249,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0354",
+      "text": "Dust",
+      "start": 216.54000000000002,
+      "end": 217.52,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8716846704483032,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0355",
+      "text": "on",
+      "start": 217.52,
+      "end": 217.96,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9787819981575012,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0356",
+      "text": "the",
+      "start": 217.96,
+      "end": 218.16,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9793965816497803,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0357",
+      "text": "fifth",
+      "start": 218.16,
+      "end": 218.4,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9098421335220337,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0358",
+      "text": "day",
+      "start": 218.4,
+      "end": 219.26,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9977282881736755,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0359",
+      "text": "Ever",
+      "start": 222.46,
+      "end": 223.44,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.026765963062644005,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0360",
+      "text": "bring",
+      "start": 223.44,
+      "end": 224.02,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.5815446376800537,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0361",
+      "text": "out",
+      "start": 224.02,
+      "end": 224.28,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9901064038276672,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0362",
+      "text": "living",
+      "start": 224.28,
+      "end": 224.62,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9735656976699829,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0363",
+      "text": "kinds",
+      "start": 224.62,
+      "end": 225.3,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9651824235916138,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0364",
+      "text": "Four",
+      "start": 225.3,
+      "end": 225.88,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8235956430435181,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0365",
+      "text": "-footed",
+      "start": 225.88,
+      "end": 226.22,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.7888893783092499,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0366",
+      "text": "beasts",
+      "start": 226.22,
+      "end": 226.7,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9315240383148193,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0367",
+      "text": "calling",
+      "start": 226.7,
+      "end": 227.04,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.3966396450996399,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0368",
+      "text": "reptiles",
+      "start": 227.04,
+      "end": 227.76,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9212893843650818,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0369",
+      "text": "wild",
+      "start": 227.76,
+      "end": 228.28,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.3183358907699585,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0370",
+      "text": "beasts",
+      "start": 228.28,
+      "end": 228.78,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9977338314056396,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0371",
+      "text": "Each",
+      "start": 228.78,
+      "end": 229.44,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8665264844894409,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0372",
+      "text": "after",
+      "start": 229.44,
+      "end": 230.2,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9950888752937317,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0373",
+      "text": "its",
+      "start": 230.2,
+      "end": 230.68,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8449062705039978,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0374",
+      "text": "kind",
+      "start": 230.68,
+      "end": 231.56,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9964543581008911,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0375",
+      "text": "His",
+      "start": 231.56,
+      "end": 231.9,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8481529355049133,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0376",
+      "text": "word",
+      "start": 231.9,
+      "end": 232.44,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.7820307612419128,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0377",
+      "text": "took",
+      "start": 232.44,
+      "end": 232.9,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9927164912223816,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0378",
+      "text": "hold",
+      "start": 232.9,
+      "end": 235.8,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9969673752784729,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0379",
+      "text": "He",
+      "start": 235.8,
+      "end": 236.7,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9188210964202881,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0380",
+      "text": "fashioned",
+      "start": 236.7,
+      "end": 237.16,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9903032183647156,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0381",
+      "text": "wild",
+      "start": 237.16,
+      "end": 237.76,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.997031569480896,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0382",
+      "text": "beasts",
+      "start": 237.76,
+      "end": 238.4,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9961230158805847,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0383",
+      "text": "Cattle",
+      "start": 238.4,
+      "end": 239.18,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.6992489695549011,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0384",
+      "text": "and",
+      "start": 239.18,
+      "end": 240.2,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.6200485229492188,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0385",
+      "text": "the",
+      "start": 240.2,
+      "end": 240.36,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9828882217407227,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0386",
+      "text": "reptiles",
+      "start": 240.36,
+      "end": 240.84,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9925888776779175,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0387",
+      "text": "of",
+      "start": 240.84,
+      "end": 241.2,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.5903143882751465,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0388",
+      "text": "the",
+      "start": 241.2,
+      "end": 241.46,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9955902099609375,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0389",
+      "text": "ground",
+      "start": 241.46,
+      "end": 241.8,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9976741671562195,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0390",
+      "text": "Each",
+      "start": 241.8,
+      "end": 242.16,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8682466745376587,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0391",
+      "text": "after",
+      "start": 242.16,
+      "end": 242.56,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.997892439365387,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0392",
+      "text": "its",
+      "start": 242.56,
+      "end": 242.76,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9762253761291504,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0393",
+      "text": "kind",
+      "start": 242.76,
+      "end": 243.28,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9895361661911011,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0394",
+      "text": "He",
+      "start": 245.24,
+      "end": 246.02,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.7791252136230469,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0395",
+      "text": "looked",
+      "start": 246.02,
+      "end": 246.32,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9815649390220642,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0396",
+      "text": "on",
+      "start": 246.32,
+      "end": 246.66,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9972520470619202,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0397",
+      "text": "them",
+      "start": 246.66,
+      "end": 246.96,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9918500185012817,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0398",
+      "text": "good,",
+      "start": 246.96,
+      "end": 247.58,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.4974979758262634,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0399",
+      "text": "then",
+      "start": 247.7,
+      "end": 249.3,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8069090843200684,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0400",
+      "text": "God",
+      "start": 249.3,
+      "end": 249.56,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9549833536148071,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0401",
+      "text": "said,",
+      "start": 249.56,
+      "end": 249.96,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.998584508895874,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0402",
+      "text": "Let",
+      "start": 251.38,
+      "end": 251.46,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.2065918892621994,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0403",
+      "text": "us",
+      "start": 251.46,
+      "end": 251.7,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9954715967178345,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0404",
+      "text": "make",
+      "start": 251.7,
+      "end": 252.08,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9947353005409241,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0405",
+      "text": "humankind,",
+      "start": 252.08,
+      "end": 252.84,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9341983795166016,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0406",
+      "text": "in",
+      "start": 254.3,
+      "end": 254.58,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.39735132455825806,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0407",
+      "text": "our",
+      "start": 254.58,
+      "end": 254.74,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9896564483642578,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0408",
+      "text": "image,",
+      "start": 254.74,
+      "end": 255.16,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9959283471107483,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0409",
+      "text": "in",
+      "start": 255.66,
+      "end": 255.76,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9463202953338623,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0410",
+      "text": "our",
+      "start": 255.76,
+      "end": 256.0,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9977623224258423,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0411",
+      "text": "likeness,",
+      "start": 256.0,
+      "end": 256.4,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9987003803253174,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0412",
+      "text": "Let",
+      "start": 256.86,
+      "end": 256.98,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.44644999504089355,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0413",
+      "text": "the",
+      "start": 256.98,
+      "end": 257.2,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9942944645881653,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0414",
+      "text": "wing",
+      "start": 257.2,
+      "end": 257.44,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.939601719379425,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0415",
+      "text": "it",
+      "start": 257.44,
+      "end": 257.84,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.3507991433143616,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0416",
+      "text": "multiply",
+      "start": 257.84,
+      "end": 258.48,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9887468218803406,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0417",
+      "text": "on",
+      "start": 258.48,
+      "end": 258.86,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.7909743189811707,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0418",
+      "text": "earth,",
+      "start": 258.86,
+      "end": 259.12,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8395605683326721,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0419",
+      "text": "God's",
+      "start": 259.34,
+      "end": 259.6,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8182070553302765,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0420",
+      "text": "best",
+      "start": 259.6,
+      "end": 260.72,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.46914809942245483,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0421",
+      "text": "word",
+      "start": 260.72,
+      "end": 261.08,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.61976557970047,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0422",
+      "text": "took",
+      "start": 261.08,
+      "end": 261.6,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9376396536827087,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0423",
+      "text": "hold.",
+      "start": 261.6,
+      "end": 262.44,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9038497805595398,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0424",
+      "text": "He",
+      "start": 264.1,
+      "end": 264.3,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9878647923469543,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0425",
+      "text": "fashioned",
+      "start": 264.3,
+      "end": 264.76,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9916139841079712,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0426",
+      "text": "world,",
+      "start": 264.76,
+      "end": 265.26,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9748710989952087,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0427",
+      "text": "beasts,",
+      "start": 265.5,
+      "end": 265.88,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9932831525802612,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0428",
+      "text": "cattle,",
+      "start": 266.3,
+      "end": 266.52,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9956608414649963,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0429",
+      "text": "and",
+      "start": 267.1,
+      "end": 267.22,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9282075762748718,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0430",
+      "text": "the",
+      "start": 267.22,
+      "end": 267.4,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.7635946273803711,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0431",
+      "text": "reptiles",
+      "start": 267.4,
+      "end": 267.82,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9986439347267151,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0432",
+      "text": "of",
+      "start": 267.82,
+      "end": 268.22,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.7643141746520996,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0433",
+      "text": "the",
+      "start": 268.22,
+      "end": 268.58,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9982590079307556,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0434",
+      "text": "ground,",
+      "start": 268.58,
+      "end": 269.14,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9895620942115784,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0435",
+      "text": "Each",
+      "start": 269.22,
+      "end": 270.34,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.12607057392597198,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0436",
+      "text": "after",
+      "start": 270.34,
+      "end": 270.78,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9901678562164307,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0437",
+      "text": "sky.",
+      "start": 270.78,
+      "end": 271.28,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.930841326713562,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0438",
+      "text": "We",
+      "start": 271.28,
+      "end": 272.42,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.25964224338531494,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0439",
+      "text": "looked",
+      "start": 272.42,
+      "end": 272.7,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9239509701728821,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0440",
+      "text": "on",
+      "start": 272.7,
+      "end": 273.06,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9947628378868103,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0441",
+      "text": "them,",
+      "start": 273.06,
+      "end": 273.36,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9872738122940063,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0442",
+      "text": "good",
+      "start": 273.36,
+      "end": 273.96,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9552760720252991,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0443",
+      "text": "Then",
+      "start": 275.62,
+      "end": 276.26,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.732181966304779,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0444",
+      "text": "God",
+      "start": 276.26,
+      "end": 276.56,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8592336773872375,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0445",
+      "text": "said,",
+      "start": 276.56,
+      "end": 277.0,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9983748197555542,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0446",
+      "text": "let",
+      "start": 277.52,
+      "end": 277.92,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.3951926529407501,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0447",
+      "text": "us",
+      "start": 277.92,
+      "end": 278.12,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9942222237586975,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0448",
+      "text": "make",
+      "start": 278.12,
+      "end": 278.44,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9955130219459534,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0449",
+      "text": "humankind",
+      "start": 278.44,
+      "end": 279.16,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9435394406318665,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0450",
+      "text": "In",
+      "start": 279.16,
+      "end": 279.82,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.48449385166168213,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0451",
+      "text": "our",
+      "start": 279.82,
+      "end": 279.94,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9965194463729858,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0452",
+      "text": "image,",
+      "start": 279.94,
+      "end": 280.36,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9871149063110352,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0453",
+      "text": "in",
+      "start": 280.84,
+      "end": 280.98,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8695423603057861,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0454",
+      "text": "our",
+      "start": 280.98,
+      "end": 281.18,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9969903230667114,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0455",
+      "text": "likeness",
+      "start": 281.18,
+      "end": 281.66,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9987289309501648,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0456",
+      "text": "Let",
+      "start": 281.66,
+      "end": 282.2,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9216784238815308,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0457",
+      "text": "them",
+      "start": 282.2,
+      "end": 282.36,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9943249821662903,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0458",
+      "text": "rule",
+      "start": 282.36,
+      "end": 282.56,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9989762306213379,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0459",
+      "text": "the",
+      "start": 282.56,
+      "end": 282.82,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9852105975151062,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0460",
+      "text": "fish,",
+      "start": 282.82,
+      "end": 283.08,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9971680045127869,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0461",
+      "text": "the",
+      "start": 283.28,
+      "end": 283.4,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9981833100318909,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0462",
+      "text": "birds",
+      "start": 283.4,
+      "end": 284.02,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9991387128829956,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0463",
+      "text": "The",
+      "start": 285.16,
+      "end": 285.8,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.8668684363365173,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0464",
+      "text": "cattle,",
+      "start": 285.8,
+      "end": 286.26,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9732086658477783,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0465",
+      "text": "all",
+      "start": 286.64,
+      "end": 287.0,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9791707992553711,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0466",
+      "text": "the",
+      "start": 287.0,
+      "end": 287.2,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.996085524559021,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0467",
+      "text": "earth",
+      "start": 287.2,
+      "end": 287.44,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9444182515144348,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0468",
+      "text": "and",
+      "start": 287.44,
+      "end": 287.76,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.6319872140884399,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0469",
+      "text": "all",
+      "start": 287.76,
+      "end": 288.02,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9951525926589966,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0470",
+      "text": "that",
+      "start": 288.02,
+      "end": 288.26,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9455381035804749,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0471",
+      "text": "crows",
+      "start": 288.26,
+      "end": 288.58,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.6598325669765472,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0472",
+      "text": "Hey,",
+      "start": 290.74,
+      "end": 291.38,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.28492897748947144,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0473",
+      "text": "dust",
+      "start": 291.66,
+      "end": 291.9,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9836730360984802,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0474",
+      "text": "on",
+      "start": 291.9,
+      "end": 292.28,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.7149676084518433,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0475",
+      "text": "the",
+      "start": 292.28,
+      "end": 292.56,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.5507168173789978,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0476",
+      "text": "fish,",
+      "start": 292.56,
+      "end": 292.8,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.3214516341686249,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0477",
+      "text": "yeah",
+      "start": 292.82,
+      "end": 294.96,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.5084382891654968,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0478",
+      "text": "Good,",
+      "start": 298.26000000000005,
+      "end": 299.66,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.15505458414554596,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0479",
+      "text": "good,",
+      "start": 299.66,
+      "end": 301.06,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9184005260467529,
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "diagnostic-0480",
+      "text": "good",
+      "start": 302.68,
+      "end": 303.38,
+      "phraseId": "diagnostic",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper-diagnostic",
+        "model": "medium.en.pt",
+        "tokenProbability": 0.9666321873664856,
+        "timingVerified": false
+      }
+    }
+  ],
+  "invalidRawWords": [
+    {
+      "word": " On",
+      "start": 127.94,
+      "end": 127.94,
+      "probability": 0.0006240547518245876
+    },
+    {
+      "word": " In",
+      "start": 161.58,
+      "end": 161.58,
+      "probability": 0.010050540789961815
+    }
+  ],
+  "warning": "Raw invalid words remain diagnostics. No invented timestamps and no automatic strict evidence pass."
+}

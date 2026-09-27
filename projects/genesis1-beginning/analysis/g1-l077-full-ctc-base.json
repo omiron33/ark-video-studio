@@ -1,0 +1,196 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 283.23,
+    "duration": 8.32,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "the cattle, all the earth and all that crawls.\u2019",
+  "approvedLyrics": "the cattle, all the earth and all that crawls.\u2019",
+  "words": [
+    {
+      "id": "w_64448607bcbd6dd5",
+      "text": "the",
+      "start": 284.152217,
+      "end": 285.134578,
+      "phraseId": "g1-l077",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.2991003166170032,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l077-w01"
+    },
+    {
+      "id": "w_56874a7ffd4a705c",
+      "text": "cattle,",
+      "start": 285.936506,
+      "end": 286.237229,
+      "phraseId": "g1-l077",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.7377969204466286,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l077-w02"
+    },
+    {
+      "id": "w_f7e363bb13b24245",
+      "text": "all",
+      "start": 286.898819,
+      "end": 286.99906,
+      "phraseId": "g1-l077",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.007246351197196331,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l077-w03"
+    },
+    {
+      "id": "w_0cb40c8565417c0d",
+      "text": "the",
+      "start": 287.039157,
+      "end": 287.119349,
+      "phraseId": "g1-l077",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.3284739054437506,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l077-w04"
+    },
+    {
+      "id": "w_54a309adee25b264",
+      "text": "earth",
+      "start": 287.199542,
+      "end": 287.420072,
+      "phraseId": "g1-l077",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.6091138185887662,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l077-w05"
+    },
+    {
+      "id": "w_9fc3f3e122c55cea",
+      "text": "and",
+      "start": 287.660651,
+      "end": 287.740843,
+      "phraseId": "g1-l077",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.5995248767569336,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l077-w06"
+    },
+    {
+      "id": "w_7ff2b7a0e7aacd8b",
+      "text": "all",
+      "start": 287.841084,
+      "end": 287.961373,
+      "phraseId": "g1-l077",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.6064073576235717,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l077-w07"
+    },
+    {
+      "id": "w_8c0008a58410818b",
+      "text": "that",
+      "start": 288.041566,
+      "end": 288.181904,
+      "phraseId": "g1-l077",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9184590832868237,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l077-w08"
+    },
+    {
+      "id": "w_19c3c3210b13bfe1",
+      "text": "crawls.\u2019",
+      "start": 288.322241,
+      "end": 291.409663,
+      "phraseId": "g1-l077",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.020715800203782136,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l077-w09"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "the cattle, all the earth and all that crawls.\u2019",
+      "wordIds": [
+        "w_64448607bcbd6dd5",
+        "w_56874a7ffd4a705c",
+        "w_f7e363bb13b24245",
+        "w_0cb40c8565417c0d",
+        "w_54a309adee25b264",
+        "w_9fc3f3e122c55cea",
+        "w_7ff2b7a0e7aacd8b",
+        "w_8c0008a58410818b",
+        "w_19c3c3210b13bfe1"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l077-full-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l077-full-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l077-full-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 1.9174666670151055,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

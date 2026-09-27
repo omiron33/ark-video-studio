@@ -1,0 +1,25 @@
+{
+  "verifiedAt": "2026-09-27T11:38:22.017577+00:00",
+  "album": "Genesis 1 - Breath & Earth",
+  "importedCount": 4,
+  "uiVerification": "Photos album visibly showed4Videos with three0:07inserts and one0:32opening. Opening playback advanced from00:00to00:32and showed BRIGHTNESS answered.",
+  "iCloudSyncVerified": false,
+  "files": [
+    {
+      "path": "/Users/shanefisher/Movies/Genesis1/Genesis 1 - Land Emerges.mp4",
+      "sha256": "d24c0689cd23fb5bbba0b22fac8812696f26450def02bf3ad5dd48998485d7d7"
+    },
+    {
+      "path": "/Users/shanefisher/Movies/Genesis1/Genesis 1 - Life from the Earth.mp4",
+      "sha256": "34c360c3ea0b8f943b71cf159fc0ee02ce3412f54b5f571c5d4cc51bad342a15"
+    },
+    {
+      "path": "/Users/shanefisher/Movies/Genesis1/Genesis 1 - Whale from Lines.mp4",
+      "sha256": "22f2d15af909f6c037b1e1a5e5a5459ac30cd51934eaa91947c84b2654d90e85"
+    },
+    {
+      "path": "/Users/shanefisher/Movies/Genesis1/Genesis 1 - Breath and Earth - Opening 32 seconds.mp4",
+      "sha256": "d151e3868d6400fba550906d7c58907285377b81158ca7f83e1d756ca3a5cf3f"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "unresolved",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 289.8
+  },
+  "words": [],
+  "phrases": [],
+  "reason": "Local ASR returned an invalid word interval; no guessed timing was substituted",
+  "warnings": [
+    "No timing invented or model downloaded."
+  ],
+  "role": "source",
+  "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l096-whisper-forced-medium.json",
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2",
+  "executionEvidence": {
+    "id": "g1-l096-whisper-forced-medium",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l096-whisper-forced-medium.json",
+    "status": "unresolved",
+    "seconds": 8.007410207763314,
+    "modelCacheHit": false,
+    "modelsHeld": 2
+  }
+}

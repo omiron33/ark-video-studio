@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "media": [
+    {
+      "id": "seraphim",
+      "type": "image",
+      "src": "assets/seraphim-subdued.png",
+      "start": 52.9,
+      "end": 58.4,
+      "treatment": "angel-wing",
+      "opacity": 0.78,
+      "sourceSha256": "878197cbf65d6d49683f9ea534fcc5b8f4c81670a0fb4ae1e2536938f539ebf4"
+    },
+    {
+      "id": "deep-waters",
+      "type": "image",
+      "src": "assets/primordial-ocean.png",
+      "start": 58.4,
+      "end": 66.7,
+      "treatment": "water",
+      "opacity": 0.86,
+      "sourceSha256": "4d086df5a97ced35bb41ab5a9d54ad2f2c027188e603077bb6fe2a023a6e5a8a"
+    },
+    {
+      "id": "land-emergence-v1",
+      "type": "video",
+      "src": "assets/land-emergence-v1-motion.mp4",
+      "start": 83,
+      "end": 92.5,
+      "duration": 7.291666666666667,
+      "poster": "assets/land-emergence-v1-last.jpg",
+      "treatment": "strata",
+      "opacity": 0.91,
+      "sourceSha256": "d24c0689cd23fb5bbba0b22fac8812696f26450def02bf3ad5dd48998485d7d7",
+      "provenance": "video-generation/land-emergence-v1-provenance.json"
+    },
+    {
+      "id": "vegetation-v1",
+      "type": "video",
+      "src": "assets/vegetation-v1-motion.mp4",
+      "start": 116.4,
+      "end": 125.1,
+      "duration": 7.291666666666667,
+      "poster": "assets/vegetation-v1-last.jpg",
+      "treatment": "roots",
+      "opacity": 0.91,
+      "sourceSha256": "34c360c3ea0b8f943b71cf159fc0ee02ce3412f54b5f571c5d4cc51bad342a15",
+      "provenance": "video-generation/vegetation-v1-provenance.json"
+    },
+    {
+      "id": "ophanim",
+      "type": "image",
+      "src": "assets/ophanim-subdued.png",
+      "start": 161.6,
+      "end": 168.5,
+      "treatment": "angel-orbit",
+      "opacity": 0.8,
+      "sourceSha256": "d4f6fdca164b8ef979fe30d2d7257e50d9dab71fd347a046be3ea57d7166554c"
+    },
+    {
+      "id": "winged",
+      "type": "image",
+      "src": "assets/winged-above-earth.png",
+      "start": 187.1,
+      "end": 193.3,
+      "treatment": "wind",
+      "opacity": 0.87,
+      "sourceSha256": "2b8e86c3226fccd493718b42c5bb485ad5e00bf643d11b957c9d8eb352efa8c0"
+    },
+    {
+      "id": "whale-formation",
+      "type": "video",
+      "src": "assets/whale-formation-motion.mp4",
+      "start": 195.35,
+      "end": 203.5,
+      "duration": 7.291666666666667,
+      "poster": "assets/whale-formation-last.jpg",
+      "treatment": "wake",
+      "opacity": 0.91,
+      "sourceSha256": "22f2d15af909f6c037b1e1a5e5a5459ac30cd51934eaa91947c84b2654d90e85",
+      "provenance": "video-generation/whale-formation-provenance.json"
+    },
+    {
+      "id": "wildlife",
+      "type": "image",
+      "src": "assets/wildlife-first-kinds.png",
+      "start": 235.4,
+      "end": 243.5,
+      "treatment": "ground",
+      "opacity": 0.88,
+      "sourceSha256": "ce0cd8c2465bba351284d5ff8673811ea5316eb8f402000088ebc575959d1cc8"
+    },
+    {
+      "id": "adam-formation",
+      "type": "video",
+      "src": "assets/adam-formation-motion.mp4",
+      "start": 247,
+      "end": 256.65,
+      "duration": 9.416666666666666,
+      "poster": "assets/adam-formation-last.jpg",
+      "treatment": "dust",
+      "opacity": 0.91,
+      "sourceSha256": "c0465fd2b0ed1723a75cfaafb6c0b312626e6ef15e7cd2872d210fdb5975c43a",
+      "provenance": "video-generation/adam-formation-provenance.json"
+    }
+  ],
+  "policy": "Unique source shot per passage; every generated insert has active authored foreground plus measured lyric words."
+}

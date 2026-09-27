@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=1920,height=1080"><title>Genesis 1 — Breath & Earth</title><script src="vendor/gsap.min.js"></script><style>
+@font-face{font-family:Bebas;src:url('assets/BebasNeue-Regular.ttf')}@font-face{font-family:Archivo;src:url('assets/ArchivoBlack-Regular.ttf')}@font-face{font-family:Elegy;src:url('assets/EBGaramond-Italic-Variable.ttf');font-style:italic;font-weight:100 900}
+__EXTRA_FONTS__
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;background:#10100f;color:#f0e4cc}
+#root{position:relative;width:100%;height:100%;overflow:hidden;background:#10100f;font-family:Bebas,sans-serif}
+#g1-media,#g1-scenes,#g1-opening,#g1-closing{position:absolute;inset:0;overflow:hidden}#g1-media{z-index:0}#g1-scenes{z-index:2}#g1-opening{z-index:4;pointer-events:none}#g1-closing{z-index:4;pointer-events:none}
+.g1-scene{position:absolute;inset:0;opacity:0;overflow:hidden;perspective:1800px;transform-origin:50% 50%}
+.g1-camera,.g1-back,.g1-front,.g1-type{position:absolute;inset:0;transform-style:preserve-3d}.g1-back{z-index:0}.g1-front{z-index:1}.g1-type{z-index:3}
+.g1-word{display:block;position:absolute;line-height:1;white-space:nowrap;opacity:0;transform-origin:50% 55%;font-kerning:normal;text-shadow:0 3px 12px #0006}.g1-letter{display:inline-block;white-space:pre}
+.g1-form{display:block;position:absolute;pointer-events:none;transform-origin:50% 50%}
+.g1-media-shell{position:absolute;inset:0;opacity:0;overflow:hidden}.g1-media-inner{position:absolute;inset:0}.g1-media-inner img,.g1-media-inner video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}.g1-last-frame{opacity:0}
+.g1-media-shell[data-treatment^="angel"] .g1-media-shade{background:linear-gradient(90deg,#10100fe8,#10100f80 42%,transparent 80%)}
+.g1-media-shade{position:absolute;inset:0;background:linear-gradient(90deg,#10100ff2 0%,#10100fa8 35%,#10100f10 76%),linear-gradient(0deg,#10100f,transparent 25%,transparent 80%,#10100f80)}.g1-media-foreground{position:absolute;inset:0}
+.g1-texture{position:absolute;inset:0;z-index:8;pointer-events:none;opacity:.095;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 240 240' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.76' numOctaves='3' seed='17' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' opacity='.28' filter='url(%23n)'/%3E%3C/svg%3E")}
+</style></head><body><div id="root" data-composition-id="g1-breath-earth" data-width="1920" data-height="1080" data-duration="__DURATION__">
+<div id="g1-media">__MEDIA__</div><div id="g1-scenes"></div><div id="g1-opening"></div><div id="g1-closing"></div><div class="g1-texture" aria-hidden="true"></div>
+<audio id="g1-source-song" src="assets/song.mp3" data-start="0" data-duration="__DURATION__" data-track-index="10" data-volume="1"></audio></div>
+<script>window.G1_DATA=__DATA__;</script><script>__RUNTIME__</script><script>__SCENES__</script><script>__OPENING__</script>
+<script>Promise.all([document.fonts.load('100px Bebas'),document.fonts.load('100px Archivo'),document.fonts.load('italic 100px Elegy'),document.fonts.load('20px PlexMono')]).then(()=>document.fonts.ready).then(()=>{const tl=gsap.timeline({paused:true});window.buildGenesisFilm({tl,stage:document.getElementById('g1-scenes'),data:window.G1_DATA});window.__timelines=window.__timelines||{};window.__timelines['g1-breath-earth']=tl;});</script></body></html>

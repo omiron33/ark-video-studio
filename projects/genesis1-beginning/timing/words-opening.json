@@ -1,0 +1,875 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "source": {
+    "audio": "../intake/source.mp3",
+    "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2",
+    "duration": 304.72,
+    "lyrics": "../intake/lyrics.txt",
+    "lyricsSha256": "d9a699733416732b13fcbeecf0d20627577e18929848b054558d098b1e11cbd9"
+  },
+  "words": [
+    {
+      "id": "g1-l001-w01",
+      "text": "Before",
+      "start": 4.348765,
+      "end": 4.810185,
+      "phraseId": "g1-l001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9783254398182737,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l001-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l001-w01"
+    },
+    {
+      "id": "g1-l001-w02",
+      "text": "the",
+      "start": 4.890432,
+      "end": 4.970679,
+      "phraseId": "g1-l001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9986325725494274,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l001-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l001-w02"
+    },
+    {
+      "id": "g1-l001-w03",
+      "text": "first",
+      "start": 5.111111,
+      "end": 5.472222,
+      "phraseId": "g1-l001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9996988760462657,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l001-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l001-w03"
+    },
+    {
+      "id": "g1-l001-w04",
+      "text": "count",
+      "start": 5.572531,
+      "end": 6.054012,
+      "phraseId": "g1-l001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.48192710848571735,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l001-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l001-w04"
+    },
+    {
+      "id": "g1-l001-w05",
+      "text": "of",
+      "start": 6.194444,
+      "end": 6.234568,
+      "phraseId": "g1-l001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9774755977694376,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l001-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l001-w05"
+    },
+    {
+      "id": "g1-l001-w06",
+      "text": "days,",
+      "start": 6.375,
+      "end": 7.317901,
+      "phraseId": "g1-l001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9974493451621127,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l001-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l001-w06"
+    },
+    {
+      "id": "g1-l002-w01",
+      "text": "God",
+      "start": 9.046602,
+      "end": 9.387702,
+      "phraseId": "g1-l002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9997851990493136,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l002-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l002-w01"
+    },
+    {
+      "id": "g1-l002-w02",
+      "text": "brought",
+      "start": 9.508091,
+      "end": 9.869256,
+      "phraseId": "g1-l002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9695651421767668,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l002-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l002-w02"
+    },
+    {
+      "id": "g1-l002-w03",
+      "text": "heaven",
+      "start": 9.949515,
+      "end": 10.290615,
+      "phraseId": "g1-l002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9643052202825056,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l002-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l002-w03"
+    },
+    {
+      "id": "g1-l002-w04",
+      "text": "and",
+      "start": 10.431068,
+      "end": 10.551456,
+      "phraseId": "g1-l002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9239632800550073,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l002-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l002-w04"
+    },
+    {
+      "id": "g1-l002-w05",
+      "text": "earth",
+      "start": 11.012945,
+      "end": 11.333981,
+      "phraseId": "g1-l002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9863003389787144,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l002-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l002-w05"
+    },
+    {
+      "id": "g1-l002-w06",
+      "text": "into",
+      "start": 11.594822,
+      "end": 11.875728,
+      "phraseId": "g1-l002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.993855973736413,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l002-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l002-w06"
+    },
+    {
+      "id": "g1-l002-w07",
+      "text": "being.",
+      "start": 12.056311,
+      "end": 12.457605,
+      "phraseId": "g1-l002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9732349381605844,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l002-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l002-w07"
+    },
+    {
+      "id": "g1-l003-w01",
+      "text": "Earth",
+      "start": 13.965464,
+      "end": 14.146392,
+      "phraseId": "g1-l003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.3396662299840882,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l003-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l003-w01"
+    },
+    {
+      "id": "g1-l003-w02",
+      "text": "stood",
+      "start": 14.246907,
+      "end": 14.568557,
+      "phraseId": "g1-l003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9664538741738531,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l003-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l003-w02"
+    },
+    {
+      "id": "g1-l003-w03",
+      "text": "bare,",
+      "start": 14.749485,
+      "end": 15.091237,
+      "phraseId": "g1-l003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.6633842464997113,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l003-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l003-w03"
+    },
+    {
+      "id": "g1-l003-w04",
+      "text": "unfinished;",
+      "start": 15.513402,
+      "end": 16.478351,
+      "phraseId": "g1-l003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9836260798914128,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l003-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l003-w04"
+    },
+    {
+      "id": "g1-l004-w01",
+      "text": "blackness",
+      "start": 17.386772,
+      "end": 18.170899,
+      "phraseId": "g1-l004",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9681561302529541,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l004-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l004-w01"
+    },
+    {
+      "id": "g1-l004-w02",
+      "text": "covered",
+      "start": 18.351852,
+      "end": 18.753968,
+      "phraseId": "g1-l004",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9719084629288537,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l004-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l004-w02"
+    },
+    {
+      "id": "g1-l004-w03",
+      "text": "the",
+      "start": 18.814286,
+      "end": 18.894709,
+      "phraseId": "g1-l004",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9978173683862773,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l004-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l004-w03"
+    },
+    {
+      "id": "g1-l004-w04",
+      "text": "deep.",
+      "start": 18.995238,
+      "end": 19.296825,
+      "phraseId": "g1-l004",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9995314159279348,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l004-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l004-w04"
+    },
+    {
+      "id": "g1-l005-w01",
+      "text": "Across",
+      "start": 19.722628,
+      "end": 20.364964,
+      "phraseId": "g1-l005",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.6767883739126516,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l005-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l005-w01"
+    },
+    {
+      "id": "g1-l005-w02",
+      "text": "the",
+      "start": 20.465328,
+      "end": 20.585766,
+      "phraseId": "g1-l005",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.8400792171173656,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l005-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l005-w02"
+    },
+    {
+      "id": "g1-l005-w03",
+      "text": "water",
+      "start": 20.706204,
+      "end": 21.228102,
+      "phraseId": "g1-l005",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.37707595364136254,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l005-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l005-w03"
+    },
+    {
+      "id": "g1-l005-w04",
+      "text": "moved",
+      "start": 21.388686,
+      "end": 21.669708,
+      "phraseId": "g1-l005",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.13829277967668413,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l005-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l005-w04"
+    },
+    {
+      "id": "g1-l005-w05",
+      "text": "the",
+      "start": 21.689781,
+      "end": 21.770073,
+      "phraseId": "g1-l005",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9901515124358956,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l005-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l005-w05"
+    },
+    {
+      "id": "g1-l005-w06",
+      "text": "Spirit",
+      "start": 21.850365,
+      "end": 22.55292,
+      "phraseId": "g1-l005",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9324160919117985,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l005-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l005-w06"
+    },
+    {
+      "id": "g1-l005-w07",
+      "text": "of",
+      "start": 22.673358,
+      "end": 22.733577,
+      "phraseId": "g1-l005",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9979960292963026,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l005-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l005-w07"
+    },
+    {
+      "id": "g1-l005-w08",
+      "text": "God.",
+      "start": 22.854015,
+      "end": 24.158759,
+      "phraseId": "g1-l005",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.007355270517286243,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l005-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l005-w08"
+    },
+    {
+      "id": "g1-l006-w01",
+      "text": "Then",
+      "start": 24.643307,
+      "end": 24.824016,
+      "phraseId": "g1-l006",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.8928731625998548,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l006-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l006-w01"
+    },
+    {
+      "id": "g1-l006-w02",
+      "text": "God",
+      "start": 24.944488,
+      "end": 25.346063,
+      "phraseId": "g1-l006",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9966679366513066,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l006-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l006-w02"
+    },
+    {
+      "id": "g1-l006-w03",
+      "text": "called,",
+      "start": 25.526772,
+      "end": 26.048819,
+      "phraseId": "g1-l006",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9981238475299643,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l006-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l006-w03"
+    },
+    {
+      "id": "g1-l006-w04",
+      "text": "‘Light,",
+      "start": 26.731496,
+      "end": 27.032677,
+      "phraseId": "g1-l006",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.7965411730571148,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l006-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l006-w04"
+    },
+    {
+      "id": "g1-l006-w05",
+      "text": "come",
+      "start": 27.353937,
+      "end": 27.574803,
+      "phraseId": "g1-l006",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9461291275980227,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l006-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l006-w05"
+    },
+    {
+      "id": "g1-l006-w06",
+      "text": "forth!’",
+      "start": 27.916142,
+      "end": 28.398031,
+      "phraseId": "g1-l006",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.258603581201417,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l006-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l006-w06"
+    },
+    {
+      "id": "g1-l007-w01",
+      "text": "Brightness",
+      "start": 29.75,
+      "end": 30.272989,
+      "phraseId": "g1-l007",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.96968613931828,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l007-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l007-w01"
+    },
+    {
+      "id": "g1-l007-w02",
+      "text": "answered.",
+      "start": 30.494253,
+      "end": 30.916667,
+      "phraseId": "g1-l007",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9393228215002473,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries.",
+        "artifact": "analysis/g1-l007-opening-ctc-large.json",
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7"
+      },
+      "canonicalId": "g1-l007-w02"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "g1-l001",
+      "text": "Before the first count of days,",
+      "wordIds": [
+        "g1-l001-w01",
+        "g1-l001-w02",
+        "g1-l001-w03",
+        "g1-l001-w04",
+        "g1-l001-w05",
+        "g1-l001-w06"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Verse 1",
+      "sourceLineIndex": 3,
+      "start": 4.348765,
+      "end": 7.317901,
+      "provenance": {
+        "method": "Source CTC large interval selection; base checkpoint cross-check available",
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/g1-l001-opening-ctc-large.json",
+          "analysis/g1-l001-opening-ctc-base.json"
+        ]
+      },
+      "performanceIndex": 1,
+      "sourcePhraseId": "g1-l001",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l002",
+      "text": "God brought heaven and earth into being.",
+      "wordIds": [
+        "g1-l002-w01",
+        "g1-l002-w02",
+        "g1-l002-w03",
+        "g1-l002-w04",
+        "g1-l002-w05",
+        "g1-l002-w06",
+        "g1-l002-w07"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Verse 1",
+      "sourceLineIndex": 4,
+      "start": 9.046602,
+      "end": 12.457605,
+      "provenance": {
+        "method": "Source CTC large interval selection; base checkpoint cross-check available",
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/g1-l002-opening-ctc-large.json",
+          "analysis/g1-l002-opening-ctc-base.json"
+        ]
+      },
+      "performanceIndex": 2,
+      "sourcePhraseId": "g1-l002",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l003",
+      "text": "Earth stood bare, unfinished;",
+      "wordIds": [
+        "g1-l003-w01",
+        "g1-l003-w02",
+        "g1-l003-w03",
+        "g1-l003-w04"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Verse 1",
+      "sourceLineIndex": 5,
+      "start": 13.965464,
+      "end": 16.478351,
+      "provenance": {
+        "method": "Source CTC large interval selection; base checkpoint cross-check available",
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/g1-l003-opening-ctc-large.json",
+          "analysis/g1-l003-opening-ctc-base.json"
+        ]
+      },
+      "performanceIndex": 3,
+      "sourcePhraseId": "g1-l003",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l004",
+      "text": "blackness covered the deep.",
+      "wordIds": [
+        "g1-l004-w01",
+        "g1-l004-w02",
+        "g1-l004-w03",
+        "g1-l004-w04"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Verse 1",
+      "sourceLineIndex": 6,
+      "start": 17.386772,
+      "end": 19.296825,
+      "provenance": {
+        "method": "Source CTC large interval selection; base checkpoint cross-check available",
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/g1-l004-opening-ctc-large.json",
+          "analysis/g1-l004-opening-ctc-base.json"
+        ]
+      },
+      "performanceIndex": 4,
+      "sourcePhraseId": "g1-l004",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l005",
+      "text": "Across the water moved the Spirit of God.",
+      "wordIds": [
+        "g1-l005-w01",
+        "g1-l005-w02",
+        "g1-l005-w03",
+        "g1-l005-w04",
+        "g1-l005-w05",
+        "g1-l005-w06",
+        "g1-l005-w07",
+        "g1-l005-w08"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Verse 1",
+      "sourceLineIndex": 7,
+      "start": 19.722628,
+      "end": 24.158759,
+      "provenance": {
+        "method": "Source CTC large interval selection; base checkpoint cross-check available",
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/g1-l005-opening-ctc-large.json",
+          "analysis/g1-l005-opening-ctc-base.json"
+        ]
+      },
+      "performanceIndex": 5,
+      "sourcePhraseId": "g1-l005",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l006",
+      "text": "Then God called, ‘Light, come forth!’",
+      "wordIds": [
+        "g1-l006-w01",
+        "g1-l006-w02",
+        "g1-l006-w03",
+        "g1-l006-w04",
+        "g1-l006-w05",
+        "g1-l006-w06"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 10,
+      "start": 24.643307,
+      "end": 28.398031,
+      "provenance": {
+        "method": "Source CTC large interval selection; base checkpoint cross-check available",
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/g1-l006-opening-ctc-large.json",
+          "analysis/g1-l006-opening-ctc-base.json"
+        ]
+      },
+      "performanceIndex": 6,
+      "sourcePhraseId": "g1-l006",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l007",
+      "text": "Brightness answered.",
+      "wordIds": [
+        "g1-l007-w01",
+        "g1-l007-w02"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 11,
+      "start": 29.75,
+      "end": 30.916667,
+      "provenance": {
+        "method": "Source CTC large interval selection; base checkpoint cross-check available",
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/g1-l007-opening-ctc-large.json",
+          "analysis/g1-l007-opening-ctc-base.json"
+        ]
+      },
+      "performanceIndex": 7,
+      "sourcePhraseId": "g1-l007",
+      "performedRepeat": false
+    }
+  ],
+  "warnings": [
+    "Machine acoustic estimates, not final strict singing review. Opening paired CTC avoids Whisper silence absorption."
+  ]
+}

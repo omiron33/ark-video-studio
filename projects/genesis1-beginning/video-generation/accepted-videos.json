@@ -1,0 +1,70 @@
+{
+  "project": "genesis1-beginning",
+  "updatedAt": "2026-09-27T11:30:18.736093+00:00",
+  "accepted": [
+    {
+      "id": "adam-formation",
+      "file": "assets/adam-formation-motion.mp4",
+      "nativeFrames": 226,
+      "fps": 24,
+      "durationSeconds": 9.416666666666666,
+      "sha256": "c0465fd2b0ed1723a75cfaafb6c0b312626e6ef15e7cd2872d210fdb5975c43a",
+      "provenance": "video-generation/adam-formation-provenance.json",
+      "firstPoster": "assets/adam-formation-first.jpg",
+      "lastPoster": "assets/adam-formation-last.jpg",
+      "constraint": "Active authored foreground required; source clip quality is accepted, final composite is not yet reviewed."
+    },
+    {
+      "id": "whale-formation",
+      "file": "assets/whale-formation-motion.mp4",
+      "nativeFrames": 175,
+      "fps": 24,
+      "durationSeconds": 7.291666666666667,
+      "sha256": "22f2d15af909f6c037b1e1a5e5a5459ac30cd51934eaa91947c84b2654d90e85",
+      "provenance": "video-generation/whale-formation-provenance.json",
+      "firstPoster": "assets/whale-formation-first.jpg",
+      "lastPoster": "assets/whale-formation-last.jpg",
+      "constraint": "Active authored foreground, matched bone strokes and masks required; use the graded asset, not the dimmer v1 derivative."
+    },
+    {
+      "id": "land-emergence-v1",
+      "file": "assets/land-emergence-v1-motion.mp4",
+      "nativeFrames": 175,
+      "fps": 24,
+      "durationSeconds": 7.291666666666667,
+      "sha256": "d24c0689cd23fb5bbba0b22fac8812696f26450def02bf3ad5dd48998485d7d7",
+      "provenance": "video-generation/land-emergence-v1-provenance.json",
+      "firstPoster": "assets/land-emergence-v1-first.jpg",
+      "lastPoster": "assets/land-emergence-v1-last.jpg",
+      "constraint": "Active authored foreground required; restrained photoreal ocean withdrawal, source quality accepted but final composite still requires review."
+    },
+    {
+      "id": "vegetation-v1",
+      "file": "assets/vegetation-v1-motion.mp4",
+      "nativeFrames": 175,
+      "fps": 24,
+      "durationSeconds": 7.291666666666667,
+      "sha256": "34c360c3ea0b8f943b71cf159fc0ee02ce3412f54b5f571c5d4cc51bad342a15",
+      "provenance": "video-generation/vegetation-v1-provenance.json",
+      "firstPoster": "assets/vegetation-v1-first.jpg",
+      "lastPoster": "assets/vegetation-v1-last.jpg",
+      "constraint": "Active authored foreground required. Tree growth is artistically compressed, not a botanical documentary. Final composite still requires review."
+    }
+  ],
+  "rejected": [
+    {
+      "id": "ophanim-gentle-v1",
+      "reason": "Style becomes solid engraved bands and exposure fades."
+    },
+    {
+      "id": "ophanim-gentle-v2",
+      "reason": "Glyph identity and middle brightness still fail; outer details return abruptly."
+    },
+    {
+      "id": "seraphim-breath-v1",
+      "reason": "Fine glyphs become feather strips; motion too slight to justify source degradation."
+    }
+  ],
+  "pending": [],
+  "integrationRule": "Use only entries in accepted after reviewing the final composite. Never select generated assets by glob or the fact a file exists."
+}

@@ -1,0 +1,652 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "transcribe",
+  "method": "local-openai-whisper-transcribe; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 0.0,
+    "duration": 35.0,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/Whisper/small.en.pt",
+    "backend": "openai-whisper",
+    "language": "en"
+  },
+  "transcript": "Before the first count of days God brought heaven and earth into being Earth stood bare, unfinished Blackness covered the deep Across the water moved the spirit of God Then God called, light come forth Brightness answered",
+  "words": [
+    {
+      "id": "w_72bb22f48ed87574",
+      "text": "Before",
+      "start": 3.7,
+      "end": 4.7,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.020464224740862846,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_d5882cea7623fa1b",
+      "text": "the",
+      "start": 4.7,
+      "end": 4.98,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9896236062049866,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_c7bac9ac80841813",
+      "text": "first",
+      "start": 4.98,
+      "end": 5.42,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9913234710693359,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_fc48dbbe70c38552",
+      "text": "count",
+      "start": 5.42,
+      "end": 5.92,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.983323872089386,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_d4f561ea8f758565",
+      "text": "of",
+      "start": 5.92,
+      "end": 6.28,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.986365556716919,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_71289c4d9985ace7",
+      "text": "days",
+      "start": 6.28,
+      "end": 7.28,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9879335761070251,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_d4dc394e5f807ce9",
+      "text": "God",
+      "start": 7.28,
+      "end": 9.32,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.49414578080177307,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_9a129479dfd79af0",
+      "text": "brought",
+      "start": 9.32,
+      "end": 9.82,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9809198975563049,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_6f17aedc960c1135",
+      "text": "heaven",
+      "start": 9.82,
+      "end": 10.22,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.8424457311630249,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_97535190a76e867e",
+      "text": "and",
+      "start": 10.22,
+      "end": 10.6,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9916702508926392,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_06ed15fd4db0349e",
+      "text": "earth",
+      "start": 10.6,
+      "end": 11.2,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9760905504226685,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_939bd13673e0994e",
+      "text": "into",
+      "start": 11.2,
+      "end": 11.86,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9859144687652588,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_b441b8585fd5ec99",
+      "text": "being",
+      "start": 11.86,
+      "end": 12.5,
+      "phraseId": "phrase-0001",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9751715660095215,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_849ea7218574377d",
+      "text": "Earth",
+      "start": 13.56,
+      "end": 14.06,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.6922248005867004,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_132be698ee971137",
+      "text": "stood",
+      "start": 14.06,
+      "end": 14.56,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9980509281158447,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_84c39dd8f190426d",
+      "text": "bare,",
+      "start": 14.56,
+      "end": 15.22,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9693462252616882,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_49855c4cb2948c13",
+      "text": "unfinished",
+      "start": 15.5,
+      "end": 16.46,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9939364790916443,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_aec84b18b8d5c05e",
+      "text": "Blackness",
+      "start": 16.46,
+      "end": 18.14,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.948816567659378,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_9160d3ab36b91db2",
+      "text": "covered",
+      "start": 18.14,
+      "end": 18.64,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9860014915466309,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_406f7f2c262e136f",
+      "text": "the",
+      "start": 18.64,
+      "end": 18.94,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9978771209716797,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_c292929bae1c32d8",
+      "text": "deep",
+      "start": 18.94,
+      "end": 19.42,
+      "phraseId": "phrase-0002",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9938496947288513,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_0d413ae42f862eb9",
+      "text": "Across",
+      "start": 19.42,
+      "end": 20.18,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.8619030714035034,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_3a14dfe17fc5b514",
+      "text": "the",
+      "start": 20.18,
+      "end": 20.64,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.998095691204071,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_df8eab019fab325a",
+      "text": "water",
+      "start": 20.64,
+      "end": 21.06,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9020262956619263,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_31837bec502e62f7",
+      "text": "moved",
+      "start": 21.06,
+      "end": 21.58,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.8969576358795166,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_39f4f955bc3e633a",
+      "text": "the",
+      "start": 21.58,
+      "end": 21.86,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9864271283149719,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_1d6e2bf17e3c8b06",
+      "text": "spirit",
+      "start": 21.86,
+      "end": 22.24,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.7386775612831116,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_8f8e96731c9d3941",
+      "text": "of",
+      "start": 22.24,
+      "end": 22.8,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9985033273696899,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_f2e90e71f895889a",
+      "text": "God",
+      "start": 22.8,
+      "end": 23.36,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9573378562927246,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_10c916ac76ad35f3",
+      "text": "Then",
+      "start": 23.36,
+      "end": 24.84,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.8919828534126282,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_26ee46e99aeb6425",
+      "text": "God",
+      "start": 24.84,
+      "end": 25.32,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9734774231910706,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_20827942f4f7bf32",
+      "text": "called,",
+      "start": 25.32,
+      "end": 26.12,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9984502792358398,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_a447ecce1a435d14",
+      "text": "light",
+      "start": 26.6,
+      "end": 27.02,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.45592018961906433,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_d49795124f6fd4b8",
+      "text": "come",
+      "start": 27.02,
+      "end": 27.62,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9240375757217407,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_745e50d4dd7c2e0a",
+      "text": "forth",
+      "start": 27.62,
+      "end": 28.38,
+      "phraseId": "phrase-0003",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.9955356121063232,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_399c4c66b14d8422",
+      "text": "Brightness",
+      "start": 28.38,
+      "end": 30.24,
+      "phraseId": "phrase-0004",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.7449601590633392,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    },
+    {
+      "id": "w_c052a59745c798bf",
+      "text": "answered",
+      "start": 30.24,
+      "end": 30.86,
+      "phraseId": "phrase-0004",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-openai-whisper",
+        "model": "small.en.pt",
+        "tokenProbability": 0.8429199457168579,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      }
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "Before the first count of days God brought heaven and earth into being",
+      "wordIds": [
+        "w_72bb22f48ed87574",
+        "w_d5882cea7623fa1b",
+        "w_c7bac9ac80841813",
+        "w_fc48dbbe70c38552",
+        "w_d4f561ea8f758565",
+        "w_71289c4d9985ace7",
+        "w_d4dc394e5f807ce9",
+        "w_9a129479dfd79af0",
+        "w_6f17aedc960c1135",
+        "w_97535190a76e867e",
+        "w_06ed15fd4db0349e",
+        "w_939bd13673e0994e",
+        "w_b441b8585fd5ec99"
+      ]
+    },
+    {
+      "id": "phrase-0002",
+      "text": "Earth stood bare, unfinished Blackness covered the deep",
+      "wordIds": [
+        "w_849ea7218574377d",
+        "w_132be698ee971137",
+        "w_84c39dd8f190426d",
+        "w_49855c4cb2948c13",
+        "w_aec84b18b8d5c05e",
+        "w_9160d3ab36b91db2",
+        "w_406f7f2c262e136f",
+        "w_c292929bae1c32d8"
+      ]
+    },
+    {
+      "id": "phrase-0003",
+      "text": "Across the water moved the spirit of God Then God called, light come forth",
+      "wordIds": [
+        "w_0d413ae42f862eb9",
+        "w_3a14dfe17fc5b514",
+        "w_df8eab019fab325a",
+        "w_31837bec502e62f7",
+        "w_39f4f955bc3e633a",
+        "w_1d6e2bf17e3c8b06",
+        "w_8f8e96731c9d3941",
+        "w_f2e90e71f895889a",
+        "w_10c916ac76ad35f3",
+        "w_26ee46e99aeb6425",
+        "w_20827942f4f7bf32",
+        "w_a447ecce1a435d14",
+        "w_d49795124f6fd4b8",
+        "w_745e50d4dd7c2e0a"
+      ]
+    },
+    {
+      "id": "phrase-0004",
+      "text": "Brightness answered",
+      "wordIds": [
+        "w_399c4c66b14d8422",
+        "w_c052a59745c798bf"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/opening-whisper-small.json",
+  "executionEvidence": {
+    "id": "opening-whisper-small",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/opening-whisper-small.json",
+    "status": "machine_estimate",
+    "seconds": 9.896219667047262,
+    "modelCacheHit": false,
+    "modelsHeld": 1
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

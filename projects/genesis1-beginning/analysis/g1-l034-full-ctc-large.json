@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 118.66999999999999,
+    "duration": 3.98,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "grass with seed in its kind and likeness;",
+  "approvedLyrics": "grass with seed in its kind and likeness;",
+  "words": [
+    {
+      "id": "w_ceba666156432fda",
+      "text": "grass",
+      "start": 119.433838,
+      "end": 119.715253,
+      "phraseId": "g1-l034",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.0755772282110315,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l034-w01"
+    },
+    {
+      "id": "w_e140924ba5ebb01c",
+      "text": "with",
+      "start": 119.936364,
+      "end": 120.137374,
+      "phraseId": "g1-l034",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.7151993728173683,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l034-w02"
+    },
+    {
+      "id": "w_ebf962175e5e6a1f",
+      "text": "seed",
+      "start": 120.318283,
+      "end": 120.619798,
+      "phraseId": "g1-l034",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.22568662407304171,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l034-w03"
+    },
+    {
+      "id": "w_ff38943cab9bd159",
+      "text": "in",
+      "start": 120.700202,
+      "end": 120.740404,
+      "phraseId": "g1-l034",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.1616756702813299,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l034-w04"
+    },
+    {
+      "id": "w_639c648f6bfa7d1c",
+      "text": "its",
+      "start": 120.780606,
+      "end": 120.901212,
+      "phraseId": "g1-l034",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.18708350127389675,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l034-w05"
+    },
+    {
+      "id": "w_8b1ad2f5570145e3",
+      "text": "kind",
+      "start": 120.961515,
+      "end": 121.383636,
+      "phraseId": "g1-l034",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.13879759569155853,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l034-w06"
+    },
+    {
+      "id": "w_d6a0a7b5c2741988",
+      "text": "and",
+      "start": 121.423838,
+      "end": 121.484141,
+      "phraseId": "g1-l034",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.09065834071527415,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l034-w07"
+    },
+    {
+      "id": "w_b2155064823bec6c",
+      "text": "likeness;",
+      "start": 121.564545,
+      "end": 122.04697,
+      "phraseId": "g1-l034",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.6412807568244334,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l034-w08"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "grass with seed in its kind and likeness;",
+      "wordIds": [
+        "w_ceba666156432fda",
+        "w_e140924ba5ebb01c",
+        "w_ebf962175e5e6a1f",
+        "w_ff38943cab9bd159",
+        "w_639c648f6bfa7d1c",
+        "w_8b1ad2f5570145e3",
+        "w_d6a0a7b5c2741988",
+        "w_b2155064823bec6c"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l034-full-ctc-large.json",
+  "executionEvidence": {
+    "id": "g1-l034-full-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l034-full-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 1.6980845830403268,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

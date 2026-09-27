@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 67.91,
+    "duration": 3.08,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "He called the firmament Heaven.",
+  "approvedLyrics": "He called the firmament Heaven.",
+  "words": [
+    {
+      "id": "w_32a0f389d698c5a2",
+      "text": "He",
+      "start": 68.272353,
+      "end": 68.393137,
+      "phraseId": "g1-l019",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.14064728483546676,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l019-w01"
+    },
+    {
+      "id": "w_533a91ff27de34bf",
+      "text": "called",
+      "start": 68.75549,
+      "end": 69.057451,
+      "phraseId": "g1-l019",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.08507585232719671,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l019-w02"
+    },
+    {
+      "id": "w_93c8499b1485438a",
+      "text": "the",
+      "start": 69.339281,
+      "end": 69.419804,
+      "phraseId": "g1-l019",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.022641996456735647,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l019-w03"
+    },
+    {
+      "id": "w_de3565bbb1152f7f",
+      "text": "firmament",
+      "start": 69.540588,
+      "end": 69.902941,
+      "phraseId": "g1-l019",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.0070971848843714705,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l019-w04"
+    },
+    {
+      "id": "w_0e425ce9570d0915",
+      "text": "Heaven.",
+      "start": 70.124379,
+      "end": 70.808824,
+      "phraseId": "g1-l019",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.04646685392549572,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l019-w05"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "He called the firmament Heaven.",
+      "wordIds": [
+        "w_32a0f389d698c5a2",
+        "w_533a91ff27de34bf",
+        "w_93c8499b1485438a",
+        "w_de3565bbb1152f7f",
+        "w_0e425ce9570d0915"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l019-full-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l019-full-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l019-full-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.5289388750679791,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

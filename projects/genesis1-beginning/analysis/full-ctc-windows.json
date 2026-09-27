@@ -1,0 +1,3184 @@
+[
+  {
+    "id": "g1-l008",
+    "start": 33.31,
+    "end": 37.39,
+    "words": [
+      {
+        "id": "g1-l008-w01",
+        "text": "He",
+        "phraseId": "g1-l008",
+        "sourcePhraseId": "g1-l008"
+      },
+      {
+        "id": "g1-l008-w02",
+        "text": "looked",
+        "phraseId": "g1-l008",
+        "sourcePhraseId": "g1-l008"
+      },
+      {
+        "id": "g1-l008-w03",
+        "text": "on",
+        "phraseId": "g1-l008",
+        "sourcePhraseId": "g1-l008"
+      },
+      {
+        "id": "g1-l008-w04",
+        "text": "the",
+        "phraseId": "g1-l008",
+        "sourcePhraseId": "g1-l008"
+      },
+      {
+        "id": "g1-l008-w05",
+        "text": "light:",
+        "phraseId": "g1-l008",
+        "sourcePhraseId": "g1-l008"
+      },
+      {
+        "id": "g1-l008-w06",
+        "text": "good.",
+        "phraseId": "g1-l008",
+        "sourcePhraseId": "g1-l008"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l009",
+    "start": 37.39,
+    "end": 41.73,
+    "words": [
+      {
+        "id": "g1-l009-w01",
+        "text": "He",
+        "phraseId": "g1-l009",
+        "sourcePhraseId": "g1-l009"
+      },
+      {
+        "id": "g1-l009-w02",
+        "text": "cut",
+        "phraseId": "g1-l009",
+        "sourcePhraseId": "g1-l009"
+      },
+      {
+        "id": "g1-l009-w03",
+        "text": "a",
+        "phraseId": "g1-l009",
+        "sourcePhraseId": "g1-l009"
+      },
+      {
+        "id": "g1-l009-w04",
+        "text": "clear",
+        "phraseId": "g1-l009",
+        "sourcePhraseId": "g1-l009"
+      },
+      {
+        "id": "g1-l009-w05",
+        "text": "line",
+        "phraseId": "g1-l009",
+        "sourcePhraseId": "g1-l009"
+      },
+      {
+        "id": "g1-l009-w06",
+        "text": "between",
+        "phraseId": "g1-l009",
+        "sourcePhraseId": "g1-l009"
+      },
+      {
+        "id": "g1-l009-w07",
+        "text": "it",
+        "phraseId": "g1-l009",
+        "sourcePhraseId": "g1-l009"
+      },
+      {
+        "id": "g1-l009-w08",
+        "text": "and",
+        "phraseId": "g1-l009",
+        "sourcePhraseId": "g1-l009"
+      },
+      {
+        "id": "g1-l009-w09",
+        "text": "darkness.",
+        "phraseId": "g1-l009",
+        "sourcePhraseId": "g1-l009"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l010",
+    "start": 40.43,
+    "end": 46.589999999999996,
+    "words": [
+      {
+        "id": "g1-l010-w01",
+        "text": "Day",
+        "phraseId": "g1-l010",
+        "sourcePhraseId": "g1-l010"
+      },
+      {
+        "id": "g1-l010-w02",
+        "text": "was",
+        "phraseId": "g1-l010",
+        "sourcePhraseId": "g1-l010"
+      },
+      {
+        "id": "g1-l010-w03",
+        "text": "the",
+        "phraseId": "g1-l010",
+        "sourcePhraseId": "g1-l010"
+      },
+      {
+        "id": "g1-l010-w04",
+        "text": "name",
+        "phraseId": "g1-l010",
+        "sourcePhraseId": "g1-l010"
+      },
+      {
+        "id": "g1-l010-w05",
+        "text": "He",
+        "phraseId": "g1-l010",
+        "sourcePhraseId": "g1-l010"
+      },
+      {
+        "id": "g1-l010-w06",
+        "text": "gave",
+        "phraseId": "g1-l010",
+        "sourcePhraseId": "g1-l010"
+      },
+      {
+        "id": "g1-l010-w07",
+        "text": "the",
+        "phraseId": "g1-l010",
+        "sourcePhraseId": "g1-l010"
+      },
+      {
+        "id": "g1-l010-w08",
+        "text": "light;",
+        "phraseId": "g1-l010",
+        "sourcePhraseId": "g1-l010"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l011",
+    "start": 45.29,
+    "end": 48.83,
+    "words": [
+      {
+        "id": "g1-l011-w01",
+        "text": "Night,",
+        "phraseId": "g1-l011",
+        "sourcePhraseId": "g1-l011"
+      },
+      {
+        "id": "g1-l011-w02",
+        "text": "the",
+        "phraseId": "g1-l011",
+        "sourcePhraseId": "g1-l011"
+      },
+      {
+        "id": "g1-l011-w03",
+        "text": "name",
+        "phraseId": "g1-l011",
+        "sourcePhraseId": "g1-l011"
+      },
+      {
+        "id": "g1-l011-w04",
+        "text": "He",
+        "phraseId": "g1-l011",
+        "sourcePhraseId": "g1-l011"
+      },
+      {
+        "id": "g1-l011-w05",
+        "text": "gave",
+        "phraseId": "g1-l011",
+        "sourcePhraseId": "g1-l011"
+      },
+      {
+        "id": "g1-l011-w06",
+        "text": "the",
+        "phraseId": "g1-l011",
+        "sourcePhraseId": "g1-l011"
+      },
+      {
+        "id": "g1-l011-w07",
+        "text": "dark.",
+        "phraseId": "g1-l011",
+        "sourcePhraseId": "g1-l011"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l012",
+    "start": 47.53,
+    "end": 52.05,
+    "words": [
+      {
+        "id": "g1-l012-w01",
+        "text": "Dusk.",
+        "phraseId": "g1-l012",
+        "sourcePhraseId": "g1-l012"
+      },
+      {
+        "id": "g1-l012-w02",
+        "text": "Dawn.",
+        "phraseId": "g1-l012",
+        "sourcePhraseId": "g1-l012"
+      },
+      {
+        "id": "g1-l012-w03",
+        "text": "The",
+        "phraseId": "g1-l012",
+        "sourcePhraseId": "g1-l012"
+      },
+      {
+        "id": "g1-l012-w04",
+        "text": "first",
+        "phraseId": "g1-l012",
+        "sourcePhraseId": "g1-l012"
+      },
+      {
+        "id": "g1-l012-w05",
+        "text": "day.",
+        "phraseId": "g1-l012",
+        "sourcePhraseId": "g1-l012"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l013",
+    "start": 53.35,
+    "end": 58.87,
+    "words": [
+      {
+        "id": "g1-l013-w01",
+        "text": "God",
+        "phraseId": "g1-l013",
+        "sourcePhraseId": "g1-l013"
+      },
+      {
+        "id": "g1-l013-w02",
+        "text": "spoke:",
+        "phraseId": "g1-l013",
+        "sourcePhraseId": "g1-l013"
+      },
+      {
+        "id": "g1-l013-w03",
+        "text": "‘A",
+        "phraseId": "g1-l013",
+        "sourcePhraseId": "g1-l013"
+      },
+      {
+        "id": "g1-l013-w04",
+        "text": "firmament",
+        "phraseId": "g1-l013",
+        "sourcePhraseId": "g1-l013"
+      },
+      {
+        "id": "g1-l013-w05",
+        "text": "amid",
+        "phraseId": "g1-l013",
+        "sourcePhraseId": "g1-l013"
+      },
+      {
+        "id": "g1-l013-w06",
+        "text": "the",
+        "phraseId": "g1-l013",
+        "sourcePhraseId": "g1-l013"
+      },
+      {
+        "id": "g1-l013-w07",
+        "text": "waters!",
+        "phraseId": "g1-l013",
+        "sourcePhraseId": "g1-l013"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l014",
+    "start": 57.57,
+    "end": 61.33,
+    "words": [
+      {
+        "id": "g1-l014-w01",
+        "text": "Let",
+        "phraseId": "g1-l014",
+        "sourcePhraseId": "g1-l014"
+      },
+      {
+        "id": "g1-l014-w02",
+        "text": "water",
+        "phraseId": "g1-l014",
+        "sourcePhraseId": "g1-l014"
+      },
+      {
+        "id": "g1-l014-w03",
+        "text": "part",
+        "phraseId": "g1-l014",
+        "sourcePhraseId": "g1-l014"
+      },
+      {
+        "id": "g1-l014-w04",
+        "text": "from",
+        "phraseId": "g1-l014",
+        "sourcePhraseId": "g1-l014"
+      },
+      {
+        "id": "g1-l014-w05",
+        "text": "water!’",
+        "phraseId": "g1-l014",
+        "sourcePhraseId": "g1-l014"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l015",
+    "start": 60.03,
+    "end": 63.99,
+    "words": [
+      {
+        "id": "g1-l015-w01",
+        "text": "His",
+        "phraseId": "g1-l015",
+        "sourcePhraseId": "g1-l015"
+      },
+      {
+        "id": "g1-l015-w02",
+        "text": "word",
+        "phraseId": "g1-l015",
+        "sourcePhraseId": "g1-l015"
+      },
+      {
+        "id": "g1-l015-w03",
+        "text": "took",
+        "phraseId": "g1-l015",
+        "sourcePhraseId": "g1-l015"
+      },
+      {
+        "id": "g1-l015-w04",
+        "text": "hold.",
+        "phraseId": "g1-l015",
+        "sourcePhraseId": "g1-l015"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l016",
+    "start": 62.690000000000005,
+    "end": 66.57000000000001,
+    "words": [
+      {
+        "id": "g1-l016-w01",
+        "text": "He",
+        "phraseId": "g1-l016",
+        "sourcePhraseId": "g1-l016"
+      },
+      {
+        "id": "g1-l016-w02",
+        "text": "raised",
+        "phraseId": "g1-l016",
+        "sourcePhraseId": "g1-l016"
+      },
+      {
+        "id": "g1-l016-w03",
+        "text": "that",
+        "phraseId": "g1-l016",
+        "sourcePhraseId": "g1-l016"
+      },
+      {
+        "id": "g1-l016-w04",
+        "text": "mighty",
+        "phraseId": "g1-l016",
+        "sourcePhraseId": "g1-l016"
+      },
+      {
+        "id": "g1-l016-w05",
+        "text": "span;",
+        "phraseId": "g1-l016",
+        "sourcePhraseId": "g1-l016"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l017",
+    "start": 65.42999999999999,
+    "end": 67.85000000000001,
+    "words": [
+      {
+        "id": "g1-l017-w01",
+        "text": "flood",
+        "phraseId": "g1-l017",
+        "sourcePhraseId": "g1-l017"
+      },
+      {
+        "id": "g1-l017-w02",
+        "text": "beneath",
+        "phraseId": "g1-l017",
+        "sourcePhraseId": "g1-l017"
+      },
+      {
+        "id": "g1-l017-w03",
+        "text": "it,",
+        "phraseId": "g1-l017",
+        "sourcePhraseId": "g1-l017"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l018",
+    "start": 66.55,
+    "end": 68.91000000000001,
+    "words": [
+      {
+        "id": "g1-l018-w01",
+        "text": "flood",
+        "phraseId": "g1-l018",
+        "sourcePhraseId": "g1-l018"
+      },
+      {
+        "id": "g1-l018-w02",
+        "text": "above",
+        "phraseId": "g1-l018",
+        "sourcePhraseId": "g1-l018"
+      },
+      {
+        "id": "g1-l018-w03",
+        "text": "it.",
+        "phraseId": "g1-l018",
+        "sourcePhraseId": "g1-l018"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l019",
+    "start": 67.91,
+    "end": 70.99000000000001,
+    "words": [
+      {
+        "id": "g1-l019-w01",
+        "text": "He",
+        "phraseId": "g1-l019",
+        "sourcePhraseId": "g1-l019"
+      },
+      {
+        "id": "g1-l019-w02",
+        "text": "called",
+        "phraseId": "g1-l019",
+        "sourcePhraseId": "g1-l019"
+      },
+      {
+        "id": "g1-l019-w03",
+        "text": "the",
+        "phraseId": "g1-l019",
+        "sourcePhraseId": "g1-l019"
+      },
+      {
+        "id": "g1-l019-w04",
+        "text": "firmament",
+        "phraseId": "g1-l019",
+        "sourcePhraseId": "g1-l019"
+      },
+      {
+        "id": "g1-l019-w05",
+        "text": "Heaven.",
+        "phraseId": "g1-l019",
+        "sourcePhraseId": "g1-l019"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l020",
+    "start": 69.69,
+    "end": 73.57000000000001,
+    "words": [
+      {
+        "id": "g1-l020-w01",
+        "text": "He",
+        "phraseId": "g1-l020",
+        "sourcePhraseId": "g1-l020"
+      },
+      {
+        "id": "g1-l020-w02",
+        "text": "looked",
+        "phraseId": "g1-l020",
+        "sourcePhraseId": "g1-l020"
+      },
+      {
+        "id": "g1-l020-w03",
+        "text": "on",
+        "phraseId": "g1-l020",
+        "sourcePhraseId": "g1-l020"
+      },
+      {
+        "id": "g1-l020-w04",
+        "text": "it:",
+        "phraseId": "g1-l020",
+        "sourcePhraseId": "g1-l020"
+      },
+      {
+        "id": "g1-l020-w05",
+        "text": "good.",
+        "phraseId": "g1-l020",
+        "sourcePhraseId": "g1-l020"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l021",
+    "start": 72.27,
+    "end": 75.39,
+    "words": [
+      {
+        "id": "g1-l021-w01",
+        "text": "Dusk.",
+        "phraseId": "g1-l021",
+        "sourcePhraseId": "g1-l021"
+      },
+      {
+        "id": "g1-l021-w02",
+        "text": "Dawn.",
+        "phraseId": "g1-l021",
+        "sourcePhraseId": "g1-l021"
+      },
+      {
+        "id": "g1-l021-w03",
+        "text": "The",
+        "phraseId": "g1-l021",
+        "sourcePhraseId": "g1-l021"
+      },
+      {
+        "id": "g1-l021-w04",
+        "text": "second",
+        "phraseId": "g1-l021",
+        "sourcePhraseId": "g1-l021"
+      },
+      {
+        "id": "g1-l021-w05",
+        "text": "day.",
+        "phraseId": "g1-l021",
+        "sourcePhraseId": "g1-l021"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l022",
+    "start": 77.35,
+    "end": 83.15,
+    "words": [
+      {
+        "id": "g1-l022-w01",
+        "text": "‘Waters",
+        "phraseId": "g1-l022",
+        "sourcePhraseId": "g1-l022"
+      },
+      {
+        "id": "g1-l022-w02",
+        "text": "below",
+        "phraseId": "g1-l022",
+        "sourcePhraseId": "g1-l022"
+      },
+      {
+        "id": "g1-l022-w03",
+        "text": "Heaven,",
+        "phraseId": "g1-l022",
+        "sourcePhraseId": "g1-l022"
+      },
+      {
+        "id": "g1-l022-w04",
+        "text": "run",
+        "phraseId": "g1-l022",
+        "sourcePhraseId": "g1-l022"
+      },
+      {
+        "id": "g1-l022-w05",
+        "text": "to",
+        "phraseId": "g1-l022",
+        "sourcePhraseId": "g1-l022"
+      },
+      {
+        "id": "g1-l022-w06",
+        "text": "one",
+        "phraseId": "g1-l022",
+        "sourcePhraseId": "g1-l022"
+      },
+      {
+        "id": "g1-l022-w07",
+        "text": "place;",
+        "phraseId": "g1-l022",
+        "sourcePhraseId": "g1-l022"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l023",
+    "start": 81.85,
+    "end": 85.59,
+    "words": [
+      {
+        "id": "g1-l023-w01",
+        "text": "let",
+        "phraseId": "g1-l023",
+        "sourcePhraseId": "g1-l023"
+      },
+      {
+        "id": "g1-l023-w02",
+        "text": "dry",
+        "phraseId": "g1-l023",
+        "sourcePhraseId": "g1-l023"
+      },
+      {
+        "id": "g1-l023-w03",
+        "text": "ground",
+        "phraseId": "g1-l023",
+        "sourcePhraseId": "g1-l023"
+      },
+      {
+        "id": "g1-l023-w04",
+        "text": "show!’",
+        "phraseId": "g1-l023",
+        "sourcePhraseId": "g1-l023"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l024",
+    "start": 86.63,
+    "end": 92.65,
+    "words": [
+      {
+        "id": "g1-l024-w01",
+        "text": "The",
+        "phraseId": "g1-l024",
+        "sourcePhraseId": "g1-l024"
+      },
+      {
+        "id": "g1-l024-w02",
+        "text": "waters",
+        "phraseId": "g1-l024",
+        "sourcePhraseId": "g1-l024"
+      },
+      {
+        "id": "g1-l024-w03",
+        "text": "gathered.",
+        "phraseId": "g1-l024",
+        "sourcePhraseId": "g1-l024"
+      },
+      {
+        "id": "g1-l024-w04",
+        "text": "Land",
+        "phraseId": "g1-l024",
+        "sourcePhraseId": "g1-l024"
+      },
+      {
+        "id": "g1-l024-w05",
+        "text": "came",
+        "phraseId": "g1-l024",
+        "sourcePhraseId": "g1-l024"
+      },
+      {
+        "id": "g1-l024-w06",
+        "text": "clear.",
+        "phraseId": "g1-l024",
+        "sourcePhraseId": "g1-l024"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l025",
+    "start": 91.35,
+    "end": 95.91000000000001,
+    "words": [
+      {
+        "id": "g1-l025-w01",
+        "text": "He",
+        "phraseId": "g1-l025",
+        "sourcePhraseId": "g1-l025"
+      },
+      {
+        "id": "g1-l025-w02",
+        "text": "named",
+        "phraseId": "g1-l025",
+        "sourcePhraseId": "g1-l025"
+      },
+      {
+        "id": "g1-l025-w03",
+        "text": "the",
+        "phraseId": "g1-l025",
+        "sourcePhraseId": "g1-l025"
+      },
+      {
+        "id": "g1-l025-w04",
+        "text": "dry",
+        "phraseId": "g1-l025",
+        "sourcePhraseId": "g1-l025"
+      },
+      {
+        "id": "g1-l025-w05",
+        "text": "ground",
+        "phraseId": "g1-l025",
+        "sourcePhraseId": "g1-l025"
+      },
+      {
+        "id": "g1-l025-w06",
+        "text": "Earth,",
+        "phraseId": "g1-l025",
+        "sourcePhraseId": "g1-l025"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l026",
+    "start": 94.61,
+    "end": 98.23,
+    "words": [
+      {
+        "id": "g1-l026-w01",
+        "text": "the",
+        "phraseId": "g1-l026",
+        "sourcePhraseId": "g1-l026"
+      },
+      {
+        "id": "g1-l026-w02",
+        "text": "gathered",
+        "phraseId": "g1-l026",
+        "sourcePhraseId": "g1-l026"
+      },
+      {
+        "id": "g1-l026-w03",
+        "text": "waters",
+        "phraseId": "g1-l026",
+        "sourcePhraseId": "g1-l026"
+      },
+      {
+        "id": "g1-l026-w04",
+        "text": "Seas.",
+        "phraseId": "g1-l026",
+        "sourcePhraseId": "g1-l026"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l027",
+    "start": 96.92999999999999,
+    "end": 104.49000000000001,
+    "words": [
+      {
+        "id": "g1-l027-w01",
+        "text": "He",
+        "phraseId": "g1-l027",
+        "sourcePhraseId": "g1-l027"
+      },
+      {
+        "id": "g1-l027-w02",
+        "text": "looked",
+        "phraseId": "g1-l027",
+        "sourcePhraseId": "g1-l027"
+      },
+      {
+        "id": "g1-l027-w03",
+        "text": "on",
+        "phraseId": "g1-l027",
+        "sourcePhraseId": "g1-l027"
+      },
+      {
+        "id": "g1-l027-w04",
+        "text": "them:",
+        "phraseId": "g1-l027",
+        "sourcePhraseId": "g1-l027"
+      },
+      {
+        "id": "g1-l027-w05",
+        "text": "good.",
+        "phraseId": "g1-l027",
+        "sourcePhraseId": "g1-l027"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l028",
+    "start": 103.19,
+    "end": 106.25,
+    "words": [
+      {
+        "id": "g1-l028-w01",
+        "text": "‘Ground,",
+        "phraseId": "g1-l028",
+        "sourcePhraseId": "g1-l028"
+      },
+      {
+        "id": "g1-l028-w02",
+        "text": "send",
+        "phraseId": "g1-l028",
+        "sourcePhraseId": "g1-l028"
+      },
+      {
+        "id": "g1-l028-w03",
+        "text": "up",
+        "phraseId": "g1-l028",
+        "sourcePhraseId": "g1-l028"
+      },
+      {
+        "id": "g1-l028-w04",
+        "text": "seed-bearing",
+        "phraseId": "g1-l028",
+        "sourcePhraseId": "g1-l028"
+      },
+      {
+        "id": "g1-l028-w05",
+        "text": "grass",
+        "phraseId": "g1-l028",
+        "sourcePhraseId": "g1-l028"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l029",
+    "start": 104.94999999999999,
+    "end": 108.31,
+    "words": [
+      {
+        "id": "g1-l029-w01",
+        "text": "in",
+        "phraseId": "g1-l029",
+        "sourcePhraseId": "g1-l029"
+      },
+      {
+        "id": "g1-l029-w02",
+        "text": "kind",
+        "phraseId": "g1-l029",
+        "sourcePhraseId": "g1-l029"
+      },
+      {
+        "id": "g1-l029-w03",
+        "text": "and",
+        "phraseId": "g1-l029",
+        "sourcePhraseId": "g1-l029"
+      },
+      {
+        "id": "g1-l029-w04",
+        "text": "likeness!",
+        "phraseId": "g1-l029",
+        "sourcePhraseId": "g1-l029"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l030",
+    "start": 107.00999999999999,
+    "end": 111.07000000000001,
+    "words": [
+      {
+        "id": "g1-l030-w01",
+        "text": "Trees,",
+        "phraseId": "g1-l030",
+        "sourcePhraseId": "g1-l030"
+      },
+      {
+        "id": "g1-l030-w02",
+        "text": "bear",
+        "phraseId": "g1-l030",
+        "sourcePhraseId": "g1-l030"
+      },
+      {
+        "id": "g1-l030-w03",
+        "text": "fruit",
+        "phraseId": "g1-l030",
+        "sourcePhraseId": "g1-l030"
+      },
+      {
+        "id": "g1-l030-w04",
+        "text": "with",
+        "phraseId": "g1-l030",
+        "sourcePhraseId": "g1-l030"
+      },
+      {
+        "id": "g1-l030-w05",
+        "text": "seed",
+        "phraseId": "g1-l030",
+        "sourcePhraseId": "g1-l030"
+      },
+      {
+        "id": "g1-l030-w06",
+        "text": "within,",
+        "phraseId": "g1-l030",
+        "sourcePhraseId": "g1-l030"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l031",
+    "start": 109.77,
+    "end": 112.73,
+    "words": [
+      {
+        "id": "g1-l031-w01",
+        "text": "each",
+        "phraseId": "g1-l031",
+        "sourcePhraseId": "g1-l031"
+      },
+      {
+        "id": "g1-l031-w02",
+        "text": "true",
+        "phraseId": "g1-l031",
+        "sourcePhraseId": "g1-l031"
+      },
+      {
+        "id": "g1-l031-w03",
+        "text": "to",
+        "phraseId": "g1-l031",
+        "sourcePhraseId": "g1-l031"
+      },
+      {
+        "id": "g1-l031-w04",
+        "text": "its",
+        "phraseId": "g1-l031",
+        "sourcePhraseId": "g1-l031"
+      },
+      {
+        "id": "g1-l031-w05",
+        "text": "kind!’",
+        "phraseId": "g1-l031",
+        "sourcePhraseId": "g1-l031"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l032",
+    "start": 111.42999999999999,
+    "end": 117.11,
+    "words": [
+      {
+        "id": "g1-l032-w01",
+        "text": "His",
+        "phraseId": "g1-l032",
+        "sourcePhraseId": "g1-l032"
+      },
+      {
+        "id": "g1-l032-w02",
+        "text": "word",
+        "phraseId": "g1-l032",
+        "sourcePhraseId": "g1-l032"
+      },
+      {
+        "id": "g1-l032-w03",
+        "text": "took",
+        "phraseId": "g1-l032",
+        "sourcePhraseId": "g1-l032"
+      },
+      {
+        "id": "g1-l032-w04",
+        "text": "hold.",
+        "phraseId": "g1-l032",
+        "sourcePhraseId": "g1-l032"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l033",
+    "start": 116.71,
+    "end": 119.97,
+    "words": [
+      {
+        "id": "g1-l033-w01",
+        "text": "Green",
+        "phraseId": "g1-l033",
+        "sourcePhraseId": "g1-l033"
+      },
+      {
+        "id": "g1-l033-w02",
+        "text": "surged",
+        "phraseId": "g1-l033",
+        "sourcePhraseId": "g1-l033"
+      },
+      {
+        "id": "g1-l033-w03",
+        "text": "from",
+        "phraseId": "g1-l033",
+        "sourcePhraseId": "g1-l033"
+      },
+      {
+        "id": "g1-l033-w04",
+        "text": "the",
+        "phraseId": "g1-l033",
+        "sourcePhraseId": "g1-l033"
+      },
+      {
+        "id": "g1-l033-w05",
+        "text": "soil:",
+        "phraseId": "g1-l033",
+        "sourcePhraseId": "g1-l033"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l034",
+    "start": 118.66999999999999,
+    "end": 122.65,
+    "words": [
+      {
+        "id": "g1-l034-w01",
+        "text": "grass",
+        "phraseId": "g1-l034",
+        "sourcePhraseId": "g1-l034"
+      },
+      {
+        "id": "g1-l034-w02",
+        "text": "with",
+        "phraseId": "g1-l034",
+        "sourcePhraseId": "g1-l034"
+      },
+      {
+        "id": "g1-l034-w03",
+        "text": "seed",
+        "phraseId": "g1-l034",
+        "sourcePhraseId": "g1-l034"
+      },
+      {
+        "id": "g1-l034-w04",
+        "text": "in",
+        "phraseId": "g1-l034",
+        "sourcePhraseId": "g1-l034"
+      },
+      {
+        "id": "g1-l034-w05",
+        "text": "its",
+        "phraseId": "g1-l034",
+        "sourcePhraseId": "g1-l034"
+      },
+      {
+        "id": "g1-l034-w06",
+        "text": "kind",
+        "phraseId": "g1-l034",
+        "sourcePhraseId": "g1-l034"
+      },
+      {
+        "id": "g1-l034-w07",
+        "text": "and",
+        "phraseId": "g1-l034",
+        "sourcePhraseId": "g1-l034"
+      },
+      {
+        "id": "g1-l034-w08",
+        "text": "likeness;",
+        "phraseId": "g1-l034",
+        "sourcePhraseId": "g1-l034"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l035",
+    "start": 121.35,
+    "end": 124.71000000000001,
+    "words": [
+      {
+        "id": "g1-l035-w01",
+        "text": "fruit",
+        "phraseId": "g1-l035",
+        "sourcePhraseId": "g1-l035"
+      },
+      {
+        "id": "g1-l035-w02",
+        "text": "wrapped",
+        "phraseId": "g1-l035",
+        "sourcePhraseId": "g1-l035"
+      },
+      {
+        "id": "g1-l035-w03",
+        "text": "around",
+        "phraseId": "g1-l035",
+        "sourcePhraseId": "g1-l035"
+      },
+      {
+        "id": "g1-l035-w04",
+        "text": "its",
+        "phraseId": "g1-l035",
+        "sourcePhraseId": "g1-l035"
+      },
+      {
+        "id": "g1-l035-w05",
+        "text": "seed,",
+        "phraseId": "g1-l035",
+        "sourcePhraseId": "g1-l035"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l036",
+    "start": 123.41,
+    "end": 127.23,
+    "words": [
+      {
+        "id": "g1-l036-w01",
+        "text": "tree",
+        "phraseId": "g1-l036",
+        "sourcePhraseId": "g1-l036"
+      },
+      {
+        "id": "g1-l036-w02",
+        "text": "by",
+        "phraseId": "g1-l036",
+        "sourcePhraseId": "g1-l036"
+      },
+      {
+        "id": "g1-l036-w03",
+        "text": "tree,",
+        "phraseId": "g1-l036",
+        "sourcePhraseId": "g1-l036"
+      },
+      {
+        "id": "g1-l036-w04",
+        "text": "kind",
+        "phraseId": "g1-l036",
+        "sourcePhraseId": "g1-l036"
+      },
+      {
+        "id": "g1-l036-w05",
+        "text": "by",
+        "phraseId": "g1-l036",
+        "sourcePhraseId": "g1-l036"
+      },
+      {
+        "id": "g1-l036-w06",
+        "text": "kind.",
+        "phraseId": "g1-l036",
+        "sourcePhraseId": "g1-l036"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l037",
+    "start": 125.92999999999999,
+    "end": 130.49,
+    "words": [
+      {
+        "id": "g1-l037-w01",
+        "text": "He",
+        "phraseId": "g1-l037",
+        "sourcePhraseId": "g1-l037"
+      },
+      {
+        "id": "g1-l037-w02",
+        "text": "looked",
+        "phraseId": "g1-l037",
+        "sourcePhraseId": "g1-l037"
+      },
+      {
+        "id": "g1-l037-w03",
+        "text": "on",
+        "phraseId": "g1-l037",
+        "sourcePhraseId": "g1-l037"
+      },
+      {
+        "id": "g1-l037-w04",
+        "text": "it:",
+        "phraseId": "g1-l037",
+        "sourcePhraseId": "g1-l037"
+      },
+      {
+        "id": "g1-l037-w05",
+        "text": "good.",
+        "phraseId": "g1-l037",
+        "sourcePhraseId": "g1-l037"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l038",
+    "start": 129.89,
+    "end": 133.51000000000002,
+    "words": [
+      {
+        "id": "g1-l038-w01",
+        "text": "Dusk.",
+        "phraseId": "g1-l038",
+        "sourcePhraseId": "g1-l038"
+      },
+      {
+        "id": "g1-l038-w02",
+        "text": "Dawn.",
+        "phraseId": "g1-l038",
+        "sourcePhraseId": "g1-l038"
+      },
+      {
+        "id": "g1-l038-w03",
+        "text": "The",
+        "phraseId": "g1-l038",
+        "sourcePhraseId": "g1-l038"
+      },
+      {
+        "id": "g1-l038-w04",
+        "text": "third",
+        "phraseId": "g1-l038",
+        "sourcePhraseId": "g1-l038"
+      },
+      {
+        "id": "g1-l038-w05",
+        "text": "day.",
+        "phraseId": "g1-l038",
+        "sourcePhraseId": "g1-l038"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l039",
+    "start": 136.25,
+    "end": 140.89000000000001,
+    "words": [
+      {
+        "id": "g1-l039-w01",
+        "text": "‘Lights",
+        "phraseId": "g1-l039",
+        "sourcePhraseId": "g1-l039"
+      },
+      {
+        "id": "g1-l039-w02",
+        "text": "across",
+        "phraseId": "g1-l039",
+        "sourcePhraseId": "g1-l039"
+      },
+      {
+        "id": "g1-l039-w03",
+        "text": "Heaven’s",
+        "phraseId": "g1-l039",
+        "sourcePhraseId": "g1-l039"
+      },
+      {
+        "id": "g1-l039-w04",
+        "text": "firmament!",
+        "phraseId": "g1-l039",
+        "sourcePhraseId": "g1-l039"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l040",
+    "start": 139.59,
+    "end": 143.13,
+    "words": [
+      {
+        "id": "g1-l040-w01",
+        "text": "Divide",
+        "phraseId": "g1-l040",
+        "sourcePhraseId": "g1-l040"
+      },
+      {
+        "id": "g1-l040-w02",
+        "text": "day",
+        "phraseId": "g1-l040",
+        "sourcePhraseId": "g1-l040"
+      },
+      {
+        "id": "g1-l040-w03",
+        "text": "from",
+        "phraseId": "g1-l040",
+        "sourcePhraseId": "g1-l040"
+      },
+      {
+        "id": "g1-l040-w04",
+        "text": "night;",
+        "phraseId": "g1-l040",
+        "sourcePhraseId": "g1-l040"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l041",
+    "start": 141.82999999999998,
+    "end": 147.45000000000002,
+    "words": [
+      {
+        "id": "g1-l041-w01",
+        "text": "mark",
+        "phraseId": "g1-l041",
+        "sourcePhraseId": "g1-l041"
+      },
+      {
+        "id": "g1-l041-w02",
+        "text": "signs,",
+        "phraseId": "g1-l041",
+        "sourcePhraseId": "g1-l041"
+      },
+      {
+        "id": "g1-l041-w03",
+        "text": "seasons,",
+        "phraseId": "g1-l041",
+        "sourcePhraseId": "g1-l041"
+      },
+      {
+        "id": "g1-l041-w04",
+        "text": "days",
+        "phraseId": "g1-l041",
+        "sourcePhraseId": "g1-l041"
+      },
+      {
+        "id": "g1-l041-w05",
+        "text": "and",
+        "phraseId": "g1-l041",
+        "sourcePhraseId": "g1-l041"
+      },
+      {
+        "id": "g1-l041-w06",
+        "text": "years!’",
+        "phraseId": "g1-l041",
+        "sourcePhraseId": "g1-l041"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l042",
+    "start": 146.15,
+    "end": 151.49,
+    "words": [
+      {
+        "id": "g1-l042-w01",
+        "text": "‘From",
+        "phraseId": "g1-l042",
+        "sourcePhraseId": "g1-l042"
+      },
+      {
+        "id": "g1-l042-w02",
+        "text": "that",
+        "phraseId": "g1-l042",
+        "sourcePhraseId": "g1-l042"
+      },
+      {
+        "id": "g1-l042-w03",
+        "text": "height,",
+        "phraseId": "g1-l042",
+        "sourcePhraseId": "g1-l042"
+      },
+      {
+        "id": "g1-l042-w04",
+        "text": "shine",
+        "phraseId": "g1-l042",
+        "sourcePhraseId": "g1-l042"
+      },
+      {
+        "id": "g1-l042-w05",
+        "text": "on",
+        "phraseId": "g1-l042",
+        "sourcePhraseId": "g1-l042"
+      },
+      {
+        "id": "g1-l042-w06",
+        "text": "the",
+        "phraseId": "g1-l042",
+        "sourcePhraseId": "g1-l042"
+      },
+      {
+        "id": "g1-l042-w07",
+        "text": "earth!’",
+        "phraseId": "g1-l042",
+        "sourcePhraseId": "g1-l042"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l043",
+    "start": 150.19,
+    "end": 154.95000000000002,
+    "words": [
+      {
+        "id": "g1-l043-w01",
+        "text": "His",
+        "phraseId": "g1-l043",
+        "sourcePhraseId": "g1-l043"
+      },
+      {
+        "id": "g1-l043-w02",
+        "text": "word",
+        "phraseId": "g1-l043",
+        "sourcePhraseId": "g1-l043"
+      },
+      {
+        "id": "g1-l043-w03",
+        "text": "took",
+        "phraseId": "g1-l043",
+        "sourcePhraseId": "g1-l043"
+      },
+      {
+        "id": "g1-l043-w04",
+        "text": "hold.",
+        "phraseId": "g1-l043",
+        "sourcePhraseId": "g1-l043"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l044",
+    "start": 154.59,
+    "end": 158.31,
+    "words": [
+      {
+        "id": "g1-l044-w01",
+        "text": "Two",
+        "phraseId": "g1-l044",
+        "sourcePhraseId": "g1-l044"
+      },
+      {
+        "id": "g1-l044-w02",
+        "text": "great",
+        "phraseId": "g1-l044",
+        "sourcePhraseId": "g1-l044"
+      },
+      {
+        "id": "g1-l044-w03",
+        "text": "lights",
+        "phraseId": "g1-l044",
+        "sourcePhraseId": "g1-l044"
+      },
+      {
+        "id": "g1-l044-w04",
+        "text": "He",
+        "phraseId": "g1-l044",
+        "sourcePhraseId": "g1-l044"
+      },
+      {
+        "id": "g1-l044-w05",
+        "text": "fashioned:",
+        "phraseId": "g1-l044",
+        "sourcePhraseId": "g1-l044"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l045",
+    "start": 157.01,
+    "end": 160.41,
+    "words": [
+      {
+        "id": "g1-l045-w01",
+        "text": "the",
+        "phraseId": "g1-l045",
+        "sourcePhraseId": "g1-l045"
+      },
+      {
+        "id": "g1-l045-w02",
+        "text": "greater",
+        "phraseId": "g1-l045",
+        "sourcePhraseId": "g1-l045"
+      },
+      {
+        "id": "g1-l045-w03",
+        "text": "to",
+        "phraseId": "g1-l045",
+        "sourcePhraseId": "g1-l045"
+      },
+      {
+        "id": "g1-l045-w04",
+        "text": "command",
+        "phraseId": "g1-l045",
+        "sourcePhraseId": "g1-l045"
+      },
+      {
+        "id": "g1-l045-w05",
+        "text": "the",
+        "phraseId": "g1-l045",
+        "sourcePhraseId": "g1-l045"
+      },
+      {
+        "id": "g1-l045-w06",
+        "text": "day,",
+        "phraseId": "g1-l045",
+        "sourcePhraseId": "g1-l045"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l046",
+    "start": 159.10999999999999,
+    "end": 162.99,
+    "words": [
+      {
+        "id": "g1-l046-w01",
+        "text": "the",
+        "phraseId": "g1-l046",
+        "sourcePhraseId": "g1-l046"
+      },
+      {
+        "id": "g1-l046-w02",
+        "text": "lesser",
+        "phraseId": "g1-l046",
+        "sourcePhraseId": "g1-l046"
+      },
+      {
+        "id": "g1-l046-w03",
+        "text": "to",
+        "phraseId": "g1-l046",
+        "sourcePhraseId": "g1-l046"
+      },
+      {
+        "id": "g1-l046-w04",
+        "text": "command",
+        "phraseId": "g1-l046",
+        "sourcePhraseId": "g1-l046"
+      },
+      {
+        "id": "g1-l046-w05",
+        "text": "the",
+        "phraseId": "g1-l046",
+        "sourcePhraseId": "g1-l046"
+      },
+      {
+        "id": "g1-l046-w06",
+        "text": "night.",
+        "phraseId": "g1-l046",
+        "sourcePhraseId": "g1-l046"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l047",
+    "start": 161.69,
+    "end": 165.45000000000002,
+    "words": [
+      {
+        "id": "g1-l047-w01",
+        "text": "He",
+        "phraseId": "g1-l047",
+        "sourcePhraseId": "g1-l047"
+      },
+      {
+        "id": "g1-l047-w02",
+        "text": "made",
+        "phraseId": "g1-l047",
+        "sourcePhraseId": "g1-l047"
+      },
+      {
+        "id": "g1-l047-w03",
+        "text": "the",
+        "phraseId": "g1-l047",
+        "sourcePhraseId": "g1-l047"
+      },
+      {
+        "id": "g1-l047-w04",
+        "text": "stars",
+        "phraseId": "g1-l047",
+        "sourcePhraseId": "g1-l047"
+      },
+      {
+        "id": "g1-l047-w05",
+        "text": "as",
+        "phraseId": "g1-l047",
+        "sourcePhraseId": "g1-l047"
+      },
+      {
+        "id": "g1-l047-w06",
+        "text": "well.",
+        "phraseId": "g1-l047",
+        "sourcePhraseId": "g1-l047"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l048",
+    "start": 164.15,
+    "end": 167.89000000000001,
+    "words": [
+      {
+        "id": "g1-l048-w01",
+        "text": "He",
+        "phraseId": "g1-l048",
+        "sourcePhraseId": "g1-l048"
+      },
+      {
+        "id": "g1-l048-w02",
+        "text": "set",
+        "phraseId": "g1-l048",
+        "sourcePhraseId": "g1-l048"
+      },
+      {
+        "id": "g1-l048-w03",
+        "text": "them",
+        "phraseId": "g1-l048",
+        "sourcePhraseId": "g1-l048"
+      },
+      {
+        "id": "g1-l048-w04",
+        "text": "in",
+        "phraseId": "g1-l048",
+        "sourcePhraseId": "g1-l048"
+      },
+      {
+        "id": "g1-l048-w05",
+        "text": "Heaven’s",
+        "phraseId": "g1-l048",
+        "sourcePhraseId": "g1-l048"
+      },
+      {
+        "id": "g1-l048-w06",
+        "text": "span",
+        "phraseId": "g1-l048",
+        "sourcePhraseId": "g1-l048"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l049",
+    "start": 166.59,
+    "end": 170.23000000000002,
+    "words": [
+      {
+        "id": "g1-l049-w01",
+        "text": "to",
+        "phraseId": "g1-l049",
+        "sourcePhraseId": "g1-l049"
+      },
+      {
+        "id": "g1-l049-w02",
+        "text": "send",
+        "phraseId": "g1-l049",
+        "sourcePhraseId": "g1-l049"
+      },
+      {
+        "id": "g1-l049-w03",
+        "text": "their",
+        "phraseId": "g1-l049",
+        "sourcePhraseId": "g1-l049"
+      },
+      {
+        "id": "g1-l049-w04",
+        "text": "light",
+        "phraseId": "g1-l049",
+        "sourcePhraseId": "g1-l049"
+      },
+      {
+        "id": "g1-l049-w05",
+        "text": "across",
+        "phraseId": "g1-l049",
+        "sourcePhraseId": "g1-l049"
+      },
+      {
+        "id": "g1-l049-w06",
+        "text": "the",
+        "phraseId": "g1-l049",
+        "sourcePhraseId": "g1-l049"
+      },
+      {
+        "id": "g1-l049-w07",
+        "text": "earth,",
+        "phraseId": "g1-l049",
+        "sourcePhraseId": "g1-l049"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l050",
+    "start": 168.93,
+    "end": 171.87,
+    "words": [
+      {
+        "id": "g1-l050-w01",
+        "text": "to",
+        "phraseId": "g1-l050",
+        "sourcePhraseId": "g1-l050"
+      },
+      {
+        "id": "g1-l050-w02",
+        "text": "rule",
+        "phraseId": "g1-l050",
+        "sourcePhraseId": "g1-l050"
+      },
+      {
+        "id": "g1-l050-w03",
+        "text": "night",
+        "phraseId": "g1-l050",
+        "sourcePhraseId": "g1-l050"
+      },
+      {
+        "id": "g1-l050-w04",
+        "text": "and",
+        "phraseId": "g1-l050",
+        "sourcePhraseId": "g1-l050"
+      },
+      {
+        "id": "g1-l050-w05",
+        "text": "day,",
+        "phraseId": "g1-l050",
+        "sourcePhraseId": "g1-l050"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l051",
+    "start": 170.57,
+    "end": 175.27,
+    "words": [
+      {
+        "id": "g1-l051-w01",
+        "text": "to",
+        "phraseId": "g1-l051",
+        "sourcePhraseId": "g1-l051"
+      },
+      {
+        "id": "g1-l051-w02",
+        "text": "keep",
+        "phraseId": "g1-l051",
+        "sourcePhraseId": "g1-l051"
+      },
+      {
+        "id": "g1-l051-w03",
+        "text": "the",
+        "phraseId": "g1-l051",
+        "sourcePhraseId": "g1-l051"
+      },
+      {
+        "id": "g1-l051-w04",
+        "text": "bright",
+        "phraseId": "g1-l051",
+        "sourcePhraseId": "g1-l051"
+      },
+      {
+        "id": "g1-l051-w05",
+        "text": "apart",
+        "phraseId": "g1-l051",
+        "sourcePhraseId": "g1-l051"
+      },
+      {
+        "id": "g1-l051-w06",
+        "text": "from",
+        "phraseId": "g1-l051",
+        "sourcePhraseId": "g1-l051"
+      },
+      {
+        "id": "g1-l051-w07",
+        "text": "dark.",
+        "phraseId": "g1-l051",
+        "sourcePhraseId": "g1-l051"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l052",
+    "start": 173.97,
+    "end": 177.99,
+    "words": [
+      {
+        "id": "g1-l052-w01",
+        "text": "He",
+        "phraseId": "g1-l052",
+        "sourcePhraseId": "g1-l052"
+      },
+      {
+        "id": "g1-l052-w02",
+        "text": "looked",
+        "phraseId": "g1-l052",
+        "sourcePhraseId": "g1-l052"
+      },
+      {
+        "id": "g1-l052-w03",
+        "text": "on",
+        "phraseId": "g1-l052",
+        "sourcePhraseId": "g1-l052"
+      },
+      {
+        "id": "g1-l052-w04",
+        "text": "them:",
+        "phraseId": "g1-l052",
+        "sourcePhraseId": "g1-l052"
+      },
+      {
+        "id": "g1-l052-w05",
+        "text": "good.",
+        "phraseId": "g1-l052",
+        "sourcePhraseId": "g1-l052"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l053",
+    "start": 177.71,
+    "end": 181.45000000000002,
+    "words": [
+      {
+        "id": "g1-l053-w01",
+        "text": "Dusk.",
+        "phraseId": "g1-l053",
+        "sourcePhraseId": "g1-l053"
+      },
+      {
+        "id": "g1-l053-w02",
+        "text": "Dawn.",
+        "phraseId": "g1-l053",
+        "sourcePhraseId": "g1-l053"
+      },
+      {
+        "id": "g1-l053-w03",
+        "text": "The",
+        "phraseId": "g1-l053",
+        "sourcePhraseId": "g1-l053"
+      },
+      {
+        "id": "g1-l053-w04",
+        "text": "fourth",
+        "phraseId": "g1-l053",
+        "sourcePhraseId": "g1-l053"
+      },
+      {
+        "id": "g1-l053-w05",
+        "text": "day.",
+        "phraseId": "g1-l053",
+        "sourcePhraseId": "g1-l053"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l054",
+    "start": 183.76999999999998,
+    "end": 188.05,
+    "words": [
+      {
+        "id": "g1-l054-w01",
+        "text": "‘Water,",
+        "phraseId": "g1-l054",
+        "sourcePhraseId": "g1-l054"
+      },
+      {
+        "id": "g1-l054-w02",
+        "text": "swarm",
+        "phraseId": "g1-l054",
+        "sourcePhraseId": "g1-l054"
+      },
+      {
+        "id": "g1-l054-w03",
+        "text": "with",
+        "phraseId": "g1-l054",
+        "sourcePhraseId": "g1-l054"
+      },
+      {
+        "id": "g1-l054-w04",
+        "text": "living",
+        "phraseId": "g1-l054",
+        "sourcePhraseId": "g1-l054"
+      },
+      {
+        "id": "g1-l054-w05",
+        "text": "reptiles!",
+        "phraseId": "g1-l054",
+        "sourcePhraseId": "g1-l054"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l055",
+    "start": 186.75,
+    "end": 190.65,
+    "words": [
+      {
+        "id": "g1-l055-w01",
+        "text": "Winged",
+        "phraseId": "g1-l055",
+        "sourcePhraseId": "g1-l055"
+      },
+      {
+        "id": "g1-l055-w02",
+        "text": "creatures,",
+        "phraseId": "g1-l055",
+        "sourcePhraseId": "g1-l055"
+      },
+      {
+        "id": "g1-l055-w03",
+        "text": "fly",
+        "phraseId": "g1-l055",
+        "sourcePhraseId": "g1-l055"
+      },
+      {
+        "id": "g1-l055-w04",
+        "text": "above",
+        "phraseId": "g1-l055",
+        "sourcePhraseId": "g1-l055"
+      },
+      {
+        "id": "g1-l055-w05",
+        "text": "the",
+        "phraseId": "g1-l055",
+        "sourcePhraseId": "g1-l055"
+      },
+      {
+        "id": "g1-l055-w06",
+        "text": "earth",
+        "phraseId": "g1-l055",
+        "sourcePhraseId": "g1-l055"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l056",
+    "start": 189.35,
+    "end": 193.73000000000002,
+    "words": [
+      {
+        "id": "g1-l056-w01",
+        "text": "across",
+        "phraseId": "g1-l056",
+        "sourcePhraseId": "g1-l056"
+      },
+      {
+        "id": "g1-l056-w02",
+        "text": "Heaven’s",
+        "phraseId": "g1-l056",
+        "sourcePhraseId": "g1-l056"
+      },
+      {
+        "id": "g1-l056-w03",
+        "text": "firmament!’",
+        "phraseId": "g1-l056",
+        "sourcePhraseId": "g1-l056"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l057",
+    "start": 192.43,
+    "end": 196.69,
+    "words": [
+      {
+        "id": "g1-l057-w01",
+        "text": "His",
+        "phraseId": "g1-l057",
+        "sourcePhraseId": "g1-l057"
+      },
+      {
+        "id": "g1-l057-w02",
+        "text": "word",
+        "phraseId": "g1-l057",
+        "sourcePhraseId": "g1-l057"
+      },
+      {
+        "id": "g1-l057-w03",
+        "text": "took",
+        "phraseId": "g1-l057",
+        "sourcePhraseId": "g1-l057"
+      },
+      {
+        "id": "g1-l057-w04",
+        "text": "hold.",
+        "phraseId": "g1-l057",
+        "sourcePhraseId": "g1-l057"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l058",
+    "start": 196.71,
+    "end": 200.35,
+    "words": [
+      {
+        "id": "g1-l058-w01",
+        "text": "God",
+        "phraseId": "g1-l058",
+        "sourcePhraseId": "g1-l058"
+      },
+      {
+        "id": "g1-l058-w02",
+        "text": "made",
+        "phraseId": "g1-l058",
+        "sourcePhraseId": "g1-l058"
+      },
+      {
+        "id": "g1-l058-w03",
+        "text": "the",
+        "phraseId": "g1-l058",
+        "sourcePhraseId": "g1-l058"
+      },
+      {
+        "id": "g1-l058-w04",
+        "text": "great",
+        "phraseId": "g1-l058",
+        "sourcePhraseId": "g1-l058"
+      },
+      {
+        "id": "g1-l058-w05",
+        "text": "whales,",
+        "phraseId": "g1-l058",
+        "sourcePhraseId": "g1-l058"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l059",
+    "start": 199.04999999999998,
+    "end": 202.61,
+    "words": [
+      {
+        "id": "g1-l059-w01",
+        "text": "every",
+        "phraseId": "g1-l059",
+        "sourcePhraseId": "g1-l059"
+      },
+      {
+        "id": "g1-l059-w02",
+        "text": "living",
+        "phraseId": "g1-l059",
+        "sourcePhraseId": "g1-l059"
+      },
+      {
+        "id": "g1-l059-w03",
+        "text": "water-reptile",
+        "phraseId": "g1-l059",
+        "sourcePhraseId": "g1-l059"
+      },
+      {
+        "id": "g1-l059-w04",
+        "text": "by",
+        "phraseId": "g1-l059",
+        "sourcePhraseId": "g1-l059"
+      },
+      {
+        "id": "g1-l059-w05",
+        "text": "kind,",
+        "phraseId": "g1-l059",
+        "sourcePhraseId": "g1-l059"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l060",
+    "start": 201.31,
+    "end": 205.17000000000002,
+    "words": [
+      {
+        "id": "g1-l060-w01",
+        "text": "and",
+        "phraseId": "g1-l060",
+        "sourcePhraseId": "g1-l060"
+      },
+      {
+        "id": "g1-l060-w02",
+        "text": "every",
+        "phraseId": "g1-l060",
+        "sourcePhraseId": "g1-l060"
+      },
+      {
+        "id": "g1-l060-w03",
+        "text": "winged",
+        "phraseId": "g1-l060",
+        "sourcePhraseId": "g1-l060"
+      },
+      {
+        "id": "g1-l060-w04",
+        "text": "creature",
+        "phraseId": "g1-l060",
+        "sourcePhraseId": "g1-l060"
+      },
+      {
+        "id": "g1-l060-w05",
+        "text": "by",
+        "phraseId": "g1-l060",
+        "sourcePhraseId": "g1-l060"
+      },
+      {
+        "id": "g1-l060-w06",
+        "text": "kind.",
+        "phraseId": "g1-l060",
+        "sourcePhraseId": "g1-l060"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l061",
+    "start": 203.87,
+    "end": 207.35,
+    "words": [
+      {
+        "id": "g1-l061-w01",
+        "text": "He",
+        "phraseId": "g1-l061",
+        "sourcePhraseId": "g1-l061"
+      },
+      {
+        "id": "g1-l061-w02",
+        "text": "looked",
+        "phraseId": "g1-l061",
+        "sourcePhraseId": "g1-l061"
+      },
+      {
+        "id": "g1-l061-w03",
+        "text": "on",
+        "phraseId": "g1-l061",
+        "sourcePhraseId": "g1-l061"
+      },
+      {
+        "id": "g1-l061-w04",
+        "text": "them:",
+        "phraseId": "g1-l061",
+        "sourcePhraseId": "g1-l061"
+      },
+      {
+        "id": "g1-l061-w05",
+        "text": "good.",
+        "phraseId": "g1-l061",
+        "sourcePhraseId": "g1-l061"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l062",
+    "start": 206.04999999999998,
+    "end": 209.85,
+    "words": [
+      {
+        "id": "g1-l062-w01",
+        "text": "His",
+        "phraseId": "g1-l062",
+        "sourcePhraseId": "g1-l062"
+      },
+      {
+        "id": "g1-l062-w02",
+        "text": "blessing",
+        "phraseId": "g1-l062",
+        "sourcePhraseId": "g1-l062"
+      },
+      {
+        "id": "g1-l062-w03",
+        "text": "rang",
+        "phraseId": "g1-l062",
+        "sourcePhraseId": "g1-l062"
+      },
+      {
+        "id": "g1-l062-w04",
+        "text": "out:",
+        "phraseId": "g1-l062",
+        "sourcePhraseId": "g1-l062"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l063",
+    "start": 208.54999999999998,
+    "end": 212.97,
+    "words": [
+      {
+        "id": "g1-l063-w01",
+        "text": "‘Increase!",
+        "phraseId": "g1-l063",
+        "sourcePhraseId": "g1-l063"
+      },
+      {
+        "id": "g1-l063-w02",
+        "text": "Multiply!",
+        "phraseId": "g1-l063",
+        "sourcePhraseId": "g1-l063"
+      },
+      {
+        "id": "g1-l063-w03",
+        "text": "Fill",
+        "phraseId": "g1-l063",
+        "sourcePhraseId": "g1-l063"
+      },
+      {
+        "id": "g1-l063-w04",
+        "text": "the",
+        "phraseId": "g1-l063",
+        "sourcePhraseId": "g1-l063"
+      },
+      {
+        "id": "g1-l063-w05",
+        "text": "seas!",
+        "phraseId": "g1-l063",
+        "sourcePhraseId": "g1-l063"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l064",
+    "start": 211.67,
+    "end": 215.33,
+    "words": [
+      {
+        "id": "g1-l064-w01",
+        "text": "Let",
+        "phraseId": "g1-l064",
+        "sourcePhraseId": "g1-l064"
+      },
+      {
+        "id": "g1-l064-w02",
+        "text": "the",
+        "phraseId": "g1-l064",
+        "sourcePhraseId": "g1-l064"
+      },
+      {
+        "id": "g1-l064-w03",
+        "text": "winged",
+        "phraseId": "g1-l064",
+        "sourcePhraseId": "g1-l064"
+      },
+      {
+        "id": "g1-l064-w04",
+        "text": "multiply",
+        "phraseId": "g1-l064",
+        "sourcePhraseId": "g1-l064"
+      },
+      {
+        "id": "g1-l064-w05",
+        "text": "on",
+        "phraseId": "g1-l064",
+        "sourcePhraseId": "g1-l064"
+      },
+      {
+        "id": "g1-l064-w06",
+        "text": "earth!’",
+        "phraseId": "g1-l064",
+        "sourcePhraseId": "g1-l064"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l065",
+    "start": 214.03,
+    "end": 219.47,
+    "words": [
+      {
+        "id": "g1-l065-w01",
+        "text": "Dusk.",
+        "phraseId": "g1-l065",
+        "sourcePhraseId": "g1-l065"
+      },
+      {
+        "id": "g1-l065-w02",
+        "text": "Dawn.",
+        "phraseId": "g1-l065",
+        "sourcePhraseId": "g1-l065"
+      },
+      {
+        "id": "g1-l065-w03",
+        "text": "The",
+        "phraseId": "g1-l065",
+        "sourcePhraseId": "g1-l065"
+      },
+      {
+        "id": "g1-l065-w04",
+        "text": "fifth",
+        "phraseId": "g1-l065",
+        "sourcePhraseId": "g1-l065"
+      },
+      {
+        "id": "g1-l065-w05",
+        "text": "day.",
+        "phraseId": "g1-l065",
+        "sourcePhraseId": "g1-l065"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l066",
+    "start": 221.37,
+    "end": 225.91,
+    "words": [
+      {
+        "id": "g1-l066-w01",
+        "text": "‘Earth,",
+        "phraseId": "g1-l066",
+        "sourcePhraseId": "g1-l066"
+      },
+      {
+        "id": "g1-l066-w02",
+        "text": "bring",
+        "phraseId": "g1-l066",
+        "sourcePhraseId": "g1-l066"
+      },
+      {
+        "id": "g1-l066-w03",
+        "text": "out",
+        "phraseId": "g1-l066",
+        "sourcePhraseId": "g1-l066"
+      },
+      {
+        "id": "g1-l066-w04",
+        "text": "living",
+        "phraseId": "g1-l066",
+        "sourcePhraseId": "g1-l066"
+      },
+      {
+        "id": "g1-l066-w05",
+        "text": "kinds:",
+        "phraseId": "g1-l066",
+        "sourcePhraseId": "g1-l066"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l067",
+    "start": 225.17,
+    "end": 228.35,
+    "words": [
+      {
+        "id": "g1-l067-w01",
+        "text": "four-footed",
+        "phraseId": "g1-l067",
+        "sourcePhraseId": "g1-l067"
+      },
+      {
+        "id": "g1-l067-w02",
+        "text": "beasts,",
+        "phraseId": "g1-l067",
+        "sourcePhraseId": "g1-l067"
+      },
+      {
+        "id": "g1-l067-w03",
+        "text": "crawling",
+        "phraseId": "g1-l067",
+        "sourcePhraseId": "g1-l067"
+      },
+      {
+        "id": "g1-l067-w04",
+        "text": "reptiles,",
+        "phraseId": "g1-l067",
+        "sourcePhraseId": "g1-l067"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l068",
+    "start": 227.04999999999998,
+    "end": 231.83,
+    "words": [
+      {
+        "id": "g1-l068-w01",
+        "text": "wild",
+        "phraseId": "g1-l068",
+        "sourcePhraseId": "g1-l068"
+      },
+      {
+        "id": "g1-l068-w02",
+        "text": "beasts,",
+        "phraseId": "g1-l068",
+        "sourcePhraseId": "g1-l068"
+      },
+      {
+        "id": "g1-l068-w03",
+        "text": "each",
+        "phraseId": "g1-l068",
+        "sourcePhraseId": "g1-l068"
+      },
+      {
+        "id": "g1-l068-w04",
+        "text": "after",
+        "phraseId": "g1-l068",
+        "sourcePhraseId": "g1-l068"
+      },
+      {
+        "id": "g1-l068-w05",
+        "text": "its",
+        "phraseId": "g1-l068",
+        "sourcePhraseId": "g1-l068"
+      },
+      {
+        "id": "g1-l068-w06",
+        "text": "kind!’",
+        "phraseId": "g1-l068",
+        "sourcePhraseId": "g1-l068"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l069",
+    "start": 230.53,
+    "end": 235.93,
+    "words": [
+      {
+        "id": "g1-l069-w01",
+        "text": "His",
+        "phraseId": "g1-l069",
+        "sourcePhraseId": "g1-l069"
+      },
+      {
+        "id": "g1-l069-w02",
+        "text": "word",
+        "phraseId": "g1-l069",
+        "sourcePhraseId": "g1-l069"
+      },
+      {
+        "id": "g1-l069-w03",
+        "text": "took",
+        "phraseId": "g1-l069",
+        "sourcePhraseId": "g1-l069"
+      },
+      {
+        "id": "g1-l069-w04",
+        "text": "hold.",
+        "phraseId": "g1-l069",
+        "sourcePhraseId": "g1-l069"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l070",
+    "start": 235.46,
+    "end": 239.77,
+    "words": [
+      {
+        "id": "g1-l070-w01",
+        "text": "He",
+        "phraseId": "g1-l070",
+        "sourcePhraseId": "g1-l070"
+      },
+      {
+        "id": "g1-l070-w02",
+        "text": "fashioned",
+        "phraseId": "g1-l070",
+        "sourcePhraseId": "g1-l070"
+      },
+      {
+        "id": "g1-l070-w03",
+        "text": "wild",
+        "phraseId": "g1-l070",
+        "sourcePhraseId": "g1-l070"
+      },
+      {
+        "id": "g1-l070-w04",
+        "text": "beasts,",
+        "phraseId": "g1-l070",
+        "sourcePhraseId": "g1-l070"
+      },
+      {
+        "id": "g1-l070-w05",
+        "text": "cattle,",
+        "phraseId": "g1-l070",
+        "sourcePhraseId": "g1-l070"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l071",
+    "start": 238.47,
+    "end": 242.45000000000002,
+    "words": [
+      {
+        "id": "g1-l071-w01",
+        "text": "and",
+        "phraseId": "g1-l071",
+        "sourcePhraseId": "g1-l071"
+      },
+      {
+        "id": "g1-l071-w02",
+        "text": "the",
+        "phraseId": "g1-l071",
+        "sourcePhraseId": "g1-l071"
+      },
+      {
+        "id": "g1-l071-w03",
+        "text": "reptiles",
+        "phraseId": "g1-l071",
+        "sourcePhraseId": "g1-l071"
+      },
+      {
+        "id": "g1-l071-w04",
+        "text": "of",
+        "phraseId": "g1-l071",
+        "sourcePhraseId": "g1-l071"
+      },
+      {
+        "id": "g1-l071-w05",
+        "text": "the",
+        "phraseId": "g1-l071",
+        "sourcePhraseId": "g1-l071"
+      },
+      {
+        "id": "g1-l071-w06",
+        "text": "ground,",
+        "phraseId": "g1-l071",
+        "sourcePhraseId": "g1-l071"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l072",
+    "start": 241.15,
+    "end": 243.75,
+    "words": [
+      {
+        "id": "g1-l072-w01",
+        "text": "each",
+        "phraseId": "g1-l072",
+        "sourcePhraseId": "g1-l072"
+      },
+      {
+        "id": "g1-l072-w02",
+        "text": "after",
+        "phraseId": "g1-l072",
+        "sourcePhraseId": "g1-l072"
+      },
+      {
+        "id": "g1-l072-w03",
+        "text": "its",
+        "phraseId": "g1-l072",
+        "sourcePhraseId": "g1-l072"
+      },
+      {
+        "id": "g1-l072-w04",
+        "text": "kind.",
+        "phraseId": "g1-l072",
+        "sourcePhraseId": "g1-l072"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l073",
+    "start": 244.88,
+    "end": 248.15,
+    "words": [
+      {
+        "id": "g1-l073-w01",
+        "text": "He",
+        "phraseId": "g1-l073",
+        "sourcePhraseId": "g1-l073"
+      },
+      {
+        "id": "g1-l073-w02",
+        "text": "looked",
+        "phraseId": "g1-l073",
+        "sourcePhraseId": "g1-l073"
+      },
+      {
+        "id": "g1-l073-w03",
+        "text": "on",
+        "phraseId": "g1-l073",
+        "sourcePhraseId": "g1-l073"
+      },
+      {
+        "id": "g1-l073-w04",
+        "text": "them:",
+        "phraseId": "g1-l073",
+        "sourcePhraseId": "g1-l073"
+      },
+      {
+        "id": "g1-l073-w05",
+        "text": "good.",
+        "phraseId": "g1-l073",
+        "sourcePhraseId": "g1-l073"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l074",
+    "start": 248.17,
+    "end": 253.31,
+    "words": [
+      {
+        "id": "g1-l074-w01",
+        "text": "Then",
+        "phraseId": "g1-l074",
+        "sourcePhraseId": "g1-l074"
+      },
+      {
+        "id": "g1-l074-w02",
+        "text": "God",
+        "phraseId": "g1-l074",
+        "sourcePhraseId": "g1-l074"
+      },
+      {
+        "id": "g1-l074-w03",
+        "text": "said,",
+        "phraseId": "g1-l074",
+        "sourcePhraseId": "g1-l074"
+      },
+      {
+        "id": "g1-l074-w04",
+        "text": "‘Let",
+        "phraseId": "g1-l074",
+        "sourcePhraseId": "g1-l074"
+      },
+      {
+        "id": "g1-l074-w05",
+        "text": "us",
+        "phraseId": "g1-l074",
+        "sourcePhraseId": "g1-l074"
+      },
+      {
+        "id": "g1-l074-w06",
+        "text": "make",
+        "phraseId": "g1-l074",
+        "sourcePhraseId": "g1-l074"
+      },
+      {
+        "id": "g1-l074-w07",
+        "text": "humankind",
+        "phraseId": "g1-l074",
+        "sourcePhraseId": "g1-l074"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l075",
+    "start": 253.03,
+    "end": 257.03,
+    "words": [
+      {
+        "id": "g1-l075-w01",
+        "text": "in",
+        "phraseId": "g1-l075",
+        "sourcePhraseId": "g1-l075"
+      },
+      {
+        "id": "g1-l075-w02",
+        "text": "our",
+        "phraseId": "g1-l075",
+        "sourcePhraseId": "g1-l075"
+      },
+      {
+        "id": "g1-l075-w03",
+        "text": "image,",
+        "phraseId": "g1-l075",
+        "sourcePhraseId": "g1-l075"
+      },
+      {
+        "id": "g1-l075-w04",
+        "text": "in",
+        "phraseId": "g1-l075",
+        "sourcePhraseId": "g1-l075"
+      },
+      {
+        "id": "g1-l075-w05",
+        "text": "our",
+        "phraseId": "g1-l075",
+        "sourcePhraseId": "g1-l075"
+      },
+      {
+        "id": "g1-l075-w06",
+        "text": "likeness;",
+        "phraseId": "g1-l075",
+        "sourcePhraseId": "g1-l075"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l064-r01",
+    "start": 255.73,
+    "end": 259.78999999999996,
+    "words": [
+      {
+        "id": "g1-l064-r01-w01",
+        "text": "Let",
+        "phraseId": "g1-l064-r01",
+        "sourcePhraseId": "g1-l064"
+      },
+      {
+        "id": "g1-l064-r01-w02",
+        "text": "the",
+        "phraseId": "g1-l064-r01",
+        "sourcePhraseId": "g1-l064"
+      },
+      {
+        "id": "g1-l064-r01-w03",
+        "text": "winged",
+        "phraseId": "g1-l064-r01",
+        "sourcePhraseId": "g1-l064"
+      },
+      {
+        "id": "g1-l064-r01-w04",
+        "text": "multiply",
+        "phraseId": "g1-l064-r01",
+        "sourcePhraseId": "g1-l064"
+      },
+      {
+        "id": "g1-l064-r01-w05",
+        "text": "on",
+        "phraseId": "g1-l064-r01",
+        "sourcePhraseId": "g1-l064"
+      },
+      {
+        "id": "g1-l064-r01-w06",
+        "text": "earth!’",
+        "phraseId": "g1-l064-r01",
+        "sourcePhraseId": "g1-l064"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l069-r01",
+    "start": 258.91,
+    "end": 262.96999999999997,
+    "words": [
+      {
+        "id": "g1-l069-r01-w01",
+        "text": "His",
+        "phraseId": "g1-l069-r01",
+        "sourcePhraseId": "g1-l069"
+      },
+      {
+        "id": "g1-l069-r01-w02",
+        "text": "word",
+        "phraseId": "g1-l069-r01",
+        "sourcePhraseId": "g1-l069"
+      },
+      {
+        "id": "g1-l069-r01-w03",
+        "text": "took",
+        "phraseId": "g1-l069-r01",
+        "sourcePhraseId": "g1-l069"
+      },
+      {
+        "id": "g1-l069-r01-w04",
+        "text": "hold.",
+        "phraseId": "g1-l069-r01",
+        "sourcePhraseId": "g1-l069"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l070-r01",
+    "start": 262.69,
+    "end": 267.10999999999996,
+    "words": [
+      {
+        "id": "g1-l070-r01-w01",
+        "text": "He",
+        "phraseId": "g1-l070-r01",
+        "sourcePhraseId": "g1-l070"
+      },
+      {
+        "id": "g1-l070-r01-w02",
+        "text": "fashioned",
+        "phraseId": "g1-l070-r01",
+        "sourcePhraseId": "g1-l070"
+      },
+      {
+        "id": "g1-l070-r01-w03",
+        "text": "wild",
+        "phraseId": "g1-l070-r01",
+        "sourcePhraseId": "g1-l070"
+      },
+      {
+        "id": "g1-l070-r01-w04",
+        "text": "beasts,",
+        "phraseId": "g1-l070-r01",
+        "sourcePhraseId": "g1-l070"
+      },
+      {
+        "id": "g1-l070-r01-w05",
+        "text": "cattle,",
+        "phraseId": "g1-l070-r01",
+        "sourcePhraseId": "g1-l070"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l071-r01",
+    "start": 265.81,
+    "end": 269.69,
+    "words": [
+      {
+        "id": "g1-l071-r01-w01",
+        "text": "and",
+        "phraseId": "g1-l071-r01",
+        "sourcePhraseId": "g1-l071"
+      },
+      {
+        "id": "g1-l071-r01-w02",
+        "text": "the",
+        "phraseId": "g1-l071-r01",
+        "sourcePhraseId": "g1-l071"
+      },
+      {
+        "id": "g1-l071-r01-w03",
+        "text": "reptiles",
+        "phraseId": "g1-l071-r01",
+        "sourcePhraseId": "g1-l071"
+      },
+      {
+        "id": "g1-l071-r01-w04",
+        "text": "of",
+        "phraseId": "g1-l071-r01",
+        "sourcePhraseId": "g1-l071"
+      },
+      {
+        "id": "g1-l071-r01-w05",
+        "text": "the",
+        "phraseId": "g1-l071-r01",
+        "sourcePhraseId": "g1-l071"
+      },
+      {
+        "id": "g1-l071-r01-w06",
+        "text": "ground,",
+        "phraseId": "g1-l071-r01",
+        "sourcePhraseId": "g1-l071"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l072-r01",
+    "start": 269.16,
+    "end": 271.89,
+    "words": [
+      {
+        "id": "g1-l072-r01-w01",
+        "text": "each",
+        "phraseId": "g1-l072-r01",
+        "sourcePhraseId": "g1-l072"
+      },
+      {
+        "id": "g1-l072-r01-w02",
+        "text": "after",
+        "phraseId": "g1-l072-r01",
+        "sourcePhraseId": "g1-l072"
+      },
+      {
+        "id": "g1-l072-r01-w03",
+        "text": "its",
+        "phraseId": "g1-l072-r01",
+        "sourcePhraseId": "g1-l072"
+      },
+      {
+        "id": "g1-l072-r01-w04",
+        "text": "kind.",
+        "phraseId": "g1-l072-r01",
+        "sourcePhraseId": "g1-l072"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l073-r01",
+    "start": 271.17,
+    "end": 274.66999999999996,
+    "words": [
+      {
+        "id": "g1-l073-r01-w01",
+        "text": "He",
+        "phraseId": "g1-l073-r01",
+        "sourcePhraseId": "g1-l073"
+      },
+      {
+        "id": "g1-l073-r01-w02",
+        "text": "looked",
+        "phraseId": "g1-l073-r01",
+        "sourcePhraseId": "g1-l073"
+      },
+      {
+        "id": "g1-l073-r01-w03",
+        "text": "on",
+        "phraseId": "g1-l073-r01",
+        "sourcePhraseId": "g1-l073"
+      },
+      {
+        "id": "g1-l073-r01-w04",
+        "text": "them:",
+        "phraseId": "g1-l073-r01",
+        "sourcePhraseId": "g1-l073"
+      },
+      {
+        "id": "g1-l073-r01-w05",
+        "text": "good.",
+        "phraseId": "g1-l073-r01",
+        "sourcePhraseId": "g1-l073"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l074-r01",
+    "start": 274.91,
+    "end": 279.71,
+    "words": [
+      {
+        "id": "g1-l074-r01-w01",
+        "text": "Then",
+        "phraseId": "g1-l074-r01",
+        "sourcePhraseId": "g1-l074"
+      },
+      {
+        "id": "g1-l074-r01-w02",
+        "text": "God",
+        "phraseId": "g1-l074-r01",
+        "sourcePhraseId": "g1-l074"
+      },
+      {
+        "id": "g1-l074-r01-w03",
+        "text": "said,",
+        "phraseId": "g1-l074-r01",
+        "sourcePhraseId": "g1-l074"
+      },
+      {
+        "id": "g1-l074-r01-w04",
+        "text": "‘Let",
+        "phraseId": "g1-l074-r01",
+        "sourcePhraseId": "g1-l074"
+      },
+      {
+        "id": "g1-l074-r01-w05",
+        "text": "us",
+        "phraseId": "g1-l074-r01",
+        "sourcePhraseId": "g1-l074"
+      },
+      {
+        "id": "g1-l074-r01-w06",
+        "text": "make",
+        "phraseId": "g1-l074-r01",
+        "sourcePhraseId": "g1-l074"
+      },
+      {
+        "id": "g1-l074-r01-w07",
+        "text": "humankind",
+        "phraseId": "g1-l074-r01",
+        "sourcePhraseId": "g1-l074"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l075-r01",
+    "start": 278.41,
+    "end": 282.28999999999996,
+    "words": [
+      {
+        "id": "g1-l075-r01-w01",
+        "text": "in",
+        "phraseId": "g1-l075-r01",
+        "sourcePhraseId": "g1-l075"
+      },
+      {
+        "id": "g1-l075-r01-w02",
+        "text": "our",
+        "phraseId": "g1-l075-r01",
+        "sourcePhraseId": "g1-l075"
+      },
+      {
+        "id": "g1-l075-r01-w03",
+        "text": "image,",
+        "phraseId": "g1-l075-r01",
+        "sourcePhraseId": "g1-l075"
+      },
+      {
+        "id": "g1-l075-r01-w04",
+        "text": "in",
+        "phraseId": "g1-l075-r01",
+        "sourcePhraseId": "g1-l075"
+      },
+      {
+        "id": "g1-l075-r01-w05",
+        "text": "our",
+        "phraseId": "g1-l075-r01",
+        "sourcePhraseId": "g1-l075"
+      },
+      {
+        "id": "g1-l075-r01-w06",
+        "text": "likeness;",
+        "phraseId": "g1-l075-r01",
+        "sourcePhraseId": "g1-l075"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l076",
+    "start": 280.99,
+    "end": 284.53,
+    "words": [
+      {
+        "id": "g1-l076-w01",
+        "text": "let",
+        "phraseId": "g1-l076",
+        "sourcePhraseId": "g1-l076"
+      },
+      {
+        "id": "g1-l076-w02",
+        "text": "them",
+        "phraseId": "g1-l076",
+        "sourcePhraseId": "g1-l076"
+      },
+      {
+        "id": "g1-l076-w03",
+        "text": "rule",
+        "phraseId": "g1-l076",
+        "sourcePhraseId": "g1-l076"
+      },
+      {
+        "id": "g1-l076-w04",
+        "text": "the",
+        "phraseId": "g1-l076",
+        "sourcePhraseId": "g1-l076"
+      },
+      {
+        "id": "g1-l076-w05",
+        "text": "fish,",
+        "phraseId": "g1-l076",
+        "sourcePhraseId": "g1-l076"
+      },
+      {
+        "id": "g1-l076-w06",
+        "text": "the",
+        "phraseId": "g1-l076",
+        "sourcePhraseId": "g1-l076"
+      },
+      {
+        "id": "g1-l076-w07",
+        "text": "birds,",
+        "phraseId": "g1-l076",
+        "sourcePhraseId": "g1-l076"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l077",
+    "start": 283.23,
+    "end": 291.54999999999995,
+    "words": [
+      {
+        "id": "g1-l077-w01",
+        "text": "the",
+        "phraseId": "g1-l077",
+        "sourcePhraseId": "g1-l077"
+      },
+      {
+        "id": "g1-l077-w02",
+        "text": "cattle,",
+        "phraseId": "g1-l077",
+        "sourcePhraseId": "g1-l077"
+      },
+      {
+        "id": "g1-l077-w03",
+        "text": "all",
+        "phraseId": "g1-l077",
+        "sourcePhraseId": "g1-l077"
+      },
+      {
+        "id": "g1-l077-w04",
+        "text": "the",
+        "phraseId": "g1-l077",
+        "sourcePhraseId": "g1-l077"
+      },
+      {
+        "id": "g1-l077-w05",
+        "text": "earth",
+        "phraseId": "g1-l077",
+        "sourcePhraseId": "g1-l077"
+      },
+      {
+        "id": "g1-l077-w06",
+        "text": "and",
+        "phraseId": "g1-l077",
+        "sourcePhraseId": "g1-l077"
+      },
+      {
+        "id": "g1-l077-w07",
+        "text": "all",
+        "phraseId": "g1-l077",
+        "sourcePhraseId": "g1-l077"
+      },
+      {
+        "id": "g1-l077-w08",
+        "text": "that",
+        "phraseId": "g1-l077",
+        "sourcePhraseId": "g1-l077"
+      },
+      {
+        "id": "g1-l077-w09",
+        "text": "crawls.’",
+        "phraseId": "g1-l077",
+        "sourcePhraseId": "g1-l077"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  },
+  {
+    "id": "g1-l096",
+    "start": 290.97,
+    "end": 304.72,
+    "words": [
+      {
+        "id": "g1-l096-w01",
+        "text": "Dusk.",
+        "phraseId": "g1-l096",
+        "sourcePhraseId": "g1-l096"
+      },
+      {
+        "id": "g1-l096-w02",
+        "text": "Dawn.",
+        "phraseId": "g1-l096",
+        "sourcePhraseId": "g1-l096"
+      },
+      {
+        "id": "g1-l096-w03",
+        "text": "The",
+        "phraseId": "g1-l096",
+        "sourcePhraseId": "g1-l096"
+      },
+      {
+        "id": "g1-l096-w04",
+        "text": "sixth",
+        "phraseId": "g1-l096",
+        "sourcePhraseId": "g1-l096"
+      },
+      {
+        "id": "g1-l096-w05",
+        "text": "day.",
+        "phraseId": "g1-l096",
+        "sourcePhraseId": "g1-l096"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints."
+  }
+]

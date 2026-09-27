@@ -1,0 +1,4570 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "canonical_text_only_untimed",
+  "source": {
+    "audio": "../intake/source.mp3",
+    "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2",
+    "duration": 304.72,
+    "lyrics": "../intake/lyrics.txt",
+    "lyricsSha256": "d9a699733416732b13fcbeecf0d20627577e18929848b054558d098b1e11cbd9"
+  },
+  "phrases": [
+    {
+      "id": "g1-l001",
+      "text": "Before the first count of days,",
+      "wordIds": [
+        "g1-l001-w01",
+        "g1-l001-w02",
+        "g1-l001-w03",
+        "g1-l001-w04",
+        "g1-l001-w05",
+        "g1-l001-w06"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Verse 1",
+      "sourceLineIndex": 3,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l002",
+      "text": "God brought heaven and earth into being.",
+      "wordIds": [
+        "g1-l002-w01",
+        "g1-l002-w02",
+        "g1-l002-w03",
+        "g1-l002-w04",
+        "g1-l002-w05",
+        "g1-l002-w06",
+        "g1-l002-w07"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Verse 1",
+      "sourceLineIndex": 4,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l003",
+      "text": "Earth stood bare, unfinished;",
+      "wordIds": [
+        "g1-l003-w01",
+        "g1-l003-w02",
+        "g1-l003-w03",
+        "g1-l003-w04"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Verse 1",
+      "sourceLineIndex": 5,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l004",
+      "text": "blackness covered the deep.",
+      "wordIds": [
+        "g1-l004-w01",
+        "g1-l004-w02",
+        "g1-l004-w03",
+        "g1-l004-w04"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Verse 1",
+      "sourceLineIndex": 6,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l005",
+      "text": "Across the water moved the Spirit of God.",
+      "wordIds": [
+        "g1-l005-w01",
+        "g1-l005-w02",
+        "g1-l005-w03",
+        "g1-l005-w04",
+        "g1-l005-w05",
+        "g1-l005-w06",
+        "g1-l005-w07",
+        "g1-l005-w08"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Verse 1",
+      "sourceLineIndex": 7,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l006",
+      "text": "Then God called, \u2018Light, come forth!\u2019",
+      "wordIds": [
+        "g1-l006-w01",
+        "g1-l006-w02",
+        "g1-l006-w03",
+        "g1-l006-w04",
+        "g1-l006-w05",
+        "g1-l006-w06"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 10,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l007",
+      "text": "Brightness answered.",
+      "wordIds": [
+        "g1-l007-w01",
+        "g1-l007-w02"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 11,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l008",
+      "text": "He looked on the light: good.",
+      "wordIds": [
+        "g1-l008-w01",
+        "g1-l008-w02",
+        "g1-l008-w03",
+        "g1-l008-w04",
+        "g1-l008-w05",
+        "g1-l008-w06"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 14,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l009",
+      "text": "He cut a clear line between it and darkness.",
+      "wordIds": [
+        "g1-l009-w01",
+        "g1-l009-w02",
+        "g1-l009-w03",
+        "g1-l009-w04",
+        "g1-l009-w05",
+        "g1-l009-w06",
+        "g1-l009-w07",
+        "g1-l009-w08",
+        "g1-l009-w09"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 15,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l010",
+      "text": "Day was the name He gave the light;",
+      "wordIds": [
+        "g1-l010-w01",
+        "g1-l010-w02",
+        "g1-l010-w03",
+        "g1-l010-w04",
+        "g1-l010-w05",
+        "g1-l010-w06",
+        "g1-l010-w07",
+        "g1-l010-w08"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 16,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l011",
+      "text": "Night, the name He gave the dark.",
+      "wordIds": [
+        "g1-l011-w01",
+        "g1-l011-w02",
+        "g1-l011-w03",
+        "g1-l011-w04",
+        "g1-l011-w05",
+        "g1-l011-w06",
+        "g1-l011-w07"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 17,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l012",
+      "text": "Dusk. Dawn. The first day.",
+      "wordIds": [
+        "g1-l012-w01",
+        "g1-l012-w02",
+        "g1-l012-w03",
+        "g1-l012-w04",
+        "g1-l012-w05"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 18,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l013",
+      "text": "God spoke: \u2018A firmament amid the waters!",
+      "wordIds": [
+        "g1-l013-w01",
+        "g1-l013-w02",
+        "g1-l013-w03",
+        "g1-l013-w04",
+        "g1-l013-w05",
+        "g1-l013-w06",
+        "g1-l013-w07"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 22,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l014",
+      "text": "Let water part from water!\u2019",
+      "wordIds": [
+        "g1-l014-w01",
+        "g1-l014-w02",
+        "g1-l014-w03",
+        "g1-l014-w04",
+        "g1-l014-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 23,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l015",
+      "text": "His word took hold.",
+      "wordIds": [
+        "g1-l015-w01",
+        "g1-l015-w02",
+        "g1-l015-w03",
+        "g1-l015-w04"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 24,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l016",
+      "text": "He raised that mighty span;",
+      "wordIds": [
+        "g1-l016-w01",
+        "g1-l016-w02",
+        "g1-l016-w03",
+        "g1-l016-w04",
+        "g1-l016-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 27,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l017",
+      "text": "flood beneath it,",
+      "wordIds": [
+        "g1-l017-w01",
+        "g1-l017-w02",
+        "g1-l017-w03"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 28,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l018",
+      "text": "flood above it.",
+      "wordIds": [
+        "g1-l018-w01",
+        "g1-l018-w02",
+        "g1-l018-w03"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 29,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l019",
+      "text": "He called the firmament Heaven.",
+      "wordIds": [
+        "g1-l019-w01",
+        "g1-l019-w02",
+        "g1-l019-w03",
+        "g1-l019-w04",
+        "g1-l019-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 30,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l020",
+      "text": "He looked on it: good.",
+      "wordIds": [
+        "g1-l020-w01",
+        "g1-l020-w02",
+        "g1-l020-w03",
+        "g1-l020-w04",
+        "g1-l020-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 31,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l021",
+      "text": "Dusk. Dawn. The second day.",
+      "wordIds": [
+        "g1-l021-w01",
+        "g1-l021-w02",
+        "g1-l021-w03",
+        "g1-l021-w04",
+        "g1-l021-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 32,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l022",
+      "text": "\u2018Waters below Heaven, run to one place;",
+      "wordIds": [
+        "g1-l022-w01",
+        "g1-l022-w02",
+        "g1-l022-w03",
+        "g1-l022-w04",
+        "g1-l022-w05",
+        "g1-l022-w06",
+        "g1-l022-w07"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 35,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l023",
+      "text": "let dry ground show!\u2019",
+      "wordIds": [
+        "g1-l023-w01",
+        "g1-l023-w02",
+        "g1-l023-w03",
+        "g1-l023-w04"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 36,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l024",
+      "text": "The waters gathered. Land came clear.",
+      "wordIds": [
+        "g1-l024-w01",
+        "g1-l024-w02",
+        "g1-l024-w03",
+        "g1-l024-w04",
+        "g1-l024-w05",
+        "g1-l024-w06"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 37,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l025",
+      "text": "He named the dry ground Earth,",
+      "wordIds": [
+        "g1-l025-w01",
+        "g1-l025-w02",
+        "g1-l025-w03",
+        "g1-l025-w04",
+        "g1-l025-w05",
+        "g1-l025-w06"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 40,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l026",
+      "text": "the gathered waters Seas.",
+      "wordIds": [
+        "g1-l026-w01",
+        "g1-l026-w02",
+        "g1-l026-w03",
+        "g1-l026-w04"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 41,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l027",
+      "text": "He looked on them: good.",
+      "wordIds": [
+        "g1-l027-w01",
+        "g1-l027-w02",
+        "g1-l027-w03",
+        "g1-l027-w04",
+        "g1-l027-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 42,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l028",
+      "text": "\u2018Ground, send up seed-bearing grass",
+      "wordIds": [
+        "g1-l028-w01",
+        "g1-l028-w02",
+        "g1-l028-w03",
+        "g1-l028-w04",
+        "g1-l028-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Build",
+      "sourceLineIndex": 45,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l029",
+      "text": "in kind and likeness!",
+      "wordIds": [
+        "g1-l029-w01",
+        "g1-l029-w02",
+        "g1-l029-w03",
+        "g1-l029-w04"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Build",
+      "sourceLineIndex": 46,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l030",
+      "text": "Trees, bear fruit with seed within,",
+      "wordIds": [
+        "g1-l030-w01",
+        "g1-l030-w02",
+        "g1-l030-w03",
+        "g1-l030-w04",
+        "g1-l030-w05",
+        "g1-l030-w06"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Build",
+      "sourceLineIndex": 47,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l031",
+      "text": "each true to its kind!\u2019",
+      "wordIds": [
+        "g1-l031-w01",
+        "g1-l031-w02",
+        "g1-l031-w03",
+        "g1-l031-w04",
+        "g1-l031-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Build",
+      "sourceLineIndex": 48,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l032",
+      "text": "His word took hold.",
+      "wordIds": [
+        "g1-l032-w01",
+        "g1-l032-w02",
+        "g1-l032-w03",
+        "g1-l032-w04"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Build",
+      "sourceLineIndex": 49,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l033",
+      "text": "Green surged from the soil:",
+      "wordIds": [
+        "g1-l033-w01",
+        "g1-l033-w02",
+        "g1-l033-w03",
+        "g1-l033-w04",
+        "g1-l033-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 52,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l034",
+      "text": "grass with seed in its kind and likeness;",
+      "wordIds": [
+        "g1-l034-w01",
+        "g1-l034-w02",
+        "g1-l034-w03",
+        "g1-l034-w04",
+        "g1-l034-w05",
+        "g1-l034-w06",
+        "g1-l034-w07",
+        "g1-l034-w08"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 53,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l035",
+      "text": "fruit wrapped around its seed,",
+      "wordIds": [
+        "g1-l035-w01",
+        "g1-l035-w02",
+        "g1-l035-w03",
+        "g1-l035-w04",
+        "g1-l035-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 54,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l036",
+      "text": "tree by tree, kind by kind.",
+      "wordIds": [
+        "g1-l036-w01",
+        "g1-l036-w02",
+        "g1-l036-w03",
+        "g1-l036-w04",
+        "g1-l036-w05",
+        "g1-l036-w06"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 55,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l037",
+      "text": "He looked on it: good.",
+      "wordIds": [
+        "g1-l037-w01",
+        "g1-l037-w02",
+        "g1-l037-w03",
+        "g1-l037-w04",
+        "g1-l037-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 56,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l038",
+      "text": "Dusk. Dawn. The third day.",
+      "wordIds": [
+        "g1-l038-w01",
+        "g1-l038-w02",
+        "g1-l038-w03",
+        "g1-l038-w04",
+        "g1-l038-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 57,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l039",
+      "text": "\u2018Lights across Heaven\u2019s firmament!",
+      "wordIds": [
+        "g1-l039-w01",
+        "g1-l039-w02",
+        "g1-l039-w03",
+        "g1-l039-w04"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 61,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l040",
+      "text": "Divide day from night;",
+      "wordIds": [
+        "g1-l040-w01",
+        "g1-l040-w02",
+        "g1-l040-w03",
+        "g1-l040-w04"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 62,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l041",
+      "text": "mark signs, seasons, days and years!\u2019",
+      "wordIds": [
+        "g1-l041-w01",
+        "g1-l041-w02",
+        "g1-l041-w03",
+        "g1-l041-w04",
+        "g1-l041-w05",
+        "g1-l041-w06"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 63,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l042",
+      "text": "\u2018From that height, shine on the earth!\u2019",
+      "wordIds": [
+        "g1-l042-w01",
+        "g1-l042-w02",
+        "g1-l042-w03",
+        "g1-l042-w04",
+        "g1-l042-w05",
+        "g1-l042-w06",
+        "g1-l042-w07"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 64,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l043",
+      "text": "His word took hold.",
+      "wordIds": [
+        "g1-l043-w01",
+        "g1-l043-w02",
+        "g1-l043-w03",
+        "g1-l043-w04"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 65,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l044",
+      "text": "Two great lights He fashioned:",
+      "wordIds": [
+        "g1-l044-w01",
+        "g1-l044-w02",
+        "g1-l044-w03",
+        "g1-l044-w04",
+        "g1-l044-w05"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 68,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l045",
+      "text": "the greater to command the day,",
+      "wordIds": [
+        "g1-l045-w01",
+        "g1-l045-w02",
+        "g1-l045-w03",
+        "g1-l045-w04",
+        "g1-l045-w05",
+        "g1-l045-w06"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 69,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l046",
+      "text": "the lesser to command the night.",
+      "wordIds": [
+        "g1-l046-w01",
+        "g1-l046-w02",
+        "g1-l046-w03",
+        "g1-l046-w04",
+        "g1-l046-w05",
+        "g1-l046-w06"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 70,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l047",
+      "text": "He made the stars as well.",
+      "wordIds": [
+        "g1-l047-w01",
+        "g1-l047-w02",
+        "g1-l047-w03",
+        "g1-l047-w04",
+        "g1-l047-w05",
+        "g1-l047-w06"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 71,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l048",
+      "text": "He set them in Heaven\u2019s span",
+      "wordIds": [
+        "g1-l048-w01",
+        "g1-l048-w02",
+        "g1-l048-w03",
+        "g1-l048-w04",
+        "g1-l048-w05",
+        "g1-l048-w06"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 72,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l049",
+      "text": "to send their light across the earth,",
+      "wordIds": [
+        "g1-l049-w01",
+        "g1-l049-w02",
+        "g1-l049-w03",
+        "g1-l049-w04",
+        "g1-l049-w05",
+        "g1-l049-w06",
+        "g1-l049-w07"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 73,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l050",
+      "text": "to rule night and day,",
+      "wordIds": [
+        "g1-l050-w01",
+        "g1-l050-w02",
+        "g1-l050-w03",
+        "g1-l050-w04",
+        "g1-l050-w05"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 74,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l051",
+      "text": "to keep the bright apart from dark.",
+      "wordIds": [
+        "g1-l051-w01",
+        "g1-l051-w02",
+        "g1-l051-w03",
+        "g1-l051-w04",
+        "g1-l051-w05",
+        "g1-l051-w06",
+        "g1-l051-w07"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 75,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l052",
+      "text": "He looked on them: good.",
+      "wordIds": [
+        "g1-l052-w01",
+        "g1-l052-w02",
+        "g1-l052-w03",
+        "g1-l052-w04",
+        "g1-l052-w05"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 76,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l053",
+      "text": "Dusk. Dawn. The fourth day.",
+      "wordIds": [
+        "g1-l053-w01",
+        "g1-l053-w02",
+        "g1-l053-w03",
+        "g1-l053-w04",
+        "g1-l053-w05"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 77,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l054",
+      "text": "\u2018Water, swarm with living reptiles!",
+      "wordIds": [
+        "g1-l054-w01",
+        "g1-l054-w02",
+        "g1-l054-w03",
+        "g1-l054-w04",
+        "g1-l054-w05"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 81,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l055",
+      "text": "Winged creatures, fly above the earth",
+      "wordIds": [
+        "g1-l055-w01",
+        "g1-l055-w02",
+        "g1-l055-w03",
+        "g1-l055-w04",
+        "g1-l055-w05",
+        "g1-l055-w06"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 82,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l056",
+      "text": "across Heaven\u2019s firmament!\u2019",
+      "wordIds": [
+        "g1-l056-w01",
+        "g1-l056-w02",
+        "g1-l056-w03"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 83,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l057",
+      "text": "His word took hold.",
+      "wordIds": [
+        "g1-l057-w01",
+        "g1-l057-w02",
+        "g1-l057-w03",
+        "g1-l057-w04"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 84,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l058",
+      "text": "God made the great whales,",
+      "wordIds": [
+        "g1-l058-w01",
+        "g1-l058-w02",
+        "g1-l058-w03",
+        "g1-l058-w04",
+        "g1-l058-w05"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 87,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l059",
+      "text": "every living water-reptile by kind,",
+      "wordIds": [
+        "g1-l059-w01",
+        "g1-l059-w02",
+        "g1-l059-w03",
+        "g1-l059-w04",
+        "g1-l059-w05"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 88,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l060",
+      "text": "and every winged creature by kind.",
+      "wordIds": [
+        "g1-l060-w01",
+        "g1-l060-w02",
+        "g1-l060-w03",
+        "g1-l060-w04",
+        "g1-l060-w05",
+        "g1-l060-w06"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 89,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l061",
+      "text": "He looked on them: good.",
+      "wordIds": [
+        "g1-l061-w01",
+        "g1-l061-w02",
+        "g1-l061-w03",
+        "g1-l061-w04",
+        "g1-l061-w05"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 90,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l062",
+      "text": "His blessing rang out:",
+      "wordIds": [
+        "g1-l062-w01",
+        "g1-l062-w02",
+        "g1-l062-w03",
+        "g1-l062-w04"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 91,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l063",
+      "text": "\u2018Increase! Multiply! Fill the seas!",
+      "wordIds": [
+        "g1-l063-w01",
+        "g1-l063-w02",
+        "g1-l063-w03",
+        "g1-l063-w04",
+        "g1-l063-w05"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 92,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l064",
+      "text": "Let the winged multiply on earth!\u2019",
+      "wordIds": [
+        "g1-l064-w01",
+        "g1-l064-w02",
+        "g1-l064-w03",
+        "g1-l064-w04",
+        "g1-l064-w05",
+        "g1-l064-w06"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 93,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l065",
+      "text": "Dusk. Dawn. The fifth day.",
+      "wordIds": [
+        "g1-l065-w01",
+        "g1-l065-w02",
+        "g1-l065-w03",
+        "g1-l065-w04",
+        "g1-l065-w05"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 94,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l066",
+      "text": "\u2018Earth, bring out living kinds:",
+      "wordIds": [
+        "g1-l066-w01",
+        "g1-l066-w02",
+        "g1-l066-w03",
+        "g1-l066-w04",
+        "g1-l066-w05"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 97,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l067",
+      "text": "four-footed beasts, crawling reptiles,",
+      "wordIds": [
+        "g1-l067-w01",
+        "g1-l067-w02",
+        "g1-l067-w03",
+        "g1-l067-w04"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 98,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l068",
+      "text": "wild beasts, each after its kind!\u2019",
+      "wordIds": [
+        "g1-l068-w01",
+        "g1-l068-w02",
+        "g1-l068-w03",
+        "g1-l068-w04",
+        "g1-l068-w05",
+        "g1-l068-w06"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 99,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l069",
+      "text": "His word took hold.",
+      "wordIds": [
+        "g1-l069-w01",
+        "g1-l069-w02",
+        "g1-l069-w03",
+        "g1-l069-w04"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 100,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l070",
+      "text": "He fashioned wild beasts, cattle,",
+      "wordIds": [
+        "g1-l070-w01",
+        "g1-l070-w02",
+        "g1-l070-w03",
+        "g1-l070-w04",
+        "g1-l070-w05"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 103,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l071",
+      "text": "and the reptiles of the ground,",
+      "wordIds": [
+        "g1-l071-w01",
+        "g1-l071-w02",
+        "g1-l071-w03",
+        "g1-l071-w04",
+        "g1-l071-w05",
+        "g1-l071-w06"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 104,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l072",
+      "text": "each after its kind.",
+      "wordIds": [
+        "g1-l072-w01",
+        "g1-l072-w02",
+        "g1-l072-w03",
+        "g1-l072-w04"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 105,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l073",
+      "text": "He looked on them: good.",
+      "wordIds": [
+        "g1-l073-w01",
+        "g1-l073-w02",
+        "g1-l073-w03",
+        "g1-l073-w04",
+        "g1-l073-w05"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 106,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l074",
+      "text": "Then God said, \u2018Let us make humankind",
+      "wordIds": [
+        "g1-l074-w01",
+        "g1-l074-w02",
+        "g1-l074-w03",
+        "g1-l074-w04",
+        "g1-l074-w05",
+        "g1-l074-w06",
+        "g1-l074-w07"
+      ],
+      "sectionName": "Verse 5",
+      "deliveryStyle": "Verse 5",
+      "sourceLineIndex": 109,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l075",
+      "text": "in our image, in our likeness;",
+      "wordIds": [
+        "g1-l075-w01",
+        "g1-l075-w02",
+        "g1-l075-w03",
+        "g1-l075-w04",
+        "g1-l075-w05",
+        "g1-l075-w06"
+      ],
+      "sectionName": "Verse 5",
+      "deliveryStyle": "Verse 5",
+      "sourceLineIndex": 110,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l076",
+      "text": "let them rule the fish, the birds,",
+      "wordIds": [
+        "g1-l076-w01",
+        "g1-l076-w02",
+        "g1-l076-w03",
+        "g1-l076-w04",
+        "g1-l076-w05",
+        "g1-l076-w06",
+        "g1-l076-w07"
+      ],
+      "sectionName": "Verse 5",
+      "deliveryStyle": "Verse 5",
+      "sourceLineIndex": 111,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l077",
+      "text": "the cattle, all the earth and all that crawls.\u2019",
+      "wordIds": [
+        "g1-l077-w01",
+        "g1-l077-w02",
+        "g1-l077-w03",
+        "g1-l077-w04",
+        "g1-l077-w05",
+        "g1-l077-w06",
+        "g1-l077-w07",
+        "g1-l077-w08",
+        "g1-l077-w09"
+      ],
+      "sectionName": "Verse 5",
+      "deliveryStyle": "Verse 5",
+      "sourceLineIndex": 112,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l078",
+      "text": "God made humankind in His own image;",
+      "wordIds": [
+        "g1-l078-w01",
+        "g1-l078-w02",
+        "g1-l078-w03",
+        "g1-l078-w04",
+        "g1-l078-w05",
+        "g1-l078-w06",
+        "g1-l078-w07"
+      ],
+      "sectionName": "Verse 5",
+      "deliveryStyle": "Climax",
+      "sourceLineIndex": 115,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l079",
+      "text": "male and female He made them.",
+      "wordIds": [
+        "g1-l079-w01",
+        "g1-l079-w02",
+        "g1-l079-w03",
+        "g1-l079-w04",
+        "g1-l079-w05",
+        "g1-l079-w06"
+      ],
+      "sectionName": "Verse 5",
+      "deliveryStyle": "Climax",
+      "sourceLineIndex": 116,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l080",
+      "text": "He blessed them:",
+      "wordIds": [
+        "g1-l080-w01",
+        "g1-l080-w02",
+        "g1-l080-w03"
+      ],
+      "sectionName": "Verse 5",
+      "deliveryStyle": "Climax",
+      "sourceLineIndex": 117,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l081",
+      "text": "\u2018Increase! Multiply! Fill the earth;",
+      "wordIds": [
+        "g1-l081-w01",
+        "g1-l081-w02",
+        "g1-l081-w03",
+        "g1-l081-w04",
+        "g1-l081-w05"
+      ],
+      "sectionName": "Verse 5",
+      "deliveryStyle": "Climax",
+      "sourceLineIndex": 118,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l082",
+      "text": "bring it under your rule!",
+      "wordIds": [
+        "g1-l082-w01",
+        "g1-l082-w02",
+        "g1-l082-w03",
+        "g1-l082-w04",
+        "g1-l082-w05"
+      ],
+      "sectionName": "Verse 5",
+      "deliveryStyle": "Climax",
+      "sourceLineIndex": 119,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l083",
+      "text": "Govern fish and birds and cattle,",
+      "wordIds": [
+        "g1-l083-w01",
+        "g1-l083-w02",
+        "g1-l083-w03",
+        "g1-l083-w04",
+        "g1-l083-w05",
+        "g1-l083-w06"
+      ],
+      "sectionName": "Verse 5",
+      "deliveryStyle": "Climax",
+      "sourceLineIndex": 120,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l084",
+      "text": "all the earth and all that crawls!\u2019",
+      "wordIds": [
+        "g1-l084-w01",
+        "g1-l084-w02",
+        "g1-l084-w03",
+        "g1-l084-w04",
+        "g1-l084-w05",
+        "g1-l084-w06",
+        "g1-l084-w07"
+      ],
+      "sectionName": "Verse 5",
+      "deliveryStyle": "Climax",
+      "sourceLineIndex": 121,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l085",
+      "text": "He gave them every seed-bearing herb",
+      "wordIds": [
+        "g1-l085-w01",
+        "g1-l085-w02",
+        "g1-l085-w03",
+        "g1-l085-w04",
+        "g1-l085-w05",
+        "g1-l085-w06"
+      ],
+      "sectionName": "Verse 5",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 124,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l086",
+      "text": "across the earth,",
+      "wordIds": [
+        "g1-l086-w01",
+        "g1-l086-w02",
+        "g1-l086-w03"
+      ],
+      "sectionName": "Verse 5",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 125,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l087",
+      "text": "and every tree whose fruit holds seed:",
+      "wordIds": [
+        "g1-l087-w01",
+        "g1-l087-w02",
+        "g1-l087-w03",
+        "g1-l087-w04",
+        "g1-l087-w05",
+        "g1-l087-w06",
+        "g1-l087-w07"
+      ],
+      "sectionName": "Verse 5",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 126,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l088",
+      "text": "food for humankind.",
+      "wordIds": [
+        "g1-l088-w01",
+        "g1-l088-w02",
+        "g1-l088-w03"
+      ],
+      "sectionName": "Verse 5",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 127,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l089",
+      "text": "For wild beasts, flying creatures,",
+      "wordIds": [
+        "g1-l089-w01",
+        "g1-l089-w02",
+        "g1-l089-w03",
+        "g1-l089-w04",
+        "g1-l089-w05"
+      ],
+      "sectionName": "Verse 5",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 128,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l090",
+      "text": "and all the reptiles of the earth",
+      "wordIds": [
+        "g1-l090-w01",
+        "g1-l090-w02",
+        "g1-l090-w03",
+        "g1-l090-w04",
+        "g1-l090-w05",
+        "g1-l090-w06",
+        "g1-l090-w07"
+      ],
+      "sectionName": "Verse 5",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 129,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l091",
+      "text": "that carry the breath of life,",
+      "wordIds": [
+        "g1-l091-w01",
+        "g1-l091-w02",
+        "g1-l091-w03",
+        "g1-l091-w04",
+        "g1-l091-w05",
+        "g1-l091-w06"
+      ],
+      "sectionName": "Verse 5",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 130,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l092",
+      "text": "He gave every green plant for food.",
+      "wordIds": [
+        "g1-l092-w01",
+        "g1-l092-w02",
+        "g1-l092-w03",
+        "g1-l092-w04",
+        "g1-l092-w05",
+        "g1-l092-w06",
+        "g1-l092-w07"
+      ],
+      "sectionName": "Verse 5",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 131,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l093",
+      "text": "His word took hold.",
+      "wordIds": [
+        "g1-l093-w01",
+        "g1-l093-w02",
+        "g1-l093-w03",
+        "g1-l093-w04"
+      ],
+      "sectionName": "Verse 5",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 132,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l094",
+      "text": "God looked upon all He had made:",
+      "wordIds": [
+        "g1-l094-w01",
+        "g1-l094-w02",
+        "g1-l094-w03",
+        "g1-l094-w04",
+        "g1-l094-w05",
+        "g1-l094-w06",
+        "g1-l094-w07"
+      ],
+      "sectionName": "Outro",
+      "deliveryStyle": "Outro",
+      "sourceLineIndex": 135,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l095",
+      "text": "the whole of it, very good.",
+      "wordIds": [
+        "g1-l095-w01",
+        "g1-l095-w02",
+        "g1-l095-w03",
+        "g1-l095-w04",
+        "g1-l095-w05",
+        "g1-l095-w06"
+      ],
+      "sectionName": "Outro",
+      "deliveryStyle": "Outro",
+      "sourceLineIndex": 136,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    },
+    {
+      "id": "g1-l096",
+      "text": "Dusk. Dawn. The sixth day.",
+      "wordIds": [
+        "g1-l096-w01",
+        "g1-l096-w02",
+        "g1-l096-w03",
+        "g1-l096-w04",
+        "g1-l096-w05"
+      ],
+      "sectionName": "Outro",
+      "deliveryStyle": "Outro",
+      "sourceLineIndex": 137,
+      "start": null,
+      "end": null,
+      "provenance": {
+        "method": "Exact supplied line; awaiting acoustic timing",
+        "timingVerified": false
+      }
+    }
+  ],
+  "words": [
+    {
+      "id": "g1-l001-w01",
+      "text": "Before",
+      "phraseId": "g1-l001"
+    },
+    {
+      "id": "g1-l001-w02",
+      "text": "the",
+      "phraseId": "g1-l001"
+    },
+    {
+      "id": "g1-l001-w03",
+      "text": "first",
+      "phraseId": "g1-l001"
+    },
+    {
+      "id": "g1-l001-w04",
+      "text": "count",
+      "phraseId": "g1-l001"
+    },
+    {
+      "id": "g1-l001-w05",
+      "text": "of",
+      "phraseId": "g1-l001"
+    },
+    {
+      "id": "g1-l001-w06",
+      "text": "days,",
+      "phraseId": "g1-l001"
+    },
+    {
+      "id": "g1-l002-w01",
+      "text": "God",
+      "phraseId": "g1-l002"
+    },
+    {
+      "id": "g1-l002-w02",
+      "text": "brought",
+      "phraseId": "g1-l002"
+    },
+    {
+      "id": "g1-l002-w03",
+      "text": "heaven",
+      "phraseId": "g1-l002"
+    },
+    {
+      "id": "g1-l002-w04",
+      "text": "and",
+      "phraseId": "g1-l002"
+    },
+    {
+      "id": "g1-l002-w05",
+      "text": "earth",
+      "phraseId": "g1-l002"
+    },
+    {
+      "id": "g1-l002-w06",
+      "text": "into",
+      "phraseId": "g1-l002"
+    },
+    {
+      "id": "g1-l002-w07",
+      "text": "being.",
+      "phraseId": "g1-l002"
+    },
+    {
+      "id": "g1-l003-w01",
+      "text": "Earth",
+      "phraseId": "g1-l003"
+    },
+    {
+      "id": "g1-l003-w02",
+      "text": "stood",
+      "phraseId": "g1-l003"
+    },
+    {
+      "id": "g1-l003-w03",
+      "text": "bare,",
+      "phraseId": "g1-l003"
+    },
+    {
+      "id": "g1-l003-w04",
+      "text": "unfinished;",
+      "phraseId": "g1-l003"
+    },
+    {
+      "id": "g1-l004-w01",
+      "text": "blackness",
+      "phraseId": "g1-l004"
+    },
+    {
+      "id": "g1-l004-w02",
+      "text": "covered",
+      "phraseId": "g1-l004"
+    },
+    {
+      "id": "g1-l004-w03",
+      "text": "the",
+      "phraseId": "g1-l004"
+    },
+    {
+      "id": "g1-l004-w04",
+      "text": "deep.",
+      "phraseId": "g1-l004"
+    },
+    {
+      "id": "g1-l005-w01",
+      "text": "Across",
+      "phraseId": "g1-l005"
+    },
+    {
+      "id": "g1-l005-w02",
+      "text": "the",
+      "phraseId": "g1-l005"
+    },
+    {
+      "id": "g1-l005-w03",
+      "text": "water",
+      "phraseId": "g1-l005"
+    },
+    {
+      "id": "g1-l005-w04",
+      "text": "moved",
+      "phraseId": "g1-l005"
+    },
+    {
+      "id": "g1-l005-w05",
+      "text": "the",
+      "phraseId": "g1-l005"
+    },
+    {
+      "id": "g1-l005-w06",
+      "text": "Spirit",
+      "phraseId": "g1-l005"
+    },
+    {
+      "id": "g1-l005-w07",
+      "text": "of",
+      "phraseId": "g1-l005"
+    },
+    {
+      "id": "g1-l005-w08",
+      "text": "God.",
+      "phraseId": "g1-l005"
+    },
+    {
+      "id": "g1-l006-w01",
+      "text": "Then",
+      "phraseId": "g1-l006"
+    },
+    {
+      "id": "g1-l006-w02",
+      "text": "God",
+      "phraseId": "g1-l006"
+    },
+    {
+      "id": "g1-l006-w03",
+      "text": "called,",
+      "phraseId": "g1-l006"
+    },
+    {
+      "id": "g1-l006-w04",
+      "text": "\u2018Light,",
+      "phraseId": "g1-l006"
+    },
+    {
+      "id": "g1-l006-w05",
+      "text": "come",
+      "phraseId": "g1-l006"
+    },
+    {
+      "id": "g1-l006-w06",
+      "text": "forth!\u2019",
+      "phraseId": "g1-l006"
+    },
+    {
+      "id": "g1-l007-w01",
+      "text": "Brightness",
+      "phraseId": "g1-l007"
+    },
+    {
+      "id": "g1-l007-w02",
+      "text": "answered.",
+      "phraseId": "g1-l007"
+    },
+    {
+      "id": "g1-l008-w01",
+      "text": "He",
+      "phraseId": "g1-l008"
+    },
+    {
+      "id": "g1-l008-w02",
+      "text": "looked",
+      "phraseId": "g1-l008"
+    },
+    {
+      "id": "g1-l008-w03",
+      "text": "on",
+      "phraseId": "g1-l008"
+    },
+    {
+      "id": "g1-l008-w04",
+      "text": "the",
+      "phraseId": "g1-l008"
+    },
+    {
+      "id": "g1-l008-w05",
+      "text": "light:",
+      "phraseId": "g1-l008"
+    },
+    {
+      "id": "g1-l008-w06",
+      "text": "good.",
+      "phraseId": "g1-l008"
+    },
+    {
+      "id": "g1-l009-w01",
+      "text": "He",
+      "phraseId": "g1-l009"
+    },
+    {
+      "id": "g1-l009-w02",
+      "text": "cut",
+      "phraseId": "g1-l009"
+    },
+    {
+      "id": "g1-l009-w03",
+      "text": "a",
+      "phraseId": "g1-l009"
+    },
+    {
+      "id": "g1-l009-w04",
+      "text": "clear",
+      "phraseId": "g1-l009"
+    },
+    {
+      "id": "g1-l009-w05",
+      "text": "line",
+      "phraseId": "g1-l009"
+    },
+    {
+      "id": "g1-l009-w06",
+      "text": "between",
+      "phraseId": "g1-l009"
+    },
+    {
+      "id": "g1-l009-w07",
+      "text": "it",
+      "phraseId": "g1-l009"
+    },
+    {
+      "id": "g1-l009-w08",
+      "text": "and",
+      "phraseId": "g1-l009"
+    },
+    {
+      "id": "g1-l009-w09",
+      "text": "darkness.",
+      "phraseId": "g1-l009"
+    },
+    {
+      "id": "g1-l010-w01",
+      "text": "Day",
+      "phraseId": "g1-l010"
+    },
+    {
+      "id": "g1-l010-w02",
+      "text": "was",
+      "phraseId": "g1-l010"
+    },
+    {
+      "id": "g1-l010-w03",
+      "text": "the",
+      "phraseId": "g1-l010"
+    },
+    {
+      "id": "g1-l010-w04",
+      "text": "name",
+      "phraseId": "g1-l010"
+    },
+    {
+      "id": "g1-l010-w05",
+      "text": "He",
+      "phraseId": "g1-l010"
+    },
+    {
+      "id": "g1-l010-w06",
+      "text": "gave",
+      "phraseId": "g1-l010"
+    },
+    {
+      "id": "g1-l010-w07",
+      "text": "the",
+      "phraseId": "g1-l010"
+    },
+    {
+      "id": "g1-l010-w08",
+      "text": "light;",
+      "phraseId": "g1-l010"
+    },
+    {
+      "id": "g1-l011-w01",
+      "text": "Night,",
+      "phraseId": "g1-l011"
+    },
+    {
+      "id": "g1-l011-w02",
+      "text": "the",
+      "phraseId": "g1-l011"
+    },
+    {
+      "id": "g1-l011-w03",
+      "text": "name",
+      "phraseId": "g1-l011"
+    },
+    {
+      "id": "g1-l011-w04",
+      "text": "He",
+      "phraseId": "g1-l011"
+    },
+    {
+      "id": "g1-l011-w05",
+      "text": "gave",
+      "phraseId": "g1-l011"
+    },
+    {
+      "id": "g1-l011-w06",
+      "text": "the",
+      "phraseId": "g1-l011"
+    },
+    {
+      "id": "g1-l011-w07",
+      "text": "dark.",
+      "phraseId": "g1-l011"
+    },
+    {
+      "id": "g1-l012-w01",
+      "text": "Dusk.",
+      "phraseId": "g1-l012"
+    },
+    {
+      "id": "g1-l012-w02",
+      "text": "Dawn.",
+      "phraseId": "g1-l012"
+    },
+    {
+      "id": "g1-l012-w03",
+      "text": "The",
+      "phraseId": "g1-l012"
+    },
+    {
+      "id": "g1-l012-w04",
+      "text": "first",
+      "phraseId": "g1-l012"
+    },
+    {
+      "id": "g1-l012-w05",
+      "text": "day.",
+      "phraseId": "g1-l012"
+    },
+    {
+      "id": "g1-l013-w01",
+      "text": "God",
+      "phraseId": "g1-l013"
+    },
+    {
+      "id": "g1-l013-w02",
+      "text": "spoke:",
+      "phraseId": "g1-l013"
+    },
+    {
+      "id": "g1-l013-w03",
+      "text": "\u2018A",
+      "phraseId": "g1-l013"
+    },
+    {
+      "id": "g1-l013-w04",
+      "text": "firmament",
+      "phraseId": "g1-l013"
+    },
+    {
+      "id": "g1-l013-w05",
+      "text": "amid",
+      "phraseId": "g1-l013"
+    },
+    {
+      "id": "g1-l013-w06",
+      "text": "the",
+      "phraseId": "g1-l013"
+    },
+    {
+      "id": "g1-l013-w07",
+      "text": "waters!",
+      "phraseId": "g1-l013"
+    },
+    {
+      "id": "g1-l014-w01",
+      "text": "Let",
+      "phraseId": "g1-l014"
+    },
+    {
+      "id": "g1-l014-w02",
+      "text": "water",
+      "phraseId": "g1-l014"
+    },
+    {
+      "id": "g1-l014-w03",
+      "text": "part",
+      "phraseId": "g1-l014"
+    },
+    {
+      "id": "g1-l014-w04",
+      "text": "from",
+      "phraseId": "g1-l014"
+    },
+    {
+      "id": "g1-l014-w05",
+      "text": "water!\u2019",
+      "phraseId": "g1-l014"
+    },
+    {
+      "id": "g1-l015-w01",
+      "text": "His",
+      "phraseId": "g1-l015"
+    },
+    {
+      "id": "g1-l015-w02",
+      "text": "word",
+      "phraseId": "g1-l015"
+    },
+    {
+      "id": "g1-l015-w03",
+      "text": "took",
+      "phraseId": "g1-l015"
+    },
+    {
+      "id": "g1-l015-w04",
+      "text": "hold.",
+      "phraseId": "g1-l015"
+    },
+    {
+      "id": "g1-l016-w01",
+      "text": "He",
+      "phraseId": "g1-l016"
+    },
+    {
+      "id": "g1-l016-w02",
+      "text": "raised",
+      "phraseId": "g1-l016"
+    },
+    {
+      "id": "g1-l016-w03",
+      "text": "that",
+      "phraseId": "g1-l016"
+    },
+    {
+      "id": "g1-l016-w04",
+      "text": "mighty",
+      "phraseId": "g1-l016"
+    },
+    {
+      "id": "g1-l016-w05",
+      "text": "span;",
+      "phraseId": "g1-l016"
+    },
+    {
+      "id": "g1-l017-w01",
+      "text": "flood",
+      "phraseId": "g1-l017"
+    },
+    {
+      "id": "g1-l017-w02",
+      "text": "beneath",
+      "phraseId": "g1-l017"
+    },
+    {
+      "id": "g1-l017-w03",
+      "text": "it,",
+      "phraseId": "g1-l017"
+    },
+    {
+      "id": "g1-l018-w01",
+      "text": "flood",
+      "phraseId": "g1-l018"
+    },
+    {
+      "id": "g1-l018-w02",
+      "text": "above",
+      "phraseId": "g1-l018"
+    },
+    {
+      "id": "g1-l018-w03",
+      "text": "it.",
+      "phraseId": "g1-l018"
+    },
+    {
+      "id": "g1-l019-w01",
+      "text": "He",
+      "phraseId": "g1-l019"
+    },
+    {
+      "id": "g1-l019-w02",
+      "text": "called",
+      "phraseId": "g1-l019"
+    },
+    {
+      "id": "g1-l019-w03",
+      "text": "the",
+      "phraseId": "g1-l019"
+    },
+    {
+      "id": "g1-l019-w04",
+      "text": "firmament",
+      "phraseId": "g1-l019"
+    },
+    {
+      "id": "g1-l019-w05",
+      "text": "Heaven.",
+      "phraseId": "g1-l019"
+    },
+    {
+      "id": "g1-l020-w01",
+      "text": "He",
+      "phraseId": "g1-l020"
+    },
+    {
+      "id": "g1-l020-w02",
+      "text": "looked",
+      "phraseId": "g1-l020"
+    },
+    {
+      "id": "g1-l020-w03",
+      "text": "on",
+      "phraseId": "g1-l020"
+    },
+    {
+      "id": "g1-l020-w04",
+      "text": "it:",
+      "phraseId": "g1-l020"
+    },
+    {
+      "id": "g1-l020-w05",
+      "text": "good.",
+      "phraseId": "g1-l020"
+    },
+    {
+      "id": "g1-l021-w01",
+      "text": "Dusk.",
+      "phraseId": "g1-l021"
+    },
+    {
+      "id": "g1-l021-w02",
+      "text": "Dawn.",
+      "phraseId": "g1-l021"
+    },
+    {
+      "id": "g1-l021-w03",
+      "text": "The",
+      "phraseId": "g1-l021"
+    },
+    {
+      "id": "g1-l021-w04",
+      "text": "second",
+      "phraseId": "g1-l021"
+    },
+    {
+      "id": "g1-l021-w05",
+      "text": "day.",
+      "phraseId": "g1-l021"
+    },
+    {
+      "id": "g1-l022-w01",
+      "text": "\u2018Waters",
+      "phraseId": "g1-l022"
+    },
+    {
+      "id": "g1-l022-w02",
+      "text": "below",
+      "phraseId": "g1-l022"
+    },
+    {
+      "id": "g1-l022-w03",
+      "text": "Heaven,",
+      "phraseId": "g1-l022"
+    },
+    {
+      "id": "g1-l022-w04",
+      "text": "run",
+      "phraseId": "g1-l022"
+    },
+    {
+      "id": "g1-l022-w05",
+      "text": "to",
+      "phraseId": "g1-l022"
+    },
+    {
+      "id": "g1-l022-w06",
+      "text": "one",
+      "phraseId": "g1-l022"
+    },
+    {
+      "id": "g1-l022-w07",
+      "text": "place;",
+      "phraseId": "g1-l022"
+    },
+    {
+      "id": "g1-l023-w01",
+      "text": "let",
+      "phraseId": "g1-l023"
+    },
+    {
+      "id": "g1-l023-w02",
+      "text": "dry",
+      "phraseId": "g1-l023"
+    },
+    {
+      "id": "g1-l023-w03",
+      "text": "ground",
+      "phraseId": "g1-l023"
+    },
+    {
+      "id": "g1-l023-w04",
+      "text": "show!\u2019",
+      "phraseId": "g1-l023"
+    },
+    {
+      "id": "g1-l024-w01",
+      "text": "The",
+      "phraseId": "g1-l024"
+    },
+    {
+      "id": "g1-l024-w02",
+      "text": "waters",
+      "phraseId": "g1-l024"
+    },
+    {
+      "id": "g1-l024-w03",
+      "text": "gathered.",
+      "phraseId": "g1-l024"
+    },
+    {
+      "id": "g1-l024-w04",
+      "text": "Land",
+      "phraseId": "g1-l024"
+    },
+    {
+      "id": "g1-l024-w05",
+      "text": "came",
+      "phraseId": "g1-l024"
+    },
+    {
+      "id": "g1-l024-w06",
+      "text": "clear.",
+      "phraseId": "g1-l024"
+    },
+    {
+      "id": "g1-l025-w01",
+      "text": "He",
+      "phraseId": "g1-l025"
+    },
+    {
+      "id": "g1-l025-w02",
+      "text": "named",
+      "phraseId": "g1-l025"
+    },
+    {
+      "id": "g1-l025-w03",
+      "text": "the",
+      "phraseId": "g1-l025"
+    },
+    {
+      "id": "g1-l025-w04",
+      "text": "dry",
+      "phraseId": "g1-l025"
+    },
+    {
+      "id": "g1-l025-w05",
+      "text": "ground",
+      "phraseId": "g1-l025"
+    },
+    {
+      "id": "g1-l025-w06",
+      "text": "Earth,",
+      "phraseId": "g1-l025"
+    },
+    {
+      "id": "g1-l026-w01",
+      "text": "the",
+      "phraseId": "g1-l026"
+    },
+    {
+      "id": "g1-l026-w02",
+      "text": "gathered",
+      "phraseId": "g1-l026"
+    },
+    {
+      "id": "g1-l026-w03",
+      "text": "waters",
+      "phraseId": "g1-l026"
+    },
+    {
+      "id": "g1-l026-w04",
+      "text": "Seas.",
+      "phraseId": "g1-l026"
+    },
+    {
+      "id": "g1-l027-w01",
+      "text": "He",
+      "phraseId": "g1-l027"
+    },
+    {
+      "id": "g1-l027-w02",
+      "text": "looked",
+      "phraseId": "g1-l027"
+    },
+    {
+      "id": "g1-l027-w03",
+      "text": "on",
+      "phraseId": "g1-l027"
+    },
+    {
+      "id": "g1-l027-w04",
+      "text": "them:",
+      "phraseId": "g1-l027"
+    },
+    {
+      "id": "g1-l027-w05",
+      "text": "good.",
+      "phraseId": "g1-l027"
+    },
+    {
+      "id": "g1-l028-w01",
+      "text": "\u2018Ground,",
+      "phraseId": "g1-l028"
+    },
+    {
+      "id": "g1-l028-w02",
+      "text": "send",
+      "phraseId": "g1-l028"
+    },
+    {
+      "id": "g1-l028-w03",
+      "text": "up",
+      "phraseId": "g1-l028"
+    },
+    {
+      "id": "g1-l028-w04",
+      "text": "seed-bearing",
+      "phraseId": "g1-l028"
+    },
+    {
+      "id": "g1-l028-w05",
+      "text": "grass",
+      "phraseId": "g1-l028"
+    },
+    {
+      "id": "g1-l029-w01",
+      "text": "in",
+      "phraseId": "g1-l029"
+    },
+    {
+      "id": "g1-l029-w02",
+      "text": "kind",
+      "phraseId": "g1-l029"
+    },
+    {
+      "id": "g1-l029-w03",
+      "text": "and",
+      "phraseId": "g1-l029"
+    },
+    {
+      "id": "g1-l029-w04",
+      "text": "likeness!",
+      "phraseId": "g1-l029"
+    },
+    {
+      "id": "g1-l030-w01",
+      "text": "Trees,",
+      "phraseId": "g1-l030"
+    },
+    {
+      "id": "g1-l030-w02",
+      "text": "bear",
+      "phraseId": "g1-l030"
+    },
+    {
+      "id": "g1-l030-w03",
+      "text": "fruit",
+      "phraseId": "g1-l030"
+    },
+    {
+      "id": "g1-l030-w04",
+      "text": "with",
+      "phraseId": "g1-l030"
+    },
+    {
+      "id": "g1-l030-w05",
+      "text": "seed",
+      "phraseId": "g1-l030"
+    },
+    {
+      "id": "g1-l030-w06",
+      "text": "within,",
+      "phraseId": "g1-l030"
+    },
+    {
+      "id": "g1-l031-w01",
+      "text": "each",
+      "phraseId": "g1-l031"
+    },
+    {
+      "id": "g1-l031-w02",
+      "text": "true",
+      "phraseId": "g1-l031"
+    },
+    {
+      "id": "g1-l031-w03",
+      "text": "to",
+      "phraseId": "g1-l031"
+    },
+    {
+      "id": "g1-l031-w04",
+      "text": "its",
+      "phraseId": "g1-l031"
+    },
+    {
+      "id": "g1-l031-w05",
+      "text": "kind!\u2019",
+      "phraseId": "g1-l031"
+    },
+    {
+      "id": "g1-l032-w01",
+      "text": "His",
+      "phraseId": "g1-l032"
+    },
+    {
+      "id": "g1-l032-w02",
+      "text": "word",
+      "phraseId": "g1-l032"
+    },
+    {
+      "id": "g1-l032-w03",
+      "text": "took",
+      "phraseId": "g1-l032"
+    },
+    {
+      "id": "g1-l032-w04",
+      "text": "hold.",
+      "phraseId": "g1-l032"
+    },
+    {
+      "id": "g1-l033-w01",
+      "text": "Green",
+      "phraseId": "g1-l033"
+    },
+    {
+      "id": "g1-l033-w02",
+      "text": "surged",
+      "phraseId": "g1-l033"
+    },
+    {
+      "id": "g1-l033-w03",
+      "text": "from",
+      "phraseId": "g1-l033"
+    },
+    {
+      "id": "g1-l033-w04",
+      "text": "the",
+      "phraseId": "g1-l033"
+    },
+    {
+      "id": "g1-l033-w05",
+      "text": "soil:",
+      "phraseId": "g1-l033"
+    },
+    {
+      "id": "g1-l034-w01",
+      "text": "grass",
+      "phraseId": "g1-l034"
+    },
+    {
+      "id": "g1-l034-w02",
+      "text": "with",
+      "phraseId": "g1-l034"
+    },
+    {
+      "id": "g1-l034-w03",
+      "text": "seed",
+      "phraseId": "g1-l034"
+    },
+    {
+      "id": "g1-l034-w04",
+      "text": "in",
+      "phraseId": "g1-l034"
+    },
+    {
+      "id": "g1-l034-w05",
+      "text": "its",
+      "phraseId": "g1-l034"
+    },
+    {
+      "id": "g1-l034-w06",
+      "text": "kind",
+      "phraseId": "g1-l034"
+    },
+    {
+      "id": "g1-l034-w07",
+      "text": "and",
+      "phraseId": "g1-l034"
+    },
+    {
+      "id": "g1-l034-w08",
+      "text": "likeness;",
+      "phraseId": "g1-l034"
+    },
+    {
+      "id": "g1-l035-w01",
+      "text": "fruit",
+      "phraseId": "g1-l035"
+    },
+    {
+      "id": "g1-l035-w02",
+      "text": "wrapped",
+      "phraseId": "g1-l035"
+    },
+    {
+      "id": "g1-l035-w03",
+      "text": "around",
+      "phraseId": "g1-l035"
+    },
+    {
+      "id": "g1-l035-w04",
+      "text": "its",
+      "phraseId": "g1-l035"
+    },
+    {
+      "id": "g1-l035-w05",
+      "text": "seed,",
+      "phraseId": "g1-l035"
+    },
+    {
+      "id": "g1-l036-w01",
+      "text": "tree",
+      "phraseId": "g1-l036"
+    },
+    {
+      "id": "g1-l036-w02",
+      "text": "by",
+      "phraseId": "g1-l036"
+    },
+    {
+      "id": "g1-l036-w03",
+      "text": "tree,",
+      "phraseId": "g1-l036"
+    },
+    {
+      "id": "g1-l036-w04",
+      "text": "kind",
+      "phraseId": "g1-l036"
+    },
+    {
+      "id": "g1-l036-w05",
+      "text": "by",
+      "phraseId": "g1-l036"
+    },
+    {
+      "id": "g1-l036-w06",
+      "text": "kind.",
+      "phraseId": "g1-l036"
+    },
+    {
+      "id": "g1-l037-w01",
+      "text": "He",
+      "phraseId": "g1-l037"
+    },
+    {
+      "id": "g1-l037-w02",
+      "text": "looked",
+      "phraseId": "g1-l037"
+    },
+    {
+      "id": "g1-l037-w03",
+      "text": "on",
+      "phraseId": "g1-l037"
+    },
+    {
+      "id": "g1-l037-w04",
+      "text": "it:",
+      "phraseId": "g1-l037"
+    },
+    {
+      "id": "g1-l037-w05",
+      "text": "good.",
+      "phraseId": "g1-l037"
+    },
+    {
+      "id": "g1-l038-w01",
+      "text": "Dusk.",
+      "phraseId": "g1-l038"
+    },
+    {
+      "id": "g1-l038-w02",
+      "text": "Dawn.",
+      "phraseId": "g1-l038"
+    },
+    {
+      "id": "g1-l038-w03",
+      "text": "The",
+      "phraseId": "g1-l038"
+    },
+    {
+      "id": "g1-l038-w04",
+      "text": "third",
+      "phraseId": "g1-l038"
+    },
+    {
+      "id": "g1-l038-w05",
+      "text": "day.",
+      "phraseId": "g1-l038"
+    },
+    {
+      "id": "g1-l039-w01",
+      "text": "\u2018Lights",
+      "phraseId": "g1-l039"
+    },
+    {
+      "id": "g1-l039-w02",
+      "text": "across",
+      "phraseId": "g1-l039"
+    },
+    {
+      "id": "g1-l039-w03",
+      "text": "Heaven\u2019s",
+      "phraseId": "g1-l039"
+    },
+    {
+      "id": "g1-l039-w04",
+      "text": "firmament!",
+      "phraseId": "g1-l039"
+    },
+    {
+      "id": "g1-l040-w01",
+      "text": "Divide",
+      "phraseId": "g1-l040"
+    },
+    {
+      "id": "g1-l040-w02",
+      "text": "day",
+      "phraseId": "g1-l040"
+    },
+    {
+      "id": "g1-l040-w03",
+      "text": "from",
+      "phraseId": "g1-l040"
+    },
+    {
+      "id": "g1-l040-w04",
+      "text": "night;",
+      "phraseId": "g1-l040"
+    },
+    {
+      "id": "g1-l041-w01",
+      "text": "mark",
+      "phraseId": "g1-l041"
+    },
+    {
+      "id": "g1-l041-w02",
+      "text": "signs,",
+      "phraseId": "g1-l041"
+    },
+    {
+      "id": "g1-l041-w03",
+      "text": "seasons,",
+      "phraseId": "g1-l041"
+    },
+    {
+      "id": "g1-l041-w04",
+      "text": "days",
+      "phraseId": "g1-l041"
+    },
+    {
+      "id": "g1-l041-w05",
+      "text": "and",
+      "phraseId": "g1-l041"
+    },
+    {
+      "id": "g1-l041-w06",
+      "text": "years!\u2019",
+      "phraseId": "g1-l041"
+    },
+    {
+      "id": "g1-l042-w01",
+      "text": "\u2018From",
+      "phraseId": "g1-l042"
+    },
+    {
+      "id": "g1-l042-w02",
+      "text": "that",
+      "phraseId": "g1-l042"
+    },
+    {
+      "id": "g1-l042-w03",
+      "text": "height,",
+      "phraseId": "g1-l042"
+    },
+    {
+      "id": "g1-l042-w04",
+      "text": "shine",
+      "phraseId": "g1-l042"
+    },
+    {
+      "id": "g1-l042-w05",
+      "text": "on",
+      "phraseId": "g1-l042"
+    },
+    {
+      "id": "g1-l042-w06",
+      "text": "the",
+      "phraseId": "g1-l042"
+    },
+    {
+      "id": "g1-l042-w07",
+      "text": "earth!\u2019",
+      "phraseId": "g1-l042"
+    },
+    {
+      "id": "g1-l043-w01",
+      "text": "His",
+      "phraseId": "g1-l043"
+    },
+    {
+      "id": "g1-l043-w02",
+      "text": "word",
+      "phraseId": "g1-l043"
+    },
+    {
+      "id": "g1-l043-w03",
+      "text": "took",
+      "phraseId": "g1-l043"
+    },
+    {
+      "id": "g1-l043-w04",
+      "text": "hold.",
+      "phraseId": "g1-l043"
+    },
+    {
+      "id": "g1-l044-w01",
+      "text": "Two",
+      "phraseId": "g1-l044"
+    },
+    {
+      "id": "g1-l044-w02",
+      "text": "great",
+      "phraseId": "g1-l044"
+    },
+    {
+      "id": "g1-l044-w03",
+      "text": "lights",
+      "phraseId": "g1-l044"
+    },
+    {
+      "id": "g1-l044-w04",
+      "text": "He",
+      "phraseId": "g1-l044"
+    },
+    {
+      "id": "g1-l044-w05",
+      "text": "fashioned:",
+      "phraseId": "g1-l044"
+    },
+    {
+      "id": "g1-l045-w01",
+      "text": "the",
+      "phraseId": "g1-l045"
+    },
+    {
+      "id": "g1-l045-w02",
+      "text": "greater",
+      "phraseId": "g1-l045"
+    },
+    {
+      "id": "g1-l045-w03",
+      "text": "to",
+      "phraseId": "g1-l045"
+    },
+    {
+      "id": "g1-l045-w04",
+      "text": "command",
+      "phraseId": "g1-l045"
+    },
+    {
+      "id": "g1-l045-w05",
+      "text": "the",
+      "phraseId": "g1-l045"
+    },
+    {
+      "id": "g1-l045-w06",
+      "text": "day,",
+      "phraseId": "g1-l045"
+    },
+    {
+      "id": "g1-l046-w01",
+      "text": "the",
+      "phraseId": "g1-l046"
+    },
+    {
+      "id": "g1-l046-w02",
+      "text": "lesser",
+      "phraseId": "g1-l046"
+    },
+    {
+      "id": "g1-l046-w03",
+      "text": "to",
+      "phraseId": "g1-l046"
+    },
+    {
+      "id": "g1-l046-w04",
+      "text": "command",
+      "phraseId": "g1-l046"
+    },
+    {
+      "id": "g1-l046-w05",
+      "text": "the",
+      "phraseId": "g1-l046"
+    },
+    {
+      "id": "g1-l046-w06",
+      "text": "night.",
+      "phraseId": "g1-l046"
+    },
+    {
+      "id": "g1-l047-w01",
+      "text": "He",
+      "phraseId": "g1-l047"
+    },
+    {
+      "id": "g1-l047-w02",
+      "text": "made",
+      "phraseId": "g1-l047"
+    },
+    {
+      "id": "g1-l047-w03",
+      "text": "the",
+      "phraseId": "g1-l047"
+    },
+    {
+      "id": "g1-l047-w04",
+      "text": "stars",
+      "phraseId": "g1-l047"
+    },
+    {
+      "id": "g1-l047-w05",
+      "text": "as",
+      "phraseId": "g1-l047"
+    },
+    {
+      "id": "g1-l047-w06",
+      "text": "well.",
+      "phraseId": "g1-l047"
+    },
+    {
+      "id": "g1-l048-w01",
+      "text": "He",
+      "phraseId": "g1-l048"
+    },
+    {
+      "id": "g1-l048-w02",
+      "text": "set",
+      "phraseId": "g1-l048"
+    },
+    {
+      "id": "g1-l048-w03",
+      "text": "them",
+      "phraseId": "g1-l048"
+    },
+    {
+      "id": "g1-l048-w04",
+      "text": "in",
+      "phraseId": "g1-l048"
+    },
+    {
+      "id": "g1-l048-w05",
+      "text": "Heaven\u2019s",
+      "phraseId": "g1-l048"
+    },
+    {
+      "id": "g1-l048-w06",
+      "text": "span",
+      "phraseId": "g1-l048"
+    },
+    {
+      "id": "g1-l049-w01",
+      "text": "to",
+      "phraseId": "g1-l049"
+    },
+    {
+      "id": "g1-l049-w02",
+      "text": "send",
+      "phraseId": "g1-l049"
+    },
+    {
+      "id": "g1-l049-w03",
+      "text": "their",
+      "phraseId": "g1-l049"
+    },
+    {
+      "id": "g1-l049-w04",
+      "text": "light",
+      "phraseId": "g1-l049"
+    },
+    {
+      "id": "g1-l049-w05",
+      "text": "across",
+      "phraseId": "g1-l049"
+    },
+    {
+      "id": "g1-l049-w06",
+      "text": "the",
+      "phraseId": "g1-l049"
+    },
+    {
+      "id": "g1-l049-w07",
+      "text": "earth,",
+      "phraseId": "g1-l049"
+    },
+    {
+      "id": "g1-l050-w01",
+      "text": "to",
+      "phraseId": "g1-l050"
+    },
+    {
+      "id": "g1-l050-w02",
+      "text": "rule",
+      "phraseId": "g1-l050"
+    },
+    {
+      "id": "g1-l050-w03",
+      "text": "night",
+      "phraseId": "g1-l050"
+    },
+    {
+      "id": "g1-l050-w04",
+      "text": "and",
+      "phraseId": "g1-l050"
+    },
+    {
+      "id": "g1-l050-w05",
+      "text": "day,",
+      "phraseId": "g1-l050"
+    },
+    {
+      "id": "g1-l051-w01",
+      "text": "to",
+      "phraseId": "g1-l051"
+    },
+    {
+      "id": "g1-l051-w02",
+      "text": "keep",
+      "phraseId": "g1-l051"
+    },
+    {
+      "id": "g1-l051-w03",
+      "text": "the",
+      "phraseId": "g1-l051"
+    },
+    {
+      "id": "g1-l051-w04",
+      "text": "bright",
+      "phraseId": "g1-l051"
+    },
+    {
+      "id": "g1-l051-w05",
+      "text": "apart",
+      "phraseId": "g1-l051"
+    },
+    {
+      "id": "g1-l051-w06",
+      "text": "from",
+      "phraseId": "g1-l051"
+    },
+    {
+      "id": "g1-l051-w07",
+      "text": "dark.",
+      "phraseId": "g1-l051"
+    },
+    {
+      "id": "g1-l052-w01",
+      "text": "He",
+      "phraseId": "g1-l052"
+    },
+    {
+      "id": "g1-l052-w02",
+      "text": "looked",
+      "phraseId": "g1-l052"
+    },
+    {
+      "id": "g1-l052-w03",
+      "text": "on",
+      "phraseId": "g1-l052"
+    },
+    {
+      "id": "g1-l052-w04",
+      "text": "them:",
+      "phraseId": "g1-l052"
+    },
+    {
+      "id": "g1-l052-w05",
+      "text": "good.",
+      "phraseId": "g1-l052"
+    },
+    {
+      "id": "g1-l053-w01",
+      "text": "Dusk.",
+      "phraseId": "g1-l053"
+    },
+    {
+      "id": "g1-l053-w02",
+      "text": "Dawn.",
+      "phraseId": "g1-l053"
+    },
+    {
+      "id": "g1-l053-w03",
+      "text": "The",
+      "phraseId": "g1-l053"
+    },
+    {
+      "id": "g1-l053-w04",
+      "text": "fourth",
+      "phraseId": "g1-l053"
+    },
+    {
+      "id": "g1-l053-w05",
+      "text": "day.",
+      "phraseId": "g1-l053"
+    },
+    {
+      "id": "g1-l054-w01",
+      "text": "\u2018Water,",
+      "phraseId": "g1-l054"
+    },
+    {
+      "id": "g1-l054-w02",
+      "text": "swarm",
+      "phraseId": "g1-l054"
+    },
+    {
+      "id": "g1-l054-w03",
+      "text": "with",
+      "phraseId": "g1-l054"
+    },
+    {
+      "id": "g1-l054-w04",
+      "text": "living",
+      "phraseId": "g1-l054"
+    },
+    {
+      "id": "g1-l054-w05",
+      "text": "reptiles!",
+      "phraseId": "g1-l054"
+    },
+    {
+      "id": "g1-l055-w01",
+      "text": "Winged",
+      "phraseId": "g1-l055"
+    },
+    {
+      "id": "g1-l055-w02",
+      "text": "creatures,",
+      "phraseId": "g1-l055"
+    },
+    {
+      "id": "g1-l055-w03",
+      "text": "fly",
+      "phraseId": "g1-l055"
+    },
+    {
+      "id": "g1-l055-w04",
+      "text": "above",
+      "phraseId": "g1-l055"
+    },
+    {
+      "id": "g1-l055-w05",
+      "text": "the",
+      "phraseId": "g1-l055"
+    },
+    {
+      "id": "g1-l055-w06",
+      "text": "earth",
+      "phraseId": "g1-l055"
+    },
+    {
+      "id": "g1-l056-w01",
+      "text": "across",
+      "phraseId": "g1-l056"
+    },
+    {
+      "id": "g1-l056-w02",
+      "text": "Heaven\u2019s",
+      "phraseId": "g1-l056"
+    },
+    {
+      "id": "g1-l056-w03",
+      "text": "firmament!\u2019",
+      "phraseId": "g1-l056"
+    },
+    {
+      "id": "g1-l057-w01",
+      "text": "His",
+      "phraseId": "g1-l057"
+    },
+    {
+      "id": "g1-l057-w02",
+      "text": "word",
+      "phraseId": "g1-l057"
+    },
+    {
+      "id": "g1-l057-w03",
+      "text": "took",
+      "phraseId": "g1-l057"
+    },
+    {
+      "id": "g1-l057-w04",
+      "text": "hold.",
+      "phraseId": "g1-l057"
+    },
+    {
+      "id": "g1-l058-w01",
+      "text": "God",
+      "phraseId": "g1-l058"
+    },
+    {
+      "id": "g1-l058-w02",
+      "text": "made",
+      "phraseId": "g1-l058"
+    },
+    {
+      "id": "g1-l058-w03",
+      "text": "the",
+      "phraseId": "g1-l058"
+    },
+    {
+      "id": "g1-l058-w04",
+      "text": "great",
+      "phraseId": "g1-l058"
+    },
+    {
+      "id": "g1-l058-w05",
+      "text": "whales,",
+      "phraseId": "g1-l058"
+    },
+    {
+      "id": "g1-l059-w01",
+      "text": "every",
+      "phraseId": "g1-l059"
+    },
+    {
+      "id": "g1-l059-w02",
+      "text": "living",
+      "phraseId": "g1-l059"
+    },
+    {
+      "id": "g1-l059-w03",
+      "text": "water-reptile",
+      "phraseId": "g1-l059"
+    },
+    {
+      "id": "g1-l059-w04",
+      "text": "by",
+      "phraseId": "g1-l059"
+    },
+    {
+      "id": "g1-l059-w05",
+      "text": "kind,",
+      "phraseId": "g1-l059"
+    },
+    {
+      "id": "g1-l060-w01",
+      "text": "and",
+      "phraseId": "g1-l060"
+    },
+    {
+      "id": "g1-l060-w02",
+      "text": "every",
+      "phraseId": "g1-l060"
+    },
+    {
+      "id": "g1-l060-w03",
+      "text": "winged",
+      "phraseId": "g1-l060"
+    },
+    {
+      "id": "g1-l060-w04",
+      "text": "creature",
+      "phraseId": "g1-l060"
+    },
+    {
+      "id": "g1-l060-w05",
+      "text": "by",
+      "phraseId": "g1-l060"
+    },
+    {
+      "id": "g1-l060-w06",
+      "text": "kind.",
+      "phraseId": "g1-l060"
+    },
+    {
+      "id": "g1-l061-w01",
+      "text": "He",
+      "phraseId": "g1-l061"
+    },
+    {
+      "id": "g1-l061-w02",
+      "text": "looked",
+      "phraseId": "g1-l061"
+    },
+    {
+      "id": "g1-l061-w03",
+      "text": "on",
+      "phraseId": "g1-l061"
+    },
+    {
+      "id": "g1-l061-w04",
+      "text": "them:",
+      "phraseId": "g1-l061"
+    },
+    {
+      "id": "g1-l061-w05",
+      "text": "good.",
+      "phraseId": "g1-l061"
+    },
+    {
+      "id": "g1-l062-w01",
+      "text": "His",
+      "phraseId": "g1-l062"
+    },
+    {
+      "id": "g1-l062-w02",
+      "text": "blessing",
+      "phraseId": "g1-l062"
+    },
+    {
+      "id": "g1-l062-w03",
+      "text": "rang",
+      "phraseId": "g1-l062"
+    },
+    {
+      "id": "g1-l062-w04",
+      "text": "out:",
+      "phraseId": "g1-l062"
+    },
+    {
+      "id": "g1-l063-w01",
+      "text": "\u2018Increase!",
+      "phraseId": "g1-l063"
+    },
+    {
+      "id": "g1-l063-w02",
+      "text": "Multiply!",
+      "phraseId": "g1-l063"
+    },
+    {
+      "id": "g1-l063-w03",
+      "text": "Fill",
+      "phraseId": "g1-l063"
+    },
+    {
+      "id": "g1-l063-w04",
+      "text": "the",
+      "phraseId": "g1-l063"
+    },
+    {
+      "id": "g1-l063-w05",
+      "text": "seas!",
+      "phraseId": "g1-l063"
+    },
+    {
+      "id": "g1-l064-w01",
+      "text": "Let",
+      "phraseId": "g1-l064"
+    },
+    {
+      "id": "g1-l064-w02",
+      "text": "the",
+      "phraseId": "g1-l064"
+    },
+    {
+      "id": "g1-l064-w03",
+      "text": "winged",
+      "phraseId": "g1-l064"
+    },
+    {
+      "id": "g1-l064-w04",
+      "text": "multiply",
+      "phraseId": "g1-l064"
+    },
+    {
+      "id": "g1-l064-w05",
+      "text": "on",
+      "phraseId": "g1-l064"
+    },
+    {
+      "id": "g1-l064-w06",
+      "text": "earth!\u2019",
+      "phraseId": "g1-l064"
+    },
+    {
+      "id": "g1-l065-w01",
+      "text": "Dusk.",
+      "phraseId": "g1-l065"
+    },
+    {
+      "id": "g1-l065-w02",
+      "text": "Dawn.",
+      "phraseId": "g1-l065"
+    },
+    {
+      "id": "g1-l065-w03",
+      "text": "The",
+      "phraseId": "g1-l065"
+    },
+    {
+      "id": "g1-l065-w04",
+      "text": "fifth",
+      "phraseId": "g1-l065"
+    },
+    {
+      "id": "g1-l065-w05",
+      "text": "day.",
+      "phraseId": "g1-l065"
+    },
+    {
+      "id": "g1-l066-w01",
+      "text": "\u2018Earth,",
+      "phraseId": "g1-l066"
+    },
+    {
+      "id": "g1-l066-w02",
+      "text": "bring",
+      "phraseId": "g1-l066"
+    },
+    {
+      "id": "g1-l066-w03",
+      "text": "out",
+      "phraseId": "g1-l066"
+    },
+    {
+      "id": "g1-l066-w04",
+      "text": "living",
+      "phraseId": "g1-l066"
+    },
+    {
+      "id": "g1-l066-w05",
+      "text": "kinds:",
+      "phraseId": "g1-l066"
+    },
+    {
+      "id": "g1-l067-w01",
+      "text": "four-footed",
+      "phraseId": "g1-l067"
+    },
+    {
+      "id": "g1-l067-w02",
+      "text": "beasts,",
+      "phraseId": "g1-l067"
+    },
+    {
+      "id": "g1-l067-w03",
+      "text": "crawling",
+      "phraseId": "g1-l067"
+    },
+    {
+      "id": "g1-l067-w04",
+      "text": "reptiles,",
+      "phraseId": "g1-l067"
+    },
+    {
+      "id": "g1-l068-w01",
+      "text": "wild",
+      "phraseId": "g1-l068"
+    },
+    {
+      "id": "g1-l068-w02",
+      "text": "beasts,",
+      "phraseId": "g1-l068"
+    },
+    {
+      "id": "g1-l068-w03",
+      "text": "each",
+      "phraseId": "g1-l068"
+    },
+    {
+      "id": "g1-l068-w04",
+      "text": "after",
+      "phraseId": "g1-l068"
+    },
+    {
+      "id": "g1-l068-w05",
+      "text": "its",
+      "phraseId": "g1-l068"
+    },
+    {
+      "id": "g1-l068-w06",
+      "text": "kind!\u2019",
+      "phraseId": "g1-l068"
+    },
+    {
+      "id": "g1-l069-w01",
+      "text": "His",
+      "phraseId": "g1-l069"
+    },
+    {
+      "id": "g1-l069-w02",
+      "text": "word",
+      "phraseId": "g1-l069"
+    },
+    {
+      "id": "g1-l069-w03",
+      "text": "took",
+      "phraseId": "g1-l069"
+    },
+    {
+      "id": "g1-l069-w04",
+      "text": "hold.",
+      "phraseId": "g1-l069"
+    },
+    {
+      "id": "g1-l070-w01",
+      "text": "He",
+      "phraseId": "g1-l070"
+    },
+    {
+      "id": "g1-l070-w02",
+      "text": "fashioned",
+      "phraseId": "g1-l070"
+    },
+    {
+      "id": "g1-l070-w03",
+      "text": "wild",
+      "phraseId": "g1-l070"
+    },
+    {
+      "id": "g1-l070-w04",
+      "text": "beasts,",
+      "phraseId": "g1-l070"
+    },
+    {
+      "id": "g1-l070-w05",
+      "text": "cattle,",
+      "phraseId": "g1-l070"
+    },
+    {
+      "id": "g1-l071-w01",
+      "text": "and",
+      "phraseId": "g1-l071"
+    },
+    {
+      "id": "g1-l071-w02",
+      "text": "the",
+      "phraseId": "g1-l071"
+    },
+    {
+      "id": "g1-l071-w03",
+      "text": "reptiles",
+      "phraseId": "g1-l071"
+    },
+    {
+      "id": "g1-l071-w04",
+      "text": "of",
+      "phraseId": "g1-l071"
+    },
+    {
+      "id": "g1-l071-w05",
+      "text": "the",
+      "phraseId": "g1-l071"
+    },
+    {
+      "id": "g1-l071-w06",
+      "text": "ground,",
+      "phraseId": "g1-l071"
+    },
+    {
+      "id": "g1-l072-w01",
+      "text": "each",
+      "phraseId": "g1-l072"
+    },
+    {
+      "id": "g1-l072-w02",
+      "text": "after",
+      "phraseId": "g1-l072"
+    },
+    {
+      "id": "g1-l072-w03",
+      "text": "its",
+      "phraseId": "g1-l072"
+    },
+    {
+      "id": "g1-l072-w04",
+      "text": "kind.",
+      "phraseId": "g1-l072"
+    },
+    {
+      "id": "g1-l073-w01",
+      "text": "He",
+      "phraseId": "g1-l073"
+    },
+    {
+      "id": "g1-l073-w02",
+      "text": "looked",
+      "phraseId": "g1-l073"
+    },
+    {
+      "id": "g1-l073-w03",
+      "text": "on",
+      "phraseId": "g1-l073"
+    },
+    {
+      "id": "g1-l073-w04",
+      "text": "them:",
+      "phraseId": "g1-l073"
+    },
+    {
+      "id": "g1-l073-w05",
+      "text": "good.",
+      "phraseId": "g1-l073"
+    },
+    {
+      "id": "g1-l074-w01",
+      "text": "Then",
+      "phraseId": "g1-l074"
+    },
+    {
+      "id": "g1-l074-w02",
+      "text": "God",
+      "phraseId": "g1-l074"
+    },
+    {
+      "id": "g1-l074-w03",
+      "text": "said,",
+      "phraseId": "g1-l074"
+    },
+    {
+      "id": "g1-l074-w04",
+      "text": "\u2018Let",
+      "phraseId": "g1-l074"
+    },
+    {
+      "id": "g1-l074-w05",
+      "text": "us",
+      "phraseId": "g1-l074"
+    },
+    {
+      "id": "g1-l074-w06",
+      "text": "make",
+      "phraseId": "g1-l074"
+    },
+    {
+      "id": "g1-l074-w07",
+      "text": "humankind",
+      "phraseId": "g1-l074"
+    },
+    {
+      "id": "g1-l075-w01",
+      "text": "in",
+      "phraseId": "g1-l075"
+    },
+    {
+      "id": "g1-l075-w02",
+      "text": "our",
+      "phraseId": "g1-l075"
+    },
+    {
+      "id": "g1-l075-w03",
+      "text": "image,",
+      "phraseId": "g1-l075"
+    },
+    {
+      "id": "g1-l075-w04",
+      "text": "in",
+      "phraseId": "g1-l075"
+    },
+    {
+      "id": "g1-l075-w05",
+      "text": "our",
+      "phraseId": "g1-l075"
+    },
+    {
+      "id": "g1-l075-w06",
+      "text": "likeness;",
+      "phraseId": "g1-l075"
+    },
+    {
+      "id": "g1-l076-w01",
+      "text": "let",
+      "phraseId": "g1-l076"
+    },
+    {
+      "id": "g1-l076-w02",
+      "text": "them",
+      "phraseId": "g1-l076"
+    },
+    {
+      "id": "g1-l076-w03",
+      "text": "rule",
+      "phraseId": "g1-l076"
+    },
+    {
+      "id": "g1-l076-w04",
+      "text": "the",
+      "phraseId": "g1-l076"
+    },
+    {
+      "id": "g1-l076-w05",
+      "text": "fish,",
+      "phraseId": "g1-l076"
+    },
+    {
+      "id": "g1-l076-w06",
+      "text": "the",
+      "phraseId": "g1-l076"
+    },
+    {
+      "id": "g1-l076-w07",
+      "text": "birds,",
+      "phraseId": "g1-l076"
+    },
+    {
+      "id": "g1-l077-w01",
+      "text": "the",
+      "phraseId": "g1-l077"
+    },
+    {
+      "id": "g1-l077-w02",
+      "text": "cattle,",
+      "phraseId": "g1-l077"
+    },
+    {
+      "id": "g1-l077-w03",
+      "text": "all",
+      "phraseId": "g1-l077"
+    },
+    {
+      "id": "g1-l077-w04",
+      "text": "the",
+      "phraseId": "g1-l077"
+    },
+    {
+      "id": "g1-l077-w05",
+      "text": "earth",
+      "phraseId": "g1-l077"
+    },
+    {
+      "id": "g1-l077-w06",
+      "text": "and",
+      "phraseId": "g1-l077"
+    },
+    {
+      "id": "g1-l077-w07",
+      "text": "all",
+      "phraseId": "g1-l077"
+    },
+    {
+      "id": "g1-l077-w08",
+      "text": "that",
+      "phraseId": "g1-l077"
+    },
+    {
+      "id": "g1-l077-w09",
+      "text": "crawls.\u2019",
+      "phraseId": "g1-l077"
+    },
+    {
+      "id": "g1-l078-w01",
+      "text": "God",
+      "phraseId": "g1-l078"
+    },
+    {
+      "id": "g1-l078-w02",
+      "text": "made",
+      "phraseId": "g1-l078"
+    },
+    {
+      "id": "g1-l078-w03",
+      "text": "humankind",
+      "phraseId": "g1-l078"
+    },
+    {
+      "id": "g1-l078-w04",
+      "text": "in",
+      "phraseId": "g1-l078"
+    },
+    {
+      "id": "g1-l078-w05",
+      "text": "His",
+      "phraseId": "g1-l078"
+    },
+    {
+      "id": "g1-l078-w06",
+      "text": "own",
+      "phraseId": "g1-l078"
+    },
+    {
+      "id": "g1-l078-w07",
+      "text": "image;",
+      "phraseId": "g1-l078"
+    },
+    {
+      "id": "g1-l079-w01",
+      "text": "male",
+      "phraseId": "g1-l079"
+    },
+    {
+      "id": "g1-l079-w02",
+      "text": "and",
+      "phraseId": "g1-l079"
+    },
+    {
+      "id": "g1-l079-w03",
+      "text": "female",
+      "phraseId": "g1-l079"
+    },
+    {
+      "id": "g1-l079-w04",
+      "text": "He",
+      "phraseId": "g1-l079"
+    },
+    {
+      "id": "g1-l079-w05",
+      "text": "made",
+      "phraseId": "g1-l079"
+    },
+    {
+      "id": "g1-l079-w06",
+      "text": "them.",
+      "phraseId": "g1-l079"
+    },
+    {
+      "id": "g1-l080-w01",
+      "text": "He",
+      "phraseId": "g1-l080"
+    },
+    {
+      "id": "g1-l080-w02",
+      "text": "blessed",
+      "phraseId": "g1-l080"
+    },
+    {
+      "id": "g1-l080-w03",
+      "text": "them:",
+      "phraseId": "g1-l080"
+    },
+    {
+      "id": "g1-l081-w01",
+      "text": "\u2018Increase!",
+      "phraseId": "g1-l081"
+    },
+    {
+      "id": "g1-l081-w02",
+      "text": "Multiply!",
+      "phraseId": "g1-l081"
+    },
+    {
+      "id": "g1-l081-w03",
+      "text": "Fill",
+      "phraseId": "g1-l081"
+    },
+    {
+      "id": "g1-l081-w04",
+      "text": "the",
+      "phraseId": "g1-l081"
+    },
+    {
+      "id": "g1-l081-w05",
+      "text": "earth;",
+      "phraseId": "g1-l081"
+    },
+    {
+      "id": "g1-l082-w01",
+      "text": "bring",
+      "phraseId": "g1-l082"
+    },
+    {
+      "id": "g1-l082-w02",
+      "text": "it",
+      "phraseId": "g1-l082"
+    },
+    {
+      "id": "g1-l082-w03",
+      "text": "under",
+      "phraseId": "g1-l082"
+    },
+    {
+      "id": "g1-l082-w04",
+      "text": "your",
+      "phraseId": "g1-l082"
+    },
+    {
+      "id": "g1-l082-w05",
+      "text": "rule!",
+      "phraseId": "g1-l082"
+    },
+    {
+      "id": "g1-l083-w01",
+      "text": "Govern",
+      "phraseId": "g1-l083"
+    },
+    {
+      "id": "g1-l083-w02",
+      "text": "fish",
+      "phraseId": "g1-l083"
+    },
+    {
+      "id": "g1-l083-w03",
+      "text": "and",
+      "phraseId": "g1-l083"
+    },
+    {
+      "id": "g1-l083-w04",
+      "text": "birds",
+      "phraseId": "g1-l083"
+    },
+    {
+      "id": "g1-l083-w05",
+      "text": "and",
+      "phraseId": "g1-l083"
+    },
+    {
+      "id": "g1-l083-w06",
+      "text": "cattle,",
+      "phraseId": "g1-l083"
+    },
+    {
+      "id": "g1-l084-w01",
+      "text": "all",
+      "phraseId": "g1-l084"
+    },
+    {
+      "id": "g1-l084-w02",
+      "text": "the",
+      "phraseId": "g1-l084"
+    },
+    {
+      "id": "g1-l084-w03",
+      "text": "earth",
+      "phraseId": "g1-l084"
+    },
+    {
+      "id": "g1-l084-w04",
+      "text": "and",
+      "phraseId": "g1-l084"
+    },
+    {
+      "id": "g1-l084-w05",
+      "text": "all",
+      "phraseId": "g1-l084"
+    },
+    {
+      "id": "g1-l084-w06",
+      "text": "that",
+      "phraseId": "g1-l084"
+    },
+    {
+      "id": "g1-l084-w07",
+      "text": "crawls!\u2019",
+      "phraseId": "g1-l084"
+    },
+    {
+      "id": "g1-l085-w01",
+      "text": "He",
+      "phraseId": "g1-l085"
+    },
+    {
+      "id": "g1-l085-w02",
+      "text": "gave",
+      "phraseId": "g1-l085"
+    },
+    {
+      "id": "g1-l085-w03",
+      "text": "them",
+      "phraseId": "g1-l085"
+    },
+    {
+      "id": "g1-l085-w04",
+      "text": "every",
+      "phraseId": "g1-l085"
+    },
+    {
+      "id": "g1-l085-w05",
+      "text": "seed-bearing",
+      "phraseId": "g1-l085"
+    },
+    {
+      "id": "g1-l085-w06",
+      "text": "herb",
+      "phraseId": "g1-l085"
+    },
+    {
+      "id": "g1-l086-w01",
+      "text": "across",
+      "phraseId": "g1-l086"
+    },
+    {
+      "id": "g1-l086-w02",
+      "text": "the",
+      "phraseId": "g1-l086"
+    },
+    {
+      "id": "g1-l086-w03",
+      "text": "earth,",
+      "phraseId": "g1-l086"
+    },
+    {
+      "id": "g1-l087-w01",
+      "text": "and",
+      "phraseId": "g1-l087"
+    },
+    {
+      "id": "g1-l087-w02",
+      "text": "every",
+      "phraseId": "g1-l087"
+    },
+    {
+      "id": "g1-l087-w03",
+      "text": "tree",
+      "phraseId": "g1-l087"
+    },
+    {
+      "id": "g1-l087-w04",
+      "text": "whose",
+      "phraseId": "g1-l087"
+    },
+    {
+      "id": "g1-l087-w05",
+      "text": "fruit",
+      "phraseId": "g1-l087"
+    },
+    {
+      "id": "g1-l087-w06",
+      "text": "holds",
+      "phraseId": "g1-l087"
+    },
+    {
+      "id": "g1-l087-w07",
+      "text": "seed:",
+      "phraseId": "g1-l087"
+    },
+    {
+      "id": "g1-l088-w01",
+      "text": "food",
+      "phraseId": "g1-l088"
+    },
+    {
+      "id": "g1-l088-w02",
+      "text": "for",
+      "phraseId": "g1-l088"
+    },
+    {
+      "id": "g1-l088-w03",
+      "text": "humankind.",
+      "phraseId": "g1-l088"
+    },
+    {
+      "id": "g1-l089-w01",
+      "text": "For",
+      "phraseId": "g1-l089"
+    },
+    {
+      "id": "g1-l089-w02",
+      "text": "wild",
+      "phraseId": "g1-l089"
+    },
+    {
+      "id": "g1-l089-w03",
+      "text": "beasts,",
+      "phraseId": "g1-l089"
+    },
+    {
+      "id": "g1-l089-w04",
+      "text": "flying",
+      "phraseId": "g1-l089"
+    },
+    {
+      "id": "g1-l089-w05",
+      "text": "creatures,",
+      "phraseId": "g1-l089"
+    },
+    {
+      "id": "g1-l090-w01",
+      "text": "and",
+      "phraseId": "g1-l090"
+    },
+    {
+      "id": "g1-l090-w02",
+      "text": "all",
+      "phraseId": "g1-l090"
+    },
+    {
+      "id": "g1-l090-w03",
+      "text": "the",
+      "phraseId": "g1-l090"
+    },
+    {
+      "id": "g1-l090-w04",
+      "text": "reptiles",
+      "phraseId": "g1-l090"
+    },
+    {
+      "id": "g1-l090-w05",
+      "text": "of",
+      "phraseId": "g1-l090"
+    },
+    {
+      "id": "g1-l090-w06",
+      "text": "the",
+      "phraseId": "g1-l090"
+    },
+    {
+      "id": "g1-l090-w07",
+      "text": "earth",
+      "phraseId": "g1-l090"
+    },
+    {
+      "id": "g1-l091-w01",
+      "text": "that",
+      "phraseId": "g1-l091"
+    },
+    {
+      "id": "g1-l091-w02",
+      "text": "carry",
+      "phraseId": "g1-l091"
+    },
+    {
+      "id": "g1-l091-w03",
+      "text": "the",
+      "phraseId": "g1-l091"
+    },
+    {
+      "id": "g1-l091-w04",
+      "text": "breath",
+      "phraseId": "g1-l091"
+    },
+    {
+      "id": "g1-l091-w05",
+      "text": "of",
+      "phraseId": "g1-l091"
+    },
+    {
+      "id": "g1-l091-w06",
+      "text": "life,",
+      "phraseId": "g1-l091"
+    },
+    {
+      "id": "g1-l092-w01",
+      "text": "He",
+      "phraseId": "g1-l092"
+    },
+    {
+      "id": "g1-l092-w02",
+      "text": "gave",
+      "phraseId": "g1-l092"
+    },
+    {
+      "id": "g1-l092-w03",
+      "text": "every",
+      "phraseId": "g1-l092"
+    },
+    {
+      "id": "g1-l092-w04",
+      "text": "green",
+      "phraseId": "g1-l092"
+    },
+    {
+      "id": "g1-l092-w05",
+      "text": "plant",
+      "phraseId": "g1-l092"
+    },
+    {
+      "id": "g1-l092-w06",
+      "text": "for",
+      "phraseId": "g1-l092"
+    },
+    {
+      "id": "g1-l092-w07",
+      "text": "food.",
+      "phraseId": "g1-l092"
+    },
+    {
+      "id": "g1-l093-w01",
+      "text": "His",
+      "phraseId": "g1-l093"
+    },
+    {
+      "id": "g1-l093-w02",
+      "text": "word",
+      "phraseId": "g1-l093"
+    },
+    {
+      "id": "g1-l093-w03",
+      "text": "took",
+      "phraseId": "g1-l093"
+    },
+    {
+      "id": "g1-l093-w04",
+      "text": "hold.",
+      "phraseId": "g1-l093"
+    },
+    {
+      "id": "g1-l094-w01",
+      "text": "God",
+      "phraseId": "g1-l094"
+    },
+    {
+      "id": "g1-l094-w02",
+      "text": "looked",
+      "phraseId": "g1-l094"
+    },
+    {
+      "id": "g1-l094-w03",
+      "text": "upon",
+      "phraseId": "g1-l094"
+    },
+    {
+      "id": "g1-l094-w04",
+      "text": "all",
+      "phraseId": "g1-l094"
+    },
+    {
+      "id": "g1-l094-w05",
+      "text": "He",
+      "phraseId": "g1-l094"
+    },
+    {
+      "id": "g1-l094-w06",
+      "text": "had",
+      "phraseId": "g1-l094"
+    },
+    {
+      "id": "g1-l094-w07",
+      "text": "made:",
+      "phraseId": "g1-l094"
+    },
+    {
+      "id": "g1-l095-w01",
+      "text": "the",
+      "phraseId": "g1-l095"
+    },
+    {
+      "id": "g1-l095-w02",
+      "text": "whole",
+      "phraseId": "g1-l095"
+    },
+    {
+      "id": "g1-l095-w03",
+      "text": "of",
+      "phraseId": "g1-l095"
+    },
+    {
+      "id": "g1-l095-w04",
+      "text": "it,",
+      "phraseId": "g1-l095"
+    },
+    {
+      "id": "g1-l095-w05",
+      "text": "very",
+      "phraseId": "g1-l095"
+    },
+    {
+      "id": "g1-l095-w06",
+      "text": "good.",
+      "phraseId": "g1-l095"
+    },
+    {
+      "id": "g1-l096-w01",
+      "text": "Dusk.",
+      "phraseId": "g1-l096"
+    },
+    {
+      "id": "g1-l096-w02",
+      "text": "Dawn.",
+      "phraseId": "g1-l096"
+    },
+    {
+      "id": "g1-l096-w03",
+      "text": "The",
+      "phraseId": "g1-l096"
+    },
+    {
+      "id": "g1-l096-w04",
+      "text": "sixth",
+      "phraseId": "g1-l096"
+    },
+    {
+      "id": "g1-l096-w05",
+      "text": "day.",
+      "phraseId": "g1-l096"
+    }
+  ]
+}

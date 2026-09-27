@@ -1,0 +1,22 @@
+{
+  "prompt_id": "053ce7e2-9302-4441-9393-587643203380",
+  "number": 101,
+  "node_errors": {},
+  "name": "vegetation-v1",
+  "submittedAt": "2026-09-27T11:24:51.686179+00:00",
+  "project": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning",
+  "themeChoiceSha256": "c9637517ee90b0c9a6700e0398bb912eeffa66f22addc131bf97fc576281beac",
+  "firstImage": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/vegetation-start.png",
+  "firstImageSha256": "c77d3e49e62a5c5dbfa73b042aac8702ddc1a62365410ac061b5dd3f9bf63fb4",
+  "lastImage": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/vegetation-end.png",
+  "lastImageSha256": "a4ee0eb33616e447ba16ac5a6e22712e30a2d135dc81da892c89a93ebf8ac830",
+  "promptFile": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/vegetation-v1-motion-prompt.txt",
+  "workflow": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/vegetation-v1-workflow.json",
+  "workflowSha256": "e79a1b0e2a63e2ab42cf5d33bdaa9ae3d00ef1240de3d29a2bc5060c21d96677",
+  "framesRequested": 172,
+  "fpsRequested": 24,
+  "seed": 2026092736,
+  "conditioning": "first_frame+last_frame",
+  "provider": "local OmiPC ComfyUI",
+  "cost": "local GPU; no paid API"
+}

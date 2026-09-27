@@ -1,0 +1,691 @@
+{
+  "schemaVersion": 1,
+  "kind": "independent-encoded-visual-review",
+  "scope": "visual-only",
+  "reviewer": "Rook independent composition reviewer /root/psalm91_local_video",
+  "independence": "Reviewer did not author this film typography, composition, or camera choreography. Reviewer produced supporting local-video assets; their composite integration was reviewed in the final encode, not accepted from asset provenance alone.",
+  "reviewedAt": "2026-09-27T11:54:33.782360+00:00",
+  "videoPath": "/Volumes/DATA/ArkRender/genesis1/genesis1-breath-earth-v1.mp4",
+  "sha256": "b946c097f0902c0f3b4eda3a330aceca2ef893c29bd5a7eb511cc34101d130db",
+  "binding": {
+    "videoSha256": "b946c097f0902c0f3b4eda3a330aceca2ef893c29bd5a7eb511cc34101d130db",
+    "projectHash": "9e96b28898757ac06e19b8b594066c8d3524a1f54dc240f97423572ffb45b62c",
+    "rendererHash": "4a279e37bc6bb3a1d2df216a8adc28a6c35974724f15419922adbb1d616a0a39",
+    "revisionHash": "681306f92ebfe993eba9f2540f7645d8f69952e5e6b47d2d2cb2b867ad8a923a",
+    "renderProvenancePath": "/Volumes/DATA/ArkRender/genesis1/genesis1-breath-earth-v1.mp4.render.json"
+  },
+  "durationSeconds": 304.733333,
+  "frameCount": 9142,
+  "status": "accepted_with_nonblocking_limitations",
+  "blockingIssues": [],
+  "requiredFixes": [],
+  "scores": {
+    "lyricLegibility": 9.1,
+    "semanticMotion": 8.6,
+    "photorealism": 8.8,
+    "composition": 8.9,
+    "continuity": 9.2
+  },
+  "ratingBasis": "Subjective 0-10 visual rubric. An 8 is polished and usable, not perfection. Scores come from actual decoded image sequences. No audio/listening/synchronization score, no automatic whole-gauntlet approval.",
+  "coverage": {
+    "overview": {
+      "fps": 2,
+      "frames": 609,
+      "contactSheets": 21,
+      "range": [
+        0,
+        304.733333
+      ],
+      "allSheetsInspected": true
+    },
+    "dense": {
+      "fps": 6,
+      "intervals": [
+        {
+          "name": "opening",
+          "start": 0,
+          "end": 4,
+          "fps": 6,
+          "sheets": [
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/opening-sheet-00.jpg",
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/opening-sheet-01.jpg"
+          ]
+        },
+        {
+          "name": "first-light",
+          "start": 24,
+          "end": 31.5,
+          "fps": 6,
+          "sheets": [
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/first-light-sheet-00.jpg",
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/first-light-sheet-01.jpg",
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/first-light-sheet-02.jpg"
+          ]
+        },
+        {
+          "name": "seraphim-in",
+          "start": 52.35,
+          "end": 54,
+          "fps": 6,
+          "sheets": [
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/seraphim-in-sheet-00.jpg"
+          ]
+        },
+        {
+          "name": "seraphim-ocean",
+          "start": 57.85,
+          "end": 59.15,
+          "fps": 6,
+          "sheets": [
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/seraphim-ocean-sheet-00.jpg"
+          ]
+        },
+        {
+          "name": "ocean-out",
+          "start": 66.15,
+          "end": 67.3,
+          "fps": 6,
+          "sheets": [
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/ocean-out-sheet-00.jpg"
+          ]
+        },
+        {
+          "name": "land-in",
+          "start": 82.45,
+          "end": 84.1,
+          "fps": 6,
+          "sheets": [
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/land-in-sheet-00.jpg"
+          ]
+        },
+        {
+          "name": "land-poster",
+          "start": 89.6,
+          "end": 91.1,
+          "fps": 6,
+          "sheets": [
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/land-poster-sheet-00.jpg"
+          ]
+        },
+        {
+          "name": "land-out",
+          "start": 91.95,
+          "end": 93.1,
+          "fps": 6,
+          "sheets": [
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/land-out-sheet-00.jpg"
+          ]
+        },
+        {
+          "name": "vegetation-in",
+          "start": 115.85,
+          "end": 117.5,
+          "fps": 6,
+          "sheets": [
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/vegetation-in-sheet-00.jpg"
+          ]
+        },
+        {
+          "name": "vegetation-poster",
+          "start": 123.05,
+          "end": 125.65,
+          "fps": 6,
+          "sheets": [
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/vegetation-poster-sheet-00.jpg"
+          ]
+        },
+        {
+          "name": "journey-time",
+          "start": 142,
+          "end": 147.5,
+          "fps": 6,
+          "sheets": [
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/journey-time-sheet-00.jpg",
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/journey-time-sheet-01.jpg"
+          ]
+        },
+        {
+          "name": "ophanim-in",
+          "start": 161.05,
+          "end": 162.7,
+          "fps": 6,
+          "sheets": [
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/ophanim-in-sheet-00.jpg"
+          ]
+        },
+        {
+          "name": "ophanim-out",
+          "start": 167.95,
+          "end": 169.05,
+          "fps": 6,
+          "sheets": [
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/ophanim-out-sheet-00.jpg"
+          ]
+        },
+        {
+          "name": "winged-in",
+          "start": 186.55,
+          "end": 188.2,
+          "fps": 6,
+          "sheets": [
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/winged-in-sheet-00.jpg"
+          ]
+        },
+        {
+          "name": "winged-out",
+          "start": 192.75,
+          "end": 194,
+          "fps": 6,
+          "sheets": [
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/winged-out-sheet-00.jpg"
+          ]
+        },
+        {
+          "name": "whale-in",
+          "start": 194.8,
+          "end": 196.3,
+          "fps": 6,
+          "sheets": [
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/whale-in-sheet-00.jpg"
+          ]
+        },
+        {
+          "name": "whale-poster",
+          "start": 202.1,
+          "end": 204.05,
+          "fps": 6,
+          "sheets": [
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/whale-poster-sheet-00.jpg"
+          ]
+        },
+        {
+          "name": "wildlife-in",
+          "start": 234.85,
+          "end": 236.5,
+          "fps": 6,
+          "sheets": [
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/wildlife-in-sheet-00.jpg"
+          ]
+        },
+        {
+          "name": "wildlife-out",
+          "start": 242.95,
+          "end": 244.05,
+          "fps": 6,
+          "sheets": [
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/wildlife-out-sheet-00.jpg"
+          ]
+        },
+        {
+          "name": "adam-in",
+          "start": 246.45,
+          "end": 248.1,
+          "fps": 6,
+          "sheets": [
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/adam-in-sheet-00.jpg"
+          ]
+        },
+        {
+          "name": "adam-poster",
+          "start": 255.85,
+          "end": 257.2,
+          "fps": 6,
+          "sheets": [
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/adam-poster-sheet-00.jpg"
+          ]
+        },
+        {
+          "name": "journey-domain",
+          "start": 281.5,
+          "end": 291.7,
+          "fps": 6,
+          "sheets": [
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/journey-domain-sheet-00.jpg",
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/journey-domain-sheet-01.jpg",
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/journey-domain-sheet-02.jpg",
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/journey-domain-sheet-03.jpg"
+          ]
+        },
+        {
+          "name": "ending",
+          "start": 291.1,
+          "end": 304.733333,
+          "fps": 6,
+          "sheets": [
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/ending-sheet-00.jpg",
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/ending-sheet-01.jpg",
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/ending-sheet-02.jpg",
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/ending-sheet-03.jpg",
+            "/Volumes/DATA/ArkRender/genesis1/visual-v1/ending-sheet-04.jpg"
+          ]
+        }
+      ],
+      "contactSheets": 34,
+      "allSheetsInspected": true
+    },
+    "targetedNativeFrames": {
+      "start": 169,
+      "end": 169.9,
+      "fps": 30,
+      "frames": 27,
+      "purpose": "Resolve apparent low-rate sample disappearance of earth; full-bright word present at about169.433-169.667."
+    },
+    "fullResolutionSpotCheck": {
+      "at": 65.55,
+      "purpose": "Check MIGHTY SPAN over bright cloud; lower local contrast but readable."
+    }
+  },
+  "categoryNotes": {
+    "lyricLegibility": "Primary words are large and readable across the progression. No observed frame-edge clipping or unrecoverable word collision. Both camera journeys keep key terms upright, separate and readable. The brief earth at169.43-169.67 is visible at native-frame review; 2fps sampling had made it look absent. MIGHTY SPAN at65.55 remains readable despite the brighter cloud behind SPAN.",
+    "semanticMotion": "Strong creation-specific transformations: light incision, water separation, sprouting/fruit seeds, chronological path, four-footed pedestals, whale contour emergence, and domain camera route. Reprises change arrangements rather than replaying a fixed multi-scene sequence. Circle/arc/day-boundary vocabulary recurs noticeably and limits total invention, but fits the repeated creation-day structure.",
+    "photorealism": "Photographic ocean, land, vegetation, birds, wildlife and modest Adam/physical Creator inserts retain grounded textures and restrained charcoal/bone/rust/amber color. Local generated motion is softer than crisp vector typography; no major body collapse or scene reset was observed in the composite. Graphic angel/code and whale line art are intentional approved style choices; this category judges their material coherence rather than demanding a photograph.",
+    "composition": "Words consistently lead, with imagery behind and coded foreground paths/contours maintaining the film identity. Left/right negative space, arches, stair paths, circles and giant words provide useful variety. Some thin-line supporting detail is less visible at small viewing sizes; key words remain clear. The ending settles into a held final phrase as its geometry finishes, a calm close rather than a sustained blank.",
+    "continuity": "All nine planned media placements enter and exit coherently. Generated land, vegetation, whale and Adam finish into decoded poster holds without visible restart or aspect jump. No sustained unintended black gap, duplicate-image reset or abrupt broken camera jump appeared in the reviewed sequences. Angel glyph structures stay crisp because these passages use controlled image/graphic motion."
+  },
+  "timestampEvidence": [
+    {
+      "start": 0,
+      "end": 4,
+      "observation": "Meaningful motion starts immediately: opening rule/title formation and water contours. No long single-photo intro."
+    },
+    {
+      "start": 24,
+      "end": 31.5,
+      "observation": "LIGHT/COME FORTH incision and widening beam preserve word hierarchy and transition cleanly to brightness."
+    },
+    {
+      "start": 52.35,
+      "end": 67.3,
+      "observation": "Seraphim, firmament arch, ocean and flood lines share foreground graphics. Words remain in front through entry/exit."
+    },
+    {
+      "start": 82.45,
+      "end": 93.1,
+      "observation": "Receding water and ground typography keep a coherent camera and natural continuation into final still."
+    },
+    {
+      "start": 115.85,
+      "end": 125.65,
+      "observation": "Tree growth supports words on the quiet left; rooted coded strands bridge the video and surrounding typography."
+    },
+    {
+      "start": 142,
+      "end": 147.5,
+      "observation": "Camera traverses SIGNS, seasons, DAYS AND YEARS along the path with upright readable resting words."
+    },
+    {
+      "start": 161.05,
+      "end": 169.9,
+      "observation": "Crisp ophanim and orbit contours support heaven/earth lyric. Native-frame check confirms brief earth is present."
+    },
+    {
+      "start": 186.55,
+      "end": 194,
+      "observation": "Winged photo and flight rails support the lyric, then clear cleanly before whale formation."
+    },
+    {
+      "start": 194.8,
+      "end": 204.05,
+      "observation": "Organic strands cohere into whale as foreground words and shared wake lines remain active. No obvious rectangular cutaway or poster reset."
+    },
+    {
+      "start": 234.85,
+      "end": 244.05,
+      "observation": "Wildlife image supports separated branch-map words; coherent entry/exit."
+    },
+    {
+      "start": 246.45,
+      "end": 257.2,
+      "observation": "Adam forms modestly beside the physical Creator; HUMANKIND/IMAGE/LIKENESS foreground is legible and the footage exits without a reset."
+    },
+    {
+      "start": 257,
+      "end": 281.5,
+      "observation": "Reprise uses altered wing, animal, reptile, kind, good, humankind and likeness arrangements; not a repeated sequence of identical presets."
+    },
+    {
+      "start": 281.5,
+      "end": 291.7,
+      "observation": "FISH/BIRDS then CATTLE/EARTH/CRAWLS camera journey follows domain routes and pulls back without losing upright key words."
+    },
+    {
+      "start": 291.1,
+      "end": 304.733333,
+      "observation": "The final day phrase resolves into arcs and strata; final composition remains visible. Several seconds of calmer hold after geometric completion, not a missing ending."
+    }
+  ],
+  "nonblockingLimitations": [
+    {
+      "times": [
+        65.3,
+        65.9
+      ],
+      "detail": "MIGHTY SPAN has locally weaker contrast over the sunlit cloud. Full-resolution check remains readable; no required change."
+    },
+    {
+      "times": [
+        73,
+        78,
+        126,
+        136,
+        178,
+        184,
+        217,
+        222,
+        291.6,
+        304.733333
+      ],
+      "detail": "Recurring day-boundary arcs and longer held phrases are less inventive than the strongest sequences. They function as structural rests; no broad redesign is warranted."
+    },
+    {
+      "detail": "Generated 960x540 footage is somewhat softer than 1080p vector typography. Controlled scale, dark palette and active words make it usable."
+    }
+  ],
+  "referenceNomination": {
+    "start": 195.35,
+    "end": 203.5,
+    "strongestWindow": [
+      197.8,
+      201.8
+    ],
+    "title": "Organic whale contour coalescence with shared foreground wake",
+    "status": "agent-assessed; no user approval of this final composite claimed",
+    "principle": "Let generated organic strokes and coded strokes share color, background and directional movement, so the creature emerges inside the lyric composition rather than replacing it with a video rectangle.",
+    "caution": "Keep foreground words unobstructed and thicken essential contours for small-screen reuse. Do not copy the same whale sequence into unrelated stories."
+  },
+  "evidence": [
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/overview-sheet-00.jpg",
+      "sha256": "fc5affab1779af7164cac466ea5dc53ab714997831a039a9674793e896bfeda8",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/overview-sheet-01.jpg",
+      "sha256": "06c48fae27ea3f15cad77209a38678eccccc0afe0620f0a5ef70ffa47887db74",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/overview-sheet-02.jpg",
+      "sha256": "46a50fe75727c232d7c758ddfe2e781160beadca8fa040d664641fa6268c6264",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/overview-sheet-03.jpg",
+      "sha256": "83a595a9d176e052af6a8745b93c9c858206820b7a0a166c65ea1b9791174736",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/overview-sheet-04.jpg",
+      "sha256": "c6ab75e14756590a91cade13e711ede30292c0a58afab57d4e910b61d3ccbc35",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/overview-sheet-05.jpg",
+      "sha256": "70e27c34479857177ef12b429cfaa1bad04f58be7a0db179acd4bf17810e63e6",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/overview-sheet-06.jpg",
+      "sha256": "373855b0c344810bef289147bf1ea9b66ac2c1cbda37baeeca67a67cef2d9f1c",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/overview-sheet-07.jpg",
+      "sha256": "64733cff2b718657467a3be14c25a410a4da8d406621d9749865eef0ab1a9d0f",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/overview-sheet-08.jpg",
+      "sha256": "a46cdb1711bcf2eda40d6bfbd8306ca174c6f9965bef11d07036af5cbe457b0d",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/overview-sheet-09.jpg",
+      "sha256": "5619f6627d66a23497e0aff3e48322cc75e5ddfa5f58c02f5b41cc2bdfbb2eed",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/overview-sheet-10.jpg",
+      "sha256": "08e885ee4a6abc6bcf78eec9488a34ad86e9a53054aa128b0850578daf3ebe68",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/overview-sheet-11.jpg",
+      "sha256": "76ceea37b892ee6ec6f46d9e2d426b6f8469187e8b9f2cd9dc87f5de16a2cba0",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/overview-sheet-12.jpg",
+      "sha256": "c344b72b27757353e4440e6b3ca8866c8fc94183d4b5a11bfae238389f1dddb3",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/overview-sheet-13.jpg",
+      "sha256": "7754c59b5edd110b2fbfed92238b69d717e9ca8302e9c72d3c1398c93f098b6b",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/overview-sheet-14.jpg",
+      "sha256": "c0985d2944e495eaabd3b78c47c3a38fa7060a039444853298780e46fab1fe0c",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/overview-sheet-15.jpg",
+      "sha256": "f1d5bc8bb8658552559ac84726e5904c6e7866d9b5f76ea780f26c561c577c4d",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/overview-sheet-16.jpg",
+      "sha256": "639726a1d73113a14c99c19acbd4953ea8a94859227f4eb18d819b19a02bfc2a",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/overview-sheet-17.jpg",
+      "sha256": "eb8e3fe06df1657772d3b27bda1e8b4e9ff9e276005e3c7da14c09fe9b17002f",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/overview-sheet-18.jpg",
+      "sha256": "e8d11457136f911503303c8175a38a994ed65094a13808d13a4eb226c5a545ed",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/overview-sheet-19.jpg",
+      "sha256": "b91e4dd8a3dfba779b7d17844e8db6c45939b4d22af8ed48886a98114d56ae0a",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/overview-sheet-20.jpg",
+      "sha256": "37655b9d753ad9d78b2db40465ca533512f66debc965fd3c029d29c41b814760",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/opening-sheet-00.jpg",
+      "sha256": "3e75f6cddd6a86f8fa5fa90190c7ec3d74a37d227d0caa3f4ac7b2f003cc08a9",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/opening-sheet-01.jpg",
+      "sha256": "9c33b9f7304bde32e89fc85448d0d861d031dd757e1aac89d9d85fa1dc586c2a",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/first-light-sheet-00.jpg",
+      "sha256": "9ff73dfa3b4016bfb82fe4e82237e85af4e08ae4130bfbe441d0490915656f65",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/first-light-sheet-01.jpg",
+      "sha256": "bd8a7f69814dcdc6b4b619eb79e6f27977f3756e1b51a36ab44e17ef0237785c",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/first-light-sheet-02.jpg",
+      "sha256": "d919d56b72cda45acdab710bcd04fe9359c4639028e5466f7a6f31ccb7e9f2ff",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/seraphim-in-sheet-00.jpg",
+      "sha256": "6eef763fb833e97e454d5f8b1b2fdae7dcefec215ec9cf70083223111babdafd",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/seraphim-ocean-sheet-00.jpg",
+      "sha256": "9d44a8a0091b61991a2a4d9d40c6073d6b035f34340900475bbdb60a7fb3ecb9",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/ocean-out-sheet-00.jpg",
+      "sha256": "882ac35d66f303d0efbd605c63566450cf96cbf3fec44bc839dfd13a71184efe",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/land-in-sheet-00.jpg",
+      "sha256": "44589a295e20109177a276b31a3fc895fb279c5ab32fd7b206786c2ae11e588e",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/land-poster-sheet-00.jpg",
+      "sha256": "73fbbc2e6e22995fe72a3500fbd059ba3361749bebe8c4694722e1497b69d171",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/land-out-sheet-00.jpg",
+      "sha256": "1a266477780d684444c14bf43ebcd7b4f95b96b18b2fdf4830a0bc6f469eb5de",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/vegetation-in-sheet-00.jpg",
+      "sha256": "c3a5479f5d629f68c4b4d010a3e735f15e82c1d4dc174eace9b1a13224460d9e",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/vegetation-poster-sheet-00.jpg",
+      "sha256": "374d1c3e37f16fb8329ad9afbd957acb995fb2f735a3f67509cc98530d30596d",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/journey-time-sheet-00.jpg",
+      "sha256": "03e2fc3afc02a780d4f5814d89ec8ef92c394bd77000626d74d93e008cbf0ac8",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/journey-time-sheet-01.jpg",
+      "sha256": "ba8c512fb63eb55a19fd1f21c729670b299849367bd23e418639c6b1a77ec794",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/ophanim-in-sheet-00.jpg",
+      "sha256": "ff34f286efe2e9932dfa4f7537909a6826b62551bfb034fe1c1cdd2ad6df1120",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/ophanim-out-sheet-00.jpg",
+      "sha256": "bd09efb6cf438954280648d8201f31a440b4388c74ada1d110b7bc6e4fcaf6cb",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/winged-in-sheet-00.jpg",
+      "sha256": "c04336b1c3fbbb17e9c63a77f4a5c2b29c28a03a33d69af0d9dc0ae6dd6ad8f6",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/winged-out-sheet-00.jpg",
+      "sha256": "159494a7667781c0f28d6a70eb83325a6d1bc2180ea70591c3d6205d0a3f9f03",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/whale-in-sheet-00.jpg",
+      "sha256": "6204c002d4960bdae0db116ca33cf1f89ef7d1cfb318f897c37c6edf17ae36ba",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/whale-poster-sheet-00.jpg",
+      "sha256": "80cef3ce5df2125c888d775c4884a9831c7ef591de25df3efce1fbac73bf878b",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/wildlife-in-sheet-00.jpg",
+      "sha256": "1192acae4076f8b74e16848cd644828bc5bfabd6b9e542ead05b39a722abd753",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/wildlife-out-sheet-00.jpg",
+      "sha256": "71aefb2e6838cda1a3c5707108c8d9e53b41b5f57f27dc33bc571b1571e1dd66",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/adam-in-sheet-00.jpg",
+      "sha256": "7b54ce724b1ca82be4091167b7c6addadfc9ef47bb585079dace7dfd3028b380",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/adam-poster-sheet-00.jpg",
+      "sha256": "471a045da4c5647ed5b4aad6bf4e2978de45bc830dade57c41068adfbfd7127a",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/journey-domain-sheet-00.jpg",
+      "sha256": "f4caadb0f6171b94588c067b344f4cbf7f4dff0e81018a8472ae1f53ab7b7204",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/journey-domain-sheet-01.jpg",
+      "sha256": "6aff840d9cd5b3b3de53b1fcb16b4d074da9801e3ea97adc15a50f39888947d6",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/journey-domain-sheet-02.jpg",
+      "sha256": "27afe4fe25a90fcd543ddd6743db98bf8ddc2be9afb584e436e6e226fd5928c0",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/journey-domain-sheet-03.jpg",
+      "sha256": "6a88be6f8a69fc7d646266e39f663f3b44c22c9fd33eb4e927813b5835e61df5",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/ending-sheet-00.jpg",
+      "sha256": "8a6a08253e98a6a70ce8aaaba3208c71ab23b8fe37b4da92d096eddb8cff9215",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/ending-sheet-01.jpg",
+      "sha256": "cf8b0b5f4722226033eee8fc79c7ce4e5ad109450d4c2d206d821b8ba9a5b0aa",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/ending-sheet-02.jpg",
+      "sha256": "f3b335f657d542f3e7d43235ec464693b44fc48fea923603a34dfa7d539a4c2e",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/ending-sheet-03.jpg",
+      "sha256": "c8a03d33aa8e6611f746cbce203c825133f5d56c9da3296d18eee719bfaee395",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/ending-sheet-04.jpg",
+      "sha256": "fe5e2d496e59a44d98d895b08834ef380ad5b8fe4c843ca10979f3ac55bdcba8",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/target-earth-contact.jpg",
+      "sha256": "eebeedc6e1e8d23c2777a187ee527937a6e2fa7ed30c4abe227947ceb65fedf4",
+      "visuallyInspected": true
+    },
+    {
+      "path": "/Volumes/DATA/ArkRender/genesis1/visual-v1/contrast-65.55.jpg",
+      "sha256": "b127fe7b17587cb28a847596dfa83d38400d4cb11625844f128819a197d550ea",
+      "visuallyInspected": true
+    }
+  ],
+  "limitations": [
+    "This is a full-progression sampled-frame visual review, not a claim to have watched or heard every native frame in real time.",
+    "Contact-sheet timestamps from fps extraction are nominal sample labels; native30fps targeted extraction was used to resolve the short-word ambiguity.",
+    "No word-level singing synchronization, source-audio correctness, completeness by OCR, or whole-gauntlet pass is asserted by this visual report.",
+    "Black unused cells in partial contact sheets are layout padding, not encoded video frames."
+  ],
+  "projectChanged": false,
+  "publicationAuthorizedByThisReport": false
+}

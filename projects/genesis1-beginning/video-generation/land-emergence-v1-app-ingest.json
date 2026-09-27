@@ -1,0 +1,37 @@
+{
+  "duplicate": false,
+  "video": {
+    "id": "vid-20260927-e0aa88b1",
+    "project": "Genesis1 - The Beginning",
+    "title": "Genesis 1 - Land Emerges (source preview)",
+    "version": "Source insert v1",
+    "sourceAgent": "Codex",
+    "sourceMachine": "OmiPC local GPU / Mac mini finishing",
+    "sourcePath": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/land-emergence-v1-motion.mp4",
+    "ingestedFrom": "C:\\Users\\sjfis\\Videos\\Genesis1\\land-emergence-v1-d24c0689cd23.mp4",
+    "notes": "GENERATION SOURCE PREVIEW ONLY, not the finished Genesis1 lyric film. Silent 7.291667-second local MiniMax H3 insert from new GPT Image anchors. Shallow water recedes to reveal basalt terrain. Native 175 generated frames at 24fps. No retiming, interpolation or reversal. Intended final film treatment adds active foreground lyrics and/or authored graphic motion; this standalone source preview intentionally lacks those layers. Agent reviewed chronological6fps decoded frames and endpoints; source acceptance does not certify the final composite. Pending Shane review; no user approval claimed. SHA256 d24c0689cd23fb5bbba0b22fac8812696f26450def02bf3ad5dd48998485d7d7.",
+    "supersedes": null,
+    "supersededBy": null,
+    "md5": "e0aa88b166e6a4d8a245408c251b8c9c",
+    "sha256": "d24c0689cd23fb5bbba0b22fac8812696f26450def02bf3ad5dd48998485d7d7",
+    "bytes": 3031415,
+    "mimeType": "video/mp4",
+    "file": "media/videos/genesis1-the-beginning/vid-20260927-e0aa88b1/video.mp4",
+    "thumbnail": {
+      "file": "media/videos/genesis1-the-beginning/vid-20260927-e0aa88b1/thumbnail.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "probe": null,
+    "status": "pending_review",
+    "ingestedAt": "2026-09-27T11:31:35.481Z",
+    "updatedAt": "2026-09-27T11:31:35.481Z",
+    "history": [
+      {
+        "at": "2026-09-27T11:31:35.481Z",
+        "status": "pending_review",
+        "note": "GENERATION SOURCE PREVIEW ONLY, not the finished Genesis1 lyric film. Silent 7.291667-second local MiniMax H3 insert from new GPT Image anchors. Shallow water recedes to reveal basalt terrain. Native 175 generated frames at 24fps. No retiming, interpolation or reversal. Intended final film treatment adds active foreground lyrics and/or authored graphic motion; this standalone source preview intentionally lacks those layers. Agent reviewed chronological6fps decoded frames and endpoints; source acceptance does not certify the final composite. Pending Shane review; no user approval claimed. SHA256 d24c0689cd23fb5bbba0b22fac8812696f26450def02bf3ad5dd48998485d7d7.",
+        "by": "Codex"
+      }
+    ]
+  }
+}

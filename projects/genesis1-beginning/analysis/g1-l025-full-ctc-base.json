@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 91.35,
+    "duration": 4.56,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "He named the dry ground Earth,",
+  "approvedLyrics": "He named the dry ground Earth,",
+  "words": [
+    {
+      "id": "w_39e45ec24f5ed754",
+      "text": "He",
+      "start": 91.550881,
+      "end": 91.691498,
+      "phraseId": "g1-l025",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.606073775137216,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l025-w01"
+    },
+    {
+      "id": "w_109e40fd731d71d2",
+      "text": "named",
+      "start": 93.25837,
+      "end": 93.780661,
+      "phraseId": "g1-l025",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.11290354366327848,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l025-w02"
+    },
+    {
+      "id": "w_9ee2e4452fa307a2",
+      "text": "the",
+      "start": 93.820837,
+      "end": 93.901189,
+      "phraseId": "g1-l025",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.5611527622483025,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l025-w03"
+    },
+    {
+      "id": "w_efbee36762da233c",
+      "text": "dry",
+      "start": 93.941366,
+      "end": 94.222599,
+      "phraseId": "g1-l025",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.8279174421238733,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l025-w04"
+    },
+    {
+      "id": "w_47610e11cc21ce3a",
+      "text": "ground",
+      "start": 94.42348,
+      "end": 94.825242,
+      "phraseId": "g1-l025",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.8053431476522831,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l025-w05"
+    },
+    {
+      "id": "w_c1f1de0c79d8fa19",
+      "text": "Earth,",
+      "start": 94.985947,
+      "end": 95.829648,
+      "phraseId": "g1-l025",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.06201636486251737,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l025-w06"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "He named the dry ground Earth,",
+      "wordIds": [
+        "w_39e45ec24f5ed754",
+        "w_109e40fd731d71d2",
+        "w_9ee2e4452fa307a2",
+        "w_efbee36762da233c",
+        "w_47610e11cc21ce3a",
+        "w_c1f1de0c79d8fa19"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l025-full-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l025-full-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l025-full-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 1.098722250200808,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

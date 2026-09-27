@@ -1,0 +1,75 @@
+{
+  "scope": "Generated-video shot requests only; no scene placement, word timing or composition authored here.",
+  "palette": "charcoal, bone, rust, amber; photoreal vegetation may retain muted natural greens",
+  "shots": [
+    {
+      "id": "whale-line",
+      "kind": "organic line art, not code glyphs",
+      "requestedFrames": 172,
+      "fps": 24,
+      "keyframes": [
+        "assets/whale-line-start.png",
+        "assets/whale-line-end.png"
+      ],
+      "brief": "Sparse bone filaments cohere into one proportioned whale on the right; charcoal empty left for active foreground type. Stable beginning and ending."
+    },
+    {
+      "id": "ophanim-gentle",
+      "kind": "occasional code-character celestial motif",
+      "requestedFrames": 124,
+      "fps": 24,
+      "keyframes": [
+        "assets/ophanim-subdued.png"
+      ],
+      "brief": "Tiny independent rotations, constant ivory brightness and distinct glyphs; use first and last same anchor after first-only output failed style/brightness."
+    },
+    {
+      "id": "seraphim-breath",
+      "kind": "occasional code-character celestial motif",
+      "requestedFrames": 124,
+      "fps": 24,
+      "keyframes": [
+        "assets/seraphim-subdued.png"
+      ],
+      "brief": "Six coherent wings gently breathe with crisp glyph gaps; same first and last anchor."
+    },
+    {
+      "id": "land-emergence",
+      "kind": "regular photoreal creation landscape",
+      "requestedFrames": 172,
+      "fps": 24,
+      "keyframes": [
+        "assets/land-emergence-start.png",
+        "assets/land-emergence-end.png"
+      ],
+      "brief": "Same primordial coastline camera and atmosphere; water recedes as rugged dry ground emerges."
+    },
+    {
+      "id": "vegetation",
+      "kind": "regular photoreal creation landscape",
+      "requestedFrames": 172,
+      "fps": 24,
+      "keyframes": [
+        "assets/vegetation-start.png",
+        "assets/vegetation-end.png"
+      ],
+      "brief": "Same barren valley becomes grasses and fruiting trees; natural organic growth, no fantasy particle transition."
+    },
+    {
+      "id": "adam-formation",
+      "kind": "explicitly reserved photoreal source",
+      "nativeFrames": 226,
+      "fps": 24,
+      "durationSeconds": 9.416666666666666,
+      "readyAsset": "assets/adam-formation-motion.mp4",
+      "brief": "Exact accepted reserved clip copied unchanged; no regeneration or grade needed."
+    }
+  ],
+  "sharedRequirements": [
+    "No canonical lyric text baked into generated video.",
+    "Every completed clip receives actual decoded visual review and exact native count/duration.",
+    "Every use in the film requires active authored foreground words or meaningful graphics, matched strokes and masks.",
+    "At most two bounded attempts per concrete shot defect, then report a fallback.",
+    "Never integrate rejected assets."
+  ]
+}

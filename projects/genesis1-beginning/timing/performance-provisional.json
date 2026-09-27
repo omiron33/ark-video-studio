@@ -1,0 +1,5425 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "source": {
+    "audio": "../intake/source.mp3",
+    "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2",
+    "duration": 304.72,
+    "lyrics": "../intake/lyrics.txt",
+    "lyricsSha256": "d9a699733416732b13fcbeecf0d20627577e18929848b054558d098b1e11cbd9"
+  },
+  "status": "provisional_performed_sequence",
+  "words": [
+    {
+      "id": "g1-l001-w01",
+      "text": "Before",
+      "phraseId": "g1-l001",
+      "sourcePhraseId": "g1-l001"
+    },
+    {
+      "id": "g1-l001-w02",
+      "text": "the",
+      "phraseId": "g1-l001",
+      "sourcePhraseId": "g1-l001"
+    },
+    {
+      "id": "g1-l001-w03",
+      "text": "first",
+      "phraseId": "g1-l001",
+      "sourcePhraseId": "g1-l001"
+    },
+    {
+      "id": "g1-l001-w04",
+      "text": "count",
+      "phraseId": "g1-l001",
+      "sourcePhraseId": "g1-l001"
+    },
+    {
+      "id": "g1-l001-w05",
+      "text": "of",
+      "phraseId": "g1-l001",
+      "sourcePhraseId": "g1-l001"
+    },
+    {
+      "id": "g1-l001-w06",
+      "text": "days,",
+      "phraseId": "g1-l001",
+      "sourcePhraseId": "g1-l001"
+    },
+    {
+      "id": "g1-l002-w01",
+      "text": "God",
+      "phraseId": "g1-l002",
+      "sourcePhraseId": "g1-l002"
+    },
+    {
+      "id": "g1-l002-w02",
+      "text": "brought",
+      "phraseId": "g1-l002",
+      "sourcePhraseId": "g1-l002"
+    },
+    {
+      "id": "g1-l002-w03",
+      "text": "heaven",
+      "phraseId": "g1-l002",
+      "sourcePhraseId": "g1-l002"
+    },
+    {
+      "id": "g1-l002-w04",
+      "text": "and",
+      "phraseId": "g1-l002",
+      "sourcePhraseId": "g1-l002"
+    },
+    {
+      "id": "g1-l002-w05",
+      "text": "earth",
+      "phraseId": "g1-l002",
+      "sourcePhraseId": "g1-l002"
+    },
+    {
+      "id": "g1-l002-w06",
+      "text": "into",
+      "phraseId": "g1-l002",
+      "sourcePhraseId": "g1-l002"
+    },
+    {
+      "id": "g1-l002-w07",
+      "text": "being.",
+      "phraseId": "g1-l002",
+      "sourcePhraseId": "g1-l002"
+    },
+    {
+      "id": "g1-l003-w01",
+      "text": "Earth",
+      "phraseId": "g1-l003",
+      "sourcePhraseId": "g1-l003"
+    },
+    {
+      "id": "g1-l003-w02",
+      "text": "stood",
+      "phraseId": "g1-l003",
+      "sourcePhraseId": "g1-l003"
+    },
+    {
+      "id": "g1-l003-w03",
+      "text": "bare,",
+      "phraseId": "g1-l003",
+      "sourcePhraseId": "g1-l003"
+    },
+    {
+      "id": "g1-l003-w04",
+      "text": "unfinished;",
+      "phraseId": "g1-l003",
+      "sourcePhraseId": "g1-l003"
+    },
+    {
+      "id": "g1-l004-w01",
+      "text": "blackness",
+      "phraseId": "g1-l004",
+      "sourcePhraseId": "g1-l004"
+    },
+    {
+      "id": "g1-l004-w02",
+      "text": "covered",
+      "phraseId": "g1-l004",
+      "sourcePhraseId": "g1-l004"
+    },
+    {
+      "id": "g1-l004-w03",
+      "text": "the",
+      "phraseId": "g1-l004",
+      "sourcePhraseId": "g1-l004"
+    },
+    {
+      "id": "g1-l004-w04",
+      "text": "deep.",
+      "phraseId": "g1-l004",
+      "sourcePhraseId": "g1-l004"
+    },
+    {
+      "id": "g1-l005-w01",
+      "text": "Across",
+      "phraseId": "g1-l005",
+      "sourcePhraseId": "g1-l005"
+    },
+    {
+      "id": "g1-l005-w02",
+      "text": "the",
+      "phraseId": "g1-l005",
+      "sourcePhraseId": "g1-l005"
+    },
+    {
+      "id": "g1-l005-w03",
+      "text": "water",
+      "phraseId": "g1-l005",
+      "sourcePhraseId": "g1-l005"
+    },
+    {
+      "id": "g1-l005-w04",
+      "text": "moved",
+      "phraseId": "g1-l005",
+      "sourcePhraseId": "g1-l005"
+    },
+    {
+      "id": "g1-l005-w05",
+      "text": "the",
+      "phraseId": "g1-l005",
+      "sourcePhraseId": "g1-l005"
+    },
+    {
+      "id": "g1-l005-w06",
+      "text": "Spirit",
+      "phraseId": "g1-l005",
+      "sourcePhraseId": "g1-l005"
+    },
+    {
+      "id": "g1-l005-w07",
+      "text": "of",
+      "phraseId": "g1-l005",
+      "sourcePhraseId": "g1-l005"
+    },
+    {
+      "id": "g1-l005-w08",
+      "text": "God.",
+      "phraseId": "g1-l005",
+      "sourcePhraseId": "g1-l005"
+    },
+    {
+      "id": "g1-l006-w01",
+      "text": "Then",
+      "phraseId": "g1-l006",
+      "sourcePhraseId": "g1-l006"
+    },
+    {
+      "id": "g1-l006-w02",
+      "text": "God",
+      "phraseId": "g1-l006",
+      "sourcePhraseId": "g1-l006"
+    },
+    {
+      "id": "g1-l006-w03",
+      "text": "called,",
+      "phraseId": "g1-l006",
+      "sourcePhraseId": "g1-l006"
+    },
+    {
+      "id": "g1-l006-w04",
+      "text": "‘Light,",
+      "phraseId": "g1-l006",
+      "sourcePhraseId": "g1-l006"
+    },
+    {
+      "id": "g1-l006-w05",
+      "text": "come",
+      "phraseId": "g1-l006",
+      "sourcePhraseId": "g1-l006"
+    },
+    {
+      "id": "g1-l006-w06",
+      "text": "forth!’",
+      "phraseId": "g1-l006",
+      "sourcePhraseId": "g1-l006"
+    },
+    {
+      "id": "g1-l007-w01",
+      "text": "Brightness",
+      "phraseId": "g1-l007",
+      "sourcePhraseId": "g1-l007"
+    },
+    {
+      "id": "g1-l007-w02",
+      "text": "answered.",
+      "phraseId": "g1-l007",
+      "sourcePhraseId": "g1-l007"
+    },
+    {
+      "id": "g1-l008-w01",
+      "text": "He",
+      "phraseId": "g1-l008",
+      "sourcePhraseId": "g1-l008"
+    },
+    {
+      "id": "g1-l008-w02",
+      "text": "looked",
+      "phraseId": "g1-l008",
+      "sourcePhraseId": "g1-l008"
+    },
+    {
+      "id": "g1-l008-w03",
+      "text": "on",
+      "phraseId": "g1-l008",
+      "sourcePhraseId": "g1-l008"
+    },
+    {
+      "id": "g1-l008-w04",
+      "text": "the",
+      "phraseId": "g1-l008",
+      "sourcePhraseId": "g1-l008"
+    },
+    {
+      "id": "g1-l008-w05",
+      "text": "light:",
+      "phraseId": "g1-l008",
+      "sourcePhraseId": "g1-l008"
+    },
+    {
+      "id": "g1-l008-w06",
+      "text": "good.",
+      "phraseId": "g1-l008",
+      "sourcePhraseId": "g1-l008"
+    },
+    {
+      "id": "g1-l009-w01",
+      "text": "He",
+      "phraseId": "g1-l009",
+      "sourcePhraseId": "g1-l009"
+    },
+    {
+      "id": "g1-l009-w02",
+      "text": "cut",
+      "phraseId": "g1-l009",
+      "sourcePhraseId": "g1-l009"
+    },
+    {
+      "id": "g1-l009-w03",
+      "text": "a",
+      "phraseId": "g1-l009",
+      "sourcePhraseId": "g1-l009"
+    },
+    {
+      "id": "g1-l009-w04",
+      "text": "clear",
+      "phraseId": "g1-l009",
+      "sourcePhraseId": "g1-l009"
+    },
+    {
+      "id": "g1-l009-w05",
+      "text": "line",
+      "phraseId": "g1-l009",
+      "sourcePhraseId": "g1-l009"
+    },
+    {
+      "id": "g1-l009-w06",
+      "text": "between",
+      "phraseId": "g1-l009",
+      "sourcePhraseId": "g1-l009"
+    },
+    {
+      "id": "g1-l009-w07",
+      "text": "it",
+      "phraseId": "g1-l009",
+      "sourcePhraseId": "g1-l009"
+    },
+    {
+      "id": "g1-l009-w08",
+      "text": "and",
+      "phraseId": "g1-l009",
+      "sourcePhraseId": "g1-l009"
+    },
+    {
+      "id": "g1-l009-w09",
+      "text": "darkness.",
+      "phraseId": "g1-l009",
+      "sourcePhraseId": "g1-l009"
+    },
+    {
+      "id": "g1-l010-w01",
+      "text": "Day",
+      "phraseId": "g1-l010",
+      "sourcePhraseId": "g1-l010"
+    },
+    {
+      "id": "g1-l010-w02",
+      "text": "was",
+      "phraseId": "g1-l010",
+      "sourcePhraseId": "g1-l010"
+    },
+    {
+      "id": "g1-l010-w03",
+      "text": "the",
+      "phraseId": "g1-l010",
+      "sourcePhraseId": "g1-l010"
+    },
+    {
+      "id": "g1-l010-w04",
+      "text": "name",
+      "phraseId": "g1-l010",
+      "sourcePhraseId": "g1-l010"
+    },
+    {
+      "id": "g1-l010-w05",
+      "text": "He",
+      "phraseId": "g1-l010",
+      "sourcePhraseId": "g1-l010"
+    },
+    {
+      "id": "g1-l010-w06",
+      "text": "gave",
+      "phraseId": "g1-l010",
+      "sourcePhraseId": "g1-l010"
+    },
+    {
+      "id": "g1-l010-w07",
+      "text": "the",
+      "phraseId": "g1-l010",
+      "sourcePhraseId": "g1-l010"
+    },
+    {
+      "id": "g1-l010-w08",
+      "text": "light;",
+      "phraseId": "g1-l010",
+      "sourcePhraseId": "g1-l010"
+    },
+    {
+      "id": "g1-l011-w01",
+      "text": "Night,",
+      "phraseId": "g1-l011",
+      "sourcePhraseId": "g1-l011"
+    },
+    {
+      "id": "g1-l011-w02",
+      "text": "the",
+      "phraseId": "g1-l011",
+      "sourcePhraseId": "g1-l011"
+    },
+    {
+      "id": "g1-l011-w03",
+      "text": "name",
+      "phraseId": "g1-l011",
+      "sourcePhraseId": "g1-l011"
+    },
+    {
+      "id": "g1-l011-w04",
+      "text": "He",
+      "phraseId": "g1-l011",
+      "sourcePhraseId": "g1-l011"
+    },
+    {
+      "id": "g1-l011-w05",
+      "text": "gave",
+      "phraseId": "g1-l011",
+      "sourcePhraseId": "g1-l011"
+    },
+    {
+      "id": "g1-l011-w06",
+      "text": "the",
+      "phraseId": "g1-l011",
+      "sourcePhraseId": "g1-l011"
+    },
+    {
+      "id": "g1-l011-w07",
+      "text": "dark.",
+      "phraseId": "g1-l011",
+      "sourcePhraseId": "g1-l011"
+    },
+    {
+      "id": "g1-l012-w01",
+      "text": "Dusk.",
+      "phraseId": "g1-l012",
+      "sourcePhraseId": "g1-l012"
+    },
+    {
+      "id": "g1-l012-w02",
+      "text": "Dawn.",
+      "phraseId": "g1-l012",
+      "sourcePhraseId": "g1-l012"
+    },
+    {
+      "id": "g1-l012-w03",
+      "text": "The",
+      "phraseId": "g1-l012",
+      "sourcePhraseId": "g1-l012"
+    },
+    {
+      "id": "g1-l012-w04",
+      "text": "first",
+      "phraseId": "g1-l012",
+      "sourcePhraseId": "g1-l012"
+    },
+    {
+      "id": "g1-l012-w05",
+      "text": "day.",
+      "phraseId": "g1-l012",
+      "sourcePhraseId": "g1-l012"
+    },
+    {
+      "id": "g1-l013-w01",
+      "text": "God",
+      "phraseId": "g1-l013",
+      "sourcePhraseId": "g1-l013"
+    },
+    {
+      "id": "g1-l013-w02",
+      "text": "spoke:",
+      "phraseId": "g1-l013",
+      "sourcePhraseId": "g1-l013"
+    },
+    {
+      "id": "g1-l013-w03",
+      "text": "‘A",
+      "phraseId": "g1-l013",
+      "sourcePhraseId": "g1-l013"
+    },
+    {
+      "id": "g1-l013-w04",
+      "text": "firmament",
+      "phraseId": "g1-l013",
+      "sourcePhraseId": "g1-l013"
+    },
+    {
+      "id": "g1-l013-w05",
+      "text": "amid",
+      "phraseId": "g1-l013",
+      "sourcePhraseId": "g1-l013"
+    },
+    {
+      "id": "g1-l013-w06",
+      "text": "the",
+      "phraseId": "g1-l013",
+      "sourcePhraseId": "g1-l013"
+    },
+    {
+      "id": "g1-l013-w07",
+      "text": "waters!",
+      "phraseId": "g1-l013",
+      "sourcePhraseId": "g1-l013"
+    },
+    {
+      "id": "g1-l014-w01",
+      "text": "Let",
+      "phraseId": "g1-l014",
+      "sourcePhraseId": "g1-l014"
+    },
+    {
+      "id": "g1-l014-w02",
+      "text": "water",
+      "phraseId": "g1-l014",
+      "sourcePhraseId": "g1-l014"
+    },
+    {
+      "id": "g1-l014-w03",
+      "text": "part",
+      "phraseId": "g1-l014",
+      "sourcePhraseId": "g1-l014"
+    },
+    {
+      "id": "g1-l014-w04",
+      "text": "from",
+      "phraseId": "g1-l014",
+      "sourcePhraseId": "g1-l014"
+    },
+    {
+      "id": "g1-l014-w05",
+      "text": "water!’",
+      "phraseId": "g1-l014",
+      "sourcePhraseId": "g1-l014"
+    },
+    {
+      "id": "g1-l015-w01",
+      "text": "His",
+      "phraseId": "g1-l015",
+      "sourcePhraseId": "g1-l015"
+    },
+    {
+      "id": "g1-l015-w02",
+      "text": "word",
+      "phraseId": "g1-l015",
+      "sourcePhraseId": "g1-l015"
+    },
+    {
+      "id": "g1-l015-w03",
+      "text": "took",
+      "phraseId": "g1-l015",
+      "sourcePhraseId": "g1-l015"
+    },
+    {
+      "id": "g1-l015-w04",
+      "text": "hold.",
+      "phraseId": "g1-l015",
+      "sourcePhraseId": "g1-l015"
+    },
+    {
+      "id": "g1-l016-w01",
+      "text": "He",
+      "phraseId": "g1-l016",
+      "sourcePhraseId": "g1-l016"
+    },
+    {
+      "id": "g1-l016-w02",
+      "text": "raised",
+      "phraseId": "g1-l016",
+      "sourcePhraseId": "g1-l016"
+    },
+    {
+      "id": "g1-l016-w03",
+      "text": "that",
+      "phraseId": "g1-l016",
+      "sourcePhraseId": "g1-l016"
+    },
+    {
+      "id": "g1-l016-w04",
+      "text": "mighty",
+      "phraseId": "g1-l016",
+      "sourcePhraseId": "g1-l016"
+    },
+    {
+      "id": "g1-l016-w05",
+      "text": "span;",
+      "phraseId": "g1-l016",
+      "sourcePhraseId": "g1-l016"
+    },
+    {
+      "id": "g1-l017-w01",
+      "text": "flood",
+      "phraseId": "g1-l017",
+      "sourcePhraseId": "g1-l017"
+    },
+    {
+      "id": "g1-l017-w02",
+      "text": "beneath",
+      "phraseId": "g1-l017",
+      "sourcePhraseId": "g1-l017"
+    },
+    {
+      "id": "g1-l017-w03",
+      "text": "it,",
+      "phraseId": "g1-l017",
+      "sourcePhraseId": "g1-l017"
+    },
+    {
+      "id": "g1-l018-w01",
+      "text": "flood",
+      "phraseId": "g1-l018",
+      "sourcePhraseId": "g1-l018"
+    },
+    {
+      "id": "g1-l018-w02",
+      "text": "above",
+      "phraseId": "g1-l018",
+      "sourcePhraseId": "g1-l018"
+    },
+    {
+      "id": "g1-l018-w03",
+      "text": "it.",
+      "phraseId": "g1-l018",
+      "sourcePhraseId": "g1-l018"
+    },
+    {
+      "id": "g1-l019-w01",
+      "text": "He",
+      "phraseId": "g1-l019",
+      "sourcePhraseId": "g1-l019"
+    },
+    {
+      "id": "g1-l019-w02",
+      "text": "called",
+      "phraseId": "g1-l019",
+      "sourcePhraseId": "g1-l019"
+    },
+    {
+      "id": "g1-l019-w03",
+      "text": "the",
+      "phraseId": "g1-l019",
+      "sourcePhraseId": "g1-l019"
+    },
+    {
+      "id": "g1-l019-w04",
+      "text": "firmament",
+      "phraseId": "g1-l019",
+      "sourcePhraseId": "g1-l019"
+    },
+    {
+      "id": "g1-l019-w05",
+      "text": "Heaven.",
+      "phraseId": "g1-l019",
+      "sourcePhraseId": "g1-l019"
+    },
+    {
+      "id": "g1-l020-w01",
+      "text": "He",
+      "phraseId": "g1-l020",
+      "sourcePhraseId": "g1-l020"
+    },
+    {
+      "id": "g1-l020-w02",
+      "text": "looked",
+      "phraseId": "g1-l020",
+      "sourcePhraseId": "g1-l020"
+    },
+    {
+      "id": "g1-l020-w03",
+      "text": "on",
+      "phraseId": "g1-l020",
+      "sourcePhraseId": "g1-l020"
+    },
+    {
+      "id": "g1-l020-w04",
+      "text": "it:",
+      "phraseId": "g1-l020",
+      "sourcePhraseId": "g1-l020"
+    },
+    {
+      "id": "g1-l020-w05",
+      "text": "good.",
+      "phraseId": "g1-l020",
+      "sourcePhraseId": "g1-l020"
+    },
+    {
+      "id": "g1-l021-w01",
+      "text": "Dusk.",
+      "phraseId": "g1-l021",
+      "sourcePhraseId": "g1-l021"
+    },
+    {
+      "id": "g1-l021-w02",
+      "text": "Dawn.",
+      "phraseId": "g1-l021",
+      "sourcePhraseId": "g1-l021"
+    },
+    {
+      "id": "g1-l021-w03",
+      "text": "The",
+      "phraseId": "g1-l021",
+      "sourcePhraseId": "g1-l021"
+    },
+    {
+      "id": "g1-l021-w04",
+      "text": "second",
+      "phraseId": "g1-l021",
+      "sourcePhraseId": "g1-l021"
+    },
+    {
+      "id": "g1-l021-w05",
+      "text": "day.",
+      "phraseId": "g1-l021",
+      "sourcePhraseId": "g1-l021"
+    },
+    {
+      "id": "g1-l022-w01",
+      "text": "‘Waters",
+      "phraseId": "g1-l022",
+      "sourcePhraseId": "g1-l022"
+    },
+    {
+      "id": "g1-l022-w02",
+      "text": "below",
+      "phraseId": "g1-l022",
+      "sourcePhraseId": "g1-l022"
+    },
+    {
+      "id": "g1-l022-w03",
+      "text": "Heaven,",
+      "phraseId": "g1-l022",
+      "sourcePhraseId": "g1-l022"
+    },
+    {
+      "id": "g1-l022-w04",
+      "text": "run",
+      "phraseId": "g1-l022",
+      "sourcePhraseId": "g1-l022"
+    },
+    {
+      "id": "g1-l022-w05",
+      "text": "to",
+      "phraseId": "g1-l022",
+      "sourcePhraseId": "g1-l022"
+    },
+    {
+      "id": "g1-l022-w06",
+      "text": "one",
+      "phraseId": "g1-l022",
+      "sourcePhraseId": "g1-l022"
+    },
+    {
+      "id": "g1-l022-w07",
+      "text": "place;",
+      "phraseId": "g1-l022",
+      "sourcePhraseId": "g1-l022"
+    },
+    {
+      "id": "g1-l023-w01",
+      "text": "let",
+      "phraseId": "g1-l023",
+      "sourcePhraseId": "g1-l023"
+    },
+    {
+      "id": "g1-l023-w02",
+      "text": "dry",
+      "phraseId": "g1-l023",
+      "sourcePhraseId": "g1-l023"
+    },
+    {
+      "id": "g1-l023-w03",
+      "text": "ground",
+      "phraseId": "g1-l023",
+      "sourcePhraseId": "g1-l023"
+    },
+    {
+      "id": "g1-l023-w04",
+      "text": "show!’",
+      "phraseId": "g1-l023",
+      "sourcePhraseId": "g1-l023"
+    },
+    {
+      "id": "g1-l024-w01",
+      "text": "The",
+      "phraseId": "g1-l024",
+      "sourcePhraseId": "g1-l024"
+    },
+    {
+      "id": "g1-l024-w02",
+      "text": "waters",
+      "phraseId": "g1-l024",
+      "sourcePhraseId": "g1-l024"
+    },
+    {
+      "id": "g1-l024-w03",
+      "text": "gathered.",
+      "phraseId": "g1-l024",
+      "sourcePhraseId": "g1-l024"
+    },
+    {
+      "id": "g1-l024-w04",
+      "text": "Land",
+      "phraseId": "g1-l024",
+      "sourcePhraseId": "g1-l024"
+    },
+    {
+      "id": "g1-l024-w05",
+      "text": "came",
+      "phraseId": "g1-l024",
+      "sourcePhraseId": "g1-l024"
+    },
+    {
+      "id": "g1-l024-w06",
+      "text": "clear.",
+      "phraseId": "g1-l024",
+      "sourcePhraseId": "g1-l024"
+    },
+    {
+      "id": "g1-l025-w01",
+      "text": "He",
+      "phraseId": "g1-l025",
+      "sourcePhraseId": "g1-l025"
+    },
+    {
+      "id": "g1-l025-w02",
+      "text": "named",
+      "phraseId": "g1-l025",
+      "sourcePhraseId": "g1-l025"
+    },
+    {
+      "id": "g1-l025-w03",
+      "text": "the",
+      "phraseId": "g1-l025",
+      "sourcePhraseId": "g1-l025"
+    },
+    {
+      "id": "g1-l025-w04",
+      "text": "dry",
+      "phraseId": "g1-l025",
+      "sourcePhraseId": "g1-l025"
+    },
+    {
+      "id": "g1-l025-w05",
+      "text": "ground",
+      "phraseId": "g1-l025",
+      "sourcePhraseId": "g1-l025"
+    },
+    {
+      "id": "g1-l025-w06",
+      "text": "Earth,",
+      "phraseId": "g1-l025",
+      "sourcePhraseId": "g1-l025"
+    },
+    {
+      "id": "g1-l026-w01",
+      "text": "the",
+      "phraseId": "g1-l026",
+      "sourcePhraseId": "g1-l026"
+    },
+    {
+      "id": "g1-l026-w02",
+      "text": "gathered",
+      "phraseId": "g1-l026",
+      "sourcePhraseId": "g1-l026"
+    },
+    {
+      "id": "g1-l026-w03",
+      "text": "waters",
+      "phraseId": "g1-l026",
+      "sourcePhraseId": "g1-l026"
+    },
+    {
+      "id": "g1-l026-w04",
+      "text": "Seas.",
+      "phraseId": "g1-l026",
+      "sourcePhraseId": "g1-l026"
+    },
+    {
+      "id": "g1-l027-w01",
+      "text": "He",
+      "phraseId": "g1-l027",
+      "sourcePhraseId": "g1-l027"
+    },
+    {
+      "id": "g1-l027-w02",
+      "text": "looked",
+      "phraseId": "g1-l027",
+      "sourcePhraseId": "g1-l027"
+    },
+    {
+      "id": "g1-l027-w03",
+      "text": "on",
+      "phraseId": "g1-l027",
+      "sourcePhraseId": "g1-l027"
+    },
+    {
+      "id": "g1-l027-w04",
+      "text": "them:",
+      "phraseId": "g1-l027",
+      "sourcePhraseId": "g1-l027"
+    },
+    {
+      "id": "g1-l027-w05",
+      "text": "good.",
+      "phraseId": "g1-l027",
+      "sourcePhraseId": "g1-l027"
+    },
+    {
+      "id": "g1-l028-w01",
+      "text": "‘Ground,",
+      "phraseId": "g1-l028",
+      "sourcePhraseId": "g1-l028"
+    },
+    {
+      "id": "g1-l028-w02",
+      "text": "send",
+      "phraseId": "g1-l028",
+      "sourcePhraseId": "g1-l028"
+    },
+    {
+      "id": "g1-l028-w03",
+      "text": "up",
+      "phraseId": "g1-l028",
+      "sourcePhraseId": "g1-l028"
+    },
+    {
+      "id": "g1-l028-w04",
+      "text": "seed-bearing",
+      "phraseId": "g1-l028",
+      "sourcePhraseId": "g1-l028"
+    },
+    {
+      "id": "g1-l028-w05",
+      "text": "grass",
+      "phraseId": "g1-l028",
+      "sourcePhraseId": "g1-l028"
+    },
+    {
+      "id": "g1-l029-w01",
+      "text": "in",
+      "phraseId": "g1-l029",
+      "sourcePhraseId": "g1-l029"
+    },
+    {
+      "id": "g1-l029-w02",
+      "text": "kind",
+      "phraseId": "g1-l029",
+      "sourcePhraseId": "g1-l029"
+    },
+    {
+      "id": "g1-l029-w03",
+      "text": "and",
+      "phraseId": "g1-l029",
+      "sourcePhraseId": "g1-l029"
+    },
+    {
+      "id": "g1-l029-w04",
+      "text": "likeness!",
+      "phraseId": "g1-l029",
+      "sourcePhraseId": "g1-l029"
+    },
+    {
+      "id": "g1-l030-w01",
+      "text": "Trees,",
+      "phraseId": "g1-l030",
+      "sourcePhraseId": "g1-l030"
+    },
+    {
+      "id": "g1-l030-w02",
+      "text": "bear",
+      "phraseId": "g1-l030",
+      "sourcePhraseId": "g1-l030"
+    },
+    {
+      "id": "g1-l030-w03",
+      "text": "fruit",
+      "phraseId": "g1-l030",
+      "sourcePhraseId": "g1-l030"
+    },
+    {
+      "id": "g1-l030-w04",
+      "text": "with",
+      "phraseId": "g1-l030",
+      "sourcePhraseId": "g1-l030"
+    },
+    {
+      "id": "g1-l030-w05",
+      "text": "seed",
+      "phraseId": "g1-l030",
+      "sourcePhraseId": "g1-l030"
+    },
+    {
+      "id": "g1-l030-w06",
+      "text": "within,",
+      "phraseId": "g1-l030",
+      "sourcePhraseId": "g1-l030"
+    },
+    {
+      "id": "g1-l031-w01",
+      "text": "each",
+      "phraseId": "g1-l031",
+      "sourcePhraseId": "g1-l031"
+    },
+    {
+      "id": "g1-l031-w02",
+      "text": "true",
+      "phraseId": "g1-l031",
+      "sourcePhraseId": "g1-l031"
+    },
+    {
+      "id": "g1-l031-w03",
+      "text": "to",
+      "phraseId": "g1-l031",
+      "sourcePhraseId": "g1-l031"
+    },
+    {
+      "id": "g1-l031-w04",
+      "text": "its",
+      "phraseId": "g1-l031",
+      "sourcePhraseId": "g1-l031"
+    },
+    {
+      "id": "g1-l031-w05",
+      "text": "kind!’",
+      "phraseId": "g1-l031",
+      "sourcePhraseId": "g1-l031"
+    },
+    {
+      "id": "g1-l032-w01",
+      "text": "His",
+      "phraseId": "g1-l032",
+      "sourcePhraseId": "g1-l032"
+    },
+    {
+      "id": "g1-l032-w02",
+      "text": "word",
+      "phraseId": "g1-l032",
+      "sourcePhraseId": "g1-l032"
+    },
+    {
+      "id": "g1-l032-w03",
+      "text": "took",
+      "phraseId": "g1-l032",
+      "sourcePhraseId": "g1-l032"
+    },
+    {
+      "id": "g1-l032-w04",
+      "text": "hold.",
+      "phraseId": "g1-l032",
+      "sourcePhraseId": "g1-l032"
+    },
+    {
+      "id": "g1-l033-w01",
+      "text": "Green",
+      "phraseId": "g1-l033",
+      "sourcePhraseId": "g1-l033"
+    },
+    {
+      "id": "g1-l033-w02",
+      "text": "surged",
+      "phraseId": "g1-l033",
+      "sourcePhraseId": "g1-l033"
+    },
+    {
+      "id": "g1-l033-w03",
+      "text": "from",
+      "phraseId": "g1-l033",
+      "sourcePhraseId": "g1-l033"
+    },
+    {
+      "id": "g1-l033-w04",
+      "text": "the",
+      "phraseId": "g1-l033",
+      "sourcePhraseId": "g1-l033"
+    },
+    {
+      "id": "g1-l033-w05",
+      "text": "soil:",
+      "phraseId": "g1-l033",
+      "sourcePhraseId": "g1-l033"
+    },
+    {
+      "id": "g1-l034-w01",
+      "text": "grass",
+      "phraseId": "g1-l034",
+      "sourcePhraseId": "g1-l034"
+    },
+    {
+      "id": "g1-l034-w02",
+      "text": "with",
+      "phraseId": "g1-l034",
+      "sourcePhraseId": "g1-l034"
+    },
+    {
+      "id": "g1-l034-w03",
+      "text": "seed",
+      "phraseId": "g1-l034",
+      "sourcePhraseId": "g1-l034"
+    },
+    {
+      "id": "g1-l034-w04",
+      "text": "in",
+      "phraseId": "g1-l034",
+      "sourcePhraseId": "g1-l034"
+    },
+    {
+      "id": "g1-l034-w05",
+      "text": "its",
+      "phraseId": "g1-l034",
+      "sourcePhraseId": "g1-l034"
+    },
+    {
+      "id": "g1-l034-w06",
+      "text": "kind",
+      "phraseId": "g1-l034",
+      "sourcePhraseId": "g1-l034"
+    },
+    {
+      "id": "g1-l034-w07",
+      "text": "and",
+      "phraseId": "g1-l034",
+      "sourcePhraseId": "g1-l034"
+    },
+    {
+      "id": "g1-l034-w08",
+      "text": "likeness;",
+      "phraseId": "g1-l034",
+      "sourcePhraseId": "g1-l034"
+    },
+    {
+      "id": "g1-l035-w01",
+      "text": "fruit",
+      "phraseId": "g1-l035",
+      "sourcePhraseId": "g1-l035"
+    },
+    {
+      "id": "g1-l035-w02",
+      "text": "wrapped",
+      "phraseId": "g1-l035",
+      "sourcePhraseId": "g1-l035"
+    },
+    {
+      "id": "g1-l035-w03",
+      "text": "around",
+      "phraseId": "g1-l035",
+      "sourcePhraseId": "g1-l035"
+    },
+    {
+      "id": "g1-l035-w04",
+      "text": "its",
+      "phraseId": "g1-l035",
+      "sourcePhraseId": "g1-l035"
+    },
+    {
+      "id": "g1-l035-w05",
+      "text": "seed,",
+      "phraseId": "g1-l035",
+      "sourcePhraseId": "g1-l035"
+    },
+    {
+      "id": "g1-l036-w01",
+      "text": "tree",
+      "phraseId": "g1-l036",
+      "sourcePhraseId": "g1-l036"
+    },
+    {
+      "id": "g1-l036-w02",
+      "text": "by",
+      "phraseId": "g1-l036",
+      "sourcePhraseId": "g1-l036"
+    },
+    {
+      "id": "g1-l036-w03",
+      "text": "tree,",
+      "phraseId": "g1-l036",
+      "sourcePhraseId": "g1-l036"
+    },
+    {
+      "id": "g1-l036-w04",
+      "text": "kind",
+      "phraseId": "g1-l036",
+      "sourcePhraseId": "g1-l036"
+    },
+    {
+      "id": "g1-l036-w05",
+      "text": "by",
+      "phraseId": "g1-l036",
+      "sourcePhraseId": "g1-l036"
+    },
+    {
+      "id": "g1-l036-w06",
+      "text": "kind.",
+      "phraseId": "g1-l036",
+      "sourcePhraseId": "g1-l036"
+    },
+    {
+      "id": "g1-l037-w01",
+      "text": "He",
+      "phraseId": "g1-l037",
+      "sourcePhraseId": "g1-l037"
+    },
+    {
+      "id": "g1-l037-w02",
+      "text": "looked",
+      "phraseId": "g1-l037",
+      "sourcePhraseId": "g1-l037"
+    },
+    {
+      "id": "g1-l037-w03",
+      "text": "on",
+      "phraseId": "g1-l037",
+      "sourcePhraseId": "g1-l037"
+    },
+    {
+      "id": "g1-l037-w04",
+      "text": "it:",
+      "phraseId": "g1-l037",
+      "sourcePhraseId": "g1-l037"
+    },
+    {
+      "id": "g1-l037-w05",
+      "text": "good.",
+      "phraseId": "g1-l037",
+      "sourcePhraseId": "g1-l037"
+    },
+    {
+      "id": "g1-l038-w01",
+      "text": "Dusk.",
+      "phraseId": "g1-l038",
+      "sourcePhraseId": "g1-l038"
+    },
+    {
+      "id": "g1-l038-w02",
+      "text": "Dawn.",
+      "phraseId": "g1-l038",
+      "sourcePhraseId": "g1-l038"
+    },
+    {
+      "id": "g1-l038-w03",
+      "text": "The",
+      "phraseId": "g1-l038",
+      "sourcePhraseId": "g1-l038"
+    },
+    {
+      "id": "g1-l038-w04",
+      "text": "third",
+      "phraseId": "g1-l038",
+      "sourcePhraseId": "g1-l038"
+    },
+    {
+      "id": "g1-l038-w05",
+      "text": "day.",
+      "phraseId": "g1-l038",
+      "sourcePhraseId": "g1-l038"
+    },
+    {
+      "id": "g1-l039-w01",
+      "text": "‘Lights",
+      "phraseId": "g1-l039",
+      "sourcePhraseId": "g1-l039"
+    },
+    {
+      "id": "g1-l039-w02",
+      "text": "across",
+      "phraseId": "g1-l039",
+      "sourcePhraseId": "g1-l039"
+    },
+    {
+      "id": "g1-l039-w03",
+      "text": "Heaven’s",
+      "phraseId": "g1-l039",
+      "sourcePhraseId": "g1-l039"
+    },
+    {
+      "id": "g1-l039-w04",
+      "text": "firmament!",
+      "phraseId": "g1-l039",
+      "sourcePhraseId": "g1-l039"
+    },
+    {
+      "id": "g1-l040-w01",
+      "text": "Divide",
+      "phraseId": "g1-l040",
+      "sourcePhraseId": "g1-l040"
+    },
+    {
+      "id": "g1-l040-w02",
+      "text": "day",
+      "phraseId": "g1-l040",
+      "sourcePhraseId": "g1-l040"
+    },
+    {
+      "id": "g1-l040-w03",
+      "text": "from",
+      "phraseId": "g1-l040",
+      "sourcePhraseId": "g1-l040"
+    },
+    {
+      "id": "g1-l040-w04",
+      "text": "night;",
+      "phraseId": "g1-l040",
+      "sourcePhraseId": "g1-l040"
+    },
+    {
+      "id": "g1-l041-w01",
+      "text": "mark",
+      "phraseId": "g1-l041",
+      "sourcePhraseId": "g1-l041"
+    },
+    {
+      "id": "g1-l041-w02",
+      "text": "signs,",
+      "phraseId": "g1-l041",
+      "sourcePhraseId": "g1-l041"
+    },
+    {
+      "id": "g1-l041-w03",
+      "text": "seasons,",
+      "phraseId": "g1-l041",
+      "sourcePhraseId": "g1-l041"
+    },
+    {
+      "id": "g1-l041-w04",
+      "text": "days",
+      "phraseId": "g1-l041",
+      "sourcePhraseId": "g1-l041"
+    },
+    {
+      "id": "g1-l041-w05",
+      "text": "and",
+      "phraseId": "g1-l041",
+      "sourcePhraseId": "g1-l041"
+    },
+    {
+      "id": "g1-l041-w06",
+      "text": "years!’",
+      "phraseId": "g1-l041",
+      "sourcePhraseId": "g1-l041"
+    },
+    {
+      "id": "g1-l042-w01",
+      "text": "‘From",
+      "phraseId": "g1-l042",
+      "sourcePhraseId": "g1-l042"
+    },
+    {
+      "id": "g1-l042-w02",
+      "text": "that",
+      "phraseId": "g1-l042",
+      "sourcePhraseId": "g1-l042"
+    },
+    {
+      "id": "g1-l042-w03",
+      "text": "height,",
+      "phraseId": "g1-l042",
+      "sourcePhraseId": "g1-l042"
+    },
+    {
+      "id": "g1-l042-w04",
+      "text": "shine",
+      "phraseId": "g1-l042",
+      "sourcePhraseId": "g1-l042"
+    },
+    {
+      "id": "g1-l042-w05",
+      "text": "on",
+      "phraseId": "g1-l042",
+      "sourcePhraseId": "g1-l042"
+    },
+    {
+      "id": "g1-l042-w06",
+      "text": "the",
+      "phraseId": "g1-l042",
+      "sourcePhraseId": "g1-l042"
+    },
+    {
+      "id": "g1-l042-w07",
+      "text": "earth!’",
+      "phraseId": "g1-l042",
+      "sourcePhraseId": "g1-l042"
+    },
+    {
+      "id": "g1-l043-w01",
+      "text": "His",
+      "phraseId": "g1-l043",
+      "sourcePhraseId": "g1-l043"
+    },
+    {
+      "id": "g1-l043-w02",
+      "text": "word",
+      "phraseId": "g1-l043",
+      "sourcePhraseId": "g1-l043"
+    },
+    {
+      "id": "g1-l043-w03",
+      "text": "took",
+      "phraseId": "g1-l043",
+      "sourcePhraseId": "g1-l043"
+    },
+    {
+      "id": "g1-l043-w04",
+      "text": "hold.",
+      "phraseId": "g1-l043",
+      "sourcePhraseId": "g1-l043"
+    },
+    {
+      "id": "g1-l044-w01",
+      "text": "Two",
+      "phraseId": "g1-l044",
+      "sourcePhraseId": "g1-l044"
+    },
+    {
+      "id": "g1-l044-w02",
+      "text": "great",
+      "phraseId": "g1-l044",
+      "sourcePhraseId": "g1-l044"
+    },
+    {
+      "id": "g1-l044-w03",
+      "text": "lights",
+      "phraseId": "g1-l044",
+      "sourcePhraseId": "g1-l044"
+    },
+    {
+      "id": "g1-l044-w04",
+      "text": "He",
+      "phraseId": "g1-l044",
+      "sourcePhraseId": "g1-l044"
+    },
+    {
+      "id": "g1-l044-w05",
+      "text": "fashioned:",
+      "phraseId": "g1-l044",
+      "sourcePhraseId": "g1-l044"
+    },
+    {
+      "id": "g1-l045-w01",
+      "text": "the",
+      "phraseId": "g1-l045",
+      "sourcePhraseId": "g1-l045"
+    },
+    {
+      "id": "g1-l045-w02",
+      "text": "greater",
+      "phraseId": "g1-l045",
+      "sourcePhraseId": "g1-l045"
+    },
+    {
+      "id": "g1-l045-w03",
+      "text": "to",
+      "phraseId": "g1-l045",
+      "sourcePhraseId": "g1-l045"
+    },
+    {
+      "id": "g1-l045-w04",
+      "text": "command",
+      "phraseId": "g1-l045",
+      "sourcePhraseId": "g1-l045"
+    },
+    {
+      "id": "g1-l045-w05",
+      "text": "the",
+      "phraseId": "g1-l045",
+      "sourcePhraseId": "g1-l045"
+    },
+    {
+      "id": "g1-l045-w06",
+      "text": "day,",
+      "phraseId": "g1-l045",
+      "sourcePhraseId": "g1-l045"
+    },
+    {
+      "id": "g1-l046-w01",
+      "text": "the",
+      "phraseId": "g1-l046",
+      "sourcePhraseId": "g1-l046"
+    },
+    {
+      "id": "g1-l046-w02",
+      "text": "lesser",
+      "phraseId": "g1-l046",
+      "sourcePhraseId": "g1-l046"
+    },
+    {
+      "id": "g1-l046-w03",
+      "text": "to",
+      "phraseId": "g1-l046",
+      "sourcePhraseId": "g1-l046"
+    },
+    {
+      "id": "g1-l046-w04",
+      "text": "command",
+      "phraseId": "g1-l046",
+      "sourcePhraseId": "g1-l046"
+    },
+    {
+      "id": "g1-l046-w05",
+      "text": "the",
+      "phraseId": "g1-l046",
+      "sourcePhraseId": "g1-l046"
+    },
+    {
+      "id": "g1-l046-w06",
+      "text": "night.",
+      "phraseId": "g1-l046",
+      "sourcePhraseId": "g1-l046"
+    },
+    {
+      "id": "g1-l047-w01",
+      "text": "He",
+      "phraseId": "g1-l047",
+      "sourcePhraseId": "g1-l047"
+    },
+    {
+      "id": "g1-l047-w02",
+      "text": "made",
+      "phraseId": "g1-l047",
+      "sourcePhraseId": "g1-l047"
+    },
+    {
+      "id": "g1-l047-w03",
+      "text": "the",
+      "phraseId": "g1-l047",
+      "sourcePhraseId": "g1-l047"
+    },
+    {
+      "id": "g1-l047-w04",
+      "text": "stars",
+      "phraseId": "g1-l047",
+      "sourcePhraseId": "g1-l047"
+    },
+    {
+      "id": "g1-l047-w05",
+      "text": "as",
+      "phraseId": "g1-l047",
+      "sourcePhraseId": "g1-l047"
+    },
+    {
+      "id": "g1-l047-w06",
+      "text": "well.",
+      "phraseId": "g1-l047",
+      "sourcePhraseId": "g1-l047"
+    },
+    {
+      "id": "g1-l048-w01",
+      "text": "He",
+      "phraseId": "g1-l048",
+      "sourcePhraseId": "g1-l048"
+    },
+    {
+      "id": "g1-l048-w02",
+      "text": "set",
+      "phraseId": "g1-l048",
+      "sourcePhraseId": "g1-l048"
+    },
+    {
+      "id": "g1-l048-w03",
+      "text": "them",
+      "phraseId": "g1-l048",
+      "sourcePhraseId": "g1-l048"
+    },
+    {
+      "id": "g1-l048-w04",
+      "text": "in",
+      "phraseId": "g1-l048",
+      "sourcePhraseId": "g1-l048"
+    },
+    {
+      "id": "g1-l048-w05",
+      "text": "Heaven’s",
+      "phraseId": "g1-l048",
+      "sourcePhraseId": "g1-l048"
+    },
+    {
+      "id": "g1-l048-w06",
+      "text": "span",
+      "phraseId": "g1-l048",
+      "sourcePhraseId": "g1-l048"
+    },
+    {
+      "id": "g1-l049-w01",
+      "text": "to",
+      "phraseId": "g1-l049",
+      "sourcePhraseId": "g1-l049"
+    },
+    {
+      "id": "g1-l049-w02",
+      "text": "send",
+      "phraseId": "g1-l049",
+      "sourcePhraseId": "g1-l049"
+    },
+    {
+      "id": "g1-l049-w03",
+      "text": "their",
+      "phraseId": "g1-l049",
+      "sourcePhraseId": "g1-l049"
+    },
+    {
+      "id": "g1-l049-w04",
+      "text": "light",
+      "phraseId": "g1-l049",
+      "sourcePhraseId": "g1-l049"
+    },
+    {
+      "id": "g1-l049-w05",
+      "text": "across",
+      "phraseId": "g1-l049",
+      "sourcePhraseId": "g1-l049"
+    },
+    {
+      "id": "g1-l049-w06",
+      "text": "the",
+      "phraseId": "g1-l049",
+      "sourcePhraseId": "g1-l049"
+    },
+    {
+      "id": "g1-l049-w07",
+      "text": "earth,",
+      "phraseId": "g1-l049",
+      "sourcePhraseId": "g1-l049"
+    },
+    {
+      "id": "g1-l050-w01",
+      "text": "to",
+      "phraseId": "g1-l050",
+      "sourcePhraseId": "g1-l050"
+    },
+    {
+      "id": "g1-l050-w02",
+      "text": "rule",
+      "phraseId": "g1-l050",
+      "sourcePhraseId": "g1-l050"
+    },
+    {
+      "id": "g1-l050-w03",
+      "text": "night",
+      "phraseId": "g1-l050",
+      "sourcePhraseId": "g1-l050"
+    },
+    {
+      "id": "g1-l050-w04",
+      "text": "and",
+      "phraseId": "g1-l050",
+      "sourcePhraseId": "g1-l050"
+    },
+    {
+      "id": "g1-l050-w05",
+      "text": "day,",
+      "phraseId": "g1-l050",
+      "sourcePhraseId": "g1-l050"
+    },
+    {
+      "id": "g1-l051-w01",
+      "text": "to",
+      "phraseId": "g1-l051",
+      "sourcePhraseId": "g1-l051"
+    },
+    {
+      "id": "g1-l051-w02",
+      "text": "keep",
+      "phraseId": "g1-l051",
+      "sourcePhraseId": "g1-l051"
+    },
+    {
+      "id": "g1-l051-w03",
+      "text": "the",
+      "phraseId": "g1-l051",
+      "sourcePhraseId": "g1-l051"
+    },
+    {
+      "id": "g1-l051-w04",
+      "text": "bright",
+      "phraseId": "g1-l051",
+      "sourcePhraseId": "g1-l051"
+    },
+    {
+      "id": "g1-l051-w05",
+      "text": "apart",
+      "phraseId": "g1-l051",
+      "sourcePhraseId": "g1-l051"
+    },
+    {
+      "id": "g1-l051-w06",
+      "text": "from",
+      "phraseId": "g1-l051",
+      "sourcePhraseId": "g1-l051"
+    },
+    {
+      "id": "g1-l051-w07",
+      "text": "dark.",
+      "phraseId": "g1-l051",
+      "sourcePhraseId": "g1-l051"
+    },
+    {
+      "id": "g1-l052-w01",
+      "text": "He",
+      "phraseId": "g1-l052",
+      "sourcePhraseId": "g1-l052"
+    },
+    {
+      "id": "g1-l052-w02",
+      "text": "looked",
+      "phraseId": "g1-l052",
+      "sourcePhraseId": "g1-l052"
+    },
+    {
+      "id": "g1-l052-w03",
+      "text": "on",
+      "phraseId": "g1-l052",
+      "sourcePhraseId": "g1-l052"
+    },
+    {
+      "id": "g1-l052-w04",
+      "text": "them:",
+      "phraseId": "g1-l052",
+      "sourcePhraseId": "g1-l052"
+    },
+    {
+      "id": "g1-l052-w05",
+      "text": "good.",
+      "phraseId": "g1-l052",
+      "sourcePhraseId": "g1-l052"
+    },
+    {
+      "id": "g1-l053-w01",
+      "text": "Dusk.",
+      "phraseId": "g1-l053",
+      "sourcePhraseId": "g1-l053"
+    },
+    {
+      "id": "g1-l053-w02",
+      "text": "Dawn.",
+      "phraseId": "g1-l053",
+      "sourcePhraseId": "g1-l053"
+    },
+    {
+      "id": "g1-l053-w03",
+      "text": "The",
+      "phraseId": "g1-l053",
+      "sourcePhraseId": "g1-l053"
+    },
+    {
+      "id": "g1-l053-w04",
+      "text": "fourth",
+      "phraseId": "g1-l053",
+      "sourcePhraseId": "g1-l053"
+    },
+    {
+      "id": "g1-l053-w05",
+      "text": "day.",
+      "phraseId": "g1-l053",
+      "sourcePhraseId": "g1-l053"
+    },
+    {
+      "id": "g1-l054-w01",
+      "text": "‘Water,",
+      "phraseId": "g1-l054",
+      "sourcePhraseId": "g1-l054"
+    },
+    {
+      "id": "g1-l054-w02",
+      "text": "swarm",
+      "phraseId": "g1-l054",
+      "sourcePhraseId": "g1-l054"
+    },
+    {
+      "id": "g1-l054-w03",
+      "text": "with",
+      "phraseId": "g1-l054",
+      "sourcePhraseId": "g1-l054"
+    },
+    {
+      "id": "g1-l054-w04",
+      "text": "living",
+      "phraseId": "g1-l054",
+      "sourcePhraseId": "g1-l054"
+    },
+    {
+      "id": "g1-l054-w05",
+      "text": "reptiles!",
+      "phraseId": "g1-l054",
+      "sourcePhraseId": "g1-l054"
+    },
+    {
+      "id": "g1-l055-w01",
+      "text": "Winged",
+      "phraseId": "g1-l055",
+      "sourcePhraseId": "g1-l055"
+    },
+    {
+      "id": "g1-l055-w02",
+      "text": "creatures,",
+      "phraseId": "g1-l055",
+      "sourcePhraseId": "g1-l055"
+    },
+    {
+      "id": "g1-l055-w03",
+      "text": "fly",
+      "phraseId": "g1-l055",
+      "sourcePhraseId": "g1-l055"
+    },
+    {
+      "id": "g1-l055-w04",
+      "text": "above",
+      "phraseId": "g1-l055",
+      "sourcePhraseId": "g1-l055"
+    },
+    {
+      "id": "g1-l055-w05",
+      "text": "the",
+      "phraseId": "g1-l055",
+      "sourcePhraseId": "g1-l055"
+    },
+    {
+      "id": "g1-l055-w06",
+      "text": "earth",
+      "phraseId": "g1-l055",
+      "sourcePhraseId": "g1-l055"
+    },
+    {
+      "id": "g1-l056-w01",
+      "text": "across",
+      "phraseId": "g1-l056",
+      "sourcePhraseId": "g1-l056"
+    },
+    {
+      "id": "g1-l056-w02",
+      "text": "Heaven’s",
+      "phraseId": "g1-l056",
+      "sourcePhraseId": "g1-l056"
+    },
+    {
+      "id": "g1-l056-w03",
+      "text": "firmament!’",
+      "phraseId": "g1-l056",
+      "sourcePhraseId": "g1-l056"
+    },
+    {
+      "id": "g1-l057-w01",
+      "text": "His",
+      "phraseId": "g1-l057",
+      "sourcePhraseId": "g1-l057"
+    },
+    {
+      "id": "g1-l057-w02",
+      "text": "word",
+      "phraseId": "g1-l057",
+      "sourcePhraseId": "g1-l057"
+    },
+    {
+      "id": "g1-l057-w03",
+      "text": "took",
+      "phraseId": "g1-l057",
+      "sourcePhraseId": "g1-l057"
+    },
+    {
+      "id": "g1-l057-w04",
+      "text": "hold.",
+      "phraseId": "g1-l057",
+      "sourcePhraseId": "g1-l057"
+    },
+    {
+      "id": "g1-l058-w01",
+      "text": "God",
+      "phraseId": "g1-l058",
+      "sourcePhraseId": "g1-l058"
+    },
+    {
+      "id": "g1-l058-w02",
+      "text": "made",
+      "phraseId": "g1-l058",
+      "sourcePhraseId": "g1-l058"
+    },
+    {
+      "id": "g1-l058-w03",
+      "text": "the",
+      "phraseId": "g1-l058",
+      "sourcePhraseId": "g1-l058"
+    },
+    {
+      "id": "g1-l058-w04",
+      "text": "great",
+      "phraseId": "g1-l058",
+      "sourcePhraseId": "g1-l058"
+    },
+    {
+      "id": "g1-l058-w05",
+      "text": "whales,",
+      "phraseId": "g1-l058",
+      "sourcePhraseId": "g1-l058"
+    },
+    {
+      "id": "g1-l059-w01",
+      "text": "every",
+      "phraseId": "g1-l059",
+      "sourcePhraseId": "g1-l059"
+    },
+    {
+      "id": "g1-l059-w02",
+      "text": "living",
+      "phraseId": "g1-l059",
+      "sourcePhraseId": "g1-l059"
+    },
+    {
+      "id": "g1-l059-w03",
+      "text": "water-reptile",
+      "phraseId": "g1-l059",
+      "sourcePhraseId": "g1-l059"
+    },
+    {
+      "id": "g1-l059-w04",
+      "text": "by",
+      "phraseId": "g1-l059",
+      "sourcePhraseId": "g1-l059"
+    },
+    {
+      "id": "g1-l059-w05",
+      "text": "kind,",
+      "phraseId": "g1-l059",
+      "sourcePhraseId": "g1-l059"
+    },
+    {
+      "id": "g1-l060-w01",
+      "text": "and",
+      "phraseId": "g1-l060",
+      "sourcePhraseId": "g1-l060"
+    },
+    {
+      "id": "g1-l060-w02",
+      "text": "every",
+      "phraseId": "g1-l060",
+      "sourcePhraseId": "g1-l060"
+    },
+    {
+      "id": "g1-l060-w03",
+      "text": "winged",
+      "phraseId": "g1-l060",
+      "sourcePhraseId": "g1-l060"
+    },
+    {
+      "id": "g1-l060-w04",
+      "text": "creature",
+      "phraseId": "g1-l060",
+      "sourcePhraseId": "g1-l060"
+    },
+    {
+      "id": "g1-l060-w05",
+      "text": "by",
+      "phraseId": "g1-l060",
+      "sourcePhraseId": "g1-l060"
+    },
+    {
+      "id": "g1-l060-w06",
+      "text": "kind.",
+      "phraseId": "g1-l060",
+      "sourcePhraseId": "g1-l060"
+    },
+    {
+      "id": "g1-l061-w01",
+      "text": "He",
+      "phraseId": "g1-l061",
+      "sourcePhraseId": "g1-l061"
+    },
+    {
+      "id": "g1-l061-w02",
+      "text": "looked",
+      "phraseId": "g1-l061",
+      "sourcePhraseId": "g1-l061"
+    },
+    {
+      "id": "g1-l061-w03",
+      "text": "on",
+      "phraseId": "g1-l061",
+      "sourcePhraseId": "g1-l061"
+    },
+    {
+      "id": "g1-l061-w04",
+      "text": "them:",
+      "phraseId": "g1-l061",
+      "sourcePhraseId": "g1-l061"
+    },
+    {
+      "id": "g1-l061-w05",
+      "text": "good.",
+      "phraseId": "g1-l061",
+      "sourcePhraseId": "g1-l061"
+    },
+    {
+      "id": "g1-l062-w01",
+      "text": "His",
+      "phraseId": "g1-l062",
+      "sourcePhraseId": "g1-l062"
+    },
+    {
+      "id": "g1-l062-w02",
+      "text": "blessing",
+      "phraseId": "g1-l062",
+      "sourcePhraseId": "g1-l062"
+    },
+    {
+      "id": "g1-l062-w03",
+      "text": "rang",
+      "phraseId": "g1-l062",
+      "sourcePhraseId": "g1-l062"
+    },
+    {
+      "id": "g1-l062-w04",
+      "text": "out:",
+      "phraseId": "g1-l062",
+      "sourcePhraseId": "g1-l062"
+    },
+    {
+      "id": "g1-l063-w01",
+      "text": "‘Increase!",
+      "phraseId": "g1-l063",
+      "sourcePhraseId": "g1-l063"
+    },
+    {
+      "id": "g1-l063-w02",
+      "text": "Multiply!",
+      "phraseId": "g1-l063",
+      "sourcePhraseId": "g1-l063"
+    },
+    {
+      "id": "g1-l063-w03",
+      "text": "Fill",
+      "phraseId": "g1-l063",
+      "sourcePhraseId": "g1-l063"
+    },
+    {
+      "id": "g1-l063-w04",
+      "text": "the",
+      "phraseId": "g1-l063",
+      "sourcePhraseId": "g1-l063"
+    },
+    {
+      "id": "g1-l063-w05",
+      "text": "seas!",
+      "phraseId": "g1-l063",
+      "sourcePhraseId": "g1-l063"
+    },
+    {
+      "id": "g1-l064-w01",
+      "text": "Let",
+      "phraseId": "g1-l064",
+      "sourcePhraseId": "g1-l064"
+    },
+    {
+      "id": "g1-l064-w02",
+      "text": "the",
+      "phraseId": "g1-l064",
+      "sourcePhraseId": "g1-l064"
+    },
+    {
+      "id": "g1-l064-w03",
+      "text": "winged",
+      "phraseId": "g1-l064",
+      "sourcePhraseId": "g1-l064"
+    },
+    {
+      "id": "g1-l064-w04",
+      "text": "multiply",
+      "phraseId": "g1-l064",
+      "sourcePhraseId": "g1-l064"
+    },
+    {
+      "id": "g1-l064-w05",
+      "text": "on",
+      "phraseId": "g1-l064",
+      "sourcePhraseId": "g1-l064"
+    },
+    {
+      "id": "g1-l064-w06",
+      "text": "earth!’",
+      "phraseId": "g1-l064",
+      "sourcePhraseId": "g1-l064"
+    },
+    {
+      "id": "g1-l065-w01",
+      "text": "Dusk.",
+      "phraseId": "g1-l065",
+      "sourcePhraseId": "g1-l065"
+    },
+    {
+      "id": "g1-l065-w02",
+      "text": "Dawn.",
+      "phraseId": "g1-l065",
+      "sourcePhraseId": "g1-l065"
+    },
+    {
+      "id": "g1-l065-w03",
+      "text": "The",
+      "phraseId": "g1-l065",
+      "sourcePhraseId": "g1-l065"
+    },
+    {
+      "id": "g1-l065-w04",
+      "text": "fifth",
+      "phraseId": "g1-l065",
+      "sourcePhraseId": "g1-l065"
+    },
+    {
+      "id": "g1-l065-w05",
+      "text": "day.",
+      "phraseId": "g1-l065",
+      "sourcePhraseId": "g1-l065"
+    },
+    {
+      "id": "g1-l066-w01",
+      "text": "‘Earth,",
+      "phraseId": "g1-l066",
+      "sourcePhraseId": "g1-l066"
+    },
+    {
+      "id": "g1-l066-w02",
+      "text": "bring",
+      "phraseId": "g1-l066",
+      "sourcePhraseId": "g1-l066"
+    },
+    {
+      "id": "g1-l066-w03",
+      "text": "out",
+      "phraseId": "g1-l066",
+      "sourcePhraseId": "g1-l066"
+    },
+    {
+      "id": "g1-l066-w04",
+      "text": "living",
+      "phraseId": "g1-l066",
+      "sourcePhraseId": "g1-l066"
+    },
+    {
+      "id": "g1-l066-w05",
+      "text": "kinds:",
+      "phraseId": "g1-l066",
+      "sourcePhraseId": "g1-l066"
+    },
+    {
+      "id": "g1-l067-w01",
+      "text": "four-footed",
+      "phraseId": "g1-l067",
+      "sourcePhraseId": "g1-l067"
+    },
+    {
+      "id": "g1-l067-w02",
+      "text": "beasts,",
+      "phraseId": "g1-l067",
+      "sourcePhraseId": "g1-l067"
+    },
+    {
+      "id": "g1-l067-w03",
+      "text": "crawling",
+      "phraseId": "g1-l067",
+      "sourcePhraseId": "g1-l067"
+    },
+    {
+      "id": "g1-l067-w04",
+      "text": "reptiles,",
+      "phraseId": "g1-l067",
+      "sourcePhraseId": "g1-l067"
+    },
+    {
+      "id": "g1-l068-w01",
+      "text": "wild",
+      "phraseId": "g1-l068",
+      "sourcePhraseId": "g1-l068"
+    },
+    {
+      "id": "g1-l068-w02",
+      "text": "beasts,",
+      "phraseId": "g1-l068",
+      "sourcePhraseId": "g1-l068"
+    },
+    {
+      "id": "g1-l068-w03",
+      "text": "each",
+      "phraseId": "g1-l068",
+      "sourcePhraseId": "g1-l068"
+    },
+    {
+      "id": "g1-l068-w04",
+      "text": "after",
+      "phraseId": "g1-l068",
+      "sourcePhraseId": "g1-l068"
+    },
+    {
+      "id": "g1-l068-w05",
+      "text": "its",
+      "phraseId": "g1-l068",
+      "sourcePhraseId": "g1-l068"
+    },
+    {
+      "id": "g1-l068-w06",
+      "text": "kind!’",
+      "phraseId": "g1-l068",
+      "sourcePhraseId": "g1-l068"
+    },
+    {
+      "id": "g1-l069-w01",
+      "text": "His",
+      "phraseId": "g1-l069",
+      "sourcePhraseId": "g1-l069"
+    },
+    {
+      "id": "g1-l069-w02",
+      "text": "word",
+      "phraseId": "g1-l069",
+      "sourcePhraseId": "g1-l069"
+    },
+    {
+      "id": "g1-l069-w03",
+      "text": "took",
+      "phraseId": "g1-l069",
+      "sourcePhraseId": "g1-l069"
+    },
+    {
+      "id": "g1-l069-w04",
+      "text": "hold.",
+      "phraseId": "g1-l069",
+      "sourcePhraseId": "g1-l069"
+    },
+    {
+      "id": "g1-l070-w01",
+      "text": "He",
+      "phraseId": "g1-l070",
+      "sourcePhraseId": "g1-l070"
+    },
+    {
+      "id": "g1-l070-w02",
+      "text": "fashioned",
+      "phraseId": "g1-l070",
+      "sourcePhraseId": "g1-l070"
+    },
+    {
+      "id": "g1-l070-w03",
+      "text": "wild",
+      "phraseId": "g1-l070",
+      "sourcePhraseId": "g1-l070"
+    },
+    {
+      "id": "g1-l070-w04",
+      "text": "beasts,",
+      "phraseId": "g1-l070",
+      "sourcePhraseId": "g1-l070"
+    },
+    {
+      "id": "g1-l070-w05",
+      "text": "cattle,",
+      "phraseId": "g1-l070",
+      "sourcePhraseId": "g1-l070"
+    },
+    {
+      "id": "g1-l071-w01",
+      "text": "and",
+      "phraseId": "g1-l071",
+      "sourcePhraseId": "g1-l071"
+    },
+    {
+      "id": "g1-l071-w02",
+      "text": "the",
+      "phraseId": "g1-l071",
+      "sourcePhraseId": "g1-l071"
+    },
+    {
+      "id": "g1-l071-w03",
+      "text": "reptiles",
+      "phraseId": "g1-l071",
+      "sourcePhraseId": "g1-l071"
+    },
+    {
+      "id": "g1-l071-w04",
+      "text": "of",
+      "phraseId": "g1-l071",
+      "sourcePhraseId": "g1-l071"
+    },
+    {
+      "id": "g1-l071-w05",
+      "text": "the",
+      "phraseId": "g1-l071",
+      "sourcePhraseId": "g1-l071"
+    },
+    {
+      "id": "g1-l071-w06",
+      "text": "ground,",
+      "phraseId": "g1-l071",
+      "sourcePhraseId": "g1-l071"
+    },
+    {
+      "id": "g1-l072-w01",
+      "text": "each",
+      "phraseId": "g1-l072",
+      "sourcePhraseId": "g1-l072"
+    },
+    {
+      "id": "g1-l072-w02",
+      "text": "after",
+      "phraseId": "g1-l072",
+      "sourcePhraseId": "g1-l072"
+    },
+    {
+      "id": "g1-l072-w03",
+      "text": "its",
+      "phraseId": "g1-l072",
+      "sourcePhraseId": "g1-l072"
+    },
+    {
+      "id": "g1-l072-w04",
+      "text": "kind.",
+      "phraseId": "g1-l072",
+      "sourcePhraseId": "g1-l072"
+    },
+    {
+      "id": "g1-l073-w01",
+      "text": "He",
+      "phraseId": "g1-l073",
+      "sourcePhraseId": "g1-l073"
+    },
+    {
+      "id": "g1-l073-w02",
+      "text": "looked",
+      "phraseId": "g1-l073",
+      "sourcePhraseId": "g1-l073"
+    },
+    {
+      "id": "g1-l073-w03",
+      "text": "on",
+      "phraseId": "g1-l073",
+      "sourcePhraseId": "g1-l073"
+    },
+    {
+      "id": "g1-l073-w04",
+      "text": "them:",
+      "phraseId": "g1-l073",
+      "sourcePhraseId": "g1-l073"
+    },
+    {
+      "id": "g1-l073-w05",
+      "text": "good.",
+      "phraseId": "g1-l073",
+      "sourcePhraseId": "g1-l073"
+    },
+    {
+      "id": "g1-l074-w01",
+      "text": "Then",
+      "phraseId": "g1-l074",
+      "sourcePhraseId": "g1-l074"
+    },
+    {
+      "id": "g1-l074-w02",
+      "text": "God",
+      "phraseId": "g1-l074",
+      "sourcePhraseId": "g1-l074"
+    },
+    {
+      "id": "g1-l074-w03",
+      "text": "said,",
+      "phraseId": "g1-l074",
+      "sourcePhraseId": "g1-l074"
+    },
+    {
+      "id": "g1-l074-w04",
+      "text": "‘Let",
+      "phraseId": "g1-l074",
+      "sourcePhraseId": "g1-l074"
+    },
+    {
+      "id": "g1-l074-w05",
+      "text": "us",
+      "phraseId": "g1-l074",
+      "sourcePhraseId": "g1-l074"
+    },
+    {
+      "id": "g1-l074-w06",
+      "text": "make",
+      "phraseId": "g1-l074",
+      "sourcePhraseId": "g1-l074"
+    },
+    {
+      "id": "g1-l074-w07",
+      "text": "humankind",
+      "phraseId": "g1-l074",
+      "sourcePhraseId": "g1-l074"
+    },
+    {
+      "id": "g1-l075-w01",
+      "text": "in",
+      "phraseId": "g1-l075",
+      "sourcePhraseId": "g1-l075"
+    },
+    {
+      "id": "g1-l075-w02",
+      "text": "our",
+      "phraseId": "g1-l075",
+      "sourcePhraseId": "g1-l075"
+    },
+    {
+      "id": "g1-l075-w03",
+      "text": "image,",
+      "phraseId": "g1-l075",
+      "sourcePhraseId": "g1-l075"
+    },
+    {
+      "id": "g1-l075-w04",
+      "text": "in",
+      "phraseId": "g1-l075",
+      "sourcePhraseId": "g1-l075"
+    },
+    {
+      "id": "g1-l075-w05",
+      "text": "our",
+      "phraseId": "g1-l075",
+      "sourcePhraseId": "g1-l075"
+    },
+    {
+      "id": "g1-l075-w06",
+      "text": "likeness;",
+      "phraseId": "g1-l075",
+      "sourcePhraseId": "g1-l075"
+    },
+    {
+      "id": "g1-l064-r01-w01",
+      "text": "Let",
+      "phraseId": "g1-l064-r01",
+      "sourcePhraseId": "g1-l064"
+    },
+    {
+      "id": "g1-l064-r01-w02",
+      "text": "the",
+      "phraseId": "g1-l064-r01",
+      "sourcePhraseId": "g1-l064"
+    },
+    {
+      "id": "g1-l064-r01-w03",
+      "text": "winged",
+      "phraseId": "g1-l064-r01",
+      "sourcePhraseId": "g1-l064"
+    },
+    {
+      "id": "g1-l064-r01-w04",
+      "text": "multiply",
+      "phraseId": "g1-l064-r01",
+      "sourcePhraseId": "g1-l064"
+    },
+    {
+      "id": "g1-l064-r01-w05",
+      "text": "on",
+      "phraseId": "g1-l064-r01",
+      "sourcePhraseId": "g1-l064"
+    },
+    {
+      "id": "g1-l064-r01-w06",
+      "text": "earth!’",
+      "phraseId": "g1-l064-r01",
+      "sourcePhraseId": "g1-l064"
+    },
+    {
+      "id": "g1-l069-r01-w01",
+      "text": "His",
+      "phraseId": "g1-l069-r01",
+      "sourcePhraseId": "g1-l069"
+    },
+    {
+      "id": "g1-l069-r01-w02",
+      "text": "word",
+      "phraseId": "g1-l069-r01",
+      "sourcePhraseId": "g1-l069"
+    },
+    {
+      "id": "g1-l069-r01-w03",
+      "text": "took",
+      "phraseId": "g1-l069-r01",
+      "sourcePhraseId": "g1-l069"
+    },
+    {
+      "id": "g1-l069-r01-w04",
+      "text": "hold.",
+      "phraseId": "g1-l069-r01",
+      "sourcePhraseId": "g1-l069"
+    },
+    {
+      "id": "g1-l070-r01-w01",
+      "text": "He",
+      "phraseId": "g1-l070-r01",
+      "sourcePhraseId": "g1-l070"
+    },
+    {
+      "id": "g1-l070-r01-w02",
+      "text": "fashioned",
+      "phraseId": "g1-l070-r01",
+      "sourcePhraseId": "g1-l070"
+    },
+    {
+      "id": "g1-l070-r01-w03",
+      "text": "wild",
+      "phraseId": "g1-l070-r01",
+      "sourcePhraseId": "g1-l070"
+    },
+    {
+      "id": "g1-l070-r01-w04",
+      "text": "beasts,",
+      "phraseId": "g1-l070-r01",
+      "sourcePhraseId": "g1-l070"
+    },
+    {
+      "id": "g1-l070-r01-w05",
+      "text": "cattle,",
+      "phraseId": "g1-l070-r01",
+      "sourcePhraseId": "g1-l070"
+    },
+    {
+      "id": "g1-l071-r01-w01",
+      "text": "and",
+      "phraseId": "g1-l071-r01",
+      "sourcePhraseId": "g1-l071"
+    },
+    {
+      "id": "g1-l071-r01-w02",
+      "text": "the",
+      "phraseId": "g1-l071-r01",
+      "sourcePhraseId": "g1-l071"
+    },
+    {
+      "id": "g1-l071-r01-w03",
+      "text": "reptiles",
+      "phraseId": "g1-l071-r01",
+      "sourcePhraseId": "g1-l071"
+    },
+    {
+      "id": "g1-l071-r01-w04",
+      "text": "of",
+      "phraseId": "g1-l071-r01",
+      "sourcePhraseId": "g1-l071"
+    },
+    {
+      "id": "g1-l071-r01-w05",
+      "text": "the",
+      "phraseId": "g1-l071-r01",
+      "sourcePhraseId": "g1-l071"
+    },
+    {
+      "id": "g1-l071-r01-w06",
+      "text": "ground,",
+      "phraseId": "g1-l071-r01",
+      "sourcePhraseId": "g1-l071"
+    },
+    {
+      "id": "g1-l072-r01-w01",
+      "text": "each",
+      "phraseId": "g1-l072-r01",
+      "sourcePhraseId": "g1-l072"
+    },
+    {
+      "id": "g1-l072-r01-w02",
+      "text": "after",
+      "phraseId": "g1-l072-r01",
+      "sourcePhraseId": "g1-l072"
+    },
+    {
+      "id": "g1-l072-r01-w03",
+      "text": "its",
+      "phraseId": "g1-l072-r01",
+      "sourcePhraseId": "g1-l072"
+    },
+    {
+      "id": "g1-l072-r01-w04",
+      "text": "kind.",
+      "phraseId": "g1-l072-r01",
+      "sourcePhraseId": "g1-l072"
+    },
+    {
+      "id": "g1-l073-r01-w01",
+      "text": "He",
+      "phraseId": "g1-l073-r01",
+      "sourcePhraseId": "g1-l073"
+    },
+    {
+      "id": "g1-l073-r01-w02",
+      "text": "looked",
+      "phraseId": "g1-l073-r01",
+      "sourcePhraseId": "g1-l073"
+    },
+    {
+      "id": "g1-l073-r01-w03",
+      "text": "on",
+      "phraseId": "g1-l073-r01",
+      "sourcePhraseId": "g1-l073"
+    },
+    {
+      "id": "g1-l073-r01-w04",
+      "text": "them:",
+      "phraseId": "g1-l073-r01",
+      "sourcePhraseId": "g1-l073"
+    },
+    {
+      "id": "g1-l073-r01-w05",
+      "text": "good.",
+      "phraseId": "g1-l073-r01",
+      "sourcePhraseId": "g1-l073"
+    },
+    {
+      "id": "g1-l074-r01-w01",
+      "text": "Then",
+      "phraseId": "g1-l074-r01",
+      "sourcePhraseId": "g1-l074"
+    },
+    {
+      "id": "g1-l074-r01-w02",
+      "text": "God",
+      "phraseId": "g1-l074-r01",
+      "sourcePhraseId": "g1-l074"
+    },
+    {
+      "id": "g1-l074-r01-w03",
+      "text": "said,",
+      "phraseId": "g1-l074-r01",
+      "sourcePhraseId": "g1-l074"
+    },
+    {
+      "id": "g1-l074-r01-w04",
+      "text": "‘Let",
+      "phraseId": "g1-l074-r01",
+      "sourcePhraseId": "g1-l074"
+    },
+    {
+      "id": "g1-l074-r01-w05",
+      "text": "us",
+      "phraseId": "g1-l074-r01",
+      "sourcePhraseId": "g1-l074"
+    },
+    {
+      "id": "g1-l074-r01-w06",
+      "text": "make",
+      "phraseId": "g1-l074-r01",
+      "sourcePhraseId": "g1-l074"
+    },
+    {
+      "id": "g1-l074-r01-w07",
+      "text": "humankind",
+      "phraseId": "g1-l074-r01",
+      "sourcePhraseId": "g1-l074"
+    },
+    {
+      "id": "g1-l075-r01-w01",
+      "text": "in",
+      "phraseId": "g1-l075-r01",
+      "sourcePhraseId": "g1-l075"
+    },
+    {
+      "id": "g1-l075-r01-w02",
+      "text": "our",
+      "phraseId": "g1-l075-r01",
+      "sourcePhraseId": "g1-l075"
+    },
+    {
+      "id": "g1-l075-r01-w03",
+      "text": "image,",
+      "phraseId": "g1-l075-r01",
+      "sourcePhraseId": "g1-l075"
+    },
+    {
+      "id": "g1-l075-r01-w04",
+      "text": "in",
+      "phraseId": "g1-l075-r01",
+      "sourcePhraseId": "g1-l075"
+    },
+    {
+      "id": "g1-l075-r01-w05",
+      "text": "our",
+      "phraseId": "g1-l075-r01",
+      "sourcePhraseId": "g1-l075"
+    },
+    {
+      "id": "g1-l075-r01-w06",
+      "text": "likeness;",
+      "phraseId": "g1-l075-r01",
+      "sourcePhraseId": "g1-l075"
+    },
+    {
+      "id": "g1-l076-w01",
+      "text": "let",
+      "phraseId": "g1-l076",
+      "sourcePhraseId": "g1-l076"
+    },
+    {
+      "id": "g1-l076-w02",
+      "text": "them",
+      "phraseId": "g1-l076",
+      "sourcePhraseId": "g1-l076"
+    },
+    {
+      "id": "g1-l076-w03",
+      "text": "rule",
+      "phraseId": "g1-l076",
+      "sourcePhraseId": "g1-l076"
+    },
+    {
+      "id": "g1-l076-w04",
+      "text": "the",
+      "phraseId": "g1-l076",
+      "sourcePhraseId": "g1-l076"
+    },
+    {
+      "id": "g1-l076-w05",
+      "text": "fish,",
+      "phraseId": "g1-l076",
+      "sourcePhraseId": "g1-l076"
+    },
+    {
+      "id": "g1-l076-w06",
+      "text": "the",
+      "phraseId": "g1-l076",
+      "sourcePhraseId": "g1-l076"
+    },
+    {
+      "id": "g1-l076-w07",
+      "text": "birds,",
+      "phraseId": "g1-l076",
+      "sourcePhraseId": "g1-l076"
+    },
+    {
+      "id": "g1-l077-w01",
+      "text": "the",
+      "phraseId": "g1-l077",
+      "sourcePhraseId": "g1-l077"
+    },
+    {
+      "id": "g1-l077-w02",
+      "text": "cattle,",
+      "phraseId": "g1-l077",
+      "sourcePhraseId": "g1-l077"
+    },
+    {
+      "id": "g1-l077-w03",
+      "text": "all",
+      "phraseId": "g1-l077",
+      "sourcePhraseId": "g1-l077"
+    },
+    {
+      "id": "g1-l077-w04",
+      "text": "the",
+      "phraseId": "g1-l077",
+      "sourcePhraseId": "g1-l077"
+    },
+    {
+      "id": "g1-l077-w05",
+      "text": "earth",
+      "phraseId": "g1-l077",
+      "sourcePhraseId": "g1-l077"
+    },
+    {
+      "id": "g1-l077-w06",
+      "text": "and",
+      "phraseId": "g1-l077",
+      "sourcePhraseId": "g1-l077"
+    },
+    {
+      "id": "g1-l077-w07",
+      "text": "all",
+      "phraseId": "g1-l077",
+      "sourcePhraseId": "g1-l077"
+    },
+    {
+      "id": "g1-l077-w08",
+      "text": "that",
+      "phraseId": "g1-l077",
+      "sourcePhraseId": "g1-l077"
+    },
+    {
+      "id": "g1-l077-w09",
+      "text": "crawls.’",
+      "phraseId": "g1-l077",
+      "sourcePhraseId": "g1-l077"
+    },
+    {
+      "id": "g1-l096-w01",
+      "text": "Dusk.",
+      "phraseId": "g1-l096",
+      "sourcePhraseId": "g1-l096"
+    },
+    {
+      "id": "g1-l096-w02",
+      "text": "Dawn.",
+      "phraseId": "g1-l096",
+      "sourcePhraseId": "g1-l096"
+    },
+    {
+      "id": "g1-l096-w03",
+      "text": "The",
+      "phraseId": "g1-l096",
+      "sourcePhraseId": "g1-l096"
+    },
+    {
+      "id": "g1-l096-w04",
+      "text": "sixth",
+      "phraseId": "g1-l096",
+      "sourcePhraseId": "g1-l096"
+    },
+    {
+      "id": "g1-l096-w05",
+      "text": "day.",
+      "phraseId": "g1-l096",
+      "sourcePhraseId": "g1-l096"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "g1-l001",
+      "text": "Before the first count of days,",
+      "wordIds": [
+        "g1-l001-w01",
+        "g1-l001-w02",
+        "g1-l001-w03",
+        "g1-l001-w04",
+        "g1-l001-w05",
+        "g1-l001-w06"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Verse 1",
+      "sourceLineIndex": 3,
+      "start": 3.7,
+      "end": 7.28,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 6,
+        "expectedWords": 6,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 1,
+      "sourcePhraseId": "g1-l001",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l002",
+      "text": "God brought heaven and earth into being.",
+      "wordIds": [
+        "g1-l002-w01",
+        "g1-l002-w02",
+        "g1-l002-w03",
+        "g1-l002-w04",
+        "g1-l002-w05",
+        "g1-l002-w06",
+        "g1-l002-w07"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Verse 1",
+      "sourceLineIndex": 4,
+      "start": 7.28,
+      "end": 12.48,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 7,
+        "expectedWords": 7,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 2,
+      "sourcePhraseId": "g1-l002",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l003",
+      "text": "Earth stood bare, unfinished;",
+      "wordIds": [
+        "g1-l003-w01",
+        "g1-l003-w02",
+        "g1-l003-w03",
+        "g1-l003-w04"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Verse 1",
+      "sourceLineIndex": 5,
+      "start": 13.56,
+      "end": 16.46,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 4,
+        "expectedWords": 4,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 3,
+      "sourcePhraseId": "g1-l003",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l004",
+      "text": "blackness covered the deep.",
+      "wordIds": [
+        "g1-l004-w01",
+        "g1-l004-w02",
+        "g1-l004-w03",
+        "g1-l004-w04"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Verse 1",
+      "sourceLineIndex": 6,
+      "start": 16.46,
+      "end": 19.42,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 4,
+        "expectedWords": 4,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 4,
+      "sourcePhraseId": "g1-l004",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l005",
+      "text": "Across the water moved the Spirit of God.",
+      "wordIds": [
+        "g1-l005-w01",
+        "g1-l005-w02",
+        "g1-l005-w03",
+        "g1-l005-w04",
+        "g1-l005-w05",
+        "g1-l005-w06",
+        "g1-l005-w07",
+        "g1-l005-w08"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Verse 1",
+      "sourceLineIndex": 7,
+      "start": 19.42,
+      "end": 23.36,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 8,
+        "expectedWords": 8,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 5,
+      "sourcePhraseId": "g1-l005",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l006",
+      "text": "Then God called, ‘Light, come forth!’",
+      "wordIds": [
+        "g1-l006-w01",
+        "g1-l006-w02",
+        "g1-l006-w03",
+        "g1-l006-w04",
+        "g1-l006-w05",
+        "g1-l006-w06"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 10,
+      "start": 23.36,
+      "end": 27.62,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 5,
+        "expectedWords": 6,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 6,
+      "sourcePhraseId": "g1-l006",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l007",
+      "text": "Brightness answered.",
+      "wordIds": [
+        "g1-l007-w01",
+        "g1-l007-w02"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 11,
+      "start": 29.38,
+      "end": 30.79,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 2,
+        "expectedWords": 2,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 7,
+      "sourcePhraseId": "g1-l007",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l008",
+      "text": "He looked on the light: good.",
+      "wordIds": [
+        "g1-l008-w01",
+        "g1-l008-w02",
+        "g1-l008-w03",
+        "g1-l008-w04",
+        "g1-l008-w05",
+        "g1-l008-w06"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 14,
+      "start": 33.96,
+      "end": 36.74,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 6,
+        "expectedWords": 6,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 8,
+      "sourcePhraseId": "g1-l008",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l009",
+      "text": "He cut a clear line between it and darkness.",
+      "wordIds": [
+        "g1-l009-w01",
+        "g1-l009-w02",
+        "g1-l009-w03",
+        "g1-l009-w04",
+        "g1-l009-w05",
+        "g1-l009-w06",
+        "g1-l009-w07",
+        "g1-l009-w08",
+        "g1-l009-w09"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 15,
+      "start": 38.04,
+      "end": 41.08,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 9,
+        "expectedWords": 9,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 9,
+      "sourcePhraseId": "g1-l009",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l010",
+      "text": "Day was the name He gave the light;",
+      "wordIds": [
+        "g1-l010-w01",
+        "g1-l010-w02",
+        "g1-l010-w03",
+        "g1-l010-w04",
+        "g1-l010-w05",
+        "g1-l010-w06",
+        "g1-l010-w07",
+        "g1-l010-w08"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 16,
+      "start": 41.08,
+      "end": 45.94,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 8,
+        "expectedWords": 8,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 10,
+      "sourcePhraseId": "g1-l010",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l011",
+      "text": "Night, the name He gave the dark.",
+      "wordIds": [
+        "g1-l011-w01",
+        "g1-l011-w02",
+        "g1-l011-w03",
+        "g1-l011-w04",
+        "g1-l011-w05",
+        "g1-l011-w06",
+        "g1-l011-w07"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 17,
+      "start": 45.94,
+      "end": 48.18,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 6,
+        "expectedWords": 7,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 11,
+      "sourcePhraseId": "g1-l011",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l012",
+      "text": "Dusk. Dawn. The first day.",
+      "wordIds": [
+        "g1-l012-w01",
+        "g1-l012-w02",
+        "g1-l012-w03",
+        "g1-l012-w04",
+        "g1-l012-w05"
+      ],
+      "sectionName": "Verse 1",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 18,
+      "start": 48.84,
+      "end": 51.4,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 4,
+        "expectedWords": 5,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 12,
+      "sourcePhraseId": "g1-l012",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l013",
+      "text": "God spoke: ‘A firmament amid the waters!",
+      "wordIds": [
+        "g1-l013-w01",
+        "g1-l013-w02",
+        "g1-l013-w03",
+        "g1-l013-w04",
+        "g1-l013-w05",
+        "g1-l013-w06",
+        "g1-l013-w07"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 22,
+      "start": 54,
+      "end": 57.62,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 6,
+        "expectedWords": 7,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 13,
+      "sourcePhraseId": "g1-l013",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l014",
+      "text": "Let water part from water!’",
+      "wordIds": [
+        "g1-l014-w01",
+        "g1-l014-w02",
+        "g1-l014-w03",
+        "g1-l014-w04",
+        "g1-l014-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 23,
+      "start": 58.22,
+      "end": 60.06,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 3,
+        "expectedWords": 5,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 14,
+      "sourcePhraseId": "g1-l014",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l015",
+      "text": "His word took hold.",
+      "wordIds": [
+        "g1-l015-w01",
+        "g1-l015-w02",
+        "g1-l015-w03",
+        "g1-l015-w04"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 24,
+      "start": 60.68,
+      "end": 63.34,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 4,
+        "expectedWords": 4,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 15,
+      "sourcePhraseId": "g1-l015",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l016",
+      "text": "He raised that mighty span;",
+      "wordIds": [
+        "g1-l016-w01",
+        "g1-l016-w02",
+        "g1-l016-w03",
+        "g1-l016-w04",
+        "g1-l016-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 27,
+      "start": 63.34,
+      "end": 65.92,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 5,
+        "expectedWords": 5,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 16,
+      "sourcePhraseId": "g1-l016",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l017",
+      "text": "flood beneath it,",
+      "wordIds": [
+        "g1-l017-w01",
+        "g1-l017-w02",
+        "g1-l017-w03"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 28,
+      "start": 66.08,
+      "end": 67.2,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 3,
+        "expectedWords": 3,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 17,
+      "sourcePhraseId": "g1-l017",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l018",
+      "text": "flood above it.",
+      "wordIds": [
+        "g1-l018-w01",
+        "g1-l018-w02",
+        "g1-l018-w03"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 29,
+      "start": 67.2,
+      "end": 67.72,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 1,
+        "expectedWords": 3,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 18,
+      "sourcePhraseId": "g1-l018",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l019",
+      "text": "He called the firmament Heaven.",
+      "wordIds": [
+        "g1-l019-w01",
+        "g1-l019-w02",
+        "g1-l019-w03",
+        "g1-l019-w04",
+        "g1-l019-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 30,
+      "start": 68.56,
+      "end": 70.34,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 4,
+        "expectedWords": 5,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 19,
+      "sourcePhraseId": "g1-l019",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l020",
+      "text": "He looked on it: good.",
+      "wordIds": [
+        "g1-l020-w01",
+        "g1-l020-w02",
+        "g1-l020-w03",
+        "g1-l020-w04",
+        "g1-l020-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 31,
+      "start": 70.34,
+      "end": 72.92,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 5,
+        "expectedWords": 5,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 20,
+      "sourcePhraseId": "g1-l020",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l021",
+      "text": "Dusk. Dawn. The second day.",
+      "wordIds": [
+        "g1-l021-w01",
+        "g1-l021-w02",
+        "g1-l021-w03",
+        "g1-l021-w04",
+        "g1-l021-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 32,
+      "start": 73.86,
+      "end": 74.74,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 3,
+        "expectedWords": 5,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 21,
+      "sourcePhraseId": "g1-l021",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l022",
+      "text": "‘Waters below Heaven, run to one place;",
+      "wordIds": [
+        "g1-l022-w01",
+        "g1-l022-w02",
+        "g1-l022-w03",
+        "g1-l022-w04",
+        "g1-l022-w05",
+        "g1-l022-w06",
+        "g1-l022-w07"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 35,
+      "start": 78.8,
+      "end": 82.5,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 6,
+        "expectedWords": 7,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 22,
+      "sourcePhraseId": "g1-l022",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l023",
+      "text": "let dry ground show!’",
+      "wordIds": [
+        "g1-l023-w01",
+        "g1-l023-w02",
+        "g1-l023-w03",
+        "g1-l023-w04"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 36,
+      "start": 82.5,
+      "end": 83.9,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 3,
+        "expectedWords": 4,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 23,
+      "sourcePhraseId": "g1-l023",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l024",
+      "text": "The waters gathered. Land came clear.",
+      "wordIds": [
+        "g1-l024-w01",
+        "g1-l024-w02",
+        "g1-l024-w03",
+        "g1-l024-w04",
+        "g1-l024-w05",
+        "g1-l024-w06"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 37,
+      "start": 87.28,
+      "end": 92,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 6,
+        "expectedWords": 6,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 24,
+      "sourcePhraseId": "g1-l024",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l025",
+      "text": "He named the dry ground Earth,",
+      "wordIds": [
+        "g1-l025-w01",
+        "g1-l025-w02",
+        "g1-l025-w03",
+        "g1-l025-w04",
+        "g1-l025-w05",
+        "g1-l025-w06"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 40,
+      "start": 92,
+      "end": 95.26,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 6,
+        "expectedWords": 6,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 25,
+      "sourcePhraseId": "g1-l025",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l026",
+      "text": "the gathered waters Seas.",
+      "wordIds": [
+        "g1-l026-w01",
+        "g1-l026-w02",
+        "g1-l026-w03",
+        "g1-l026-w04"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 41,
+      "start": 95.26,
+      "end": 97.58,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 4,
+        "expectedWords": 4,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 26,
+      "sourcePhraseId": "g1-l026",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l027",
+      "text": "He looked on them: good.",
+      "wordIds": [
+        "g1-l027-w01",
+        "g1-l027-w02",
+        "g1-l027-w03",
+        "g1-l027-w04",
+        "g1-l027-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 42,
+      "start": 97.58,
+      "end": 100,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 4,
+        "expectedWords": 5,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 27,
+      "sourcePhraseId": "g1-l027",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l028",
+      "text": "‘Ground, send up seed-bearing grass",
+      "wordIds": [
+        "g1-l028-w01",
+        "g1-l028-w02",
+        "g1-l028-w03",
+        "g1-l028-w04",
+        "g1-l028-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Build",
+      "sourceLineIndex": 45,
+      "start": 105.24,
+      "end": 105.6,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 1,
+        "expectedWords": 5,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 28,
+      "sourcePhraseId": "g1-l028",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l029",
+      "text": "in kind and likeness!",
+      "wordIds": [
+        "g1-l029-w01",
+        "g1-l029-w02",
+        "g1-l029-w03",
+        "g1-l029-w04"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Build",
+      "sourceLineIndex": 46,
+      "start": 105.88,
+      "end": 107.66,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 3,
+        "expectedWords": 4,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 29,
+      "sourcePhraseId": "g1-l029",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l030",
+      "text": "Trees, bear fruit with seed within,",
+      "wordIds": [
+        "g1-l030-w01",
+        "g1-l030-w02",
+        "g1-l030-w03",
+        "g1-l030-w04",
+        "g1-l030-w05",
+        "g1-l030-w06"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Build",
+      "sourceLineIndex": 47,
+      "start": 107.66,
+      "end": 110.42,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 5,
+        "expectedWords": 6,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 30,
+      "sourcePhraseId": "g1-l030",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l031",
+      "text": "each true to its kind!’",
+      "wordIds": [
+        "g1-l031-w01",
+        "g1-l031-w02",
+        "g1-l031-w03",
+        "g1-l031-w04",
+        "g1-l031-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Build",
+      "sourceLineIndex": 48,
+      "start": 110.42,
+      "end": 111.56,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 4,
+        "expectedWords": 5,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 31,
+      "sourcePhraseId": "g1-l031",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l032",
+      "text": "His word took hold.",
+      "wordIds": [
+        "g1-l032-w01",
+        "g1-l032-w02",
+        "g1-l032-w03",
+        "g1-l032-w04"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Build",
+      "sourceLineIndex": 49,
+      "start": 112.08,
+      "end": 112.4,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 1,
+        "expectedWords": 4,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 32,
+      "sourcePhraseId": "g1-l032",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l033",
+      "text": "Green surged from the soil:",
+      "wordIds": [
+        "g1-l033-w01",
+        "g1-l033-w02",
+        "g1-l033-w03",
+        "g1-l033-w04",
+        "g1-l033-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 52,
+      "start": 118.26,
+      "end": 119.32,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 3,
+        "expectedWords": 5,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 33,
+      "sourcePhraseId": "g1-l033",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l034",
+      "text": "grass with seed in its kind and likeness;",
+      "wordIds": [
+        "g1-l034-w01",
+        "g1-l034-w02",
+        "g1-l034-w03",
+        "g1-l034-w04",
+        "g1-l034-w05",
+        "g1-l034-w06",
+        "g1-l034-w07",
+        "g1-l034-w08"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 53,
+      "start": 119.32,
+      "end": 122,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 7,
+        "expectedWords": 8,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 34,
+      "sourcePhraseId": "g1-l034",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l035",
+      "text": "fruit wrapped around its seed,",
+      "wordIds": [
+        "g1-l035-w01",
+        "g1-l035-w02",
+        "g1-l035-w03",
+        "g1-l035-w04",
+        "g1-l035-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 54,
+      "start": 122,
+      "end": 124.06,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 5,
+        "expectedWords": 5,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 35,
+      "sourcePhraseId": "g1-l035",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l036",
+      "text": "tree by tree, kind by kind.",
+      "wordIds": [
+        "g1-l036-w01",
+        "g1-l036-w02",
+        "g1-l036-w03",
+        "g1-l036-w04",
+        "g1-l036-w05",
+        "g1-l036-w06"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 55,
+      "start": 124.06,
+      "end": 126.58,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 6,
+        "expectedWords": 6,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 36,
+      "sourcePhraseId": "g1-l036",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l037",
+      "text": "He looked on it: good.",
+      "wordIds": [
+        "g1-l037-w01",
+        "g1-l037-w02",
+        "g1-l037-w03",
+        "g1-l037-w04",
+        "g1-l037-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 56,
+      "start": 126.58,
+      "end": 128.46,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 4,
+        "expectedWords": 5,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 37,
+      "sourcePhraseId": "g1-l037",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l038",
+      "text": "Dusk. Dawn. The third day.",
+      "wordIds": [
+        "g1-l038-w01",
+        "g1-l038-w02",
+        "g1-l038-w03",
+        "g1-l038-w04",
+        "g1-l038-w05"
+      ],
+      "sectionName": "Verse 2",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 57,
+      "start": 130.54,
+      "end": 132.86,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 5,
+        "expectedWords": 5,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 38,
+      "sourcePhraseId": "g1-l038",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l039",
+      "text": "‘Lights across Heaven’s firmament!",
+      "wordIds": [
+        "g1-l039-w01",
+        "g1-l039-w02",
+        "g1-l039-w03",
+        "g1-l039-w04"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 61,
+      "start": 136.9,
+      "end": 140.24,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 4,
+        "expectedWords": 4,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 39,
+      "sourcePhraseId": "g1-l039",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l040",
+      "text": "Divide day from night;",
+      "wordIds": [
+        "g1-l040-w01",
+        "g1-l040-w02",
+        "g1-l040-w03",
+        "g1-l040-w04"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 62,
+      "start": 140.24,
+      "end": 142.48,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 4,
+        "expectedWords": 4,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 40,
+      "sourcePhraseId": "g1-l040",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l041",
+      "text": "mark signs, seasons, days and years!’",
+      "wordIds": [
+        "g1-l041-w01",
+        "g1-l041-w02",
+        "g1-l041-w03",
+        "g1-l041-w04",
+        "g1-l041-w05",
+        "g1-l041-w06"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 63,
+      "start": 143.42,
+      "end": 146.32,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 4,
+        "expectedWords": 6,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 41,
+      "sourcePhraseId": "g1-l041",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l042",
+      "text": "‘From that height, shine on the earth!’",
+      "wordIds": [
+        "g1-l042-w01",
+        "g1-l042-w02",
+        "g1-l042-w03",
+        "g1-l042-w04",
+        "g1-l042-w05",
+        "g1-l042-w06",
+        "g1-l042-w07"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 64,
+      "start": 146.8,
+      "end": 150.32,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 5,
+        "expectedWords": 7,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 42,
+      "sourcePhraseId": "g1-l042",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l043",
+      "text": "His word took hold.",
+      "wordIds": [
+        "g1-l043-w01",
+        "g1-l043-w02",
+        "g1-l043-w03",
+        "g1-l043-w04"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 65,
+      "start": 150.84,
+      "end": 153.52,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 2,
+        "expectedWords": 4,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 43,
+      "sourcePhraseId": "g1-l043",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l044",
+      "text": "Two great lights He fashioned:",
+      "wordIds": [
+        "g1-l044-w01",
+        "g1-l044-w02",
+        "g1-l044-w03",
+        "g1-l044-w04",
+        "g1-l044-w05"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 68,
+      "start": 155.94,
+      "end": 156.24,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 1,
+        "expectedWords": 5,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 44,
+      "sourcePhraseId": "g1-l044",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l045",
+      "text": "the greater to command the day,",
+      "wordIds": [
+        "g1-l045-w01",
+        "g1-l045-w02",
+        "g1-l045-w03",
+        "g1-l045-w04",
+        "g1-l045-w05",
+        "g1-l045-w06"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 69,
+      "start": 157.66,
+      "end": 159.76,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 6,
+        "expectedWords": 6,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 45,
+      "sourcePhraseId": "g1-l045",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l046",
+      "text": "the lesser to command the night.",
+      "wordIds": [
+        "g1-l046-w01",
+        "g1-l046-w02",
+        "g1-l046-w03",
+        "g1-l046-w04",
+        "g1-l046-w05",
+        "g1-l046-w06"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 70,
+      "start": 159.76,
+      "end": 162.34,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 6,
+        "expectedWords": 6,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 46,
+      "sourcePhraseId": "g1-l046",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l047",
+      "text": "He made the stars as well.",
+      "wordIds": [
+        "g1-l047-w01",
+        "g1-l047-w02",
+        "g1-l047-w03",
+        "g1-l047-w04",
+        "g1-l047-w05",
+        "g1-l047-w06"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 71,
+      "start": 162.34,
+      "end": 164.8,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 6,
+        "expectedWords": 6,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 47,
+      "sourcePhraseId": "g1-l047",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l048",
+      "text": "He set them in Heaven’s span",
+      "wordIds": [
+        "g1-l048-w01",
+        "g1-l048-w02",
+        "g1-l048-w03",
+        "g1-l048-w04",
+        "g1-l048-w05",
+        "g1-l048-w06"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 72,
+      "start": 164.8,
+      "end": 167.24,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 6,
+        "expectedWords": 6,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 48,
+      "sourcePhraseId": "g1-l048",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l049",
+      "text": "to send their light across the earth,",
+      "wordIds": [
+        "g1-l049-w01",
+        "g1-l049-w02",
+        "g1-l049-w03",
+        "g1-l049-w04",
+        "g1-l049-w05",
+        "g1-l049-w06",
+        "g1-l049-w07"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 73,
+      "start": 167.24,
+      "end": 169.58,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 7,
+        "expectedWords": 7,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 49,
+      "sourcePhraseId": "g1-l049",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l050",
+      "text": "to rule night and day,",
+      "wordIds": [
+        "g1-l050-w01",
+        "g1-l050-w02",
+        "g1-l050-w03",
+        "g1-l050-w04",
+        "g1-l050-w05"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 74,
+      "start": 169.58,
+      "end": 171.22,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 5,
+        "expectedWords": 5,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 50,
+      "sourcePhraseId": "g1-l050",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l051",
+      "text": "to keep the bright apart from dark.",
+      "wordIds": [
+        "g1-l051-w01",
+        "g1-l051-w02",
+        "g1-l051-w03",
+        "g1-l051-w04",
+        "g1-l051-w05",
+        "g1-l051-w06",
+        "g1-l051-w07"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 75,
+      "start": 171.22,
+      "end": 174.62,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 6,
+        "expectedWords": 7,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 51,
+      "sourcePhraseId": "g1-l051",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l052",
+      "text": "He looked on them: good.",
+      "wordIds": [
+        "g1-l052-w01",
+        "g1-l052-w02",
+        "g1-l052-w03",
+        "g1-l052-w04",
+        "g1-l052-w05"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 76,
+      "start": 174.62,
+      "end": 177.34,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 5,
+        "expectedWords": 5,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 52,
+      "sourcePhraseId": "g1-l052",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l053",
+      "text": "Dusk. Dawn. The fourth day.",
+      "wordIds": [
+        "g1-l053-w01",
+        "g1-l053-w02",
+        "g1-l053-w03",
+        "g1-l053-w04",
+        "g1-l053-w05"
+      ],
+      "sectionName": "Verse 3",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 77,
+      "start": 179.56,
+      "end": 180.8,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 3,
+        "expectedWords": 5,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 53,
+      "sourcePhraseId": "g1-l053",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l054",
+      "text": "‘Water, swarm with living reptiles!",
+      "wordIds": [
+        "g1-l054-w01",
+        "g1-l054-w02",
+        "g1-l054-w03",
+        "g1-l054-w04",
+        "g1-l054-w05"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 81,
+      "start": 184.42,
+      "end": 187.4,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 4,
+        "expectedWords": 5,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 54,
+      "sourcePhraseId": "g1-l054",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l055",
+      "text": "Winged creatures, fly above the earth",
+      "wordIds": [
+        "g1-l055-w01",
+        "g1-l055-w02",
+        "g1-l055-w03",
+        "g1-l055-w04",
+        "g1-l055-w05",
+        "g1-l055-w06"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 82,
+      "start": 187.78,
+      "end": 190,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 5,
+        "expectedWords": 6,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 55,
+      "sourcePhraseId": "g1-l055",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l056",
+      "text": "across Heaven’s firmament!’",
+      "wordIds": [
+        "g1-l056-w01",
+        "g1-l056-w02",
+        "g1-l056-w03"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 83,
+      "start": 190,
+      "end": 190.48,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 1,
+        "expectedWords": 3,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 56,
+      "sourcePhraseId": "g1-l056",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l057",
+      "text": "His word took hold.",
+      "wordIds": [
+        "g1-l057-w01",
+        "g1-l057-w02",
+        "g1-l057-w03",
+        "g1-l057-w04"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 84,
+      "start": 193.08,
+      "end": 196.04,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 4,
+        "expectedWords": 4,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 57,
+      "sourcePhraseId": "g1-l057",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l058",
+      "text": "God made the great whales,",
+      "wordIds": [
+        "g1-l058-w01",
+        "g1-l058-w02",
+        "g1-l058-w03",
+        "g1-l058-w04",
+        "g1-l058-w05"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 87,
+      "start": 197.36,
+      "end": 199.7,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 5,
+        "expectedWords": 5,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 58,
+      "sourcePhraseId": "g1-l058",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l059",
+      "text": "every living water-reptile by kind,",
+      "wordIds": [
+        "g1-l059-w01",
+        "g1-l059-w02",
+        "g1-l059-w03",
+        "g1-l059-w04",
+        "g1-l059-w05"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 88,
+      "start": 199.7,
+      "end": 201.96,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 4,
+        "expectedWords": 5,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 59,
+      "sourcePhraseId": "g1-l059",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l060",
+      "text": "and every winged creature by kind.",
+      "wordIds": [
+        "g1-l060-w01",
+        "g1-l060-w02",
+        "g1-l060-w03",
+        "g1-l060-w04",
+        "g1-l060-w05",
+        "g1-l060-w06"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 89,
+      "start": 201.96,
+      "end": 204.52,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 6,
+        "expectedWords": 6,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 60,
+      "sourcePhraseId": "g1-l060",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l061",
+      "text": "He looked on them: good.",
+      "wordIds": [
+        "g1-l061-w01",
+        "g1-l061-w02",
+        "g1-l061-w03",
+        "g1-l061-w04",
+        "g1-l061-w05"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 90,
+      "start": 204.52,
+      "end": 206.7,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 5,
+        "expectedWords": 5,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 61,
+      "sourcePhraseId": "g1-l061",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l062",
+      "text": "His blessing rang out:",
+      "wordIds": [
+        "g1-l062-w01",
+        "g1-l062-w02",
+        "g1-l062-w03",
+        "g1-l062-w04"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 91,
+      "start": 206.7,
+      "end": 209.2,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 4,
+        "expectedWords": 4,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 62,
+      "sourcePhraseId": "g1-l062",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l063",
+      "text": "‘Increase! Multiply! Fill the seas!",
+      "wordIds": [
+        "g1-l063-w01",
+        "g1-l063-w02",
+        "g1-l063-w03",
+        "g1-l063-w04",
+        "g1-l063-w05"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 92,
+      "start": 209.2,
+      "end": 212.32,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 5,
+        "expectedWords": 5,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 63,
+      "sourcePhraseId": "g1-l063",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l064",
+      "text": "Let the winged multiply on earth!’",
+      "wordIds": [
+        "g1-l064-w01",
+        "g1-l064-w02",
+        "g1-l064-w03",
+        "g1-l064-w04",
+        "g1-l064-w05",
+        "g1-l064-w06"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 93,
+      "start": 212.32,
+      "end": 214.24,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 5,
+        "expectedWords": 6,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 64,
+      "sourcePhraseId": "g1-l064",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l065",
+      "text": "Dusk. Dawn. The fifth day.",
+      "wordIds": [
+        "g1-l065-w01",
+        "g1-l065-w02",
+        "g1-l065-w03",
+        "g1-l065-w04",
+        "g1-l065-w05"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 94,
+      "start": 217.9,
+      "end": 218.82,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 3,
+        "expectedWords": 5,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 65,
+      "sourcePhraseId": "g1-l065",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l066",
+      "text": "‘Earth, bring out living kinds:",
+      "wordIds": [
+        "g1-l066-w01",
+        "g1-l066-w02",
+        "g1-l066-w03",
+        "g1-l066-w04",
+        "g1-l066-w05"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 97,
+      "start": 223,
+      "end": 225.26,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 4,
+        "expectedWords": 5,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 66,
+      "sourcePhraseId": "g1-l066",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l067",
+      "text": "four-footed beasts, crawling reptiles,",
+      "wordIds": [
+        "g1-l067-w01",
+        "g1-l067-w02",
+        "g1-l067-w03",
+        "g1-l067-w04"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 98,
+      "start": 226.18,
+      "end": 227.7,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 2,
+        "expectedWords": 4,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 67,
+      "sourcePhraseId": "g1-l067",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l068",
+      "text": "wild beasts, each after its kind!’",
+      "wordIds": [
+        "g1-l068-w01",
+        "g1-l068-w02",
+        "g1-l068-w03",
+        "g1-l068-w04",
+        "g1-l068-w05",
+        "g1-l068-w06"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 99,
+      "start": 228.24,
+      "end": 230.66,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 3,
+        "expectedWords": 6,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 68,
+      "sourcePhraseId": "g1-l068",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l069",
+      "text": "His word took hold.",
+      "wordIds": [
+        "g1-l069-w01",
+        "g1-l069-w02",
+        "g1-l069-w03",
+        "g1-l069-w04"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 100,
+      "start": 231.18,
+      "end": 231.88,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 1,
+        "expectedWords": 4,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 69,
+      "sourcePhraseId": "g1-l069",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l070",
+      "text": "He fashioned wild beasts, cattle,",
+      "wordIds": [
+        "g1-l070-w01",
+        "g1-l070-w02",
+        "g1-l070-w03",
+        "g1-l070-w04",
+        "g1-l070-w05"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 103,
+      "start": 236.11,
+      "end": 238.44,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 4,
+        "expectedWords": 5,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 70,
+      "sourcePhraseId": "g1-l070",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l071",
+      "text": "and the reptiles of the ground,",
+      "wordIds": [
+        "g1-l071-w01",
+        "g1-l071-w02",
+        "g1-l071-w03",
+        "g1-l071-w04",
+        "g1-l071-w05",
+        "g1-l071-w06"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 104,
+      "start": 239.12,
+      "end": 241.8,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 6,
+        "expectedWords": 6,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 71,
+      "sourcePhraseId": "g1-l071",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l072",
+      "text": "each after its kind.",
+      "wordIds": [
+        "g1-l072-w01",
+        "g1-l072-w02",
+        "g1-l072-w03",
+        "g1-l072-w04"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 105,
+      "start": 242.02,
+      "end": 243.1,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 3,
+        "expectedWords": 4,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 72,
+      "sourcePhraseId": "g1-l072",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l073",
+      "text": "He looked on them: good.",
+      "wordIds": [
+        "g1-l073-w01",
+        "g1-l073-w02",
+        "g1-l073-w03",
+        "g1-l073-w04",
+        "g1-l073-w05"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 106,
+      "start": 245.53,
+      "end": 247.5,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 5,
+        "expectedWords": 5,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 73,
+      "sourcePhraseId": "g1-l073",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l074",
+      "text": "Then God said, ‘Let us make humankind",
+      "wordIds": [
+        "g1-l074-w01",
+        "g1-l074-w02",
+        "g1-l074-w03",
+        "g1-l074-w04",
+        "g1-l074-w05",
+        "g1-l074-w06",
+        "g1-l074-w07"
+      ],
+      "sectionName": "Verse 5",
+      "deliveryStyle": "Verse 5",
+      "sourceLineIndex": 109,
+      "start": 248.82,
+      "end": 252.66,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 7,
+        "expectedWords": 7,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 74,
+      "sourcePhraseId": "g1-l074",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l075",
+      "text": "in our image, in our likeness;",
+      "wordIds": [
+        "g1-l075-w01",
+        "g1-l075-w02",
+        "g1-l075-w03",
+        "g1-l075-w04",
+        "g1-l075-w05",
+        "g1-l075-w06"
+      ],
+      "sectionName": "Verse 5",
+      "deliveryStyle": "Verse 5",
+      "sourceLineIndex": 110,
+      "start": 253.68,
+      "end": 256.38,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 6,
+        "expectedWords": 6,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 75,
+      "sourcePhraseId": "g1-l075",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l064-r01",
+      "text": "Let the winged multiply on earth!’",
+      "wordIds": [
+        "g1-l064-r01-w01",
+        "g1-l064-r01-w02",
+        "g1-l064-r01-w03",
+        "g1-l064-r01-w04",
+        "g1-l064-r01-w05",
+        "g1-l064-r01-w06"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 93,
+      "start": 256.38,
+      "end": 258.82,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 4,
+        "expectedWords": 6,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 76,
+      "sourcePhraseId": "g1-l064",
+      "performedRepeat": true
+    },
+    {
+      "id": "g1-l069-r01",
+      "text": "His word took hold.",
+      "wordIds": [
+        "g1-l069-r01-w01",
+        "g1-l069-r01-w02",
+        "g1-l069-r01-w03",
+        "g1-l069-r01-w04"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Crescendo",
+      "sourceLineIndex": 100,
+      "start": 260.66,
+      "end": 261.56,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 2,
+        "expectedWords": 4,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 77,
+      "sourcePhraseId": "g1-l069",
+      "performedRepeat": true
+    },
+    {
+      "id": "g1-l070-r01",
+      "text": "He fashioned wild beasts, cattle,",
+      "wordIds": [
+        "g1-l070-r01-w01",
+        "g1-l070-r01-w02",
+        "g1-l070-r01-w03",
+        "g1-l070-r01-w04",
+        "g1-l070-r01-w05"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 103,
+      "start": 264.74,
+      "end": 265.16,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 1,
+        "expectedWords": 5,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 78,
+      "sourcePhraseId": "g1-l070",
+      "performedRepeat": true
+    },
+    {
+      "id": "g1-l071-r01",
+      "text": "and the reptiles of the ground,",
+      "wordIds": [
+        "g1-l071-r01-w01",
+        "g1-l071-r01-w02",
+        "g1-l071-r01-w03",
+        "g1-l071-r01-w04",
+        "g1-l071-r01-w05",
+        "g1-l071-r01-w06"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 104,
+      "start": 266.46,
+      "end": 269.04,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 6,
+        "expectedWords": 6,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 79,
+      "sourcePhraseId": "g1-l071",
+      "performedRepeat": true
+    },
+    {
+      "id": "g1-l072-r01",
+      "text": "each after its kind.",
+      "wordIds": [
+        "g1-l072-r01-w01",
+        "g1-l072-r01-w02",
+        "g1-l072-r01-w03",
+        "g1-l072-r01-w04"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 105,
+      "start": 269.81,
+      "end": 270.74,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 2,
+        "expectedWords": 4,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 80,
+      "sourcePhraseId": "g1-l072",
+      "performedRepeat": true
+    },
+    {
+      "id": "g1-l073-r01",
+      "text": "He looked on them: good.",
+      "wordIds": [
+        "g1-l073-r01-w01",
+        "g1-l073-r01-w02",
+        "g1-l073-r01-w03",
+        "g1-l073-r01-w04",
+        "g1-l073-r01-w05"
+      ],
+      "sectionName": "Verse 4",
+      "deliveryStyle": "Breakdown",
+      "sourceLineIndex": 106,
+      "start": 271.82,
+      "end": 274.02,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 5,
+        "expectedWords": 5,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 81,
+      "sourcePhraseId": "g1-l073",
+      "performedRepeat": true
+    },
+    {
+      "id": "g1-l074-r01",
+      "text": "Then God said, ‘Let us make humankind",
+      "wordIds": [
+        "g1-l074-r01-w01",
+        "g1-l074-r01-w02",
+        "g1-l074-r01-w03",
+        "g1-l074-r01-w04",
+        "g1-l074-r01-w05",
+        "g1-l074-r01-w06",
+        "g1-l074-r01-w07"
+      ],
+      "sectionName": "Verse 5",
+      "deliveryStyle": "Verse 5",
+      "sourceLineIndex": 109,
+      "start": 275.56,
+      "end": 279.06,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 7,
+        "expectedWords": 7,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 82,
+      "sourcePhraseId": "g1-l074",
+      "performedRepeat": true
+    },
+    {
+      "id": "g1-l075-r01",
+      "text": "in our image, in our likeness;",
+      "wordIds": [
+        "g1-l075-r01-w01",
+        "g1-l075-r01-w02",
+        "g1-l075-r01-w03",
+        "g1-l075-r01-w04",
+        "g1-l075-r01-w05",
+        "g1-l075-r01-w06"
+      ],
+      "sectionName": "Verse 5",
+      "deliveryStyle": "Verse 5",
+      "sourceLineIndex": 110,
+      "start": 279.06,
+      "end": 281.64,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 6,
+        "expectedWords": 6,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 83,
+      "sourcePhraseId": "g1-l075",
+      "performedRepeat": true
+    },
+    {
+      "id": "g1-l076",
+      "text": "let them rule the fish, the birds,",
+      "wordIds": [
+        "g1-l076-w01",
+        "g1-l076-w02",
+        "g1-l076-w03",
+        "g1-l076-w04",
+        "g1-l076-w05",
+        "g1-l076-w06",
+        "g1-l076-w07"
+      ],
+      "sectionName": "Verse 5",
+      "deliveryStyle": "Verse 5",
+      "sourceLineIndex": 111,
+      "start": 281.64,
+      "end": 283.88,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 7,
+        "expectedWords": 7,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 84,
+      "sourcePhraseId": "g1-l076",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l077",
+      "text": "the cattle, all the earth and all that crawls.’",
+      "wordIds": [
+        "g1-l077-w01",
+        "g1-l077-w02",
+        "g1-l077-w03",
+        "g1-l077-w04",
+        "g1-l077-w05",
+        "g1-l077-w06",
+        "g1-l077-w07",
+        "g1-l077-w08",
+        "g1-l077-w09"
+      ],
+      "sectionName": "Verse 5",
+      "deliveryStyle": "Verse 5",
+      "sourceLineIndex": 112,
+      "start": 283.88,
+      "end": 288.22,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 8,
+        "expectedWords": 9,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 85,
+      "sourcePhraseId": "g1-l077",
+      "performedRepeat": false
+    },
+    {
+      "id": "g1-l096",
+      "text": "Dusk. Dawn. The sixth day.",
+      "wordIds": [
+        "g1-l096-w01",
+        "g1-l096-w02",
+        "g1-l096-w03",
+        "g1-l096-w04",
+        "g1-l096-w05"
+      ],
+      "sectionName": "Outro",
+      "deliveryStyle": "Outro",
+      "sourceLineIndex": 137,
+      "start": 292.22,
+      "end": 292.5,
+      "provenance": {
+        "method": "Suno embedded lyric sequence corroborated by unprompted small.en ASR; first and last exact matched ASR words only",
+        "status": "provisional_asr_anchors",
+        "matchedWords": 1,
+        "expectedWords": 5,
+        "timingVerified": false,
+        "artifacts": [
+          "analysis/provider-embedded-lyrics.txt",
+          "analysis/full-whisper-small.json"
+        ]
+      },
+      "performanceIndex": 86,
+      "sourcePhraseId": "g1-l096",
+      "performedRepeat": false
+    }
+  ],
+  "omittedSuppliedPhraseIds": [
+    "g1-l078",
+    "g1-l079",
+    "g1-l080",
+    "g1-l081",
+    "g1-l082",
+    "g1-l083",
+    "g1-l084",
+    "g1-l085",
+    "g1-l086",
+    "g1-l087",
+    "g1-l088",
+    "g1-l089",
+    "g1-l090",
+    "g1-l091",
+    "g1-l092",
+    "g1-l093",
+    "g1-l094",
+    "g1-l095"
+  ],
+  "warnings": [
+    "Supplied lyrics are archived unchanged. Performed repeated block and omitted supplied lines require medium ASR corroboration, pending.",
+    "ASR onset anchors may absorb silence; CTC alignment is in progress. No timestamps were interpolated."
+  ],
+  "asrSimilarity": 0.8037578288100209
+}

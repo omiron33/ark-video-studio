@@ -1,0 +1,22 @@
+{
+  "prompt_id": "6fad0708-4ded-4a91-93b2-a9c47ebe734a",
+  "number": 97,
+  "node_errors": {},
+  "name": "ophanim-gentle-v2",
+  "submittedAt": "2026-09-27T11:10:05.670248+00:00",
+  "project": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning",
+  "themeChoiceSha256": "c9637517ee90b0c9a6700e0398bb912eeffa66f22addc131bf97fc576281beac",
+  "firstImage": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/ophanim-subdued.png",
+  "firstImageSha256": "d4f6fdca164b8ef979fe30d2d7257e50d9dab71fd347a046be3ea57d7166554c",
+  "lastImage": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/ophanim-subdued.png",
+  "lastImageSha256": "d4f6fdca164b8ef979fe30d2d7257e50d9dab71fd347a046be3ea57d7166554c",
+  "promptFile": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/ophanim-gentle-v2-motion-prompt.txt",
+  "workflow": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/ophanim-gentle-v2-workflow.json",
+  "workflowSha256": "9b7e368405b8233d405cfc12eee607f4e79217b4b94a5000242ee9ec2186b6ee",
+  "framesRequested": 124,
+  "fpsRequested": 24,
+  "seed": 2026092732,
+  "conditioning": "first_frame+last_frame",
+  "provider": "local OmiPC ComfyUI",
+  "cost": "local GPU; no paid API"
+}

@@ -1,0 +1,13 @@
+{
+  "project": "Genesis1 - The Beginning",
+  "title": "Genesis 1 - Life from the Earth (source preview)",
+  "version": "Source insert v1",
+  "sourceAgent": "Codex",
+  "sourceMachine": "OmiPC local GPU / Mac mini finishing",
+  "sourcePath": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/vegetation-v1-motion.mp4",
+  "notes": "GENERATION SOURCE PREVIEW ONLY, not the finished Genesis1 lyric film. Silent 7.291667-second local MiniMax H3 insert from new GPT Image anchors. Artistically compressed tree and ground-cover growth in a fixed valley view. Native 175 generated frames at 24fps. No retiming, interpolation or reversal. Intended final film treatment adds active foreground lyrics and/or authored graphic motion; this standalone source preview intentionally lacks those layers. Agent reviewed chronological6fps decoded frames and endpoints; source acceptance does not certify the final composite. Pending Shane review; no user approval claimed. SHA256 34c360c3ea0b8f943b71cf159fc0ee02ce3412f54b5f571c5d4cc51bad342a15.",
+  "status": "pending_review",
+  "path": "C:\\Users\\sjfis\\Videos\\Genesis1\\vegetation-v1-34c360c3ea0b.mp4",
+  "thumbnail": "C:\\Users\\sjfis\\Videos\\Genesis1\\vegetation-v1-34c360c3ea0b.jpg",
+  "expectedMd5": "eee760b71ecf30d7992753ec8f084ad3"
+}

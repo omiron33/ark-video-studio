@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 96.92999999999999,
+    "duration": 7.56,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "He looked on them: good.",
+  "approvedLyrics": "He looked on them: good.",
+  "words": [
+    {
+      "id": "w_6da8f97103d0d09c",
+      "text": "He",
+      "start": 97.210743,
+      "end": 97.451379,
+      "phraseId": "g1-l027",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.015676694621277847,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l027-w01"
+    },
+    {
+      "id": "w_cad55c209f10101a",
+      "text": "looked",
+      "start": 98.11313,
+      "end": 100.639814,
+      "phraseId": "g1-l027",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.09517787596971412,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l027-w02"
+    },
+    {
+      "id": "w_ffc306619baa6c1b",
+      "text": "on",
+      "start": 101.101034,
+      "end": 101.141141,
+      "phraseId": "g1-l027",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.021057606682201885,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l027-w03"
+    },
+    {
+      "id": "w_497b80ac2ee4295b",
+      "text": "them:",
+      "start": 101.441936,
+      "end": 102.665172,
+      "phraseId": "g1-l027",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.015252318559722453,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l027-w04"
+    },
+    {
+      "id": "w_757907a2d22bad85",
+      "text": "good.",
+      "start": 103.246711,
+      "end": 104.048833,
+      "phraseId": "g1-l027",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.06653319728621138,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l027-w05"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "He looked on them: good.",
+      "wordIds": [
+        "w_6da8f97103d0d09c",
+        "w_cad55c209f10101a",
+        "w_ffc306619baa6c1b",
+        "w_497b80ac2ee4295b",
+        "w_757907a2d22bad85"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l027-full-ctc-large.json",
+  "executionEvidence": {
+    "id": "g1-l027-full-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l027-full-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 3.998902583029121,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

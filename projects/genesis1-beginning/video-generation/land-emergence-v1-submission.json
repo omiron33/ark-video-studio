@@ -1,0 +1,22 @@
+{
+  "prompt_id": "841b4461-d867-4734-8e46-c108a35821ef",
+  "number": 100,
+  "node_errors": {},
+  "name": "land-emergence-v1",
+  "submittedAt": "2026-09-27T11:19:33.295937+00:00",
+  "project": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning",
+  "themeChoiceSha256": "c9637517ee90b0c9a6700e0398bb912eeffa66f22addc131bf97fc576281beac",
+  "firstImage": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/land-emergence-start.png",
+  "firstImageSha256": "fa9d4d9e99f392b5316dd5dfe5d8a53dd3a123bb01ac8c3059ae4921249c668a",
+  "lastImage": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/land-emergence-end.png",
+  "lastImageSha256": "c3aeb138af45b8dddcfd0e1c3b9ee76b7863bf9743066f871a9f99573c31e75e",
+  "promptFile": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/land-emergence-v1-motion-prompt.txt",
+  "workflow": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/video-generation/land-emergence-v1-workflow.json",
+  "workflowSha256": "eccb72b4481dfc324a18b892f8a928fc5e125b45bda3e488ff48e93af44659aa",
+  "framesRequested": 172,
+  "fpsRequested": 24,
+  "seed": 2026092735,
+  "conditioning": "first_frame+last_frame",
+  "provider": "local OmiPC ComfyUI",
+  "cost": "local GPU; no paid API"
+}

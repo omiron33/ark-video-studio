@@ -1,0 +1,263 @@
+{
+  "words": 462,
+  "phrases": 86,
+  "sourceSupported": 177,
+  "asrSelected": 209,
+  "issues": [
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l008-w03",
+      "after": "g1-l008-w04",
+      "seconds": 0.06152699999999811
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l008-w05",
+      "after": "g1-l008-w06",
+      "seconds": 0.04000000000000625
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l009-w06",
+      "after": "g1-l009-w07",
+      "seconds": 0.12305599999999828
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l009-w09",
+      "after": "g1-l010-w01",
+      "seconds": 0.0799999999999983
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l011-w02",
+      "after": "g1-l011-w03",
+      "seconds": 0.0799999999999983
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l012-w01",
+      "after": "g1-l012-w02",
+      "seconds": 0.12086099999999789
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l014-w03",
+      "after": "g1-l014-w04",
+      "seconds": 0.041872000000005016
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l015-w03",
+      "after": "g1-l015-w04",
+      "seconds": 0.12000000000000455
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l016-w03",
+      "after": "g1-l016-w04",
+      "seconds": 0.09999999999999432
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l019-w02",
+      "after": "g1-l019-w03",
+      "seconds": 0.07745099999999638
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l020-w03",
+      "after": "g1-l020-w04",
+      "seconds": 0.03999999999999204
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l020-w04",
+      "after": "g1-l020-w05",
+      "seconds": 0.05999999999998806
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l022-w03",
+      "after": "g1-l022-w04",
+      "seconds": 0.14000000000000057
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l028-w04",
+      "after": "g1-l028-w05",
+      "seconds": 0.043947000000002845
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l029-w04",
+      "after": "g1-l030-w01",
+      "seconds": 0.04788200000000131
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l030-w04",
+      "after": "g1-l030-w05",
+      "seconds": 0.036634000000006495
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l031-w05",
+      "after": "g1-l032-w01",
+      "seconds": 0.1267349999999965
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l038-w01",
+      "after": "g1-l038-w02",
+      "seconds": 0.03644399999998882
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l042-w07",
+      "after": "g1-l043-w01",
+      "seconds": 0.1202740000000233
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l045-w01",
+      "after": "g1-l045-w02",
+      "seconds": 0.06337299999998436
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l048-w06",
+      "after": "g1-l049-w01",
+      "seconds": 0.1282799999999895
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l054-w02",
+      "after": "g1-l054-w03",
+      "seconds": 0.08070399999999722
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l055-w06",
+      "after": "g1-l056-w01",
+      "seconds": 0.03999999999999204
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l056-w02",
+      "after": "g1-l056-w03",
+      "seconds": 0.1387499999999875
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l056-w03",
+      "after": "g1-l057-w01",
+      "seconds": 0.06302400000001285
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l057-w03",
+      "after": "g1-l057-w04",
+      "seconds": 0.14000000000001478
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l058-w02",
+      "after": "g1-l058-w03",
+      "seconds": 0.04060799999999176
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l059-w05",
+      "after": "g1-l060-w01",
+      "seconds": 0.02661000000000513
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l063-w03",
+      "after": "g1-l063-w04",
+      "seconds": 0.04454499999999939
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l063-w04",
+      "after": "g1-l063-w05",
+      "seconds": 0.03445500000000834
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l067-w01",
+      "after": "g1-l067-w02",
+      "seconds": 0.0368349999999964
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l067-w03",
+      "after": "g1-l067-w04",
+      "seconds": 0.12253200000000675
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l068-w06",
+      "after": "g1-l069-w01",
+      "seconds": 0.12042900000000145
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l074-r01-w07",
+      "after": "g1-l075-r01-w01",
+      "seconds": 0.15435200000001714
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l075-r01-w06",
+      "after": "g1-l076-w01",
+      "seconds": 0.04412499999995134
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l096-w02",
+      "after": "g1-l096-w03",
+      "seconds": 0.12590600000004315
+    },
+    {
+      "kind": "acoustic-overlap",
+      "before": "g1-l096-w03",
+      "after": "g1-l096-w04",
+      "seconds": 0.060000000000002274
+    }
+  ],
+  "normalizedWords": 462,
+  "timingSha256": "cd7f2602f86fc72adbaa6dac9e1c790647b28352ca2e49233f43032513bff488",
+  "sourceSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2",
+  "sourceDuration": 304.72,
+  "suppliedCanonicalWords": 519,
+  "suppliedCanonicalPhrases": 96,
+  "performedWords": 462,
+  "performedPhrases": 86,
+  "performedRepeatPhraseCount": 8,
+  "omittedSuppliedPhraseIds": [
+    "g1-l078",
+    "g1-l079",
+    "g1-l080",
+    "g1-l081",
+    "g1-l082",
+    "g1-l083",
+    "g1-l084",
+    "g1-l085",
+    "g1-l086",
+    "g1-l087",
+    "g1-l088",
+    "g1-l089",
+    "g1-l090",
+    "g1-l091",
+    "g1-l092",
+    "g1-l093",
+    "g1-l094",
+    "g1-l095"
+  ],
+  "rawMediumInvalidTokens": 2,
+  "modelDisagreementCases": 5,
+  "encodedReview": "pending",
+  "strictCertified": false
+}

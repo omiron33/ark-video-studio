@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 23.8,
+    "duration": 5.1,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "Then God called, \u2018Light, come forth!\u2019",
+  "approvedLyrics": "Then God called, \u2018Light, come forth!\u2019",
+  "words": [
+    {
+      "id": "w_55647fa0c63f4b59",
+      "text": "Then",
+      "start": 24.643307,
+      "end": 24.803937,
+      "phraseId": "g1-l006",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.8893945530188071,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l006-w01"
+    },
+    {
+      "id": "w_2d8bcb3c66cb5566",
+      "text": "God",
+      "start": 24.944488,
+      "end": 25.346063,
+      "phraseId": "g1-l006",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.973311421577421,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l006-w02"
+    },
+    {
+      "id": "w_45b5edd92b52b8f8",
+      "text": "called,",
+      "start": 25.54685,
+      "end": 26.02874,
+      "phraseId": "g1-l006",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.8677780766008838,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l006-w03"
+    },
+    {
+      "id": "w_27384c8e8fcdc8d6",
+      "text": "\u2018Light,",
+      "start": 26.731496,
+      "end": 27.052756,
+      "phraseId": "g1-l006",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.04559432663573146,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l006-w04"
+    },
+    {
+      "id": "w_889cbfd5ec720d55",
+      "text": "come",
+      "start": 27.394094,
+      "end": 27.534646,
+      "phraseId": "g1-l006",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.06360555283764313,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l006-w05"
+    },
+    {
+      "id": "w_e4c2d65cab9a4687",
+      "text": "forth!\u2019",
+      "start": 27.93622,
+      "end": 28.719291,
+      "phraseId": "g1-l006",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.2724031068091354,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l006-w06"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "Then God called, \u2018Light, come forth!\u2019",
+      "wordIds": [
+        "w_55647fa0c63f4b59",
+        "w_2d8bcb3c66cb5566",
+        "w_45b5edd92b52b8f8",
+        "w_27384c8e8fcdc8d6",
+        "w_889cbfd5ec720d55",
+        "w_e4c2d65cab9a4687"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l006-opening-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l006-opening-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l006-opening-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.6052007079124451,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

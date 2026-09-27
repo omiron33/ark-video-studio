@@ -1,0 +1,264 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 186.75,
+    "duration": 9.94,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "Winged creatures, fly above the earth across Heaven\u2019s firmament!\u2019 His word took hold.",
+  "approvedLyrics": "Winged creatures, fly above the earth across Heaven\u2019s firmament!\u2019 His word took hold.",
+  "words": [
+    {
+      "id": "w_d514de8cbaf54860",
+      "text": "Winged",
+      "start": 187.571653,
+      "end": 187.892298,
+      "phraseId": "g1-l055",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.029416038228791158,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l055-w01"
+    },
+    {
+      "id": "w_99c8badac2bfcdf9",
+      "text": "creatures,",
+      "start": 187.9925,
+      "end": 188.273065,
+      "phraseId": "g1-l055",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.026288326157051307,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l055-w02"
+    },
+    {
+      "id": "w_8197b2d1c54d03f7",
+      "text": "fly",
+      "start": 188.393306,
+      "end": 189.054637,
+      "phraseId": "g1-l055",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.022136316274739467,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l055-w03"
+    },
+    {
+      "id": "w_ed74ea72773f7d94",
+      "text": "above",
+      "start": 189.174879,
+      "end": 189.415363,
+      "phraseId": "g1-l055",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.004224501958678278,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l055-w04"
+    },
+    {
+      "id": "w_215257defb76cee7",
+      "text": "the",
+      "start": 189.495524,
+      "end": 189.615766,
+      "phraseId": "g1-l055",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.12477734598807604,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l055-w05"
+    },
+    {
+      "id": "w_454b54bbc8b2f6bf",
+      "text": "earth",
+      "start": 189.655847,
+      "end": 189.85625,
+      "phraseId": "g1-l055",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.010166915884022477,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l055-w06"
+    },
+    {
+      "id": "w_17b0abe5ae0e5702",
+      "text": "across",
+      "start": 190.136815,
+      "end": 192.120806,
+      "phraseId": "g1-l056",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.008136703679566645,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l056-w01"
+    },
+    {
+      "id": "w_0a5205e431056ba2",
+      "text": "Heaven\u2019s",
+      "start": 192.661895,
+      "end": 193.223024,
+      "phraseId": "g1-l056",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.012159660489937038,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l056-w02"
+    },
+    {
+      "id": "w_219826ba57a6f1cd",
+      "text": "firmament!\u2019",
+      "start": 193.403387,
+      "end": 195.287177,
+      "phraseId": "g1-l056",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.007367353903622775,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l056-w03"
+    },
+    {
+      "id": "w_0a7de1d48dc45b11",
+      "text": "His",
+      "start": 195.487581,
+      "end": 195.667944,
+      "phraseId": "g1-l057",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.018206248388945082,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l057-w01"
+    },
+    {
+      "id": "w_b0d372de02b84ba0",
+      "text": "word",
+      "start": 195.768145,
+      "end": 195.928468,
+      "phraseId": "g1-l057",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.008100774050989584,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l057-w02"
+    },
+    {
+      "id": "w_0b1edd4bf3ad02a6",
+      "text": "took",
+      "start": 195.988589,
+      "end": 196.329274,
+      "phraseId": "g1-l057",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.007070668233565436,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l057-w03"
+    },
+    {
+      "id": "w_e666442cf8ccfbf2",
+      "text": "hold.",
+      "start": 196.389395,
+      "end": 196.609839,
+      "phraseId": "g1-l057",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.011199197002858347,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l057-w04"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "Winged creatures, fly above the earth across Heaven\u2019s firmament!\u2019 His word took hold.",
+      "wordIds": [
+        "w_d514de8cbaf54860",
+        "w_99c8badac2bfcdf9",
+        "w_8197b2d1c54d03f7",
+        "w_ed74ea72773f7d94",
+        "w_215257defb76cee7",
+        "w_454b54bbc8b2f6bf",
+        "w_17b0abe5ae0e5702",
+        "w_0a5205e431056ba2",
+        "w_219826ba57a6f1cd",
+        "w_0a7de1d48dc45b11",
+        "w_b0d372de02b84ba0",
+        "w_0b1edd4bf3ad02a6",
+        "w_e666442cf8ccfbf2"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l055-retry-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l055-retry-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l055-retry-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 0.7250013747252524,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

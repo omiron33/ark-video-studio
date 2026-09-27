@@ -1,0 +1,9 @@
+{
+  "status": "unusable_download",
+  "source": "intake/suno-metadata.json media_urls m4a-opus",
+  "artifact": "provider-suno.m4a",
+  "bytes": 4586736,
+  "sha256": "dd5478b4c1992b625953d71d218f069d79c99ad4dbfc60bd2404924f5354d059",
+  "ffprobe": "Invalid data found; moov atom not found",
+  "note": "No provider word/line timing extracted. Opaque response is preserved and never used as source audio."
+}

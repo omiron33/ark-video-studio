@@ -1,0 +1,366 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 248.17,
+    "duration": 11.62,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "Then God said, \u2018Let us make humankind in our image, in our likeness; Let the winged multiply on earth!\u2019",
+  "approvedLyrics": "Then God said, \u2018Let us make humankind in our image, in our likeness; Let the winged multiply on earth!\u2019",
+  "words": [
+    {
+      "id": "w_693b4ea3794e2722",
+      "text": "Then",
+      "start": 249.051517,
+      "end": 249.211793,
+      "phraseId": "g1-l074",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9977589317736374,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l074-w01"
+    },
+    {
+      "id": "w_1831e4a5f92e1d15",
+      "text": "God",
+      "start": 249.352034,
+      "end": 249.552379,
+      "phraseId": "g1-l074",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9994946925952305,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l074-w02"
+    },
+    {
+      "id": "w_a724b5a95ae81ff5",
+      "text": "said,",
+      "start": 249.652552,
+      "end": 249.892966,
+      "phraseId": "g1-l074",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9997219283880917,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l074-w03"
+    },
+    {
+      "id": "w_57ef69705068c457",
+      "text": "\u2018Let",
+      "start": 251.315414,
+      "end": 251.455655,
+      "phraseId": "g1-l074",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9953054649070395,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l074-w04"
+    },
+    {
+      "id": "w_dc898bdab40fdfed",
+      "text": "us",
+      "start": 251.555828,
+      "end": 251.635966,
+      "phraseId": "g1-l074",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9994860901770981,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l074-w05"
+    },
+    {
+      "id": "w_dd59a79565586d10",
+      "text": "make",
+      "start": 251.756172,
+      "end": 251.976552,
+      "phraseId": "g1-l074",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9516740819714083,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l074-w06"
+    },
+    {
+      "id": "w_a253b4ffb3c8dafc",
+      "text": "humankind",
+      "start": 252.05669,
+      "end": 253.058414,
+      "phraseId": "g1-l074",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9243316689421296,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l074-w07"
+    },
+    {
+      "id": "w_522caf676f345176",
+      "text": "in",
+      "start": 254.500897,
+      "end": 254.540966,
+      "phraseId": "g1-l075",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.6479253128399544,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l075-w01"
+    },
+    {
+      "id": "w_f939b8a7e96aaa4e",
+      "text": "our",
+      "start": 254.641138,
+      "end": 254.721276,
+      "phraseId": "g1-l075",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9964204932555734,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l075-w02"
+    },
+    {
+      "id": "w_231439f4ecc38010",
+      "text": "image,",
+      "start": 254.821448,
+      "end": 255.121966,
+      "phraseId": "g1-l075",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9989986130201756,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l075-w03"
+    },
+    {
+      "id": "w_58900b7745104bbc",
+      "text": "in",
+      "start": 255.682931,
+      "end": 255.723,
+      "phraseId": "g1-l075",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.46492592317101084,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l075-w04"
+    },
+    {
+      "id": "w_dfd60897cb4e9455",
+      "text": "our",
+      "start": 255.823172,
+      "end": 255.90331,
+      "phraseId": "g1-l075",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9937609229523737,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l075-w05"
+    },
+    {
+      "id": "w_8115a6c87e0f6d40",
+      "text": "likeness;",
+      "start": 255.983448,
+      "end": 256.48431,
+      "phraseId": "g1-l075",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9782706441038616,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l075-w06"
+    },
+    {
+      "id": "w_6b8b1fb69f835e4c",
+      "text": "Let",
+      "start": 256.844931,
+      "end": 256.945103,
+      "phraseId": "g1-l064-r01",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.7213201466711947,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l064-r01-w01"
+    },
+    {
+      "id": "w_fd28ac28cbc80252",
+      "text": "the",
+      "start": 257.005207,
+      "end": 257.085345,
+      "phraseId": "g1-l064-r01",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9100703419091184,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l064-r01-w02"
+    },
+    {
+      "id": "w_6a16751f5e7edd44",
+      "text": "winged",
+      "start": 257.145448,
+      "end": 257.826621,
+      "phraseId": "g1-l064-r01",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.4145199739287813,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l064-r01-w03"
+    },
+    {
+      "id": "w_56160d83387bd0c3",
+      "text": "multiply",
+      "start": 257.926793,
+      "end": 258.547862,
+      "phraseId": "g1-l064-r01",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.9863821941563803,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l064-r01-w04"
+    },
+    {
+      "id": "w_eb372102e68710e0",
+      "text": "on",
+      "start": 258.728172,
+      "end": 258.788276,
+      "phraseId": "g1-l064-r01",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.972047831249534,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l064-r01-w05"
+    },
+    {
+      "id": "w_fc7486b3b9cf6907",
+      "text": "earth!\u2019",
+      "start": 258.888448,
+      "end": 259.489483,
+      "phraseId": "g1-l064-r01",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.3881957127976697,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l064-r01-w06"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "Then God said, \u2018Let us make humankind in our image, in our likeness; Let the winged multiply on earth!\u2019",
+      "wordIds": [
+        "w_693b4ea3794e2722",
+        "w_1831e4a5f92e1d15",
+        "w_a724b5a95ae81ff5",
+        "w_57ef69705068c457",
+        "w_dc898bdab40fdfed",
+        "w_dd59a79565586d10",
+        "w_a253b4ffb3c8dafc",
+        "w_522caf676f345176",
+        "w_f939b8a7e96aaa4e",
+        "w_231439f4ecc38010",
+        "w_58900b7745104bbc",
+        "w_dfd60897cb4e9455",
+        "w_8115a6c87e0f6d40",
+        "w_6b8b1fb69f835e4c",
+        "w_fd28ac28cbc80252",
+        "w_6a16751f5e7edd44",
+        "w_56160d83387bd0c3",
+        "w_eb372102e68710e0",
+        "w_fc7486b3b9cf6907"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l074-retry-ctc-large.json",
+  "executionEvidence": {
+    "id": "g1-l074-retry-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l074-retry-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 1.7375726671889424,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

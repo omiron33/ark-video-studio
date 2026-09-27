@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 40.43,
+    "duration": 6.16,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "Day was the name He gave the light;",
+  "approvedLyrics": "Day was the name He gave the light;",
+  "words": [
+    {
+      "id": "w_98f60c7ecf651956",
+      "text": "Day",
+      "start": 40.550391,
+      "end": 41.072085,
+      "phraseId": "g1-l010",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.08416874237865653,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l010-w01"
+    },
+    {
+      "id": "w_f7cdbf896db35d49",
+      "text": "was",
+      "start": 42.637166,
+      "end": 43.018404,
+      "phraseId": "g1-l010",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.7561117590136303,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l010-w02"
+    },
+    {
+      "id": "w_b0c5e3094ebc00c1",
+      "text": "the",
+      "start": 43.058534,
+      "end": 43.178925,
+      "phraseId": "g1-l010",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.5588399106413134,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l010-w03"
+    },
+    {
+      "id": "w_cb520872db69096b",
+      "text": "name",
+      "start": 43.259186,
+      "end": 43.841075,
+      "phraseId": "g1-l010",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.36465546654393577,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l010-w04"
+    },
+    {
+      "id": "w_13dd2e98bb5684e1",
+      "text": "He",
+      "start": 43.90127,
+      "end": 44.121987,
+      "phraseId": "g1-l010",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.551122175299543,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l010-w05"
+    },
+    {
+      "id": "w_7fb78ea36acf003a",
+      "text": "gave",
+      "start": 44.443029,
+      "end": 44.784137,
+      "phraseId": "g1-l010",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.5279695045002197,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l010-w06"
+    },
+    {
+      "id": "w_6f141ea479f40a6a",
+      "text": "the",
+      "start": 45.065049,
+      "end": 45.205505,
+      "phraseId": "g1-l010",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.6058731726418823,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l010-w07"
+    },
+    {
+      "id": "w_ddcf89415a2769e9",
+      "text": "light;",
+      "start": 45.325896,
+      "end": 45.92785,
+      "phraseId": "g1-l010",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+        "tokenProbability": 0.09247109807030847,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l010-w08"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "Day was the name He gave the light;",
+      "wordIds": [
+        "w_98f60c7ecf651956",
+        "w_f7cdbf896db35d49",
+        "w_b0c5e3094ebc00c1",
+        "w_cb520872db69096b",
+        "w_13dd2e98bb5684e1",
+        "w_7fb78ea36acf003a",
+        "w_6f141ea479f40a6a",
+        "w_ddcf89415a2769e9"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l010-full-ctc-large.json",
+  "executionEvidence": {
+    "id": "g1-l010-full-ctc-large",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l010-full-ctc-large.json",
+    "status": "machine_estimate",
+    "seconds": 1.1496511246077716,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

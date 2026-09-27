@@ -1,0 +1,28 @@
+{
+  "createdAt": "2026-09-27T11:39:01.880249+00:00",
+  "provider": "Built-in GPT Image",
+  "acceptedAfterVisualInspection": true,
+  "images": [
+    {
+      "projectPath": "assets/primordial-ocean.png",
+      "originalPath": "/Users/shanefisher/.codex/generated_images/01a0e02c-244c-7eb3-889c-9ed4fef66443/exec-e9f25958-24c7-4f0a-ac56-6e13d5dacc75.png",
+      "sha256": "4d086df5a97ced35bb41ab5a9d54ad2f2c027188e603077bb6fe2a023a6e5a8a",
+      "promptPath": "video-generation/primordial-ocean-prompt.txt",
+      "usage": "Unique supporting backdrop; foreground exact canonical lyrics remain authored"
+    },
+    {
+      "projectPath": "assets/wildlife-first-kinds.png",
+      "originalPath": "/Users/shanefisher/.codex/generated_images/01a0e02c-244c-7eb3-889c-9ed4fef66443/exec-66f9cb0c-ba4e-46e9-8aee-5ad3b59f08e3.png",
+      "sha256": "ce0cd8c2465bba351284d5ff8673811ea5316eb8f402000088ebc575959d1cc8",
+      "promptPath": "video-generation/wildlife-first-kinds-prompt.txt",
+      "usage": "Unique supporting backdrop; foreground exact canonical lyrics remain authored"
+    },
+    {
+      "projectPath": "assets/winged-above-earth.png",
+      "originalPath": "/Users/shanefisher/.codex/generated_images/01a0e02c-244c-7eb3-889c-9ed4fef66443/exec-f5032094-f8a1-4cc3-aa86-09ee73968046.png",
+      "sha256": "2b8e86c3226fccd493718b42c5bb485ad5e00bf643d11b957c9d8eb352efa8c0",
+      "promptPath": "video-generation/winged-above-earth-prompt.txt",
+      "usage": "Unique supporting backdrop; foreground exact canonical lyrics remain authored"
+    }
+  ]
+}

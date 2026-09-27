@@ -1,0 +1,196 @@
+{
+  "version": 1,
+  "timebase": "source",
+  "status": "machine_estimate",
+  "task": "force-align",
+  "method": "local-torchaudio-ctc-force-align; machine estimates",
+  "source": {
+    "audio": "source.mp3",
+    "offset": 37.39,
+    "duration": 4.34,
+    "audioDuration": 304.72,
+    "model": "/Volumes/DATA/AI/Models/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+    "backend": "torchaudio-ctc",
+    "language": "en"
+  },
+  "transcript": "He cut a clear line between it and darkness.",
+  "approvedLyrics": "He cut a clear line between it and darkness.",
+  "words": [
+    {
+      "id": "w_59898cc7f41fea6f",
+      "text": "He",
+      "start": 38.917037,
+      "end": 38.997407,
+      "phraseId": "g1-l009",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9896542989842882,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l009-w01"
+    },
+    {
+      "id": "w_b4b24ef6cb765e0c",
+      "text": "cut",
+      "start": 39.037593,
+      "end": 39.198333,
+      "phraseId": "g1-l009",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.5397758104917497,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l009-w02"
+    },
+    {
+      "id": "w_f290d9e2cf483b96",
+      "text": "a",
+      "start": 39.278704,
+      "end": 39.298796,
+      "phraseId": "g1-l009",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.3373529068495642,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l009-w03"
+    },
+    {
+      "id": "w_61671450c8bb72eb",
+      "text": "clear",
+      "start": 39.439444,
+      "end": 39.600185,
+      "phraseId": "g1-l009",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.03864176499670764,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l009-w04"
+    },
+    {
+      "id": "w_f0982d716f6326de",
+      "text": "line",
+      "start": 39.660463,
+      "end": 39.740833,
+      "phraseId": "g1-l009",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.0036805033695849866,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l009-w05"
+    },
+    {
+      "id": "w_cc932de477d15b79",
+      "text": "between",
+      "start": 39.821204,
+      "end": 40.122593,
+      "phraseId": "g1-l009",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.032948352018977244,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l009-w06"
+    },
+    {
+      "id": "w_56ac57a42db17dd0",
+      "text": "it",
+      "start": 40.162778,
+      "end": 40.263241,
+      "phraseId": "g1-l009",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.44232549752651656,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l009-w07"
+    },
+    {
+      "id": "w_1836e200e07c2711",
+      "text": "and",
+      "start": 40.363704,
+      "end": 40.484259,
+      "phraseId": "g1-l009",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.9841169162325148,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l009-w08"
+    },
+    {
+      "id": "w_89a5ddca2a4275c2",
+      "text": "darkness.",
+      "start": 40.56463,
+      "end": 41.207593,
+      "phraseId": "g1-l009",
+      "confidence": "machine_estimate",
+      "provenance": {
+        "method": "local-torchaudio-ctc",
+        "model": "wav2vec2_fairseq_base_ls960_asr_ls960.pth",
+        "tokenProbability": 0.017986508679609544,
+        "timingVerified": false,
+        "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+      },
+      "canonicalId": "g1-l009-w09"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-0001",
+      "text": "He cut a clear line between it and darkness.",
+      "wordIds": [
+        "w_59898cc7f41fea6f",
+        "w_b4b24ef6cb765e0c",
+        "w_f290d9e2cf483b96",
+        "w_61671450c8bb72eb",
+        "w_f0982d716f6326de",
+        "w_cc932de477d15b79",
+        "w_56ac57a42db17dd0",
+        "w_1836e200e07c2711",
+        "w_89a5ddca2a4275c2"
+      ]
+    }
+  ],
+  "warnings": [
+    "Local ASR proposes words and times; singing, instrumental gaps, and echoes can produce wrong or early timestamps. Review before final export."
+  ],
+  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+  "role": "source",
+  "artifact": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l009-full-ctc-base.json",
+  "executionEvidence": {
+    "id": "g1-l009-full-ctc-base",
+    "output": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/analysis/g1-l009-full-ctc-base.json",
+    "status": "machine_estimate",
+    "seconds": 1.1843197499401867,
+    "modelCacheHit": true,
+    "modelsHeld": 2
+  },
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2"
+}

@@ -1,0 +1,109 @@
+[
+  {
+    "id": "g1-l096",
+    "start": 290.9,
+    "end": 296.0,
+    "words": [
+      {
+        "id": "g1-l096-w01",
+        "text": "Dusk.",
+        "phraseId": "g1-l096",
+        "sourcePhraseId": "g1-l096"
+      },
+      {
+        "id": "g1-l096-w02",
+        "text": "Dawn.",
+        "phraseId": "g1-l096",
+        "sourcePhraseId": "g1-l096"
+      },
+      {
+        "id": "g1-l096-w03",
+        "text": "The",
+        "phraseId": "g1-l096",
+        "sourcePhraseId": "g1-l096"
+      },
+      {
+        "id": "g1-l096-w04",
+        "text": "sixth",
+        "phraseId": "g1-l096",
+        "sourcePhraseId": "g1-l096"
+      },
+      {
+        "id": "g1-l096-w05",
+        "text": "day.",
+        "phraseId": "g1-l096",
+        "sourcePhraseId": "g1-l096"
+      }
+    ],
+    "provenance": "Search window only. Includes ASR lexical substitutions; exact forced CTC will propose canonical endpoints.",
+    "reason": "Both unprompted ASR checkpoints place final refrain at291.6\u2013294.96. Original broad14s CTC search borrowed unrelated tail audio; restrict search to measured refrain neighborhood."
+  },
+  {
+    "id": "g1-l004",
+    "start": 16.1,
+    "end": 24.5,
+    "words": [
+      {
+        "id": "g1-l004-w01",
+        "text": "blackness",
+        "phraseId": "g1-l004"
+      },
+      {
+        "id": "g1-l004-w02",
+        "text": "covered",
+        "phraseId": "g1-l004"
+      },
+      {
+        "id": "g1-l004-w03",
+        "text": "the",
+        "phraseId": "g1-l004"
+      },
+      {
+        "id": "g1-l004-w04",
+        "text": "deep.",
+        "phraseId": "g1-l004"
+      },
+      {
+        "id": "g1-l005-w01",
+        "text": "Across",
+        "phraseId": "g1-l005"
+      },
+      {
+        "id": "g1-l005-w02",
+        "text": "the",
+        "phraseId": "g1-l005"
+      },
+      {
+        "id": "g1-l005-w03",
+        "text": "water",
+        "phraseId": "g1-l005"
+      },
+      {
+        "id": "g1-l005-w04",
+        "text": "moved",
+        "phraseId": "g1-l005"
+      },
+      {
+        "id": "g1-l005-w05",
+        "text": "the",
+        "phraseId": "g1-l005"
+      },
+      {
+        "id": "g1-l005-w06",
+        "text": "Spirit",
+        "phraseId": "g1-l005"
+      },
+      {
+        "id": "g1-l005-w07",
+        "text": "of",
+        "phraseId": "g1-l005"
+      },
+      {
+        "id": "g1-l005-w08",
+        "text": "God.",
+        "phraseId": "g1-l005"
+      }
+    ],
+    "reason": "Shared adjacent line context to disambiguate Across from previous deep ending; no new times invented."
+  }
+]
