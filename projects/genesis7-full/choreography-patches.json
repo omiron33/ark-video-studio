@@ -1,0 +1,1501 @@
+{
+  "schemaVersion": 1,
+  "kind": "direction-patches",
+  "projectPath": "/Volumes/Code/ark-video-studio/projects/genesis7-full/project.json",
+  "projectSha256": "bc3186dff5ca8ae9c302dbd8cc160d0922c8aaeceddf526bf088d1b6d874cdf7",
+  "wordDataSha256": "da0bacb73410f9f4cbaef5ae660032209fb54355b42dd7f5f6d951f3cdc259f6",
+  "rendererSourceSha256": "7125aebfa5bd107467b117f7b12b129acfced26e6190fb966b0a20e902121a3d",
+  "patches": [
+    {
+      "sectionId": "g7-seven-pairs",
+      "beforeDirectionSha256": "6b52abb477d10341dfb55fb7bedb9ef1e4a0ee7a1801320b1bf75a09df3a141a",
+      "direction": {
+        "mode": "pairs",
+        "label": "",
+        "marker": "",
+        "phraseIds": [
+          "g7-s01-l05",
+          "g7-s01-l06"
+        ],
+        "lines": [
+          [
+            "g7-s01-l05-w00",
+            "g7-s01-l05-w01",
+            "g7-s01-l05-w02"
+          ],
+          [
+            "g7-s01-l05-w03",
+            "g7-s01-l05-w04",
+            "g7-s01-l05-w05"
+          ],
+          [
+            "g7-s01-l06-w00",
+            "g7-s01-l06-w01"
+          ],
+          [
+            "g7-s01-l06-w02",
+            "g7-s01-l06-w03",
+            "g7-s01-l06-w04"
+          ]
+        ],
+        "textBox": {
+          "x": 180,
+          "y": 150,
+          "w": 1560,
+          "h": 570
+        },
+        "align": "center",
+        "typeSize": 175,
+        "heroIds": [
+          "g7-s01-l05-w04",
+          "g7-s01-l06-w00",
+          "g7-s01-l06-w01"
+        ],
+        "number": 7,
+        "actions": [
+          {
+            "triggerId": "g7-s01-l05-w05",
+            "targetIds": [
+              "g7-s01-l05-w00",
+              "g7-s01-l05-w01",
+              "g7-s01-l05-w02",
+              "g7-s01-l05-w03",
+              "g7-s01-l05-w04",
+              "g7-s01-l05-w05"
+            ],
+            "duration": 0.9,
+            "from": {
+              "scale": 1
+            },
+            "to": {
+              "scale": 0.72
+            },
+            "origin": {
+              "x": 960,
+              "y": 170
+            },
+            "after": "end",
+            "delay": 0.3
+          },
+          {
+            "triggerId": "g7-s01-l06-w00",
+            "targetIds": [
+              "g7-s01-l06-w00"
+            ],
+            "duration": 0.85,
+            "from": {
+              "dx": -130
+            },
+            "to": {
+              "dx": 0
+            }
+          },
+          {
+            "triggerId": "g7-s01-l06-w01",
+            "targetIds": [
+              "g7-s01-l06-w01"
+            ],
+            "duration": 0.85,
+            "from": {
+              "dx": 130
+            },
+            "to": {
+              "dx": 0
+            }
+          }
+        ],
+        "gritty": true,
+        "light": false,
+        "connectorFont": "IM FELL English",
+        "fontFamily": "Barlow Condensed",
+        "accent": "#a17b65",
+        "nativeMotion": false,
+        "positions": {
+          "g7-s01-l05-w00": {
+            "x": 685.0699996948242,
+            "y": 210,
+            "size": 112,
+            "family": "Barlow Condensed",
+            "rotate": 0
+          },
+          "g7-s01-l05-w01": {
+            "x": 983.5749969482422,
+            "y": 210,
+            "size": 112,
+            "family": "IM FELL English",
+            "rotate": 0
+          },
+          "g7-s01-l05-w02": {
+            "x": 1258.504997253418,
+            "y": 210,
+            "size": 112,
+            "family": "Barlow Condensed",
+            "rotate": 0
+          },
+          "g7-s01-l05-w03": {
+            "x": 423.30999755859375,
+            "y": 420,
+            "size": 100,
+            "family": "IM FELL English",
+            "rotate": 0
+          },
+          "g7-s01-l05-w04": {
+            "x": 786.5799942016602,
+            "y": 420,
+            "size": 184,
+            "family": "Barlow Condensed",
+            "rotate": 0
+          },
+          "g7-s01-l05-w05": {
+            "x": 1323.2699966430664,
+            "y": 420,
+            "size": 184,
+            "family": "Barlow Condensed",
+            "rotate": 0
+          },
+          "g7-s01-l06-w00": {
+            "x": 565,
+            "y": 700,
+            "size": 272,
+            "family": "Anton",
+            "rotate": 0
+          },
+          "g7-s01-l06-w01": {
+            "x": 1360,
+            "y": 700,
+            "size": 248,
+            "family": "Barlow Condensed",
+            "rotate": 0
+          },
+          "g7-s01-l06-w02": {
+            "x": 714.4300003051758,
+            "y": 947,
+            "size": 108,
+            "family": "IM FELL English",
+            "rotate": 0
+          },
+          "g7-s01-l06-w03": {
+            "x": 945.995002746582,
+            "y": 947,
+            "size": 108,
+            "family": "Barlow Condensed",
+            "rotate": 0
+          },
+          "g7-s01-l06-w04": {
+            "x": 1191.5650024414062,
+            "y": 947,
+            "size": 108,
+            "family": "Barlow Condensed",
+            "rotate": 0
+          }
+        },
+        "curves": {},
+        "pairLanes": {
+          "x": 350,
+          "y": 805,
+          "w": 1220,
+          "triggerId": "g7-s01-l06-w00"
+        }
+      },
+      "wordDataSha256": "f9498879cb1714f765763f697b2981e3bd794d3af38b0e583077aa5d8ce403b8"
+    },
+    {
+      "sectionId": "g7-the-date",
+      "beforeDirectionSha256": "4ecd263b1feb8b4ab5291ec5be857d022907b71c28d553de5e429dd25564c6e4",
+      "direction": {
+        "mode": "calendar",
+        "label": "",
+        "marker": "",
+        "phraseIds": [
+          "g7-s07-l02",
+          "g7-s07-l03",
+          "g7-s07-l04",
+          "g7-s07-l05"
+        ],
+        "lines": [
+          [
+            "g7-s07-l02-w00",
+            "g7-s07-l02-w01",
+            "g7-s07-l02-w02",
+            "g7-s07-l02-w03",
+            "g7-s07-l02-w04"
+          ],
+          [
+            "g7-s07-l03-w00",
+            "g7-s07-l03-w01",
+            "g7-s07-l03-w02"
+          ],
+          [
+            "g7-s07-l04-w00",
+            "g7-s07-l04-w01",
+            "g7-s07-l04-w02",
+            "g7-s07-l04-w03"
+          ],
+          [
+            "g7-s07-l05-w00",
+            "g7-s07-l05-w01",
+            "g7-s07-l05-w02",
+            "g7-s07-l05-w03"
+          ]
+        ],
+        "textBox": {
+          "x": 170,
+          "y": 235,
+          "w": 1260,
+          "h": 600
+        },
+        "align": "left",
+        "typeSize": 175,
+        "heroIds": [
+          "g7-s07-l02-w03",
+          "g7-s07-l04-w02",
+          "g7-s07-l05-w02"
+        ],
+        "number": 17,
+        "actions": [
+          {
+            "triggerId": "g7-s07-l03-w02",
+            "targetIds": [
+              "g7-s07-l02-w00",
+              "g7-s07-l02-w01",
+              "g7-s07-l02-w02",
+              "g7-s07-l02-w03",
+              "g7-s07-l02-w04",
+              "g7-s07-l03-w00",
+              "g7-s07-l03-w01",
+              "g7-s07-l03-w02"
+            ],
+            "duration": 0.8,
+            "from": {
+              "dy": 0
+            },
+            "to": {
+              "dy": -70
+            },
+            "after": "end"
+          },
+          {
+            "triggerId": "g7-s07-l04-w02",
+            "targetIds": [
+              "g7-s07-l04-w00",
+              "g7-s07-l04-w01",
+              "g7-s07-l04-w02",
+              "g7-s07-l04-w03"
+            ],
+            "duration": 0.55,
+            "from": {
+              "dy": 85
+            },
+            "to": {
+              "dy": 0
+            }
+          },
+          {
+            "triggerId": "g7-s07-l05-w02",
+            "targetIds": [
+              "g7-s07-l05-w00",
+              "g7-s07-l05-w01",
+              "g7-s07-l05-w02",
+              "g7-s07-l05-w03"
+            ],
+            "duration": 0.55,
+            "from": {
+              "dy": 85
+            },
+            "to": {
+              "dy": 0
+            }
+          }
+        ],
+        "gritty": true,
+        "light": false,
+        "connectorFont": "IM FELL English",
+        "fontFamily": "Cinzel",
+        "accent": "#a17b65",
+        "nativeMotion": false,
+        "positions": {
+          "g7-s07-l02-w00": {
+            "x": 252.11000061035156,
+            "y": 195,
+            "size": 85,
+            "family": "IM FELL English",
+            "rotate": 0
+          },
+          "g7-s07-l02-w01": {
+            "x": 426.0550003051758,
+            "y": 195,
+            "size": 85,
+            "family": "IM FELL English",
+            "rotate": 0
+          },
+          "g7-s07-l02-w02": {
+            "x": 278.16201552434177,
+            "y": 375,
+            "size": 160.21968548435422,
+            "family": "Cinzel",
+            "rotate": 0
+          },
+          "g7-s07-l02-w03": {
+            "x": 958.835513694459,
+            "y": 375,
+            "size": 160.21968548435422,
+            "family": "Cinzel",
+            "rotate": 0
+          },
+          "g7-s07-l02-w04": {
+            "x": 1640.6734981701175,
+            "y": 375,
+            "size": 90.84621341896373,
+            "family": "Cinzel",
+            "rotate": 0
+          },
+          "g7-s07-l03-w00": {
+            "x": 626.4449920654297,
+            "y": 505,
+            "size": 105,
+            "family": "IM FELL English",
+            "rotate": 0
+          },
+          "g7-s07-l03-w01": {
+            "x": 931.0499954223633,
+            "y": 505,
+            "size": 105,
+            "family": "Cinzel",
+            "rotate": 0
+          },
+          "g7-s07-l03-w02": {
+            "x": 1264.6050033569336,
+            "y": 505,
+            "size": 105,
+            "family": "Cinzel",
+            "rotate": 0
+          },
+          "g7-s07-l04-w00": {
+            "x": 342.2300033569336,
+            "y": 625,
+            "size": 77,
+            "family": "IM FELL English",
+            "rotate": 0
+          },
+          "g7-s07-l04-w01": {
+            "x": 499.875,
+            "y": 625,
+            "size": 77,
+            "family": "IM FELL English",
+            "rotate": 0
+          },
+          "g7-s07-l04-w02": {
+            "x": 460,
+            "y": 802,
+            "size": 145,
+            "family": "Cinzel",
+            "rotate": 0
+          },
+          "g7-s07-l04-w03": {
+            "x": 460,
+            "y": 950,
+            "size": 100,
+            "family": "Cinzel",
+            "rotate": 0
+          },
+          "g7-s07-l05-w00": {
+            "x": 1232.2300033569336,
+            "y": 625,
+            "size": 77,
+            "family": "IM FELL English",
+            "rotate": 0
+          },
+          "g7-s07-l05-w01": {
+            "x": 1404.6849975585938,
+            "y": 625,
+            "size": 77,
+            "family": "IM FELL English",
+            "rotate": 0
+          },
+          "g7-s07-l05-w02": {
+            "x": 1350,
+            "y": 795,
+            "size": 116.27906911248513,
+            "family": "Cinzel",
+            "rotate": 0
+          },
+          "g7-s07-l05-w03": {
+            "x": 1350,
+            "y": 950,
+            "size": 115,
+            "family": "Cinzel",
+            "rotate": 0
+          }
+        },
+        "curves": {},
+        "triggerId": "g7-s07-l05-w02"
+      },
+      "wordDataSha256": "0f0323b49ef9050e584e091000d63b237b1cc275fdad7beb2b010c83517a77ba"
+    },
+    {
+      "sectionId": "g7-deep-breaks-open",
+      "beforeDirectionSha256": "40a7401bf54f726bdfe4af570bb3b427aec46fbe59e0a01d5fcfe0e7b9b810cb",
+      "direction": {
+        "mode": "rupture",
+        "label": "",
+        "marker": "",
+        "phraseIds": [
+          "g7-s07-l06",
+          "g7-s07-l07",
+          "g7-s07-l08"
+        ],
+        "lines": [
+          [
+            "g7-s07-l06-w00",
+            "g7-s07-l06-w01",
+            "g7-s07-l06-w02"
+          ],
+          [
+            "g7-s07-l06-w03",
+            "g7-s07-l06-w04"
+          ],
+          [
+            "g7-s07-l07-w00",
+            "g7-s07-l07-w01",
+            "g7-s07-l07-w02",
+            "g7-s07-l07-w03",
+            "g7-s07-l07-w04"
+          ],
+          [
+            "g7-s07-l08-w00",
+            "g7-s07-l08-w01",
+            "g7-s07-l08-w02",
+            "g7-s07-l08-w03"
+          ]
+        ],
+        "textBox": {
+          "x": 150,
+          "y": 190,
+          "w": 1620,
+          "h": 650
+        },
+        "align": "center",
+        "typeSize": 175,
+        "heroIds": [
+          "g7-s07-l06-w02",
+          "g7-s07-l06-w03",
+          "g7-s07-l06-w04",
+          "g7-s07-l07-w02",
+          "g7-s07-l08-w00"
+        ],
+        "triggerId": "g7-s07-l06-w04",
+        "actions": [
+          {
+            "triggerId": "g7-s07-l06-w04",
+            "targetIds": [
+              "g7-s07-l06-w03"
+            ],
+            "duration": 0.85,
+            "from": {
+              "dx": 0
+            },
+            "to": {
+              "dx": -125
+            },
+            "after": "end"
+          },
+          {
+            "triggerId": "g7-s07-l06-w04",
+            "targetIds": [
+              "g7-s07-l06-w04"
+            ],
+            "duration": 0.85,
+            "from": {
+              "dx": 0
+            },
+            "to": {
+              "dx": 125
+            },
+            "after": "end"
+          },
+          {
+            "triggerId": "g7-s07-l08-w00",
+            "targetIds": [
+              "g7-s07-l08-w00",
+              "g7-s07-l08-w01",
+              "g7-s07-l08-w02",
+              "g7-s07-l08-w03"
+            ],
+            "duration": 0.65,
+            "from": {
+              "dy": 80
+            },
+            "to": {
+              "dy": 0
+            }
+          }
+        ],
+        "gritty": true,
+        "light": false,
+        "connectorFont": "IM FELL English",
+        "fontFamily": "Barlow Condensed",
+        "accent": "#82979c",
+        "nativeMotion": false,
+        "positions": {
+          "g7-s07-l06-w00": {
+            "x": 512.9850006103516,
+            "y": 277,
+            "size": 102,
+            "family": "IM FELL English",
+            "rotate": 0
+          },
+          "g7-s07-l06-w01": {
+            "x": 900.9899978637695,
+            "y": 277,
+            "size": 196,
+            "family": "Barlow Condensed",
+            "rotate": 0
+          },
+          "g7-s07-l06-w02": {
+            "x": 1348.004997253418,
+            "y": 277,
+            "size": 196,
+            "family": "Anton",
+            "rotate": 0
+          },
+          "g7-s07-l06-w03": {
+            "x": 708.1849975585938,
+            "y": 508,
+            "size": 200,
+            "family": "Anton",
+            "rotate": 0
+          },
+          "g7-s07-l06-w04": {
+            "x": 1257.520004272461,
+            "y": 508,
+            "size": 200,
+            "family": "Anton",
+            "rotate": 0
+          },
+          "g7-s07-l07-w00": {
+            "x": 260.4600067138672,
+            "y": 742,
+            "size": 85,
+            "family": "IM FELL English",
+            "rotate": 0
+          },
+          "g7-s07-l07-w01": {
+            "x": 611.260009765625,
+            "y": 742,
+            "size": 116,
+            "family": "Barlow Condensed",
+            "rotate": 0
+          },
+          "g7-s07-l07-w02": {
+            "x": 1053.3200073242188,
+            "y": 742,
+            "size": 116,
+            "family": "Barlow Condensed",
+            "rotate": 0
+          },
+          "g7-s07-l07-w03": {
+            "x": 1362.3600006103516,
+            "y": 742,
+            "size": 85,
+            "family": "IM FELL English",
+            "rotate": 0
+          },
+          "g7-s07-l07-w04": {
+            "x": 1619.8399963378906,
+            "y": 742,
+            "size": 116,
+            "family": "Barlow Condensed",
+            "rotate": 0
+          },
+          "g7-s07-l08-w00": {
+            "x": 379.2050018310547,
+            "y": 945,
+            "size": 139,
+            "family": "Barlow Condensed",
+            "rotate": 0
+          },
+          "g7-s07-l08-w01": {
+            "x": 729.8800048828125,
+            "y": 945,
+            "size": 100,
+            "family": "IM FELL English",
+            "rotate": 0
+          },
+          "g7-s07-l08-w02": {
+            "x": 1105.8450012207031,
+            "y": 945,
+            "size": 108,
+            "family": "IM FELL English",
+            "rotate": 0
+          },
+          "g7-s07-l08-w03": {
+            "x": 1513.8300018310547,
+            "y": 945,
+            "size": 139,
+            "family": "Barlow Condensed",
+            "rotate": 0
+          }
+        },
+        "curves": {
+          "g7-s07-l06-w02": {
+            "amplitude": 18
+          }
+        }
+      },
+      "wordDataSha256": "8f88be0e5974ed27fffb1a130158c3188f5f99f07a1f95076d1ac652aa169975"
+    },
+    {
+      "sectionId": "g7-sons-enter",
+      "beforeDirectionSha256": "16cf369473c72db4a3f14a33a6a347c36b26cf5b9ba41947976b3ddddc97ca51",
+      "direction": {
+        "mode": "names",
+        "label": "",
+        "marker": "",
+        "phraseIds": [
+          "g7-s05-l02",
+          "g7-s05-l03",
+          "g7-s05-l04",
+          "g7-s05-l05",
+          "g7-s05-l06"
+        ],
+        "lines": [
+          [
+            "g7-s05-l02-w00",
+            "g7-s05-l02-w01",
+            "g7-s05-l02-w02",
+            "g7-s05-l02-w03"
+          ],
+          [
+            "g7-s05-l03-w00",
+            "g7-s05-l03-w01",
+            "g7-s05-l03-w02",
+            "g7-s05-l03-w03",
+            "g7-s05-l03-w04",
+            "g7-s05-l03-w05"
+          ],
+          [
+            "g7-s05-l04-w00",
+            "g7-s05-l05-w00",
+            "g7-s05-l06-w00",
+            "g7-s05-l06-w01"
+          ]
+        ],
+        "textBox": {
+          "x": 170,
+          "y": 150,
+          "w": 1580,
+          "h": 650
+        },
+        "align": "center",
+        "typeSize": 175,
+        "heroIds": [
+          "g7-s05-l02-w00",
+          "g7-s05-l02-w01",
+          "g7-s05-l04-w00",
+          "g7-s05-l05-w00",
+          "g7-s05-l06-w01"
+        ],
+        "positions": {
+          "g7-s05-l02-w00": {
+            "x": 415.65165772027956,
+            "y": 350,
+            "size": 146.4919984124108,
+            "family": "Cinzel",
+            "rotate": 0
+          },
+          "g7-s05-l02-w01": {
+            "x": 947.2902353858085,
+            "y": 350,
+            "size": 115.28283353324501,
+            "family": "Cinzel",
+            "rotate": 0
+          },
+          "g7-s05-l02-w02": {
+            "x": 1313.6189535078386,
+            "y": 350,
+            "size": 57.32295590050857,
+            "family": "IM FELL English",
+            "rotate": 0
+          },
+          "g7-s05-l02-w03": {
+            "x": 1574.4957234785759,
+            "y": 350,
+            "size": 159.23043305696825,
+            "family": "Cinzel",
+            "rotate": 0
+          },
+          "g7-s05-l03-w00": {
+            "x": 268.74684466447377,
+            "y": 575,
+            "size": 71.46397411368429,
+            "family": "IM FELL English",
+            "rotate": 0
+          },
+          "g7-s05-l03-w01": {
+            "x": 493.86282716744057,
+            "y": 575,
+            "size": 75.93047249578956,
+            "family": "IM FELL English",
+            "rotate": 0
+          },
+          "g7-s05-l03-w02": {
+            "x": 741.2443068313364,
+            "y": 575,
+            "size": 101.83616311200011,
+            "family": "Cinzel",
+            "rotate": 0
+          },
+          "g7-s05-l03-w03": {
+            "x": 1027.57812188432,
+            "y": 575,
+            "size": 101.83616311200011,
+            "family": "Cinzel",
+            "rotate": 0
+          },
+          "g7-s05-l03-w04": {
+            "x": 1280.3283345118002,
+            "y": 575,
+            "size": 80.39697087789482,
+            "family": "IM FELL English",
+            "rotate": 0
+          },
+          "g7-s05-l03-w05": {
+            "x": 1558.171331778587,
+            "y": 575,
+            "size": 126.8485540517896,
+            "family": "Cinzel",
+            "rotate": 0
+          },
+          "g7-s05-l04-w00": {
+            "x": 420,
+            "y": 842,
+            "size": 150.21599242199,
+            "family": "Cinzel",
+            "rotate": 0
+          },
+          "g7-s05-l05-w00": {
+            "x": 870,
+            "y": 842,
+            "size": 126.22150046252688,
+            "family": "Cinzel",
+            "rotate": 0
+          },
+          "g7-s05-l06-w00": {
+            "x": 1110,
+            "y": 835,
+            "size": 65,
+            "family": "IM FELL English",
+            "rotate": 0
+          },
+          "g7-s05-l06-w01": {
+            "x": 1500,
+            "y": 842,
+            "size": 118.5378364263546,
+            "family": "Cinzel",
+            "rotate": 0
+          }
+        },
+        "actions": [
+          {
+            "triggerId": "g7-s05-l02-w01",
+            "targetIds": [
+              "g7-s05-l02-w00",
+              "g7-s05-l02-w01",
+              "g7-s05-l02-w02",
+              "g7-s05-l02-w03"
+            ],
+            "duration": 1,
+            "from": {
+              "dx": -85
+            },
+            "to": {
+              "dx": 0
+            }
+          },
+          {
+            "triggerId": "g7-s05-l04-w00",
+            "targetIds": [
+              "g7-s05-l04-w00"
+            ],
+            "duration": 0.5,
+            "from": {
+              "dx": -145,
+              "dy": 25
+            },
+            "to": {
+              "dx": 0,
+              "dy": 0
+            }
+          },
+          {
+            "triggerId": "g7-s05-l05-w00",
+            "targetIds": [
+              "g7-s05-l05-w00"
+            ],
+            "duration": 0.42,
+            "from": {
+              "dy": 85
+            },
+            "to": {
+              "dy": 0
+            }
+          },
+          {
+            "triggerId": "g7-s05-l06-w00",
+            "targetIds": [
+              "g7-s05-l06-w00",
+              "g7-s05-l06-w01"
+            ],
+            "duration": 0.5,
+            "from": {
+              "dx": 135,
+              "dy": 25
+            },
+            "to": {
+              "dx": 0,
+              "dy": 0
+            }
+          }
+        ],
+        "gritty": true,
+        "light": false,
+        "connectorFont": "IM FELL English",
+        "fontFamily": "Cinzel",
+        "accent": "#a17b65",
+        "nativeMotion": false,
+        "curves": {}
+      },
+      "wordDataSha256": "b58c5098115c0459ba151e067db2df684f956783a7e6c924e06837d34d5805bd"
+    },
+    {
+      "sectionId": "g7-lifted-the-ark",
+      "beforeDirectionSha256": "cc6561312b341ce0cadf991aadbb3811c582941814610b16c4bc9a37f64b0adf",
+      "direction": {
+        "mode": "lift",
+        "label": "",
+        "marker": "",
+        "phraseIds": [
+          "g7-s12-l01",
+          "g7-s12-l02",
+          "g7-s12-l03"
+        ],
+        "lines": [
+          [
+            "g7-s12-l01-w00",
+            "g7-s12-l01-w01",
+            "g7-s12-l01-w02"
+          ],
+          [
+            "g7-s12-l02-w00",
+            "g7-s12-l02-w01",
+            "g7-s12-l02-w02",
+            "g7-s12-l02-w03"
+          ],
+          [
+            "g7-s12-l03-w00",
+            "g7-s12-l03-w01",
+            "g7-s12-l03-w02",
+            "g7-s12-l03-w03"
+          ]
+        ],
+        "textBox": {
+          "x": 170,
+          "y": 235,
+          "w": 1260,
+          "h": 600
+        },
+        "align": "left",
+        "typeSize": 225,
+        "heroIds": [
+          "g7-s12-l01-w02",
+          "g7-s12-l02-w01",
+          "g7-s12-l02-w03",
+          "g7-s12-l03-w00"
+        ],
+        "photo": "ark-afloat",
+        "waterline": 0.76,
+        "rain": true,
+        "triggerId": "g7-s12-l02-w01",
+        "actions": [
+          {
+            "triggerId": "g7-s12-l02-w01",
+            "targetIds": [
+              "g7-s12-l02-w03"
+            ],
+            "duration": 1.6,
+            "from": {
+              "dy": 10
+            },
+            "to": {
+              "dy": -160
+            },
+            "delay": 0.4
+          },
+          {
+            "triggerId": "g7-s12-l03-w00",
+            "targetIds": [
+              "g7-s12-l03-w00",
+              "g7-s12-l03-w01",
+              "g7-s12-l03-w02",
+              "g7-s12-l03-w03"
+            ],
+            "duration": 0.55,
+            "from": {
+              "dy": 55
+            },
+            "to": {
+              "dy": 0
+            }
+          }
+        ],
+        "gritty": true,
+        "light": false,
+        "connectorFont": "IM FELL English",
+        "fontFamily": "Barlow Condensed",
+        "accent": "#82979c",
+        "nativeMotion": false,
+        "positions": {
+          "g7-s12-l01-w00": {
+            "x": 506.43499755859375,
+            "y": 205,
+            "size": 83,
+            "family": "IM FELL English",
+            "rotate": 0
+          },
+          "g7-s12-l01-w01": {
+            "x": 811.9949951171875,
+            "y": 205,
+            "size": 123,
+            "family": "Barlow Condensed",
+            "rotate": 0
+          },
+          "g7-s12-l01-w02": {
+            "x": 1265.5599975585938,
+            "y": 205,
+            "size": 123,
+            "family": "Barlow Condensed",
+            "rotate": 0
+          },
+          "g7-s12-l02-w00": {
+            "x": 341.11000061035156,
+            "y": 410,
+            "size": 85,
+            "family": "IM FELL English",
+            "rotate": 0
+          },
+          "g7-s12-l02-w01": {
+            "x": 622.7200012207031,
+            "y": 410,
+            "size": 122,
+            "family": "Barlow Condensed",
+            "rotate": 0
+          },
+          "g7-s12-l02-w02": {
+            "x": 901.6100006103516,
+            "y": 410,
+            "size": 85,
+            "family": "IM FELL English",
+            "rotate": 0
+          },
+          "g7-s12-l02-w03": {
+            "x": 660,
+            "y": 827,
+            "size": 262,
+            "family": "Anton",
+            "rotate": 0
+          },
+          "g7-s12-l03-w00": {
+            "x": 1435,
+            "y": 378,
+            "size": 187,
+            "family": "Barlow Condensed",
+            "rotate": 0
+          },
+          "g7-s12-l03-w01": {
+            "x": 1435,
+            "y": 615,
+            "size": 169,
+            "family": "Cinzel",
+            "rotate": 0
+          },
+          "g7-s12-l03-w02": {
+            "x": 1274.990005493164,
+            "y": 850,
+            "size": 82,
+            "family": "IM FELL English",
+            "rotate": 0
+          },
+          "g7-s12-l03-w03": {
+            "x": 1542.4700012207031,
+            "y": 850,
+            "size": 124,
+            "family": "Barlow Condensed",
+            "rotate": 0
+          }
+        },
+        "curves": {
+          "g7-s12-l03-w01": {
+            "amplitude": 25
+          }
+        }
+      },
+      "wordDataSha256": "47eb0f51974262ccfbfa6f19c73cfa9206ef47431751b72358cd3825030a7741"
+    },
+    {
+      "sectionId": "g7-mountains-covered",
+      "beforeDirectionSha256": "0a76d9da13a27703aff7d15f4cd4e8cd2a8bb27918fa569134ae27a9d19b64ea",
+      "direction": {
+        "mode": "engulf",
+        "label": "",
+        "marker": "",
+        "phraseIds": [
+          "g7-s12-l08",
+          "g7-s12-l09",
+          "g7-s12-l10",
+          "g7-s12-l11"
+        ],
+        "lines": [
+          [
+            "g7-s12-l08-w00",
+            "g7-s12-l08-w01",
+            "g7-s12-l08-w02",
+            "g7-s12-l08-w03"
+          ],
+          [
+            "g7-s12-l09-w00",
+            "g7-s12-l09-w01",
+            "g7-s12-l09-w02",
+            "g7-s12-l09-w03"
+          ],
+          [
+            "g7-s12-l10-w00",
+            "g7-s12-l10-w01",
+            "g7-s12-l10-w02",
+            "g7-s12-l10-w03"
+          ],
+          [
+            "g7-s12-l11-w00",
+            "g7-s12-l11-w01"
+          ]
+        ],
+        "textBox": {
+          "x": 150,
+          "y": 190,
+          "w": 1620,
+          "h": 650
+        },
+        "align": "center",
+        "typeSize": 175,
+        "heroIds": [
+          "g7-s12-l08-w03",
+          "g7-s12-l09-w03",
+          "g7-s12-l10-w03",
+          "g7-s12-l11-w01"
+        ],
+        "gritty": true,
+        "light": false,
+        "connectorFont": "IM FELL English",
+        "fontFamily": "Cinzel",
+        "accent": "#82979c",
+        "nativeMotion": false,
+        "positions": {
+          "g7-s12-l08-w00": {
+            "x": 279.5423933167135,
+            "y": 285,
+            "size": 87.32595147417574,
+            "family": "IM FELL English",
+            "rotate": 0
+          },
+          "g7-s12-l08-w01": {
+            "x": 1078.8460246952154,
+            "y": 285,
+            "size": 179.24800565751863,
+            "family": "Cinzel",
+            "rotate": 0
+          },
+          "g7-s12-l08-w02": {
+            "x": 493.94500732421875,
+            "y": 495,
+            "size": 203,
+            "family": "Cinzel",
+            "rotate": 0
+          },
+          "g7-s12-l08-w03": {
+            "x": 1284.8699951171875,
+            "y": 495,
+            "size": 203,
+            "family": "Cinzel",
+            "rotate": 0
+          },
+          "g7-s12-l09-w00": {
+            "x": 247.25,
+            "y": 535,
+            "size": 75,
+            "family": "IM FELL English",
+            "rotate": 0
+          },
+          "g7-s12-l09-w01": {
+            "x": 519.8899993896484,
+            "y": 535,
+            "size": 102,
+            "family": "Cinzel",
+            "rotate": 0
+          },
+          "g7-s12-l09-w02": {
+            "x": 1060,
+            "y": 527,
+            "size": 153,
+            "family": "Cinzel",
+            "rotate": 0
+          },
+          "g7-s12-l09-w03": {
+            "x": 1040,
+            "y": 810,
+            "size": 218,
+            "family": "Anton",
+            "rotate": 0
+          },
+          "g7-s12-l10-w00": {
+            "x": 340,
+            "y": 357,
+            "size": 103,
+            "family": "Cinzel",
+            "rotate": 0
+          },
+          "g7-s12-l10-w01": {
+            "x": 696.2925295463108,
+            "y": 286,
+            "size": 71.31686461689065,
+            "family": "IM FELL English",
+            "rotate": 0
+          },
+          "g7-s12-l10-w02": {
+            "x": 1010.573776393725,
+            "y": 286,
+            "size": 111.32388623124395,
+            "family": "Cinzel",
+            "rotate": 0
+          },
+          "g7-s12-l10-w03": {
+            "x": 1474.2812468474142,
+            "y": 286,
+            "size": 111.32388623124395,
+            "family": "Cinzel",
+            "rotate": 0
+          },
+          "g7-s12-l11-w00": {
+            "x": 601.5750122070312,
+            "y": 1007,
+            "size": 93,
+            "family": "IM FELL English",
+            "rotate": 0
+          },
+          "g7-s12-l11-w01": {
+            "x": 1075.974998474121,
+            "y": 1007,
+            "size": 139,
+            "family": "Cinzel",
+            "rotate": 0
+          }
+        },
+        "actions": [
+          {
+            "triggerId": "g7-s12-l08-w03",
+            "targetIds": [
+              "g7-s12-l08-w00",
+              "g7-s12-l08-w01",
+              "g7-s12-l08-w02",
+              "g7-s12-l08-w03"
+            ],
+            "duration": 0.65,
+            "from": {
+              "dy": 0,
+              "opacity": 1
+            },
+            "to": {
+              "dy": -80,
+              "opacity": 0
+            },
+            "after": "end",
+            "delay": 0.3
+          },
+          {
+            "triggerId": "g7-s12-l11-w01",
+            "targetIds": [
+              "g7-s12-l09-w00",
+              "g7-s12-l09-w01",
+              "g7-s12-l09-w02",
+              "g7-s12-l09-w03"
+            ],
+            "duration": 0.45,
+            "from": {
+              "dy": 0
+            },
+            "to": {
+              "dy": 72
+            }
+          }
+        ],
+        "curves": {
+          "g7-s12-l09-w03": {
+            "amplitude": 58
+          },
+          "g7-s12-l10-w03": {
+            "amplitude": 22
+          }
+        },
+        "triggerId": "g7-s12-l11-w01"
+      },
+      "wordDataSha256": "887324db2d8ecdcaf4b2f4a6c1936edfdabb36d8a89668021bee3719d232dd66"
+    }
+  ],
+  "evidence": [
+    {
+      "sectionId": "g7-seven-pairs",
+      "proof": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-seven-pairs-proof.png",
+      "frames": [
+        {
+          "label": "onset",
+          "time": 37.152131999999995,
+          "path": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-seven-pairs-onset.png",
+          "sha256": "7fb545d78853971b9a4e513a21a9d57f38bb46dbe4be3f0403fd250a3f19c11d"
+        },
+        {
+          "label": "first-phrase",
+          "time": 39.414283,
+          "path": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-seven-pairs-first-phrase.png",
+          "sha256": "d16b6ef859f6b2c8cca83b6dedefa56ba14a9615a66bc48c563c7498c9e39b25"
+        },
+        {
+          "label": "action",
+          "time": 41.876606,
+          "path": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-seven-pairs-action.png",
+          "sha256": "091edfa6e851f74ca3f876588c4c91d273c10a0d3a49518eb659089ac72feb63"
+        },
+        {
+          "label": "last-word",
+          "time": 43.317948,
+          "path": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-seven-pairs-last-word.png",
+          "sha256": "0476212e5eaf9c71db271ab2970b68bd02e8c004dc421b5eaec5fb1d7483d798"
+        },
+        {
+          "label": "last-frame",
+          "time": 43.833333333333336,
+          "path": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-seven-pairs-last-frame.png",
+          "sha256": "0476212e5eaf9c71db271ab2970b68bd02e8c004dc421b5eaec5fb1d7483d798"
+        }
+      ]
+    },
+    {
+      "sectionId": "g7-the-date",
+      "proof": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-the-date-proof.png",
+      "frames": [
+        {
+          "label": "onset",
+          "time": 139.441611,
+          "path": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-the-date-onset.png",
+          "sha256": "0eb249a72e7a7168ea1927c4f636ac3ffc9749bd4ea9fb416f5c254ece4a64f0"
+        },
+        {
+          "label": "first-phrase",
+          "time": 140.441752,
+          "path": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-the-date-first-phrase.png",
+          "sha256": "14280262b80ae8d2b67370fb6c2ca13e1c3531ffabd10a306d1ce452f98eb360"
+        },
+        {
+          "label": "action",
+          "time": 143.322447,
+          "path": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-the-date-action.png",
+          "sha256": "3746f801dc384726f61bc6a4c65de6767168455947ad6e01590b113738d18fa4"
+        },
+        {
+          "label": "last-word",
+          "time": 143.7,
+          "path": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-the-date-last-word.png",
+          "sha256": "a630f7377277caa352b9a9508cda0cf74a0eb3728dc81e7212ebbca16f6d4133"
+        },
+        {
+          "label": "last-frame",
+          "time": 143.7,
+          "path": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-the-date-last-frame.png",
+          "sha256": "a630f7377277caa352b9a9508cda0cf74a0eb3728dc81e7212ebbca16f6d4133"
+        }
+      ]
+    },
+    {
+      "sectionId": "g7-deep-breaks-open",
+      "proof": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-deep-breaks-open-proof.png",
+      "frames": [
+        {
+          "label": "onset",
+          "time": 143.962727,
+          "path": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-deep-breaks-open-onset.png",
+          "sha256": "149100364dafe3697c6e29d2458e6631ee8820b2b18a87dd85807ee2d5078637"
+        },
+        {
+          "label": "first-phrase",
+          "time": 145.34312500000001,
+          "path": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-deep-breaks-open-first-phrase.png",
+          "sha256": "8435026e9f04466e4b05c3536b42ddac65b48269ed9dc501ead896888a4d8a33"
+        },
+        {
+          "label": "action",
+          "time": 145.44304100000002,
+          "path": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-deep-breaks-open-action.png",
+          "sha256": "541cf8faf5c522f5d91fbd4af7722209644dfb088eea90a0b7c926bf70472cf1"
+        },
+        {
+          "label": "last-word",
+          "time": 148.86666666666667,
+          "path": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-deep-breaks-open-last-word.png",
+          "sha256": "117c0af3b5c7deb1107b489a5ed1d5478db1d2400216f9f9b3e9dc8068f609d7"
+        },
+        {
+          "label": "last-frame",
+          "time": 148.86666666666667,
+          "path": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-deep-breaks-open-last-frame.png",
+          "sha256": "117c0af3b5c7deb1107b489a5ed1d5478db1d2400216f9f9b3e9dc8068f609d7"
+        }
+      ]
+    },
+    {
+      "sectionId": "g7-sons-enter",
+      "proof": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-sons-enter-proof.png",
+      "frames": [
+        {
+          "label": "onset",
+          "time": 113.971616,
+          "path": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-sons-enter-onset.png",
+          "sha256": "0d30b0aa6882722703b056b977c79f8803fa11d518d2a8aeba904f2991206f1b"
+        },
+        {
+          "label": "first-phrase",
+          "time": 115.46697,
+          "path": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-sons-enter-first-phrase.png",
+          "sha256": "c994c5dbbae53ff51f0d3cfc2d504569f00f6c1b3f644224b98ce26980102502"
+        },
+        {
+          "label": "action",
+          "time": 119.264324,
+          "path": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-sons-enter-action.png",
+          "sha256": "c9b0bd76e61b39d7da1e49df7d7b3f6023be2e90636128e5636276562944886f"
+        },
+        {
+          "label": "last-word",
+          "time": 119.46666666666667,
+          "path": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-sons-enter-last-word.png",
+          "sha256": "c9b0bd76e61b39d7da1e49df7d7b3f6023be2e90636128e5636276562944886f"
+        },
+        {
+          "label": "last-frame",
+          "time": 119.46666666666667,
+          "path": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-sons-enter-last-frame.png",
+          "sha256": "c9b0bd76e61b39d7da1e49df7d7b3f6023be2e90636128e5636276562944886f"
+        }
+      ]
+    },
+    {
+      "sectionId": "g7-lifted-the-ark",
+      "proof": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-lifted-the-ark-proof.png",
+      "frames": [
+        {
+          "label": "onset",
+          "time": 202.61485199999998,
+          "path": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-lifted-the-ark-onset.png",
+          "sha256": "50e80a64f8d7f0b72fdb011b059704403dff7e8ed5eb857f9bb3b1bb5d67c3b3"
+        },
+        {
+          "label": "first-phrase",
+          "time": 204.636675,
+          "path": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-lifted-the-ark-first-phrase.png",
+          "sha256": "61c4089c32fa92546cd74ca05203d1b94574bcc7649991106b058e8ad4d1b8c7"
+        },
+        {
+          "label": "action",
+          "time": 205.35695800000002,
+          "path": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-lifted-the-ark-action.png",
+          "sha256": "4aed6d1e2c750cf85fe5203f09acf16675775f52156ff41fe21e5dab1823ea4b"
+        },
+        {
+          "label": "last-word",
+          "time": 208.63333333333333,
+          "path": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-lifted-the-ark-last-word.png",
+          "sha256": "27753f7adfd55b4749b42f26449e43bbbda34bbd6fbd8c6942df0f4c196c303d"
+        },
+        {
+          "label": "last-frame",
+          "time": 208.63333333333333,
+          "path": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-lifted-the-ark-last-frame.png",
+          "sha256": "27753f7adfd55b4749b42f26449e43bbbda34bbd6fbd8c6942df0f4c196c303d"
+        }
+      ]
+    },
+    {
+      "sectionId": "g7-mountains-covered",
+      "proof": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-mountains-covered-proof.png",
+      "frames": [
+        {
+          "label": "onset",
+          "time": 215.806515,
+          "path": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-mountains-covered-onset.png",
+          "sha256": "19e220057726b61f902071567a479d8f12b6506f6e05bdbe273df52c6ae23e08"
+        },
+        {
+          "label": "first-phrase",
+          "time": 217.568108,
+          "path": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-mountains-covered-first-phrase.png",
+          "sha256": "14be340915b65c016548b32d03a0af8de04b0ea210a8bb440c176fd03d05cfb5"
+        },
+        {
+          "label": "action",
+          "time": 221.405358,
+          "path": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-mountains-covered-action.png",
+          "sha256": "6341fab445953b59e13ec1e1177f0b9103a955a5a4b9ee6d2681e2a8b4f92caf"
+        },
+        {
+          "label": "last-word",
+          "time": 221.285799,
+          "path": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-mountains-covered-last-word.png",
+          "sha256": "1187def09cacd33858d0c4f4349d4fa5f664cb34978ba1c521fb3135bd12b0d1"
+        },
+        {
+          "label": "last-frame",
+          "time": 221.43333333333334,
+          "path": "/Volumes/Code/ark-video-studio/output/fullsong-direction/polish-proofs/g7-mountains-covered-last-frame.png",
+          "sha256": "00ddff72fd651729b003ecdbc53a5c3dac1f951db1aee647cf97e819d01a2d2a"
+        }
+      ]
+    }
+  ],
+  "layoutChecks": [
+    {
+      "sectionId": "g7-seven-pairs",
+      "possibleOverlaps": []
+    },
+    {
+      "sectionId": "g7-the-date",
+      "possibleOverlaps": []
+    },
+    {
+      "sectionId": "g7-deep-breaks-open",
+      "possibleOverlaps": []
+    },
+    {
+      "sectionId": "g7-sons-enter",
+      "possibleOverlaps": []
+    },
+    {
+      "sectionId": "g7-lifted-the-ark",
+      "possibleOverlaps": []
+    },
+    {
+      "sectionId": "g7-mountains-covered",
+      "possibleOverlaps": []
+    }
+  ],
+  "notes": [
+    "Source-rendered PNG proofs, not final encoded-film acceptance.",
+    "Only direction objects are proposed; words, timing, sections and assets remain unchanged.",
+    "Root should check beforeDirectionSha256 or inspect a changed section before applying each proposal."
+  ]
+}

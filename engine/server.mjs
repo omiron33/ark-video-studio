@@ -39,7 +39,7 @@ export async function startServer({ projectPath, port = 4177, host = '127.0.0.1'
       if (!allowedHost.has(request.headers.host)) return json(403, { error: 'Invalid Host header' });
       if (!['GET', 'HEAD'].includes(request.method) && request.headers.origin && !allowedHost.has(new URL(request.headers.origin).host)) return json(403, { error: 'Cross-origin editing is forbidden' });
       if (request.method === 'GET' && url.pathname === '/') return await sendFile(request, response, path.join(engineDir, 'preview.html'));
-      if (request.method === 'GET' && url.pathname === '/engine/visual.mjs') return await sendFile(request, response, path.join(engineDir, 'visual.mjs'));
+      if (request.method === 'GET' && ['/engine/visual.mjs', '/engine/story-visual.mjs'].includes(url.pathname)) return await sendFile(request, response, path.join(engineDir, path.basename(url.pathname)));
       if (request.method === 'GET' && url.pathname === '/api/project') {
         const { project, validation } = await loadProject(manifestPath);
         const view = structuredClone(project);

@@ -53,7 +53,7 @@ def local_model(requested: Path | None, backend: str = "auto") -> tuple[Path, st
             kind = "faster-whisper"
         elif candidate.is_file() and candidate.suffix == ".pt":
             kind = "openai-whisper"
-        elif candidate.is_file() and candidate.name == "wav2vec2_fairseq_base_ls960_asr_ls960.pth":
+        elif candidate.is_file() and candidate.name in {"wav2vec2_fairseq_base_ls960_asr_ls960.pth", "wav2vec2_fairseq_large_lv60k_asr_ls960.pth"}:
             kind = "torchaudio-ctc"
         if kind and backend in ["auto", kind]:
             available.append((candidate.resolve(), kind))
@@ -132,7 +132,9 @@ def ctc_align(model_path: Path, clip: Path, args: argparse.Namespace) -> list[di
     except ImportError as error:
         raise RuntimeError("TorchAudio is not available; add its installed local package directory to PYTHONPATH. No model was downloaded.") from error
     torch.set_num_threads(args.threads)
-    bundle = torchaudio.pipelines.WAV2VEC2_ASR_BASE_960H
+    bundle = (torchaudio.pipelines.WAV2VEC2_ASR_LARGE_LV60K_960H
+              if model_path.name == "wav2vec2_fairseq_large_lv60k_asr_ls960.pth"
+              else torchaudio.pipelines.WAV2VEC2_ASR_BASE_960H)
     model = torchaudio.models.wav2vec2_model(**bundle._params)
     state_dict = torch.load(str(model_path), map_location="cpu", weights_only=True)
     # Official bundle removes Fairseq's unused dictionary symbols from the auxiliary head.
@@ -144,7 +146,10 @@ def ctc_align(model_path: Path, clip: Path, args: argparse.Namespace) -> list[di
     raw = subprocess.check_output(["ffmpeg", "-v", "error", "-i", str(clip), "-ar", "16000", "-ac", "1", "-f", "f32le", "-"])
     samples = np.frombuffer(raw, dtype=np.float32).copy()
     with torch.inference_mode():
-        logits, _ = model(torch.from_numpy(samples).unsqueeze(0))
+        waveform = torch.from_numpy(samples).unsqueeze(0)
+        if bundle._normalize_waveform:
+            waveform = torch.nn.functional.layer_norm(waveform, waveform.shape)
+        logits, _ = model(waveform)
         emissions = torch.log_softmax(logits[0], dim=-1).numpy()
     labels = bundle.get_labels()
     dictionary = {letter: index for index, letter in enumerate(labels)}
@@ -219,6 +224,10 @@ def align(args: argparse.Namespace) -> dict:
         raise ValueError(f"Audio does not exist: {args.audio}")
     if not (args.offset >= 0) or args.threads < 1 or (args.duration is not None and not args.duration > 0):
         raise ValueError("offset must be non-negative, duration positive, and threads at least one")
+    # Keep native BLAS and Whisper's Numba alignment kernels within the same
+    # requested budget. Unbounded nested pools can make short songs much slower.
+    for variable in ("OMP_NUM_THREADS", "MKL_NUM_THREADS", "VECLIB_MAXIMUM_THREADS", "NUMBA_NUM_THREADS"):
+        os.environ[variable] = str(args.threads)
     duration = audio_duration(args.audio)
     span = min(args.duration if args.duration is not None else duration - args.offset, duration - args.offset)
     if span <= 0:

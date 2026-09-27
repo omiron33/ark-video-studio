@@ -1,0 +1,445 @@
+{
+  "kind": "audio-evidence-policy-analysis",
+  "status": "proposal-not-an-acceptance-report",
+  "createdAt": "2026-09-27T02:46:57.726170+00:00",
+  "inputs": [
+    {
+      "path": "output/fullsong-audio/window-00-ctc.json",
+      "sha256": "318061a2028f3b5ab4ac6b77e103bbad0a6e9ad13d0995ef056f3a9d8dc9549a"
+    },
+    {
+      "path": "output/fullsong-audio/window-00-ctc-large-02.json",
+      "sha256": "a15d8db2186bc8ec990bc53b316e26a367fa299945c32d64e2b9ebb5b1cceb2c"
+    },
+    {
+      "path": "output/fullsong-audio/window-01-ctc.json",
+      "sha256": "0121128c2c9a5244990a28eb719fd6d32a64fbe7e40ba37fe71e6828e999c1bc"
+    },
+    {
+      "path": "output/fullsong-audio/window-01-ctc-large-02.json",
+      "sha256": "3ffdfed27d414fc1b850ca08c0b430fbcaf83f267d272917bfe713fdaca19de3"
+    },
+    {
+      "path": "output/fullsong-audio/window-02-ctc.json",
+      "sha256": "69a726b95648881e774227e655aa4f1b41bc27099f47ed4ddbe79341f8e39aa7"
+    },
+    {
+      "path": "output/fullsong-audio/window-02-ctc-large-02.json",
+      "sha256": "f8072352e695878e98a326d042a0a15eaddbd1d3c42cd7b187331e84822fe631"
+    },
+    {
+      "path": "output/fullsong-audio/window-03-ctc.json",
+      "sha256": "aecd639367ffd7348fc045a7edb09e8a3fc772bd1058c247440eec31d6b157ba"
+    },
+    {
+      "path": "output/fullsong-audio/window-03-ctc-large-02.json",
+      "sha256": "fbd06601b8eb7d517a2ab4c18645046bec2ea80fdd3451ce9016fed1e413f2e6"
+    }
+  ],
+  "comparisons": [
+    {
+      "window": 0,
+      "index": 4,
+      "text": "to",
+      "base": {
+        "start": 20.432886,
+        "end": 20.512973,
+        "score": 0.060175570175088504
+      },
+      "large": {
+        "start": 20.413211,
+        "end": 20.493286,
+        "score": 0.22846934662323978
+      },
+      "startDelta": 0.019674999999999443,
+      "endDelta": 0.019686999999997568,
+      "candidateStrongerCheckpoint": true,
+      "accepted": false
+    },
+    {
+      "window": 0,
+      "index": 7,
+      "text": "into",
+      "base": {
+        "start": 24.196951,
+        "end": 24.537319,
+        "score": 0.13214358281634317
+      },
+      "large": {
+        "start": 24.196727,
+        "end": 24.57708,
+        "score": 0.8089160655466244
+      },
+      "startDelta": 0.00022399999999933584,
+      "endDelta": 0.0397609999999986,
+      "candidateStrongerCheckpoint": true,
+      "accepted": false
+    },
+    {
+      "window": 0,
+      "index": 9,
+      "text": "ark,",
+      "base": {
+        "start": 25.198032,
+        "end": 26.219135,
+        "score": 0.02158371155100634
+      },
+      "large": {
+        "start": 25.217675,
+        "end": 25.497936,
+        "score": 0.04782135202310207
+      },
+      "startDelta": 0.019642999999998523,
+      "endDelta": 0.7211990000000021,
+      "candidateStrongerCheckpoint": false,
+      "accepted": false
+    },
+    {
+      "window": 1,
+      "index": 1,
+      "text": "and",
+      "base": {
+        "start": 28.803939,
+        "end": 28.944081,
+        "score": 0.33561153020759393
+      },
+      "large": {
+        "start": 28.804483,
+        "end": 28.884557,
+        "score": 0.1419728924147763
+      },
+      "startDelta": 0.0005440000000014322,
+      "endDelta": 0.05952399999999969,
+      "candidateStrongerCheckpoint": false,
+      "accepted": false
+    },
+    {
+      "window": 1,
+      "index": 2,
+      "text": "all",
+      "base": {
+        "start": 29.124263,
+        "end": 29.244384,
+        "score": 0.09997388145860081
+      },
+      "large": {
+        "start": 29.104763,
+        "end": 29.244894,
+        "score": 0.05921417678050411
+      },
+      "startDelta": 0.01950000000000074,
+      "endDelta": 0.0005099999999984561,
+      "candidateStrongerCheckpoint": false,
+      "accepted": false
+    },
+    {
+      "window": 2,
+      "index": 0,
+      "text": "Male",
+      "base": {
+        "start": 44.881789,
+        "end": 45.142048,
+        "score": 0.028982868222445748
+      },
+      "large": {
+        "start": 44.86233,
+        "end": 45.182629,
+        "score": 0.9925216695877065
+      },
+      "startDelta": 0.019458999999997673,
+      "endDelta": 0.04058099999999598,
+      "candidateStrongerCheckpoint": true,
+      "accepted": false
+    },
+    {
+      "window": 2,
+      "index": 8,
+      "text": "counted",
+      "base": {
+        "start": 48.485368,
+        "end": 48.765646,
+        "score": 0.029874290971571883
+      },
+      "large": {
+        "start": 48.465691,
+        "end": 48.765972,
+        "score": 0.04894260989767164
+      },
+      "startDelta": 0.0196770000000015,
+      "endDelta": 0.0003260000000011587,
+      "candidateStrongerCheckpoint": false,
+      "accepted": false
+    },
+    {
+      "window": 2,
+      "index": 12,
+      "text": "pair,",
+      "base": {
+        "start": 49.926799,
+        "end": 50.267137,
+        "score": 0.09637016937445875
+      },
+      "large": {
+        "start": 49.907036,
+        "end": 50.167279,
+        "score": 0.9219591385330225
+      },
+      "startDelta": 0.019763000000004638,
+      "endDelta": 0.09985799999999756,
+      "candidateStrongerCheckpoint": true,
+      "accepted": false
+    },
+    {
+      "window": 2,
+      "index": 22,
+      "text": "birds,",
+      "base": {
+        "start": 56.673499,
+        "end": 57.694513,
+        "score": 0.5961926700968675
+      },
+      "large": {
+        "start": 56.653328,
+        "end": 59.215718,
+        "score": 0.08866314722849399
+      },
+      "startDelta": 0.02017099999999772,
+      "endDelta": 1.521205000000002,
+      "candidateStrongerCheckpoint": false,
+      "accepted": false
+    },
+    {
+      "window": 2,
+      "index": 25,
+      "text": "kind",
+      "base": {
+        "start": 60.076879,
+        "end": 60.557356,
+        "score": 0.04197499879933668
+      },
+      "large": {
+        "start": 59.996447,
+        "end": 60.516932,
+        "score": 0.037025369296814326
+      },
+      "startDelta": 0.08043199999999473,
+      "endDelta": 0.04042400000000157,
+      "candidateStrongerCheckpoint": false,
+      "accepted": false
+    },
+    {
+      "window": 2,
+      "index": 26,
+      "text": "may",
+      "base": {
+        "start": 60.617416,
+        "end": 60.797594,
+        "score": 0.1569802750225949
+      },
+      "large": {
+        "start": 60.597007,
+        "end": 60.777175,
+        "score": 0.9487215186834413
+      },
+      "startDelta": 0.020409000000000788,
+      "endDelta": 0.020418999999996856,
+      "candidateStrongerCheckpoint": true,
+      "accepted": false
+    },
+    {
+      "window": 3,
+      "index": 5,
+      "text": "earth.\u201d",
+      "base": {
+        "start": 71.044802,
+        "end": 72.005224,
+        "score": 0.12927825671002055
+      },
+      "large": {
+        "start": 65.863919,
+        "end": 66.784706,
+        "score": 0.26196981346568865
+      },
+      "startDelta": 5.180883000000009,
+      "endDelta": 5.220517999999998,
+      "candidateStrongerCheckpoint": false,
+      "accepted": false
+    },
+    {
+      "window": 3,
+      "index": 6,
+      "text": "God",
+      "base": {
+        "start": 72.385391,
+        "end": 72.965645,
+        "score": 0.0911408954592692
+      },
+      "large": {
+        "start": 68.98659,
+        "end": 72.94998,
+        "score": 0.12916276052333417
+      },
+      "startDelta": 3.3988009999999917,
+      "endDelta": 0.015664999999998486,
+      "candidateStrongerCheckpoint": false,
+      "accepted": false
+    },
+    {
+      "window": 3,
+      "index": 7,
+      "text": "said",
+      "base": {
+        "start": 73.525891,
+        "end": 74.186181,
+        "score": 0.1108572264423875
+      },
+      "large": {
+        "start": 73.490442,
+        "end": 74.591384,
+        "score": 0.11862598316887829
+      },
+      "startDelta": 0.03544899999999984,
+      "endDelta": 0.4052030000000002,
+      "candidateStrongerCheckpoint": false,
+      "accepted": false
+    },
+    {
+      "window": 3,
+      "index": 8,
+      "text": "\u201cFor",
+      "base": {
+        "start": 74.306234,
+        "end": 74.52633,
+        "score": 0.06510276822024362
+      },
+      "large": {
+        "start": 75.312,
+        "end": 75.432103,
+        "score": 0.8478725539984485
+      },
+      "startDelta": 1.0057659999999942,
+      "endDelta": 0.9057729999999964,
+      "candidateStrongerCheckpoint": false,
+      "accepted": false
+    },
+    {
+      "window": 3,
+      "index": 9,
+      "text": "after",
+      "base": {
+        "start": 75.466743,
+        "end": 75.646822,
+        "score": 0.046515964949142626
+      },
+      "large": {
+        "start": 75.492154,
+        "end": 75.672308,
+        "score": 0.9567340903363023
+      },
+      "startDelta": 0.0254110000000054,
+      "endDelta": 0.025486000000000786,
+      "candidateStrongerCheckpoint": true,
+      "accepted": false
+    },
+    {
+      "window": 3,
+      "index": 14,
+      "text": "will",
+      "base": {
+        "start": 77.187498,
+        "end": 77.327559,
+        "score": 0.045313679730106846
+      },
+      "large": {
+        "start": 77.173593,
+        "end": 77.33373,
+        "score": 0.23749843738910273
+      },
+      "startDelta": 0.013905000000008272,
+      "endDelta": 0.00617100000000903,
+      "candidateStrongerCheckpoint": true,
+      "accepted": false
+    },
+    {
+      "window": 3,
+      "index": 15,
+      "text": "fall",
+      "base": {
+        "start": 77.427603,
+        "end": 77.827779,
+        "score": 0.17395049442673977
+      },
+      "large": {
+        "start": 77.413798,
+        "end": 77.814141,
+        "score": 0.7913780294777759
+      },
+      "startDelta": 0.013805000000004952,
+      "endDelta": 0.013638000000000261,
+      "candidateStrongerCheckpoint": true,
+      "accepted": false
+    },
+    {
+      "window": 3,
+      "index": 20,
+      "text": "forty",
+      "base": {
+        "start": 79.128349,
+        "end": 79.508516,
+        "score": 0.12297838922664127
+      },
+      "large": {
+        "start": 79.075219,
+        "end": 79.495579,
+        "score": 0.43820008857510917
+      },
+      "startDelta": 0.0531299999999959,
+      "endDelta": 0.012936999999993759,
+      "candidateStrongerCheckpoint": true,
+      "accepted": false
+    },
+    {
+      "window": 3,
+      "index": 21,
+      "text": "days",
+      "base": {
+        "start": 79.668586,
+        "end": 79.948709,
+        "score": 0.172459747587497
+      },
+      "large": {
+        "start": 79.655716,
+        "end": 79.97599,
+        "score": 0.21209200554321217
+      },
+      "startDelta": 0.012870000000006598,
+      "endDelta": 0.02728100000000211,
+      "candidateStrongerCheckpoint": true,
+      "accepted": false
+    },
+    {
+      "window": 3,
+      "index": 24,
+      "text": "nights.",
+      "base": {
+        "start": 80.789078,
+        "end": 81.889561,
+        "score": 0.7132310688411989
+      },
+      "large": {
+        "start": 80.716623,
+        "end": 80.896777,
+        "score": 0.0015997389035598887
+      },
+      "startDelta": 0.07245500000000504,
+      "endDelta": 0.9927840000000003,
+      "candidateStrongerCheckpoint": false,
+      "accepted": false
+    }
+  ],
+  "firstPass": {
+    "words": 537,
+    "belowPointTwo": 109,
+    "status": "acoustic_alignment_needs_crosscheck"
+  }
+}

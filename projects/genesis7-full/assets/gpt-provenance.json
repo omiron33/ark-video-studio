@@ -1,0 +1,80 @@
+[
+  {
+    "id": "ark-before",
+    "prompt": "Use case: historical-scene. Create a cinematic photorealistic 16:9 frame, 2048x1152 or larger, for a premium lyric-driven film of Genesis chapter7. Noah's ark before the flood, a monumental elongated enclosed wooden vessel resting on dry ground, viewed from low three-quarter side at a distance. Important design: ancient dark weathered timber, long box-like hull with slightly curved ends, low pitched roof, narrow continuous high window band, ONE tall rectangular side doorway with a broad timber ramp. No sails, no mast, no fantasy ship ornaments. Scale feels enormous against tiny vegetation, 140m long. Ark occupies lower-right two thirds, doorway golden-amber glow, huge storm-laden slate-teal sky with clean negative space upper-left and center for typography. Foreground dusty dark earth with grass moving in wind, far mountains in haze. Old master dignity photographed with a modern large-format cinema camera, real wood grain, atmospheric depth, restrained warm light at threshold against very dark cool blue-green surroundings. Palette dark petrol teal, weathered umber, ivory light, muted coral hints. No text, letters, logos, watermark, modern objects or people. Composition must leave broad calm visual zones for large lyrics. Dramatic but believable natural light, no oversaturated fantasy effects.",
+    "path": "assets/ark-before-gpt.png",
+    "provider": "built-in GPT Image"
+  },
+  {
+    "id": "household-threshold",
+    "prompt": "Use case: historical-scene. Create a NEW cinematic photorealistic 16:9 Genesis7 film frame at 2048x1152 or higher. Use the attached image solely as the ark architecture/color reference: keep the same monumental long dark-timber box-like hull, low pitched roof, high narrow window band and tall side door. New camera: inside the very dark timber ark looking outward through the huge open side threshold. A small household approaches through pale dusty amber daylight; ancient plain linen robes, elderly bearded father leading, adults following in dignified silhouettes, no modern clothing. Faces secondary and believable; do not create giant foreground heads. The open doorway sits off-center to the right, warm light beams and airborne dust, deep timber beams framing left and top. Leave a broad quiet dark upper-left/central field for giant lyrics. Cold slate-teal shadows, aged wood, ivory shaft of light, extremely realistic cinema photograph, reverent and restrained. No lettering, watermark, sails, fantasy ornament or supernatural person.",
+    "source": "/Users/shanefisher/.codex/generated_images/01a0e02c-244c-7eb3-889c-9ed4fef66443/exec-e7ca31ef-a12d-48f6-8a9d-07e66a9a46b6.png",
+    "path": "household-threshold-gpt.png",
+    "provider": "OpenAI built-in GPT Image",
+    "reference": "ark-before-gpt.png"
+  },
+  {
+    "id": "animal-pairs",
+    "prompt": "Use case: historical-scene. NEW photorealistic cinematic 16:9 still for Genesis7. Use attached ark ONLY as exact architecture/color reference: same enormous dark timber hull, low pitched roof, high window band, warm side doorway and broad wooden ramp. Medium wide angle close to the ramp as a pair of beautiful elephants in side profile slowly approach the warm doorway; a pair of deer farther along the ramp, very small bird silhouettes above. Anatomy must be natural and credible, feet stand on solid ground, never collaged or mutated. Build a believable ancient scene in a storm-darkening landscape. Animals and ramp compose the bottom half, upper half is calm dark teal air and weathered timber negative space for large lyric typography. Real dust, hide texture, dimensional light and shadow. Color dark petrol blue-green, warm golden doorway, muted earth. No text or watermark, no modern things, no human faces needed. Emphasize paired entry and immense scale, not a zoo poster.",
+    "source": "/Users/shanefisher/.codex/generated_images/01a0e02c-244c-7eb3-889c-9ed4fef66443/exec-67181c14-2c32-488b-b255-66c241d65d0c.png",
+    "path": "animal-pairs-gpt.png",
+    "provider": "OpenAI built-in GPT Image",
+    "reference": "ark-before-gpt.png"
+  },
+  {
+    "id": "ark-interior",
+    "prompt": "Use case: historical-scene. NEW premium photorealistic cinematic 16:9 frame 2048x1152+. Attached image is architecture and color reference for the same ark; show its interior now. A long timber nave-like passage inside Noah's ark, low warm oil lamps, immense rough wooden ribs and overhead beams receding into deep darkness, gentle sheep and oxen resting in side enclosures, soft distant human household silhouettes gathered in warm refuge near a lamp. Real ancient materials, no medieval metal cages, no modern objects. Compose a luminous golden pocket of shelter at lower-right, a quiet open central passage and dark upper half reserved for large ivory lyrics. Moody cool teal shadows, restrained amber light, suspended dust, cinematic atmospheric depth, extraordinarily convincing wood and animal texture. No text, watermark, religious icons, fantasy glow or recognizable modern people.",
+    "source": "/Users/shanefisher/.codex/generated_images/01a0e02c-244c-7eb3-889c-9ed4fef66443/exec-3286f14f-8938-4407-871e-9cf4d7d79455.png",
+    "path": "ark-interior-gpt.png",
+    "provider": "OpenAI built-in GPT Image",
+    "reference": "ark-before-gpt.png"
+  },
+  {
+    "id": "ark-afloat",
+    "prompt": "Use case: historical-scene. NEW cinematic photorealistic 16:9 2048x1152+ Genesis flood film image. Use attached ark as exact geometry/material reference: same elongated enclosed dark timber box-like vessel, low pitched roof, high narrow windows, NO sails/mast/ornament; side door is now firmly shut. It is afloat on immense dark storm waters, three-quarter side view, long hull in upper-right middle distance; huge waves occupy foreground lower half, storm sky fills broad upper-left quiet negative space for giant ivory lyrics. Ark deck/hull stay above the midpoint waterline so foreground water can be animated independently. Driving rain, low slate-teal clouds, distant diffuse light with a few tiny amber windows, realistic foam irregularities and scale. Photographed like a monumental historical epic with natural lighting and restrained palette. No humans in water, no gore, no modern objects, no text or watermark. Believable floating hull, no impossible curving ship geometry.",
+    "source": "/Users/shanefisher/.codex/generated_images/01a0e02c-244c-7eb3-889c-9ed4fef66443/exec-f2bb5672-e8d5-4ad9-8ad9-50c2529119c2.png",
+    "path": "ark-afloat-gpt.png",
+    "provider": "OpenAI built-in GPT Image",
+    "reference": "ark-before-gpt.png"
+  },
+  {
+    "id": "door-seam",
+    "prompt": "Use case historical-scene. Create a NEW cinematic photorealistic 16:9 Genesis flood film still. Use attached ark image for consistent dark weathered timber materials and architecture. Camera inside the ark, tightly facing the immense thick timber entrance door which is almost closed. Massive hand-hewn vertical dark wooden planks fill the entire frame, huge subtle wooden cross-bracing at edges, very narrow vertical slit of bright warm daylight in the center of the frame from y0 to y1080. Light spills in a fine wedge onto rough floor at bottom. No people or faces or letters. Dramatic, solemn physical threshold, ancient joinery, cold deep teal shadows against a single amber seam. Extremely rich believable wood grain in low light. Compose broad quiet dark areas on both sides for monumental lyrics. No modern hardware, medieval decorations, supernatural figures, watermarks. This image will support an animated door closing.",
+    "source": "/Users/shanefisher/.codex/generated_images/01a0e02c-244c-7eb3-889c-9ed4fef66443/exec-351f0179-68ea-42a1-93d9-18c8962ae17e.png",
+    "path": "door-seam-gpt.png",
+    "provider": "OpenAI built-in GPT Image",
+    "reference": "ark-before-gpt.png"
+  },
+  {
+    "id": "drowned-fields",
+    "prompt": "Use case historical-scene. NEW photorealistic cinematic 16:9 frame of the Genesis7 flood's drowned world, no people or bodies. High oblique camera looks across immense shallow dark teal floodwater. Faint traces of ancient field boundaries, a narrow earth track and a few simple low mudbrick stone dwellings lie partially submerged and recede toward a dim horizon; the waters are almost covering the last traces of the land. Irregular realistic ripple highlights, storm sky occupying upper40percent, deep slate petrol tones, subtle muted ivory reflected light. NO asphalt, road markings, modern buildings, fantasy city, rainbow, dove, text or watermark. Broad calm dark central field reserved for giant typography. Emotional stillness and absence, documentary photoreal detail, restrained epic cinematography, believable geography and no implausible collage.",
+    "source": "/Users/shanefisher/.codex/generated_images/01a0e02c-244c-7eb3-889c-9ed4fef66443/exec-52fd1dc6-c0a3-44e4-acdb-884cece23853.png",
+    "path": "drowned-fields-gpt.png",
+    "provider": "OpenAI built-in GPT Image",
+    "reference": "ark-before-gpt.png"
+  },
+  {
+    "id": "ark-endless",
+    "prompt": "Use case historical-scene. NEW cinematic photorealistic 16:9 frame for ending of Genesis7, staying within chapter7. Use attached ark as architecture reference, same immense elongated enclosed dark timber box vessel, low pitched roof, narrow high windows, absolutely no sail/mast. Extreme distant wide view: the ark appears small at lower-right of center, drifting on endless dark teal ocean stretching to every horizon beneath a heavy black-blue overcast heaven. Very subtle amber window points show life within. No mountains or coast or land whatsoever, no rainbow, no dove, no sunburst, no people outside, no text/watermark. Quiet gentle long swells, low silver atmospheric light, enormous scale and lonely ambiguity. Dark central and upper area for large ivory lyric typography. Photoreal historical epic still, naturally lit, restrained monochrome petrol teal and tiny warm wood notes. Keep frame detailed, not pure black.",
+    "source": "/Users/shanefisher/.codex/generated_images/01a0e02c-244c-7eb3-889c-9ed4fef66443/exec-339d8034-7817-40a0-88eb-ddb346ebe2fa.png",
+    "path": "ark-endless-gpt.png",
+    "provider": "OpenAI built-in GPT Image",
+    "reference": "ark-before-gpt.png"
+  },
+  {
+    "id": "rain-timber",
+    "prompt": "Use case historical-scene. NEW cinematic photorealistic 16:9 Genesis flood detail shot. Attached image gives same ark's ancient timber architecture and palette. Close exterior view of the monumental dark timber hull in driving rain, camera looking diagonally along weathered broad planks toward a narrow high window whose soft warm oil-lamp glow promises shelter inside. Rain runs down real rough wood grain, drops streak diagonally, cold slate teal foreground shadows, softly glowing muted amber window in upper-right third. Large quiet dark left half for bold ivory typography. No humans, text, watermarks, modern glass panes or bolts. Believable hand-hewn ancient construction, moody historical-film photography, tactile realism, shallow atmospheric depth, no fantasy visual effects.",
+    "source": "/Users/shanefisher/.codex/generated_images/01a0e02c-244c-7eb3-889c-9ed4fef66443/exec-e0ff73ca-91c0-405b-b592-bbd091f7f4c3.png",
+    "path": "rain-timber-gpt.png",
+    "provider": "OpenAI built-in GPT Image",
+    "reference": "ark-before-gpt.png"
+  },
+  {
+    "id": "drowned-fields-final",
+    "source": "/Users/shanefisher/.codex/generated_images/01a0e02c-244c-7eb3-889c-9ed4fef66443/exec-07beb1e8-238d-42d9-831b-79a141623386.png",
+    "path": "drowned-fields-gpt.png",
+    "provider": "OpenAI built-in GPT Image",
+    "prompt": "Edit this cinematic Genesis flood frame. Preserve the photorealistic quality, dark teal floodwater and ancient rural field/path/low dwelling traces, but the land must now be COMPLETELY submerged, consistent with mountains already covered. Change camera to a higher downward-looking view. Remove ALL visible mountains, hills, trees breaking the surface, protruding houses and dry ground. Show faint field boundaries, earth path and low ancient house-wall traces ONLY beneath a continuous translucent dark sheet of rippled floodwater; everything submerged by several feet and softened by watery refraction. The entire frame is water with dim underwater traces. No land skyline, sun, shore, modern objects, people, text or watermark. Leave dark broad negative space upper-left for lyrics. Real underwater physics and varied natural surface reflections, restrained cinematic historical photography. Do not retain any portion of dry land or exposed mountain.",
+    "reference": "drowned-fields initial GPT frame"
+  }
+]

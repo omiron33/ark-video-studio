@@ -20,6 +20,7 @@ export function planStyle(project, stylePrompt) {
   if (typeof stylePrompt !== 'string' || !stylePrompt.trim()) throw new Error('A non-empty style prompt is required');
   const p = structuredClone(project), prompt = stylePrompt.toLowerCase();
   const requests = {
+    dark: /dark|gritty|charcoal|somber|sombre|bleak/.test(prompt),
     quiet: /quiet|minimal|serif|contemplative|meditative|gentle/.test(prompt),
     energetic: /bold|impact|energetic|percussive|dramatic|powerful/.test(prompt),
     orbit: /orbit|circle|circular|constellation|spiral/.test(prompt),
@@ -27,10 +28,11 @@ export function planStyle(project, stylePrompt) {
     photo: /photo|photoreal|realistic imagery|realistic scene|real-world/.test(prompt),
     semantic: /semantic|literal|words?.*(move|meaning)|rise|mountain|terrain|water|flood|sink|submerge/.test(prompt),
   };
+  if (requests.dark) requests.light = false;
   const avoid = id => new RegExp(`(?:no|avoid|without)\\s+(?:\\w+\\s+){0,2}${id}`, 'i').test(stylePrompt);
   const hex = stylePrompt.match(/#[0-9a-fA-F]{6}\b/)?.[0];
-  const accent = hex ?? (/gold|amber/.test(prompt) ? '#d3a958' : /blue|teal|ocean/.test(prompt) ? '#6dbeb8' : /red|fire|ember/.test(prompt) ? '#e77951' : '#b7a0df');
-  p.palette = { ...p.palette, ink: '#061a20', paper: requests.light ? '#eee4cc' : '#e8e1ce', accent };
+  const accent = hex ?? (requests.dark ? '#a17b65' : /gold|amber/.test(prompt) ? '#d3a958' : /blue|teal|ocean/.test(prompt) ? '#6dbeb8' : /red|fire|ember/.test(prompt) ? '#e77951' : '#b7a0df');
+  p.palette = { ...p.palette, ink: requests.dark ? '#080e13' : '#061a20', paper: requests.dark ? '#bec5c4' : requests.light ? '#eee4cc' : '#e8e1ce', accent };
   const pool = requests.quiet ? ['verse', 'orbit'] : requests.orbit ? ['orbit', 'verse', 'impact'] : requests.energetic ? ['impact', 'verse', 'orbit'] : ['verse', 'orbit', 'impact'];
   const styles = pool.filter(s => !avoid(s));
   if (!styles.length) styles.push('verse');
@@ -73,6 +75,11 @@ export function planStyle(project, stylePrompt) {
   });
   const imageIds = Object.entries(p.assets).filter(([, a]) => a.type === 'image').map(([id]) => id);
   for (const scene of p.sections) {
+    if(requests.dark){
+      scene.direction.gritty=true;
+      if(scene.style==='terrain')Object.assign(scene.direction,{dark:true,palette:{paper:'#141d23',ink:p.palette.paper,accent:'#83969c'}});
+      if(scene.style==='rise')scene.direction.wipeColor='#141d23';
+    }
     if (imageIds.length && (requests.photo || scene.style === 'submerge')) { scene.assetIds = [...imageIds]; scene.direction.photo = imageIds[0]; }
   }
   for (let i = 0; i < p.sections.length - 1; i++) {

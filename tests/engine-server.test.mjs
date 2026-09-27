@@ -18,6 +18,8 @@ test('studio routes normalize assets, support audio range seek, persist edits an
   assert.equal(loaded.project.audio.src, '/audio'); assert.equal(loaded.assets.image.src, '/asset/image');
   const audio = await fetch(`${url}/audio`, { headers: { Range: 'bytes=2-5' } }); assert.equal(audio.status, 206); assert.equal(await audio.text(), '2345');
   const visual = await fetch(`${url}/engine/visual.mjs`); assert.equal(visual.status, 200); assert.match(await visual.text(), /drawFrame/);
+  const story = await fetch(`${url}/engine/story-visual.mjs`); assert.equal(story.status, 200); assert.match(await story.text(), /installStoryStyles/);
+  assert.equal((await fetch(`${url}/engine/server.mjs`)).status, 404);
   const reject = await fetch(`${url}/api/sections/a`, { method: 'PATCH', headers: { Origin: 'https://example.org', 'Content-Type': 'application/json' }, body: JSON.stringify({ direction: { accent: '#f00' } }) }); assert.equal(reject.status, 403);
   const patched = await fetch(`${url}/api/sections/a`, { method: 'PATCH', headers: { Origin: url, 'Content-Type': 'application/json' }, body: JSON.stringify({ direction: { accent: '#f00' } }) }); assert.equal(patched.status, 200);
   assert.equal((await (await fetch(`${url}/api/project`)).json()).sections[0].direction.accent, '#f00');

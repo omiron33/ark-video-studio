@@ -123,3 +123,15 @@ test('malformed, failed, mutated or out-of-window cached results never become ac
   await assert.rejects(cachedAudioPass({cacheDir,identity:failedIdentity,generate:async()=>({status:'unresolved',words:[],reason:'No acoustic support'})}),/No acoustic support/);
   await assert.rejects(readFile(path.join(cacheDir,`${digest(failedIdentity)}.json`)),{code:'ENOENT'});
 });
+
+test('partial recognition is explicit official-only diagnostic evidence and cannot enter audio-only or forced caches',async t=>{
+  const cacheDir=await mkdtemp(path.join(tmpdir(),'ark-partial-cache-'));t.after(()=>rm(cacheDir,{recursive:true,force:true}));
+  const identity={...cacheIdentity(),duration:3,settings:{...cacheIdentity().settings,partialRecognition:true,partialRecognitionCodeSha256:digest('recovery code')}};
+  const partial={...passResult(identity),status:'partial_recognition',rawWordCount:20,omittedInvalidWords:[{index:3,text:'missing',rawStart:.3,rawEnd:.3,reason:'Zero duration'}],words:Array.from({length:19},(_,i)=>({id:`p${i}`,text:`token${i}`,start:i*.1,end:i*.1+.05,provenance:{tokenProbability:.8}}))};
+  const first=await cachedAudioPass({cacheDir,identity,generate:async()=>partial});assert.equal(first.cacheHit,false);assert.equal(first.result.words.length,19);assert.equal(first.result.omittedInvalidWords[0].text,'missing');
+  assert.equal((await cachedAudioPass({cacheDir,identity,generate:async()=>{throw Error('Should reuse validated evidence');}})).cacheHit,true);
+  for(const invalidIdentity of [{...identity,settings:cacheIdentity().settings},{...identity,task:'force-align',lyrics:'known lyrics'}])await assert.rejects(cachedAudioPass({cacheDir,identity:invalidIdentity,generate:async()=>partial}),/invalid evidence/);
+  for(const corrupt of [{...partial,rawWordCount:19},{...partial,omittedInvalidWords:[...partial.omittedInvalidWords,{index:4,text:'other'}],rawWordCount:21},{...partial,words:partial.words.map(w=>({...w,text:'N'}))}]){
+    const different={...identity,audio:{...identity.audio,sha256:digest(corrupt)}};await assert.rejects(cachedAudioPass({cacheDir,identity:different,generate:async()=>corrupt}),/invalid evidence/);
+  }
+});

@@ -68,7 +68,7 @@ function observationsFor(word, evidence) {
   return observations;
 }
 
-export async function reviewLyricVisibility({projectPath, videoPath, outDir, evidence: suppliedEvidence}) {
+export async function reviewLyricVisibility({projectPath, videoPath, outDir, evidence: suppliedEvidence, wordIds}) {
   projectPath = path.resolve(projectPath); videoPath = path.resolve(videoPath); outDir = path.resolve(outDir);
   await mkdir(outDir, {recursive: true});
   const manifestBytes = await readFile(projectPath);
@@ -76,10 +76,11 @@ export async function reviewLyricVisibility({projectPath, videoPath, outDir, evi
   const revision = await computeRevision(projectPath), videoSha256 = await sha256File(videoPath);
   if (digest(manifestBytes) !== revision.projectFiles.find(f => f.path === '$manifest')?.sha256) throw new Error('Project changed before OCR began; retry against stable inputs');
   const binding = {videoSha256, projectHash: revision.projectHash};
+  if(wordIds!==undefined&&(!Array.isArray(wordIds)||new Set(wordIds).size!==wordIds.length||wordIds.some(id=>!project.words.some(w=>w.id===id))))throw Error('OCR wordIds must name unique existing words');
   const reportPath = path.join(outDir, 'lyric-visibility.json');
-  const report = {schemaVersion: 1, kind: 'machine-lyric-visibility', binding, status: 'failed', method: 'Apple Vision native accurate OCR', projectPath, videoPath, wordCoverage: [], evidence: [], checks: [], limitations: ['OCR proves sampled word recognition, not perfect legibility or aesthetic quality.', 'OCR may miss arced, heavily stylized or occluded letters; an unresolved word is reported, never silently counted as visible.', 'Only top recognizer candidates are used, without lyric dictionary hints or language correction.', 'English recognition is configured for this Bible-song workflow.', 'Bounding boxes use each oriented image coordinate space.'], createdAt: new Date().toISOString(), reportPath};
+  const report = {schemaVersion: 1, kind: wordIds===undefined?'machine-lyric-visibility':'machine-lyric-visibility-section', scope:{wordIds:wordIds??project.words.map(w=>w.id),complete:wordIds===undefined,timebase:'project'}, binding, status: 'failed', method: 'Apple Vision native accurate OCR', projectPath, videoPath, wordCoverage: [], evidence: [], checks: [], limitations: ['OCR proves sampled word recognition, not perfect legibility or aesthetic quality.', 'OCR may miss arced, heavily stylized or occluded letters; an unresolved word is reported, never silently counted as visible.', 'Only top recognizer candidates are used, without lyric dictionary hints or language correction.', 'English recognition is configured for this Bible-song workflow.', 'Bounding boxes use each oriented image coordinate space.'], createdAt: new Date().toISOString(), reportPath};
   try {
-    const windows = visibilityWindows(project), framesDir = path.join(outDir, 'frames');
+    const windows = visibilityWindows(project).filter(w=>wordIds===undefined||wordIds.includes(w.id)), framesDir = path.join(outDir, 'frames');
     await mkdir(framesDir, {recursive: true});
     const supplemental = Array.isArray(suppliedEvidence) ? suppliedEvidence : suppliedEvidence?.frames ?? suppliedEvidence?.samples ?? [];
     const extraTimes = supplemental.map(frame => frame.time).filter(time => Number.isFinite(time) && time >= 0 && time <= project.duration - 1/project.fps);
@@ -92,7 +93,7 @@ export async function reviewLyricVisibility({projectPath, videoPath, outDir, evi
       await command('ffmpeg', ['-v','error','-y','-ss',String(seekTime),'-i',videoPath,'-map','0:v:0','-frames:v','1',file]);
       report.evidence.push({time, seekTime, path: file, sha256: await sha256File(file), recognition: []});
     }
-    const primary = await recognizeFrames({paths: report.evidence.map(f => f.path), outDir});
+    const primary = report.evidence.length?await recognizeFrames({paths: report.evidence.map(f => f.path), outDir}):{frames:[],...(await ensureOCR())};
     report.recognizerSourceHash = primary.sourceHash;
     for (const frame of report.evidence) frame.recognition = primary.frames.filter(result => result.path === frame.path);
     // Retry only windows with unresolved lyrics, in rotated orientations. This catches semantic vertical words.
@@ -109,7 +110,7 @@ export async function reviewLyricVisibility({projectPath, videoPath, outDir, evi
     const errors = report.evidence.flatMap(f => f.recognition.filter(r => r.error).map(r => ({time:f.time,error:r.error})));
     const matched = report.wordCoverage.filter(w => w.observed).length;
     report.coverage = {required: windows.length, observed: matched, ratio: windows.length ? matched/windows.length : 0, unresolved: report.wordCoverage.filter(w => !w.observed).map(w => w.id)};
-    report.checks.push({id:'native_ocr_available',passed:!errors.length,errors}, {id:'required_lyrics_visible',passed:windows.length > 0 && matched === windows.length,measured:report.coverage,threshold:{requiredRatio:1}});
+    report.checks.push({id:'native_ocr_available',passed:!errors.length,errors}, {id:'required_lyrics_visible',passed:(windows.length > 0 || (wordIds!==undefined&&wordIds.length===0)) && matched === windows.length,measured:report.coverage,threshold:{requiredRatio:1}});
     const endRevision = await computeRevision(projectPath);
     report.checks.push({id:'unchanged_inputs',passed:endRevision.projectHash===binding.projectHash && await sha256File(videoPath)===binding.videoSha256});
     report.status = report.checks.every(c=>c.passed) ? 'passed' : 'failed';

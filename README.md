@@ -4,6 +4,8 @@ The agent-directed lyric-video engine is in `engine/`. Give the agent a song and
 
 Run `./studio` to open the Genesis7 showcase project locally. See [the engine guide](docs/ENGINE.md), [song intake](docs/SONG_INTAKE.md), and [verified delivery](research/delivery.md).
 
+The full dark Genesis 7 film is in [projects/genesis7-full](projects/genesis7-full/README.md). Run `./studio projects/genesis7-full/project.json` to direct any of its 66 scenes. It uses seven font families, word-triggered choreography and a graphics-led mix of drawn scenes and GPT Image backdrops. See [full-song review](docs/FULL_SONG_REVIEW.md) for resumable whole-film checks.
+
 It adds deterministic Canvas scenes, per-word timing, portable project manifests, cached section edits/replacements, a music preview, native video export, and a review gauntlet. Original Python v1–v3 code follows below and remains available.
 
 ---

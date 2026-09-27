@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {applyDirection,localChat,captureSceneEvidence,structuredResponse,directProject,proposeVisualRepair} from '../engine/director.mjs';
+import {applyDirection,localChat,captureSceneEvidence,structuredResponse,directProject,proposeVisualRepair,selectModelFrames} from '../engine/director.mjs';
 import {createServer} from 'node:http';
 import {mkdtemp,rm,stat} from 'node:fs/promises';
 import os from 'node:os';
@@ -53,10 +53,37 @@ test('malformed model output retries once with a larger budget and preserves fai
 test('encoded frame evidence includes the last 30fps frame without rounding past EOF',async t=>{
  const dir=await mkdtemp(path.join(os.tmpdir(),'ark-vision-evidence-'));t.after(()=>rm(dir,{recursive:true,force:true}));
  const video=path.join(dir,'sample.mp4');await runProcess('ffmpeg',['-v','error','-f','lavfi','-i','color=c=blue:s=320x180:r=30:d=1','-c:v','libx264','-pix_fmt','yuv420p',video]);
- const section={id:'last',start:0,end:1,wordIds:[],direction:{},style:'verse'};
- const evidence=await captureSceneEvidence({duration:1,fps:30,words:[]},section,video,dir);
+ const section={id:'last',start:0,end:1,wordIds:['last-word'],direction:{},style:'verse'};
+ const evidence=await captureSceneEvidence({duration:1,fps:30,words:[{id:'last-word',text:'Last',start:.8,end:1}]},section,video,dir);
  assert.ok(evidence.frames.some(f=>f.time>.96));for(const f of evidence.frames)assert.ok((await stat(f.path)).size>0);
  assert.ok((await stat(evidence.contactPath)).size>0);
+ assert.equal(evidence.frames.length,15);assert.equal(evidence.modelFrames.length,12);
+ assert.equal(evidence.archiveContactPaths.length,2);assert.equal(evidence.contactPaths.length,1);
+ for(const file of [...evidence.archiveContactPaths,...evidence.contactPaths])assert.ok((await stat(file)).size>0);
+ assert.deepEqual(evidence.modelFrames.map(f=>[f.time,f.sha256]),evidence.modelSampling.samples.map(f=>[f.time,f.sha256]));
+});
+test('model selection is deterministic, bounded and retains reading, action and both cut sides from the full archive',()=>{
+ const p={duration:20,fps:30,words:Array.from({length:12},(_,i)=>({id:`w${i}`,text:`Word${i}`,start:1+i*.6,end:1.4+i*.6,phraseId:`p${Math.floor(i/4)}`}))};
+ const section={start:0,end:10,wordIds:p.words.map(w=>w.id),direction:{actions:[{triggerId:'w6',after:'end',delay:.2,duration:1} ]}};
+ const frames=Array.from({length:101},(_,i)=>({time:i/10,path:`frame-${i}.jpg`,sha256:`hash-${i}`})).concat({time:10.04,path:'next.jpg',sha256:'next'});
+ const before=structuredClone(frames),result=selectModelFrames(p,section,frames);
+ assert.deepEqual(result,selectModelFrames(p,section,[...frames].reverse()));assert.deepEqual(frames,before);
+ assert.equal(result.frames.length,16);assert.equal(result.sampling.archiveCount,102);
+ assert.ok(result.frames.every(f=>frames.includes(f)));assert.deepEqual(result.frames.map(f=>f.time),result.frames.map(f=>f.time).sort((a,b)=>a-b));
+ const anchors=result.sampling.samples.flatMap(s=>s.anchors);
+ for(const reason of ['scene-entry','before-cut','after-cut','first-vocal-before-onset','first-vocal-readable','last-word-readable','action-0-before','action-0-middle','action-0-after'])assert.ok(anchors.some(a=>a.reason===reason),reason);
+ assert.equal(result.frames.at(-1).time,10.04);assert.ok(result.frames.some(f=>f.time===7.8));
+ assert.ok(result.sampling.limitations.some(s=>s.includes('intermediate motion')));
+});
+test('dense action scenes declare omitted anchors rather than implying complete model coverage',()=>{
+ const words=Array.from({length:20},(_,i)=>({id:`w${i}`,start:i+.2,end:i+.5}));
+ const p={duration:25,fps:30,words},section={start:0,end:22,wordIds:words.map(w=>w.id),direction:{actions:words.map(w=>({triggerId:w.id,duration:.6}))}};
+ const frames=Array.from({length:225},(_,i)=>({time:i/10,sha256:`h${i}`}));
+ const result=selectModelFrames(p,section,frames);
+ assert.equal(result.frames.length,16);assert.ok(result.sampling.omittedAnchors.length>0);
+ assert.ok(result.sampling.omittedAnchors.every(a=>Number.isFinite(a.nearestArchivedTime)));
+ assert.ok(result.sampling.samples.some(s=>s.anchors.some(a=>a.reason==='before-cut')));
+ assert.ok(result.sampling.samples.some(s=>s.anchors.some(a=>a.reason==='after-cut')));
 });
 test('long-song direction uses bounded batches and preserves the complete timing map',async t=>{
  const requests=[];const server=createServer(async(req,res)=>{let body='';for await(const chunk of req)body+=chunk;const input=JSON.parse(body),brief=JSON.parse(input.messages[1].content);requests.push(brief.scenes.length);res.setHeader('Content-Type','application/json');res.end(JSON.stringify({done_reason:'stop',message:{content:JSON.stringify({summary:'Explicit test-only director',sections:brief.scenes.map(s=>({id:s.id,style:'impact',motif:'rays',scale:1,accent:'#e77951',reason:'Fixture'}))})}}))});

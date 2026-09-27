@@ -57,6 +57,16 @@ test('different briefs produce different real direction without rewriting lyrics
   assert.match(planStyle(source, 'Photorealistic mountains').evidence.warnings.join(' '), /no supplied image/);
 });
 
+test('dark gritty briefs keep semantic mountains and their transition dark',()=>{
+  const original=project(),result=planStyle(original,'Dark gritty chapter, avoid bright backgrounds. Words move with their meaning: water rises, mountain terrain, submerge.');
+  assert.equal(result.evidence.interpreted.dark,true);assert.equal(result.evidence.interpreted.light,false);
+  assert.equal(result.project.palette.ink,'#080e13');assert.equal(result.project.palette.accent,'#a17b65');
+  assert.equal(result.project.sections.find(s=>s.style==='terrain').direction.palette.paper,'#141d23');
+  assert.equal(result.project.sections.find(s=>s.style==='rise').direction.wipeColor,'#141d23');
+  assert.deepEqual(result.project.words,original.words);
+  assert.equal(planStyle(original,'Dark typography accent #926c59').project.palette.accent,'#926c59');
+});
+
 test('create portable intake copies fonts, invokes measured reviews, and records only the gate result', async t => {
   const options = await fixture(t), log = [], result = await createSong(options, services(log));
   assert.equal(result.status, 'finished'); assert.deepEqual(log, ['plan', 'render', 'audio', 'technical', 'visual', 'attach', 'gate']);

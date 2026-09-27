@@ -18,6 +18,8 @@ const report = await reviewAudio({
 
 ## Measurements and acceptance
 
+The exact lexical-match and single-CTC defaults in this table describe audio-only lyric discovery. Supplied official lyrics use the stricter paired-checkpoint policy below; waveform, duration, AAC, cue-error and mean-score limits stay unchanged.
+
 The report binds its evidence to SHA-256 hashes of the actual video and source audio, plus `computeRevision(projectPath).projectHash`. The gauntlet recomputes those hashes; a report for an earlier movie or project cannot approve a newer result. It requires all five checks below. A passed report is also saved beside the movie as `MOVIE.mp4.audio-review.json`.
 
 | Check | What is measured | Default acceptance |
@@ -42,6 +44,29 @@ Cache writes use atomic replacement. Reads validate the key, identity, result di
 
 These are engineering checks with stated thresholds, not a claim of perfect perception. The current CTC checkpoint is trained for English speech; music, unfamiliar pronunciations, overlapping singers, and other languages can exceed its capability. All recognition models can share an error. Mono low-band PCM comparison establishes excerpt and lag fidelity, not a complete stereo or perceptual mastering assessment.
 
+## Supplied official lyrics
+
+When `lyricsPath` or `intake.originalLyrics` supplies canonical text, the engine preserves its literal words. Independent ASR substitutions and omissions remain visible in each word’s `lexicalEvidence`; they cannot rewrite the canonical lyric. CTC and recognition checkpoint identities are the SHA-256 of the actual model bytes. Two encodings of one checkpoint never count as two models.
+
+`assessOfficialWordEvidence(expected, ctcPasses, recognitionPasses, {duration, thresholds})` accepts a cue through one of two explicit routes:
+
+- `official_dual_ctc`: distinct source CTC checkpoints both score at least0.7, their onsets agree within80ms and ends within120ms. A word longer than1.5s also needs independent ASR support of both boundaries.
+- `official_ctc_asr`: the selected source CTC score is at least0.2, a distinct source CTC agrees within80ms at the onset and120ms at the end, and an exact original-mix ASR token scores at least0.6 with both endpoints within250ms.
+
+Both routes require the selected CTC checkpoint’s AAC-decoded interval to score at least0.2 and agree at both endpoints within120ms. The literal official token remains unchanged, selected boundaries come from one actual acoustic pass, and raw scores are retained. Scores are model posteriors, not calibrated probabilities of musical correctness. Invalid, zero-duration, out-of-source or malformed passes are rejected. Uncorroborated long intervals cannot pass by absorbing silence. Vocal-separated passes cannot independently vote in these routes. Audio-only lyric discovery retains its original gates.
+
+Official review uses local base and large CTC checkpoints plus independent base/small Whisper recognition. Uncertain words trigger a bounded medium recognition retry and a complete-phrase acoustic retry. Still-unsupported cues fail explicitly. This policy does not guarantee that every difficult sung word can be verified by speech-trained models.
+
+## Resident models and bounded recognition recovery
+
+A review owns one local `audio-worker.py` process and retains at most five checkpoint objects, identified by their actual SHA-256 and architecture. It executes the unchanged numeric implementation in `align.py`. The worker rechecks checkpoint identity, preserves standalone output, and exits at review completion or bounded timeout. Each attempt records worker-code SHA, resident-model hit status and actual inference duration. Set `residentModels:false` to use individual processes. The disk pass cache still binds exact decoded audio, model bytes and inference settings; resident loading does not change those computations.
+
+A real ten-second large-CTC smoke measured11.277s cold and2.256s resident. All twelve word intervals and token probabilities matched the standalone run exactly. Short full-song retries subsequently measured approximately0.5–0.8s in the resident worker. These are observed timings, not latency guarantees.
+
+For supplied official lyrics only, a failed long ASR pass may retain its valid measured tokens as `partial_recognition`. Recovery requires at least20 raw tokens, at most5% invalid tokens, at least10 surviving tokens, and no degenerate run of more than five identical words. Invalid tokens are omitted with their original measurements and reasons; their timings are never filled. The result may corroborate only the surviving exact words. It cannot provide audio-only lyric discovery or forced-alignment evidence. Its cache key explicitly binds the recovery setting and worker implementation hash. The same checks validate cached partial results. A real64-token song window retained63 measured tokens and recorded one zero-duration “male” omission.
+
+Phrase retries prefer a complete contiguous exact phrase independently recognized in the source mix, with mean token probability at least0.6. Every matched token must have finite ordered intervals within the source review window. This chooses a narrower search span, not an acceptance shortcut: all paired acoustic/AAC criteria still apply. A passed review records any sub-tolerance refinements but does not automatically trigger another rerender solely for those refinements; failed cue checks still trigger supported repairs.
+
 ## Local installation used for the verified run
 
 No runtime command silently downloads a model or invokes a remote inference API. This Mac uses:
@@ -60,6 +85,7 @@ The checkpoint SHA-256 values are pinned here. Whisper's explicit setup download
 | `small.en.pt` | `f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872` |
 | `medium.en.pt` | `d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f` |
 | `wav2vec2_fairseq_base_ls960_asr_ls960.pth` | `488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d` |
+| `wav2vec2_fairseq_large_lv60k_asr_ls960.pth` | `7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7` |
 
 Verified direct forced-alignment command (choose a new output filename when repeating):
 
@@ -72,9 +98,9 @@ Verified direct forced-alignment command (choose a new output filename when repe
   --language en --threads 4
 ```
 
-Without `--model`, that backend discovers the pinned local CTC checkpoint. For another installation, pass an existing checkpoint explicitly and install a matching Torch/TorchAudio pair. The helper's `--backend openai-whisper` supports local `.pt` files, including `medium.en.pt`; `--relaxed-speech` enables the bounded music-backed recognition retry used by the reviewer. API options `python`, `baseModel`, `model` (small checkpoint), `strongModel`, `ctcModel`, `threads`, and `passTimeoutMs` select local runtime resources. `ARK_AUDIO_PYTHON` can set the interpreter globally for review.
+Without `--model`, that backend discovers the pinned local CTC checkpoint. For another installation, pass an existing checkpoint explicitly and install a matching Torch/TorchAudio pair. The helper's `--backend openai-whisper` supports local `.pt` files, including `medium.en.pt`; `--relaxed-speech` enables the bounded music-backed recognition retry used by the reviewer. API options `python`, `baseModel`, `model` (small checkpoint), `strongModel`, `ctcModel`, `ctcLargeModel`, `threads`, and `passTimeoutMs` select local runtime resources. `ARK_AUDIO_PYTHON` can set the interpreter globally for review.
 
-The CTC implementation follows the state/token alignment approach in the [official TorchAudio forced-alignment tutorial](https://docs.pytorch.org/audio/main/tutorials/forced_alignment_tutorial.html) and loads the architecture from the [official wav2vec2 pipeline definition](https://github.com/pytorch/audio/blob/main/src/torchaudio/pipelines/_wav2vec2/impl.py). Its [checkpoint is hosted by PyTorch](https://download.pytorch.org/torchaudio/models/wav2vec2_fairseq_base_ls960_asr_ls960.pth). Local recognition uses the [official OpenAI Whisper implementation](https://github.com/openai/whisper).
+The CTC implementation follows the state/token alignment approach in the [official TorchAudio forced-alignment tutorial](https://docs.pytorch.org/audio/main/tutorials/forced_alignment_tutorial.html) and loads the architecture from the [official wav2vec2 pipeline definition](https://github.com/pytorch/audio/blob/main/src/torchaudio/pipelines/_wav2vec2/impl.py). Its [checkpoint is hosted by PyTorch](https://download.pytorch.org/torchaudio/models/wav2vec2_fairseq_base_ls960_asr_ls960.pth). The large checkpoint uses the official `WAV2VEC2_ASR_LARGE_LV60K_960H` architecture and [PyTorch-hosted weights](https://download.pytorch.org/torchaudio/models/wav2vec2_fairseq_large_lv60k_asr_ls960.pth), with waveform normalization taken from the official bundle definition. `align.py` sets OpenMP, MKL, Accelerate and Numba thread caps before importing inference packages, in addition to Torch’s own thread limit. Local recognition uses the [official OpenAI Whisper implementation](https://github.com/openai/whisper).
 
 ## Musical attack events
 

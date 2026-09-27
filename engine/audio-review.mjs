@@ -1,7 +1,8 @@
 /** Measured local audio QA: codec round-trip, recognized lyrics, acoustic forced alignment.
  * No subjective hearing claim. Missing evidence fails; supported timing changes can be repaired.
  */
-import { execFile } from 'node:child_process';
+import { execFile, spawn } from 'node:child_process';
+import { createInterface } from 'node:readline';
 import { promisify } from 'node:util';
 import { readFile, writeFile, mkdir, stat, copyFile, rm } from 'node:fs/promises';
 import path from 'node:path';
@@ -27,7 +28,9 @@ export async function fingerprintAudioWindow(file, { sourceOffset = 0, duration 
 }
 
 function validPass(result, identity) {
-  if (!result || result.version!==1 || result.timebase!=='source' || result.status!=='machine_estimate' || result.task!==identity.task || result.source?.backend!==identity.backend || result.source?.model!==identity.model.path || result.source?.language!==identity.settings.language || result.source?.offset!==identity.offset || !Array.isArray(result.words) || !result.words.length) return false;
+  const partial=identity.task==='transcribe'&&identity.settings.partialRecognition===true&&result?.status==='partial_recognition';
+  if(partial&&(!Array.isArray(result.omittedInvalidWords)||!result.omittedInvalidWords.length||!Number.isInteger(result.rawWordCount)||result.rawWordCount<20||result.omittedInvalidWords.length/result.rawWordCount>.05||result.words?.length+result.omittedInvalidWords.length!==result.rawWordCount))return false;
+  if (!result || result.version!==1 || result.timebase!=='source' || (result.status!=='machine_estimate'&&!partial) || result.task!==identity.task || result.source?.backend!==identity.backend || result.source?.model!==identity.model.path || result.source?.language!==identity.settings.language || result.source?.offset!==identity.offset || !Array.isArray(result.words) || !result.words.length) return false;
   if (!finite(result.source.duration) || Math.abs(result.source.duration-identity.duration)>.05) return false;
   let last=-Infinity; const ids=new Set();
   for(const word of result.words){
@@ -35,6 +38,7 @@ function validPass(result, identity) {
     if(typeof word?.id!=='string'||!word.id||ids.has(word.id)||typeof word.text!=='string'||!word.text.trim()||!finite(word.start)||!finite(word.end)||word.start<identity.offset-.001||word.end>identity.offset+identity.duration+.05||word.end<=word.start||word.start<last||!finite(probability)||probability<0||probability>1)return false;
     ids.add(word.id);last=word.start;
   }
+  if(partial){if(result.words.length<10)return false;let run=1;for(let i=1;i<result.words.length;i++){run=lexical(result.words[i].text)===lexical(result.words[i-1].text)?run+1:1;if(run>5)return false;}}
   return identity.task!=='force-align'||result.words.map(w=>w.text).join(' ')===identity.lyrics.trim().replace(/\s+/g,' ');
 }
 
@@ -145,6 +149,78 @@ export function assessWordEvidence(expected, acousticSource, acousticEncoded, re
   });
 }
 
+/** Known official lyrics use independent acoustic checkpoints, not ASR spelling votes.
+ * Raw posterior scores are retained, never relabelled as calibrated probabilities.
+ * Both endpoints must agree. Audio-only lyric discovery continues using its own gate.
+ */
+export function assessOfficialWordEvidence(expected, ctcPasses, recognitionPasses, {duration, thresholds={}}={}) {
+  if(!finite(duration)||duration<=0)throw Error('Official lyric evidence requires a finite positive source duration');
+  const rules={...defaults,minDualCtcConfidence:.7,maxSourceOnsetSpread:.08,maxSourceEndSpread:.12,minRecognitionProbability:.6,maxRecognitionOnsetDelta:.25,maxRecognitionEndDelta:.25,maxUncorroboratedWordDuration:1.5,...thresholds};
+  const validWord=w=>w&&typeof w.text==='string'&&lexical(w.text)&&finite(w.start)&&finite(w.end)&&w.start>=0&&w.end>w.start&&w.end<=duration+.001&&finite(w.provenance?.tokenProbability)&&w.provenance.tokenProbability>=0&&w.provenance.tokenProbability<=1;
+  const prepare=(passes,recognition=false)=>passes.filter(p=>typeof p?.checkpointId==='string'&&p.checkpointId.length>0&&['source','encoded','vocals'].includes(p.role)&&Array.isArray(p.words)&&p.words.length&&p.words.every(validWord)).map(p=>({...p,matches:alignLexicalWords(expected,p.words).matches}));
+  const ctc=prepare(ctcPasses),recognition=prepare(recognitionPasses,true);
+  return expected.map((word,i)=>{
+    const sources=ctc.filter(p=>p.role==='source'&&p.matches[i]).map(p=>({checkpointId:p.checkpointId,artifact:p.artifact??null,word:p.matches[i]}));
+    const matches=recognition.filter(p=>p.matches[i]).map(p=>({checkpointId:p.checkpointId,role:p.role,word:p.matches[i]}));
+    const lexicalEvidence={matchedCheckpointIds:[...new Set(matches.filter(p=>p.role==='source').map(p=>p.checkpointId))],mismatches:recognition.filter(p=>!p.matches[i]).map(p=>({checkpointId:p.checkpointId,role:p.role,reason:'Canonical token was omitted or recognized differently'})),rejectedPasses:recognitionPasses.length-recognition.length};
+    const candidates=[];
+    for(const source of sources){
+      const a=source.word,probability=a.provenance.tokenProbability;
+      const codec=ctc.filter(p=>p.role==='encoded'&&p.checkpointId===source.checkpointId&&p.matches[i]).map(p=>({checkpointId:p.checkpointId,word:p.matches[i],startDelta:Math.abs(a.start-p.matches[i].start),endDelta:Math.abs(a.end-p.matches[i].end)})).sort((x,y)=>Math.max(x.startDelta,x.endDelta)-Math.max(y.startDelta,y.endDelta))[0];
+      const codecSupported=codec&&codec.word.provenance.tokenProbability>=rules.minWordAcousticConfidence&&codec.startDelta<=rules.maxCodecAlignmentSpread&&codec.endDelta<=rules.maxCodecAlignmentSpread;
+      const paired=sources.filter(b=>b.checkpointId!==source.checkpointId).map(b=>({...b,startDelta:Math.abs(a.start-b.word.start),endDelta:Math.abs(a.end-b.word.end)})).filter(b=>b.startDelta<=rules.maxSourceOnsetSpread&&b.endDelta<=rules.maxSourceEndSpread);
+      const asr=matches.filter(p=>p.role==='source'&&!sources.some(s=>s.checkpointId===p.checkpointId)).map(p=>({...p,startDelta:Math.abs(a.start-p.word.start),endDelta:Math.abs(a.end-p.word.end)})).filter(p=>p.word.provenance.tokenProbability>=rules.minRecognitionProbability&&p.startDelta<=rules.maxRecognitionOnsetDelta&&p.endDelta<=rules.maxRecognitionEndDelta);
+      const dual=probability>=rules.minDualCtcConfidence&&paired.some(p=>p.word.provenance.tokenProbability>=rules.minDualCtcConfidence)&&(a.end-a.start<=rules.maxUncorroboratedWordDuration||asr.length>0);
+      const recognized=probability>=rules.minWordAcousticConfidence&&paired.length>0&&asr.length>0;
+      const route=codecSupported?(dual?'official_dual_ctc':recognized?'official_ctc_asr':null):null;
+      candidates.push({source,codec,paired,asr,route,probability});
+    }
+    candidates.sort((a,b)=>Number(!!b.route)-Number(!!a.route)||b.probability-a.probability);
+    const selected=candidates[0],a=selected?.source.word,supported=!!selected?.route;
+    const cueDelta=a?Math.abs(word.start-a.start):Infinity,endDelta=a?Math.abs(word.end-a.end):Infinity;
+    const serialize=p=>({checkpointId:p.checkpointId,role:p.role??'source',text:p.word.text,start:p.word.start,end:p.word.end,score:p.word.provenance.tokenProbability,startDelta:rounded(p.startDelta),endDelta:rounded(p.endDelta)});
+    return {id:word.id,text:word.text,currentStart:word.start,currentEnd:word.end,acousticStart:a?.start??null,acousticEnd:a?.end??null,acousticConfidence:rounded(selected?.probability??0),selectedCheckpointId:selected?.source.checkpointId??null,codecAlignmentSpread:selected?.codec?rounded(Math.max(selected.codec.startDelta,selected.codec.endDelta)):null,sourceAcousticEvidence:sources.map(serialize),pairedCheckpointEvidence:selected?.paired.map(serialize)??[],corroboration:selected?.asr.map(serialize)??[],encodedEvidence:selected?.codec?serialize(selected.codec):null,lexicalEvidence,route:selected?.route??null,supported,cueDelta:rounded(cueDelta),endDelta:rounded(endDelta),passed:supported&&finite(word.start)&&finite(word.end)&&word.start>=0&&word.end>word.start&&word.end<=duration+.001&&cueDelta<=rules.maxCueDelta&&endDelta<=rules.maxEndDelta,repair:supported&&(cueDelta>.00001||endDelta>.00001)?{id:word.id,start:a.start,end:a.end,previousStart:word.start,previousEnd:word.end}:null};
+  });
+}
+
+/** One local process retains at most five content-identified model objects per review.
+ * align.py's numeric alignment implementation is unchanged; standalone remains available.
+ */
+function localAudioWorker(python,{threads,timeout,workerPath,alignPath}) {
+  const child=spawn(python,[workerPath,alignPath,String(threads)],{stdio:['pipe','pipe','pipe']});
+  const lines=createInterface({input:child.stdout});let pending=null,stderr='',exited=false;
+  child.stderr.on('data',chunk=>{stderr=(stderr+chunk.toString()).slice(-12000);});
+  const fail=error=>{if(pending){clearTimeout(pending.timer);pending.reject(error);pending=null;}};
+  child.on('error',fail);child.on('exit',(code,signal)=>{exited=true;fail(Error(`Local audio worker exited (${code??signal}): ${stderr.slice(-1500)}`));});
+  lines.on('line',line=>{let result;try{result=JSON.parse(line);}catch{return fail(Error('Malformed local audio worker response'));}if(!pending||result.id!==pending.id)return fail(Error('Local audio worker response identity mismatch'));clearTimeout(pending.timer);const {resolve,reject}=pending;pending=null;result.error?reject(Error(result.error)):resolve(result);});
+  return {
+    request(argv,checkpointId,allowPartialRecognition=false){if(exited)return Promise.reject(Error('Local audio worker is closed'));if(pending)return Promise.reject(Error('Local audio worker already has an inference request'));return new Promise((resolve,reject)=>{const id=randomUUID(),timer=setTimeout(()=>{fail(Error('Local audio worker inference exceeded its bounded timeout'));child.kill('SIGTERM');},timeout);pending={id,resolve,reject,timer};child.stdin.write(JSON.stringify({id,argv,checkpointId,allowPartialRecognition})+'\n',error=>{if(error)fail(error);});});},
+    async close(){if(exited)return;child.stdin.end();await new Promise(resolve=>{const timer=setTimeout(()=>{child.kill('SIGTERM');resolve();},2000);child.once('exit',()=>{clearTimeout(timer);resolve();});});lines.close();},
+  };
+}
+
+/** Choose a complete, independently recognized phrase to remove absorbed instrumental gaps.
+ * This only proposes the search window. All acoustic acceptance thresholds still apply.
+ */
+export function officialPhraseRetryWindow(words,recognitionPasses,{start,end,duration}) {
+  if(!words.length||![start,end,duration].every(finite)||start<0||end<=start||duration<=0||end>duration+.001)throw Error('Phrase retry requires words and a valid source window');
+  const candidates=[];
+  for(const pass of recognitionPasses){
+    if(pass.role!=='source'||!Array.isArray(pass.words))continue;
+    const matches=alignLexicalWords(words,pass.words).matches;
+    if(matches.some(w=>!w)||matches.some((w,i)=>!finite(w.start)||!finite(w.end)||w.end<=w.start||w.start<start||w.end>end||w.start<0||w.end>duration||i&&(w.start<matches[i-1].start||w.end<matches[i-1].end)||!finite(w.provenance?.tokenProbability)||w.provenance.tokenProbability<0||w.provenance.tokenProbability>1))continue;
+    const indices=matches.map(w=>pass.words.indexOf(w));
+    if(indices.some((n,i)=>i&&n!==indices[i-1]+1))continue;
+    const confidence=mean(matches.map(w=>w.provenance?.tokenProbability??0));
+    if(confidence<.6)continue;
+    const onset=matches[0].start,offset=matches.at(-1).end;
+    if(onset<start-.001||offset>end+.001||offset<=onset)continue;
+    candidates.push({start:Math.max(0,onset-.2),end:Math.min(duration,offset+.25),confidence,checkpointId:pass.checkpointId,method:'complete-exact-recognized-phrase'});
+  }
+  candidates.sort((a,b)=>b.confidence-a.confidence);
+  return candidates[0]??{start:Math.max(0,words[0].start-.35),end:Math.min(duration,words.at(-1).end+.35),method:'authored-phrase-bounds'};
+}
+
 async function pythonRuntime(requested) {
   if(requested)return requested;
   if(process.env.ARK_AUDIO_PYTHON)return process.env.ARK_AUDIO_PYTHON;
@@ -177,27 +253,33 @@ export async function reviewAudio(options) {
   const expected=structuredClone(project.words),originalWords=structuredClone(project.words);
   const officialPath=options.lyricsPath??(project.intake?.originalLyrics?resolveSource(projectPath,project.intake.originalLyrics):null);
   let canonicalMismatch=false;
-  if(officialPath){const canonical=(await readFile(officialPath,'utf8')).trim().split(/\s+/);if(canonical.length===expected.length){canonical.forEach((text,i)=>{if(text!==expected[i].text)canonicalMismatch=true;expected[i].text=text;});}else{report.canonicalLyricIssue='Official lyric word count differs from project; reimport with exact-lyric forced alignment before directing scenes.';}}
+  if(officialPath){report.methods.push('Official lyrics: independent base and large wav2vec2 checkpoints with paired onset AND end agreement; transparent ASR lexical disagreement');const canonical=(await readFile(officialPath,'utf8')).trim().split(/\s+/);if(canonical.length===expected.length){canonical.forEach((text,i)=>{if(text!==expected[i].text)canonicalMismatch=true;expected[i].text=text;});}else{report.canonicalLyricIssue='Official lyric word count differs from project; reimport with exact-lyric forced alignment before directing scenes.';}}
   const python=await pythonRuntime(options.python),alignCodeHash=await fileHash(path.join(root,'align.py'));
   const cacheDir=path.join(path.dirname(projectPath),'.review-cache','audio');
   report.cache={directory:cacheDir,hits:0,misses:0,rejectedEntries:0};
-  let runtime;
+  let runtime,worker;
+  const workerPath=path.join(root,'audio-worker.py'),workerCodeSha256=await fileHash(workerPath);
+  report.inferenceRuntime={mode:options.residentModels===false?'standalone':'resident-model-worker',workerCodeSha256,maxResidentModels:5,residentModelHits:0};
   const modelHashes=new Map(),audioFingerprints=new Map();
-  const modelPaths={base:options.baseModel??`${modelsRoot}/Whisper/base.en.pt`,small:options.model??`${modelsRoot}/Whisper/small.en.pt`,strong:options.strongModel??`${modelsRoot}/Whisper/medium.en.pt`,ctc:options.ctcModel??`${modelsRoot}/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth`};
+  const modelPaths={base:options.baseModel??`${modelsRoot}/Whisper/base.en.pt`,small:options.model??`${modelsRoot}/Whisper/small.en.pt`,strong:options.strongModel??`${modelsRoot}/Whisper/medium.en.pt`,ctc:options.ctcModel??`${modelsRoot}/TorchAudio/wav2vec2_fairseq_base_ls960_asr_ls960.pth`,ctcLarge:options.ctcLargeModel??`${modelsRoot}/TorchAudio/wav2vec2_fairseq_large_lv60k_asr_ls960.pth`};
   const runPass=async({input,inputHash,window,model,backend,task,lyrics,variant='original'})=>{
     const sourceOffset=(input===audioPath?(project.audio.offset??0):0)+window.start,duration=window.end-window.start;
     runtime??=await runtimeIdentity(python);
     if(!modelHashes.has(model))modelHashes.set(model,await fileHash(model));
     const audioKey=digest({input,sourceOffset,duration});
     if(!audioFingerprints.has(audioKey))audioFingerprints.set(audioKey,await fingerprintAudioWindow(input,{sourceOffset,duration}));
-    const identity={schemaVersion:1,audio:audioFingerprints.get(audioKey),offset:sourceOffset,duration,model:{path:path.resolve(model),sha256:modelHashes.get(model)},backend,task,lyrics:task==='force-align'?lyrics:null,alignCodeHash,runtime,settings:{language:'en',threads:options.threads??4,device:'cpu',relaxedSpeech:variant.startsWith('recognition-retry')}};
+    const identity={schemaVersion:1,audio:audioFingerprints.get(audioKey),offset:sourceOffset,duration,model:{path:path.resolve(model),sha256:modelHashes.get(model)},backend,task,lyrics:task==='force-align'?lyrics:null,alignCodeHash,runtime,settings:{language:'en',threads:options.threads??4,device:'cpu',relaxedSpeech:variant.startsWith('recognition-retry'),...(variant.includes('partial-diagnostic')?{partialRecognition:true,partialRecognitionCodeSha256:workerCodeSha256}:{})}};
+    let execution=null;
     const cached=await cachedAudioPass({cacheDir,identity,generate:async()=>{
       const nonce=randomUUID(),rawPath=path.join(outDir,'passes',`inference-${nonce}.json`),textPath=path.join(outDir,'passes',`inference-${nonce}.txt`);
       if(task==='force-align')await writeFile(textPath,lyrics,{flag:'wx'});
       const args=[path.join(root,'align.py'),'--audio',input,'--output',rawPath,'--model',model,'--backend',backend,'--task',task,'--offset',String(sourceOffset),'--duration',String(duration),'--language','en','--threads',String(options.threads??4)];
       if(task==='force-align')args.push('--lyrics',textPath);
       if(identity.settings.relaxedSpeech)args.push('--relaxed-speech');
-      try{await run(python,args,{maxBuffer:4*1024*1024,timeout:options.passTimeoutMs??180000});}catch(error){if(!await exists(rawPath))throw error;}
+      try{
+        if(options.residentModels===false)await run(python,args,{maxBuffer:4*1024*1024,timeout:options.passTimeoutMs??180000});
+        else{worker??=localAudioWorker(python,{threads:options.threads??4,timeout:options.passTimeoutMs??180000,workerPath,alignPath:path.join(root,'align.py')});execution=await worker.request(args.slice(1),identity.model.sha256,identity.settings.partialRecognition===true);if(execution.modelCacheHit)report.inferenceRuntime.residentModelHits++;}
+      }catch(error){if(!await exists(rawPath))throw error;}
       const result=JSON.parse(await readFile(rawPath,'utf8'));
       if(digest(await fingerprintAudioWindow(input,{sourceOffset,duration}))!==digest(identity.audio)||await fileHash(model)!==identity.model.sha256)throw Error('Audio or model bytes changed during inference; refusing to cache stale evidence');
       if(validPass(result,identity)){await rm(rawPath);if(task==='force-align')await rm(textPath);}
@@ -205,10 +287,10 @@ export async function reviewAudio(options) {
     }});
     const {result,key,cacheHit}=cached,target=path.join(outDir,'passes',`${String(report.attempts.length+1).padStart(4,'0')}-${randomUUID()}-${key}.json`);
     report.cache[cacheHit?'hits':'misses']++;if(cached.rejectedEntry)report.cache.rejectedEntries++;
-    await atomicJson(target,{...result,cacheEvidence:{key,cacheHit,entryPath:cached.entryPath,resultSha256:cached.resultSha256,currentInput:input,currentInputSha256:inputHash,decodedAudio:identity.audio,model:identity.model,runtimeSha256:digest(runtime)}});
+    await atomicJson(target,{...result,executionEvidence:{mode:cacheHit?'persistent-pass-cache':options.residentModels===false?'standalone':'resident-model-worker',workerCodeSha256,...(execution??{})},cacheEvidence:{key,cacheHit,entryPath:cached.entryPath,resultSha256:cached.resultSha256,currentInput:input,currentInputSha256:inputHash,decodedAudio:identity.audio,model:identity.model,runtimeSha256:digest(runtime)}});
     report.attempts.push({task,backend,model:path.basename(model),input:input===audioPath?'source':'encoded',start:window.start,end:window.end,status:result.status,artifact:target,artifactSha256:await fileHash(target),variant,cacheHit,cacheKey:key,decodedAudioSha256:identity.audio.sha256,modelSha256:identity.model.sha256});
     const origin=input===audioPath?(project.audio.offset??0):0;
-    return {...result,words:result.words.map(w=>({...w,start:w.start-origin,end:w.end-origin}))};
+    return {...result,checkpointId:identity.model.sha256,role:input===audioPath?'source':'encoded',artifact:target,words:result.words.map(w=>({...w,start:w.start-origin,end:w.end-origin}))};
   };
   const phraseResults=[];let failure=null;
   try{
@@ -216,6 +298,53 @@ export async function reviewAudio(options) {
     if(report.canonicalLyricIssue)throw Error(report.canonicalLyricIssue);
     for(const window of reviewWindows(expected,project.duration)){
       let lyrics=window.words.map(w=>w.text).join(' ');const sourceArg={input:audioPath,inputHash:binding.audioSha256,window,lyrics},encodedArg={input:videoPath,inputHash:binding.videoSha256,window,lyrics};
+      if(officialPath){
+        // Supplied official words are fixed. ASR is independent evidence of their presence;
+        // its spelling mistakes cannot silently rewrite those words or become timing votes.
+        const recognized=[],recognitionErrors=[];
+        const recognize=async(model,variant)=>{try{recognized.push(await runPass({...sourceArg,model,backend:'openai-whisper',task:'transcribe',variant}));}catch(error){
+          recognitionErrors.push({model:path.basename(model),error:error.message});
+          if(options.residentModels!==false&&error.message.includes('invalid word interval'))try{
+            const partial=await runPass({...sourceArg,model,backend:'openai-whisper',task:'transcribe',variant:variant+'-partial-diagnostic'});recognized.push(partial);
+            if(partial.status==='partial_recognition')recognitionErrors.push({model:path.basename(model),resolution:'Valid measured tokens retained only as official-lyric corroboration',omittedInvalidWords:partial.omittedInvalidWords,rawWordCount:partial.rawWordCount});
+          }catch(retryError){recognitionErrors.push({model:path.basename(model),task:'partial-recognition-diagnostic',error:retryError.message});}
+        }};
+        await recognize(modelPaths.base,'official-recognition-base');
+        await recognize(modelPaths.small,'official-recognition-small');
+        const acoustic=[];
+        for(const model of [modelPaths.ctc,modelPaths.ctcLarge]){
+          acoustic.push(await runPass({...sourceArg,model,backend:'torchaudio-ctc',task:'force-align'}));
+          acoustic.push(await runPass({...encodedArg,model,backend:'torchaudio-ctc',task:'force-align'}));
+        }
+        let evidence=assessOfficialWordEvidence(window.words,acoustic,recognized,{duration:project.duration,thresholds});
+        if(evidence.some(w=>!w.supported)&&maxAttempts>=2&&await exists(modelPaths.strong)){
+          await recognize(modelPaths.strong,'recognition-retry-official-strong');
+          evidence=assessOfficialWordEvidence(window.words,acoustic,recognized,{duration:project.duration,thresholds});
+        }
+        // Retry a complete phrase once, not each token in isolation. A forced word in an
+        // empty interval is not evidence; two checkpoints and paired endpoints still apply.
+        if(maxAttempts>=3&&evidence.some(w=>!w.supported)){
+          const retried=new Set();
+          for(const item of evidence.filter(w=>!w.supported)){
+            const original=window.words.find(w=>w.id===item.id),groupId=original.phraseId??original.id;
+            if(retried.has(groupId))continue;retried.add(groupId);
+            const phraseWords=original.phraseId?window.words.filter(w=>w.phraseId===original.phraseId):window.words.slice(Math.max(0,window.words.indexOf(original)-1),window.words.indexOf(original)+2);
+            const retry={...officialPhraseRetryWindow(phraseWords,recognized,{start:window.start,end:window.end,duration:project.duration}),words:phraseWords};
+            const retryLyrics=phraseWords.map(w=>w.text).join(' '),retryPasses=[];
+            try{
+              for(const model of [modelPaths.ctc,modelPaths.ctcLarge]){
+                retryPasses.push(await runPass({...sourceArg,window:retry,lyrics:retryLyrics,model,backend:'torchaudio-ctc',task:'force-align',variant:'official-phrase-retry'}));
+                retryPasses.push(await runPass({...encodedArg,window:retry,lyrics:retryLyrics,model,backend:'torchaudio-ctc',task:'force-align',variant:'official-phrase-retry'}));
+              }
+              const replacements=assessOfficialWordEvidence(phraseWords,retryPasses,recognized,{duration:project.duration,thresholds});
+              evidence=evidence.map(w=>{const replacement=replacements.find(r=>r.id===w.id);return replacement?.supported&&!w.supported?{...replacement,retry:'narrow-official-phrase'}:w;});
+            }catch(error){recognitionErrors.push({task:'official-phrase-retry',phraseId:groupId,error:error.message});}
+          }
+        }
+        report.wordEvidence.push(...evidence);
+        phraseResults.push({start:window.start,end:window.end,policy:'official-lyrics-independent-acoustic',sourceSimilarity:Math.max(0,...recognized.map(pass=>alignLexicalWords(window.words,pass.words).similarity)),encodedSimilarity:null,canonicalWordCount:window.words.length,supportedWords:evidence.filter(w=>w.supported).length,lexicalDisagreements:evidence.filter(w=>w.lexicalEvidence.mismatches.length).map(w=>({id:w.id,text:w.text,...w.lexicalEvidence})),recognitionErrors});
+        continue;
+      }
       const base=await runPass({...sourceArg,model:modelPaths.base,backend:'openai-whisper',task:'transcribe'});
       const small=await runPass({...sourceArg,model:modelPaths.small,backend:'openai-whisper',task:'transcribe'});
       let output=await runPass({...encodedArg,model:modelPaths.base,backend:'openai-whisper',task:'transcribe'});
@@ -271,8 +400,9 @@ export async function reviewAudio(options) {
       report.wordEvidence.push(...evidence);
     }
   }catch(error){failure=error.message;report.error=failure;}
-  const phrasePass=!failure&&phraseResults.length>0&&phraseResults.every(p=>p.sourceSimilarity>=thresholds.minLyricSimilarity&&p.encodedSimilarity>=thresholds.minLyricSimilarity);
-  add('lyric_phrase_match',phrasePass,{windows:phraseResults,error:failure,canonicalTextReconciled:canonicalMismatch},{minSourceAndEncodedSimilarity:thresholds.minLyricSimilarity});
+  finally{if(worker)await worker.close();}
+  const phrasePass=!failure&&phraseResults.length>0&&phraseResults.every(p=>p.policy==='official-lyrics-independent-acoustic'?p.supportedWords===p.canonicalWordCount:p.sourceSimilarity>=thresholds.minLyricSimilarity&&p.encodedSimilarity>=thresholds.minLyricSimilarity);
+  add('lyric_phrase_match',phrasePass,{windows:phraseResults,error:failure,canonicalTextReconciled:canonicalMismatch},officialPath?{policy:'Literal supplied lyrics preserved; every word requires independent paired acoustic evidence and AAC stability',minDualCtcConfidence:.7,maxSourceOnsetSpread:.08,maxSourceEndSpread:.12,minRecognitionProbability:.6,maxRecognitionOnsetDelta:.25,maxRecognitionEndDelta:.25}:{minSourceAndEncodedSimilarity:thresholds.minLyricSimilarity});
   const average=mean(report.wordEvidence.map(w=>w.acousticConfidence??0));
   const syncPass=!failure&&report.wordEvidence.length===expected.length&&report.wordEvidence.every(w=>w.passed)&&average>=thresholds.minMeanAcousticConfidence&&!canonicalMismatch;
   report.repairs=report.wordEvidence.flatMap(w=>w.repair?[w.repair]:[]);
@@ -281,7 +411,7 @@ export async function reviewAudio(options) {
   const stableChecks=report.checks.filter(c=>c.id!=='word_sync').every(c=>c.passed);
   const repairable=stableChecks&&report.repairs.length>0&&report.wordEvidence.every(w=>w.supported)&&average>=thresholds.minMeanAcousticConfidence;
   report.status=report.checks.every(c=>c.passed)?'passed':repairable?'needs_repair':'failed';
-  if(repairable&&options.repair){
+  if(repairable&&options.repair&&report.status!=='passed'){
     report.status='needs_repair';
     if(digest(JSON.parse(await readFile(projectPath,'utf8')))!==initialManifestDigest)throw Error('Project changed during audio review; refusing to overwrite concurrent edits');
     for(const repair of report.repairs){const word=project.words.find(w=>w.id===repair.id);word.provenance={...word.provenance,audioReview:{previous:{text:word.text,start:word.start,end:word.end},method:'acoustic CTC alignment corroborated by independent ASR and AAC round-trip',confidence:report.wordEvidence.find(w=>w.id===word.id)?.acousticConfidence,evidence:digest(report.wordEvidence),createdAt:report.createdAt}};word.start=repair.start;word.end=repair.end;if(repair.text)word.text=repair.text;word.confidence='machine_acoustic_verified';}

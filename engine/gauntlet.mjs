@@ -5,6 +5,7 @@ import {dirname, resolve, relative, join} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {execFile} from 'node:child_process';
 import {promisify} from 'node:util';
+import {reviewTemporalActivity, validateTemporalReport} from './temporal-review.mjs';
 
 const exec = promisify(execFile);
 const defaultRendererDir = dirname(fileURLToPath(import.meta.url));
@@ -197,6 +198,14 @@ export async function reviewVideo({videoPath, projectPath, outDir, renderMetadat
     check('renderOutputBinding', metadata.sha256 === videoSha256, metadata.sha256 ?? null, videoSha256);
     check('renderRevisionBinding', metadata.sourceRevision?.revisionHash === revision.revisionHash && metadata.sourceRevisionEnd?.revisionHash === revision.revisionHash, {start: metadata.sourceRevision?.revisionHash, end: metadata.sourceRevisionEnd?.revisionHash}, revision.revisionHash);
   }
+  let temporalActivity = {required: false, passed: true, present: false, errors: []};
+  if (project.quality?.maxStaticSeconds !== undefined) {
+    try {
+      const measured = await reviewTemporalActivity({videoPath, project, outDir: join(outDir, 'temporal')});
+      temporalActivity = await loadTemporalActivity({project, videoSha256, record: {path: measured.reportPath, sha256: await sha256File(measured.reportPath)}});
+    } catch (error) { temporalActivity = {required: true, passed: false, present: false, errors: [error.message]}; }
+    check('temporalActivity', temporalActivity.passed, {path: temporalActivity.path ?? null, errors: temporalActivity.errors}, {maxStaticSeconds: project.quality.maxStaticSeconds});
+  }
   const start = metadata?.sections?.length ? Math.min(...metadata.sections.map(section => Number(section.startFrame) / expectedFps)) : 0;
   let evidence = {samples: [], contactSheets: [], transitionStrips: []};
   if (video && frameCount > 0 && Number.isFinite(fps) && fps > 0) {
@@ -210,7 +219,7 @@ export async function reviewVideo({videoPath, projectPath, outDir, renderMetadat
   const report = {
     schemaVersion: 2, createdAt: new Date().toISOString(), reportPath, videoPath, projectPath,
     binding: {videoSha256, projectHash: revision.projectHash, rendererHash: revision.rendererHash, revisionHash: revision.revisionHash},
-    revision, technical: {passed: checks.every(item => item.passed), checks, probe}, evidence,
+    revision, technical: {passed: checks.every(item => item.passed), checks, probe}, evidence, temporalActivity,
     renderProvenance: metadata ? {path: metadataPath, sha256: await sha256File(metadataPath), verified: checks.filter(item => item.name.startsWith('render')).every(item => item.passed)} : {verified: false, note: 'Source hash observed at review; render-time provenance was not supplied'},
     suppliedMetrics: metadata ? {performance: metadata.sections ?? null, text: metadata.textMetrics ?? null} : null,
     visual: {status: 'pending', threshold: PASS_THRESHOLD, rubric: VISUAL_RUBRIC, reviews: [], note: 'An independent agent or person judges decoded visual evidence. Audio/sync can be verified by the separate local machine-measurement gate; a human listening score is not required. Machine verification does not establish artistic excellence.'},
@@ -324,18 +333,34 @@ async function loadMachineVisual({visualReviewPath, binding}) {
   return {path, present: true, sha256: await sha256File(path), passed: validation.errors.length === 0, errors: validation.errors, report: visual};
 }
 
+async function loadTemporalActivity({project, videoSha256, record}) {
+  if (project.quality?.maxStaticSeconds === undefined) return {required: false, present: false, passed: true, errors: []};
+  try {
+    if (!record?.path || !record.sha256) throw new Error('Enabled temporal policy requires a bound temporal measurement; regenerate the review');
+    const path = resolve(record.path);
+    const sha256 = await sha256File(path);
+    if (sha256 !== record.sha256) throw new Error('Temporal review changed; regenerate the review');
+    const report = await json(path);
+    return {path, sha256, present: true, ...await validateTemporalReport(report, {videoSha256, project}), report};
+  } catch (error) { return {path: record?.path ?? null, required: true, present: false, passed: false, errors: [error.message]}; }
+}
+
 /** Revalidate the actual output and source hashes on every approval/check. */
 export async function checkReview({reportPath, videoPath, projectPath, audioReviewPath, visualReviewPath}) {
   const report = await json(resolve(reportPath));
   const reasons = [];
   let currentBinding = null;
+  let currentProject = null;
   try {
+    currentProject = await json(projectPath ?? report.projectPath);
     const revision = await computeRevision(projectPath ?? report.projectPath, {rendererDir: report.revision.rendererDir});
     currentBinding = {videoSha256: await sha256File(videoPath ?? report.videoPath), projectHash: revision.projectHash, rendererHash: revision.rendererHash, revisionHash: revision.revisionHash};
     for (const key of Object.keys(currentBinding)) if (currentBinding[key] !== report.binding?.[key]) reasons.push(`Stale ${key}: regenerate evidence for the current output and source`);
   } catch (error) { reasons.push(`Cannot verify current inputs: ${error.message}`); }
   const stale = reasons.length > 0;
-  const technicalPassed = Boolean(report.technical?.passed && report.technical.checks?.length && report.technical.checks.every(item => item.passed === true));
+  const temporalActivity = currentProject ? await loadTemporalActivity({project: currentProject, videoSha256: currentBinding?.videoSha256, record: report.temporalActivity}) : {required: false, passed: false, errors: ['Cannot verify temporal project inputs']};
+  if (!temporalActivity.passed) reasons.push(...temporalActivity.errors);
+  const technicalPassed = Boolean(report.technical?.passed && report.technical.checks?.length && report.technical.checks.every(item => item.passed === true) && temporalActivity.passed);
   if (!technicalPassed) reasons.push('Technical checks did not all pass');
   const latest = report.visual?.reviews?.at(-1) ?? report.visual?.visualOnlyReview;
   const visualErrors = latest ? reviewErrors(latest, report.binding ?? {}) : [];
@@ -359,8 +384,8 @@ export async function checkReview({reportPath, videoPath, projectPath, audioRevi
   if (!visualGate) reasons.push(...machineVisual.errors);
   const passed = !stale && technicalPassed && audioPassed && visualGate && !visualErrors.length;
   const status = stale ? 'stale' : !technicalPassed ? 'technical_failed' : visualErrors.length ? 'review_failed' : !audioPassed ? machineAudio.present ? 'machine_audio_review_failed' : 'machine_audio_review_required' : !visualGate ? machineVisual.present ? 'machine_visual_review_failed' : 'machine_visual_review_required' : visualPassed ? 'independently_reviewed' : 'machine_verified';
-  const quality = {technicalVerified: !stale && technicalPassed, machineAudioVerified: !stale && machineAudio.passed, machineVisualVerified: !stale && machineVisual.passed, independentVisualReviewed: !stale && visualPassed, machineQualityVerified: !stale && technicalPassed && machineAudio.passed && machineVisual.passed, syncBasis: machineAudio.passed ? 'measured_local_audio_review' : legacySubjectiveSync ? 'recorded_reviewer_judgment' : 'unverified', aestheticJudgment: visualPassed ? 'independent_review_passed' : latest ? 'changes_requested' : machineVisual.passed ? 'local_vision_model_passed' : 'not_claimed'};
-  return {passed, status, reasons, quality, machineAudio, machineVisual, currentBinding, reportPath: resolve(reportPath), report};
+  const quality = {technicalVerified: !stale && technicalPassed, temporalActivityVerified: !stale && temporalActivity.required && temporalActivity.passed, machineAudioVerified: !stale && machineAudio.passed, machineVisualVerified: !stale && machineVisual.passed, independentVisualReviewed: !stale && visualPassed, machineQualityVerified: !stale && technicalPassed && machineAudio.passed && machineVisual.passed, syncBasis: machineAudio.passed ? 'measured_local_audio_review' : legacySubjectiveSync ? 'recorded_reviewer_judgment' : 'unverified', aestheticJudgment: visualPassed ? 'independent_review_passed' : latest ? 'changes_requested' : machineVisual.passed ? 'local_vision_model_passed' : 'not_claimed'};
+  return {passed, status, reasons, quality, machineAudio, machineVisual, temporalActivity, currentBinding, reportPath: resolve(reportPath), report};
 }
 
 /** Attach a newly generated, hash-bound machine audio report; failed evidence is retained for repair. */
@@ -396,7 +421,7 @@ export async function approveReview({reportPath, reviewer, scores, notes, videoP
   reportPath = resolve(reportPath);
   const state = await checkReview({reportPath, videoPath, projectPath});
   if (state.status === 'stale') throw new Error(state.reasons.join('; '));
-  if (!state.report.technical?.passed) throw new Error('Cannot approve a video whose technical checks failed');
+  if (!state.quality.technicalVerified) throw new Error('Cannot approve a video whose technical checks failed');
   const resolvedScope = scope ?? (Object.hasOwn(scores ?? {}, 'sync') ? 'full-rubric' : 'visual-only');
   const review = {scope: resolvedScope, reviewer, scores, notes, binding: {...state.report.binding}, reviewedAt: new Date().toISOString()};
   const errors = reviewErrors(review, state.report.binding);
