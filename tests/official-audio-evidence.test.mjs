@@ -269,3 +269,57 @@ test('phrase retry preserves source evidence and authored words', () => {
   retry(sources, expected);
   assert.deepEqual({expected, sources}, before);
 });
+
+const repeatedCanonical = () => [
+  {id: 'cue-the-A', text: 'the', start: 1, end: 1.4},
+  {id: 'cue-the-B', text: 'the', start: 3, end: 3.4},
+];
+const taggedRepeatedPasses = () => strong().map(p => ({...p, words: repeatedCanonical().map(w => ({...word(p.words[0].provenance.tokenProbability, w.start, w.end, w.text), canonicalId: w.id}))}));
+
+test('durable canonical IDs support two repeated literal tokens without moving their identities', () => {
+  const result = assess(taggedRepeatedPasses(), [], repeatedCanonical());
+  assert.deepEqual(result.map(r => [r.id, r.passed]), [['cue-the-A', true], ['cue-the-B', true]]);
+  assert.deepEqual(result.map(r => r.acousticStart), [1, 3]);
+});
+
+test('tagged first the evidence cannot be borrowed by a later the missing from that pass', () => {
+  const passes = taggedRepeatedPasses().map(p => ({...p, words: p.words.slice(0, 1)}));
+  const result = assess(passes, [], repeatedCanonical());
+  assert.equal(result[0].supported, true);
+  assert.equal(result[1].supported, false);
+  assert.equal(result[1].repair, null);
+  const laterOnly = assess(passes, [], [repeatedCanonical()[1]])[0];
+  assert.equal(laterOnly.supported, false);
+  assert.equal(laterOnly.repair, null);
+});
+
+test('tagged full-window evidence maps a phrase subset only by its exact durable IDs', () => {
+  const expected = [repeatedCanonical()[1]];
+  const result = assess(taggedRepeatedPasses(), [], expected)[0];
+  assert.equal(result.supported, true);
+  assert.equal(result.passed, true);
+  assert.equal(result.acousticStart, 3);
+});
+
+test('duplicate canonical IDs reject a force-alignment pass rather than choosing a convenient token', () => {
+  const passes = taggedRepeatedPasses();
+  passes[0].words[1].canonicalId = passes[0].words[0].canonicalId;
+  const result = assess(passes, [], repeatedCanonical());
+  assert.ok(result.every(r => !r.supported && r.repair === null));
+});
+
+test('a matching canonical ID with the wrong literal text cannot establish acoustic support', () => {
+  const passes = taggedRepeatedPasses();
+  passes[0].words[1].text = 'after';
+  const result = assess(passes, [], repeatedCanonical())[1];
+  assert.equal(result.supported, false);
+  assert.equal(result.repair, null);
+});
+
+test('encoded evidence for another identical-text ID cannot verify the selected source word', () => {
+  const passes = taggedRepeatedPasses().map(p => ({...p, words: p.words.slice(1)}));
+  passes[2].words[0].canonicalId = 'cue-the-A';
+  const result = assess(passes, [], [repeatedCanonical()[1]])[0];
+  assert.equal(result.supported, false);
+  assert.equal(result.repair, null);
+});

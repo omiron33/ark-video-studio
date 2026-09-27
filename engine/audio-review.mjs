@@ -157,7 +157,18 @@ export function assessOfficialWordEvidence(expected, ctcPasses, recognitionPasse
   if(!finite(duration)||duration<=0)throw Error('Official lyric evidence requires a finite positive source duration');
   const rules={...defaults,minDualCtcConfidence:.7,maxSourceOnsetSpread:.08,maxSourceEndSpread:.12,minRecognitionProbability:.6,maxRecognitionOnsetDelta:.25,maxRecognitionEndDelta:.25,maxUncorroboratedWordDuration:1.5,...thresholds};
   const validWord=w=>w&&typeof w.text==='string'&&lexical(w.text)&&finite(w.start)&&finite(w.end)&&w.start>=0&&w.end>w.start&&w.end<=duration+.001&&finite(w.provenance?.tokenProbability)&&w.provenance.tokenProbability>=0&&w.provenance.tokenProbability<=1;
-  const prepare=(passes,recognition=false)=>passes.filter(p=>typeof p?.checkpointId==='string'&&p.checkpointId.length>0&&['source','encoded','vocals'].includes(p.role)&&Array.isArray(p.words)&&p.words.length&&p.words.every(validWord)).map(p=>({...p,matches:alignLexicalWords(expected,p.words).matches}));
+  const prepare=(passes,recognition=false)=>passes.filter(p=>typeof p?.checkpointId==='string'&&p.checkpointId.length>0&&['source','encoded','vocals'].includes(p.role)&&Array.isArray(p.words)&&p.words.length&&p.words.every(validWord)).flatMap(p=>{
+    if(!recognition&&p.words.some(w=>w.canonicalId!==undefined)){
+      // A bounded retry may share literal words with other phrases. Once identity is
+      // supplied, never fall back to spelling/LCS and borrow another occurrence.
+      const ids=p.words.map(w=>w.canonicalId);
+      if(ids.some(id=>typeof id!=='string'||!id)||new Set(ids).size!==ids.length)return [];
+      const matches=expected.map(w=>p.words.find(token=>token.canonicalId===w.id)??null);
+      if(matches.some((token,i)=>token&&lexical(token.text)!==lexical(expected[i].text)))return [];
+      return [{...p,matches}];
+    }
+    return [{...p,matches:alignLexicalWords(expected,p.words).matches}];
+  });
   const ctc=prepare(ctcPasses),recognition=prepare(recognitionPasses,true);
   return expected.map((word,i)=>{
     const sources=ctc.filter(p=>p.role==='source'&&p.matches[i]).map(p=>({checkpointId:p.checkpointId,artifact:p.artifact??null,word:p.matches[i]}));
@@ -286,11 +297,13 @@ export async function reviewAudio(options) {
       return result;
     }});
     const {result,key,cacheHit}=cached,target=path.join(outDir,'passes',`${String(report.attempts.length+1).padStart(4,'0')}-${randomUUID()}-${key}.json`);
+    if(task==='force-align'&&(result.words.length!==window.words.length||result.words.some((w,i)=>lexical(w.text)!==lexical(window.words[i].text))))throw Error('Forced pass does not preserve the complete canonical word sequence; refusing identity mapping');
+    const boundWords=result.words.map((w,i)=>({...w,...(task==='force-align'?{canonicalId:window.words[i].id}:{})}));
     report.cache[cacheHit?'hits':'misses']++;if(cached.rejectedEntry)report.cache.rejectedEntries++;
-    await atomicJson(target,{...result,executionEvidence:{mode:cacheHit?'persistent-pass-cache':options.residentModels===false?'standalone':'resident-model-worker',workerCodeSha256,...(execution??{})},cacheEvidence:{key,cacheHit,entryPath:cached.entryPath,resultSha256:cached.resultSha256,currentInput:input,currentInputSha256:inputHash,decodedAudio:identity.audio,model:identity.model,runtimeSha256:digest(runtime)}});
+    await atomicJson(target,{...result,words:boundWords,executionEvidence:{mode:cacheHit?'persistent-pass-cache':options.residentModels===false?'standalone':'resident-model-worker',workerCodeSha256,...(execution??{})},cacheEvidence:{key,cacheHit,entryPath:cached.entryPath,resultSha256:cached.resultSha256,currentInput:input,currentInputSha256:inputHash,decodedAudio:identity.audio,model:identity.model,runtimeSha256:digest(runtime)}});
     report.attempts.push({task,backend,model:path.basename(model),input:input===audioPath?'source':'encoded',start:window.start,end:window.end,status:result.status,artifact:target,artifactSha256:await fileHash(target),variant,cacheHit,cacheKey:key,decodedAudioSha256:identity.audio.sha256,modelSha256:identity.model.sha256});
     const origin=input===audioPath?(project.audio.offset??0):0;
-    return {...result,checkpointId:identity.model.sha256,role:input===audioPath?'source':'encoded',artifact:target,words:result.words.map(w=>({...w,start:w.start-origin,end:w.end-origin}))};
+    return {...result,checkpointId:identity.model.sha256,role:input===audioPath?'source':'encoded',artifact:target,words:boundWords.map(w=>({...w,start:w.start-origin,end:w.end-origin}))};
   };
   const phraseResults=[];let failure=null;
   try{
@@ -336,8 +349,8 @@ export async function reviewAudio(options) {
                 retryPasses.push(await runPass({...sourceArg,window:retry,lyrics:retryLyrics,model,backend:'torchaudio-ctc',task:'force-align',variant:'official-phrase-retry'}));
                 retryPasses.push(await runPass({...encodedArg,window:retry,lyrics:retryLyrics,model,backend:'torchaudio-ctc',task:'force-align',variant:'official-phrase-retry'}));
               }
-              const replacements=assessOfficialWordEvidence(phraseWords,retryPasses,recognized,{duration:project.duration,thresholds});
-              evidence=evidence.map(w=>{const replacement=replacements.find(r=>r.id===w.id);return replacement?.supported&&!w.supported?{...replacement,retry:'narrow-official-phrase'}:w;});
+              const replacements=assessOfficialWordEvidence(phraseWords,[...acoustic,...retryPasses],recognized,{duration:project.duration,thresholds});
+              evidence=evidence.map(w=>{const replacement=replacements.find(r=>r.id===w.id);return replacement?.supported&&!w.supported?{...replacement,retry:'canonical-id-original-and-phrase-context'}:w;});
             }catch(error){recognitionErrors.push({task:'official-phrase-retry',phraseId:groupId,error:error.message});}
           }
         }

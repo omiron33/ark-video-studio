@@ -68,6 +68,19 @@ function observationsFor(word, evidence) {
   return observations;
 }
 
+/** Evidence must still contain the pixels that were associated with recognition.
+ * A successful recognizer response alone cannot prove that files were retained. */
+export async function verifyOCREvidence(evidence) {
+  const seen=new Set(),errors=[];
+  for(const frame of evidence){
+    if(seen.has(frame.path))errors.push({time:frame.time,path:frame.path,error:'Duplicate evidence path'});
+    seen.add(frame.path);
+    try{if(await sha256File(frame.path)!==frame.sha256)errors.push({time:frame.time,path:frame.path,error:'Evidence hash changed'});}
+    catch(error){errors.push({time:frame.time,path:frame.path,error:`Evidence unavailable: ${error.message}`});}
+  }
+  return {id:'evidence_integrity',passed:!errors.length,checkedFrames:evidence.length,errors};
+}
+
 export async function reviewLyricVisibility({projectPath, videoPath, outDir, evidence: suppliedEvidence, wordIds}) {
   projectPath = path.resolve(projectPath); videoPath = path.resolve(videoPath); outDir = path.resolve(outDir);
   await mkdir(outDir, {recursive: true});
@@ -86,12 +99,14 @@ export async function reviewLyricVisibility({projectPath, videoPath, outDir, evi
     const extraTimes = supplemental.map(frame => frame.time).filter(time => Number.isFinite(time) && time >= 0 && time <= project.duration - 1/project.fps);
     const times = [...new Set([...windows.flatMap(w => w.times), ...extraTimes])].sort((a,b) => a-b);
     // Supplementary director timestamps are re-decoded; supplied files/text cannot manufacture recognition.
-    for (const time of times) {
-      const file = path.join(framesDir, `frame-${Math.round(time*project.fps).toString().padStart(7,'0')}.png`);
+    for (const [sampleIndex,time] of times.entries()) {
+      // Two subframe timestamps can round to the same nominal frame number yet
+      // decode different pictures. Give every requested sample its own path.
+      const file = path.join(framesDir, `frame-${Math.round(time*project.fps).toString().padStart(7,'0')}-sample-${sampleIndex.toString().padStart(7,'0')}.png`);
       // A decimal rounded a fraction past the last frame can seek beyond EOF; floor the seek while retaining the requested frame time.
       const seekTime = Math.floor(time*1000)/1000;
       await command('ffmpeg', ['-v','error','-y','-ss',String(seekTime),'-i',videoPath,'-map','0:v:0','-frames:v','1',file]);
-      report.evidence.push({time, seekTime, path: file, sha256: await sha256File(file), recognition: []});
+      report.evidence.push({time, seekTime, sampleIndex, path: file, sha256: await sha256File(file), recognition: []});
     }
     const primary = report.evidence.length?await recognizeFrames({paths: report.evidence.map(f => f.path), outDir}):{frames:[],...(await ensureOCR())};
     report.recognizerSourceHash = primary.sourceHash;
@@ -111,6 +126,7 @@ export async function reviewLyricVisibility({projectPath, videoPath, outDir, evi
     const matched = report.wordCoverage.filter(w => w.observed).length;
     report.coverage = {required: windows.length, observed: matched, ratio: windows.length ? matched/windows.length : 0, unresolved: report.wordCoverage.filter(w => !w.observed).map(w => w.id)};
     report.checks.push({id:'native_ocr_available',passed:!errors.length,errors}, {id:'required_lyrics_visible',passed:(windows.length > 0 || (wordIds!==undefined&&wordIds.length===0)) && matched === windows.length,measured:report.coverage,threshold:{requiredRatio:1}});
+    report.checks.push(await verifyOCREvidence(report.evidence));
     const endRevision = await computeRevision(projectPath);
     report.checks.push({id:'unchanged_inputs',passed:endRevision.projectHash===binding.projectHash && await sha256File(videoPath)===binding.videoSha256});
     report.status = report.checks.every(c=>c.passed) ? 'passed' : 'failed';

@@ -35130,9 +35130,9 @@
     {
       "id": "g7-s12-l03-w03",
       "text": "earth.",
-      "start": 208.360085,
-      "end": 208.640347,
-      "confidence": "machine_acoustic_estimate",
+      "start": 208.317459,
+      "end": 208.597619,
+      "confidence": "machine_acoustic_verified",
       "provenance": {
         "originalLegacy": {
           "word": "earth.",
@@ -35224,6 +35224,113 @@
           "selectedScore": 0.7849818474332629,
           "crossModelVerified": false,
           "status": "independent_recognition_pending"
+        },
+        "fullSongBoundaryRepair": {
+          "patch": "06",
+          "evidence": {
+            "policy": "official_ctc_asr",
+            "sourceVideo": "output/genesis7-full-pass01.mp4",
+            "sourceVideoSha256": "a452e65dc44fb216a1d568bcd04f31e4ad54dfd12515a331ca960e90a89b8e7c",
+            "report": "output/fullsong-audio/encoded-pass02/audio-review.json",
+            "reportSha256": "02af30ff2ca174479e6fd307c77d989b13d5a82d2b4d1fa492f83829446970b8",
+            "measured": {
+              "id": "g7-s12-l03-w03",
+              "text": "earth.",
+              "currentStart": 208.360085,
+              "currentEnd": 208.640347,
+              "acousticStart": 208.317459,
+              "acousticEnd": 208.597619,
+              "acousticConfidence": 0.769786,
+              "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+              "codecAlignmentSpread": 0,
+              "sourceAcousticEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "earth.",
+                  "start": 208.357482,
+                  "end": 208.617631,
+                  "score": 0.5927946782363179,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "earth.",
+                  "start": 208.317459,
+                  "end": 208.597619,
+                  "score": 0.7697863343138724,
+                  "startDelta": null,
+                  "endDelta": null
+                }
+              ],
+              "pairedCheckpointEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "earth.",
+                  "start": 208.357482,
+                  "end": 208.617631,
+                  "score": 0.5927946782363179,
+                  "startDelta": 0.040023,
+                  "endDelta": 0.020012
+                }
+              ],
+              "corroboration": [
+                {
+                  "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "role": "source",
+                  "text": "earth,",
+                  "start": 208.211436,
+                  "end": 208.571436,
+                  "score": 0.9145581126213074,
+                  "startDelta": 0.106023,
+                  "endDelta": 0.026183
+                },
+                {
+                  "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+                  "role": "source",
+                  "text": "earth,",
+                  "start": 208.271436,
+                  "end": 208.611436,
+                  "score": 0.9585607647895813,
+                  "startDelta": 0.046023,
+                  "endDelta": 0.013817
+                }
+              ],
+              "encodedEvidence": {
+                "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                "role": "source",
+                "text": "earth.",
+                "start": 208.317459,
+                "end": 208.597619,
+                "score": 0.844995391006536,
+                "startDelta": 0,
+                "endDelta": 0
+              },
+              "lexicalEvidence": {
+                "matchedCheckpointIds": [
+                  "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+                ],
+                "mismatches": [],
+                "rejectedPasses": 0
+              },
+              "route": "official_ctc_asr",
+              "supported": true,
+              "cueDelta": 0.042626,
+              "endDelta": 0.042728,
+              "passed": false,
+              "repair": {
+                "id": "g7-s12-l03-w03",
+                "start": 208.317459,
+                "end": 208.597619,
+                "previousStart": 208.360085,
+                "previousEnd": 208.640347
+              }
+            }
+          }
         }
       },
       "aligned": false,
@@ -37680,9 +37787,9 @@
     {
       "id": "g7-s12-l10-w00",
       "text": "Beneath",
-      "start": 219.643535,
-      "end": 219.903918,
-      "confidence": "machine_acoustic_estimate",
+      "start": 219.683963,
+      "end": 219.9241,
+      "confidence": "machine_acoustic_verified",
       "provenance": {
         "originalLegacy": {
           "word": "Beneath",
@@ -37774,6 +37881,113 @@
           "selectedScore": 0.9909200466622,
           "crossModelVerified": false,
           "status": "independent_recognition_pending"
+        },
+        "fullSongBoundaryRepair": {
+          "patch": "06",
+          "evidence": {
+            "policy": "official_dual_ctc",
+            "sourceVideo": "output/genesis7-full-pass01.mp4",
+            "sourceVideoSha256": "a452e65dc44fb216a1d568bcd04f31e4ad54dfd12515a331ca960e90a89b8e7c",
+            "report": "output/fullsong-audio/encoded-pass02/audio-review.json",
+            "reportSha256": "02af30ff2ca174479e6fd307c77d989b13d5a82d2b4d1fa492f83829446970b8",
+            "measured": {
+              "id": "g7-s12-l10-w00",
+              "text": "Beneath",
+              "currentStart": 219.643535,
+              "currentEnd": 219.903918,
+              "acousticStart": 219.683963,
+              "acousticEnd": 219.9241,
+              "acousticConfidence": 0.979267,
+              "selectedCheckpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+              "codecAlignmentSpread": 0,
+              "sourceAcousticEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "Beneath",
+                  "start": 219.683963,
+                  "end": 219.9241,
+                  "score": 0.9792667068751527,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "Beneath",
+                  "start": 219.663951,
+                  "end": 219.9241,
+                  "score": 0.8616207740986624,
+                  "startDelta": null,
+                  "endDelta": null
+                }
+              ],
+              "pairedCheckpointEvidence": [
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "Beneath",
+                  "start": 219.663951,
+                  "end": 219.9241,
+                  "score": 0.8616207740986624,
+                  "startDelta": 0.020012,
+                  "endDelta": 0
+                }
+              ],
+              "corroboration": [
+                {
+                  "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "role": "source",
+                  "text": "beneath",
+                  "start": 219.531436,
+                  "end": 219.851436,
+                  "score": 0.98869389295578,
+                  "startDelta": 0.152527,
+                  "endDelta": 0.072664
+                },
+                {
+                  "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+                  "role": "source",
+                  "text": "beneath",
+                  "start": 219.531436,
+                  "end": 219.851436,
+                  "score": 0.9686943292617798,
+                  "startDelta": 0.152527,
+                  "endDelta": 0.072664
+                }
+              ],
+              "encodedEvidence": {
+                "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                "role": "source",
+                "text": "Beneath",
+                "start": 219.683963,
+                "end": 219.9241,
+                "score": 0.8937399963299089,
+                "startDelta": 0,
+                "endDelta": 0
+              },
+              "lexicalEvidence": {
+                "matchedCheckpointIds": [
+                  "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+                ],
+                "mismatches": [],
+                "rejectedPasses": 0
+              },
+              "route": "official_dual_ctc",
+              "supported": true,
+              "cueDelta": 0.040428,
+              "endDelta": 0.020182,
+              "passed": false,
+              "repair": {
+                "id": "g7-s12-l10-w00",
+                "start": 219.683963,
+                "end": 219.9241,
+                "previousStart": 219.643535,
+                "previousEnd": 219.903918
+              }
+            }
+          }
         }
       },
       "aligned": true,
@@ -37884,9 +38098,9 @@
     {
       "id": "g7-s12-l10-w02",
       "text": "whole",
-      "start": 220.044124,
-      "end": 220.244418,
-      "confidence": "machine_acoustic_estimate",
+      "start": 220.084192,
+      "end": 220.264295,
+      "confidence": "machine_acoustic_verified",
       "provenance": {
         "originalLegacy": {
           "word": "whole",
@@ -37978,6 +38192,113 @@
           "selectedScore": 0.9500082378331028,
           "crossModelVerified": false,
           "status": "independent_recognition_pending"
+        },
+        "fullSongBoundaryRepair": {
+          "patch": "06",
+          "evidence": {
+            "policy": "official_ctc_asr",
+            "sourceVideo": "output/genesis7-full-pass01.mp4",
+            "sourceVideoSha256": "a452e65dc44fb216a1d568bcd04f31e4ad54dfd12515a331ca960e90a89b8e7c",
+            "report": "output/fullsong-audio/encoded-pass02/audio-review.json",
+            "reportSha256": "02af30ff2ca174479e6fd307c77d989b13d5a82d2b4d1fa492f83829446970b8",
+            "measured": {
+              "id": "g7-s12-l10-w02",
+              "text": "whole",
+              "currentStart": 220.044124,
+              "currentEnd": 220.244418,
+              "acousticStart": 220.084192,
+              "acousticEnd": 220.264295,
+              "acousticConfidence": 0.980902,
+              "selectedCheckpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+              "codecAlignmentSpread": 0,
+              "sourceAcousticEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "whole",
+                  "start": 220.084192,
+                  "end": 220.264295,
+                  "score": 0.9809016835481515,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "whole",
+                  "start": 220.06418,
+                  "end": 220.264295,
+                  "score": 0.5090016470769974,
+                  "startDelta": null,
+                  "endDelta": null
+                }
+              ],
+              "pairedCheckpointEvidence": [
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "whole",
+                  "start": 220.06418,
+                  "end": 220.264295,
+                  "score": 0.5090016470769974,
+                  "startDelta": 0.020012,
+                  "endDelta": 0
+                }
+              ],
+              "corroboration": [
+                {
+                  "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "role": "source",
+                  "text": "whole",
+                  "start": 220.011436,
+                  "end": 220.251436,
+                  "score": 0.9539334177970886,
+                  "startDelta": 0.072756,
+                  "endDelta": 0.012859
+                },
+                {
+                  "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+                  "role": "source",
+                  "text": "whole",
+                  "start": 220.051436,
+                  "end": 220.291436,
+                  "score": 0.9195409417152405,
+                  "startDelta": 0.032756,
+                  "endDelta": 0.027141
+                }
+              ],
+              "encodedEvidence": {
+                "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                "role": "source",
+                "text": "whole",
+                "start": 220.084192,
+                "end": 220.264295,
+                "score": 0.938969649353248,
+                "startDelta": 0,
+                "endDelta": 0
+              },
+              "lexicalEvidence": {
+                "matchedCheckpointIds": [
+                  "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+                ],
+                "mismatches": [],
+                "rejectedPasses": 0
+              },
+              "route": "official_ctc_asr",
+              "supported": true,
+              "cueDelta": 0.040068,
+              "endDelta": 0.019877,
+              "passed": false,
+              "repair": {
+                "id": "g7-s12-l10-w02",
+                "start": 220.084192,
+                "end": 220.264295,
+                "previousStart": 220.044124,
+                "previousEnd": 220.244418
+              }
+            }
+          }
         }
       },
       "aligned": true,
@@ -40578,9 +40899,9 @@
     {
       "id": "g7-s14-l01-w01",
       "text": "moved",
-      "start": 235.861762,
-      "end": 236.101974,
-      "confidence": "machine_acoustic_estimate",
+      "start": 235.820432,
+      "end": 236.120722,
+      "confidence": "machine_acoustic_verified",
       "provenance": {
         "originalLegacy": {
           "word": "moved",
@@ -40657,6 +40978,124 @@
           "selectedScore": 0.8504949219679135,
           "crossModelVerified": false,
           "status": "independent_recognition_pending"
+        },
+        "fullSongBoundaryRepair": {
+          "patch": "06",
+          "evidence": {
+            "policy": "official_ctc_asr",
+            "sourceVideo": "output/genesis7-full-pass01.mp4",
+            "sourceVideoSha256": "a452e65dc44fb216a1d568bcd04f31e4ad54dfd12515a331ca960e90a89b8e7c",
+            "report": "output/fullsong-audio/encoded-pass02/audio-review.json",
+            "reportSha256": "02af30ff2ca174479e6fd307c77d989b13d5a82d2b4d1fa492f83829446970b8",
+            "measured": {
+              "id": "g7-s14-l01-w01",
+              "text": "moved",
+              "currentStart": 235.861762,
+              "currentEnd": 236.101974,
+              "acousticStart": 235.820432,
+              "acousticEnd": 236.120722,
+              "acousticConfidence": 0.948971,
+              "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+              "codecAlignmentSpread": 0,
+              "sourceAcousticEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "moved",
+                  "start": 235.860471,
+                  "end": 236.100703,
+                  "score": 0.3550498716989382,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "moved",
+                  "start": 235.820432,
+                  "end": 236.120722,
+                  "score": 0.9489710524419721,
+                  "startDelta": null,
+                  "endDelta": null
+                }
+              ],
+              "pairedCheckpointEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "moved",
+                  "start": 235.860471,
+                  "end": 236.100703,
+                  "score": 0.3550498716989382,
+                  "startDelta": 0.040039,
+                  "endDelta": 0.020019
+                }
+              ],
+              "corroboration": [
+                {
+                  "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+                  "role": "source",
+                  "text": "moved",
+                  "start": 235.605064,
+                  "end": 235.945064,
+                  "score": 0.9969279170036316,
+                  "startDelta": 0.215368,
+                  "endDelta": 0.175658
+                },
+                {
+                  "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "role": "source",
+                  "text": "moved",
+                  "start": 235.725064,
+                  "end": 236.025064,
+                  "score": 0.9931013584136963,
+                  "startDelta": 0.095368,
+                  "endDelta": 0.095658
+                },
+                {
+                  "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+                  "role": "source",
+                  "text": "moved",
+                  "start": 235.725064,
+                  "end": 236.105064,
+                  "score": 0.9955363273620605,
+                  "startDelta": 0.095368,
+                  "endDelta": 0.015658
+                }
+              ],
+              "encodedEvidence": {
+                "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                "role": "source",
+                "text": "moved",
+                "start": 235.820432,
+                "end": 236.120722,
+                "score": 0.9456158124326443,
+                "startDelta": 0,
+                "endDelta": 0
+              },
+              "lexicalEvidence": {
+                "matchedCheckpointIds": [
+                  "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+                  "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+                ],
+                "mismatches": [],
+                "rejectedPasses": 0
+              },
+              "route": "official_ctc_asr",
+              "supported": true,
+              "cueDelta": 0.04133,
+              "endDelta": 0.018748,
+              "passed": false,
+              "repair": {
+                "id": "g7-s14-l01-w01",
+                "start": 235.820432,
+                "end": 236.120722,
+                "previousStart": 235.861762,
+                "previousEnd": 236.101974
+              }
+            }
+          }
         }
       },
       "aligned": true,
@@ -42144,9 +42583,9 @@
     {
       "id": "g7-s14-l08-w01",
       "text": "carried",
-      "start": 245.149938,
-      "end": 245.490238,
-      "confidence": "machine_acoustic_estimate",
+      "start": 245.108305,
+      "end": 245.468417,
+      "confidence": "machine_acoustic_verified",
       "provenance": {
         "originalLegacy": {
           "word": "carried",
@@ -42223,6 +42662,124 @@
           "selectedScore": 0.2840814506137173,
           "crossModelVerified": false,
           "status": "independent_recognition_pending"
+        },
+        "fullSongBoundaryRepair": {
+          "patch": "06",
+          "evidence": {
+            "policy": "official_ctc_asr",
+            "sourceVideo": "output/genesis7-full-pass01.mp4",
+            "sourceVideoSha256": "a452e65dc44fb216a1d568bcd04f31e4ad54dfd12515a331ca960e90a89b8e7c",
+            "report": "output/fullsong-audio/encoded-pass02/audio-review.json",
+            "reportSha256": "02af30ff2ca174479e6fd307c77d989b13d5a82d2b4d1fa492f83829446970b8",
+            "measured": {
+              "id": "g7-s14-l08-w01",
+              "text": "carried",
+              "currentStart": 245.149938,
+              "currentEnd": 245.490238,
+              "acousticStart": 245.108305,
+              "acousticEnd": 245.468417,
+              "acousticConfidence": 0.402796,
+              "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+              "codecAlignmentSpread": 0,
+              "sourceAcousticEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "carried",
+                  "start": 245.148318,
+                  "end": 245.468417,
+                  "score": 0.3329677615231242,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "carried",
+                  "start": 245.108305,
+                  "end": 245.468417,
+                  "score": 0.4027955943261176,
+                  "startDelta": null,
+                  "endDelta": null
+                }
+              ],
+              "pairedCheckpointEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "carried",
+                  "start": 245.148318,
+                  "end": 245.468417,
+                  "score": 0.3329677615231242,
+                  "startDelta": 0.040013,
+                  "endDelta": 0
+                }
+              ],
+              "corroboration": [
+                {
+                  "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+                  "role": "source",
+                  "text": "carried",
+                  "start": 244.947048,
+                  "end": 245.287048,
+                  "score": 0.9211403727531433,
+                  "startDelta": 0.161257,
+                  "endDelta": 0.181369
+                },
+                {
+                  "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "role": "source",
+                  "text": "carried",
+                  "start": 245.007048,
+                  "end": 245.407048,
+                  "score": 0.9775708913803101,
+                  "startDelta": 0.101257,
+                  "endDelta": 0.061369
+                },
+                {
+                  "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+                  "role": "source",
+                  "text": "carried",
+                  "start": 245.047048,
+                  "end": 245.407048,
+                  "score": 0.9786020517349243,
+                  "startDelta": 0.061257,
+                  "endDelta": 0.061369
+                }
+              ],
+              "encodedEvidence": {
+                "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                "role": "source",
+                "text": "carried",
+                "start": 245.108305,
+                "end": 245.468417,
+                "score": 0.39389401435882365,
+                "startDelta": 0,
+                "endDelta": 0
+              },
+              "lexicalEvidence": {
+                "matchedCheckpointIds": [
+                  "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+                  "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+                ],
+                "mismatches": [],
+                "rejectedPasses": 0
+              },
+              "route": "official_ctc_asr",
+              "supported": true,
+              "cueDelta": 0.041633,
+              "endDelta": 0.021821,
+              "passed": false,
+              "repair": {
+                "id": "g7-s14-l08-w01",
+                "start": 245.108305,
+                "end": 245.468417,
+                "previousStart": 245.149938,
+                "previousEnd": 245.490238
+              }
+            }
+          }
         }
       },
       "aligned": true,
@@ -42318,9 +42875,9 @@
     {
       "id": "g7-s14-l08-w03",
       "text": "breath",
-      "start": 245.730449,
-      "end": 245.990678,
-      "confidence": "machine_acoustic_estimate",
+      "start": 245.688486,
+      "end": 245.968573,
+      "confidence": "machine_acoustic_verified",
       "provenance": {
         "originalLegacy": {
           "word": "breath",
@@ -42397,6 +42954,124 @@
           "selectedScore": 0.8889362373566816,
           "crossModelVerified": false,
           "status": "independent_recognition_pending"
+        },
+        "fullSongBoundaryRepair": {
+          "patch": "06",
+          "evidence": {
+            "policy": "official_dual_ctc",
+            "sourceVideo": "output/genesis7-full-pass01.mp4",
+            "sourceVideoSha256": "a452e65dc44fb216a1d568bcd04f31e4ad54dfd12515a331ca960e90a89b8e7c",
+            "report": "output/fullsong-audio/encoded-pass02/audio-review.json",
+            "reportSha256": "02af30ff2ca174479e6fd307c77d989b13d5a82d2b4d1fa492f83829446970b8",
+            "measured": {
+              "id": "g7-s14-l08-w03",
+              "text": "breath",
+              "currentStart": 245.730449,
+              "currentEnd": 245.990678,
+              "acousticStart": 245.688486,
+              "acousticEnd": 245.968573,
+              "acousticConfidence": 0.981724,
+              "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+              "codecAlignmentSpread": 0,
+              "sourceAcousticEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "breath",
+                  "start": 245.708492,
+                  "end": 245.968573,
+                  "score": 0.923597665263187,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "breath",
+                  "start": 245.688486,
+                  "end": 245.968573,
+                  "score": 0.9817244903629119,
+                  "startDelta": null,
+                  "endDelta": null
+                }
+              ],
+              "pairedCheckpointEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "breath",
+                  "start": 245.708492,
+                  "end": 245.968573,
+                  "score": 0.923597665263187,
+                  "startDelta": 0.020006,
+                  "endDelta": 0
+                }
+              ],
+              "corroboration": [
+                {
+                  "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+                  "role": "source",
+                  "text": "breath",
+                  "start": 245.547048,
+                  "end": 245.847048,
+                  "score": 0.9632846117019653,
+                  "startDelta": 0.141438,
+                  "endDelta": 0.121525
+                },
+                {
+                  "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "role": "source",
+                  "text": "breath",
+                  "start": 245.667048,
+                  "end": 245.927048,
+                  "score": 0.9534066915512085,
+                  "startDelta": 0.021438,
+                  "endDelta": 0.041525
+                },
+                {
+                  "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+                  "role": "source",
+                  "text": "breath",
+                  "start": 245.687048,
+                  "end": 245.927048,
+                  "score": 0.9581541419029236,
+                  "startDelta": 0.001438,
+                  "endDelta": 0.041525
+                }
+              ],
+              "encodedEvidence": {
+                "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                "role": "source",
+                "text": "breath",
+                "start": 245.688486,
+                "end": 245.968573,
+                "score": 0.8950883915439768,
+                "startDelta": 0,
+                "endDelta": 0
+              },
+              "lexicalEvidence": {
+                "matchedCheckpointIds": [
+                  "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+                  "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+                ],
+                "mismatches": [],
+                "rejectedPasses": 0
+              },
+              "route": "official_dual_ctc",
+              "supported": true,
+              "cueDelta": 0.041963,
+              "endDelta": 0.022105,
+              "passed": false,
+              "repair": {
+                "id": "g7-s14-l08-w03",
+                "start": 245.688486,
+                "end": 245.968573,
+                "previousStart": 245.730449,
+                "previousEnd": 245.990678
+              }
+            }
+          }
         }
       },
       "aligned": true,
@@ -43275,9 +43950,9 @@
     {
       "id": "g7-s14-l11-w01",
       "text": "once",
-      "start": 251.595612,
-      "end": 251.875859,
-      "confidence": "acoustic_retry_required",
+      "start": 251.870409,
+      "end": 251.990446,
+      "confidence": "machine_acoustic_verified",
       "provenance": {
         "originalLegacy": {
           "word": "once",
@@ -43354,6 +44029,114 @@
           "selectedScore": 0.17408997175409158,
           "crossModelVerified": false,
           "status": "independent_recognition_pending"
+        },
+        "fullSongBoundaryRepair": {
+          "patch": "06",
+          "evidence": {
+            "policy": "official_ctc_asr",
+            "sourceVideo": "output/genesis7-full-pass01.mp4",
+            "sourceVideoSha256": "a452e65dc44fb216a1d568bcd04f31e4ad54dfd12515a331ca960e90a89b8e7c",
+            "report": "output/fullsong-audio/encoded-pass02/audio-review.json",
+            "reportSha256": "02af30ff2ca174479e6fd307c77d989b13d5a82d2b4d1fa492f83829446970b8",
+            "measured": {
+              "id": "g7-s14-l11-w01",
+              "text": "once",
+              "currentStart": 251.595612,
+              "currentEnd": 251.875859,
+              "acousticStart": 251.870409,
+              "acousticEnd": 251.990446,
+              "acousticConfidence": 0.82867,
+              "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+              "codecAlignmentSpread": 0,
+              "sourceAcousticEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "once",
+                  "start": 251.850402,
+                  "end": 251.990446,
+                  "score": 0.030507951059954835,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "once",
+                  "start": 251.870409,
+                  "end": 251.990446,
+                  "score": 0.8286703113333675,
+                  "startDelta": null,
+                  "endDelta": null
+                }
+              ],
+              "pairedCheckpointEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "once",
+                  "start": 251.850402,
+                  "end": 251.990446,
+                  "score": 0.030507951059954835,
+                  "startDelta": 0.020007,
+                  "endDelta": 0
+                }
+              ],
+              "corroboration": [
+                {
+                  "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "role": "source",
+                  "text": "once",
+                  "start": 251.647048,
+                  "end": 251.987048,
+                  "score": 0.9934121966362,
+                  "startDelta": 0.223361,
+                  "endDelta": 0.003398
+                },
+                {
+                  "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+                  "role": "source",
+                  "text": "once",
+                  "start": 251.667048,
+                  "end": 251.987048,
+                  "score": 0.9838215112686157,
+                  "startDelta": 0.203361,
+                  "endDelta": 0.003398
+                }
+              ],
+              "encodedEvidence": {
+                "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                "role": "source",
+                "text": "once",
+                "start": 251.870409,
+                "end": 251.990446,
+                "score": 0.8196905133505344,
+                "startDelta": 0,
+                "endDelta": 0
+              },
+              "lexicalEvidence": {
+                "matchedCheckpointIds": [
+                  "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+                  "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+                ],
+                "mismatches": [],
+                "rejectedPasses": 0
+              },
+              "route": "official_ctc_asr",
+              "supported": true,
+              "cueDelta": 0.274797,
+              "endDelta": 0.114587,
+              "passed": false,
+              "repair": {
+                "id": "g7-s14-l11-w01",
+                "start": 251.870409,
+                "end": 251.990446,
+                "previousStart": 251.595612,
+                "previousEnd": 251.875859
+              }
+            }
+          }
         }
       },
       "aligned": true,
@@ -44058,9 +44841,9 @@
     {
       "id": "g7-s16-l00-w00",
       "text": "Every",
-      "start": 258.452052,
-      "end": 260.452926,
-      "confidence": "machine_acoustic_estimate",
+      "start": 260.613128,
+      "end": 260.793184,
+      "confidence": "machine_acoustic_verified",
       "provenance": {
         "originalLegacy": {
           "word": "Every",
@@ -44137,6 +44920,104 @@
           "selectedScore": 0.7327230783714879,
           "crossModelVerified": false,
           "status": "independent_recognition_pending"
+        },
+        "fullSongBoundaryRepair": {
+          "patch": "06",
+          "evidence": {
+            "policy": "official_dual_ctc",
+            "sourceVideo": "output/genesis7-full-pass01.mp4",
+            "sourceVideoSha256": "a452e65dc44fb216a1d568bcd04f31e4ad54dfd12515a331ca960e90a89b8e7c",
+            "report": "output/fullsong-audio/encoded-pass02/audio-review.json",
+            "reportSha256": "02af30ff2ca174479e6fd307c77d989b13d5a82d2b4d1fa492f83829446970b8",
+            "measured": {
+              "id": "g7-s16-l00-w00",
+              "text": "Every",
+              "currentStart": 258.452052,
+              "currentEnd": 260.452926,
+              "acousticStart": 260.613128,
+              "acousticEnd": 260.793184,
+              "acousticConfidence": 0.72231,
+              "selectedCheckpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+              "codecAlignmentSpread": 0,
+              "sourceAcousticEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "Every",
+                  "start": 260.613128,
+                  "end": 260.793184,
+                  "score": 0.7223098843938015,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "Every",
+                  "start": 260.613128,
+                  "end": 260.773178,
+                  "score": 0.717032613906929,
+                  "startDelta": null,
+                  "endDelta": null
+                }
+              ],
+              "pairedCheckpointEvidence": [
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "Every",
+                  "start": 260.613128,
+                  "end": 260.773178,
+                  "score": 0.717032613906929,
+                  "startDelta": 0,
+                  "endDelta": 0.020006
+                }
+              ],
+              "corroboration": [
+                {
+                  "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+                  "role": "source",
+                  "text": "Every",
+                  "start": 260.367048,
+                  "end": 260.787048,
+                  "score": 0.9614288210868835,
+                  "startDelta": 0.24608,
+                  "endDelta": 0.006136
+                }
+              ],
+              "encodedEvidence": {
+                "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                "role": "source",
+                "text": "Every",
+                "start": 260.613128,
+                "end": 260.793184,
+                "score": 0.8080168363539308,
+                "startDelta": 0,
+                "endDelta": 0
+              },
+              "lexicalEvidence": {
+                "matchedCheckpointIds": [
+                  "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+                  "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+                ],
+                "mismatches": [],
+                "rejectedPasses": 0
+              },
+              "route": "official_dual_ctc",
+              "supported": true,
+              "cueDelta": 2.161076,
+              "endDelta": 0.340258,
+              "passed": false,
+              "repair": {
+                "id": "g7-s16-l00-w00",
+                "start": 260.613128,
+                "end": 260.793184,
+                "previousStart": 258.452052,
+                "previousEnd": 260.452926
+              }
+            }
+          }
         }
       },
       "aligned": false,
@@ -44145,9 +45026,9 @@
     {
       "id": "g7-s16-l00-w01",
       "text": "living",
-      "start": 260.552969,
-      "end": 260.813083,
-      "confidence": "acoustic_retry_required",
+      "start": 260.830977,
+      "end": 261.092524,
+      "confidence": "machine_acoustic_verified",
       "provenance": {
         "originalLegacy": {
           "word": "living",
@@ -44224,6 +45105,125 @@
           "selectedScore": 0.07901295826632239,
           "crossModelVerified": false,
           "status": "independent_recognition_pending"
+        },
+        "fullSongBoundaryRepair": {
+          "patch": "06",
+          "evidence": {
+            "policy": "official_ctc_asr",
+            "sourceVideo": "output/genesis7-full-pass01.mp4",
+            "sourceVideoSha256": "a452e65dc44fb216a1d568bcd04f31e4ad54dfd12515a331ca960e90a89b8e7c",
+            "report": "output/fullsong-audio/encoded-pass02/audio-review.json",
+            "reportSha256": "02af30ff2ca174479e6fd307c77d989b13d5a82d2b4d1fa492f83829446970b8",
+            "measured": {
+              "id": "g7-s16-l00-w01",
+              "text": "living",
+              "currentStart": 260.552969,
+              "currentEnd": 260.813083,
+              "acousticStart": 260.830977,
+              "acousticEnd": 261.092524,
+              "acousticConfidence": 0.452841,
+              "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+              "codecAlignmentSpread": 0,
+              "sourceAcousticEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "living",
+                  "start": 260.851096,
+                  "end": 261.092524,
+                  "score": 0.016116029306647402,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "living",
+                  "start": 260.830977,
+                  "end": 261.092524,
+                  "score": 0.45284077614913915,
+                  "startDelta": null,
+                  "endDelta": null
+                }
+              ],
+              "pairedCheckpointEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "living",
+                  "start": 260.851096,
+                  "end": 261.092524,
+                  "score": 0.016116029306647402,
+                  "startDelta": 0.020119,
+                  "endDelta": 0
+                }
+              ],
+              "corroboration": [
+                {
+                  "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+                  "role": "source",
+                  "text": "living",
+                  "start": 260.667048,
+                  "end": 260.927048,
+                  "score": 0.9835007190704346,
+                  "startDelta": 0.163929,
+                  "endDelta": 0.165476
+                },
+                {
+                  "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "role": "source",
+                  "text": "living",
+                  "start": 260.767048,
+                  "end": 261.007048,
+                  "score": 0.9893789887428284,
+                  "startDelta": 0.063929,
+                  "endDelta": 0.085476
+                },
+                {
+                  "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+                  "role": "source",
+                  "text": "living",
+                  "start": 260.787048,
+                  "end": 261.047048,
+                  "score": 0.9964849948883057,
+                  "startDelta": 0.043929,
+                  "endDelta": 0.045476
+                }
+              ],
+              "encodedEvidence": {
+                "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                "role": "source",
+                "text": "living",
+                "start": 260.830977,
+                "end": 261.092524,
+                "score": 0.3712800438918815,
+                "startDelta": 0,
+                "endDelta": 0
+              },
+              "lexicalEvidence": {
+                "matchedCheckpointIds": [
+                  "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+                  "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+                ],
+                "mismatches": [],
+                "rejectedPasses": 0
+              },
+              "route": "official_ctc_asr",
+              "supported": true,
+              "cueDelta": 0.278008,
+              "endDelta": 0.279441,
+              "passed": false,
+              "repair": {
+                "id": "g7-s16-l00-w01",
+                "start": 260.830977,
+                "end": 261.092524,
+                "previousStart": 260.552969,
+                "previousEnd": 260.813083
+              },
+              "retry": "narrow-official-phrase"
+            }
+          }
         }
       },
       "aligned": false,
@@ -44232,9 +45232,9 @@
     {
       "id": "g7-s16-l00-w02",
       "text": "thing",
-      "start": 260.833092,
-      "end": 261.49338,
-      "confidence": "machine_acoustic_estimate",
+      "start": 261.13329,
+      "end": 261.393371,
+      "confidence": "machine_acoustic_verified",
       "provenance": {
         "originalLegacy": {
           "word": "thing",
@@ -44311,6 +45311,124 @@
           "selectedScore": 0.25856747148596226,
           "crossModelVerified": false,
           "status": "independent_recognition_pending"
+        },
+        "fullSongBoundaryRepair": {
+          "patch": "06",
+          "evidence": {
+            "policy": "official_ctc_asr",
+            "sourceVideo": "output/genesis7-full-pass01.mp4",
+            "sourceVideoSha256": "a452e65dc44fb216a1d568bcd04f31e4ad54dfd12515a331ca960e90a89b8e7c",
+            "report": "output/fullsong-audio/encoded-pass02/audio-review.json",
+            "reportSha256": "02af30ff2ca174479e6fd307c77d989b13d5a82d2b4d1fa492f83829446970b8",
+            "measured": {
+              "id": "g7-s16-l00-w02",
+              "text": "thing",
+              "currentStart": 260.833092,
+              "currentEnd": 261.49338,
+              "acousticStart": 261.13329,
+              "acousticEnd": 261.393371,
+              "acousticConfidence": 0.407897,
+              "selectedCheckpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+              "codecAlignmentSpread": 0.020006,
+              "sourceAcousticEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "thing",
+                  "start": 261.13329,
+                  "end": 261.393371,
+                  "score": 0.407896970369591,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "thing",
+                  "start": 261.113284,
+                  "end": 261.393371,
+                  "score": 0.10307259094005951,
+                  "startDelta": null,
+                  "endDelta": null
+                }
+              ],
+              "pairedCheckpointEvidence": [
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "thing",
+                  "start": 261.113284,
+                  "end": 261.393371,
+                  "score": 0.10307259094005951,
+                  "startDelta": 0.020006,
+                  "endDelta": 0
+                }
+              ],
+              "corroboration": [
+                {
+                  "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+                  "role": "source",
+                  "text": "thing,",
+                  "start": 260.927048,
+                  "end": 261.247048,
+                  "score": 0.9523793458938599,
+                  "startDelta": 0.206242,
+                  "endDelta": 0.146323
+                },
+                {
+                  "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "role": "source",
+                  "text": "thing",
+                  "start": 261.007048,
+                  "end": 261.447048,
+                  "score": 0.9749715924263,
+                  "startDelta": 0.126242,
+                  "endDelta": 0.053677
+                },
+                {
+                  "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+                  "role": "source",
+                  "text": "thing",
+                  "start": 261.047048,
+                  "end": 261.607048,
+                  "score": 0.9974048733711243,
+                  "startDelta": 0.086242,
+                  "endDelta": 0.213677
+                }
+              ],
+              "encodedEvidence": {
+                "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                "role": "source",
+                "text": "thing",
+                "start": 261.153296,
+                "end": 261.393371,
+                "score": 0.2749910187513863,
+                "startDelta": 0.020006,
+                "endDelta": 0
+              },
+              "lexicalEvidence": {
+                "matchedCheckpointIds": [
+                  "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+                  "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+                ],
+                "mismatches": [],
+                "rejectedPasses": 0
+              },
+              "route": "official_ctc_asr",
+              "supported": true,
+              "cueDelta": 0.300198,
+              "endDelta": 0.100009,
+              "passed": false,
+              "repair": {
+                "id": "g7-s16-l00-w02",
+                "start": 261.13329,
+                "end": 261.393371,
+                "previousStart": 260.833092,
+                "previousEnd": 261.49338
+              }
+            }
+          }
         }
       },
       "aligned": false,
@@ -45276,9 +46394,9 @@
     {
       "id": "g7-s16-l03-w02",
       "text": "beast,",
-      "start": 264.954891,
-      "end": 265.154978,
-      "confidence": "machine_acoustic_estimate",
+      "start": 264.941297,
+      "end": 265.24327,
+      "confidence": "machine_acoustic_verified",
       "provenance": {
         "originalLegacy": {
           "word": "beast,",
@@ -45355,6 +46473,103 @@
           "selectedScore": 0.24239102360327325,
           "crossModelVerified": false,
           "status": "independent_recognition_pending"
+        },
+        "fullSongBoundaryRepair": {
+          "patch": "06",
+          "evidence": {
+            "policy": "official_ctc_asr",
+            "sourceVideo": "output/genesis7-full-pass01.mp4",
+            "sourceVideoSha256": "a452e65dc44fb216a1d568bcd04f31e4ad54dfd12515a331ca960e90a89b8e7c",
+            "report": "output/fullsong-audio/encoded-pass02/audio-review.json",
+            "reportSha256": "02af30ff2ca174479e6fd307c77d989b13d5a82d2b4d1fa492f83829446970b8",
+            "measured": {
+              "id": "g7-s16-l03-w02",
+              "text": "beast,",
+              "currentStart": 264.954891,
+              "currentEnd": 265.154978,
+              "acousticStart": 264.941297,
+              "acousticEnd": 265.24327,
+              "acousticConfidence": 0.218786,
+              "selectedCheckpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+              "codecAlignmentSpread": 0,
+              "sourceAcousticEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "beast,",
+                  "start": 264.941297,
+                  "end": 265.24327,
+                  "score": 0.21878599940923635,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "beast,",
+                  "start": 264.941297,
+                  "end": 265.24327,
+                  "score": 0.0846333827679153,
+                  "startDelta": null,
+                  "endDelta": null
+                }
+              ],
+              "pairedCheckpointEvidence": [
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "beast,",
+                  "start": 264.941297,
+                  "end": 265.24327,
+                  "score": 0.0846333827679153,
+                  "startDelta": 0,
+                  "endDelta": 0
+                }
+              ],
+              "corroboration": [
+                {
+                  "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "role": "source",
+                  "text": "beast,",
+                  "start": 264.874323,
+                  "end": 265.154323,
+                  "score": 0.9146062135696411,
+                  "startDelta": 0.066974,
+                  "endDelta": 0.088947
+                }
+              ],
+              "encodedEvidence": {
+                "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                "role": "source",
+                "text": "beast,",
+                "start": 264.941297,
+                "end": 265.24327,
+                "score": 0.23287775317779916,
+                "startDelta": 0,
+                "endDelta": 0
+              },
+              "lexicalEvidence": {
+                "matchedCheckpointIds": [
+                  "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872"
+                ],
+                "mismatches": [],
+                "rejectedPasses": 0
+              },
+              "route": "official_ctc_asr",
+              "supported": true,
+              "cueDelta": 0.013594,
+              "endDelta": 0.088292,
+              "passed": false,
+              "repair": {
+                "id": "g7-s16-l03-w02",
+                "start": 264.941297,
+                "end": 265.24327,
+                "previousStart": 264.954891,
+                "previousEnd": 265.154978
+              },
+              "retry": "narrow-official-phrase"
+            }
+          }
         }
       },
       "aligned": true,
@@ -46407,9 +47622,9 @@
     {
       "id": "g7-s16-l06-w02",
       "text": "remained,",
-      "start": 269.256769,
-      "end": 269.616926,
-      "confidence": "machine_acoustic_estimate",
+      "start": 269.177438,
+      "end": 269.74425,
+      "confidence": "machine_acoustic_verified",
       "provenance": {
         "originalLegacy": {
           "word": "remained,",
@@ -46486,6 +47701,103 @@
           "selectedScore": 0.347074592371887,
           "crossModelVerified": false,
           "status": "independent_recognition_pending"
+        },
+        "fullSongBoundaryRepair": {
+          "patch": "06",
+          "evidence": {
+            "policy": "official_ctc_asr",
+            "sourceVideo": "output/genesis7-full-pass01.mp4",
+            "sourceVideoSha256": "a452e65dc44fb216a1d568bcd04f31e4ad54dfd12515a331ca960e90a89b8e7c",
+            "report": "output/fullsong-audio/encoded-pass02/audio-review.json",
+            "reportSha256": "02af30ff2ca174479e6fd307c77d989b13d5a82d2b4d1fa492f83829446970b8",
+            "measured": {
+              "id": "g7-s16-l06-w02",
+              "text": "remained,",
+              "currentStart": 269.256769,
+              "currentEnd": 269.616926,
+              "acousticStart": 269.177438,
+              "acousticEnd": 269.74425,
+              "acousticConfidence": 0.277473,
+              "selectedCheckpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+              "codecAlignmentSpread": 0,
+              "sourceAcousticEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "remained,",
+                  "start": 269.177438,
+                  "end": 269.74425,
+                  "score": 0.27747254750289513,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "remained,",
+                  "start": 269.217924,
+                  "end": 269.643034,
+                  "score": 0.27091111101435156,
+                  "startDelta": null,
+                  "endDelta": null
+                }
+              ],
+              "pairedCheckpointEvidence": [
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "remained,",
+                  "start": 269.217924,
+                  "end": 269.643034,
+                  "score": 0.27091111101435156,
+                  "startDelta": 0.040486,
+                  "endDelta": 0.101216
+                }
+              ],
+              "corroboration": [
+                {
+                  "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "role": "source",
+                  "text": "remained",
+                  "start": 269.154323,
+                  "end": 269.574323,
+                  "score": 0.9794734120368958,
+                  "startDelta": 0.023115,
+                  "endDelta": 0.169927
+                }
+              ],
+              "encodedEvidence": {
+                "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                "role": "source",
+                "text": "remained,",
+                "start": 269.177438,
+                "end": 269.74425,
+                "score": 0.20128029016312507,
+                "startDelta": 0,
+                "endDelta": 0
+              },
+              "lexicalEvidence": {
+                "matchedCheckpointIds": [
+                  "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872"
+                ],
+                "mismatches": [],
+                "rejectedPasses": 0
+              },
+              "route": "official_ctc_asr",
+              "supported": true,
+              "cueDelta": 0.079331,
+              "endDelta": 0.127324,
+              "passed": false,
+              "repair": {
+                "id": "g7-s16-l06-w02",
+                "start": 269.177438,
+                "end": 269.74425,
+                "previousStart": 269.256769,
+                "previousEnd": 269.616926
+              },
+              "retry": "narrow-official-phrase"
+            }
+          }
         }
       },
       "aligned": false,
@@ -48699,9 +50011,9 @@
     {
       "id": "g7-s18-l00-w02",
       "text": "hundred",
-      "start": 287.516083,
-      "end": 287.856232,
-      "confidence": "machine_acoustic_estimate",
+      "start": 287.456226,
+      "end": 287.836352,
+      "confidence": "machine_acoustic_verified",
       "provenance": {
         "originalLegacy": {
           "word": "hundred",
@@ -48778,6 +50090,113 @@
           "selectedScore": 0.9509381543426673,
           "crossModelVerified": false,
           "status": "independent_recognition_pending"
+        },
+        "fullSongBoundaryRepair": {
+          "patch": "06",
+          "evidence": {
+            "policy": "official_dual_ctc",
+            "sourceVideo": "output/genesis7-full-pass01.mp4",
+            "sourceVideoSha256": "a452e65dc44fb216a1d568bcd04f31e4ad54dfd12515a331ca960e90a89b8e7c",
+            "report": "output/fullsong-audio/encoded-pass02/audio-review.json",
+            "reportSha256": "02af30ff2ca174479e6fd307c77d989b13d5a82d2b4d1fa492f83829446970b8",
+            "measured": {
+              "id": "g7-s18-l00-w02",
+              "text": "hundred",
+              "currentStart": 287.516083,
+              "currentEnd": 287.856232,
+              "acousticStart": 287.456226,
+              "acousticEnd": 287.836352,
+              "acousticConfidence": 0.970864,
+              "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+              "codecAlignmentSpread": 0,
+              "sourceAcousticEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "hundred",
+                  "start": 287.516246,
+                  "end": 287.856359,
+                  "score": 0.9689592235298012,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "hundred",
+                  "start": 287.456226,
+                  "end": 287.836352,
+                  "score": 0.9708635273002565,
+                  "startDelta": null,
+                  "endDelta": null
+                }
+              ],
+              "pairedCheckpointEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "hundred",
+                  "start": 287.516246,
+                  "end": 287.856359,
+                  "score": 0.9689592235298012,
+                  "startDelta": 0.06002,
+                  "endDelta": 0.020007
+                }
+              ],
+              "corroboration": [
+                {
+                  "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+                  "role": "source",
+                  "text": "hundred",
+                  "start": 287.355669,
+                  "end": 287.835669,
+                  "score": 0.900084376335144,
+                  "startDelta": 0.100557,
+                  "endDelta": 0.000683
+                }
+              ],
+              "encodedEvidence": {
+                "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                "role": "source",
+                "text": "hundred",
+                "start": 287.456226,
+                "end": 287.836352,
+                "score": 0.9731130291153658,
+                "startDelta": 0,
+                "endDelta": 0
+              },
+              "lexicalEvidence": {
+                "matchedCheckpointIds": [
+                  "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+                ],
+                "mismatches": [
+                  {
+                    "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+                    "role": "source",
+                    "reason": "Canonical token was omitted or recognized differently"
+                  },
+                  {
+                    "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                    "role": "source",
+                    "reason": "Canonical token was omitted or recognized differently"
+                  }
+                ],
+                "rejectedPasses": 0
+              },
+              "route": "official_dual_ctc",
+              "supported": true,
+              "cueDelta": 0.059857,
+              "endDelta": 0.01988,
+              "passed": false,
+              "repair": {
+                "id": "g7-s18-l00-w02",
+                "start": 287.456226,
+                "end": 287.836352,
+                "previousStart": 287.516083,
+                "previousEnd": 287.856232
+              }
+            }
+          }
         }
       },
       "aligned": false,
@@ -48960,9 +50379,9 @@
     {
       "id": "g7-s18-l00-w05",
       "text": "days,",
-      "start": 288.436488,
-      "end": 289.196822,
-      "confidence": "machine_acoustic_estimate",
+      "start": 288.436551,
+      "end": 289.116777,
+      "confidence": "machine_acoustic_verified",
       "provenance": {
         "originalLegacy": {
           "word": "days,",
@@ -49039,6 +50458,104 @@
           "selectedScore": 0.6959814305959873,
           "crossModelVerified": false,
           "status": "independent_recognition_pending"
+        },
+        "fullSongBoundaryRepair": {
+          "patch": "06",
+          "evidence": {
+            "policy": "official_ctc_asr",
+            "sourceVideo": "output/genesis7-full-pass01.mp4",
+            "sourceVideoSha256": "a452e65dc44fb216a1d568bcd04f31e4ad54dfd12515a331ca960e90a89b8e7c",
+            "report": "output/fullsong-audio/encoded-pass02/audio-review.json",
+            "reportSha256": "02af30ff2ca174479e6fd307c77d989b13d5a82d2b4d1fa492f83829446970b8",
+            "measured": {
+              "id": "g7-s18-l00-w05",
+              "text": "days,",
+              "currentStart": 288.436488,
+              "currentEnd": 289.196822,
+              "acousticStart": 288.436551,
+              "acousticEnd": 289.116777,
+              "acousticConfidence": 0.871029,
+              "selectedCheckpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+              "codecAlignmentSpread": 0,
+              "sourceAcousticEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "days,",
+                  "start": 288.436551,
+                  "end": 289.116777,
+                  "score": 0.8710288990222507,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "days,",
+                  "start": 288.416544,
+                  "end": 289.076763,
+                  "score": 0.6285149489842552,
+                  "startDelta": null,
+                  "endDelta": null
+                }
+              ],
+              "pairedCheckpointEvidence": [
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "days,",
+                  "start": 288.416544,
+                  "end": 289.076763,
+                  "score": 0.6285149489842552,
+                  "startDelta": 0.020007,
+                  "endDelta": 0.040014
+                }
+              ],
+              "corroboration": [
+                {
+                  "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+                  "role": "source",
+                  "text": "days",
+                  "start": 288.355669,
+                  "end": 289.315669,
+                  "score": 0.9960151314735413,
+                  "startDelta": 0.080882,
+                  "endDelta": 0.198892
+                }
+              ],
+              "encodedEvidence": {
+                "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                "role": "source",
+                "text": "days,",
+                "start": 288.436551,
+                "end": 289.116777,
+                "score": 0.7938312274345418,
+                "startDelta": 0,
+                "endDelta": 0
+              },
+              "lexicalEvidence": {
+                "matchedCheckpointIds": [
+                  "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+                  "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+                ],
+                "mismatches": [],
+                "rejectedPasses": 0
+              },
+              "route": "official_ctc_asr",
+              "supported": true,
+              "cueDelta": 0.000063,
+              "endDelta": 0.080045,
+              "passed": false,
+              "repair": {
+                "id": "g7-s18-l00-w05",
+                "start": 288.436551,
+                "end": 289.116777,
+                "previousStart": 288.436488,
+                "previousEnd": 289.196822
+              }
+            }
+          }
         }
       },
       "aligned": true,
@@ -49395,9 +50912,9 @@
     {
       "id": "g7-s18-l02-w00",
       "text": "Upon",
-      "start": 291.217711,
-      "end": 291.617887,
-      "confidence": "machine_acoustic_estimate",
+      "start": 291.17746,
+      "end": 291.637612,
+      "confidence": "machine_acoustic_verified",
       "provenance": {
         "originalLegacy": {
           "word": "Upon",
@@ -49474,6 +50991,114 @@
           "selectedScore": 0.96380029022337,
           "crossModelVerified": false,
           "status": "independent_recognition_pending"
+        },
+        "fullSongBoundaryRepair": {
+          "patch": "06",
+          "evidence": {
+            "policy": "official_dual_ctc",
+            "sourceVideo": "output/genesis7-full-pass01.mp4",
+            "sourceVideoSha256": "a452e65dc44fb216a1d568bcd04f31e4ad54dfd12515a331ca960e90a89b8e7c",
+            "report": "output/fullsong-audio/encoded-pass02/audio-review.json",
+            "reportSha256": "02af30ff2ca174479e6fd307c77d989b13d5a82d2b4d1fa492f83829446970b8",
+            "measured": {
+              "id": "g7-s18-l02-w00",
+              "text": "Upon",
+              "currentStart": 291.217711,
+              "currentEnd": 291.617887,
+              "acousticStart": 291.17746,
+              "acousticEnd": 291.637612,
+              "acousticConfidence": 0.995795,
+              "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+              "codecAlignmentSpread": 0,
+              "sourceAcousticEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "Upon",
+                  "start": 291.197466,
+                  "end": 291.637612,
+                  "score": 0.8801610459153651,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "Upon",
+                  "start": 291.17746,
+                  "end": 291.637612,
+                  "score": 0.9957951059704075,
+                  "startDelta": null,
+                  "endDelta": null
+                }
+              ],
+              "pairedCheckpointEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "Upon",
+                  "start": 291.197466,
+                  "end": 291.637612,
+                  "score": 0.8801610459153651,
+                  "startDelta": 0.020006,
+                  "endDelta": 0
+                }
+              ],
+              "corroboration": [
+                {
+                  "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "role": "source",
+                  "text": "upon",
+                  "start": 291.015669,
+                  "end": 291.475669,
+                  "score": 0.9438496232032776,
+                  "startDelta": 0.161791,
+                  "endDelta": 0.161943
+                },
+                {
+                  "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+                  "role": "source",
+                  "text": "upon",
+                  "start": 291.075669,
+                  "end": 291.555669,
+                  "score": 0.9861230850219727,
+                  "startDelta": 0.101791,
+                  "endDelta": 0.081943
+                }
+              ],
+              "encodedEvidence": {
+                "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                "role": "source",
+                "text": "Upon",
+                "start": 291.17746,
+                "end": 291.637612,
+                "score": 0.9959492910211747,
+                "startDelta": 0,
+                "endDelta": 0
+              },
+              "lexicalEvidence": {
+                "matchedCheckpointIds": [
+                  "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+                  "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+                ],
+                "mismatches": [],
+                "rejectedPasses": 0
+              },
+              "route": "official_dual_ctc",
+              "supported": true,
+              "cueDelta": 0.040251,
+              "endDelta": 0.019725,
+              "passed": false,
+              "repair": {
+                "id": "g7-s18-l02-w00",
+                "start": 291.17746,
+                "end": 291.637612,
+                "previousStart": 291.217711,
+                "previousEnd": 291.617887
+              }
+            }
+          }
         }
       },
       "aligned": true,
@@ -50664,9 +52289,9 @@
     {
       "id": "g7-s18-l04-w03",
       "text": "through.",
-      "start": 296.207065,
-      "end": 296.58913,
-      "confidence": "machine_acoustic_estimate",
+      "start": 296.219131,
+      "end": 296.499224,
+      "confidence": "machine_acoustic_verified",
       "provenance": {
         "originalLegacy": {
           "word": "through.",
@@ -50782,6 +52407,114 @@
             }
           },
           "acceptanceStatus": "pending_full_audio_evidence"
+        },
+        "fullSongBoundaryRepair": {
+          "patch": "06",
+          "evidence": {
+            "policy": "official_ctc_asr",
+            "sourceVideo": "output/genesis7-full-pass01.mp4",
+            "sourceVideoSha256": "a452e65dc44fb216a1d568bcd04f31e4ad54dfd12515a331ca960e90a89b8e7c",
+            "report": "output/fullsong-audio/encoded-pass02/audio-review.json",
+            "reportSha256": "02af30ff2ca174479e6fd307c77d989b13d5a82d2b4d1fa492f83829446970b8",
+            "measured": {
+              "id": "g7-s18-l04-w03",
+              "text": "through.",
+              "currentStart": 296.207065,
+              "currentEnd": 296.58913,
+              "acousticStart": 296.219131,
+              "acousticEnd": 296.499224,
+              "acousticConfidence": 0.843554,
+              "selectedCheckpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+              "codecAlignmentSpread": 0,
+              "sourceAcousticEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "through.",
+                  "start": 296.219131,
+                  "end": 296.499224,
+                  "score": 0.8435538871756656,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "through.",
+                  "start": 296.199124,
+                  "end": 296.599257,
+                  "score": 0.2730937633949136,
+                  "startDelta": null,
+                  "endDelta": null
+                }
+              ],
+              "pairedCheckpointEvidence": [
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "through.",
+                  "start": 296.199124,
+                  "end": 296.599257,
+                  "score": 0.2730937633949136,
+                  "startDelta": 0.020007,
+                  "endDelta": 0.100033
+                }
+              ],
+              "corroboration": [
+                {
+                  "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "role": "source",
+                  "text": "through",
+                  "start": 295.975669,
+                  "end": 296.555669,
+                  "score": 0.9726543426513672,
+                  "startDelta": 0.243462,
+                  "endDelta": 0.056445
+                },
+                {
+                  "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+                  "role": "source",
+                  "text": "through",
+                  "start": 296.035669,
+                  "end": 296.615669,
+                  "score": 0.9874100089073181,
+                  "startDelta": 0.183462,
+                  "endDelta": 0.116445
+                }
+              ],
+              "encodedEvidence": {
+                "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                "role": "source",
+                "text": "through.",
+                "start": 296.219131,
+                "end": 296.499224,
+                "score": 0.8771118587976011,
+                "startDelta": 0,
+                "endDelta": 0
+              },
+              "lexicalEvidence": {
+                "matchedCheckpointIds": [
+                  "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+                  "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+                ],
+                "mismatches": [],
+                "rejectedPasses": 0
+              },
+              "route": "official_ctc_asr",
+              "supported": true,
+              "cueDelta": 0.012066,
+              "endDelta": 0.089906,
+              "passed": false,
+              "repair": {
+                "id": "g7-s18-l04-w03",
+                "start": 296.219131,
+                "end": 296.499224,
+                "previousStart": 296.207065,
+                "previousEnd": 296.58913
+              }
+            }
+          }
         }
       },
       "aligned": true,
@@ -50964,9 +52697,9 @@
     {
       "id": "g7-s18-l05-w02",
       "text": "returned.",
-      "start": 297.693682,
-      "end": 298.254188,
-      "confidence": "machine_acoustic_estimate",
+      "start": 297.679615,
+      "end": 298.339834,
+      "confidence": "machine_acoustic_verified",
       "provenance": {
         "originalLegacy": {
           "word": "returned.",
@@ -51043,6 +52776,119 @@
           "selectedScore": 0.8526480064366365,
           "crossModelVerified": false,
           "status": "independent_recognition_pending"
+        },
+        "fullSongBoundaryRepair": {
+          "patch": "06",
+          "evidence": {
+            "policy": "official_dual_ctc",
+            "sourceVideo": "output/genesis7-full-pass01.mp4",
+            "sourceVideoSha256": "a452e65dc44fb216a1d568bcd04f31e4ad54dfd12515a331ca960e90a89b8e7c",
+            "report": "output/fullsong-audio/encoded-pass02/audio-review.json",
+            "reportSha256": "02af30ff2ca174479e6fd307c77d989b13d5a82d2b4d1fa492f83829446970b8",
+            "measured": {
+              "id": "g7-s18-l05-w02",
+              "text": "returned.",
+              "currentStart": 297.693682,
+              "currentEnd": 298.254188,
+              "acousticStart": 297.679615,
+              "acousticEnd": 298.339834,
+              "acousticConfidence": 0.996526,
+              "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+              "codecAlignmentSpread": 0,
+              "sourceAcousticEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "returned.",
+                  "start": 297.699622,
+                  "end": 298.259807,
+                  "score": 0.7513926098042479,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "returned.",
+                  "start": 297.679615,
+                  "end": 298.339834,
+                  "score": 0.9965263304571738,
+                  "startDelta": null,
+                  "endDelta": null
+                }
+              ],
+              "pairedCheckpointEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "returned.",
+                  "start": 297.699622,
+                  "end": 298.259807,
+                  "score": 0.7513926098042479,
+                  "startDelta": 0.020007,
+                  "endDelta": 0.080027
+                }
+              ],
+              "corroboration": [
+                {
+                  "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "role": "source",
+                  "text": "returned,",
+                  "start": 297.615669,
+                  "end": 298.215669,
+                  "score": 0.9555757641792297,
+                  "startDelta": 0.063946,
+                  "endDelta": 0.124165
+                },
+                {
+                  "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+                  "role": "source",
+                  "text": "returned,",
+                  "start": 297.655669,
+                  "end": 298.275669,
+                  "score": 0.9816489219665527,
+                  "startDelta": 0.023946,
+                  "endDelta": 0.064165
+                }
+              ],
+              "encodedEvidence": {
+                "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                "role": "source",
+                "text": "returned.",
+                "start": 297.679615,
+                "end": 298.339834,
+                "score": 0.9956776819130908,
+                "startDelta": 0,
+                "endDelta": 0
+              },
+              "lexicalEvidence": {
+                "matchedCheckpointIds": [
+                  "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+                ],
+                "mismatches": [
+                  {
+                    "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+                    "role": "source",
+                    "reason": "Canonical token was omitted or recognized differently"
+                  }
+                ],
+                "rejectedPasses": 0
+              },
+              "route": "official_dual_ctc",
+              "supported": true,
+              "cueDelta": 0.014067,
+              "endDelta": 0.085646,
+              "passed": false,
+              "repair": {
+                "id": "g7-s18-l05-w02",
+                "start": 297.679615,
+                "end": 298.339834,
+                "previousStart": 297.693682,
+                "previousEnd": 298.254188
+              }
+            }
+          }
         }
       },
       "aligned": true,
@@ -51399,9 +53245,9 @@
     {
       "id": "g7-s18-l06-w04",
       "text": "outside.",
-      "start": 300.876552,
-      "end": 301.577184,
-      "confidence": "acoustic_retry_required",
+      "start": 300.86067,
+      "end": 301.700948,
+      "confidence": "machine_acoustic_verified",
       "provenance": {
         "originalLegacy": {
           "word": "outside.",
@@ -51478,6 +53324,104 @@
           "selectedScore": 0.09225565468953428,
           "crossModelVerified": false,
           "status": "independent_recognition_pending"
+        },
+        "fullSongBoundaryRepair": {
+          "patch": "06",
+          "evidence": {
+            "policy": "official_ctc_asr",
+            "sourceVideo": "output/genesis7-full-pass01.mp4",
+            "sourceVideoSha256": "a452e65dc44fb216a1d568bcd04f31e4ad54dfd12515a331ca960e90a89b8e7c",
+            "report": "output/fullsong-audio/encoded-pass02/audio-review.json",
+            "reportSha256": "02af30ff2ca174479e6fd307c77d989b13d5a82d2b4d1fa492f83829446970b8",
+            "measured": {
+              "id": "g7-s18-l06-w04",
+              "text": "outside.",
+              "currentStart": 300.876552,
+              "currentEnd": 301.577184,
+              "acousticStart": 300.86067,
+              "acousticEnd": 301.700948,
+              "acousticConfidence": 0.611866,
+              "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+              "codecAlignmentSpread": 0.020007,
+              "sourceAcousticEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "outside.",
+                  "start": 300.840663,
+                  "end": 301.720955,
+                  "score": 0.04355679014539014,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "outside.",
+                  "start": 300.86067,
+                  "end": 301.700948,
+                  "score": 0.611866317186321,
+                  "startDelta": null,
+                  "endDelta": null
+                }
+              ],
+              "pairedCheckpointEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "outside.",
+                  "start": 300.840663,
+                  "end": 301.720955,
+                  "score": 0.04355679014539014,
+                  "startDelta": 0.020007,
+                  "endDelta": 0.020007
+                }
+              ],
+              "corroboration": [
+                {
+                  "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "role": "source",
+                  "text": "outside",
+                  "start": 300.615669,
+                  "end": 301.635669,
+                  "score": 0.9866917133331299,
+                  "startDelta": 0.245001,
+                  "endDelta": 0.065279
+                }
+              ],
+              "encodedEvidence": {
+                "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                "role": "source",
+                "text": "outside.",
+                "start": 300.840663,
+                "end": 301.680941,
+                "score": 0.8760696622287663,
+                "startDelta": 0.020007,
+                "endDelta": 0.020007
+              },
+              "lexicalEvidence": {
+                "matchedCheckpointIds": [
+                  "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+                  "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+                ],
+                "mismatches": [],
+                "rejectedPasses": 0
+              },
+              "route": "official_ctc_asr",
+              "supported": true,
+              "cueDelta": 0.015882,
+              "endDelta": 0.123764,
+              "passed": false,
+              "repair": {
+                "id": "g7-s18-l06-w04",
+                "start": 300.86067,
+                "end": 301.700948,
+                "previousStart": 300.876552,
+                "previousEnd": 301.577184
+              }
+            }
+          }
         }
       },
       "aligned": true,
@@ -52617,9 +54561,9 @@
     {
       "id": "g7-s18-l11-w01",
       "text": "the",
-      "start": 308.60352,
-      "end": 308.663574,
-      "confidence": "acoustic_retry_required",
+      "start": 308.524045,
+      "end": 308.584089,
+      "confidence": "machine_acoustic_verified",
       "provenance": {
         "originalLegacy": {
           "word": "the",
@@ -52696,6 +54640,124 @@
           "selectedScore": 0.014866794972841293,
           "crossModelVerified": false,
           "status": "independent_recognition_pending"
+        },
+        "fullSongBoundaryRepair": {
+          "patch": "06",
+          "evidence": {
+            "policy": "official_ctc_asr",
+            "sourceVideo": "output/genesis7-full-pass01.mp4",
+            "sourceVideoSha256": "a452e65dc44fb216a1d568bcd04f31e4ad54dfd12515a331ca960e90a89b8e7c",
+            "report": "output/fullsong-audio/encoded-pass02/audio-review.json",
+            "reportSha256": "02af30ff2ca174479e6fd307c77d989b13d5a82d2b4d1fa492f83829446970b8",
+            "measured": {
+              "id": "g7-s18-l11-w01",
+              "text": "the",
+              "currentStart": 308.60352,
+              "currentEnd": 308.663574,
+              "acousticStart": 308.524045,
+              "acousticEnd": 308.584089,
+              "acousticConfidence": 0.482972,
+              "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+              "codecAlignmentSpread": 0,
+              "sourceAcousticEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "the",
+                  "start": 308.504031,
+                  "end": 308.584089,
+                  "score": 0.2759950164131673,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "the",
+                  "start": 308.524045,
+                  "end": 308.584089,
+                  "score": 0.48297183866947424,
+                  "startDelta": null,
+                  "endDelta": null
+                }
+              ],
+              "pairedCheckpointEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "the",
+                  "start": 308.504031,
+                  "end": 308.584089,
+                  "score": 0.2759950164131673,
+                  "startDelta": 0.020014,
+                  "endDelta": 0
+                }
+              ],
+              "corroboration": [
+                {
+                  "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+                  "role": "source",
+                  "text": "the",
+                  "start": 308.48352,
+                  "end": 308.58352,
+                  "score": 0.6562368869781494,
+                  "startDelta": 0.040525,
+                  "endDelta": 0.000569
+                },
+                {
+                  "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "role": "source",
+                  "text": "the",
+                  "start": 308.52352,
+                  "end": 308.62352,
+                  "score": 0.924253523349762,
+                  "startDelta": 0.000525,
+                  "endDelta": 0.039431
+                },
+                {
+                  "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+                  "role": "source",
+                  "text": "the",
+                  "start": 308.54352,
+                  "end": 308.68352,
+                  "score": 0.9561627507209778,
+                  "startDelta": 0.019475,
+                  "endDelta": 0.099431
+                }
+              ],
+              "encodedEvidence": {
+                "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                "role": "source",
+                "text": "the",
+                "start": 308.524045,
+                "end": 308.584089,
+                "score": 0.4619722688229582,
+                "startDelta": 0,
+                "endDelta": 0
+              },
+              "lexicalEvidence": {
+                "matchedCheckpointIds": [
+                  "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+                  "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+                ],
+                "mismatches": [],
+                "rejectedPasses": 0
+              },
+              "route": "official_ctc_asr",
+              "supported": true,
+              "cueDelta": 0.079475,
+              "endDelta": 0.079485,
+              "passed": false,
+              "repair": {
+                "id": "g7-s18-l11-w01",
+                "start": 308.524045,
+                "end": 308.584089,
+                "previousStart": 308.60352,
+                "previousEnd": 308.663574
+              }
+            }
+          }
         }
       },
       "aligned": true,
@@ -53835,9 +55897,9 @@
     {
       "id": "g7-s18-l14-w03",
       "text": "covered.",
-      "start": 313.848249,
-      "end": 314.328682,
-      "confidence": "machine_acoustic_estimate",
+      "start": 313.807898,
+      "end": 314.288248,
+      "confidence": "machine_acoustic_verified",
       "provenance": {
         "originalLegacy": {
           "word": "covered.",
@@ -53914,6 +55976,124 @@
           "selectedScore": 0.716030920571315,
           "crossModelVerified": false,
           "status": "independent_recognition_pending"
+        },
+        "fullSongBoundaryRepair": {
+          "patch": "06",
+          "evidence": {
+            "policy": "official_ctc_asr",
+            "sourceVideo": "output/genesis7-full-pass01.mp4",
+            "sourceVideoSha256": "a452e65dc44fb216a1d568bcd04f31e4ad54dfd12515a331ca960e90a89b8e7c",
+            "report": "output/fullsong-audio/encoded-pass02/audio-review.json",
+            "reportSha256": "02af30ff2ca174479e6fd307c77d989b13d5a82d2b4d1fa492f83829446970b8",
+            "measured": {
+              "id": "g7-s18-l14-w03",
+              "text": "covered.",
+              "currentStart": 313.848249,
+              "currentEnd": 314.328682,
+              "acousticStart": 313.807898,
+              "acousticEnd": 314.288248,
+              "acousticConfidence": 0.928407,
+              "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+              "codecAlignmentSpread": 0,
+              "sourceAcousticEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "covered.",
+                  "start": 313.827913,
+                  "end": 314.308263,
+                  "score": 0.5103340709780124,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "covered.",
+                  "start": 313.807898,
+                  "end": 314.288248,
+                  "score": 0.9284067362445548,
+                  "startDelta": null,
+                  "endDelta": null
+                }
+              ],
+              "pairedCheckpointEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "covered.",
+                  "start": 313.827913,
+                  "end": 314.308263,
+                  "score": 0.5103340709780124,
+                  "startDelta": 0.020015,
+                  "endDelta": 0.020015
+                }
+              ],
+              "corroboration": [
+                {
+                  "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+                  "role": "source",
+                  "text": "covered",
+                  "start": 313.58352,
+                  "end": 314.12352,
+                  "score": 0.9826518297195435,
+                  "startDelta": 0.224378,
+                  "endDelta": 0.164728
+                },
+                {
+                  "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "role": "source",
+                  "text": "covered",
+                  "start": 313.70352,
+                  "end": 314.28352,
+                  "score": 0.6577117443084717,
+                  "startDelta": 0.104378,
+                  "endDelta": 0.004728
+                },
+                {
+                  "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+                  "role": "source",
+                  "text": "covered",
+                  "start": 313.72352,
+                  "end": 314.44352,
+                  "score": 0.9908545017242432,
+                  "startDelta": 0.084378,
+                  "endDelta": 0.155272
+                }
+              ],
+              "encodedEvidence": {
+                "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                "role": "source",
+                "text": "covered.",
+                "start": 313.807898,
+                "end": 314.288248,
+                "score": 0.9819129547395739,
+                "startDelta": 0,
+                "endDelta": 0
+              },
+              "lexicalEvidence": {
+                "matchedCheckpointIds": [
+                  "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+                  "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+                ],
+                "mismatches": [],
+                "rejectedPasses": 0
+              },
+              "route": "official_ctc_asr",
+              "supported": true,
+              "cueDelta": 0.040351,
+              "endDelta": 0.040434,
+              "passed": false,
+              "repair": {
+                "id": "g7-s18-l14-w03",
+                "start": 313.807898,
+                "end": 314.288248,
+                "previousStart": 313.848249,
+                "previousEnd": 314.328682
+              }
+            }
+          }
         }
       },
       "aligned": true,
@@ -57272,7 +59452,7 @@
       "id": "g7-s12-l03",
       "text": "High above the earth.",
       "start": 207.018887,
-      "end": 208.640347,
+      "end": 208.597619,
       "wordIds": [
         "g7-s12-l03-w00",
         "g7-s12-l03-w01",
@@ -57446,7 +59626,7 @@
     {
       "id": "g7-s12-l10",
       "text": "Beneath the whole heaven",
-      "start": 219.643535,
+      "start": 219.683963,
       "end": 220.584917,
       "wordIds": [
         "g7-s12-l10-w00",
@@ -57928,8 +60108,8 @@
     {
       "id": "g7-s16-l00",
       "text": "Every living thing",
-      "start": 258.452052,
-      "end": 261.49338,
+      "start": 260.613128,
+      "end": 261.393371,
       "wordIds": [
         "g7-s16-l00-w00",
         "g7-s16-l00-w01",
@@ -58004,7 +60184,7 @@
       "id": "g7-s16-l03",
       "text": "Man and beast,",
       "start": 264.314611,
-      "end": 265.154978,
+      "end": 265.24327,
       "wordIds": [
         "g7-s16-l03-w00",
         "g7-s16-l03-w01",
@@ -58080,7 +60260,7 @@
       "id": "g7-s16-l06",
       "text": "Only Noah remained,",
       "start": 268.616489,
-      "end": 269.616926,
+      "end": 269.74425,
       "wordIds": [
         "g7-s16-l06-w00",
         "g7-s16-l06-w01",
@@ -58252,7 +60432,7 @@
       "id": "g7-s18-l00",
       "text": "For one hundred and fifty days,",
       "start": 286.575669,
-      "end": 289.196822,
+      "end": 289.116777,
       "wordIds": [
         "g7-s18-l00-w00",
         "g7-s18-l00-w01",
@@ -58303,7 +60483,7 @@
     {
       "id": "g7-s18-l02",
       "text": "Upon the earth.",
-      "start": 291.217711,
+      "start": 291.17746,
       "end": 292.258169,
       "wordIds": [
         "g7-s18-l02-w00",
@@ -58354,7 +60534,7 @@
       "id": "g7-s18-l04",
       "text": "No field broke through.",
       "start": 294.9,
-      "end": 296.58913,
+      "end": 296.499224,
       "wordIds": [
         "g7-s18-l04-w00",
         "g7-s18-l04-w01",
@@ -58379,7 +60559,7 @@
       "id": "g7-s18-l05",
       "text": "No road returned.",
       "start": 297.093141,
-      "end": 298.254188,
+      "end": 298.339834,
       "wordIds": [
         "g7-s18-l05-w00",
         "g7-s18-l05-w01",
@@ -58403,7 +60583,7 @@
       "id": "g7-s18-l06",
       "text": "No human voice answered outside.",
       "start": 298.754639,
-      "end": 301.577184,
+      "end": 301.700948,
       "wordIds": [
         "g7-s18-l06-w00",
         "g7-s18-l06-w01",
@@ -58600,7 +60780,7 @@
       "id": "g7-s18-l14",
       "text": "The earth was covered.",
       "start": 312.667184,
-      "end": 314.328682,
+      "end": 314.288248,
       "wordIds": [
         "g7-s18-l14-w00",
         "g7-s18-l14-w01",
@@ -66351,7 +68531,10 @@
               "opacity": 0
             }
           }
-        ]
+        ],
+        "fonts": {
+          "g7-s03-l04-w00": "Cinzel"
+        }
       },
       "start": 78.8,
       "end": 84.23333333333333
@@ -69898,7 +72081,8 @@
         "gritty": true,
         "connectorFont": "IM FELL English",
         "fontFamily": "Barlow Condensed",
-        "accent": "#a17b65"
+        "accent": "#a17b65",
+        "contourErosion": true
       },
       "start": 257.8666666666667,
       "end": 264.23333333333335
@@ -70959,7 +73143,8 @@
         "light": false,
         "connectorFont": "IM FELL English",
         "fontFamily": "Bebas Neue",
-        "accent": "#82979c"
+        "accent": "#82979c",
+        "titleFont": "Archivo Black"
       }
     },
     {

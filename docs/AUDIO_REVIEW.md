@@ -135,3 +135,5 @@ node --test tests/audio-review.test.mjs tests/import.test.mjs
 ```
 
 These tests exercise measured lag/gain, substituted audio, real attack extraction, wrong lyrics, pause absorption, insufficient acoustic support, correction of small early cues, persistent reuse, audio/model/lyrics/runtime invalidation, and rejection of malformed or failed cache data. Integration evidence comes from the actual source and encoded movie runs, not mocked model outputs.
+
+Known-lyric CTC retries now retain the durable canonical word ID alongside each measured token. The original review window and its one bounded phrase retry can corroborate the same ID across different context lengths; checkpoint independence, both endpoint limits, raw score limits, AAC support, and ASR criteria remain unchanged. Per-run artifacts include these IDs; reusable acoustic cache entries remain keyed by actual audio/model/lyrics/runtime content. A tagged pass with duplicate IDs, missing tags, or an ID/text mismatch is rejected. Repeated literal words cannot borrow a different occurrence’s interval through lexical matching. Ordinary recognition still reports its actual discovered words.

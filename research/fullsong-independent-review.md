@@ -1,6 +1,6 @@
 # Independent full-film visual review
 
-Status: **encoded pass 02 fixes the bird collision and counting interludes; its remaining opening hold is corrected in a separately verified section, awaiting final full-film assembly**. Earlier source defects below were repaired and rechecked. The current pass-02 full-file hash is not approved.
+Status: **encoded pass 03 passes independent visual review and the all-frame temporal gate**. The visual scores are 8.0–8.3. Audio correctness and complete optical word coverage remain separate acceptance gates; this review makes no subjective hearing claim. Earlier failed versions and their corrections are retained below as evidence.
 
 Review target: the complete Genesis 7 film, approximately 367 seconds, at the standard established by the approved ten-second sequence. The latest user direction makes motion graphics and word choreography primary; photographs are supporting backdrops. Attractive photographs cannot compensate for repeated centered title cards or nearly static camera moves.
 
@@ -93,3 +93,38 @@ The full-file temporal check reduced six violations to one: **15.900–18.999349
 These scores are recorded against that exact MP4 in `independent-visual-review.json`. No sync score or human-hearing claim is supplied.
 
 The separate encoded correction `output/opening-threshold-motion03.mp4`, SHA256 `513c63f3e7274f4777f5d0335c62ede11cae0490c67c611f2a0c335ac87f14a6`, was then reviewed at three decoded samples per second. The numeral now remains visible while compressing into a tall seam throughout the 5.667-second section. A local-time diagnostic temporal review found **zero static intervals**. Evidence is under `threshold-motion03/` inside the pass-02 review folder. This resolves the specific section finding; final acceptance still requires the actual full-film assembly containing it, fresh temporal measurement, and verified equivalence or review for every other changed section.
+
+## Final encoded pass 03
+
+The actual full-film assembly contains the threshold correction and seven measured cue corrections. Its bindings were verified again after visual inspection:
+
+- Video SHA256: `81c75599208e19f33f6e9bc80a2d1979b79a756f5ac9e1a6e195ae99faecbf32`.
+- Project hash: `b8ad562fe99e10b9fa3f5dd57bb1c679f7c989b247df67cf2dd292ceda734b08`.
+- Engine hash: `4e62548ab4eab1a2fa23d9a98f224a3b794206bdb90a2b4f0d45c91b5f9880fa`.
+- Combined render/review revision: `bdf85ecff36ba572ab21b40930a7fe07e6a6a33a17afcb142f745fcda8a46434`.
+
+Every decoded frame was compared with pass 02. **59 of 66 scenes are pixel-identical**. The seven changed scenes are exactly the opening threshold and the six scenes containing corrected cues: household, seven pairs, sweep, six hundred years, ordered entry and same-day family. Dense decoded sequences cover all changed frame ranges and their nearby holds/transitions. The name composition at 158.9 seconds was also checked at full 1080p: SHEM/HAM and AND/JAPHETH remain separate. No new collision, clipped readable hold or premature exit was found. The opening numeral compresses visibly into its seam and leads into THEN without the earlier empty hold.
+
+The actual full-file temporal gate **passes**: all **11,015 frames** decoded in **4.676 seconds**, with **zero intervals longer than 2.8 seconds**. The single detected interval, 60.966–63.766 seconds, is exactly 2.8 seconds and meets the explicit budget. The report does not mislabel that allowed interval as continuous motion.
+
+| Final visual category | Score / 10 |
+|---|---:|
+| Lyric legibility | 8.3 |
+| Semantic motion | 8.0 |
+| Photorealism / material coherence | 8.3 |
+| Composition | 8.2 |
+| Continuity | 8.1 |
+
+The continuity score improves because the corrected transition is now verified inside the complete encoded artifact. The other scores retain their earlier basis: clear readable typography, recurring spatial word actions, consistent supporting imagery, and some simpler connective row layouts. This is a passing coherent full-film treatment, not a claim that every scene has the complexity of the approved climax. No concrete visual blocker remains in the inspected evidence.
+
+The bound judgment is `output/fullsong-independent-encoded-pass03/independent-visual-review.json`; decoded motion sheets, full-resolution name frame, pixel comparison, temporal evidence and input snapshot are adjacent. The review combines the whole-film pass-01 overview, dense checks through subsequent changes, and actual pixel equivalence for unchanged sections. It does not claim uninterrupted playback or manual inspection of every frame. No numeric sync score is invented; final song-level acceptance still depends on the separate measured audio and word-visibility gates.
+
+After this independent judgment was recorded, the local vision reviewer alleged edge overflow at 46.18 seconds (MALE/FEMALE/TOGETHER) and 29.90 seconds (HOUSEHOLD). Both exact timestamps were independently decoded at native 1080p and inspected. Every word fits with clear outer margins; those two model allegations are false positives. The PNGs `together-46.18.png` and `household-29.90.png` preserve the check. This observation does not dismiss other model findings in advance or alter any gate; a critique must match the actual pixels at its cited time.
+
+## Formal record and full optical coverage diagnostic
+
+The actual five-category visual-only judgment above was recorded with `recordVisualReview` into `output/fullsong-independent-encoded-pass03/gauntlet/review.json`, generated independently through `reviewVideo`. Its technical and temporal gates pass and its independent visual review is approved. Overall status remains `machine_audio_review_required`: this is deliberately not an audio approval or a final song-level pass.
+
+A separate full native OCR run sampled all 537 lyric windows, producing 1,854 timestamp records in 521.327 seconds. Nominal coverage was 536/537, with only `g7-s03-l04-w00` (I) in `g7-forty-days-sweep`, 80.952702–81.322733 seconds, unresolved. Native 1080p frames at 81.100 and 81.300 seconds visibly contain the large high-contrast I. Its sans-serif form is a plain vertical bar; Apple Vision omits it at every attempted orientation. A serif pronoun with top and bottom strokes is the concrete proposed correction, rather than removing the word from the gate or changing its timing.
+
+The OCR result also exposed an evidence-integrity defect: fractional timestamp pairs can share a filename rounded to a frame index while their millisecond seeks decode different pictures. Independent hashing found six duplicate paths and four overwritten records, at 47.284590, 140.421780, 174.183878 and 262.553843 seconds. Thus the nominal 536 recognized words must **not** be promoted to a formal OCR pass. Both the original diagnostic and the full path/hash audit are preserved under `output/fullsong-independent-encoded-pass03/full-ocr/`; `evidence-integrity-audit.json` records every affected word and hash. Root authorized a narrow filename/integrity correction before the next full OCR run. The independent visual judgment remains separate from this invalid optical evidence.
