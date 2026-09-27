@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "kind": "independent-visual-review",
+  "scope": "visual-only",
+  "status": "passed",
+  "reviewer": "motion_reference_research independent agent",
+  "threshold": 8,
+  "videoPath": "output/create-audio-only-proof/film.mp4",
+  "projectPath": "output/create-audio-only-proof/project/project.json",
+  "binding": {
+    "videoSha256": "0c8d5a9d547b5158047dce1335c92d622cc199ab519e4aaa691075538d86a790",
+    "projectHash": "5f9e0ee8c7901d8c37ed58860b5d1ba9aad976d0e9cc90e620453106b766d705",
+    "rendererHash": "816bd0f35e518cb3807ecd348ac54d78656ce97bc2d657eebb151c58e97185cc",
+    "revisionHash": "e0e6175526327a48b8a03e7dad229491db8d365bf18288a1f04eb678f44d3cab"
+  },
+  "scores": {
+    "lyricLegibility": 8.3,
+    "semanticMotion": 8.2,
+    "photorealism": 8,
+    "composition": 8,
+    "continuity": 8.1
+  },
+  "notes": "Independently inspected actual whole-film 4fps sequence, dense 15fps O transition, dense 20fps ending and full-resolution phrase/final frames before reading model grades (none were read). This is an explicitly graphic-only proof: photorealism rubric slot means graphic/material coherence, not a claim of photographic imagery. Readable hero words, causal rise/summit/dive/submerge, coherent contour language, centered final phrase and clean completed disappearance meet 8/10. Quiet intro and extended terrain hold remain non-blocking limits. The earlier empty grid and static top-heavy ending are fixed. Audio is separately machine-verified; no hearing score is invented.",
+  "evidence": [
+    {
+      "path": "research/automatic-graphic-evidence/full.jpg",
+      "sha256": "910da60140d0c9bd22dd5a3d968c19dc15c21d22f6840998753de8fb81e1dee2"
+    },
+    {
+      "path": "research/automatic-graphic-evidence/transition.jpg",
+      "sha256": "7b3dc70ef8bec6a1888f6c1c5a1c0bca3d772566505f46d03bceb8c7a452a6f0"
+    },
+    {
+      "path": "research/automatic-graphic-evidence/ending.jpg",
+      "sha256": "c2bf66393f35404e7125199d03f3aaed755d8364bd0dd31fc1fcf79792b33b00"
+    },
+    {
+      "path": "research/automatic-graphic-evidence/phrase.png",
+      "sha256": "4882cb275bd2c0e7c3f8281bd4c7658a4af539e8c8d75bffa1df24557d749e2e"
+    },
+    {
+      "path": "research/automatic-graphic-evidence/last.png",
+      "sha256": "8c66dc9d9a8195326e0a4f32b0d9d080ff64ffc5bcbbc3120b0b7cd038b19f35"
+    }
+  ],
+  "limitations": [
+    "Graphic-only proof; no photographic-realism approval claimed.",
+    "Sampled dense visual sequences cannot establish every possible playback condition.",
+    "Quiet opening and terrain hold are restrained; a longer film should vary these treatments."
+  ],
+  "reviewedAt": "2026-09-27T02:17:42.896Z"
+}

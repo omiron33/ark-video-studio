@@ -1,0 +1,1243 @@
+{
+  "schema": "ark-video-research/audio-window/v1",
+  "source": {
+    "audio": "/Users/shanefisher/storybook/song.mp3",
+    "lyrics": "/Users/shanefisher/storybook/lyrics.json",
+    "beats": "/Users/shanefisher/storybook/audio.json",
+    "previous_cues": "/Users/shanefisher/storybook/ark-video/timeline/cues.json",
+    "title": "Genesis Chapter 7",
+    "duration_seconds_ffprobe": 367.16,
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  "window": {
+    "source_start": 221.45,
+    "source_end": 231.45,
+    "duration": 10.0,
+    "trim": "projects/genesis7/assets/showcase.wav",
+    "format": "PCM signed 24-bit stereo 48 kHz",
+    "audio_samples_per_channel": 480000,
+    "sentence_boundary_selection": "begins after previous covered ends at 221.33; ends before next Then every creature starts at 231.72"
+  },
+  "sync": {
+    "method": "Official lyrics from the MP3's embedded lyrics tag, time-aligned to faster-whisper word timestamps (passes: whisper_words_medium_0.json, whisper_words_medium_12.json, whisper_words_small_0.json). Words with aligned=false are interpolated between matched words.",
+    "listening_verified": false,
+    "reason": "Audio input is unsupported in this model runtime, so no listening verification is claimed. Three independent local Whisper checks were run (base.en clip; small.en contextual clip; small.en clip with supplied lyric prompt). Exact full transcript confirmed by base.en and prompted small.en. Timings remain machine estimates.",
+    "aligned_words": 11,
+    "total_words": 12,
+    "uncertain_words": [
+      "The (initial boundary)",
+      "disappeared (ASR absorbs preceding silence)",
+      "below (0.63s inter-pass start spread)"
+    ],
+    "tempo_note": "librosa finds a steady pulse of about 108 BPM (felt as about 54 in half time) through the whole song, drifting to about 110 in the second half. The Suno tags describe accelerando 64 to 108 BPM and back, but that ramp is not audible as a real tempo change in the beat grid; treat the tags as intensity cues.",
+    "caution": "Original 64-108 BPM lyric section tags are intensity labels, not reliable measured tempi; use detected beat times. Matched ASR word times are estimates, not sample-level ground truth.",
+    "corrected_legacy_error": "ground: legacy interpolated source 227.00 (relative 5.55) is ~1.31s late; two small.en passes locate source 225.69/225.70 (relative 4.24/4.25), base.en 225.57 (4.12)."
+  },
+  "lines": [
+    {
+      "text": "The waters rose above them",
+      "start": 0.34,
+      "end": 2.75,
+      "words": [
+        {
+          "text": "The",
+          "start": 0.34,
+          "end": 1.37,
+          "source_start": 221.79,
+          "source_end": 222.82,
+          "confidence": "machine_aligned",
+          "listening_verified": false
+        },
+        {
+          "text": "waters",
+          "start": 1.37,
+          "end": 1.61,
+          "source_start": 222.82,
+          "source_end": 223.06,
+          "confidence": "machine_aligned",
+          "listening_verified": false
+        },
+        {
+          "text": "rose",
+          "start": 1.61,
+          "end": 1.91,
+          "source_start": 223.06,
+          "source_end": 223.36,
+          "confidence": "machine_aligned",
+          "listening_verified": false
+        },
+        {
+          "text": "above",
+          "start": 1.91,
+          "end": 2.29,
+          "source_start": 223.36,
+          "source_end": 223.74,
+          "confidence": "machine_aligned",
+          "listening_verified": false
+        },
+        {
+          "text": "them",
+          "start": 2.29,
+          "end": 2.75,
+          "source_start": 223.74,
+          "source_end": 224.2,
+          "confidence": "machine_aligned",
+          "listening_verified": false
+        }
+      ]
+    },
+    {
+      "text": "Until even the highest ground",
+      "start": 2.75,
+      "end": 6.0,
+      "words": [
+        {
+          "text": "Until",
+          "start": 2.75,
+          "end": 3.21,
+          "source_start": 224.2,
+          "source_end": 224.66,
+          "confidence": "machine_aligned",
+          "listening_verified": false
+        },
+        {
+          "text": "even",
+          "start": 3.21,
+          "end": 3.59,
+          "source_start": 224.66,
+          "source_end": 225.04,
+          "confidence": "machine_aligned",
+          "listening_verified": false
+        },
+        {
+          "text": "the",
+          "start": 3.59,
+          "end": 3.9,
+          "source_start": 225.04,
+          "source_end": 225.35,
+          "confidence": "machine_aligned",
+          "listening_verified": false
+        },
+        {
+          "text": "highest",
+          "start": 3.9,
+          "end": 4.3,
+          "source_start": 225.35,
+          "source_end": 225.75,
+          "confidence": "machine_aligned",
+          "listening_verified": false
+        },
+        {
+          "text": "ground",
+          "start": 5.55,
+          "end": 6.0,
+          "source_start": 227.0,
+          "source_end": 227.45,
+          "confidence": "interpolated_unverified",
+          "listening_verified": false
+        }
+      ]
+    },
+    {
+      "text": "Disappeared below.",
+      "start": 6.8,
+      "end": 8.82,
+      "words": [
+        {
+          "text": "Disappeared",
+          "start": 6.8,
+          "end": 7.86,
+          "source_start": 228.25,
+          "source_end": 229.31,
+          "confidence": "machine_aligned",
+          "listening_verified": false
+        },
+        {
+          "text": "below.",
+          "start": 7.86,
+          "end": 8.82,
+          "source_start": 229.31,
+          "source_end": 230.27,
+          "confidence": "machine_aligned",
+          "listening_verified": false
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "text": "The",
+      "start": 0.34,
+      "end": 1.37,
+      "source_start": 221.79,
+      "source_end": 222.82,
+      "confidence": "machine_aligned",
+      "listening_verified": false
+    },
+    {
+      "text": "waters",
+      "start": 1.37,
+      "end": 1.61,
+      "source_start": 222.82,
+      "source_end": 223.06,
+      "confidence": "machine_aligned",
+      "listening_verified": false
+    },
+    {
+      "text": "rose",
+      "start": 1.61,
+      "end": 1.91,
+      "source_start": 223.06,
+      "source_end": 223.36,
+      "confidence": "machine_aligned",
+      "listening_verified": false
+    },
+    {
+      "text": "above",
+      "start": 1.91,
+      "end": 2.29,
+      "source_start": 223.36,
+      "source_end": 223.74,
+      "confidence": "machine_aligned",
+      "listening_verified": false
+    },
+    {
+      "text": "them",
+      "start": 2.29,
+      "end": 2.75,
+      "source_start": 223.74,
+      "source_end": 224.2,
+      "confidence": "machine_aligned",
+      "listening_verified": false
+    },
+    {
+      "text": "Until",
+      "start": 2.75,
+      "end": 3.21,
+      "source_start": 224.2,
+      "source_end": 224.66,
+      "confidence": "machine_aligned",
+      "listening_verified": false
+    },
+    {
+      "text": "even",
+      "start": 3.21,
+      "end": 3.59,
+      "source_start": 224.66,
+      "source_end": 225.04,
+      "confidence": "machine_aligned",
+      "listening_verified": false
+    },
+    {
+      "text": "the",
+      "start": 3.59,
+      "end": 3.9,
+      "source_start": 225.04,
+      "source_end": 225.35,
+      "confidence": "machine_aligned",
+      "listening_verified": false
+    },
+    {
+      "text": "highest",
+      "start": 3.9,
+      "end": 4.3,
+      "source_start": 225.35,
+      "source_end": 225.75,
+      "confidence": "machine_aligned",
+      "listening_verified": false
+    },
+    {
+      "text": "ground",
+      "start": 5.55,
+      "end": 6.0,
+      "source_start": 227.0,
+      "source_end": 227.45,
+      "confidence": "interpolated_unverified",
+      "listening_verified": false
+    },
+    {
+      "text": "Disappeared",
+      "start": 6.8,
+      "end": 7.86,
+      "source_start": 228.25,
+      "source_end": 229.31,
+      "confidence": "machine_aligned",
+      "listening_verified": false
+    },
+    {
+      "text": "below.",
+      "start": 7.86,
+      "end": 8.82,
+      "source_start": 229.31,
+      "source_end": 230.27,
+      "confidence": "machine_aligned",
+      "listening_verified": false
+    }
+  ],
+  "beats": [
+    0.022,
+    0.579,
+    1.136,
+    1.717,
+    2.274,
+    2.808,
+    3.366,
+    3.923,
+    4.457,
+    5.037,
+    5.571,
+    6.129,
+    6.686,
+    7.22,
+    7.777,
+    8.335,
+    8.869,
+    9.449,
+    9.983
+  ],
+  "bar_markers_assumed_four_four": [
+    1.136,
+    3.366,
+    5.571,
+    7.777,
+    9.983
+  ],
+  "existing_effect_cue_events": {
+    "flashes": [
+      {
+        "time": 0.0219,
+        "source_time": 221.4719274376417
+      },
+      {
+        "time": 0.5792,
+        "source_time": 222.02920634920636
+      },
+      {
+        "time": 1.1133,
+        "source_time": 222.56326530612245
+      },
+      {
+        "time": 2.1349,
+        "source_time": 223.5849433106576
+      },
+      {
+        "time": 2.7851,
+        "source_time": 224.23510204081632
+      },
+      {
+        "time": 3.3424,
+        "source_time": 224.79238095238094
+      },
+      {
+        "time": 5.5483,
+        "source_time": 226.99827664399092
+      },
+      {
+        "time": 6.1056,
+        "source_time": 227.55555555555554
+      },
+      {
+        "time": 6.6628,
+        "source_time": 228.1128344671202
+      },
+      {
+        "time": 7.1969,
+        "source_time": 228.64689342403628
+      },
+      {
+        "time": 8.8687,
+        "source_time": 230.31873015873015
+      },
+      {
+        "time": 9.9601,
+        "source_time": 231.41006802721088
+      }
+    ],
+    "shakes": [
+      {
+        "time": 0.08,
+        "source_time": 221.52997732426303
+      },
+      {
+        "time": 4.5266,
+        "source_time": 225.97659863945577
+      },
+      {
+        "time": 8.9384,
+        "source_time": 230.38839002267574
+      }
+    ],
+    "pulses": [
+      {
+        "time": 1.4151,
+        "source_time": 222.86512471655328
+      },
+      {
+        "time": 6.3842,
+        "source_time": 227.83419501133787
+      }
+    ]
+  },
+  "remeasured_onsets": [
+    {
+      "time": 0.0697,
+      "source_time": 221.5197,
+      "strength": 18.9916,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 0.3019,
+      "source_time": 221.7519,
+      "strength": 6.4871,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 0.5805,
+      "source_time": 222.0305,
+      "strength": 11.5696,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 0.8591,
+      "source_time": 222.3091,
+      "strength": 7.5261,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 1.1146,
+      "source_time": 222.5646,
+      "strength": 10.4722,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 1.3003,
+      "source_time": 222.7503,
+      "strength": 2.704,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 1.4164,
+      "source_time": 222.8664,
+      "strength": 6.091,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 1.7183,
+      "source_time": 223.1683,
+      "strength": 3.8125,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 1.9273,
+      "source_time": 223.3773,
+      "strength": 4.953,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 1.9969,
+      "source_time": 223.4469,
+      "strength": 3.7629,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 2.1362,
+      "source_time": 223.5862,
+      "strength": 7.5452,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 2.2523,
+      "source_time": 223.7023,
+      "strength": 4.0167,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 2.4149,
+      "source_time": 223.8649,
+      "strength": 3.1602,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 2.531,
+      "source_time": 223.981,
+      "strength": 3.0654,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 2.7864,
+      "source_time": 224.2364,
+      "strength": 6.8078,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 3.0418,
+      "source_time": 224.4918,
+      "strength": 8.5674,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 3.1115,
+      "source_time": 224.5615,
+      "strength": 4.1773,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 3.3437,
+      "source_time": 224.7937,
+      "strength": 8.3432,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 3.5527,
+      "source_time": 225.0027,
+      "strength": 3.0244,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 3.7616,
+      "source_time": 225.2116,
+      "strength": 4.2128,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 3.9242,
+      "source_time": 225.3742,
+      "strength": 3.2143,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 4.435,
+      "source_time": 225.885,
+      "strength": 3.8437,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 4.7369,
+      "source_time": 226.1869,
+      "strength": 3.3238,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 5.0155,
+      "source_time": 226.4655,
+      "strength": 4.7389,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 5.2941,
+      "source_time": 226.7441,
+      "strength": 3.9516,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 5.5496,
+      "source_time": 226.9996,
+      "strength": 11.6504,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 5.8282,
+      "source_time": 227.2782,
+      "strength": 4.0812,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 6.1068,
+      "source_time": 227.5568,
+      "strength": 8.9443,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 6.3855,
+      "source_time": 227.8355,
+      "strength": 5.8927,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 6.6641,
+      "source_time": 228.1141,
+      "strength": 8.2716,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 6.9428,
+      "source_time": 228.3928,
+      "strength": 7.2365,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 7.1982,
+      "source_time": 228.6482,
+      "strength": 8.0363,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 7.4072,
+      "source_time": 228.8572,
+      "strength": 2.6333,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 7.5233,
+      "source_time": 228.9733,
+      "strength": 4.0439,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 7.7555,
+      "source_time": 229.2055,
+      "strength": 5.9116,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 8.0573,
+      "source_time": 229.5073,
+      "strength": 3.9766,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 8.1966,
+      "source_time": 229.6466,
+      "strength": 4.6442,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 8.3127,
+      "source_time": 229.7627,
+      "strength": 5.0425,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 8.5914,
+      "source_time": 230.0414,
+      "strength": 3.4342,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 8.87,
+      "source_time": 230.32,
+      "strength": 14.9827,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 9.1487,
+      "source_time": 230.5987,
+      "strength": 6.828,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 9.4273,
+      "source_time": 230.8773,
+      "strength": 9.5935,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 9.7059,
+      "source_time": 231.1559,
+      "strength": 7.7229,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 9.9614,
+      "source_time": 231.4114,
+      "strength": 10.2405,
+      "kind": "spectral_onset"
+    }
+  ],
+  "strongest_spectral_onsets": [
+    {
+      "time": 0.0697,
+      "source_time": 221.5197,
+      "strength": 18.9916,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 8.87,
+      "source_time": 230.32,
+      "strength": 14.9827,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 5.5496,
+      "source_time": 226.9996,
+      "strength": 11.6504,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 0.5805,
+      "source_time": 222.0305,
+      "strength": 11.5696,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 1.1146,
+      "source_time": 222.5646,
+      "strength": 10.4722,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 9.9614,
+      "source_time": 231.4114,
+      "strength": 10.2405,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 9.4273,
+      "source_time": 230.8773,
+      "strength": 9.5935,
+      "kind": "spectral_onset"
+    },
+    {
+      "time": 6.1068,
+      "source_time": 227.5568,
+      "strength": 8.9443,
+      "kind": "spectral_onset"
+    }
+  ],
+  "strongest_sub_bass_peaks": [
+    {
+      "time": 8.9397,
+      "source_time": 230.3897,
+      "rms": 0.572111,
+      "kind": "sub_bass_energy_peak"
+    },
+    {
+      "time": 0.0813,
+      "source_time": 221.5313,
+      "rms": 0.521563,
+      "kind": "sub_bass_energy_peak"
+    },
+    {
+      "time": 4.5279,
+      "source_time": 225.9779,
+      "rms": 0.517241,
+      "kind": "sub_bass_energy_peak"
+    },
+    {
+      "time": 9.9149,
+      "source_time": 231.3649,
+      "rms": 0.410352,
+      "kind": "sub_bass_energy_peak"
+    },
+    {
+      "time": 1.0681,
+      "source_time": 222.5181,
+      "rms": 0.386737,
+      "kind": "sub_bass_energy_peak"
+    },
+    {
+      "time": 9.3693,
+      "source_time": 230.8193,
+      "rms": 0.380166,
+      "kind": "sub_bass_energy_peak"
+    },
+    {
+      "time": 0.5224,
+      "source_time": 221.9724,
+      "rms": 0.350824,
+      "kind": "sub_bass_energy_peak"
+    },
+    {
+      "time": 5.387,
+      "source_time": 226.837,
+      "rms": 0.338837,
+      "kind": "sub_bass_energy_peak"
+    }
+  ],
+  "creative_note": "Use 3 semantic gestures: WATERS/ROSE ascend; HIGHEST GROUND forms a crest; DISAPPEARED BELOW submerges into an occluding waterline. Keep beat accents subordinate to readable word onset. 0.34s lead and 1.18s final hold.",
+  "audio_quality": {
+    "samples_per_channel": 480000,
+    "sample_peak_dbfs": -4.444,
+    "rms_dbfs": -14.618,
+    "nonfinite_samples": 0,
+    "sample_peak_clipped_count": 0,
+    "processing": "Exact PCM trim only; no gain, compression, fades, or added sound."
+  },
+  "independent_asr_passes": [
+    {
+      "name": "base.en_clip",
+      "engine": "Homebrew openai-whisper 20250625_3; CPU, English, word timestamps",
+      "prompted_with_supplied_lyrics": false,
+      "transcript": "The waters rose above them, until even the highest ground disappeared below",
+      "words": [
+        {
+          "text": "The",
+          "start": 0.0,
+          "end": 1.28,
+          "token_probability": 0.552789
+        },
+        {
+          "text": "waters",
+          "start": 1.28,
+          "end": 1.5,
+          "token_probability": 0.745767
+        },
+        {
+          "text": "rose",
+          "start": 1.5,
+          "end": 1.8,
+          "token_probability": 0.956054
+        },
+        {
+          "text": "above",
+          "start": 1.8,
+          "end": 2.18,
+          "token_probability": 0.998878
+        },
+        {
+          "text": "them,",
+          "start": 2.18,
+          "end": 2.48,
+          "token_probability": 0.986546
+        },
+        {
+          "text": "until",
+          "start": 2.78,
+          "end": 3.1,
+          "token_probability": 0.821298
+        },
+        {
+          "text": "even",
+          "start": 3.1,
+          "end": 3.52,
+          "token_probability": 0.917507
+        },
+        {
+          "text": "the",
+          "start": 3.52,
+          "end": 3.7,
+          "token_probability": 0.995872
+        },
+        {
+          "text": "highest",
+          "start": 3.7,
+          "end": 4.12,
+          "token_probability": 0.932444
+        },
+        {
+          "text": "ground",
+          "start": 4.12,
+          "end": 4.56,
+          "token_probability": 0.9888
+        },
+        {
+          "text": "disappeared",
+          "start": 4.56,
+          "end": 7.36,
+          "token_probability": 0.834655
+        },
+        {
+          "text": "below",
+          "start": 7.36,
+          "end": 8.38,
+          "token_probability": 0.983051
+        }
+      ],
+      "warning": "Token probability describes recognized token certainty, not timestamp confidence."
+    },
+    {
+      "name": "small.en_context",
+      "engine": "Homebrew openai-whisper 20250625_3; CPU, English, word timestamps",
+      "prompted_with_supplied_lyrics": false,
+      "transcript": "And every high mountain beneath the whole heaven was covered The waters rose above them until even the highest ground Disappeared blue",
+      "words": [
+        {
+          "text": "The",
+          "start": 0.65,
+          "end": 1.31,
+          "token_probability": 0.872407
+        },
+        {
+          "text": "waters",
+          "start": 1.31,
+          "end": 1.59,
+          "token_probability": 0.896279
+        },
+        {
+          "text": "rose",
+          "start": 1.59,
+          "end": 1.89,
+          "token_probability": 0.996539
+        },
+        {
+          "text": "above",
+          "start": 1.89,
+          "end": 2.21,
+          "token_probability": 0.999105
+        },
+        {
+          "text": "them",
+          "start": 2.21,
+          "end": 2.73,
+          "token_probability": 0.997877
+        },
+        {
+          "text": "until",
+          "start": 2.73,
+          "end": 3.21,
+          "token_probability": 0.440023
+        },
+        {
+          "text": "even",
+          "start": 3.21,
+          "end": 3.55,
+          "token_probability": 0.977458
+        },
+        {
+          "text": "the",
+          "start": 3.55,
+          "end": 3.79,
+          "token_probability": 0.994208
+        },
+        {
+          "text": "highest",
+          "start": 3.79,
+          "end": 4.25,
+          "token_probability": 0.995987
+        },
+        {
+          "text": "ground",
+          "start": 4.25,
+          "end": 4.97,
+          "token_probability": 0.983494
+        },
+        {
+          "text": "Disappeared",
+          "start": 7.33,
+          "end": 7.99,
+          "token_probability": 0.871564
+        },
+        {
+          "text": "blue",
+          "start": 7.99,
+          "end": 8.53,
+          "token_probability": 0.903673
+        }
+      ],
+      "warning": "Token probability describes recognized token certainty, not timestamp confidence."
+    },
+    {
+      "name": "small.en_clip_prompted",
+      "engine": "Homebrew openai-whisper 20250625_3; CPU, English, word timestamps",
+      "prompted_with_supplied_lyrics": true,
+      "transcript": "The waters rose above them, until even the highest ground disappeared below.",
+      "words": [
+        {
+          "text": "The",
+          "start": 0.0,
+          "end": 1.3,
+          "token_probability": 0.7538
+        },
+        {
+          "text": "waters",
+          "start": 1.3,
+          "end": 1.6,
+          "token_probability": 0.862631
+        },
+        {
+          "text": "rose",
+          "start": 1.6,
+          "end": 1.9,
+          "token_probability": 0.990354
+        },
+        {
+          "text": "above",
+          "start": 1.9,
+          "end": 2.22,
+          "token_probability": 0.997737
+        },
+        {
+          "text": "them,",
+          "start": 2.22,
+          "end": 2.72,
+          "token_probability": 0.99409
+        },
+        {
+          "text": "until",
+          "start": 2.72,
+          "end": 3.22,
+          "token_probability": 0.474313
+        },
+        {
+          "text": "even",
+          "start": 3.22,
+          "end": 3.56,
+          "token_probability": 0.984469
+        },
+        {
+          "text": "the",
+          "start": 3.56,
+          "end": 3.8,
+          "token_probability": 0.994584
+        },
+        {
+          "text": "highest",
+          "start": 3.8,
+          "end": 4.24,
+          "token_probability": 0.996223
+        },
+        {
+          "text": "ground",
+          "start": 4.24,
+          "end": 5.0,
+          "token_probability": 0.982072
+        },
+        {
+          "text": "disappeared",
+          "start": 5.0,
+          "end": 7.72,
+          "token_probability": 0.28156
+        },
+        {
+          "text": "below.",
+          "start": 7.72,
+          "end": 8.54,
+          "token_probability": 0.910617
+        }
+      ],
+      "warning": "Token probability describes recognized token certainty, not timestamp confidence."
+    }
+  ],
+  "recommended_words": [
+    {
+      "text": "The",
+      "start": 0.65,
+      "end": 1.3,
+      "source_start": 222.1,
+      "source_end": 222.75,
+      "confidence": "boundary_uncertain_contextual_asr",
+      "listening_verified": false,
+      "legacy": {
+        "text": "The",
+        "start": 0.34,
+        "end": 1.37,
+        "source_start": 221.79,
+        "source_end": 222.82,
+        "confidence": "machine_aligned",
+        "listening_verified": false
+      }
+    },
+    {
+      "text": "waters",
+      "start": 1.3,
+      "end": 1.6,
+      "source_start": 222.75,
+      "source_end": 223.05,
+      "confidence": "three_pass_agreement_0.09s",
+      "listening_verified": false,
+      "legacy": {
+        "text": "waters",
+        "start": 1.37,
+        "end": 1.61,
+        "source_start": 222.82,
+        "source_end": 223.06,
+        "confidence": "machine_aligned",
+        "listening_verified": false
+      }
+    },
+    {
+      "text": "rose",
+      "start": 1.6,
+      "end": 1.9,
+      "source_start": 223.05,
+      "source_end": 223.35,
+      "confidence": "three_pass_agreement_0.11s",
+      "listening_verified": false,
+      "legacy": {
+        "text": "rose",
+        "start": 1.61,
+        "end": 1.91,
+        "source_start": 223.06,
+        "source_end": 223.36,
+        "confidence": "machine_aligned",
+        "listening_verified": false
+      }
+    },
+    {
+      "text": "above",
+      "start": 1.9,
+      "end": 2.22,
+      "source_start": 223.35,
+      "source_end": 223.67,
+      "confidence": "three_pass_agreement_0.11s",
+      "listening_verified": false,
+      "legacy": {
+        "text": "above",
+        "start": 1.91,
+        "end": 2.29,
+        "source_start": 223.36,
+        "source_end": 223.74,
+        "confidence": "machine_aligned",
+        "listening_verified": false
+      }
+    },
+    {
+      "text": "them",
+      "start": 2.22,
+      "end": 2.73,
+      "source_start": 223.67,
+      "source_end": 224.18,
+      "confidence": "three_pass_agreement_0.11s",
+      "listening_verified": false,
+      "legacy": {
+        "text": "them",
+        "start": 2.29,
+        "end": 2.75,
+        "source_start": 223.74,
+        "source_end": 224.2,
+        "confidence": "machine_aligned",
+        "listening_verified": false
+      }
+    },
+    {
+      "text": "Until",
+      "start": 2.73,
+      "end": 3.22,
+      "source_start": 224.18,
+      "source_end": 224.67,
+      "confidence": "three_pass_agreement_0.06s",
+      "listening_verified": false,
+      "legacy": {
+        "text": "Until",
+        "start": 2.75,
+        "end": 3.21,
+        "source_start": 224.2,
+        "source_end": 224.66,
+        "confidence": "machine_aligned",
+        "listening_verified": false
+      }
+    },
+    {
+      "text": "even",
+      "start": 3.22,
+      "end": 3.56,
+      "source_start": 224.67,
+      "source_end": 225.01,
+      "confidence": "three_pass_agreement_0.12s",
+      "listening_verified": false,
+      "legacy": {
+        "text": "even",
+        "start": 3.21,
+        "end": 3.59,
+        "source_start": 224.66,
+        "source_end": 225.04,
+        "confidence": "machine_aligned",
+        "listening_verified": false
+      }
+    },
+    {
+      "text": "the",
+      "start": 3.56,
+      "end": 3.8,
+      "source_start": 225.01,
+      "source_end": 225.25,
+      "confidence": "three_pass_agreement_0.07s",
+      "listening_verified": false,
+      "legacy": {
+        "text": "the",
+        "start": 3.59,
+        "end": 3.9,
+        "source_start": 225.04,
+        "source_end": 225.35,
+        "confidence": "machine_aligned",
+        "listening_verified": false
+      }
+    },
+    {
+      "text": "highest",
+      "start": 3.8,
+      "end": 4.24,
+      "source_start": 225.25,
+      "source_end": 225.69,
+      "confidence": "three_pass_agreement_0.20s",
+      "listening_verified": false,
+      "legacy": {
+        "text": "highest",
+        "start": 3.9,
+        "end": 4.3,
+        "source_start": 225.35,
+        "source_end": 225.75,
+        "confidence": "machine_aligned",
+        "listening_verified": false
+      }
+    },
+    {
+      "text": "ground",
+      "start": 4.24,
+      "end": 5.0,
+      "source_start": 225.69,
+      "source_end": 226.45,
+      "confidence": "corrected_from_two_small_en_passes_within_0.01s",
+      "listening_verified": false,
+      "legacy": {
+        "text": "ground",
+        "start": 5.55,
+        "end": 6.0,
+        "source_start": 227.0,
+        "source_end": 227.45,
+        "confidence": "interpolated_unverified",
+        "listening_verified": false
+      }
+    },
+    {
+      "text": "Disappeared",
+      "start": 6.8,
+      "end": 7.86,
+      "source_start": 228.25,
+      "source_end": 229.31,
+      "confidence": "legacy_matched_start_retained_other_passes_absorb_silence_or_delay_0.53s",
+      "listening_verified": false,
+      "legacy": {
+        "text": "Disappeared",
+        "start": 6.8,
+        "end": 7.86,
+        "source_start": 228.25,
+        "source_end": 229.31,
+        "confidence": "machine_aligned",
+        "listening_verified": false
+      }
+    },
+    {
+      "text": "below.",
+      "start": 7.86,
+      "end": 8.54,
+      "source_start": 229.31,
+      "source_end": 229.99,
+      "confidence": "legacy_onset_retained_small_en_bracket_7.72_to_7.99",
+      "listening_verified": false,
+      "legacy": {
+        "text": "below.",
+        "start": 7.86,
+        "end": 8.82,
+        "source_start": 229.31,
+        "source_end": 230.27,
+        "confidence": "machine_aligned",
+        "listening_verified": false
+      }
+    }
+  ],
+  "recommended_timing_policy": "Use recommended_words for visual word onsets. Ground was corrected with independent evidence. The and Disappeared/Below retain explicit uncertainty; avoid a sharp word-disassembly effect exactly at those uncertain onsets. The beat grid and DSP accents are independent of ASR uncertainty.",
+  "recommended_accents": [
+    {
+      "time": 0.0813,
+      "source_time": 221.5313,
+      "meaning": "Opening bass attack; bring world into view before first lyric."
+    },
+    {
+      "time": 4.5279,
+      "source_time": 225.9779,
+      "meaning": "Strong bass near ground; crest/height reveal."
+    },
+    {
+      "time": 8.87,
+      "source_time": 230.32,
+      "meaning": "Closing spectral impact after below; settle/submerge."
+    },
+    {
+      "time": 8.9397,
+      "source_time": 230.3897,
+      "meaning": "Strongest sub bass peak in clip; final resolution."
+    }
+  ]
+}

@@ -8,3 +8,10 @@ __pycache__/
 .pytest_cache/
 *.pt
 *.pth
+node_modules/
+output/
+projects/**/.render-cache/
+projects/**/.revisions/
+projects/**/out/
+
+projects/**/.review-cache/

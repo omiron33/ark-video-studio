@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "kind": "independent-visual-review",
+  "scope": "visual-only",
+  "status": "passed",
+  "reviewer": "motion_reference_research independent agent",
+  "threshold": 8,
+  "videoPath": "output/create-photo-proof/film.mp4",
+  "projectPath": "output/create-photo-proof/project/project.json",
+  "binding": {
+    "videoSha256": "6b653b14a49b3c14cf81d6febaf4d09b4c936c5c5f083137cbbfe4df7b924faf",
+    "projectHash": "8a6c8345a08ad7cf0c5a8c6b6fa5eff15f2cc98f1e222b7feab51ce374a6174e",
+    "rendererHash": "816bd0f35e518cb3807ecd348ac54d78656ce97bc2d657eebb151c58e97185cc",
+    "revisionHash": "d29b157db1af614865d3bef2931edfac40b3bf278ca34d2a4f6711b937d8df3d"
+  },
+  "scores": {
+    "lyricLegibility": 8.3,
+    "semanticMotion": 8.2,
+    "photorealism": 8,
+    "composition": 8.2,
+    "continuity": 8.1
+  },
+  "notes": "Independently inspected actual whole-film 4fps frames, dense 15fps O-counter transition, dense 20fps ending, full-resolution phrase/final frames, and full safe decode. No local-model grades were read. The requested drawn-water/terrain-to-photographic-flood progression works. Hero lyrics remain dominant and readable, amber accents cohere with the scene, portal stays registered, and foreground foam fully occludes the final words without resurfacing. Quiet intro, extended terrain hold, and photographic-composite water motion remain non-blocking limits. This is visual-only approval; bound machine audio measurements provide synchronization QA without a human listening requirement.",
+  "evidence": [
+    {
+      "path": "research/automatic-photo-evidence/full.jpg",
+      "sha256": "00a08be29592666695990997ecf0ba4321a7f5f34588b63f4a51e9b900b01988"
+    },
+    {
+      "path": "research/automatic-photo-evidence/transition.jpg",
+      "sha256": "79804489bbb4cd0870d3050ceeefd2f31da6193da966ca4ad9441b02661d80e0"
+    },
+    {
+      "path": "research/automatic-photo-evidence/ending.jpg",
+      "sha256": "a4466999104b1d8a6c81b151e329ad9bd70798751d5a461e9626ff03d148f84b"
+    },
+    {
+      "path": "research/automatic-photo-evidence/phrase.png",
+      "sha256": "ab3151c53f0fb58b00380778cf6c0d6c36c50a048a67813eeed20c9e07b5e6d3"
+    },
+    {
+      "path": "research/automatic-photo-evidence/last.png",
+      "sha256": "a4c2dfe242aabc4036325cb041b2ba8c6a805996ed66709d3bcb9c351293643d"
+    }
+  ],
+  "limitations": [
+    "Photographic ocean motion is a layered animated composite, not fluid simulation.",
+    "Quiet opening and terrain hold should vary across a longer film.",
+    "This evidence validates this particular ten-second output, not untested songs or styles."
+  ],
+  "reviewedAt": "2026-09-27T02:23:52.673Z"
+}

@@ -1,0 +1,585 @@
+{
+  "version": 1,
+  "id": "genesis7-water-study",
+  "title": "The waters rose",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "duration": 10,
+  "audio": {
+    "src": "assets/showcase.wav",
+    "offset": 0
+  },
+  "source": {
+    "title": "Genesis Chapter 7",
+    "start": 221.45,
+    "end": 231.45
+  },
+  "palette": {
+    "ink": "#061a20",
+    "paper": "#e8e1ce",
+    "accent": "#e77951",
+    "muted": "#7a9a9c"
+  },
+  "assets": {
+    "flood": {
+      "type": "image",
+      "src": "assets/flood-gpt.png"
+    },
+    "display": {
+      "type": "font",
+      "src": "assets/BebasNeue-Regular.ttf",
+      "family": "Bebas Neue"
+    },
+    "serif": {
+      "type": "font",
+      "src": "assets/CormorantGaramond.ttf",
+      "family": "Cormorant Garamond"
+    },
+    "sans": {
+      "type": "font",
+      "src": "assets/ArchivoBlack-Regular.ttf",
+      "family": "Archivo Black"
+    },
+    "wave": {
+      "type": "image",
+      "src": "assets/wave-gpt.png"
+    }
+  },
+  "words": [
+    {
+      "id": "w01",
+      "text": "The",
+      "start": 1.242485,
+      "end": 1.322645,
+      "confidence": "machine_acoustic_verified",
+      "provenance": {
+        "sourceStart": 222.1,
+        "sourceEnd": 222.75,
+        "method": "local-whisper-crosscheck",
+        "alignmentNotes": "See research/audio-window.json",
+        "originalSourceInterval": [
+          221.79,
+          222.82
+        ],
+        "listeningVerified": false,
+        "audioReview": {
+          "previous": {
+            "text": "The",
+            "start": 0.65,
+            "end": 1.3
+          },
+          "method": "acoustic CTC alignment corroborated by independent ASR and AAC round-trip",
+          "confidence": 0.991727,
+          "evidence": "e7cbc6ed971b09b672eaddec862142942c4ac0f4bf65cbcf0184bc70dfc1fd05",
+          "createdAt": "2026-09-27T01:06:47.907Z"
+        }
+      }
+    },
+    {
+      "id": "w02",
+      "text": "waters",
+      "start": 1.362725,
+      "end": 1.643287,
+      "confidence": "machine_acoustic_verified",
+      "provenance": {
+        "sourceStart": 222.75,
+        "sourceEnd": 223.05,
+        "method": "local-whisper-crosscheck",
+        "alignmentNotes": "See research/audio-window.json",
+        "originalSourceInterval": [
+          222.82,
+          223.06
+        ],
+        "listeningVerified": false,
+        "audioReview": {
+          "previous": {
+            "text": "waters",
+            "start": 1.3,
+            "end": 1.6
+          },
+          "method": "acoustic CTC alignment corroborated by independent ASR and AAC round-trip",
+          "confidence": 0.923322,
+          "evidence": "a0585e15f13574fd268ad8730827be92b6cb102dcebbfcefa57755c8653f6529",
+          "createdAt": "2026-09-27T01:19:15.433Z"
+        }
+      }
+    },
+    {
+      "id": "w03",
+      "text": "rose",
+      "start": 1.703407,
+      "end": 1.923848,
+      "confidence": "machine_acoustic_verified",
+      "provenance": {
+        "sourceStart": 223.05,
+        "sourceEnd": 223.35,
+        "method": "local-whisper-crosscheck",
+        "alignmentNotes": "See research/audio-window.json",
+        "originalSourceInterval": [
+          223.06,
+          223.36
+        ],
+        "listeningVerified": false,
+        "audioReview": {
+          "previous": {
+            "text": "rose",
+            "start": 1.6,
+            "end": 1.9
+          },
+          "method": "acoustic CTC alignment corroborated by independent ASR and AAC round-trip",
+          "confidence": 0.951499,
+          "evidence": "a0585e15f13574fd268ad8730827be92b6cb102dcebbfcefa57755c8653f6529",
+          "createdAt": "2026-09-27T01:19:15.433Z"
+        }
+      }
+    },
+    {
+      "id": "w04",
+      "text": "above",
+      "start": 2.024048,
+      "end": 2.284569,
+      "confidence": "machine_acoustic_verified",
+      "provenance": {
+        "sourceStart": 223.35,
+        "sourceEnd": 223.67,
+        "method": "local-whisper-crosscheck",
+        "alignmentNotes": "See research/audio-window.json",
+        "originalSourceInterval": [
+          223.36,
+          223.74
+        ],
+        "listeningVerified": false,
+        "audioReview": {
+          "previous": {
+            "text": "above",
+            "start": 1.9,
+            "end": 2.22
+          },
+          "method": "acoustic CTC alignment corroborated by independent ASR and AAC round-trip",
+          "confidence": 0.99515,
+          "evidence": "e7cbc6ed971b09b672eaddec862142942c4ac0f4bf65cbcf0184bc70dfc1fd05",
+          "createdAt": "2026-09-27T01:06:47.907Z"
+        }
+      }
+    },
+    {
+      "id": "w05",
+      "text": "them",
+      "start": 2.364729,
+      "end": 2.48497,
+      "confidence": "machine_acoustic_verified",
+      "provenance": {
+        "sourceStart": 223.67,
+        "sourceEnd": 224.18,
+        "method": "local-whisper-crosscheck",
+        "alignmentNotes": "See research/audio-window.json",
+        "originalSourceInterval": [
+          223.74,
+          224.2
+        ],
+        "listeningVerified": false,
+        "audioReview": {
+          "previous": {
+            "text": "them",
+            "start": 2.22,
+            "end": 2.73
+          },
+          "method": "acoustic CTC alignment corroborated by independent ASR and AAC round-trip",
+          "confidence": 0.930482,
+          "evidence": "e7cbc6ed971b09b672eaddec862142942c4ac0f4bf65cbcf0184bc70dfc1fd05",
+          "createdAt": "2026-09-27T01:06:47.907Z"
+        }
+      }
+    },
+    {
+      "id": "w06",
+      "text": "Until",
+      "start": 2.885772,
+      "end": 3.266533,
+      "confidence": "machine_acoustic_verified",
+      "provenance": {
+        "sourceStart": 224.18,
+        "sourceEnd": 224.67,
+        "method": "local-whisper-crosscheck",
+        "alignmentNotes": "See research/audio-window.json",
+        "originalSourceInterval": [
+          224.2,
+          224.66
+        ],
+        "listeningVerified": false,
+        "audioReview": {
+          "previous": {
+            "text": "Until",
+            "start": 2.73,
+            "end": 3.22
+          },
+          "method": "acoustic CTC alignment corroborated by independent ASR and AAC round-trip",
+          "confidence": 0.817331,
+          "evidence": "e7cbc6ed971b09b672eaddec862142942c4ac0f4bf65cbcf0184bc70dfc1fd05",
+          "createdAt": "2026-09-27T01:06:47.907Z"
+        }
+      }
+    },
+    {
+      "id": "w07",
+      "text": "even",
+      "start": 3.426854,
+      "end": 3.587174,
+      "confidence": "machine_acoustic_verified",
+      "provenance": {
+        "sourceStart": 224.67,
+        "sourceEnd": 225.01,
+        "method": "local-whisper-crosscheck",
+        "alignmentNotes": "See research/audio-window.json",
+        "originalSourceInterval": [
+          224.66,
+          225.04
+        ],
+        "listeningVerified": false,
+        "audioReview": {
+          "previous": {
+            "text": "even",
+            "start": 3.22,
+            "end": 3.56
+          },
+          "method": "acoustic CTC alignment corroborated by independent ASR and AAC round-trip",
+          "confidence": 0.702263,
+          "evidence": "e7cbc6ed971b09b672eaddec862142942c4ac0f4bf65cbcf0184bc70dfc1fd05",
+          "createdAt": "2026-09-27T01:06:47.907Z"
+        }
+      }
+    },
+    {
+      "id": "w08",
+      "text": "the",
+      "start": 3.687375,
+      "end": 3.787575,
+      "confidence": "machine_acoustic_verified",
+      "provenance": {
+        "sourceStart": 225.01,
+        "sourceEnd": 225.25,
+        "method": "local-whisper-crosscheck",
+        "alignmentNotes": "See research/audio-window.json",
+        "originalSourceInterval": [
+          225.04,
+          225.35
+        ],
+        "listeningVerified": false,
+        "audioReview": {
+          "previous": {
+            "text": "the",
+            "start": 3.56,
+            "end": 3.8
+          },
+          "method": "acoustic CTC alignment corroborated by independent ASR and AAC round-trip",
+          "confidence": 0.961439,
+          "evidence": "e7cbc6ed971b09b672eaddec862142942c4ac0f4bf65cbcf0184bc70dfc1fd05",
+          "createdAt": "2026-09-27T01:06:47.907Z"
+        }
+      }
+    },
+    {
+      "id": "w09",
+      "text": "highest",
+      "start": 3.867735,
+      "end": 4.308617,
+      "confidence": "machine_acoustic_verified",
+      "provenance": {
+        "sourceStart": 225.25,
+        "sourceEnd": 225.69,
+        "method": "local-whisper-crosscheck",
+        "alignmentNotes": "See research/audio-window.json",
+        "originalSourceInterval": [
+          225.35,
+          225.75
+        ],
+        "listeningVerified": false,
+        "audioReview": {
+          "previous": {
+            "text": "highest",
+            "start": 3.8,
+            "end": 4.24
+          },
+          "method": "acoustic CTC alignment corroborated by independent ASR and AAC round-trip",
+          "confidence": 0.936487,
+          "evidence": "a0585e15f13574fd268ad8730827be92b6cb102dcebbfcefa57755c8653f6529",
+          "createdAt": "2026-09-27T01:19:15.433Z"
+        }
+      }
+    },
+    {
+      "id": "w10",
+      "text": "ground",
+      "start": 4.408818,
+      "end": 4.92986,
+      "confidence": "machine_acoustic_verified",
+      "provenance": {
+        "sourceStart": 225.69,
+        "sourceEnd": 226.45,
+        "method": "local-whisper-crosscheck",
+        "alignmentNotes": "See research/audio-window.json",
+        "originalSourceInterval": [
+          227,
+          227.45
+        ],
+        "listeningVerified": false,
+        "audioReview": {
+          "previous": {
+            "text": "ground",
+            "start": 4.24,
+            "end": 5
+          },
+          "method": "acoustic CTC alignment corroborated by independent ASR and AAC round-trip",
+          "confidence": 0.941284,
+          "evidence": "e7cbc6ed971b09b672eaddec862142942c4ac0f4bf65cbcf0184bc70dfc1fd05",
+          "createdAt": "2026-09-27T01:06:47.907Z"
+        }
+      }
+    },
+    {
+      "id": "w11",
+      "text": "Disappeared",
+      "start": 7.194389,
+      "end": 8.056112,
+      "confidence": "machine_acoustic_verified",
+      "provenance": {
+        "sourceStart": 228.25,
+        "sourceEnd": 229.31,
+        "method": "local-whisper-crosscheck",
+        "alignmentNotes": "See research/audio-window.json",
+        "originalSourceInterval": [
+          228.25,
+          229.31
+        ],
+        "listeningVerified": false,
+        "audioReview": {
+          "previous": {
+            "text": "Disappeared",
+            "start": 6.8,
+            "end": 7.86
+          },
+          "method": "acoustic CTC alignment corroborated by independent ASR and AAC round-trip",
+          "confidence": 0.640726,
+          "evidence": "e7cbc6ed971b09b672eaddec862142942c4ac0f4bf65cbcf0184bc70dfc1fd05",
+          "createdAt": "2026-09-27T01:06:47.907Z"
+        }
+      }
+    },
+    {
+      "id": "w12",
+      "text": "below.",
+      "start": 8.156313,
+      "end": 8.537074,
+      "confidence": "machine_acoustic_verified",
+      "provenance": {
+        "sourceStart": 229.31,
+        "sourceEnd": 229.99,
+        "method": "local-whisper-crosscheck",
+        "alignmentNotes": "See research/audio-window.json",
+        "originalSourceInterval": [
+          229.31,
+          230.27
+        ],
+        "listeningVerified": false,
+        "audioReview": {
+          "previous": {
+            "text": "below.",
+            "start": 7.86,
+            "end": 8.54
+          },
+          "method": "acoustic CTC alignment corroborated by independent ASR and AAC round-trip",
+          "confidence": 0.352356,
+          "evidence": "e7cbc6ed971b09b672eaddec862142942c4ac0f4bf65cbcf0184bc70dfc1fd05",
+          "createdAt": "2026-09-27T01:06:47.907Z"
+        }
+      }
+    }
+  ],
+  "beats": [
+    {
+      "time": 0.022,
+      "strength": 1,
+      "kind": "detected_beat"
+    },
+    {
+      "time": 0.579,
+      "strength": 1,
+      "kind": "detected_beat"
+    },
+    {
+      "time": 1.136,
+      "strength": 1,
+      "kind": "detected_beat"
+    },
+    {
+      "time": 1.717,
+      "strength": 1,
+      "kind": "detected_beat"
+    },
+    {
+      "time": 2.274,
+      "strength": 1,
+      "kind": "detected_beat"
+    },
+    {
+      "time": 2.808,
+      "strength": 1,
+      "kind": "detected_beat"
+    },
+    {
+      "time": 3.366,
+      "strength": 1,
+      "kind": "detected_beat"
+    },
+    {
+      "time": 3.923,
+      "strength": 1,
+      "kind": "detected_beat"
+    },
+    {
+      "time": 4.457,
+      "strength": 1,
+      "kind": "detected_beat"
+    },
+    {
+      "time": 5.037,
+      "strength": 1,
+      "kind": "detected_beat"
+    },
+    {
+      "time": 5.571,
+      "strength": 1,
+      "kind": "detected_beat"
+    },
+    {
+      "time": 6.129,
+      "strength": 1,
+      "kind": "detected_beat"
+    },
+    {
+      "time": 6.686,
+      "strength": 1,
+      "kind": "detected_beat"
+    },
+    {
+      "time": 7.22,
+      "strength": 1,
+      "kind": "detected_beat"
+    },
+    {
+      "time": 7.777,
+      "strength": 1,
+      "kind": "detected_beat"
+    },
+    {
+      "time": 8.335,
+      "strength": 1,
+      "kind": "detected_beat"
+    },
+    {
+      "time": 8.869,
+      "strength": 1,
+      "kind": "detected_beat"
+    },
+    {
+      "time": 9.449,
+      "strength": 1,
+      "kind": "detected_beat"
+    },
+    {
+      "time": 9.983,
+      "strength": 1,
+      "kind": "detected_beat"
+    }
+  ],
+  "sections": [
+    {
+      "id": "waters-rise",
+      "start": 0,
+      "end": 2.7333333333333334,
+      "style": "rise",
+      "wordIds": [
+        "w01",
+        "w02",
+        "w03",
+        "w04",
+        "w05"
+      ],
+      "assetIds": [],
+      "seed": 17,
+      "direction": {
+        "label": "Genesis 7:19",
+        "roles": {
+          "lead": "w01",
+          "subject": "w02",
+          "verb": "w03",
+          "above": "w04",
+          "object": "w05"
+        },
+        "accent": "#e77951",
+        "marker": "VII"
+      }
+    },
+    {
+      "id": "highest-ground",
+      "start": 2.7333333333333334,
+      "end": 6.4,
+      "style": "terrain",
+      "wordIds": [
+        "w06",
+        "w07",
+        "w08",
+        "w09",
+        "w10"
+      ],
+      "assetIds": [
+        "flood",
+        "wave"
+      ],
+      "seed": 41,
+      "direction": {
+        "label": "Genesis 7:19",
+        "roles": {
+          "lead": [
+            "w06",
+            "w07",
+            "w08"
+          ],
+          "summit": "w09",
+          "ground": "w10"
+        },
+        "portalAt": 5.12,
+        "accent": "#e77951",
+        "scale": 1,
+        "marker": "VII"
+      }
+    },
+    {
+      "id": "disappeared-below",
+      "start": 6.4,
+      "end": 10,
+      "style": "submerge",
+      "wordIds": [
+        "w11",
+        "w12"
+      ],
+      "assetIds": [
+        "flood",
+        "wave"
+      ],
+      "seed": 73,
+      "direction": {
+        "label": "Genesis 7:19",
+        "roles": {
+          "verb": "w11",
+          "below": "w12"
+        },
+        "photo": "flood",
+        "submergeAt": 8.72,
+        "wave": "wave",
+        "marker": "VII"
+      }
+    }
+  ]
+}

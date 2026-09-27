@@ -1,0 +1,4 @@
+#!/bin/sh
+set -eu
+cd "$(dirname "$0")"
+exec node engine/cli.mjs serve --project "${1:-projects/genesis7/project.json}"

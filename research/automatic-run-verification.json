@@ -1,0 +1,535 @@
+{
+  "generatedAt": "2026-09-27T02:24:12.336Z",
+  "proofs": [
+    {
+      "id": "create-audio-only-proof",
+      "request": {
+        "sources": {
+          "audio": {
+            "path": "/Volumes/Code/ark-video-studio/projects/genesis7/assets/showcase.wav",
+            "sha256": "5aad29deb45baddb23843d381c50d64d4e796c7c20108cd8a46ebfb96b987367"
+          }
+        },
+        "stylePrompt": "Dark teal graphic kinetic typography. Luminous contours and restrained waves. Let words move with their meaning, and vary the scene composition while keeping every lyric clear.",
+        "offset": 0,
+        "duration": 10,
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "scale": 1
+      },
+      "status": "finished",
+      "automaticGate": {
+        "passed": true,
+        "status": "machine_verified",
+        "reasons": []
+      },
+      "currentGate": {
+        "passed": true,
+        "status": "independently_reviewed",
+        "reasons": []
+      },
+      "binding": {
+        "videoSha256": "0c8d5a9d547b5158047dce1335c92d622cc199ab519e4aaa691075538d86a790",
+        "projectHash": "5f9e0ee8c7901d8c37ed58860b5d1ba9aad976d0e9cc90e620453106b766d705",
+        "rendererHash": "816bd0f35e518cb3807ecd348ac54d78656ce97bc2d657eebb151c58e97185cc",
+        "revisionHash": "e0e6175526327a48b8a03e7dad229491db8d365bf18288a1f04eb678f44d3cab"
+      },
+      "automaticCompletedAt": "2026-09-27T02:17:15.727Z",
+      "cleanStart": "2026-09-27T02:15:00.066Z",
+      "cleanWallSeconds": 135.661,
+      "steps": [
+        {
+          "name": "plan",
+          "seconds": 12.266
+        },
+        {
+          "name": "render",
+          "seconds": 4.578
+        },
+        {
+          "name": "audio-review",
+          "seconds": 15.419
+        },
+        {
+          "name": "technical-review",
+          "seconds": 4.778
+        },
+        {
+          "name": "visual-review",
+          "seconds": 98.283
+        }
+      ],
+      "planner": {
+        "method": "local-language-model",
+        "evidencePath": "/Volumes/Code/ark-video-studio/output/create-audio-only-proof/plan.json"
+      },
+      "attemptCount": 6,
+      "finalExportSeconds": 4.575374958,
+      "exportSecondsIncluded": 4.575374958,
+      "requiredAssets": [],
+      "audioChecks": [
+        {
+          "id": "decoded_audio_match",
+          "passed": true,
+          "measured": {
+            "correlation": 0.999617,
+            "minSegmentCorrelation": 0.998366,
+            "gainDb": -0.020019,
+            "segments": [
+              {
+                "start": 0,
+                "correlation": 0.999644,
+                "gainDb": -0.030023
+              },
+              {
+                "start": 2,
+                "correlation": 0.999123,
+                "gainDb": -0.043423
+              },
+              {
+                "start": 4,
+                "correlation": 0.999704,
+                "gainDb": -0.015736
+              },
+              {
+                "start": 6,
+                "correlation": 0.998366,
+                "gainDb": -0.020827
+              },
+              {
+                "start": 8,
+                "correlation": 0.999833,
+                "gainDb": -0.009035
+              }
+            ]
+          }
+        },
+        {
+          "id": "audio_offset",
+          "passed": true,
+          "measured": {
+            "offsetSeconds": 0
+          }
+        },
+        {
+          "id": "audio_duration",
+          "passed": true,
+          "measured": {
+            "encodedSeconds": 10.005375,
+            "sourceSeconds": 10,
+            "expectedSeconds": 10
+          }
+        },
+        {
+          "id": "lyric_phrase_match",
+          "passed": true,
+          "measured": {
+            "windows": [
+              {
+                "start": 0,
+                "end": 10,
+                "sourceSimilarity": 1,
+                "encodedSimilarity": 1
+              }
+            ],
+            "error": null,
+            "canonicalTextReconciled": false
+          }
+        },
+        {
+          "id": "word_sync",
+          "passed": true,
+          "measured": {
+            "wordCount": 12,
+            "verifiedWords": 12,
+            "unsupportedWords": [],
+            "maxCueDelta": 0,
+            "maxEndDelta": 0,
+            "meanAcousticConfidence": 0.845339,
+            "repairs": [],
+            "error": null
+          }
+        }
+      ],
+      "audioCache": {
+        "directory": "/Volumes/Code/ark-video-studio/output/create-audio-only-proof/project/.review-cache/audio",
+        "hits": 6,
+        "misses": 0,
+        "rejectedEntries": 0
+      },
+      "localVisionScores": {
+        "lyricLegibility": 8,
+        "semanticMotion": 8,
+        "photorealism": 8,
+        "composition": 8,
+        "continuity": 8
+      },
+      "localVisionModel": "qwen3-vl:4b-instruct",
+      "localVisionScenes": [
+        {
+          "id": "scene-0eb6bba69231",
+          "scores": {
+            "lyricLegibility": 8,
+            "semanticMotion": 8,
+            "photorealism": 8,
+            "composition": 8,
+            "continuity": 8
+          },
+          "passed": true,
+          "provider": {
+            "endpoint": "http://127.0.0.1:11434",
+            "model": "qwen3-vl:4b-instruct",
+            "modelName": "qwen3-vl:4b-instruct",
+            "responseChannel": "content",
+            "method": "local-ollama",
+            "evalCount": 260,
+            "durationNs": 26899640625,
+            "attempts": []
+          }
+        },
+        {
+          "id": "scene-c3215a4c8e7d",
+          "scores": {
+            "lyricLegibility": 8,
+            "semanticMotion": 8,
+            "photorealism": 8,
+            "composition": 8,
+            "continuity": 8
+          },
+          "passed": true,
+          "provider": {
+            "endpoint": "http://127.0.0.1:11434",
+            "model": "qwen3-vl:4b-instruct",
+            "modelName": "qwen3-vl:4b-instruct",
+            "responseChannel": "content",
+            "method": "local-ollama",
+            "evalCount": 239,
+            "durationNs": 30396931708,
+            "attempts": []
+          }
+        },
+        {
+          "id": "scene-16bf10442a45",
+          "scores": {
+            "lyricLegibility": 8,
+            "semanticMotion": 8,
+            "photorealism": 8,
+            "composition": 8,
+            "continuity": 8
+          },
+          "passed": true,
+          "provider": {
+            "endpoint": "http://127.0.0.1:11434",
+            "model": "qwen3-vl:4b-instruct",
+            "modelName": "qwen3-vl:4b-instruct",
+            "responseChannel": "content",
+            "method": "local-ollama",
+            "evalCount": 169,
+            "durationNs": 27212119333,
+            "attempts": []
+          }
+        }
+      ],
+      "lyricVisibility": {
+        "status": "passed",
+        "coverage": {
+          "required": 12,
+          "observed": 12,
+          "ratio": 1,
+          "unresolved": []
+        },
+        "reportPath": "/Volumes/Code/ark-video-studio/output/create-audio-only-proof/review/attempt-06/visual/ocr/lyric-visibility.json"
+      },
+      "reportPaths": {
+        "run": "/Volumes/Code/ark-video-studio/output/create-audio-only-proof/run.json",
+        "gauntlet": "/Volumes/Code/ark-video-studio/output/create-audio-only-proof/review/attempt-06/gauntlet/review.json",
+        "audio": "/Volumes/Code/ark-video-studio/output/create-audio-only-proof/review/attempt-06/audio/audio-review.json",
+        "visual": "/Volumes/Code/ark-video-studio/output/create-audio-only-proof/review/attempt-06/visual/visual-review.json"
+      },
+      "runStartedAt": "2026-09-27T01:24:56.604Z",
+      "runCompletedAt": "2026-09-27T02:18:38.474Z",
+      "totalRecordedRunWallSeconds": 3221.87,
+      "timingScope": "clean resume; earlier development probes preserved separately"
+    },
+    {
+      "id": "create-photo-proof",
+      "request": {
+        "sources": {
+          "audio": {
+            "path": "/Volumes/Code/ark-video-studio/projects/genesis7/assets/showcase.wav",
+            "sha256": "5aad29deb45baddb23843d381c50d64d4e796c7c20108cd8a46ebfb96b987367"
+          },
+          "directionFile": {
+            "path": "/Volumes/Code/ark-video-studio/output/create-inputs/genesis7-photo-direction.json",
+            "sha256": "7101490b9ede7de30e94006bd777e2ea0a272fee794709b64a1cc549e81fc31e"
+          }
+        },
+        "stylePrompt": "Kinetic typography over drawn water and terrain, ending in photorealistic flood imagery. Teal and ivory with warm amber accents. Let words rise, ground open into water, and disappeared sink below after being sung. Keep every lyric clear.",
+        "offset": 0,
+        "duration": 10,
+        "fps": 30,
+        "width": 1920,
+        "height": 1080,
+        "scale": 1
+      },
+      "status": "finished",
+      "automaticGate": {
+        "passed": true,
+        "status": "machine_verified",
+        "reasons": []
+      },
+      "currentGate": {
+        "passed": true,
+        "status": "machine_verified",
+        "reasons": []
+      },
+      "binding": {
+        "videoSha256": "6b653b14a49b3c14cf81d6febaf4d09b4c936c5c5f083137cbbfe4df7b924faf",
+        "projectHash": "8a6c8345a08ad7cf0c5a8c6b6fa5eff15f2cc98f1e222b7feab51ce374a6174e",
+        "rendererHash": "816bd0f35e518cb3807ecd348ac54d78656ce97bc2d657eebb151c58e97185cc",
+        "revisionHash": "d29b157db1af614865d3bef2931edfac40b3bf278ca34d2a4f6711b937d8df3d"
+      },
+      "automaticCompletedAt": "2026-09-27T02:22:57.137Z",
+      "cleanStart": "2026-09-27T02:19:04.578Z",
+      "cleanWallSeconds": 232.559,
+      "steps": [
+        {
+          "name": "align",
+          "seconds": 9.815
+        },
+        {
+          "name": "measure-audio",
+          "seconds": 0.038
+        },
+        {
+          "name": "import",
+          "seconds": 0.06
+        },
+        {
+          "name": "plan",
+          "seconds": 18.761
+        },
+        {
+          "name": "render",
+          "seconds": 3.943
+        },
+        {
+          "name": "audio-review",
+          "seconds": 62.828
+        },
+        {
+          "name": "replan-after-lyric-repair",
+          "seconds": 12.471
+        },
+        {
+          "name": "render",
+          "seconds": 5.376
+        },
+        {
+          "name": "audio-review",
+          "seconds": 6.788
+        },
+        {
+          "name": "technical-review",
+          "seconds": 5.343
+        },
+        {
+          "name": "visual-review",
+          "seconds": 106.774
+        }
+      ],
+      "planner": {
+        "method": "local-language-model",
+        "evidencePath": "/Volumes/Code/ark-video-studio/output/create-photo-proof/review/attempt-01/replan.json"
+      },
+      "attemptCount": 2,
+      "finalExportSeconds": 5.3741102079999985,
+      "exportSecondsIncluded": 9.314880833,
+      "requiredAssets": [],
+      "audioChecks": [
+        {
+          "id": "decoded_audio_match",
+          "passed": true,
+          "measured": {
+            "correlation": 0.999617,
+            "minSegmentCorrelation": 0.998366,
+            "gainDb": -0.020019,
+            "segments": [
+              {
+                "start": 0,
+                "correlation": 0.999644,
+                "gainDb": -0.030023
+              },
+              {
+                "start": 2,
+                "correlation": 0.999123,
+                "gainDb": -0.043423
+              },
+              {
+                "start": 4,
+                "correlation": 0.999704,
+                "gainDb": -0.015736
+              },
+              {
+                "start": 6,
+                "correlation": 0.998366,
+                "gainDb": -0.020827
+              },
+              {
+                "start": 8,
+                "correlation": 0.999833,
+                "gainDb": -0.009035
+              }
+            ]
+          }
+        },
+        {
+          "id": "audio_offset",
+          "passed": true,
+          "measured": {
+            "offsetSeconds": 0
+          }
+        },
+        {
+          "id": "audio_duration",
+          "passed": true,
+          "measured": {
+            "encodedSeconds": 10.005375,
+            "sourceSeconds": 10,
+            "expectedSeconds": 10
+          }
+        },
+        {
+          "id": "lyric_phrase_match",
+          "passed": true,
+          "measured": {
+            "windows": [
+              {
+                "start": 0,
+                "end": 10,
+                "sourceSimilarity": 1,
+                "encodedSimilarity": 1
+              }
+            ],
+            "error": null,
+            "canonicalTextReconciled": false
+          }
+        },
+        {
+          "id": "word_sync",
+          "passed": true,
+          "measured": {
+            "wordCount": 12,
+            "verifiedWords": 12,
+            "unsupportedWords": [],
+            "maxCueDelta": 0,
+            "maxEndDelta": 0,
+            "meanAcousticConfidence": 0.845339,
+            "repairs": [],
+            "error": null
+          }
+        }
+      ],
+      "audioCache": {
+        "directory": "/Volumes/Code/ark-video-studio/output/create-photo-proof/project/.review-cache/audio",
+        "hits": 5,
+        "misses": 1,
+        "rejectedEntries": 0
+      },
+      "localVisionScores": {
+        "lyricLegibility": 8,
+        "semanticMotion": 8,
+        "photorealism": 8,
+        "composition": 8,
+        "continuity": 8
+      },
+      "localVisionModel": "qwen3-vl:4b-instruct",
+      "localVisionScenes": [
+        {
+          "id": "scene-0eb6bba69231",
+          "scores": {
+            "lyricLegibility": 8,
+            "semanticMotion": 8,
+            "photorealism": 8,
+            "composition": 8,
+            "continuity": 8
+          },
+          "passed": true,
+          "provider": {
+            "endpoint": "http://127.0.0.1:11434",
+            "model": "qwen3-vl:4b-instruct",
+            "modelName": "qwen3-vl:4b-instruct",
+            "responseChannel": "content",
+            "method": "local-ollama",
+            "evalCount": 295,
+            "durationNs": 28091956084,
+            "attempts": []
+          }
+        },
+        {
+          "id": "scene-c3215a4c8e7d",
+          "scores": {
+            "lyricLegibility": 8,
+            "semanticMotion": 8,
+            "photorealism": 8,
+            "composition": 8,
+            "continuity": 8
+          },
+          "passed": true,
+          "provider": {
+            "endpoint": "http://127.0.0.1:11434",
+            "model": "qwen3-vl:4b-instruct",
+            "modelName": "qwen3-vl:4b-instruct",
+            "responseChannel": "content",
+            "method": "local-ollama",
+            "evalCount": 270,
+            "durationNs": 32440036584,
+            "attempts": []
+          }
+        },
+        {
+          "id": "scene-16bf10442a45",
+          "scores": {
+            "lyricLegibility": 8,
+            "semanticMotion": 8,
+            "photorealism": 8,
+            "composition": 8,
+            "continuity": 8
+          },
+          "passed": true,
+          "provider": {
+            "endpoint": "http://127.0.0.1:11434",
+            "model": "qwen3-vl:4b-instruct",
+            "modelName": "qwen3-vl:4b-instruct",
+            "responseChannel": "content",
+            "method": "local-ollama",
+            "evalCount": 299,
+            "durationNs": 30432214583,
+            "attempts": []
+          }
+        }
+      ],
+      "lyricVisibility": {
+        "status": "passed",
+        "coverage": {
+          "required": 12,
+          "observed": 12,
+          "ratio": 1,
+          "unresolved": []
+        },
+        "reportPath": "/Volumes/Code/ark-video-studio/output/create-photo-proof/review/attempt-02/visual/ocr/lyric-visibility.json"
+      },
+      "reportPaths": {
+        "run": "/Volumes/Code/ark-video-studio/output/create-photo-proof/run.json",
+        "gauntlet": "/Volumes/Code/ark-video-studio/output/create-photo-proof/review/attempt-02/gauntlet/review.json",
+        "audio": "/Volumes/Code/ark-video-studio/output/create-photo-proof/review/attempt-02/audio/audio-review.json",
+        "visual": "/Volumes/Code/ark-video-studio/output/create-photo-proof/review/attempt-02/visual/visual-review.json"
+      },
+      "runStartedAt": "2026-09-27T02:19:04.576Z",
+      "runCompletedAt": "2026-09-27T02:22:57.138Z",
+      "totalRecordedRunWallSeconds": 232.562,
+      "timingScope": "fresh uninterrupted invocation"
+    }
+  ]
+}

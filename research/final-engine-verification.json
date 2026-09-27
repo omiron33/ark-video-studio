@@ -1,0 +1,21 @@
+{
+  "renderSha": "042772eae34ff971aecb8f6f5eaceb780bb5551ac8e1442d15c22b255b457d0d",
+  "status": "independently_reviewed",
+  "passed": true,
+  "quality": {
+    "technicalVerified": true,
+    "machineAudioVerified": true,
+    "machineVisualVerified": false,
+    "independentVisualReviewed": true,
+    "machineQualityVerified": false,
+    "syncBasis": "measured_local_audio_review",
+    "aestheticJudgment": "independent_review_passed"
+  },
+  "binding": {
+    "videoSha256": "042772eae34ff971aecb8f6f5eaceb780bb5551ac8e1442d15c22b255b457d0d",
+    "projectHash": "77158605c0d6875a140cf884355654b0a5e5ae1d31c0521fdd6c2e3bf8bc9b51",
+    "rendererHash": "816bd0f35e518cb3807ecd348ac54d78656ce97bc2d657eebb151c58e97185cc",
+    "revisionHash": "0be2f69c283b19801047e5618253e4087bf2b327115cccc97c551ef40a064217"
+  },
+  "audioReport": "/Volumes/Code/ark-video-studio/output/showcase-final-audio-cached/audio-review.json"
+}
