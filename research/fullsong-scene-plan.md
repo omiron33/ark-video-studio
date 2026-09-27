@@ -33,8 +33,8 @@ This map describes the current dark revision. It supersedes the initial provisio
 | g7-deep-breaks-open | 143.73–148.90 | story/rupture | drawn | The great deep broke open. The fountains beneath the earth Burst from their places, |
 | g7-heavens-open | 148.90–150.53 | story/rupture | timber | And the heavens opened above. |
 | g7-rain-poured | 150.53–154.77 | story/rain | drawn | Rain poured upon the earth For forty days And forty nights. |
-| g7-same-day-family | 154.77–159.07 | story/names | household | That same day Noah entered the ark, With Shem, Ham, And Japheth. |
-| g7-household-together | 159.07–162.00 | story/family | drawn | His wife was with him, And the wives of his sons. |
+| g7-same-day-family | 154.77–159.23 | story/names | household | That same day Noah entered the ark, With Shem, Ham, And Japheth. |
+| g7-household-together | 159.23–162.00 | story/family | drawn | His wife was with him, And the wives of his sons. |
 | g7-every-kind | 162.00–166.37 | story/pairs | animals | Every beast after its kind, Every animal after its kind, |
 | g7-ground-and-wing | 166.37–170.53 | story/birds | drawn | Every creature moving on the ground, Every bird and every winged thing. |
 | g7-two-by-two | 170.53–173.00 | story/pairs | drawn | They came to Noah, Two by two, |

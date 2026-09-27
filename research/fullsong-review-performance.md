@@ -13,8 +13,9 @@ The full film is **367.167 seconds, 1920 × 1080, 30 fps, 11,015 frames and 66 s
 | [Full pass03](../output/genesis7-full-pass03.mp4.render.json) | 166.54 s | 0 / 66 |
 | [Full pass04](../output/genesis7-full-pass04.mp4.render.json) | 168.44 s | 0 / 66 |
 | [Full pass05](../output/genesis7-full-pass05.mp4.render.json) | 27.51 s | 55 / 66 |
+| [Full pass06](../output/genesis7-full-pass06.mp4.render.json) | 10.04 s | 64 / 66 |
 
-Engine changes between passes 01–04 invalidated caches; those are **not** incremental-edit measurements. Pass 05 changed the closing title size and measured word intervals, rebuilt 11 scenes, and reused 55 unchanged scenes. Its 27.51 seconds is an actual full-film incremental-edit measurement. Export includes rendering, assembly, audio muxing and technical verification, but excludes art generation, alignment and quality review.
+Engine changes between passes 01–04 invalidated caches; those are **not** incremental-edit measurements. Pass 05 changed the closing title size and measured word intervals, rebuilt 11 scenes, and reused 55 unchanged scenes. Its 27.51 seconds is an actual full-film incremental-edit measurement. Pass 06 moves one shared cut by five frames, rebuilds two scenes and reuses 64; that full assembly took 10.04 seconds. Export includes rendering, assembly, audio muxing and technical verification, but excludes art generation, alignment and quality review.
 
 The earlier ten-second showcase separately measured **5.520 s cold**, **0.430 s unchanged** and **1.677 s for one section edit**, with the other two sections reused. Those historical renderer measurements demonstrate scoped cache reuse, not a full-song turnaround guarantee. See [the original benchmark](performance.md) and [machine-readable results](../output/cache-benchmark.json).
 
