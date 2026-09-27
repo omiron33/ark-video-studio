@@ -1,0 +1,24 @@
+{
+  "cliVersion": "0.8.79",
+  "node": "v24.12.0",
+  "npmSource": "https://www.npmjs.com/package/hyperframes",
+  "upstream": "https://github.com/heygen-com/hyperframes",
+  "skillSourceCommit": "950cccdac065442af4fe4ac2f1279fd910d8d28e",
+  "skills": [
+    "hyperframes",
+    "hyperframes-core",
+    "hyperframes-animation",
+    "hyperframes-cli",
+    "hyperframes-audio",
+    "hyperframes-creative",
+    "hyperframes-keyframes",
+    "hyperframes-registry",
+    "hyperframes-studio",
+    "media-use",
+    "music-to-video"
+  ],
+  "localRenderVerified": true,
+  "hostedRenderingUsed": false,
+  "telemetry": "disabled",
+  "optionalCloudAnalysis": "The first snapshot invocation auto-detected a Gemini key and attempted optional descriptions; all returned402 with no descriptions. Subsequent invocations unset GEMINI_API_KEY. No paid service was used to generate imagery, motion or the movie."
+}

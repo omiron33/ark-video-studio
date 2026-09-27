@@ -1,0 +1,17 @@
+{
+  "videoSha256": "615091dea0d016c94e8de6434553904802e338224ef92a3f0f921145bb740a79",
+  "rawOcrStatus": "failed",
+  "observed": 27,
+  "required": 28,
+  "exception": {
+    "wordId": "g4-l087-w03",
+    "text": "his",
+    "time": 17.866667,
+    "evidence": "ocr-his-native.png",
+    "evidenceSha256": "e031f4f3f8d698dcf3022f5e0b7ce47c5772031969184c3dd333ac502a272bdb",
+    "finding": "Native decoded frame visibly reads ADAM knew EVE his. Full word is clear and unclipped. Apple Vision consistently recognizes the italic h as b, returning bis. No source spelling or timing was changed.",
+    "reviewer": "Rook visual inspection of the exact native OCR evidence frame"
+  },
+  "decision": "accept_with_documented_ocr_false_negative",
+  "rawGateOverridden": false
+}

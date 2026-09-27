@@ -1,0 +1,12 @@
+{
+  "name": "genesis4-hyperframes-20s",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.8.79 preview",
+    "check": "npx --yes hyperframes@0.8.79 check",
+    "render": "npx --yes hyperframes@0.8.79 render",
+    "build": "node build.mjs",
+    "prepare": "node prepare.mjs"
+  }
+}

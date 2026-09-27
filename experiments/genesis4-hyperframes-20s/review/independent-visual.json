@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "independent non-author visual reviewer",
+  "reviewedAt": "2026-09-27T08:08:44.422777+00:00",
+  "decision": "accepted_for_separate_comparison_experiment",
+  "blockingFindings": [],
+  "artifact": {
+    "path": "/Users/shanefisher/Movies/Genesis4-hyperframes-20s-work/hyperframes.mp4",
+    "sha256": "615091dea0d016c94e8de6434553904802e338224ef92a3f0f921145bb740a79",
+    "durationSeconds": 20,
+    "sourceRangeSeconds": [
+      250.9,
+      270.9
+    ]
+  },
+  "baseline": {
+    "path": "/Users/shanefisher/Movies/Genesis4-hyperframes-20s-work/baseline.mp4",
+    "sha256": "8271e352e1baf6e358a4b9782674f4f9da31839d4e660c33639cf3594e5b449f",
+    "source": "accepted Genesis 4 v3 film excerpt"
+  },
+  "method": {
+    "sampleFps": 6,
+    "baselineFramesInspected": 120,
+    "initialExperimentFramesInspected": 120,
+    "initialExperimentSha256": "d6a7fcd8f2aa8c7dbacd319f714a48b6a9849e8ac6d3b27444176221b486f865",
+    "finalChangedEndingFramesInspected": 24,
+    "finalChangedEndingRangeSeconds": [
+      16,
+      20
+    ],
+    "chronologicalSheets": "/tmp/hf-independent-review",
+    "nativeResolutionFramesInspected": [
+      "initial experiment 4.833s",
+      "initial experiment 10.833s",
+      "initial experiment 18.167s",
+      "final experiment 18.333s"
+    ],
+    "scope": "All 20 seconds of both actual decoded movies reviewed chronologically at 6 fps, with native-resolution spot checks. Final rerender changed only ending type size/placement and interpretive heading scale; that complete changed 16\u201320s region was freshly decoded and reviewed. Earlier unchanged composition review is retained."
+  },
+  "comparison": {
+    "overall": "The experiment is a meaningful visual improvement in typography, spatial movement, dimensional graphics and transition staging. It is not an unconditional win in every dimension: the baseline is more uniform for reading and its fractured red numerals feel more scarred and gritty.",
+    "merits": [
+      "The rotating thick rings and slanted red forms add depth and visible motion without displacing active words.",
+      "Camera travel leads from grief to vengeance, Cain, Lamech and the large 77; pauses leave time to read between the moves.",
+      "Large expressive keywords, narrow uppercase accents and restrained italic connectors provide much stronger hierarchy than the baseline single treatment.",
+      "The red 77 grows through an impact-ring burst, turns pale, separates and reveals the Christ image. This is a clearer continuous transformation than the baseline hard scene change.",
+      "The photoreal Christ remains solid and human, and the restrained white finish supports the mercy interpretation."
+    ],
+    "tradeoffs": [
+      "The new geometry and smooth solid lettering look cleaner and more like modern motion posters; the baseline fractured numerals communicate physical violence more directly.",
+      "Mixed type sizes and moving spatial groups require slightly more visual tracking than the baseline consistently placed uppercase text.",
+      "Several short camera transitions have no visible lyric; they occur between phrase groups, with no sustained dead opening or long empty hold observed."
+    ],
+    "resolvedFinding": {
+      "rangeSeconds": [
+        16.7,
+        20
+      ],
+      "issue": "Initial ending made the sung Adam/Eve lyric markedly smaller than the interpretation heading.",
+      "correction": "Sung lyric enlarged and moved into a clear bottom band; interpretation heading reduced.",
+      "verification": "All 24 final ending samples plus a native-resolution frame show clear, unclipped lyrics with sufficient separation from Christ and the interpretation. No further revision required for this experiment."
+    }
+  },
+  "scoresOutOf10": {
+    "hyperframes": {
+      "readability": 8.8,
+      "motion": 8.7,
+      "story": 8.6,
+      "pacing": 8.3,
+      "polish": 8.6
+    },
+    "baseline": {
+      "readability": 9.0,
+      "motion": 6.7,
+      "story": 8.6,
+      "pacing": 7.7,
+      "polish": 7.9
+    },
+    "qualification": "Subjective visual scores for this 20-second excerpt only. Pacing score concerns visible motion/hold balance, not a claim of listening or beat accuracy."
+  },
+  "limitations": [
+    "No subjective hearing or sung-word alignment judgment was performed by this reviewer. Audio, timing and OCR checks are owned by the main review.",
+    "Sampling at 6 fps cannot rule out every one-frame artifact or establish full-speed perceived smoothness.",
+    "This comparison demonstrates what the authored experiment achieves; it does not establish that a different renderer automatically creates better art.",
+    "No claim is made about the unmodified remainder of the full song or phone playback."
+  ]
+}

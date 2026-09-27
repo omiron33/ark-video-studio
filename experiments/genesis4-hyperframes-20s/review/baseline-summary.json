@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "kind": "hyperframes-clip-comparison-review",
+  "createdAt": "2026-09-27T08:08:57.111Z",
+  "videoPath": "/Users/shanefisher/Movies/Genesis4-hyperframes-20s-work/baseline.mp4",
+  "videoSha256": "8271e352e1baf6e358a4b9782674f4f9da31839d4e660c33639cf3594e5b449f",
+  "sourceBinding": {
+    "projectPath": "/Volumes/Code/ark-video-studio/projects/genesis4-motion-v3/project.json",
+    "projectSha256": "88e9c2f494ed44416631243500f3da06285d4db64761b6fc5a10844535a15817",
+    "filmPath": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/film.mp4",
+    "filmSha256": "6f1d33843be71917ff109d834d536452fa6e8bba9d7b195c156cc7ea235097ca"
+  },
+  "compositionSource": [
+    {
+      "file": "animation.js",
+      "sha256": "85a6bf526ec11371b9f7929764b5e6c7e737312a08c606f646619ecbf2c5af69"
+    },
+    {
+      "file": "build.mjs",
+      "sha256": "a8acb3615328e32247ea262dd293230607210e7b91b1f8933b762507261a4ab4"
+    },
+    {
+      "file": "clip.json",
+      "sha256": "537506adce3394cbf3fcfb5e5b22d60a0c51c4d653c41647b6c3397de4c22b1b"
+    },
+    {
+      "file": "compare.mjs",
+      "sha256": "4704d8787d339f92f07625688d84edffc1aad89fe51b1842de4a8ec0620d1d68"
+    },
+    {
+      "file": "data.js",
+      "sha256": "9b15da7bc8813e6a46173aad3cac81eb05c324d38047c5ebb77763a5e203a7a1"
+    },
+    {
+      "file": "hyperframes.json",
+      "sha256": "d4aca0771e1b3b6be0e4a35c383adef396253f7fa81f59b39c261efc51a4bfea"
+    },
+    {
+      "file": "index.html",
+      "sha256": "19c746de9bcac8fd59ba6beded7cfcd7e57c41a9372c91e52cca4aaad045d96c"
+    },
+    {
+      "file": "package.json",
+      "sha256": "fc98874069bf9c6efe3d5244a2e7bf214ecd4aa130faa0ba455428ea8819641a"
+    },
+    {
+      "file": "prepare.mjs",
+      "sha256": "46f9fc4cf5e6b7452a7a4104ba1e0d8f47ec539cf0bf3b7caf35d294dbfb345b"
+    },
+    {
+      "file": "review.mjs",
+      "sha256": "016ad575f9e2ab10a864f9ef95fbe2684d642662cda39bcf3912c1e34a540a27"
+    }
+  ],
+  "checks": [
+    {
+      "id": "encoded_format",
+      "passed": true,
+      "measured": {
+        "width": 1920,
+        "height": 1080,
+        "codec": "h264",
+        "frames": "600",
+        "fps": "30/1",
+        "audioTracks": 1,
+        "audioCodec": "aac"
+      },
+      "threshold": {
+        "width": 1920,
+        "height": 1080,
+        "frames": 600,
+        "fps": "30/1",
+        "videoCodec": "h264",
+        "audioCodec": "aac",
+        "audioTracks": 1
+      }
+    },
+    {
+      "id": "full_decode",
+      "passed": true,
+      "measured": {
+        "frames": 600
+      }
+    },
+    {
+      "id": "decoded_audio_match",
+      "passed": true,
+      "measured": {
+        "correlation": 0.9996,
+        "minSegmentCorrelation": 0.999117,
+        "gainDb": -0.029748
+      },
+      "threshold": {
+        "minCorrelation": 0.985,
+        "minSegmentCorrelation": 0.97,
+        "maxGainDb": 0.75
+      }
+    },
+    {
+      "id": "audio_offset",
+      "passed": true,
+      "measured": {
+        "offsetSeconds": 0
+      },
+      "threshold": {
+        "maxSeconds": 0.035
+      }
+    },
+    {
+      "id": "audio_duration",
+      "passed": true,
+      "measured": {
+        "encoded": 20.01075,
+        "source": 20
+      },
+      "threshold": {
+        "expected": 20,
+        "maxError": 0.08
+      }
+    },
+    {
+      "id": "canonical_cues_unchanged",
+      "passed": true,
+      "measured": {
+        "count": 28,
+        "failures": []
+      }
+    },
+    {
+      "id": "original_unchanged",
+      "passed": true,
+      "measured": {
+        "source": {
+          "projectPath": "/Volumes/Code/ark-video-studio/projects/genesis4-motion-v3/project.json",
+          "projectSha256": "88e9c2f494ed44416631243500f3da06285d4db64761b6fc5a10844535a15817",
+          "filmPath": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/film.mp4",
+          "filmSha256": "6f1d33843be71917ff109d834d536452fa6e8bba9d7b195c156cc7ea235097ca"
+        }
+      }
+    },
+    {
+      "id": "reviewed_inputs_unchanged",
+      "passed": true,
+      "measured": {
+        "changedSources": []
+      }
+    }
+  ],
+  "limitations": [
+    "Waveform correlation measures decoded audio fidelity and lag, not subjective hearing.",
+    "Canonical cue preservation is not new acoustic verification. Prior unsupported sung-word alignment remains unsupported.",
+    "OCR proves only sampled recognition of encoded pixels, not aesthetic quality. Independent visual review is still required."
+  ],
+  "waveform": {
+    "correlation": 0.9996,
+    "offsetSeconds": 0,
+    "gainDb": -0.029748,
+    "sourceDuration": 20,
+    "encodedDuration": 20.01075,
+    "sourceRms": 0.288701,
+    "segments": [
+      {
+        "start": 0,
+        "correlation": 0.999513,
+        "gainDb": -0.031139
+      },
+      {
+        "start": 2,
+        "correlation": 0.999117,
+        "gainDb": -0.046369
+      },
+      {
+        "start": 4,
+        "correlation": 0.999544,
+        "gainDb": -0.035204
+      },
+      {
+        "start": 6,
+        "correlation": 0.9995,
+        "gainDb": -0.029168
+      },
+      {
+        "start": 8,
+        "correlation": 0.999642,
+        "gainDb": -0.033958
+      },
+      {
+        "start": 10,
+        "correlation": 0.999509,
+        "gainDb": -0.037
+      },
+      {
+        "start": 12,
+        "correlation": 0.999858,
+        "gainDb": -0.018241
+      },
+      {
+        "start": 14,
+        "correlation": 0.999799,
+        "gainDb": -0.023913
+      },
+      {
+        "start": 16,
+        "correlation": 0.999865,
+        "gainDb": -0.010245
+      },
+      {
+        "start": 18,
+        "correlation": 0.999734,
+        "gainDb": -0.029038
+      }
+    ],
+    "minSegmentCorrelation": 0.999117
+  },
+  "inheritedAcousticEvidence": {
+    "sourceReport": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/audio/audio-review.json",
+    "sourceReportSha256": "a920b79f8d8027b72255047bc3a07c4910717d1f30cc508c94a9db53b86614d4",
+    "boundToOriginalFilm": true,
+    "boundToOriginalAudio": true,
+    "status": "inherited_not_newly_certified",
+    "verified": 13,
+    "unsupported": 15,
+    "supportedFailures": 0
+  },
+  "contactSheet": "/Users/shanefisher/Movies/Genesis4-hyperframes-20s-work/review/baseline/contact-sheet.png",
+  "status": "technical_and_preservation_checks_passed",
+  "finalAcceptance": "pending_independent_visual_review",
+  "fullReport": "/Users/shanefisher/Movies/Genesis4-hyperframes-20s-work/review/baseline/review.json"
+}

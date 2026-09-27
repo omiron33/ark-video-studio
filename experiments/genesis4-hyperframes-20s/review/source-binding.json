@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-09-27T07:59:23.261Z",
+  "source": {
+    "projectPath": "/Volumes/Code/ark-video-studio/projects/genesis4-motion-v3/project.json",
+    "projectSha256": "88e9c2f494ed44416631243500f3da06285d4db64761b6fc5a10844535a15817",
+    "filmPath": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/film.mp4",
+    "filmSha256": "6f1d33843be71917ff109d834d536452fa6e8bba9d7b195c156cc7ea235097ca"
+  },
+  "after": {
+    "projectSha256": "88e9c2f494ed44416631243500f3da06285d4db64761b6fc5a10844535a15817",
+    "filmSha256": "6f1d33843be71917ff109d834d536452fa6e8bba9d7b195c156cc7ea235097ca"
+  },
+  "originalUnchanged": true,
+  "interval": {
+    "sourceStart": 250.9,
+    "sourceEnd": 270.9,
+    "startFrame": 7527,
+    "frames": 600,
+    "fps": 30,
+    "duration": 20
+  },
+  "clip": {
+    "words": 28,
+    "phrases": 5,
+    "beats": 55
+  },
+  "artifacts": {
+    "data": "data.js",
+    "canonicalData": "clip.json",
+    "song": "assets/song.wav",
+    "baseline": "/Users/shanefisher/Movies/Genesis4-hyperframes-20s-work/baseline.mp4"
+  },
+  "hashes": {
+    "songSha256": "18cb1e0e01880ab22b1a36fb8681dc79e7c5272f7d3e157c1a27988f73a1f645",
+    "baselineSha256": "8271e352e1baf6e358a4b9782674f4f9da31839d4e660c33639cf3594e5b449f",
+    "clipSha256": "537506adce3394cbf3fcfb5e5b22d60a0c51c4d653c41647b6c3397de4c22b1b"
+  }
+}

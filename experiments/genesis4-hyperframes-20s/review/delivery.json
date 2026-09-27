@@ -1,0 +1,39 @@
+{
+  "hyperframes": {
+    "id": "vid-20260927-da6e9f13",
+    "downloadUrl": "https://omipc.taild60b4e.ts.net/api/admin/videos/vid-20260927-da6e9f13/media?download=1",
+    "sha256": "615091dea0d016c94e8de6434553904802e338224ef92a3f0f921145bb740a79",
+    "status": "pending_review"
+  },
+  "sideBySide": {
+    "id": "vid-20260927-4100acee",
+    "downloadUrl": "https://omipc.taild60b4e.ts.net/api/admin/videos/vid-20260927-4100acee/media?download=1",
+    "sha256": "56b915939d052ba67cff0da93a84b26bf15dd633aaab5b7291837ccc2aa1c3b4",
+    "status": "pending_review"
+  },
+  "reviewUrl": "https://omipc.taild60b4e.ts.net/studio#videos",
+  "photos": {
+    "album": "Genesis 4 - HyperFrames 20s Comparison",
+    "items": 2,
+    "importVerified": true,
+    "standalonePlayback": "00:00 to00:20 in Photos UI",
+    "iPhoneVerified": false
+  },
+  "sourceRange": {
+    "start": 250.9,
+    "end": 270.9
+  },
+  "reviewDecision": "independent_visual_acceptance_with_one_documented_OCR_false_negative",
+  "strictOcrGate": "failed_27_of_28",
+  "acousticEvidence": "13supported,15unsupported inherited from source alignment; no new timing correction",
+  "originalFilmPreserved": true,
+  "mainEngineUnchanged": true,
+  "globalInstall": {
+    "machine": "Mac mini",
+    "hyperframes": "0.8.79",
+    "skillSourceCommit": "950cccdac065442af4fe4ac2f1279fd910d8d28e",
+    "skillsRoot": "/Users/shanefisher/.codex/skills"
+  },
+  "renderSeconds": 19.6,
+  "browserPlaybackVerified": "Side-by-side candidate played from0:00 to0:20 in live OmiPC review UI"
+}
