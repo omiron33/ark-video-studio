@@ -1,0 +1,1951 @@
+{
+  "wordCount": 498,
+  "phraseCount": 95,
+  "firstVocal": 10.940891,
+  "lastVocal": 299.149698,
+  "primaryMeanPosterior": 0.5246763654795815,
+  "lowPosteriorWords": 153,
+  "flaggedWords": 188,
+  "sections": [
+    {
+      "name": "Verse 1",
+      "start": 10.940891,
+      "end": 54.267285,
+      "phraseIds": [
+        "g4-l000",
+        "g4-l001",
+        "g4-l002",
+        "g4-l003",
+        "g4-l004",
+        "g4-l005",
+        "g4-l006",
+        "g4-l007",
+        "g4-l008",
+        "g4-l009",
+        "g4-l010",
+        "g4-l011"
+      ]
+    },
+    {
+      "name": "Pre-Chorus",
+      "start": 55.829351,
+      "end": 75.95553,
+      "phraseIds": [
+        "g4-l012",
+        "g4-l013",
+        "g4-l014",
+        "g4-l015",
+        "g4-l016",
+        "g4-l017",
+        "g4-l018"
+      ]
+    },
+    {
+      "name": "Crescendo",
+      "start": 77.437399,
+      "end": 91.173538,
+      "phraseIds": [
+        "g4-l019",
+        "g4-l020",
+        "g4-l021",
+        "g4-l022",
+        "g4-l023"
+      ]
+    },
+    {
+      "name": "Breakdown",
+      "start": 91.894357,
+      "end": 102.243361,
+      "phraseIds": [
+        "g4-l024",
+        "g4-l025",
+        "g4-l026",
+        "g4-l027"
+      ]
+    },
+    {
+      "name": "Chorus",
+      "start": 102.303397,
+      "end": 143.429411,
+      "phraseIds": [
+        "g4-l028",
+        "g4-l029",
+        "g4-l030",
+        "g4-l031",
+        "g4-l032",
+        "g4-l033",
+        "g4-l034",
+        "g4-l035",
+        "g4-l036",
+        "g4-l037",
+        "g4-l038",
+        "g4-l039",
+        "g4-l040",
+        "g4-l041",
+        "g4-l042"
+      ]
+    },
+    {
+      "name": "Bridge",
+      "start": 147.753499,
+      "end": 183.569486,
+      "phraseIds": [
+        "g4-l043",
+        "g4-l044",
+        "g4-l045",
+        "g4-l046",
+        "g4-l047",
+        "g4-l048",
+        "g4-l049",
+        "g4-l050",
+        "g4-l051",
+        "g4-l052",
+        "g4-l053",
+        "g4-l054",
+        "g4-l055"
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "start": 195.150763,
+      "end": 240.139654,
+      "phraseIds": [
+        "g4-l056",
+        "g4-l057",
+        "g4-l058",
+        "g4-l059",
+        "g4-l060",
+        "g4-l061",
+        "g4-l062",
+        "g4-l063",
+        "g4-l064",
+        "g4-l065",
+        "g4-l066",
+        "g4-l067",
+        "g4-l068",
+        "g4-l069",
+        "g4-l070",
+        "g4-l071",
+        "g4-l072",
+        "g4-l073",
+        "g4-l074",
+        "g4-l075",
+        "g4-l076",
+        "g4-l077",
+        "g4-l078"
+      ]
+    },
+    {
+      "name": "Climax",
+      "start": 240.540257,
+      "end": 264.563452,
+      "phraseIds": [
+        "g4-l079",
+        "g4-l080",
+        "g4-l081",
+        "g4-l082",
+        "g4-l083",
+        "g4-l084",
+        "g4-l085",
+        "g4-l086"
+      ]
+    },
+    {
+      "name": "Final Verse",
+      "start": 267.567011,
+      "end": 285.289424,
+      "phraseIds": [
+        "g4-l087",
+        "g4-l088",
+        "g4-l089",
+        "g4-l090"
+      ]
+    },
+    {
+      "name": "Outro",
+      "start": 287.300769,
+      "end": 299.149698,
+      "phraseIds": [
+        "g4-l091",
+        "g4-l092",
+        "g4-l093",
+        "g4-l094"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "g4-l000-w00",
+      "text": "Adam",
+      "start": 10.940891,
+      "end": 12.624291,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement",
+        "long_sung_interval_requires_review"
+      ]
+    },
+    {
+      "id": "g4-l000-w02",
+      "text": "his",
+      "start": 13.185425,
+      "end": 13.345749,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l000-w03",
+      "text": "wife",
+      "start": 13.40587,
+      "end": 13.766599,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l000-w04",
+      "text": "Eve;",
+      "start": 14.267611,
+      "end": 14.387854,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l001-w01",
+      "text": "conceived",
+      "start": 16.752012,
+      "end": 19.07479,
+      "issues": [
+        "long_sung_interval_requires_review"
+      ]
+    },
+    {
+      "id": "g4-l001-w04",
+      "text": "Cain.",
+      "start": 19.775629,
+      "end": 20.216156,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l002-w00",
+      "text": "I",
+      "start": 23.960635,
+      "end": 23.980659,
+      "issues": [
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l002-w01",
+      "text": "have",
+      "start": 24.080778,
+      "end": 24.24097,
+      "issues": [
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l002-w05",
+      "text": "through",
+      "start": 25.322263,
+      "end": 25.622623,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l002-w06",
+      "text": "God,",
+      "start": 25.722743,
+      "end": 26.123222,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l005-w03",
+      "text": "the",
+      "start": 36.672658,
+      "end": 36.792729,
+      "issues": [
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l006-w03",
+      "text": "Cain",
+      "start": 39.334243,
+      "end": 39.554374,
+      "issues": [
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l007-w00",
+      "text": "fruit",
+      "start": 40.214768,
+      "end": 40.615006,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l007-w03",
+      "text": "earth",
+      "start": 41.115304,
+      "end": 41.335435,
+      "issues": [
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l010-w02",
+      "text": "fatlings.",
+      "start": 48.119476,
+      "end": 48.779869,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l011-w06",
+      "text": "gifts.",
+      "start": 53.886781,
+      "end": 54.267285,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l012-w00",
+      "text": "But",
+      "start": 55.829351,
+      "end": 55.94951,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l012-w04",
+      "text": "sacrifices",
+      "start": 56.770596,
+      "end": 58.23253,
+      "issues": [
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l013-w00",
+      "text": "He",
+      "start": 59.113695,
+      "end": 59.213828,
+      "issues": [
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l013-w01",
+      "text": "did",
+      "start": 59.31396,
+      "end": 59.494199,
+      "issues": [
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l013-w02",
+      "text": "not",
+      "start": 59.654411,
+      "end": 59.914755,
+      "issues": [
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l013-w03",
+      "text": "regard.",
+      "start": 59.954808,
+      "end": 60.976159,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l014-w00",
+      "text": "Cain",
+      "start": 61.59698,
+      "end": 61.977483,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l014-w01",
+      "text": "was",
+      "start": 62.237828,
+      "end": 62.438093,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l015-w02",
+      "text": "fell",
+      "start": 65.161919,
+      "end": 65.582449,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l015-w03",
+      "text": "low.",
+      "start": 65.722626,
+      "end": 66.00298,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l016-w03",
+      "text": "asked",
+      "start": 68.546187,
+      "end": 69.106894,
+      "issues": [
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l016-w04",
+      "text": "Cain,",
+      "start": 69.16697,
+      "end": 69.667601,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l017-w04",
+      "text": "sorrowful?",
+      "start": 72.310934,
+      "end": 73.071894,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l018-w00",
+      "text": "Why",
+      "start": 73.252121,
+      "end": 73.412323,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l019-w02",
+      "text": "brought",
+      "start": 78.098232,
+      "end": 78.498737,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l019-w04",
+      "text": "rightly",
+      "start": 78.819141,
+      "end": 79.319773,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l020-w00",
+      "text": "but",
+      "start": 79.700501,
+      "end": 79.84066,
+      "issues": [
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l020-w01",
+      "text": "did",
+      "start": 79.900728,
+      "end": 80.000842,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l020-w02",
+      "text": "not",
+      "start": 80.06091,
+      "end": 80.221092,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l020-w03",
+      "text": "divide",
+      "start": 80.241115,
+      "end": 80.521433,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l020-w04",
+      "text": "it",
+      "start": 80.721661,
+      "end": 80.981957,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l020-w05",
+      "text": "rightly,",
+      "start": 81.082071,
+      "end": 81.522571,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l021-w00",
+      "text": "have",
+      "start": 82.063185,
+      "end": 82.343504,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l021-w01",
+      "text": "you",
+      "start": 82.403572,
+      "end": 82.503686,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l021-w02",
+      "text": "not",
+      "start": 82.723936,
+      "end": 82.964209,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l021-w03",
+      "text": "sinned?",
+      "start": 83.084346,
+      "end": 84.305734,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l022-w00",
+      "text": "Be",
+      "start": 84.365802,
+      "end": 84.525984,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l022-w01",
+      "text": "still;",
+      "start": 84.626098,
+      "end": 85.086621,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l022-w02",
+      "text": "he",
+      "start": 85.126667,
+      "end": 85.246803,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l022-w03",
+      "text": "shall",
+      "start": 85.406985,
+      "end": 85.687304,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l022-w04",
+      "text": "submit",
+      "start": 85.767395,
+      "end": 86.187873,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l022-w05",
+      "text": "to",
+      "start": 86.308009,
+      "end": 86.488214,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l022-w06",
+      "text": "you,",
+      "start": 86.508237,
+      "end": 86.648396,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l023-w00",
+      "text": "and",
+      "start": 87.18901,
+      "end": 87.389238,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l023-w01",
+      "text": "you",
+      "start": 88.270239,
+      "end": 88.370353,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l023-w02",
+      "text": "shall",
+      "start": 88.490489,
+      "end": 88.79083,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l023-w03",
+      "text": "rule",
+      "start": 88.810853,
+      "end": 89.351468,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l023-w04",
+      "text": "over",
+      "start": 90.052264,
+      "end": 90.632924,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l023-w05",
+      "text": "him.",
+      "start": 90.973311,
+      "end": 91.173538,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l024-w00",
+      "text": "Cain",
+      "start": 91.894357,
+      "end": 92.334858,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l024-w02",
+      "text": "to",
+      "start": 93.155791,
+      "end": 93.215859,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l027-w01",
+      "text": "killed",
+      "start": 100.462297,
+      "end": 101.242763,
+      "issues": [
+        "asr_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l028-w02",
+      "text": "God",
+      "start": 102.983804,
+      "end": 103.404055,
+      "issues": [
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l028-w03",
+      "text": "asked",
+      "start": 105.385239,
+      "end": 105.645395,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l028-w04",
+      "text": "Cain,",
+      "start": 105.725443,
+      "end": 105.825502,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l029-w00",
+      "text": "Where",
+      "start": 105.885538,
+      "end": 106.245754,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement",
+        "asr_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l029-w01",
+      "text": "is",
+      "start": 106.385837,
+      "end": 106.505909,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l029-w02",
+      "text": "Abel,",
+      "start": 106.645993,
+      "end": 106.866124,
+      "issues": [
+        "low_large_ctc_posterior",
+        "asr_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l029-w03",
+      "text": "your",
+      "start": 107.286376,
+      "end": 107.486495,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l029-w04",
+      "text": "brother?",
+      "start": 107.666603,
+      "end": 108.006806,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l030-w00",
+      "text": "I",
+      "start": 108.527117,
+      "end": 108.547129,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l030-w01",
+      "text": "do",
+      "start": 108.627177,
+      "end": 108.747249,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l030-w02",
+      "text": "not",
+      "start": 108.847309,
+      "end": 109.027416,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l030-w03",
+      "text": "know,",
+      "start": 109.087452,
+      "end": 109.387632,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l030-w05",
+      "text": "said;",
+      "start": 109.787871,
+      "end": 110.928553,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l031-w01",
+      "text": "I",
+      "start": 111.488888,
+      "end": 111.5089,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l031-w02",
+      "text": "my",
+      "start": 111.889127,
+      "end": 111.949163,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l031-w03",
+      "text": "brother's",
+      "start": 112.009199,
+      "end": 112.409438,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l031-w04",
+      "text": "keeper?",
+      "start": 112.449462,
+      "end": 112.929749,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l032-w00",
+      "text": "What",
+      "start": 114.130409,
+      "end": 114.270496,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l032-w01",
+      "text": "have",
+      "start": 114.330533,
+      "end": 114.47062,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l032-w02",
+      "text": "you",
+      "start": 114.490633,
+      "end": 114.590695,
+      "issues": [
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l032-w03",
+      "text": "done?",
+      "start": 114.650732,
+      "end": 115.171055,
+      "issues": [
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l032-w04",
+      "text": "the",
+      "start": 115.211079,
+      "end": 115.291129,
+      "issues": [
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l032-w05",
+      "text": "Lord",
+      "start": 115.431216,
+      "end": 115.751414,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l033-w01",
+      "text": "brother's",
+      "start": 116.972171,
+      "end": 117.372419,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l033-w02",
+      "text": "blood",
+      "start": 117.472481,
+      "end": 117.732643,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l033-w03",
+      "text": "has",
+      "start": 118.112878,
+      "end": 118.21294,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l033-w04",
+      "text": "a",
+      "start": 118.333015,
+      "end": 118.353027,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l033-w05",
+      "text": "voice;",
+      "start": 118.433077,
+      "end": 118.933387,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l034-w00",
+      "text": "it",
+      "start": 119.013437,
+      "end": 119.053462,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l034-w01",
+      "text": "cries",
+      "start": 119.093486,
+      "end": 119.633821,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l034-w02",
+      "text": "to",
+      "start": 119.673846,
+      "end": 119.773908,
+      "issues": [
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l034-w03",
+      "text": "Me",
+      "start": 119.853958,
+      "end": 120.014057,
+      "issues": [
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l034-w04",
+      "text": "from",
+      "start": 120.114119,
+      "end": 120.294231,
+      "issues": [
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l034-w05",
+      "text": "the",
+      "start": 120.37428,
+      "end": 120.574404,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l034-w06",
+      "text": "ground.",
+      "start": 120.594417,
+      "end": 120.934628,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l035-w00",
+      "text": "Now",
+      "start": 121.014677,
+      "end": 121.735124,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement",
+        "asr_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l035-w01",
+      "text": "you",
+      "start": 122.275459,
+      "end": 122.455571,
+      "issues": [
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l035-w02",
+      "text": "are",
+      "start": 122.595658,
+      "end": 122.675707,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l035-w03",
+      "text": "cursed",
+      "start": 122.715732,
+      "end": 122.995906,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l035-w06",
+      "text": "earth;",
+      "start": 123.496216,
+      "end": 123.976514,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l036-w00",
+      "text": "she",
+      "start": 123.996526,
+      "end": 124.1166,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l036-w01",
+      "text": "opened",
+      "start": 124.19665,
+      "end": 124.516849,
+      "issues": [
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l036-w02",
+      "text": "her",
+      "start": 124.536861,
+      "end": 124.716973,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l036-w03",
+      "text": "mouth",
+      "start": 124.756998,
+      "end": 125.017159,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l037-w00",
+      "text": "to",
+      "start": 125.057184,
+      "end": 125.137233,
+      "issues": [
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l037-w02",
+      "text": "your",
+      "start": 125.437419,
+      "end": 125.557494,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l037-w04",
+      "text": "blood",
+      "start": 126.097829,
+      "end": 127.978995,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement",
+        "long_sung_interval_requires_review"
+      ]
+    },
+    {
+      "id": "g4-l038-w02",
+      "text": "hand.",
+      "start": 128.859541,
+      "end": 129.159727,
+      "issues": [
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l039-w03",
+      "text": "the",
+      "start": 131.401365,
+      "end": 131.501432,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l039-w04",
+      "text": "earth,",
+      "start": 131.681553,
+      "end": 132.061807,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l040-w03",
+      "text": "longer",
+      "start": 133.662878,
+      "end": 134.123186,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l040-w05",
+      "text": "her",
+      "start": 134.603507,
+      "end": 134.743601,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l041-w02",
+      "text": "groan",
+      "start": 136.244605,
+      "end": 137.385368,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l041-w03",
+      "text": "and",
+      "start": 137.565489,
+      "end": 137.645542,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement",
+        "asr_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l041-w04",
+      "text": "tremble",
+      "start": 137.705582,
+      "end": 140.327336,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement",
+        "long_sung_interval_requires_review",
+        "asr_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l042-w00",
+      "text": "upon",
+      "start": 141.7683,
+      "end": 142.688916,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l042-w01",
+      "text": "the",
+      "start": 142.768969,
+      "end": 142.909063,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l042-w02",
+      "text": "earth.",
+      "start": 143.18925,
+      "end": 143.429411,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l043-w02",
+      "text": "to",
+      "start": 148.734125,
+      "end": 148.814176,
+      "issues": [
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l043-w03",
+      "text": "the",
+      "start": 148.894227,
+      "end": 149.014304,
+      "issues": [
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l050-w00",
+      "text": "whoever",
+      "start": 165.249818,
+      "end": 165.670365,
+      "issues": [
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l050-w03",
+      "text": "will",
+      "start": 167.733047,
+      "end": 167.913281,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l050-w04",
+      "text": "kill",
+      "start": 167.933307,
+      "end": 168.413932,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l052-w01",
+      "text": "kills",
+      "start": 172.238906,
+      "end": 172.679479,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l052-w02",
+      "text": "Cain",
+      "start": 172.759583,
+      "end": 172.919792,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l053-w00",
+      "text": "will",
+      "start": 173.000124,
+      "end": 173.340426,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l053-w02",
+      "text": "vengeance",
+      "start": 174.401365,
+      "end": 174.881791,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l053-w03",
+      "text": "sevenfold.",
+      "start": 175.081968,
+      "end": 175.982766,
+      "issues": [
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l054-w01",
+      "text": "Lord",
+      "start": 176.903582,
+      "end": 177.203848,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l054-w02",
+      "text": "set",
+      "start": 177.223865,
+      "end": 177.343972,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l054-w03",
+      "text": "a",
+      "start": 177.524131,
+      "end": 177.544149,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l054-w04",
+      "text": "mark",
+      "start": 177.644238,
+      "end": 177.924486,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l054-w05",
+      "text": "upon",
+      "start": 178.06461,
+      "end": 178.364876,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l054-w06",
+      "text": "Cain,",
+      "start": 178.484982,
+      "end": 179.145567,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l055-w02",
+      "text": "who",
+      "start": 180.466738,
+      "end": 180.606862,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l055-w04",
+      "text": "him",
+      "start": 181.467624,
+      "end": 181.908014,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l055-w05",
+      "text": "would",
+      "start": 182.008103,
+      "end": 182.548582,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l055-w06",
+      "text": "kill",
+      "start": 182.588617,
+      "end": 182.948936,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l055-w07",
+      "text": "him.",
+      "start": 183.209167,
+      "end": 183.569486,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l057-w06",
+      "text": "Nod,",
+      "start": 199.373404,
+      "end": 199.713617,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l058-w02",
+      "text": "Edem.",
+      "start": 200.974406,
+      "end": 201.414681,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l060-w01",
+      "text": "conceived",
+      "start": 206.217685,
+      "end": 207.158273,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l060-w04",
+      "text": "Enoch.",
+      "start": 208.339011,
+      "end": 208.739262,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l061-w03",
+      "text": "city",
+      "start": 209.639825,
+      "end": 209.92,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l062-w00",
+      "text": "and",
+      "start": 210.1005,
+      "end": 210.200619,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l062-w02",
+      "text": "it",
+      "start": 210.641143,
+      "end": 210.68119,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l062-w06",
+      "text": "Enoch.",
+      "start": 211.582262,
+      "end": 212.142929,
+      "issues": [
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l063-w01",
+      "text": "Enoch",
+      "start": 212.663548,
+      "end": 212.943881,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l063-w04",
+      "text": "Gaidad.",
+      "start": 213.644714,
+      "end": 214.746024,
+      "issues": [
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l064-w02",
+      "text": "Maleleel,",
+      "start": 216.548167,
+      "end": 217.228976,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l066-w02",
+      "text": "fathered",
+      "start": 220.332667,
+      "end": 220.693095,
+      "issues": [
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l066-w03",
+      "text": "Lamech.",
+      "start": 220.713119,
+      "end": 221.053524,
+      "issues": [
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l067-w00",
+      "text": "Lamech",
+      "start": 221.073548,
+      "end": 221.514071,
+      "issues": [
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l067-w01",
+      "text": "took",
+      "start": 221.594167,
+      "end": 222.03469,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l067-w03",
+      "text": "wives:",
+      "start": 222.735524,
+      "end": 223.115976,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l070-w01",
+      "text": "bore",
+      "start": 225.959357,
+      "end": 226.219667,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l070-w02",
+      "text": "Jobel,",
+      "start": 226.259714,
+      "end": 226.479976,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l072-w01",
+      "text": "tend",
+      "start": 228.803343,
+      "end": 229.003631,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l072-w02",
+      "text": "the",
+      "start": 229.02366,
+      "end": 229.083746,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l079-w00",
+      "text": "Lamech",
+      "start": 240.540257,
+      "end": 240.980589,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l079-w02",
+      "text": "to",
+      "start": 241.340861,
+      "end": 241.400906,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l079-w03",
+      "text": "Ada",
+      "start": 241.681118,
+      "end": 242.021375,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l079-w04",
+      "text": "and",
+      "start": 242.381647,
+      "end": 242.481722,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l079-w05",
+      "text": "Sella,",
+      "start": 242.541767,
+      "end": 243.382402,
+      "issues": [
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l080-w01",
+      "text": "my",
+      "start": 243.822734,
+      "end": 244.263066,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l080-w02",
+      "text": "voice,",
+      "start": 244.363142,
+      "end": 244.603323,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l080-w03",
+      "text": "wives",
+      "start": 244.703399,
+      "end": 245.02364,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l080-w04",
+      "text": "of",
+      "start": 245.123716,
+      "end": 245.163746,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l080-w05",
+      "text": "Lamech;",
+      "start": 245.223792,
+      "end": 246.004381,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l081-w00",
+      "text": "listen",
+      "start": 246.364653,
+      "end": 246.624849,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l081-w02",
+      "text": "my",
+      "start": 246.885045,
+      "end": 246.985121,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l081-w03",
+      "text": "words.",
+      "start": 247.405438,
+      "end": 247.80574,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l082-w00",
+      "text": "I",
+      "start": 248.226057,
+      "end": 248.246073,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l082-w01",
+      "text": "have",
+      "start": 248.386178,
+      "end": 248.646375,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l082-w02",
+      "text": "killed",
+      "start": 248.66639,
+      "end": 249.046677,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l082-w03",
+      "text": "a",
+      "start": 249.146752,
+      "end": 249.166767,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l082-w05",
+      "text": "to",
+      "start": 249.487009,
+      "end": 249.547054,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l082-w06",
+      "text": "my",
+      "start": 249.747205,
+      "end": 249.887311,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l082-w07",
+      "text": "sorrow,",
+      "start": 250.107477,
+      "end": 250.808006,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l083-w02",
+      "text": "man",
+      "start": 251.768731,
+      "end": 252.229079,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l083-w03",
+      "text": "to",
+      "start": 252.309139,
+      "end": 252.369184,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l083-w04",
+      "text": "my",
+      "start": 252.46926,
+      "end": 252.609366,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l083-w05",
+      "text": "grief.",
+      "start": 252.809517,
+      "end": 253.069713,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l084-w01",
+      "text": "vengeance",
+      "start": 254.411423,
+      "end": 255.172325,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l084-w05",
+      "text": "times",
+      "start": 257.855504,
+      "end": 258.296026,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l085-w01",
+      "text": "Lamech",
+      "start": 260.939158,
+      "end": 261.459775,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l087-w01",
+      "text": "knew",
+      "start": 267.847343,
+      "end": 268.227794,
+      "issues": [
+        "low_large_ctc_posterior",
+        "checkpoint_boundary_disagreement"
+      ]
+    },
+    {
+      "id": "g4-l087-w02",
+      "text": "Eve",
+      "start": 268.347936,
+      "end": 268.568197,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l088-w07",
+      "text": "Seth:",
+      "start": 274.442169,
+      "end": 274.722356,
+      "issues": [
+        "low_large_ctc_posterior"
+      ]
+    },
+    {
+      "id": "g4-l089-w02",
+      "text": "raised",
+      "start": 276.483534,
+      "end": 277.40415,
+      "issues": [
+        "asr_boundary_disagreement"
+      ]
+    }
+  ]
+}

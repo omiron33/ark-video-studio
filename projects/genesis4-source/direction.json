@@ -1,0 +1,76 @@
+{
+  "assets": {
+    "brothers": {
+      "type": "image",
+      "src": "assets/brothers.png",
+      "provenance": {
+        "provider": "OpenAI built-in GPT Image",
+        "scene": "brothers",
+        "generatedFor": "Genesis 4"
+      }
+    },
+    "offering": {
+      "type": "image",
+      "src": "assets/offering.png",
+      "provenance": {
+        "provider": "OpenAI built-in GPT Image",
+        "scene": "offering",
+        "generatedFor": "Genesis 4"
+      }
+    },
+    "aftermath": {
+      "type": "image",
+      "src": "assets/aftermath.png",
+      "provenance": {
+        "provider": "OpenAI built-in GPT Image",
+        "scene": "aftermath",
+        "generatedFor": "Genesis 4"
+      }
+    },
+    "blood-earth": {
+      "type": "image",
+      "src": "assets/blood-earth.png",
+      "provenance": {
+        "provider": "OpenAI built-in GPT Image",
+        "scene": "blood-earth",
+        "generatedFor": "Genesis 4"
+      }
+    },
+    "exile": {
+      "type": "image",
+      "src": "assets/exile.png",
+      "provenance": {
+        "provider": "OpenAI built-in GPT Image",
+        "scene": "exile",
+        "generatedFor": "Genesis 4"
+      }
+    },
+    "city": {
+      "type": "image",
+      "src": "assets/city.png",
+      "provenance": {
+        "provider": "OpenAI built-in GPT Image",
+        "scene": "city",
+        "generatedFor": "Genesis 4"
+      }
+    },
+    "forge": {
+      "type": "image",
+      "src": "assets/forge.png",
+      "provenance": {
+        "provider": "OpenAI built-in GPT Image",
+        "scene": "forge",
+        "generatedFor": "Genesis 4"
+      }
+    },
+    "new-seed": {
+      "type": "image",
+      "src": "assets/new-seed.png",
+      "provenance": {
+        "provider": "OpenAI built-in GPT Image",
+        "scene": "new-seed",
+        "generatedFor": "Genesis 4"
+      }
+    }
+  }
+}

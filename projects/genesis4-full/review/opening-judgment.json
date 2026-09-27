@@ -1,0 +1,770 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-09-27T05:55:05.631Z",
+  "reviewer": "independent-opening-agent",
+  "status": "accepted-with-nonblocking-notes",
+  "appliesToFullFilm": false,
+  "videoPath": "/Volumes/Code/ark-video-studio/output/genesis4-production/film.mp4",
+  "videoSha256": "b3648decb79c77c99f6b670406019c659faf0fb216ac4e0dcb3f427e07548eca",
+  "projectPath": "/Volumes/Code/ark-video-studio/output/genesis4-production/project/project.json",
+  "projectSha256": "d2bf4c327fd990049d9945a4f9ba4440405feacce8ff36cd907184b49449f591",
+  "scope": {
+    "sectionArrayIndexes": [
+      0,
+      29
+    ],
+    "startSeconds": 0,
+    "endSeconds": 105.13333333333333,
+    "boundarySampleSeconds": 105.25,
+    "sceneIds": [
+      "g4-opening-strike",
+      "g4-opening-blood",
+      "g4-opening-eclipse",
+      "g4-scene-000",
+      "g4-scene-001",
+      "g4-scene-002",
+      "g4-scene-003",
+      "g4-scene-004",
+      "g4-scene-005",
+      "g4-scene-006",
+      "g4-scene-007",
+      "g4-scene-008",
+      "g4-scene-009",
+      "g4-scene-011",
+      "g4-scene-012",
+      "g4-scene-014",
+      "g4-scene-015",
+      "g4-scene-016",
+      "g4-scene-017",
+      "g4-scene-018",
+      "g4-scene-019",
+      "g4-scene-020",
+      "g4-scene-021",
+      "g4-scene-022",
+      "g4-scene-023",
+      "g4-scene-024",
+      "g4-scene-025",
+      "g4-scene-026",
+      "g4-scene-027",
+      "g4-scene-028"
+    ],
+    "sceneReadingPoses": 30,
+    "openingTemporalSamples": 17,
+    "fightHandoffTemporalSamples": 13
+  },
+  "method": "Visual inspection of seven contact sheets made from 60 decoded samples of the final encoded MP4. Every assigned scene has a reading-pose sample; the opening and club-fight/judgment handoff have dense temporal samples. No audio judgment.",
+  "scores": {
+    "scale": "0-10",
+    "lyricLegibility": 8.7,
+    "semanticMotion": 8,
+    "photorealism": 8.7,
+    "composition": 8.4,
+    "continuity": 8.3
+  },
+  "blockers": [],
+  "findings": [
+    {
+      "category": "opening",
+      "result": "Pass",
+      "evidence": [
+        "opening-1.png",
+        "opening-2.png"
+      ],
+      "observation": "The first frame is active: giant tilted GENESIS 4 with fracture lines. The title settles and contracts, then changes to THE BROTHER’S BLOOD in a geometric vortex by 2.4 seconds. A distinct plain-clothed Jesus landscape follows at 5.7 seconds. The later restrained photo hold follows two active compositions and does not reproduce the prior slow twelve-second opening."
+    },
+    {
+      "category": "lyricLegibility",
+      "result": "Pass",
+      "evidence": [
+        "scenes-1.png",
+        "scenes-2.png",
+        "scenes-3.png"
+      ],
+      "observation": "Reading poses keep lyrics large, high contrast and inside the frame. Red keyword accents and white connectors work across serif, stencil, distressed, condensed and bold faces. The firstborn/fatlings three-row composition is dense but readable. No visible clipping or unintended collisions at the sampled poses."
+    },
+    {
+      "category": "semanticMotion",
+      "result": "Pass with minor repetition",
+      "evidence": [
+        "opening-1.png",
+        "opening-2.png",
+        "scenes-1.png",
+        "scenes-2.png",
+        "scenes-3.png"
+      ],
+      "observation": "Scale, typeface and graphic changes create quick succession. The held Be still passage provides a meaningful rest. Fracture/vortex motifs repeat enough to be noticeable, but the variation is sufficient for delivery and does not justify another finishing loop."
+    },
+    {
+      "category": "clubFight",
+      "result": "Pass",
+      "evidence": [
+        "fight-1.png"
+      ],
+      "observation": "Cain’s raised wooden club and Abel’s defensive posture read clearly in the gritty photo. KILLED and BROTHER occupy open upper-left space without covering faces or weapon. This is a still-photo support treatment with changing typography; the samples do not demonstrate a literal animated club strike."
+    },
+    {
+      "category": "judgmentHandoff",
+      "result": "Pass",
+      "evidence": [
+        "fight-2.png"
+      ],
+      "observation": "The cut at about 102.27 seconds moves coherently from the struggle to bowed Cain and plain-clothed human Jesus. THE LORD GOD ASKED CAIN is readable in the open center/lower region by 104.5 seconds. The next graphic scene begins cleanly at the boundary."
+    },
+    {
+      "category": "photography",
+      "result": "Pass",
+      "evidence": [
+        "scenes-1.png",
+        "scenes-2.png",
+        "scenes-3.png",
+        "fight-1.png",
+        "fight-2.png"
+      ],
+      "observation": "Photographic scenes have coherent gritty materials, plausible anatomy at inspected size, and distinct compositions in this assigned range. Jesus uses ordinary flowing cloth rather than the rejected armor treatment."
+    }
+  ],
+  "nonblockingNotes": [
+    "The fracture/vortex visual vocabulary is repeated in several graphic scenes. This can be broadened in future videos; no additional finishing loop is recommended for this candidate."
+  ],
+  "limitations": [
+    "This judgment covers only section-array indexes 0–29, plus the immediate handoff sample at 105.25 seconds, and is not full-film approval.",
+    "Sampled stills and temporal sequences cannot certify every intermediate frame or continuous playback smoothness.",
+    "No hearing, onset synchronization, lyric transcription or audio score is claimed. The existing machine word-timing uncertainties remain uncertified."
+  ],
+  "evidence": [
+    {
+      "group": "scenes",
+      "sceneIndex": 0,
+      "id": "g4-opening-strike",
+      "time": 1.32,
+      "label": "0 g4-opening-strike @ 1.32s",
+      "frame": 40,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-006.png",
+      "actualSeconds": 1.3333333333333333,
+      "sha256": "ef1a589d4c23065184764e24b77b74000a968fe8ae09d7570421a596be3e3c7e"
+    },
+    {
+      "group": "scenes",
+      "sceneIndex": 1,
+      "id": "g4-opening-blood",
+      "time": 4.215,
+      "label": "1 g4-opening-blood @ 4.21s",
+      "frame": 126,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-013.png",
+      "actualSeconds": 4.2,
+      "sha256": "0994f16b118af55aa587bd5dc1a72e7cadcae167ffd12b37f35f7954ad787e43"
+    },
+    {
+      "group": "scenes",
+      "sceneIndex": 2,
+      "id": "g4-opening-eclipse",
+      "time": 8.541666666666668,
+      "label": "2 g4-opening-eclipse @ 8.54s",
+      "frame": 256,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-018.png",
+      "actualSeconds": 8.533333333333333,
+      "sha256": "0ecb12a01651756886c4b48b1536d14d08b63da48d020d8130f693f2b7e44d53"
+    },
+    {
+      "group": "scenes",
+      "sceneIndex": 3,
+      "id": "g4-scene-000",
+      "time": 14.447611,
+      "label": "3 g4-scene-000 @ 14.45s",
+      "frame": 433,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-021.png",
+      "actualSeconds": 14.433333333333334,
+      "sha256": "87e06f668f411fd4d61a570a59e8ebd615ea265fa4abcc5e8621a2f09cac7636"
+    },
+    {
+      "group": "scenes",
+      "sceneIndex": 4,
+      "id": "g4-scene-001",
+      "time": 20.236156,
+      "label": "4 g4-scene-001 @ 20.24s",
+      "frame": 607,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-022.png",
+      "actualSeconds": 20.233333333333334,
+      "sha256": "a1a2fa8536fb39598006c538ced298ee72c55b6b478dfe4862657a5ed61d6bf2"
+    },
+    {
+      "group": "scenes",
+      "sceneIndex": 5,
+      "id": "g4-scene-002",
+      "time": 26.964204,
+      "label": "5 g4-scene-002 @ 26.96s",
+      "frame": 809,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-023.png",
+      "actualSeconds": 26.966666666666665,
+      "sha256": "8c911b7fdd48bedf7fec302223ec7b7b0c3d9c08d993861e656da1df8f3f1915"
+    },
+    {
+      "group": "scenes",
+      "sceneIndex": 6,
+      "id": "g4-scene-003",
+      "time": 31.449569,
+      "label": "6 g4-scene-003 @ 31.45s",
+      "frame": 943,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-024.png",
+      "actualSeconds": 31.433333333333334,
+      "sha256": "85e939070c02145173c926b873e9a8454af001138db6f49817eb43e131278fed"
+    },
+    {
+      "group": "scenes",
+      "sceneIndex": 7,
+      "id": "g4-scene-004",
+      "time": 34.491347000000005,
+      "label": "7 g4-scene-004 @ 34.49s",
+      "frame": 1035,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-025.png",
+      "actualSeconds": 34.5,
+      "sha256": "def61cccb68056f093c860c78ae9e78a23f5467da547aa2ff098e3f7ee4b3d90"
+    },
+    {
+      "group": "scenes",
+      "sceneIndex": 8,
+      "id": "g4-scene-005",
+      "time": 37.613206000000005,
+      "label": "8 g4-scene-005 @ 37.61s",
+      "frame": 1128,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-026.png",
+      "actualSeconds": 37.6,
+      "sha256": "c0f899c30b10c96a3ab08044b13b0a36530f644a46530fceb70f78027d1ef917"
+    },
+    {
+      "group": "scenes",
+      "sceneIndex": 9,
+      "id": "g4-scene-006",
+      "time": 40.13333333333333,
+      "label": "9 g4-scene-006 @ 40.13s",
+      "frame": 1204,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-027.png",
+      "actualSeconds": 40.13333333333333,
+      "sha256": "c944c2a86f4973cdbfdae251cbe9cb136f29ca4fcd2a71c0513394b5dab3ffa1"
+    },
+    {
+      "group": "scenes",
+      "sceneIndex": 10,
+      "id": "g4-scene-007",
+      "time": 41.355435,
+      "label": "10 g4-scene-007 @ 41.36s",
+      "frame": 1241,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-028.png",
+      "actualSeconds": 41.36666666666667,
+      "sha256": "df3fa1fd40a4f091871d52503b9fb382db3a235291c2edcfed8988eb52e25553"
+    },
+    {
+      "group": "scenes",
+      "sceneIndex": 11,
+      "id": "g4-scene-008",
+      "time": 43.156508,
+      "label": "11 g4-scene-008 @ 43.16s",
+      "frame": 1295,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-029.png",
+      "actualSeconds": 43.166666666666664,
+      "sha256": "25a5f3684752523416fafd5aa15a04227a73a8bed5f4a164c395022849200f1f"
+    },
+    {
+      "group": "scenes",
+      "sceneIndex": 12,
+      "id": "g4-scene-009",
+      "time": 48.799869,
+      "label": "12 g4-scene-009 @ 48.80s",
+      "frame": 1464,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-030.png",
+      "actualSeconds": 48.8,
+      "sha256": "c8afec1dfce075a230c19d8a5946fb1f0e1d70c46990dccca94c71e179f0aa08"
+    },
+    {
+      "group": "scenes",
+      "sceneIndex": 13,
+      "id": "g4-scene-011",
+      "time": 54.287285000000004,
+      "label": "13 g4-scene-011 @ 54.29s",
+      "frame": 1629,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-031.png",
+      "actualSeconds": 54.3,
+      "sha256": "4d95e1ce1838850d6787bb4804ffcd31f60462ee93a19aa8a17af64cc27642be"
+    },
+    {
+      "group": "scenes",
+      "sceneIndex": 14,
+      "id": "g4-scene-012",
+      "time": 60.996159000000006,
+      "label": "14 g4-scene-012 @ 61.00s",
+      "frame": 1830,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-032.png",
+      "actualSeconds": 61,
+      "sha256": "0e5cd0329b388eaa0a93ceea807ad37c785b861704e2f8e598084867bd64d996"
+    },
+    {
+      "group": "scenes",
+      "sceneIndex": 15,
+      "id": "g4-scene-014",
+      "time": 63.659682000000004,
+      "label": "15 g4-scene-014 @ 63.66s",
+      "frame": 1910,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-033.png",
+      "actualSeconds": 63.666666666666664,
+      "sha256": "b4c42866938bfa093553887f692a8ba7d1e0bd125d592b1fe6aeabd9183c2258"
+    },
+    {
+      "group": "scenes",
+      "sceneIndex": 16,
+      "id": "g4-scene-015",
+      "time": 66.02297999999999,
+      "label": "16 g4-scene-015 @ 66.02s",
+      "frame": 1981,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-034.png",
+      "actualSeconds": 66.03333333333333,
+      "sha256": "38c71cbf2fcd9aaabd1c3dbd55404a99dc62a31967c0ca074052e06758210080"
+    },
+    {
+      "group": "scenes",
+      "sceneIndex": 17,
+      "id": "g4-scene-016",
+      "time": 69.687601,
+      "label": "17 g4-scene-016 @ 69.69s",
+      "frame": 2091,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-035.png",
+      "actualSeconds": 69.7,
+      "sha256": "ea2fcbf60eb38bcea6ba99a4d336b31846d1cd5a13351c123ea51ec7c81ee5f2"
+    },
+    {
+      "group": "scenes",
+      "sceneIndex": 18,
+      "id": "g4-scene-017",
+      "time": 73.091894,
+      "label": "18 g4-scene-017 @ 73.09s",
+      "frame": 2193,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-036.png",
+      "actualSeconds": 73.1,
+      "sha256": "ee3fe9d7e0f482be0634c3d615388194257c5c14f412872acf6750a85264a10c"
+    },
+    {
+      "group": "scenes",
+      "sceneIndex": 19,
+      "id": "g4-scene-018",
+      "time": 75.97552999999999,
+      "label": "19 g4-scene-018 @ 75.98s",
+      "frame": 2279,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-037.png",
+      "actualSeconds": 75.96666666666667,
+      "sha256": "6170a4ec77020ac230facb4d9b49b880805b8852dfec7020f9a1f01a105f9ba8"
+    },
+    {
+      "group": "scenes",
+      "sceneIndex": 20,
+      "id": "g4-scene-019",
+      "time": 79.339773,
+      "label": "20 g4-scene-019 @ 79.34s",
+      "frame": 2380,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-038.png",
+      "actualSeconds": 79.33333333333333,
+      "sha256": "cdd93a5d0ca633e89ca1a201ca77a4c676e41f1a92767dcd8e0361a12ee03d33"
+    },
+    {
+      "group": "scenes",
+      "sceneIndex": 21,
+      "id": "g4-scene-020",
+      "time": 81.542571,
+      "label": "21 g4-scene-020 @ 81.54s",
+      "frame": 2446,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-039.png",
+      "actualSeconds": 81.53333333333333,
+      "sha256": "297d0afd58667c23333611c8ce6fabe731541011f7e3f7c757876beb22c0e0ff"
+    },
+    {
+      "group": "scenes",
+      "sceneIndex": 22,
+      "id": "g4-scene-021",
+      "time": 84.3,
+      "label": "22 g4-scene-021 @ 84.30s",
+      "frame": 2529,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-040.png",
+      "actualSeconds": 84.3,
+      "sha256": "524ece9a7ca8e9a20e67b7838b0992072ef4b3f371ba3ac8978fb077056745f7"
+    },
+    {
+      "group": "scenes",
+      "sceneIndex": 23,
+      "id": "g4-scene-022",
+      "time": 86.688237,
+      "label": "23 g4-scene-022 @ 86.69s",
+      "frame": 2601,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-041.png",
+      "actualSeconds": 86.7,
+      "sha256": "6812262b9d7a45cece2ebbbc86799fc3fbc4af627dc97fd753926105b523fa8a"
+    },
+    {
+      "group": "scenes",
+      "sceneIndex": 24,
+      "id": "g4-scene-023",
+      "time": 91.19353799999999,
+      "label": "24 g4-scene-023 @ 91.19s",
+      "frame": 2736,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-042.png",
+      "actualSeconds": 91.2,
+      "sha256": "0dc4a155ef84db1990eeb04011165f94a7fd175e580f47847472336d7539c424"
+    },
+    {
+      "group": "scenes",
+      "sceneIndex": 25,
+      "id": "g4-scene-024",
+      "time": 94.36666666666667,
+      "label": "25 g4-scene-024 @ 94.37s",
+      "frame": 2831,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-043.png",
+      "actualSeconds": 94.36666666666666,
+      "sha256": "a4c14b8744e02d9e07f93ef98856029545cbdbfce979150a10782fcf84b88a8a"
+    },
+    {
+      "group": "scenes",
+      "sceneIndex": 26,
+      "id": "g4-scene-025",
+      "time": 96.759863,
+      "label": "26 g4-scene-025 @ 96.76s",
+      "frame": 2903,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-044.png",
+      "actualSeconds": 96.76666666666667,
+      "sha256": "ba77d927aea0eeec97e8f1555ac23223b1e8ce8275542e8497594270fc3dbf34"
+    },
+    {
+      "group": "scenes",
+      "sceneIndex": 27,
+      "id": "g4-scene-026",
+      "time": 99.721842,
+      "label": "27 g4-scene-026 @ 99.72s",
+      "frame": 2992,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-045.png",
+      "actualSeconds": 99.73333333333333,
+      "sha256": "1205ea255e97f0a659e969717989d60a754e4e90d171a3bf4bc9bd092aa7749e"
+    },
+    {
+      "group": "scenes",
+      "sceneIndex": 28,
+      "id": "g4-scene-027",
+      "time": 102.23333333333333,
+      "label": "28 g4-scene-027 @ 102.23s",
+      "frame": 3067,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-053.png",
+      "actualSeconds": 102.23333333333333,
+      "sha256": "01ee8fcb2d026bd00be3ea4b0079ee18b0a285fb1434d3e88dc908f0505c5145"
+    },
+    {
+      "group": "scenes",
+      "sceneIndex": 29,
+      "id": "g4-scene-028",
+      "time": 104.456613,
+      "label": "29 g4-scene-028 @ 104.46s",
+      "frame": 3134,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-057.png",
+      "actualSeconds": 104.46666666666667,
+      "sha256": "0a31e46c6ccb32a3d881870baa648df8e6d4615ee23951c0c4017c606ae795bd"
+    },
+    {
+      "group": "opening",
+      "time": 0,
+      "label": "Opening 0.00s",
+      "frame": 0,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-001.png",
+      "actualSeconds": 0,
+      "sha256": "5ef225b500b3ce336e25456cbc01180f7653add06d4466bdb15ec7f2d07680c7"
+    },
+    {
+      "group": "opening",
+      "time": 0.1,
+      "label": "Opening 0.10s",
+      "frame": 3,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-002.png",
+      "actualSeconds": 0.1,
+      "sha256": "8609bab18d4d038c853419694a84ee050751e6748bdf6eaea08475aea540c777"
+    },
+    {
+      "group": "opening",
+      "time": 0.3,
+      "label": "Opening 0.30s",
+      "frame": 9,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-003.png",
+      "actualSeconds": 0.3,
+      "sha256": "77372b6cae5aedc98629e80194d1d89cbda678d38b597072023af95d7bb7d3da"
+    },
+    {
+      "group": "opening",
+      "time": 0.6,
+      "label": "Opening 0.60s",
+      "frame": 18,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-004.png",
+      "actualSeconds": 0.6,
+      "sha256": "ddec3ebd6ed880e769e7ce520ddfc25d3758edb01a4b8ffb130abf2fc9b6b0ec"
+    },
+    {
+      "group": "opening",
+      "time": 1,
+      "label": "Opening 1.00s",
+      "frame": 30,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-005.png",
+      "actualSeconds": 1,
+      "sha256": "655bd6c375649f2f47ea874575dc13207d20eca1f2921a3195988c0e33f0eede"
+    },
+    {
+      "group": "opening",
+      "time": 1.5,
+      "label": "Opening 1.50s",
+      "frame": 45,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-007.png",
+      "actualSeconds": 1.5,
+      "sha256": "0f5f538e60ecd364a64eecf39cdece7081095b383e0b972e805cf7ce548aaa59"
+    },
+    {
+      "group": "opening",
+      "time": 2,
+      "label": "Opening 2.00s",
+      "frame": 60,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-008.png",
+      "actualSeconds": 2,
+      "sha256": "38cc9ba44e92c279748664a889ba18acb48d25d632816c5869d7e77ebd047fed"
+    },
+    {
+      "group": "opening",
+      "time": 2.37,
+      "label": "Opening 2.37s",
+      "frame": 71,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-009.png",
+      "actualSeconds": 2.3666666666666667,
+      "sha256": "02e676086179b0cfac119d22f21889103602f7aadc7eca45f4caa55b2c533ca0"
+    },
+    {
+      "group": "opening",
+      "time": 2.5,
+      "label": "Opening 2.50s",
+      "frame": 75,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-010.png",
+      "actualSeconds": 2.5,
+      "sha256": "349ce15a77bcd8f7490de6b11f9fb727bad499f5591fd7b28afe005a3e15fba6"
+    },
+    {
+      "group": "opening",
+      "time": 3,
+      "label": "Opening 3.00s",
+      "frame": 90,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-011.png",
+      "actualSeconds": 3,
+      "sha256": "1726bc0c25872b646d8f94f177d73d7d0b55a73fcc9fcefb13910ba6ac1c0255"
+    },
+    {
+      "group": "opening",
+      "time": 4,
+      "label": "Opening 4.00s",
+      "frame": 120,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-012.png",
+      "actualSeconds": 4,
+      "sha256": "1f183e7748b389846b30b8bd03ea23aa09e1ff1d5a5dd4d1bee30ef30c15100a"
+    },
+    {
+      "group": "opening",
+      "time": 5.6,
+      "label": "Opening 5.60s",
+      "frame": 168,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-014.png",
+      "actualSeconds": 5.6,
+      "sha256": "5b8e11d9bec54c955d24b1863e946208822626828c8bcf8c44bf4f8c8a5b0a9f"
+    },
+    {
+      "group": "opening",
+      "time": 5.8,
+      "label": "Opening 5.80s",
+      "frame": 174,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-015.png",
+      "actualSeconds": 5.8,
+      "sha256": "86dad4bd94d6172a137bb8a25d6183490c75b16d0949d1ce3e717ccd77c35309"
+    },
+    {
+      "group": "opening",
+      "time": 6.4,
+      "label": "Opening 6.40s",
+      "frame": 192,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-016.png",
+      "actualSeconds": 6.4,
+      "sha256": "f170713e26c5877bd22f7ec3190441df43f1faeff01daf30b374d8ccef793e9c"
+    },
+    {
+      "group": "opening",
+      "time": 7.5,
+      "label": "Opening 7.50s",
+      "frame": 225,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-017.png",
+      "actualSeconds": 7.5,
+      "sha256": "13b1d0c94d7ad4c1cd802f8843351326d0c83dbc96a6fc0dea3e450aa055472f"
+    },
+    {
+      "group": "opening",
+      "time": 9,
+      "label": "Opening 9.00s",
+      "frame": 270,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-019.png",
+      "actualSeconds": 9,
+      "sha256": "c483516e6453431bd6d7add01c5a349a628dab8d0504e8282ae499e734d68d7f"
+    },
+    {
+      "group": "opening",
+      "time": 10.7,
+      "label": "Opening 10.70s",
+      "frame": 321,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-020.png",
+      "actualSeconds": 10.7,
+      "sha256": "8affbb1e84d74e1142011b841e37688075c469dca7d30e7d83f157a8488948ac"
+    },
+    {
+      "group": "fight",
+      "time": 99.85,
+      "label": "Fight/handoff 99.85s",
+      "frame": 2996,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-046.png",
+      "actualSeconds": 99.86666666666666,
+      "sha256": "cc880481afa9313770d0d34a0c4d73a2a472debe615ac99c54dda5bc020d1d53"
+    },
+    {
+      "group": "fight",
+      "time": 100.1,
+      "label": "Fight/handoff 100.10s",
+      "frame": 3003,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-047.png",
+      "actualSeconds": 100.1,
+      "sha256": "c64efc554707402502d970e7181250607864638770f617f2b8f19d1bfdf23cf1"
+    },
+    {
+      "group": "fight",
+      "time": 100.5,
+      "label": "Fight/handoff 100.50s",
+      "frame": 3015,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-048.png",
+      "actualSeconds": 100.5,
+      "sha256": "2766d38641dab5df533fad0957506e42fc06823bd230ee740ce5f471c1e31ee9"
+    },
+    {
+      "group": "fight",
+      "time": 100.8,
+      "label": "Fight/handoff 100.80s",
+      "frame": 3024,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-049.png",
+      "actualSeconds": 100.8,
+      "sha256": "7130fd2af72166d370f995458605573343b9973c9bde92ac2433d29139ed3dc7"
+    },
+    {
+      "group": "fight",
+      "time": 101.2,
+      "label": "Fight/handoff 101.20s",
+      "frame": 3036,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-050.png",
+      "actualSeconds": 101.2,
+      "sha256": "055fa1fc5010fabb6c16e06c3b6f66542ff26f26b15c5fd3c36a8417bb5953dd"
+    },
+    {
+      "group": "fight",
+      "time": 101.7,
+      "label": "Fight/handoff 101.70s",
+      "frame": 3051,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-051.png",
+      "actualSeconds": 101.7,
+      "sha256": "c252b2b7ac21de33d876d588c64374443da1245dc43916324637d5c0e0a015a4"
+    },
+    {
+      "group": "fight",
+      "time": 102.2,
+      "label": "Fight/handoff 102.20s",
+      "frame": 3066,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-052.png",
+      "actualSeconds": 102.2,
+      "sha256": "cf7549720ff0682527402ed1eba7916f4b8015a5667e6e5a0981bbb22730a385"
+    },
+    {
+      "group": "fight",
+      "time": 102.3,
+      "label": "Fight/handoff 102.30s",
+      "frame": 3069,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-054.png",
+      "actualSeconds": 102.3,
+      "sha256": "c7d5c47879534855215f8bbe4ecee78f2defca4cf4d3e2472388f93eed35aea2"
+    },
+    {
+      "group": "fight",
+      "time": 102.6,
+      "label": "Fight/handoff 102.60s",
+      "frame": 3078,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-055.png",
+      "actualSeconds": 102.6,
+      "sha256": "4937b6c41ddfe138bcb77c66128d9102dbb0f22744d402d5b9e982f34469e003"
+    },
+    {
+      "group": "fight",
+      "time": 103.2,
+      "label": "Fight/handoff 103.20s",
+      "frame": 3096,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-056.png",
+      "actualSeconds": 103.2,
+      "sha256": "01928e1debd9e0ffd43d25fc5610da46ee9d82f2bd9411a8d2aeea3d0266a0d3"
+    },
+    {
+      "group": "fight",
+      "time": 104.5,
+      "label": "Fight/handoff 104.50s",
+      "frame": 3135,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-058.png",
+      "actualSeconds": 104.5,
+      "sha256": "b69d66ac7c23127d76b96d55a6e85dbd4297b4a024f064e32add0c5c7ed99d8d"
+    },
+    {
+      "group": "fight",
+      "time": 105.05,
+      "label": "Fight/handoff 105.05s",
+      "frame": 3152,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-059.png",
+      "actualSeconds": 105.06666666666666,
+      "sha256": "f849bb2dea263d79211afbabbdf8d152c75c874a662598b1ba7b2a0647f908c6"
+    },
+    {
+      "group": "fight",
+      "time": 105.25,
+      "label": "Fight/handoff 105.25s",
+      "frame": 3158,
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/sample-060.png",
+      "actualSeconds": 105.26666666666667,
+      "sha256": "bd3fddb1fd5daa77dc27ee3e2c41239320c98f7ded6037a424bc2490a7d763a3"
+    }
+  ],
+  "contactSheets": [
+    {
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/fight-1.png",
+      "sha256": "50f6365e60a227d0132f2df5800c8a9313a1172a655804f5d5f0f43d4aa9e98f"
+    },
+    {
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/fight-2.png",
+      "sha256": "2ee43b330a513c0459af3e3f4a932f92ebaae6a1de6ff8047de9054c7491f349"
+    },
+    {
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/opening-1.png",
+      "sha256": "7d431705e0d36b35c5c7c6e340eed64338d99be40e262a59b14db0846d372ed8"
+    },
+    {
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/opening-2.png",
+      "sha256": "847f13e5ac1b96536698c12ab12a6e29a4e869850dacef152fcadd2b178e59db"
+    },
+    {
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/scenes-1.png",
+      "sha256": "3c54ff12a72e591dcafab48f8c46df45b11eb6bbb0c1b237bacbbff26ec1b2c2"
+    },
+    {
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/scenes-2.png",
+      "sha256": "3a5aea75d41d12728c5fe2b6fd1aaf67f8a9ad538facfb064d590e1d14bad4f5"
+    },
+    {
+      "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/scenes-3.png",
+      "sha256": "5ff8cd809ce40d72db155870fc14c8c9106509bd84b0b1c9c598fd5d8cc349b8"
+    }
+  ],
+  "evidenceIndex": {
+    "path": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/evidence-index.json",
+    "sha256": "466f4282e4f1729d5e3db8e91e2be8fc60fb92995b47246fef2cff278b1df4af"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "kind": "archived-lyric-visibility-summary",
+  "status": "failed",
+  "binding": {
+    "videoSha256": "b3648decb79c77c99f6b670406019c659faf0fb216ac4e0dcb3f427e07548eca",
+    "projectHash": "a246ebd02c0a8bdd1b6918ab7ebb32176df97070a0fd04ffdbf22dde99010d9d"
+  },
+  "coverage": {
+    "required": 498,
+    "observed": 496,
+    "ratio": 0.9959839357429718,
+    "unresolved": [
+      "g4-l031-w01",
+      "g4-l073-w04"
+    ]
+  },
+  "checks": [
+    {
+      "id": "native_ocr_available",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "required_lyrics_visible",
+      "passed": false,
+      "measured": {
+        "required": 498,
+        "observed": 496,
+        "ratio": 0.9959839357429718,
+        "unresolved": [
+          "g4-l031-w01",
+          "g4-l073-w04"
+        ]
+      },
+      "threshold": {
+        "requiredRatio": 1
+      }
+    },
+    {
+      "id": "evidence_integrity",
+      "passed": true,
+      "checkedFrames": 1736,
+      "errors": []
+    },
+    {
+      "id": "unchanged_inputs",
+      "passed": true
+    }
+  ],
+  "method": "Apple Vision native accurate OCR",
+  "fullReportPath": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/visual/ocr/lyric-visibility.json",
+  "fullReportSha256": "9462a259a85b12823aa21187f32ee3f50ba355a4ce1d87f468c7bf1924f57d8c",
+  "unresolved": [
+    {
+      "id": "g4-l031-w01",
+      "text": "I",
+      "start": 111.488888,
+      "end": 111.85889999999999,
+      "sectionId": "g4-scene-031"
+    },
+    {
+      "id": "g4-l073-w04",
+      "text": "Jubal;",
+      "start": 230.946427,
+      "end": 231.7,
+      "sectionId": "g4-scene-073"
+    }
+  ],
+  "note": "Native result remains unchanged. Separate independent review evaluates the two recognizer misses; no fabricated OCR pass."
+}

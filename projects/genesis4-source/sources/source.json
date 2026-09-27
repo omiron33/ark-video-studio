@@ -1,0 +1,17 @@
+{
+  "title": "Genesis 4 \u2014 The Brother's Blood",
+  "chapter": 4,
+  "sunoSongUrl": "https://suno.com/song/dd723dc8-5303-4694-9553-6d29f9768d04",
+  "userShareUrl": "https://suno.com/s/pyCqY8gRIkFXOZ1D",
+  "trackId": "genesis-4-link-55246c72-1d7a-4c90-a4d6-2fb3d06569ac-2",
+  "takeId": "55246c72-1d7a-4c90-a4d6-2fb3d06569ac-2",
+  "libraryVersionId": "e1cbdb12-d2df-48b7-b6ac-e1a611fdb377",
+  "audioUrl": "https://omipc.taild60b4e.ts.net/api/admin/chapters/4/suno/genesis-4-link-55246c72-1d7a-4c90-a4d6-2fb3d06569ac-2/audio",
+  "localAudio": "/tmp/genesis4-new-film/genesis4-canonical.mp3",
+  "audioSha256": "c26b0dfd26850b091b408953120f2a0e07188f7415c6b03792320bf2b422cc2b",
+  "bytes": 7067792,
+  "durationSeconds": 312.02,
+  "source": "existing OmiPC canonical stored MP3",
+  "lyricsSha256": "74046ea5f076ec54229e461f8f1d7086237dbbd75edb362d3347aa21c6522fe9",
+  "expectedLyricsSha256": "74046ea5f076ec54229e461f8f1d7086237dbbd75edb362d3347aa21c6522fe9"
+}

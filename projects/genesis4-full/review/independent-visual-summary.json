@@ -1,0 +1,16 @@
+{
+  "scores": {
+    "lyricLegibility": 8.7,
+    "semanticMotion": 8,
+    "photorealism": 8.7,
+    "composition": 8.4,
+    "continuity": 8.3
+  },
+  "notes": "Three independent agents inspected all89 sections across contiguous ranges0–29,30–59,60–88 of the exact final encoded MP4. Dense temporal samples cover the opening, club struggle, handoffs, climax and ending. All reported no delivery blockers. Scores conservatively use the minimum of the three range judgments. This is sampled visual acceptance only; no listening or perfect-sync claim. Evidence: /Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/judgment.json; /Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-middle/judgment.json; /Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/judgment.json",
+  "evidencePaths": [
+    "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-opening/judgment.json",
+    "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-middle/judgment.json",
+    "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/judgment.json"
+  ],
+  "videoSha256": "b3648decb79c77c99f6b670406019c659faf0fb216ac4e0dcb3f427e07548eca"
+}

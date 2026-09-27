@@ -1,0 +1,27 @@
+{
+  "status": "delivered_review_candidate",
+  "candidateId": "vid-20260927-ab05f77d",
+  "downloadUrl": "https://omipc.taild60b4e.ts.net/api/admin/videos/vid-20260927-ab05f77d/media?download=1",
+  "photosAlbum": "Genesis 4 - The Brother's Blood",
+  "photosPlaybackVerified": true,
+  "photosCloudStatus": "Synced to iCloud",
+  "videoSha256": "b3648decb79c77c99f6b670406019c659faf0fb216ac4e0dcb3f427e07548eca",
+  "sourceRevisionHash": "eaf241281f8f104b4cc01b48cb06c61ff441ec028e62b8936676f68f164685f4",
+  "archiveMatchesRenderRevision": true,
+  "checks": {
+    "technical": true,
+    "independentVisual": true,
+    "creativePolicy": true,
+    "nativeLyricOCR": {
+      "required": 498,
+      "observed": 496,
+      "ratio": 0.9959839357429718,
+      "unresolved": [
+        "g4-l031-w01",
+        "g4-l073-w04"
+      ]
+    },
+    "strictMachineAudio": false
+  },
+  "creationRunPath": "/Volumes/Code/ark-video-studio/output/genesis4-production/run.json"
+}

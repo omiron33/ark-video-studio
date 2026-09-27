@@ -1,0 +1,651 @@
+{
+  "reviewer": "independent-ending",
+  "reviewedAt": "2026-09-27T05:52:54.513533+00:00",
+  "videoPath": "/Volumes/Code/ark-video-studio/output/genesis4-production/film.mp4",
+  "videoSha256": "b3648decb79c77c99f6b670406019c659faf0fb216ac4e0dcb3f427e07548eca",
+  "projectPath": "/Volumes/Code/ark-video-studio/output/genesis4-production/project/project.json",
+  "range": {
+    "firstSectionIndex": 60,
+    "lastSectionIndex": 88,
+    "start": 212.16666666666666,
+    "end": 312
+  },
+  "method": "Visual inspection of actual encoded video frames: one sample for every assigned scene plus five temporal samples in each of 17 representative line-motion, climax, photo, hope, and outro scenes. No listening score is assigned.",
+  "scores": {
+    "lyricLegibility": 8.8,
+    "semanticMotion": 8.3,
+    "photorealism": 8.7,
+    "composition": 8.7,
+    "continuity": 8.5
+  },
+  "pass": true,
+  "blockers": [],
+  "nonBlockingObservations": [
+    "Lineage wire motif is repeated across adjacent genealogy lines, although fonts, type scale, and word staging vary.",
+    "The instrumental ending from299.73\u2013305.63is a restrained line-only hold followed by the closing title; acceptable as a release after the climax under the 98 percent brief."
+  ],
+  "positiveObservations": [
+    "Readable white/crimson typography with no obvious cropped words in all 29 scene samples.",
+    "Lamech escalation uses fracture lines, a changing vortex, emphatic KILLED/SORROW/GRIEF and numerical counting.",
+    "Seth/Enos resolves into restrained serif text and unique birth/hope imagery.",
+    "Final Christ image depicts a physically human plain-clothed figure; portrait remains subordinate to the words."
+  ],
+  "evidenceSheets": [
+    "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/ending-all-scenes.jpg",
+    "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/motion-climax.jpg",
+    "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/hope-outro.jpg"
+  ],
+  "scenes": [
+    {
+      "index": 60,
+      "sceneId": "g4-scene-063",
+      "start": 212.16666666666666,
+      "end": 214.9,
+      "scores": {
+        "lyricLegibility": 8.8,
+        "semanticMotion": 8.1,
+        "photorealism": 8.4,
+        "composition": 8.6,
+        "continuity": 8.5
+      },
+      "pass": true,
+      "evidencePaths": [
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/scene-60-213.89.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-60-212.39.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-60-212.99.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-60-213.67.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-60-214.30.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-60-214.74.jpg"
+      ],
+      "note": "Intentional typography/procedural scene; photorealism score concerns cohesive treatment and avoidance of mismatched imagery, not the presence of photography."
+    },
+    {
+      "index": 61,
+      "sceneId": "g4-scene-064",
+      "start": 214.9,
+      "end": 217.23333333333332,
+      "scores": {
+        "lyricLegibility": 8.8,
+        "semanticMotion": 8.1,
+        "photorealism": 8.4,
+        "composition": 8.6,
+        "continuity": 8.5
+      },
+      "pass": true,
+      "evidencePaths": [
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/scene-61-216.37.jpg"
+      ],
+      "note": "Intentional typography/procedural scene; photorealism score concerns cohesive treatment and avoidance of mismatched imagery, not the presence of photography."
+    },
+    {
+      "index": 62,
+      "sceneId": "g4-scene-065",
+      "start": 217.23333333333332,
+      "end": 219.26666666666668,
+      "scores": {
+        "lyricLegibility": 8.8,
+        "semanticMotion": 8.1,
+        "photorealism": 8.4,
+        "composition": 8.6,
+        "continuity": 8.5
+      },
+      "pass": true,
+      "evidencePaths": [
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/scene-62-218.51.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-62-217.40.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-62-217.84.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-62-218.35.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-62-218.82.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-62-219.14.jpg"
+      ],
+      "note": "Intentional typography/procedural scene; photorealism score concerns cohesive treatment and avoidance of mismatched imagery, not the presence of photography."
+    },
+    {
+      "index": 63,
+      "sceneId": "g4-scene-066",
+      "start": 219.26666666666668,
+      "end": 221.3,
+      "scores": {
+        "lyricLegibility": 8.8,
+        "semanticMotion": 8.1,
+        "photorealism": 8.4,
+        "composition": 8.6,
+        "continuity": 8.5
+      },
+      "pass": true,
+      "evidencePaths": [
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/scene-63-220.55.jpg"
+      ],
+      "note": "Intentional typography/procedural scene; photorealism score concerns cohesive treatment and avoidance of mismatched imagery, not the presence of photography."
+    },
+    {
+      "index": 64,
+      "sceneId": "g4-scene-067",
+      "start": 221.3,
+      "end": 223.23333333333332,
+      "scores": {
+        "lyricLegibility": 8.8,
+        "semanticMotion": 8.1,
+        "photorealism": 8.4,
+        "composition": 8.6,
+        "continuity": 8.5
+      },
+      "pass": true,
+      "evidencePaths": [
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/scene-64-222.52.jpg"
+      ],
+      "note": "Intentional typography/procedural scene; photorealism score concerns cohesive treatment and avoidance of mismatched imagery, not the presence of photography."
+    },
+    {
+      "index": 65,
+      "sceneId": "g4-scene-068",
+      "start": 223.23333333333332,
+      "end": 225.6,
+      "scores": {
+        "lyricLegibility": 8.8,
+        "semanticMotion": 8.1,
+        "photorealism": 8.4,
+        "composition": 8.6,
+        "continuity": 8.5
+      },
+      "pass": true,
+      "evidencePaths": [
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/scene-65-224.72.jpg"
+      ],
+      "note": "Intentional typography/procedural scene; photorealism score concerns cohesive treatment and avoidance of mismatched imagery, not the presence of photography."
+    },
+    {
+      "index": 66,
+      "sceneId": "g4-scene-070",
+      "start": 225.6,
+      "end": 226.56666666666666,
+      "scores": {
+        "lyricLegibility": 8.8,
+        "semanticMotion": 8.1,
+        "photorealism": 8.4,
+        "composition": 8.6,
+        "continuity": 8.5
+      },
+      "pass": true,
+      "evidencePaths": [
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/scene-66-226.21.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-66-225.68.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-66-225.89.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-66-226.13.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-66-226.35.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-66-226.51.jpg"
+      ],
+      "note": "Intentional typography/procedural scene; photorealism score concerns cohesive treatment and avoidance of mismatched imagery, not the presence of photography."
+    },
+    {
+      "index": 67,
+      "sceneId": "g4-scene-071",
+      "start": 226.56666666666666,
+      "end": 228.56666666666666,
+      "scores": {
+        "lyricLegibility": 8.8,
+        "semanticMotion": 8.1,
+        "photorealism": 8.4,
+        "composition": 8.6,
+        "continuity": 8.5
+      },
+      "pass": true,
+      "evidencePaths": [
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/scene-67-227.83.jpg"
+      ],
+      "note": "Intentional typography/procedural scene; photorealism score concerns cohesive treatment and avoidance of mismatched imagery, not the presence of photography."
+    },
+    {
+      "index": 68,
+      "sceneId": "g4-scene-072",
+      "start": 228.56666666666666,
+      "end": 229.6,
+      "scores": {
+        "lyricLegibility": 8.8,
+        "semanticMotion": 8.1,
+        "photorealism": 8.4,
+        "composition": 8.6,
+        "continuity": 8.5
+      },
+      "pass": true,
+      "evidencePaths": [
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/scene-68-229.22.jpg"
+      ],
+      "note": "Intentional typography/procedural scene; photorealism score concerns cohesive treatment and avoidance of mismatched imagery, not the presence of photography."
+    },
+    {
+      "index": 69,
+      "sceneId": "g4-scene-073",
+      "start": 229.6,
+      "end": 231.73333333333332,
+      "scores": {
+        "lyricLegibility": 8.8,
+        "semanticMotion": 8.1,
+        "photorealism": 8.4,
+        "composition": 8.6,
+        "continuity": 8.5
+      },
+      "pass": true,
+      "evidencePaths": [
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/scene-69-230.94.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-69-229.77.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-69-230.24.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-69-230.77.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-69-231.26.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-69-231.61.jpg"
+      ],
+      "note": "Intentional typography/procedural scene; photorealism score concerns cohesive treatment and avoidance of mismatched imagery, not the presence of photography."
+    },
+    {
+      "index": 70,
+      "sceneId": "g4-scene-074",
+      "start": 231.73333333333332,
+      "end": 234.16666666666666,
+      "scores": {
+        "lyricLegibility": 8.8,
+        "semanticMotion": 8.1,
+        "photorealism": 8.4,
+        "composition": 8.6,
+        "continuity": 8.5
+      },
+      "pass": true,
+      "evidencePaths": [
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/scene-70-233.27.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-70-231.93.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-70-232.46.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-70-233.07.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-70-233.63.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-70-234.02.jpg"
+      ],
+      "note": "Intentional typography/procedural scene; photorealism score concerns cohesive treatment and avoidance of mismatched imagery, not the presence of photography."
+    },
+    {
+      "index": 71,
+      "sceneId": "g4-scene-076",
+      "start": 234.16666666666666,
+      "end": 235.36666666666667,
+      "scores": {
+        "lyricLegibility": 8.8,
+        "semanticMotion": 8.1,
+        "photorealism": 8.4,
+        "composition": 8.6,
+        "continuity": 8.5
+      },
+      "pass": true,
+      "evidencePaths": [
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/scene-71-234.92.jpg"
+      ],
+      "note": "Intentional typography/procedural scene; photorealism score concerns cohesive treatment and avoidance of mismatched imagery, not the presence of photography."
+    },
+    {
+      "index": 72,
+      "sceneId": "g4-scene-077",
+      "start": 235.36666666666667,
+      "end": 237.56666666666666,
+      "scores": {
+        "lyricLegibility": 8.8,
+        "semanticMotion": 8.1,
+        "photorealism": 8.7,
+        "composition": 8.8,
+        "continuity": 8.5
+      },
+      "pass": true,
+      "evidencePaths": [
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/scene-72-236.75.jpg"
+      ],
+      "note": "Photoreal scene supports the lyric; no obvious warped anatomy, lyric occlusion, or disruptive crop in sampled encoded frames."
+    },
+    {
+      "index": 73,
+      "sceneId": "g4-scene-078",
+      "start": 237.56666666666666,
+      "end": 240.33333333333334,
+      "scores": {
+        "lyricLegibility": 8.8,
+        "semanticMotion": 8.1,
+        "photorealism": 8.4,
+        "composition": 8.6,
+        "continuity": 8.5
+      },
+      "pass": true,
+      "evidencePaths": [
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/scene-73-239.31.jpg"
+      ],
+      "note": "Intentional typography/procedural scene; photorealism score concerns cohesive treatment and avoidance of mismatched imagery, not the presence of photography."
+    },
+    {
+      "index": 74,
+      "sceneId": "g4-scene-079",
+      "start": 240.33333333333334,
+      "end": 243.5,
+      "scores": {
+        "lyricLegibility": 8.8,
+        "semanticMotion": 8.5,
+        "photorealism": 8.4,
+        "composition": 8.7,
+        "continuity": 8.5
+      },
+      "pass": true,
+      "evidencePaths": [
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/scene-74-242.33.jpg"
+      ],
+      "note": "Intentional typography/procedural scene; photorealism score concerns cohesive treatment and avoidance of mismatched imagery, not the presence of photography."
+    },
+    {
+      "index": 75,
+      "sceneId": "g4-scene-080",
+      "start": 243.5,
+      "end": 246.2,
+      "scores": {
+        "lyricLegibility": 8.8,
+        "semanticMotion": 8.5,
+        "photorealism": 8.4,
+        "composition": 8.7,
+        "continuity": 8.5
+      },
+      "pass": true,
+      "evidencePaths": [
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/scene-75-245.20.jpg"
+      ],
+      "note": "Intentional typography/procedural scene; photorealism score concerns cohesive treatment and avoidance of mismatched imagery, not the presence of photography."
+    },
+    {
+      "index": 76,
+      "sceneId": "g4-scene-081",
+      "start": 246.2,
+      "end": 248,
+      "scores": {
+        "lyricLegibility": 8.8,
+        "semanticMotion": 8.5,
+        "photorealism": 8.4,
+        "composition": 8.7,
+        "continuity": 8.5
+      },
+      "pass": true,
+      "evidencePaths": [
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/scene-76-247.33.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-76-246.34.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-76-246.74.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-76-247.19.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-76-247.60.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-76-247.89.jpg"
+      ],
+      "note": "Intentional typography/procedural scene; photorealism score concerns cohesive treatment and avoidance of mismatched imagery, not the presence of photography."
+    },
+    {
+      "index": 77,
+      "sceneId": "g4-scene-082",
+      "start": 248,
+      "end": 250.93333333333334,
+      "scores": {
+        "lyricLegibility": 8.8,
+        "semanticMotion": 8.5,
+        "photorealism": 8.4,
+        "composition": 8.7,
+        "continuity": 8.5
+      },
+      "pass": true,
+      "evidencePaths": [
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/scene-77-249.85.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-77-248.23.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-77-248.88.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-77-249.61.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-77-250.29.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-77-250.76.jpg"
+      ],
+      "note": "Intentional typography/procedural scene; photorealism score concerns cohesive treatment and avoidance of mismatched imagery, not the presence of photography."
+    },
+    {
+      "index": 78,
+      "sceneId": "g4-scene-083",
+      "start": 250.93333333333334,
+      "end": 253.5,
+      "scores": {
+        "lyricLegibility": 8.8,
+        "semanticMotion": 8.5,
+        "photorealism": 8.4,
+        "composition": 8.7,
+        "continuity": 8.5
+      },
+      "pass": true,
+      "evidencePaths": [
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/scene-78-252.55.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-78-251.14.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-78-251.70.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-78-252.34.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-78-252.94.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-78-253.35.jpg"
+      ],
+      "note": "Intentional typography/procedural scene; photorealism score concerns cohesive treatment and avoidance of mismatched imagery, not the presence of photography."
+    },
+    {
+      "index": 79,
+      "sceneId": "g4-scene-084",
+      "start": 253.5,
+      "end": 259.93333333333334,
+      "scores": {
+        "lyricLegibility": 8.8,
+        "semanticMotion": 8.5,
+        "photorealism": 8.4,
+        "composition": 8.7,
+        "continuity": 8.5
+      },
+      "pass": true,
+      "evidencePaths": [
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/scene-79-257.55.jpg"
+      ],
+      "note": "Intentional typography/procedural scene; photorealism score concerns cohesive treatment and avoidance of mismatched imagery, not the presence of photography."
+    },
+    {
+      "index": 80,
+      "sceneId": "g4-scene-085",
+      "start": 259.93333333333334,
+      "end": 262.6333333333333,
+      "scores": {
+        "lyricLegibility": 8.8,
+        "semanticMotion": 8.5,
+        "photorealism": 8.4,
+        "composition": 8.7,
+        "continuity": 8.5
+      },
+      "pass": true,
+      "evidencePaths": [
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/scene-80-261.63.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-80-260.15.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-80-260.74.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-80-261.42.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-80-262.04.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-80-262.47.jpg"
+      ],
+      "note": "Intentional typography/procedural scene; photorealism score concerns cohesive treatment and avoidance of mismatched imagery, not the presence of photography."
+    },
+    {
+      "index": 81,
+      "sceneId": "g4-scene-086",
+      "start": 262.6333333333333,
+      "end": 266.06666666666666,
+      "scores": {
+        "lyricLegibility": 8.8,
+        "semanticMotion": 8.5,
+        "photorealism": 8.4,
+        "composition": 8.7,
+        "continuity": 8.5
+      },
+      "pass": true,
+      "evidencePaths": [
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/scene-81-264.80.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-81-262.91.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-81-263.66.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-81-264.52.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-81-265.31.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-81-265.86.jpg"
+      ],
+      "note": "Intentional typography/procedural scene; photorealism score concerns cohesive treatment and avoidance of mismatched imagery, not the presence of photography."
+    },
+    {
+      "index": 82,
+      "sceneId": "g4-scene-087",
+      "start": 266.06666666666666,
+      "end": 270.9,
+      "scores": {
+        "lyricLegibility": 8.8,
+        "semanticMotion": 8.1,
+        "photorealism": 8.4,
+        "composition": 8.6,
+        "continuity": 8.5
+      },
+      "pass": true,
+      "evidencePaths": [
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/scene-82-269.11.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-82-266.45.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-82-267.52.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-82-268.72.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-82-269.84.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-82-270.61.jpg"
+      ],
+      "note": "Intentional typography/procedural scene; photorealism score concerns cohesive treatment and avoidance of mismatched imagery, not the presence of photography."
+    },
+    {
+      "index": 83,
+      "sceneId": "g4-scene-088",
+      "start": 270.9,
+      "end": 279.96666666666664,
+      "scores": {
+        "lyricLegibility": 8.8,
+        "semanticMotion": 8.1,
+        "photorealism": 8.7,
+        "composition": 8.8,
+        "continuity": 8.5
+      },
+      "pass": true,
+      "evidencePaths": [
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/scene-83-276.61.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-83-271.63.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-83-273.62.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-83-275.89.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-83-277.97.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-83-279.42.jpg"
+      ],
+      "note": "Photoreal scene supports the lyric; no obvious warped anatomy, lyric occlusion, or disruptive crop in sampled encoded frames."
+    },
+    {
+      "index": 84,
+      "sceneId": "g4-scene-090",
+      "start": 279.96666666666664,
+      "end": 286.3,
+      "scores": {
+        "lyricLegibility": 8.8,
+        "semanticMotion": 8.1,
+        "photorealism": 8.4,
+        "composition": 8.6,
+        "continuity": 8.5
+      },
+      "pass": true,
+      "evidencePaths": [
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/scene-84-283.96.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-84-280.47.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-84-281.87.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-84-283.45.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-84-284.91.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-84-285.92.jpg"
+      ],
+      "note": "Intentional typography/procedural scene; photorealism score concerns cohesive treatment and avoidance of mismatched imagery, not the presence of photography."
+    },
+    {
+      "index": 85,
+      "sceneId": "g4-scene-091",
+      "start": 286.3,
+      "end": 293.1,
+      "scores": {
+        "lyricLegibility": 8.8,
+        "semanticMotion": 8.1,
+        "photorealism": 8.4,
+        "composition": 8.6,
+        "continuity": 8.5
+      },
+      "pass": true,
+      "evidencePaths": [
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/scene-85-290.58.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-85-286.84.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-85-288.34.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-85-290.04.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-85-291.60.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-85-292.69.jpg"
+      ],
+      "note": "Intentional typography/procedural scene; photorealism score concerns cohesive treatment and avoidance of mismatched imagery, not the presence of photography."
+    },
+    {
+      "index": 86,
+      "sceneId": "g4-scene-093",
+      "start": 293.1,
+      "end": 299.73333333333335,
+      "scores": {
+        "lyricLegibility": 8.8,
+        "semanticMotion": 8.1,
+        "photorealism": 8.7,
+        "composition": 8.8,
+        "continuity": 8.5
+      },
+      "pass": true,
+      "evidencePaths": [
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/scene-86-297.28.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-86-293.63.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-86-295.09.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-86-296.75.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-86-298.27.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-86-299.34.jpg"
+      ],
+      "note": "Photoreal scene supports the lyric; no obvious warped anatomy, lyric occlusion, or disruptive crop in sampled encoded frames."
+    },
+    {
+      "index": 87,
+      "sceneId": "g4-ending-life",
+      "start": 299.73333333333335,
+      "end": 305.6333333333333,
+      "scores": {
+        "lyricLegibility": 9.0,
+        "semanticMotion": 8.0,
+        "photorealism": 8.4,
+        "composition": 8.6,
+        "continuity": 8.5
+      },
+      "pass": true,
+      "evidencePaths": [
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/scene-87-303.45.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-87-300.21.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-87-301.50.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-87-302.98.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-87-304.34.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-87-305.28.jpg"
+      ],
+      "note": "Intentional typography/procedural scene; photorealism score concerns cohesive treatment and avoidance of mismatched imagery, not the presence of photography."
+    },
+    {
+      "index": 88,
+      "sceneId": "g4-ending-title",
+      "start": 305.6333333333333,
+      "end": 312,
+      "scores": {
+        "lyricLegibility": 9.0,
+        "semanticMotion": 8.0,
+        "photorealism": 8.4,
+        "composition": 8.6,
+        "continuity": 8.5
+      },
+      "pass": true,
+      "evidencePaths": [
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/scene-88-309.64.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-88-306.14.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-88-307.54.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-88-309.13.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-88-310.60.jpg",
+        "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-ending/dense-88-311.62.jpg"
+      ],
+      "note": "Intentional typography/procedural scene; photorealism score concerns cohesive treatment and avoidance of mismatched imagery, not the presence of photography."
+    }
+  ],
+  "limitations": [
+    "Frame sequences establish the visible behavior sampled; this is not a listening or acoustic-sync review.",
+    "No aggregate score is a claim of perfection."
+  ]
+}

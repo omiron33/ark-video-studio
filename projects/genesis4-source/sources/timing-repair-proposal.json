@@ -1,0 +1,1546 @@
+{
+  "schemaVersion": 1,
+  "kind": "timing-repair-proposal",
+  "createdAt": "2026-09-27T05:46:28.217Z",
+  "projectPath": "/Volumes/Code/ark-video-studio/output/genesis4-production/project/project.json",
+  "wordDataSha256": "3b7c1e4d5d386f867115b15d702ecf5222327a883812026b4c673527c662b094",
+  "reportPath": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-01/audio/audio-review.json",
+  "reportSha256": "177bfb5374ff7f0d9973334b30c0d1e64f0291244d2b62f5aed1139acf6d2dc2",
+  "status": "proposal-only-no-project-change",
+  "repairs": [
+    {
+      "id": "g4-l005-w01",
+      "text": "Cain",
+      "expectedStart": 35.872181,
+      "expectedEnd": 36.192372,
+      "start": 35.933191,
+      "end": 36.213397,
+      "method": "official_ctc_asr",
+      "reportPath": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-01/audio/audio-review.json",
+      "reportSha256": "177bfb5374ff7f0d9973334b30c0d1e64f0291244d2b62f5aed1139acf6d2dc2",
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "Cain",
+          "start": 35.933191,
+          "end": 36.213397,
+          "score": 0.5303493976561462,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "Cain",
+          "start": 35.873147,
+          "end": 36.213397,
+          "score": 0.41990385555741383,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "Cain",
+          "start": 35.873147,
+          "end": 36.213397,
+          "score": 0.41990385555741383,
+          "startDelta": 0.060044,
+          "endDelta": 0
+        }
+      ],
+      "corroboration": [
+        {
+          "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "role": "source",
+          "text": "Cain",
+          "start": 35.770572,
+          "end": 36.150572,
+          "score": 0.9612950086593628,
+          "startDelta": 0.162619,
+          "endDelta": 0.062825
+        },
+        {
+          "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+          "role": "source",
+          "text": "Cain",
+          "start": 35.810572,
+          "end": 36.250572,
+          "score": 0.989927351474762,
+          "startDelta": 0.122619,
+          "endDelta": 0.037175
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+        "role": "source",
+        "text": "Cain",
+        "start": 35.933191,
+        "end": 36.213397,
+        "score": 0.5393818914139789,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "note": "Supported by existing measured source/independent-checkpoint/AAC evidence. Whole-film automatic gate remains failed."
+    },
+    {
+      "id": "g4-l006-w03",
+      "text": "Cain",
+      "expectedStart": 39.334243,
+      "expectedEnd": 39.554374,
+      "start": 39.355708,
+      "end": 39.796031,
+      "method": "official_ctc_asr",
+      "reportPath": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-01/audio/audio-review.json",
+      "reportSha256": "177bfb5374ff7f0d9973334b30c0d1e64f0291244d2b62f5aed1139acf6d2dc2",
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "Cain",
+          "start": 39.355708,
+          "end": 39.796031,
+          "score": 0.6391659657066733,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "Cain",
+          "start": 39.335693,
+          "end": 39.776017,
+          "score": 0.3835441166983348,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "Cain",
+          "start": 39.335693,
+          "end": 39.776017,
+          "score": 0.3835441166983348,
+          "startDelta": 0.020015,
+          "endDelta": 0.020014
+        }
+      ],
+      "corroboration": [
+        {
+          "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "role": "source",
+          "text": "Cain",
+          "start": 39.190572,
+          "end": 39.650572,
+          "score": 0.8806790709495544,
+          "startDelta": 0.165136,
+          "endDelta": 0.145459
+        },
+        {
+          "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+          "role": "source",
+          "text": "Cain",
+          "start": 39.230572,
+          "end": 39.650572,
+          "score": 0.9721430540084839,
+          "startDelta": 0.125136,
+          "endDelta": 0.145459
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+        "role": "source",
+        "text": "Cain",
+        "start": 39.355708,
+        "end": 39.796031,
+        "score": 0.683698015420462,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "note": "Supported by existing measured source/independent-checkpoint/AAC evidence. Whole-film automatic gate remains failed."
+    },
+    {
+      "id": "g4-l011-w02",
+      "text": "upon",
+      "expectedStart": 51.263311,
+      "expectedEnd": 51.683868,
+      "start": 51.324508,
+      "end": 51.684773,
+      "method": "official_dual_ctc",
+      "reportPath": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-01/audio/audio-review.json",
+      "reportSha256": "177bfb5374ff7f0d9973334b30c0d1e64f0291244d2b62f5aed1139acf6d2dc2",
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "upon",
+          "start": 51.324508,
+          "end": 51.684773,
+          "score": 0.9634804188735939,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "upon",
+          "start": 51.284478,
+          "end": 51.664758,
+          "score": 0.8737375666381874,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "upon",
+          "start": 51.284478,
+          "end": 51.664758,
+          "score": 0.8737375666381874,
+          "startDelta": 0.04003,
+          "endDelta": 0.020015
+        }
+      ],
+      "corroboration": [
+        {
+          "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "role": "source",
+          "text": "upon",
+          "start": 51.110572,
+          "end": 51.670572,
+          "score": 0.9875035881996155,
+          "startDelta": 0.213936,
+          "endDelta": 0.014201
+        },
+        {
+          "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+          "role": "source",
+          "text": "upon",
+          "start": 51.110572,
+          "end": 51.710572,
+          "score": 0.9969404935836792,
+          "startDelta": 0.213936,
+          "endDelta": 0.025799
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+        "role": "source",
+        "text": "upon",
+        "start": 51.324508,
+        "end": 51.684773,
+        "score": 0.9428011748801194,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "note": "Supported by existing measured source/independent-checkpoint/AAC evidence. Whole-film automatic gate remains failed."
+    },
+    {
+      "id": "g4-l018-w01",
+      "text": "has",
+      "expectedStart": 73.532475,
+      "expectedEnd": 73.752753,
+      "start": 73.575827,
+      "end": 73.675862,
+      "method": "official_ctc_asr",
+      "reportPath": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-01/audio/audio-review.json",
+      "reportSha256": "177bfb5374ff7f0d9973334b30c0d1e64f0291244d2b62f5aed1139acf6d2dc2",
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "has",
+          "start": 73.575827,
+          "end": 73.675862,
+          "score": 0.6167635891696338,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "has",
+          "start": 73.535813,
+          "end": 73.735883,
+          "score": 0.5848818939626654,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "has",
+          "start": 73.535813,
+          "end": 73.735883,
+          "score": 0.5848818939626654,
+          "startDelta": 0.040014,
+          "endDelta": 0.060021
+        }
+      ],
+      "corroboration": [
+        {
+          "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "role": "source",
+          "text": "has",
+          "start": 73.429351,
+          "end": 73.749351,
+          "score": 0.9835563898086548,
+          "startDelta": 0.146476,
+          "endDelta": 0.073489
+        },
+        {
+          "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "role": "source",
+          "text": "has",
+          "start": 73.489351,
+          "end": 73.789351,
+          "score": 0.979249894618988,
+          "startDelta": 0.086476,
+          "endDelta": 0.113489
+        },
+        {
+          "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+          "role": "source",
+          "text": "has",
+          "start": 73.509351,
+          "end": 73.789351,
+          "score": 0.8836436867713928,
+          "startDelta": 0.066476,
+          "endDelta": 0.113489
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+        "role": "source",
+        "text": "has",
+        "start": 73.575827,
+        "end": 73.675862,
+        "score": 0.5670917110376651,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "note": "Supported by existing measured source/independent-checkpoint/AAC evidence. Whole-film automatic gate remains failed."
+    },
+    {
+      "id": "g4-l019-w01",
+      "text": "you",
+      "expectedStart": 77.597601,
+      "expectedEnd": 77.857929,
+      "start": 77.598431,
+      "end": 77.738576,
+      "method": "official_ctc_asr",
+      "reportPath": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-01/audio/audio-review.json",
+      "reportSha256": "177bfb5374ff7f0d9973334b30c0d1e64f0291244d2b62f5aed1139acf6d2dc2",
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "you",
+          "start": 77.598431,
+          "end": 77.738576,
+          "score": 0.906595620346873,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "you",
+          "start": 77.538368,
+          "end": 77.818659,
+          "score": 0.35962799627861175,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "you",
+          "start": 77.538368,
+          "end": 77.818659,
+          "score": 0.35962799627861175,
+          "startDelta": 0.060063,
+          "endDelta": 0.080083
+        }
+      ],
+      "corroboration": [
+        {
+          "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "role": "source",
+          "text": "you",
+          "start": 77.497601,
+          "end": 77.717601,
+          "score": 0.9745249152183533,
+          "startDelta": 0.10083,
+          "endDelta": 0.020975
+        },
+        {
+          "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "role": "source",
+          "text": "you",
+          "start": 77.517601,
+          "end": 77.897601,
+          "score": 0.9659702181816101,
+          "startDelta": 0.08083,
+          "endDelta": 0.159025
+        },
+        {
+          "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+          "role": "source",
+          "text": "you",
+          "start": 77.577601,
+          "end": 77.917601,
+          "score": 0.8832172155380249,
+          "startDelta": 0.02083,
+          "endDelta": 0.179025
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+        "role": "source",
+        "text": "you",
+        "start": 77.598431,
+        "end": 77.758597,
+        "score": 0.8299240805255071,
+        "startDelta": 0,
+        "endDelta": 0.020021
+      },
+      "note": "Supported by existing measured source/independent-checkpoint/AAC evidence. Whole-film automatic gate remains failed."
+    },
+    {
+      "id": "g4-l026-w00",
+      "text": "There",
+      "expectedStart": 96.900167,
+      "expectedEnd": 97.160323,
+      "start": 96.958489,
+      "end": 97.178717,
+      "method": "official_dual_ctc",
+      "reportPath": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-01/audio/audio-review.json",
+      "reportSha256": "177bfb5374ff7f0d9973334b30c0d1e64f0291244d2b62f5aed1139acf6d2dc2",
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "There",
+          "start": 96.958489,
+          "end": 97.178717,
+          "score": 0.8833528541960981,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "There",
+          "start": 96.938468,
+          "end": 97.178717,
+          "score": 0.7914164448125129,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "There",
+          "start": 96.938468,
+          "end": 97.178717,
+          "score": 0.7914164448125129,
+          "startDelta": 0.020021,
+          "endDelta": 0
+        }
+      ],
+      "corroboration": [
+        {
+          "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "role": "source",
+          "text": "There",
+          "start": 97.037601,
+          "end": 97.057601,
+          "score": 0.7400083541870117,
+          "startDelta": 0.079112,
+          "endDelta": 0.121116
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+        "role": "source",
+        "text": "There",
+        "start": 96.958489,
+        "end": 97.178717,
+        "score": 0.8776528716562336,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "note": "Supported by existing measured source/independent-checkpoint/AAC evidence. Whole-film automatic gate remains failed."
+    },
+    {
+      "id": "g4-l039-w02",
+      "text": "till",
+      "expectedStart": 130.921044,
+      "expectedEnd": 131.321312,
+      "start": 130.981265,
+      "end": 131.341485,
+      "method": "official_ctc_asr",
+      "reportPath": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-01/audio/audio-review.json",
+      "reportSha256": "177bfb5374ff7f0d9973334b30c0d1e64f0291244d2b62f5aed1139acf6d2dc2",
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "till",
+          "start": 131.021289,
+          "end": 131.30146,
+          "score": 0.1909714737124967,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "till",
+          "start": 130.981265,
+          "end": 131.341485,
+          "score": 0.2652731020165204,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "till",
+          "start": 131.021289,
+          "end": 131.30146,
+          "score": 0.1909714737124967,
+          "startDelta": 0.040024,
+          "endDelta": 0.040025
+        }
+      ],
+      "corroboration": [
+        {
+          "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "role": "source",
+          "text": "till",
+          "start": 130.814677,
+          "end": 131.214677,
+          "score": 0.6149347424507141,
+          "startDelta": 0.166588,
+          "endDelta": 0.126808
+        },
+        {
+          "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+          "role": "source",
+          "text": "till",
+          "start": 130.874677,
+          "end": 131.254677,
+          "score": 0.6202786564826965,
+          "startDelta": 0.106588,
+          "endDelta": 0.086808
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "till",
+        "start": 130.981265,
+        "end": 131.341485,
+        "score": 0.2664834866802913,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "note": "Supported by existing measured source/independent-checkpoint/AAC evidence. Whole-film automatic gate remains failed."
+    },
+    {
+      "id": "g4-l046-w05",
+      "text": "today",
+      "expectedStart": 157.499719,
+      "expectedEnd": 157.879962,
+      "start": 157.502342,
+      "end": 158.04281,
+      "method": "official_dual_ctc",
+      "reportPath": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-01/audio/audio-review.json",
+      "reportSha256": "177bfb5374ff7f0d9973334b30c0d1e64f0291244d2b62f5aed1139acf6d2dc2",
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "today",
+          "start": 157.502342,
+          "end": 158.04281,
+          "score": 0.8815402884701116,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "today",
+          "start": 157.502342,
+          "end": 158.04281,
+          "score": 0.774777811943688,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "today",
+          "start": 157.502342,
+          "end": 158.04281,
+          "score": 0.774777811943688,
+          "startDelta": 0,
+          "endDelta": 0
+        }
+      ],
+      "corroboration": [
+        {
+          "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "role": "source",
+          "text": "today",
+          "start": 157.40925,
+          "end": 158.02925,
+          "score": 0.9905617833137512,
+          "startDelta": 0.093092,
+          "endDelta": 0.01356
+        },
+        {
+          "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+          "role": "source",
+          "text": "today",
+          "start": 157.46925,
+          "end": 158.10925,
+          "score": 0.9897316098213196,
+          "startDelta": 0.033092,
+          "endDelta": 0.06644
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+        "role": "source",
+        "text": "today",
+        "start": 157.502342,
+        "end": 158.04281,
+        "score": 0.8744243168429544,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "note": "Supported by existing measured source/independent-checkpoint/AAC evidence. Whole-film automatic gate remains failed."
+    },
+    {
+      "id": "g4-l048-w03",
+      "text": "presence,",
+      "expectedStart": 162.165807,
+      "expectedEnd": 162.726536,
+      "start": 162.166382,
+      "end": 162.606764,
+      "method": "official_dual_ctc",
+      "reportPath": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-01/audio/audio-review.json",
+      "reportSha256": "177bfb5374ff7f0d9973334b30c0d1e64f0291244d2b62f5aed1139acf6d2dc2",
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "presence,",
+          "start": 162.1864,
+          "end": 162.666816,
+          "score": 0.871800949197821,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "presence,",
+          "start": 162.166382,
+          "end": 162.606764,
+          "score": 0.9330109890884244,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "presence,",
+          "start": 162.1864,
+          "end": 162.666816,
+          "score": 0.871800949197821,
+          "startDelta": 0.020018,
+          "endDelta": 0.060052
+        }
+      ],
+      "corroboration": [
+        {
+          "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "role": "source",
+          "text": "presence",
+          "start": 162.02925,
+          "end": 162.44925,
+          "score": 0.9055376052856445,
+          "startDelta": 0.137132,
+          "endDelta": 0.157514
+        },
+        {
+          "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "role": "source",
+          "text": "presence",
+          "start": 162.10925,
+          "end": 162.54925,
+          "score": 0.9894959330558777,
+          "startDelta": 0.057132,
+          "endDelta": 0.057514
+        },
+        {
+          "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+          "role": "source",
+          "text": "presence",
+          "start": 162.12925,
+          "end": 162.68925,
+          "score": 0.993333637714386,
+          "startDelta": 0.037132,
+          "endDelta": 0.082486
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "presence,",
+        "start": 162.166382,
+        "end": 162.606764,
+        "score": 0.9492182056296361,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "note": "Supported by existing measured source/independent-checkpoint/AAC evidence. Whole-film automatic gate remains failed."
+    },
+    {
+      "id": "g4-l053-w02",
+      "text": "vengeance",
+      "expectedStart": 174.401365,
+      "expectedEnd": 174.881791,
+      "start": 174.399652,
+      "end": 175.000245,
+      "method": "official_ctc_asr",
+      "reportPath": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-01/audio/audio-review.json",
+      "reportSha256": "177bfb5374ff7f0d9973334b30c0d1e64f0291244d2b62f5aed1139acf6d2dc2",
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "vengeance",
+          "start": 174.419672,
+          "end": 175.000245,
+          "score": 0.16989720620764148,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "vengeance",
+          "start": 174.399652,
+          "end": 175.000245,
+          "score": 0.7513390176566049,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "vengeance",
+          "start": 174.419672,
+          "end": 175.000245,
+          "score": 0.16989720620764148,
+          "startDelta": 0.02002,
+          "endDelta": 0
+        }
+      ],
+      "corroboration": [
+        {
+          "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "role": "source",
+          "text": "vengeance",
+          "start": 174.269818,
+          "end": 174.809818,
+          "score": 0.8556938171386719,
+          "startDelta": 0.129834,
+          "endDelta": 0.190427
+        },
+        {
+          "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+          "role": "source",
+          "text": "vengeance",
+          "start": 174.289818,
+          "end": 174.869818,
+          "score": 0.9988459348678589,
+          "startDelta": 0.109834,
+          "endDelta": 0.130427
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "vengeance",
+        "start": 174.399652,
+        "end": 175.000245,
+        "score": 0.7623353053780051,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "note": "Supported by existing measured source/independent-checkpoint/AAC evidence. Whole-film automatic gate remains failed."
+    },
+    {
+      "id": "g4-l053-w03",
+      "text": "sevenfold.",
+      "expectedStart": 175.081968,
+      "expectedEnd": 175.982766,
+      "start": 175.100344,
+      "end": 176.301532,
+      "method": "official_ctc_asr",
+      "reportPath": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-01/audio/audio-review.json",
+      "reportSha256": "177bfb5374ff7f0d9973334b30c0d1e64f0291244d2b62f5aed1139acf6d2dc2",
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "sevenfold.",
+          "start": 175.100344,
+          "end": 176.261492,
+          "score": 0.1791494597647375,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "sevenfold.",
+          "start": 175.100344,
+          "end": 176.301532,
+          "score": 0.3561177897149748,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "sevenfold.",
+          "start": 175.100344,
+          "end": 176.261492,
+          "score": 0.1791494597647375,
+          "startDelta": 0,
+          "endDelta": 0.04004
+        }
+      ],
+      "corroboration": [
+        {
+          "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+          "role": "source",
+          "text": "sevenfold",
+          "start": 174.869818,
+          "end": 176.349818,
+          "score": 0.8345237374305725,
+          "startDelta": 0.230526,
+          "endDelta": 0.048286
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "sevenfold.",
+        "start": 175.100344,
+        "end": 176.301532,
+        "score": 0.37573116853139754,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "note": "Supported by existing measured source/independent-checkpoint/AAC evidence. Whole-film automatic gate remains failed."
+    },
+    {
+      "id": "g4-l061-w03",
+      "text": "city",
+      "expectedStart": 209.639825,
+      "expectedEnd": 209.92,
+      "start": 209.642336,
+      "end": 210.002609,
+      "method": "official_dual_ctc",
+      "reportPath": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-01/audio/audio-review.json",
+      "reportSha256": "177bfb5374ff7f0d9973334b30c0d1e64f0291244d2b62f5aed1139acf6d2dc2",
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "city",
+          "start": 209.682367,
+          "end": 210.002609,
+          "score": 0.9994003356276213,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "city",
+          "start": 209.642336,
+          "end": 210.002609,
+          "score": 0.9998259291632123,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "city",
+          "start": 209.682367,
+          "end": 210.002609,
+          "score": 0.9994003356276213,
+          "startDelta": 0.040031,
+          "endDelta": 0
+        }
+      ],
+      "corroboration": [
+        {
+          "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "role": "source",
+          "text": "city",
+          "start": 209.550763,
+          "end": 209.810763,
+          "score": 0.9921931624412537,
+          "startDelta": 0.091573,
+          "endDelta": 0.191846
+        },
+        {
+          "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "role": "source",
+          "text": "city",
+          "start": 209.650763,
+          "end": 209.890763,
+          "score": 0.9976220726966858,
+          "startDelta": 0.008427,
+          "endDelta": 0.111846
+        },
+        {
+          "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+          "role": "source",
+          "text": "city",
+          "start": 209.670763,
+          "end": 209.990763,
+          "score": 0.9968113303184509,
+          "startDelta": 0.028427,
+          "endDelta": 0.011846
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "city",
+        "start": 209.642336,
+        "end": 210.002609,
+        "score": 0.9998264662747139,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "note": "Supported by existing measured source/independent-checkpoint/AAC evidence. Whole-film automatic gate remains failed."
+    },
+    {
+      "id": "g4-l067-w00",
+      "text": "Lamech",
+      "expectedStart": 221.073548,
+      "expectedEnd": 221.514071,
+      "start": 221.570364,
+      "end": 222.050546,
+      "method": "official_ctc_asr",
+      "reportPath": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-01/audio/audio-review.json",
+      "reportSha256": "177bfb5374ff7f0d9973334b30c0d1e64f0291244d2b62f5aed1139acf6d2dc2",
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "Lamech",
+          "start": 221.590372,
+          "end": 222.050546,
+          "score": 0.2443555576166853,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "Lamech",
+          "start": 221.570364,
+          "end": 222.050546,
+          "score": 0.2865353876992667,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "Lamech",
+          "start": 221.590372,
+          "end": 222.050546,
+          "score": 0.2443555576166853,
+          "startDelta": 0.020008,
+          "endDelta": 0
+        }
+      ],
+      "corroboration": [
+        {
+          "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "role": "source",
+          "text": "Lamech",
+          "start": 221.648167,
+          "end": 222.088167,
+          "score": 0.9927975535392761,
+          "startDelta": 0.077803,
+          "endDelta": 0.037621
+        },
+        {
+          "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+          "role": "source",
+          "text": "Lamech",
+          "start": 221.628167,
+          "end": 222.108167,
+          "score": 0.9932612975438436,
+          "startDelta": 0.057803,
+          "endDelta": 0.057621
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "Lamech",
+        "start": 221.570364,
+        "end": 222.050546,
+        "score": 0.23881889848375287,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "note": "Supported by existing measured source/independent-checkpoint/AAC evidence. Whole-film automatic gate remains failed."
+    },
+    {
+      "id": "g4-l076-w02",
+      "text": "Thobel,",
+      "expectedStart": 234.95219,
+      "expectedEnd": 235.372795,
+      "start": 234.955416,
+      "end": 235.275537,
+      "method": "official_ctc_asr",
+      "reportPath": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-01/audio/audio-review.json",
+      "reportSha256": "177bfb5374ff7f0d9973334b30c0d1e64f0291244d2b62f5aed1139acf6d2dc2",
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "Thobel,",
+          "start": 234.975424,
+          "end": 235.275537,
+          "score": 0.14234481993771925,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "Thobel,",
+          "start": 234.955416,
+          "end": 235.275537,
+          "score": 0.4408822152381187,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "Thobel,",
+          "start": 234.975424,
+          "end": 235.275537,
+          "score": 0.14234481993771925,
+          "startDelta": 0.020008,
+          "endDelta": 0
+        }
+      ],
+      "corroboration": [
+        {
+          "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+          "role": "source",
+          "text": "Thobel",
+          "start": 235.008167,
+          "end": 235.368167,
+          "score": 0.8428816397984823,
+          "startDelta": 0.052751,
+          "endDelta": 0.09263
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "Thobel,",
+        "start": 234.955416,
+        "end": 235.275537,
+        "score": 0.45578562916426346,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "note": "Supported by existing measured source/independent-checkpoint/AAC evidence. Whole-film automatic gate remains failed."
+    },
+    {
+      "id": "g4-l083-w01",
+      "text": "young",
+      "expectedStart": 251.228323,
+      "expectedEnd": 251.428474,
+      "start": 251.22928,
+      "end": 251.549566,
+      "method": "official_ctc_asr",
+      "reportPath": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-01/audio/audio-review.json",
+      "reportSha256": "177bfb5374ff7f0d9973334b30c0d1e64f0291244d2b62f5aed1139acf6d2dc2",
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "young",
+          "start": 251.22928,
+          "end": 251.569583,
+          "score": 0.15528061767660487,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "young",
+          "start": 251.22928,
+          "end": 251.549566,
+          "score": 0.3033563267785454,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "young",
+          "start": 251.22928,
+          "end": 251.569583,
+          "score": 0.15528061767660487,
+          "startDelta": 0,
+          "endDelta": 0.020017
+        }
+      ],
+      "corroboration": [
+        {
+          "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+          "role": "source",
+          "text": "young",
+          "start": 251.097089,
+          "end": 251.337089,
+          "score": 0.9980162382125854,
+          "startDelta": 0.132191,
+          "endDelta": 0.212477
+        },
+        {
+          "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "role": "source",
+          "text": "young",
+          "start": 251.177089,
+          "end": 251.437089,
+          "score": 0.9985566735267639,
+          "startDelta": 0.052191,
+          "endDelta": 0.112477
+        },
+        {
+          "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+          "role": "source",
+          "text": "young",
+          "start": 251.237089,
+          "end": 251.497089,
+          "score": 0.9985217452049255,
+          "startDelta": 0.007809,
+          "endDelta": 0.052477
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "young",
+        "start": 251.22928,
+        "end": 251.549566,
+        "score": 0.27892763337924154,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "note": "Supported by existing measured source/independent-checkpoint/AAC evidence. Whole-film automatic gate remains failed."
+    },
+    {
+      "id": "g4-l088-w03",
+      "text": "son",
+      "expectedStart": 272.961178,
+      "expectedEnd": 273.541566,
+      "start": 273.023746,
+      "end": 273.523931,
+      "method": "official_dual_ctc",
+      "reportPath": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-01/audio/audio-review.json",
+      "reportSha256": "177bfb5374ff7f0d9973334b30c0d1e64f0291244d2b62f5aed1139acf6d2dc2",
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "son",
+          "start": 273.023746,
+          "end": 273.523931,
+          "score": 0.9901146667557031,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "son",
+          "start": 272.983731,
+          "end": 273.523931,
+          "score": 0.963903578160982,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "son",
+          "start": 272.983731,
+          "end": 273.523931,
+          "score": 0.963903578160982,
+          "startDelta": 0.040015,
+          "endDelta": 0
+        }
+      ],
+      "corroboration": [
+        {
+          "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "role": "source",
+          "text": "son",
+          "start": 273.058897,
+          "end": 273.478897,
+          "score": 0.9103821516036987,
+          "startDelta": 0.035151,
+          "endDelta": 0.045034
+        },
+        {
+          "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+          "role": "source",
+          "text": "son",
+          "start": 273.038897,
+          "end": 273.478897,
+          "score": 0.9926804900169373,
+          "startDelta": 0.015151,
+          "endDelta": 0.045034
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+        "role": "source",
+        "text": "son",
+        "start": 273.023746,
+        "end": 273.523931,
+        "score": 0.9816056942687229,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "note": "Supported by existing measured source/independent-checkpoint/AAC evidence. Whole-film automatic gate remains failed."
+    },
+    {
+      "id": "g4-l089-w04",
+      "text": "seed",
+      "expectedStart": 278.044578,
+      "expectedEnd": 278.484873,
+      "start": 278.085619,
+      "end": 278.525782,
+      "method": "official_dual_ctc",
+      "reportPath": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-01/audio/audio-review.json",
+      "reportSha256": "177bfb5374ff7f0d9973334b30c0d1e64f0291244d2b62f5aed1139acf6d2dc2",
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "seed",
+          "start": 278.085619,
+          "end": 278.525782,
+          "score": 0.9619974303047005,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "seed",
+          "start": 278.045605,
+          "end": 278.505775,
+          "score": 0.9350280654247571,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "seed",
+          "start": 278.045605,
+          "end": 278.505775,
+          "score": 0.9350280654247571,
+          "startDelta": 0.040014,
+          "endDelta": 0.020007
+        }
+      ],
+      "corroboration": [
+        {
+          "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+          "role": "source",
+          "text": "seed",
+          "start": 277.898897,
+          "end": 278.458897,
+          "score": 0.9401880502700806,
+          "startDelta": 0.186722,
+          "endDelta": 0.066885
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+        "role": "source",
+        "text": "seed",
+        "start": 278.085619,
+        "end": 278.525782,
+        "score": 0.9283776659120296,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "note": "Supported by existing measured source/independent-checkpoint/AAC evidence. Whole-film automatic gate remains failed."
+    }
+  ],
+  "ambiguousCandidates": [
+    {
+      "id": "g4-l028-w03",
+      "text": "asked",
+      "expectedStart": 105.385239,
+      "expectedEnd": 105.645395,
+      "alternatives": [
+        {
+          "model": "base",
+          "start": 103.28871,
+          "end": 103.409677,
+          "tokenProbability": 0.005552607221567156,
+          "evidence": "/tmp/genesis4-new-film/alignment/targeted-final/g4-l028-base.json",
+          "evidenceSha256": "4d3fb41c73b072127ea79d10662d16de8918ea9a04fd19bb74b37758fea93bfd"
+        },
+        {
+          "model": "large",
+          "start": 104.095161,
+          "end": 104.256452,
+          "tokenProbability": 0.010394327183670116,
+          "evidence": "/tmp/genesis4-new-film/alignment/targeted-final/g4-l028-large.json",
+          "evidenceSha256": "effdd296722464502ba7e47ae4de0655edf7931c3d87c4de12bd5193a9b0b43e"
+        }
+      ],
+      "decision": "User-directed production estimate: selected actual narrow-window large-CTC interval to avoid demonstrably late presentation; remains acoustically uncertified.",
+      "start": 104.095161,
+      "end": 104.256452,
+      "confidence": "machine_estimate",
+      "timingVerified": false,
+      "selectedEvidence": "/tmp/genesis4-new-film/alignment/targeted-final/g4-l028-large.json",
+      "selectedEvidenceSha256": "effdd296722464502ba7e47ae4de0655edf7931c3d87c4de12bd5193a9b0b43e"
+    },
+    {
+      "id": "g4-l028-w04",
+      "text": "Cain,",
+      "expectedStart": 105.725443,
+      "expectedEnd": 105.825502,
+      "alternatives": [
+        {
+          "model": "base",
+          "start": 103.954032,
+          "end": 104.155645,
+          "tokenProbability": 0.0003181813328363301,
+          "evidence": "/tmp/genesis4-new-film/alignment/targeted-final/g4-l028-base.json",
+          "evidenceSha256": "4d3fb41c73b072127ea79d10662d16de8918ea9a04fd19bb74b37758fea93bfd"
+        },
+        {
+          "model": "large",
+          "start": 104.276613,
+          "end": 104.357258,
+          "tokenProbability": 0.002113719579984036,
+          "evidence": "/tmp/genesis4-new-film/alignment/targeted-final/g4-l028-large.json",
+          "evidenceSha256": "effdd296722464502ba7e47ae4de0655edf7931c3d87c4de12bd5193a9b0b43e"
+        }
+      ],
+      "decision": "User-directed production estimate: selected actual narrow-window large-CTC interval to avoid demonstrably late presentation; remains acoustically uncertified.",
+      "start": 104.276613,
+      "end": 104.357258,
+      "confidence": "machine_estimate",
+      "timingVerified": false,
+      "selectedEvidence": "/tmp/genesis4-new-film/alignment/targeted-final/g4-l028-large.json",
+      "selectedEvidenceSha256": "effdd296722464502ba7e47ae4de0655edf7931c3d87c4de12bd5193a9b0b43e"
+    }
+  ],
+  "validation": {
+    "lexicalChanges": 0,
+    "orderedAfterRepairs": true,
+    "overlapsAfterRepairs": []
+  },
+  "limitations": [
+    "Independent numeric support does not establish subjective perception or whole-film automatic acceptance.",
+    "Only material supported cue differences are proposed;242 already-in-tolerance minor refinements omitted.",
+    "Reviewing a changed encoded candidate must rebind actual audio and technical evidence."
+  ],
+  "contextDependencies": [
+    {
+      "ifRepairApplied": "g4-l067-w00",
+      "id": "g4-l067-w01",
+      "text": "took",
+      "expectedStart": 221.594167,
+      "expectedEnd": 222.03469,
+      "start": 222.110568,
+      "end": 222.250621,
+      "confidence": "machine_estimate",
+      "timingVerified": false,
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "took",
+          "start": 222.130576,
+          "end": 222.270629,
+          "score": 0.013703331164365378,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "took",
+          "start": 222.110568,
+          "end": 222.250621,
+          "score": 0.08234727304949173,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "reportPath": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-01/audio/audio-review.json",
+      "reportSha256": "177bfb5374ff7f0d9973334b30c0d1e64f0291244d2b62f5aed1139acf6d2dc2",
+      "reason": "Apply only together with Lamech repair to avoid0.456s overlap. Both CTC checkpoints agree within20ms on this interval; scores remain low, so this is a measured production estimate, not a verified cue."
+    }
+  ],
+  "notes": [
+    "17 supported repairs selected; earth extension excluded to retain original endpoint.",
+    "2 additional bounded estimates plus took companion remain machine_estimate and timingVerified:false.",
+    "20 total selected changes validated together: no overlap or word-order violations. No source/project mutations."
+  ],
+  "skippedRepairs": [
+    {
+      "id": "g4-l049-w05",
+      "text": "earth,",
+      "expectedStart": 164.889349,
+      "expectedEnd": 165.109635,
+      "start": 164.888741,
+      "end": 165.289087,
+      "method": "official_ctc_asr",
+      "reportPath": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-01/audio/audio-review.json",
+      "reportSha256": "177bfb5374ff7f0d9973334b30c0d1e64f0291244d2b62f5aed1139acf6d2dc2",
+      "sourceAcousticEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "earth,",
+          "start": 164.908758,
+          "end": 165.289087,
+          "score": 0.2544128209661357,
+          "startDelta": null,
+          "endDelta": null
+        },
+        {
+          "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+          "role": "source",
+          "text": "earth,",
+          "start": 164.888741,
+          "end": 165.289087,
+          "score": 0.9081695434327891,
+          "startDelta": null,
+          "endDelta": null
+        }
+      ],
+      "pairedCheckpointEvidence": [
+        {
+          "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+          "role": "source",
+          "text": "earth,",
+          "start": 164.908758,
+          "end": 165.289087,
+          "score": 0.2544128209661357,
+          "startDelta": 0.020017,
+          "endDelta": 0
+        }
+      ],
+      "corroboration": [
+        {
+          "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+          "role": "source",
+          "text": "earth",
+          "start": 164.66925,
+          "end": 165.12925,
+          "score": 0.9665865302085876,
+          "startDelta": 0.219491,
+          "endDelta": 0.159837
+        },
+        {
+          "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+          "role": "source",
+          "text": "earth",
+          "start": 164.74925,
+          "end": 165.20925,
+          "score": 0.9967118501663208,
+          "startDelta": 0.139491,
+          "endDelta": 0.079837
+        }
+      ],
+      "encodedEvidence": {
+        "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+        "role": "source",
+        "text": "earth,",
+        "start": 164.888741,
+        "end": 165.289087,
+        "score": 0.8670684077151963,
+        "startDelta": 0,
+        "endDelta": 0
+      },
+      "note": "Supported by existing measured source/independent-checkpoint/AAC evidence. Whole-film automatic gate remains failed.",
+      "decision": "Skip: retain original end to avoid overlap with whoever."
+    }
+  ]
+}

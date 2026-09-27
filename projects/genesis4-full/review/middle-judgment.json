@@ -1,0 +1,73 @@
+{
+  "reviewer": "independent-middle-visual-review",
+  "video": "/Volumes/Code/ark-video-studio/output/genesis4-production/film.mp4",
+  "videoSha256": "b3648decb79c77c99f6b670406019c659faf0fb216ac4e0dcb3f427e07548eca",
+  "scope": {
+    "sectionIndexes": [
+      30,
+      59
+    ],
+    "seconds": [
+      105.13,
+      212.17
+    ],
+    "allAssignedScenesInspected": true,
+    "extractedFrames": 58
+  },
+  "method": "Inspected four contact sheets made from decoded final MP4 frames; every assigned scene has a reading-hold sample, with start/middle/tail/handoff samples for seven short or major sequences. No audio judgment performed.",
+  "verdict": "approve-with-nonblocking-notes",
+  "scores": {
+    "lyricLegibility": 9.1,
+    "semanticMotion": 8.4,
+    "photorealism": 8.9,
+    "composition": 8.8,
+    "continuity": 9.0
+  },
+  "blockers": [],
+  "observations": [
+    {
+      "atSeconds": 124.0,
+      "untilSeconds": 125.13,
+      "finding": "Short she-opened-her-mouth phrase resolves visibly before the next phrase; entire mouth word is present at124.91s and next to appears at125.13s. No visible truncation."
+    },
+    {
+      "atSeconds": 171.73,
+      "untilSeconds": 173.07,
+      "finding": "Whoever kills Cain resolves as a complete line before the hard cut into sevenfold; eclipse motion remains behind type."
+    },
+    {
+      "atSeconds": 116.57,
+      "untilSeconds": 120.97,
+      "finding": "Blood-earth texture is detailed and dark enough to keep white and red serif lyrics distinct, including ground at the tail."
+    },
+    {
+      "atSeconds": 195.03,
+      "untilSeconds": 202.63,
+      "finding": "Exile image is convincing, full-frame and uncluttered; left-aligned cumulative lyrics stay readable through Edem. Human subject is plainly clothed, no armor visible."
+    },
+    {
+      "atSeconds": 208.93,
+      "untilSeconds": 212.17,
+      "finding": "City image offers coherent depth and primitive construction; centered serif wording is readable and Enoch has a complete final hold."
+    }
+  ],
+  "nonblockingNotes": [
+    {
+      "atSeconds": 184.03,
+      "untilSeconds": 195.03,
+      "finding": "Instrumental lineage/strings interlude is an intentional visual breather but the latter becomes nearly still after its opening draw. Acceptable within the requested bounded finish; future versions could animate sparse string resonance during instrumental audio."
+    },
+    {
+      "atSeconds": 145.6,
+      "untilSeconds": 168.9,
+      "finding": "Fracture grammar repeats through the fear/confession passage; differing font hierarchies and word entrances provide variation, but an additional scene grammar would deepen future variety."
+    }
+  ],
+  "evidencePaths": [
+    "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-middle/evidence.json",
+    "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-middle/coverage-1.jpg",
+    "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-middle/coverage-2.jpg",
+    "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-middle/temporal-1.jpg",
+    "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/independent-middle/temporal-2.jpg"
+  ]
+}

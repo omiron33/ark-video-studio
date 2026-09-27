@@ -1,0 +1,21 @@
+{
+  "signedBy": "/root/new_line_motion \u2014 independent encoded-frame visual reviewer",
+  "reviewedAt": "2026-09-27T06:13:19.418409+00:00",
+  "videoSha256": "b3648decb79c77c99f6b670406019c659faf0fb216ac4e0dcb3f427e07548eca",
+  "method": "Direct visual inspection of the two supplied encoded PNG frames only. Native OCR status is unchanged.",
+  "nativeOcrPassed": false,
+  "findings": [
+    {
+      "expected": "I",
+      "imagePath": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/visual/ocr/frames/frame-0003355-sample-0000587.png",
+      "visiblyPresent": true,
+      "observation": "The frame clearly shows AM I in white textured block letters at left-center. I is a separate upright glyph with visible spacing after AM; it is fully within the picture and unobscured."
+    },
+    {
+      "expected": "Jubal;",
+      "imagePath": "/Volumes/Code/ark-video-studio/output/genesis4-production/review/attempt-02/visual/ocr/frames/frame-0006938-sample-0001332.png",
+      "visiblyPresent": true,
+      "observation": "The frame clearly shows HIS BROTHER'S NAME WAS above a large red JUBAL;. J, U, B, A and L are all legible, followed by a separate semicolon with an upper dot and lower comma form. No extra letter I is visible."
+    }
+  ]
+}
