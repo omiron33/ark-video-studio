@@ -42,6 +42,8 @@ Treatments are starting points. Extend `registerStyle` in `engine/visual.mjs` fo
 
 ## Timing and speed
 
+Future `create` runs also apply the [creative policy](CREATE.md#visual-rhythm-for-future-runs): unique scene artwork, measured accent bursts, restrained holds and slow supporting dissolves. `direction.pacing` is opt-in at render time, so older manifests retain their existing choreography. Factual artwork and timing audits accompany the gauntlet; visual judgment still determines whether the planned contrast succeeds on screen.
+
 Words retain stable IDs, source intervals, confidence and correction provenance. Beat events are separate. A strong music accent can drive a camera or a wave without moving the sung-word onset. The selected Genesis clip initially used three local ASR cross-checks. The autonomous audio reviewer now checks waveform fidelity, lyric recognition and independent forced alignment, and can repair disputed word boundaries before rerendering. Machine review records its method, thresholds and evidence; it does not invent a subjective listening score.
 
 A section cache fingerprints the scene, intersecting words (including boundary overlaps), direction, actual image/font bytes, relevant beats, renderer source and export profile. Portal transitions also fingerprint their successor. Ordinary edits only invalidate affected sections. A global renderer/font/profile change intentionally invalidates all dependent sections.

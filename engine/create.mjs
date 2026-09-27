@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 import { importSong } from './import.mjs';
 import { atomicJson, digest, fileHash, loadProject, validateProject } from './project.mjs';
 import { renderProject } from './export.mjs';
+import { planCreativePolicy, reviewCreativePolicy, pendingArtworkRequests } from './creative-policy.mjs';
 
 const wordKey = text => String(text).toLowerCase().replace(/[^a-z0-9']/g, '');
 const moduleDir = path.dirname(fileURLToPath(import.meta.url));
@@ -80,7 +81,6 @@ export function planStyle(project, stylePrompt) {
       if(scene.style==='terrain')Object.assign(scene.direction,{dark:true,palette:{paper:'#141d23',ink:p.palette.paper,accent:'#83969c'}});
       if(scene.style==='rise')scene.direction.wipeColor='#141d23';
     }
-    if (imageIds.length && (requests.photo || scene.style === 'submerge')) { scene.assetIds = [...imageIds]; scene.direction.photo = imageIds[0]; }
   }
   for (let i = 0; i < p.sections.length - 1; i++) {
     const scene = p.sections[i], next = p.sections[i + 1];
@@ -232,17 +232,30 @@ export async function createSong(options, serviceOverrides = {}) {
         const directed = await services.directProject({ project, stylePrompt: options.stylePrompt, endpoint: options.directorEndpoint, model: options.directorModel, fallbackPlan: base });
         project = directed.project ?? project;
         if (digest(project.words) !== wordsBefore || digest(project.audio) !== audioBefore || project.duration !== durationBefore) throw new Error('Director tried to change canonical lyrics, timing, audio, or duration');
+        const creative = planCreativePolicy(project, { stylePrompt: options.stylePrompt });
+        project = creative.project;
         const validation = await validateProject(project, manifestPath);
         if (!validation.valid) throw new Error(`Directed project invalid: ${validation.errors.join('; ')}`);
-        await atomicJson(path.join(outDir, 'plan.json'), { stylePrompt: options.stylePrompt, fallback: base.evidence, director: { method: directed.method, evidence: directed.evidence }, sections: project.sections });
+        await atomicJson(path.join(outDir, 'plan.json'), { stylePrompt: options.stylePrompt, fallback: base.evidence, director: { method: directed.method, evidence: directed.evidence }, creative: creative.evidence, sections: project.sections });
         await atomicJson(manifestPath, project);
         run.planner = { method: directed.method, evidencePath: path.join(outDir, 'plan.json') };
-        run.assetRequests = directed.evidence?.assetRequests ?? (base.evidence.warnings.some(w => /photographic imagery/.test(w)) ? [{ status: 'pending', request: options.stylePrompt, reason: 'No photographic asset supplied', agentAction: 'Use the built-in GPT Image tool to create the requested imagery, copy the selected assets into this portable project, assign section assetIds/direction, then resume. This is agent work, not a user handoff.' }] : []);
+        run.assetRequests = [...(directed.evidence?.assetRequests ?? []), ...creative.assetRequests];
         await save();
       });
     }
     const videoPath = path.join(outDir, 'film.mp4'); run.videoPath = videoPath;
     for (let pass = 1; pass <= maxPasses; pass++) {
+      const plannedProject = (await loadProject(manifestPath)).project;
+      const plannedCreative = await reviewCreativePolicy(plannedProject, manifestPath);
+      if (plannedCreative.required) {
+        run.assetRequests = pendingArtworkRequests(plannedProject, run.assetRequests, plannedCreative);
+        run.creativePreflight = plannedCreative;
+        if (!plannedCreative.passed || run.assetRequests.length) {
+          run.status = 'quality_failed';
+          run.result = { projectPath: manifestPath, passed: false, gate: { passed: false, status: run.assetRequests.length ? 'required_assets_pending' : 'creative_policy_failed', reasons: [...plannedCreative.issues, ...(run.assetRequests.length ? ['Required scene artwork remains pending'] : [])] }, nextAction: 'Resolve the named scene artwork requests or pacing findings, then resume. No rendering was started for this incomplete plan.' };
+          run.completedAt = new Date().toISOString(); await save(); return run;
+        }
+      }
       const attempt = { number: run.attempts.length + 1, startedAt: new Date().toISOString(), repairsAllowed: pass < maxPasses }; run.attempts.push(attempt); await save();
       const attemptDir = path.join(outDir, 'review', `attempt-${String(attempt.number).padStart(2, '0')}`);
       const render = await stage('render', () => services.renderProject({ projectPath: manifestPath, outPath: videoPath, scale: request.scale, onProgress: options.onProgress }));
@@ -257,30 +270,49 @@ export async function createSong(options, serviceOverrides = {}) {
           const base = planStyle(repaired, options.stylePrompt);
           const authored = await applyAuthoredDirection(base.project, options.directionFile, manifestPath, 'directions');
           const directed = await services.directProject({ project: authored, stylePrompt: options.stylePrompt, endpoint: options.directorEndpoint, model: options.directorModel, fallbackPlan: base });
-          const project = directed.project ?? authored;
+          let project = directed.project ?? authored;
           if (digest(project.words) !== digest(repaired.words) || digest(project.audio) !== digest(repaired.audio) || project.duration !== repaired.duration) throw new Error('Director tried to alter audio-reviewed canonical lyrics or source');
+          const creative = planCreativePolicy(project, { stylePrompt: options.stylePrompt });
+          project = creative.project;
           const validation = await validateProject(project, manifestPath);
           if (!validation.valid) throw new Error(`Replanned project invalid: ${validation.errors.join('; ')}`);
           const evidencePath = path.join(attemptDir, 'replan.json');
-          await atomicJson(evidencePath, { method: directed.method, evidence: directed.evidence, sections: project.sections });
+          await atomicJson(evidencePath, { method: directed.method, evidence: directed.evidence, creative: creative.evidence, sections: project.sections });
           await atomicJson(manifestPath, project);
           attempt.replan = { method: directed.method, evidencePath };
           run.planner = { ...attempt.replan };
+          run.assetRequests = [...(directed.evidence?.assetRequests ?? []), ...creative.assetRequests];
           await save();
         });
+        else {
+          const repaired = (await loadProject(manifestPath)).project;
+          if (repaired.creation?.creativePolicy) await atomicJson(manifestPath, planCreativePolicy(repaired, { stylePrompt: options.stylePrompt }).project);
+        }
         continue;
       }
       const gauntlet = await stage('technical-review', () => services.reviewVideo({ projectPath: manifestPath, videoPath, outDir: path.join(attemptDir, 'gauntlet'), audioReviewPath: audio.reportPath }));
       attempt.gauntletPath = gauntlet.reportPath; await save();
       const visual = await stage('visual-review', () => services.reviewVisual({ projectPath: manifestPath, videoPath, outDir: path.join(attemptDir, 'visual'), stylePrompt: options.stylePrompt, endpoint: options.directorEndpoint, model: options.directorModel, attempt: pass, repair: pass < maxPasses }));
       attempt.visual = { status: visual.status, scores: visual.scores, issues: visual.issues, projectChanged: visual.projectChanged, reviewPath: visual.reviewPath, method: visual.method }; await save();
-      if (visual.projectChanged) { attempt.outcome = 'visual-repaired-rerender-required'; await save(); if (pass < maxPasses) continue; throw new Error('Visual review changed the project without an available rerender pass'); }
+      if (visual.projectChanged) {
+        attempt.outcome = 'visual-repaired-rerender-required'; await save();
+        if (pass < maxPasses) {
+          const repaired = (await loadProject(manifestPath)).project;
+          if (repaired.creation?.creativePolicy) await atomicJson(manifestPath, planCreativePolicy(repaired, { stylePrompt: options.stylePrompt }).project);
+          continue;
+        }
+        throw new Error('Visual review changed the project without an available rerender pass');
+      }
       if (visual.reviewPath) await services.attachMachineVisualReview({ reportPath: gauntlet.reportPath, visualReviewPath: visual.reviewPath });
       const gate = await services.checkReview({ reportPath: gauntlet.reportPath, audioReviewPath: audio.reportPath, visualReviewPath: visual.reviewPath, videoPath, projectPath: manifestPath });
       attempt.gate = { passed: gate.passed, status: gate.status, reasons: gate.reasons }; attempt.completedAt = new Date().toISOString();
       const currentProject = (await loadProject(manifestPath)).project;
+      const creative = await reviewCreativePolicy(currentProject, manifestPath);
+      attempt.creative = creative;
       const imagesAssigned = currentProject.sections.some(s => s.assetIds.some(id => currentProject.assets[id]?.type === 'image'));
-      const unresolvedAssets = (run.assetRequests ?? []).filter(a => a.status !== 'resolved' && !imagesAssigned);
+      const unresolvedAssets = creative.required ? pendingArtworkRequests(currentProject, run.assetRequests, creative) : (run.assetRequests ?? []).filter(a => a.status !== 'resolved' && !imagesAssigned);
+      if (creative.required) run.assetRequests = unresolvedAssets;
+      if (!creative.passed) { attempt.gate.passed = false; attempt.gate.status = 'creative_policy_failed'; attempt.gate.reasons = [...(attempt.gate.reasons ?? []), ...creative.issues]; }
       if (unresolvedAssets.length) { attempt.gate.passed = false; attempt.gate.reasons = [...(attempt.gate.reasons ?? []), 'Required photographic assets remain pending; the agent must generate or supply and assign them.']; attempt.gate.status = 'required_assets_pending'; }
       const finished = attempt.gate.passed === true && audio.status === 'passed' && visual.status === 'passed';
       attempt.outcome = finished ? 'finished' : 'quality-failed';
@@ -316,10 +348,12 @@ export async function finalizeRun(options, serviceOverrides = {}) {
     if (!gate.quality?.machineAudioVerified || !gate.machineAudio?.passed) reasons.push('Fresh bound measured audio review is required; a hearing score cannot replace it');
     if (!gate.quality?.independentVisualReviewed || gate.status !== 'independently_reviewed') reasons.push('An existing independent visual-agent review is required; finalize-run does not invent judgment');
     const imagesAssigned = project.sections.some(s => s.assetIds.some(id => project.assets[id]?.type === 'image'));
-    const pendingAssets = (run.assetRequests ?? []).some(a => a.status !== 'resolved') && !imagesAssigned;
+    const creative = await reviewCreativePolicy(project, run.projectPath);
+    if (!creative.passed) reasons.push(...creative.issues);
+    const pendingAssets = creative.required ? pendingArtworkRequests(project, run.assetRequests, creative).length > 0 : (run.assetRequests ?? []).some(a => a.status !== 'resolved') && !imagesAssigned;
     if (pendingAssets) reasons.push('Required photographic assets remain pending');
     const passed = gate.passed === true && reasons.length === 0;
-    const event = { checkedAt: new Date().toISOString(), method: 'existing-independent-visual-review', passed, reportPath: path.resolve(reportPath), gate: { passed, status: passed ? 'independently_reviewed' : pendingAssets ? 'required_assets_pending' : gate.passed ? 'independent_finalization_failed' : gate.status, reasons }, binding: gate.currentBinding };
+    const event = { checkedAt: new Date().toISOString(), method: 'existing-independent-visual-review', passed, reportPath: path.resolve(reportPath), gate: { passed, status: passed ? 'independently_reviewed' : pendingAssets ? 'required_assets_pending' : !creative.passed ? 'creative_policy_failed' : gate.passed ? 'independent_finalization_failed' : gate.status, reasons }, creative, binding: gate.currentBinding };
     run.finalizations ??= []; run.finalizations.push(event);
     run.status = passed ? 'finished' : 'quality_failed';
     run.result = { videoPath: run.videoPath, projectPath: run.projectPath, gauntletPath: path.resolve(reportPath), audioReviewPath: gate.machineAudio?.path, visualReviewPath: gate.machineVisual?.path, passed, gate: event.gate, finalizationMethod: event.method, nextAction: passed ? null : 'Resolve the saved current gate failures before finalizing. Prior local-model reviews remain recorded.' };

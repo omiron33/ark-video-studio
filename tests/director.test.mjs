@@ -93,3 +93,14 @@ test('long-song direction uses bounded batches and preserves the complete timing
  const result=await directProject({project:p,stylePrompt:'Radiant graphic words',endpoint:`http://127.0.0.1:${server.address().port}`,model:'explicit-test-service'});
  assert.deepEqual(requests,[8,4]);assert.deepEqual(result.project.words,p.words);assert.equal(result.project.sections.length,12);assert.ok(result.project.sections.every(s=>s.style==='impact'));
 });
+
+test('future opening review sees subsecond action and later hook development', () => {
+ const p={duration:15,fps:30,creation:{creativePolicy:{immediateOpening:true}},words:[{id:'vocal',text:'Come',start:12,end:13}]};
+ const s={id:'intro',start:0,end:12,wordIds:[],direction:{pacing:{mode:'opening-hook',hook:{start:0,settleAt:.6,transformAt:2,releaseAt:10,end:12}}}};
+ const frames=Array.from({length:361},(_,i)=>({time:i/30,sha256:`h${i}`})).concat({time:12.04,sha256:'cut'});
+ const review=selectModelFrames(p,s,frames),anchors=review.sampling.samples.flatMap(s=>s.anchors);
+ assert.equal(review.frames.length,16);
+ assert.ok(review.frames.filter(f=>f.time>0&&f.time<1).length>=3);
+ assert.ok(anchors.some(a=>a.reason==='opening-hook-release'));
+ assert.ok(anchors.some(a=>a.reason==='after-cut'));
+});

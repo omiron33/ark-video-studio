@@ -164,3 +164,20 @@ test('missing audio is a technical failure even when frames render', {timeout: 6
   assert.equal(report.technical.checks.find(check => check.name === 'audioStream').passed, false);
   await assert.rejects(approveReview({reportPath: report.reportPath, reviewer: 'Test reviewer', scores, notes: 'No audio exists in the output.'}), /technical/);
 });
+
+test('future creative policy blocks reused artwork even after an otherwise passing review', {timeout: 60000}, async t => {
+  const f = await fixture(t), p = JSON.parse(await readFile(f.projectPath));
+  p.beats = []; p.creation = { creativePolicy: { version: 1, uniqueSceneArtwork: true, expressivePacing: true, immediateOpening: true } };
+  p.assets.test.type = 'image';
+  p.sections = p.sections.map(s => ({ ...s, style: 'verse', assetIds: ['test'], wordIds: [], direction: { photo: 'test', pacing: { version: 1, mode: 'flow', rationale: 'Synthetic short fixture; no accent forced.' } } }));
+  await writeFile(f.projectPath, JSON.stringify(p));
+  execFileSync('ffmpeg', ['-v', 'error', '-y', '-f', 'lavfi', '-i', 'color=c=navy:s=320x180:r=10:d=0.6', '-f', 'lavfi', '-i', 'sine=frequency=440:duration=0.6', '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-t', '0.6', f.videoPath]);
+  const report = await reviewVideo(f);
+  assert.equal(report.technical.passed, true);
+  assert.equal(report.creativeDirection.artwork.duplicates.length, 1);
+  assert.equal(report.status, 'creative_policy_failed');
+  const result = await approveReview({ reportPath: report.reportPath, reviewer: 'Synthetic integration fixture', scores, notes: 'Synthetic test scores only; testing that a subjective review cannot override duplicate artwork.' });
+  assert.equal(result.passed, false); assert.equal(result.status, 'creative_policy_failed');
+  assert.equal(result.quality.creativePolicyVerified, false);
+  assert.match(result.reasons.join(' '), /reused/);
+});

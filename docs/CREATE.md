@@ -37,17 +37,26 @@ Existing artwork and exact direction can enter through `--direction direction.js
 ```json
 {
   "assets": {
-    "landscape": { "type": "image", "src": "./landscape.png" }
-  },
-  "defaults": {
-    "assetIds": ["landscape"],
-    "direction": { "photo": "landscape" }
+    "landscape": { "type": "image", "src": "./landscape.png" },
+    "storm": { "type": "image", "src": "./storm.png" }
   },
   "palette": { "accent": "#6dbeb8" }
 }
 ```
 
 Image paths resolve relative to this JSON and are copied with content hashes into the portable project. An optional `sections` array patches known section IDs from `plan.json`, including style, assetIds and direction. It cannot retime sections or replace canonical scene words. A local director may refine styles after these defaults; original image assignments remain available.
+
+New runs assign a supplied picture to at most one photographic scene. Supply enough distinct pictures for every requested scene, or fulfill the scene-specific `assetRequests` with GPT Image and assign each result to its section. Never use `defaults.direction.photo` to repeat one picture throughout a film. Explicit repeated assignments are preserved for diagnosis and rejected, not silently swapped. The audit hashes actual file bytes, catching copied files under different names. Re-encoded/cropped variations still require visual review: a new file hash is not proof of a new composition. Fonts, shared texture dependencies, and a successor image visible inside a continuous transition do not count as separate scene reuse.
+
+## Visual rhythm for future runs
+
+Every new `create` plan includes a recorded creative policy and deterministic phrase-pacing evidence. Measured vocal onsets and audio attacks can support a sparse three-word accent burst. Sustains and phrase tails support held compositions or slow dissolves of the supporting graphics. Ordinary flow connects these changes; a burst is an accent, not the default. Canonical word timings are never moved to make an effect fit. Without measured support, the planner does not invent a syncopated beat grid.
+
+The opening has a separate requirement: meaningful action begins within the first second even when the song starts with an instrumental gap. The real song/chapter title and supporting graphics provide an immediate reveal; longer gaps must develop beyond a single slowly panning still. This is authored opening motion, not a claim of measured beat sync. Lyrics remain tied to the vocals. The encoded opening is sampled densely and the visual critic must reject an opening that still reads as a static poster or slow pan in a quick glance.
+
+The evidence records each mode and its rationale in `plan.json` and `direction.pacing`. This is a constrained fallback to help an agent compose the film, not a claim of unlimited creative judgment. Local direction receives the whole-song scene arc, including across planning batches. Encoded scene review samples pacing anchors as well as word onsets; independent full-film review should judge whether contrasts feel intentional, whether recycled-looking compositions remain, and whether the lyric still leads.
+
+Missing/repeated required artwork and invalid pacing fail the creation preflight before spending time encoding. Resolve the named requests and resume. The gauntlet checks the same policy again after rendering and repairs; independent finalization cannot bypass it. Older projects without the policy are not automatically replanned. The accepted Genesis 7 full dark lyric film remains a frozen delivery.
 
 ## Outputs and retry
 

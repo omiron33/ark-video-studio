@@ -195,3 +195,45 @@ test('ground O-counter portal bridges a short rest only when travel time is avai
   assert.equal(planStyle(project(), 'Semantic water').project.sections[1].direction.portalAt, undefined, 'short syllable gap cannot fit portal travel');
   assert.equal(planStyle(project('Land faded into a new day.'), 'Quiet typography').project.sections.some(s => s.direction.portalAt !== undefined), false);
 });
+
+test('new runs block incomplete or repeated scene artwork before rendering, and resume after individual assignments', async t => {
+  const options = await fixture(t), directionFile = path.join(options.dir, 'direction.json');
+  await atomicJson(options.timing, { timebase: 'clip', words: [
+    { text: 'Faith', start: .2, end: .5 }, { text: 'endures.', start: .6, end: 1.1 },
+    { text: 'Mercy', start: 1.5, end: 1.9 }, { text: 'stays.', start: 2, end: 2.6 },
+  ] });
+  const {createCanvas} = await import('@napi-rs/canvas');
+  const canvas = createCanvas(2, 2), ctx = canvas.getContext('2d');
+  ctx.fillStyle = '#213546'; ctx.fillRect(0, 0, 2, 2); await writeFile(path.join(options.dir, 'first.png'), canvas.toBuffer('image/png'));
+  ctx.fillStyle = '#514137'; ctx.fillRect(0, 0, 2, 2); await writeFile(path.join(options.dir, 'second.png'), canvas.toBuffer('image/png'));
+  await atomicJson(directionFile, { assets: { first: { type: 'image', src: './first.png' } } });
+  const log = [], args = { ...options, directionFile, stylePrompt: 'Dark photorealistic story behind the lyrics' };
+  const pending = await createSong(args, services(log));
+  assert.equal(pending.status, 'quality_failed'); assert.equal(pending.result.gate.status, 'required_assets_pending');
+  assert.deepEqual(log, ['plan'], 'missing scene images are caught before encoding');
+  assert.equal(pending.assetRequests.length, 1); assert.ok(pending.assetRequests[0].sectionId);
+  const p = JSON.parse(await readFile(pending.projectPath));
+  assert.equal(p.creation.creativePolicy.uniqueSceneArtwork, true);
+  assert.ok(p.sections.every(s => s.direction.pacing));
+  const second = p.sections.find(s => !s.direction.photo);
+  second.direction.photo = 'first'; second.assetIds = ['first']; await atomicJson(pending.projectPath, p);
+  const repeated = await createSong({ ...args, resume: true }, services(log));
+  assert.equal(repeated.status, 'quality_failed'); assert.match(repeated.result.gate.reasons.join(' '), /reused/);
+  assert.deepEqual(log, ['plan']);
+  p.assets.second = { type: 'image', src: path.relative(path.dirname(pending.projectPath), path.join(options.dir, 'second.png')) };
+  second.direction.photo = 'second'; second.assetIds = ['second']; await atomicJson(pending.projectPath, p);
+  const resolved = await createSong({ ...args, resume: true }, services(log));
+  assert.equal(resolved.status, 'finished'); assert.deepEqual(resolved.assetRequests, []);
+  assert.equal(resolved.attempts[0].creative.passed, true);
+  const repairLog = [], repairServices = services(repairLog);
+  repairServices.reviewVisual = async ({ projectPath }) => {
+    const changed = JSON.parse(await readFile(projectPath));
+    changed.sections[1].direction.photo = changed.sections[0].direction.photo;
+    changed.sections[1].assetIds = [...changed.sections[0].assetIds];
+    await atomicJson(projectPath, changed);
+    return { status: 'failed', projectChanged: true };
+  };
+  const badRepair = await createSong({ ...args, resume: true, maxPasses: 2 }, repairServices);
+  assert.equal(badRepair.status, 'quality_failed'); assert.match(badRepair.result.gate.reasons.join(' '), /reused/);
+  assert.equal(repairLog.filter(s => s === 'render').length, 1, 'recheck repairs before spending time on another encode');
+});

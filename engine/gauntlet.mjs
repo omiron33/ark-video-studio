@@ -6,6 +6,7 @@ import {fileURLToPath} from 'node:url';
 import {execFile} from 'node:child_process';
 import {promisify} from 'node:util';
 import {reviewTemporalActivity, validateTemporalReport} from './temporal-review.mjs';
+import {reviewCreativePolicy} from './creative-policy.mjs';
 
 const exec = promisify(execFile);
 const defaultRendererDir = dirname(fileURLToPath(import.meta.url));
@@ -215,11 +216,12 @@ export async function reviewVideo({videoPath, projectPath, outDir, renderMetadat
     } catch (error) { check('evidenceCapture', false, String(error.stderr ?? error.message)); }
   } else check('evidenceCapture', false, 'No decodable video frames');
   const endRevision = await computeRevision(projectPath, {rendererDir});
+  const creativeDirection = await reviewCreativePolicy(project, projectPath);
   check('unchangedDuringReview', endRevision.revisionHash === revision.revisionHash && await sha256File(videoPath) === videoSha256, endRevision.revisionHash, revision.revisionHash);
   const report = {
     schemaVersion: 2, createdAt: new Date().toISOString(), reportPath, videoPath, projectPath,
     binding: {videoSha256, projectHash: revision.projectHash, rendererHash: revision.rendererHash, revisionHash: revision.revisionHash},
-    revision, technical: {passed: checks.every(item => item.passed), checks, probe}, evidence, temporalActivity,
+    revision, technical: {passed: checks.every(item => item.passed), checks, probe}, evidence, temporalActivity, creativeDirection,
     renderProvenance: metadata ? {path: metadataPath, sha256: await sha256File(metadataPath), verified: checks.filter(item => item.name.startsWith('render')).every(item => item.passed)} : {verified: false, note: 'Source hash observed at review; render-time provenance was not supplied'},
     suppliedMetrics: metadata ? {performance: metadata.sections ?? null, text: metadata.textMetrics ?? null} : null,
     visual: {status: 'pending', threshold: PASS_THRESHOLD, rubric: VISUAL_RUBRIC, reviews: [], note: 'An independent agent or person judges decoded visual evidence. Audio/sync can be verified by the separate local machine-measurement gate; a human listening score is not required. Machine verification does not establish artistic excellence.'},
@@ -360,6 +362,8 @@ export async function checkReview({reportPath, videoPath, projectPath, audioRevi
   const stale = reasons.length > 0;
   const temporalActivity = currentProject ? await loadTemporalActivity({project: currentProject, videoSha256: currentBinding?.videoSha256, record: report.temporalActivity}) : {required: false, passed: false, errors: ['Cannot verify temporal project inputs']};
   if (!temporalActivity.passed) reasons.push(...temporalActivity.errors);
+  const creativeDirection = currentProject ? await reviewCreativePolicy(currentProject, projectPath ?? report.projectPath) : {required: false, passed: false, issues: ['Cannot verify creative policy inputs']};
+  if (!creativeDirection.passed) reasons.push(...creativeDirection.issues);
   const technicalPassed = Boolean(report.technical?.passed && report.technical.checks?.length && report.technical.checks.every(item => item.passed === true) && temporalActivity.passed);
   if (!technicalPassed) reasons.push('Technical checks did not all pass');
   const latest = report.visual?.reviews?.at(-1) ?? report.visual?.visualOnlyReview;
@@ -382,10 +386,12 @@ export async function checkReview({reportPath, videoPath, projectPath, audioRevi
   if (!audioPassed) reasons.push(...machineAudio.errors);
   const visualGate = visualPassed || machineVisual.passed;
   if (!visualGate) reasons.push(...machineVisual.errors);
-  const passed = !stale && technicalPassed && audioPassed && visualGate && !visualErrors.length;
-  const status = stale ? 'stale' : !technicalPassed ? 'technical_failed' : visualErrors.length ? 'review_failed' : !audioPassed ? machineAudio.present ? 'machine_audio_review_failed' : 'machine_audio_review_required' : !visualGate ? machineVisual.present ? 'machine_visual_review_failed' : 'machine_visual_review_required' : visualPassed ? 'independently_reviewed' : 'machine_verified';
+  const passed = !stale && technicalPassed && audioPassed && visualGate && !visualErrors.length && creativeDirection.passed;
+  const status = stale ? 'stale' : !technicalPassed ? 'technical_failed' : !creativeDirection.passed ? 'creative_policy_failed' : visualErrors.length ? 'review_failed' : !audioPassed ? machineAudio.present ? 'machine_audio_review_failed' : 'machine_audio_review_required' : !visualGate ? machineVisual.present ? 'machine_visual_review_failed' : 'machine_visual_review_required' : visualPassed ? 'independently_reviewed' : 'machine_verified';
   const quality = {technicalVerified: !stale && technicalPassed, temporalActivityVerified: !stale && temporalActivity.required && temporalActivity.passed, machineAudioVerified: !stale && machineAudio.passed, machineVisualVerified: !stale && machineVisual.passed, independentVisualReviewed: !stale && visualPassed, machineQualityVerified: !stale && technicalPassed && machineAudio.passed && machineVisual.passed, syncBasis: machineAudio.passed ? 'measured_local_audio_review' : legacySubjectiveSync ? 'recorded_reviewer_judgment' : 'unverified', aestheticJudgment: visualPassed ? 'independent_review_passed' : latest ? 'changes_requested' : machineVisual.passed ? 'local_vision_model_passed' : 'not_claimed'};
-  return {passed, status, reasons, quality, machineAudio, machineVisual, temporalActivity, currentBinding, reportPath: resolve(reportPath), report};
+  quality.creativePolicyVerified = !stale && creativeDirection.required && creativeDirection.passed;
+  quality.machineQualityVerified &&= creativeDirection.passed;
+  return {passed, status, reasons, quality, machineAudio, machineVisual, temporalActivity, creativeDirection, currentBinding, reportPath: resolve(reportPath), report};
 }
 
 /** Attach a newly generated, hash-bound machine audio report; failed evidence is retained for repair. */
