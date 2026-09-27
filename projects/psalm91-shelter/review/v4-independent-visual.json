@@ -1,0 +1,129 @@
+{
+  "artifact": "/Volumes/DATA/ArkRender/psalm91-shelter-v4.mp4",
+  "sha256": "5a49eade84a664a472d47532f683ed4d813f5f6af593fd4ce90d5df57b0e8502",
+  "reviewedAt": "2026-09-27T10:49:08.336112+00:00",
+  "reviewer": "Independent local-video agent",
+  "verdict": "acceptable_for_delivery_with_nonblocking_notes",
+  "blockers": [],
+  "scores": {
+    "lyricLegibility": 9.3,
+    "semanticMotion": 8.3,
+    "photorealism": 9.1,
+    "composition": 9.2,
+    "continuity": 9.3
+  },
+  "scoreBasis": "Subjective 0\u201310 engine visual rubric, informed by direct V4 changed-region inspection plus exact-artifact prior V3/V2 observations supported by sampled outside-region comparisons. Not a newly repeated full-film visual watch. Continuity improves from9.2 to9.3 with the keyhole image reset removed. No audio/listening or synchronization score.",
+  "directV4Coverage": {
+    "denseIntervals": [
+      [
+        18,
+        30
+      ],
+      [
+        222,
+        234
+      ]
+    ],
+    "denseFrames": 144,
+    "denseFps": 6,
+    "denseSheets": [
+      "opening-keyhole-00.jpg",
+      "opening-keyhole-01.jpg",
+      "opening-keyhole-02.jpg",
+      "instrumental-title-removal-00.jpg",
+      "instrumental-title-removal-01.jpg",
+      "instrumental-title-removal-02.jpg"
+    ],
+    "overviewSheets": [
+      "overview-00.jpg",
+      "overview-16.jpg",
+      "overview-21.jpg"
+    ],
+    "overviewFrames": 85,
+    "comparisonPairNominalTime": 237.0,
+    "comparisonPairFrames": {
+      "v3": "/Volumes/DATA/ArkRender/psalm91-v3-independent-review/overview/frame-0475.jpg",
+      "v4": "/Volumes/DATA/ArkRender/psalm91-v4-independent-review/overview/frame-0475.jpg"
+    },
+    "totalDirectV4Frames": 230
+  },
+  "findings": [
+    {
+      "interval": [
+        19.5,
+        29.2
+      ],
+      "result": "requested_fix_passes",
+      "observation": "One stable photoreal cave and traveler image is revealed by an enlarging keyhole. The opening reveals more of the same geometry, then continues into a mild image drift. No zoom reset, double image, or replacement flash is visible through the24.19s handoff. The existing title and first lyric boundary remain readable."
+    },
+    {
+      "interval": [
+        225.67,
+        232.55
+      ],
+      "result": "requested_fix_passes",
+      "observation": "The mid-song Psalm91 title is absent. Nested copper rectangles keep advancing through the instrumental passage, then crossfade cleanly into the material wing formation. No black interval or stranded title is visible."
+    },
+    {
+      "interval": [
+        18,
+        30
+      ],
+      "result": "boundary_passes",
+      "observation": "Arch-to-keyhole and title-to-first-lyric transitions have continuous visuals and no newly observed cropping or text collision."
+    },
+    {
+      "interval": [
+        222,
+        234
+      ],
+      "result": "boundary_passes",
+      "observation": "The prior lion lyric remains intact before the corridor, and the wing footage is fully visible after the crossfade."
+    },
+    {
+      "interval": [
+        237,
+        237
+      ],
+      "result": "largest_outside_sample_inspected",
+      "observation": "The V3/V4 pair with the largest average outside-region pixel difference shows the same fully formed wing, composition and dust shape. The small difference is consistent with re-encoding rather than a new visual event."
+    }
+  ],
+  "unchangedRegionEvidence": {
+    "v3Artifact": "/Volumes/DATA/ArkRender/psalm91-shelter-v3.mp4",
+    "v3Sha256": "5bf0abe28bec171f144575ff62d68177698059283faa57e56047a97673056f94",
+    "v4Artifact": "/Volumes/DATA/ArkRender/psalm91-shelter-v4.mp4",
+    "v4Sha256": "5a49eade84a664a472d47532f683ed4d813f5f6af593fd4ce90d5df57b0e8502",
+    "sampleRate": 2,
+    "sampleCount": 655,
+    "changedReviewIntervals": [
+      [
+        18,
+        30
+      ],
+      [
+        222,
+        234
+      ]
+    ],
+    "unchangedScopeSampleCount": 607,
+    "exactMatchesOutside": 203,
+    "maxMeanAbsoluteChannelDifferenceOutside": 0.93652,
+    "maxRmsDifferenceOutside": 1.5628,
+    "outsideDifferencesAboveMean2": []
+  },
+  "nonblockingNotesCarriedFromV3": [
+    "The quiet closing Psalm91 card still occupies roughly306\u2013327.6s with restrained image drift; this is an intentional calm ending, but the weakest stretch for motion variety.",
+    "Some verse layouts share a two- or three-row hierarchy with copper bars, despite distinct major word treatments.",
+    "The bright opening arch briefly overlaps previously established UNDER/HIGHEST\u2019S around12.17\u201312.67s. It does not prevent reading the phrase."
+  ],
+  "priorVisualReport": "/Volumes/DATA/ArkRender/psalm91-v3-independent-review/independent-visual-review.json",
+  "comparisonReport": "/Volumes/DATA/ArkRender/psalm91-v4-independent-review/overview-delta-comparison.json",
+  "limitations": [
+    "2fps comparison verifies sampled images, not every intermediate frame.",
+    "The rest of the film was not fully rewatched for V4; prior observations are carried forward with explicit lineage.",
+    "Source/timing integrity must support reuse of prior OCR findings separately.",
+    "No listening, perfect-sync, or full-gauntlet-pass claim."
+  ],
+  "recommendation": "Deliver after root completes the independent integrity/audio-source checks; no further visual render is warranted by these two edits."
+}

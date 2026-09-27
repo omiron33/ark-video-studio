@@ -1,0 +1,53 @@
+{
+  "candidateId": "vid-20260927-13f1505b",
+  "status": "pending_review",
+  "reviewUrl": "https://omipc.taild60b4e.ts.net/studio#videos",
+  "watchUrl": "https://omipc.taild60b4e.ts.net/api/admin/videos/vid-20260927-13f1505b/media",
+  "downloadUrl": "https://omipc.taild60b4e.ts.net/api/admin/videos/vid-20260927-13f1505b/media?download=1",
+  "sha256": "5bf0abe28bec171f144575ff62d68177698059283faa57e56047a97673056f94",
+  "remoteCopySha256": "5bf0abe28bec171f144575ff62d68177698059283faa57e56047a97673056f94",
+  "remoteDownloadSha256": "5bf0abe28bec171f144575ff62d68177698059283faa57e56047a97673056f94",
+  "bytes": 188595453,
+  "httpStatus": 200,
+  "contentType": "video/mp4",
+  "contentDisposition": "attachment; filename=\"Psalm 91 (LXX 90) lyric film Shelter full film v3.mp4\"; filename*=UTF-8''Psalm%2091%20(LXX%2090)%20lyric%20film%20Shelter%20full%20film%20v3.mp4",
+  "rangeStatus": 206,
+  "contentRange": "bytes 0-1023/188595453",
+  "verifiedAt": "2026-09-27T10:29:59.859111+00:00",
+  "localFile": "/Volumes/DATA/ArkRender/psalm91-shelter-v3.mp4",
+  "supersedes": null,
+  "candidate": {
+    "id": "vid-20260927-13f1505b",
+    "project": "Psalm 91 (LXX 90) lyric film",
+    "title": "Psalm 91 - A Thousand Shall Fall",
+    "version": "Shelter full film v3",
+    "sourceAgent": "Codex",
+    "sourceMachine": "Mac mini / OmiPC local H3",
+    "sourcePath": "/Volumes/DATA/ArkRender/psalm91-shelter-v3.mp4",
+    "ingestedFrom": "C:\\Users\\sjfis\\Videos\\Psalm91\\psalm91-shelter-v3-5bf0abe28bec.mp4",
+    "notes": "Full Psalm 91 (LXX 90) A Thousand Shall Fall lyric film, 327.6 seconds. Copper, charcoal, and ivory Shelter direction with spatial word animation and sparse photoreal reveals. Includes locally generated MiniMax H3 material-transformation inserts from GPT Image source artwork. Adam creation footage is excluded and reserved for a future creation video; the instrumental bridge contains a storm refuge forming from rock. Song supplied via https://suno.com/s/ErRXnhOwTS3IZm7W . Independent visual review, full decode, format, source/render binding, and zero-lag decoded audio checks passed. Strict word-level singing synchronization remains partly uncertified; the final OCR and temporal audit is still running at the time of ingestion. No perfect-sync or full-gauntlet-pass claim. This is a full-song candidate pending Shane review; not a claim of user approval. SHA256 5bf0abe28bec171f144575ff62d68177698059283faa57e56047a97673056f94.",
+    "supersedes": null,
+    "supersededBy": null,
+    "md5": "13f1505ba374124861c11b7bbb9469be",
+    "sha256": "5bf0abe28bec171f144575ff62d68177698059283faa57e56047a97673056f94",
+    "bytes": 188595453,
+    "mimeType": "video/mp4",
+    "file": "media/videos/psalm-91-lxx-90-lyric-film/vid-20260927-13f1505b/video.mp4",
+    "thumbnail": {
+      "file": "media/videos/psalm-91-lxx-90-lyric-film/vid-20260927-13f1505b/thumbnail.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "probe": null,
+    "status": "pending_review",
+    "ingestedAt": "2026-09-27T10:29:00.905Z",
+    "updatedAt": "2026-09-27T10:29:00.905Z",
+    "history": [
+      {
+        "at": "2026-09-27T10:29:00.905Z",
+        "status": "pending_review",
+        "note": "Full Psalm 91 (LXX 90) A Thousand Shall Fall lyric film, 327.6 seconds. Copper, charcoal, and ivory Shelter direction with spatial word animation and sparse photoreal reveals. Includes locally generated MiniMax H3 material-transformation inserts from GPT Image source artwork. Adam creation footage is excluded and reserved for a future creation video; the instrumental bridge contains a storm refuge forming from rock. Song supplied via https://suno.com/s/ErRXnhOwTS3IZm7W . Independent visual review, full decode, format, source/render binding, and zero-lag decoded audio checks passed. Strict word-level singing synchronization remains partly uncertified; the final OCR and temporal audit is still running at the time of ingestion. No perfect-sync or full-gauntlet-pass claim. This is a full-song candidate pending Shane review; not a claim of user approval. SHA256 5bf0abe28bec171f144575ff62d68177698059283faa57e56047a97673056f94.",
+        "by": "Codex"
+      }
+    ]
+  }
+}

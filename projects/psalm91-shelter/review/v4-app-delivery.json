@@ -1,0 +1,53 @@
+{
+  "candidateId": "vid-20260927-4fecbc68",
+  "status": "pending_review",
+  "reviewUrl": "https://omipc.taild60b4e.ts.net/studio#videos",
+  "watchUrl": "https://omipc.taild60b4e.ts.net/api/admin/videos/vid-20260927-4fecbc68/media",
+  "downloadUrl": "https://omipc.taild60b4e.ts.net/api/admin/videos/vid-20260927-4fecbc68/media?download=1",
+  "sha256": "5a49eade84a664a472d47532f683ed4d813f5f6af593fd4ce90d5df57b0e8502",
+  "remoteCopySha256": "5a49eade84a664a472d47532f683ed4d813f5f6af593fd4ce90d5df57b0e8502",
+  "remoteDownloadSha256": "5a49eade84a664a472d47532f683ed4d813f5f6af593fd4ce90d5df57b0e8502",
+  "bytes": 187403161,
+  "httpStatus": 200,
+  "contentType": "video/mp4",
+  "contentDisposition": "attachment; filename=\"Psalm 91 (LXX 90) lyric film Shelter full film v4.mp4\"; filename*=UTF-8''Psalm%2091%20(LXX%2090)%20lyric%20film%20Shelter%20full%20film%20v4.mp4",
+  "rangeStatus": 206,
+  "contentRange": "bytes 0-1023/187403161",
+  "verifiedAt": "2026-09-27T10:51:29.106622+00:00",
+  "localFile": "/Volumes/DATA/ArkRender/psalm91-shelter-v4.mp4",
+  "supersedes": "vid-20260927-13f1505b",
+  "candidate": {
+    "id": "vid-20260927-4fecbc68",
+    "project": "Psalm 91 (LXX 90) lyric film",
+    "title": "Psalm 91 - A Thousand Shall Fall",
+    "version": "Shelter full film v4",
+    "sourceAgent": "Codex",
+    "sourceMachine": "Mac mini / OmiPC local H3",
+    "sourcePath": "/Volumes/DATA/ArkRender/psalm91-shelter-v4.mp4",
+    "ingestedFrom": "C:\\Users\\sjfis\\Videos\\Psalm91\\psalm91-shelter-v4-5a49eade84a6.mp4",
+    "notes": "Full Psalm 91 (LXX 90) A Thousand Shall Fall lyric film, 327.6 seconds. Copper, charcoal, and ivory Shelter direction with spatial word animation and sparse photoreal reveals. V4 removes the mid-song Psalm 91 title and fixes the opening keyhole image continuity. Includes locally generated MiniMax H3 material-transformation inserts from GPT Image source artwork. Adam creation footage is excluded and reserved for a future creation video; the instrumental bridge contains a storm refuge forming from rock. Song supplied via https://suno.com/s/ErRXnhOwTS3IZm7W . Psalm 91 - Shelter full film v4. Fixes the opening keyhole by retaining one continuous photographic image through the reveal, removes the stray mid-song PSALM 91 title, and retains the storm-refuge replacement for the removed Adam formation shot. Adam source is reserved for Genesis 1. Duration327.6s;1920x1080;30fps;9828frames. Exact SHA256:5a49eade84a664a472d47532f683ed4d813f5f6af593fd4ce90d5df57b0e8502. Source commit78f6502. All17 bounded integrity checks passed including full decode, render/source binding, unchanged396canonical cues,0ms measured lag,0.998407source-audio correlation, and decoded PCM identity to v3. Independent visual delta review accepted both changed regions;144dense samples and85overview samples directly inspected; outside-region2fps comparison found no mean pixel difference above2/255. Prior whole-film visual evidence is explicitly inherited where unchanged. This is not a new full OCR or strict singing certification: v3 strict word evidence remains75pass/279unsupported/42outside tolerance; v3 OCR393/396 with three manually readable exceptions; prior5.067s calm-hold exception retained. No perfect/full automatic gauntlet pass is claimed. Status pending_review; supersedes v3candidatevid-20260927-13f1505b while preserving history. This full-song candidate is pending Shane review, not user approved. Supersedes V3 candidate vid-20260927-13f1505b while preserving its file and history. SHA256 5a49eade84a664a472d47532f683ed4d813f5f6af593fd4ce90d5df57b0e8502.",
+    "supersedes": "vid-20260927-13f1505b",
+    "supersededBy": null,
+    "md5": "4fecbc68b9902340d1a90eb8a53ec04d",
+    "sha256": "5a49eade84a664a472d47532f683ed4d813f5f6af593fd4ce90d5df57b0e8502",
+    "bytes": 187403161,
+    "mimeType": "video/mp4",
+    "file": "media/videos/psalm-91-lxx-90-lyric-film/vid-20260927-4fecbc68/video.mp4",
+    "thumbnail": {
+      "file": "media/videos/psalm-91-lxx-90-lyric-film/vid-20260927-4fecbc68/thumbnail.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "probe": null,
+    "status": "pending_review",
+    "ingestedAt": "2026-09-27T10:50:36.766Z",
+    "updatedAt": "2026-09-27T10:50:36.766Z",
+    "history": [
+      {
+        "at": "2026-09-27T10:50:36.766Z",
+        "status": "pending_review",
+        "note": "Full Psalm 91 (LXX 90) A Thousand Shall Fall lyric film, 327.6 seconds. Copper, charcoal, and ivory Shelter direction with spatial word animation and sparse photoreal reveals. V4 removes the mid-song Psalm 91 title and fixes the opening keyhole image continuity. Includes locally generated MiniMax H3 material-transformation inserts from GPT Image source artwork. Adam creation footage is excluded and reserved for a future creation video; the instrumental bridge contains a storm refuge forming from rock. Song supplied via https://suno.com/s/ErRXnhOwTS3IZm7W . Psalm 91 - Shelter full film v4. Fixes the opening keyhole by retaining one continuous photographic image through the reveal, removes the stray mid-song PSALM 91 title, and retains the storm-refuge replacement for the removed Adam formation shot. Adam source is reserved for Genesis 1. Duration327.6s;1920x1080;30fps;9828frames. Exact SHA256:5a49eade84a664a472d47532f683ed4d813f5f6af593fd4ce90d5df57b0e8502. Source commit78f6502. All17 bounded integrity checks passed including full decode, render/source binding, unchanged396canonical cues,0ms measured lag,0.998407source-audio correlation, and decoded PCM identity to v3. Independent visual delta review accepted both changed regions;144dense samples and85overview samples directly inspected; outside-region2fps comparison found no mean pixel difference above2/255. Prior whole-film visual evidence is explicitly inherited where unchanged. This is not a new full OCR or strict singing certification: v3 strict word evidence remains75pass/279unsupported/42outside tolerance; v3 OCR393/396 with three manually readable exceptions; prior5.067s calm-hold exception retained. No perfect/full automatic gauntlet pass is claimed. Status pending_review; supersedes v3candidatevid-20260927-13f1505b while preserving history. This full-song candidate is pending Shane review, not user approved. Supersedes V3 candidate vid-20260927-13f1505b while preserving its file and history. SHA256 5a49eade84a664a472d47532f683ed4d813f5f6af593fd4ce90d5df57b0e8502.",
+        "by": "Codex"
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "verifiedAt": "2026-09-27T10:33:16.634413+00:00",
+  "file": "/Users/shanefisher/Movies/Psalm91/Psalm 91 - Shelter - Full Film v3.mp4",
+  "sha256": "5bf0abe28bec171f144575ff62d68177698059283faa57e56047a97673056f94",
+  "album": "Psalm 91 - Shelter",
+  "item": "September 27, 2026 at 5:22:30 AM; duration 5:28",
+  "nativeImportVerified": true,
+  "playbackVerified": true,
+  "observations": [
+    "Started playback at 00:00 with animated91 title visible",
+    "Observed distinct frames and timeline progression at00:33,02:18,03:57,04:10,05:22",
+    "Observed05:28,remaining00:00,play toggleoff and closingPsalm91frame"
+  ],
+  "scope": "Native import and playback verification with periodic screen observations; not a listening or frame-by-frame creative review.",
+  "iCloudSyncVerified": false,
+  "adamReservationAlbum": "Genesis 1 - Reserved Creation Shots",
+  "preservedEarlierImports": true,
+  "albumCountNote": "Album item counts changed while work was in progress; cause not established. No delete or remove action was performed by this task."
+}

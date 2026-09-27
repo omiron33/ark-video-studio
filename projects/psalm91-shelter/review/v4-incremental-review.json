@@ -1,0 +1,639 @@
+{
+  "schemaVersion": 1,
+  "kind": "bounded-production-integrity-with-prior-evidence",
+  "startedAt": "2026-09-27T10:47:15.884Z",
+  "completedAt": "2026-09-27T10:47:43.231Z",
+  "videoPath": "/Volumes/DATA/ArkRender/psalm91-shelter-v4.mp4",
+  "projectPath": "/Volumes/Code/ark-video-studio/projects/psalm91-shelter/project.json",
+  "binding": {
+    "videoSha256": "5a49eade84a664a472d47532f683ed4d813f5f6af593fd4ce90d5df57b0e8502",
+    "projectHash": "7d1b8ed1638df8d6501a93071015a8f56a73ac48f3044f0d28682d2d0c16b2b9",
+    "rendererHash": "4a279e37bc6bb3a1d2df216a8adc28a6c35974724f15419922adbb1d616a0a39",
+    "revisionHash": "7ddae2856d5bf600cee8877a3cc011e4435e7e8c90c93523afd272b7792a07de"
+  },
+  "expectedVideoSha256": "5a49eade84a664a472d47532f683ed4d813f5f6af593fd4ce90d5df57b0e8502",
+  "editedIntervals": [
+    {
+      "start": 19.5,
+      "end": 29.202,
+      "purpose": "Opening instrumental mask/photo continuity"
+    },
+    {
+      "start": 225.67,
+      "end": 232.55,
+      "purpose": "Instrumental chapter-title removal and extended fade"
+    }
+  ],
+  "sourceInputComparison": {
+    "v3Snapshot": {
+      "path": "/Volumes/DATA/ArkRender/psalm91-review-v3/review.json",
+      "sha256": "3e2bc56983c072a57497e05e3a540aacb2bcff932f659ccff02c1fbd61e9a964"
+    },
+    "v3RevisionHash": "e11eb7fce6fcb7281b9f9d05f3935057a75776a7c2426ed66ba5f7c9744587eb",
+    "v4RevisionHash": "7ddae2856d5bf600cee8877a3cc011e4435e7e8c90c93523afd272b7792a07de",
+    "inputDelta": [
+      {
+        "path": "index.html",
+        "v3Sha256": "ac01ea289765843d6adb497f41f56da987990c01f0db5f2882b422c02802b96b",
+        "v4Sha256": "970c443b50743d98e2c2bf72d0cda6f78223c9197efbb17e6d5e3aae59233dab",
+        "change": "changed"
+      },
+      {
+        "path": "narrative.js",
+        "v3Sha256": "ab60b0fd6101a0bfc948435d074977c15208d1779b9532c58804bdbaf95f0c59",
+        "v4Sha256": "298c55a38f01293da6ec84c88438b6c4ce69ff43c209d5db7e998eb5eeeea11d",
+        "change": "changed"
+      },
+      {
+        "path": "opening.js",
+        "v3Sha256": "61d3114f7a43f732d4c1164170fa0a068af2b9c30c9295619bcbaef16b9d30f8",
+        "v4Sha256": "801e8b80530ee5c05c08e3623ee8954e39c2205ec9c47bef8dd727d1605abfd8",
+        "change": "changed"
+      },
+      {
+        "path": "scene-plan.json",
+        "v3Sha256": "06a9050fa7887c8ccf9635b532fe82f8f0d3c6988ffc6a4d97fbe020f4bd64a2",
+        "v4Sha256": "3874566116c4172a4ba689d56224ce18ea1d39047582a3f4331f7a63583c948c",
+        "change": "changed"
+      }
+    ],
+    "unchangedInputs": [
+      {
+        "path": "$manifest",
+        "sha256": "fd28619db3fefb493ca264a595e3a39750108d1aec626633ca70f7019390a63d"
+      },
+      {
+        "path": "asset-map.json",
+        "sha256": "8e6ea77b7011c4c9a36e5ab3d3c5c163f69ee95e3b40d6c3f02cfc1455b99067"
+      },
+      {
+        "path": "assets/ArchivoBlack-Regular.ttf",
+        "sha256": "dd9a89a019b4849f66ab75455fe7bdf931311042cbb0f0f97acc061539703180"
+      },
+      {
+        "path": "assets/BebasNeue-Regular.ttf",
+        "sha256": "08e4623805102d819f58601e46e345648846075e363b2ceb23313c2d1c83ec73"
+      },
+      {
+        "path": "assets/EBGaramond-Italic-Variable.ttf",
+        "sha256": "bba2c4499c93c9612b90b9825d32b07da52fce2fe57562a1eb6b833553f93c4e"
+      },
+      {
+        "path": "assets/adam-formation-end.png",
+        "sha256": "0652bb0b24a309ca15542f049b9cc8f07f1689216fb42f3b9a7633de49c55235"
+      },
+      {
+        "path": "assets/adam-formation-start.png",
+        "sha256": "d8fe01352836ed584efde5ff3374a86d2796134ec71ac53a453e27505aeeb858"
+      },
+      {
+        "path": "assets/arrow-dissolution.png",
+        "sha256": "629488598f1a1731354c60785e2d8065837164d4ce84fa885be6a6d7b5986a8f"
+      },
+      {
+        "path": "assets/arrow-dusk.png",
+        "sha256": "acbc24539b6b2a157f4b86ca9235b544566e35c9414c226e093de4f761582628"
+      },
+      {
+        "path": "assets/artsy-adam-formation-last.jpg",
+        "sha256": "9d303f2d68431c89ae84e54efbaba3ff83b8b36a2c89fbe21be8cd14b121d421"
+      },
+      {
+        "path": "assets/artsy-adam-formation-motion.mp4",
+        "sha256": "c0465fd2b0ed1723a75cfaafb6c0b312626e6ef15e7cd2872d210fdb5975c43a"
+      },
+      {
+        "path": "assets/artsy-arrows-dissolution-last.jpg",
+        "sha256": "df3f2d49c9e8197c58f8523622666232775d0f4171acf624aeeebebebb98cb08"
+      },
+      {
+        "path": "assets/artsy-arrows-dissolution-motion.mp4",
+        "sha256": "84b763b85468e06ccfa9be931ddc66a04400ba1e0145419839ec66372552bfec"
+      },
+      {
+        "path": "assets/artsy-dust-lion-motion-last.png",
+        "sha256": "8201ee71e795d38965f3b89a2b9e518bde6d3919519a8f646014f1a5532b283f"
+      },
+      {
+        "path": "assets/artsy-dust-lion-motion.mp4",
+        "sha256": "c19868bd50520ede0828784d2250b4504f3c772879c94c97823c0aaca19e53eb"
+      },
+      {
+        "path": "assets/artsy-dust-wing-motion-last.png",
+        "sha256": "c7081074fb5440f82b2a5782fd0fa1d8c2546fd0c3910e804fc07645a1e19497"
+      },
+      {
+        "path": "assets/artsy-dust-wing-motion.mp4",
+        "sha256": "8f299a0df0844bece62c2cc1374b09453fb7612408529bf95efaec24897d3192"
+      },
+      {
+        "path": "assets/artsy-stone-refuge-last.jpg",
+        "sha256": "025dfdc55bf220e35ae6c515351d104ffe72362ecfeb5357a207ba24a9e2944d"
+      },
+      {
+        "path": "assets/artsy-stone-refuge-motion.mp4",
+        "sha256": "6ed4edf6cc228930fdfb936615986d536b16b4e2a4b2b6582d818f6782e64fbf"
+      },
+      {
+        "path": "assets/dawn-road.png",
+        "sha256": "ac137cffb035dd4a84d2d14fae8c8ff78434b706bec9163d72378fec4a07b2e9"
+      },
+      {
+        "path": "assets/divine-guardian.png",
+        "sha256": "42df9dd344ff295ba0bcd17faaddcedaeffa9cea9c75d8e9659577e3958390ce"
+      },
+      {
+        "path": "assets/dust-lion.png",
+        "sha256": "33aa6f3f9c6478df2c09e889f8ba97b69aee2a523325642364ca502ad3d784fa"
+      },
+      {
+        "path": "assets/dust-wing.png",
+        "sha256": "d06dc51e734596a4f8f864dd55177494249a72a2de813fd58cd0a4cf62fe599d"
+      },
+      {
+        "path": "assets/guardian-road-motion5s-last.png",
+        "sha256": "dd1f065abfad0a4b3eb1fd799296298cafcdc7be083c50b0c43e4744ce35ef95"
+      },
+      {
+        "path": "assets/guardian-road-motion5s.mp4",
+        "sha256": "485f7bc074f060d5f7af0c2456118db9596adbce6fb81277415c74c06c85cb9a"
+      },
+      {
+        "path": "assets/guardian-road.png",
+        "sha256": "8bb21b40963134b4bbd68300a3c6a9ff94b002e00169e7d6c482415307155fa3"
+      },
+      {
+        "path": "assets/home-threshold.png",
+        "sha256": "2ac9cb1129ce81c1434d66d8abb3e2b8cbd2d49b68bb2f6f99c20ca36149f1d4"
+      },
+      {
+        "path": "assets/lifted-hand.png",
+        "sha256": "79a189c82b27bda03e7049c9bd7ecd5a1aea4eebd33ea38b222a7dd89a6927d1"
+      },
+      {
+        "path": "assets/lion-dragon.png",
+        "sha256": "b28766d3c21adeb6ccc2886529e5b7bf5f964eed5f749444d9e0e481e313a809"
+      },
+      {
+        "path": "assets/net-release.png",
+        "sha256": "c8dd1cede72ce82d76a175f51811fc91b334862901477854f13bf493ae85bc49"
+      },
+      {
+        "path": "assets/opening-refuge.png",
+        "sha256": "92ef883562e407708c900bd20919eae45c35e23973748474014e91e19f3df4f5"
+      },
+      {
+        "path": "assets/song.m4a",
+        "sha256": "b444350b68359bc06f17a90ace1b6d7bba9255a0358b308acec9cdccf3103420"
+      },
+      {
+        "path": "assets/storm-refuge-end.png",
+        "sha256": "0d4e52c4d9fdd7b52d87b47181fb87a0874bd6accedcc6d6c8a6fe2b24c03676"
+      },
+      {
+        "path": "assets/storm-refuge-start.png",
+        "sha256": "dd8d74dadc92b9caf24e96ddf5411613a69e5e2ba2bee57e209e6d348044a472"
+      },
+      {
+        "path": "assets/wing-refuge-motion.mp4",
+        "sha256": "88576356600c6ae2ca246c6d6a1297ed1097188bddb9264942f343f1b7758449"
+      },
+      {
+        "path": "assets/wing-refuge-motion5s-last.png",
+        "sha256": "9a5c1b91719c346f2cf756c5cd504a1fe85d1b71ff69a02d6b7c951aabff06a1"
+      },
+      {
+        "path": "assets/wing-refuge-motion5s.mp4",
+        "sha256": "479ec46a6220327f9c499ec577b8a46da37c939e68b972c744bb865ea0bc0118"
+      },
+      {
+        "path": "assets/wing-refuge.png",
+        "sha256": "454a1ae34af1c0a64c5b7cfd980fe6cddfa686e6130b4c1a8b30197f232e48c9"
+      },
+      {
+        "path": "build.mjs",
+        "sha256": "336ab86417a615f7492b4fb0f44b8c7448e14e8a35611633e2293445fc57973c"
+      },
+      {
+        "path": "composition.html.txt",
+        "sha256": "2703e2614fd6910723f832f8a70fb31b2c6530ac2262d51c71440047c6e979ea"
+      },
+      {
+        "path": "review.mjs",
+        "sha256": "fc2582f07c4adc8f684703ed7a647be146831f9846b119373b5c1a8cd133a7f3"
+      },
+      {
+        "path": "sources/measured-audio-events.json",
+        "sha256": "ded2057f85063484199ddbe1d290f575d8e9baee5558876bcef71ae3e30d2f28"
+      },
+      {
+        "path": "sources/measured-energy.json",
+        "sha256": "c3a1e98bcbccf826f237a1b9cd5baaeca63c95b0548622f59147be62c3400846"
+      },
+      {
+        "path": "sources/performance-lyrics.txt",
+        "sha256": "2c2b17d851d70cedf64aef2141d58a2c5c0f56e4c386982fae206a1ba0406480"
+      },
+      {
+        "path": "sources/words.json",
+        "sha256": "c7a5b526ce3008fe531a0295d3524220f043aa593ba92680a4282ca228ac8d1e"
+      },
+      {
+        "path": "vendor/gsap.min.js",
+        "sha256": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+      }
+    ],
+    "note": "Compares current declared renderer inputs with the hash-bound V3 source snapshot recorded before its completed review. The original V3 report and source revision are preserved, never relabeled."
+  },
+  "integrity": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "priorV3ArtifactPreserved",
+        "passed": true,
+        "observed": "/Volumes/DATA/ArkRender/psalm91-shelter-v3.mp4",
+        "expected": "5bf0abe28bec171f144575ff62d68177698059283faa57e56047a97673056f94"
+      },
+      {
+        "name": "rendererEngineUnchanged",
+        "passed": true,
+        "observed": {
+          "v3": "4a279e37bc6bb3a1d2df216a8adc28a6c35974724f15419922adbb1d616a0a39",
+          "v4": "4a279e37bc6bb3a1d2df216a8adc28a6c35974724f15419922adbb1d616a0a39"
+        },
+        "expected": "Same engine files; authored composition changes are explicit below"
+      },
+      {
+        "name": "onlyDeclaredCompositionInputsChanged",
+        "passed": true,
+        "observed": [
+          {
+            "path": "index.html",
+            "v3Sha256": "ac01ea289765843d6adb497f41f56da987990c01f0db5f2882b422c02802b96b",
+            "v4Sha256": "970c443b50743d98e2c2bf72d0cda6f78223c9197efbb17e6d5e3aae59233dab",
+            "change": "changed"
+          },
+          {
+            "path": "narrative.js",
+            "v3Sha256": "ab60b0fd6101a0bfc948435d074977c15208d1779b9532c58804bdbaf95f0c59",
+            "v4Sha256": "298c55a38f01293da6ec84c88438b6c4ce69ff43c209d5db7e998eb5eeeea11d",
+            "change": "changed"
+          },
+          {
+            "path": "opening.js",
+            "v3Sha256": "61d3114f7a43f732d4c1164170fa0a068af2b9c30c9295619bcbaef16b9d30f8",
+            "v4Sha256": "801e8b80530ee5c05c08e3623ee8954e39c2205ec9c47bef8dd727d1605abfd8",
+            "change": "changed"
+          },
+          {
+            "path": "scene-plan.json",
+            "v3Sha256": "06a9050fa7887c8ccf9635b532fe82f8f0d3c6988ffc6a4d97fbe020f4bd64a2",
+            "v4Sha256": "3874566116c4172a4ba689d56224ce18ea1d39047582a3f4331f7a63583c948c",
+            "change": "changed"
+          }
+        ],
+        "expected": [
+          "$manifest",
+          "index.html",
+          "opening.js",
+          "narrative.js",
+          "scene-plan.json"
+        ]
+      },
+      {
+        "name": "canonicalWordsAndCuesUnchanged",
+        "passed": true,
+        "observed": {
+          "currentCount": 396,
+          "priorCount": 396
+        },
+        "expected": "Same ordered IDs, exact text and start/end times"
+      },
+      {
+        "name": "canonicalTimingSidecarUnchanged",
+        "passed": true,
+        "observed": {
+          "current": {
+            "path": "sources/words.json",
+            "sha256": "c7a5b526ce3008fe531a0295d3524220f043aa593ba92680a4282ca228ac8d1e",
+            "bytes": 432288
+          },
+          "prior": {
+            "path": "sources/words.json",
+            "sha256": "c7a5b526ce3008fe531a0295d3524220f043aa593ba92680a4282ca228ac8d1e",
+            "bytes": 432288
+          }
+        },
+        "expected": "Exact timing sidecar SHA including phrase identities/provenance"
+      },
+      {
+        "name": "editsDoNotIntersectCanonicalLyrics",
+        "passed": true,
+        "observed": [
+          {
+            "start": 19.5,
+            "end": 29.202,
+            "purpose": "Opening instrumental mask/photo continuity",
+            "activeWordIds": []
+          },
+          {
+            "start": 225.67,
+            "end": 232.55,
+            "purpose": "Instrumental chapter-title removal and extended fade",
+            "activeWordIds": []
+          }
+        ],
+        "expected": "No canonical word intervals overlap declared edits"
+      },
+      {
+        "name": "compiledCanonicalDataMatchesManifest",
+        "passed": true,
+        "observed": {
+          "compiledWords": 396,
+          "duration": 327.6
+        },
+        "expected": "Full327.6s compiled canonical data matches current review manifest"
+      },
+      {
+        "name": "renderOutputBinding",
+        "passed": true,
+        "observed": "5a49eade84a664a472d47532f683ed4d813f5f6af593fd4ce90d5df57b0e8502",
+        "expected": "5a49eade84a664a472d47532f683ed4d813f5f6af593fd4ce90d5df57b0e8502"
+      },
+      {
+        "name": "renderSourceBinding",
+        "passed": true,
+        "observed": {
+          "start": "7ddae2856d5bf600cee8877a3cc011e4435e7e8c90c93523afd272b7792a07de",
+          "end": "7ddae2856d5bf600cee8877a3cc011e4435e7e8c90c93523afd272b7792a07de"
+        },
+        "expected": "7ddae2856d5bf600cee8877a3cc011e4435e7e8c90c93523afd272b7792a07de"
+      },
+      {
+        "name": "sourceAudioUnchanged",
+        "passed": true,
+        "observed": "b444350b68359bc06f17a90ace1b6d7bba9255a0358b308acec9cdccf3103420",
+        "expected": "b444350b68359bc06f17a90ace1b6d7bba9255a0358b308acec9cdccf3103420"
+      },
+      {
+        "name": "encodedFormat",
+        "passed": true,
+        "observed": {
+          "videoCodec": "h264",
+          "width": 1920,
+          "height": 1080,
+          "fps": "30/1",
+          "frames": "9828",
+          "audioTracks": 1,
+          "audioCodec": "aac",
+          "duration": "327.600000"
+        },
+        "expected": "H.2641920x1080p30,9828frames,oneAACtrack,327.6s"
+      },
+      {
+        "name": "fullDecode",
+        "passed": true,
+        "observed": {
+          "stderr": "",
+          "exitCode": 0
+        },
+        "expected": "All video/audio packets decode without errors"
+      },
+      {
+        "name": "decodedAudioMatch",
+        "passed": true,
+        "observed": {
+          "correlation": 0.998407,
+          "minSegmentCorrelation": 0.996202,
+          "gainDb": -0.089009
+        },
+        "expected": {
+          "minCorrelation": 0.985,
+          "minSegmentCorrelation": 0.97,
+          "maxGainDb": 0.75
+        }
+      },
+      {
+        "name": "audioLag",
+        "passed": true,
+        "observed": 0,
+        "expected": {
+          "maxAbsoluteSeconds": 0.035
+        }
+      },
+      {
+        "name": "audioDuration",
+        "passed": true,
+        "observed": {
+          "encoded": 327.616,
+          "source": 327.6
+        },
+        "expected": {
+          "expected": 327.6,
+          "tolerance": 0.08
+        }
+      },
+      {
+        "name": "encodedPCMIdenticalToV3",
+        "passed": true,
+        "observed": {
+          "v3": {
+            "sha256": "be210b1af8e0a3f2311d1ae3b01fc4282b112c5981bd6875b0b8c2f6087b8886",
+            "format": "mono-s16le-16000",
+            "samples": 5241600
+          },
+          "v4": {
+            "sha256": "be210b1af8e0a3f2311d1ae3b01fc4282b112c5981bd6875b0b8c2f6087b8886",
+            "format": "mono-s16le-16000",
+            "samples": 5241600
+          }
+        },
+        "expected": "Exact full-window16kHzmonoPCM identity used by the acoustic aligner"
+      },
+      {
+        "name": "unchangedDuringIncrementalReview",
+        "passed": true,
+        "observed": {
+          "start": "7ddae2856d5bf600cee8877a3cc011e4435e7e8c90c93523afd272b7792a07de",
+          "end": "7ddae2856d5bf600cee8877a3cc011e4435e7e8c90c93523afd272b7792a07de"
+        },
+        "expected": "Frozen V4 source and video throughout this check"
+      }
+    ]
+  },
+  "renderProvenance": {
+    "path": "/Volumes/DATA/ArkRender/psalm91-shelter-v4.mp4.render.json",
+    "sha256": "846cae447b9a94b2a08efe9098139e644c0e77e35a42d28ddf4c08d36769100a"
+  },
+  "priorEvidence": {
+    "originalCandidate": "v3",
+    "originalBinding": {
+      "videoSha256": "5bf0abe28bec171f144575ff62d68177698059283faa57e56047a97673056f94",
+      "projectHash": "09f5f7c38118b8e9df14271ee517ea0e1d993dca493d7b2005dac8bd5cb770a1",
+      "rendererHash": "4a279e37bc6bb3a1d2df216a8adc28a6c35974724f15419922adbb1d616a0a39",
+      "revisionHash": "e11eb7fce6fcb7281b9f9d05f3935057a75776a7c2426ed66ba5f7c9744587eb"
+    },
+    "summary": {
+      "path": "/Volumes/Code/ark-video-studio/output/psalm91-production/final-review-v3-summary.json",
+      "sha256": "d53a87d97af73328c5d2c659773c914e2a9e9562ab9fbe87b7bd410411d2ba01"
+    },
+    "rawReports": {
+      "fullReview": {
+        "path": "/Volumes/DATA/ArkRender/psalm91-review-v3/review.json",
+        "sha256": "3e2bc56983c072a57497e05e3a540aacb2bcff932f659ccff02c1fbd61e9a964"
+      },
+      "gate": {
+        "path": "/Volumes/DATA/ArkRender/psalm91-review-v3/gate.json",
+        "sha256": "5a140261f43d2090ad20587f70e075eaadf7cec151a5db15f757576b5a7303b9"
+      },
+      "audio": {
+        "path": "/Volumes/DATA/ArkRender/psalm91-review-v3/audio/audio-review.json",
+        "sha256": "a652ce0f985d244b0bec2cec959517e3684a833794668a9ba0dcce50e0271d06"
+      },
+      "ocr": {
+        "path": "/Volumes/DATA/ArkRender/psalm91-review-v3/ocr/lyric-visibility.json",
+        "sha256": "0c7725c87e839d5f3ceec9456f6f0d2775d3da6acb024499af0268d09668f88e"
+      },
+      "waveform": {
+        "path": "/Volumes/DATA/ArkRender/psalm91-review-v3/waveform.json",
+        "sha256": "a8cc490c2330b0d84da27893269aacb770d7502db7f0e44da4085d2eae5e9644"
+      },
+      "basicTechnicalConfirmation": {
+        "path": "/Volumes/DATA/ArkRender/psalm91-review-v3/basic-technical-confirmation.json",
+        "sha256": "694f2ce0f6a6fe73c386ce97f9cf78f3f9a90214fb5d7a64c2d50ef140624832"
+      }
+    },
+    "strictWordEvidence": {
+      "status": "failed",
+      "lineageSupportedByUnchangedAudioAndCues": true,
+      "passedWords": 75,
+      "unsupportedWords": 279,
+      "supportedOutsideTolerance": 42,
+      "note": "Original V3 acoustic judgments and failures remain unchanged. New hashes prove V4 PCM/cue identity when supported; no new recognition pass or fresh singing certification is claimed."
+    },
+    "ocr": {
+      "status": "failed",
+      "coverage": {
+        "required": 396,
+        "observed": 393,
+        "ratio": 0.9924242424242424,
+        "unresolved": [
+          "p91-l005-w06",
+          "p91-l019-w02",
+          "p91-l021-r01-w01"
+        ]
+      },
+      "repeated": false,
+      "note": "These are prior V3 sampled pixel observations with original hashes, not newly executed V4 OCR. Regional comparison supplies scoped context; no old report has been relabeled."
+    },
+    "temporal": {
+      "status": "failed",
+      "intervals": [
+        {
+          "start": 125.733333,
+          "end": 130.8,
+          "duration": 5.06666700000001,
+          "endedAtEof": false,
+          "exceedsBudget": true,
+          "mapping": {
+            "start": 125.73333333333333,
+            "end": 130.8,
+            "fps": 30
+          },
+          "sectionIds": [
+            "p91-l021"
+          ],
+          "sections": [
+            {
+              "id": "p91-l021",
+              "start": 125.73333333333333,
+              "end": 130.8,
+              "overlapSeconds": 5.066666666666677
+            }
+          ]
+        }
+      ],
+      "repeated": false,
+      "note": "Prior intentional calm-hold exception remains explicit. No new full-film temporal measurement is claimed."
+    },
+    "reviewExceptions": [
+      {
+        "gate": "encodedLyricVisibility",
+        "automaticStatus": "failed",
+        "disposition": "Explicitly retained as native OCR false negatives after fresh targeted decoded-frame inspection",
+        "authority": "Parent production lead",
+        "wordIds": [
+          "p91-l005-w06",
+          "p91-l019-w02",
+          "p91-l021-r01-w01"
+        ],
+        "automaticFlagChanged": false
+      },
+      {
+        "gate": "temporalActivity",
+        "automaticStatus": "failed",
+        "disposition": "Parent explicitly accepts the unchanged125.733–130.800s interval as an intentional calm hold; still exceeds the declared4s machine budget",
+        "authority": "Parent production lead",
+        "automaticFlagChanged": false
+      }
+    ]
+  },
+  "regionalVisualComparison": {
+    "status": "available_for_scoped_visual_context",
+    "path": "/Volumes/DATA/ArkRender/psalm91-v4-independent-review/overview-delta-comparison.json",
+    "sha256": "a438640ee6f6bef5ef30c6cae3257f768885aaa110eae6a1fccf8401f8233e05",
+    "bound": true,
+    "v3Artifact": "/Volumes/DATA/ArkRender/psalm91-shelter-v3.mp4",
+    "v4Artifact": "/Volumes/DATA/ArkRender/psalm91-shelter-v4.mp4",
+    "v3Sha256": "5bf0abe28bec171f144575ff62d68177698059283faa57e56047a97673056f94",
+    "v4Sha256": "5a49eade84a664a472d47532f683ed4d813f5f6af593fd4ce90d5df57b0e8502",
+    "sampleRate": 2,
+    "sampleCount": 655,
+    "changedReviewIntervals": [
+      [
+        18,
+        30
+      ],
+      [
+        222,
+        234
+      ]
+    ],
+    "unchangedScopeSampleCount": 607,
+    "exactMatchesOutside": 203,
+    "maxMeanAbsoluteChannelDifferenceOutside": 0.93652,
+    "maxRmsDifferenceOutside": 1.5628,
+    "outsideDifferencesAboveMean2": [],
+    "limitation": "Sampled image comparison only, not a frame-complete or audio test. Previous visual judgments may carry forward where matching evidence supports unchanged content; word timing and audio findings require separate source binding."
+  },
+  "automaticAcceptance": {
+    "passed": false,
+    "status": "not_claimed",
+    "reason": "This bounded integrity check does not replace full-song OCR, strict-singing certification, or independent aesthetic review. Prior strict failures and temporal/OCR exceptions remain."
+  },
+  "limitations": [
+    "Changed source revision is explicitly new; all inherited reports preserve V3 binding and provenance.",
+    "A2fps JPEG comparison supports sampled visual continuity only; it does not prove every frame or every lyric glyph is pixel-identical.",
+    "If PCM or canonical data differ, prior encoded acoustic judgments cannot be carried forward as applicable evidence.",
+    "No source, cue, renderer, or prior review inputs were edited by this script."
+  ],
+  "status": "integrity_complete_with_uncertified_prior_evidence",
+  "independentVisualReview": {
+    "path": "/Volumes/DATA/ArkRender/psalm91-v4-independent-review/independent-visual-review.json",
+    "sha256": "a916ff8521906f39237f865454ec90119fd277e4c884c72248bc51768d49f632",
+    "scope": "Independent agent report; read the linked report for exact V4 inspection coverage and carried prior observations. No acoustic or strict-sync acceptance is inferred.",
+    "rawStatus": null
+  },
+  "finalEvidenceAttachment": {
+    "attachedAt": "2026-09-27T10:50:09.657Z",
+    "priorIntegrityReport": {
+      "path": "/Volumes/DATA/ArkRender/psalm91-review-v4/incremental-review-before-visual-link.json",
+      "sha256": "5c28cb5e6b200e9e186491e1f56f17f77c270af2b4a811eeccee547680f9bd6c"
+    },
+    "currentVideoSha256": "5a49eade84a664a472d47532f683ed4d813f5f6af593fd4ce90d5df57b0e8502",
+    "currentRevisionHash": "7ddae2856d5bf600cee8877a3cc011e4435e7e8c90c93523afd272b7792a07de",
+    "sourceAndVideoStillMatch": true,
+    "reranFullChecks": false,
+    "automaticAcceptanceUnchanged": true
+  }
+}

@@ -1,0 +1,374 @@
+{
+  "version": 1,
+  "createdAt": "2026-09-27T10:37:04.346043+00:00",
+  "candidate": "v3",
+  "disposition": "Superseded by the newly requested title-removal revision; this complete review remains bound to v3 only.",
+  "exitCode": 2,
+  "binding": {
+    "videoSha256": "5bf0abe28bec171f144575ff62d68177698059283faa57e56047a97673056f94",
+    "projectHash": "09f5f7c38118b8e9df14271ee517ea0e1d993dca493d7b2005dac8bd5cb770a1",
+    "rendererHash": "4a279e37bc6bb3a1d2df216a8adc28a6c35974724f15419922adbb1d616a0a39",
+    "revisionHash": "e11eb7fce6fcb7281b9f9d05f3935057a75776a7c2426ed66ba5f7c9744587eb"
+  },
+  "rawReports": {
+    "fullReview": {
+      "path": "/Volumes/DATA/ArkRender/psalm91-review-v3/review.json",
+      "sha256": "3e2bc56983c072a57497e05e3a540aacb2bcff932f659ccff02c1fbd61e9a964"
+    },
+    "gate": {
+      "path": "/Volumes/DATA/ArkRender/psalm91-review-v3/gate.json",
+      "sha256": "5a140261f43d2090ad20587f70e075eaadf7cec151a5db15f757576b5a7303b9"
+    },
+    "audio": {
+      "path": "/Volumes/DATA/ArkRender/psalm91-review-v3/audio/audio-review.json",
+      "sha256": "a652ce0f985d244b0bec2cec959517e3684a833794668a9ba0dcce50e0271d06"
+    },
+    "ocr": {
+      "path": "/Volumes/DATA/ArkRender/psalm91-review-v3/ocr/lyric-visibility.json",
+      "sha256": "0c7725c87e839d5f3ceec9456f6f0d2775d3da6acb024499af0268d09668f88e"
+    },
+    "waveform": {
+      "path": "/Volumes/DATA/ArkRender/psalm91-review-v3/waveform.json",
+      "sha256": "a8cc490c2330b0d84da27893269aacb770d7502db7f0e44da4085d2eae5e9644"
+    },
+    "basicTechnicalConfirmation": {
+      "path": "/Volumes/DATA/ArkRender/psalm91-review-v3/basic-technical-confirmation.json",
+      "sha256": "694f2ce0f6a6fe73c386ce97f9cf78f3f9a90214fb5d7a64c2d50ef140624832"
+    }
+  },
+  "sourceUnchangedAtReviewCompletion": true,
+  "gateStatusAtCompletion": "technical_failed",
+  "automaticGatePassed": false,
+  "technical": {
+    "passed": false,
+    "checks": [
+      {
+        "name": "encodedFormat",
+        "passed": true,
+        "observed": {
+          "video": "h264",
+          "width": 1920,
+          "height": 1080,
+          "fps": "30/1",
+          "frames": "9828",
+          "audioTracks": 1,
+          "audioCodec": "aac"
+        },
+        "expected": {
+          "videoCodec": "h264",
+          "width": 1920,
+          "height": 1080,
+          "fps": "30/1",
+          "frames": 9828,
+          "audioTracks": 1,
+          "audioCodec": "aac"
+        }
+      },
+      {
+        "name": "safeDecode",
+        "passed": true,
+        "observed": "All video/audio packets decoded",
+        "expected": null
+      },
+      {
+        "name": "decodedAudioMatch",
+        "passed": true,
+        "observed": {
+          "correlation": 0.998407,
+          "minSegmentCorrelation": 0.996202,
+          "gainDb": -0.089009
+        },
+        "expected": {
+          "minCorrelation": 0.985,
+          "minSegmentCorrelation": 0.97,
+          "maxAbsoluteGainDb": 0.75
+        }
+      },
+      {
+        "name": "audioLag",
+        "passed": true,
+        "observed": {
+          "offsetSeconds": 0
+        },
+        "expected": {
+          "maxAbsoluteSeconds": 0.035
+        }
+      },
+      {
+        "name": "audioDuration",
+        "passed": true,
+        "observed": {
+          "source": 327.6,
+          "encoded": 327.616
+        },
+        "expected": {
+          "expected": 327.6,
+          "tolerance": 0.08
+        }
+      },
+      {
+        "name": "renderOutputBinding",
+        "passed": true,
+        "observed": "5bf0abe28bec171f144575ff62d68177698059283faa57e56047a97673056f94",
+        "expected": "5bf0abe28bec171f144575ff62d68177698059283faa57e56047a97673056f94"
+      },
+      {
+        "name": "renderRevisionBinding",
+        "passed": true,
+        "observed": {
+          "start": "e11eb7fce6fcb7281b9f9d05f3935057a75776a7c2426ed66ba5f7c9744587eb",
+          "end": "e11eb7fce6fcb7281b9f9d05f3935057a75776a7c2426ed66ba5f7c9744587eb"
+        },
+        "expected": "e11eb7fce6fcb7281b9f9d05f3935057a75776a7c2426ed66ba5f7c9744587eb"
+      },
+      {
+        "name": "authoredChoreographyCoverage",
+        "passed": true,
+        "observed": {
+          "uniqueFamilies": 55,
+          "maxUses": 1,
+          "missingPhraseIds": [],
+          "passed": true,
+          "note": "Distinct authored family IDs and coverage are structural checks; independent encoded visual review must judge meaningful variety."
+        },
+        "expected": {
+          "minDistinctFamilies": 30,
+          "maxUses": 3,
+          "allPerformedPhrases": true
+        }
+      },
+      {
+        "name": "allCanonicalWordsSampled",
+        "passed": true,
+        "observed": {
+          "required": 396,
+          "observed": 393,
+          "ratio": 0.9924242424242424,
+          "unresolved": [
+            "p91-l005-w06",
+            "p91-l019-w02",
+            "p91-l021-r01-w01"
+          ]
+        },
+        "expected": {
+          "required": 396
+        }
+      },
+      {
+        "name": "encodedLyricVisibility",
+        "passed": false,
+        "observed": {
+          "required": 396,
+          "observed": 393,
+          "ratio": 0.9924242424242424,
+          "unresolved": [
+            "p91-l005-w06",
+            "p91-l019-w02",
+            "p91-l021-r01-w01"
+          ]
+        },
+        "expected": {
+          "requiredRatio": 1
+        }
+      },
+      {
+        "name": "temporalActivity",
+        "passed": false,
+        "observed": {
+          "errors": [
+            "Temporal activity measurement did not pass",
+            "Temporal max_static_interval measurement is missing or failed",
+            "Temporal report contains failed checks",
+            "Cannot verify temporal evidence: Measured static interval exceeds the project budget"
+          ],
+          "intervals": [
+            {
+              "start": 125.733333,
+              "end": 130.8,
+              "duration": 5.06666700000001,
+              "endedAtEof": false,
+              "exceedsBudget": true,
+              "mapping": {
+                "start": 125.73333333333333,
+                "end": 130.8,
+                "fps": 30
+              },
+              "sectionIds": [
+                "p91-l021"
+              ],
+              "sections": [
+                {
+                  "id": "p91-l021",
+                  "start": 125.73333333333333,
+                  "end": 130.8,
+                  "overlapSeconds": 5.066666666666677
+                }
+              ]
+            }
+          ]
+        },
+        "expected": {
+          "maxStaticSeconds": 4
+        }
+      },
+      {
+        "name": "unchangedDuringReview",
+        "passed": true,
+        "observed": "e11eb7fce6fcb7281b9f9d05f3935057a75776a7c2426ed66ba5f7c9744587eb",
+        "expected": "e11eb7fce6fcb7281b9f9d05f3935057a75776a7c2426ed66ba5f7c9744587eb"
+      }
+    ]
+  },
+  "strictAudio": {
+    "status": "failed",
+    "wordCount": 396,
+    "passed": 75,
+    "unsupported": 279,
+    "supportedOutsideTolerance": 42,
+    "cache": {
+      "directory": "/Volumes/Code/ark-video-studio/projects/psalm91-shelter/.review-cache/audio",
+      "hits": 78,
+      "misses": 0,
+      "rejectedEntries": 0
+    },
+    "supportedOnsetDiscrepanciesOver200ms": [
+      {
+        "id": "p91-l044-w05",
+        "text": "answer.",
+        "currentStart": 259.26,
+        "acousticStart": 259.468605,
+        "cueDelta": 0.208605,
+        "endDelta": 0.091174,
+        "route": "official_ctc_asr"
+      },
+      {
+        "id": "p91-l051-w03",
+        "text": "will",
+        "currentStart": 277.983,
+        "acousticStart": 278.190405,
+        "cueDelta": 0.207405,
+        "endDelta": 0.007539,
+        "route": "official_ctc_asr"
+      }
+    ],
+    "policy": "No further acoustic retries or cue edits from the two roughly209ms differences alone; failed evidence preserved."
+  },
+  "ocr": {
+    "status": "failed",
+    "coverage": {
+      "required": 396,
+      "observed": 393,
+      "ratio": 0.9924242424242424,
+      "unresolved": [
+        "p91-l005-w06",
+        "p91-l019-w02",
+        "p91-l021-r01-w01"
+      ]
+    },
+    "checkedFrames": 1425,
+    "evidenceIntegrity": {
+      "id": "evidence_integrity",
+      "passed": true,
+      "checkedFrames": 1425,
+      "errors": []
+    },
+    "targetedVisualInspection": {
+      "reviewer": "psalm91_alignment subagent",
+      "scope": "Four previously problematic OCR samples inspected in freshly decoded v3 itself; all current unresolved IDs are included. This is not a full independent visual review.",
+      "evidence": [
+        {
+          "wordId": "p91-l005-w06",
+          "note": "I is plainly visible, large and isolated; native OCR omits the isolated letter.",
+          "time": 46.866667,
+          "path": "/Volumes/DATA/ArkRender/psalm91-review-v3/ocr/frames/frame-0001406-sample-0000117.png",
+          "sha256": "a4e34f2e485418d95b4eeb576b9744f333528333862bba2131da7551c65e0548"
+        },
+        {
+          "wordId": "p91-l019-w02",
+          "note": "harm is visibly present in italic type; native OCR reads barm.",
+          "time": 111.966667,
+          "path": "/Volumes/DATA/ArkRender/psalm91-review-v3/ocr/frames/frame-0003359-sample-0000469.png",
+          "sha256": "a94ae06e6e6d53d1d70abdb8c7d72981c00072e17a597dd833b90f713c192dad"
+        },
+        {
+          "wordId": "p91-l021-r01-w01",
+          "note": "I is plainly visible, large and isolated; native OCR omits the isolated letter.",
+          "time": 116.7,
+          "path": "/Volumes/DATA/ArkRender/psalm91-review-v3/ocr/frames/frame-0003501-sample-0000511.png",
+          "sha256": "5c893be8cc9ad5a1f84257772ecf04b1544b9ea5be7787a96c6f063d154be0c9"
+        },
+        {
+          "wordId": "p91-l034-w02",
+          "note": "harm is visibly present in italic type; this word is now observed by native OCR elsewhere in its valid window.",
+          "time": 181.833333,
+          "path": "/Volumes/DATA/ArkRender/psalm91-review-v3/ocr/frames/frame-0005455-sample-0000877.png",
+          "sha256": "949ffbde98e8835e242c69ef1ed21d6be25709cf54edb8e0e6344db69b8e0040"
+        }
+      ],
+      "effectOnGate": "None; three raw native OCR unresolved words remain failed."
+    }
+  },
+  "temporal": {
+    "passed": false,
+    "intervals": [
+      {
+        "start": 125.733333,
+        "end": 130.8,
+        "duration": 5.06666700000001,
+        "endedAtEof": false,
+        "exceedsBudget": true,
+        "mapping": {
+          "start": 125.73333333333333,
+          "end": 130.8,
+          "fps": 30
+        },
+        "sectionIds": [
+          "p91-l021"
+        ],
+        "sections": [
+          {
+            "id": "p91-l021",
+            "start": 125.73333333333333,
+            "end": 130.8,
+            "overlapSeconds": 5.066666666666677
+          }
+        ]
+      }
+    ],
+    "report": {
+      "path": "/Volumes/DATA/ArkRender/psalm91-review-v3/temporal/temporal-review.json",
+      "sha256": "e98268f529868c514d64d008a78cbae6c0f6ad047d46e2b6b21c20d39690a40b"
+    }
+  },
+  "reviewExceptions": [
+    {
+      "gate": "encodedLyricVisibility",
+      "automaticStatus": "failed",
+      "disposition": "Explicitly retained as native OCR false negatives after fresh targeted decoded-frame inspection",
+      "authority": "Parent production lead",
+      "wordIds": [
+        "p91-l005-w06",
+        "p91-l019-w02",
+        "p91-l021-r01-w01"
+      ],
+      "automaticFlagChanged": false
+    },
+    {
+      "gate": "temporalActivity",
+      "automaticStatus": "failed",
+      "disposition": "Parent explicitly accepts the unchanged125.733\u2013130.800s interval as an intentional calm hold; still exceeds the declared4s machine budget",
+      "authority": "Parent production lead",
+      "automaticFlagChanged": false
+    }
+  ],
+  "newMeaningfulFailuresComparedWithV2": [],
+  "exceptionsDoNotApproveStrictSync": true,
+  "limitations": [
+    "This report belongs to the exact v3 artifact and is not approval of a later revision.",
+    "Strict word synchronization remains uncertified for many sung tokens.",
+    "Global PCM fidelity does not prove lyric onset or animation-impact synchronization.",
+    "Only the four recorded samples were visually inspected by this audit; full aesthetic review remains separate.",
+    "Automatic technical and audio failure flags remain unchanged despite explicit narrow review exceptions.",
+    "Any source changes after this final checkpoint are not covered by this revision binding."
+  ]
+}

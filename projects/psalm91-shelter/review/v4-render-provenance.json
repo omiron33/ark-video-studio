@@ -1,0 +1,1265 @@
+{
+  "schemaVersion": 1,
+  "kind": "hyperframes-render-provenance",
+  "sha256": "5a49eade84a664a472d47532f683ed4d813f5f6af593fd4ce90d5df57b0e8502",
+  "sourceRevision": {
+    "projectHash": "7d1b8ed1638df8d6501a93071015a8f56a73ac48f3044f0d28682d2d0c16b2b9",
+    "rendererHash": "4a279e37bc6bb3a1d2df216a8adc28a6c35974724f15419922adbb1d616a0a39",
+    "revisionHash": "7ddae2856d5bf600cee8877a3cc011e4435e7e8c90c93523afd272b7792a07de",
+    "projectFiles": [
+      {
+        "path": "$manifest",
+        "sha256": "fd28619db3fefb493ca264a595e3a39750108d1aec626633ca70f7019390a63d"
+      },
+      {
+        "path": "asset-map.json",
+        "sha256": "8e6ea77b7011c4c9a36e5ab3d3c5c163f69ee95e3b40d6c3f02cfc1455b99067",
+        "bytes": 2631
+      },
+      {
+        "path": "assets/ArchivoBlack-Regular.ttf",
+        "sha256": "dd9a89a019b4849f66ab75455fe7bdf931311042cbb0f0f97acc061539703180",
+        "bytes": 90988
+      },
+      {
+        "path": "assets/BebasNeue-Regular.ttf",
+        "sha256": "08e4623805102d819f58601e46e345648846075e363b2ceb23313c2d1c83ec73",
+        "bytes": 61400
+      },
+      {
+        "path": "assets/EBGaramond-Italic-Variable.ttf",
+        "sha256": "bba2c4499c93c9612b90b9825d32b07da52fce2fe57562a1eb6b833553f93c4e",
+        "bytes": 754468
+      },
+      {
+        "path": "assets/adam-formation-end.png",
+        "sha256": "0652bb0b24a309ca15542f049b9cc8f07f1689216fb42f3b9a7633de49c55235",
+        "bytes": 2254370
+      },
+      {
+        "path": "assets/adam-formation-start.png",
+        "sha256": "d8fe01352836ed584efde5ff3374a86d2796134ec71ac53a453e27505aeeb858",
+        "bytes": 2170586
+      },
+      {
+        "path": "assets/arrow-dissolution.png",
+        "sha256": "629488598f1a1731354c60785e2d8065837164d4ce84fa885be6a6d7b5986a8f",
+        "bytes": 1778442
+      },
+      {
+        "path": "assets/arrow-dusk.png",
+        "sha256": "acbc24539b6b2a157f4b86ca9235b544566e35c9414c226e093de4f761582628",
+        "bytes": 1845249
+      },
+      {
+        "path": "assets/artsy-adam-formation-last.jpg",
+        "sha256": "9d303f2d68431c89ae84e54efbaba3ff83b8b36a2c89fbe21be8cd14b121d421",
+        "bytes": 67109
+      },
+      {
+        "path": "assets/artsy-adam-formation-motion.mp4",
+        "sha256": "c0465fd2b0ed1723a75cfaafb6c0b312626e6ef15e7cd2872d210fdb5975c43a",
+        "bytes": 2010090
+      },
+      {
+        "path": "assets/artsy-arrows-dissolution-last.jpg",
+        "sha256": "df3f2d49c9e8197c58f8523622666232775d0f4171acf624aeeebebebb98cb08",
+        "bytes": 30696
+      },
+      {
+        "path": "assets/artsy-arrows-dissolution-motion.mp4",
+        "sha256": "84b763b85468e06ccfa9be931ddc66a04400ba1e0145419839ec66372552bfec",
+        "bytes": 2391109
+      },
+      {
+        "path": "assets/artsy-dust-lion-motion-last.png",
+        "sha256": "8201ee71e795d38965f3b89a2b9e518bde6d3919519a8f646014f1a5532b283f",
+        "bytes": 618802
+      },
+      {
+        "path": "assets/artsy-dust-lion-motion.mp4",
+        "sha256": "c19868bd50520ede0828784d2250b4504f3c772879c94c97823c0aaca19e53eb",
+        "bytes": 1691449
+      },
+      {
+        "path": "assets/artsy-dust-wing-motion-last.png",
+        "sha256": "c7081074fb5440f82b2a5782fd0fa1d8c2546fd0c3910e804fc07645a1e19497",
+        "bytes": 620462
+      },
+      {
+        "path": "assets/artsy-dust-wing-motion.mp4",
+        "sha256": "8f299a0df0844bece62c2cc1374b09453fb7612408529bf95efaec24897d3192",
+        "bytes": 2025635
+      },
+      {
+        "path": "assets/artsy-stone-refuge-last.jpg",
+        "sha256": "025dfdc55bf220e35ae6c515351d104ffe72362ecfeb5357a207ba24a9e2944d",
+        "bytes": 78551
+      },
+      {
+        "path": "assets/artsy-stone-refuge-motion.mp4",
+        "sha256": "6ed4edf6cc228930fdfb936615986d536b16b4e2a4b2b6582d818f6782e64fbf",
+        "bytes": 2711176
+      },
+      {
+        "path": "assets/dawn-road.png",
+        "sha256": "ac137cffb035dd4a84d2d14fae8c8ff78434b706bec9163d72378fec4a07b2e9",
+        "bytes": 2290611
+      },
+      {
+        "path": "assets/divine-guardian.png",
+        "sha256": "42df9dd344ff295ba0bcd17faaddcedaeffa9cea9c75d8e9659577e3958390ce",
+        "bytes": 2242963
+      },
+      {
+        "path": "assets/dust-lion.png",
+        "sha256": "33aa6f3f9c6478df2c09e889f8ba97b69aee2a523325642364ca502ad3d784fa",
+        "bytes": 2456711
+      },
+      {
+        "path": "assets/dust-wing.png",
+        "sha256": "d06dc51e734596a4f8f864dd55177494249a72a2de813fd58cd0a4cf62fe599d",
+        "bytes": 2262059
+      },
+      {
+        "path": "assets/guardian-road-motion5s-last.png",
+        "sha256": "dd1f065abfad0a4b3eb1fd799296298cafcdc7be083c50b0c43e4744ce35ef95",
+        "bytes": 589938
+      },
+      {
+        "path": "assets/guardian-road-motion5s.mp4",
+        "sha256": "485f7bc074f060d5f7af0c2456118db9596adbce6fb81277415c74c06c85cb9a",
+        "bytes": 1961761
+      },
+      {
+        "path": "assets/guardian-road.png",
+        "sha256": "8bb21b40963134b4bbd68300a3c6a9ff94b002e00169e7d6c482415307155fa3",
+        "bytes": 2201995
+      },
+      {
+        "path": "assets/home-threshold.png",
+        "sha256": "2ac9cb1129ce81c1434d66d8abb3e2b8cbd2d49b68bb2f6f99c20ca36149f1d4",
+        "bytes": 1883918
+      },
+      {
+        "path": "assets/lifted-hand.png",
+        "sha256": "79a189c82b27bda03e7049c9bd7ecd5a1aea4eebd33ea38b222a7dd89a6927d1",
+        "bytes": 1911935
+      },
+      {
+        "path": "assets/lion-dragon.png",
+        "sha256": "b28766d3c21adeb6ccc2886529e5b7bf5f964eed5f749444d9e0e481e313a809",
+        "bytes": 2320421
+      },
+      {
+        "path": "assets/net-release.png",
+        "sha256": "c8dd1cede72ce82d76a175f51811fc91b334862901477854f13bf493ae85bc49",
+        "bytes": 2125241
+      },
+      {
+        "path": "assets/opening-refuge.png",
+        "sha256": "92ef883562e407708c900bd20919eae45c35e23973748474014e91e19f3df4f5",
+        "bytes": 2060300
+      },
+      {
+        "path": "assets/song.m4a",
+        "sha256": "b444350b68359bc06f17a90ace1b6d7bba9255a0358b308acec9cdccf3103420",
+        "bytes": 5113226
+      },
+      {
+        "path": "assets/storm-refuge-end.png",
+        "sha256": "0d4e52c4d9fdd7b52d87b47181fb87a0874bd6accedcc6d6c8a6fe2b24c03676",
+        "bytes": 2536848
+      },
+      {
+        "path": "assets/storm-refuge-start.png",
+        "sha256": "dd8d74dadc92b9caf24e96ddf5411613a69e5e2ba2bee57e209e6d348044a472",
+        "bytes": 2215834
+      },
+      {
+        "path": "assets/wing-refuge-motion.mp4",
+        "sha256": "88576356600c6ae2ca246c6d6a1297ed1097188bddb9264942f343f1b7758449",
+        "bytes": 654832
+      },
+      {
+        "path": "assets/wing-refuge-motion5s-last.png",
+        "sha256": "9a5c1b91719c346f2cf756c5cd504a1fe85d1b71ff69a02d6b7c951aabff06a1",
+        "bytes": 474827
+      },
+      {
+        "path": "assets/wing-refuge-motion5s.mp4",
+        "sha256": "479ec46a6220327f9c499ec577b8a46da37c939e68b972c744bb865ea0bc0118",
+        "bytes": 820894
+      },
+      {
+        "path": "assets/wing-refuge.png",
+        "sha256": "454a1ae34af1c0a64c5b7cfd980fe6cddfa686e6130b4c1a8b30197f232e48c9",
+        "bytes": 1941712
+      },
+      {
+        "path": "build.mjs",
+        "sha256": "336ab86417a615f7492b4fb0f44b8c7448e14e8a35611633e2293445fc57973c",
+        "bytes": 4250
+      },
+      {
+        "path": "composition.html.txt",
+        "sha256": "2703e2614fd6910723f832f8a70fb31b2c6530ac2262d51c71440047c6e979ea",
+        "bytes": 3675
+      },
+      {
+        "path": "index.html",
+        "sha256": "970c443b50743d98e2c2bf72d0cda6f78223c9197efbb17e6d5e3aae59233dab",
+        "bytes": 972907
+      },
+      {
+        "path": "narrative.js",
+        "sha256": "298c55a38f01293da6ec84c88438b6c4ce69ff43c209d5db7e998eb5eeeea11d",
+        "bytes": 60527
+      },
+      {
+        "path": "opening.js",
+        "sha256": "801e8b80530ee5c05c08e3623ee8954e39c2205ec9c47bef8dd727d1605abfd8",
+        "bytes": 8988
+      },
+      {
+        "path": "review.mjs",
+        "sha256": "fc2582f07c4adc8f684703ed7a647be146831f9846b119373b5c1a8cd133a7f3",
+        "bytes": 16316
+      },
+      {
+        "path": "scene-plan.json",
+        "sha256": "3874566116c4172a4ba689d56224ce18ea1d39047582a3f4331f7a63583c948c",
+        "bytes": 85276
+      },
+      {
+        "path": "sources/measured-audio-events.json",
+        "sha256": "ded2057f85063484199ddbe1d290f575d8e9baee5558876bcef71ae3e30d2f28",
+        "bytes": 351586
+      },
+      {
+        "path": "sources/measured-energy.json",
+        "sha256": "c3a1e98bcbccf826f237a1b9cd5baaeca63c95b0548622f59147be62c3400846",
+        "bytes": 80993
+      },
+      {
+        "path": "sources/performance-lyrics.txt",
+        "sha256": "2c2b17d851d70cedf64aef2141d58a2c5c0f56e4c386982fae206a1ba0406480",
+        "bytes": 2073
+      },
+      {
+        "path": "sources/words.json",
+        "sha256": "c7a5b526ce3008fe531a0295d3524220f043aa593ba92680a4282ca228ac8d1e",
+        "bytes": 432288
+      },
+      {
+        "path": "vendor/gsap.min.js",
+        "sha256": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+        "bytes": 72779
+      }
+    ],
+    "rendererFiles": [
+      {
+        "path": "align.py",
+        "sha256": "50823f56a3abf85bcaa67df10abece9d3052ff438330a07f8caf81bc46566f9a"
+      },
+      {
+        "path": "artwork.mjs",
+        "sha256": "bdfaffe46fffb9ee34206607e6c93cebb4ae45ab24361af7252ee61085751c91"
+      },
+      {
+        "path": "audio-review.mjs",
+        "sha256": "e61db248eb54ac3c0e0b8be3dec79bd7d87bba2b95db10a2d1db9947fd3b4d77"
+      },
+      {
+        "path": "audio-worker.py",
+        "sha256": "f79248815aeac1418c2de993edddc61a855af2c93c95043354196c07993efc18"
+      },
+      {
+        "path": "cache.mjs",
+        "sha256": "96af67170803708b61fdf99148243cec2f416b6f083e7e81f562690205642818"
+      },
+      {
+        "path": "camera-choreography.mjs",
+        "sha256": "31377235b421fa55d617a2bd06e45f4c5e05bc65956cba5f7527afba5b389ddb"
+      },
+      {
+        "path": "choreography-policy.mjs",
+        "sha256": "667719aa2ae6bd714c7667f52f98f569c380f30a23ccb14fe9b8b677f580eb1f"
+      },
+      {
+        "path": "cli.mjs",
+        "sha256": "28afb782d685b4e295a0314cfbadb3e10ba0176fcb40c7fcaf88cfe4eae43811"
+      },
+      {
+        "path": "create.mjs",
+        "sha256": "ea8269ec4b6ac8143f5149d7f995910ed7eccfca87031a6ea53509b7a74028cf"
+      },
+      {
+        "path": "creative-policy.mjs",
+        "sha256": "35f6c6ac4a5c46ea954bc3b610775691fed9c5da88bbd1e9052ec093088a074e"
+      },
+      {
+        "path": "director.mjs",
+        "sha256": "b892c0d43ed47a5f0f263686b3584d1f9811f8d8c40bc2d66ceda919c5e29349"
+      },
+      {
+        "path": "export.mjs",
+        "sha256": "3013b61ad2b14d0c026d938a0b811a640df65703ec23510eb4ced5bfb8a45083"
+      },
+      {
+        "path": "fullsong-review.mjs",
+        "sha256": "70bcaac3ae56f820b95ba3de34384ed1d6afce7d34c81b0c30d28cea3736fcc1"
+      },
+      {
+        "path": "gauntlet.mjs",
+        "sha256": "5665202f7e70c317f2800c098429b1d245b8e76fcca950825aa94641690c296a"
+      },
+      {
+        "path": "genesis-choreography.mjs",
+        "sha256": "c5e74c5112f9d7ecf563532092f756a06cb98c6817dd741b8f0dfce9e74bde11"
+      },
+      {
+        "path": "import.mjs",
+        "sha256": "4f3bbf58799a4b4b6f99cb6fb6f5166e41d60d142efa9ef3849b7c8d2fbddcbd"
+      },
+      {
+        "path": "ocr.mjs",
+        "sha256": "2f901db34e5ba4627e9037eb721a420d0a7b9832bd517ac03627f4a0dabdc81f"
+      },
+      {
+        "path": "ocr.swift",
+        "sha256": "efc79b7e743c881bfc77f91726bf0f77ebdee04b7393b6ae725fb93fde2b3e6f"
+      },
+      {
+        "path": "pacing.mjs",
+        "sha256": "0297b01d9241c6e2af64ea185579269c2efdaf67c1002af95f8d581f940adaee"
+      },
+      {
+        "path": "preview.html",
+        "sha256": "2696a7fde5a724c56a7e5dfda7f5180d263d16d15df3b4e79ad5081f0d75c88e"
+      },
+      {
+        "path": "project.mjs",
+        "sha256": "cc2e7a56ea5783dd7cdf98d6876567032e9c564b4c9599fb40395962cd5bed16"
+      },
+      {
+        "path": "reference-gallery.html",
+        "sha256": "833cd8b7bce14f73f757b813517115dec0bb0fb5115db627f7289bb4d58fbe63"
+      },
+      {
+        "path": "reference-gallery.mjs",
+        "sha256": "046d72223a8ef2bc2f209179606adc263e347ae08aa6ac864d8b08078a5a2a1b"
+      },
+      {
+        "path": "references.mjs",
+        "sha256": "15ec510a0cdaf8a02c4debbf21e07581c04ef2211f500c8dec7fedd5591d4a97"
+      },
+      {
+        "path": "sculptural-choreography.mjs",
+        "sha256": "c8b8f56cfcca7327bab954f2527fcabb9760c4e7c291e2ef729eafeda17f3f0b"
+      },
+      {
+        "path": "semantic-choreography.mjs",
+        "sha256": "675837d4537f8a336c8cb9d57b0e22c5966342cd43207d283196d3aaaadea916"
+      },
+      {
+        "path": "server.mjs",
+        "sha256": "ef2015a430f3a1a2e84e47829f51dd63f80e0703cfa7f389b9d01f4b8c55e0d6"
+      },
+      {
+        "path": "story-visual.mjs",
+        "sha256": "76f452de205b43fc18623e4a0db7a60c93382c90711e7ce3efcf1dceebb050b3"
+      },
+      {
+        "path": "temporal-review.mjs",
+        "sha256": "604f8aafb663282b21a51b5a70be2f10838b8324bb167bdc99572aa9066fef0b"
+      },
+      {
+        "path": "visual.mjs",
+        "sha256": "2661222302592cbeaaff0018773dafc20fab85b92a0eeddef3e01076b24a6495"
+      }
+    ],
+    "assets": [
+      {
+        "path": "asset-map.json",
+        "sha256": "8e6ea77b7011c4c9a36e5ab3d3c5c163f69ee95e3b40d6c3f02cfc1455b99067",
+        "bytes": 2631
+      },
+      {
+        "path": "assets/ArchivoBlack-Regular.ttf",
+        "sha256": "dd9a89a019b4849f66ab75455fe7bdf931311042cbb0f0f97acc061539703180",
+        "bytes": 90988
+      },
+      {
+        "path": "assets/BebasNeue-Regular.ttf",
+        "sha256": "08e4623805102d819f58601e46e345648846075e363b2ceb23313c2d1c83ec73",
+        "bytes": 61400
+      },
+      {
+        "path": "assets/EBGaramond-Italic-Variable.ttf",
+        "sha256": "bba2c4499c93c9612b90b9825d32b07da52fce2fe57562a1eb6b833553f93c4e",
+        "bytes": 754468
+      },
+      {
+        "path": "assets/adam-formation-end.png",
+        "sha256": "0652bb0b24a309ca15542f049b9cc8f07f1689216fb42f3b9a7633de49c55235",
+        "bytes": 2254370
+      },
+      {
+        "path": "assets/adam-formation-start.png",
+        "sha256": "d8fe01352836ed584efde5ff3374a86d2796134ec71ac53a453e27505aeeb858",
+        "bytes": 2170586
+      },
+      {
+        "path": "assets/arrow-dissolution.png",
+        "sha256": "629488598f1a1731354c60785e2d8065837164d4ce84fa885be6a6d7b5986a8f",
+        "bytes": 1778442
+      },
+      {
+        "path": "assets/arrow-dusk.png",
+        "sha256": "acbc24539b6b2a157f4b86ca9235b544566e35c9414c226e093de4f761582628",
+        "bytes": 1845249
+      },
+      {
+        "path": "assets/artsy-adam-formation-last.jpg",
+        "sha256": "9d303f2d68431c89ae84e54efbaba3ff83b8b36a2c89fbe21be8cd14b121d421",
+        "bytes": 67109
+      },
+      {
+        "path": "assets/artsy-adam-formation-motion.mp4",
+        "sha256": "c0465fd2b0ed1723a75cfaafb6c0b312626e6ef15e7cd2872d210fdb5975c43a",
+        "bytes": 2010090
+      },
+      {
+        "path": "assets/artsy-arrows-dissolution-last.jpg",
+        "sha256": "df3f2d49c9e8197c58f8523622666232775d0f4171acf624aeeebebebb98cb08",
+        "bytes": 30696
+      },
+      {
+        "path": "assets/artsy-arrows-dissolution-motion.mp4",
+        "sha256": "84b763b85468e06ccfa9be931ddc66a04400ba1e0145419839ec66372552bfec",
+        "bytes": 2391109
+      },
+      {
+        "path": "assets/artsy-dust-lion-motion-last.png",
+        "sha256": "8201ee71e795d38965f3b89a2b9e518bde6d3919519a8f646014f1a5532b283f",
+        "bytes": 618802
+      },
+      {
+        "path": "assets/artsy-dust-lion-motion.mp4",
+        "sha256": "c19868bd50520ede0828784d2250b4504f3c772879c94c97823c0aaca19e53eb",
+        "bytes": 1691449
+      },
+      {
+        "path": "assets/artsy-dust-wing-motion-last.png",
+        "sha256": "c7081074fb5440f82b2a5782fd0fa1d8c2546fd0c3910e804fc07645a1e19497",
+        "bytes": 620462
+      },
+      {
+        "path": "assets/artsy-dust-wing-motion.mp4",
+        "sha256": "8f299a0df0844bece62c2cc1374b09453fb7612408529bf95efaec24897d3192",
+        "bytes": 2025635
+      },
+      {
+        "path": "assets/artsy-stone-refuge-last.jpg",
+        "sha256": "025dfdc55bf220e35ae6c515351d104ffe72362ecfeb5357a207ba24a9e2944d",
+        "bytes": 78551
+      },
+      {
+        "path": "assets/artsy-stone-refuge-motion.mp4",
+        "sha256": "6ed4edf6cc228930fdfb936615986d536b16b4e2a4b2b6582d818f6782e64fbf",
+        "bytes": 2711176
+      },
+      {
+        "path": "assets/dawn-road.png",
+        "sha256": "ac137cffb035dd4a84d2d14fae8c8ff78434b706bec9163d72378fec4a07b2e9",
+        "bytes": 2290611
+      },
+      {
+        "path": "assets/divine-guardian.png",
+        "sha256": "42df9dd344ff295ba0bcd17faaddcedaeffa9cea9c75d8e9659577e3958390ce",
+        "bytes": 2242963
+      },
+      {
+        "path": "assets/dust-lion.png",
+        "sha256": "33aa6f3f9c6478df2c09e889f8ba97b69aee2a523325642364ca502ad3d784fa",
+        "bytes": 2456711
+      },
+      {
+        "path": "assets/dust-wing.png",
+        "sha256": "d06dc51e734596a4f8f864dd55177494249a72a2de813fd58cd0a4cf62fe599d",
+        "bytes": 2262059
+      },
+      {
+        "path": "assets/guardian-road-motion5s-last.png",
+        "sha256": "dd1f065abfad0a4b3eb1fd799296298cafcdc7be083c50b0c43e4744ce35ef95",
+        "bytes": 589938
+      },
+      {
+        "path": "assets/guardian-road-motion5s.mp4",
+        "sha256": "485f7bc074f060d5f7af0c2456118db9596adbce6fb81277415c74c06c85cb9a",
+        "bytes": 1961761
+      },
+      {
+        "path": "assets/guardian-road.png",
+        "sha256": "8bb21b40963134b4bbd68300a3c6a9ff94b002e00169e7d6c482415307155fa3",
+        "bytes": 2201995
+      },
+      {
+        "path": "assets/home-threshold.png",
+        "sha256": "2ac9cb1129ce81c1434d66d8abb3e2b8cbd2d49b68bb2f6f99c20ca36149f1d4",
+        "bytes": 1883918
+      },
+      {
+        "path": "assets/lifted-hand.png",
+        "sha256": "79a189c82b27bda03e7049c9bd7ecd5a1aea4eebd33ea38b222a7dd89a6927d1",
+        "bytes": 1911935
+      },
+      {
+        "path": "assets/lion-dragon.png",
+        "sha256": "b28766d3c21adeb6ccc2886529e5b7bf5f964eed5f749444d9e0e481e313a809",
+        "bytes": 2320421
+      },
+      {
+        "path": "assets/net-release.png",
+        "sha256": "c8dd1cede72ce82d76a175f51811fc91b334862901477854f13bf493ae85bc49",
+        "bytes": 2125241
+      },
+      {
+        "path": "assets/opening-refuge.png",
+        "sha256": "92ef883562e407708c900bd20919eae45c35e23973748474014e91e19f3df4f5",
+        "bytes": 2060300
+      },
+      {
+        "path": "assets/song.m4a",
+        "sha256": "b444350b68359bc06f17a90ace1b6d7bba9255a0358b308acec9cdccf3103420",
+        "bytes": 5113226
+      },
+      {
+        "path": "assets/storm-refuge-end.png",
+        "sha256": "0d4e52c4d9fdd7b52d87b47181fb87a0874bd6accedcc6d6c8a6fe2b24c03676",
+        "bytes": 2536848
+      },
+      {
+        "path": "assets/storm-refuge-start.png",
+        "sha256": "dd8d74dadc92b9caf24e96ddf5411613a69e5e2ba2bee57e209e6d348044a472",
+        "bytes": 2215834
+      },
+      {
+        "path": "assets/wing-refuge-motion.mp4",
+        "sha256": "88576356600c6ae2ca246c6d6a1297ed1097188bddb9264942f343f1b7758449",
+        "bytes": 654832
+      },
+      {
+        "path": "assets/wing-refuge-motion5s-last.png",
+        "sha256": "9a5c1b91719c346f2cf756c5cd504a1fe85d1b71ff69a02d6b7c951aabff06a1",
+        "bytes": 474827
+      },
+      {
+        "path": "assets/wing-refuge-motion5s.mp4",
+        "sha256": "479ec46a6220327f9c499ec577b8a46da37c939e68b972c744bb865ea0bc0118",
+        "bytes": 820894
+      },
+      {
+        "path": "assets/wing-refuge.png",
+        "sha256": "454a1ae34af1c0a64c5b7cfd980fe6cddfa686e6130b4c1a8b30197f232e48c9",
+        "bytes": 1941712
+      },
+      {
+        "path": "build.mjs",
+        "sha256": "336ab86417a615f7492b4fb0f44b8c7448e14e8a35611633e2293445fc57973c",
+        "bytes": 4250
+      },
+      {
+        "path": "composition.html.txt",
+        "sha256": "2703e2614fd6910723f832f8a70fb31b2c6530ac2262d51c71440047c6e979ea",
+        "bytes": 3675
+      },
+      {
+        "path": "index.html",
+        "sha256": "970c443b50743d98e2c2bf72d0cda6f78223c9197efbb17e6d5e3aae59233dab",
+        "bytes": 972907
+      },
+      {
+        "path": "narrative.js",
+        "sha256": "298c55a38f01293da6ec84c88438b6c4ce69ff43c209d5db7e998eb5eeeea11d",
+        "bytes": 60527
+      },
+      {
+        "path": "opening.js",
+        "sha256": "801e8b80530ee5c05c08e3623ee8954e39c2205ec9c47bef8dd727d1605abfd8",
+        "bytes": 8988
+      },
+      {
+        "path": "review.mjs",
+        "sha256": "fc2582f07c4adc8f684703ed7a647be146831f9846b119373b5c1a8cd133a7f3",
+        "bytes": 16316
+      },
+      {
+        "path": "scene-plan.json",
+        "sha256": "3874566116c4172a4ba689d56224ce18ea1d39047582a3f4331f7a63583c948c",
+        "bytes": 85276
+      },
+      {
+        "path": "sources/measured-audio-events.json",
+        "sha256": "ded2057f85063484199ddbe1d290f575d8e9baee5558876bcef71ae3e30d2f28",
+        "bytes": 351586
+      },
+      {
+        "path": "sources/measured-energy.json",
+        "sha256": "c3a1e98bcbccf826f237a1b9cd5baaeca63c95b0548622f59147be62c3400846",
+        "bytes": 80993
+      },
+      {
+        "path": "sources/performance-lyrics.txt",
+        "sha256": "2c2b17d851d70cedf64aef2141d58a2c5c0f56e4c386982fae206a1ba0406480",
+        "bytes": 2073
+      },
+      {
+        "path": "sources/words.json",
+        "sha256": "c7a5b526ce3008fe531a0295d3524220f043aa593ba92680a4282ca228ac8d1e",
+        "bytes": 432288
+      },
+      {
+        "path": "vendor/gsap.min.js",
+        "sha256": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+        "bytes": 72779
+      }
+    ],
+    "rendererDir": "/Volumes/Code/ark-video-studio/engine"
+  },
+  "sourceRevisionEnd": {
+    "projectHash": "7d1b8ed1638df8d6501a93071015a8f56a73ac48f3044f0d28682d2d0c16b2b9",
+    "rendererHash": "4a279e37bc6bb3a1d2df216a8adc28a6c35974724f15419922adbb1d616a0a39",
+    "revisionHash": "7ddae2856d5bf600cee8877a3cc011e4435e7e8c90c93523afd272b7792a07de",
+    "projectFiles": [
+      {
+        "path": "$manifest",
+        "sha256": "fd28619db3fefb493ca264a595e3a39750108d1aec626633ca70f7019390a63d"
+      },
+      {
+        "path": "asset-map.json",
+        "sha256": "8e6ea77b7011c4c9a36e5ab3d3c5c163f69ee95e3b40d6c3f02cfc1455b99067",
+        "bytes": 2631
+      },
+      {
+        "path": "assets/ArchivoBlack-Regular.ttf",
+        "sha256": "dd9a89a019b4849f66ab75455fe7bdf931311042cbb0f0f97acc061539703180",
+        "bytes": 90988
+      },
+      {
+        "path": "assets/BebasNeue-Regular.ttf",
+        "sha256": "08e4623805102d819f58601e46e345648846075e363b2ceb23313c2d1c83ec73",
+        "bytes": 61400
+      },
+      {
+        "path": "assets/EBGaramond-Italic-Variable.ttf",
+        "sha256": "bba2c4499c93c9612b90b9825d32b07da52fce2fe57562a1eb6b833553f93c4e",
+        "bytes": 754468
+      },
+      {
+        "path": "assets/adam-formation-end.png",
+        "sha256": "0652bb0b24a309ca15542f049b9cc8f07f1689216fb42f3b9a7633de49c55235",
+        "bytes": 2254370
+      },
+      {
+        "path": "assets/adam-formation-start.png",
+        "sha256": "d8fe01352836ed584efde5ff3374a86d2796134ec71ac53a453e27505aeeb858",
+        "bytes": 2170586
+      },
+      {
+        "path": "assets/arrow-dissolution.png",
+        "sha256": "629488598f1a1731354c60785e2d8065837164d4ce84fa885be6a6d7b5986a8f",
+        "bytes": 1778442
+      },
+      {
+        "path": "assets/arrow-dusk.png",
+        "sha256": "acbc24539b6b2a157f4b86ca9235b544566e35c9414c226e093de4f761582628",
+        "bytes": 1845249
+      },
+      {
+        "path": "assets/artsy-adam-formation-last.jpg",
+        "sha256": "9d303f2d68431c89ae84e54efbaba3ff83b8b36a2c89fbe21be8cd14b121d421",
+        "bytes": 67109
+      },
+      {
+        "path": "assets/artsy-adam-formation-motion.mp4",
+        "sha256": "c0465fd2b0ed1723a75cfaafb6c0b312626e6ef15e7cd2872d210fdb5975c43a",
+        "bytes": 2010090
+      },
+      {
+        "path": "assets/artsy-arrows-dissolution-last.jpg",
+        "sha256": "df3f2d49c9e8197c58f8523622666232775d0f4171acf624aeeebebebb98cb08",
+        "bytes": 30696
+      },
+      {
+        "path": "assets/artsy-arrows-dissolution-motion.mp4",
+        "sha256": "84b763b85468e06ccfa9be931ddc66a04400ba1e0145419839ec66372552bfec",
+        "bytes": 2391109
+      },
+      {
+        "path": "assets/artsy-dust-lion-motion-last.png",
+        "sha256": "8201ee71e795d38965f3b89a2b9e518bde6d3919519a8f646014f1a5532b283f",
+        "bytes": 618802
+      },
+      {
+        "path": "assets/artsy-dust-lion-motion.mp4",
+        "sha256": "c19868bd50520ede0828784d2250b4504f3c772879c94c97823c0aaca19e53eb",
+        "bytes": 1691449
+      },
+      {
+        "path": "assets/artsy-dust-wing-motion-last.png",
+        "sha256": "c7081074fb5440f82b2a5782fd0fa1d8c2546fd0c3910e804fc07645a1e19497",
+        "bytes": 620462
+      },
+      {
+        "path": "assets/artsy-dust-wing-motion.mp4",
+        "sha256": "8f299a0df0844bece62c2cc1374b09453fb7612408529bf95efaec24897d3192",
+        "bytes": 2025635
+      },
+      {
+        "path": "assets/artsy-stone-refuge-last.jpg",
+        "sha256": "025dfdc55bf220e35ae6c515351d104ffe72362ecfeb5357a207ba24a9e2944d",
+        "bytes": 78551
+      },
+      {
+        "path": "assets/artsy-stone-refuge-motion.mp4",
+        "sha256": "6ed4edf6cc228930fdfb936615986d536b16b4e2a4b2b6582d818f6782e64fbf",
+        "bytes": 2711176
+      },
+      {
+        "path": "assets/dawn-road.png",
+        "sha256": "ac137cffb035dd4a84d2d14fae8c8ff78434b706bec9163d72378fec4a07b2e9",
+        "bytes": 2290611
+      },
+      {
+        "path": "assets/divine-guardian.png",
+        "sha256": "42df9dd344ff295ba0bcd17faaddcedaeffa9cea9c75d8e9659577e3958390ce",
+        "bytes": 2242963
+      },
+      {
+        "path": "assets/dust-lion.png",
+        "sha256": "33aa6f3f9c6478df2c09e889f8ba97b69aee2a523325642364ca502ad3d784fa",
+        "bytes": 2456711
+      },
+      {
+        "path": "assets/dust-wing.png",
+        "sha256": "d06dc51e734596a4f8f864dd55177494249a72a2de813fd58cd0a4cf62fe599d",
+        "bytes": 2262059
+      },
+      {
+        "path": "assets/guardian-road-motion5s-last.png",
+        "sha256": "dd1f065abfad0a4b3eb1fd799296298cafcdc7be083c50b0c43e4744ce35ef95",
+        "bytes": 589938
+      },
+      {
+        "path": "assets/guardian-road-motion5s.mp4",
+        "sha256": "485f7bc074f060d5f7af0c2456118db9596adbce6fb81277415c74c06c85cb9a",
+        "bytes": 1961761
+      },
+      {
+        "path": "assets/guardian-road.png",
+        "sha256": "8bb21b40963134b4bbd68300a3c6a9ff94b002e00169e7d6c482415307155fa3",
+        "bytes": 2201995
+      },
+      {
+        "path": "assets/home-threshold.png",
+        "sha256": "2ac9cb1129ce81c1434d66d8abb3e2b8cbd2d49b68bb2f6f99c20ca36149f1d4",
+        "bytes": 1883918
+      },
+      {
+        "path": "assets/lifted-hand.png",
+        "sha256": "79a189c82b27bda03e7049c9bd7ecd5a1aea4eebd33ea38b222a7dd89a6927d1",
+        "bytes": 1911935
+      },
+      {
+        "path": "assets/lion-dragon.png",
+        "sha256": "b28766d3c21adeb6ccc2886529e5b7bf5f964eed5f749444d9e0e481e313a809",
+        "bytes": 2320421
+      },
+      {
+        "path": "assets/net-release.png",
+        "sha256": "c8dd1cede72ce82d76a175f51811fc91b334862901477854f13bf493ae85bc49",
+        "bytes": 2125241
+      },
+      {
+        "path": "assets/opening-refuge.png",
+        "sha256": "92ef883562e407708c900bd20919eae45c35e23973748474014e91e19f3df4f5",
+        "bytes": 2060300
+      },
+      {
+        "path": "assets/song.m4a",
+        "sha256": "b444350b68359bc06f17a90ace1b6d7bba9255a0358b308acec9cdccf3103420",
+        "bytes": 5113226
+      },
+      {
+        "path": "assets/storm-refuge-end.png",
+        "sha256": "0d4e52c4d9fdd7b52d87b47181fb87a0874bd6accedcc6d6c8a6fe2b24c03676",
+        "bytes": 2536848
+      },
+      {
+        "path": "assets/storm-refuge-start.png",
+        "sha256": "dd8d74dadc92b9caf24e96ddf5411613a69e5e2ba2bee57e209e6d348044a472",
+        "bytes": 2215834
+      },
+      {
+        "path": "assets/wing-refuge-motion.mp4",
+        "sha256": "88576356600c6ae2ca246c6d6a1297ed1097188bddb9264942f343f1b7758449",
+        "bytes": 654832
+      },
+      {
+        "path": "assets/wing-refuge-motion5s-last.png",
+        "sha256": "9a5c1b91719c346f2cf756c5cd504a1fe85d1b71ff69a02d6b7c951aabff06a1",
+        "bytes": 474827
+      },
+      {
+        "path": "assets/wing-refuge-motion5s.mp4",
+        "sha256": "479ec46a6220327f9c499ec577b8a46da37c939e68b972c744bb865ea0bc0118",
+        "bytes": 820894
+      },
+      {
+        "path": "assets/wing-refuge.png",
+        "sha256": "454a1ae34af1c0a64c5b7cfd980fe6cddfa686e6130b4c1a8b30197f232e48c9",
+        "bytes": 1941712
+      },
+      {
+        "path": "build.mjs",
+        "sha256": "336ab86417a615f7492b4fb0f44b8c7448e14e8a35611633e2293445fc57973c",
+        "bytes": 4250
+      },
+      {
+        "path": "composition.html.txt",
+        "sha256": "2703e2614fd6910723f832f8a70fb31b2c6530ac2262d51c71440047c6e979ea",
+        "bytes": 3675
+      },
+      {
+        "path": "index.html",
+        "sha256": "970c443b50743d98e2c2bf72d0cda6f78223c9197efbb17e6d5e3aae59233dab",
+        "bytes": 972907
+      },
+      {
+        "path": "narrative.js",
+        "sha256": "298c55a38f01293da6ec84c88438b6c4ce69ff43c209d5db7e998eb5eeeea11d",
+        "bytes": 60527
+      },
+      {
+        "path": "opening.js",
+        "sha256": "801e8b80530ee5c05c08e3623ee8954e39c2205ec9c47bef8dd727d1605abfd8",
+        "bytes": 8988
+      },
+      {
+        "path": "review.mjs",
+        "sha256": "fc2582f07c4adc8f684703ed7a647be146831f9846b119373b5c1a8cd133a7f3",
+        "bytes": 16316
+      },
+      {
+        "path": "scene-plan.json",
+        "sha256": "3874566116c4172a4ba689d56224ce18ea1d39047582a3f4331f7a63583c948c",
+        "bytes": 85276
+      },
+      {
+        "path": "sources/measured-audio-events.json",
+        "sha256": "ded2057f85063484199ddbe1d290f575d8e9baee5558876bcef71ae3e30d2f28",
+        "bytes": 351586
+      },
+      {
+        "path": "sources/measured-energy.json",
+        "sha256": "c3a1e98bcbccf826f237a1b9cd5baaeca63c95b0548622f59147be62c3400846",
+        "bytes": 80993
+      },
+      {
+        "path": "sources/performance-lyrics.txt",
+        "sha256": "2c2b17d851d70cedf64aef2141d58a2c5c0f56e4c386982fae206a1ba0406480",
+        "bytes": 2073
+      },
+      {
+        "path": "sources/words.json",
+        "sha256": "c7a5b526ce3008fe531a0295d3524220f043aa593ba92680a4282ca228ac8d1e",
+        "bytes": 432288
+      },
+      {
+        "path": "vendor/gsap.min.js",
+        "sha256": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+        "bytes": 72779
+      }
+    ],
+    "rendererFiles": [
+      {
+        "path": "align.py",
+        "sha256": "50823f56a3abf85bcaa67df10abece9d3052ff438330a07f8caf81bc46566f9a"
+      },
+      {
+        "path": "artwork.mjs",
+        "sha256": "bdfaffe46fffb9ee34206607e6c93cebb4ae45ab24361af7252ee61085751c91"
+      },
+      {
+        "path": "audio-review.mjs",
+        "sha256": "e61db248eb54ac3c0e0b8be3dec79bd7d87bba2b95db10a2d1db9947fd3b4d77"
+      },
+      {
+        "path": "audio-worker.py",
+        "sha256": "f79248815aeac1418c2de993edddc61a855af2c93c95043354196c07993efc18"
+      },
+      {
+        "path": "cache.mjs",
+        "sha256": "96af67170803708b61fdf99148243cec2f416b6f083e7e81f562690205642818"
+      },
+      {
+        "path": "camera-choreography.mjs",
+        "sha256": "31377235b421fa55d617a2bd06e45f4c5e05bc65956cba5f7527afba5b389ddb"
+      },
+      {
+        "path": "choreography-policy.mjs",
+        "sha256": "667719aa2ae6bd714c7667f52f98f569c380f30a23ccb14fe9b8b677f580eb1f"
+      },
+      {
+        "path": "cli.mjs",
+        "sha256": "28afb782d685b4e295a0314cfbadb3e10ba0176fcb40c7fcaf88cfe4eae43811"
+      },
+      {
+        "path": "create.mjs",
+        "sha256": "ea8269ec4b6ac8143f5149d7f995910ed7eccfca87031a6ea53509b7a74028cf"
+      },
+      {
+        "path": "creative-policy.mjs",
+        "sha256": "35f6c6ac4a5c46ea954bc3b610775691fed9c5da88bbd1e9052ec093088a074e"
+      },
+      {
+        "path": "director.mjs",
+        "sha256": "b892c0d43ed47a5f0f263686b3584d1f9811f8d8c40bc2d66ceda919c5e29349"
+      },
+      {
+        "path": "export.mjs",
+        "sha256": "3013b61ad2b14d0c026d938a0b811a640df65703ec23510eb4ced5bfb8a45083"
+      },
+      {
+        "path": "fullsong-review.mjs",
+        "sha256": "70bcaac3ae56f820b95ba3de34384ed1d6afce7d34c81b0c30d28cea3736fcc1"
+      },
+      {
+        "path": "gauntlet.mjs",
+        "sha256": "5665202f7e70c317f2800c098429b1d245b8e76fcca950825aa94641690c296a"
+      },
+      {
+        "path": "genesis-choreography.mjs",
+        "sha256": "c5e74c5112f9d7ecf563532092f756a06cb98c6817dd741b8f0dfce9e74bde11"
+      },
+      {
+        "path": "import.mjs",
+        "sha256": "4f3bbf58799a4b4b6f99cb6fb6f5166e41d60d142efa9ef3849b7c8d2fbddcbd"
+      },
+      {
+        "path": "ocr.mjs",
+        "sha256": "2f901db34e5ba4627e9037eb721a420d0a7b9832bd517ac03627f4a0dabdc81f"
+      },
+      {
+        "path": "ocr.swift",
+        "sha256": "efc79b7e743c881bfc77f91726bf0f77ebdee04b7393b6ae725fb93fde2b3e6f"
+      },
+      {
+        "path": "pacing.mjs",
+        "sha256": "0297b01d9241c6e2af64ea185579269c2efdaf67c1002af95f8d581f940adaee"
+      },
+      {
+        "path": "preview.html",
+        "sha256": "2696a7fde5a724c56a7e5dfda7f5180d263d16d15df3b4e79ad5081f0d75c88e"
+      },
+      {
+        "path": "project.mjs",
+        "sha256": "cc2e7a56ea5783dd7cdf98d6876567032e9c564b4c9599fb40395962cd5bed16"
+      },
+      {
+        "path": "reference-gallery.html",
+        "sha256": "833cd8b7bce14f73f757b813517115dec0bb0fb5115db627f7289bb4d58fbe63"
+      },
+      {
+        "path": "reference-gallery.mjs",
+        "sha256": "046d72223a8ef2bc2f209179606adc263e347ae08aa6ac864d8b08078a5a2a1b"
+      },
+      {
+        "path": "references.mjs",
+        "sha256": "15ec510a0cdaf8a02c4debbf21e07581c04ef2211f500c8dec7fedd5591d4a97"
+      },
+      {
+        "path": "sculptural-choreography.mjs",
+        "sha256": "c8b8f56cfcca7327bab954f2527fcabb9760c4e7c291e2ef729eafeda17f3f0b"
+      },
+      {
+        "path": "semantic-choreography.mjs",
+        "sha256": "675837d4537f8a336c8cb9d57b0e22c5966342cd43207d283196d3aaaadea916"
+      },
+      {
+        "path": "server.mjs",
+        "sha256": "ef2015a430f3a1a2e84e47829f51dd63f80e0703cfa7f389b9d01f4b8c55e0d6"
+      },
+      {
+        "path": "story-visual.mjs",
+        "sha256": "76f452de205b43fc18623e4a0db7a60c93382c90711e7ce3efcf1dceebb050b3"
+      },
+      {
+        "path": "temporal-review.mjs",
+        "sha256": "604f8aafb663282b21a51b5a70be2f10838b8324bb167bdc99572aa9066fef0b"
+      },
+      {
+        "path": "visual.mjs",
+        "sha256": "2661222302592cbeaaff0018773dafc20fab85b92a0eeddef3e01076b24a6495"
+      }
+    ],
+    "assets": [
+      {
+        "path": "asset-map.json",
+        "sha256": "8e6ea77b7011c4c9a36e5ab3d3c5c163f69ee95e3b40d6c3f02cfc1455b99067",
+        "bytes": 2631
+      },
+      {
+        "path": "assets/ArchivoBlack-Regular.ttf",
+        "sha256": "dd9a89a019b4849f66ab75455fe7bdf931311042cbb0f0f97acc061539703180",
+        "bytes": 90988
+      },
+      {
+        "path": "assets/BebasNeue-Regular.ttf",
+        "sha256": "08e4623805102d819f58601e46e345648846075e363b2ceb23313c2d1c83ec73",
+        "bytes": 61400
+      },
+      {
+        "path": "assets/EBGaramond-Italic-Variable.ttf",
+        "sha256": "bba2c4499c93c9612b90b9825d32b07da52fce2fe57562a1eb6b833553f93c4e",
+        "bytes": 754468
+      },
+      {
+        "path": "assets/adam-formation-end.png",
+        "sha256": "0652bb0b24a309ca15542f049b9cc8f07f1689216fb42f3b9a7633de49c55235",
+        "bytes": 2254370
+      },
+      {
+        "path": "assets/adam-formation-start.png",
+        "sha256": "d8fe01352836ed584efde5ff3374a86d2796134ec71ac53a453e27505aeeb858",
+        "bytes": 2170586
+      },
+      {
+        "path": "assets/arrow-dissolution.png",
+        "sha256": "629488598f1a1731354c60785e2d8065837164d4ce84fa885be6a6d7b5986a8f",
+        "bytes": 1778442
+      },
+      {
+        "path": "assets/arrow-dusk.png",
+        "sha256": "acbc24539b6b2a157f4b86ca9235b544566e35c9414c226e093de4f761582628",
+        "bytes": 1845249
+      },
+      {
+        "path": "assets/artsy-adam-formation-last.jpg",
+        "sha256": "9d303f2d68431c89ae84e54efbaba3ff83b8b36a2c89fbe21be8cd14b121d421",
+        "bytes": 67109
+      },
+      {
+        "path": "assets/artsy-adam-formation-motion.mp4",
+        "sha256": "c0465fd2b0ed1723a75cfaafb6c0b312626e6ef15e7cd2872d210fdb5975c43a",
+        "bytes": 2010090
+      },
+      {
+        "path": "assets/artsy-arrows-dissolution-last.jpg",
+        "sha256": "df3f2d49c9e8197c58f8523622666232775d0f4171acf624aeeebebebb98cb08",
+        "bytes": 30696
+      },
+      {
+        "path": "assets/artsy-arrows-dissolution-motion.mp4",
+        "sha256": "84b763b85468e06ccfa9be931ddc66a04400ba1e0145419839ec66372552bfec",
+        "bytes": 2391109
+      },
+      {
+        "path": "assets/artsy-dust-lion-motion-last.png",
+        "sha256": "8201ee71e795d38965f3b89a2b9e518bde6d3919519a8f646014f1a5532b283f",
+        "bytes": 618802
+      },
+      {
+        "path": "assets/artsy-dust-lion-motion.mp4",
+        "sha256": "c19868bd50520ede0828784d2250b4504f3c772879c94c97823c0aaca19e53eb",
+        "bytes": 1691449
+      },
+      {
+        "path": "assets/artsy-dust-wing-motion-last.png",
+        "sha256": "c7081074fb5440f82b2a5782fd0fa1d8c2546fd0c3910e804fc07645a1e19497",
+        "bytes": 620462
+      },
+      {
+        "path": "assets/artsy-dust-wing-motion.mp4",
+        "sha256": "8f299a0df0844bece62c2cc1374b09453fb7612408529bf95efaec24897d3192",
+        "bytes": 2025635
+      },
+      {
+        "path": "assets/artsy-stone-refuge-last.jpg",
+        "sha256": "025dfdc55bf220e35ae6c515351d104ffe72362ecfeb5357a207ba24a9e2944d",
+        "bytes": 78551
+      },
+      {
+        "path": "assets/artsy-stone-refuge-motion.mp4",
+        "sha256": "6ed4edf6cc228930fdfb936615986d536b16b4e2a4b2b6582d818f6782e64fbf",
+        "bytes": 2711176
+      },
+      {
+        "path": "assets/dawn-road.png",
+        "sha256": "ac137cffb035dd4a84d2d14fae8c8ff78434b706bec9163d72378fec4a07b2e9",
+        "bytes": 2290611
+      },
+      {
+        "path": "assets/divine-guardian.png",
+        "sha256": "42df9dd344ff295ba0bcd17faaddcedaeffa9cea9c75d8e9659577e3958390ce",
+        "bytes": 2242963
+      },
+      {
+        "path": "assets/dust-lion.png",
+        "sha256": "33aa6f3f9c6478df2c09e889f8ba97b69aee2a523325642364ca502ad3d784fa",
+        "bytes": 2456711
+      },
+      {
+        "path": "assets/dust-wing.png",
+        "sha256": "d06dc51e734596a4f8f864dd55177494249a72a2de813fd58cd0a4cf62fe599d",
+        "bytes": 2262059
+      },
+      {
+        "path": "assets/guardian-road-motion5s-last.png",
+        "sha256": "dd1f065abfad0a4b3eb1fd799296298cafcdc7be083c50b0c43e4744ce35ef95",
+        "bytes": 589938
+      },
+      {
+        "path": "assets/guardian-road-motion5s.mp4",
+        "sha256": "485f7bc074f060d5f7af0c2456118db9596adbce6fb81277415c74c06c85cb9a",
+        "bytes": 1961761
+      },
+      {
+        "path": "assets/guardian-road.png",
+        "sha256": "8bb21b40963134b4bbd68300a3c6a9ff94b002e00169e7d6c482415307155fa3",
+        "bytes": 2201995
+      },
+      {
+        "path": "assets/home-threshold.png",
+        "sha256": "2ac9cb1129ce81c1434d66d8abb3e2b8cbd2d49b68bb2f6f99c20ca36149f1d4",
+        "bytes": 1883918
+      },
+      {
+        "path": "assets/lifted-hand.png",
+        "sha256": "79a189c82b27bda03e7049c9bd7ecd5a1aea4eebd33ea38b222a7dd89a6927d1",
+        "bytes": 1911935
+      },
+      {
+        "path": "assets/lion-dragon.png",
+        "sha256": "b28766d3c21adeb6ccc2886529e5b7bf5f964eed5f749444d9e0e481e313a809",
+        "bytes": 2320421
+      },
+      {
+        "path": "assets/net-release.png",
+        "sha256": "c8dd1cede72ce82d76a175f51811fc91b334862901477854f13bf493ae85bc49",
+        "bytes": 2125241
+      },
+      {
+        "path": "assets/opening-refuge.png",
+        "sha256": "92ef883562e407708c900bd20919eae45c35e23973748474014e91e19f3df4f5",
+        "bytes": 2060300
+      },
+      {
+        "path": "assets/song.m4a",
+        "sha256": "b444350b68359bc06f17a90ace1b6d7bba9255a0358b308acec9cdccf3103420",
+        "bytes": 5113226
+      },
+      {
+        "path": "assets/storm-refuge-end.png",
+        "sha256": "0d4e52c4d9fdd7b52d87b47181fb87a0874bd6accedcc6d6c8a6fe2b24c03676",
+        "bytes": 2536848
+      },
+      {
+        "path": "assets/storm-refuge-start.png",
+        "sha256": "dd8d74dadc92b9caf24e96ddf5411613a69e5e2ba2bee57e209e6d348044a472",
+        "bytes": 2215834
+      },
+      {
+        "path": "assets/wing-refuge-motion.mp4",
+        "sha256": "88576356600c6ae2ca246c6d6a1297ed1097188bddb9264942f343f1b7758449",
+        "bytes": 654832
+      },
+      {
+        "path": "assets/wing-refuge-motion5s-last.png",
+        "sha256": "9a5c1b91719c346f2cf756c5cd504a1fe85d1b71ff69a02d6b7c951aabff06a1",
+        "bytes": 474827
+      },
+      {
+        "path": "assets/wing-refuge-motion5s.mp4",
+        "sha256": "479ec46a6220327f9c499ec577b8a46da37c939e68b972c744bb865ea0bc0118",
+        "bytes": 820894
+      },
+      {
+        "path": "assets/wing-refuge.png",
+        "sha256": "454a1ae34af1c0a64c5b7cfd980fe6cddfa686e6130b4c1a8b30197f232e48c9",
+        "bytes": 1941712
+      },
+      {
+        "path": "build.mjs",
+        "sha256": "336ab86417a615f7492b4fb0f44b8c7448e14e8a35611633e2293445fc57973c",
+        "bytes": 4250
+      },
+      {
+        "path": "composition.html.txt",
+        "sha256": "2703e2614fd6910723f832f8a70fb31b2c6530ac2262d51c71440047c6e979ea",
+        "bytes": 3675
+      },
+      {
+        "path": "index.html",
+        "sha256": "970c443b50743d98e2c2bf72d0cda6f78223c9197efbb17e6d5e3aae59233dab",
+        "bytes": 972907
+      },
+      {
+        "path": "narrative.js",
+        "sha256": "298c55a38f01293da6ec84c88438b6c4ce69ff43c209d5db7e998eb5eeeea11d",
+        "bytes": 60527
+      },
+      {
+        "path": "opening.js",
+        "sha256": "801e8b80530ee5c05c08e3623ee8954e39c2205ec9c47bef8dd727d1605abfd8",
+        "bytes": 8988
+      },
+      {
+        "path": "review.mjs",
+        "sha256": "fc2582f07c4adc8f684703ed7a647be146831f9846b119373b5c1a8cd133a7f3",
+        "bytes": 16316
+      },
+      {
+        "path": "scene-plan.json",
+        "sha256": "3874566116c4172a4ba689d56224ce18ea1d39047582a3f4331f7a63583c948c",
+        "bytes": 85276
+      },
+      {
+        "path": "sources/measured-audio-events.json",
+        "sha256": "ded2057f85063484199ddbe1d290f575d8e9baee5558876bcef71ae3e30d2f28",
+        "bytes": 351586
+      },
+      {
+        "path": "sources/measured-energy.json",
+        "sha256": "c3a1e98bcbccf826f237a1b9cd5baaeca63c95b0548622f59147be62c3400846",
+        "bytes": 80993
+      },
+      {
+        "path": "sources/performance-lyrics.txt",
+        "sha256": "2c2b17d851d70cedf64aef2141d58a2c5c0f56e4c386982fae206a1ba0406480",
+        "bytes": 2073
+      },
+      {
+        "path": "sources/words.json",
+        "sha256": "c7a5b526ce3008fe531a0295d3524220f043aa593ba92680a4282ca228ac8d1e",
+        "bytes": 432288
+      },
+      {
+        "path": "vendor/gsap.min.js",
+        "sha256": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+        "bytes": 72779
+      }
+    ],
+    "rendererDir": "/Volumes/Code/ark-video-studio/engine"
+  },
+  "duration": 327.6,
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "renderStartedAt": "2026-09-27T10:39:14.377Z",
+  "renderEndedAt": "2026-09-27T10:46:41.993Z",
+  "renderer": "HyperFrames0.8.79",
+  "note": "Source snapshot captured before rendering and verified after; output encoding is separately decoded by review."
+}

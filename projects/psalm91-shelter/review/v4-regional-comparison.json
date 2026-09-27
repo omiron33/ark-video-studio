@@ -1,0 +1,4611 @@
+{
+  "v3Artifact": "/Volumes/DATA/ArkRender/psalm91-shelter-v3.mp4",
+  "v3Sha256": "5bf0abe28bec171f144575ff62d68177698059283faa57e56047a97673056f94",
+  "v4Artifact": "/Volumes/DATA/ArkRender/psalm91-shelter-v4.mp4",
+  "v4Sha256": "5a49eade84a664a472d47532f683ed4d813f5f6af593fd4ce90d5df57b0e8502",
+  "sampleRate": 2,
+  "sampleCount": 655,
+  "changedReviewIntervals": [
+    [
+      18,
+      30
+    ],
+    [
+      222,
+      234
+    ]
+  ],
+  "unchangedScopeSampleCount": 607,
+  "exactMatchesOutside": 203,
+  "maxMeanAbsoluteChannelDifferenceOutside": 0.93652,
+  "maxRmsDifferenceOutside": 1.5628,
+  "outsideDifferencesAboveMean2": [],
+  "samples": [
+    {
+      "nominalTime": 0.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 0.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 1.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 1.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 2.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 2.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 3.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 3.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 4.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 4.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 5.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 5.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.03557,
+      "rmsChannelDifference": 0.27529,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 6.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.0692,
+      "rmsChannelDifference": 0.39307,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 6.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.12564,
+      "rmsChannelDifference": 0.53985,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 7.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.21497,
+      "rmsChannelDifference": 0.71517,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 7.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.22069,
+      "rmsChannelDifference": 0.74642,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 8.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.25506,
+      "rmsChannelDifference": 0.80371,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 8.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 9.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 9.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 10.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 10.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.06673,
+      "rmsChannelDifference": 0.40566,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 11.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.11286,
+      "rmsChannelDifference": 0.52857,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 11.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.13351,
+      "rmsChannelDifference": 0.58125,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 12.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.17299,
+      "rmsChannelDifference": 0.65813,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 12.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.18618,
+      "rmsChannelDifference": 0.68759,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 13.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.19866,
+      "rmsChannelDifference": 0.7091,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 13.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.19458,
+      "rmsChannelDifference": 0.70267,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 14.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.20137,
+      "rmsChannelDifference": 0.71117,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 14.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.19868,
+      "rmsChannelDifference": 0.70864,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 15.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.58333,
+      "rmsChannelDifference": 1.2785,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 15.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.35604,
+      "rmsChannelDifference": 0.93735,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 16.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.40137,
+      "rmsChannelDifference": 1.00624,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 16.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 17.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 17.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.08533,
+      "rmsChannelDifference": 0.42862,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 18.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.10551,
+      "rmsChannelDifference": 0.44393,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 18.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.10828,
+      "rmsChannelDifference": 0.45478,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 19.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.32298,
+      "rmsChannelDifference": 0.85194,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 19.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 4.87225,
+      "rmsChannelDifference": 17.86034,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 20.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.29531,
+      "rmsChannelDifference": 0.85896,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 20.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.28949,
+      "rmsChannelDifference": 0.84039,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 21.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.3063,
+      "rmsChannelDifference": 0.871,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 21.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.31654,
+      "rmsChannelDifference": 0.8817,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 22.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.31802,
+      "rmsChannelDifference": 0.88331,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 22.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 8.14387,
+      "rmsChannelDifference": 24.06956,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 23.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 26.51748,
+      "rmsChannelDifference": 45.16766,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 23.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 32.56946,
+      "rmsChannelDifference": 51.37325,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 24.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 32.43461,
+      "rmsChannelDifference": 50.95041,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 24.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 1.12658,
+      "rmsChannelDifference": 1.73569,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 25.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 1.09264,
+      "rmsChannelDifference": 1.69754,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 25.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 1.12631,
+      "rmsChannelDifference": 1.74656,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 26.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 1.12367,
+      "rmsChannelDifference": 1.72534,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 26.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 1.16217,
+      "rmsChannelDifference": 1.7899,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 27.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 1.08724,
+      "rmsChannelDifference": 1.65979,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 27.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 1.16577,
+      "rmsChannelDifference": 1.78989,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 28.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 1.11663,
+      "rmsChannelDifference": 1.70241,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 28.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 1.1968,
+      "rmsChannelDifference": 1.84572,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 29.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.10486,
+      "rmsChannelDifference": 0.43633,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 29.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.1259,
+      "rmsChannelDifference": 0.49525,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 30.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.14973,
+      "rmsChannelDifference": 0.54661,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 30.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.21138,
+      "rmsChannelDifference": 0.66778,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 31.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.23598,
+      "rmsChannelDifference": 0.70544,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 31.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.29924,
+      "rmsChannelDifference": 0.82452,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 32.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.29984,
+      "rmsChannelDifference": 0.82292,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 32.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.2988,
+      "rmsChannelDifference": 0.81985,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 33.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.29747,
+      "rmsChannelDifference": 0.81913,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 33.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 34.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 34.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.04286,
+      "rmsChannelDifference": 0.22712,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 35.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.18625,
+      "rmsChannelDifference": 0.60656,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 35.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.13708,
+      "rmsChannelDifference": 0.54099,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 36.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.20526,
+      "rmsChannelDifference": 0.69803,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 36.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.25055,
+      "rmsChannelDifference": 0.78718,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 37.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.25344,
+      "rmsChannelDifference": 0.78904,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 37.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.25014,
+      "rmsChannelDifference": 0.78641,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 38.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.25089,
+      "rmsChannelDifference": 0.78776,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 38.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.21789,
+      "rmsChannelDifference": 0.63304,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 39.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.22542,
+      "rmsChannelDifference": 0.70086,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 39.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.23358,
+      "rmsChannelDifference": 0.67891,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 40.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.22933,
+      "rmsChannelDifference": 0.67164,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 40.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.22805,
+      "rmsChannelDifference": 0.67184,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 41.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.2283,
+      "rmsChannelDifference": 0.67121,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 41.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.26019,
+      "rmsChannelDifference": 0.73665,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 42.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.30493,
+      "rmsChannelDifference": 0.83457,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 42.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.30854,
+      "rmsChannelDifference": 0.83456,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 43.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.30924,
+      "rmsChannelDifference": 0.83432,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 43.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.31068,
+      "rmsChannelDifference": 0.83327,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 44.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.31335,
+      "rmsChannelDifference": 0.84056,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 44.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 45.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 45.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 46.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 46.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 47.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 47.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 48.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 48.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 49.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 49.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.0026,
+      "rmsChannelDifference": 0.05187,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 50.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.21853,
+      "rmsChannelDifference": 0.70521,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 50.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.37684,
+      "rmsChannelDifference": 0.9813,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 51.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.57537,
+      "rmsChannelDifference": 1.20917,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 51.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.60661,
+      "rmsChannelDifference": 1.24766,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 52.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.66959,
+      "rmsChannelDifference": 1.31347,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 52.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.76642,
+      "rmsChannelDifference": 1.39437,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 53.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.77427,
+      "rmsChannelDifference": 1.40431,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 53.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.77886,
+      "rmsChannelDifference": 1.41497,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 54.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 54.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 55.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.06675,
+      "rmsChannelDifference": 0.40824,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 55.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.33529,
+      "rmsChannelDifference": 0.93475,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 56.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.32357,
+      "rmsChannelDifference": 0.89921,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 56.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.34529,
+      "rmsChannelDifference": 0.9178,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 57.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.31521,
+      "rmsChannelDifference": 0.86813,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 57.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.31041,
+      "rmsChannelDifference": 0.8637,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 58.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.31408,
+      "rmsChannelDifference": 0.86738,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 58.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.31342,
+      "rmsChannelDifference": 0.86623,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 59.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.31215,
+      "rmsChannelDifference": 0.86432,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 59.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.31273,
+      "rmsChannelDifference": 0.86577,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 60.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.31194,
+      "rmsChannelDifference": 0.86434,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 60.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.0846,
+      "rmsChannelDifference": 0.39182,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 61.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.17174,
+      "rmsChannelDifference": 0.61841,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 61.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.18929,
+      "rmsChannelDifference": 0.65011,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 62.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.24952,
+      "rmsChannelDifference": 0.76387,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 62.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.36598,
+      "rmsChannelDifference": 0.96164,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 63.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.426,
+      "rmsChannelDifference": 0.99569,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 63.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.36917,
+      "rmsChannelDifference": 0.94299,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 64.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.36055,
+      "rmsChannelDifference": 0.92317,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 64.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.36511,
+      "rmsChannelDifference": 0.92778,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 65.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.36222,
+      "rmsChannelDifference": 0.92549,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 65.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.38835,
+      "rmsChannelDifference": 0.89748,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 66.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.53111,
+      "rmsChannelDifference": 1.08831,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 66.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.53028,
+      "rmsChannelDifference": 1.09296,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 67.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.62963,
+      "rmsChannelDifference": 1.20505,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 67.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.65927,
+      "rmsChannelDifference": 1.24658,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 68.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.6998,
+      "rmsChannelDifference": 1.2933,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 68.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.71014,
+      "rmsChannelDifference": 1.3024,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 69.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.69211,
+      "rmsChannelDifference": 1.29414,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 69.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.71087,
+      "rmsChannelDifference": 1.31772,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 70.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.71176,
+      "rmsChannelDifference": 1.31253,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 70.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.69169,
+      "rmsChannelDifference": 1.27113,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 71.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 71.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 72.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 72.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 73.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 73.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 74.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 74.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 75.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 75.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 76.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.0031,
+      "rmsChannelDifference": 0.07495,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 76.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.12705,
+      "rmsChannelDifference": 0.47272,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 77.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.15546,
+      "rmsChannelDifference": 0.55664,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 77.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.24059,
+      "rmsChannelDifference": 0.71569,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 78.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.24405,
+      "rmsChannelDifference": 0.72668,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 78.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.24553,
+      "rmsChannelDifference": 0.72816,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 79.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.28103,
+      "rmsChannelDifference": 0.79448,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 79.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.27938,
+      "rmsChannelDifference": 0.79254,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 80.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.27948,
+      "rmsChannelDifference": 0.79102,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 80.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.28068,
+      "rmsChannelDifference": 0.79443,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 81.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.28955,
+      "rmsChannelDifference": 0.80779,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 81.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.29128,
+      "rmsChannelDifference": 0.81172,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 82.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 82.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 83.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 83.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 84.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 84.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 85.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 85.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 86.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 86.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 87.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 87.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 88.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 88.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 89.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.44693,
+      "rmsChannelDifference": 0.99089,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 89.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.62482,
+      "rmsChannelDifference": 1.18981,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 90.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.66049,
+      "rmsChannelDifference": 1.2256,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 90.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.67067,
+      "rmsChannelDifference": 1.21681,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 91.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.59172,
+      "rmsChannelDifference": 1.10602,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 91.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.5249,
+      "rmsChannelDifference": 1.03155,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 92.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.48315,
+      "rmsChannelDifference": 0.97861,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 92.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.4822,
+      "rmsChannelDifference": 0.99096,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 93.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 93.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 94.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 94.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 95.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 95.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 96.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 96.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 97.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 97.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 98.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 98.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 99.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 99.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 100.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 100.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.0279,
+      "rmsChannelDifference": 0.25413,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 101.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.1085,
+      "rmsChannelDifference": 0.51248,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 101.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.11101,
+      "rmsChannelDifference": 0.51957,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 102.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.10761,
+      "rmsChannelDifference": 0.51199,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 102.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.10567,
+      "rmsChannelDifference": 0.5053,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 103.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 103.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 104.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 104.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 105.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 105.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 106.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.18034,
+      "rmsChannelDifference": 0.63639,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 106.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.36679,
+      "rmsChannelDifference": 0.91128,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 107.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.36874,
+      "rmsChannelDifference": 0.91955,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 107.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.39477,
+      "rmsChannelDifference": 0.97512,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 108.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.39872,
+      "rmsChannelDifference": 0.97711,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 108.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.04314,
+      "rmsChannelDifference": 0.23712,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 109.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.09103,
+      "rmsChannelDifference": 0.40078,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 109.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.10648,
+      "rmsChannelDifference": 0.4504,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 110.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.21436,
+      "rmsChannelDifference": 0.70832,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 110.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.22801,
+      "rmsChannelDifference": 0.73145,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 111.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.23129,
+      "rmsChannelDifference": 0.73788,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 111.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.07658,
+      "rmsChannelDifference": 0.38396,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 112.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.13988,
+      "rmsChannelDifference": 0.53807,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 112.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.1991,
+      "rmsChannelDifference": 0.67027,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 113.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.23729,
+      "rmsChannelDifference": 0.73452,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 113.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.26309,
+      "rmsChannelDifference": 0.78654,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 114.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.08907,
+      "rmsChannelDifference": 0.3955,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 114.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.13793,
+      "rmsChannelDifference": 0.53319,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 115.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.20749,
+      "rmsChannelDifference": 0.69743,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 115.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.20421,
+      "rmsChannelDifference": 0.69757,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 116.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.35869,
+      "rmsChannelDifference": 0.92972,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 116.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.06783,
+      "rmsChannelDifference": 0.33507,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 117.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.13243,
+      "rmsChannelDifference": 0.53295,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 117.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.13471,
+      "rmsChannelDifference": 0.5398,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 118.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.14019,
+      "rmsChannelDifference": 0.55769,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 118.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.1865,
+      "rmsChannelDifference": 0.67124,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 119.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.18951,
+      "rmsChannelDifference": 0.67458,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 119.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.21546,
+      "rmsChannelDifference": 0.72236,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 120.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.21616,
+      "rmsChannelDifference": 0.7235,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 120.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.21526,
+      "rmsChannelDifference": 0.72136,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 121.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.21616,
+      "rmsChannelDifference": 0.7235,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 121.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.21218,
+      "rmsChannelDifference": 0.71438,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 122.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.21358,
+      "rmsChannelDifference": 0.71999,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 122.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.21574,
+      "rmsChannelDifference": 0.72221,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 123.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.34455,
+      "rmsChannelDifference": 0.95355,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 123.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.09169,
+      "rmsChannelDifference": 0.42397,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 124.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.10603,
+      "rmsChannelDifference": 0.47757,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 124.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.28106,
+      "rmsChannelDifference": 0.8459,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 125.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.41753,
+      "rmsChannelDifference": 1.02778,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 125.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.34922,
+      "rmsChannelDifference": 0.92791,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 126.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.30478,
+      "rmsChannelDifference": 0.837,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 126.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.30453,
+      "rmsChannelDifference": 0.83572,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 127.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.30484,
+      "rmsChannelDifference": 0.8374,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 127.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.30453,
+      "rmsChannelDifference": 0.83572,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 128.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.30484,
+      "rmsChannelDifference": 0.8374,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 128.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.30453,
+      "rmsChannelDifference": 0.83572,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 129.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.30614,
+      "rmsChannelDifference": 0.84003,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 129.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.31077,
+      "rmsChannelDifference": 0.8461,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 130.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.3027,
+      "rmsChannelDifference": 0.83565,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 130.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.30297,
+      "rmsChannelDifference": 0.8342,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 131.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.07793,
+      "rmsChannelDifference": 0.34793,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 131.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.1012,
+      "rmsChannelDifference": 0.4355,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 132.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.14926,
+      "rmsChannelDifference": 0.56649,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 132.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.16248,
+      "rmsChannelDifference": 0.58812,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 133.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.31321,
+      "rmsChannelDifference": 0.8776,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 133.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.2995,
+      "rmsChannelDifference": 0.85704,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 134.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.27834,
+      "rmsChannelDifference": 0.80311,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 134.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.27546,
+      "rmsChannelDifference": 0.79918,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 135.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.27738,
+      "rmsChannelDifference": 0.80281,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 135.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 136.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 136.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 137.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 137.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 138.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.19193,
+      "rmsChannelDifference": 0.6594,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 138.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.30807,
+      "rmsChannelDifference": 0.84521,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 139.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.44497,
+      "rmsChannelDifference": 1.02611,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 139.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.50476,
+      "rmsChannelDifference": 1.07786,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 140.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.50384,
+      "rmsChannelDifference": 1.08804,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 140.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.51595,
+      "rmsChannelDifference": 1.09709,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 141.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 141.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 142.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 142.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 143.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.12364,
+      "rmsChannelDifference": 0.52323,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 143.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.16004,
+      "rmsChannelDifference": 0.62273,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 144.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.08033,
+      "rmsChannelDifference": 0.36912,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 144.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.09813,
+      "rmsChannelDifference": 0.42889,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 145.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.14843,
+      "rmsChannelDifference": 0.5716,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 145.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.28087,
+      "rmsChannelDifference": 0.79827,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 146.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.40929,
+      "rmsChannelDifference": 1.02771,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 146.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.11313,
+      "rmsChannelDifference": 0.4425,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 147.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.13351,
+      "rmsChannelDifference": 0.53854,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 147.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.13663,
+      "rmsChannelDifference": 0.5378,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 148.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.17887,
+      "rmsChannelDifference": 0.63669,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 148.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.20085,
+      "rmsChannelDifference": 0.67286,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 149.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.22844,
+      "rmsChannelDifference": 0.72127,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 149.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.27095,
+      "rmsChannelDifference": 0.78546,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 150.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.2683,
+      "rmsChannelDifference": 0.78144,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 150.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.26672,
+      "rmsChannelDifference": 0.77668,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 151.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.2709,
+      "rmsChannelDifference": 0.78212,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 151.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 152.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 152.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 153.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 153.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.10253,
+      "rmsChannelDifference": 0.52464,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 154.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.14157,
+      "rmsChannelDifference": 0.60975,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 154.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.19125,
+      "rmsChannelDifference": 0.72233,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 155.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.2097,
+      "rmsChannelDifference": 0.76331,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 155.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.20681,
+      "rmsChannelDifference": 0.75959,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 156.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.21029,
+      "rmsChannelDifference": 0.76279,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 156.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.20552,
+      "rmsChannelDifference": 0.75263,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 157.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 157.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 158.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 158.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 159.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 159.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 160.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 160.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 161.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 161.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 162.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 162.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 163.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 163.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 164.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 164.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 165.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 165.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 166.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 166.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 167.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 167.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 168.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 168.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 169.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 169.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 170.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 170.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 171.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.06393,
+      "rmsChannelDifference": 0.3861,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 171.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.06674,
+      "rmsChannelDifference": 0.38958,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 172.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.06994,
+      "rmsChannelDifference": 0.39924,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 172.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.52465,
+      "rmsChannelDifference": 1.1414,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 173.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.12985,
+      "rmsChannelDifference": 0.51838,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 173.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.11367,
+      "rmsChannelDifference": 0.45046,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 174.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.20441,
+      "rmsChannelDifference": 0.65396,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 174.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.26211,
+      "rmsChannelDifference": 0.78026,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 175.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.19713,
+      "rmsChannelDifference": 0.68561,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 175.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.12623,
+      "rmsChannelDifference": 0.41922,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 176.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.19164,
+      "rmsChannelDifference": 0.66084,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 176.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.24099,
+      "rmsChannelDifference": 0.75541,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 177.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.26079,
+      "rmsChannelDifference": 0.7875,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 177.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.29707,
+      "rmsChannelDifference": 0.84521,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 178.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.28941,
+      "rmsChannelDifference": 0.83168,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 178.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.14346,
+      "rmsChannelDifference": 0.52676,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 179.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.23424,
+      "rmsChannelDifference": 0.71511,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 179.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.29179,
+      "rmsChannelDifference": 0.80868,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 180.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.32384,
+      "rmsChannelDifference": 0.85808,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 180.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.34843,
+      "rmsChannelDifference": 0.89797,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 181.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.35715,
+      "rmsChannelDifference": 0.91495,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 181.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.08923,
+      "rmsChannelDifference": 0.40211,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 182.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.13114,
+      "rmsChannelDifference": 0.56925,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 182.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.21809,
+      "rmsChannelDifference": 0.72013,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 183.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.2361,
+      "rmsChannelDifference": 0.75262,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 183.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.24862,
+      "rmsChannelDifference": 0.77668,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 184.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 184.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 185.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.12922,
+      "rmsChannelDifference": 0.57418,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 185.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.22087,
+      "rmsChannelDifference": 0.72965,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 186.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.24007,
+      "rmsChannelDifference": 0.76032,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 186.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.05438,
+      "rmsChannelDifference": 0.32319,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 187.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.08968,
+      "rmsChannelDifference": 0.4343,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 187.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.1043,
+      "rmsChannelDifference": 0.47998,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 188.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.11314,
+      "rmsChannelDifference": 0.49787,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 188.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.17901,
+      "rmsChannelDifference": 0.65024,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 189.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.20766,
+      "rmsChannelDifference": 0.70473,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 189.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.2105,
+      "rmsChannelDifference": 0.70807,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 190.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.20795,
+      "rmsChannelDifference": 0.70768,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 190.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.20954,
+      "rmsChannelDifference": 0.70696,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 191.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.24941,
+      "rmsChannelDifference": 0.77353,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 191.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.25206,
+      "rmsChannelDifference": 0.78029,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 192.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.24966,
+      "rmsChannelDifference": 0.77578,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 192.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 193.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 193.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 194.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 194.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 195.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 195.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 196.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 196.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 197.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 197.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.15875,
+      "rmsChannelDifference": 0.58729,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 198.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.39272,
+      "rmsChannelDifference": 0.99392,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 198.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.49528,
+      "rmsChannelDifference": 1.10222,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 199.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.53581,
+      "rmsChannelDifference": 1.14106,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 199.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.57459,
+      "rmsChannelDifference": 1.1723,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 200.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 200.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 201.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 201.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.08926,
+      "rmsChannelDifference": 0.42566,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 202.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.14516,
+      "rmsChannelDifference": 0.5923,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 202.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.30593,
+      "rmsChannelDifference": 0.87748,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 203.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.27663,
+      "rmsChannelDifference": 0.80783,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 203.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 204.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 204.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 205.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 205.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 206.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 206.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 207.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 207.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 208.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 208.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 209.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 209.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 210.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 210.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 211.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 211.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 212.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 212.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 213.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.12262,
+      "rmsChannelDifference": 0.53281,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 213.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.23301,
+      "rmsChannelDifference": 0.68595,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 214.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.28837,
+      "rmsChannelDifference": 0.78865,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 214.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.38817,
+      "rmsChannelDifference": 0.9322,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 215.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.49465,
+      "rmsChannelDifference": 1.0651,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 215.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.51831,
+      "rmsChannelDifference": 1.10974,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 216.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.59725,
+      "rmsChannelDifference": 1.18181,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 216.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.68855,
+      "rmsChannelDifference": 1.29864,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 217.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.70778,
+      "rmsChannelDifference": 1.30455,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 217.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.7876,
+      "rmsChannelDifference": 1.40844,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 218.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.81609,
+      "rmsChannelDifference": 1.41827,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 218.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.5479,
+      "rmsChannelDifference": 1.1379,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 219.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.6278,
+      "rmsChannelDifference": 1.21895,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 219.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.6627,
+      "rmsChannelDifference": 1.25583,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 220.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.74019,
+      "rmsChannelDifference": 1.33926,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 220.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.73059,
+      "rmsChannelDifference": 1.32567,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 221.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.74427,
+      "rmsChannelDifference": 1.34493,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 221.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.73673,
+      "rmsChannelDifference": 1.34539,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 222.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.75071,
+      "rmsChannelDifference": 1.34821,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 222.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.75719,
+      "rmsChannelDifference": 1.36407,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 223.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.75802,
+      "rmsChannelDifference": 1.36464,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 223.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.74571,
+      "rmsChannelDifference": 1.33921,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 224.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.92148,
+      "rmsChannelDifference": 1.55269,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 224.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.66295,
+      "rmsChannelDifference": 1.16061,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 225.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.53606,
+      "rmsChannelDifference": 1.04334,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 225.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 1.75281,
+      "rmsChannelDifference": 6.90997,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 226.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 6.41625,
+      "rmsChannelDifference": 33.10546,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 226.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 6.80142,
+      "rmsChannelDifference": 35.57276,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 227.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 6.76396,
+      "rmsChannelDifference": 35.38418,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 227.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 6.79219,
+      "rmsChannelDifference": 35.50396,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 228.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 6.88561,
+      "rmsChannelDifference": 35.83803,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 228.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 6.87729,
+      "rmsChannelDifference": 35.83257,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 229.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 6.79814,
+      "rmsChannelDifference": 35.76735,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 229.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 6.92567,
+      "rmsChannelDifference": 36.18364,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 230.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 6.93013,
+      "rmsChannelDifference": 36.03592,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 230.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 8.80659,
+      "rmsChannelDifference": 33.14892,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 231.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 7.02331,
+      "rmsChannelDifference": 16.24685,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 231.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 6.92719,
+      "rmsChannelDifference": 16.24419,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 232.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 1.54785,
+      "rmsChannelDifference": 2.65776,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 232.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.63926,
+      "rmsChannelDifference": 1.20695,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 233.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.71966,
+      "rmsChannelDifference": 1.30844,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 233.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.7301,
+      "rmsChannelDifference": 1.31917,
+      "inChangedNeighborhood": true
+    },
+    {
+      "nominalTime": 234.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.73355,
+      "rmsChannelDifference": 1.30166,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 234.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.78301,
+      "rmsChannelDifference": 1.36733,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 235.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.78567,
+      "rmsChannelDifference": 1.37184,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 235.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.8132,
+      "rmsChannelDifference": 1.40604,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 236.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.8676,
+      "rmsChannelDifference": 1.46324,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 236.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.83588,
+      "rmsChannelDifference": 1.42831,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 237.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.93652,
+      "rmsChannelDifference": 1.5628,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 237.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 238.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 238.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 239.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 239.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 240.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 240.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 241.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 241.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 242.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 242.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 243.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 243.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 244.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 244.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 245.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 245.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 246.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 246.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 247.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.02487,
+      "rmsChannelDifference": 0.17126,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 247.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.02083,
+      "rmsChannelDifference": 0.15626,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 248.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.01935,
+      "rmsChannelDifference": 0.1498,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 248.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.02221,
+      "rmsChannelDifference": 0.17427,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 249.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.02341,
+      "rmsChannelDifference": 0.17415,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 249.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.02392,
+      "rmsChannelDifference": 0.17752,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 250.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.02392,
+      "rmsChannelDifference": 0.17752,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 250.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.02347,
+      "rmsChannelDifference": 0.17545,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 251.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.09344,
+      "rmsChannelDifference": 0.48581,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 251.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.09148,
+      "rmsChannelDifference": 0.47722,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 252.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.11613,
+      "rmsChannelDifference": 0.52974,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 252.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.12075,
+      "rmsChannelDifference": 0.54156,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 253.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 253.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 254.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 254.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 255.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 255.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 256.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.20574,
+      "rmsChannelDifference": 0.71088,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 256.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.29478,
+      "rmsChannelDifference": 0.85236,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 257.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.35229,
+      "rmsChannelDifference": 0.93323,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 257.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.42839,
+      "rmsChannelDifference": 1.05221,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 258.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.16266,
+      "rmsChannelDifference": 0.57954,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 258.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.20115,
+      "rmsChannelDifference": 0.67664,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 259.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.20722,
+      "rmsChannelDifference": 0.66507,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 259.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.20382,
+      "rmsChannelDifference": 0.67265,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 260.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.20453,
+      "rmsChannelDifference": 0.67149,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 260.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.19905,
+      "rmsChannelDifference": 0.54867,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 261.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.14745,
+      "rmsChannelDifference": 0.52222,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 261.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.17147,
+      "rmsChannelDifference": 0.58262,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 262.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.17045,
+      "rmsChannelDifference": 0.57931,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 262.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.25175,
+      "rmsChannelDifference": 0.73419,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 263.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.32593,
+      "rmsChannelDifference": 0.86569,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 263.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.22776,
+      "rmsChannelDifference": 0.70731,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 264.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.39886,
+      "rmsChannelDifference": 1.0003,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 264.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.53572,
+      "rmsChannelDifference": 1.16411,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 265.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.64008,
+      "rmsChannelDifference": 1.25988,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 265.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.73579,
+      "rmsChannelDifference": 1.36886,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 266.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.12867,
+      "rmsChannelDifference": 0.5068,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 266.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.18252,
+      "rmsChannelDifference": 0.6239,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 267.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.20703,
+      "rmsChannelDifference": 0.67085,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 267.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.23381,
+      "rmsChannelDifference": 0.72608,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 268.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.27544,
+      "rmsChannelDifference": 0.79874,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 268.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.34007,
+      "rmsChannelDifference": 0.89823,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 269.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.12821,
+      "rmsChannelDifference": 0.54522,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 269.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.1732,
+      "rmsChannelDifference": 0.63687,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 270.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.18804,
+      "rmsChannelDifference": 0.66099,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 270.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.2159,
+      "rmsChannelDifference": 0.70579,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 271.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.27032,
+      "rmsChannelDifference": 0.79961,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 271.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.27221,
+      "rmsChannelDifference": 0.81746,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 272.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 272.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 273.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 273.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 274.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 274.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.03159,
+      "rmsChannelDifference": 0.25535,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 275.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.19343,
+      "rmsChannelDifference": 0.67067,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 275.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.19906,
+      "rmsChannelDifference": 0.67596,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 276.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.20876,
+      "rmsChannelDifference": 0.69989,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 276.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.24715,
+      "rmsChannelDifference": 0.78785,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 277.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.18137,
+      "rmsChannelDifference": 0.6082,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 277.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.16787,
+      "rmsChannelDifference": 0.58028,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 278.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.22744,
+      "rmsChannelDifference": 0.72304,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 278.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.26364,
+      "rmsChannelDifference": 0.77726,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 279.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.29778,
+      "rmsChannelDifference": 0.8504,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 279.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.30726,
+      "rmsChannelDifference": 0.85002,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 280.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 280.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 281.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.05611,
+      "rmsChannelDifference": 0.36539,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 281.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.07467,
+      "rmsChannelDifference": 0.41934,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 282.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.1041,
+      "rmsChannelDifference": 0.50938,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 282.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.05367,
+      "rmsChannelDifference": 0.3537,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 283.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.1975,
+      "rmsChannelDifference": 0.70921,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 283.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.24045,
+      "rmsChannelDifference": 0.76588,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 284.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.22969,
+      "rmsChannelDifference": 0.74629,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 284.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.26143,
+      "rmsChannelDifference": 0.80639,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 285.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.06707,
+      "rmsChannelDifference": 0.32202,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 285.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.21995,
+      "rmsChannelDifference": 0.68648,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 286.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.19194,
+      "rmsChannelDifference": 0.64264,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 286.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.22297,
+      "rmsChannelDifference": 0.68709,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 287.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.33013,
+      "rmsChannelDifference": 0.89225,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 287.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.30888,
+      "rmsChannelDifference": 0.86525,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 288.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.32041,
+      "rmsChannelDifference": 0.86038,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 288.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.31592,
+      "rmsChannelDifference": 0.94119,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 289.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.39636,
+      "rmsChannelDifference": 1.00853,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 289.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.33914,
+      "rmsChannelDifference": 0.87689,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 290.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.32887,
+      "rmsChannelDifference": 0.86259,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 290.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.33005,
+      "rmsChannelDifference": 0.86361,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 291.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.33157,
+      "rmsChannelDifference": 0.86452,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 291.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.49743,
+      "rmsChannelDifference": 1.12122,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 292.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.58239,
+      "rmsChannelDifference": 1.17642,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 292.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.58896,
+      "rmsChannelDifference": 1.19223,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 293.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.67008,
+      "rmsChannelDifference": 1.29663,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 293.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.76447,
+      "rmsChannelDifference": 1.37811,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 294.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.76323,
+      "rmsChannelDifference": 1.38112,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 294.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.76486,
+      "rmsChannelDifference": 1.3841,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 295.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.76617,
+      "rmsChannelDifference": 1.39336,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 295.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.78248,
+      "rmsChannelDifference": 1.38549,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 296.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.79015,
+      "rmsChannelDifference": 1.39905,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 296.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.8298,
+      "rmsChannelDifference": 1.43772,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 297.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.8488,
+      "rmsChannelDifference": 1.45635,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 297.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.8476,
+      "rmsChannelDifference": 1.4442,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 298.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.89862,
+      "rmsChannelDifference": 1.51081,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 298.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.90037,
+      "rmsChannelDifference": 1.50834,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 299.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.80751,
+      "rmsChannelDifference": 1.38849,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 299.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.63092,
+      "rmsChannelDifference": 1.17458,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 300.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 300.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 301.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 301.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 302.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 302.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 303.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 303.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 304.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 304.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 305.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 305.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 306.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 306.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 307.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 307.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 308.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 308.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 309.0,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 309.5,
+      "exactJpegMatch": true,
+      "meanAbsoluteChannelDifference": 0,
+      "rmsChannelDifference": 0,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 310.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.39493,
+      "rmsChannelDifference": 0.98871,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 310.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.46147,
+      "rmsChannelDifference": 1.07738,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 311.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.48515,
+      "rmsChannelDifference": 1.09656,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 311.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.53766,
+      "rmsChannelDifference": 1.15004,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 312.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.55236,
+      "rmsChannelDifference": 1.17245,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 312.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.56969,
+      "rmsChannelDifference": 1.15361,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 313.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.58814,
+      "rmsChannelDifference": 1.16579,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 313.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.5991,
+      "rmsChannelDifference": 1.18814,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 314.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.60907,
+      "rmsChannelDifference": 1.18507,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 314.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.62199,
+      "rmsChannelDifference": 1.18904,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 315.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.62301,
+      "rmsChannelDifference": 1.18609,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 315.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.62341,
+      "rmsChannelDifference": 1.1827,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 316.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.65813,
+      "rmsChannelDifference": 1.23521,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 316.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.65954,
+      "rmsChannelDifference": 1.22928,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 317.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.37315,
+      "rmsChannelDifference": 0.93556,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 317.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.41954,
+      "rmsChannelDifference": 0.97046,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 318.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.44406,
+      "rmsChannelDifference": 1.02103,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 318.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.45646,
+      "rmsChannelDifference": 1.02903,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 319.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.4559,
+      "rmsChannelDifference": 1.02492,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 319.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.45134,
+      "rmsChannelDifference": 1.02354,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 320.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.48333,
+      "rmsChannelDifference": 1.04259,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 320.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.51074,
+      "rmsChannelDifference": 1.07989,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 321.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.49066,
+      "rmsChannelDifference": 1.05853,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 321.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.52856,
+      "rmsChannelDifference": 1.09762,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 322.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.53469,
+      "rmsChannelDifference": 1.09592,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 322.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.53976,
+      "rmsChannelDifference": 1.10331,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 323.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.53745,
+      "rmsChannelDifference": 1.09477,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 323.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.54109,
+      "rmsChannelDifference": 1.09053,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 324.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.63266,
+      "rmsChannelDifference": 1.20627,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 324.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.69485,
+      "rmsChannelDifference": 1.27929,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 325.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.40544,
+      "rmsChannelDifference": 0.97112,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 325.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.50226,
+      "rmsChannelDifference": 1.07264,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 326.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.59967,
+      "rmsChannelDifference": 1.16199,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 326.5,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.56591,
+      "rmsChannelDifference": 1.13315,
+      "inChangedNeighborhood": false
+    },
+    {
+      "nominalTime": 327.0,
+      "exactJpegMatch": false,
+      "meanAbsoluteChannelDifference": 0.57243,
+      "rmsChannelDifference": 1.13359,
+      "inChangedNeighborhood": false
+    }
+  ],
+  "limitation": "Sampled image comparison only, not a frame-complete or audio test. Previous visual judgments may carry forward where matching evidence supports unchanged content; word timing and audio findings require separate source binding."
+}

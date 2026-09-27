@@ -1,0 +1,19 @@
+{
+  "verifiedAt": "2026-09-27T10:49:30.888071+00:00",
+  "file": "/Users/shanefisher/Movies/Psalm91/Psalm 91 - Shelter - Full Film v4.mp4",
+  "sha256": "5a49eade84a664a472d47532f683ed4d813f5f6af593fd4ce90d5df57b0e8502",
+  "album": "Psalm 91 - Shelter",
+  "item": "September 27, 2026 at 5:47:15 AM; duration 5:28",
+  "nativeImportVerified": true,
+  "playbackVerified": true,
+  "observations": [
+    "Native file picker showed exact v4 filename and187.4MB",
+    "Imported item added toPsalm91-Shelter; selected item5:47AM5:28",
+    "Started playback00:00; observed animated91opening",
+    "Observed progressed timeline00:19and changed arch imagery"
+  ],
+  "scope": "Native import and sampled playback, not a full playback or listening review. Independent encoded review archived separately.",
+  "iCloudSyncVerified": false,
+  "preservedEarlierFiles": true,
+  "albumCountNote": "No delete or remove action performed. Album counts changed independently during task; cause unknown."
+}

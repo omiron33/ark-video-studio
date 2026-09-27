@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "independent-agent-psalm91-local-video",
+  "reviewedAt": "2026-09-27T10:25:57.694777+00:00",
+  "artifact": "/Volumes/DATA/ArkRender/psalm91-shelter-v3.mp4",
+  "sha256": "5bf0abe28bec171f144575ff62d68177698059283faa57e56047a97673056f94",
+  "duration": 327.6,
+  "bytes": 188595453,
+  "verdict": "acceptable_for_delivery_with_nonblocking_notes",
+  "blockingVisualFindings": [],
+  "scores": {
+    "lyricLegibility": 9.3,
+    "semanticMotion": 8.3,
+    "photorealism": 9.1,
+    "composition": 9.2,
+    "continuity": 9.2
+  },
+  "ratingBasis": "Subjective0\u201310 judgments from actual decoded image sequences and established prior review;8 means polished usable, not perfect. Photorealism includes coherent graphic material/style in type-only scenes. No auditory or sync score.",
+  "categoryNotes": {
+    "lyricLegibility": "Large primary lyric words have strong contrast. Previous cannot-command, flying-arrow and fall-beside-me repairs remain visibly clear in V3. The nearbyBecause/rescue scene is legible through its complete re-entry after refuge. Minor existing intro arch overlap at12.17\u201312.67s remains a nonblocking finish note.",
+    "semanticMotion": "SURROUNDS and SHELTER create enclosing relationships; TRUST repetitions are distinct. The new refuge grows from exposed storm ground into protection, then leads toIwillrescueyou. Some other scenes retain a repeated two-or-three-row hierarchy and peripheral bars; this limits invention without making them unusable.",
+    "photorealism": "Rock, storm, dust, wing and animal inserts use photographic texture, grounded lighting and the approved copper/ivory/charcoal treatment. Refuge formation is intentionally fantastical geology, with some broad surface coalescence instead of individual stone placement; no cartoon or ethereal human appears.",
+    "composition": "Text remains primary during vocal sections, with occasional keyholes and photos supporting it. The replacement is full-frame during an instrumental, then yields the frame back to lyrics. Color and negative-space hierarchy stay consistent.",
+    "continuity": "Wing-to-storm dissolve is coherent at237.25, rock builds continuously, completed shelter holds through246.667, and camera moves intoBecausewithout blank/reset/first-frame jump. Comparison with V2 found no meaningful outside change at2fps; selected V3 overview samples confirm prior repairs and ending."
+  },
+  "scope": {
+    "v3ExtractedFrames": 787,
+    "v3DirectlyInspectedFrames": 397,
+    "v3DirectlyInspectedSheets": [
+      "overview-00.jpg",
+      "overview-01.jpg",
+      "overview-05.jpg",
+      "overview-10.jpg",
+      "overview-15.jpg",
+      "overview-16.jpg",
+      "overview-18.jpg",
+      "overview-20.jpg",
+      "overview-21.jpg",
+      "wing-refuge-00.jpg",
+      "wing-refuge-01.jpg",
+      "wing-refuge-02.jpg",
+      "wing-refuge-03.jpg",
+      "wing-refuge-04.jpg"
+    ],
+    "denseReplacementInterval": [
+      232,
+      254
+    ],
+    "denseReplacementFps": 6,
+    "fullFilmComparisonFps": 2,
+    "comparisonSampleCount": 655,
+    "comparisonOutsideReplacementSamples": 611,
+    "comparisonExactJpegMatchesOutside": 238,
+    "maxMeanAbsoluteChannelDifferenceOutside": 1.04135,
+    "maxRmsDifferenceOutside": 1.60352,
+    "worstOutsidePairVisuallyInspectedAt": 27.5,
+    "priorFullFilmVisualReview": "/Volumes/DATA/ArkRender/psalm91-v2-independent-review/independent-visual-review.json",
+    "priorReviewedSha256": "151dcada6f2bbac8bfc063023424d778db3243ed725c52779b92df25e1c205b9",
+    "priorDirectInspection": "1278frames across47sheets: whole film2fps plus requested dense6fpssegments. Matching visual observations are carried forward with the current comparison, not relabeled as a new complete every-frame watch.",
+    "audioReviewed": false
+  },
+  "newSequenceObservations": [
+    {
+      "at": "232\u2013237.17",
+      "finding": "Existing dust-wing resolves fully before leaving."
+    },
+    {
+      "at": "237.33\u2013237.67",
+      "finding": "Short dissolve reveals storm-swept exposed rock with no human-creation frame."
+    },
+    {
+      "at": "238\u2013244",
+      "finding": "Two granular mounds acquire weight and texture, developing supports and broad stone overhang. Dust falls along their sides; the dark protected recess becomes visible."
+    },
+    {
+      "at": "244\u2013246.667",
+      "finding": "Completed solid refuge remains stable against outside storm, with settling grains; no sudden reset."
+    },
+    {
+      "at": "246.83\u2013253.83",
+      "finding": "Camera exits refuge into lyric scene cleanly. Becauseyouhaveheldontome/Iwillrescueyouandthefollowingkeyholephotoappearwithclearwordspaces."
+    }
+  ],
+  "nonblockingNotes": [
+    {
+      "at": "306\u2013327.6",
+      "note": "Existing closingPsalm91card remains a long slow drift after assembly. An intentionally calmer ending; future work could make a more eventful close if the music supports it."
+    },
+    {
+      "at": "Various verses",
+      "note": "Several non-hero scenes share the same broad type hierarchy and copper geometry. Future quality gains should develop more word-to-word interactions rather than add faster motion everywhere."
+    },
+    {
+      "at": "12.17\u201312.67",
+      "note": "Existing brief bright-arch overlap with established introductory words; nonblocking."
+    }
+  ],
+  "recommendation": "No further visual correction needed for this deliverable. Publish only after separate source/audio/timing audit clears and root authorizes this exactSHA.",
+  "evidenceIndex": "/Volumes/DATA/ArkRender/psalm91-v3-independent-review/evidence-index.json",
+  "comparisonEvidence": "/Volumes/DATA/ArkRender/psalm91-v3-independent-review/overview-delta-comparison.json",
+  "notCertified": [
+    "auditory lyric synchronization",
+    "unseen frames between image samples",
+    "user approval of final film"
+  ]
+}

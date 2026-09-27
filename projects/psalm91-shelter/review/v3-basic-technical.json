@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-09-27T10:25:28.358184+00:00",
+  "purpose": "Early basic confirmation requested during exhaustive OCR; not lyric sync approval",
+  "videoPath": "/Volumes/DATA/ArkRender/psalm91-shelter-v3.mp4",
+  "binding": {
+    "videoSha256": "5bf0abe28bec171f144575ff62d68177698059283faa57e56047a97673056f94",
+    "projectHash": "09f5f7c38118b8e9df14271ee517ea0e1d993dca493d7b2005dac8bd5cb770a1",
+    "rendererHash": "4a279e37bc6bb3a1d2df216a8adc28a6c35974724f15419922adbb1d616a0a39",
+    "revisionHash": "e11eb7fce6fcb7281b9f9d05f3935057a75776a7c2426ed66ba5f7c9744587eb"
+  },
+  "format": {
+    "videoCodec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1",
+    "decodedFrames": "9828",
+    "audioTracks": 1,
+    "audioCodec": "aac",
+    "duration": "327.600000"
+  },
+  "fullDecode": {
+    "passed": true,
+    "exitCode": 0,
+    "stderr": ""
+  },
+  "audio": {
+    "correlation": 0.998407,
+    "minSegmentCorrelation": 0.996202,
+    "offsetSeconds": 0,
+    "gainDb": -0.089009,
+    "sourceDuration": 327.6,
+    "encodedDuration": 327.616
+  },
+  "probeExitCode": 0
+}
