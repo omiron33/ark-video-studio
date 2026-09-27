@@ -19,6 +19,10 @@ function args(argv) {
 }
 const usage = `Ark Video Studio
   create --audio song.mp3 --style-prompt 'Dark cinematic typography' --out new-run-directory [--timing words.json] [--lyrics lyrics.txt] [--offset 0] [--duration 10] [--resume]
+  references --query 'lineage emerging through space' [--limit 4] [--used id1,id2] [--library path]
+  reference-context --project project.json --section id --style-prompt 'brief' --out context-directory
+  capture-reference --card draft-card.json --video source.mp4 [--times 1,2,3,4] [--library path]
+  serve-references [--port 4179] [--library path]
   finalize-run --run creation-directory [--report gauntlet-review.json]
   import --audio song.mp3 --out project-directory [--timing words.json] [--beats beats.json] [--offset 0] [--duration 10] [--title 'Song']
   align --audio song.mp3 --out words.json [--model local-model-directory] [--offset 0] [--duration 10] [--lyrics lyrics.txt]
@@ -34,9 +38,35 @@ const usage = `Ark Video Studio
 try {
   const options = args(process.argv.slice(2)), command = options._[0];
   if (options.help || !command || command === 'help') console.log(usage);
-  else if (command === 'create') {
+  else if(command==='references'){
+    const {loadReferenceLibrary,searchReferences}=await import('./references.mjs');
+    const result=options.query?await searchReferences({query:options.query,limit:Number(options.limit??4),usedIds:(options.used??'').split(',').filter(Boolean),duration:options.duration===undefined?undefined:Number(options.duration),libraryRoot:options.library}):await loadReferenceLibrary({libraryRoot:options.library});
+    console.log(JSON.stringify(result,null,2));
+  } else if(command==='reference-context'){
+    if(!options.project||!options.out)throw Error('reference-context requires --project and --out');
+    const {referenceContext}=await import('./references.mjs');
+    const {mkdir,writeFile}=await import('node:fs/promises');
+    const {project}=await loadProject(path.resolve(options.project));
+    const sections=options.section?project.sections.filter(s=>s.id===options.section):project.sections;
+    if(!sections.length)throw Error('Unknown section');
+    const result=await referenceContext({project,sections,stylePrompt:options['style-prompt']??'',libraryRoot:options.library,limit:Number(options.limit??3)});
+    const out=path.resolve(options.out);await mkdir(out,{recursive:true});
+    const images=[];for(let i=0;i<result.images.length;i++){const file=path.join(out,`reference-${i+1}.jpg`);await writeFile(file,Buffer.from(result.images[i],'base64'));images.push(file);}
+    const packet={...result,images};await writeFile(path.join(out,'context.json'),JSON.stringify(packet,null,2)+'\n');await writeFile(path.join(out,'brief.md'),result.text+'\n');
+    console.log(JSON.stringify({contextPath:path.join(out,'context.json'),images,evidence:result.evidence},null,2));
+  } else if(command==='capture-reference'){
+    if(!options.card||!options.video)throw Error('capture-reference requires --card and --video');
+    const {captureReference}=await import('./references.mjs');
+    const result=await captureReference({card:JSON.parse(await readFile(options.card,'utf8')),videoPath:options.video,libraryRoot:options.library,times:options.times?.split(',').map(Number)});
+    console.log(JSON.stringify(result,null,2));
+  } else if(command==='serve-references'){
+    const {startReferenceServer}=await import('./reference-gallery.mjs');
+    const result=await startReferenceServer({libraryRoot:options.library,port:Number(options.port??4179)});
+    console.log(`Motion library: ${result.url}`);
+    const close=()=>result.server.close(()=>process.exit(0));process.on('SIGINT',close);process.on('SIGTERM',close);
+  } else if (command === 'create') {
     const { createSong } = await import('./create.mjs');
-    const result = await createSong({ audio: options.audio, stylePrompt: options['style-prompt'], outDir: options.out, timing: options.timing, lyrics: options.lyrics, beats: options.beats, directionFile: options.direction, offset: Number(options.offset ?? 0), duration: options.duration === undefined ? undefined : Number(options.duration), fps: Number(options.fps ?? 30), width: Number(options.width ?? 1920), height: Number(options.height ?? 1080), scale: Number(options.scale ?? 1), maxPasses: Number(options['max-passes'] ?? 3), resume: options.resume === true, replan: options.replan === true, python: options.python, model: options.model, backend: options.backend, threads: Number(options.threads ?? 4), language: options.language, title: options.title, id: options.id, timingTimebase: options['timing-timebase'], beatTimebase: options['beat-timebase'], directorEndpoint: options['director-endpoint'], directorModel: options['director-model'], onProgress: event => process.stderr.write(JSON.stringify(event) + '\n') });
+    const result = await createSong({ audio: options.audio, stylePrompt: options['style-prompt'], outDir: options.out, timing: options.timing, lyrics: options.lyrics, beats: options.beats, directionFile: options.direction, offset: Number(options.offset ?? 0), duration: options.duration === undefined ? undefined : Number(options.duration), fps: Number(options.fps ?? 30), width: Number(options.width ?? 1920), height: Number(options.height ?? 1080), scale: Number(options.scale ?? 1), maxPasses: Number(options['max-passes'] ?? 3), resume: options.resume === true, replan: options.replan === true, python: options.python, model: options.model, backend: options.backend, threads: Number(options.threads ?? 4), language: options.language, title: options.title, id: options.id, timingTimebase: options['timing-timebase'], beatTimebase: options['beat-timebase'], directorEndpoint: options['director-endpoint'], directorModel: options['director-model'], referenceLibrary: options['reference-library'], referenceLimit: options['reference-limit']===undefined?undefined:Number(options['reference-limit']), onProgress: event => process.stderr.write(JSON.stringify(event) + '\n') });
     console.log(JSON.stringify(result, null, 2));
     if (result.status !== 'finished') process.exitCode = 2;
   } else if (command === 'finalize-run') {

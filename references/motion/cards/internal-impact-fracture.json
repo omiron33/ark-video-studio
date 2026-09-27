@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "id": "internal-impact-fracture",
+  "title": "Reserve a forceful type treatment for the narrative impact",
+  "source": {
+    "kind": "internal",
+    "path": "/Users/shanefisher/Movies/Genesis 4 - The Brother's Blood - Motion v2.mp4",
+    "projectPath": "/Volumes/Code/ark-video-studio/projects/genesis4-motion-v2/project.json",
+    "videoSha256": "21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777",
+    "start": 99.83333333333333,
+    "end": 102.26666666666667,
+    "sectionIds": [
+      "g4-scene-027"
+    ]
+  },
+  "intent": [
+    "shock",
+    "conflict",
+    "violence",
+    "consequence",
+    "climax"
+  ],
+  "tags": [
+    "photographic pose",
+    "distressed typography",
+    "weight contrast",
+    "restrained palette",
+    "story action"
+  ],
+  "motion": {
+    "summary": "A club struggle is established before the words; small italic connectors surround broad red distressed KILLED and BROTHER while the image framing changes.",
+    "phases": [
+      "Establish the relationship between the two figures and the raised weapon.",
+      "Introduce the central action with a large textured word.",
+      "Complete the object of the action in the same strong type voice while connectors stay light."
+    ],
+    "transferablePrinciple": "Make a narrative turning point stand apart by coordinating the image pose and a rare, forceful typographic voice.",
+    "variations": [
+      "Use a decisive nonviolent action such as a door opening, a bridge breaking or a hand releasing an object.",
+      "Contrast a clean word with a torn or eroded word to distinguish consequence.",
+      "Choose a new pose and composition whose open space is planned for the lyric."
+    ],
+    "cautions": [
+      "The literal imagery here is specific to a violent story; match the new scene context.",
+      "Use the distressed type voice sparingly so an actual turning point retains emphasis.",
+      "Do not infer complete character animation from a moving photograph or layered pose."
+    ]
+  },
+  "quality": {
+    "status": "observed",
+    "reviewer": "agent visual inspection of decoded frame sequence",
+    "strengths": [
+      "The large action words have immediate hierarchy over the connectors.",
+      "The image pose provides narrative context before the phrase finishes."
+    ],
+    "limitations": [
+      "This sampling does not certify a continuous club strike; it shows changes in a posed photographic composition.",
+      "The BROTHER word approaches the raised weapon area and needs fresh collision checks in adaptations.",
+      "Observed from six decoded frames of the exact hashed MP4; this is a concept reference, not full motion, audio-sync or whole-film acceptance."
+    ],
+    "userPreference": "unknown"
+  },
+  "frames": [
+    {
+      "path": "images/internal-impact-fracture/01.jpg",
+      "timeSeconds": 99.9
+    },
+    {
+      "path": "images/internal-impact-fracture/02.jpg",
+      "timeSeconds": 100.6
+    },
+    {
+      "path": "images/internal-impact-fracture/03.jpg",
+      "timeSeconds": 101.1
+    },
+    {
+      "path": "images/internal-impact-fracture/04.jpg",
+      "timeSeconds": 101.5
+    },
+    {
+      "path": "images/internal-impact-fracture/05.jpg",
+      "timeSeconds": 101.95
+    },
+    {
+      "path": "images/internal-impact-fracture/06.jpg",
+      "timeSeconds": 102.2
+    }
+  ],
+  "contactSheet": "images/internal-impact-fracture/sheet.jpg"
+}

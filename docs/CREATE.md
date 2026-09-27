@@ -28,6 +28,10 @@ By default an available local language model then interprets the complete brief 
 
 A separate local vision pass judges contact sequences extracted from the encoded video, with a required score of at least 8/10 for lyric legibility, semantic motion, photorealism/treatment, composition and continuity. This model does not claim to hear the audio. Decoded-audio matching, source offset/duration, phrase presence and word timing are measured by the audio reviewer. The gauntlet binds reviews to the exact MP4 and project revision. Local-model review is fallible; the evidence and limitations remain available for inspection.
 
+## Visual reference search
+
+Scene direction now searches the [image-backed motion library](MOTION_REFERENCES.md) automatically, using the scene lyrics, style brief, neighbors, duration and previously used references. Up to three contact sheets enter the local model context. Selected sources and image evidence are saved with the plan. References inspire new scene-specific concepts; source images never become production artwork. The standalone director still applies supported controls; an orchestrating agent authors additional choreography. `--reference-library /path/to/library` selects another collection and `--reference-limit 0` disables lookup for the run.
+
 ## Artwork and authored direction
 
 The CLI consumes supplied images; it does not pretend to generate photographs. A brief requesting photography without images records `assetRequests` and cannot finish until imagery has been assigned and the reviews pass. When an agent operates this workflow, fulfilling those requests is the agent's job: use the built-in GPT Image tool, select the result, copy it into the project, assign it to the intended sections, then resume. Do not turn an ordinary artwork task into a user handoff.

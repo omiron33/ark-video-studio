@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "id": "external-light-orders-field",
+  "title": "A small light organizes a surrounding field",
+  "source": {
+    "kind": "external",
+    "url": "https://x.com/ptrubey/status/2104062055712260161",
+    "originalPostUrl": "https://x.com/johnknopf/status/2103698854399099057",
+    "path": "/tmp/ark-motion-external-2104062055712260161/source.mp4",
+    "videoSha256": "be382235c890a99cd4bb8e7448123646cf7bb4a1e52939c2566646f6c22bb395",
+    "start": 240,
+    "end": 261.033333,
+    "creator": "John Knopf (@johnknopf), original poster; shared by Phil Trubey (@PTrubey)",
+    "title": "All the Way Here"
+  },
+  "intent": [
+    "hope emerging",
+    "attention becoming connection",
+    "awakening",
+    "uncertainty becoming purpose",
+    "building energy",
+    "revelation"
+  ],
+  "tags": [
+    "light",
+    "particle field",
+    "radial alignment",
+    "anticipation",
+    "density contrast",
+    "dark to light",
+    "emergence",
+    "focus",
+    "hope"
+  ],
+  "motion": {
+    "summary": "A large abstract form gives way to near-darkness with a tiny central glow. Short marks appear around the point, become a radial field, and accompany a brighter central light; the final sample shows a denser cluster near the center.",
+    "phases": [
+      "An existing form recedes into near-darkness.",
+      "One small point of light anchors the composition.",
+      "Loose short marks populate the surrounding space.",
+      "The field becomes visibly oriented around the brightening center.",
+      "A denser cluster develops near the center before the next section."
+    ],
+    "transferablePrinciple": "Create escalation by changing a field's relationship to a stable focal point: emptiness, surrounding activity, coordinated direction, then concentrated light.",
+    "variations": [
+      "Let a new star orient a field of navigation marks for a journey scene.",
+      "Let a single word draw nearby fragments into a content-specific arrangement.",
+      "Adapt the same density progression with water, silhouettes or paper pieces using fresh composition and music-derived timing."
+    ],
+    "cautions": [
+      "Do not copy the source radial pattern, central glow treatment or timing.",
+      "A radial field can resemble a generic warp-speed effect; connect its organization to the scene meaning.",
+      "Avoid a long empty intro: use this pause only after momentum has already been established.",
+      "Keep peak brightness and moving detail from washing out the lyric."
+    ]
+  },
+  "quality": {
+    "status": "observed",
+    "reviewer": "agent visual inspection of decoded frame sequence",
+    "strengths": [
+      "The stable center provides continuity across a large increase in visual energy.",
+      "Low-density anticipation makes the later organized field feel consequential."
+    ],
+    "limitations": [
+      "Decoded frame sampling supports changes in orientation and density, not whether every mark moves inward or outward.",
+      "No musical or audio timing judgment was made from these images."
+    ],
+    "userPreference": "liked",
+    "userPreferenceScope": "Source video only. Shane noted cool ideas in the video; this individual excerpt has not been approved. No numerical craft or timing score assigned."
+  },
+  "frames": [
+    {
+      "path": "images/external-light-orders-field/01.jpg",
+      "timeSeconds": 240
+    },
+    {
+      "path": "images/external-light-orders-field/02.jpg",
+      "timeSeconds": 244
+    },
+    {
+      "path": "images/external-light-orders-field/03.jpg",
+      "timeSeconds": 248
+    },
+    {
+      "path": "images/external-light-orders-field/04.jpg",
+      "timeSeconds": 252
+    },
+    {
+      "path": "images/external-light-orders-field/05.jpg",
+      "timeSeconds": 257
+    },
+    {
+      "path": "images/external-light-orders-field/06.jpg",
+      "timeSeconds": 261
+    }
+  ],
+  "contactSheet": "images/external-light-orders-field/sheet.jpg"
+}

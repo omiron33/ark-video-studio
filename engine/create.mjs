@@ -174,6 +174,7 @@ const defaultServices = {
 /** One local creation run. Failed gates are saved and returned, never called a finished video. */
 export async function createSong(options, serviceOverrides = {}) {
   if (!options.audio || !options.outDir || typeof options.stylePrompt !== 'string' || !options.stylePrompt.trim()) throw new Error('create requires audio, stylePrompt, and outDir');
+  if(options.referenceLimit!==undefined&&(!Number.isInteger(options.referenceLimit)||options.referenceLimit<0||options.referenceLimit>3))throw new Error('referenceLimit must be an integer from 0 to 3');
   const services = { ...defaultServices, ...serviceOverrides };
   const outDir = path.resolve(options.outDir), reportPath = path.join(outDir, 'run.json');
   const maxPasses = Number(options.maxPasses ?? 3);
@@ -181,6 +182,8 @@ export async function createSong(options, serviceOverrides = {}) {
   const sources = {};
   for (const field of ['audio', 'timing', 'lyrics', 'beats', 'directionFile']) if (options[field]) sources[field] = { path: path.resolve(options[field]), sha256: await fileHash(path.resolve(options[field])) };
   const request = { sources, stylePrompt: options.stylePrompt, offset: Number(options.offset ?? 0), duration: options.duration, fps: Number(options.fps ?? 30), width: Number(options.width ?? 1920), height: Number(options.height ?? 1080), scale: Number(options.scale ?? 1), model: options.model, backend: options.backend, directorModel: options.directorModel, directorEndpoint: options.directorEndpoint, timingTimebase: options.timingTimebase, beatTimebase: options.beatTimebase };
+  if(options.referenceLibrary!==undefined)request.referenceLibrary=path.resolve(options.referenceLibrary);
+  if(options.referenceLimit!==undefined)request.referenceLimit=Number(options.referenceLimit);
   const fingerprint = digest(request);
   let run;
   if (await exists(reportPath)) {
@@ -229,7 +232,7 @@ export async function createSong(options, serviceOverrides = {}) {
         const base = planStyle(withAssets, options.stylePrompt);
         let project = await applyAuthoredDirection(base.project, options.directionFile, manifestPath, 'directions');
         const wordsBefore = digest(project.words), audioBefore = digest(project.audio), durationBefore = project.duration;
-        const directed = await services.directProject({ project, stylePrompt: options.stylePrompt, endpoint: options.directorEndpoint, model: options.directorModel, fallbackPlan: base });
+        const directed = await services.directProject({ project, stylePrompt: options.stylePrompt, endpoint: options.directorEndpoint, model: options.directorModel, fallbackPlan: base, libraryRoot: options.referenceLibrary, referenceLimit: options.referenceLimit });
         project = directed.project ?? project;
         if (digest(project.words) !== wordsBefore || digest(project.audio) !== audioBefore || project.duration !== durationBefore) throw new Error('Director tried to change canonical lyrics, timing, audio, or duration');
         const creative = planCreativePolicy(project, { stylePrompt: options.stylePrompt });
@@ -269,7 +272,7 @@ export async function createSong(options, serviceOverrides = {}) {
           const repaired = (await loadProject(manifestPath)).project;
           const base = planStyle(repaired, options.stylePrompt);
           const authored = await applyAuthoredDirection(base.project, options.directionFile, manifestPath, 'directions');
-          const directed = await services.directProject({ project: authored, stylePrompt: options.stylePrompt, endpoint: options.directorEndpoint, model: options.directorModel, fallbackPlan: base });
+          const directed = await services.directProject({ project: authored, stylePrompt: options.stylePrompt, endpoint: options.directorEndpoint, model: options.directorModel, fallbackPlan: base, libraryRoot: options.referenceLibrary, referenceLimit: options.referenceLimit });
           let project = directed.project ?? authored;
           if (digest(project.words) !== digest(repaired.words) || digest(project.audio) !== digest(repaired.audio) || project.duration !== repaired.duration) throw new Error('Director tried to alter audio-reviewed canonical lyrics or source');
           const creative = planCreativePolicy(project, { stylePrompt: options.stylePrompt });

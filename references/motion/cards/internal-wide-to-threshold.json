@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "id": "internal-wide-to-threshold",
+  "title": "Move from the whole world to the single opening that matters",
+  "source": {
+    "kind": "internal",
+    "path": "/Users/shanefisher/Movies/Genesis 7 - music video v3.mp4",
+    "videoSha256": "ba363e5de17be904f40910aca6a71c585c7599da5bb5323851750ffb4c16660a",
+    "start": 187,
+    "end": 193,
+    "sectionIds": [
+      "s41",
+      "s42"
+    ]
+  },
+  "intent": [
+    "shelter",
+    "enclosure",
+    "focus",
+    "threshold",
+    "tension"
+  ],
+  "tags": [
+    "wide to detail",
+    "scale contrast",
+    "warm focal point",
+    "cinematic cut",
+    "photographic atmosphere"
+  ],
+  "motion": {
+    "summary": "A wide storm view establishes the ark and its tiny warm entrance, then the cut isolates a close doorway seam so that the same warm light becomes the dominant object.",
+    "phases": [
+      "Show a large threatened environment with one small warm focal point.",
+      "Cut much closer while preserving the recognizable light and material.",
+      "Let the sentence occupy the newly simplified detail composition."
+    ],
+    "transferablePrinciple": "Use a consistent visual anchor to make a large change of scale feel narratively connected.",
+    "variations": [
+      "Move from a city to one lit window, a battlefield to a held object, or a machine to one moving part.",
+      "Use a solid-colored aperture as the anchor for a fully graphic version.",
+      "Reverse the scale change to reveal the larger consequences of a small action."
+    ],
+    "cautions": [
+      "Do not present this sequence as proof of a door slam: the warm seam remains visible in these frames.",
+      "Give the close composition its own designed text clearance.",
+      "Avoid a repeated zoom on one source image when a genuinely new composition is called for."
+    ]
+  },
+  "quality": {
+    "status": "observed",
+    "reviewer": "agent visual inspection of decoded frame sequence",
+    "strengths": [
+      "The warm entrance is easy to locate within both scales.",
+      "The world-to-detail edit directs attention to a specific narrative boundary."
+    ],
+    "limitations": [
+      "The sampled source retains a conspicuous bright seam through the last frame.",
+      "Added lightning and rain do not establish that every detail in the photographic source is animated.",
+      "Observed from six decoded frames of the exact hashed MP4; this is a concept reference, not full motion, audio-sync or whole-film acceptance."
+    ],
+    "userPreference": "unknown"
+  },
+  "frames": [
+    {
+      "path": "images/internal-wide-to-threshold/01.jpg",
+      "timeSeconds": 187.1
+    },
+    {
+      "path": "images/internal-wide-to-threshold/02.jpg",
+      "timeSeconds": 188.5
+    },
+    {
+      "path": "images/internal-wide-to-threshold/03.jpg",
+      "timeSeconds": 189.35
+    },
+    {
+      "path": "images/internal-wide-to-threshold/04.jpg",
+      "timeSeconds": 190
+    },
+    {
+      "path": "images/internal-wide-to-threshold/05.jpg",
+      "timeSeconds": 190.5
+    },
+    {
+      "path": "images/internal-wide-to-threshold/06.jpg",
+      "timeSeconds": 192.7
+    }
+  ],
+  "contactSheet": "images/internal-wide-to-threshold/sheet.jpg"
+}

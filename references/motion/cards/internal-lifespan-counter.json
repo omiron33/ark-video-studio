@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "id": "internal-lifespan-counter",
+  "title": "Count through elapsed time, then give the number a human meaning",
+  "source": {
+    "kind": "internal",
+    "path": "/Users/shanefisher/Movies/Genesis 7 - Full Dark Lyric Film.mp4",
+    "projectPath": "/Volumes/Code/ark-video-studio/projects/genesis7-full/project.json",
+    "videoSha256": "3c369ecf6b0f2318bf918c85ee23c3673dfe4105446cd101cf86eb314d985bd8",
+    "start": 97.2,
+    "end": 111.73333333333333,
+    "sectionIds": [
+      "g7-six-hundred-years"
+    ]
+  },
+  "intent": [
+    "passage of time",
+    "age",
+    "anticipation",
+    "scale",
+    "history"
+  ],
+  "tags": [
+    "counter",
+    "numerals",
+    "clock",
+    "instrumental build",
+    "reveal",
+    "typographic hierarchy"
+  ],
+  "motion": {
+    "summary": "Large numerals advance through the hundreds inside a clock ring, reach 600, then recede in contrast while the lyric names Noah and his age.",
+    "phases": [
+      "Present a number and a small unit label with no competing sentence.",
+      "Advance through clearly different values against a timekeeping ring.",
+      "Hold the destination number and make it subordinate as the human statement arrives."
+    ],
+    "transferablePrinciple": "Use a changing measure to make scale felt before the narrative explains whom or what that scale belongs to.",
+    "variations": [
+      "Count accumulated footsteps, generations, rainfall, or distance only when the story supports the unit.",
+      "Build a field of objects instead of digits, then reveal one person within the scale.",
+      "Let a duration resolve into a date or a place rather than a character."
+    ],
+    "cautions": [
+      "The intermediate count is an animation, not newly asserted historical events.",
+      "Check that the final value and unit come from the source material.",
+      "Avoid filling every instrumental gap with another counter."
+    ]
+  },
+  "quality": {
+    "status": "observed",
+    "reviewer": "agent visual inspection of decoded frame sequence",
+    "strengths": [
+      "The huge measure creates a clear first focal point.",
+      "The shift from number to person creates a two-stage reveal instead of a static fact card."
+    ],
+    "limitations": [
+      "The gray numeric layer has intentionally modest contrast on a very dark background.",
+      "Six stills show distinct count states, not the full cadence between them.",
+      "Observed from six decoded frames of the exact hashed MP4; this is a concept reference, not full motion, audio-sync or whole-film acceptance."
+    ],
+    "userPreference": "unknown"
+  },
+  "frames": [
+    {
+      "path": "images/internal-lifespan-counter/01.jpg",
+      "timeSeconds": 98
+    },
+    {
+      "path": "images/internal-lifespan-counter/02.jpg",
+      "timeSeconds": 101
+    },
+    {
+      "path": "images/internal-lifespan-counter/03.jpg",
+      "timeSeconds": 105
+    },
+    {
+      "path": "images/internal-lifespan-counter/04.jpg",
+      "timeSeconds": 109
+    },
+    {
+      "path": "images/internal-lifespan-counter/05.jpg",
+      "timeSeconds": 110.5
+    },
+    {
+      "path": "images/internal-lifespan-counter/06.jpg",
+      "timeSeconds": 111.5
+    }
+  ],
+  "contactSheet": "images/internal-lifespan-counter/sheet.jpg"
+}

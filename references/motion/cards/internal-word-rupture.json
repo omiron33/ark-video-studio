@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "id": "internal-word-rupture",
+  "title": "The space between words becomes a visible break",
+  "source": {
+    "kind": "internal",
+    "path": "/Users/shanefisher/Movies/Genesis 7 - Full Dark Lyric Film.mp4",
+    "projectPath": "/Volumes/Code/ark-video-studio/projects/genesis7-full/project.json",
+    "videoSha256": "3c369ecf6b0f2318bf918c85ee23c3673dfe4105446cd101cf86eb314d985bd8",
+    "start": 143.73333333333332,
+    "end": 148.9,
+    "sectionIds": [
+      "g7-deep-breaks-open"
+    ]
+  },
+  "intent": [
+    "rupture",
+    "release",
+    "pressure breaking",
+    "separation",
+    "catastrophe"
+  ],
+  "tags": [
+    "semantic typography",
+    "separation",
+    "negative space",
+    "fracture",
+    "word shape"
+  ],
+  "motion": {
+    "summary": "GREAT DEEP arches above BROKE OPEN; the two lower words separate to create a widening central gap while the following lyric builds underneath.",
+    "phases": [
+      "Begin with a restrained word and fault-like background marks.",
+      "Assemble the primary phrase with a shaped upper line.",
+      "Pull the two key words apart and preserve the gap as the next line arrives."
+    ],
+    "transferablePrinciple": "Make the relationship between words perform the verb, while the letters remain readable.",
+    "variations": [
+      "Separate two silhouettes or solid masses around a central silence.",
+      "A sentence about reconciliation can close an established gap.",
+      "A broken circular inscription can open into a passage for the next scene."
+    ],
+    "cautions": [
+      "A gap must remain legible as intentional separation rather than poor spacing.",
+      "Use new shapes or materials; repeated thin fault lines would become generic texture.",
+      "Keep later lines clear of the separated words and scene boundaries."
+    ]
+  },
+  "quality": {
+    "status": "observed",
+    "reviewer": "agent visual inspection of decoded frame sequence",
+    "strengths": [
+      "The before-and-after spacing visibly changes the phrase.",
+      "The semantic action remains understandable without literal destruction footage."
+    ],
+    "limitations": [
+      "The background lines are subtle and contribute less than the typography.",
+      "These samples do not certify every transition frame for collisions.",
+      "Observed from six decoded frames of the exact hashed MP4; this is a concept reference, not full motion, audio-sync or whole-film acceptance."
+    ],
+    "userPreference": "unknown"
+  },
+  "frames": [
+    {
+      "path": "images/internal-word-rupture/01.jpg",
+      "timeSeconds": 143.9
+    },
+    {
+      "path": "images/internal-word-rupture/02.jpg",
+      "timeSeconds": 145
+    },
+    {
+      "path": "images/internal-word-rupture/03.jpg",
+      "timeSeconds": 146.2
+    },
+    {
+      "path": "images/internal-word-rupture/04.jpg",
+      "timeSeconds": 147.2
+    },
+    {
+      "path": "images/internal-word-rupture/05.jpg",
+      "timeSeconds": 148
+    },
+    {
+      "path": "images/internal-word-rupture/06.jpg",
+      "timeSeconds": 148.7
+    }
+  ],
+  "contactSheet": "images/internal-word-rupture/sheet.jpg"
+}

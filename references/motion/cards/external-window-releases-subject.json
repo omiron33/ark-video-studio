@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "id": "external-window-releases-subject",
+  "title": "A closing boundary leaves the subject present",
+  "source": {
+    "kind": "external",
+    "url": "https://x.com/ptrubey/status/2104062055712260161",
+    "originalPostUrl": "https://x.com/johnknopf/status/2103698854399099057",
+    "path": "/tmp/ark-motion-external-2104062055712260161/source.mp4",
+    "videoSha256": "be382235c890a99cd4bb8e7448123646cf7bb4a1e52939c2566646f6c22bb395",
+    "start": 281,
+    "end": 293.033333,
+    "creator": "John Knopf (@johnknopf), original poster; shared by Phil Trubey (@PTrubey)",
+    "title": "All the Way Here"
+  },
+  "intent": [
+    "release",
+    "persistence",
+    "farewell",
+    "freedom from containment",
+    "presence after separation",
+    "closure"
+  ],
+  "tags": [
+    "frame contraction",
+    "boundary",
+    "window",
+    "containment",
+    "independent layers",
+    "release",
+    "semantic motion",
+    "scale contrast"
+  ],
+  "motion": {
+    "summary": "A thin rectangular window initially frames a particle form over image texture. The rectangle contracts across successive frames while the central form remains larger and visible; the background depiction also recedes.",
+    "phases": [
+      "A broad window encloses the central subject and textured background.",
+      "The boundary steadily contracts while the subject keeps its presence.",
+      "The shrinking rectangle becomes smaller than the subject.",
+      "The persistent subject becomes the visual resolution."
+    ],
+    "transferablePrinciple": "Animate the container and the contained subject independently to express that a person, memory or idea survives the disappearance of a boundary.",
+    "variations": [
+      "A new doorway narrows while light or words remain outside it.",
+      "A map border recedes while a new river or path continues through the composition.",
+      "Use separation between an original frame and subject to express release without recreating a browser window."
+    ],
+    "cautions": [
+      "Avoid copying the source window, particle form or composition.",
+      "The boundary must have a narrative role before its removal; an arbitrary box adds decoration.",
+      "Use only once near a meaningful turn, and protect the subject from cropping as the boundary shrinks."
+    ]
+  },
+  "quality": {
+    "status": "observed",
+    "reviewer": "agent visual inspection of decoded frame sequence",
+    "strengths": [
+      "Relative motion communicates the idea without needing a new object or a literal illustration.",
+      "The subject remains an anchor as the amount of framing decreases."
+    ],
+    "limitations": [
+      "The background and particle texture can be busy; simplified source-specific artwork may read better.",
+      "This is a sampled closing sequence, not evidence for a particular implementation or easing curve."
+    ],
+    "userPreference": "liked",
+    "userPreferenceScope": "Source video only. Shane noted cool ideas in the video; this individual excerpt has not been approved. No numerical craft or timing score assigned."
+  },
+  "frames": [
+    {
+      "path": "images/external-window-releases-subject/01.jpg",
+      "timeSeconds": 281
+    },
+    {
+      "path": "images/external-window-releases-subject/02.jpg",
+      "timeSeconds": 284
+    },
+    {
+      "path": "images/external-window-releases-subject/03.jpg",
+      "timeSeconds": 287
+    },
+    {
+      "path": "images/external-window-releases-subject/04.jpg",
+      "timeSeconds": 289
+    },
+    {
+      "path": "images/external-window-releases-subject/05.jpg",
+      "timeSeconds": 291
+    },
+    {
+      "path": "images/external-window-releases-subject/06.jpg",
+      "timeSeconds": 293
+    }
+  ],
+  "contactSheet": "images/external-window-releases-subject/sheet.jpg"
+}

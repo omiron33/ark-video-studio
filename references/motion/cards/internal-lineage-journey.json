@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "id": "internal-lineage-journey",
+  "title": "Follow successive generations through one continuous reading space",
+  "source": {
+    "kind": "internal",
+    "path": "/Users/shanefisher/Movies/Genesis 4 - The Brother's Blood - Motion v2.mp4",
+    "projectPath": "/Volumes/Code/ark-video-studio/projects/genesis4-motion-v2/project.json",
+    "videoSha256": "21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777",
+    "start": 212.16666666666666,
+    "end": 221.3,
+    "sectionIds": [
+      "g4-scene-063"
+    ]
+  },
+  "intent": [
+    "ancestry",
+    "continuity",
+    "history",
+    "succession",
+    "cause and effect"
+  ],
+  "tags": [
+    "camera rail",
+    "genealogy",
+    "spatial typography",
+    "continuous journey",
+    "horizontal progression"
+  ],
+  "motion": {
+    "summary": "Successive father-and-child statements occupy positions along a shared horizontal structure; the view changes its framing to bring later generations into reading position.",
+    "phases": [
+      "Introduce the first relationship against a spatial rail.",
+      "Complete the first clause before moving attention onward.",
+      "Continue along the same coordinate system through successive names."
+    ],
+    "transferablePrinciple": "Give a chain of relationships a shared geography so progression feels like one journey instead of unrelated title cards.",
+    "variations": [
+      "Follow connected rooms, branches, stones or solid architectural spans instead of a thin rail.",
+      "Use the same principle for a causal sequence, pilgrimage or historical timeline.",
+      "Allow a later camera pullback to reveal how the visited relationships connect."
+    ],
+    "cautions": [
+      "Do not move the camera faster than a person can finish the current clause.",
+      "Keep ancestry claims grounded in the source text.",
+      "Give a new project a fresh spatial metaphor rather than copying the rail arrangement."
+    ]
+  },
+  "quality": {
+    "status": "observed",
+    "reviewer": "agent visual inspection of decoded frame sequence",
+    "strengths": [
+      "Repeated relationship language is supported by a single coherent reading direction.",
+      "The early red names establish hierarchy without coloring every later word."
+    ],
+    "limitations": [
+      "One sampled frame shows departing text clipped at the left edge; exit cropping must happen after the phrase is readable.",
+      "The lower placement leaves considerable empty space and may need rebalancing on portrait screens.",
+      "Observed from six decoded frames of the exact hashed MP4; this is a concept reference, not full motion, audio-sync or whole-film acceptance."
+    ],
+    "userPreference": "unknown"
+  },
+  "frames": [
+    {
+      "path": "images/internal-lineage-journey/01.jpg",
+      "timeSeconds": 212.3
+    },
+    {
+      "path": "images/internal-lineage-journey/02.jpg",
+      "timeSeconds": 214
+    },
+    {
+      "path": "images/internal-lineage-journey/03.jpg",
+      "timeSeconds": 216
+    },
+    {
+      "path": "images/internal-lineage-journey/04.jpg",
+      "timeSeconds": 217.5
+    },
+    {
+      "path": "images/internal-lineage-journey/05.jpg",
+      "timeSeconds": 219
+    },
+    {
+      "path": "images/internal-lineage-journey/06.jpg",
+      "timeSeconds": 221.1
+    }
+  ],
+  "contactSheet": "images/internal-lineage-journey/sheet.jpg"
+}

@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "id": "external-detail-to-mosaic-silence",
+  "title": "Detailed depiction gives way to a fading tile field",
+  "source": {
+    "kind": "external",
+    "url": "https://x.com/ptrubey/status/2104062055712260161",
+    "originalPostUrl": "https://x.com/johnknopf/status/2103698854399099057",
+    "path": "/tmp/ark-motion-external-2104062055712260161/source.mp4",
+    "videoSha256": "be382235c890a99cd4bb8e7448123646cf7bb4a1e52939c2566646f6c22bb395",
+    "start": 184,
+    "end": 196.033333,
+    "creator": "John Knopf (@johnknopf), original poster; shared by Phil Trubey (@PTrubey)",
+    "title": "All the Way Here"
+  },
+  "intent": [
+    "uncertainty",
+    "loss of detail",
+    "emotional withdrawal",
+    "transition to reflection",
+    "doubt",
+    "abstraction"
+  ],
+  "tags": [
+    "mosaic",
+    "square grid",
+    "representation to abstraction",
+    "fade",
+    "darkness",
+    "visual contrast",
+    "rest",
+    "uncertainty"
+  ],
+  "motion": {
+    "summary": "A readable silhouetted human scene is replaced by a coarse field of warm and dark squares. The tile field holds across a lyric, then darkens before the next figurative scene appears.",
+    "phases": [
+      "A detailed, text-textured human silhouette provides an emotional anchor.",
+      "The image changes to a coarse square field with no comparably clear figure.",
+      "The abstract field holds while the lyric remains separate.",
+      "The squares fade toward near-black before a new depiction enters."
+    ],
+    "transferablePrinciple": "After a concrete emotional image, deliberately remove representational detail and let a simpler visual field carry uncertainty or a pause.",
+    "variations": [
+      "Reduce a new crowded scene to a sparse arrangement of a few meaningful shapes.",
+      "After a detailed memory, hold an original field of fragments and let them dim before the next scene.",
+      "Use a brief shift in visual density between two otherwise complex chapters."
+    ],
+    "cautions": [
+      "The inspected frames show replacement by tiles; they do not prove that individual image pixels continuously morph into the grid.",
+      "Do not reproduce the exact tile arrangement, palette or preceding figure.",
+      "A quiet field needs a short intentional role; repeated or long abstract holds can feel like filler.",
+      "Keep the lyric more readable than the sampled source at small sizes."
+    ]
+  },
+  "quality": {
+    "status": "observed",
+    "reviewer": "agent visual inspection of decoded frame sequence",
+    "strengths": [
+      "A strong change in visual detail distinguishes introspection from the surrounding depictions.",
+      "The dimming field creates space before the next recognizable scene."
+    ],
+    "limitations": [
+      "The coarse grid is visually static in the sampled middle frames; the idea is contrast and fading, not elaborate motion.",
+      "The dark source and small subtitle scale limit phone readability."
+    ],
+    "userPreference": "liked",
+    "userPreferenceScope": "Source video only. Shane noted cool ideas in the video; this individual excerpt has not been approved. No numerical craft or timing score assigned."
+  },
+  "frames": [
+    {
+      "path": "images/external-detail-to-mosaic-silence/01.jpg",
+      "timeSeconds": 184
+    },
+    {
+      "path": "images/external-detail-to-mosaic-silence/02.jpg",
+      "timeSeconds": 185.5
+    },
+    {
+      "path": "images/external-detail-to-mosaic-silence/03.jpg",
+      "timeSeconds": 187
+    },
+    {
+      "path": "images/external-detail-to-mosaic-silence/04.jpg",
+      "timeSeconds": 191
+    },
+    {
+      "path": "images/external-detail-to-mosaic-silence/05.jpg",
+      "timeSeconds": 195
+    },
+    {
+      "path": "images/external-detail-to-mosaic-silence/06.jpg",
+      "timeSeconds": 196
+    }
+  ],
+  "contactSheet": "images/external-detail-to-mosaic-silence/sheet.jpg"
+}

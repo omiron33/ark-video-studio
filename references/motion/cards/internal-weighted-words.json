@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "id": "internal-weighted-words",
+  "title": "Give an emotional word visible weight and a lower resting place",
+  "source": {
+    "kind": "internal",
+    "path": "/Users/shanefisher/Movies/Genesis 4 - The Brother's Blood - Motion v2.mp4",
+    "projectPath": "/Volumes/Code/ark-video-studio/projects/genesis4-motion-v2/project.json",
+    "videoSha256": "21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777",
+    "start": 61.3,
+    "end": 63.96666666666667,
+    "sectionIds": [
+      "g4-scene-014"
+    ]
+  },
+  "intent": [
+    "grief",
+    "burden",
+    "descent",
+    "emotional weight"
+  ],
+  "tags": [
+    "typographic mass",
+    "descending hierarchy",
+    "landing",
+    "minimalism",
+    "semantic typography"
+  ],
+  "motion": {
+    "summary": "CAIN WAS arrives high, DEEPLY occupies the next level, and the broad red GRIEVED settles on the lowest tier.",
+    "phases": [
+      "Begin with empty horizontal levels.",
+      "Build the subject and modifier on successively lower tiers.",
+      "Place the heaviest, widest emotional word at the bottom and hold the completed reading."
+    ],
+    "transferablePrinciple": "Use size, weight and vertical ordering to make emotional pressure visible without requiring illustrative footage.",
+    "variations": [
+      "Make a fragile word deform a solid platform instead of adding decorative lines.",
+      "Reverse the gravity for relief, forgiveness or hope.",
+      "Let a single object descend while the sentence remains stable around it."
+    ],
+    "cautions": [
+      "Do not use downward motion as a generic entrance for unrelated words.",
+      "Replace the shelf-line motif if nearby scenes already use line fields.",
+      "Preserve semantic reading order across the vertical layout."
+    ]
+  },
+  "quality": {
+    "status": "observed",
+    "reviewer": "agent visual inspection of decoded frame sequence",
+    "strengths": [
+      "The red emphasis and larger word mass immediately identify the emotional center.",
+      "The descending three-tier composition is readable in the inspected samples."
+    ],
+    "limitations": [
+      "The sequence is short and much of the latter half is a reading hold.",
+      "The samples show position states; they do not establish physical bounce or a measured gravity curve.",
+      "Observed from six decoded frames of the exact hashed MP4; this is a concept reference, not full motion, audio-sync or whole-film acceptance."
+    ],
+    "userPreference": "unknown"
+  },
+  "frames": [
+    {
+      "path": "images/internal-weighted-words/01.jpg",
+      "timeSeconds": 61.5
+    },
+    {
+      "path": "images/internal-weighted-words/02.jpg",
+      "timeSeconds": 62.1
+    },
+    {
+      "path": "images/internal-weighted-words/03.jpg",
+      "timeSeconds": 62.6
+    },
+    {
+      "path": "images/internal-weighted-words/04.jpg",
+      "timeSeconds": 63.1
+    },
+    {
+      "path": "images/internal-weighted-words/05.jpg",
+      "timeSeconds": 63.5
+    },
+    {
+      "path": "images/internal-weighted-words/06.jpg",
+      "timeSeconds": 63.85
+    }
+  ],
+  "contactSheet": "images/internal-weighted-words/sheet.jpg"
+}

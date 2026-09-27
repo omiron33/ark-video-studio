@@ -1,0 +1,109 @@
+{
+  "verifiedAt": "2026-09-27T07:58:48.502Z",
+  "library": {
+    "cards": 17,
+    "internal": 12,
+    "external": 5,
+    "frames": 102,
+    "warnings": []
+  },
+  "checks": {
+    "tests": 45,
+    "passed": 45,
+    "failed": 0,
+    "command": "node --test tests/references.test.mjs tests/reference-director.test.mjs tests/director.test.mjs tests/director-choreography.test.mjs tests/create*.test.mjs",
+    "browser": {
+      "desktop": [
+        2560,
+        1440
+      ],
+      "phone": [
+        390,
+        844
+      ],
+      "verified": [
+        "browse source images",
+        "open sequence detail",
+        "source-only preference qualification",
+        "concept search",
+        "readable match explanations",
+        "empty results",
+        "responsive layout"
+      ]
+    }
+  },
+  "queries": [
+    {
+      "query": "lineage",
+      "milliseconds": 6.55,
+      "selectedIds": [
+        "internal-lineage-journey",
+        "internal-threshold-entry",
+        "external-particles-become-identity"
+      ]
+    },
+    {
+      "query": "forgiveness",
+      "milliseconds": 5.12,
+      "selectedIds": [
+        "external-window-releases-subject",
+        "internal-word-rupture",
+        "internal-weighted-words"
+      ]
+    },
+    {
+      "query": "tension",
+      "milliseconds": 5.19,
+      "selectedIds": [
+        "internal-wide-to-threshold",
+        "internal-word-rupture",
+        "internal-impact-fracture"
+      ]
+    },
+    {
+      "query": "scattered fragments becoming identity",
+      "milliseconds": 5.74,
+      "selectedIds": [
+        "external-particles-become-identity",
+        "internal-fingerprint-mark",
+        "external-microtype-image-world"
+      ]
+    },
+    {
+      "query": "zzqxv",
+      "milliseconds": 4.77,
+      "selectedIds": []
+    }
+  ],
+  "liveLocalPlanning": {
+    "model": "qwen3-vl:4b-instruct",
+    "method": "local-language-model",
+    "elapsedSeconds": 91.275,
+    "selectedIds": [
+      "external-particles-become-identity",
+      "external-light-orders-field"
+    ],
+    "concept": {
+      "referenceIds": [
+        "external-particles-become-identity"
+      ],
+      "principle": "Make a new identity legible by changing the relationship of many small elements: unstructured fragments become one coherent form.",
+      "adaptation": "Let the name 'Jubal' become the center of a growing, irregular fingerprint topology. The fingerprint topology is formed by the musician's lineage, which is represented by a series of small, fragmented marks. The marks are arranged in a way that suggests a branching structure, with each mark representing a different ancestor. The marks grow in size and number as the song progresses, until they form a coherent, recognizable shape. The shape is the musician's identity, which is represented by the name 'Jubal'. The adaptation is grounded in the song's meaning, duration, and visual language, and avoids copying the source composition or exact sequence.",
+      "status": "proposed"
+    },
+    "canonicalWordsPreserved": true,
+    "sourceProjectModified": false,
+    "limitations": [
+      "This smoke test proposed art direction; it did not implement or render new choreography.",
+      "Final metadata, scope and search-recall changes were verified by the subsequent focused tests and live retrieval checks."
+    ]
+  },
+  "sourceFiles": {
+    "engine/references.mjs": "15ec510a0cdaf8a02c4debbf21e07581c04ef2211f500c8dec7fedd5591d4a97",
+    "engine/director.mjs": "b892c0d43ed47a5f0f263686b3584d1f9811f8d8c40bc2d66ceda919c5e29349",
+    "engine/cli.mjs": "28afb782d685b4e295a0314cfbadb3e10ba0176fcb40c7fcaf88cfe4eae43811",
+    "engine/create.mjs": "ea8269ec4b6ac8143f5149d7f995910ed7eccfca87031a6ea53509b7a74028cf",
+    "engine/reference-gallery.mjs": "046d72223a8ef2bc2f209179606adc263e347ae08aa6ac864d8b08078a5a2a1b",
+    "engine/reference-gallery.html": "833cd8b7bce14f73f757b813517115dec0bb0fb5115db627f7289bb4d58fbe63"
+  }
+}

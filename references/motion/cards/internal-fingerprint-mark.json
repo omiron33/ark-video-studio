@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "id": "internal-fingerprint-mark",
+  "title": "A forming emblem prepares the landing of a decisive word",
+  "source": {
+    "kind": "internal",
+    "path": "/Users/shanefisher/Movies/Genesis 4 - The Brother's Blood - Motion v2.mp4",
+    "projectPath": "/Volumes/Code/ark-video-studio/projects/genesis4-motion-v2/project.json",
+    "videoSha256": "21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777",
+    "start": 176.5,
+    "end": 179.2,
+    "sectionIds": [
+      "g4-scene-054"
+    ]
+  },
+  "intent": [
+    "identity",
+    "designation",
+    "protection",
+    "consequence",
+    "recognition"
+  ],
+  "tags": [
+    "emblem",
+    "fingerprint",
+    "radial reveal",
+    "central anchor",
+    "typographic hierarchy"
+  ],
+  "motion": {
+    "summary": "An incomplete nested oval shape closes into a fingerprint-like emblem; MARK then takes the center in broad red type, with the surrounding sentence above and below.",
+    "phases": [
+      "Reveal only part of the emblem before the sentence is complete.",
+      "Complete the enclosing form as the setup words arrive.",
+      "Land the central keyword, then resolve the sentence around it."
+    ],
+    "transferablePrinciple": "Prepare a meaningful visual container so a later word arrives as an event instead of another line of text.",
+    "variations": [
+      "Use a wax seal, carved ring, solid aperture or constellation shaped for the story.",
+      "Let the emblem emerge from several previously separate objects.",
+      "For a change in identity, transform one emblem into another after the word is read."
+    ],
+    "cautions": [
+      "Avoid repeating nested line rings when the video already has several wireframe scenes.",
+      "A symbol needs a reason to exist in this specific narrative.",
+      "Keep the emblem subordinate to the central word."
+    ]
+  },
+  "quality": {
+    "status": "observed",
+    "reviewer": "agent visual inspection of decoded frame sequence",
+    "strengths": [
+      "The red keyword has an unambiguous focal position.",
+      "The partially formed and completed emblem states provide anticipation."
+    ],
+    "limitations": [
+      "Fine dark rings lose visibility at small display sizes.",
+      "The geometry reads as a fingerprint-like emblem, not a literal anatomical fingerprint.",
+      "Observed from six decoded frames of the exact hashed MP4; this is a concept reference, not full motion, audio-sync or whole-film acceptance."
+    ],
+    "userPreference": "unknown"
+  },
+  "frames": [
+    {
+      "path": "images/internal-fingerprint-mark/01.jpg",
+      "timeSeconds": 176.6
+    },
+    {
+      "path": "images/internal-fingerprint-mark/02.jpg",
+      "timeSeconds": 177.1
+    },
+    {
+      "path": "images/internal-fingerprint-mark/03.jpg",
+      "timeSeconds": 177.6
+    },
+    {
+      "path": "images/internal-fingerprint-mark/04.jpg",
+      "timeSeconds": 178.1
+    },
+    {
+      "path": "images/internal-fingerprint-mark/05.jpg",
+      "timeSeconds": 178.6
+    },
+    {
+      "path": "images/internal-fingerprint-mark/06.jpg",
+      "timeSeconds": 179.1
+    }
+  ],
+  "contactSheet": "images/internal-fingerprint-mark/sheet.jpg"
+}

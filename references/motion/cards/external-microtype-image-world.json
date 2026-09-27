@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "id": "external-microtype-image-world",
+  "title": "Images built from a common microtype material",
+  "source": {
+    "kind": "external",
+    "url": "https://x.com/ptrubey/status/2104062055712260161",
+    "originalPostUrl": "https://x.com/johnknopf/status/2103698854399099057",
+    "path": "/tmp/ark-motion-external-2104062055712260161/source.mp4",
+    "videoSha256": "be382235c890a99cd4bb8e7448123646cf7bb4a1e52939c2566646f6c22bb395",
+    "start": 75,
+    "end": 85.033333,
+    "creator": "John Knopf (@johnknopf), original poster; shared by Phil Trubey (@PTrubey)",
+    "title": "All the Way Here"
+  },
+  "intent": [
+    "connect words to memory",
+    "unify varied scenes",
+    "show knowledge becoming imagery",
+    "intimate human recollection"
+  ],
+  "tags": [
+    "microtypography",
+    "ascii texture",
+    "typographic image",
+    "semantic montage",
+    "silhouette",
+    "photographic composition",
+    "dark",
+    "memory",
+    "letters"
+  ],
+  "motion": {
+    "summary": "A sparse title gives way to figurative scenes represented through dense small characters. Different subjects share the same text-like surface while a separate bottom lyric line remains readable.",
+    "phases": [
+      "A restrained title holds against near-black.",
+      "A large figurative image appears through a dense character grid.",
+      "The subject changes while the microtype material and bottom lyric band carry continuity."
+    ],
+    "transferablePrinciple": "Use one meaningful visual material across different compositions, so the material expresses the story while the subjects keep changing.",
+    "variations": [
+      "For ancestry, build new silhouettes from short verified family-record fragments, keeping the primary lyric separate.",
+      "For a flood story, let original maps or contour marks become the shared surface of distinct images.",
+      "Use changing marks only where they support form; a still readable silhouette can contrast with a later active transition."
+    ],
+    "cautions": [
+      "Borrow the idea of a shared semantic material, not this video's exact imagery, phrases or character patterns.",
+      "Dense small marks collapse on phones and video compression; test the encoded output at real display size.",
+      "Do not substitute changing textures for genuinely different choreography.",
+      "This sample establishes a visual treatment and scene succession, not a measured morph algorithm."
+    ]
+  },
+  "quality": {
+    "status": "observed",
+    "reviewer": "agent visual inspection of decoded frame sequence",
+    "strengths": [
+      "A consistent material ties different subjects to a story about language.",
+      "Large light-and-shadow shapes remain recognizable even when individual characters are too small to read."
+    ],
+    "limitations": [
+      "The sampled scenes are dark and very fine grained; small-screen contrast may be weak.",
+      "Primary lyrics are comparatively small; engine adaptation must use its own legibility requirements."
+    ],
+    "userPreference": "liked",
+    "userPreferenceScope": "Source video only. Shane noted cool ideas in the video; this individual excerpt has not been approved. No numerical craft or timing score assigned."
+  },
+  "frames": [
+    {
+      "path": "images/external-microtype-image-world/01.jpg",
+      "timeSeconds": 75
+    },
+    {
+      "path": "images/external-microtype-image-world/02.jpg",
+      "timeSeconds": 77
+    },
+    {
+      "path": "images/external-microtype-image-world/03.jpg",
+      "timeSeconds": 79
+    },
+    {
+      "path": "images/external-microtype-image-world/04.jpg",
+      "timeSeconds": 81
+    },
+    {
+      "path": "images/external-microtype-image-world/05.jpg",
+      "timeSeconds": 83
+    },
+    {
+      "path": "images/external-microtype-image-world/06.jpg",
+      "timeSeconds": 85
+    }
+  ],
+  "contactSheet": "images/external-microtype-image-world/sheet.jpg"
+}

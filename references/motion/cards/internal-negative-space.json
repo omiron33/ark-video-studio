@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "id": "internal-negative-space",
+  "title": "Make absence a deliberate place inside the sentence",
+  "source": {
+    "kind": "internal",
+    "path": "/Users/shanefisher/Movies/Genesis 4 - The Brother's Blood - Motion v2.mp4",
+    "projectPath": "/Volumes/Code/ark-video-studio/projects/genesis4-motion-v2/project.json",
+    "videoSha256": "21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777",
+    "start": 132.46666666666667,
+    "end": 135.6,
+    "sectionIds": [
+      "g4-scene-040"
+    ]
+  },
+  "intent": [
+    "absence",
+    "withholding",
+    "loss of strength",
+    "distance",
+    "privation"
+  ],
+  "tags": [
+    "negative space",
+    "asymmetric typography",
+    "empty center",
+    "semantic layout",
+    "restrained motion"
+  ],
+  "motion": {
+    "summary": "The phrase builds around an empty bracketed center; YIELD HER stays on the left while STRENGTH appears isolated at the lower right.",
+    "phases": [
+      "Establish an empty central area before any text.",
+      "Build the setup above and left of that vacancy.",
+      "Place the withheld concept apart from the sentence rather than filling the center."
+    ],
+    "transferablePrinciple": "Let a missing connection or inaccessible area carry the meaning of deprivation.",
+    "variations": [
+      "Represent the void as an empty chair, missing building block or unlit window.",
+      "In a restoration scene, let the isolated element return to close the gap.",
+      "Use a newly designed asymmetric composition rather than repeating the corner-bracket motif."
+    ],
+    "cautions": [
+      "A meaningful gap still needs a clear reading order.",
+      "Avoid so much empty space that the lyric looks accidentally misaligned.",
+      "Keep the withheld word large enough on mobile; do not rely only on red color."
+    ]
+  },
+  "quality": {
+    "status": "observed",
+    "reviewer": "agent visual inspection of decoded frame sequence",
+    "strengths": [
+      "The isolated red noun makes the emotional object easy to locate.",
+      "The otherwise restrained composition gives the vacancy visual importance."
+    ],
+    "limitations": [
+      "The corner marks are extremely faint.",
+      "The visual effect is chiefly composition and staged text arrival, not complex continuous animation.",
+      "Observed from six decoded frames of the exact hashed MP4; this is a concept reference, not full motion, audio-sync or whole-film acceptance."
+    ],
+    "userPreference": "unknown"
+  },
+  "frames": [
+    {
+      "path": "images/internal-negative-space/01.jpg",
+      "timeSeconds": 132.6
+    },
+    {
+      "path": "images/internal-negative-space/02.jpg",
+      "timeSeconds": 133.2
+    },
+    {
+      "path": "images/internal-negative-space/03.jpg",
+      "timeSeconds": 133.8
+    },
+    {
+      "path": "images/internal-negative-space/04.jpg",
+      "timeSeconds": 134.4
+    },
+    {
+      "path": "images/internal-negative-space/05.jpg",
+      "timeSeconds": 134.9
+    },
+    {
+      "path": "images/internal-negative-space/06.jpg",
+      "timeSeconds": 135.5
+    }
+  ],
+  "contactSheet": "images/internal-negative-space/sheet.jpg"
+}

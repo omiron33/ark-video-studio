@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "id": "internal-terrain-typography",
+  "title": "Build a typographic landscape and travel through one letter",
+  "source": {
+    "kind": "internal",
+    "path": "/Users/shanefisher/Movies/Genesis 7 - Lyric Studio - 10s Showcase.mp4",
+    "projectPath": "/Volumes/Code/ark-video-studio/projects/genesis7/project.json",
+    "videoSha256": "042772eae34ff971aecb8f6f5eaceb780bb5551ac8e1442d15c22b255b457d0d",
+    "start": 2.7333333333333334,
+    "end": 6.4,
+    "sectionIds": [
+      "highest-ground"
+    ]
+  },
+  "intent": [
+    "height",
+    "scale",
+    "discovery",
+    "transition from abstract to physical",
+    "reveal"
+  ],
+  "tags": [
+    "curved baseline",
+    "terrain",
+    "letter portal",
+    "camera push",
+    "graphic to photographic",
+    "contrast"
+  ],
+  "motion": {
+    "summary": "HIGHEST follows the crest of a drawn hill above GROUND. The composition then enlarges until the opening in the O reveals the next ocean scene.",
+    "phases": [
+      "Establish a quiet contour field with a short connector line.",
+      "Shape the key word around the same hill and anchor the noun below.",
+      "Reveal a different scene within a letter counter, then enlarge the typography until that scene takes over."
+    ],
+    "transferablePrinciple": "Give typography the same spatial logic as its subject, then use its geometry as the doorway to the next world.",
+    "variations": [
+      "Curve a constellation name around an orbital path and enter a letter opening into the sky.",
+      "Build a city silhouette from a title and pass through a window-shaped counter.",
+      "Use a solid cut-paper hill or sculpted letters to avoid repeating this contour-line treatment."
+    ],
+    "cautions": [
+      "Hold the complete words before the push crops them.",
+      "Select a letter opening with enough area to reveal the next scene.",
+      "Do not reuse this exact hill, font arrangement, or photographic destination as a preset."
+    ]
+  },
+  "quality": {
+    "status": "observed",
+    "reviewer": "agent visual inspection of decoded frame sequence",
+    "strengths": [
+      "Word shape, terrain and transition all support the same idea of physical scale.",
+      "The pale graphic scene contrasts clearly with the dark photographic destination."
+    ],
+    "limitations": [
+      "The large letters intentionally leave the frame during the transition.",
+      "The contour-line style is only one rendering choice and can become repetitive across a song.",
+      "Observed from six decoded frames of the exact hashed MP4; this is a concept reference, not full motion, audio-sync or whole-film acceptance."
+    ],
+    "userPreference": "unknown"
+  },
+  "frames": [
+    {
+      "path": "images/internal-terrain-typography/01.jpg",
+      "timeSeconds": 3.4
+    },
+    {
+      "path": "images/internal-terrain-typography/02.jpg",
+      "timeSeconds": 4.3
+    },
+    {
+      "path": "images/internal-terrain-typography/03.jpg",
+      "timeSeconds": 4.8
+    },
+    {
+      "path": "images/internal-terrain-typography/04.jpg",
+      "timeSeconds": 5.35
+    },
+    {
+      "path": "images/internal-terrain-typography/05.jpg",
+      "timeSeconds": 5.6
+    },
+    {
+      "path": "images/internal-terrain-typography/06.jpg",
+      "timeSeconds": 6.1
+    }
+  ],
+  "contactSheet": "images/internal-terrain-typography/sheet.jpg"
+}

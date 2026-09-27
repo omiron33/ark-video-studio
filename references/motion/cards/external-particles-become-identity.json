@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "id": "external-particles-become-identity",
+  "title": "Scattered marks gather into an emerging identity",
+  "source": {
+    "kind": "external",
+    "url": "https://x.com/ptrubey/status/2104062055712260161",
+    "originalPostUrl": "https://x.com/johnknopf/status/2103698854399099057",
+    "path": "/tmp/ark-motion-external-2104062055712260161/source.mp4",
+    "videoSha256": "be382235c890a99cd4bb8e7448123646cf7bb4a1e52939c2566646f6c22bb395",
+    "start": 202,
+    "end": 210.033333,
+    "creator": "John Knopf (@johnknopf), original poster; shared by Phil Trubey (@PTrubey)",
+    "title": "All the Way Here"
+  },
+  "intent": [
+    "emerging identity",
+    "chaos becoming coherence",
+    "many voices forming a whole",
+    "transformation",
+    "discovery"
+  ],
+  "tags": [
+    "typography particles",
+    "coalescence",
+    "emergence",
+    "abstract form",
+    "formation",
+    "identity",
+    "chaos to order",
+    "negative space"
+  ],
+  "motion": {
+    "summary": "A figurative character-text image darkens, followed by a compact loose cloud of marks. The cloud becomes a distinct two-lobed circulating form, with separate text fragments appearing around it.",
+    "phases": [
+      "A figurative image establishes a literal identity.",
+      "The literal image darkens and gives way to loose marks.",
+      "The marks gather into a recognizable abstract structure.",
+      "A wider field of text fragments provides context around the structure."
+    ],
+    "transferablePrinciple": "Make a new identity legible by changing the relationship of many small elements: unstructured fragments become one coherent form.",
+    "variations": [
+      "Let words from separate generations resolve into a new branching topology.",
+      "Let independent raindrops organize into the silhouette of a vessel designed for the current story.",
+      "Use a different content-specific form, material, composition and timing for every adaptation."
+    ],
+    "cautions": [
+      "Do not copy the distinctive two-lobed shape or its surrounding text layout.",
+      "Choose a target silhouette that reads before the particles are large enough to compete with lyrics.",
+      "Keep particle motion secondary during dense vocal lines and allow a held recognition moment.",
+      "Repeated particle assembly quickly becomes a preset; avoid consecutive scenes with the same mechanism."
+    ]
+  },
+  "quality": {
+    "status": "observed",
+    "reviewer": "agent visual inspection of decoded frame sequence",
+    "strengths": [
+      "The sequence makes the contrast between a literal depiction and an emerging abstract identity visible.",
+      "A compact bright form maintains a clear focal point inside broad negative space."
+    ],
+    "limitations": [
+      "Frame samples establish the transformation stages, not continuous trajectories or easing.",
+      "Dense marks and outer fragments may compete with a larger lyric treatment."
+    ],
+    "userPreference": "liked",
+    "userPreferenceScope": "Source video only. Shane noted cool ideas in the video; this individual excerpt has not been approved. No numerical craft or timing score assigned."
+  },
+  "frames": [
+    {
+      "path": "images/external-particles-become-identity/01.jpg",
+      "timeSeconds": 202
+    },
+    {
+      "path": "images/external-particles-become-identity/02.jpg",
+      "timeSeconds": 203
+    },
+    {
+      "path": "images/external-particles-become-identity/03.jpg",
+      "timeSeconds": 204
+    },
+    {
+      "path": "images/external-particles-become-identity/04.jpg",
+      "timeSeconds": 206
+    },
+    {
+      "path": "images/external-particles-become-identity/05.jpg",
+      "timeSeconds": 208
+    },
+    {
+      "path": "images/external-particles-become-identity/06.jpg",
+      "timeSeconds": 210
+    }
+  ],
+  "contactSheet": "images/external-particles-become-identity/sheet.jpg"
+}

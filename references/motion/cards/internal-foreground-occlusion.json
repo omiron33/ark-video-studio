@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "id": "internal-foreground-occlusion",
+  "title": "Caution: foreground depth can hide indispensable words",
+  "source": {
+    "kind": "internal",
+    "path": "/Users/shanefisher/Movies/Genesis 7 - music video v3.mp4",
+    "videoSha256": "ba363e5de17be904f40910aca6a71c585c7599da5bb5323851750ffb4c16660a",
+    "start": 116.1,
+    "end": 122.787,
+    "sectionIds": [
+      "s24"
+    ]
+  },
+  "intent": [
+    "depth",
+    "procession",
+    "belonging",
+    "readability protection"
+  ],
+  "tags": [
+    "cautionary",
+    "occlusion",
+    "foreground silhouettes",
+    "photographic composition",
+    "legibility failure"
+  ],
+  "motion": {
+    "summary": "Cloaked figures occupy the foreground while the sons lyric sits behind their heads. Several sampled frames hide parts of the second line, demonstrating the cost of uncontrolled depth placement.",
+    "phases": [
+      "Establish foreground silhouettes with small warm lanterns against a cool corridor.",
+      "Place text on a deeper plane, creating convincing overlap.",
+      "Observe the failure: heads cover letters needed to read the names."
+    ],
+    "transferablePrinciple": "Foreground overlap can make text inhabit a world, but the meaningful words require an unobstructed reading interval.",
+    "variations": [
+      "Occlude only an already-read word during its departure.",
+      "Reserve a clear band above the silhouettes while allowing decorative type behind them.",
+      "Use a foreground passage to reveal, rather than continuously obscure, the crucial word."
+    ],
+    "cautions": [
+      "Treat this as a cautionary example, not an approved legibility treatment.",
+      "Do not place names or essential lyric words behind opaque figures without a clear reading hold.",
+      "Review at phone size; small secondary verse text is already weak in this source."
+    ]
+  },
+  "quality": {
+    "status": "observed",
+    "reviewer": "agent visual inspection of decoded frame sequence",
+    "strengths": [
+      "Warm lanterns and cool silhouettes establish strong depth and atmosphere.",
+      "The reference exposes a concrete compositing failure useful for future reviews."
+    ],
+    "limitations": [
+      "Important letters in the sons line are visibly hidden across several samples.",
+      "The small lower verse line has weak contrast and is difficult to read.",
+      "Observed from six decoded frames of the exact hashed MP4; this is a concept reference, not full motion, audio-sync or whole-film acceptance."
+    ],
+    "userPreference": "unknown"
+  },
+  "frames": [
+    {
+      "path": "images/internal-foreground-occlusion/01.jpg",
+      "timeSeconds": 117
+    },
+    {
+      "path": "images/internal-foreground-occlusion/02.jpg",
+      "timeSeconds": 118
+    },
+    {
+      "path": "images/internal-foreground-occlusion/03.jpg",
+      "timeSeconds": 119
+    },
+    {
+      "path": "images/internal-foreground-occlusion/04.jpg",
+      "timeSeconds": 120
+    },
+    {
+      "path": "images/internal-foreground-occlusion/05.jpg",
+      "timeSeconds": 121
+    },
+    {
+      "path": "images/internal-foreground-occlusion/06.jpg",
+      "timeSeconds": 122.5
+    }
+  ],
+  "contactSheet": "images/internal-foreground-occlusion/sheet.jpg"
+}

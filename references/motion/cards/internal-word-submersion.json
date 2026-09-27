@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "id": "internal-word-submersion",
+  "title": "Let the environment swallow the completed phrase",
+  "source": {
+    "kind": "internal",
+    "path": "/Users/shanefisher/Movies/Genesis 7 - Lyric Studio - 10s Showcase.mp4",
+    "projectPath": "/Volumes/Code/ark-video-studio/projects/genesis7/project.json",
+    "videoSha256": "042772eae34ff971aecb8f6f5eaceb780bb5551ac8e1442d15c22b255b457d0d",
+    "start": 6.4,
+    "end": 10,
+    "sectionIds": [
+      "disappeared-below"
+    ]
+  },
+  "intent": [
+    "disappearance",
+    "loss",
+    "engulfment",
+    "irreversibility",
+    "overwhelming force"
+  ],
+  "tags": [
+    "occlusion",
+    "water",
+    "foreground layer",
+    "semantic typography",
+    "exit",
+    "photographic depth"
+  ],
+  "motion": {
+    "summary": "DISAPPEARED BELOW appears above a turbulent sea; the phrase descends into the foreground waves and is absent in the last sampled frame.",
+    "phases": [
+      "Introduce the environment without text.",
+      "Build and hold a high-contrast two-line phrase.",
+      "Lower the phrase while foreground water overlaps it, ending on the environment alone."
+    ],
+    "transferablePrinciple": "A narrative force should cause the text exit, so the disappearance itself completes the meaning.",
+    "variations": [
+      "Let fog, falling ash, growing foliage, sand or crowd silhouettes consume a phrase.",
+      "A recovery scene can uncover text from behind a foreground layer.",
+      "Use solid paper or fabric layers for a stylized version of the same depth relationship."
+    ],
+    "cautions": [
+      "Keep the phrase readable before the masking starts.",
+      "The occluder needs a credible foreground edge rather than a rectangular wipe.",
+      "Build a fresh environment for each new scene."
+    ]
+  },
+  "quality": {
+    "status": "observed",
+    "reviewer": "agent visual inspection of decoded frame sequence",
+    "strengths": [
+      "The final absence has a clear cause visible in the composition.",
+      "Foreground overlap makes the phrase belong to the scene depth."
+    ],
+    "limitations": [
+      "Stills establish the stages but do not independently judge the exact easing or musical alignment.",
+      "The source sea combines imagery with added motion; this is not evidence of a fully simulated fluid scene.",
+      "Observed from six decoded frames of the exact hashed MP4; this is a concept reference, not full motion, audio-sync or whole-film acceptance."
+    ],
+    "userPreference": "unknown"
+  },
+  "frames": [
+    {
+      "path": "images/internal-word-submersion/01.jpg",
+      "timeSeconds": 6.4
+    },
+    {
+      "path": "images/internal-word-submersion/02.jpg",
+      "timeSeconds": 7.2
+    },
+    {
+      "path": "images/internal-word-submersion/03.jpg",
+      "timeSeconds": 8
+    },
+    {
+      "path": "images/internal-word-submersion/04.jpg",
+      "timeSeconds": 8.7
+    },
+    {
+      "path": "images/internal-word-submersion/05.jpg",
+      "timeSeconds": 9.3
+    },
+    {
+      "path": "images/internal-word-submersion/06.jpg",
+      "timeSeconds": 9.85
+    }
+  ],
+  "contactSheet": "images/internal-word-submersion/sheet.jpg"
+}

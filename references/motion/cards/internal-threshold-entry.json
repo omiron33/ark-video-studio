@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "id": "internal-threshold-entry",
+  "title": "A readable phrase recedes into the story doorway",
+  "source": {
+    "kind": "internal",
+    "path": "/Users/shanefisher/Movies/Genesis 7 - Full Dark Lyric Film.mp4",
+    "projectPath": "/Volumes/Code/ark-video-studio/projects/genesis7-full/project.json",
+    "videoSha256": "3c369ecf6b0f2318bf918c85ee23c3673dfe4105446cd101cf86eb314d985bd8",
+    "start": 21.8,
+    "end": 31.2,
+    "sectionIds": [
+      "g7-come-household"
+    ]
+  },
+  "intent": [
+    "invitation",
+    "crossing a threshold",
+    "belonging",
+    "entering a new chapter"
+  ],
+  "tags": [
+    "portal",
+    "photographic composition",
+    "kinetic typography",
+    "semantic exit",
+    "depth",
+    "shelter"
+  ],
+  "motion": {
+    "summary": "A family stands beyond a bright doorway; the invitation builds over the dark interior, then the completed text contracts toward the doorway.",
+    "phases": [
+      "Establish a doorway whose light and figures explain the destination.",
+      "Build the invitation in the darker foreground with warm emphasis on key nouns.",
+      "After the phrase is assembled, shrink the text toward the story destination."
+    ],
+    "transferablePrinciple": "Let the sentence complete its meaning by moving into a meaningful location already established in the picture.",
+    "variations": [
+      "A question can recede into an eye, a window, a tunnel, or a memory frame.",
+      "Use a doorway-shaped area of negative space rather than a literal door.",
+      "For a departure, reverse the relationship and let a small distant phrase emerge toward the viewer."
+    ],
+    "cautions": [
+      "Preserve a complete reading hold before the text becomes too small.",
+      "Reserve a dark or calm text area in the newly created artwork.",
+      "Borrow the destination relationship; do not reuse this photograph or exact phrase layout."
+    ]
+  },
+  "quality": {
+    "status": "observed",
+    "reviewer": "agent visual inspection of decoded frame sequence",
+    "strengths": [
+      "The bright destination remains recognizable while text occupies the darker side.",
+      "The final small text provides a visible depth change tied to the invitation."
+    ],
+    "limitations": [
+      "The final sampled phrase is intentionally too small to read; only use after the reading hold.",
+      "The family is photographic artwork; the sequence does not establish independently animated walking.",
+      "Observed from six decoded frames of the exact hashed MP4; this is a concept reference, not full motion, audio-sync or whole-film acceptance."
+    ],
+    "userPreference": "unknown"
+  },
+  "frames": [
+    {
+      "path": "images/internal-threshold-entry/01.jpg",
+      "timeSeconds": 23.5
+    },
+    {
+      "path": "images/internal-threshold-entry/02.jpg",
+      "timeSeconds": 25
+    },
+    {
+      "path": "images/internal-threshold-entry/03.jpg",
+      "timeSeconds": 27
+    },
+    {
+      "path": "images/internal-threshold-entry/04.jpg",
+      "timeSeconds": 29
+    },
+    {
+      "path": "images/internal-threshold-entry/05.jpg",
+      "timeSeconds": 30
+    },
+    {
+      "path": "images/internal-threshold-entry/06.jpg",
+      "timeSeconds": 31.1
+    }
+  ],
+  "contactSheet": "images/internal-threshold-entry/sheet.jpg"
+}
