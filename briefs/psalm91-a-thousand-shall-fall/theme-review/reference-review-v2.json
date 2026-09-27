@@ -1,0 +1,278 @@
+{
+  "query": "Psalm 91 shelter protective space faith over danger Southern rock heavy stomp 92 authored BPM five minute song chorus confidence copper charcoal ivory bold words negative space filled shapes depth camera",
+  "method": "local-lexical-concept-search-v1",
+  "results": [
+    {
+      "card": {
+        "version": 1,
+        "id": "internal-word-rupture",
+        "title": "The space between words becomes a visible break",
+        "source": {
+          "kind": "internal",
+          "path": "/Users/shanefisher/Movies/Genesis 7 - Full Dark Lyric Film.mp4",
+          "projectPath": "/Volumes/Code/ark-video-studio/projects/genesis7-full/project.json",
+          "videoSha256": "3c369ecf6b0f2318bf918c85ee23c3673dfe4105446cd101cf86eb314d985bd8",
+          "start": 143.73333333333332,
+          "end": 148.9,
+          "sectionIds": [
+            "g7-deep-breaks-open"
+          ]
+        },
+        "intent": [
+          "rupture",
+          "release",
+          "pressure breaking",
+          "separation",
+          "catastrophe"
+        ],
+        "tags": [
+          "semantic typography",
+          "separation",
+          "negative space",
+          "fracture",
+          "word shape"
+        ],
+        "motion": {
+          "summary": "GREAT DEEP arches above BROKE OPEN; the two lower words separate to create a widening central gap while the following lyric builds underneath.",
+          "phases": [
+            "Begin with a restrained word and fault-like background marks.",
+            "Assemble the primary phrase with a shaped upper line.",
+            "Pull the two key words apart and preserve the gap as the next line arrives."
+          ],
+          "transferablePrinciple": "Make the relationship between words perform the verb, while the letters remain readable.",
+          "variations": [
+            "Separate two silhouettes or solid masses around a central silence.",
+            "A sentence about reconciliation can close an established gap.",
+            "A broken circular inscription can open into a passage for the next scene."
+          ],
+          "cautions": [
+            "A gap must remain legible as intentional separation rather than poor spacing.",
+            "Use new shapes or materials; repeated thin fault lines would become generic texture.",
+            "Keep later lines clear of the separated words and scene boundaries."
+          ]
+        },
+        "quality": {
+          "status": "observed",
+          "reviewer": "agent visual inspection of decoded frame sequence",
+          "strengths": [
+            "The before-and-after spacing visibly changes the phrase.",
+            "The semantic action remains understandable without literal destruction footage."
+          ],
+          "limitations": [
+            "The background lines are subtle and contribute less than the typography.",
+            "These samples do not certify every transition frame for collisions.",
+            "Observed from six decoded frames of the exact hashed MP4; this is a concept reference, not full motion, audio-sync or whole-film acceptance."
+          ],
+          "userPreference": "unknown"
+        },
+        "frames": [
+          {
+            "path": "images/internal-word-rupture/01.jpg",
+            "timeSeconds": 143.9
+          },
+          {
+            "path": "images/internal-word-rupture/02.jpg",
+            "timeSeconds": 145
+          },
+          {
+            "path": "images/internal-word-rupture/03.jpg",
+            "timeSeconds": 146.2
+          },
+          {
+            "path": "images/internal-word-rupture/04.jpg",
+            "timeSeconds": 147.2
+          },
+          {
+            "path": "images/internal-word-rupture/05.jpg",
+            "timeSeconds": 148
+          },
+          {
+            "path": "images/internal-word-rupture/06.jpg",
+            "timeSeconds": 148.7
+          }
+        ],
+        "contactSheet": "images/internal-word-rupture/sheet.jpg"
+      },
+      "fit": {
+        "score": 16.44,
+        "lexicalScore": 16.44,
+        "matchedConcepts": [
+          {
+            "queryTerm": "space",
+            "referenceTerm": "space",
+            "kind": "exact"
+          },
+          {
+            "queryTerm": "word",
+            "referenceTerm": "word",
+            "kind": "exact"
+          },
+          {
+            "queryTerm": "negative",
+            "referenceTerm": "negative",
+            "kind": "exact"
+          },
+          {
+            "queryTerm": "shape",
+            "referenceTerm": "shape",
+            "kind": "exact"
+          },
+          {
+            "queryTerm": "camera",
+            "referenceTerm": "passage",
+            "kind": "related"
+          }
+        ],
+        "durationFit": null,
+        "repetitionPenalty": 0,
+        "diversityPenalty": 0
+      }
+    },
+    {
+      "card": {
+        "version": 1,
+        "id": "internal-lineage-journey",
+        "title": "Follow successive generations through one continuous reading space",
+        "source": {
+          "kind": "internal",
+          "path": "/Users/shanefisher/Movies/Genesis 4 - The Brother's Blood - Motion v2.mp4",
+          "projectPath": "/Volumes/Code/ark-video-studio/projects/genesis4-motion-v2/project.json",
+          "videoSha256": "21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777",
+          "start": 212.16666666666666,
+          "end": 221.3,
+          "sectionIds": [
+            "g4-scene-063"
+          ]
+        },
+        "intent": [
+          "ancestry",
+          "continuity",
+          "history",
+          "succession",
+          "cause and effect"
+        ],
+        "tags": [
+          "camera rail",
+          "genealogy",
+          "spatial typography",
+          "continuous journey",
+          "horizontal progression"
+        ],
+        "motion": {
+          "summary": "Successive father-and-child statements occupy positions along a shared horizontal structure; the view changes its framing to bring later generations into reading position.",
+          "phases": [
+            "Introduce the first relationship against a spatial rail.",
+            "Complete the first clause before moving attention onward.",
+            "Continue along the same coordinate system through successive names."
+          ],
+          "transferablePrinciple": "Give a chain of relationships a shared geography so progression feels like one journey instead of unrelated title cards.",
+          "variations": [
+            "Follow connected rooms, branches, stones or solid architectural spans instead of a thin rail.",
+            "Use the same principle for a causal sequence, pilgrimage or historical timeline.",
+            "Allow a later camera pullback to reveal how the visited relationships connect."
+          ],
+          "cautions": [
+            "Do not move the camera faster than a person can finish the current clause.",
+            "Keep ancestry claims grounded in the source text.",
+            "Give a new project a fresh spatial metaphor rather than copying the rail arrangement."
+          ]
+        },
+        "quality": {
+          "status": "observed",
+          "reviewer": "agent visual inspection of decoded frame sequence",
+          "strengths": [
+            "Repeated relationship language is supported by a single coherent reading direction.",
+            "The early red names establish hierarchy without coloring every later word."
+          ],
+          "limitations": [
+            "One sampled frame shows departing text clipped at the left edge; exit cropping must happen after the phrase is readable.",
+            "The lower placement leaves considerable empty space and may need rebalancing on portrait screens.",
+            "Observed from six decoded frames of the exact hashed MP4; this is a concept reference, not full motion, audio-sync or whole-film acceptance."
+          ],
+          "userPreference": "unknown"
+        },
+        "frames": [
+          {
+            "path": "images/internal-lineage-journey/01.jpg",
+            "timeSeconds": 212.3
+          },
+          {
+            "path": "images/internal-lineage-journey/02.jpg",
+            "timeSeconds": 214
+          },
+          {
+            "path": "images/internal-lineage-journey/03.jpg",
+            "timeSeconds": 216
+          },
+          {
+            "path": "images/internal-lineage-journey/04.jpg",
+            "timeSeconds": 217.5
+          },
+          {
+            "path": "images/internal-lineage-journey/05.jpg",
+            "timeSeconds": 219
+          },
+          {
+            "path": "images/internal-lineage-journey/06.jpg",
+            "timeSeconds": 221.1
+          }
+        ],
+        "contactSheet": "images/internal-lineage-journey/sheet.jpg"
+      },
+      "fit": {
+        "score": 12.622,
+        "lexicalScore": 12.84,
+        "matchedConcepts": [
+          {
+            "queryTerm": "space",
+            "referenceTerm": "space",
+            "kind": "exact"
+          },
+          {
+            "queryTerm": "camera",
+            "referenceTerm": "camera",
+            "kind": "exact"
+          },
+          {
+            "queryTerm": "word",
+            "referenceTerm": "typography",
+            "kind": "related"
+          },
+          {
+            "queryTerm": "shape",
+            "referenceTerm": "solid",
+            "kind": "related"
+          },
+          {
+            "queryTerm": "depth",
+            "referenceTerm": "spatial",
+            "kind": "related"
+          }
+        ],
+        "durationFit": null,
+        "repetitionPenalty": 0,
+        "diversityPenalty": 0.017
+      }
+    }
+  ],
+  "warnings": [],
+  "status": "proposed_not_implemented",
+  "visualInspection": true,
+  "principles": {
+    "internal-word-rupture": "Change spatial relationships between readable words to perform meaning; adapt separation into protective enclosure.",
+    "internal-lineage-journey": "Link phrases through a shared geography; adapt genealogy rail into protective word stations without copying its layout."
+  },
+  "currentStyleEvidence": {
+    "code": [
+      "experiments/genesis4-hyperframes-20s/composition.html.txt",
+      "experiments/genesis4-hyperframes-20s/animation.js"
+    ],
+    "inspectedImages": [
+      "preview/frame-03-at-7.9s.png",
+      "preview/frame-02-at-4.4s.png",
+      "preview/frame-07-at-17.2s.png"
+    ],
+    "imageRoot": "/Users/shanefisher/Movies/Genesis4-hyperframes-20s-work",
+    "limitations": "Frames show existing styling; mockups are generated concepts, not implemented motion or measured sync. CSS perspective/shadows do not imply modeled stone or physically animated environments."
+  }
+}

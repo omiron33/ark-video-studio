@@ -11,43 +11,27 @@
   },
   "audioSha256": "b444350b68359bc06f17a90ace1b6d7bba9255a0358b308acec9cdccf3103420",
   "audioStatus": "stored_in_app_hash_verified",
-  "sheet": "theme-options.png",
+  "sheet": "theme-options-v2.png",
   "provider": "built-in GPT Image",
-  "prompt": "image-prompt.txt",
+  "prompt": "image-prompt-v2.txt",
   "options": [
     {
       "number": 1,
-      "name": "Iron Refuge",
-      "palette": [
-        "coal",
-        "chalk",
-        "oxidized copper"
-      ],
-      "principle": "Lyrics become a protective structure",
-      "proposedAdaptation": "SHELTER establishes a stable reading plane while thick surrounding masses assemble and external danger passes. World moves around the completed phrase, keeping words clear."
+      "name": "Enclosure",
+      "concept": "Flat ivory lyric surrounded by thick copper protective planes.",
+      "implementationBasis": "Existing .slab planar forms, Archivo/Bebas typography, CSS transform and GSAP scale/translation."
     },
     {
       "number": 2,
-      "name": "Midnight Covenant",
-      "palette": [
-        "midnight ultramarine",
-        "platinum",
-        "porcelain"
-      ],
-      "principle": "Maintain a readable anchor inside rising danger",
-      "proposedAdaptation": "THOUSAND remains stable while peripheral forms fall away, revealing a guarded channel. Angel imagery supports the phrase without occluding it."
+      "name": "Word Journey",
+      "concept": "Readable words at separate depth stations, copper portal frames, peripheral falling fragments.",
+      "implementationBasis": "Existing shared perspective world/station camera route, word transforms, slabs and splinters; new arrangement to author after choice."
     },
     {
       "number": 3,
-      "name": "Dust & Thunder",
-      "palette": [
-        "ochre",
-        "ink",
-        "ivory",
-        "petrol blue"
-      ],
-      "principle": "Trust becomes the path through physical space",
-      "proposedAdaptation": "Camera paths connect distinct readable word stations along a rocky road; lyric holds lead and journeys occur in musical openings."
+      "name": "Photo Reveal",
+      "concept": "Large copper and ivory lyrics with a curved reveal of supporting wing imagery.",
+      "implementationBasis": "Existing photo layer, gradient reading matte, circle clip-path reveal and image scale; new photographic asset required after choice."
     }
   ],
   "selected": null,
@@ -57,5 +41,12 @@
   "appWorkflowUrl": "https://omipc.taild60b4e.ts.net/studio#workflows",
   "appWorkflowId": "psalm-91-lxx-90-shelter",
   "intakeReceipt": "intake.json",
-  "storageEvidence": "remote-verification.json"
+  "storageEvidence": "remote-verification.json",
+  "revision": 2,
+  "userFeedback": "Previous prompt rejected as unrealistic for current styling; preserve first Shelter theme and charcoal/copper/ivory colors. Requested three more image mockups, not builds.",
+  "approvedElements": [
+    "Shelter meaning",
+    "charcoal, copper, ivory palette"
+  ],
+  "supersedes": "theme-options.png"
 }
