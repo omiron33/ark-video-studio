@@ -7,7 +7,7 @@ Every new `create` direction pass searches the library using the style brief, sc
 ## Search and inspect
 
 ```sh
-node engine/cli.mjs references --query 'lineage emerging through space' --limit 4
+node engine/cli.mjs references --query 'lineage emerging through space' --limit 3
 node engine/cli.mjs references --query 'tension becoming release' --used internal-example
 node engine/cli.mjs serve-references --port 4179
 ```
@@ -62,6 +62,6 @@ An alternate library can be supplied with `--library` for library commands or `-
 The project `AGENTS.md` requires reference lookup **during ideation**, before agent-written choreography or a storyboard is proposed. The engine's automatic director lookup covers the CLI planning stage; it does not replace this earlier visual inspection. Codex and Grok user-level `AGENTS.md` files on both machines point here for video and substantial motion work only.
 
 - **Apple / Mac:** canonical checkout `/Volumes/Code/ark-video-studio`, with the existing main checkout at `/Users/shanefisher/storybook/ark-video`. Both contain `references/motion/` and this guide. From another project, invoke the engine CLI by absolute path and use absolute `--project` and `--out` paths.
-- **OmiPC:** the local reference bundle is `C:\Users\sjfis\Documents\Codex\ark-motion-references`. Its `references\motion\` images and cards can be searched locally with `node engine/cli.mjs references --query '<scene idea>' --limit 3` from that directory. It also supports `reference-context` with an absolute path to an Ark manifest, and `serve-references`. `REFERENCE_BUNDLE.json` identifies the originating commit and shipped-file hashes. It is an inspiration/reference tool bundle, not a synchronized copy of every song project or a full production renderer installation.
+- **OmiPC:** the local reference bundle is `C:\Users\sjfis\Documents\Codex\ark-motion-references`. Its `references\motion\` images and cards can be searched locally with `node engine/cli.mjs references --query '<scene idea>' --limit 3` from that directory with Node 22 or newer. On OmiPC, `ark-references.cmd` selects the verified installed Node runtime, avoiding an older `node` on the default PATH. It also supports `reference-context` with an absolute path to an Ark manifest, and `serve-references`. `REFERENCE_BUNDLE.json` identifies the originating commit and shipped-file hashes. It is an inspiration/reference tool bundle, not a synchronized copy of every song project or a full production renderer installation.
 
 The Mac checkout is the authoritative collection. When adding cards or changing this workflow for cross-machine use, refresh the OmiPC bundle from the new committed source and verify its file hashes and a real remote search. Preserve machine-specific agent rules and unrelated work. Do not overwrite a changed remote reference bundle blindly. Absolute source-video paths in historical cards may point to the original machine; the retained frame images and their source hashes remain usable locally without those MP4s.
