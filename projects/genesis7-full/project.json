@@ -9600,8 +9600,8 @@
       "id": "g7-s03-l03-w02",
       "text": "nights.",
       "start": 80.789078,
-      "end": 81.889561,
-      "confidence": "machine_acoustic_estimate",
+      "end": 81.102104,
+      "confidence": "machine_estimate",
       "provenance": {
         "originalLegacy": {
           "word": "nights.",
@@ -9693,6 +9693,34 @@
           "selectedScore": 0.7132310688411989,
           "crossModelVerified": false,
           "status": "independent_recognition_pending"
+        },
+        "fullSongBoundaryRepair": {
+          "patch": "uncertified-pronoun",
+          "evidence": {
+            "policy": "measured-uncertified-authoring-estimate",
+            "strictGate": "failed",
+            "reason": "The authored onset agrees with both CTC source intervals and is retained. The exact independently recognized end81.102104 lies between the two source CTC ends81.095746/81.115761, removing an unsupported long tail.",
+            "sourceArtifact": "output/fullsong-audio/encoded-pass03/passes/0055-58ff3ed9-23ed-4382-a423-c3e2c267923b-838aa0c33cc2c0ecbc8ffd9f4f25398d0e749cb1715cc791c58a1b90a60fb1fd.json",
+            "sourceArtifactSha256": "3b1f48f52cbd8e71df6f3cc7954f0768ba031f2c2d3220a062e2a52b4270a973",
+            "evidenceBundle": "output/fullsong-audio/short-pronoun-interval-evidence.json",
+            "evidenceBundleSha256": "7e1a01b832953ce284dddef3f97519ac337710c4d5796ec089434440ffe80e7b",
+            "selectedMeasuredRecognition": {
+              "id": "w_79fc8af7d22a5848",
+              "text": "nights",
+              "start": 80.522104,
+              "end": 81.102104,
+              "phraseId": "phrase-0004",
+              "confidence": "machine_estimate",
+              "provenance": {
+                "method": "local-openai-whisper",
+                "model": "small.en.pt",
+                "tokenProbability": 0.9977254271507263,
+                "timingVerified": false,
+                "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+              }
+            }
+          },
+          "supported": false
         }
       },
       "aligned": false,
@@ -9701,9 +9729,9 @@
     {
       "id": "g7-s03-l04-w00",
       "text": "I",
-      "start": 80.952702,
-      "end": 80.972733,
-      "confidence": "machine_acoustic_estimate",
+      "start": 81.102104,
+      "end": 81.542104,
+      "confidence": "machine_estimate",
       "provenance": {
         "originalLegacy": {
           "word": "I",
@@ -9795,6 +9823,34 @@
           "selectedScore": 0.9766106594312494,
           "crossModelVerified": false,
           "status": "independent_recognition_pending"
+        },
+        "fullSongBoundaryRepair": {
+          "patch": "uncertified-pronoun",
+          "evidence": {
+            "policy": "measured-uncertified-authoring-estimate",
+            "strictGate": "failed",
+            "reason": "Use the complete measured small.en pronoun interval (raw recognition probability.9034666), preserving the uncertain vowel onset instead of replacing it with a20ms CTC label spike. Original mix and AAC CTC agree on a late token inside this recognized interval; ASR onset versus CTC onset exceeds the strict gate.",
+            "sourceArtifact": "output/fullsong-audio/encoded-pass03/passes/0055-58ff3ed9-23ed-4382-a423-c3e2c267923b-838aa0c33cc2c0ecbc8ffd9f4f25398d0e749cb1715cc791c58a1b90a60fb1fd.json",
+            "sourceArtifactSha256": "3b1f48f52cbd8e71df6f3cc7954f0768ba031f2c2d3220a062e2a52b4270a973",
+            "evidenceBundle": "output/fullsong-audio/short-pronoun-interval-evidence.json",
+            "evidenceBundleSha256": "7e1a01b832953ce284dddef3f97519ac337710c4d5796ec089434440ffe80e7b",
+            "selectedMeasuredRecognition": {
+              "id": "w_04476e093cb27e5c",
+              "text": "I",
+              "start": 81.102104,
+              "end": 81.542104,
+              "phraseId": "phrase-0005",
+              "confidence": "machine_estimate",
+              "provenance": {
+                "method": "local-openai-whisper",
+                "model": "small.en.pt",
+                "tokenProbability": 0.9034666419029236,
+                "timingVerified": false,
+                "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+              }
+            }
+          },
+          "supported": false
         }
       },
       "aligned": false,
@@ -15175,9 +15231,9 @@
     {
       "id": "g7-s05-l04-w00",
       "text": "Shem,",
-      "start": 117.703387,
-      "end": 117.923586,
-      "confidence": "machine_acoustic_estimate",
+      "start": 117.68694,
+      "end": 118.027139,
+      "confidence": "machine_acoustic_verified",
       "provenance": {
         "originalLegacy": {
           "word": "Shem,",
@@ -15269,6 +15325,119 @@
           "selectedScore": 0.26885965288294306,
           "crossModelVerified": false,
           "status": "independent_recognition_pending"
+        },
+        "fullSongBoundaryRepair": {
+          "patch": "07",
+          "evidence": {
+            "policy": "official_ctc_asr",
+            "sourceVideo": "/Volumes/Code/ark-video-studio/output/genesis7-full-pass03.mp4",
+            "sourceVideoSha256": "81c75599208e19f33f6e9bc80a2d1979b79a756f5ac9e1a6e195ae99faecbf32",
+            "report": "output/fullsong-audio/encoded-pass03/audio-review.json",
+            "reportSha256": "4b52a3e2a4a82e3838b96414d14ee4fca538c19ed76398271bab3efebe222773",
+            "measured": {
+              "id": "g7-s05-l04-w00",
+              "text": "Shem,",
+              "currentStart": 117.703387,
+              "currentEnd": 117.923586,
+              "acousticStart": 117.68694,
+              "acousticEnd": 118.027139,
+              "acousticConfidence": 0.403764,
+              "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+              "codecAlignmentSpread": 0,
+              "sourceAcousticEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "Shem,",
+                  "start": 117.706951,
+                  "end": 118.007127,
+                  "score": 0.30686836925210637,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "Shem,",
+                  "start": 117.68694,
+                  "end": 118.027139,
+                  "score": 0.40376447153022715,
+                  "startDelta": null,
+                  "endDelta": null
+                }
+              ],
+              "pairedCheckpointEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "Shem,",
+                  "start": 117.706951,
+                  "end": 118.007127,
+                  "score": 0.30686836925210637,
+                  "startDelta": 0.020011,
+                  "endDelta": 0.020012
+                }
+              ],
+              "corroboration": [
+                {
+                  "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "role": "source",
+                  "text": "Shem,",
+                  "start": 117.521258,
+                  "end": 118.121258,
+                  "score": 0.7468766868114471,
+                  "startDelta": 0.165682,
+                  "endDelta": 0.094119
+                },
+                {
+                  "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+                  "role": "source",
+                  "text": "Shem,",
+                  "start": 117.881258,
+                  "end": 118.181258,
+                  "score": 0.9633040726184845,
+                  "startDelta": 0.194318,
+                  "endDelta": 0.154119
+                }
+              ],
+              "encodedEvidence": {
+                "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                "role": "source",
+                "text": "Shem,",
+                "start": 117.68694,
+                "end": 118.027139,
+                "score": 0.4182928238403667,
+                "startDelta": 0,
+                "endDelta": 0
+              },
+              "lexicalEvidence": {
+                "matchedCheckpointIds": [
+                  "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+                ],
+                "mismatches": [
+                  {
+                    "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+                    "role": "source",
+                    "reason": "Canonical token was omitted or recognized differently"
+                  }
+                ],
+                "rejectedPasses": 0
+              },
+              "route": "official_ctc_asr",
+              "supported": true,
+              "cueDelta": 0.016447,
+              "endDelta": 0.103553,
+              "passed": false,
+              "repair": {
+                "id": "g7-s05-l04-w00",
+                "start": 117.68694,
+                "end": 118.027139,
+                "previousStart": 117.703387,
+                "previousEnd": 117.923586
+              }
+            }
+          }
         }
       },
       "aligned": true,
@@ -15277,9 +15446,9 @@
     {
       "id": "g7-s05-l05-w00",
       "text": "Ham,",
-      "start": 118.424036,
-      "end": 118.564162,
-      "confidence": "machine_acoustic_estimate",
+      "start": 118.367339,
+      "end": 118.627491,
+      "confidence": "machine_acoustic_verified",
       "provenance": {
         "originalLegacy": {
           "word": "Ham,",
@@ -15371,6 +15540,135 @@
           "selectedScore": 0.3376342115462783,
           "crossModelVerified": false,
           "status": "independent_recognition_pending"
+        },
+        "fullSongBoundaryRepair": {
+          "patch": "07",
+          "evidence": {
+            "policy": "official_ctc_asr",
+            "sourceVideo": "/Volumes/Code/ark-video-studio/output/genesis7-full-pass03.mp4",
+            "sourceVideoSha256": "81c75599208e19f33f6e9bc80a2d1979b79a756f5ac9e1a6e195ae99faecbf32",
+            "report": "output/fullsong-audio/encoded-pass03/audio-review.json",
+            "reportSha256": "4b52a3e2a4a82e3838b96414d14ee4fca538c19ed76398271bab3efebe222773",
+            "measured": {
+              "id": "g7-s05-l05-w00",
+              "text": "Ham,",
+              "currentStart": 118.424036,
+              "currentEnd": 118.564162,
+              "acousticStart": 118.367339,
+              "acousticEnd": 118.627491,
+              "acousticConfidence": 0.271923,
+              "selectedCheckpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+              "codecAlignmentSpread": 0,
+              "sourceAcousticEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "Ham,",
+                  "start": 118.367339,
+                  "end": 118.627491,
+                  "score": 0.27192314656213223,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "Ham,",
+                  "start": 118.287292,
+                  "end": 118.627491,
+                  "score": 0.2969280387664786,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "Ham,",
+                  "start": 118.385104,
+                  "end": 118.709207,
+                  "score": 0.13452676083541726,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "Ham,",
+                  "start": 118.304079,
+                  "end": 118.607925,
+                  "score": 0.16431827254845546,
+                  "startDelta": null,
+                  "endDelta": null
+                }
+              ],
+              "pairedCheckpointEvidence": [
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "Ham,",
+                  "start": 118.304079,
+                  "end": 118.607925,
+                  "score": 0.16431827254845546,
+                  "startDelta": 0.06326,
+                  "endDelta": 0.019566
+                }
+              ],
+              "corroboration": [
+                {
+                  "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "role": "source",
+                  "text": "Ham,",
+                  "start": 118.481258,
+                  "end": 118.601258,
+                  "score": 0.7901648283004761,
+                  "startDelta": 0.113919,
+                  "endDelta": 0.026233
+                },
+                {
+                  "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+                  "role": "source",
+                  "text": "Ham",
+                  "start": 118.281258,
+                  "end": 118.621258,
+                  "score": 0.8981762528419495,
+                  "startDelta": 0.086081,
+                  "endDelta": 0.006233
+                }
+              ],
+              "encodedEvidence": {
+                "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                "role": "source",
+                "text": "Ham,",
+                "start": 118.367339,
+                "end": 118.627491,
+                "score": 0.2854321871871255,
+                "startDelta": 0,
+                "endDelta": 0
+              },
+              "lexicalEvidence": {
+                "matchedCheckpointIds": [
+                  "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+                  "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+                ],
+                "mismatches": [],
+                "rejectedPasses": 0
+              },
+              "route": "official_ctc_asr",
+              "supported": true,
+              "cueDelta": 0.056697,
+              "endDelta": 0.063329,
+              "passed": false,
+              "repair": {
+                "id": "g7-s05-l05-w00",
+                "start": 118.367339,
+                "end": 118.627491,
+                "previousStart": 118.424036,
+                "previousEnd": 118.564162
+              },
+              "retry": "canonical-id-original-and-phrase-context"
+            }
+          }
         }
       },
       "aligned": true,
@@ -15991,9 +16289,9 @@
     {
       "id": "g7-s05-l07-w04",
       "text": "him,",
-      "start": 120.626018,
-      "end": 120.70609,
-      "confidence": "machine_acoustic_estimate",
+      "start": 120.428548,
+      "end": 120.56863,
+      "confidence": "machine_acoustic_verified",
       "provenance": {
         "originalLegacy": {
           "word": "him,",
@@ -16085,6 +16383,145 @@
           "selectedScore": 0.8629669980270275,
           "crossModelVerified": false,
           "status": "independent_recognition_pending"
+        },
+        "fullSongBoundaryRepair": {
+          "patch": "07",
+          "evidence": {
+            "policy": "official_ctc_asr",
+            "sourceVideo": "/Volumes/Code/ark-video-studio/output/genesis7-full-pass03.mp4",
+            "sourceVideoSha256": "81c75599208e19f33f6e9bc80a2d1979b79a756f5ac9e1a6e195ae99faecbf32",
+            "report": "output/fullsong-audio/encoded-pass03/audio-review.json",
+            "reportSha256": "4b52a3e2a4a82e3838b96414d14ee4fca538c19ed76398271bab3efebe222773",
+            "measured": {
+              "id": "g7-s05-l07-w04",
+              "text": "him,",
+              "currentStart": 120.626018,
+              "currentEnd": 120.70609,
+              "acousticStart": 120.428548,
+              "acousticEnd": 120.56863,
+              "acousticConfidence": 0.868464,
+              "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+              "codecAlignmentSpread": 0,
+              "sourceAcousticEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "him,",
+                  "start": 120.628665,
+                  "end": 120.728724,
+                  "score": 0.8928057929308827,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "him,",
+                  "start": 120.428548,
+                  "end": 120.56863,
+                  "score": 0.8684644345970569,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "him,",
+                  "start": 120.449081,
+                  "end": 120.530014,
+                  "score": 0.44090870927076375,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "him,",
+                  "start": 120.449081,
+                  "end": 120.550248,
+                  "score": 0.5358013526308953,
+                  "startDelta": null,
+                  "endDelta": null
+                }
+              ],
+              "pairedCheckpointEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "him,",
+                  "start": 120.449081,
+                  "end": 120.530014,
+                  "score": 0.44090870927076375,
+                  "startDelta": 0.020533,
+                  "endDelta": 0.038616
+                }
+              ],
+              "corroboration": [
+                {
+                  "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+                  "role": "source",
+                  "text": "him",
+                  "start": 120.341258,
+                  "end": 120.561258,
+                  "score": 0.9521942734718323,
+                  "startDelta": 0.08729,
+                  "endDelta": 0.007372
+                },
+                {
+                  "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "role": "source",
+                  "text": "him",
+                  "start": 120.401258,
+                  "end": 120.721258,
+                  "score": 0.9776574373245239,
+                  "startDelta": 0.02729,
+                  "endDelta": 0.152628
+                },
+                {
+                  "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+                  "role": "source",
+                  "text": "him",
+                  "start": 120.441258,
+                  "end": 120.721258,
+                  "score": 0.9927680492401123,
+                  "startDelta": 0.01271,
+                  "endDelta": 0.152628
+                }
+              ],
+              "encodedEvidence": {
+                "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                "role": "source",
+                "text": "him,",
+                "start": 120.428548,
+                "end": 120.56863,
+                "score": 0.8509822664459681,
+                "startDelta": 0,
+                "endDelta": 0
+              },
+              "lexicalEvidence": {
+                "matchedCheckpointIds": [
+                  "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+                  "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+                ],
+                "mismatches": [],
+                "rejectedPasses": 0
+              },
+              "route": "official_ctc_asr",
+              "supported": true,
+              "cueDelta": 0.19747,
+              "endDelta": 0.13746,
+              "passed": false,
+              "repair": {
+                "id": "g7-s05-l07-w04",
+                "start": 120.428548,
+                "end": 120.56863,
+                "previousStart": 120.626018,
+                "previousEnd": 120.70609
+              },
+              "retry": "canonical-id-original-and-phrase-context"
+            }
+          }
         }
       },
       "aligned": true,
@@ -26970,9 +27407,9 @@
     {
       "id": "g7-s09-l03-w01",
       "text": "Japheth.",
-      "start": 158.382712,
-      "end": 158.903185,
-      "confidence": "acoustic_retry_required",
+      "start": 158.308222,
+      "end": 159.234438,
+      "confidence": "machine_acoustic_verified",
       "provenance": {
         "originalLegacy": {
           "word": "Japheth.",
@@ -27064,6 +27501,140 @@
           "selectedScore": 0.16257308891993213,
           "crossModelVerified": false,
           "status": "independent_recognition_pending"
+        },
+        "fullSongBoundaryRepair": {
+          "patch": "07",
+          "evidence": {
+            "policy": "official_ctc_asr",
+            "sourceVideo": "/Volumes/Code/ark-video-studio/output/genesis7-full-pass03.mp4",
+            "sourceVideoSha256": "81c75599208e19f33f6e9bc80a2d1979b79a756f5ac9e1a6e195ae99faecbf32",
+            "report": "output/fullsong-audio/encoded-pass03/audio-review.json",
+            "reportSha256": "4b52a3e2a4a82e3838b96414d14ee4fca538c19ed76398271bab3efebe222773",
+            "measured": {
+              "id": "g7-s09-l03-w01",
+              "text": "Japheth.",
+              "currentStart": 158.382712,
+              "currentEnd": 158.903185,
+              "acousticStart": 158.308222,
+              "acousticEnd": 159.234438,
+              "acousticConfidence": 0.390896,
+              "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+              "codecAlignmentSpread": 0,
+              "sourceAcousticEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "Japheth.",
+                  "start": 158.370472,
+                  "end": 158.910916,
+                  "score": 0.13508718949944656,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "Japheth.",
+                  "start": 158.290406,
+                  "end": 158.930932,
+                  "score": 0.15385574003630056,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "Japheth.",
+                  "start": 158.348492,
+                  "end": 159.214303,
+                  "score": 0.23687486920184828,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "Japheth.",
+                  "start": 158.308222,
+                  "end": 159.234438,
+                  "score": 0.3908960529533549,
+                  "startDelta": null,
+                  "endDelta": null
+                }
+              ],
+              "pairedCheckpointEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "Japheth.",
+                  "start": 158.348492,
+                  "end": 159.214303,
+                  "score": 0.23687486920184828,
+                  "startDelta": 0.04027,
+                  "endDelta": 0.020135
+                }
+              ],
+              "corroboration": [
+                {
+                  "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "role": "source",
+                  "text": "Japheth.",
+                  "start": 158.305249,
+                  "end": 158.985249,
+                  "score": 0.8281131237745285,
+                  "startDelta": 0.002973,
+                  "endDelta": 0.249189
+                },
+                {
+                  "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+                  "role": "source",
+                  "text": "Japheth.",
+                  "start": 158.365249,
+                  "end": 159.105249,
+                  "score": 0.969830721616745,
+                  "startDelta": 0.057027,
+                  "endDelta": 0.129189
+                }
+              ],
+              "encodedEvidence": {
+                "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                "role": "source",
+                "text": "Japheth.",
+                "start": 158.308222,
+                "end": 159.234438,
+                "score": 0.34594291726009807,
+                "startDelta": 0,
+                "endDelta": 0
+              },
+              "lexicalEvidence": {
+                "matchedCheckpointIds": [
+                  "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+                ],
+                "mismatches": [
+                  {
+                    "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+                    "role": "source",
+                    "reason": "Canonical token was omitted or recognized differently"
+                  }
+                ],
+                "rejectedPasses": 0
+              },
+              "route": "official_ctc_asr",
+              "supported": true,
+              "cueDelta": 0.07449,
+              "endDelta": 0.331253,
+              "passed": false,
+              "repair": {
+                "id": "g7-s09-l03-w01",
+                "start": 158.308222,
+                "end": 159.234438,
+                "previousStart": 158.382712,
+                "previousEnd": 158.903185
+              },
+              "retry": "canonical-id-original-and-phrase-context"
+            }
+          }
         }
       },
       "aligned": true,
@@ -32376,9 +32947,9 @@
     {
       "id": "g7-s09-l14-w02",
       "text": "female,",
-      "start": 176.842122,
-      "end": 178.103544,
-      "confidence": "acoustic_retry_required",
+      "start": 176.821371,
+      "end": 177.886467,
+      "confidence": "machine_acoustic_verified",
       "provenance": {
         "originalLegacy": {
           "word": "female,",
@@ -32470,6 +33041,135 @@
           "selectedScore": 0.18706412222496585,
           "crossModelVerified": false,
           "status": "independent_recognition_pending"
+        },
+        "fullSongBoundaryRepair": {
+          "patch": "07",
+          "evidence": {
+            "policy": "official_ctc_asr",
+            "sourceVideo": "/Volumes/Code/ark-video-studio/output/genesis7-full-pass03.mp4",
+            "sourceVideoSha256": "81c75599208e19f33f6e9bc80a2d1979b79a756f5ac9e1a6e195ae99faecbf32",
+            "report": "output/fullsong-audio/encoded-pass03/audio-review.json",
+            "reportSha256": "4b52a3e2a4a82e3838b96414d14ee4fca538c19ed76398271bab3efebe222773",
+            "measured": {
+              "id": "g7-s09-l14-w02",
+              "text": "female,",
+              "currentStart": 176.842122,
+              "currentEnd": 178.103544,
+              "acousticStart": 176.821371,
+              "acousticEnd": 177.886467,
+              "acousticConfidence": 0.475708,
+              "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+              "codecAlignmentSpread": 0.020096,
+              "sourceAcousticEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "female,",
+                  "start": 176.840818,
+                  "end": 177.821908,
+                  "score": 0.201624058138292,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "female,",
+                  "start": 176.820796,
+                  "end": 178.142264,
+                  "score": 0.18753329211149064,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "female,",
+                  "start": 176.861563,
+                  "end": 177.946756,
+                  "score": 0.08800056952986408,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "female,",
+                  "start": 176.821371,
+                  "end": 177.886467,
+                  "score": 0.4757080027752796,
+                  "startDelta": null,
+                  "endDelta": null
+                }
+              ],
+              "pairedCheckpointEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "female,",
+                  "start": 176.840818,
+                  "end": 177.821908,
+                  "score": 0.201624058138292,
+                  "startDelta": 0.019447,
+                  "endDelta": 0.064559
+                },
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "female,",
+                  "start": 176.861563,
+                  "end": 177.946756,
+                  "score": 0.08800056952986408,
+                  "startDelta": 0.040192,
+                  "endDelta": 0.060289
+                }
+              ],
+              "corroboration": [
+                {
+                  "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+                  "role": "source",
+                  "text": "female",
+                  "start": 176.817525,
+                  "end": 177.857525,
+                  "score": 0.9994586110115051,
+                  "startDelta": 0.003846,
+                  "endDelta": 0.028942
+                }
+              ],
+              "encodedEvidence": {
+                "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                "role": "source",
+                "text": "female,",
+                "start": 176.821371,
+                "end": 177.906563,
+                "score": 0.5016291384029296,
+                "startDelta": 0,
+                "endDelta": 0.020096
+              },
+              "lexicalEvidence": {
+                "matchedCheckpointIds": [
+                  "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+                  "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+                ],
+                "mismatches": [],
+                "rejectedPasses": 0
+              },
+              "route": "official_ctc_asr",
+              "supported": true,
+              "cueDelta": 0.020751,
+              "endDelta": 0.217077,
+              "passed": false,
+              "repair": {
+                "id": "g7-s09-l14-w02",
+                "start": 176.821371,
+                "end": 177.886467,
+                "previousStart": 176.842122,
+                "previousEnd": 178.103544
+              },
+              "retry": "canonical-id-original-and-phrase-context"
+            }
+          }
         }
       },
       "aligned": true,
@@ -46394,8 +47094,8 @@
     {
       "id": "g7-s16-l03-w02",
       "text": "beast,",
-      "start": 264.941297,
-      "end": 265.24327,
+      "start": 264.9399,
+      "end": 265.162015,
       "confidence": "machine_acoustic_verified",
       "provenance": {
         "originalLegacy": {
@@ -46475,21 +47175,21 @@
           "status": "independent_recognition_pending"
         },
         "fullSongBoundaryRepair": {
-          "patch": "06",
+          "patch": "07",
           "evidence": {
             "policy": "official_ctc_asr",
-            "sourceVideo": "output/genesis7-full-pass01.mp4",
-            "sourceVideoSha256": "a452e65dc44fb216a1d568bcd04f31e4ad54dfd12515a331ca960e90a89b8e7c",
-            "report": "output/fullsong-audio/encoded-pass02/audio-review.json",
-            "reportSha256": "02af30ff2ca174479e6fd307c77d989b13d5a82d2b4d1fa492f83829446970b8",
+            "sourceVideo": "/Volumes/Code/ark-video-studio/output/genesis7-full-pass03.mp4",
+            "sourceVideoSha256": "81c75599208e19f33f6e9bc80a2d1979b79a756f5ac9e1a6e195ae99faecbf32",
+            "report": "output/fullsong-audio/encoded-pass03/audio-review.json",
+            "reportSha256": "4b52a3e2a4a82e3838b96414d14ee4fca538c19ed76398271bab3efebe222773",
             "measured": {
               "id": "g7-s16-l03-w02",
               "text": "beast,",
-              "currentStart": 264.954891,
-              "currentEnd": 265.154978,
-              "acousticStart": 264.941297,
-              "acousticEnd": 265.24327,
-              "acousticConfidence": 0.218786,
+              "currentStart": 264.941297,
+              "currentEnd": 265.24327,
+              "acousticStart": 264.9399,
+              "acousticEnd": 265.162015,
+              "acousticConfidence": 0.281484,
               "selectedCheckpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
               "codecAlignmentSpread": 0,
               "sourceAcousticEvidence": [
@@ -46497,9 +47197,9 @@
                   "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
                   "role": "source",
                   "text": "beast,",
-                  "start": 264.941297,
-                  "end": 265.24327,
-                  "score": 0.21878599940923635,
+                  "start": 264.936294,
+                  "end": 265.156503,
+                  "score": 0.14198405825566754,
                   "startDelta": null,
                   "endDelta": null
                 },
@@ -46507,9 +47207,29 @@
                   "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
                   "role": "source",
                   "text": "beast,",
-                  "start": 264.941297,
-                  "end": 265.24327,
-                  "score": 0.0846333827679153,
+                  "start": 264.916275,
+                  "end": 265.156503,
+                  "score": 0.11409135400180409,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "beast,",
+                  "start": 264.9399,
+                  "end": 265.162015,
+                  "score": 0.2814839113398616,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "beast,",
+                  "start": 264.9399,
+                  "end": 265.323554,
+                  "score": 0.15433296144108785,
                   "startDelta": null,
                   "endDelta": null
                 }
@@ -46519,11 +47239,11 @@
                   "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
                   "role": "source",
                   "text": "beast,",
-                  "start": 264.941297,
-                  "end": 265.24327,
-                  "score": 0.0846333827679153,
-                  "startDelta": 0,
-                  "endDelta": 0
+                  "start": 264.916275,
+                  "end": 265.156503,
+                  "score": 0.11409135400180409,
+                  "startDelta": 0.023625,
+                  "endDelta": 0.005512
                 }
               ],
               "corroboration": [
@@ -46534,40 +47254,57 @@
                   "start": 264.874323,
                   "end": 265.154323,
                   "score": 0.9146062135696411,
-                  "startDelta": 0.066974,
-                  "endDelta": 0.088947
+                  "startDelta": 0.065577,
+                  "endDelta": 0.007692
+                },
+                {
+                  "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+                  "role": "source",
+                  "text": "beast",
+                  "start": 264.874323,
+                  "end": 265.154323,
+                  "score": 0.9843991994857788,
+                  "startDelta": 0.065577,
+                  "endDelta": 0.007692
                 }
               ],
               "encodedEvidence": {
                 "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
                 "role": "source",
                 "text": "beast,",
-                "start": 264.941297,
-                "end": 265.24327,
-                "score": 0.23287775317779916,
+                "start": 264.9399,
+                "end": 265.162015,
+                "score": 0.2662061028174689,
                 "startDelta": 0,
                 "endDelta": 0
               },
               "lexicalEvidence": {
                 "matchedCheckpointIds": [
-                  "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872"
+                  "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
                 ],
-                "mismatches": [],
+                "mismatches": [
+                  {
+                    "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+                    "role": "source",
+                    "reason": "Canonical token was omitted or recognized differently"
+                  }
+                ],
                 "rejectedPasses": 0
               },
               "route": "official_ctc_asr",
               "supported": true,
-              "cueDelta": 0.013594,
-              "endDelta": 0.088292,
+              "cueDelta": 0.001397,
+              "endDelta": 0.081255,
               "passed": false,
               "repair": {
                 "id": "g7-s16-l03-w02",
-                "start": 264.941297,
-                "end": 265.24327,
-                "previousStart": 264.954891,
-                "previousEnd": 265.154978
+                "start": 264.9399,
+                "end": 265.162015,
+                "previousStart": 264.941297,
+                "previousEnd": 265.24327
               },
-              "retry": "narrow-official-phrase"
+              "retry": "canonical-id-original-and-phrase-context"
             }
           }
         }
@@ -47622,8 +48359,8 @@
     {
       "id": "g7-s16-l06-w02",
       "text": "remained,",
-      "start": 269.177438,
-      "end": 269.74425,
+      "start": 269.22035,
+      "end": 269.620729,
       "confidence": "machine_acoustic_verified",
       "provenance": {
         "originalLegacy": {
@@ -47703,31 +48440,31 @@
           "status": "independent_recognition_pending"
         },
         "fullSongBoundaryRepair": {
-          "patch": "06",
+          "patch": "07",
           "evidence": {
             "policy": "official_ctc_asr",
-            "sourceVideo": "output/genesis7-full-pass01.mp4",
-            "sourceVideoSha256": "a452e65dc44fb216a1d568bcd04f31e4ad54dfd12515a331ca960e90a89b8e7c",
-            "report": "output/fullsong-audio/encoded-pass02/audio-review.json",
-            "reportSha256": "02af30ff2ca174479e6fd307c77d989b13d5a82d2b4d1fa492f83829446970b8",
+            "sourceVideo": "/Volumes/Code/ark-video-studio/output/genesis7-full-pass03.mp4",
+            "sourceVideoSha256": "81c75599208e19f33f6e9bc80a2d1979b79a756f5ac9e1a6e195ae99faecbf32",
+            "report": "output/fullsong-audio/encoded-pass03/audio-review.json",
+            "reportSha256": "4b52a3e2a4a82e3838b96414d14ee4fca538c19ed76398271bab3efebe222773",
             "measured": {
               "id": "g7-s16-l06-w02",
               "text": "remained,",
-              "currentStart": 269.256769,
-              "currentEnd": 269.616926,
-              "acousticStart": 269.177438,
-              "acousticEnd": 269.74425,
-              "acousticConfidence": 0.277473,
-              "selectedCheckpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
-              "codecAlignmentSpread": 0,
+              "currentStart": 269.177438,
+              "currentEnd": 269.74425,
+              "acousticStart": 269.22035,
+              "acousticEnd": 269.620729,
+              "acousticConfidence": 0.31193,
+              "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+              "codecAlignmentSpread": 0.011551,
               "sourceAcousticEvidence": [
                 {
                   "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
                   "role": "source",
                   "text": "remained,",
-                  "start": 269.177438,
-                  "end": 269.74425,
-                  "score": 0.27747254750289513,
+                  "start": 269.240369,
+                  "end": 269.620729,
+                  "score": 0.19465840615035937,
                   "startDelta": null,
                   "endDelta": null
                 },
@@ -47735,23 +48472,43 @@
                   "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
                   "role": "source",
                   "text": "remained,",
-                  "start": 269.217924,
-                  "end": 269.643034,
-                  "score": 0.27091111101435156,
+                  "start": 269.22035,
+                  "end": 269.620729,
+                  "score": 0.31193009543937755,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "remained,",
+                  "start": 269.170321,
+                  "end": 269.873302,
+                  "score": 0.07260185786555892,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "remained,",
+                  "start": 269.210492,
+                  "end": 269.63228,
+                  "score": 0.2351369804034465,
                   "startDelta": null,
                   "endDelta": null
                 }
               ],
               "pairedCheckpointEvidence": [
                 {
-                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
                   "role": "source",
                   "text": "remained,",
-                  "start": 269.217924,
-                  "end": 269.643034,
-                  "score": 0.27091111101435156,
-                  "startDelta": 0.040486,
-                  "endDelta": 0.101216
+                  "start": 269.240369,
+                  "end": 269.620729,
+                  "score": 0.19465840615035937,
+                  "startDelta": 0.020019,
+                  "endDelta": 0
                 }
               ],
               "corroboration": [
@@ -47762,40 +48519,52 @@
                   "start": 269.154323,
                   "end": 269.574323,
                   "score": 0.9794734120368958,
-                  "startDelta": 0.023115,
-                  "endDelta": 0.169927
+                  "startDelta": 0.066027,
+                  "endDelta": 0.046406
+                },
+                {
+                  "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+                  "role": "source",
+                  "text": "remained",
+                  "start": 269.214323,
+                  "end": 269.614323,
+                  "score": 0.7197042107582092,
+                  "startDelta": 0.006027,
+                  "endDelta": 0.006406
                 }
               ],
               "encodedEvidence": {
-                "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
                 "role": "source",
                 "text": "remained,",
-                "start": 269.177438,
-                "end": 269.74425,
-                "score": 0.20128029016312507,
-                "startDelta": 0,
-                "endDelta": 0
+                "start": 269.210492,
+                "end": 269.63228,
+                "score": 0.2310040246900889,
+                "startDelta": 0.009858,
+                "endDelta": 0.011551
               },
               "lexicalEvidence": {
                 "matchedCheckpointIds": [
-                  "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872"
+                  "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+                  "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
                 ],
                 "mismatches": [],
                 "rejectedPasses": 0
               },
               "route": "official_ctc_asr",
               "supported": true,
-              "cueDelta": 0.079331,
-              "endDelta": 0.127324,
+              "cueDelta": 0.042912,
+              "endDelta": 0.123521,
               "passed": false,
               "repair": {
                 "id": "g7-s16-l06-w02",
-                "start": 269.177438,
-                "end": 269.74425,
-                "previousStart": 269.256769,
-                "previousEnd": 269.616926
+                "start": 269.22035,
+                "end": 269.620729,
+                "previousStart": 269.177438,
+                "previousEnd": 269.74425
               },
-              "retry": "narrow-official-phrase"
+              "retry": "canonical-id-original-and-phrase-context"
             }
           }
         }
@@ -48580,9 +49349,9 @@
     {
       "id": "g7-s16-l08-w02",
       "text": "ark.",
-      "start": 274.253137,
-      "end": 274.798431,
-      "confidence": "acoustic_retry_required",
+      "start": 274.20507,
+      "end": 275.105923,
+      "confidence": "machine_acoustic_verified",
       "provenance": {
         "originalLegacy": {
           "word": "ark.",
@@ -48698,6 +49467,140 @@
             }
           },
           "acceptanceStatus": "pending_full_audio_evidence"
+        },
+        "fullSongBoundaryRepair": {
+          "patch": "07",
+          "evidence": {
+            "policy": "official_ctc_asr",
+            "sourceVideo": "/Volumes/Code/ark-video-studio/output/genesis7-full-pass03.mp4",
+            "sourceVideoSha256": "81c75599208e19f33f6e9bc80a2d1979b79a756f5ac9e1a6e195ae99faecbf32",
+            "report": "output/fullsong-audio/encoded-pass03/audio-review.json",
+            "reportSha256": "4b52a3e2a4a82e3838b96414d14ee4fca538c19ed76398271bab3efebe222773",
+            "measured": {
+              "id": "g7-s16-l08-w02",
+              "text": "ark.",
+              "currentStart": 274.253137,
+              "currentEnd": 274.798431,
+              "acousticStart": 274.20507,
+              "acousticEnd": 275.105923,
+              "acousticConfidence": 0.330041,
+              "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+              "codecAlignmentSpread": 0,
+              "sourceAcousticEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "ark.",
+                  "start": 274.985809,
+                  "end": 275.065885,
+                  "score": 0.1519590742220329,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "ark.",
+                  "start": 274.20507,
+                  "end": 275.105923,
+                  "score": 0.330040937906371,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "ark.",
+                  "start": 274.239447,
+                  "end": 275.123083,
+                  "score": 0.06535585400856511,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "ark.",
+                  "start": 274.199282,
+                  "end": 275.123083,
+                  "score": 0.036485012479814956,
+                  "startDelta": null,
+                  "endDelta": null
+                }
+              ],
+              "pairedCheckpointEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "ark.",
+                  "start": 274.239447,
+                  "end": 275.123083,
+                  "score": 0.06535585400856511,
+                  "startDelta": 0.034377,
+                  "endDelta": 0.01716
+                }
+              ],
+              "corroboration": [
+                {
+                  "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "role": "source",
+                  "text": "ark",
+                  "start": 274.014323,
+                  "end": 275.134323,
+                  "score": 0.7016913294792175,
+                  "startDelta": 0.190747,
+                  "endDelta": 0.0284
+                },
+                {
+                  "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+                  "role": "source",
+                  "text": "ark",
+                  "start": 274.114323,
+                  "end": 275.174323,
+                  "score": 0.7998996078968048,
+                  "startDelta": 0.090747,
+                  "endDelta": 0.0684
+                }
+              ],
+              "encodedEvidence": {
+                "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                "role": "source",
+                "text": "ark.",
+                "start": 274.20507,
+                "end": 275.105923,
+                "score": 0.35990615437022233,
+                "startDelta": 0,
+                "endDelta": 0
+              },
+              "lexicalEvidence": {
+                "matchedCheckpointIds": [
+                  "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+                ],
+                "mismatches": [
+                  {
+                    "checkpointId": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+                    "role": "source",
+                    "reason": "Canonical token was omitted or recognized differently"
+                  }
+                ],
+                "rejectedPasses": 0
+              },
+              "route": "official_ctc_asr",
+              "supported": true,
+              "cueDelta": 0.048067,
+              "endDelta": 0.307492,
+              "passed": false,
+              "repair": {
+                "id": "g7-s16-l08-w02",
+                "start": 274.20507,
+                "end": 275.105923,
+                "previousStart": 274.253137,
+                "previousEnd": 274.798431
+              },
+              "retry": "canonical-id-original-and-phrase-context"
+            }
+          }
         }
       },
       "aligned": false,
@@ -49489,9 +50392,9 @@
     {
       "id": "g7-s16-l12-w01",
       "text": "old",
-      "start": 280.492993,
-      "end": 280.733099,
-      "confidence": "machine_acoustic_estimate",
+      "start": 280.476168,
+      "end": 280.616585,
+      "confidence": "machine_acoustic_verified",
       "provenance": {
         "originalLegacy": {
           "word": "old",
@@ -49568,6 +50471,135 @@
           "selectedScore": 0.8275929020687561,
           "crossModelVerified": false,
           "status": "independent_recognition_pending"
+        },
+        "fullSongBoundaryRepair": {
+          "patch": "07",
+          "evidence": {
+            "policy": "official_ctc_asr",
+            "sourceVideo": "/Volumes/Code/ark-video-studio/output/genesis7-full-pass03.mp4",
+            "sourceVideoSha256": "81c75599208e19f33f6e9bc80a2d1979b79a756f5ac9e1a6e195ae99faecbf32",
+            "report": "output/fullsong-audio/encoded-pass03/audio-review.json",
+            "reportSha256": "4b52a3e2a4a82e3838b96414d14ee4fca538c19ed76398271bab3efebe222773",
+            "measured": {
+              "id": "g7-s16-l12-w01",
+              "text": "old",
+              "currentStart": 280.492993,
+              "currentEnd": 280.733099,
+              "acousticStart": 280.476168,
+              "acousticEnd": 280.616585,
+              "acousticConfidence": 0.602591,
+              "selectedCheckpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+              "codecAlignmentSpread": 0,
+              "sourceAcousticEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "old",
+                  "start": 280.551078,
+                  "end": 280.751268,
+                  "score": 0.7457930422911292,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "old",
+                  "start": 280.450984,
+                  "end": 280.611135,
+                  "score": 0.5640696786537643,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "old",
+                  "start": 280.476168,
+                  "end": 280.616585,
+                  "score": 0.23238811081123004,
+                  "startDelta": null,
+                  "endDelta": null
+                },
+                {
+                  "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                  "role": "source",
+                  "text": "old",
+                  "start": 280.476168,
+                  "end": 280.616585,
+                  "score": 0.6025912406115115,
+                  "startDelta": null,
+                  "endDelta": null
+                }
+              ],
+              "pairedCheckpointEvidence": [
+                {
+                  "checkpointId": "488fd4f16de84438ffc945334278c1b9fb9b7159a806c1080b16111a958c945d",
+                  "role": "source",
+                  "text": "old",
+                  "start": 280.476168,
+                  "end": 280.616585,
+                  "score": 0.23238811081123004,
+                  "startDelta": 0,
+                  "endDelta": 0
+                }
+              ],
+              "corroboration": [
+                {
+                  "checkpointId": "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "role": "source",
+                  "text": "old",
+                  "start": 280.274323,
+                  "end": 280.714323,
+                  "score": 0.955885648727417,
+                  "startDelta": 0.201845,
+                  "endDelta": 0.097738
+                },
+                {
+                  "checkpointId": "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f",
+                  "role": "source",
+                  "text": "old",
+                  "start": 280.354323,
+                  "end": 280.794323,
+                  "score": 0.9445366859436035,
+                  "startDelta": 0.121845,
+                  "endDelta": 0.177738
+                }
+              ],
+              "encodedEvidence": {
+                "checkpointId": "7a88965716fbd598a595209bf45c1210a18a6935cfb0cf53527fc986c5543ac7",
+                "role": "source",
+                "text": "old",
+                "start": 280.476168,
+                "end": 280.616585,
+                "score": 0.5756673104360588,
+                "startDelta": 0,
+                "endDelta": 0
+              },
+              "lexicalEvidence": {
+                "matchedCheckpointIds": [
+                  "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+                  "f953ad0fd29cacd07d5a9eda5624af0f6bcf2258be67c92b79389873d91e0872",
+                  "d7440d1dc186f76616474e0ff0b3b6b879abc9d1a4926b7adfa41db2d497ab4f"
+                ],
+                "mismatches": [],
+                "rejectedPasses": 0
+              },
+              "route": "official_ctc_asr",
+              "supported": true,
+              "cueDelta": 0.016825,
+              "endDelta": 0.116514,
+              "passed": false,
+              "repair": {
+                "id": "g7-s16-l12-w01",
+                "start": 280.476168,
+                "end": 280.616585,
+                "previousStart": 280.492993,
+                "previousEnd": 280.733099
+              },
+              "retry": "canonical-id-original-and-phrase-context"
+            }
+          }
         }
       },
       "aligned": false,
@@ -58017,7 +59049,7 @@
       "id": "g7-s03-l03",
       "text": "And forty nights.",
       "start": 80.028745,
-      "end": 81.889561,
+      "end": 81.102104,
       "wordIds": [
         "g7-s03-l03-w00",
         "g7-s03-l03-w01",
@@ -58040,7 +59072,7 @@
     {
       "id": "g7-s03-l04",
       "text": "I will sweep away",
-      "start": 80.952702,
+      "start": 81.102104,
       "end": 82.676934,
       "wordIds": [
         "g7-s03-l04-w00",
@@ -58297,8 +59329,8 @@
     {
       "id": "g7-s05-l04",
       "text": "Shem,",
-      "start": 117.703387,
-      "end": 117.923586,
+      "start": 117.68694,
+      "end": 118.027139,
       "wordIds": [
         "g7-s05-l04-w00"
       ],
@@ -58319,8 +59351,8 @@
     {
       "id": "g7-s05-l05",
       "text": "Ham,",
-      "start": 118.424036,
-      "end": 118.564162,
+      "start": 118.367339,
+      "end": 118.627491,
       "wordIds": [
         "g7-s05-l05-w00"
       ],
@@ -58365,7 +59397,7 @@
       "id": "g7-s05-l07",
       "text": "His wife entered with him,",
       "start": 119.585081,
-      "end": 120.70609,
+      "end": 120.56863,
       "wordIds": [
         "g7-s05-l07-w00",
         "g7-s05-l07-w01",
@@ -59017,7 +60049,7 @@
       "id": "g7-s09-l03",
       "text": "And Japheth.",
       "start": 158.163685,
-      "end": 158.903185,
+      "end": 159.234438,
       "wordIds": [
         "g7-s09-l03-w00",
         "g7-s09-l03-w01"
@@ -59300,7 +60332,7 @@
       "id": "g7-s09-l14",
       "text": "Male and female,",
       "start": 176.001805,
-      "end": 178.103544,
+      "end": 177.886467,
       "wordIds": [
         "g7-s09-l14-w00",
         "g7-s09-l14-w01",
@@ -60184,7 +61216,7 @@
       "id": "g7-s16-l03",
       "text": "Man and beast,",
       "start": 264.314611,
-      "end": 265.24327,
+      "end": 265.162015,
       "wordIds": [
         "g7-s16-l03-w00",
         "g7-s16-l03-w01",
@@ -60260,7 +61292,7 @@
       "id": "g7-s16-l06",
       "text": "Only Noah remained,",
       "start": 268.616489,
-      "end": 269.74425,
+      "end": 269.620729,
       "wordIds": [
         "g7-s16-l06-w00",
         "g7-s16-l06-w01",
@@ -60311,7 +61343,7 @@
       "id": "g7-s16-l08",
       "text": "Inside the ark.",
       "start": 273.263529,
-      "end": 274.798431,
+      "end": 275.105923,
       "wordIds": [
         "g7-s16-l08-w00",
         "g7-s16-l08-w01",
@@ -73135,7 +74167,7 @@
         "marker": "",
         "mode": "horizon",
         "title": "PREVAILED",
-        "titleSize": 250,
+        "titleSize": 190,
         "titleToHorizon": true,
         "ark": true,
         "horizonTravel": true,
