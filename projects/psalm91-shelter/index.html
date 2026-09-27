@@ -96,20 +96,28 @@ window.buildPsalm91Opening=function({tl,stage,data}){
  tl.to(lyric,{x:-1950,opacity:0,duration:.48,ease:'power3.in'},h(17.67));
  tl.to(passage,{scale:3.8,x:-1480,y:-380,opacity:0,duration:1.1,ease:'power3.in'},h(18.82));
  const photo=group();tl.set(photo,{opacity:1},h(19.5));
- const aperture=E('div','op-world',photo,{opacity:'1'});aperture.style.clipPath="path('M 1170 276 A 185 185 0 1 1 1390 276 L 1485 950 L 1075 950 Z')";
+ // One photograph persists throughout. Only the keyhole boundary expands;
+ // transforming the photo then dissolving to another copy caused a visible reset.
+ const ns='http://www.w3.org/2000/svg';
+ const maskSvg=document.createElementNS(ns,'svg');maskSvg.setAttribute('width','0');maskSvg.setAttribute('height','0');maskSvg.style.position='absolute';photo.appendChild(maskSvg);
+ const defs=document.createElementNS(ns,'defs'),clip=document.createElementNS(ns,'clipPath'),hole=document.createElementNS(ns,'path');
+ maskSvg.appendChild(defs);defs.appendChild(clip);clip.appendChild(hole);clip.id='op-keyhole-clip';clip.setAttribute('clipPathUnits','userSpaceOnUse');
+ hole.setAttribute('d','M 1170 276 A 185 185 0 1 1 1390 276 L 1485 950 L 1075 950 Z');
+ const maskPose=s=>`translate(1280 420) scale(${s}) translate(-1280 -420)`;
+ const aperture=E('div','op-world',photo,{opacity:'1',clipPath:'url(#op-keyhole-clip)'});
  const image=E('img','op-photo',aperture);image.src='assets/opening-refuge.png';image.alt='Traveler under the shelter of stone';
- tl.fromTo(aperture,{scale:.84,x:-190},{scale:1,x:0,duration:.67,ease:'power3.out'},h(19.5));
+ tl.fromTo(hole,{attr:{transform:maskPose(.84)}},{attr:{transform:maskPose(1)},duration:.67,ease:'power3.out',immediateRender:false},h(19.5));
  const tag=word(photo,'PSALM 91',149,325,179),small=word(photo,'LXX 90',153,535,77,'op-serif',C);show(tag,h(20.17),{x:-80},.2);show(small,h(20.84),{x:-40},.18);
  const line=rect(photo,150,680,630,14);tl.fromTo(line,{scaleX:0},{scaleX:1,duration:.3,ease:'power3.out'},h(21.51));
- // Broad dissolve and continuous depth replace the preview's hard cut to a second pan.
- tl.to(aperture,{scale:4.2,x:-860,y:-660,duration:2,ease:'power3.inOut'},h(22.19));
+ // The aperture opens across the anchored photo, never replacing its crop.
+ tl.to(hole,{attr:{transform:maskPose(14)},duration:2,ease:'power3.inOut'},h(22.19));
  tl.to([tag,small,line],{x:-140,opacity:0,duration:.55,ease:'power2.in'},h(22.84));
- const full=E('div','op-world',photo);const fullImg=E('img','op-photo',full);fullImg.src=image.src;
- tl.to(full,{opacity:1,duration:.52,ease:'sine.inOut'},h(24.19));tl.set(aperture,{opacity:0},h(24.19)+.52);
+ const full=E('div','op-world',photo);
+ tl.to(full,{opacity:1,duration:.52,ease:'sine.inOut'},h(24.19));
  const closing=word(full,'91',89,456,433,'op-heavy',C),label=word(full,'PSALM',116,317,95);show(closing,h(24.87),{x:-220},.25);show(label,h(24.52),{y:-40},.16);
  // Three measured impacts pull a horizon toward the verse, then give its words a clean stage.
  for(let i=0;i<3;i++){const dash=rect(full,700+i*240,895-i*95,184,14,i===1?P:C);tl.fromTo(dash,{opacity:0,scaleX:0},{opacity:1,scaleX:1,duration:.13,ease:'power4.out'},[h(26.21),h(27.07),h(27.55)][i]);tl.to(dash,{x:-180,opacity:0,duration:.6},h(28.9)-.6)}
- tl.to(fullImg,{scale:1.025,x:-16,duration:4.5,ease:'none'},h(24.19));
+ tl.to(image,{scale:1.025,x:-16,duration:4.5,ease:'none'},h(24.19));
  tl.to(photo,{opacity:0,duration:.2,ease:'power2.inOut'},end-.22);tl.set(stage,{opacity:0},end-.015);
 };
 </script><script>/* Psalm 91. All lyric onsets come from canonical P91_DATA words.
@@ -743,10 +751,8 @@ window.buildPsalm91Narrative=function({tl,stage,data}){
   const chamber=make('div','p91-chamber',space,{position:'absolute',inset:'0',perspective:'1400px',transformStyle:'preserve-3d'});
   for(let i=0;i<11;i++){
    const g=make('div','p91-form',chamber,{left:'220px',top:'90px',width:'1480px',height:'900px',border:`${i%3===0?45:21}px solid ${i%2?D:C}`,opacity:String(.30+(i%3)*.12)});
-   tl.set(g,{z:-i*390,rotationZ:i%2?2:-2},start);tl.to(g,{z:2350-i*390,rotationZ:0,duration:6.5,ease:'sine.inOut'},start+1.0);tl.to(g,{opacity:0,duration:.6},230.6);
+   tl.set(g,{z:-i*390,rotationZ:i%2?2:-2},start);tl.to(g,{z:2350-i*390,rotationZ:0,duration:6.5,ease:'sine.inOut'},start+1.0);tl.to(g,{opacity:0,duration:.6},Number(data.assets['p91-dust-wing']?.start??232)-.05);
   }
-  const chapter=title(space,'PSALM 91',550,375,240,'condensed');
-  tl.set(chapter,{opacity:0},0);move(chapter,{opacity:0,z:-230},{opacity:1,z:0},start+2.0,.9,'power2.out');tl.to(chapter,{opacity:0,scale:1.12,duration:.6},230.7);
   // Reserved independently-rendered five-second transformation, no lyric overlay.
   const art=data.assets['p91-dust-wing'];
   if(art){

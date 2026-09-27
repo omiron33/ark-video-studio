@@ -629,10 +629,8 @@ window.buildPsalm91Narrative=function({tl,stage,data}){
   const chamber=make('div','p91-chamber',space,{position:'absolute',inset:'0',perspective:'1400px',transformStyle:'preserve-3d'});
   for(let i=0;i<11;i++){
    const g=make('div','p91-form',chamber,{left:'220px',top:'90px',width:'1480px',height:'900px',border:`${i%3===0?45:21}px solid ${i%2?D:C}`,opacity:String(.30+(i%3)*.12)});
-   tl.set(g,{z:-i*390,rotationZ:i%2?2:-2},start);tl.to(g,{z:2350-i*390,rotationZ:0,duration:6.5,ease:'sine.inOut'},start+1.0);tl.to(g,{opacity:0,duration:.6},230.6);
+   tl.set(g,{z:-i*390,rotationZ:i%2?2:-2},start);tl.to(g,{z:2350-i*390,rotationZ:0,duration:6.5,ease:'sine.inOut'},start+1.0);tl.to(g,{opacity:0,duration:.6},Number(data.assets['p91-dust-wing']?.start??232)-.05);
   }
-  const chapter=title(space,'PSALM 91',550,375,240,'condensed');
-  tl.set(chapter,{opacity:0},0);move(chapter,{opacity:0,z:-230},{opacity:1,z:0},start+2.0,.9,'power2.out');tl.to(chapter,{opacity:0,scale:1.12,duration:.6},230.7);
   // Reserved independently-rendered five-second transformation, no lyric overlay.
   const art=data.assets['p91-dust-wing'];
   if(art){

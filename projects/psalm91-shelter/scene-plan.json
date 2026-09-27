@@ -1,7 +1,7 @@
 {
   "version": 1,
   "project": "psalm91-shelter",
-  "status": "implemented-awaiting-v3-encoded-review",
+  "status": "implemented-awaiting-v4-encoded-review",
   "chosenTheme": "Shelter palette; approved mockup2 Word Journey plus3 Photo Reveal; sparse keyholes",
   "palette": {
     "copper": "#c77746",
@@ -176,7 +176,20 @@
   "opening": {
     "owner": "root opening.js",
     "keyholes": 1,
-    "status": "root-authoring-and-review"
+    "status": "root-authoring-and-review",
+    "continuityRepair": {
+      "treatment": "One anchored photo remains inside the opening aperture; its SVG clipping path expands independently. Duplicate full-frame photo and the crossfade/position reset are removed.",
+      "status": "focused-runtime-and-sampled-visual-review-passed-awaiting-v4-encoded-review",
+      "preserved": "Opening cue times and the later title/dashes remain unchanged. Prior opening review describes the earlier revision only.",
+      "evidence": {
+        "check": "output/psalm91-production/v4-continuity-title-focused-check.json",
+        "contactSheets": [
+          "output/psalm91-production/v4-continuity-title-shots/contact-sheet-1.jpg",
+          "output/psalm91-production/v4-continuity-title-shots/contact-sheet-2.jpg"
+        ],
+        "encodedReview": "pending-v4"
+      }
+    }
   },
   "narrativeKeyholes": [
     "p91-l043"
@@ -1931,8 +1944,8 @@
         232,
         237.1667
       ],
-      "action": "Brief camera corridor gives way to the generated dust-wing shot, then a full-frame stone shelter forms against the storm. The wordless refuge leads into the protective divine response without replacing or adding any lyric.",
-      "status": "replacement-runtime-reviewed-awaiting-v3-encoded-review",
+      "action": "An untitled moving copper corridor remains visible into the generated dust-wing reveal, then a full-frame stone shelter forms against the storm. The wordless refuge leads into the protective divine response without replacing or adding any lyric.",
+      "status": "chapter-overlay-removal-runtime-reviewed-awaiting-v4-encoded-review",
       "additionalVideo": {
         "id": "p91-storm-refuge",
         "start": 237.25,
@@ -1958,6 +1971,31 @@
           "adaptation": "A new stone shelter forms against a storm during the wordless 9.416667-second interval, with no repeated lion footage, ark imagery, or extra overlays. Preserve the completed last frame into the next measured lyric onset.",
           "cautions": "Do not copy a reference sequence or add a zoom merely to fill time. A liked standalone source does not approve this film or its synchronization.",
           "status": "replacement-runtime-reviewed-awaiting-v3-encoded-review"
+        }
+      },
+      "chapterOverlay": {
+        "enabled": false,
+        "removedTitleVisibleInterval": [
+          225.67,
+          231.3
+        ],
+        "corridorFadeInterval": [
+          231.95,
+          232.55
+        ],
+        "changedTimelineInterval": [
+          225.67,
+          232.55
+        ],
+        "preserved": "Opening, ending, lyric cues, audio, wing and stone-refuge start/duration are unchanged.",
+        "review": "Focused 16-point combined integration check passes. Seven mid-song snapshots show no chapter title and retain visible copper frames into the wing reveal without an empty black beat. Final encoded review remains pending.",
+        "evidence": {
+          "check": "output/psalm91-production/v4-continuity-title-focused-check.json",
+          "contactSheets": [
+            "output/psalm91-production/v4-continuity-title-shots/contact-sheet-1.jpg",
+            "output/psalm91-production/v4-continuity-title-shots/contact-sheet-2.jpg"
+          ],
+          "encodedReview": "pending-v4"
         }
       }
     },
