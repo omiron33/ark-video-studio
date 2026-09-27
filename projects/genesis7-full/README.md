@@ -29,3 +29,5 @@ The engine decodes the actual encoded film for frame/format checks, native word-
 The audio reviewer compares the encoded audio with the source and analyzes literal sung-word timing using local recognition/alignment models. Measured evidence, unresolved words and repairs are recorded without promoting raw acoustic scores into guarantees. A render is not an acceptance report. Current output-specific reports live under `output/` and must match the exact delivered file.
 
 See [full-song review](../../docs/FULL_SONG_REVIEW.md), [audio review](../../docs/AUDIO_REVIEW.md), and [temporal review](../../docs/TEMPORAL_REVIEW.md) for repeatable commands and gate definitions.
+
+The [current delivery note](../../research/fullsong-delivery.md) records the exact reviewed movie, all-word visibility, measured export times and the unresolved automatic sung-word timing gate.

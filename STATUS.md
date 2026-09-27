@@ -1,3 +1,13 @@
+# Current lyric-studio delivery
+
+The full dark 6:07 cut is `projects/genesis7-full/project.json`; the reviewed movie is `output/genesis7-full-reviewed.mp4`. See [the complete delivery note](research/fullsong-delivery.md) for the download locations, exact file hash, visual/visibility evidence and remaining automatic timing uncertainty. The strict whole-film audio gate is not marked passed.
+
+Seven fonts, lyrics-led word actions, graphics-led scenes and GPT Image backdrops replace the former still-heavy treatment. The final section edit reused 64 of 66 scenes and exported in 10.04 seconds.
+
+The original v3 notes below are historical and its movie is preserved.
+
+---
+
 # Status
 
 ## v3
