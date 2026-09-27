@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "status": "awaiting_user_choice",
+  "source": {
+    "shareUrl": "https://suno.com/s/ErRXnhOwTS3IZm7W",
+    "canonicalUrl": "https://suno.com/song/5d78a5c1-4341-4867-b25e-c3698b1ffe54",
+    "title": "Psalm 91 (LXX 90) A Thousand Shall Fall",
+    "durationMetadataSeconds": 327.6,
+    "authoredStyle": "Southern rock, 92 BPM swampy minor-blues stomp; dry 70s hard rock; gritty male and gang call-and-response",
+    "tempoEvidence": "Suno authored prompt, not measured or listening-verified"
+  },
+  "audioSha256": "b444350b68359bc06f17a90ace1b6d7bba9255a0358b308acec9cdccf3103420",
+  "audioStatus": "stored_in_app_hash_verified",
+  "sheet": "theme-options.png",
+  "provider": "built-in GPT Image",
+  "prompt": "image-prompt.txt",
+  "options": [
+    {
+      "number": 1,
+      "name": "Iron Refuge",
+      "palette": [
+        "coal",
+        "chalk",
+        "oxidized copper"
+      ],
+      "principle": "Lyrics become a protective structure",
+      "proposedAdaptation": "SHELTER establishes a stable reading plane while thick surrounding masses assemble and external danger passes. World moves around the completed phrase, keeping words clear."
+    },
+    {
+      "number": 2,
+      "name": "Midnight Covenant",
+      "palette": [
+        "midnight ultramarine",
+        "platinum",
+        "porcelain"
+      ],
+      "principle": "Maintain a readable anchor inside rising danger",
+      "proposedAdaptation": "THOUSAND remains stable while peripheral forms fall away, revealing a guarded channel. Angel imagery supports the phrase without occluding it."
+    },
+    {
+      "number": 3,
+      "name": "Dust & Thunder",
+      "palette": [
+        "ochre",
+        "ink",
+        "ivory",
+        "petrol blue"
+      ],
+      "principle": "Trust becomes the path through physical space",
+      "proposedAdaptation": "Camera paths connect distinct readable word stations along a rocky road; lyric holds lead and journeys occur in musical openings."
+    }
+  ],
+  "selected": null,
+  "userSelection": null,
+  "productionAuthorized": false,
+  "intakeDirectory": "/Volumes/Code/ark-video-studio/output/psalm91-theme-intake",
+  "appWorkflowUrl": "https://omipc.taild60b4e.ts.net/studio#workflows",
+  "appWorkflowId": "psalm-91-lxx-90-shelter",
+  "intakeReceipt": "intake.json",
+  "storageEvidence": "remote-verification.json"
+}

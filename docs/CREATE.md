@@ -1,5 +1,13 @@
 # Create a lyric video from a song and a style brief
 
+## Choose the theme before running production
+
+The agent entry point is [ark-song-video](../skills/ark-song-video/SKILL.md). For every new video, check the OmiPC app for the song first (download/store there only if needed), inspect actual reference-library contact sheets using [MOTION_REFERENCES.md](MOTION_REFERENCES.md), then generate **three GPT Image theme mockup images as one numbered contact sheet**. Show it and wait for Shane's explicit choice. These are still-image concepts, not HTML builds, animated prototypes or rendered clips. Record the pending/chosen state and selected theme with the concept artifacts.
+
+Before that choice, only intake, analysis, reference inspection and mockup images may proceed. Do not run `create`, author animation, build a prototype, generate the production asset set or render a preview/movie. General autonomous permission cannot bypass this requested checkpoint; only an explicit later waiver can. Existing approved projects retain their choice for routine edits. This is an agent workflow requirement; the current CLI does not implement a theme-selection UI or enforce the checkpoint itself.
+
+## Run the approved direction
+
 `create` runs local alignment, portable project intake, measured musical-event detection, scene direction, rendering, decoded-audio and vocal-sync review, visual review, and the final quality gate. It saves evidence at every stage and allows at most three rendering/review passes per invocation by default. A failed gate produces a report and a draft, never a misleading `finished` status.
 
 ```sh
@@ -63,6 +71,8 @@ The evidence records each mode and its rationale in `plan.json` and `direction.p
 Missing/repeated required artwork and invalid pacing fail the creation preflight before spending time encoding. Resolve the named requests and resume. The gauntlet checks the same policy again after rendering and repairs; independent finalization cannot bypass it. Older projects without the policy are not automatically replanned. The accepted Genesis 7 full dark lyric film remains a frozen delivery.
 
 ## Outputs and retry
+
+After reviewing a finished output or preview clip, import it into Photos and add it to the OmiPC app as a review candidate. Verify both destinations and provide the review/download link; avoid duplicate imports and do not confuse local Photos import with confirmed iPhone sync. See the [workflow skill](../skills/ark-song-video/SKILL.md) for delivery boundaries.
 
 `output/my-song/run.json` is the authoritative orchestration report. `project/project.json` is the portable editable source; its assets include the original song, supplied images, fonts and font licenses. `plan.json` records direction evidence. `film.mp4.render.json` records encoding/cache timing and source revision. `review/attempt-NN/` contains measured audio, visual evidence and the gauntlet result.
 

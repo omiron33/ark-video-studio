@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "status": "awaiting_user_theme_selection",
+  "productionAuthorized": false,
+  "createdAt": "2026-09-27",
+  "source": {
+    "shareUrl": "https://suno.com/s/ErRXnhOwTS3IZm7W",
+    "canonicalUrl": "https://suno.com/song/5d78a5c1-4341-4867-b25e-c3698b1ffe54",
+    "title": "Psalm 91 (LXX 90) A Thousand Shall Fall",
+    "durationMetadataSeconds": 327.6,
+    "authoredStyle": "Southern rock, 92 BPM swampy minor-blues stomp; dry 70s hard rock; gritty male and gang call-and-response",
+    "tempoEvidence": "Suno authored prompt, not measured or listening-verified",
+    "audioSha256": "b444350b68359bc06f17a90ace1b6d7bba9255a0358b308acec9cdccf3103420",
+    "measuredDurationSeconds": 327.6,
+    "measuredEvents": {
+      "path": "/Volumes/Code/ark-video-studio/output/psalm91-theme-intake/measured-audio-events.json",
+      "count": 940,
+      "method": "20ms RMS and 120Hz low-band positive log-energy attacks; not word timing or a beat-phase grid"
+    }
+  },
+  "mockup": {
+    "kind": "static GPT Image contact sheet, not an animation or encoded result",
+    "provider": "built-in GPT Image",
+    "file": "theme-options.png",
+    "prompt": "image-prompt.txt",
+    "review": "Root inspected generated sheet. Three numbered options, exact lyric phrases legible, distinct palettes and type treatments. These are direction mockups; physical large typography is a visual metaphor to author as dynamic layered word graphics after choice, not permission to make static pans.",
+    "userApproval": null
+  },
+  "choices": [
+    {
+      "number": 1,
+      "name": "Iron Refuge",
+      "palette": [
+        "coal",
+        "chalk",
+        "oxidized copper"
+      ],
+      "principle": "Lyrics become a protective structure",
+      "proposedAdaptation": "SHELTER establishes a stable reading plane while thick surrounding masses assemble and external danger passes. World moves around the completed phrase, keeping words clear."
+    },
+    {
+      "number": 2,
+      "name": "Midnight Covenant",
+      "palette": [
+        "midnight ultramarine",
+        "platinum",
+        "porcelain"
+      ],
+      "principle": "Maintain a readable anchor inside rising danger",
+      "proposedAdaptation": "THOUSAND remains stable while peripheral forms fall away, revealing a guarded channel. Angel imagery supports the phrase without occluding it."
+    },
+    {
+      "number": 3,
+      "name": "Dust & Thunder",
+      "palette": [
+        "ochre",
+        "ink",
+        "ivory",
+        "petrol blue"
+      ],
+      "principle": "Trust becomes the path through physical space",
+      "proposedAdaptation": "Camera paths connect distinct readable word stations along a rocky road; lyric holds lead and journeys occur in musical openings."
+    }
+  ],
+  "direction": {
+    "inspiration": {
+      "status": "proposed_theme_only",
+      "query": "protection shelter small light orders chaos surrounding field danger darkness trust refuge",
+      "inspected": [
+        {
+          "id": "external-light-orders-field",
+          "source": "https://x.com/johnknopf/status/2103698854399099057",
+          "start": 240,
+          "end": 261.033333,
+          "contactSheet": "references/motion/images/external-light-orders-field/sheet.jpg",
+          "observedStrength": "Stable center with progressively organized surrounding marks",
+          "caution": "Do not copy radial warp field or introduce slow empty opening; samples do not establish audio sync.",
+          "preferenceScope": "User liked source video; individual excerpt unapproved",
+          "adaptation": "Protect one large lyric reading plane as threats move in the periphery; avoid source radial design."
+        },
+        {
+          "id": "external-particles-become-identity",
+          "source": "https://x.com/johnknopf/status/2103698854399099057",
+          "start": 202,
+          "end": 210.033333,
+          "contactSheet": "references/motion/images/external-particles-become-identity/sheet.jpg",
+          "observedStrength": "Small marks consolidate into a coherent focal form",
+          "caution": "Do not copy two-lobed shape or repeatedly assemble particles; samples do not establish smooth trajectories.",
+          "preferenceScope": "User liked source video; individual excerpt unapproved",
+          "adaptation": "Potential one-time convergence of physical protective panels into shelter around a word, not a copied particle form."
+        },
+        {
+          "id": "internal-foreground-occlusion",
+          "source": "Genesis 7 - music video v3.mp4",
+          "start": 116.1,
+          "end": 122.787,
+          "contactSheet": "references/motion/images/internal-foreground-occlusion/sheet.jpg",
+          "observedStrength": "Silhouettes and depth establish atmosphere",
+          "caution": "People visibly hide required lyrics; a cautionary example rather than desired layout.",
+          "preferenceScope": "Unknown for excerpt",
+          "adaptation": "Keep travelers, wings, lion and snake outside essential lyric bounds; all three mockups reserve clear text reading planes."
+        }
+      ]
+    }
+  },
+  "nextAction": "Wait for explicit user number or clearly stated hybrid; no production project/composition build, animation or video render until then."
+}

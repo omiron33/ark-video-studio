@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "title": "Psalm 91 (LXX 90) A Thousand Shall Fall",
+  "workflowId": "psalm-91-lxx-90-shelter",
+  "sunoId": "5d78a5c1-4341-4867-b25e-c3698b1ffe54",
+  "suppliedUrl": "https://suno.com/s/ErRXnhOwTS3IZm7W",
+  "canonicalUrl": "https://suno.com/song/5d78a5c1-4341-4867-b25e-c3698b1ffe54",
+  "downloadMethod": "Normal signed-in Suno More options > Download > Unlock & Download, existing Pro allowance; no additional purchase",
+  "sourceDownload": "/Users/shanefisher/Downloads/Psalm 91 (LXX 90) A Thousand Shall Fall.m4a",
+  "sourceAudio": "source.m4a",
+  "sourceSha256": "b444350b68359bc06f17a90ace1b6d7bba9255a0358b308acec9cdccf3103420",
+  "bytes": 5113226,
+  "durationSeconds": 327.6,
+  "codec": "opus",
+  "sampleRate": 48000,
+  "channels": 2,
+  "lyricSha256": "2cfaac59bf7e3ee7d664d8b6b8064c5a2f2ea5f9f62b3be670dba0e13ad5e24c",
+  "appAudioRelativePath": "media/suno/workflows/psalm-91-lxx-90-shelter/5d78a5c1-4341-4867-b25e-c3698b1ffe54.m4a",
+  "appWorkflowUrl": "https://omipc.taild60b4e.ts.net/studio#workflows",
+  "verification": {
+    "fullAudioDecode": "passed",
+    "metadataDurationMatches": true,
+    "listeningReview": "not performed",
+    "syncReview": "not performed"
+  },
+  "limitations": [
+    "App workflow records links and source archive; no Psalms workflow audio player currently exists.",
+    "Initial unauthenticated encoded media was unplayable and isolated, not used as source."
+  ],
+  "createdAt": "2026-09-27T08:35:55.786577+00:00"
+}
