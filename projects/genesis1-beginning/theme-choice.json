@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "status": "awaiting_user_choice",
+  "songTitle": "Genesis 1 \u2014 The Beginning",
+  "sunoId": "b9b82c2c-7c8e-4ef4-9338-942de876644a",
+  "sourceUrl": "https://suno.com/song/b9b82c2c-7c8e-4ef4-9338-942de876644a",
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2",
+  "sheet": "concepts/genesis1-theme-mockups-v1.png",
+  "sheetSha256": "69a1a6848e130d924a7d42473fa62d4b3164cdb418606effa7d0048a739ea5b4",
+  "prompt": "concepts/generation-prompt.txt",
+  "generationMethod": "built-in GPT Image",
+  "options": [
+    {
+      "number": 1,
+      "name": "First Light",
+      "description": "Hard contrast, commanding condensed type and a light division; code ophanim integrated with authored orbital geometry."
+    },
+    {
+      "number": 2,
+      "name": "Living Cosmos",
+      "description": "Spatial reading stations, mixed type and sweeping depth; restrained code seraphim and star material."
+    },
+    {
+      "number": 3,
+      "name": "Breath & Earth",
+      "description": "Earth contours become human form beneath broad lyric type; complex generated organic material with thick coded foregrounds."
+    }
+  ],
+  "references": "concepts/reference-notes.json",
+  "starterFrameManifest": "references/starter-frames/reference-inputs.json",
+  "approvalScope": "The two supplied code-angel starter images are approved static references only. No theme selection, generated motion or scene placement approval yet.",
+  "productionStarted": false,
+  "newCapabilityToValidate": "Organic code-character/line-art generated motion preserving clear glyph gaps and anatomy while compositing seamlessly behind custom lyrics and foreground graphics.",
+  "createdAt": "2026-09-27T10:58:51.585948+00:00"
+}

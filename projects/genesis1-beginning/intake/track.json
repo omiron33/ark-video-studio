@@ -1,0 +1,208 @@
+{
+  "id": "genesis-1-link-1c54400a-2e33-4a48-86fb-8d62761f7cb7-2",
+  "chapter": 1,
+  "provider": "Suno",
+  "model": "Suno v6",
+  "batchSelection": "second_of_two",
+  "importedAt": "2026-09-27T08:46:07.062Z",
+  "durationSeconds": 304.75,
+  "audioUrl": "/api/admin/chapters/1/suno/genesis-1-link-1c54400a-2e33-4a48-86fb-8d62761f7cb7-2/audio",
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2",
+  "stylePromptSnapshot": "Cosmic industrial alternative rock, huge and alive: drop-tuned guitars, muscular bass, hard live drums, dark synth pulses. One very low, smoky contralto female narrator: deep bluesy chest resonance, weathered rasp, bent notes, fearless melodic belts; clear words, never whispered or airy. Keep the band modern, with only slight blues color in electric-guitar bends and bass groove, never a shuffle. Begin with tense sub-bass and heartbeat kick. Divine commands strike with explosive force. Each creation climbs in pitch, rhythm and volume to a violent crescendo; cut to a split-second vacuum on the command, detonate as it appears, then decelerate into a heavy half-time groove. Rebuild with fresh energy. Give the narrator soaring, wide sustained notes at the peaks while retaining her dark low timbre. Keep cosmic wonder. Make humankind the broadest, triumphant full-band climax. Finish with a huge resolved chord. Sing each line once in order, no repeated section around humankind or extra words.",
+  "excludePromptSnapshot": "opera, operatic vocals, symphonic metal, orchestra, strings, choir, stage musical, soundtrack underscore, trailer music, solemn hymn, worship ballad, dirge, devotional whisper, breathy airy soprano, falsetto, male lead, death-metal growling, harsh screaming, sunny pop, dance pop, acoustic folk, piano ballad, recitative, spoken narration, wordless vocals, full blues shuffle, barroom blues",
+  "settingsSnapshot": {
+    "model": "v6",
+    "mode": "Custom",
+    "advanced": true,
+    "vocalGender": "Female",
+    "maxMode": true,
+    "duration": "Auto",
+    "weirdness": 50,
+    "styleInfluence": 50,
+    "variety": "Normal",
+    "personalize": false
+  },
+  "titleSnapshot": "Genesis 1 \u2014 The Beginning",
+  "sunoSongUrl": "https://suno.com/song/b9b82c2c-7c8e-4ef4-9338-942de876644a",
+  "lyricsSha256": "d9a699733416732b13fcbeecf0d20627577e18929848b054558d098b1e11cbd9",
+  "canonicalLyricsSha256": "129bb1206438540d93c2020103b30192cd890b541ce6e87b11f1b9cc2b4460bd",
+  "lyricsFormat": "arranged_modern_lxx_v1",
+  "lyricFieldStatus": "exact_submitted",
+  "lyricsVariant": null,
+  "lyricSourceSnapshot": {
+    "id": "modern-lxx-v1",
+    "label": "Modern Septuagint song rendering",
+    "sourceArchiveSha256": "60d5ce2f2ba2c873d2e58c44681e08b529890641e835be0c22fbae0050276759",
+    "adaptationSha256": "ca53b90091ea66bd469019343a3ae11256bc92222a548c181eacbc531f748e23"
+  },
+  "adaptedVersesSnapshot": [
+    {
+      "number": "1",
+      "lyric": "Before the first count of days,\nGod brought heaven and earth into being.",
+      "original": "In the beginning God made the heaven and the earth."
+    },
+    {
+      "number": "2",
+      "lyric": "Earth stood bare, unfinished;\nblackness covered the deep.\nAcross the water moved the Spirit of God.",
+      "original": "But the earth was unsightly and unfurnished, and darkness was over the deep, and the Spirit of God moved over the water."
+    },
+    {
+      "number": "3",
+      "lyric": "Then God called, \u2018Light, come forth!\u2019\nBrightness answered.",
+      "original": "And God said, Let there be light, and there was light."
+    },
+    {
+      "number": "4",
+      "lyric": "He looked on the light: good.\nHe cut a clear line between it and darkness.",
+      "original": "And God saw the light that it was good, and God divided between the light and the darkness."
+    },
+    {
+      "number": "5",
+      "lyric": "Day was the name He gave the light;\nNight, the name He gave the dark.\nDusk. Dawn. The first day.",
+      "original": "And God called the light Day, and the darkness he called Night, and there was evening and there was morning, the first day."
+    },
+    {
+      "number": "6",
+      "lyric": "God spoke: \u2018A firmament amid the waters!\nLet water part from water!\u2019\nHis word took hold.",
+      "original": "And God said, Let there be a firmament in the midst of the water, and let it be a division between water and water, and it was so."
+    },
+    {
+      "number": "7",
+      "lyric": "He raised that mighty span;\nflood beneath it,\nflood above it.",
+      "original": "And God made the firmament, and God divided between the water which was under the firmament and the water which was above the firmament."
+    },
+    {
+      "number": "8",
+      "lyric": "He called the firmament Heaven.\nHe looked on it: good.\nDusk. Dawn. The second day.",
+      "original": "And God called the firmament Heaven, and God saw that it was good, and there was evening and there was morning, the second day."
+    },
+    {
+      "number": "9",
+      "lyric": "\u2018Waters below Heaven, run to one place;\nlet dry ground show!\u2019\nThe waters gathered. Land came clear.",
+      "original": "And God said, Let the water which is under the heaven be collected into one place, and let the dry land appear, and it was so. And the water which was under the heaven was collected into its places, and the dry land appeared."
+    },
+    {
+      "number": "10",
+      "lyric": "He named the dry ground Earth,\nthe gathered waters Seas.\nHe looked on them: good.",
+      "original": "And God called the dry land Earth, and the gatherings of the waters he called Seas, and God saw that it was good."
+    },
+    {
+      "number": "11",
+      "lyric": "\u2018Ground, send up seed-bearing grass\nin kind and likeness!\nTrees, bear fruit with seed within,\neach true to its kind!\u2019\nHis word took hold.",
+      "original": "And God said, Let the earth bring forth the herb of grass bearing seed according to its kind and according to its likeness, and the fruit-tree bearing fruit whose seed is in it, according to its kind on the earth, and it was so."
+    },
+    {
+      "number": "12",
+      "lyric": "Green surged from the soil:\ngrass with seed in its kind and likeness;\nfruit wrapped around its seed,\ntree by tree, kind by kind.\nHe looked on it: good.",
+      "original": "And the earth brought forth the herb of grass bearing seed according to its kind and according to its likeness, and the fruit tree bearing fruit whose seed is in it, according to its kind on the earth, and God saw that it was good."
+    },
+    {
+      "number": "13",
+      "lyric": "Dusk. Dawn. The third day.",
+      "original": "And there was evening and there was morning, the third day."
+    },
+    {
+      "number": "14",
+      "lyric": "\u2018Lights across Heaven\u2019s firmament!\nDivide day from night;\nmark signs, seasons, days and years!\u2019",
+      "original": "And God said, Let there be lights in the firmament of the heaven to give light upon the earth, to divide between day and night, and let them be for signs and for seasons and for days and for years."
+    },
+    {
+      "number": "15",
+      "lyric": "\u2018From that height, shine on the earth!\u2019\nHis word took hold.",
+      "original": "And let them be for light in the firmament of the heaven, so as to shine upon the earth, and it was so."
+    },
+    {
+      "number": "16",
+      "lyric": "Two great lights He fashioned:\nthe greater to command the day,\nthe lesser to command the night.\nHe made the stars as well.",
+      "original": "And God made the two great lights, the greater light for regulating the day and the lesser light for regulating the night, the stars also."
+    },
+    {
+      "number": "17",
+      "lyric": "He set them in Heaven\u2019s span\nto send their light across the earth,",
+      "original": "And God placed them in the firmament of the heaven, so as to shine upon the earth,"
+    },
+    {
+      "number": "18",
+      "lyric": "to rule night and day,\nto keep the bright apart from dark.\nHe looked on them: good.",
+      "original": "and to regulate day and night, and to divide between the light and the darkness. And God saw that it was good."
+    },
+    {
+      "number": "19",
+      "lyric": "Dusk. Dawn. The fourth day.",
+      "original": "And there was evening and there was morning, the fourth day."
+    },
+    {
+      "number": "20",
+      "lyric": "\u2018Water, swarm with living reptiles!\nWinged creatures, fly above the earth\nacross Heaven\u2019s firmament!\u2019\nHis word took hold.",
+      "original": "And God said, Let the waters bring forth reptiles having life, and winged creatures flying above the earth in the firmament of heaven, and it was so."
+    },
+    {
+      "number": "21",
+      "lyric": "God made the great whales,\nevery living water-reptile by kind,\nand every winged creature by kind.\nHe looked on them: good.",
+      "original": "And God made great whales, and every living reptile, which the waters brought forth according to their kinds, and every creature that flies with wings according to its kind, and God saw that they were good."
+    },
+    {
+      "number": "22",
+      "lyric": "His blessing rang out:\n\u2018Increase! Multiply! Fill the seas!\nLet the winged multiply on earth!\u2019",
+      "original": "And God blessed them, saying, Increase and multiply and fill the waters in the seas, and let the creatures that fly be multiplied on the earth."
+    },
+    {
+      "number": "23",
+      "lyric": "Dusk. Dawn. The fifth day.",
+      "original": "And there was evening and there was morning, the fifth day."
+    },
+    {
+      "number": "24",
+      "lyric": "\u2018Earth, bring out living kinds:\nfour-footed beasts, crawling reptiles,\nwild beasts, each after its kind!\u2019\nHis word took hold.",
+      "original": "And God said, Let the earth bring forth the living creature according to its kind, quadrupeds and reptiles and wild beasts of the earth according to their kind, and it was so."
+    },
+    {
+      "number": "25",
+      "lyric": "He fashioned wild beasts, cattle,\nand the reptiles of the ground,\neach after its kind.\nHe looked on them: good.",
+      "original": "And God made the wild beasts of the earth according to their kind, and cattle according to their kind, and all the reptiles of the earth according to their kind, and God saw that they were good."
+    },
+    {
+      "number": "26",
+      "lyric": "Then God said, \u2018Let us make humankind\nin our image, in our likeness;\nlet them rule the fish, the birds,\nthe cattle, all the earth and all that crawls.\u2019",
+      "original": "And God said, Let us make man according to our image and likeness, and let them have dominion over the fish of the sea, and over the flying creatures of heaven, and over the cattle and all the earth, and over all the reptiles that creep on the earth."
+    },
+    {
+      "number": "27",
+      "lyric": "God made humankind in His own image;\nmale and female He made them.",
+      "original": "And God made man, according to the image of God he made him, male and female he made them."
+    },
+    {
+      "number": "28",
+      "lyric": "He blessed them:\n\u2018Increase! Multiply! Fill the earth;\nbring it under your rule!\nGovern fish and birds and cattle,\nall the earth and all that crawls!\u2019",
+      "original": "And God blessed them, saying, Increase and multiply, and fill the earth and subdue it, and have dominion over the fish of the seas and flying creatures of heaven, and all the cattle and all the earth, and all the reptiles that creep on the earth."
+    },
+    {
+      "number": "29",
+      "lyric": "He gave them every seed-bearing herb\nacross the earth,\nand every tree whose fruit holds seed:\nfood for humankind.",
+      "original": "And God said, Behold I have given to you every seed-bearing herb sowing seed which is upon all the earth, and every tree which has in itself the fruit of seed that is sown, to you it shall be for food."
+    },
+    {
+      "number": "30",
+      "lyric": "For wild beasts, flying creatures,\nand all the reptiles of the earth\nthat carry the breath of life,\nHe gave every green plant for food.\nHis word took hold.",
+      "original": "And to all the wild beasts of the earth, and to all the flying creatures of heaven, and to every reptile creeping on the earth, which has in itself the breath of life, even every green plant for food; and it was so."
+    },
+    {
+      "number": "31",
+      "lyric": "God looked upon all He had made:\nthe whole of it, very good.\nDusk. Dawn. The sixth day.",
+      "original": "And God saw all the things that he had made, and, behold, they were very good. And there was evening and there was morning, the sixth day."
+    }
+  ],
+  "linkTakeId": "1c54400a-2e33-4a48-86fb-8d62761f7cb7-2",
+  "parentTakeId": null,
+  "parentSongUrl": null,
+  "parentSnapshotSha256": null,
+  "editRequestId": null,
+  "parentSubmissionReference": null,
+  "feedback": {
+    "verdict": "works",
+    "note": "Shane approved the linked Suno take and requested this local MP3.",
+    "recordedAt": "2026-09-27T08:46:23.724Z"
+  },
+  "lyricsSnapshot": "[Intro]\n[Verse 1]\nBefore the first count of days,\nGod brought heaven and earth into being.\nEarth stood bare, unfinished;\nblackness covered the deep.\nAcross the water moved the Spirit of God.\n\n[Crescendo]\nThen God called, \u2018Light, come forth!\u2019\nBrightness answered.\n\n[Breakdown]\nHe looked on the light: good.\nHe cut a clear line between it and darkness.\nDay was the name He gave the light;\nNight, the name He gave the dark.\nDusk. Dawn. The first day.\n\n[Verse 2]\n[Crescendo]\nGod spoke: \u2018A firmament amid the waters!\nLet water part from water!\u2019\nHis word took hold.\n\n[Breakdown]\nHe raised that mighty span;\nflood beneath it,\nflood above it.\nHe called the firmament Heaven.\nHe looked on it: good.\nDusk. Dawn. The second day.\n\n[Crescendo]\n\u2018Waters below Heaven, run to one place;\nlet dry ground show!\u2019\nThe waters gathered. Land came clear.\n\n[Breakdown]\nHe named the dry ground Earth,\nthe gathered waters Seas.\nHe looked on them: good.\n\n[Build]\n\u2018Ground, send up seed-bearing grass\nin kind and likeness!\nTrees, bear fruit with seed within,\neach true to its kind!\u2019\nHis word took hold.\n\n[Breakdown]\nGreen surged from the soil:\ngrass with seed in its kind and likeness;\nfruit wrapped around its seed,\ntree by tree, kind by kind.\nHe looked on it: good.\nDusk. Dawn. The third day.\n\n[Verse 3]\n[Crescendo]\n\u2018Lights across Heaven\u2019s firmament!\nDivide day from night;\nmark signs, seasons, days and years!\u2019\n\u2018From that height, shine on the earth!\u2019\nHis word took hold.\n\n[Breakdown]\nTwo great lights He fashioned:\nthe greater to command the day,\nthe lesser to command the night.\nHe made the stars as well.\nHe set them in Heaven\u2019s span\nto send their light across the earth,\nto rule night and day,\nto keep the bright apart from dark.\nHe looked on them: good.\nDusk. Dawn. The fourth day.\n\n[Verse 4]\n[Crescendo]\n\u2018Water, swarm with living reptiles!\nWinged creatures, fly above the earth\nacross Heaven\u2019s firmament!\u2019\nHis word took hold.\n\n[Breakdown]\nGod made the great whales,\nevery living water-reptile by kind,\nand every winged creature by kind.\nHe looked on them: good.\nHis blessing rang out:\n\u2018Increase! Multiply! Fill the seas!\nLet the winged multiply on earth!\u2019\nDusk. Dawn. The fifth day.\n\n[Crescendo]\n\u2018Earth, bring out living kinds:\nfour-footed beasts, crawling reptiles,\nwild beasts, each after its kind!\u2019\nHis word took hold.\n\n[Breakdown]\nHe fashioned wild beasts, cattle,\nand the reptiles of the ground,\neach after its kind.\nHe looked on them: good.\n\n[Verse 5]\nThen God said, \u2018Let us make humankind\nin our image, in our likeness;\nlet them rule the fish, the birds,\nthe cattle, all the earth and all that crawls.\u2019\n\n[Climax]\nGod made humankind in His own image;\nmale and female He made them.\nHe blessed them:\n\u2018Increase! Multiply! Fill the earth;\nbring it under your rule!\nGovern fish and birds and cattle,\nall the earth and all that crawls!\u2019\n\n[Breakdown]\nHe gave them every seed-bearing herb\nacross the earth,\nand every tree whose fruit holds seed:\nfood for humankind.\nFor wild beasts, flying creatures,\nand all the reptiles of the earth\nthat carry the breath of life,\nHe gave every green plant for food.\nHis word took hold.\n\n[Outro]\nGod looked upon all He had made:\nthe whole of it, very good.\nDusk. Dawn. The sixth day.",
+  "publishedVersionId": null
+}

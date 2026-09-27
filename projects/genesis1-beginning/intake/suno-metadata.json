@@ -1,0 +1,162 @@
+{
+  "status": "complete",
+  "title": "Genesis 1 \u2014 The Beginning",
+  "play_count": 3,
+  "upvote_count": 0,
+  "allow_comments": true,
+  "is_verified": false,
+  "id": "b9b82c2c-7c8e-4ef4-9338-942de876644a",
+  "entity_type": "song_schema",
+  "video_url": "",
+  "audio_url": "https://studio-api.prod.suno.com/api/forbidden",
+  "media_urls": [
+    {
+      "url": "https://d2lwuy8qc234o3.cloudfront.net/1/clip/b9b82c2c-7c8e-4ef4-9338-942de876644a.m4a",
+      "content_type": "m4a-opus",
+      "delivery": "progressive",
+      "encoding": "1.0.0"
+    }
+  ],
+  "image_url": "https://cdn2.suno.ai/image_b9b82c2c-7c8e-4ef4-9338-942de876644a.jpeg",
+  "image_large_url": "https://cdn2.suno.ai/image_large_b9b82c2c-7c8e-4ef4-9338-942de876644a.jpeg",
+  "major_model_version": "v6",
+  "model_name": "chirp-hawk",
+  "metadata": {
+    "tags": "Industrial alternative rock, modern tight production with sub-bass tension, heartbeat kick, split-second vacuum on commands, detonation after each, and a huge resolved chord; very low smoky female contralto with deep chest resonance, weathered rasp, bent notes, clear diction, fearless belts, and wide sustained peaks; drop-tuned guitars, muscular bass, hard live drums, dark synth pulses, slight blues bends and bass groove; escalating rhythmic and pitch intensity, violent crescendo into heavy half-time, rebuilt energy, broadest full-band triumphant climax.",
+    "negative_tags": "opera, operatic vocals, symphonic metal, orchestra, strings, choir, stage musical, soundtrack underscore, trailer music, solemn hymn, worship ballad, dirge, devotional whisper, breathy airy soprano, falsetto, male lead, death-metal growling, harsh screaming, sunny pop, dance pop, acoustic folk, piano ballad, recitative, spoken narration, wordless vocals, full blues shuffle, barroom blues",
+    "prompt": "$51",
+    "type": "gen",
+    "duration": 304.72,
+    "refund_credits": false,
+    "stream": true,
+    "make_instrumental": false,
+    "is_max_mode": true,
+    "control_sliders": {
+      "aug_creativity": 1
+    },
+    "can_remix": true,
+    "is_remix": false,
+    "priority": 10,
+    "has_stem": false,
+    "uses_latest_model": true,
+    "model_badges": {
+      "songcard": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "background_color": "0000004D",
+          "border_color": "00000000"
+        }
+      },
+      "songrow": {
+        "display_name": "V6",
+        "light": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        },
+        "dark": {
+          "text_color": "FD429C",
+          "text_color_gradient": [
+            "FD429C",
+            "FF5126"
+          ]
+        }
+      }
+    },
+    "image_config": {
+      "use_image_config_template": true,
+      "id": "scribbles",
+      "default_cover_style": "brand_refresh"
+    },
+    "is_mumble": false
+  },
+  "is_liked": false,
+  "user_id": "c7fb3e20-6b0b-4448-9273-408788665d74",
+  "display_name": "SearingJazzHop6497",
+  "handle": "omiron33",
+  "is_handle_updated": true,
+  "avatar_image_url": "https://cdn1.suno.ai/defaultBlue.webp",
+  "is_trashed": false,
+  "is_hidden": false,
+  "created_at": "2026-09-27T08:27:40.838Z",
+  "is_public": false,
+  "is_persona_root": false,
+  "is_following_creator": false,
+  "albums": [],
+  "ownership": {
+    "ownership_reason": "subscribed"
+  },
+  "comment_count": 0,
+  "flag_count": 0,
+  "display_tags": "industrial alternative rock",
+  "is_contest_clip": false,
+  "has_hook": false,
+  "batch_index": 0,
+  "action_config": {
+    "actions": [
+      {
+        "action_type": "add_to_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "like_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "share_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "dislike_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "report_song",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remove_from_playlist",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "play_next",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "add_to_queue",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_extend",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_cover",
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "action_type": "remix_reuse_style",
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  }
+}

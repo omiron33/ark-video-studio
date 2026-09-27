@@ -1,0 +1,496 @@
+{
+  "method": "5-second RMS and peak of decoded mono PCM; event counts from existing 20ms RMS/low-band onset detector. Not subjective listening or tempo/vocal onset certification.",
+  "sourceSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2",
+  "duration": 304.72,
+  "attackCount": 810,
+  "windows": [
+    {
+      "start": 0,
+      "end": 5,
+      "rms": 0.064786,
+      "rmsDbfs": -23.77,
+      "peak": 0.429607,
+      "attackCount": 11
+    },
+    {
+      "start": 5,
+      "end": 10,
+      "rms": 0.104472,
+      "rmsDbfs": -19.62,
+      "peak": 0.519663,
+      "attackCount": 14
+    },
+    {
+      "start": 10,
+      "end": 15,
+      "rms": 0.113752,
+      "rmsDbfs": -18.88,
+      "peak": 0.495522,
+      "attackCount": 13
+    },
+    {
+      "start": 15,
+      "end": 20,
+      "rms": 0.129757,
+      "rmsDbfs": -17.74,
+      "peak": 0.656516,
+      "attackCount": 15
+    },
+    {
+      "start": 20,
+      "end": 25,
+      "rms": 0.120965,
+      "rmsDbfs": -18.35,
+      "peak": 0.618133,
+      "attackCount": 14
+    },
+    {
+      "start": 25,
+      "end": 30,
+      "rms": 0.098549,
+      "rmsDbfs": -20.13,
+      "peak": 0.587828,
+      "attackCount": 13
+    },
+    {
+      "start": 30,
+      "end": 35,
+      "rms": 0.147109,
+      "rmsDbfs": -16.65,
+      "peak": 0.586618,
+      "attackCount": 15
+    },
+    {
+      "start": 35,
+      "end": 40,
+      "rms": 0.149603,
+      "rmsDbfs": -16.5,
+      "peak": 0.565046,
+      "attackCount": 13
+    },
+    {
+      "start": 40,
+      "end": 45,
+      "rms": 0.146993,
+      "rmsDbfs": -16.65,
+      "peak": 0.546699,
+      "attackCount": 13
+    },
+    {
+      "start": 45,
+      "end": 50,
+      "rms": 0.141365,
+      "rmsDbfs": -16.99,
+      "peak": 0.578186,
+      "attackCount": 14
+    },
+    {
+      "start": 50,
+      "end": 55,
+      "rms": 0.183025,
+      "rmsDbfs": -14.75,
+      "peak": 0.540291,
+      "attackCount": 12
+    },
+    {
+      "start": 55,
+      "end": 60,
+      "rms": 0.139542,
+      "rmsDbfs": -17.11,
+      "peak": 0.606022,
+      "attackCount": 15
+    },
+    {
+      "start": 60,
+      "end": 65,
+      "rms": 0.14712,
+      "rmsDbfs": -16.65,
+      "peak": 0.610562,
+      "attackCount": 15
+    },
+    {
+      "start": 65,
+      "end": 70,
+      "rms": 0.162565,
+      "rmsDbfs": -15.78,
+      "peak": 0.56747,
+      "attackCount": 13
+    },
+    {
+      "start": 70,
+      "end": 75,
+      "rms": 0.161243,
+      "rmsDbfs": -15.85,
+      "peak": 0.658561,
+      "attackCount": 14
+    },
+    {
+      "start": 75,
+      "end": 80,
+      "rms": 0.185511,
+      "rmsDbfs": -14.63,
+      "peak": 0.605738,
+      "attackCount": 11
+    },
+    {
+      "start": 80,
+      "end": 85,
+      "rms": 0.166576,
+      "rmsDbfs": -15.57,
+      "peak": 0.552195,
+      "attackCount": 16
+    },
+    {
+      "start": 85,
+      "end": 90,
+      "rms": 0.179364,
+      "rmsDbfs": -14.93,
+      "peak": 0.58592,
+      "attackCount": 12
+    },
+    {
+      "start": 90,
+      "end": 95,
+      "rms": 0.183118,
+      "rmsDbfs": -14.75,
+      "peak": 0.595892,
+      "attackCount": 15
+    },
+    {
+      "start": 95,
+      "end": 100,
+      "rms": 0.159145,
+      "rmsDbfs": -15.96,
+      "peak": 0.628621,
+      "attackCount": 13
+    },
+    {
+      "start": 100,
+      "end": 105,
+      "rms": 0.238495,
+      "rmsDbfs": -12.45,
+      "peak": 0.587808,
+      "attackCount": 16
+    },
+    {
+      "start": 105,
+      "end": 110,
+      "rms": 0.158833,
+      "rmsDbfs": -15.98,
+      "peak": 0.588417,
+      "attackCount": 13
+    },
+    {
+      "start": 110,
+      "end": 115,
+      "rms": 0.162286,
+      "rmsDbfs": -15.79,
+      "peak": 0.582646,
+      "attackCount": 13
+    },
+    {
+      "start": 115,
+      "end": 120,
+      "rms": 0.21043,
+      "rmsDbfs": -13.54,
+      "peak": 0.62715,
+      "attackCount": 11
+    },
+    {
+      "start": 120,
+      "end": 125,
+      "rms": 0.215349,
+      "rmsDbfs": -13.34,
+      "peak": 0.606095,
+      "attackCount": 14
+    },
+    {
+      "start": 125,
+      "end": 130,
+      "rms": 0.193294,
+      "rmsDbfs": -14.28,
+      "peak": 0.636847,
+      "attackCount": 15
+    },
+    {
+      "start": 130,
+      "end": 135,
+      "rms": 0.196094,
+      "rmsDbfs": -14.15,
+      "peak": 0.637203,
+      "attackCount": 15
+    },
+    {
+      "start": 135,
+      "end": 140,
+      "rms": 0.214922,
+      "rmsDbfs": -13.35,
+      "peak": 0.62245,
+      "attackCount": 14
+    },
+    {
+      "start": 140,
+      "end": 145,
+      "rms": 0.231868,
+      "rmsDbfs": -12.7,
+      "peak": 0.666029,
+      "attackCount": 14
+    },
+    {
+      "start": 145,
+      "end": 150,
+      "rms": 0.246285,
+      "rmsDbfs": -12.17,
+      "peak": 0.676679,
+      "attackCount": 14
+    },
+    {
+      "start": 150,
+      "end": 155,
+      "rms": 0.244864,
+      "rmsDbfs": -12.22,
+      "peak": 0.653738,
+      "attackCount": 14
+    },
+    {
+      "start": 155,
+      "end": 160,
+      "rms": 0.171447,
+      "rmsDbfs": -15.32,
+      "peak": 0.912879,
+      "attackCount": 14
+    },
+    {
+      "start": 160,
+      "end": 165,
+      "rms": 0.134251,
+      "rmsDbfs": -17.44,
+      "peak": 0.73573,
+      "attackCount": 11
+    },
+    {
+      "start": 165,
+      "end": 170,
+      "rms": 0.196546,
+      "rmsDbfs": -14.13,
+      "peak": 0.609341,
+      "attackCount": 11
+    },
+    {
+      "start": 170,
+      "end": 175,
+      "rms": 0.227316,
+      "rmsDbfs": -12.87,
+      "peak": 0.646467,
+      "attackCount": 13
+    },
+    {
+      "start": 175,
+      "end": 180,
+      "rms": 0.178215,
+      "rmsDbfs": -14.98,
+      "peak": 0.612373,
+      "attackCount": 17
+    },
+    {
+      "start": 180,
+      "end": 185,
+      "rms": 0.242446,
+      "rmsDbfs": -12.31,
+      "peak": 0.678362,
+      "attackCount": 15
+    },
+    {
+      "start": 185,
+      "end": 190,
+      "rms": 0.244308,
+      "rmsDbfs": -12.24,
+      "peak": 0.7002,
+      "attackCount": 14
+    },
+    {
+      "start": 190,
+      "end": 195,
+      "rms": 0.241095,
+      "rmsDbfs": -12.36,
+      "peak": 0.752372,
+      "attackCount": 14
+    },
+    {
+      "start": 195,
+      "end": 200,
+      "rms": 0.217579,
+      "rmsDbfs": -13.25,
+      "peak": 0.653673,
+      "attackCount": 10
+    },
+    {
+      "start": 200,
+      "end": 205,
+      "rms": 0.201973,
+      "rmsDbfs": -13.89,
+      "peak": 0.664436,
+      "attackCount": 14
+    },
+    {
+      "start": 205,
+      "end": 210,
+      "rms": 0.279895,
+      "rmsDbfs": -11.06,
+      "peak": 0.673215,
+      "attackCount": 15
+    },
+    {
+      "start": 210,
+      "end": 215,
+      "rms": 0.299867,
+      "rmsDbfs": -10.46,
+      "peak": 0.710719,
+      "attackCount": 16
+    },
+    {
+      "start": 215,
+      "end": 220,
+      "rms": 0.266191,
+      "rmsDbfs": -11.5,
+      "peak": 0.705791,
+      "attackCount": 14
+    },
+    {
+      "start": 220,
+      "end": 225,
+      "rms": 0.280501,
+      "rmsDbfs": -11.04,
+      "peak": 0.730644,
+      "attackCount": 12
+    },
+    {
+      "start": 225,
+      "end": 230,
+      "rms": 0.282786,
+      "rmsDbfs": -10.97,
+      "peak": 0.764967,
+      "attackCount": 13
+    },
+    {
+      "start": 230,
+      "end": 235,
+      "rms": 0.261267,
+      "rmsDbfs": -11.66,
+      "peak": 0.774749,
+      "attackCount": 14
+    },
+    {
+      "start": 235,
+      "end": 240,
+      "rms": 0.208675,
+      "rmsDbfs": -13.61,
+      "peak": 0.801305,
+      "attackCount": 13
+    },
+    {
+      "start": 240,
+      "end": 245,
+      "rms": 0.300394,
+      "rmsDbfs": -10.45,
+      "peak": 0.943394,
+      "attackCount": 15
+    },
+    {
+      "start": 245,
+      "end": 250,
+      "rms": 0.322888,
+      "rmsDbfs": -9.82,
+      "peak": 0.704129,
+      "attackCount": 14
+    },
+    {
+      "start": 250,
+      "end": 255,
+      "rms": 0.261295,
+      "rmsDbfs": -11.66,
+      "peak": 0.715049,
+      "attackCount": 10
+    },
+    {
+      "start": 255,
+      "end": 260,
+      "rms": 0.278113,
+      "rmsDbfs": -11.12,
+      "peak": 0.717651,
+      "attackCount": 10
+    },
+    {
+      "start": 260,
+      "end": 265,
+      "rms": 0.240661,
+      "rmsDbfs": -12.37,
+      "peak": 0.746101,
+      "attackCount": 11
+    },
+    {
+      "start": 265,
+      "end": 270,
+      "rms": 0.29891,
+      "rmsDbfs": -10.49,
+      "peak": 0.757935,
+      "attackCount": 14
+    },
+    {
+      "start": 270,
+      "end": 275,
+      "rms": 0.239172,
+      "rmsDbfs": -12.43,
+      "peak": 0.803784,
+      "attackCount": 13
+    },
+    {
+      "start": 275,
+      "end": 280,
+      "rms": 0.297297,
+      "rmsDbfs": -10.54,
+      "peak": 0.749688,
+      "attackCount": 9
+    },
+    {
+      "start": 280,
+      "end": 285,
+      "rms": 0.284057,
+      "rmsDbfs": -10.93,
+      "peak": 0.795649,
+      "attackCount": 9
+    },
+    {
+      "start": 285,
+      "end": 290,
+      "rms": 0.189059,
+      "rmsDbfs": -14.47,
+      "peak": 0.772501,
+      "attackCount": 15
+    },
+    {
+      "start": 290,
+      "end": 295,
+      "rms": 0.309482,
+      "rmsDbfs": -10.19,
+      "peak": 0.823999,
+      "attackCount": 14
+    },
+    {
+      "start": 295,
+      "end": 300,
+      "rms": 0.292495,
+      "rmsDbfs": -10.68,
+      "peak": 0.99543,
+      "attackCount": 13
+    },
+    {
+      "start": 300,
+      "end": 304.72,
+      "rms": 0.208372,
+      "rmsDbfs": -13.62,
+      "peak": 0.766179,
+      "attackCount": 9
+    }
+  ]
+}

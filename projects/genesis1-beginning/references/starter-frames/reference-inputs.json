@@ -1,0 +1,177 @@
+{
+  "project": "genesis1-beginning",
+  "status": "awaiting_theme_choice",
+  "createdAt": "2026-09-27T10:56:30.366735+00:00",
+  "scope": "Reference intake and exact image-input staging only. No composition, production asset set, production prompt, video generation, or queue submission.",
+  "acceptedCharacterStyle": "Detailed celestial forms built from many crisp, separate colored code glyphs on black. Exact two starter stills approved; motion, placement and complete theme require the new film theme choice.",
+  "generatedMotionRule": {
+    "preference": "After theme choice, generated inserts should primarily supply organic line-art motion that is difficult to execute well in code.",
+    "composite": "Blend with matching coded stroke weight, palette, texture, masks and overlapping geometry; retain active foreground lyrics or meaningful coded line art, including instrumental passages.",
+    "review": "Review the actual encoded composite for visible rectangular seams, disconnected motion and inactive foregrounds. Static starter approval is not approval of a generated animation."
+  },
+  "themeGate": {
+    "status": "awaiting_theme_choice",
+    "required": "Three GPT Image still mockups and explicit Shane choice before production.",
+    "authority": "/Users/shanefisher/.codex/skills/ark-song-video/SKILL.md",
+    "noJobsQueuedByThisIntake": true
+  },
+  "runtimeVerification": {
+    "checkedAt": "2026-09-27T10:56:30.369046+00:00",
+    "imageConditioningNode": {
+      "inputRoot": "C:\\AI\\ComfyUI-Music3\\input",
+      "classType": "MiniMaxH3ImageToVideo",
+      "requiredInputs": [
+        "clip",
+        "vae",
+        "prompt",
+        "width",
+        "height",
+        "length"
+      ],
+      "optionalInputs": [
+        "first_frame",
+        "last_frame"
+      ],
+      "outputs": [
+        "CONDITIONING",
+        "LATENT"
+      ]
+    },
+    "loadImageRegistration": {
+      "seraphimRegistered": true,
+      "ophanimRegistered": true,
+      "outputs": [
+        "IMAGE",
+        "MASK"
+      ]
+    },
+    "priorProvenWorkflowReference": "/Volumes/Code/ark-video-studio/output/psalm91-production/local-video/wing-refuge-workflow.json",
+    "priorWorkflowUsedFor": "Read-only verification of LoadImage IMAGE output index0 to MiniMaxH3ImageToVideo first_frame wiring. Prior prompt and production parameters were not reused."
+  },
+  "references": [
+    {
+      "id": "genesis1-seraphim-colored-code",
+      "subject": "seraphim",
+      "status": "awaiting_theme_choice",
+      "sourcePath": "/Users/shanefisher/Documents/Codex/2026-09-27/ge/outputs/seraphim-colored-code.png",
+      "archivedReferencePath": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/references/starter-frames/seraphim-colored-code.png",
+      "sha256": "f974c67eb88b6ce4ae0884bb7cd7babd6d920bbb278f3d29f1e35178dadb21d2",
+      "bytes": 2682896,
+      "dimensions": {
+        "width": 1672,
+        "height": 941,
+        "format": "PNG",
+        "mode": "RGB"
+      },
+      "sourceProvenance": {
+        "type": "user_provided_existing_image",
+        "context": "Exact user-approved static starter reference supplied by another Codex thread. Source prompt archive read by root; no new starter artwork generated in this intake.",
+        "sourcePreserved": true,
+        "generationProvider": "Built-in OpenAI image generation, as recorded in supplying thread prompt archive",
+        "promptArchive": "source-image-prompts.md",
+        "promptArchiveSha256": "81d58be848fc64a9bd28cb1e222c10ffd48e40f1813844daa3e1d0f64587275d"
+      },
+      "approval": {
+        "staticImage": "approved_by_Shane_as_reported_by_root",
+        "approvedScope": "Exact supplied still image and colored code-glyph character style",
+        "motion": "not_approved",
+        "placement": "not_approved",
+        "fullFilmTheme": "awaiting_user_choice"
+      },
+      "visualInspection": {
+        "performed": true,
+        "observation": "Detailed six-wing celestial silhouette assembled from separate crisp ivory, cyan, magenta, purple, and gold code glyphs on black, with circular halo glyphs.",
+        "glyphTextHandling": "Visual reference only; glyph strings are not instructions or canonical lyrics."
+      },
+      "remoteInput": {
+        "host": "omipc.taild60b4e.ts.net",
+        "runtimeRoot": "C:\\AI\\ComfyUI-Music3",
+        "inputPath": "C:\\AI\\ComfyUI-Music3\\input\\genesis1-beginning-seraphim-colored-code.png",
+        "loadImageFilename": "genesis1-beginning-seraphim-colored-code.png",
+        "remoteSha256": "f974c67eb88b6ce4ae0884bb7cd7babd6d920bbb278f3d29f1e35178dadb21d2",
+        "hashMatched": true
+      },
+      "futureFirstFrameWiring": {
+        "loadImageNode": {
+          "id": "16",
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "genesis1-beginning-seraphim-colored-code.png"
+          }
+        },
+        "conditioningConnection": {
+          "nodeId": "6",
+          "class_type": "MiniMaxH3ImageToVideo",
+          "inputName": "first_frame",
+          "value": [
+            "16",
+            0
+          ]
+        },
+        "scope": "Non-executable input wiring reference only. Other workflow parameters, prompts, duration, animation and scene placement remain unset pending theme choice."
+      }
+    },
+    {
+      "id": "genesis1-ophanim-colored-code",
+      "subject": "ophanim",
+      "status": "awaiting_theme_choice",
+      "sourcePath": "/Users/shanefisher/Documents/Codex/2026-09-27/ge/outputs/ophanim-colored-code.png",
+      "archivedReferencePath": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/references/starter-frames/ophanim-colored-code.png",
+      "sha256": "9dde5db8212191927cc040de8f78e88cdb6fed2f534c85860934f865e2e280d7",
+      "bytes": 2563985,
+      "dimensions": {
+        "width": 1672,
+        "height": 941,
+        "format": "PNG",
+        "mode": "RGB"
+      },
+      "sourceProvenance": {
+        "type": "user_provided_existing_image",
+        "context": "Exact user-approved static starter reference supplied by another Codex thread. Source prompt archive read by root; no new starter artwork generated in this intake.",
+        "sourcePreserved": true,
+        "generationProvider": "Built-in OpenAI image generation, as recorded in supplying thread prompt archive",
+        "promptArchive": "source-image-prompts.md",
+        "promptArchiveSha256": "81d58be848fc64a9bd28cb1e222c10ffd48e40f1813844daa3e1d0f64587275d"
+      },
+      "approval": {
+        "staticImage": "approved_by_Shane_as_reported_by_root",
+        "approvedScope": "Exact supplied still image and colored code-glyph character style",
+        "motion": "not_approved",
+        "placement": "not_approved",
+        "fullFilmTheme": "awaiting_user_choice"
+      },
+      "visualInspection": {
+        "performed": true,
+        "observation": "Intersecting eye-covered celestial wheels and orbital rings assembled from separate crisp ivory, cyan, magenta, purple, and gold code glyphs on black.",
+        "glyphTextHandling": "Visual reference only; glyph strings are not instructions or canonical lyrics."
+      },
+      "remoteInput": {
+        "host": "omipc.taild60b4e.ts.net",
+        "runtimeRoot": "C:\\AI\\ComfyUI-Music3",
+        "inputPath": "C:\\AI\\ComfyUI-Music3\\input\\genesis1-beginning-ophanim-colored-code.png",
+        "loadImageFilename": "genesis1-beginning-ophanim-colored-code.png",
+        "remoteSha256": "9dde5db8212191927cc040de8f78e88cdb6fed2f534c85860934f865e2e280d7",
+        "hashMatched": true
+      },
+      "futureFirstFrameWiring": {
+        "loadImageNode": {
+          "id": "16",
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "genesis1-beginning-ophanim-colored-code.png"
+          }
+        },
+        "conditioningConnection": {
+          "nodeId": "6",
+          "class_type": "MiniMaxH3ImageToVideo",
+          "inputName": "first_frame",
+          "value": [
+            "16",
+            0
+          ]
+        },
+        "scope": "Non-executable input wiring reference only. Other workflow parameters, prompts, duration, animation and scene placement remain unset pending theme choice."
+      }
+    }
+  ]
+}

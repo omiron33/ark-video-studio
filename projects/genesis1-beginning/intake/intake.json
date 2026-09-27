@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "status": "intake_ready_for_theme_choice",
+  "title": "Genesis 1 \u2014 The Beginning",
+  "sourceUrl": "https://suno.com/song/b9b82c2c-7c8e-4ef4-9338-942de876644a",
+  "sunoId": "b9b82c2c-7c8e-4ef4-9338-942de876644a",
+  "app": {
+    "baseUrl": "https://omipc.taild60b4e.ts.net",
+    "trackId": "genesis-1-link-1c54400a-2e33-4a48-86fb-8d62761f7cb7-2",
+    "linkTakeId": "1c54400a-2e33-4a48-86fb-8d62761f7cb7-2",
+    "audioUrl": "https://omipc.taild60b4e.ts.net/api/admin/chapters/1/suno/genesis-1-link-1c54400a-2e33-4a48-86fb-8d62761f7cb7-2/audio",
+    "importedAt": "2026-09-27T08:46:07.062Z",
+    "feedback": {
+      "verdict": "works",
+      "note": "Shane approved the linked Suno take and requested this local MP3.",
+      "recordedAt": "2026-09-27T08:46:23.724Z"
+    },
+    "existingSourceReused": true,
+    "mutated": false
+  },
+  "sourceAudio": "source.mp3",
+  "audioSha256": "196c6f8183eb18bc530f4ebb83b1af44532d210deecfacaa465eb6592046bbc2",
+  "bytes": 6676627,
+  "duration": {
+    "appMetadataSeconds": 304.75,
+    "decodedSeconds": 304.72,
+    "probeFormatSeconds": 304.72,
+    "differenceNote": "App rounds duration to304.75s; actual audio decodes304.72s; preserve exact source bytes."
+  },
+  "lyrics": {
+    "path": "lyrics.txt",
+    "sha256": "d9a699733416732b13fcbeecf0d20627577e18929848b054558d098b1e11cbd9",
+    "status": "exact_submitted",
+    "format": "arranged_modern_lxx_v1",
+    "verseSource": "adapted-verses.json"
+  },
+  "analysis": {
+    "attacks": "measured-attacks.json",
+    "energy": "energy-profile.json",
+    "attackCount": 810,
+    "beatGrid": false,
+    "vocalAlignment": "not performed",
+    "listeningReview": "not performed",
+    "fullAudioDecode": "passed"
+  },
+  "sourceIdentityVerified": true,
+  "providerMetadata": "suno-metadata.json",
+  "stageBoundary": "Intake and analysis only; wait for theme mockup choice before production.",
+  "createdAt": "2026-09-27T10:54:21.082766+00:00"
+}

@@ -1,0 +1,63 @@
+{
+  "status": "proposed_static_theme_options_only",
+  "query": "Genesis 1 creation darkness divided light cosmic industrial rock heavy half-time words cause world to form organic line art active foreground 5 minute song dust human formation",
+  "references": [
+    {
+      "id": "external-microtype-image-world",
+      "source": "https://x.com/johnknopf/status/2103698854399099057",
+      "times": [
+        75,
+        77,
+        79,
+        81,
+        83,
+        85
+      ],
+      "inspectedImage": "references/motion/images/external-microtype-image-world/sheet.jpg",
+      "principle": "Use a shared visual material to connect different subjects while keeping a separate large lyric hierarchy.",
+      "adaptation": "Sparse syntax glyph contours connect cosmic divisions, animals and humankind; each scene gets its own word choreography.",
+      "caution": "No copied imagery, tiny primary lyrics or texture swaps as motion.",
+      "userPreference": "Source liked; individual treatment not approved."
+    },
+    {
+      "id": "internal-psalm91-dust-lion",
+      "source": "projects/psalm91-shelter/assets/artsy-dust-lion-motion.mp4",
+      "times": [
+        0,
+        0.8,
+        1.7,
+        2.6,
+        3.7,
+        5
+      ],
+      "inspectedImage": "references/motion/images/internal-psalm91-dust-lion/sheet.jpg",
+      "principle": "Material gradually gains identity while leaving readable negative space.",
+      "adaptation": "Proposed generated glyph/line-art organic emergence behind coded large lyrics and matching foreground contours. Reserved Adam source is an explicit requested exception, composited after choice.",
+      "caution": "Do not reuse lion art; generated line-art motion and seamless matching are not yet validated.",
+      "userPreference": "Standalone dust clips liked; no full-film or sync approval."
+    },
+    {
+      "id": "internal-foreground-occlusion",
+      "source": "/Users/shanefisher/Movies/Genesis 7 - music video v3.mp4",
+      "times": [
+        117,
+        118,
+        119,
+        120,
+        121,
+        122.5
+      ],
+      "inspectedImage": "references/motion/images/internal-foreground-occlusion/sheet.jpg",
+      "principle": "Depth requires an unobstructed reading interval.",
+      "adaptation": "Generated subjects behind primary lyrics; foreground contours avoid indispensable glyphs.",
+      "caution": "Failure example, not approved choreography.",
+      "userPreference": "Unknown."
+    }
+  ],
+  "approvedStarterReferences": [
+    "seraphim-colored-code.png",
+    "ophanim-colored-code.png"
+  ],
+  "starterApprovalScope": "Static colored-code examples approved via other thread; motion and placement not approved.",
+  "capabilities": "Flat editable type, custom GSAP camera/word motion, SVG masks and geometry, layered video proven. Organic generated line-art glyph-preserving motion proposed; actual proof after theme choice."
+}
