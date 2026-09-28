@@ -72,7 +72,7 @@ Missing/repeated required artwork and invalid pacing fail the creation preflight
 
 ## Outputs and retry
 
-After reviewing a finished output or preview clip, import it into Photos and add it to the private Genesis Site as a review candidate. Verify both destinations and provide the review/download link; avoid duplicate imports and do not confuse local Photos import with confirmed iPhone sync. See the [workflow skill](../skills/ark-song-video/SKILL.md) for delivery boundaries.
+After reviewing a finished output or preview clip, run the Site delivery finisher described in the [workflow skill](../skills/ark-song-video/SKILL.md). A changed encode needs fresh encoded visual and timing review tied to its new hash. Then import the reviewed file into Photos and add it to the private Genesis Site as a review candidate. Verify both destinations and provide the review/download link; avoid duplicate imports and do not confuse local Photos import with confirmed iPhone sync.
 
 `output/my-song/run.json` is the authoritative orchestration report. `project/project.json` is the portable editable source; its assets include the original song, supplied images, fonts and font licenses. `plan.json` records direction evidence. `film.mp4.render.json` records encoding/cache timing and source revision. `review/attempt-NN/` contains measured audio, visual evidence and the gauntlet result.
 
