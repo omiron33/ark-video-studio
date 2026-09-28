@@ -1,0 +1,53 @@
+{
+  "host": "OmiPC",
+  "runtime": "v24.19.0",
+  "sourceCommit": "67d24680eef529979a60b52bef063db88e3a41b9",
+  "verifiedFiles": 266,
+  "cards": 27,
+  "frames": 162,
+  "warnings": [],
+  "searches": [
+    {
+      "query": "container seed within enclosure",
+      "first": "internal-genesis1-semantic-enclosure",
+      "expectedFound": true
+    },
+    {
+      "query": "opposed day night fulcrum",
+      "first": "internal-genesis1-opposed-word-fulcrum",
+      "expectedFound": true
+    },
+    {
+      "query": "threatening numbers motif opening mercy",
+      "first": "internal-genesis4-pressure-opens-to-mercy",
+      "expectedFound": true
+    },
+    {
+      "query": "first person rescue helping hand",
+      "first": "internal-psalm23-first-person-rescue",
+      "expectedFound": true
+    },
+    {
+      "query": "declaration shelter arch people",
+      "first": "internal-psalm23-declaration-shelter-arch",
+      "expectedFound": true
+    },
+    {
+      "query": "lift support above jagged danger",
+      "first": "internal-psalm91-lift-above-danger",
+      "expectedFound": true
+    },
+    {
+      "query": "call answer words converge",
+      "first": "internal-psalm91-call-answer-convergence",
+      "expectedFound": true
+    }
+  ],
+  "backup": "C:\\Users\\sjfis\\AppData\\Local\\Temp\\ark-reference-refresh-1790579541447",
+  "galleryVerification": {
+    "url": "http://127.0.0.1:4179/",
+    "cards": 27,
+    "openedReference": "internal-psalm23-declaration-shelter-arch",
+    "imageDetailVisuallyInspected": true
+  }
+}
