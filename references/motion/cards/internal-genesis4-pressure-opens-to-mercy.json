@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "id": "internal-genesis4-pressure-opens-to-mercy",
+  "title": "Threatening numbers open into a scene of mercy",
+  "source": {
+    "kind": "internal",
+    "path": "/Users/shanefisher/Movies/Genesis 4 - HyperFrames Test/Genesis 4 - HyperFrames 20s.mp4",
+    "projectPath": "/Volumes/Code/ark-video-studio/experiments/genesis4-hyperframes-20s/clip.json",
+    "sectionIds": [
+      "g4-scene-084",
+      "g4-scene-087"
+    ],
+    "start": 12.8,
+    "end": 17.2,
+    "originalSongOffset": 250.9,
+    "videoSha256": "615091dea0d016c94e8de6434553904802e338224ef92a3f0f921145bb740a79"
+  },
+  "intent": [
+    "threat becoming welcome",
+    "release of pressure",
+    "forgiveness",
+    "mercy",
+    "turning point"
+  ],
+  "tags": [
+    "semantic transition",
+    "numeric typography",
+    "opening boundary",
+    "separation",
+    "structural release",
+    "spatial continuity",
+    "narrative reversal"
+  ],
+  "motion": {
+    "summary": "Two large red sevens occupy the central reading area. They become pale and separate; the sequence yields to a photographic scene with an open circular frame beside the figure.",
+    "phases": [
+      "Establish the paired red numerals above the canonical lyric.",
+      "Change the pair from a compressed center into a separated pale boundary.",
+      "Follow the separated pale numerals with a photographic composition; retain a smaller 77 beside the figure and supporting interpretation."
+    ],
+    "transferablePrinciple": "Reinterpret a retained threatening motif through an opening gesture and a contrasting destination: keep it recognizable while changing its relationship to the surrounding scene.",
+    "variations": [
+      "Let a sentence about imprisonment become two sides of an opening gate, then reveal a newly authored place of refuge.",
+      "Let opposing shapes lower or separate when a reconciliation scene begins, retaining a quiet visual echo in the new environment."
+    ],
+    "cautions": [
+      "The change of spacing and destination must carry the reversal; recoloring a threatening shape alone does not express release.",
+      "The 77 and Matthew 18:22 are specific interpretation in this source, not a reusable forgiveness quota or generic lyric.",
+      "Supporting interpretive text must remain separate from canonical lyrics and must not replace them.",
+      "Use an original subject, geometry, composition and measured timing; do not reproduce these numerals or the mercy photograph."
+    ]
+  },
+  "quality": {
+    "status": "observed",
+    "reviewer": "agent review of decoded encoded-video frames",
+    "userPreference": "unknown",
+    "strengths": [
+      "The same large numerals remain recognizable while their spacing, orientation and color change, making the reversal easy to compare across states.",
+      "The red pair and pale opening are followed by a contrasting human scene; the change carries a narrative destination beyond an abstract wipe."
+    ],
+    "limitations": [
+      "Six selected frames establish visible stages, not continuous easing, collision timing or audio synchronization.",
+      "This is a 20-second experimental rendering path, not evidence of a full-song HyperFrames adapter.",
+      "The final frame includes the next sung phrase beneath the interpretive heading; this sample is a transition idea, not endorsement of every text-layer priority in the clip.",
+      "The retained frames show separation followed by a photographic scene; they do not prove that the numerals physically reveal or frame that photograph. Opening-as-release is a transferable interpretation."
+    ],
+    "userPreferenceScope": "No explicit Shane approval of this particular interval was found; retained as agent-assessed visual evidence."
+  },
+  "frames": [
+    {
+      "path": "images/internal-genesis4-pressure-opens-to-mercy/frame-01.jpg",
+      "timeSeconds": 12.8,
+      "sha256": "333b4f7de9dac06c105235cf28b1f26701513e9f32eef3343e4002045c898cdf"
+    },
+    {
+      "path": "images/internal-genesis4-pressure-opens-to-mercy/frame-02.jpg",
+      "timeSeconds": 13.6,
+      "sha256": "010b9fd5e7a03028f31738e8ecdb76f830011518910292e938c95b069cf1230d"
+    },
+    {
+      "path": "images/internal-genesis4-pressure-opens-to-mercy/frame-03.jpg",
+      "timeSeconds": 14.5,
+      "sha256": "6bed3fe72b78bbdad33ffb9ef1acee573199163d37618c772b8ff0bcb460124a"
+    },
+    {
+      "path": "images/internal-genesis4-pressure-opens-to-mercy/frame-04.jpg",
+      "timeSeconds": 15.1,
+      "sha256": "5e38b6ef21bc2e5cb9094634b7d10436806b3d51d1fb9a4cf287ec111c63a835"
+    },
+    {
+      "path": "images/internal-genesis4-pressure-opens-to-mercy/frame-05.jpg",
+      "timeSeconds": 15.45,
+      "sha256": "e522fe7bf1aca207168e2d7efed19f89e278a8db04aa6683d1d39eb6d2739351"
+    },
+    {
+      "path": "images/internal-genesis4-pressure-opens-to-mercy/frame-06.jpg",
+      "timeSeconds": 16.8,
+      "sha256": "c8c20ce0b4603d39dc9065058e08a8c65e2c9e95a88b3fef5dd4b1ad5455db4a"
+    }
+  ],
+  "contactSheet": "images/internal-genesis4-pressure-opens-to-mercy/sheet.jpg",
+  "capture": {
+    "method": "ffmpeg-frame-sequence-v1",
+    "videoDuration": 20,
+    "fps": 30,
+    "sampledFrames": 6,
+    "contactSheetSha256": "74ea8c10f3c89d4ec5bcfaa227f9fbe3e8068703bc388029a4ea32d0eac1d4e2"
+  }
+}

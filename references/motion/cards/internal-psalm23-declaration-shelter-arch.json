@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "id": "internal-psalm23-declaration-shelter-arch",
+  "title": "A completed declaration becomes a shelter over the people",
+  "source": {
+    "kind": "internal",
+    "path": "/Users/shanefisher/Movies/Psalm23/Psalm 23 - Held in the Ordinary - Motion Cut.mp4",
+    "projectPath": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/project.json",
+    "videoSha256": "9a3f691b0c58490a363cfe100df7cb075b6e9a40f5e532827bb58f85931a45a6",
+    "projectRevision": "4fe2c289594cf47d7c7f839f432f4318edaf0dfeefdb41ae9d1fd82ead56541f",
+    "projectRevisionType": "frozen sourceRevision.revisionHash from matching v5 render provenance",
+    "renderProvenancePath": "/Volumes/DATA/ArkRender/psalm23-present-day/psalm23-held-in-the-ordinary-v5.mp4.render.json",
+    "start": 134.9,
+    "end": 142.1,
+    "sectionIds": [
+      "p23-l028"
+    ]
+  },
+  "intent": [
+    "protection",
+    "reassurance",
+    "courage",
+    "promise becoming shelter",
+    "care in ordinary life"
+  ],
+  "tags": [
+    "semantic typography",
+    "phrase to architecture",
+    "post-reading transformation",
+    "arched baseline",
+    "photographic subject framing",
+    "negative space",
+    "intact word order"
+  ],
+  "motion": {
+    "summary": "The declaration I will fear no evil. first assembles on a straight reading line in the dark wall above two seated people. Once complete, its individual letters spread and rotate along an arch; small footing marks appear at the ends. The people and their comforting gesture remain beneath the whole sentence.",
+    "phases": [
+      "135.2–137.1s: complete the declaration as a conventional readable line above the seated pair.",
+      "138.8–139.7s: bend the intact phrase into an arch using per-letter positions and rotations.",
+      "139.7–141.7s: hold the completed arch above the people with two restrained footing marks."
+    ],
+    "transferablePrinciple": "Read the complete promise first, then let the entire sentence become a protective spatial relationship around its human subject while keeping the same words and reading order.",
+    "variations": [
+      "After a different reassurance is read, let its words form a low bridge across a gap between two people.",
+      "Turn a completed homecoming phrase into two sheltering sides around a newly composed doorway, without copying this arch or image."
+    ],
+    "cautions": [
+      "Use only when the scene has enough clear space and a real semantic reason for the shape; curved lettering is not a default decorative treatment.",
+      "Keep letter rotation moderate and spacing open; the sloped terminal words are harder to read than the original straight line.",
+      "Preserve a complete reading hold before spatial deformation and generate new artwork for the new story."
+    ]
+  },
+  "quality": {
+    "status": "observed",
+    "reviewer": "Rook; actual v5 overview, 5fps transformation samples and six retained decoded frames inspected on 2026-09-28",
+    "userPreference": "unknown",
+    "userPreferenceScope": "No individual approval of this arch treatment is recorded; v5 is a pending review candidate.",
+    "strengths": [
+      "The whole declaration remains recognizable before and after its spatial transformation.",
+      "The arch sits above the comforting human gesture without hiding faces or hands.",
+      "The same letters carry both the lyric and the shelter metaphor, rather than adding a competing illustration."
+    ],
+    "limitations": [
+      "Letter spacing and end rotations make the final arch slower to read than the initial line.",
+      "The arch is a brief second meaning after reading; this evidence does not establish suitability for rapid phrases.",
+      "Sampled decoded frames establish composition and transformation stages, not uninterrupted playback, full-speed smoothness or audio-sync certification.",
+      "This is agent observation of the exact v5 encoded artifact; the film remains pending Shane review."
+    ]
+  },
+  "frames": [
+    {
+      "path": "images/internal-psalm23-declaration-shelter-arch/frame-01.jpg",
+      "timeSeconds": 135.2,
+      "sha256": "c4172dd93b81d7ce2ad744780f5415c8d594117a6ed68207a912b927a8f3c8c1"
+    },
+    {
+      "path": "images/internal-psalm23-declaration-shelter-arch/frame-02.jpg",
+      "timeSeconds": 137.1,
+      "sha256": "14f84d71a328e4395470355ee41f5a28de98aaf04af79f1f3c713a2694ce5a51"
+    },
+    {
+      "path": "images/internal-psalm23-declaration-shelter-arch/frame-03.jpg",
+      "timeSeconds": 138.8,
+      "sha256": "8849a407b2e8db1f5ca09a9bade12f2d690884e66b5b8a727b857a7c12a9005b"
+    },
+    {
+      "path": "images/internal-psalm23-declaration-shelter-arch/frame-04.jpg",
+      "timeSeconds": 139.3,
+      "sha256": "86e9a8775ca6723f11f18040738c280fe9c2767a3aff6455321c853f56f2fe7a"
+    },
+    {
+      "path": "images/internal-psalm23-declaration-shelter-arch/frame-05.jpg",
+      "timeSeconds": 139.7,
+      "sha256": "d55f6acfddaa42d78d2d2ec156c8a5f1180310b3c3b1b46b59e36bbbd23cc6cf"
+    },
+    {
+      "path": "images/internal-psalm23-declaration-shelter-arch/frame-06.jpg",
+      "timeSeconds": 141.7,
+      "sha256": "96285b8ebea947955bc5ef8e759d24d73f7cd7096c0fbbf49745f1232a69cee1"
+    }
+  ],
+  "contactSheet": "images/internal-psalm23-declaration-shelter-arch/sheet.jpg",
+  "capture": {
+    "method": "ffmpeg-frame-sequence-v1",
+    "videoDuration": 219.966667,
+    "fps": 30,
+    "sampledFrames": 6,
+    "contactSheetSha256": "3c018ad44812231d2ffced7fe15b5615b2e5eb127dbeb408681275ac5fdaf48f"
+  }
+}

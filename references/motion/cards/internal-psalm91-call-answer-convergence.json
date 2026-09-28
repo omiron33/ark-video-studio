@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "id": "internal-psalm91-call-answer-convergence",
+  "title": "Bring an answering word toward the call",
+  "source": {
+    "kind": "internal",
+    "path": "/Users/shanefisher/Movies/Psalm91/Psalm 91 - Shelter - Full Film v4.mp4",
+    "projectPath": "/Volumes/Code/ark-video-studio/projects/psalm91-shelter/project.json",
+    "renderVersion": "Full Film v4",
+    "projectSha256AtCuration": "fd28619db3fefb493ca264a595e3a39750108d1aec626633ca70f7019390a63d",
+    "projectProvenanceNote": "Current project manifest recorded at curation; it is not asserted to be the exact frozen render revision.",
+    "start": 258.162698,
+    "end": 260.836007,
+    "sectionIds": [
+      "p91-l044"
+    ],
+    "videoSha256": "5a49eade84a664a472d47532f683ed4d813f5f6af593fd4ce90d5df57b0e8502"
+  },
+  "intent": [
+    "call and response",
+    "assurance",
+    "being heard",
+    "connection",
+    "relationship",
+    "promise answered"
+  ],
+  "tags": [
+    "paired word choreography",
+    "convergence",
+    "distance closing",
+    "anticipation",
+    "dialogue",
+    "canonical lyric",
+    "readable typography"
+  ],
+  "motion": {
+    "summary": "Call appears at the left while an empty copper circle marks a receiving space at the right. The supporting phrase and I will builds below their shared line. ANSWER appears at the right as the circle clears, and the two main words move closer together before the next scene.",
+    "phases": [
+      "258.2–259.2s: establish Call opposite a vacant receiving circle while the supporting words arrive below.",
+      "259.4s: reveal ANSWER in the receiving region, retaining Call and the complete connecting phrase.",
+      "259.6–260.6s: reduce the distance between the two intact main words, finishing as a compact pair."
+    ],
+    "transferablePrinciple": "Give a call and its response separate spatial stations, then reduce their distance after the response is present so connection is demonstrated by the relationship between words.",
+    "variations": [
+      "Let two speakers begin on opposite sides of a shared reading space, then bring their complete statements toward a common baseline after acknowledgment.",
+      "For a reassurance lyric, keep the question near the edge and let the answer draw both words into a calm central composition.",
+      "For a reunion lyric, replace the empty receiver with a meaningful location from the current story and converge the intact names only after both have been read."
+    ],
+    "cautions": [
+      "The important idea is the changing relationship between two words, not the decorative receiver circle; use a fresh spatial metaphor.",
+      "Do not fuse, overlap or obscure the two words when their distance closes.",
+      "The source places and I will below both main words, which can complicate reading order in a still; make the temporal reading path unambiguous in a new adaptation.",
+      "Keep the response entrance tied to verified lyric timing; these images alone do not establish correct sung sync."
+    ]
+  },
+  "quality": {
+    "status": "observed",
+    "reviewer": "Rook curation agent; decoded v4 samples at 0.2-second intervals and selected native frames, 2026-09-28",
+    "userPreference": "unknown",
+    "userPreferenceScope": "No individual approval of this treatment is recorded. Existing likes of standalone dust clips do not transfer to it. Earlier opening/keyhole and late-segment concerns are not certified resolved by this review.",
+    "strengths": [
+      "The empty receiving region makes a later response visually expected.",
+      "The two main words remain intact and visibly distinct as the gap between them decreases.",
+      "A short interval supports a complete relationship change without a complex photographic asset."
+    ],
+    "limitations": [
+      "The receiver is a generic circle and the finished layout is simple; copying the shapes would produce a familiar title treatment.",
+      "The connecting phrase sits below the main pair rather than in normal sentence order.",
+      "Inspected 0.2-second decoded samples and selected native frames; six retained frames do not certify every frame, full-speed smoothness, pacing, audio sync or full-film acceptance."
+    ]
+  },
+  "curation": {
+    "reviewDate": "2026-09-28",
+    "distinctFrom": [
+      "internal-fingerprint-mark",
+      "external-light-orders-field"
+    ],
+    "novelty": "The retained principle is two-way spatial convergence after the response arrives. The initial empty emblem alone is already covered by internal-fingerprint-mark and is not the reason to add this card."
+  },
+  "frames": [
+    {
+      "path": "images/internal-psalm91-call-answer-convergence/frame-01.jpg",
+      "timeSeconds": 258.2,
+      "sha256": "6740fc69e025ba42f38f1156f47ce8a4a7fa3d829d5ec5f17072ae8c5f53bc97"
+    },
+    {
+      "path": "images/internal-psalm91-call-answer-convergence/frame-02.jpg",
+      "timeSeconds": 259.2,
+      "sha256": "f68ab3cea50543eeed72216f86effacec0992c4a49b15d61a356d7bb54f3ce7e"
+    },
+    {
+      "path": "images/internal-psalm91-call-answer-convergence/frame-03.jpg",
+      "timeSeconds": 259.4,
+      "sha256": "9f849bfd095f9a0b74a91aa3cd5ac137f977da36084dc351d9396bc8cec2c540"
+    },
+    {
+      "path": "images/internal-psalm91-call-answer-convergence/frame-04.jpg",
+      "timeSeconds": 259.6,
+      "sha256": "4f455b77cf3b38239b89b65974564e0b1d3e103d3e7970f0d841a826b3a3010d"
+    },
+    {
+      "path": "images/internal-psalm91-call-answer-convergence/frame-05.jpg",
+      "timeSeconds": 260,
+      "sha256": "7f18f5dd288d39ed41a4b7a3571cf9a6159d7971b794c1797b9a12585b2ce486"
+    },
+    {
+      "path": "images/internal-psalm91-call-answer-convergence/frame-06.jpg",
+      "timeSeconds": 260.6,
+      "sha256": "cdb8f42f5143bdcfc75b8af79fe2d8f57a2c56d595bfe6649e8a3ddf4a0030dc"
+    }
+  ],
+  "contactSheet": "images/internal-psalm91-call-answer-convergence/sheet.jpg",
+  "capture": {
+    "method": "ffmpeg-frame-sequence-v1",
+    "videoDuration": 327.6,
+    "fps": 30,
+    "sampledFrames": 6,
+    "contactSheetSha256": "605c6faaded7bea4cd34830a71fc0149c9a904c7a15eebad2f6f921a70767091"
+  }
+}

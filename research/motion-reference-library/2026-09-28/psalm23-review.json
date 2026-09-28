@@ -1,0 +1,336 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-09-28",
+  "reviewer": "Rook / Psalm 23 curation agent",
+  "scope": "Selective image-backed concept curation from the latest completed v5 encode, not a new full-film acceptance or audio review.",
+  "source": {
+    "kind": "internal",
+    "path": "/Users/shanefisher/Movies/Psalm23/Psalm 23 - Held in the Ordinary - Motion Cut.mp4",
+    "projectPath": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/project.json",
+    "videoSha256": "9a3f691b0c58490a363cfe100df7cb075b6e9a40f5e532827bb58f85931a45a6",
+    "projectRevision": "4fe2c289594cf47d7c7f839f432f4318edaf0dfeefdb41ae9d1fd82ead56541f",
+    "projectRevisionType": "frozen sourceRevision.revisionHash from matching v5 render provenance",
+    "renderProvenancePath": "/Volumes/DATA/ArkRender/psalm23-present-day/psalm23-held-in-the-ordinary-v5.mp4.render.json",
+    "start": 0,
+    "end": 219.966667,
+    "sectionIds": [
+      "p23-l001",
+      "p23-l002",
+      "p23-l003",
+      "p23-l004",
+      "p23-l005",
+      "p23-l006",
+      "p23-l007",
+      "p23-l008",
+      "p23-l009",
+      "p23-l010",
+      "p23-l011",
+      "p23-l012",
+      "p23-l013",
+      "p23-l014",
+      "p23-l015",
+      "p23-l016",
+      "p23-l017",
+      "p23-l018",
+      "p23-l019",
+      "p23-l020",
+      "p23-l021",
+      "p23-l022",
+      "p23-l023",
+      "p23-l024",
+      "p23-l025",
+      "p23-l026",
+      "p23-l027",
+      "p23-l028",
+      "p23-l029",
+      "p23-l030",
+      "p23-l031",
+      "p23-l032",
+      "p23-l033",
+      "p23-l034",
+      "p23-l035",
+      "p23-l036",
+      "p23-l037",
+      "p23-l038",
+      "p23-l039"
+    ],
+    "duration": 219.966667,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "byteSize": 324957450
+  },
+  "provenanceVerified": {
+    "videoHashMatchesRenderProvenance": true,
+    "renderProvenanceSha256": "bc6b28c368ee2ec53ad205bc98314ea0addee89fa32c9890050e684ba2ddab44",
+    "projectPathIsContextOnly": "Card source revision is the frozen render revision, not a claim that the current working project matches its old contents."
+  },
+  "inspection": {
+    "overviewTimesSeconds": [
+      0.6,
+      3,
+      7,
+      11,
+      16.0,
+      21.0,
+      26.0,
+      31.0,
+      36.0,
+      41.0,
+      46.0,
+      51.0,
+      56.0,
+      61.0,
+      66.0,
+      71.0,
+      76.0,
+      81.0,
+      86.0,
+      91.0,
+      96.0,
+      101.0,
+      106.0,
+      111.0,
+      116.0,
+      121.0,
+      126.0,
+      131.0,
+      136.0,
+      141.0,
+      146.0,
+      151.0,
+      156.0,
+      161.0,
+      166.0,
+      171.0,
+      176.0,
+      181.0,
+      186.0,
+      191.0,
+      196.0,
+      201.0,
+      206.0,
+      211.0,
+      216.0
+    ],
+    "overviewEvidence": [
+      {
+        "path": "/tmp/psalm23-reference-review-20260928/overview-page-1.jpg",
+        "sha256": "c5672f4b0ac1c1d14eb011d553c82064e68f39df1a1e9e17954a9bc3143d1c71"
+      },
+      {
+        "path": "/tmp/psalm23-reference-review-20260928/overview-page-2.jpg",
+        "sha256": "c94b692d68f24ac5f9e9a68f33c178ee9e199e710cdf7e031090c81fe955124b"
+      }
+    ],
+    "candidateSamples": {
+      "grass": [
+        22.7,
+        23.45,
+        24.2,
+        24.8,
+        25.2,
+        25.6
+      ],
+      "pov": [
+        65.9,
+        67,
+        68.3,
+        69.5,
+        71,
+        72.7
+      ],
+      "supports": [
+        73.4,
+        74.3,
+        75.2,
+        76.2,
+        77.3,
+        79.6
+      ],
+      "shelter-arch": [
+        135.0,
+        136.1,
+        137.1,
+        138.5,
+        140.1,
+        141.8
+      ],
+      "table": [
+        87.6,
+        88.9,
+        90.3,
+        91.6,
+        92.9,
+        94.5
+      ]
+    },
+    "closerInspection": [
+      {
+        "path": "/tmp/psalm23-reference-review-20260928/arch-dense.jpg",
+        "sha256": "04379e1d4c307e14474355c63b94f784e96085477cd3ab43a270df6dc02e3f80",
+        "interval": [
+          138.2,
+          140.6
+        ],
+        "sampling": "5fps decoded sequence; displayed labels approximate fps-filter source samples"
+      },
+      {
+        "path": "/tmp/psalm23-reference-review-20260928/pov-dense.jpg",
+        "sha256": "c8213c7b45b22a1a8d97afd069d62db53a71b2ac0a572968adb09d3e3ef240a7",
+        "interval": [
+          66.2,
+          73.2
+        ],
+        "sampling": "2fps decoded sequence; displayed labels approximate fps-filter source samples"
+      }
+    ],
+    "retention": "Overview and exploratory sheets are local temporary review artifacts. The final cards retain six exact-timestamp decoded frames and a contact sheet each in the library.",
+    "actualFinalContactSheetsOpened": true,
+    "comparisonSheetsOpened": [
+      {
+        "id": "internal-psalm23-mercy-material-handoff",
+        "path": "/Volumes/Code/ark-video-studio/references/motion/images/internal-psalm23-mercy-material-handoff/sheet.jpg",
+        "sha256": "fc553555d524c2261231aed56976c34b8e0c18e1d9066a46574cf485b8b305b7"
+      },
+      {
+        "id": "internal-threshold-entry",
+        "path": "/Volumes/Code/ark-video-studio/references/motion/images/internal-threshold-entry/sheet.jpg",
+        "sha256": "2c8ae4c22e25b2676eaab8d101a3d02989fcd318e8acae767cf7d9908e8d8dc8"
+      },
+      {
+        "id": "internal-lineage-journey",
+        "path": "/Volumes/Code/ark-video-studio/references/motion/images/internal-lineage-journey/sheet.jpg",
+        "sha256": "53a96eac9eb18310dd89d33e39897546a2fce10a13b9dc54651104c4586c3fc5"
+      }
+    ]
+  },
+  "decisions": [
+    {
+      "candidate": "declaration to shelter arch",
+      "decision": "added",
+      "id": "internal-psalm23-declaration-shelter-arch",
+      "interval": [
+        134.9,
+        142.1
+      ],
+      "novelty": "Whole readable phrase changes into a spatial shelter for the pictured people; the library had weighted/disappearing words and doorway movement, but no complete declaration becoming protective architecture."
+    },
+    {
+      "candidate": "first-person rescue",
+      "decision": "added",
+      "id": "internal-psalm23-first-person-rescue",
+      "interval": [
+        66.2,
+        73.1
+      ],
+      "novelty": "Participant viewpoint and hand-clasp turn a promise into visible human interaction alongside a separate lyric lane; adds a narrative-gesture principle beyond prior abstract material transformations.",
+      "limitations": [
+        "The gesture ends in a partial rise, not a completed escape.",
+        "The arrival around 71s crowds you and are, and some contour strokes cross the face."
+      ]
+    },
+    {
+      "candidate": "green grass sprouting",
+      "decision": "not_added",
+      "interval": [
+        22.7,
+        25.6
+      ],
+      "reason": "Sprout lines are visible, but deforming the word green weakens recognition in the sampled end states; less strong than the selected full-phrase architecture."
+    },
+    {
+      "candidate": "rod/staff and comfort supports",
+      "decision": "not_added",
+      "interval": [
+        73.4,
+        79.6
+      ],
+      "reason": "Readable lyric plus restrained diagram/contour support is already represented; sparse sampled changes did not establish enough distinct reusable choreography."
+    },
+    {
+      "candidate": "table-setting outline",
+      "decision": "not_added",
+      "interval": [
+        87.6,
+        94.5
+      ],
+      "reason": "The sketched perspective surface supports the meal metaphor, but the visual development is subtle and the selected arch is a stronger case of text taking on architecture."
+    },
+    {
+      "candidate": "mercy material handoff",
+      "decision": "duplicate_existing",
+      "existingId": "internal-psalm23-mercy-material-handoff",
+      "interval": [
+        156.615,
+        163.79
+      ],
+      "reason": "Already has a reviewed v2 image-backed card. The v5 overview shows the same principle; existing card and images were preserved."
+    },
+    {
+      "candidate": "soul ring repair / life filaments",
+      "decision": "not_added",
+      "intervals": [
+        [
+          43.834,
+          49.001
+        ],
+        [
+          163.855,
+          169.021
+        ]
+      ],
+      "reason": "Overview confirms organic strand overlays, but material coalescence and readable foreground are already represented by dust-lion, whale and mercy cards. No claim of full sequence comparison is made."
+    },
+    {
+      "candidate": "hospital walking scene",
+      "decision": "not_added",
+      "interval": [
+        120.305,
+        127.597
+      ],
+      "reason": "Visible in overview; the selected POV rescue is a more distinctive motivated physical interaction. Not enough extra principle to justify a second narrative-footage card in this selective pass."
+    }
+  ],
+  "addedCards": [
+    {
+      "id": "internal-psalm23-declaration-shelter-arch",
+      "cardPath": "/Volumes/Code/ark-video-studio/references/motion/cards/internal-psalm23-declaration-shelter-arch.json",
+      "cardSha256": "4e686ab5a46cd38416f4e219762829c51020ad22f5792fd0258eb58e31f1d693",
+      "contactSheet": "images/internal-psalm23-declaration-shelter-arch/sheet.jpg",
+      "contactSheetSha256": "3c018ad44812231d2ffced7fe15b5615b2e5eb127dbeb408681275ac5fdaf48f",
+      "timesSeconds": [
+        135.2,
+        137.1,
+        138.8,
+        139.3,
+        139.7,
+        141.7
+      ],
+      "userPreference": "unknown"
+    },
+    {
+      "id": "internal-psalm23-first-person-rescue",
+      "cardPath": "/Volumes/Code/ark-video-studio/references/motion/cards/internal-psalm23-first-person-rescue.json",
+      "cardSha256": "69f3ee361756d8e2dd1fd14be1ab735b74264a3649d40275028aa50aa9cfe38e",
+      "contactSheet": "images/internal-psalm23-first-person-rescue/sheet.jpg",
+      "contactSheetSha256": "4203a25070c0a4900ca73e72304aec7a1582293b642fc4c58bf55ccda93eae7f",
+      "timesSeconds": [
+        66.4,
+        67.6,
+        68.8,
+        70.4,
+        71,
+        72.7
+      ],
+      "userPreference": "unknown"
+    }
+  ],
+  "limits": [
+    "No audio was heard or synchronized in this curation pass.",
+    "Sampled frames do not certify continuous motion or every moment of the full film.",
+    "No new user approval inferred from the request, theme choice, production brief or prior delivery status.",
+    "The previous v2 full movie was not reopened; its existing mercy reference sheet was visually compared.",
+    "Movies, project manifests, renderers and existing cards were not edited."
+  ]
+}

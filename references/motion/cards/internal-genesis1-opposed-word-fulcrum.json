@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "id": "internal-genesis1-opposed-word-fulcrum",
+  "title": "Place opposing words on a shared visual fulcrum",
+  "source": {
+    "kind": "internal",
+    "path": "/Users/shanefisher/Movies/Genesis1/Genesis 1 - Breath and Earth - Final.mp4",
+    "projectPath": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/project.json",
+    "videoSha256": "bd147120463a4852418e1ca76ab4d4bfefceff80d9ac8c4ec67ac3f93d6e6f45",
+    "start": 140.8,
+    "end": 142.83,
+    "sectionIds": [
+      "g1-l040"
+    ]
+  },
+  "intent": [
+    "opposition",
+    "contrast",
+    "division",
+    "balance",
+    "comparing alternatives",
+    "day and night"
+  ],
+  "tags": [
+    "semantic typography",
+    "fulcrum",
+    "opposed height",
+    "visual comparison",
+    "relational geometry",
+    "readable words"
+  ],
+  "motion": {
+    "summary": "A diagonal beam and triangular support form beneath DAY and NIGHT. The words occupy opposite sides and then visibly different heights, turning their contrast into one readable spatial relationship.",
+    "phases": [
+      "DIVIDE establishes the upper-left lead-in with open space below.",
+      "DAY appears above the developing beam and central support; FROM remains a small connector.",
+      "NIGHT arrives on the opposite side, and DAY rises as NIGHT takes a lower position across the shared fulcrum."
+    ],
+    "transferablePrinciple": "Express contrast through the relative position of two intact words around a shared geometric relationship, rather than through isolated title changes.",
+    "variations": [
+      "In a choice scene, let two readable alternatives settle at different distances from an invented central decision point.",
+      "For reconciliation, establish opposed heights first, then create a new shared level when the meaning changes."
+    ],
+    "cautions": [
+      "Use a fulcrum only when comparison or opposition fits the scene; an arbitrary seesaw becomes decoration.",
+      "A beam does not prove physically coherent weight or motion; this source is an expressive diagram.",
+      "Keep the connector phrase readable and allow both terms to be present before their relative position changes."
+    ]
+  },
+  "quality": {
+    "status": "observed",
+    "reviewer": "Rook; inspected six decoded MP4 samples and their contact sheet on 2026-09-28",
+    "userPreference": "unknown",
+    "userPreferenceScope": "No approval or rating from Shane is recorded for this extracted treatment.",
+    "strengths": [
+      "Both contrasting terms stay large and separated around one visible support.",
+      "The sampled end states show DAY higher and NIGHT lower while their letters remain intact.",
+      "Very sparse geometry supplies the relationship, leaving ample negative space around the words."
+    ],
+    "limitations": [
+      "The complete comparison occupies a short interval; slower material would need a longer hold or more gradual relational change.",
+      "The beam and words are an illustrative relationship, not a demonstrated physically balanced mechanism.",
+      "Six still samples establish composition and progression only; they do not certify continuous motion, audio sync or whole-film quality."
+    ]
+  },
+  "frames": [
+    {
+      "path": "images/internal-genesis1-opposed-word-fulcrum/frame-01.jpg",
+      "timeSeconds": 140.8,
+      "sha256": "e7617cf4eb8ebdc0558eb85babf82e0c57d86784c5b42156f2582d91ceff6c20"
+    },
+    {
+      "path": "images/internal-genesis1-opposed-word-fulcrum/frame-02.jpg",
+      "timeSeconds": 141.2,
+      "sha256": "19afbf86ba9ab3f2a65f5817592fa53cd756b50c33d6aa661f8b808c7ac6161f"
+    },
+    {
+      "path": "images/internal-genesis1-opposed-word-fulcrum/frame-03.jpg",
+      "timeSeconds": 141.6,
+      "sha256": "e8405ebc42c20adb147cd3a547a49667c41caec39da243ebcd24e8b8c3545a37"
+    },
+    {
+      "path": "images/internal-genesis1-opposed-word-fulcrum/frame-04.jpg",
+      "timeSeconds": 142,
+      "sha256": "512ed52217b1bb3e854c9ebe5082ebfc1e2f415dd8dd80b30a8eb464799d7872"
+    },
+    {
+      "path": "images/internal-genesis1-opposed-word-fulcrum/frame-05.jpg",
+      "timeSeconds": 142.4,
+      "sha256": "09324e83e26cb92b21cf27ca9a07161fd666b15a3493dac703663b97a9b7a1a5"
+    },
+    {
+      "path": "images/internal-genesis1-opposed-word-fulcrum/frame-06.jpg",
+      "timeSeconds": 142.8,
+      "sha256": "42f94018bc7597fa24a7d13c3c52ec056dc3f3b4cf514d5e7fe71e3655e348d3"
+    }
+  ],
+  "contactSheet": "images/internal-genesis1-opposed-word-fulcrum/sheet.jpg",
+  "capture": {
+    "method": "ffmpeg-frame-sequence-v1",
+    "videoDuration": 304.733333,
+    "fps": 30,
+    "sampledFrames": 6,
+    "contactSheetSha256": "d2e50c4f0d859585f11d856cbdd20ff533b4cdc0ba4263aa98f11297da1c3507"
+  }
+}

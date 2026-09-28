@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "id": "internal-psalm23-first-person-rescue",
+  "title": "A promise of presence becomes a first-person helping gesture",
+  "source": {
+    "kind": "internal",
+    "path": "/Users/shanefisher/Movies/Psalm23/Psalm 23 - Held in the Ordinary - Motion Cut.mp4",
+    "projectPath": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/project.json",
+    "videoSha256": "9a3f691b0c58490a363cfe100df7cb075b6e9a40f5e532827bb58f85931a45a6",
+    "projectRevision": "4fe2c289594cf47d7c7f839f432f4318edaf0dfeefdb41ae9d1fd82ead56541f",
+    "projectRevisionType": "frozen sourceRevision.revisionHash from matching v5 render provenance",
+    "renderProvenancePath": "/Volumes/DATA/ArkRender/psalm23-present-day/psalm23-held-in-the-ordinary-v5.mp4.render.json",
+    "start": 66.2,
+    "end": 73.1,
+    "sectionIds": [
+      "p23-l013",
+      "p23-l014"
+    ],
+    "generatedAsset": {
+      "path": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/assets/video/jesus-pov-rescue.mp4",
+      "sha256": "16e6856b54e97608c71987bda6e9ebc5ff0c089d52e674eba94be43c2dc9530c"
+    }
+  },
+  "intent": [
+    "reassurance",
+    "rescue",
+    "presence",
+    "trust",
+    "fear becoming connection",
+    "embodied help"
+  ],
+  "tags": [
+    "first-person perspective",
+    "hand-clasp",
+    "generated narrative footage",
+    "negative-space lyric lane",
+    "emotional gesture",
+    "warmth progression",
+    "active typography foreground"
+  ],
+  "motion": {
+    "summary": "An outstretched sleeve and hand enter from the viewer position toward a distressed woman beside a wet underpass wall. She reaches forward, clasps the hand, looks toward the viewer and begins to rise as warm illumination grows. The lyric advances in the dark space to her left, while thin authored contours connect the words to the gesture.",
+    "phases": [
+      "66.4–67.6s: the first-person open hand offers help while the woman remains crouched at the right and the declaration occupies the dark left lane.",
+      "68.8–70.4s: hands connect and eye contact develops as the lyric changes to the promise of presence.",
+      "71.0–72.7s: the woman rises partway and smiles as warmth grows; the completed phrase remains beside the action."
+    ],
+    "transferablePrinciple": "Make an abstract promise tangible through one motivated interaction seen from the participant viewpoint; reserve a separate readable lane so exact lyrics can develop alongside the gesture.",
+    "variations": [
+      "For a new reconciliation scene, put the viewer at a shared table as a person accepts an offered seat, with the lyric in a deliberately empty wall area.",
+      "For a trust lyric, show a new first-person exchange of a meaningful object, keeping generated physical action separate from exact authored words."
+    ],
+    "cautions": [
+      "Plan the empty reading area into the source composition before generating footage; do not place words over the emotional face or the clasp.",
+      "Use a new gesture, people and composition appropriate to the song; do not reuse this rescue footage as a generic inspirational insert.",
+      "Do not describe a complete escape or walk out: this clip ends during a supported rise inside the underpass.",
+      "Check every transition for word collisions; the sampled arrival of are temporarily crowds you around 71s."
+    ]
+  },
+  "quality": {
+    "status": "observed",
+    "reviewer": "Rook; actual v5 overview, 2fps action samples and six retained decoded frames inspected on 2026-09-28",
+    "userPreference": "unknown",
+    "userPreferenceScope": "Shane requested a first-person rescue in the revision brief; that request is not approval of this finished execution or reference card.",
+    "strengths": [
+      "The reaching hand gives the viewer a concrete role in the emotional change.",
+      "The face and clasp remain readable separately from the lyric lane in the inspected samples.",
+      "Changing posture, expression and illumination develop the scene beyond a still-image camera move."
+    ],
+    "limitations": [
+      "The generated action ends partway through standing; no completed walk out is visible.",
+      "A sampled arrival briefly crowds you and are; preserve the spatial principle without copying that spacing.",
+      "Fine contour strokes occasionally cross the face; the next adaptation should reserve that facial area more strictly.",
+      "Sampled decoded frames establish composition and transformation stages, not uninterrupted playback, full-speed smoothness or audio-sync certification.",
+      "This is agent observation of the exact v5 encoded artifact; the film remains pending Shane review."
+    ]
+  },
+  "frames": [
+    {
+      "path": "images/internal-psalm23-first-person-rescue/frame-01.jpg",
+      "timeSeconds": 66.4,
+      "sha256": "3b405222a74ae5ec7cd0f27b6ea6e9067dbc15e37d4702124227e6a1c1afe850"
+    },
+    {
+      "path": "images/internal-psalm23-first-person-rescue/frame-02.jpg",
+      "timeSeconds": 67.6,
+      "sha256": "7c72fab3aca3e272b73cf2cf14444398b522d93330f0b12b63e0a43fcd7f22f9"
+    },
+    {
+      "path": "images/internal-psalm23-first-person-rescue/frame-03.jpg",
+      "timeSeconds": 68.8,
+      "sha256": "069af59cb5d40545ec74d6919aadad0502df3f927361a03ef043d601077f1527"
+    },
+    {
+      "path": "images/internal-psalm23-first-person-rescue/frame-04.jpg",
+      "timeSeconds": 70.4,
+      "sha256": "edaa163f3d603b780d47a76f0ce08c28b8ce97fbc8b51a05ad1240246d49734e"
+    },
+    {
+      "path": "images/internal-psalm23-first-person-rescue/frame-05.jpg",
+      "timeSeconds": 71,
+      "sha256": "64d408516ccde30df717a31764f62700bb758fc6befcb479d595195e74132599"
+    },
+    {
+      "path": "images/internal-psalm23-first-person-rescue/frame-06.jpg",
+      "timeSeconds": 72.7,
+      "sha256": "e4b6e2bf3ae6cfd8229b76960fc5fb53f86453a86ef357754c86f1002d5e5744"
+    }
+  ],
+  "contactSheet": "images/internal-psalm23-first-person-rescue/sheet.jpg",
+  "capture": {
+    "method": "ffmpeg-frame-sequence-v1",
+    "videoDuration": 219.966667,
+    "fps": 30,
+    "sampledFrames": 6,
+    "contactSheetSha256": "4203a25070c0a4900ca73e72304aec7a1582293b642fc4c58bf55ccda93eae7f"
+  }
+}

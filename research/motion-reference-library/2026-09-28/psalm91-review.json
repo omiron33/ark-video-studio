@@ -1,0 +1,221 @@
+{
+  "version": 1,
+  "reviewDate": "2026-09-28",
+  "scope": "Selective reference curation from the actual latest supplied Psalm91 v4 encoded film; no render or project changes.",
+  "source": {
+    "kind": "internal",
+    "path": "/Users/shanefisher/Movies/Psalm91/Psalm 91 - Shelter - Full Film v4.mp4",
+    "projectPath": "/Volumes/Code/ark-video-studio/projects/psalm91-shelter/project.json",
+    "renderVersion": "Full Film v4",
+    "projectSha256AtCuration": "fd28619db3fefb493ca264a595e3a39750108d1aec626633ca70f7019390a63d",
+    "projectProvenanceNote": "Current project manifest recorded at curation; it is not asserted to be the exact frozen render revision.",
+    "start": 0,
+    "end": 327.6,
+    "sectionIds": [],
+    "videoSha256": "5a49eade84a664a472d47532f683ed4d813f5f6af593fd4ce90d5df57b0e8502"
+  },
+  "sourceProbe": {
+    "durationSeconds": 327.6,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "hasAudio": true
+  },
+  "methods": [
+    "Decoded overview sampled at one frame per eight seconds across the full encoded artifact; inspected the resulting contact sheet.",
+    "Decoded nine candidate intervals at exact requested 0.2-second timestamp steps using ffmpeg with threads 1; inspected all nine chronological sheets.",
+    "Inspected native decoded frames at 206.0, 207.2, 208.6 and 259.6 seconds for retained candidates.",
+    "Captured six actual video frames per selected card using capture-reference, then opened both retained library contact sheets."
+  ],
+  "overviewEvidence": {
+    "path": "/tmp/psalm91-curation-20260928/overview.jpg",
+    "sha256": "e2cfc22f1c26e8f644611e81c7408102b3c47b46d0f69cf7f6e7b740225b7e50",
+    "sampling": "ffmpeg fps=1/8, scaled overview; broad coverage only, not precise full-film acceptance"
+  },
+  "candidateReviews": [
+    {
+      "name": "trust-bridge",
+      "start": 44.6,
+      "end": 49.6,
+      "stepSeconds": 0.2,
+      "sampleCount": 26,
+      "decision": "rejected",
+      "reason": "The floor briefly changes and trust enters, but sampled movement does not demonstrate a strong new bridge principle beyond generic keyword emphasis.",
+      "reviewSheet": "/tmp/psalm91-curation-20260928/trust-bridge.jpg",
+      "reviewSheetSha256": "6fe9befe498a9c911c5bdc84dfc5e9179ef6cf63bbe584ba45ff20cd264867c0"
+    },
+    {
+      "name": "surrounds-arch",
+      "start": 71.4,
+      "end": 76.4,
+      "stepSeconds": 0.2,
+      "sampleCount": 26,
+      "decision": "rejected_duplicate",
+      "reason": "Strong legible bending word inside protective geometry, but the parallel Psalm23 reviewer is retaining the more complete declaration-to-shelter arch; avoid a second arch card in this batch.",
+      "reviewSheet": "/tmp/psalm91-curation-20260928/surrounds-arch.jpg",
+      "reviewSheetSha256": "4bb0b64c3d9c2961755136ee2dc86c953dd4657610185833e843288bf2284162"
+    },
+    {
+      "name": "harm-never-barrier",
+      "start": 181.4,
+      "end": 183.6,
+      "stepSeconds": 0.2,
+      "sampleCount": 12,
+      "decision": "rejected",
+      "reason": "The literal scene label suggests confrontation, but decoded samples show never above a short expanding line; a distinct blocked-threat action is not established.",
+      "reviewSheet": "/tmp/psalm91-curation-20260928/harm-never-barrier.jpg",
+      "reviewSheetSha256": "8063ee3ff7cfa235e682237f15b06a21c58a0b5d76df75ef9538f44fb4487a58"
+    },
+    {
+      "name": "held-rescue",
+      "start": 247.1,
+      "end": 253.3,
+      "stepSeconds": 0.2,
+      "sampleCount": 32,
+      "decision": "rejected",
+      "reason": "The lower rescue clause approaches a line, but the simple layout adds little beyond the stronger supported-clause lift retained here.",
+      "reviewSheet": "/tmp/psalm91-curation-20260928/held-rescue.jpg",
+      "reviewSheetSha256": "2a52b12f6eb09c9d87767a57df8201e7bcac27c59faff968aece2e8906034b76"
+    },
+    {
+      "name": "call-answer",
+      "start": 258.2,
+      "end": 260.8,
+      "stepSeconds": 0.2,
+      "sampleCount": 14,
+      "decision": "selected",
+      "reason": "internal-psalm91-call-answer-convergence",
+      "reviewSheet": "/tmp/psalm91-curation-20260928/call-answer.jpg",
+      "reviewSheetSha256": "9cad75733c579d0aba8979ba61281a207aa10df3ca174b89682ba4b003c6762a"
+    },
+    {
+      "name": "arrow-word",
+      "start": 157.2,
+      "end": 162.6,
+      "stepSeconds": 0.2,
+      "sampleCount": 28,
+      "decision": "rejected",
+      "reason": "The ARROW word makes a modest lateral entry beside a vertical line; a forceful projectile encounter is not established by the samples.",
+      "reviewSheet": "/tmp/psalm91-curation-20260928/arrow-word.jpg",
+      "reviewSheetSha256": "a046ae8823c35d2d4296ddf0b9b23e0c6c393f614aeea2d506594a5226ba486a"
+    },
+    {
+      "name": "lift-over-stone",
+      "start": 203.8,
+      "end": 210.0,
+      "stepSeconds": 0.2,
+      "sampleCount": 32,
+      "decision": "selected",
+      "reason": "internal-psalm91-lift-above-danger",
+      "reviewSheet": "/tmp/psalm91-curation-20260928/lift-over-stone.jpg",
+      "reviewSheetSha256": "6f257076f11dd1e55fdda670ceb31c33842afd5403f81495a3eaecfc0f5d3b19"
+    },
+    {
+      "name": "thousand-avalanche",
+      "start": 271.9,
+      "end": 274.7,
+      "stepSeconds": 0.2,
+      "sampleCount": 15,
+      "decision": "rejected",
+      "reason": "THOUSAND changes from level to slightly offset glyphs; the observed stagger is too modest to warrant a new avalanche card over existing fracture/falling principles.",
+      "reviewSheet": "/tmp/psalm91-curation-20260928/thousand-avalanche.jpg",
+      "reviewSheetSha256": "4d5943b6a517ced9b194fbe1172dd1e20ffea76af87687fda765d8fceb1f02a8"
+    },
+    {
+      "name": "no-power",
+      "start": 92.9,
+      "end": 97.1,
+      "stepSeconds": 0.2,
+      "sampleCount": 22,
+      "decision": "rejected_duplicate",
+      "reason": "The no/POWER pair separates horizontally; the word-separation and deliberate absence principles are already covered by internal-word-rupture and internal-negative-space.",
+      "reviewSheet": "/tmp/psalm91-curation-20260928/no-power.jpg",
+      "reviewSheetSha256": "857324437f879898b00a9f42f7752d252a2caaf9fdbe4af8d8cbb1be219243b4"
+    }
+  ],
+  "selectedCards": [
+    {
+      "id": "internal-psalm91-lift-above-danger",
+      "sourceStart": 203.807,
+      "sourceEnd": 210.350589,
+      "sectionIds": [
+        "p91-l039"
+      ],
+      "contactSheet": "images/internal-psalm91-lift-above-danger/sheet.jpg",
+      "contactSheetSha256": "4c4161daedcb0bf1a5e9380a2893cc70b9c1d8f61d6cdfb78542c34b8ced61e8",
+      "frameTimes": [
+        204,
+        205.8,
+        206.4,
+        207.2,
+        208.6,
+        209.6
+      ],
+      "contactSheetVisuallyInspected": true,
+      "userPreference": "unknown"
+    },
+    {
+      "id": "internal-psalm91-call-answer-convergence",
+      "sourceStart": 258.162698,
+      "sourceEnd": 260.836007,
+      "sectionIds": [
+        "p91-l044"
+      ],
+      "contactSheet": "images/internal-psalm91-call-answer-convergence/sheet.jpg",
+      "contactSheetSha256": "605c6faaded7bea4cd34830a71fc0149c9a904c7a15eebad2f6f921a70767091",
+      "frameTimes": [
+        258.2,
+        259.2,
+        259.4,
+        259.6,
+        260,
+        260.6
+      ],
+      "contactSheetVisuallyInspected": true,
+      "userPreference": "unknown"
+    }
+  ],
+  "excludedExistingMaterial": [
+    {
+      "id": "internal-psalm91-dust-lion",
+      "reason": "Already retained and explicitly user-liked at standalone clip scope; do not add another dust formation card or transfer that approval to v4."
+    },
+    {
+      "concept": "Keyhole opening, threshold reveal, late segment",
+      "reason": "Earlier user concerns remain outside this selective review. Overview samples do not certify fixes or full-film acceptance; no new reference added."
+    }
+  ],
+  "limitations": [
+    "No listening claim, audio-sync score, measured timing gate or full-speed motion certification was performed.",
+    "The dense samples show visible stage changes; they do not prove every intervening frame is free of artifacts.",
+    "The current project manifest hash is a curation-time provenance pointer, not asserted as the exact original rendered source revision.",
+    "All new cards keep userPreference unknown; no source or treatment approval is inferred."
+  ],
+  "changedPaths": [
+    "references/motion/cards/internal-psalm91-lift-above-danger.json",
+    "references/motion/cards/internal-psalm91-call-answer-convergence.json",
+    "references/motion/images/internal-psalm91-lift-above-danger/",
+    "references/motion/images/internal-psalm91-call-answer-convergence/",
+    "research/motion-reference-library/2026-09-28/psalm91-review.json"
+  ],
+  "searchVerification": [
+    {
+      "query": "rescue lifted above danger",
+      "warnings": [],
+      "resultIds": [
+        "internal-psalm91-lift-above-danger",
+        "internal-psalm23-first-person-rescue",
+        "internal-fingerprint-mark"
+      ]
+    },
+    {
+      "query": "call answer connection promise",
+      "warnings": [],
+      "resultIds": [
+        "internal-psalm91-call-answer-convergence",
+        "internal-psalm23-first-person-rescue",
+        "external-light-orders-field"
+      ]
+    }
+  ]
+}

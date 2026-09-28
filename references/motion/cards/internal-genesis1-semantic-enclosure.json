@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "id": "internal-genesis1-semantic-enclosure",
+  "title": "Draw a containing shape around the words that belong within",
+  "source": {
+    "kind": "internal",
+    "path": "/Users/shanefisher/Movies/Genesis1/Genesis 1 - Breath and Earth - Final.mp4",
+    "projectPath": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/project.json",
+    "videoSha256": "bd147120463a4852418e1ca76ab4d4bfefceff80d9ac8c4ec67ac3f93d6e6f45",
+    "start": 108.3,
+    "end": 110.42,
+    "sectionIds": [
+      "g1-l030"
+    ]
+  },
+  "intent": [
+    "containment",
+    "belonging within",
+    "hidden potential",
+    "seed inside fruit",
+    "protection",
+    "growth"
+  ],
+  "tags": [
+    "semantic typography",
+    "drawn enclosure",
+    "container and contents",
+    "relational geometry",
+    "readable words",
+    "seed"
+  ],
+  "motion": {
+    "summary": "FRUIT appears beside an open outline; a rust arc extends around the separately readable SEED WITHIN phrase, making the container-content relationship visible.",
+    "phases": [
+      "A small circular contour occupies the right-hand reading area while the lead-in remains at upper left.",
+      "FRUIT gains its own large left-hand position as an outer arc begins.",
+      "SEED WITHIN builds inside the larger emerging enclosure; the words retain their regular shapes."
+    ],
+    "transferablePrinciple": "Let a simple drawn boundary express a relationship between two lyric concepts while the words remain ordinary readable type.",
+    "variations": [
+      "For a promise held in memory, construct a new protective space around the promise phrase as surrounding language moves onward.",
+      "For a story about shelter, let a boundary gather around a short family name while the shelter word defines its edge."
+    ],
+    "cautions": [
+      "Invent a new spatial relationship and boundary for the current lyric; do not reuse this fruit layout as a preset.",
+      "Give the complete contained phrase enough readable hold time; the sampled source resolves near the end of a short passage.",
+      "Avoid a contour touching letter strokes or turning an enclosure into a cluttered diagram."
+    ]
+  },
+  "quality": {
+    "status": "observed",
+    "reviewer": "Rook; inspected six decoded MP4 samples and their contact sheet on 2026-09-28",
+    "userPreference": "unknown",
+    "userPreferenceScope": "No approval or rating from Shane is recorded for this extracted treatment.",
+    "strengths": [
+      "The outer rust contour advances from a short mark to a broad enclosure across the sampled frames.",
+      "FRUIT and SEED WITHIN occupy separate large reading areas, making the relationship visible without warping letters."
+    ],
+    "limitations": [
+      "The complete SEED WITHIN phrase arrives near the interval end; this is a useful containment idea with a brief resolved hold, not a universal timing template.",
+      "The small inner circle remains visible and may read as extra diagram detail.",
+      "Six still samples establish composition and progression only; they do not certify continuous motion, audio sync or whole-film quality."
+    ]
+  },
+  "frames": [
+    {
+      "path": "images/internal-genesis1-semantic-enclosure/frame-01.jpg",
+      "timeSeconds": 108.3,
+      "sha256": "04ae2aadeeabc54e25a6113df815b44a6c14ab385a5d6e0e446c0c03dcd5f9cd"
+    },
+    {
+      "path": "images/internal-genesis1-semantic-enclosure/frame-02.jpg",
+      "timeSeconds": 108.7,
+      "sha256": "1d4762a21269fe61cb6a670541e1bca38e5be18e5229180bcb1686af0a73711d"
+    },
+    {
+      "path": "images/internal-genesis1-semantic-enclosure/frame-03.jpg",
+      "timeSeconds": 109.1,
+      "sha256": "aaef8df16ee64f66e91257bb193270deab09fdf81f1507cec1ab164ea822b50e"
+    },
+    {
+      "path": "images/internal-genesis1-semantic-enclosure/frame-04.jpg",
+      "timeSeconds": 109.55,
+      "sha256": "16494635bbee8faa12ecdb8ee868f49e4b00341f91e6028a2f4f9f3d4b5106c3"
+    },
+    {
+      "path": "images/internal-genesis1-semantic-enclosure/frame-05.jpg",
+      "timeSeconds": 109.95,
+      "sha256": "7b36efe74411726fe37f02129d79d2051d28a08ce5a14e4ecdd2bdc29a18912c"
+    },
+    {
+      "path": "images/internal-genesis1-semantic-enclosure/frame-06.jpg",
+      "timeSeconds": 110.35,
+      "sha256": "5c8fcffbb82292da63a734c9bc8e573c267646af2cb5dbf20cba5a7131e90316"
+    }
+  ],
+  "contactSheet": "images/internal-genesis1-semantic-enclosure/sheet.jpg",
+  "capture": {
+    "method": "ffmpeg-frame-sequence-v1",
+    "videoDuration": 304.733333,
+    "fps": 30,
+    "sampledFrames": 6,
+    "contactSheetSha256": "d83c10395540d3a3da717d417491a73c9e96e92f9621397aec77342ac72ebdf6"
+  }
+}

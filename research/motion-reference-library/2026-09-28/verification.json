@@ -1,0 +1,92 @@
+{
+  "date": "2026-09-28",
+  "cards": 27,
+  "frames": 162,
+  "newCards": [
+    "internal-genesis1-semantic-enclosure",
+    "internal-genesis1-opposed-word-fulcrum",
+    "internal-genesis4-pressure-opens-to-mercy",
+    "internal-psalm23-first-person-rescue",
+    "internal-psalm23-declaration-shelter-arch",
+    "internal-psalm91-lift-above-danger",
+    "internal-psalm91-call-answer-convergence"
+  ],
+  "warnings": [],
+  "focusedTests": {
+    "passed": 10,
+    "failed": 0,
+    "command": "node --test tests/references.test.mjs tests/reference-director.test.mjs"
+  },
+  "searches": [
+    {
+      "query": "container seed within enclosure",
+      "expected": "internal-genesis1-semantic-enclosure",
+      "ids": [
+        "internal-genesis1-semantic-enclosure",
+        "internal-wide-to-threshold",
+        "internal-fingerprint-mark"
+      ],
+      "warnings": []
+    },
+    {
+      "query": "opposed day night fulcrum",
+      "expected": "internal-genesis1-opposed-word-fulcrum",
+      "ids": [
+        "internal-genesis1-opposed-word-fulcrum",
+        "internal-psalm23-mercy-material-handoff",
+        "internal-genesis4-pressure-opens-to-mercy"
+      ],
+      "warnings": []
+    },
+    {
+      "query": "threatening numbers motif opening mercy",
+      "expected": "internal-genesis4-pressure-opens-to-mercy",
+      "ids": [
+        "internal-genesis4-pressure-opens-to-mercy",
+        "internal-lifespan-counter",
+        "internal-wide-to-threshold"
+      ],
+      "warnings": []
+    },
+    {
+      "query": "first person rescue helping hand",
+      "expected": "internal-psalm23-first-person-rescue",
+      "ids": [
+        "internal-psalm23-first-person-rescue",
+        "internal-psalm23-mercy-material-handoff",
+        "internal-psalm91-lift-above-danger"
+      ],
+      "warnings": []
+    },
+    {
+      "query": "declaration shelter arch people",
+      "expected": "internal-psalm23-declaration-shelter-arch",
+      "ids": [
+        "internal-psalm23-declaration-shelter-arch",
+        "internal-wide-to-threshold",
+        "internal-threshold-entry"
+      ],
+      "warnings": []
+    },
+    {
+      "query": "lift support above jagged danger",
+      "expected": "internal-psalm91-lift-above-danger",
+      "ids": [
+        "internal-psalm91-lift-above-danger",
+        "internal-genesis1-opposed-word-fulcrum",
+        "internal-fingerprint-mark"
+      ],
+      "warnings": []
+    },
+    {
+      "query": "call answer words converge",
+      "expected": "internal-psalm91-call-answer-convergence",
+      "ids": [
+        "internal-psalm91-call-answer-convergence",
+        "internal-psalm23-declaration-shelter-arch",
+        "internal-weighted-words"
+      ],
+      "warnings": []
+    }
+  ]
+}

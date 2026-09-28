@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "id": "internal-psalm91-lift-above-danger",
+  "title": "Lift a complete clause above the danger it names",
+  "source": {
+    "kind": "internal",
+    "path": "/Users/shanefisher/Movies/Psalm91/Psalm 91 - Shelter - Full Film v4.mp4",
+    "projectPath": "/Volumes/Code/ark-video-studio/projects/psalm91-shelter/project.json",
+    "renderVersion": "Full Film v4",
+    "projectSha256AtCuration": "fd28619db3fefb493ca264a595e3a39750108d1aec626633ca70f7019390a63d",
+    "projectProvenanceNote": "Current project manifest recorded at curation; it is not asserted to be the exact frozen render revision.",
+    "start": 203.807,
+    "end": 210.350589,
+    "sectionIds": [
+      "p91-l039"
+    ],
+    "videoSha256": "5a49eade84a664a472d47532f683ed4d813f5f6af593fd4ce90d5df57b0e8502"
+  },
+  "intent": [
+    "protection",
+    "being carried",
+    "rescue",
+    "safety above danger",
+    "uplift",
+    "spatial grammar"
+  ],
+  "tags": [
+    "semantic typography",
+    "vertical separation",
+    "supported phrase",
+    "curved support",
+    "jagged terrain",
+    "readable words",
+    "negative space",
+    "coded motion"
+  ],
+  "motion": {
+    "summary": "The copper clause They lift me high assembles over a shallow curved support, then the completed clause and support rise together. The white words above the occupy the cleared middle region, while JAGGED STONE appears against the angular ground along the bottom. The completed sentence is also a diagram of its meaning.",
+    "phases": [
+      "203.8–206.0s: establish angular ground and a suspended support; build They lift me high over it.",
+      "206.0–207.2s: move the completed clause and its support upward together, visibly increasing clearance from the ground.",
+      "207.2–208.6s: place above the in the intervening space and JAGGED STONE at ground level.",
+      "208.6–210.2s: hold the three reading zones with the main clause visibly protected above the hazard."
+    ],
+    "transferablePrinciple": "Use the grammatical relationship of a sentence to assign physical zones, then move the whole protected clause with its support so the distance from the named danger carries the meaning.",
+    "variations": [
+      "For a new crossing lyric, transport a complete clause over a widening gap while the danger remains on the lower plane.",
+      "For a growth lyric, raise the named living subject out of the word describing its soil, preserving a distinct reading interval for each.",
+      "For a rescue lyric, create a new suspended platform that carries the protected phrase above a receding environmental line."
+    ],
+    "cautions": [
+      "Invent a new support, hazard and spatial relationship for the current story; do not reproduce this copper curve and sawtooth floor as a preset.",
+      "Keep the entire raised clause readable while it moves; do not break the sentence into isolated bouncing words.",
+      "Maintain enough contrast where a named hazard overlaps its graphic terrain, and check the lower text at phone size.",
+      "The large upper clause consumes substantial vertical space; reserve room for the remaining canonical words before lifting it."
+    ]
+  },
+  "quality": {
+    "status": "observed",
+    "reviewer": "Rook curation agent; decoded v4 samples at 0.2-second intervals and selected native frames, 2026-09-28",
+    "userPreference": "unknown",
+    "userPreferenceScope": "No individual approval of this treatment is recorded. Existing likes of standalone dust clips do not transfer to it. Earlier opening/keyhole and late-segment concerns are not certified resolved by this review.",
+    "strengths": [
+      "The rising clause and its support preserve a clear relationship while the gap from the jagged floor increases.",
+      "Upper action, connecting preposition and lower hazard are spatially distinct; the finished layout explains the lyric without a literal photograph.",
+      "The native frames keep the white JAGGED STONE text legible in front of the darker terrain."
+    ],
+    "limitations": [
+      "The concept is deliberately diagrammatic; the sawtooth ground resembles abstract blocks rather than natural rock.",
+      "The upper clause rises only after it has assembled, so this is not a claim that each individual word enacts its verb.",
+      "Inspected 0.2-second decoded samples and selected native frames; six retained frames do not certify every frame, full-speed smoothness, pacing, audio sync or full-film acceptance."
+    ]
+  },
+  "curation": {
+    "reviewDate": "2026-09-28",
+    "distinctFrom": [
+      "internal-weighted-words",
+      "internal-terrain-typography"
+    ],
+    "novelty": "Adds a supported complete clause moving relative to its explicitly named hazard; this is not merely one emotional word sinking or a camera entering terrain-shaped letters."
+  },
+  "frames": [
+    {
+      "path": "images/internal-psalm91-lift-above-danger/frame-01.jpg",
+      "timeSeconds": 204,
+      "sha256": "e5b8e9fde2da770a8faa67b1e0f7a291ba3250dfc2d1789e439e86ee34d5bdb7"
+    },
+    {
+      "path": "images/internal-psalm91-lift-above-danger/frame-02.jpg",
+      "timeSeconds": 205.8,
+      "sha256": "732abce8cd29091e3701a1b95238b98e54eb2e735e99bf3396c28ae7f558f420"
+    },
+    {
+      "path": "images/internal-psalm91-lift-above-danger/frame-03.jpg",
+      "timeSeconds": 206.4,
+      "sha256": "8bde1979ddba0c69bd3ef48617bfdaeaae24621344380d3e456a400e61a11614"
+    },
+    {
+      "path": "images/internal-psalm91-lift-above-danger/frame-04.jpg",
+      "timeSeconds": 207.2,
+      "sha256": "c87639b7fe93bf04808a7fca76162f26f91237dcf6e2d14751effcfbb701a7e3"
+    },
+    {
+      "path": "images/internal-psalm91-lift-above-danger/frame-05.jpg",
+      "timeSeconds": 208.6,
+      "sha256": "91dad408b01e9b740da06b494a45069e9454db409b3dbe3128755c23729dbc36"
+    },
+    {
+      "path": "images/internal-psalm91-lift-above-danger/frame-06.jpg",
+      "timeSeconds": 209.6,
+      "sha256": "65e7b74149c644d59e748f9a387c4fd2815a9b40635b5f14d3558fffc019a09e"
+    }
+  ],
+  "contactSheet": "images/internal-psalm91-lift-above-danger/sheet.jpg",
+  "capture": {
+    "method": "ffmpeg-frame-sequence-v1",
+    "videoDuration": 327.6,
+    "fps": 30,
+    "sampledFrames": 6,
+    "contactSheetSha256": "4c4161daedcb0bf1a5e9380a2893cc70b9c1d8f61d6cdfb78542c34b8ced61e8"
+  }
+}

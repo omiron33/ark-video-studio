@@ -1,0 +1,41 @@
+{
+  "date": "2026-09-28",
+  "reviewer": "primary agent, actual decoded image inspection",
+  "method": "Encoded overview sampling and six explicit selected timestamp frames; no claim of continuous playback or listening.",
+  "sources": [
+    {
+      "path": "/Users/shanefisher/Movies/Genesis 4 - HyperFrames Test/Genesis 4 - HyperFrames 20s.mp4",
+      "sha256": "615091dea0d016c94e8de6434553904802e338224ef92a3f0f921145bb740a79",
+      "duration": 20,
+      "inspection": "20-frame 1fps overview plus final selected sheet 12.8,13.6,14.5,15.1,15.45,16.8 seconds"
+    },
+    {
+      "path": "/Users/shanefisher/Movies/Genesis 4 - Vengeance and Mercy - v3.mp4",
+      "sha256": "6f1d33843be71917ff109d834d536452fa6e8bba9d7b195c156cc7ea235097ca",
+      "duration": 312,
+      "inspection": "25 overview frames at 1/12fps plus 9 ending frames from 285s at 1/3fps"
+    }
+  ],
+  "added": [
+    {
+      "id": "internal-genesis4-pressure-opens-to-mercy",
+      "novelty": "Threatening structural elements become an opening and yield to a human scene; differs from a sentence rupturing and a single word changing material.",
+      "evidence": "references/motion/images/internal-genesis4-pressure-opens-to-mercy/sheet.jpg"
+    }
+  ],
+  "notAdded": [
+    {
+      "idea": "Spatial reading stations",
+      "reason": "Useful, but current frames overlap the library continuous lineage reading-space principle; not enough new mechanism to justify another card."
+    },
+    {
+      "idea": "Genesis4 v3 weight, mark, landscape and fracture treatments",
+      "reason": "Already represented by existing Genesis4v2 cards; ordinary revisions are not a new principle."
+    },
+    {
+      "idea": "Final branching genealogy",
+      "reason": "Clear explanatory composition in the sampled ending, but existing lineage-journey card covers this retrieval need; avoid oversampling one film."
+    }
+  ],
+  "approval": "unknown; agent observations only"
+}

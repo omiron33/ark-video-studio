@@ -2,7 +2,7 @@
 
 Start with [the workflow](../../docs/MOTION_REFERENCES.md), or run `node engine/cli.mjs serve-references` from the repository root to browse the image sequences.
 
-This initial collection contains 17 inspected references: 12 from four finished internal videos and 5 from the supplied [Phil Trubey post](https://x.com/ptrubey/status/2104062055712260161), which shares [John Knopf’s original post](https://x.com/johnknopf/status/2103698854399099057). The collection includes 102 source frames and 17 timestamped contact sheets. No source MP4s are copied here.
+As of 2026-09-28, this collection contains 27 inspected references: 22 internal moments and 5 from the supplied [Phil Trubey post](https://x.com/ptrubey/status/2104062055712260161), which shares [John Knopf’s original post](https://x.com/johnknopf/status/2103698854399099057). It includes 162 source frames and 27 timestamped contact sheets. No source MP4s are copied here. The [latest curation review](../../research/motion-reference-library/2026-09-28/README.md) records seven additions from Genesis 1, Genesis 4, Psalm 23 and Psalm 91, plus rejected duplicates and weaker candidates.
 
 - `cards/`: machine-searchable descriptions, source provenance and observation notes.
 - `images/`: actual sampled visual evidence, grouped by stable reference ID.

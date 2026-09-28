@@ -1,0 +1,158 @@
+{
+  "version": 1,
+  "reviewDate": "2026-09-28",
+  "reviewer": "Rook",
+  "scope": "Curate distinct image-backed concepts from the final Genesis 1 encode; no film, project or renderer changes.",
+  "source": {
+    "path": "/Users/shanefisher/Movies/Genesis1/Genesis 1 - Breath and Earth - Final.mp4",
+    "sha256": "bd147120463a4852418e1ca76ab4d4bfefceff80d9ac8c4ec67ac3f93d6e6f45",
+    "duration": 304.733333,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "projectPath": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/project.json",
+    "projectManifestSha256": "e2bf64f09cfc248c1b8abf4ee76619f53081814f99ce96b2fa12f0e80f679e59",
+    "projectManifestNote": "Current manifest supplied section identity and boundaries; the exact sampled video is identified independently by SHA256."
+  },
+  "reviewMethod": {
+    "overview": "Decoded the complete source using ffmpeg fps=1/5 and scaled to 384x216; opened all three overview sheets (61 images, approximately 2.5 through 302.5 seconds). These uniformly spaced samples were used only to find candidate passages.",
+    "overviewTimestampPrecision": "Overview labels are nominal sample-bin centers; source frame time may differ by one 30fps frame. Final card timestamps are explicit ffmpeg seek times.",
+    "candidateCloseups": [
+      {
+        "name": "seed enclosure",
+        "sampleTimes": [
+          107.8,
+          108.3,
+          108.8,
+          109.3,
+          109.8,
+          110.3
+        ]
+      },
+      {
+        "name": "word fulcrum",
+        "sampleTimes": [
+          140.32,
+          140.8,
+          141.25,
+          141.7,
+          142.2,
+          142.7
+        ]
+      },
+      {
+        "name": "paired scale",
+        "sampleTimes": [
+          155.85,
+          157.0,
+          158.15,
+          159.7,
+          161.1,
+          162.55
+        ]
+      }
+    ],
+    "finalEvidence": "Created both cards using capture-reference with six frames each, then opened each resulting contact sheet before setting observed.",
+    "assessmentLimits": [
+      "Sparse decoded still sequences support relationships and state progression only.",
+      "No continuous-playback, motion-smoothness, musical-pacing or audio-sync claim is made.",
+      "No user approval of these extracted treatments was inferred."
+    ]
+  },
+  "newReferences": [
+    {
+      "id": "internal-genesis1-semantic-enclosure",
+      "sourceInterval": [
+        108.3,
+        110.42
+      ],
+      "sectionIds": [
+        "g1-l030"
+      ],
+      "sampleTimes": [
+        108.3,
+        108.7,
+        109.1,
+        109.55,
+        109.95,
+        110.35
+      ],
+      "contactSheet": "references/motion/images/internal-genesis1-semantic-enclosure/sheet.jpg",
+      "contactSheetSha256": "d83c10395540d3a3da717d417491a73c9e96e92f9621397aec77342ac72ebdf6",
+      "novelty": "A gradually drawn enclosure shows container/content semantics with intact type; unlike particle assembly, landscape type or a word becoming material."
+    },
+    {
+      "id": "internal-genesis1-opposed-word-fulcrum",
+      "sourceInterval": [
+        140.8,
+        142.83
+      ],
+      "sectionIds": [
+        "g1-l040"
+      ],
+      "sampleTimes": [
+        140.8,
+        141.2,
+        141.6,
+        142,
+        142.4,
+        142.8
+      ],
+      "contactSheet": "references/motion/images/internal-genesis1-opposed-word-fulcrum/sheet.jpg",
+      "contactSheetSha256": "d2e50c4f0d859585f11d856cbdd20ff533b4cdc0ba4263aa98f11297da1c3507",
+      "novelty": "Two opposed words acquire a shared fulcrum and differential height; unlike simply pulling words apart or adding emotional weight to one word."
+    }
+  ],
+  "notAdded": [
+    {
+      "candidate": "Great whales organic word composite",
+      "interval": [
+        195.35,
+        203.5
+      ],
+      "reason": "Already covered by internal-genesis1-whale-word-composite. The final encode hash differs from the older reference source; the existing card was preserved and no duplicate was added.",
+      "existingReference": "internal-genesis1-whale-word-composite",
+      "existingVideoSha256": "b946c097f0902c0f3b4eda3a330aceca2ef893c29bd5a7eb511cc34101d130db"
+    },
+    {
+      "candidate": "Greater and lesser circles preserve word legibility",
+      "interval": [
+        155.76,
+        162.7
+      ],
+      "reason": "Visually useful scale comparison, but not selected for this small batch: comparison is more clearly demonstrated by the curated fulcrum, while the circles add less distinct reusable choreography. Actual closeup samples were inspected."
+    },
+    {
+      "candidate": "Water separation, ground rise and creature emergence",
+      "reason": "Overview candidates overlap existing separation, terrain, formation and whale-composite principles; no additional cards justified from these samples."
+    }
+  ],
+  "userPreference": "unknown",
+  "changesLimitedTo": [
+    "two new cards",
+    "their twelve frames and two sheets",
+    "this review log"
+  ],
+  "verification": [
+    {
+      "query": "seed within fruit containment",
+      "resultIds": [
+        "internal-genesis1-semantic-enclosure",
+        "external-window-releases-subject",
+        "internal-terrain-typography"
+      ],
+      "warnings": [],
+      "allFrameAndSheetHashesMatch": true,
+      "allSampleTimesStrictlyBeforeSourceEnd": true
+    },
+    {
+      "query": "opposition balance fulcrum comparison",
+      "resultIds": [
+        "internal-genesis1-opposed-word-fulcrum"
+      ],
+      "warnings": [],
+      "allFrameAndSheetHashesMatch": true,
+      "allSampleTimesStrictlyBeforeSourceEnd": true
+    }
+  ]
+}
