@@ -2,7 +2,7 @@
 
 ## Choose the theme before running production
 
-The agent entry point is [ark-song-video](../skills/ark-song-video/SKILL.md). For every new video, check the OmiPC app for the song first (download/store there only if needed), inspect actual reference-library contact sheets using [MOTION_REFERENCES.md](MOTION_REFERENCES.md), then generate **three GPT Image theme mockup images as one numbered contact sheet**. Show it and wait for Shane's explicit choice. These are still-image concepts, not HTML builds, animated prototypes or rendered clips. Record the pending/chosen state and selected theme with the concept artifacts.
+The agent entry point is [ark-song-video](../skills/ark-song-video/SKILL.md). For every new video, check the private Genesis Site for the approved song first, inspect actual reference-library contact sheets using [MOTION_REFERENCES.md](MOTION_REFERENCES.md), then generate **four GPT Image theme mockup images as one numbered contact sheet**. Show it and wait for Shane's explicit choice. These are still-image concepts, not HTML builds, animated prototypes or rendered clips. Record the pending/chosen state and selected theme with the concept artifacts.
 
 Before that choice, only intake, analysis, reference inspection and mockup images may proceed. Do not run `create`, author animation, build a prototype, generate the production asset set or render a preview/movie. General autonomous permission cannot bypass this requested checkpoint; only an explicit later waiver can. Existing approved projects retain their choice for routine edits. This is an agent workflow requirement; the current CLI does not implement a theme-selection UI or enforce the checkpoint itself.
 
@@ -72,7 +72,7 @@ Missing/repeated required artwork and invalid pacing fail the creation preflight
 
 ## Outputs and retry
 
-After reviewing a finished output or preview clip, import it into Photos and add it to the OmiPC app as a review candidate. Verify both destinations and provide the review/download link; avoid duplicate imports and do not confuse local Photos import with confirmed iPhone sync. See the [workflow skill](../skills/ark-song-video/SKILL.md) for delivery boundaries.
+After reviewing a finished output or preview clip, import it into Photos and add it to the private Genesis Site as a review candidate. Verify both destinations and provide the review/download link; avoid duplicate imports and do not confuse local Photos import with confirmed iPhone sync. See the [workflow skill](../skills/ark-song-video/SKILL.md) for delivery boundaries.
 
 `output/my-song/run.json` is the authoritative orchestration report. `project/project.json` is the portable editable source; its assets include the original song, supplied images, fonts and font licenses. `plan.json` records direction evidence. `film.mp4.render.json` records encoding/cache timing and source revision. `review/attempt-NN/` contains measured audio, visual evidence and the gauntlet result.
 
