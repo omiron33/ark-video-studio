@@ -1,0 +1,288 @@
+{
+  "ea5926a0-3542-46c3-aca1-21d0eadc71ea": {
+    "prompt": [
+      107,
+      "ea5926a0-3542-46c3-aca1-21d0eadc71ea",
+      {
+        "1": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+            "type": "minimax",
+            "device": "default"
+          },
+          "_meta": {
+            "title": "Load CLIP"
+          }
+        },
+        "2": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+            "weight_dtype": "default"
+          },
+          "_meta": {
+            "title": "Load Diffusion Model"
+          }
+        },
+        "3": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+          },
+          "_meta": {
+            "title": "Load Video VAE"
+          }
+        },
+        "5": {
+          "class_type": "MiniMaxH3SigmaShift",
+          "inputs": {
+            "model": [
+              "17",
+              0
+            ],
+            "shift_video": 12.0,
+            "shift_audio": 3.0
+          },
+          "_meta": {
+            "title": "Sigma Shift"
+          }
+        },
+        "6": {
+          "class_type": "MiniMaxH3ImageToVideo",
+          "inputs": {
+            "clip": [
+              "1",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ],
+            "prompt": "Cinematic continuous live-action shot from the first-person point of view of Jesus, in a real present-day wet urban underpass at night. The same crying woman remains on the right beside the wall, while the same naturally shaped hand in an ivory sleeve reaches toward her from the left foreground. Over seven unhurried seconds she notices the offered hand, lifts her tear-wet face and looks directly into the lens, places her hand securely in his, gives a small authentic relieved smile, and begins rising toward the camera as he gently draws her away from the darkness. Warm golden-white light from around the camera/Jesus gradually reaches her face, shoulder and the wet pavement. The blue-black underpass recedes behind her. Emotion quiet and sincere. Subtle real rain and reflected light provide living background motion. Preserve her face, hair and clothes, the exact same tunnel, consistent camera axis, anatomical hands and five fingers, one continuous human action. Camera has only a gentle human handheld breath and tiny backward motion as he pulls; no cut, no teleport, no duplicate person, no extra limbs, no face warping, no sudden smile, no fantasy particles, no generated words, no text. Keep the left upper/center region open for later lyric overlay.",
+            "width": 960,
+            "height": 544,
+            "length": 172,
+            "first_frame": [
+              "16",
+              0
+            ],
+            "last_frame": [
+              "18",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "H3 Conditioning"
+          }
+        },
+        "7": {
+          "class_type": "BasicGuider",
+          "inputs": {
+            "model": [
+              "5",
+              0
+            ],
+            "conditioning": [
+              "6",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "Basic Guider"
+          }
+        },
+        "8": {
+          "class_type": "RandomNoise",
+          "inputs": {
+            "noise_seed": 20260927101
+          },
+          "_meta": {
+            "title": "Noise"
+          }
+        },
+        "9": {
+          "class_type": "BasicScheduler",
+          "inputs": {
+            "model": [
+              "5",
+              0
+            ],
+            "scheduler": "simple",
+            "steps": 4,
+            "denoise": 1.0
+          },
+          "_meta": {
+            "title": "Scheduler"
+          }
+        },
+        "10": {
+          "class_type": "MiniMaxH3TurboSampler",
+          "inputs": {}
+        },
+        "11": {
+          "class_type": "SamplerCustomAdvanced",
+          "inputs": {
+            "noise": [
+              "8",
+              0
+            ],
+            "guider": [
+              "7",
+              0
+            ],
+            "sampler": [
+              "10",
+              0
+            ],
+            "sigmas": [
+              "9",
+              0
+            ],
+            "latent_image": [
+              "6",
+              1
+            ]
+          },
+          "_meta": {
+            "title": "Sampler Custom Advanced"
+          }
+        },
+        "12": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "11",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ]
+          },
+          "_meta": {
+            "title": "VAE Decode"
+          }
+        },
+        "14": {
+          "class_type": "CreateVideo",
+          "inputs": {
+            "images": [
+              "12",
+              0
+            ],
+            "fps": 24.0,
+            "bit_depth": 8
+          },
+          "_meta": {
+            "title": "Create Video"
+          }
+        },
+        "15": {
+          "class_type": "SaveVideo",
+          "inputs": {
+            "video": [
+              "14",
+              0
+            ],
+            "filename_prefix": "psalm23-production/jesus-pov-rescue",
+            "format": "auto",
+            "codec": "auto"
+          },
+          "_meta": {
+            "title": "Save Video"
+          }
+        },
+        "16": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "first.png"
+          }
+        },
+        "17": {
+          "class_type": "MiniMaxH3TurboLoRA",
+          "inputs": {
+            "model": [
+              "2",
+              0
+            ],
+            "lora_name": "minimax_h3_turbo_v4_step600_ema_pruned_comfyui.safetensors",
+            "strength": 1.0,
+            "low_vram": true
+          }
+        },
+        "18": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "last.png"
+          }
+        }
+      },
+      {
+        "client_id": "psalm23-jesus-agent",
+        "create_time": 1790555555283
+      },
+      [
+        "15"
+      ]
+    ],
+    "outputs": {
+      "15": {
+        "images": [
+          {
+            "filename": "jesus-pov-rescue_00001_.mp4",
+            "subfolder": "psalm23-production",
+            "type": "output"
+          }
+        ],
+        "animated": [
+          true
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "ea5926a0-3542-46c3-aca1-21d0eadc71ea",
+            "timestamp": 1790555555285
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "1",
+              "2",
+              "3",
+              "5",
+              "9",
+              "10",
+              "17"
+            ],
+            "prompt_id": "ea5926a0-3542-46c3-aca1-21d0eadc71ea",
+            "timestamp": 1790555555307
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "ea5926a0-3542-46c3-aca1-21d0eadc71ea",
+            "timestamp": 1790555701319
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "15": {
+        "node_id": "15",
+        "display_node": "15",
+        "parent_node": null,
+        "real_node_id": "15"
+      }
+    }
+  }
+}

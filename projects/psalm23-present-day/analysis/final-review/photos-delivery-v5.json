@@ -1,0 +1,14 @@
+{
+  "videoSha256": "9a3f691b0c58490a363cfe100df7cb075b6e9a40f5e532827bb58f85931a45a6",
+  "importedFrom": "/Users/shanefisher/Movies/Psalm23/Psalm 23 - Held in the Ordinary - Motion Cut.mp4",
+  "album": "Psalm 23 - Held in the Ordinary",
+  "itemCountAfterImport": 1,
+  "durationShown": "3:40",
+  "playback": "Photos showed the opening title advancing after Play. Its native scrubber then displayed the smiling POV hand clasp at 01:11 and the moving Jesus-with-people hospital scene at 02:07.",
+  "formatBadge": "Photos exposed Low Resolution File / Unsupported File Format in accessibility even while video picture and native seeking worked. No independent claim about iCloud sync is made.",
+  "previousImport": "The album showed No Items before v5 import, despite the historical v2 Photos receipt. The v2 movie remains preserved locally and as an OmiPC review candidate; this check does not establish why its earlier Photos item was absent.",
+  "limitations": [
+    "Sampled actual playback, not an uninterrupted watch or subjective audio listening test.",
+    "Album import does not establish iPhone/iCloud synchronization."
+  ]
+}

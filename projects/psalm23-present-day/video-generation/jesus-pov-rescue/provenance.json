@@ -1,0 +1,33 @@
+{
+  "shot": "jesus-pov-rescue",
+  "provider": "local OmiPC ComfyUI",
+  "model": "MiniMax H3 FL2VA int8 convrot with four-step turbo LoRA",
+  "promptId": "ea5926a0-3542-46c3-aca1-21d0eadc71ea",
+  "firstImageSha256": "aa1a99f6d78248a3a179243ee999c9969c4d22bb5ff1d8118cdfae7eedb51598",
+  "lastImageSha256": "a0980649f9b45d97f21b3fd819976f9feb47aad504cdca664ea286c914512251",
+  "conditioning": "first_frame+last_frame",
+  "seed": 20260927101,
+  "raw": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/jesus-pov-rescue/raw.mp4",
+  "rawSha256": "ba343bb984b950f186b458d264106804cbdd152290aeac4d1da65c3d392dc243",
+  "finished": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/assets/video/jesus-pov-rescue.mp4",
+  "finishedSha256": "48b3f250d95801f5c59727d05c365330a52aedf294bed48698849d6330a20c65",
+  "video": {
+    "width": 960,
+    "height": 540,
+    "fps": 24,
+    "frames": 175,
+    "requestedFrames": 172,
+    "durationSeconds": 7.291666666666667,
+    "audio": false
+  },
+  "processing": "Crop 2px top/bottom, silent H264 CRF17, no interpolation, retiming or upscale",
+  "fullDecode": "pass",
+  "reviewContactSheet": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/jesus-pov-rescue/review-6fps.jpg",
+  "reviewContactSheetSha256": "7520109c9e6d2743cd4e659266b1ca3085e14e40e3a34ad2ba9d504c092c59d2",
+  "firstPoster": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/assets/video/jesus-pov-rescue-first.png",
+  "firstPosterSha256": "251c4732d1195e7c0513aab37ce7fce38cad6f7bebe4f1b620c64e577fe4701c",
+  "lastPoster": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/assets/video/jesus-pov-rescue-last.png",
+  "lastPosterSha256": "afa7ee87afb4e324ee988b88dd7175accd0429ef3e9980d21ae6ac8dff25d8fd",
+  "reviewStatus": "awaiting_visual_inspection",
+  "finishedAt": "2026-09-28T00:35:46.848012+00:00"
+}

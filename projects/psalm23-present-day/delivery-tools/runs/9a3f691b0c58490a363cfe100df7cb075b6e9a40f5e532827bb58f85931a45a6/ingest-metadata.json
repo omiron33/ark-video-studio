@@ -1,0 +1,13 @@
+{
+  "path": "C:\\Users\\sjfis\\Videos\\Psalm23\\held-in-ordinary-9a3f691b0c58490a.mp4",
+  "thumbnail": "C:\\Users\\sjfis\\Videos\\Psalm23\\held-in-ordinary-9a3f691b0c58490a.jpg",
+  "project": "Psalm 23 (LXX 22) lyric film",
+  "title": "Psalm 23 \u2014 Held in the Ordinary",
+  "version": "Held in the Ordinary - full film v5",
+  "sourceAgent": "Codex",
+  "sourceMachine": "Mac mini / OmiPC",
+  "sourcePath": "/Volumes/DATA/ArkRender/psalm23-present-day/psalm23-held-in-the-ordinary-v5.mp4",
+  "notes": "Psalm 23 (LXX 22) The Lord Is My Shepherd. Full 219.96-second source, selected Suno take 32885123-f4b6-42e6-a546-f4acba404829. Shane chose theme 1, Held in the Ordinary: contemporary protection and lyric-led animation. Psalm 23 Held in the Ordinary v5 review candidate, 219.9667 s, 6599 frames at 1920x1080/30fps H264/AAC. Four new clips: soul fiber animation 43.834-49.001, Jesus POV rescue 65.826-73.117, Jesus with people in a hospital 120.305-127.597, and life weave animation 163.855-169.021. Two modern Jesus stills replace seated/standing slides. All four clips show encoded motion. Independent exact-MP4 visual scores: legibility 8.4, semantic motion 8.0, photorealism 8.6, composition 8.4, continuity 8.5. All 39 phrase sheets and 11 transitions inspected; clean dissolves. Repaired paths/of separation verified on sung frames and phone scale; v5 OCR covers 210/210 words. Technical decode, source binding, PCM, temporal and source preservation pass. Strict sung-word acoustic gate remains failed with 153 verified, 55 unsupported, 2 disputed; no automatic perfect-sync claim. POV woman smiles and rises into light but does not fully leave the underpass before the cut. Brief traveling-letter disorder remains near 121.31. Original v2 remains preserved. Final movie imported into Photos Psalm 23 album and actual scene seeking verified; Photos also displays an unsupported-format badge despite playable frames. Awaiting Shane review, not user approved. Pending Shane review; not user approved. Video SHA256 9a3f691b0c58490a363cfe100df7cb075b6e9a40f5e532827bb58f85931a45a6. Review report SHA256 220c9b8374c3606d0a39f41098b602781960e0dcb8f03c567fcc726304500d41. Audio exception: Strict acoustic singing sync remains failed: 153/210 words verified, 55 unsupported, 2 disputed model matches. Exact encoded OCR sees 210/210 words; independent onset inspection sees all 103 sampled cues and repairs paths/of. Source/encoded PCM correlation is 0.999414, minimum segment 0.998761, zero lag. These checks do not certify all sung word timings.",
+  "status": "pending_review",
+  "expectedMd5": "aa61434f638b885a0500ca0a409c43d8"
+}

@@ -50,6 +50,10 @@
       "type": "image",
       "src": "assets/photos/p04.png"
     },
+    "assets-photos-p05-jesus": {
+      "type": "image",
+      "src": "assets/photos/p05-jesus.png"
+    },
     "assets-photos-p05": {
       "type": "image",
       "src": "assets/photos/p05.png"
@@ -61,6 +65,10 @@
     "assets-photos-p07": {
       "type": "image",
       "src": "assets/photos/p07.png"
+    },
+    "assets-photos-p08-jesus": {
+      "type": "image",
+      "src": "assets/photos/p08-jesus.png"
     },
     "assets-photos-p08": {
       "type": "image",
@@ -81,6 +89,54 @@
     "assets-photos-p12": {
       "type": "image",
       "src": "assets/photos/p12.png"
+    },
+    "assets-video-animation-life-first": {
+      "type": "image",
+      "src": "assets/video/animation-life-first.png"
+    },
+    "assets-video-animation-life-last": {
+      "type": "image",
+      "src": "assets/video/animation-life-last.png"
+    },
+    "assets-video-animation-soul-first": {
+      "type": "image",
+      "src": "assets/video/animation-soul-first.png"
+    },
+    "assets-video-animation-soul-last": {
+      "type": "image",
+      "src": "assets/video/animation-soul-last.png"
+    },
+    "assets-video-jesus-pov-rescue-first": {
+      "type": "image",
+      "src": "assets/video/jesus-pov-rescue-first.png"
+    },
+    "assets-video-jesus-pov-rescue-last": {
+      "type": "image",
+      "src": "assets/video/jesus-pov-rescue-last.png"
+    },
+    "assets-video-jesus-pov-rescue-v2-first": {
+      "type": "image",
+      "src": "assets/video/jesus-pov-rescue-v2-first.png"
+    },
+    "assets-video-jesus-pov-rescue-v2-last": {
+      "type": "image",
+      "src": "assets/video/jesus-pov-rescue-v2-last.png"
+    },
+    "assets-video-jesus-with-people-first": {
+      "type": "image",
+      "src": "assets/video/jesus-with-people-first.png"
+    },
+    "assets-video-jesus-with-people-last": {
+      "type": "image",
+      "src": "assets/video/jesus-with-people-last.png"
+    },
+    "assets-video-jesus-with-people-v2-first": {
+      "type": "image",
+      "src": "assets/video/jesus-with-people-v2-first.png"
+    },
+    "assets-video-jesus-with-people-v2-last": {
+      "type": "image",
+      "src": "assets/video/jesus-with-people-v2-last.png"
     },
     "assets-video-mercy-first": {
       "type": "image",
@@ -108,6 +164,30 @@
     }
   },
   "mediaAssets": {
+    "assets-video-animation-life-motion": {
+      "type": "video",
+      "src": "assets/video/animation-life-motion.mp4"
+    },
+    "assets-video-animation-soul-motion": {
+      "type": "video",
+      "src": "assets/video/animation-soul-motion.mp4"
+    },
+    "assets-video-jesus-pov-rescue-v2": {
+      "type": "video",
+      "src": "assets/video/jesus-pov-rescue-v2.mp4"
+    },
+    "assets-video-jesus-pov-rescue": {
+      "type": "video",
+      "src": "assets/video/jesus-pov-rescue.mp4"
+    },
+    "assets-video-jesus-with-people-v2": {
+      "type": "video",
+      "src": "assets/video/jesus-with-people-v2.mp4"
+    },
+    "assets-video-jesus-with-people": {
+      "type": "video",
+      "src": "assets/video/jesus-with-people.mp4"
+    },
     "assets-video-mercy-motion": {
       "type": "video",
       "src": "assets/video/mercy-motion.mp4"
@@ -143,6 +223,9 @@
     "assets-photos-p04": {
       "src": "assets/photos/p04.png"
     },
+    "assets-photos-p05-jesus": {
+      "src": "assets/photos/p05-jesus.png"
+    },
     "assets-photos-p05": {
       "src": "assets/photos/p05.png"
     },
@@ -151,6 +234,9 @@
     },
     "assets-photos-p07": {
       "src": "assets/photos/p07.png"
+    },
+    "assets-photos-p08-jesus": {
+      "src": "assets/photos/p08-jesus.png"
     },
     "assets-photos-p08": {
       "src": "assets/photos/p08.png"
@@ -166,6 +252,60 @@
     },
     "assets-photos-p12": {
       "src": "assets/photos/p12.png"
+    },
+    "assets-video-animation-life-first": {
+      "src": "assets/video/animation-life-first.png"
+    },
+    "assets-video-animation-life-last": {
+      "src": "assets/video/animation-life-last.png"
+    },
+    "assets-video-animation-life-motion": {
+      "src": "assets/video/animation-life-motion.mp4"
+    },
+    "assets-video-animation-soul-first": {
+      "src": "assets/video/animation-soul-first.png"
+    },
+    "assets-video-animation-soul-last": {
+      "src": "assets/video/animation-soul-last.png"
+    },
+    "assets-video-animation-soul-motion": {
+      "src": "assets/video/animation-soul-motion.mp4"
+    },
+    "assets-video-jesus-pov-rescue-first": {
+      "src": "assets/video/jesus-pov-rescue-first.png"
+    },
+    "assets-video-jesus-pov-rescue-last": {
+      "src": "assets/video/jesus-pov-rescue-last.png"
+    },
+    "assets-video-jesus-pov-rescue-v2-first": {
+      "src": "assets/video/jesus-pov-rescue-v2-first.png"
+    },
+    "assets-video-jesus-pov-rescue-v2-last": {
+      "src": "assets/video/jesus-pov-rescue-v2-last.png"
+    },
+    "assets-video-jesus-pov-rescue-v2": {
+      "src": "assets/video/jesus-pov-rescue-v2.mp4"
+    },
+    "assets-video-jesus-pov-rescue": {
+      "src": "assets/video/jesus-pov-rescue.mp4"
+    },
+    "assets-video-jesus-with-people-first": {
+      "src": "assets/video/jesus-with-people-first.png"
+    },
+    "assets-video-jesus-with-people-last": {
+      "src": "assets/video/jesus-with-people-last.png"
+    },
+    "assets-video-jesus-with-people-v2-first": {
+      "src": "assets/video/jesus-with-people-v2-first.png"
+    },
+    "assets-video-jesus-with-people-v2-last": {
+      "src": "assets/video/jesus-with-people-v2-last.png"
+    },
+    "assets-video-jesus-with-people-v2": {
+      "src": "assets/video/jesus-with-people-v2.mp4"
+    },
+    "assets-video-jesus-with-people": {
+      "src": "assets/video/jesus-with-people.mp4"
     },
     "assets-video-mercy-first": {
       "src": "assets/video/mercy-first.png"
@@ -10215,7 +10355,7 @@
   },
   "renderBackend": {
     "name": "hyperframes",
-    "version": "0.8.80",
+    "version": "0.8.81",
     "compositionId": "psalm23",
     "entry": {
       "src": "index.html"

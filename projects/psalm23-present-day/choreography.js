@@ -3,7 +3,16 @@ const P23_CHOREOGRAPHY_FAMILIES = ["gathering-shepherd", "opening-nothing", "gro
 // Each family below changes meaningful word geometry, relation or material.
 // The shared reveal merely exposes the exact word on its measured onset.
 const p23ById=id=>document.getElementById(id);
-const move=(el,from,to,t,d=.72,ease='power3.out')=>tl.fromTo(el,from,{...to,duration:d,ease,immediateRender:false},t);
+const move=(el,from,to,t,d=.72,ease='power3.out')=>{
+ const word=el?.classList?.contains('word')?el:el?.closest?.('.word');
+ const onset=Number(word?.dataset.wordStart);
+ // Essential glyphs must be readable on the sung attack. Build their clip
+ // or growth *before* that attack; the semantic traces and camera movement
+ // still unfold through the vocal. A 20 ms sung word is shorter than a frame.
+ if(Number.isFinite(onset)&&onset>0&&Math.abs(t-onset)<.04&&
+    (from.clipPath!==undefined||(el?.classList?.contains('letter')&&from.scaleY!==undefined&&from.scaleY<.8)))t-=d;
+ return tl.fromTo(el,from,{...to,duration:d,ease,immediateRender:false},t);
+};
 const letters=w=>[...p23ById(w.id).querySelectorAll('.letter')];
 const applyLetters=(w,fn)=>letters(w).forEach((el,k,a)=>fn(el,k,a.length));
 const normal={x:0,y:0,z:0,rotation:0,rotationX:0,rotationY:0,scaleX:1,scaleY:1};
@@ -11,19 +20,32 @@ const has=(w,s)=>w.text.toLowerCase().includes(s);
 const makeTrace=(root,id,d,opacity=.65,width=1.7)=>{const el=document.createElementNS('http://www.w3.org/2000/svg','path');el.id=id;el.setAttribute('d',d);el.setAttribute('fill','none');el.setAttribute('stroke','#e7c896');el.setAttribute('stroke-width',width);el.setAttribute('stroke-linecap','round');el.style.opacity=opacity;root.querySelector('.front-contours').appendChild(el);const len=el.getTotalLength();el.style.strokeDasharray=len;el.style.strokeDashoffset=len;return el;};
 const drawTrace=(el,start,span)=>move(el,{strokeDashoffset:el.getTotalLength()},{strokeDashoffset:0},start,span,'sine.inOut');
 const onRoute=(w,points,at,span)=>{const el=p23ById(w.id),step=span/(points.length-1);for(let i=1;i<points.length;i++)move(el,{x:points[i-1][0]-w.x,y:points[i-1][1]-w.y,rotation:points[i-1][2]||0},{x:points[i][0]-w.x,y:points[i][1]-w.y,rotation:points[i][2]||0},at+(i-1)*step,step,i===points.length-1?'sine.out':'none');};
-const fracture=w=>applyLetters(w,(el,k)=>{el.classList.add('cracked');el.dataset.glyph=el.textContent;move(el,{'--upper-x':`${k%2?24:-24}px`,'--lower-x':`${k%2?-24:24}px`,'--upper-y':'-18px','--lower-y':'18px'},{'--upper-x':'0px','--lower-x':'0px','--upper-y':'0px','--lower-y':'0px'},w.start+k*.003,Math.min(.2,Math.max(.12,w.end-w.start)),'power2.out');});
+const fracture=w=>applyLetters(w,(el,k)=>{el.classList.add('cracked');el.dataset.glyph=el.textContent;el.setAttribute('data-layout-ignore','');const d=Math.min(.2,Math.max(.12,w.end-w.start));move(el,{'--upper-x':`${k%2?24:-24}px`,'--lower-x':`${k%2?-24:24}px`,'--upper-y':'-18px','--lower-y':'18px'},{'--upper-x':'0px','--lower-x':'0px','--upper-y':'0px','--lower-y':'0px'},w.start-d+k*.003,d,'power2.out');});
 
 P23_DATA.acts.forEach((a,i)=>{
  const root=p23ById(a.id),wrap=root.querySelector('.photo-wrap'),photo=root.querySelector('.photo');
  const span=a.end-a.start;
- move(photo,{scale:1.05,x:i%2?-25:27,y:i%3?-10:15},{scale:i%3===0?1.102:1.075,x:i%2?22:-20,y:i%3?14:-15},a.start,span,'sine.inOut');
- if(i)move(wrap,{opacity:0,clipPath:i%3===0?'polygon(0 0,100% 0,100% 0,0 10%)':'polygon(0 0,0 0,0 100%,0 100%)'},{opacity:1,clipPath:'polygon(0 0,100% 0,100% 100%,0 100%)'},a.start,.8,'power2.out');
+ // Each still receives a visible dolly and lateral move, with extra crop for
+ // safe frame edges. The generated clips take over at the four story peaks.
+ move(photo,{scale:1.11,x:i%2?-62:66,y:i%3?-29:31,rotation:i%2?-.25:.25},{scale:i%3===0?1.225:1.19,x:i%2?116:-112,y:i%3?48:-45,rotation:i%2?.35:-.35},a.start,span,'sine.inOut');
+ const light=wrap.querySelector('.act-light');
+ if(light)move(light,{opacity:.08,x:i%2?-300:270,y:95,scale:.86},{opacity:i===7?.30:.23,x:i%2?320:-290,y:-115,scale:1.34},a.start,span,'sine.inOut');
+ const shadow=wrap.querySelector('.act-shadow');
+ if(shadow)move(shadow,{opacity:.23,x:-140},{opacity:.04,x:250},a.start,span,'sine.inOut');
+ const rain=wrap.querySelector('.act-rain');
+ if(rain){const cycles=Math.ceil(span/1.7);tl.fromTo(rain,{y:-265,opacity:.11},{y:295,opacity:.31,duration:span/cycles,ease:'none',repeat:cycles-1,immediateRender:false},a.start);}
+ const ripple=wrap.querySelector('.act-ripple');
+ if(ripple){const cycles=Math.ceil(span/3);tl.fromTo(ripple,{scale:.86,opacity:.02},{scale:1.24,opacity:.31,duration:span/cycles,ease:'sine.inOut',repeat:cycles-1,immediateRender:false},a.start);}
+ // A broad polygon wipe left hard strips of the preceding photograph visible
+ // through the new scene (especially water→hospital and sofa→rain). Dissolve
+ // within the two acts' overlap and complete before the old act ends.
+ if(i)move(wrap,{opacity:0},{opacity:1},a.start,.52,'sine.inOut');
 });
 P23_DATA.videos.forEach(v=>{
  const el=p23ById('video-'+v.id),poster=p23ById('poster-'+v.id);
  if(v.id==='mercy'){move(el,{opacity:0,clipPath:'inset(58% 0 0 0)'},{opacity:v.opacity,clipPath:'inset(58% 0 0 0)'},v.start+.9,.65,'sine.out');move(el,{clipPath:'inset(58% 0 0 0)'},{clipPath:'inset(0% 0 0 0)'},v.start+3.1,.48,'sine.inOut');}
- else move(el,{opacity:0},{opacity:v.opacity},v.start,.65,'sine.out');
- if(v.holdEnd>v.end){move(poster,{opacity:v.opacity},{opacity:v.opacity*.82},v.end,Math.max(.01,v.holdEnd-v.end-.5),'none');tl.to(poster,{opacity:0,duration:.5,ease:'sine.in'},Math.max(v.end,v.holdEnd-.5));}
+ else move(el,{opacity:0},{opacity:v.opacity},v.start,v.id==='jesus-with-people'?.14:v.kind==='narrative'?.28:.65,'sine.out');
+ if(v.holdEnd>v.end){const hold=v.holdEnd-v.end;if(hold<=.5)move(poster,{opacity:v.opacity},{opacity:0},v.end,hold,'sine.inOut');else{move(poster,{opacity:v.opacity},{opacity:v.opacity*.82},v.end,hold-.5,'none');tl.to(poster,{opacity:0,duration:.5,ease:'sine.in'},v.holdEnd-.5);}}
  else tl.to(el,{opacity:0,duration:.5},v.end-.5);
 });
 
@@ -46,7 +68,7 @@ for(const p of P23_DATA.phrases){
  const accentLength=accent.getTotalLength();accent.style.strokeDasharray=accentLength;accent.style.strokeDashoffset=accentLength;
  move(accent,{strokeDashoffset:accentLength,opacity:0},{strokeDashoffset:0,opacity:.66},Math.min(last.start,start+span*.6),Math.max(.32,Math.min(1.45,p.showEnd-last.start-.1)),'power2.out');
  tl.to(inner,{opacity:0,duration:.16,ease:'power1.in'},p.showEnd-.16);
- for(const w of all){move(p23ById(w.id),{opacity:0},{opacity:1},Math.max(p.showStart,w.start-.035),.115,'power1.out');}
+ for(const w of all){move(p23ById(w.id),{opacity:0},{opacity:1},Math.max(p.showStart,w.start-.075),.055,'power1.out');}
 
  if(window.P23_SEMANTIC?.(p,{tl,move,normal,root,world,all,lines,accent,letters,applyLetters})) continue;
  switch(p.family){
@@ -84,7 +106,7 @@ for(const p of P23_DATA.phrases){
   all.forEach((w,i)=>{const el=p23ById(w.id);move(el,{x:-130-i*20,y:75-i*50,rotation:-10+i*4},{x:-28,y:-18,rotation:1},w.start,.4,'sine.out');tl.to(el,{x:0,y:0,rotation:0,duration:.58,ease:'power2.out'},w.start+.4);});
   break;
  case 'righteous-path':
-  {const poses=[[150,225],[280,265],[470,315],[765,320],[215,540]];all.forEach((w,i)=>{move(p23ById(w.id),{x:poses[i][0]-w.x-130,y:poses[i][1]-w.y+40,z:-160,rotationY:-23},{x:poses[i][0]-w.x,y:poses[i][1]-w.y,z:0,rotationY:0,rotation:i<4?9:-5},w.start,.88,'power3.out');});const path=makeTrace(root,p.id+'-right-path','M 145 385 L 358 385 L 358 430 L 560 430 L 560 478 L 861 478 L 861 580',.78,2.2);drawTrace(path,start,2.4);}
+  {const poses=[[150,225],[280,265],[470,315],[765,320],[215,540]];all.forEach((w,i)=>{const arrival=i===3?w.start-.68:w.start;move(p23ById(w.id),{x:poses[i][0]-w.x-130,y:poses[i][1]-w.y+40,z:-160,rotationY:-23},{x:poses[i][0]-w.x,y:poses[i][1]-w.y,z:0,rotationY:0,rotation:i<4?9:-5},arrival,.88,'power3.out');});const path=makeTrace(root,p.id+'-right-path','M 145 385 L 358 385 L 358 430 L 560 430 L 560 478 L 861 478 L 861 580',.78,2.2);drawTrace(path,start,2.4);}
   break;
  case 'name-signature':
   all.forEach(w=>{const el=p23ById(w.id);move(el,{clipPath:'inset(0 100% 0 0)'},{clipPath:'inset(0 0% 0 0)'},w.start,Math.min(.2,Math.max(.12,w.end-w.start)),'none');const signature=makeTrace(root,w.id+'-signature',`M ${w.x} ${w.y+w.size*.83} Q ${w.x+w.width*.55} ${w.y+w.size*.52},${w.x+w.width} ${w.y+w.size*.86}`,.63,1.15);drawTrace(signature,w.start,Math.min(.75,Math.max(.3,w.end-w.start+.1)));tl.to(signature,{opacity:.12,duration:.6},w.end+.1);});

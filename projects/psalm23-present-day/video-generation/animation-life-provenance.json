@@ -1,0 +1,78 @@
+{
+  "name": "animation-life",
+  "job": "animation-life-v1",
+  "provider": "local OmiPC ComfyUI",
+  "model": "MiniMax H3 FL2VA int8 convrot",
+  "checkpoint": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+  "turboLora": "minimax_h3_turbo_v4_step600_ema_pruned_comfyui.safetensors",
+  "steps": 4,
+  "sampler": "MiniMaxH3TurboSampler",
+  "sourceRevision": "033c74c9c54f02b6039db0772a24cd223cae4774",
+  "promptId": "16a9a85e-e65b-4df8-ba63-b61d0b0a371c",
+  "conditioning": "first_frame",
+  "seed": 2303211,
+  "input": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/inputs/animation-life-first.png",
+  "inputSha256": "1b2021cee45fb7004d144af3914622eb941a4a48a56f0b3c41d7c0d86a32c505",
+  "imageProvider": "built-in GPT Image",
+  "rawPath": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/raw/animation-life-v1.mp4",
+  "rawSha256": "7891fd3c009ec6825a094eeb2eb6a199cfb0167335f23b86815d63af1bdce3dc",
+  "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/assets/video/animation-life-motion.mp4",
+  "sha256": "4f1d9d05b3f565540ff94a498c79904611bb9289fc932f9949772accdeffbfd4",
+  "native": {
+    "width": 960,
+    "height": 544,
+    "fps": 24,
+    "frames": 124
+  },
+  "finished": {
+    "width": 960,
+    "height": 540,
+    "fps": 24,
+    "frames": 124,
+    "duration": 5.166666666666667,
+    "audio": false
+  },
+  "processing": "H3 native 960x544 center-cropped to 960x540; generated fibers isolated from dark field and progressively revealed by authored organic polar/curved light front; moving warm packets and filaments applied deterministically; silent H264 CRF17, no retiming or upscale.",
+  "decode": "pass",
+  "firstPoster": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/assets/video/animation-life-first.png",
+  "lastPoster": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/assets/video/animation-life-last.png",
+  "reviewSheet": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/review/animation-life-final-6fps.jpg",
+  "reviewStatus": "agent_inspected_1fps_6fps_and_five_composite_proposal_frames; revised after independent motion critique; final encoded movie composite still requires independent review",
+  "completedAt": "2026-09-28T00:32:48.297429+00:00",
+  "cost": "local GPU only; no paid API",
+  "h3CroppedSource": {
+    "path": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/raw/animation-life-h3-cropped.mp4",
+    "sha256": "9aac74cd6c0b32837844edae0fc9d16dc61282cc3251cb2afc6634761476c16e",
+    "frames": 124,
+    "width": 960,
+    "height": 540
+  },
+  "authoredFinish": {
+    "script": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/finish_animation.py",
+    "scriptSha256": "a6df3b6dd100e797e6373ec6e1ccf8fdb424c26e3650311afd61c030841dee3b",
+    "mode": "life",
+    "seekIndependent": true,
+    "sourceH3Path": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/raw/animation-life-h3-cropped.mp4",
+    "sourceH3Sha256": "9aac74cd6c0b32837844edae0fc9d16dc61282cc3251cb2afc6634761476c16e"
+  },
+  "firstPosterSha256": "39b8c2368e1bfc3594ebb8fb9e75c9b669d6e42acbc90308f60c7427cc116942",
+  "lastPosterSha256": "aa6e124dc5d21b6ceb283f05169d06fba5e417c9d4aa8ca04f6104beacabf21b",
+  "reviewSheetSha256": "53949928b4ff62dd9c41d67f9d48736a04790aac3c8ff614cf478886291202c8",
+  "reviewNotes": "Strong authored spatial reveal is visible in the decoded 1fps sheet: a broken perimeter repairs over ~4s and a woven path draws from left to right over ~4s. Central lyric-safe void remains clear. Composite proposals at 35% Screen preserve word readability; face mask especially needed on soul right half. Proposal is not proof of the final encoded film.",
+  "verifiedAt": "2026-09-28T00:49:09.473891+00:00",
+  "sourceRevisionType": "Base HEAD during asset generation; uncommitted task inputs are identified by prompt, workflow, source-image, and finishing-script hashes. Final film must bind to its own render source revision.",
+  "initialFinish": {
+    "path": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/raw/animation-life-initial-finish.mp4",
+    "sha256": "8ce1a1db92443bc5fe41f14d67c08b4f556a6319fdee31da32bfeaa07065e407",
+    "agentReview": "rejected_as_too_subtle_by_independent_critic"
+  },
+  "strongMotionReview": {
+    "oneFpsSheet": "video-generation/review/animation-life-strong-v3-1fps.jpg",
+    "oneFpsSheetSha256": "01202d1ed337cd393cf21df4cb78120cc4d7a7b2e76374737afb5997e2ad3ca5",
+    "compositeProposal": "video-generation/review/animation-life-v3-composite-proposal.jpg",
+    "compositeProposalSha256": "eb3de5f4b094ff8ba48757cd513f45d7f088891444c39b988638171bb253d2cf",
+    "initialFinishSha256": "8ce1a1db92443bc5fe41f14d67c08b4f556a6319fdee31da32bfeaa07065e407",
+    "finalSha256": "4f1d9d05b3f565540ff94a498c79904611bb9289fc932f9949772accdeffbfd4",
+    "note": "The proposal uses the prior v2 film frame plus 35% Screen image blend for placement only. Final render must be reviewed independently."
+  }
+}

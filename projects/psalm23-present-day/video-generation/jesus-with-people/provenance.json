@@ -1,0 +1,33 @@
+{
+  "shot": "jesus-with-people",
+  "provider": "local OmiPC ComfyUI",
+  "model": "MiniMax H3 FL2VA int8 convrot with four-step turbo LoRA",
+  "promptId": "81198d7c-0f36-44f9-b7e2-de5fcc117c5b",
+  "firstImageSha256": "60483854856b7c9bfbdfdd76234d9e24d030e5bcd6fcc69964d3019d2d7efdaf",
+  "lastImageSha256": "67bc1105382d48fa89fbfa9824c8567bf63f5c4f59789618f82c241c7e3dfb8d",
+  "conditioning": "first_frame+last_frame",
+  "seed": 20260927102,
+  "raw": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/jesus-with-people/raw.mp4",
+  "rawSha256": "10ecc6ff527dff62021784d2625972920547ad316e7f653913cdf9a730215b39",
+  "finished": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/assets/video/jesus-with-people.mp4",
+  "finishedSha256": "bfa8e63ef7a9ce2592ce4cecc9eaf08212b0a09fe900e966e10ce985ee048657",
+  "video": {
+    "width": 960,
+    "height": 540,
+    "fps": 24,
+    "frames": 175,
+    "requestedFrames": 172,
+    "durationSeconds": 7.291666666666667,
+    "audio": false
+  },
+  "processing": "Crop 2px top/bottom, silent H264 CRF17, no interpolation, retiming or upscale",
+  "fullDecode": "pass",
+  "reviewContactSheet": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/jesus-with-people/review-6fps.jpg",
+  "reviewContactSheetSha256": "6319d0b4d3400bee6078c4d3b9a7073032b191dbb1a77cd2b47479c23c3e8991",
+  "firstPoster": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/assets/video/jesus-with-people-first.png",
+  "firstPosterSha256": "3116b09d0091023b525e5b4164f00bfbfcb5cffec6a0d9793b5a7305b93aee86",
+  "lastPoster": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/assets/video/jesus-with-people-last.png",
+  "lastPosterSha256": "1c795e4b0fadacfa666d88c781c6a3a8bab7f350269b052a20b945547d92f19f",
+  "reviewStatus": "awaiting_visual_inspection",
+  "finishedAt": "2026-09-28T00:40:32.812809+00:00"
+}

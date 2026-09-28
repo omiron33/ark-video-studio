@@ -2,7 +2,7 @@
 
 `review.mjs` adapts this custom HyperFrames film to Ark's existing audio, OCR, temporal and independent visual gates. It does not render, deliver, repair timing, score aesthetics or declare that anyone listened.
 
-The expected full film is 1920×1080,30fps,219.96 seconds: 6599 decoded video frames after ceiling to the frame grid, with one AAC audio track. Renderer is pinned to HyperFrames0.8.80; composition ID is `psalm23`.
+The expected full film is 1920×1080,30fps,219.96 seconds: 6599 decoded video frames after ceiling to the frame grid, with one AAC audio track. The current v5 revision renders with HyperFrames0.8.81; the v2 source-bound reports retain the prior0.8.80 pin. Composition ID is `psalm23`.
 
 ## Source authority
 
@@ -36,7 +36,7 @@ This remains a structural test. The preliminary independent critic correctly rej
 Use a fresh versioned output path. The adapter refuses to overwrite existing movie provenance. These commands are a contract for the rendering owner; the review adapter itself never invokes rendering.
 
 ```sh
-PS23_VIDEO='/Volumes/DATA/ArkRender/psalm23-present-day/psalm23-held-in-the-ordinary-v1.mp4'
+PS23_VIDEO='/Volumes/DATA/ArkRender/psalm23-present-day/psalm23-held-in-the-ordinary-v5.mp4'
 node projects/psalm23-present-day/review.mjs --video "$PS23_VIDEO" --capture-render-start
 npm --prefix projects/psalm23-present-day run render -- . --fps 30 --quality delivery --workers 1 --strict --no-best-effort --output "$PS23_VIDEO"
 node projects/psalm23-present-day/review.mjs --video "$PS23_VIDEO" --capture-render-end
@@ -49,7 +49,7 @@ Start snapshots all declared source and asset bytes plus the engine review/rende
 Choose a new review output directory for each run; previous reports are preserved rather than overwritten.
 
 ```sh
-PS23_REVIEW='/Volumes/DATA/ArkRender/psalm23-present-day/review-v1'
+PS23_REVIEW='/Volumes/DATA/ArkRender/psalm23-present-day/review-v5'
 node projects/psalm23-present-day/review.mjs --video "$PS23_VIDEO" --out "$PS23_REVIEW"
 ```
 
@@ -66,7 +66,7 @@ Audio and OCR execute concurrently; temporal review follows. Full reports preser
 
 ## Independent visual judgment
 
-An independent agent/person must inspect decoded sequences from this exact MP4, its opening within the first second, all39 choreographies, transitions, reading holds, phone-scale legibility, contemporary photographic coherence and all three generated/coded composites. In particular, inspect for rectangular video seams, inactive foregrounds, the progressive generated `mercy` letters competing with canonical text, and excessive repetition hidden behind distinct family names. Static sheets alone cannot certify full-speed motion.
+An independent agent/person must inspect decoded sequences from this exact MP4, its opening within the first second, all39 choreographies, transitions, reading holds, phone-scale legibility, contemporary photographic coherence and all seven video layers (three original plus four new). In particular, inspect for rectangular video seams, inactive foregrounds, the progressive generated `mercy` letters competing with canonical text, the POV rescue and walking action, and excessive repetition hidden behind distinct family names. Static sheets alone cannot certify full-speed motion.
 
 Preserve the independent critique, actual inspected evidence and exact movie/revision bindings. The reviewer supplies real scores for only `lyricLegibility`, `semanticMotion`, `photorealism`, `composition` and `continuity`, plus concrete notes. Do not create a subjective `sync` score; machine audio owns that gate. Each visual category must reach8/10, with real failures preserved and repaired first.
 

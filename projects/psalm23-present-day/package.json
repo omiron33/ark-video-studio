@@ -1,1 +1,11 @@
-{"name":"psalm23-present-day","private":true,"type":"module","scripts":{"build":"node build.mjs","check":"env -u GEMINI_API_KEY npx --yes hyperframes@0.8.80 check","preview":"env -u GEMINI_API_KEY npx --yes hyperframes@0.8.80 preview","render":"env -u GEMINI_API_KEY npx --yes hyperframes@0.8.80 render"}}
+{
+  "name": "psalm23-present-day",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "check": "env -u GEMINI_API_KEY npx --yes hyperframes@0.8.81 check",
+    "preview": "env -u GEMINI_API_KEY npx --yes hyperframes@0.8.81 preview",
+    "render": "env -u GEMINI_API_KEY npx --yes hyperframes@0.8.81 render"
+  }
+}

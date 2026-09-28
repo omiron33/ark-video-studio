@@ -1,0 +1,20 @@
+{
+  "prompt_id": "28d01af2-b9c0-4211-b724-ba1ce522de6d",
+  "number": 105,
+  "node_errors": {},
+  "name": "animation-soul-v1",
+  "submittedAt": "2026-09-28T00:27:16.601540+00:00",
+  "project": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day",
+  "firstImage": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/inputs/animation-soul-first.png",
+  "firstImageSha256": "394ab1329a7c285e1c4cdebb5ec93d8c7a0bc1165b1b32dd19dc6e5b66d63a3d",
+  "promptFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/animation-soul-v1-prompt.txt",
+  "promptSha256": "86c6d508aa3f8894f51964b288e7c2f2d0084daed79030a20b684de1ae43d125",
+  "workflow": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/animation-soul-v1-workflow.json",
+  "workflowSha256": "0b9c3b0f05ec1b3d24295e31b0ff78bdb3166c4f423de1b55e5b81ce2af92fe0",
+  "framesRequested": 124,
+  "fpsRequested": 24,
+  "seed": 2300711,
+  "conditioning": "first_frame",
+  "provider": "local OmiPC ComfyUI over SSH tunnel",
+  "cost": "local GPU; no paid API"
+}

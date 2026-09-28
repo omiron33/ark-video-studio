@@ -1,0 +1,20 @@
+{
+  "prompt_id": "16a9a85e-e65b-4df8-ba63-b61d0b0a371c",
+  "number": 106,
+  "node_errors": {},
+  "name": "animation-life-v1",
+  "submittedAt": "2026-09-28T00:29:05.823393+00:00",
+  "project": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day",
+  "firstImage": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/inputs/animation-life-first.png",
+  "firstImageSha256": "1b2021cee45fb7004d144af3914622eb941a4a48a56f0b3c41d7c0d86a32c505",
+  "promptFile": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/animation-life-v1-prompt.txt",
+  "promptSha256": "5f18295b52c255d4f34e823f2333b7733308c3e263cf61cbc0bed2872e09812d",
+  "workflow": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/animation-life-v1-workflow.json",
+  "workflowSha256": "b2510b11986f490e1a54a8b08375745714c7f4cfe9e3d6c8211d9f2ad2ffd409",
+  "framesRequested": 124,
+  "fpsRequested": 24,
+  "seed": 2303211,
+  "conditioning": "first_frame",
+  "provider": "local OmiPC ComfyUI over SSH tunnel",
+  "cost": "local GPU; no paid API"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "psalm-23-lxx-22-shepherd",
+  "label": "Psalm 23 (LXX 22)",
+  "title": "Psalm 23 (LXX 22) The Lord Is My Shepherd",
+  "style": "Warm slow Americana soul ballad, 68 BPM, gentle 6/8 sway, major key. Fingerpicked acoustic guitar and warm Hammond B3 organ, soft upright bass, light brushed drums, gentle pedal steel. Gritty gravelly male baritone, smoky and soulful but restful and unhurried, calm even in the valley. Soft gospel choir enters on the mercy bridge and stays low and warm to the end. Peaceful, tender, Sunday evening front porch.",
+  "exclude": "distorted guitar, heavy drums, rock anthem, synth, EDM, autotune, belting, female lead, sad",
+  "lyrics": "[Intro]\n\n[Verse 1]\nThe Lord is my shepherd,\nand I shall want nothing.\nIn a place of green grass\nthere he has made me dwell.\nHe has nourished me\nby the water of rest.\n\n[Verse 2]\nHe has restored my soul,\nhe has guided me\nin the paths of righteousness\nfor his name's sake.\n\n[Chorus]\nEven if I should walk\nin the shadow of death,\nI will fear no evil,\nfor you are with me.\nYour rod and your staff,\nthey have comforted me.\nI will fear no evil.\n\n[Verse 3]\nYou have prepared a table before me\nin the presence of those who afflict me.\nYou have anointed my head with oil,\nand your cup cheers me like the best wine.\n\n[Chorus]\nEven if I should walk\nin the shadow of death,\nI will fear no evil,\nfor you are with me.\nYour rod and your staff,\nthey have comforted me.\nI will fear no evil.\n\n[Bridge]\nYour mercy shall follow me\nall the days of my life.\nYour mercy shall follow me\nall the days of my life.\n\n[Final Chorus]\nI will fear no evil,\nfor you are with me.\nThe Lord is my shepherd,\nand I shall want nothing.\n\n[Outro]\nAnd I shall dwell in the house of the Lord\nfor a very long time.\nThe Lord is my shepherd.\n\n[End]",
+  "notes": "Peace and trust. Brenton Psalm 22:1 to 6 with the valley lines (22:4) as a repeated chorus. The LXX line is 'Thy mercy also shall follow me', sung as 'Your mercy shall follow me' where the choir enters. Feel reference: softer Chris Stapleton (not named in Style).\n\n2026-09-27: Selected video source take 32885123-f4b6-42e6-a546-f4acba404829 archived from normal signed-in Suno M4A download at media/suno/workflows/psalm-23-lxx-22-shepherd/32885123-f4b6-42e6-a546-f4acba404829.m4a (219.96 seconds, SHA-256 3669040e797c9d2bf8b4136dc4c029c6e1ed51f302ccc411d1888ae50da80c8f). Exact lyrics, source metadata, provider captions and intake.json are beside it. Audio decodes fully; captions are approximate and independent lyric sync review is pending. Three modern-day theme mockups are awaiting Shane's choice before video production.\n\n[Ark Psalm23 candidate e483e690ef13766ee4e04414711d0826209151d3beab5a91864c113758f3e4f2] Theme 1 chosen by Shane: Held in the Ordinary. Reviewed candidate vid-20260927-31bdda7a; awaiting Shane review. https://omipc.taild60b4e.ts.net/api/admin/videos/vid-20260927-31bdda7a/media . SHA256 e483e690ef13766ee4e04414711d0826209151d3beab5a91864c113758f3e4f2. Review report: C:/Users/sjfis/Videos/Psalm23/held-in-ordinary-e483e690ef13766e-review-082dbccf9ee1.json.",
+  "group": "psalms-ep-1",
+  "order": 3,
+  "targetDuration": "3 to 3.5 min",
+  "model": "Suno v6",
+  "settings": {
+    "model": "v6",
+    "mode": "Custom",
+    "advanced": true,
+    "vocalGender": "Male",
+    "duration": "Auto"
+  },
+  "textSource": {
+    "edition": "Brenton English Septuagint (eng-Brenton)",
+    "reference": "Psalm 22 (LXX)",
+    "hebrewNumbering": "Psalm 23",
+    "archive": "https://ebible.org/Scriptures/eng-Brenton_vpl.zip",
+    "archiveSha256": "60d5ce2f2ba2c873d2e58c44681e08b529890641e835be0c22fbae0050276759",
+    "versesUsed": [
+      "22:1-6"
+    ],
+    "adaptation": "Light singability adaptation: thou/thy to you/your, some lines split or repeated as chorus."
+  },
+  "link": {
+    "book": "psalms",
+    "chapter": 23
+  },
+  "lyricsSha256": "021492487b56a3ac1dac962cc4c75658b250d8a05ac925f0aebc9a72a09f385a",
+  "takes": [
+    {
+      "songUrls": [
+        "https://suno.com/song/32885123-f4b6-42e6-a546-f4acba404829",
+        "https://suno.com/song/1db3e892-6eaf-4e25-a781-a72d15349b3c"
+      ],
+      "note": "",
+      "lyricsSha256": "021492487b56a3ac1dac962cc4c75658b250d8a05ac925f0aebc9a72a09f385a",
+      "styleSnapshot": "Warm slow Americana soul ballad, 68 BPM, gentle 6/8 sway, major key. Fingerpicked acoustic guitar and warm Hammond B3 organ, soft upright bass, light brushed drums, gentle pedal steel. Gritty gravelly male baritone, smoky and soulful but restful and unhurried, calm even in the valley. Soft gospel choir enters on the mercy bridge and stays low and warm to the end. Peaceful, tender, Sunday evening front porch.",
+      "recordedAt": "2026-09-27T02:57:41.267Z"
+    }
+  ],
+  "failures": [],
+  "createdAt": "2026-09-27T02:16:25.206Z",
+  "updatedAt": "2026-09-27T18:11:42.243Z"
+}

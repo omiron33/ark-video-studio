@@ -1,0 +1,25 @@
+{
+  "provider": "built-in GPT Image",
+  "assets": [
+    {
+      "name": "animation-soul",
+      "builtInImagePath": "/Users/shanefisher/.codex/generated_images/01a0e561-2b78-7e00-972b-78cb20e20e51/exec-e3606f19-052b-4034-8abc-3154b29915a9.png",
+      "builtInImageSha256": "0d66ca22ff76e6fdd64000e156236b1202371c4e556e4aefa6345820596b665e",
+      "exactPromptPath": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/animation-soul-image-prompt.txt",
+      "exactPromptSha256": "bb7154a07e6cb5168e2eef7c94bbe5bbe6ed4f051b4e6be377978a18420161c2",
+      "croppedInput": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/inputs/animation-soul-first.png",
+      "croppedInputSha256": "394ab1329a7c285e1c4cdebb5ec93d8c7a0bc1165b1b32dd19dc6e5b66d63a3d",
+      "crop": "center crop to 16:9, Lanczos scale to 960x544"
+    },
+    {
+      "name": "animation-life",
+      "builtInImagePath": "/Users/shanefisher/.codex/generated_images/01a0e561-2b78-7e00-972b-78cb20e20e51/exec-f4daa255-1f4b-4455-99a2-40ebd1f87009.png",
+      "builtInImageSha256": "8ec269bdc8ecf288c01d4f8b484c05b177aefb224e2e6cb0791597589583d2fa",
+      "exactPromptPath": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/animation-life-image-prompt.txt",
+      "exactPromptSha256": "eb4d0515c6a2b68b06137797361a203efb5de2ca06afb70fa44da3a5e8ce62a1",
+      "croppedInput": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/inputs/animation-life-first.png",
+      "croppedInputSha256": "1b2021cee45fb7004d144af3914622eb941a4a48a56f0b3c41d7c0d86a32c505",
+      "crop": "center crop to 16:9, Lanczos scale to 960x544"
+    }
+  ]
+}

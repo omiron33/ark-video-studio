@@ -26,7 +26,8 @@
       "principle": "Read each exact word clearly; use a common contour material to connect photographic depth, generated organic motion and editable typography.",
       "adaptation": "New amber shelter curves trace ordinary home thresholds and family gestures. Readable words share those shapes; generated water shares a clear reading plane; canonical mercy hands off at the same station to the fully formed generated word. Green glyphs sprout stems after reading, projected shadow words retreat through a soft light boundary, and declaration letters construct a continuous arch. No source scene or motion sequence is copied.",
       "approvalScope": "Shane selected theme1 only; reference excerpts are inspiration, not individually user-approved."
-    }
+    },
+    "revision": "concepts/revision-v3.md"
   },
   "acts": [
     {
@@ -59,7 +60,7 @@
     },
     {
       "id": "act-05",
-      "photo": "assets/photos/p05.png",
+      "photo": "assets/photos/p05-jesus.png",
       "start": 58.333054,
       "end": 73.722,
       "index": 5
@@ -80,7 +81,7 @@
     },
     {
       "id": "act-08",
-      "photo": "assets/photos/p08.png",
+      "photo": "assets/photos/p08-jesus.png",
       "start": 112.873024,
       "end": 124.579714,
       "index": 8
@@ -136,6 +137,39 @@
       "mode": "water"
     },
     {
+      "id": "soul-repair",
+      "src": "assets/video/animation-soul-motion.mp4",
+      "poster": "assets/video/animation-soul-last.png",
+      "start": 43.834005,
+      "end": 49.000671999999994,
+      "holdEnd": 49.000671999999994,
+      "opacity": 0.46,
+      "mode": "animation",
+      "kind": "organic"
+    },
+    {
+      "id": "jesus-pov",
+      "src": "assets/video/jesus-pov-rescue.mp4",
+      "poster": "assets/video/jesus-pov-rescue-last.png",
+      "start": 65.825516,
+      "end": 73.11718266666666,
+      "holdEnd": 73.332,
+      "opacity": 1,
+      "mode": "jesus",
+      "kind": "narrative"
+    },
+    {
+      "id": "jesus-with-people",
+      "src": "assets/video/jesus-with-people.mp4",
+      "poster": "assets/video/jesus-with-people-last.png",
+      "start": 120.305419,
+      "end": 127.59708566666667,
+      "holdEnd": 127.832053,
+      "opacity": 1,
+      "mode": "jesus",
+      "kind": "narrative"
+    },
+    {
       "id": "mercy",
       "src": "assets/video/mercy-motion.mp4",
       "poster": "assets/video/mercy-last.png",
@@ -144,6 +178,17 @@
       "holdEnd": 163.78959700000001,
       "opacity": 1,
       "mode": "mercy"
+    },
+    {
+      "id": "life-weave",
+      "src": "assets/video/animation-life-motion.mp4",
+      "poster": "assets/video/animation-life-last.png",
+      "start": 163.854597,
+      "end": 169.021264,
+      "holdEnd": 169.021264,
+      "opacity": 0.46,
+      "mode": "animation",
+      "kind": "organic"
     }
   ],
   "scenes": [
@@ -701,14 +746,13 @@
       ],
       "inspiration": {
         "referenceIds": [
-          "internal-foreground-occlusion",
-          "internal-genesis1-whale-word-composite",
-          "external-microtype-image-world"
+          "internal-psalm91-dust-lion"
         ],
-        "referenceNotes": "concepts/reference-notes.md",
-        "principle": "Read each exact word clearly; use a common contour material to connect photographic depth, generated organic motion and editable typography.",
-        "adaptation": "New amber shelter curves trace ordinary home thresholds and family gestures. Readable words share those shapes; generated water shares a clear reading plane; canonical mercy hands off at the same station to the fully formed generated word. Green glyphs sprout stems after reading, projected shadow words retreat through a soft light boundary, and declaration letters construct a continuous arch. No source scene or motion sequence is copied.",
-        "approvalScope": "Shane selected theme1 only; reference excerpts are inspiration, not individually user-approved."
+        "principle": "Material gains coherent form over time.",
+        "adaptation": "Broken gold fibers repair a soul-shaped loop while exact foreground lyrics remain readable.",
+        "referenceNotes": "concepts/revision-v3.md",
+        "status": "implemented_pending_encoded_review",
+        "approvalScope": "Shane requested this revision; visual acceptance awaits encoded inspection."
       }
     },
     {
@@ -935,7 +979,7 @@
       "sourceEnd": 60.802376,
       "choreography": "walking-ground",
       "intent": "Words cross the rain line in consecutive grounded steps, becoming a shared readable sentence.",
-      "photo": "assets/photos/p05.png",
+      "photo": "assets/photos/p05-jesus.png",
       "words": [
         {
           "id": "p23-l011-w01",
@@ -977,20 +1021,20 @@
           "end": 60.202001,
           "x": 175,
           "y": 410.43,
-          "width": 391,
+          "width": 411,
           "size": 156,
-          "font": "italic"
+          "font": "regular"
         },
         {
           "id": "p23-l011-w05",
           "text": "walk",
           "start": 60.382114,
           "end": 60.802376,
-          "x": 591.48,
+          "x": 617.96,
           "y": 410.43,
-          "width": 298,
+          "width": 296,
           "size": 156,
-          "font": "italic"
+          "font": "regular"
         }
       ],
       "inspiration": {
@@ -1014,7 +1058,7 @@
       "sourceEnd": 64.484678,
       "choreography": "withdrawing-shadow",
       "intent": "A long cast shadow separates from shadow and death while the exact words stay in the light.",
-      "photo": "assets/photos/p05.png",
+      "photo": "assets/photos/p05-jesus.png",
       "words": [
         {
           "id": "p23-l012-w01",
@@ -1093,7 +1137,7 @@
       "sourceEnd": 68.827392,
       "choreography": "courage-expansion",
       "intent": "No grows into a protective opening while fear moves back and the phrase becomes level.",
-      "photo": "assets/photos/p05.png",
+      "photo": "assets/photos/p05-jesus.png",
       "words": [
         {
           "id": "p23-l013-w01",
@@ -1153,14 +1197,14 @@
       ],
       "inspiration": {
         "referenceIds": [
-          "internal-foreground-occlusion",
-          "internal-genesis1-whale-word-composite",
-          "external-microtype-image-world"
+          "external-window-releases-subject",
+          "internal-psalm23-mercy-material-handoff"
         ],
-        "referenceNotes": "concepts/reference-notes.md",
-        "principle": "Read each exact word clearly; use a common contour material to connect photographic depth, generated organic motion and editable typography.",
-        "adaptation": "New amber shelter curves trace ordinary home thresholds and family gestures. Readable words share those shapes; generated water shares a clear reading plane; canonical mercy hands off at the same station to the fully formed generated word. Green glyphs sprout stems after reading, projected shadow words retreat through a soft light boundary, and declaration letters construct a continuous arch. No source scene or motion sequence is copied.",
-        "approvalScope": "Shane selected theme1 only; reference excerpts are inspiration, not individually user-approved."
+        "principle": "Move the person and retreating dark boundary independently while preserving the canonical reading.",
+        "adaptation": "From Jesus’s viewpoint, a crying woman sees the offered hand, clasps it and begins to rise while warm light grows.",
+        "referenceNotes": "concepts/revision-v3.md",
+        "status": "implemented_pending_encoded_review",
+        "approvalScope": "Shane requested this revision; visual acceptance awaits encoded inspection."
       }
     },
     {
@@ -1172,7 +1216,7 @@
       "sourceEnd": 71.729206,
       "choreography": "embracing-presence",
       "intent": "With and me approach along two curving arms and stop within a shelter contour.",
-      "photo": "assets/photos/p05.png",
+      "photo": "assets/photos/p05-jesus.png",
       "words": [
         {
           "id": "p23-l014-w01",
@@ -1232,14 +1276,13 @@
       ],
       "inspiration": {
         "referenceIds": [
-          "internal-foreground-occlusion",
-          "internal-genesis1-whale-word-composite",
-          "external-microtype-image-world"
+          "external-window-releases-subject"
         ],
-        "referenceNotes": "concepts/reference-notes.md",
-        "principle": "Read each exact word clearly; use a common contour material to connect photographic depth, generated organic motion and editable typography.",
-        "adaptation": "New amber shelter curves trace ordinary home thresholds and family gestures. Readable words share those shapes; generated water shares a clear reading plane; canonical mercy hands off at the same station to the fully formed generated word. Green glyphs sprout stems after reading, projected shadow words retreat through a soft light boundary, and declaration letters construct a continuous arch. No source scene or motion sequence is copied.",
-        "approvalScope": "Shane selected theme1 only; reference excerpts are inspiration, not individually user-approved."
+        "principle": "Keep the rescued person present as darkness recedes.",
+        "adaptation": "Her gaze reaches the camera and she smiles while Jesus draws her toward him and warmer light.",
+        "referenceNotes": "concepts/revision-v3.md",
+        "status": "implemented_pending_encoded_review",
+        "approvalScope": "Shane requested this revision; visual acceptance awaits encoded inspection."
       }
     },
     {
@@ -1914,7 +1957,7 @@
       "sourceEnd": 115.428766,
       "choreography": "walking-depth-stations",
       "intent": "A shallow camera journey passes word planes at successive depths and lands with them in one plane.",
-      "photo": "assets/photos/p08.png",
+      "photo": "assets/photos/p08-jesus.png",
       "words": [
         {
           "id": "p23-l022-w01",
@@ -1993,7 +2036,7 @@
       "sourceEnd": 119.004618,
       "choreography": "shadow-passage",
       "intent": "Two architectural shadow planes slide apart around a stable, fully readable central line.",
-      "photo": "assets/photos/p08.png",
+      "photo": "assets/photos/p08-jesus.png",
       "words": [
         {
           "id": "p23-l023-w01",
@@ -2072,7 +2115,7 @@
       "sourceEnd": 123.285694,
       "choreography": "unfastening-fear",
       "intent": "A binding line loosens around fear; the exact letters release into a broad and level no evil.",
-      "photo": "assets/photos/p08.png",
+      "photo": "assets/photos/p08-jesus.png",
       "words": [
         {
           "id": "p23-l024-w01",
@@ -2132,14 +2175,14 @@
       ],
       "inspiration": {
         "referenceIds": [
-          "internal-foreground-occlusion",
-          "internal-genesis1-whale-word-composite",
+          "external-window-releases-subject",
           "external-microtype-image-world"
         ],
-        "referenceNotes": "concepts/reference-notes.md",
-        "principle": "Read each exact word clearly; use a common contour material to connect photographic depth, generated organic motion and editable typography.",
-        "adaptation": "New amber shelter curves trace ordinary home thresholds and family gestures. Readable words share those shapes; generated water shares a clear reading plane; canonical mercy hands off at the same station to the fully formed generated word. Green glyphs sprout stems after reading, projected shadow words retreat through a soft light boundary, and declaration letters construct a continuous arch. No source scene or motion sequence is copied.",
-        "approvalScope": "Shane selected theme1 only; reference excerpts are inspiration, not individually user-approved."
+        "principle": "Let the human group and shadow threshold move separately, with a restrained shared light motif.",
+        "adaptation": "A deliberate cut from the underpass still moves to a present-day hospital corridor; Jesus guides a father and daughter toward its warm doorway while the lyric stays on the dark right wall.",
+        "referenceNotes": "concepts/revision-v3.md",
+        "status": "implemented_pending_encoded_review",
+        "approvalScope": "Shane requested this revision; visual acceptance awaits encoded inspection."
       }
     },
     {
@@ -2158,8 +2201,8 @@
           "text": "for",
           "start": 124.199714,
           "end": 124.340128,
-          "x": 250,
-          "y": 68,
+          "x": 900,
+          "y": 325,
           "width": 136,
           "size": 111,
           "font": "regular"
@@ -2169,8 +2212,8 @@
           "text": "you",
           "start": 124.451783,
           "end": 124.71268,
-          "x": 406.08000000000004,
-          "y": 68,
+          "x": 1056.08,
+          "y": 325,
           "width": 164,
           "size": 111,
           "font": "regular"
@@ -2180,8 +2223,8 @@
           "text": "are",
           "start": 125.162554,
           "end": 125.282909,
-          "x": 590.1600000000001,
-          "y": 68,
+          "x": 1240.1599999999999,
+          "y": 325,
           "width": 140,
           "size": 111,
           "font": "regular"
@@ -2191,8 +2234,8 @@
           "text": "with",
           "start": 125.668719,
           "end": 125.988916,
-          "x": 285,
-          "y": 193.43,
+          "x": 935,
+          "y": 450.43,
           "width": 273,
           "size": 156,
           "font": "italic"
@@ -2202,8 +2245,8 @@
           "text": "me.",
           "start": 126.068966,
           "end": 126.209052,
-          "x": 583.48,
-          "y": 193.43,
+          "x": 1233.48,
+          "y": 450.43,
           "width": 218,
           "size": 156,
           "font": "italic"
@@ -2211,14 +2254,13 @@
       ],
       "inspiration": {
         "referenceIds": [
-          "internal-foreground-occlusion",
-          "internal-genesis1-whale-word-composite",
-          "external-microtype-image-world"
+          "external-window-releases-subject"
         ],
-        "referenceNotes": "concepts/reference-notes.md",
-        "principle": "Read each exact word clearly; use a common contour material to connect photographic depth, generated organic motion and editable typography.",
-        "adaptation": "New amber shelter curves trace ordinary home thresholds and family gestures. Readable words share those shapes; generated water shares a clear reading plane; canonical mercy hands off at the same station to the fully formed generated word. Green glyphs sprout stems after reading, projected shadow words retreat through a soft light boundary, and declaration letters construct a continuous arch. No source scene or motion sequence is copied.",
-        "approvalScope": "Shane selected theme1 only; reference excerpts are inspiration, not individually user-approved."
+        "principle": "The people remain visible while the dark corridor falls behind them.",
+        "adaptation": "The group takes small visible steps into warmer doorway light; the responding words remain clear on the right wall.",
+        "referenceNotes": "concepts/revision-v3.md",
+        "status": "implemented_pending_encoded_review",
+        "approvalScope": "Shane requested this revision; visual acceptance awaits encoded inspection."
       }
     },
     {
@@ -2775,14 +2817,13 @@
       ],
       "inspiration": {
         "referenceIds": [
-          "internal-foreground-occlusion",
-          "internal-genesis1-whale-word-composite",
-          "external-microtype-image-world"
+          "internal-psalm23-mercy-material-handoff"
         ],
-        "referenceNotes": "concepts/reference-notes.md",
-        "principle": "Read each exact word clearly; use a common contour material to connect photographic depth, generated organic motion and editable typography.",
-        "adaptation": "New amber shelter curves trace ordinary home thresholds and family gestures. Readable words share those shapes; generated water shares a clear reading plane; canonical mercy hands off at the same station to the fully formed generated word. Green glyphs sprout stems after reading, projected shadow words retreat through a soft light boundary, and declaration letters construct a continuous arch. No source scene or motion sequence is copied.",
-        "approvalScope": "Shane selected theme1 only; reference excerpts are inspiration, not individually user-approved."
+        "principle": "Generated material follows, rather than replaces, a fully read canonical word.",
+        "adaptation": "Golden life filaments travel along the modern path below editable lyrics.",
+        "referenceNotes": "concepts/revision-v3.md",
+        "status": "implemented_pending_encoded_review",
+        "approvalScope": "Shane requested this revision; visual acceptance awaits encoded inspection."
       }
     },
     {
@@ -3400,10 +3441,10 @@
     "assets/photos/p02.png",
     "assets/photos/p03.png",
     "assets/photos/p04.png",
-    "assets/photos/p05.png",
+    "assets/photos/p05-jesus.png",
     "assets/photos/p06.png",
     "assets/photos/p07.png",
-    "assets/photos/p08.png",
+    "assets/photos/p08-jesus.png",
     "assets/photos/p09.png",
     "assets/photos/p10.png",
     "assets/photos/p11.png",
@@ -3412,8 +3453,16 @@
     "assets/video/shelter-last.png",
     "assets/video/water-motion.mp4",
     "assets/video/water-last.png",
+    "assets/video/animation-soul-motion.mp4",
+    "assets/video/animation-soul-last.png",
+    "assets/video/jesus-pov-rescue.mp4",
+    "assets/video/jesus-pov-rescue-last.png",
+    "assets/video/jesus-with-people.mp4",
+    "assets/video/jesus-with-people-last.png",
     "assets/video/mercy-motion.mp4",
     "assets/video/mercy-last.png",
+    "assets/video/animation-life-motion.mp4",
+    "assets/video/animation-life-last.png",
     "assets/fonts/CormorantGaramond.ttf",
     "assets/fonts/EBGaramond-Italic.ttf",
     "vendor/gsap.min.js"

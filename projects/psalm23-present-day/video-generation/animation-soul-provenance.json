@@ -1,0 +1,78 @@
+{
+  "name": "animation-soul",
+  "job": "animation-soul-v1",
+  "provider": "local OmiPC ComfyUI",
+  "model": "MiniMax H3 FL2VA int8 convrot",
+  "checkpoint": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+  "turboLora": "minimax_h3_turbo_v4_step600_ema_pruned_comfyui.safetensors",
+  "steps": 4,
+  "sampler": "MiniMaxH3TurboSampler",
+  "sourceRevision": "033c74c9c54f02b6039db0772a24cd223cae4774",
+  "promptId": "28d01af2-b9c0-4211-b724-ba1ce522de6d",
+  "conditioning": "first_frame",
+  "seed": 2300711,
+  "input": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/inputs/animation-soul-first.png",
+  "inputSha256": "394ab1329a7c285e1c4cdebb5ec93d8c7a0bc1165b1b32dd19dc6e5b66d63a3d",
+  "imageProvider": "built-in GPT Image",
+  "rawPath": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/raw/animation-soul-v1.mp4",
+  "rawSha256": "9a35842f8a476f713b9a09cd01c6dac0b6455a97adf02932445e6430c6fd3adc",
+  "output": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/assets/video/animation-soul-motion.mp4",
+  "sha256": "03c53c654e34b1d537d9131763df45ed0cd45acb9d06d457051c29c8fb96948f",
+  "native": {
+    "width": 960,
+    "height": 544,
+    "fps": 24,
+    "frames": 124
+  },
+  "finished": {
+    "width": 960,
+    "height": 540,
+    "fps": 24,
+    "frames": 124,
+    "duration": 5.166666666666667,
+    "audio": false
+  },
+  "processing": "H3 native 960x544 center-cropped to 960x540; generated fibers isolated from dark field and progressively revealed by authored organic polar/curved light front; moving warm packets and filaments applied deterministically; silent H264 CRF17, no retiming or upscale.",
+  "decode": "pass",
+  "firstPoster": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/assets/video/animation-soul-first.png",
+  "lastPoster": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/assets/video/animation-soul-last.png",
+  "reviewSheet": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/review/animation-soul-final-6fps.jpg",
+  "reviewStatus": "agent_inspected_1fps_6fps_and_five_composite_proposal_frames; revised after independent motion critique; final encoded movie composite still requires independent review",
+  "completedAt": "2026-09-28T00:29:25.161941+00:00",
+  "cost": "local GPU only; no paid API",
+  "h3CroppedSource": {
+    "path": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/raw/animation-soul-h3-cropped.mp4",
+    "sha256": "29fec03bf5da46faba4d91d62ed719272da7b8452af2e686d97164ac4c58006f",
+    "frames": 124,
+    "width": 960,
+    "height": 540
+  },
+  "authoredFinish": {
+    "script": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/finish_animation.py",
+    "scriptSha256": "a6df3b6dd100e797e6373ec6e1ccf8fdb424c26e3650311afd61c030841dee3b",
+    "mode": "soul",
+    "seekIndependent": true,
+    "sourceH3Path": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/raw/animation-soul-h3-cropped.mp4",
+    "sourceH3Sha256": "29fec03bf5da46faba4d91d62ed719272da7b8452af2e686d97164ac4c58006f"
+  },
+  "firstPosterSha256": "6d906977ea03856c8c62bbfe9d259e0cc8f21a76a46d35ba04cd878d5b5d6df2",
+  "lastPosterSha256": "85c720341478189be5b6027a88bda8e01aadac43db0b1a9ee8a6c4a34491ae2d",
+  "reviewSheetSha256": "013804c84caaf3dff735ee1e3a0d68bb702b45a9d702936597f2075c700a9d15",
+  "reviewNotes": "Strong authored spatial reveal is visible in the decoded 1fps sheet: a broken perimeter repairs over ~4s and a woven path draws from left to right over ~4s. Central lyric-safe void remains clear. Composite proposals at 35% Screen preserve word readability; face mask especially needed on soul right half. Proposal is not proof of the final encoded film.",
+  "verifiedAt": "2026-09-28T00:49:09.050125+00:00",
+  "sourceRevisionType": "Base HEAD during asset generation; uncommitted task inputs are identified by prompt, workflow, source-image, and finishing-script hashes. Final film must bind to its own render source revision.",
+  "initialFinish": {
+    "path": "/Volumes/Code/ark-video-studio/projects/psalm23-present-day/video-generation/raw/animation-soul-initial-finish.mp4",
+    "sha256": "678f8d9104bd35b288403c2c25fddb24de1d2af48b28b80ef0e1bc75a122e3c8",
+    "agentReview": "rejected_as_too_subtle_by_independent_critic"
+  },
+  "strongMotionReview": {
+    "oneFpsSheet": "video-generation/review/animation-soul-strong-v3-1fps.jpg",
+    "oneFpsSheetSha256": "9b8941e719cece74b7da8b6159bdcf3e97302d52a549c5481aa6b2aeb5664162",
+    "compositeProposal": "video-generation/review/animation-soul-v3-composite-proposal.jpg",
+    "compositeProposalSha256": "aac3e731a325236cd78511bb7bca8c3d97239054072f9bdc49e9154f374b46b1",
+    "initialFinishSha256": "678f8d9104bd35b288403c2c25fddb24de1d2af48b28b80ef0e1bc75a122e3c8",
+    "finalSha256": "03c53c654e34b1d537d9131763df45ed0cd45acb9d06d457051c29c8fb96948f",
+    "note": "The proposal uses the prior v2 film frame plus 35% Screen image blend for placement only. Final render must be reviewed independently."
+  }
+}

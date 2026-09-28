@@ -1,0 +1,61 @@
+{
+  "mode": "execute",
+  "publisher": "publish-reviewed-node.py",
+  "transport": "SSH Node24, no PowerShell",
+  "video": "/Volumes/DATA/ArkRender/psalm23-present-day/psalm23-held-in-the-ordinary-v5.mp4",
+  "sha256": "9a3f691b0c58490a363cfe100df7cb075b6e9a40f5e532827bb58f85931a45a6",
+  "posterSha256": "ec46e61d7487c08f0518fa7eb3e1a7bd2a9c00fec54aea78efc3dddb54b55431",
+  "remoteVideo": "C:/Users/sjfis/Videos/Psalm23/held-in-ordinary-9a3f691b0c58490a.mp4",
+  "remotePoster": "C:/Users/sjfis/Videos/Psalm23/held-in-ordinary-9a3f691b0c58490a.jpg",
+  "remoteReport": "C:/Users/sjfis/Videos/Psalm23/held-in-ordinary-9a3f691b0c58490a-review-220c9b8374c3.json",
+  "existingCandidateId": null,
+  "statusOnIngest": "pending_review",
+  "workflow": "psalm-23-lxx-22-shepherd",
+  "version": "Held in the Ordinary - full film v5",
+  "noSuperseding": true,
+  "evidence": [
+    {
+      "kind": "technical",
+      "path": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v5/review.json",
+      "sha256": "bdf4a594fa37d2699d5bb80618450dd66ad7d1e1b7d99910956a14a61d282a23",
+      "status": "passed"
+    },
+    {
+      "kind": "visual",
+      "path": "/Volumes/DATA/ArkRender/psalm23-present-day/independent-v5-visual/visual-report.json",
+      "sha256": "aaa059d0276d6d44d29848eb05a18f354b68c561673356af40a17487edbb0cc3",
+      "status": "accepted"
+    },
+    {
+      "kind": "audio",
+      "path": "/Volumes/DATA/ArkRender/psalm23-present-day/review-v5/audio/audio-review.json",
+      "sha256": "b28e5db09224e21687e81e71d2cef88812a1a962c0b3b014d859e2424c788644",
+      "status": "documented_exception"
+    }
+  ],
+  "app": {
+    "health": {
+      "ok": true,
+      "chapters": 50,
+      "source": "eng-Brenton"
+    },
+    "workflowId": "psalm-23-lxx-22-shepherd",
+    "workflowLyricsSha256": "021492487b56a3ac1dac962cc4c75658b250d8a05ac925f0aebc9a72a09f385a",
+    "songId": "32885123-f4b6-42e6-a546-f4acba404829",
+    "source": {
+      "exists": true,
+      "path": "C:/Users/sjfis/Documents/Codex/orthodox-songbook/media/suno/workflows/psalm-23-lxx-22-shepherd/32885123-f4b6-42e6-a546-f4acba404829.m4a",
+      "sha256": "3669040e797c9d2bf8b4136dc4c029c6e1ed51f302ccc411d1888ae50da80c8f",
+      "bytes": 3643492
+    },
+    "videoCount": 25,
+    "existingPsalm23Candidates": [
+      {
+        "id": "vid-20260927-31bdda7a",
+        "title": "Psalm 23 \u2014 Held in the Ordinary",
+        "status": "pending_review",
+        "sha256": "e483e690ef13766ee4e04414711d0826209151d3beab5a91864c113758f3e4f2"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1023 @@
+[
+  {
+    "id": "vid-20260927-31bdda7a",
+    "project": "Psalm 23 (LXX 22) lyric film",
+    "title": "Psalm 23 \u2014 Held in the Ordinary",
+    "version": "Held in the Ordinary - full film v2",
+    "sourceAgent": "Codex",
+    "sourceMachine": "Mac mini / OmiPC",
+    "sourcePath": "/Users/shanefisher/Movies/Psalm23/Psalm 23 - Held in the Ordinary.mp4",
+    "ingestedFrom": "C:\\Users\\sjfis\\Videos\\Psalm23\\held-in-ordinary-e483e690ef13766e.mp4",
+    "notes": "Psalm 23 (LXX 22) The Lord Is My Shepherd. Full 219.96-second source, selected Suno take 32885123-f4b6-42e6-a546-f4acba404829. Shane chose theme 1, Held in the Ordinary: contemporary protection and lyric-led animation. Full Psalm23 Held in the Ordinary v2:219.966667s,6599frames,1920x1080,30fps,H264/AAC. Exact source song preserved. Twelve original photographs show present-day protection and care; three locally generated inserts integrate shelter, water and a prominent golden mercy word. Independent encoded visual review accepted31 conservative distinct mechanisms,max3 equivalent uses. Scores:legibility8.5,semantic motion8.2,photorealism8.8,composition8.4,continuity8.3. All55 chronological sheets,8native and8phone-size samples inspected; no uninterrupted watching or hearing claim. V1 rejected and retained; v2 repairs grass growth, projected shadows, letter arch, generated mercy handoff, cup/wine collision, shall/follow spacing, no/you visibility. Technical decode/provenance, OCR210/210 and temporal checks passed. Seven timing corrections pass. STRICT SINGING SYNC IS NOT FULLY CERTIFIED:153/210pass,55unsupported,2 disputed model matches; detailed raw failures preserved. PCM correlation0.999414,min0.998761,lag0. Photos album has1movie; actual local playback verified. Awaiting Shane review; not user approved. SHA256 e483e690ef13766ee4e04414711d0826209151d3beab5a91864c113758f3e4f2. Pending Shane review; not user approved. Video SHA256 e483e690ef13766ee4e04414711d0826209151d3beab5a91864c113758f3e4f2. Review report SHA256 082dbccf9ee1303fcf0fe2000c96cd9a6a522199d70c22c01e2dc60a87e55d64. Audio exception: Strict singing-sync remains failed:153/210 words passed,55 unsupported,2 supported model-disagreement flags. The I flag differs66ms from the selected match despite source phrase-context support for the retained cue. The my flag selects the later repetition14.332s away. Seven defensible timing corrections all pass in v2. No further model retries or manual automatic-pass relabeling. Source/encoded PCM correlation0.999414, minimum segment0.998761, lag0, gain\u22120.048188dB; audio content preserved. This is a review candidate with unresolved word-level certification, not a perfect-sync claim.",
+    "supersedes": null,
+    "supersededBy": null,
+    "md5": "31bdda7a24fcf8f8e89584d4dc35af69",
+    "sha256": "e483e690ef13766ee4e04414711d0826209151d3beab5a91864c113758f3e4f2",
+    "bytes": 314123868,
+    "mimeType": "video/mp4",
+    "file": "media/videos/psalm-23-lxx-22-lyric-film/vid-20260927-31bdda7a/video.mp4",
+    "thumbnail": {
+      "file": "media/videos/psalm-23-lxx-22-lyric-film/vid-20260927-31bdda7a/thumbnail.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "probe": null,
+    "status": "pending_review",
+    "ingestedAt": "2026-09-27T18:08:44.821Z",
+    "updatedAt": "2026-09-27T18:08:44.821Z",
+    "history": [
+      {
+        "at": "2026-09-27T18:08:44.821Z",
+        "status": "pending_review",
+        "note": "Psalm 23 (LXX 22) The Lord Is My Shepherd. Full 219.96-second source, selected Suno take 32885123-f4b6-42e6-a546-f4acba404829. Shane chose theme 1, Held in the Ordinary: contemporary protection and lyric-led animation. Full Psalm23 Held in the Ordinary v2:219.966667s,6599frames,1920x1080,30fps,H264/AAC. Exact source song preserved. Twelve original photographs show present-day protection and care; three locally generated inserts integrate shelter, water and a prominent golden mercy word. Independent encoded visual review accepted31 conservative distinct mechanisms,max3 equivalent uses. Scores:legibility8.5,semantic motion8.2,photorealism8.8,composition8.4,continuity8.3. All55 chronological sheets,8native and8phone-size samples inspected; no uninterrupted watching or hearing claim. V1 rejected and retained; v2 repairs grass growth, projected shadows, letter arch, generated mercy handoff, cup/wine collision, shall/follow spacing, no/you visibility. Technical decode/provenance, OCR210/210 and temporal checks passed. Seven timing corrections pass. STRICT SINGING SYNC IS NOT FULLY CERTIFIED:153/210pass,55unsupported,2 disputed model matches; detailed raw failures preserved. PCM correlation0.999414,min0.998761,lag0. Photos album has1movie; actual local playback verified. Awaiting Shane review; not user approved. SHA256 e483e690ef13766ee4e04414711d0826209151d3beab5a91864c113758f3e4f2. Pending Shane review; not user approved. Video SHA256 e483e690ef13766ee4e04414711d0826209151d3beab5a91864c113758f3e4f2. Review report SHA256 082dbccf9ee1303fcf0fe2000c96cd9a6a522199d70c22c01e2dc60a87e55d64. Audio exception: Strict singing-sync remains failed:153/210 words passed,55 unsupported,2 supported model-disagreement flags. The I flag differs66ms from the selected match despite source phrase-context support for the retained cue. The my flag selects the later repetition14.332s away. Seven defensible timing corrections all pass in v2. No further model retries or manual automatic-pass relabeling. Source/encoded PCM correlation0.999414, minimum segment0.998761, lag0, gain\u22120.048188dB; audio content preserved. This is a review candidate with unresolved word-level certification, not a perfect-sync claim.",
+        "by": "Codex"
+      }
+    ],
+    "videoUrl": "/api/admin/videos/vid-20260927-31bdda7a/media",
+    "thumbnailUrl": "/api/admin/videos/vid-20260927-31bdda7a/thumbnail",
+    "downloadUrl": "/api/admin/videos/vid-20260927-31bdda7a/media?download=1",
+    "masterDownloadUrl": null
+  },
+  {
+    "id": "vid-20260927-63932a93",
+    "project": "Genesis1 - The Beginning",
+    "title": "Genesis 1 \u2014 Breath & Earth \u2014 Final Full Film v2",
+    "version": "Final Full Film v2",
+    "sourceAgent": "Codex",
+    "sourceMachine": "Mac mini",
+    "sourcePath": "/Volumes/DATA/ArkRender/genesis1/genesis1-breath-earth-v2.mp4",
+    "ingestedFrom": "C:\\Users\\sjfis\\Videos\\Genesis1\\full-v2-bd147120463a.mp4",
+    "notes": "Final corrected Genesis 1 lyric film, 304.733333 seconds / 9142 frames, 1080p30. Approved theme 3: restrained charcoal, bone, rust and amber; 63 authored animation families, four generated motion inserts, and active foreground words/graphics. V2 moves the supported first 'the' in 'the greater to command the day' from157.700 to158.016318 seconds; all other461word records and choreography remain unchanged. Independent encoded delta review accepted; prior full-film visual acceptance is carried forward with a documented manual visual-continuation exception: source inputs differ only for this cue, outside-region SSIM minimum0.989555 and worst/representative paired frames show no semantic regression. Native pixel identity failed and remains a recorded failure; its cause is not established. PCM correlation0.998748, minimum segment0.996351, zero global lag, gain-0.067581dB. Corrected cue passes the bounded acoustic check. STRICT SINGING SYNC IS NOT CERTIFIED:149/462 words passed,299unsupported,14supported outside tolerance; the unchanged 'He' is a model-disagreement case. Prior full OCR found458/462 automatically; four remaining words were visually confirmed and remain documented manual exceptions, not automatic passes. The intentional final5.4-second compositional hold is retained as a reviewed exception. No perfect-sync or full automatic-gauntlet-pass claim. Pending Shane review. Supersedes full-film V1 vid-20260927-d43880e9, preserving its file/history and all preview candidates. SHA256 bd147120463a4852418e1ca76ab4d4bfefceff80d9ac8c4ec67ac3f93d6e6f45.",
+    "supersedes": "vid-20260927-d43880e9",
+    "supersededBy": null,
+    "md5": "63932a9355684a8d69a997fc957a0d19",
+    "sha256": "bd147120463a4852418e1ca76ab4d4bfefceff80d9ac8c4ec67ac3f93d6e6f45",
+    "bytes": 163555795,
+    "mimeType": "video/mp4",
+    "file": "media/videos/genesis1-the-beginning/vid-20260927-63932a93/video.mp4",
+    "thumbnail": {
+      "file": "media/videos/genesis1-the-beginning/vid-20260927-63932a93/thumbnail.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "probe": null,
+    "status": "pending_review",
+    "ingestedAt": "2026-09-27T12:19:50.510Z",
+    "updatedAt": "2026-09-27T12:19:50.510Z",
+    "history": [
+      {
+        "at": "2026-09-27T12:19:50.510Z",
+        "status": "pending_review",
+        "note": "Final corrected Genesis 1 lyric film, 304.733333 seconds / 9142 frames, 1080p30. Approved theme 3: restrained charcoal, bone, rust and amber; 63 authored animation families, four generated motion inserts, and active foreground words/graphics. V2 moves the supported first 'the' in 'the greater to command the day' from157.700 to158.016318 seconds; all other461word records and choreography remain unchanged. Independent encoded delta review accepted; prior full-film visual acceptance is carried forward with a documented manual visual-continuation exception: source inputs differ only for this cue, outside-region SSIM minimum0.989555 and worst/representative paired frames show no semantic regression. Native pixel identity failed and remains a recorded failure; its cause is not established. PCM correlation0.998748, minimum segment0.996351, zero global lag, gain-0.067581dB. Corrected cue passes the bounded acoustic check. STRICT SINGING SYNC IS NOT CERTIFIED:149/462 words passed,299unsupported,14supported outside tolerance; the unchanged 'He' is a model-disagreement case. Prior full OCR found458/462 automatically; four remaining words were visually confirmed and remain documented manual exceptions, not automatic passes. The intentional final5.4-second compositional hold is retained as a reviewed exception. No perfect-sync or full automatic-gauntlet-pass claim. Pending Shane review. Supersedes full-film V1 vid-20260927-d43880e9, preserving its file/history and all preview candidates. SHA256 bd147120463a4852418e1ca76ab4d4bfefceff80d9ac8c4ec67ac3f93d6e6f45.",
+        "by": "Codex"
+      }
+    ],
+    "videoUrl": "/api/admin/videos/vid-20260927-63932a93/media",
+    "thumbnailUrl": "/api/admin/videos/vid-20260927-63932a93/thumbnail",
+    "downloadUrl": "/api/admin/videos/vid-20260927-63932a93/media?download=1",
+    "masterDownloadUrl": null
+  },
+  {
+    "id": "vid-20260927-e6050c02",
+    "project": "Genesis1 - The Beginning",
+    "title": "Genesis 1 - Opening 32 seconds (lyric film preview)",
+    "version": "Opening 32s preview v1",
+    "sourceAgent": "Codex",
+    "sourceMachine": "Mac mini",
+    "sourcePath": "/Volumes/DATA/ArkRender/genesis1/genesis1-opening32.mp4",
+    "ingestedFrom": "C:\\Users\\sjfis\\Videos\\Genesis1\\opening32-d151e3868d64.mp4",
+    "notes": "32-second opening direction preview, not the complete song video. Completes the first seven phrases; 960 native rendered frames at1080p30. Composition agent independently accepted the decoded opening visuals; root authorized delivery. Source-versus-encoded audio PCM correlation0.999381, minimum2-second segment0.9977 and zero measured global lag, gain-0.0466dB. These audio transport checks do not certify every sung word timing. No perfect-sync or complete-gauntlet claim. Pending Shane review. SHA256 d151e3868d6400fba550906d7c58907285377b81158ca7f83e1d756ca3a5cf3f.",
+    "supersedes": null,
+    "supersededBy": null,
+    "md5": "e6050c028e4153c3504b1a2a973bffcc",
+    "sha256": "d151e3868d6400fba550906d7c58907285377b81158ca7f83e1d756ca3a5cf3f",
+    "bytes": 9323541,
+    "mimeType": "video/mp4",
+    "file": "media/videos/genesis1-the-beginning/vid-20260927-e6050c02/video.mp4",
+    "thumbnail": {
+      "file": "media/videos/genesis1-the-beginning/vid-20260927-e6050c02/thumbnail.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "probe": null,
+    "status": "pending_review",
+    "ingestedAt": "2026-09-27T11:33:08.879Z",
+    "updatedAt": "2026-09-27T11:33:08.879Z",
+    "history": [
+      {
+        "at": "2026-09-27T11:33:08.879Z",
+        "status": "pending_review",
+        "note": "32-second opening direction preview, not the complete song video. Completes the first seven phrases; 960 native rendered frames at1080p30. Composition agent independently accepted the decoded opening visuals; root authorized delivery. Source-versus-encoded audio PCM correlation0.999381, minimum2-second segment0.9977 and zero measured global lag, gain-0.0466dB. These audio transport checks do not certify every sung word timing. No perfect-sync or complete-gauntlet claim. Pending Shane review. SHA256 d151e3868d6400fba550906d7c58907285377b81158ca7f83e1d756ca3a5cf3f.",
+        "by": "Codex"
+      }
+    ],
+    "videoUrl": "/api/admin/videos/vid-20260927-e6050c02/media",
+    "thumbnailUrl": "/api/admin/videos/vid-20260927-e6050c02/thumbnail",
+    "downloadUrl": "/api/admin/videos/vid-20260927-e6050c02/media?download=1",
+    "masterDownloadUrl": null
+  },
+  {
+    "id": "vid-20260927-eee760b7",
+    "project": "Genesis1 - The Beginning",
+    "title": "Genesis 1 - Life from the Earth (source preview)",
+    "version": "Source insert v1",
+    "sourceAgent": "Codex",
+    "sourceMachine": "OmiPC local GPU / Mac mini finishing",
+    "sourcePath": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/vegetation-v1-motion.mp4",
+    "ingestedFrom": "C:\\Users\\sjfis\\Videos\\Genesis1\\vegetation-v1-34c360c3ea0b.mp4",
+    "notes": "GENERATION SOURCE PREVIEW ONLY, not the finished Genesis1 lyric film. Silent 7.291667-second local MiniMax H3 insert from new GPT Image anchors. Artistically compressed tree and ground-cover growth in a fixed valley view. Native 175 generated frames at 24fps. No retiming, interpolation or reversal. Intended final film treatment adds active foreground lyrics and/or authored graphic motion; this standalone source preview intentionally lacks those layers. Agent reviewed chronological6fps decoded frames and endpoints; source acceptance does not certify the final composite. Pending Shane review; no user approval claimed. SHA256 34c360c3ea0b8f943b71cf159fc0ee02ce3412f54b5f571c5d4cc51bad342a15.",
+    "supersedes": null,
+    "supersededBy": null,
+    "md5": "eee760b71ecf30d7992753ec8f084ad3",
+    "sha256": "34c360c3ea0b8f943b71cf159fc0ee02ce3412f54b5f571c5d4cc51bad342a15",
+    "bytes": 3794074,
+    "mimeType": "video/mp4",
+    "file": "media/videos/genesis1-the-beginning/vid-20260927-eee760b7/video.mp4",
+    "thumbnail": {
+      "file": "media/videos/genesis1-the-beginning/vid-20260927-eee760b7/thumbnail.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "probe": null,
+    "status": "pending_review",
+    "ingestedAt": "2026-09-27T11:31:42.631Z",
+    "updatedAt": "2026-09-27T11:31:42.631Z",
+    "history": [
+      {
+        "at": "2026-09-27T11:31:42.631Z",
+        "status": "pending_review",
+        "note": "GENERATION SOURCE PREVIEW ONLY, not the finished Genesis1 lyric film. Silent 7.291667-second local MiniMax H3 insert from new GPT Image anchors. Artistically compressed tree and ground-cover growth in a fixed valley view. Native 175 generated frames at 24fps. No retiming, interpolation or reversal. Intended final film treatment adds active foreground lyrics and/or authored graphic motion; this standalone source preview intentionally lacks those layers. Agent reviewed chronological6fps decoded frames and endpoints; source acceptance does not certify the final composite. Pending Shane review; no user approval claimed. SHA256 34c360c3ea0b8f943b71cf159fc0ee02ce3412f54b5f571c5d4cc51bad342a15.",
+        "by": "Codex"
+      }
+    ],
+    "videoUrl": "/api/admin/videos/vid-20260927-eee760b7/media",
+    "thumbnailUrl": "/api/admin/videos/vid-20260927-eee760b7/thumbnail",
+    "downloadUrl": "/api/admin/videos/vid-20260927-eee760b7/media?download=1",
+    "masterDownloadUrl": null
+  },
+  {
+    "id": "vid-20260927-e0aa88b1",
+    "project": "Genesis1 - The Beginning",
+    "title": "Genesis 1 - Land Emerges (source preview)",
+    "version": "Source insert v1",
+    "sourceAgent": "Codex",
+    "sourceMachine": "OmiPC local GPU / Mac mini finishing",
+    "sourcePath": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/land-emergence-v1-motion.mp4",
+    "ingestedFrom": "C:\\Users\\sjfis\\Videos\\Genesis1\\land-emergence-v1-d24c0689cd23.mp4",
+    "notes": "GENERATION SOURCE PREVIEW ONLY, not the finished Genesis1 lyric film. Silent 7.291667-second local MiniMax H3 insert from new GPT Image anchors. Shallow water recedes to reveal basalt terrain. Native 175 generated frames at 24fps. No retiming, interpolation or reversal. Intended final film treatment adds active foreground lyrics and/or authored graphic motion; this standalone source preview intentionally lacks those layers. Agent reviewed chronological6fps decoded frames and endpoints; source acceptance does not certify the final composite. Pending Shane review; no user approval claimed. SHA256 d24c0689cd23fb5bbba0b22fac8812696f26450def02bf3ad5dd48998485d7d7.",
+    "supersedes": null,
+    "supersededBy": null,
+    "md5": "e0aa88b166e6a4d8a245408c251b8c9c",
+    "sha256": "d24c0689cd23fb5bbba0b22fac8812696f26450def02bf3ad5dd48998485d7d7",
+    "bytes": 3031415,
+    "mimeType": "video/mp4",
+    "file": "media/videos/genesis1-the-beginning/vid-20260927-e0aa88b1/video.mp4",
+    "thumbnail": {
+      "file": "media/videos/genesis1-the-beginning/vid-20260927-e0aa88b1/thumbnail.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "probe": null,
+    "status": "pending_review",
+    "ingestedAt": "2026-09-27T11:31:35.481Z",
+    "updatedAt": "2026-09-27T11:31:35.481Z",
+    "history": [
+      {
+        "at": "2026-09-27T11:31:35.481Z",
+        "status": "pending_review",
+        "note": "GENERATION SOURCE PREVIEW ONLY, not the finished Genesis1 lyric film. Silent 7.291667-second local MiniMax H3 insert from new GPT Image anchors. Shallow water recedes to reveal basalt terrain. Native 175 generated frames at 24fps. No retiming, interpolation or reversal. Intended final film treatment adds active foreground lyrics and/or authored graphic motion; this standalone source preview intentionally lacks those layers. Agent reviewed chronological6fps decoded frames and endpoints; source acceptance does not certify the final composite. Pending Shane review; no user approval claimed. SHA256 d24c0689cd23fb5bbba0b22fac8812696f26450def02bf3ad5dd48998485d7d7.",
+        "by": "Codex"
+      }
+    ],
+    "videoUrl": "/api/admin/videos/vid-20260927-e0aa88b1/media",
+    "thumbnailUrl": "/api/admin/videos/vid-20260927-e0aa88b1/thumbnail",
+    "downloadUrl": "/api/admin/videos/vid-20260927-e0aa88b1/media?download=1",
+    "masterDownloadUrl": null
+  },
+  {
+    "id": "vid-20260927-6eed3523",
+    "project": "Genesis1 - The Beginning",
+    "title": "Genesis 1 - Whale from Lines (source preview)",
+    "version": "Source insert v1",
+    "sourceAgent": "Codex",
+    "sourceMachine": "OmiPC local GPU / Mac mini finishing",
+    "sourcePath": "/Volumes/Code/ark-video-studio/projects/genesis1-beginning/assets/whale-formation-motion.mp4",
+    "ingestedFrom": "C:\\Users\\sjfis\\Videos\\Genesis1\\whale-formation-22f2d15af909.mp4",
+    "notes": "GENERATION SOURCE PREVIEW ONLY, not the finished Genesis1 lyric film. Silent 7.291667-second local MiniMax H3 insert from new GPT Image anchors. Bone strands gather into a whale on black. Fixed RGB gains restore source line brightness. Native 175 generated frames at 24fps. No retiming, interpolation or reversal. Intended final film treatment adds active foreground lyrics and/or authored graphic motion; this standalone source preview intentionally lacks those layers. Agent reviewed chronological6fps decoded frames and endpoints; source acceptance does not certify the final composite. Pending Shane review; no user approval claimed. SHA256 22f2d15af909f6c037b1e1a5e5a5459ac30cd51934eaa91947c84b2654d90e85.",
+    "supersedes": null,
+    "supersededBy": null,
+    "md5": "6eed352301b45d357979b11c4dc49b9f",
+    "sha256": "22f2d15af909f6c037b1e1a5e5a5459ac30cd51934eaa91947c84b2654d90e85",
+    "bytes": 1338128,
+    "mimeType": "video/mp4",
+    "file": "media/videos/genesis1-the-beginning/vid-20260927-6eed3523/video.mp4",
+    "thumbnail": {
+      "file": "media/videos/genesis1-the-beginning/vid-20260927-6eed3523/thumbnail.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "probe": null,
+    "status": "pending_review",
+    "ingestedAt": "2026-09-27T11:31:31.964Z",
+    "updatedAt": "2026-09-27T11:31:31.964Z",
+    "history": [
+      {
+        "at": "2026-09-27T11:31:31.964Z",
+        "status": "pending_review",
+        "note": "GENERATION SOURCE PREVIEW ONLY, not the finished Genesis1 lyric film. Silent 7.291667-second local MiniMax H3 insert from new GPT Image anchors. Bone strands gather into a whale on black. Fixed RGB gains restore source line brightness. Native 175 generated frames at 24fps. No retiming, interpolation or reversal. Intended final film treatment adds active foreground lyrics and/or authored graphic motion; this standalone source preview intentionally lacks those layers. Agent reviewed chronological6fps decoded frames and endpoints; source acceptance does not certify the final composite. Pending Shane review; no user approval claimed. SHA256 22f2d15af909f6c037b1e1a5e5a5459ac30cd51934eaa91947c84b2654d90e85.",
+        "by": "Codex"
+      }
+    ],
+    "videoUrl": "/api/admin/videos/vid-20260927-6eed3523/media",
+    "thumbnailUrl": "/api/admin/videos/vid-20260927-6eed3523/thumbnail",
+    "downloadUrl": "/api/admin/videos/vid-20260927-6eed3523/media?download=1",
+    "masterDownloadUrl": null
+  },
+  {
+    "id": "vid-20260927-4fecbc68",
+    "project": "Psalm 91 (LXX 90) lyric film",
+    "title": "Psalm 91 - A Thousand Shall Fall",
+    "version": "Shelter full film v4",
+    "sourceAgent": "Codex",
+    "sourceMachine": "Mac mini / OmiPC local H3",
+    "sourcePath": "/Volumes/DATA/ArkRender/psalm91-shelter-v4.mp4",
+    "ingestedFrom": "C:\\Users\\sjfis\\Videos\\Psalm91\\psalm91-shelter-v4-5a49eade84a6.mp4",
+    "notes": "Full Psalm 91 (LXX 90) A Thousand Shall Fall lyric film, 327.6 seconds. Copper, charcoal, and ivory Shelter direction with spatial word animation and sparse photoreal reveals. V4 removes the mid-song Psalm 91 title and fixes the opening keyhole image continuity. Includes locally generated MiniMax H3 material-transformation inserts from GPT Image source artwork. Adam creation footage is excluded and reserved for a future creation video; the instrumental bridge contains a storm refuge forming from rock. Song supplied via https://suno.com/s/ErRXnhOwTS3IZm7W . Psalm 91 \u2014 Shelter full film v4. Fixes the opening keyhole by retaining one continuous photographic image through the reveal, removes the stray mid-song PSALM 91 title, and retains the storm-refuge replacement for the removed Adam formation shot. Adam source is reserved for Genesis 1. Duration327.6s;1920x1080;30fps;9828frames. Exact SHA256:5a49eade84a664a472d47532f683ed4d813f5f6af593fd4ce90d5df57b0e8502. Source commit78f6502. All17 bounded integrity checks passed including full decode, render/source binding, unchanged396canonical cues,0ms measured lag,0.998407source-audio correlation, and decoded PCM identity to v3. Independent visual delta review accepted both changed regions;144dense samples and85overview samples directly inspected; outside-region2fps comparison found no mean pixel difference above2/255. Prior whole-film visual evidence is explicitly inherited where unchanged. This is not a new full OCR or strict singing certification: v3 strict word evidence remains75pass/279unsupported/42outside tolerance; v3 OCR393/396 with three manually readable exceptions; prior5.067s calm-hold exception retained. No perfect/full automatic gauntlet pass is claimed. Status pending_review; supersedes v3candidatevid-20260927-13f1505b while preserving history. This full-song candidate is pending Shane review, not user approved. Supersedes V3 candidate vid-20260927-13f1505b while preserving its file and history. SHA256 5a49eade84a664a472d47532f683ed4d813f5f6af593fd4ce90d5df57b0e8502.",
+    "supersedes": "vid-20260927-13f1505b",
+    "supersededBy": null,
+    "md5": "4fecbc68b9902340d1a90eb8a53ec04d",
+    "sha256": "5a49eade84a664a472d47532f683ed4d813f5f6af593fd4ce90d5df57b0e8502",
+    "bytes": 187403161,
+    "mimeType": "video/mp4",
+    "file": "media/videos/psalm-91-lxx-90-lyric-film/vid-20260927-4fecbc68/video.mp4",
+    "thumbnail": {
+      "file": "media/videos/psalm-91-lxx-90-lyric-film/vid-20260927-4fecbc68/thumbnail.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "probe": null,
+    "status": "pending_review",
+    "ingestedAt": "2026-09-27T10:50:36.766Z",
+    "updatedAt": "2026-09-27T10:50:36.766Z",
+    "history": [
+      {
+        "at": "2026-09-27T10:50:36.766Z",
+        "status": "pending_review",
+        "note": "Full Psalm 91 (LXX 90) A Thousand Shall Fall lyric film, 327.6 seconds. Copper, charcoal, and ivory Shelter direction with spatial word animation and sparse photoreal reveals. V4 removes the mid-song Psalm 91 title and fixes the opening keyhole image continuity. Includes locally generated MiniMax H3 material-transformation inserts from GPT Image source artwork. Adam creation footage is excluded and reserved for a future creation video; the instrumental bridge contains a storm refuge forming from rock. Song supplied via https://suno.com/s/ErRXnhOwTS3IZm7W . Psalm 91 \u2014 Shelter full film v4. Fixes the opening keyhole by retaining one continuous photographic image through the reveal, removes the stray mid-song PSALM 91 title, and retains the storm-refuge replacement for the removed Adam formation shot. Adam source is reserved for Genesis 1. Duration327.6s;1920x1080;30fps;9828frames. Exact SHA256:5a49eade84a664a472d47532f683ed4d813f5f6af593fd4ce90d5df57b0e8502. Source commit78f6502. All17 bounded integrity checks passed including full decode, render/source binding, unchanged396canonical cues,0ms measured lag,0.998407source-audio correlation, and decoded PCM identity to v3. Independent visual delta review accepted both changed regions;144dense samples and85overview samples directly inspected; outside-region2fps comparison found no mean pixel difference above2/255. Prior whole-film visual evidence is explicitly inherited where unchanged. This is not a new full OCR or strict singing certification: v3 strict word evidence remains75pass/279unsupported/42outside tolerance; v3 OCR393/396 with three manually readable exceptions; prior5.067s calm-hold exception retained. No perfect/full automatic gauntlet pass is claimed. Status pending_review; supersedes v3candidatevid-20260927-13f1505b while preserving history. This full-song candidate is pending Shane review, not user approved. Supersedes V3 candidate vid-20260927-13f1505b while preserving its file and history. SHA256 5a49eade84a664a472d47532f683ed4d813f5f6af593fd4ce90d5df57b0e8502.",
+        "by": "Codex"
+      }
+    ],
+    "videoUrl": "/api/admin/videos/vid-20260927-4fecbc68/media",
+    "thumbnailUrl": "/api/admin/videos/vid-20260927-4fecbc68/thumbnail",
+    "downloadUrl": "/api/admin/videos/vid-20260927-4fecbc68/media?download=1",
+    "masterDownloadUrl": null
+  },
+  {
+    "id": "vid-20260927-9532513a",
+    "project": "Psalm 91 (LXX 90) lyric film",
+    "title": "Psalm 91 - Refuge in the Storm",
+    "version": "Refuge in the Storm - local H3 v1",
+    "sourceAgent": "Codex",
+    "sourceMachine": "OmiPC local GPU / Mac mini finishing",
+    "sourcePath": "/Volumes/Code/ark-video-studio/projects/psalm91-shelter/assets/artsy-stone-refuge-motion.mp4",
+    "ingestedFrom": "C:\\Users\\sjfis\\Videos\\Psalm91\\artsy-stone-refuge-6ed4edf6cc22.mp4",
+    "notes": "Standalone silent 9.416667-second abstract insert for Psalm91 Shelter. Photoreal material transformation generated locally on OmiPC with existing MiniMax H3 FL2VA int8 and4-step turbo LoRA, using new GPT Image source material. Conditioning: first_frame+last_frame. Native 226 generated frames at24fps; no slow motion, retiming, frame interpolation or reversal. No full song audio or lyric overlays. A weathered stone refuge forms against the storm. This replaces the Adam insert in the Psalm91 film; Adam remains reserved for the next creation video. Pending Shane review; no approval claimed. File SHA256 6ed4edf6cc228930fdfb936615986d536b16b4e2a4b2b6582d818f6782e64fbf.",
+    "supersedes": null,
+    "supersededBy": null,
+    "md5": "9532513a55fc6b212d8d5f1609d99fac",
+    "sha256": "6ed4edf6cc228930fdfb936615986d536b16b4e2a4b2b6582d818f6782e64fbf",
+    "bytes": 2711176,
+    "mimeType": "video/mp4",
+    "file": "media/videos/psalm-91-lxx-90-lyric-film/vid-20260927-9532513a/video.mp4",
+    "thumbnail": {
+      "file": "media/videos/psalm-91-lxx-90-lyric-film/vid-20260927-9532513a/thumbnail.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "probe": null,
+    "status": "pending_review",
+    "ingestedAt": "2026-09-27T10:13:46.872Z",
+    "updatedAt": "2026-09-27T10:13:46.872Z",
+    "history": [
+      {
+        "at": "2026-09-27T10:13:46.872Z",
+        "status": "pending_review",
+        "note": "Standalone silent 9.416667-second abstract insert for Psalm91 Shelter. Photoreal material transformation generated locally on OmiPC with existing MiniMax H3 FL2VA int8 and4-step turbo LoRA, using new GPT Image source material. Conditioning: first_frame+last_frame. Native 226 generated frames at24fps; no slow motion, retiming, frame interpolation or reversal. No full song audio or lyric overlays. A weathered stone refuge forms against the storm. This replaces the Adam insert in the Psalm91 film; Adam remains reserved for the next creation video. Pending Shane review; no approval claimed. File SHA256 6ed4edf6cc228930fdfb936615986d536b16b4e2a4b2b6582d818f6782e64fbf.",
+        "by": "Codex"
+      }
+    ],
+    "videoUrl": "/api/admin/videos/vid-20260927-9532513a/media",
+    "thumbnailUrl": "/api/admin/videos/vid-20260927-9532513a/thumbnail",
+    "downloadUrl": "/api/admin/videos/vid-20260927-9532513a/media?download=1",
+    "masterDownloadUrl": null
+  },
+  {
+    "id": "vid-20260927-af6ebee0",
+    "project": "Psalm 91 (LXX 90) lyric film",
+    "title": "Psalm 91 - Arrows Become Dust",
+    "version": "Arrows Become Dust - local H3 v1",
+    "sourceAgent": "Codex",
+    "sourceMachine": "OmiPC local GPU / Mac mini finishing",
+    "sourcePath": "/Volumes/Code/ark-video-studio/projects/psalm91-shelter/assets/artsy-arrows-dissolution-motion.mp4",
+    "ingestedFrom": "C:\\Users\\sjfis\\Videos\\Psalm91\\artsy-arrows-dissolution-84b763b85468.mp4",
+    "notes": "Standalone silent 5.166667-second abstract insert for Psalm91 Shelter. Photoreal material transformation generated locally on OmiPC with existing MiniMax H3 FL2VA int8 and4-step turbo LoRA, using new GPT Image source material. Conditioning: first_frame. Native 124 generated frames at24fps; no slow motion, retiming, frame interpolation or reversal. No full song audio or lyric overlays. Pending Shane review; no approval claimed. File SHA256 84b763b85468e06ccfa9be931ddc66a04400ba1e0145419839ec66372552bfec.",
+    "supersedes": null,
+    "supersededBy": null,
+    "md5": "af6ebee00da7a7c335753f39034cdce1",
+    "sha256": "84b763b85468e06ccfa9be931ddc66a04400ba1e0145419839ec66372552bfec",
+    "bytes": 2391109,
+    "mimeType": "video/mp4",
+    "file": "media/videos/psalm-91-lxx-90-lyric-film/vid-20260927-af6ebee0/video.mp4",
+    "thumbnail": {
+      "file": "media/videos/psalm-91-lxx-90-lyric-film/vid-20260927-af6ebee0/thumbnail.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "probe": null,
+    "status": "pending_review",
+    "ingestedAt": "2026-09-27T09:49:25.007Z",
+    "updatedAt": "2026-09-27T09:49:25.007Z",
+    "history": [
+      {
+        "at": "2026-09-27T09:49:25.007Z",
+        "status": "pending_review",
+        "note": "Standalone silent 5.166667-second abstract insert for Psalm91 Shelter. Photoreal material transformation generated locally on OmiPC with existing MiniMax H3 FL2VA int8 and4-step turbo LoRA, using new GPT Image source material. Conditioning: first_frame. Native 124 generated frames at24fps; no slow motion, retiming, frame interpolation or reversal. No full song audio or lyric overlays. Pending Shane review; no approval claimed. File SHA256 84b763b85468e06ccfa9be931ddc66a04400ba1e0145419839ec66372552bfec.",
+        "by": "Codex"
+      }
+    ],
+    "videoUrl": "/api/admin/videos/vid-20260927-af6ebee0/media",
+    "thumbnailUrl": "/api/admin/videos/vid-20260927-af6ebee0/thumbnail",
+    "downloadUrl": "/api/admin/videos/vid-20260927-af6ebee0/media?download=1",
+    "masterDownloadUrl": null
+  },
+  {
+    "id": "vid-20260927-f9c0005a",
+    "project": "Psalm 91 (LXX 90) lyric film",
+    "title": "Psalm 91 - Adam Formed from Dust",
+    "version": "Adam Formed from Dust - local H3 v1",
+    "sourceAgent": "Codex",
+    "sourceMachine": "OmiPC local GPU / Mac mini finishing",
+    "sourcePath": "/Volumes/Code/ark-video-studio/projects/psalm91-shelter/assets/artsy-adam-formation-motion.mp4",
+    "ingestedFrom": "C:\\Users\\sjfis\\Videos\\Psalm91\\artsy-adam-formation-c0465fd2b0ed.mp4",
+    "notes": "Standalone silent 9.416667-second abstract insert for Psalm91 Shelter. Photoreal material transformation generated locally on OmiPC with existing MiniMax H3 FL2VA int8 and4-step turbo LoRA, using new GPT Image source material. Conditioning: first_frame+last_frame. Native 226 generated frames at24fps; no slow motion, retiming, frame interpolation or reversal. No full song audio or lyric overlays. Pending Shane review; no approval claimed. File SHA256 c0465fd2b0ed1723a75cfaafb6c0b312626e6ef15e7cd2872d210fdb5975c43a.",
+    "supersedes": null,
+    "supersededBy": null,
+    "md5": "f9c0005a7fc7fb59894b9c0978f71329",
+    "sha256": "c0465fd2b0ed1723a75cfaafb6c0b312626e6ef15e7cd2872d210fdb5975c43a",
+    "bytes": 2010090,
+    "mimeType": "video/mp4",
+    "file": "media/videos/psalm-91-lxx-90-lyric-film/vid-20260927-f9c0005a/video.mp4",
+    "thumbnail": {
+      "file": "media/videos/psalm-91-lxx-90-lyric-film/vid-20260927-f9c0005a/thumbnail.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "probe": null,
+    "status": "pending_review",
+    "ingestedAt": "2026-09-27T09:49:21.324Z",
+    "updatedAt": "2026-09-27T10:05:51.147Z",
+    "history": [
+      {
+        "at": "2026-09-27T09:49:21.324Z",
+        "status": "pending_review",
+        "note": "Standalone silent 9.416667-second abstract insert for Psalm91 Shelter. Photoreal material transformation generated locally on OmiPC with existing MiniMax H3 FL2VA int8 and4-step turbo LoRA, using new GPT Image source material. Conditioning: first_frame+last_frame. Native 226 generated frames at24fps; no slow motion, retiming, frame interpolation or reversal. No full song audio or lyric overlays. Pending Shane review; no approval claimed. File SHA256 c0465fd2b0ed1723a75cfaafb6c0b312626e6ef15e7cd2872d210fdb5975c43a.",
+        "by": "Codex"
+      },
+      {
+        "at": "2026-09-27T10:05:51.147Z",
+        "status": "pending_review",
+        "note": "Reserved for the next Genesis 1 creation video at Shane's request. Removed from the current Psalm 91 film; retained as a standalone native 9.416667-second local H3 clip. Keep this file and candidate; no deletion or quality rejection requested.",
+        "by": "studio"
+      }
+    ],
+    "videoUrl": "/api/admin/videos/vid-20260927-f9c0005a/media",
+    "thumbnailUrl": "/api/admin/videos/vid-20260927-f9c0005a/thumbnail",
+    "downloadUrl": "/api/admin/videos/vid-20260927-f9c0005a/media?download=1",
+    "masterDownloadUrl": null
+  },
+  {
+    "id": "vid-20260927-ecf06616",
+    "project": "Psalm 91 (LXX 90) lyric film",
+    "title": "Psalm 91 - Gathering Wing",
+    "version": "Artsy insert - local H3 v1",
+    "sourceAgent": "Codex",
+    "sourceMachine": "OmiPC local GPU / Mac mini finishing",
+    "sourcePath": "/Volumes/Code/ark-video-studio/projects/psalm91-shelter/assets/artsy-dust-wing-motion.mp4",
+    "ingestedFrom": "C:\\Users\\sjfis\\Videos\\Psalm91\\artsy-dust-wing-8f299a0df084.mp4",
+    "notes": "Standalone5.167-second silent abstract insert for Psalm91 Shelter. Photoreal material transformation generated locally on OmiPC with existing MiniMax H3 FL2VA int8 and4-step turbo LoRA, conditioned on a new GPT Image final frame. Original forward generation, not reversed. No full song audio or lyrics are included. Pending Shane review; no approval claimed. File SHA256 8f299a0df0844bece62c2cc1374b09453fb7612408529bf95efaec24897d3192.",
+    "supersedes": null,
+    "supersededBy": null,
+    "md5": "ecf0661647297c51e8ae0237ad91adf9",
+    "sha256": "8f299a0df0844bece62c2cc1374b09453fb7612408529bf95efaec24897d3192",
+    "bytes": 2025635,
+    "mimeType": "video/mp4",
+    "file": "media/videos/psalm-91-lxx-90-lyric-film/vid-20260927-ecf06616/video.mp4",
+    "thumbnail": {
+      "file": "media/videos/psalm-91-lxx-90-lyric-film/vid-20260927-ecf06616/thumbnail.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "probe": null,
+    "status": "pending_review",
+    "ingestedAt": "2026-09-27T09:32:20.961Z",
+    "updatedAt": "2026-09-27T09:32:20.961Z",
+    "history": [
+      {
+        "at": "2026-09-27T09:32:20.961Z",
+        "status": "pending_review",
+        "note": "Standalone5.167-second silent abstract insert for Psalm91 Shelter. Photoreal material transformation generated locally on OmiPC with existing MiniMax H3 FL2VA int8 and4-step turbo LoRA, conditioned on a new GPT Image final frame. Original forward generation, not reversed. No full song audio or lyrics are included. Pending Shane review; no approval claimed. File SHA256 8f299a0df0844bece62c2cc1374b09453fb7612408529bf95efaec24897d3192.",
+        "by": "Codex"
+      }
+    ],
+    "videoUrl": "/api/admin/videos/vid-20260927-ecf06616/media",
+    "thumbnailUrl": "/api/admin/videos/vid-20260927-ecf06616/thumbnail",
+    "downloadUrl": "/api/admin/videos/vid-20260927-ecf06616/media?download=1",
+    "masterDownloadUrl": null
+  },
+  {
+    "id": "vid-20260927-db1283e7",
+    "project": "Psalm 91 (LXX 90) lyric film",
+    "title": "Psalm 91 - Lion from Dust",
+    "version": "Artsy insert - local H3 v1",
+    "sourceAgent": "Codex",
+    "sourceMachine": "OmiPC local GPU / Mac mini finishing",
+    "sourcePath": "/Volumes/Code/ark-video-studio/projects/psalm91-shelter/assets/artsy-dust-lion-motion.mp4",
+    "ingestedFrom": "C:\\Users\\sjfis\\Videos\\Psalm91\\artsy-dust-lion-c19868bd5052.mp4",
+    "notes": "Standalone5.167-second silent abstract insert for Psalm91 Shelter. Photoreal material transformation generated locally on OmiPC with existing MiniMax H3 FL2VA int8 and4-step turbo LoRA, conditioned on a new GPT Image final frame. Original forward generation, not reversed. No full song audio or lyrics are included. Pending Shane review; no approval claimed. File SHA256 c19868bd50520ede0828784d2250b4504f3c772879c94c97823c0aaca19e53eb.",
+    "supersedes": null,
+    "supersededBy": null,
+    "md5": "db1283e7d4a040fa036488529075ef12",
+    "sha256": "c19868bd50520ede0828784d2250b4504f3c772879c94c97823c0aaca19e53eb",
+    "bytes": 1691449,
+    "mimeType": "video/mp4",
+    "file": "media/videos/psalm-91-lxx-90-lyric-film/vid-20260927-db1283e7/video.mp4",
+    "thumbnail": {
+      "file": "media/videos/psalm-91-lxx-90-lyric-film/vid-20260927-db1283e7/thumbnail.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "probe": null,
+    "status": "pending_review",
+    "ingestedAt": "2026-09-27T09:32:16.844Z",
+    "updatedAt": "2026-09-27T09:32:16.844Z",
+    "history": [
+      {
+        "at": "2026-09-27T09:32:16.844Z",
+        "status": "pending_review",
+        "note": "Standalone5.167-second silent abstract insert for Psalm91 Shelter. Photoreal material transformation generated locally on OmiPC with existing MiniMax H3 FL2VA int8 and4-step turbo LoRA, conditioned on a new GPT Image final frame. Original forward generation, not reversed. No full song audio or lyrics are included. Pending Shane review; no approval claimed. File SHA256 c19868bd50520ede0828784d2250b4504f3c772879c94c97823c0aaca19e53eb.",
+        "by": "Codex"
+      }
+    ],
+    "videoUrl": "/api/admin/videos/vid-20260927-db1283e7/media",
+    "thumbnailUrl": "/api/admin/videos/vid-20260927-db1283e7/thumbnail",
+    "downloadUrl": "/api/admin/videos/vid-20260927-db1283e7/media?download=1",
+    "masterDownloadUrl": null
+  },
+  {
+    "id": "vid-20260927-12c73698",
+    "project": "Psalm 91 (LXX 90) lyric film",
+    "title": "Psalm 91 - A Thousand Shall Fall",
+    "version": "Shelter - first30 direction preview v1",
+    "sourceAgent": "Codex",
+    "sourceMachine": "Mac mini",
+    "sourcePath": "/Volumes/Code/ark-video-studio/output/psalm91-production/psalm91-first30-v1.mp4",
+    "ingestedFrom": "C:\\Users\\sjfis\\Videos\\Psalm91\\psalm91-first30-v1-587b31f64982.mp4",
+    "notes": "Separate first30-second direction preview from the Psalm91 Shelter production. Chosen theme combines spatial word journeys and sparse keyhole photographic reveals in copper, charcoal and ivory. HyperFrames authored HTML animation. Canonical source song https://suno.com/song/5d78a5c1-4341-4867-b25e-c3698b1ffe54, supplied https://suno.com/s/ErRXnhOwTS3IZm7W. This is an opening preview, not the completed full song; it ends mid-verse by design. Independent sampled visual review passed for preview scope with no blocking readability or layout findings. Pending Shane review; no approval claimed. File SHA256 587b31f649821edc0807e45e347b3ac59537ac5786c65c6f030a4d7be9141e26.",
+    "supersedes": null,
+    "supersededBy": null,
+    "md5": "12c73698ad3b45f34a86fea3e80b05bd",
+    "sha256": "587b31f649821edc0807e45e347b3ac59537ac5786c65c6f030a4d7be9141e26",
+    "bytes": 20485948,
+    "mimeType": "video/mp4",
+    "file": "media/videos/psalm-91-lxx-90-lyric-film/vid-20260927-12c73698/video.mp4",
+    "thumbnail": {
+      "file": "media/videos/psalm-91-lxx-90-lyric-film/vid-20260927-12c73698/thumbnail.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "probe": null,
+    "status": "pending_review",
+    "ingestedAt": "2026-09-27T09:09:23.436Z",
+    "updatedAt": "2026-09-27T09:09:23.436Z",
+    "history": [
+      {
+        "at": "2026-09-27T09:09:23.436Z",
+        "status": "pending_review",
+        "note": "Separate first30-second direction preview from the Psalm91 Shelter production. Chosen theme combines spatial word journeys and sparse keyhole photographic reveals in copper, charcoal and ivory. HyperFrames authored HTML animation. Canonical source song https://suno.com/song/5d78a5c1-4341-4867-b25e-c3698b1ffe54, supplied https://suno.com/s/ErRXnhOwTS3IZm7W. This is an opening preview, not the completed full song; it ends mid-verse by design. Independent sampled visual review passed for preview scope with no blocking readability or layout findings. Pending Shane review; no approval claimed. File SHA256 587b31f649821edc0807e45e347b3ac59537ac5786c65c6f030a4d7be9141e26.",
+        "by": "Codex"
+      }
+    ],
+    "videoUrl": "/api/admin/videos/vid-20260927-12c73698/media",
+    "thumbnailUrl": "/api/admin/videos/vid-20260927-12c73698/thumbnail",
+    "downloadUrl": "/api/admin/videos/vid-20260927-12c73698/media?download=1",
+    "masterDownloadUrl": null
+  },
+  {
+    "id": "vid-20260927-4100acee",
+    "project": "Genesis Chapter 4 music video",
+    "title": "Genesis 4 - The Brother's Blood",
+    "version": "Original v3 vs HyperFrames - 20s side by side",
+    "sourceAgent": "Codex",
+    "sourceMachine": "Mac mini",
+    "sourcePath": "/Users/shanefisher/Movies/Genesis4-hyperframes-20s-work/comparison.mp4",
+    "ingestedFrom": "C:\\Users\\sjfis\\Videos\\Genesis4\\genesis4-dark-kinetic-56b915939d05.mp4",
+    "notes": "Separate 20-second HyperFrames experiment; source interval 250.9\u2013270.9 seconds from Genesis 4 Vengeance and Mercy v3. Original film and project preserved. Same 28 canonical word cues and source audio; new spatial camera choreography, solid rings and seven-to-seventy-seven escalation into Christ's unlimited forgiveness. HyperFrames CLI 0.8.79, local Chrome GPU and FFmpeg; no hosted rendering. No user approval claimed. The song's literal lyric remains seventy times seven; 77 is an interpretive allusion. Automated checks cover decode, source audio fidelity, retained cues and encoded OCR. Independent visual review is separate from unsupported acoustic timing evidence for15words. Source song https://suno.com/song/dd723dc8-5303-4694-9553-6d29f9768d04. Film SHA256 56b915939d052ba67cff0da93a84b26bf15dd633aaab5b7291837ccc2aa1c3b4.",
+    "supersedes": null,
+    "supersededBy": null,
+    "chapter": 4,
+    "md5": "4100acee02976e92c80e1cd9e0196009",
+    "sha256": "56b915939d052ba67cff0da93a84b26bf15dd633aaab5b7291837ccc2aa1c3b4",
+    "bytes": 3801226,
+    "mimeType": "video/mp4",
+    "file": "media/videos/genesis-chapter-4-music-video/vid-20260927-4100acee/video.mp4",
+    "thumbnail": {
+      "file": "media/videos/genesis-chapter-4-music-video/vid-20260927-4100acee/thumbnail.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "probe": null,
+    "status": "pending_review",
+    "ingestedAt": "2026-09-27T08:09:58.520Z",
+    "updatedAt": "2026-09-27T08:09:58.520Z",
+    "history": [
+      {
+        "at": "2026-09-27T08:09:58.520Z",
+        "status": "pending_review",
+        "note": "Separate 20-second HyperFrames experiment; source interval 250.9\u2013270.9 seconds from Genesis 4 Vengeance and Mercy v3. Original film and project preserved. Same 28 canonical word cues and source audio; new spatial camera choreography, solid rings and seven-to-seventy-seven escalation into Christ's unlimited forgiveness. HyperFrames CLI 0.8.79, local Chrome GPU and FFmpeg; no hosted rendering. No user approval claimed. The song's literal lyric remains seventy times seven; 77 is an interpretive allusion. Automated checks cover decode, source audio fidelity, retained cues and encoded OCR. Independent visual review is separate from unsupported acoustic timing evidence for15words. Source song https://suno.com/song/dd723dc8-5303-4694-9553-6d29f9768d04. Film SHA256 56b915939d052ba67cff0da93a84b26bf15dd633aaab5b7291837ccc2aa1c3b4.",
+        "by": "Codex"
+      }
+    ],
+    "videoUrl": "/api/admin/videos/vid-20260927-4100acee/media",
+    "thumbnailUrl": "/api/admin/videos/vid-20260927-4100acee/thumbnail",
+    "downloadUrl": "/api/admin/videos/vid-20260927-4100acee/media?download=1",
+    "masterDownloadUrl": null
+  },
+  {
+    "id": "vid-20260927-da6e9f13",
+    "project": "Genesis Chapter 4 music video",
+    "title": "Genesis 4 - The Brother's Blood",
+    "version": "HyperFrames - 20s experiment",
+    "sourceAgent": "Codex",
+    "sourceMachine": "Mac mini",
+    "sourcePath": "/Users/shanefisher/Movies/Genesis4-hyperframes-20s-work/hyperframes.mp4",
+    "ingestedFrom": "C:\\Users\\sjfis\\Videos\\Genesis4\\genesis4-dark-kinetic-615091dea0d0.mp4",
+    "notes": "Separate 20-second HyperFrames experiment; source interval 250.9\u2013270.9 seconds from Genesis 4 Vengeance and Mercy v3. Original film and project preserved. Same 28 canonical word cues and source audio; new spatial camera choreography, solid rings and seven-to-seventy-seven escalation into Christ's unlimited forgiveness. HyperFrames CLI 0.8.79, local Chrome GPU and FFmpeg; no hosted rendering. No user approval claimed. The song's literal lyric remains seventy times seven; 77 is an interpretive allusion. Automated checks cover decode, source audio fidelity, retained cues and encoded OCR. Independent visual review is separate from unsupported acoustic timing evidence for15words. Source song https://suno.com/song/dd723dc8-5303-4694-9553-6d29f9768d04. Film SHA256 615091dea0d016c94e8de6434553904802e338224ef92a3f0f921145bb740a79.",
+    "supersedes": null,
+    "supersededBy": null,
+    "chapter": 4,
+    "md5": "da6e9f13524c7480a2e07c742fac5930",
+    "sha256": "615091dea0d016c94e8de6434553904802e338224ef92a3f0f921145bb740a79",
+    "bytes": 10031495,
+    "mimeType": "video/mp4",
+    "file": "media/videos/genesis-chapter-4-music-video/vid-20260927-da6e9f13/video.mp4",
+    "thumbnail": {
+      "file": "media/videos/genesis-chapter-4-music-video/vid-20260927-da6e9f13/thumbnail.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "probe": null,
+    "status": "pending_review",
+    "ingestedAt": "2026-09-27T08:09:28.703Z",
+    "updatedAt": "2026-09-27T08:09:28.703Z",
+    "history": [
+      {
+        "at": "2026-09-27T08:09:28.703Z",
+        "status": "pending_review",
+        "note": "Separate 20-second HyperFrames experiment; source interval 250.9\u2013270.9 seconds from Genesis 4 Vengeance and Mercy v3. Original film and project preserved. Same 28 canonical word cues and source audio; new spatial camera choreography, solid rings and seven-to-seventy-seven escalation into Christ's unlimited forgiveness. HyperFrames CLI 0.8.79, local Chrome GPU and FFmpeg; no hosted rendering. No user approval claimed. The song's literal lyric remains seventy times seven; 77 is an interpretive allusion. Automated checks cover decode, source audio fidelity, retained cues and encoded OCR. Independent visual review is separate from unsupported acoustic timing evidence for15words. Source song https://suno.com/song/dd723dc8-5303-4694-9553-6d29f9768d04. Film SHA256 615091dea0d016c94e8de6434553904802e338224ef92a3f0f921145bb740a79.",
+        "by": "Codex"
+      }
+    ],
+    "videoUrl": "/api/admin/videos/vid-20260927-da6e9f13/media",
+    "thumbnailUrl": "/api/admin/videos/vid-20260927-da6e9f13/thumbnail",
+    "downloadUrl": "/api/admin/videos/vid-20260927-da6e9f13/media?download=1",
+    "masterDownloadUrl": null
+  },
+  {
+    "id": "vid-20260927-d1bfc5f0",
+    "project": "Genesis Chapter 4 music video",
+    "title": "Genesis 4 - The Brother's Blood",
+    "version": "Vengeance, mercy and lineage v3",
+    "sourceAgent": "Codex",
+    "sourceMachine": "Mac mini",
+    "sourcePath": "/Users/shanefisher/Movies/Genesis4-motion-v3-work/film.mp4",
+    "ingestedFrom": "C:\\Users\\sjfis\\Videos\\Genesis4\\genesis4-dark-kinetic-6f1d33843be7.mp4",
+    "notes": "Genesis 4 revision: vengeance, mercy and lineage. Keeps the 312-second source song, all 498 literal lyric words, and accepted story photographs. Applies two paired-local-alignment cue corrections near 2:29 and removes the avoidable 110ms lyric fade delay. Replaces ten repeated linear treatments with filled circular masses, broad crescents, monoliths, seals and typographic silhouettes. The pivotal 7-to-77 sequence becomes one continuous 13-second escalation, followed by an explicitly labeled Matthew 18:22 forgiveness inversion with a unique photoreal Christ composition. Sung wording remains 'seventy times seven'; 77 is an interpretive visual. Genealogy scenes show correct Cain and Seth/Enos relationships with luminous name transitions. Orthodox direction and readings are archived with the project. Pending Shane's review; prior candidates retained. Strict machine sung-word certification is reported separately from visual judgment. Film SHA256 6f1d33843be71917ff109d834d536452fa6e8bba9d7b195c156cc7ea235097ca.",
+    "supersedes": null,
+    "supersededBy": null,
+    "chapter": 4,
+    "md5": "d1bfc5f0d24f25829dc6471f485f6b3d",
+    "sha256": "6f1d33843be71917ff109d834d536452fa6e8bba9d7b195c156cc7ea235097ca",
+    "bytes": 33661545,
+    "mimeType": "video/mp4",
+    "file": "media/videos/genesis-chapter-4-music-video/vid-20260927-d1bfc5f0/video.mp4",
+    "thumbnail": {
+      "file": "media/videos/genesis-chapter-4-music-video/vid-20260927-d1bfc5f0/thumbnail.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "probe": null,
+    "status": "pending_review",
+    "ingestedAt": "2026-09-27T07:41:16.843Z",
+    "updatedAt": "2026-09-27T07:41:16.843Z",
+    "history": [
+      {
+        "at": "2026-09-27T07:41:16.843Z",
+        "status": "pending_review",
+        "note": "Genesis 4 revision: vengeance, mercy and lineage. Keeps the 312-second source song, all 498 literal lyric words, and accepted story photographs. Applies two paired-local-alignment cue corrections near 2:29 and removes the avoidable 110ms lyric fade delay. Replaces ten repeated linear treatments with filled circular masses, broad crescents, monoliths, seals and typographic silhouettes. The pivotal 7-to-77 sequence becomes one continuous 13-second escalation, followed by an explicitly labeled Matthew 18:22 forgiveness inversion with a unique photoreal Christ composition. Sung wording remains 'seventy times seven'; 77 is an interpretive visual. Genealogy scenes show correct Cain and Seth/Enos relationships with luminous name transitions. Orthodox direction and readings are archived with the project. Pending Shane's review; prior candidates retained. Strict machine sung-word certification is reported separately from visual judgment. Film SHA256 6f1d33843be71917ff109d834d536452fa6e8bba9d7b195c156cc7ea235097ca.",
+        "by": "Codex"
+      }
+    ],
+    "videoUrl": "/api/admin/videos/vid-20260927-d1bfc5f0/media",
+    "thumbnailUrl": "/api/admin/videos/vid-20260927-d1bfc5f0/thumbnail",
+    "downloadUrl": "/api/admin/videos/vid-20260927-d1bfc5f0/media?download=1",
+    "masterDownloadUrl": null
+  },
+  {
+    "id": "vid-20260927-9e73681b",
+    "project": "Genesis Chapter 4 music video",
+    "title": "Genesis 4 - The Brother's Blood",
+    "version": "Spatial lyric choreography v2",
+    "sourceAgent": "Codex",
+    "sourceMachine": "Mac mini",
+    "sourcePath": "/Users/shanefisher/Movies/Genesis4-motion-v2-work/film-final.mp4",
+    "ingestedFrom": "C:\\Users\\sjfis\\Videos\\Genesis4\\genesis4-dark-kinetic-21a351db6f10.mp4",
+    "notes": "Revised 312-second Genesis 4 lyric film for Shane. Preserves the accepted song, all 498 canonical word cues, measured beats, key story photographs, Cain's club attack and the embodied Christophany. Replaces repetitive background-and-entrance cycling with 32 new spatial camera and semantic word choreographies plus two preserved bespoke scenes: 34 total treatments, no more than three uses, no repeated three-scene sequence. Camera journeys follow phrases rather than accelerating every syllable. New opening photograph and contemporary Archivo Black title. Independent visual review and exact encode checks; strict automatic sung-word certification remains unresolved, as in the accepted original. Source song https://suno.com/song/dd723dc8-5303-4694-9553-6d29f9768d04. Film SHA256 21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777.",
+    "supersedes": null,
+    "supersededBy": null,
+    "chapter": 4,
+    "md5": "9e73681b829888c4d0a706d49f1881a2",
+    "sha256": "21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777",
+    "bytes": 37256773,
+    "mimeType": "video/mp4",
+    "file": "media/videos/genesis-chapter-4-music-video/vid-20260927-9e73681b/video.mp4",
+    "thumbnail": {
+      "file": "media/videos/genesis-chapter-4-music-video/vid-20260927-9e73681b/thumbnail.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "probe": null,
+    "status": "pending_review",
+    "ingestedAt": "2026-09-27T06:51:59.508Z",
+    "updatedAt": "2026-09-27T06:51:59.508Z",
+    "history": [
+      {
+        "at": "2026-09-27T06:51:59.508Z",
+        "status": "pending_review",
+        "note": "Revised 312-second Genesis 4 lyric film for Shane. Preserves the accepted song, all 498 canonical word cues, measured beats, key story photographs, Cain's club attack and the embodied Christophany. Replaces repetitive background-and-entrance cycling with 32 new spatial camera and semantic word choreographies plus two preserved bespoke scenes: 34 total treatments, no more than three uses, no repeated three-scene sequence. Camera journeys follow phrases rather than accelerating every syllable. New opening photograph and contemporary Archivo Black title. Independent visual review and exact encode checks; strict automatic sung-word certification remains unresolved, as in the accepted original. Source song https://suno.com/song/dd723dc8-5303-4694-9553-6d29f9768d04. Film SHA256 21a351db6f10d75e48dd32afeb399ee10b608737259f416458f686c7c94e5777.",
+        "by": "Codex"
+      }
+    ],
+    "videoUrl": "/api/admin/videos/vid-20260927-9e73681b/media",
+    "thumbnailUrl": "/api/admin/videos/vid-20260927-9e73681b/thumbnail",
+    "downloadUrl": "/api/admin/videos/vid-20260927-9e73681b/media?download=1",
+    "masterDownloadUrl": null
+  },
+  {
+    "id": "vid-20260927-ab05f77d",
+    "project": "Genesis Chapter 4 music video",
+    "title": "Genesis 4 - The Brother's Blood",
+    "version": "Red black white kinetic film v1",
+    "sourceAgent": "Codex",
+    "sourceMachine": "Mac mini",
+    "sourcePath": "/Volumes/Code/ark-video-studio/output/genesis4-production/film.mp4",
+    "ingestedFrom": "C:\\Users\\sjfis\\Videos\\Genesis4\\genesis4-dark-kinetic-b3648decb79c.mp4",
+    "notes": "312-second 1920x1080 video at 30 fps, 89 scenes and 11 unique photographic backdrops. Lyric-led kinetic words, six new line-motion modes, a club struggle at the killing lyric, and the accepted plain-clothed physically human Jesus treatment. All three independent visual-review ranges passed. Strict machine speech alignment remains uncertified on some words; no perfect-sync claim. Source song: https://suno.com/song/dd723dc8-5303-4694-9553-6d29f9768d04. Canonical OmiPC audio SHA256 c26b0dfd26850b091b408953120f2a0e07188f7415c6b03792320bf2b422cc2b. Prepared for Shane to review. Film SHA256 b3648decb79c77c99f6b670406019c659faf0fb216ac4e0dcb3f427e07548eca.",
+    "supersedes": null,
+    "supersededBy": null,
+    "chapter": 4,
+    "md5": "ab05f77d5b155e49c71d3311a1e33a15",
+    "sha256": "b3648decb79c77c99f6b670406019c659faf0fb216ac4e0dcb3f427e07548eca",
+    "bytes": 106381924,
+    "mimeType": "video/mp4",
+    "file": "media/videos/genesis-chapter-4-music-video/vid-20260927-ab05f77d/video.mp4",
+    "thumbnail": {
+      "file": "media/videos/genesis-chapter-4-music-video/vid-20260927-ab05f77d/thumbnail.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "probe": null,
+    "status": "pending_review",
+    "ingestedAt": "2026-09-27T05:56:57.196Z",
+    "updatedAt": "2026-09-27T05:56:57.196Z",
+    "history": [
+      {
+        "at": "2026-09-27T05:56:57.196Z",
+        "status": "pending_review",
+        "note": "312-second 1920x1080 video at 30 fps, 89 scenes and 11 unique photographic backdrops. Lyric-led kinetic words, six new line-motion modes, a club struggle at the killing lyric, and the accepted plain-clothed physically human Jesus treatment. All three independent visual-review ranges passed. Strict machine speech alignment remains uncertified on some words; no perfect-sync claim. Source song: https://suno.com/song/dd723dc8-5303-4694-9553-6d29f9768d04. Canonical OmiPC audio SHA256 c26b0dfd26850b091b408953120f2a0e07188f7415c6b03792320bf2b422cc2b. Prepared for Shane to review. Film SHA256 b3648decb79c77c99f6b670406019c659faf0fb216ac4e0dcb3f427e07548eca.",
+        "by": "Codex"
+      }
+    ],
+    "videoUrl": "/api/admin/videos/vid-20260927-ab05f77d/media",
+    "thumbnailUrl": "/api/admin/videos/vid-20260927-ab05f77d/thumbnail",
+    "downloadUrl": "/api/admin/videos/vid-20260927-ab05f77d/media?download=1",
+    "masterDownloadUrl": null
+  },
+  {
+    "id": "vid-20260926-3baa530e",
+    "project": "Genesis Chapter 4 text video",
+    "title": "Genesis 4 - The Brothers Blood text video",
+    "version": "v1 approved audio, machine-aligned lyrics",
+    "sourceAgent": "Codex",
+    "sourceMachine": "Mac mini",
+    "sourcePath": "C:\\Users\\sjfis\\Videos\\Genesis4\\genesis4-text-v1-579b680d.mp4",
+    "ingestedFrom": "C:\\Users\\sjfis\\Videos\\Genesis4\\genesis4-text-v1-579b680d.mp4",
+    "notes": "Approved Genesis 4 Suno take e1cbdb12-d2df-48b7-b6ac-e1a611fdb377; 95 adapted lyric lines across all 26 verses, machine-aligned from dual CPU ASR; timing requires human review; source audio c26b0dfd; Suno cover art credited in video provenance.",
+    "supersedes": null,
+    "supersededBy": null,
+    "md5": "3baa530ef649b83893b7b6bce41cdbb0",
+    "sha256": "579b680dd4e23886599935ff3aababb143ab40ef9b817f84df01dcd2ab57fd3b",
+    "bytes": 20664561,
+    "mimeType": "video/mp4",
+    "file": "media/videos/genesis-chapter-4-text-video/vid-20260926-3baa530e/video.mp4",
+    "thumbnail": null,
+    "probe": null,
+    "status": "pending_review",
+    "ingestedAt": "2026-09-26T17:15:51.772Z",
+    "updatedAt": "2026-09-26T17:15:51.772Z",
+    "history": [
+      {
+        "at": "2026-09-26T17:15:51.772Z",
+        "status": "pending_review",
+        "note": "Approved Genesis 4 Suno take e1cbdb12-d2df-48b7-b6ac-e1a611fdb377; 95 adapted lyric lines across all 26 verses, machine-aligned from dual CPU ASR; timing requires human review; source audio c26b0dfd; Suno cover art credited in video provenance.",
+        "by": "Codex"
+      }
+    ],
+    "videoUrl": "/api/admin/videos/vid-20260926-3baa530e/media",
+    "thumbnailUrl": null,
+    "downloadUrl": "/api/admin/videos/vid-20260926-3baa530e/media?download=1",
+    "masterDownloadUrl": null
+  },
+  {
+    "id": "vid-20260927-86832624",
+    "project": "Genesis Chapter 7 music video",
+    "title": "Genesis 7 - Full Dark Lyric Film",
+    "version": "Dark lyric film - frozen full-length cut",
+    "sourceAgent": "Codex",
+    "sourceMachine": "Mac mini",
+    "sourcePath": "/Volumes/Code/ark-video-studio/output/genesis7-full-reviewed.mp4",
+    "ingestedFrom": "C:\\Users\\sjfis\\Videos\\Genesis7\\genesis7-dark-lyric-3c369ecf.mp4",
+    "notes": "Frozen full-song candidate requested by Shane: 6:07, 1920x1080, 30 fps. Dark, gritty motion graphics with lyric-led animation, seven font families and GPT Image backdrops. Visual, technical and lyric-visibility checks passed. Automatic lyric/audio sync remains uncertified: 113 cues need timing review. Source song: https://suno.com/song/169cee8d-0d70-4f84-87b2-77bcc9ca693e. Film SHA256: 3c369ecf6b0f2318bf918c85ee23c3673dfe4105446cd101cf86eb314d985bd8.",
+    "supersedes": null,
+    "supersededBy": null,
+    "chapter": 7,
+    "md5": "86832624a8c9aec51bb09127d703e859",
+    "sha256": "3c369ecf6b0f2318bf918c85ee23c3673dfe4105446cd101cf86eb314d985bd8",
+    "bytes": 55023356,
+    "mimeType": "video/mp4",
+    "file": "media/videos/genesis-chapter-7-music-video/vid-20260927-86832624/video.mp4",
+    "thumbnail": {
+      "file": "media/videos/genesis-chapter-7-music-video/vid-20260927-86832624/thumbnail.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "probe": null,
+    "status": "approved",
+    "ingestedAt": "2026-09-27T04:38:08.394Z",
+    "updatedAt": "2026-09-27T05:07:02.747Z",
+    "history": [
+      {
+        "at": "2026-09-27T04:38:08.394Z",
+        "status": "pending_review",
+        "note": "Frozen full-song candidate requested by Shane: 6:07, 1920x1080, 30 fps. Dark, gritty motion graphics with lyric-led animation, seven font families and GPT Image backdrops. Visual, technical and lyric-visibility checks passed. Automatic lyric/audio sync remains uncertified: 113 cues need timing review. Source song: https://suno.com/song/169cee8d-0d70-4f84-87b2-77bcc9ca693e. Film SHA256: 3c369ecf6b0f2318bf918c85ee23c3673dfe4105446cd101cf86eb314d985bd8.",
+        "by": "Codex"
+      },
+      {
+        "at": "2026-09-27T05:07:02.747Z",
+        "status": "approved",
+        "note": "",
+        "by": "studio"
+      }
+    ],
+    "videoUrl": "/api/admin/videos/vid-20260927-86832624/media",
+    "thumbnailUrl": "/api/admin/videos/vid-20260927-86832624/thumbnail",
+    "downloadUrl": "/api/admin/videos/vid-20260927-86832624/media?download=1",
+    "masterDownloadUrl": null
+  },
+  {
+    "id": "vid-20260926-5d98c947",
+    "project": "Genesis Chapter 7 music video",
+    "title": "Genesis Chapter 7 music video",
+    "version": "v3 (kinetic typography + scene lighting)",
+    "sourceAgent": "grok",
+    "sourceMachine": "Mac mini",
+    "sourcePath": "C:\\Users\\sjfis\\Videos\\Genesis7\\genesis7_full_v3.mp4",
+    "ingestedFrom": "C:\\Users\\sjfis\\Videos\\Genesis7\\genesis7_full_v3.mp4",
+    "notes": "Varied fonts, sizes, positions, glitch type, motivated lantern/fire/lightning light.",
+    "supersedes": "vid-20260926-8c61dc19",
+    "supersededBy": null,
+    "md5": "5d98c947ff76166501bcbeca6c76e6b7",
+    "sha256": "ba363e5de17be904f40910aca6a71c585c7599da5bb5323851750ffb4c16660a",
+    "bytes": 705811430,
+    "mimeType": "video/mp4",
+    "file": "media/videos/genesis-chapter-7-music-video/vid-20260926-5d98c947/video.mp4",
+    "thumbnail": {
+      "file": "media/videos/genesis-chapter-7-music-video/vid-20260926-5d98c947/thumbnail.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "probe": {
+      "durationSeconds": 367.208333,
+      "width": 1920,
+      "height": 1080,
+      "videoCodec": "h264",
+      "audioCodec": "aac"
+    },
+    "status": "approved",
+    "ingestedAt": "2026-09-26T18:45:27.835Z",
+    "updatedAt": "2026-09-27T01:13:12.723Z",
+    "history": [
+      {
+        "at": "2026-09-26T18:45:27.835Z",
+        "status": "pending_review",
+        "note": "Varied fonts, sizes, positions, glitch type, motivated lantern/fire/lightning light.",
+        "by": "grok"
+      },
+      {
+        "at": "2026-09-26T23:51:30.229Z",
+        "status": "pending_review",
+        "note": "Linked to Genesis chapter 7; shown on /genesis/7",
+        "by": "link"
+      },
+      {
+        "at": "2026-09-27T01:07:35.552Z",
+        "status": "approved",
+        "note": "Approved by Shane from his iPhone (Studio at http://192.168.4.245:4317/studio#videos). The phone tap was blocked by the origin check, so it was recorded from OmiPC after the fix.",
+        "by": "studio"
+      }
+    ],
+    "chapter": 7,
+    "webFile": {
+      "file": "media/videos/genesis-chapter-7-music-video/vid-20260926-5d98c947/video-web.mp4",
+      "bytes": 200369063,
+      "md5": "96aac3ab904b8d58de7d940572e92dad",
+      "mimeType": "video/mp4",
+      "sourcePath": "C:\\Users\\sjfis\\Videos\\Genesis7\\genesis7_v3_web.mp4",
+      "encode": "libx264 High yuv420p preset slow tune film 2-pass 4200k (maxrate 6M, bufsize 12M, aq-mode 3), g 48, AAC 160k stereo, faststart; CPU only",
+      "probe": {
+        "durationSeconds": 367.208333,
+        "width": 1920,
+        "height": 1080,
+        "videoCodec": "h264",
+        "audioCodec": "aac",
+        "bitRate": 4365240,
+        "videoBitRate": 4195725,
+        "audioBitRate": 163956
+      },
+      "createdAt": "2026-09-27T01:13:12.722Z"
+    },
+    "videoUrl": "/api/admin/videos/vid-20260926-5d98c947/media",
+    "thumbnailUrl": "/api/admin/videos/vid-20260926-5d98c947/thumbnail",
+    "downloadUrl": "/api/admin/videos/vid-20260926-5d98c947/media?download=1",
+    "masterDownloadUrl": "/api/admin/videos/vid-20260926-5d98c947/media?download=1&master=1"
+  },
+  {
+    "id": "vid-20260927-d43880e9",
+    "project": "Genesis1 - The Beginning",
+    "title": "Genesis 1 \u2014 Breath & Earth \u2014 Full Film v1",
+    "version": "Full Film v1",
+    "sourceAgent": "Codex",
+    "sourceMachine": "Mac mini",
+    "sourcePath": "/Volumes/DATA/ArkRender/genesis1/genesis1-breath-earth-v1.mp4",
+    "ingestedFrom": "C:\\Users\\sjfis\\Videos\\Genesis1\\full-v1-b946c097f090.mp4",
+    "notes": "Complete Genesis 1 lyric film, 304.733333 seconds / 9142 frames, 1080p30. Approved theme 3: restrained charcoal, bone, rust and amber. 63 authored animation families, four generated motion inserts, and active foreground words/graphics throughout the supporting media. Independent encoded visual review accepted with no blocking issues (legibility 9.1, semantic motion 8.6, photorealism 8.8, composition 8.9, continuity 9.2). Source-versus-encoded PCM correlation 0.998748, minimum segment correlation 0.996351, zero measured global lag, as reported by root review. Audio transport verification does not certify every sung word. Full word-OCR and strict singing-recognition results are still pending; no perfect-sync or complete-gauntlet-pass claim. Pending Shane review. Prior preview candidates preserved. SHA256 b946c097f0902c0f3b4eda3a330aceca2ef893c29bd5a7eb511cc34101d130db.",
+    "supersedes": null,
+    "supersededBy": "vid-20260927-63932a93",
+    "md5": "d43880e9b3d1193e282e1c1d2c4adaf8",
+    "sha256": "b946c097f0902c0f3b4eda3a330aceca2ef893c29bd5a7eb511cc34101d130db",
+    "bytes": 163523545,
+    "mimeType": "video/mp4",
+    "file": "media/videos/genesis1-the-beginning/vid-20260927-d43880e9/video.mp4",
+    "thumbnail": {
+      "file": "media/videos/genesis1-the-beginning/vid-20260927-d43880e9/thumbnail.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "probe": null,
+    "status": "superseded",
+    "ingestedAt": "2026-09-27T11:56:59.955Z",
+    "updatedAt": "2026-09-27T12:19:50.510Z",
+    "history": [
+      {
+        "at": "2026-09-27T11:56:59.955Z",
+        "status": "pending_review",
+        "note": "Complete Genesis 1 lyric film, 304.733333 seconds / 9142 frames, 1080p30. Approved theme 3: restrained charcoal, bone, rust and amber. 63 authored animation families, four generated motion inserts, and active foreground words/graphics throughout the supporting media. Independent encoded visual review accepted with no blocking issues (legibility 9.1, semantic motion 8.6, photorealism 8.8, composition 8.9, continuity 9.2). Source-versus-encoded PCM correlation 0.998748, minimum segment correlation 0.996351, zero measured global lag, as reported by root review. Audio transport verification does not certify every sung word. Full word-OCR and strict singing-recognition results are still pending; no perfect-sync or complete-gauntlet-pass claim. Pending Shane review. Prior preview candidates preserved. SHA256 b946c097f0902c0f3b4eda3a330aceca2ef893c29bd5a7eb511cc34101d130db.",
+        "by": "Codex"
+      },
+      {
+        "at": "2026-09-27T12:19:50.510Z",
+        "status": "superseded",
+        "note": "Superseded by vid-20260927-63932a93",
+        "by": "ingest"
+      }
+    ],
+    "videoUrl": "/api/admin/videos/vid-20260927-d43880e9/media",
+    "thumbnailUrl": "/api/admin/videos/vid-20260927-d43880e9/thumbnail",
+    "downloadUrl": "/api/admin/videos/vid-20260927-d43880e9/media?download=1",
+    "masterDownloadUrl": null
+  },
+  {
+    "id": "vid-20260927-13f1505b",
+    "project": "Psalm 91 (LXX 90) lyric film",
+    "title": "Psalm 91 - A Thousand Shall Fall",
+    "version": "Shelter full film v3",
+    "sourceAgent": "Codex",
+    "sourceMachine": "Mac mini / OmiPC local H3",
+    "sourcePath": "/Volumes/DATA/ArkRender/psalm91-shelter-v3.mp4",
+    "ingestedFrom": "C:\\Users\\sjfis\\Videos\\Psalm91\\psalm91-shelter-v3-5bf0abe28bec.mp4",
+    "notes": "Full Psalm 91 (LXX 90) A Thousand Shall Fall lyric film, 327.6 seconds. Copper, charcoal, and ivory Shelter direction with spatial word animation and sparse photoreal reveals. Includes locally generated MiniMax H3 material-transformation inserts from GPT Image source artwork. Adam creation footage is excluded and reserved for a future creation video; the instrumental bridge contains a storm refuge forming from rock. Song supplied via https://suno.com/s/ErRXnhOwTS3IZm7W . Independent visual review, full decode, format, source/render binding, and zero-lag decoded audio checks passed. Strict word-level singing synchronization remains partly uncertified; the final OCR and temporal audit is still running at the time of ingestion. No perfect-sync or full-gauntlet-pass claim. This is a full-song candidate pending Shane review; not a claim of user approval. SHA256 5bf0abe28bec171f144575ff62d68177698059283faa57e56047a97673056f94.",
+    "supersedes": null,
+    "supersededBy": "vid-20260927-4fecbc68",
+    "md5": "13f1505ba374124861c11b7bbb9469be",
+    "sha256": "5bf0abe28bec171f144575ff62d68177698059283faa57e56047a97673056f94",
+    "bytes": 188595453,
+    "mimeType": "video/mp4",
+    "file": "media/videos/psalm-91-lxx-90-lyric-film/vid-20260927-13f1505b/video.mp4",
+    "thumbnail": {
+      "file": "media/videos/psalm-91-lxx-90-lyric-film/vid-20260927-13f1505b/thumbnail.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "probe": null,
+    "status": "superseded",
+    "ingestedAt": "2026-09-27T10:29:00.905Z",
+    "updatedAt": "2026-09-27T10:50:36.766Z",
+    "history": [
+      {
+        "at": "2026-09-27T10:29:00.905Z",
+        "status": "pending_review",
+        "note": "Full Psalm 91 (LXX 90) A Thousand Shall Fall lyric film, 327.6 seconds. Copper, charcoal, and ivory Shelter direction with spatial word animation and sparse photoreal reveals. Includes locally generated MiniMax H3 material-transformation inserts from GPT Image source artwork. Adam creation footage is excluded and reserved for a future creation video; the instrumental bridge contains a storm refuge forming from rock. Song supplied via https://suno.com/s/ErRXnhOwTS3IZm7W . Independent visual review, full decode, format, source/render binding, and zero-lag decoded audio checks passed. Strict word-level singing synchronization remains partly uncertified; the final OCR and temporal audit is still running at the time of ingestion. No perfect-sync or full-gauntlet-pass claim. This is a full-song candidate pending Shane review; not a claim of user approval. SHA256 5bf0abe28bec171f144575ff62d68177698059283faa57e56047a97673056f94.",
+        "by": "Codex"
+      },
+      {
+        "at": "2026-09-27T10:50:36.766Z",
+        "status": "superseded",
+        "note": "Superseded by vid-20260927-4fecbc68",
+        "by": "ingest"
+      }
+    ],
+    "videoUrl": "/api/admin/videos/vid-20260927-13f1505b/media",
+    "thumbnailUrl": "/api/admin/videos/vid-20260927-13f1505b/thumbnail",
+    "downloadUrl": "/api/admin/videos/vid-20260927-13f1505b/media?download=1",
+    "masterDownloadUrl": null
+  },
+  {
+    "id": "vid-20260926-277d0cd9",
+    "project": "Genesis Chapter 7 music video",
+    "title": "Genesis Chapter 7 music video",
+    "version": "v1 first pass (word-by-word lyrics)",
+    "sourceAgent": "grok",
+    "sourceMachine": "Mac mini",
+    "sourcePath": "C:\\Users\\sjfis\\Videos\\Genesis7\\genesis7_full_v1.mp4",
+    "ingestedFrom": "C:\\Users\\sjfis\\Videos\\Genesis7\\genesis7_full_v1.mp4",
+    "notes": "First pass with the old word-by-word lyrics. Superseded by v2 (vid-20260926-8c61dc19), kept for comparison and review.",
+    "supersedes": null,
+    "supersededBy": null,
+    "md5": "277d0cd9d7d67bfd193a3ac53cb7143e",
+    "sha256": "ac6dc7c433e93fbcabf9c455d2cef1dbdf1a658e8736cbc7eae6492a6e9b6ec6",
+    "bytes": 935880363,
+    "mimeType": "video/mp4",
+    "file": "media/videos/genesis-chapter-7-music-video/vid-20260926-277d0cd9/video.mp4",
+    "thumbnail": {
+      "file": "media/videos/genesis-chapter-7-music-video/vid-20260926-277d0cd9/thumbnail.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "probe": null,
+    "status": "superseded",
+    "ingestedAt": "2026-09-26T15:54:22.327Z",
+    "updatedAt": "2026-09-26T15:54:22.327Z",
+    "history": [
+      {
+        "at": "2026-09-26T15:54:22.327Z",
+        "status": "superseded",
+        "note": "First pass with the old word-by-word lyrics. Superseded by v2 (vid-20260926-8c61dc19), kept for comparison and review.",
+        "by": "grok"
+      }
+    ],
+    "videoUrl": "/api/admin/videos/vid-20260926-277d0cd9/media",
+    "thumbnailUrl": "/api/admin/videos/vid-20260926-277d0cd9/thumbnail",
+    "downloadUrl": "/api/admin/videos/vid-20260926-277d0cd9/media?download=1",
+    "masterDownloadUrl": null
+  },
+  {
+    "id": "vid-20260926-8c61dc19",
+    "project": "Genesis Chapter 7 music video",
+    "title": "Genesis Chapter 7 music video",
+    "version": "v2 (sentence-at-a-time animated lyrics)",
+    "sourceAgent": "grok",
+    "sourceMachine": "Mac mini",
+    "sourcePath": "C:\\Users\\sjfis\\Videos\\Genesis7\\genesis7_full_v2.mp4",
+    "ingestedFrom": "C:\\Users\\sjfis\\Videos\\Genesis7\\genesis7_full_v2.mp4",
+    "notes": "Second pass with sentence-at-a-time animated lyrics. Replaces v1.",
+    "supersedes": null,
+    "supersededBy": "vid-20260926-5d98c947",
+    "md5": "8c61dc1924332546ac74e9ded84394e3",
+    "sha256": "423ed77ffa408ebcb692f5b30b70b662d2d81da44622f7b792df05aaa733fd8b",
+    "bytes": 520264990,
+    "mimeType": "video/mp4",
+    "file": "media/videos/genesis-chapter-7-music-video/vid-20260926-8c61dc19/video.mp4",
+    "thumbnail": {
+      "file": "media/videos/genesis-chapter-7-music-video/vid-20260926-8c61dc19/thumbnail.jpg",
+      "mimeType": "image/jpeg"
+    },
+    "probe": null,
+    "status": "superseded",
+    "ingestedAt": "2026-09-26T15:41:05.960Z",
+    "updatedAt": "2026-09-26T18:45:27.835Z",
+    "history": [
+      {
+        "at": "2026-09-26T15:41:05.960Z",
+        "status": "pending_review",
+        "note": "Second pass with sentence-at-a-time animated lyrics. Replaces v1.",
+        "by": "grok"
+      },
+      {
+        "at": "2026-09-26T18:45:27.835Z",
+        "status": "superseded",
+        "note": "Superseded by vid-20260926-5d98c947",
+        "by": "ingest"
+      }
+    ],
+    "videoUrl": "/api/admin/videos/vid-20260926-8c61dc19/media",
+    "thumbnailUrl": "/api/admin/videos/vid-20260926-8c61dc19/thumbnail",
+    "downloadUrl": "/api/admin/videos/vid-20260926-8c61dc19/media?download=1",
+    "masterDownloadUrl": null
+  }
+]

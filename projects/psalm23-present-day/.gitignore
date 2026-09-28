@@ -1,5 +1,5 @@
-# Generated inspection frames stay local; encoded evidence is on the data volume.
+# Full decoded frame sweeps are local review scratch. Keep compact contact sheets.
+video-generation/review/
+video-generation/**/review-frames/
+video-generation/**/review-graded-frames/
 snapshots*/
-.hyperframes/
-# Read-only copies of another application's implementation are consultation data.
-delivery-tools/remote-source/

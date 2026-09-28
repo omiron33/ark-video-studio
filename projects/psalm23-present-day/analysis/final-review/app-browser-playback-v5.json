@@ -1,0 +1,11 @@
+{
+  "videoSha256": "9a3f691b0c58490a363cfe100df7cb075b6e9a40f5e532827bb58f85931a45a6",
+  "candidateId": "vid-20260928-aa61434f",
+  "candidateStatus": "pending_review",
+  "mediaUrl": "https://omipc.taild60b4e.ts.net/api/admin/videos/vid-20260928-aa61434f/media",
+  "browserObservation": "The OmiPC media URL displayed the Psalm 23 opening in the Codex in-app browser, then advanced to a later outdoor walking lyric frame. This confirms browser picture playback, in addition to the exact app master SHA and HTTP range checks in the publisher receipt.",
+  "limitations": [
+    "Browser frames were sampled, not an uninterrupted watch or listening test.",
+    "Candidate remains pending Shane review and is not user approved."
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "scope": "Two generated organic motion insert assets for the chosen Psalm 23 film; canonical lyric words remain editable in the composite.",
+  "shots": [
+    {
+      "id": "animation-soul",
+      "sectionId": "p23-l007",
+      "lyric": "He has restored my soul,",
+      "sourceIntervalSeconds": [
+        43.834005,
+        48.399535
+      ],
+      "suggestedVideoIntervalSeconds": [
+        43.834005,
+        48.399535
+      ],
+      "principle": "Fractured luminous fibers visibly repair around a stable empty center as each exact word becomes readable in front.",
+      "inspiration": [
+        {
+          "id": "external-light-orders-field",
+          "sourceSeconds": [
+            240,
+            261.033333
+          ],
+          "observed": "Fine elements progressively organize around a luminous focal point.",
+          "caution": "Its original dark abstract field is only a principle; the Psalm 23 structure and warm fiber repair are new."
+        },
+        {
+          "id": "internal-fingerprint-mark",
+          "sourceSeconds": [
+            176.5,
+            179.2
+          ],
+          "observed": "A meaningful visual structure can prepare the arrival of a lyric.",
+          "caution": "Do not borrow the Genesis mark motif or its word choreography."
+        }
+      ],
+      "status": "revised_encoded_asset_inspected_after_independent_motion_critique",
+      "asset": {
+        "path": "assets/video/animation-soul-motion.mp4",
+        "sha256": "03c53c654e34b1d537d9131763df45ed0cd45acb9d06d457051c29c8fb96948f",
+        "width": 960,
+        "height": 540,
+        "fps": 24,
+        "frames": 124,
+        "durationSeconds": 5.166666666666667,
+        "audio": false,
+        "firstPoster": "assets/video/animation-soul-first.png",
+        "lastPoster": "assets/video/animation-soul-last.png"
+      },
+      "evidence": {
+        "contactSheet": "video-generation/review/animation-soul-final-6fps.jpg",
+        "contactSheetSha256": "013804c84caaf3dff735ee1e3a0d68bb702b45a9d702936597f2075c700a9d15",
+        "provenance": "video-generation/animation-soul-provenance.json",
+        "probe": "video-generation/animation-soul-final-probe.json",
+        "actualCompositeReviewed": false,
+        "note": "Agent-inspected actual final insert 1fps and 6fps sheets plus five frames in a 35% Screen proposal over prior film. Full new film composite remains to be independently checked."
+      },
+      "motionMetricsAt240x135": {
+        "h3MeanAdjacentLumaDelta": 0.248,
+        "finishedMeanAdjacentLumaDelta": 0.404,
+        "h3FractionAdjacentPixelsDeltaGt4": 0.0049,
+        "finishedFractionAdjacentPixelsDeltaGt4": 0.0103
+      }
+    },
+    {
+      "id": "animation-life",
+      "sectionId": "p23-l032",
+      "lyric": "all the days of my life.",
+      "sourceIntervalSeconds": [
+        163.854597,
+        168.48942
+      ],
+      "suggestedVideoIntervalSeconds": [
+        163.854597,
+        169.021264
+      ],
+      "principle": "Ordered points of light traverse a continuous woven path, embodying separate days as one protected life.",
+      "inspiration": [
+        {
+          "id": "internal-psalm23-mercy-material-handoff",
+          "sourceSeconds": [
+            157.2,
+            162.1
+          ],
+          "observed": "Readable canonical type retains its station while fine material changes nearby.",
+          "caution": "Avoid another generated word or exact mercy handoff; this insert is a spatial path behind new editable lyrics."
+        },
+        {
+          "id": "external-light-orders-field",
+          "sourceSeconds": [
+            240,
+            261.033333
+          ],
+          "observed": "Directed particle order can create a meaningful escalation.",
+          "caution": "Create a new woven horizontal path tied to the lyric; do not copy its radial expansion."
+        }
+      ],
+      "status": "revised_encoded_asset_inspected_after_independent_motion_critique",
+      "asset": {
+        "path": "assets/video/animation-life-motion.mp4",
+        "sha256": "4f1d9d05b3f565540ff94a498c79904611bb9289fc932f9949772accdeffbfd4",
+        "width": 960,
+        "height": 540,
+        "fps": 24,
+        "frames": 124,
+        "durationSeconds": 5.166666666666667,
+        "audio": false,
+        "firstPoster": "assets/video/animation-life-first.png",
+        "lastPoster": "assets/video/animation-life-last.png"
+      },
+      "evidence": {
+        "contactSheet": "video-generation/review/animation-life-final-6fps.jpg",
+        "contactSheetSha256": "53949928b4ff62dd9c41d67f9d48736a04790aac3c8ff614cf478886291202c8",
+        "provenance": "video-generation/animation-life-provenance.json",
+        "probe": "video-generation/animation-life-final-probe.json",
+        "actualCompositeReviewed": false,
+        "note": "Agent-inspected actual final insert 1fps and 6fps sheets plus five frames in a 35% Screen proposal over prior film. Full new film composite remains to be independently checked."
+      },
+      "motionMetricsAt240x135": {
+        "h3MeanAdjacentLumaDelta": 0.392,
+        "finishedMeanAdjacentLumaDelta": 0.573,
+        "h3FractionAdjacentPixelsDeltaGt4": 0.0145,
+        "finishedFractionAdjacentPixelsDeltaGt4": 0.0231
+      }
+    }
+  ]
+}
