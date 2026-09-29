@@ -47,6 +47,44 @@ async function captureRevision(projectPath, fallback) {
     return fallback;
   }
 }
+/** Draw one output frame. With motion blur, average evenly spaced sub-frames
+ * across the shutter interval centred on the frame time. Each sub-frame is a
+ * pure function of its time, so the result stays deterministic and seekable.
+ * `samples: 'auto'` tries 12, 36, 108 then 324 sub-frames and stops once more
+ * would change no channel by more than `tolerance` levels of 255. */
+export const AUTO_SAMPLES = Object.freeze([12, 36, 108, 324]);
+export function renderFrame(ctx, profile, project, assets, drawFrame, frame) {
+  const draw = t => {
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.clearRect(0, 0, profile.width, profile.height);
+    drawFrame(ctx, project, assets, Math.max(0, t), { layer: 'all' });
+    return ctx.getImageData(0, 0, profile.width, profile.height).data;
+  };
+  const time = frame / project.fps, blur = profile.motionBlur;
+  if (!blur) return draw(time);
+  const span = blur.shutter / project.fps;
+  const average = samples => {
+    const sum = new Float32Array(profile.width * profile.height * 4);
+    for (let i = 0; i < samples; i++) {
+      const data = draw(time + ((i + 0.5) / samples - 0.5) * span);
+      for (let j = 0; j < sum.length; j++) sum[j] += data[j];
+    }
+    const out = new Uint8ClampedArray(sum.length);
+    for (let j = 0; j < sum.length; j++) out[j] = Math.round(sum[j] / samples);
+    return out;
+  };
+  if (blur.samples !== 'auto') return average(blur.samples);
+  let previous = average(AUTO_SAMPLES[0]);
+  for (const samples of AUTO_SAMPLES.slice(1)) {
+    const next = average(samples);
+    let change = 0;
+    for (let j = 0; j < next.length && change <= blur.tolerance; j++) change = Math.max(change, Math.abs(next[j] - previous[j]));
+    previous = next;
+    if (change <= blur.tolerance) break;
+  }
+  return previous;
+}
+
 async function encodeSection(file, project, section, span, profile, assets, drawFrame, { signal, onProgress }) {
   const started = performance.now();
   const canvas = createCanvas(profile.width, profile.height);
@@ -67,10 +105,7 @@ async function encodeSection(file, project, section, span, profile, assets, draw
     for (let frame = span.start; frame < span.end; frame++) {
       signal?.throwIfAborted();
       if (processError) throw processError;
-      ctx.setTransform(1, 0, 0, 1, 0, 0);
-      ctx.clearRect(0, 0, profile.width, profile.height);
-      drawFrame(ctx, project, assets, frame / project.fps, { layer: 'all' });
-      const pixels = ctx.getImageData(0, 0, profile.width, profile.height).data;
+      const pixels = renderFrame(ctx, profile, project, assets, drawFrame, frame);
       await new Promise((resolve, reject) => proc.stdin.write(Buffer.from(pixels.buffer, pixels.byteOffset, pixels.byteLength), e => e ? reject(e) : resolve()));
       if ((frame - span.start) % Math.max(1, Math.round(project.fps * 2)) === 0) onProgress?.({ type: 'frame', section: section.id, frame: frame - span.start + 1, frames: span.frames });
     }

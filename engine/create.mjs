@@ -1,4 +1,6 @@
 import { spawn } from 'node:child_process';
+import { resolveMode } from './providers.mjs';
+import { CODE_ONLY, applyCodeOnly } from './code-only.mjs';
 import { mkdir, readFile, writeFile, stat, copyFile, open, rm } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -17,7 +19,7 @@ const templates = [
 ];
 
 /** A documented local vocabulary, not a claim of open-ended AI art direction. */
-export function planStyle(project, stylePrompt) {
+export function planStyle(project, stylePrompt, { mode = project.creation?.mode ?? 'mixed' } = {}) {
   if (typeof stylePrompt !== 'string' || !stylePrompt.trim()) throw new Error('A non-empty style prompt is required');
   const p = structuredClone(project), prompt = stylePrompt.toLowerCase();
   const requests = {
@@ -30,6 +32,8 @@ export function planStyle(project, stylePrompt) {
     semantic: /semantic|literal|words?.*(move|meaning)|rise|mountain|terrain|water|flood|sink|submerge/.test(prompt),
   };
   if (requests.dark) requests.light = false;
+  const codeOnlyWarnings = [];
+  if (mode === 'code-only' && requests.photo) { requests.photo = false; codeOnlyWarnings.push('Code-only mode: the brief mentions photography, so those moments must be drawn in code (engraving, line, geometry, type) rather than filled with images.'); }
   const avoid = id => new RegExp(`(?:no|avoid|without)\\s+(?:\\w+\\s+){0,2}${id}`, 'i').test(stylePrompt);
   const hex = stylePrompt.match(/#[0-9a-fA-F]{6}\b/)?.[0];
   const accent = hex ?? (requests.dark ? '#a17b65' : /gold|amber/.test(prompt) ? '#d3a958' : /blue|teal|ocean/.test(prompt) ? '#6dbeb8' : /red|fire|ember/.test(prompt) ? '#e77951' : '#b7a0df');
@@ -90,7 +94,8 @@ export function planStyle(project, stylePrompt) {
     if (scene.end - portalAt >= 0.4) scene.direction.portalAt = portalAt;
   }
   if (requests.photo && !imageIds.length) warnings.push('The brief asks for photographic imagery, but this project has no supplied image assets. The local vocabulary provides abstract scenes; a director/agent must add imagery to satisfy that part of the brief.');
-  p.creation = { stylePrompt, planner: 'deterministic-vocabulary-v1', interpreted: requests, warnings };
+  warnings.push(...codeOnlyWarnings);
+  p.creation = { stylePrompt, planner: 'deterministic-vocabulary-v1', interpreted: requests, warnings, ...(mode === 'code-only' ? { mode } : {}) };
   return { project: p, method: 'deterministic-vocabulary-v1', evidence: { stylePrompt, interpreted: requests, styles: p.sections.map(s => s.style), warnings } };
 }
 
@@ -181,7 +186,8 @@ export async function createSong(options, serviceOverrides = {}) {
   if (!Number.isInteger(maxPasses) || maxPasses < 1 || maxPasses > 4) throw new Error('maxPasses must be an integer from 1 to 4');
   const sources = {};
   for (const field of ['audio', 'timing', 'lyrics', 'beats', 'directionFile']) if (options[field]) sources[field] = { path: path.resolve(options[field]), sha256: await fileHash(path.resolve(options[field])) };
-  const request = { sources, stylePrompt: options.stylePrompt, offset: Number(options.offset ?? 0), duration: options.duration, fps: Number(options.fps ?? 30), width: Number(options.width ?? 1920), height: Number(options.height ?? 1080), scale: Number(options.scale ?? 1), model: options.model, backend: options.backend, directorModel: options.directorModel, directorEndpoint: options.directorEndpoint, timingTimebase: options.timingTimebase, beatTimebase: options.beatTimebase };
+  const mode = resolveMode({ mode: options.mode });
+  const request = { sources, stylePrompt: options.stylePrompt, ...(mode === 'code-only' ? { mode } : {}), offset: Number(options.offset ?? 0), duration: options.duration, fps: Number(options.fps ?? (mode === 'code-only' ? CODE_ONLY.fps : 30)), width: Number(options.width ?? 1920), height: Number(options.height ?? 1080), scale: Number(options.scale ?? 1), model: options.model, backend: options.backend, directorModel: options.directorModel, directorEndpoint: options.directorEndpoint, timingTimebase: options.timingTimebase, beatTimebase: options.beatTimebase };
   if(options.referenceLibrary!==undefined)request.referenceLibrary=path.resolve(options.referenceLibrary);
   if(options.referenceLimit!==undefined)request.referenceLimit=Number(options.referenceLimit);
   const fingerprint = digest(request);
@@ -229,7 +235,7 @@ export async function createSong(options, serviceOverrides = {}) {
       await stage('plan', async () => {
         const importedProject = (await loadProject(manifestPath)).project;
         const withAssets = await applyAuthoredDirection(importedProject, options.directionFile, manifestPath, 'assets');
-        const base = planStyle(withAssets, options.stylePrompt);
+        const base = planStyle(mode === 'code-only' ? applyCodeOnly(withAssets) : withAssets, options.stylePrompt, { mode });
         let project = await applyAuthoredDirection(base.project, options.directionFile, manifestPath, 'directions');
         const wordsBefore = digest(project.words), audioBefore = digest(project.audio), durationBefore = project.duration;
         const directed = await services.directProject({ project, stylePrompt: options.stylePrompt, endpoint: options.directorEndpoint, model: options.directorModel, fallbackPlan: base, libraryRoot: options.referenceLibrary, referenceLimit: options.referenceLimit });
@@ -270,7 +276,7 @@ export async function createSong(options, serviceOverrides = {}) {
         if (pass >= maxPasses) throw new Error('Audio review changed the project without an available rerender pass');
         if (audio.requiresDirectorReplan) await stage('replan-after-lyric-repair', async () => {
           const repaired = (await loadProject(manifestPath)).project;
-          const base = planStyle(repaired, options.stylePrompt);
+          const base = planStyle(repaired, options.stylePrompt, { mode });
           const authored = await applyAuthoredDirection(base.project, options.directionFile, manifestPath, 'directions');
           const directed = await services.directProject({ project: authored, stylePrompt: options.stylePrompt, endpoint: options.directorEndpoint, model: options.directorModel, fallbackPlan: base, libraryRoot: options.referenceLibrary, referenceLimit: options.referenceLimit });
           let project = directed.project ?? authored;

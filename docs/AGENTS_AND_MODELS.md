@@ -4,6 +4,10 @@ The engine is model agnostic. Every production step is a CLI command that runs w
 
 `node engine/cli.mjs agents` reports the agent it detects, the image provider it will use and which providers are available.
 
+## Modes
+
+Claude runs in **code-only** mode: every frame is drawn in code, and the bar is the mexicat/pdoom-video film. See [CODE_ONLY.md](CODE_ONLY.md). Codex runs in **mixed** mode, which allows sparse generated imagery. `ARK_MODE` overrides either, and `node engine/cli.mjs agents` reports the mode. The image-provider rows below apply to mixed mode only.
+
 ## Who does what
 
 | Step | Runs without a model | Codex | Claude | Fallback when neither is available |

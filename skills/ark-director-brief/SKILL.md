@@ -13,6 +13,10 @@ Use only after the theme-choice gate in `ark-song-video` has `status: "chosen"`.
 - Canonical words with IDs and measured times, the beat and accent analysis, and the song duration (`node engine/cli.mjs inspect --project <project.json> --json`).
 - Reference context for each planned scene (`node engine/cli.mjs reference-context ...`). Open the actual contact-sheet images; captions alone are not inspection.
 
+## Code-only mode
+
+For Claude runs, read `docs/CODE_ONLY.md`. Define the film's design system before the arc: one palette with a single signal colour, three or four type families with roles, the shared grain and post-process, and one running motif that transforms through every scene. Each scene's `<imagery>` must be `none`; its idiom is drawn in code.
+
 ## Whole-film arc first
 
 Before any single scene, write the arc in a few lines: where the song opens, where it turns, where it peaks and how it lands. Map these beats to measured time ranges:

@@ -16,7 +16,12 @@ export function outputProfile(project, scale = 1) {
   scale = Number(scale);
   if (!Number.isFinite(scale) || scale <= 0 || scale > 2) throw new Error('scale must be greater than 0 and no more than 2');
   const even = n => Math.max(2, Math.round(n / 2) * 2);
-  return { width: even(project.width * scale), height: even(project.height * scale), fps: project.fps, codec: 'libx264', pixelFormat: 'yuv420p', crf: 20, preset: 'veryfast', scale };
+  const profile = { width: even(project.width * scale), height: even(project.height * scale), fps: project.fps, codec: 'libx264', pixelFormat: 'yuv420p', crf: project.render?.crf ?? 20, preset: project.render?.preset ?? 'veryfast', scale };
+  // Only present when authored, so existing section caches keep their keys.
+  const blur = project.render?.motionBlur;
+  if (blur?.samples === 'auto') profile.motionBlur = { samples: 'auto', shutter: blur.shutter ?? 0.2, tolerance: blur.tolerance ?? 3 };
+  else if (blur?.samples > 1) profile.motionBlur = { samples: Math.round(blur.samples), shutter: blur.shutter ?? 0.5 };
+  return profile;
 }
 export async function assetHashes(project, manifestPath) {
   return Object.fromEntries(await Promise.all(Object.entries(project.assets).map(async ([id, a]) => [id, { ...a, sha256: await fileHash(resolveSource(manifestPath, a.src)) }])));

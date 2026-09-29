@@ -19,6 +19,17 @@ export const IMAGE_PROVIDERS = Object.freeze({
   supplied: { runs: 'any', label: 'An original image file added by a person or any agent' },
 });
 
+/** Code-only mode draws every frame in code (see code-only.mjs). It is the
+ * default when Claude drives the engine; `ARK_MODE` overrides either way. */
+export function resolveMode({ env = process.env, mode } = {}) {
+  const chosen = mode ?? env.ARK_MODE;
+  if (chosen) {
+    if (!['code-only', 'mixed'].includes(chosen)) throw new Error(`Unknown mode ${chosen}; use code-only or mixed`);
+    return chosen;
+  }
+  return detectAgent(env) === 'claude' ? 'code-only' : 'mixed';
+}
+
 export function detectAgent(env = process.env) {
   if (env.ARK_AGENT) return AGENTS[env.ARK_AGENT] ? env.ARK_AGENT : 'none';
   if (env.CLAUDECODE === '1' || env.CLAUDE_CODE_ENTRYPOINT) return 'claude';
@@ -55,7 +66,7 @@ export function imageAction(provider) {
 export function capabilities(env = process.env) {
   const agent = detectAgent(env);
   return {
-    agent, agentProfile: AGENTS[agent], imageProvider: resolveImageProvider({ env }),
+    agent, agentProfile: AGENTS[agent], mode: resolveMode({ env }), imageProvider: resolveMode({ env }) === 'code-only' ? null : resolveImageProvider({ env }),
     imageProviders: Object.fromEntries(Object.entries(IMAGE_PROVIDERS).map(([id, p]) => [id, { ...p, available: id === 'comfyui' ? 'probe with `image --provider comfyui`' : id === 'openai-images' ? Boolean(env.OPENAI_API_KEY) : id === 'gpt-image' ? AGENTS[agent].imageTool : true }])),
     visualReview: 'Any vision-capable agent or person records an independent review with approve-review; the machine gate uses the local vision model.',
     audioReview: 'Local only (Whisper, forced alignment, decoded-audio comparison). No hosted model is involved.',

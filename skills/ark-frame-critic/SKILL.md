@@ -23,6 +23,10 @@ node engine/cli.mjs approve-review --report <review-dir>/review.json \
 
 Use your real agent name as `--reviewer` (`claude`, `codex`, or the person's name).
 
+## Code-only films
+
+In code-only mode (`creation.mode: "code-only"`), score `photorealism` as **finish**: anti-aliasing, grain, motion blur, banding and type crispness. The bar for every category is mexicat/pdoom-video (see `docs/CODE_ONLY.md`): if the frame would look weaker beside a pdoom frame, it is below 8. Also check that no scene uses an image or video asset, the output is 60 fps, and fast motion shows continuous blur streaks rather than stepped copies.
+
 ## Honesty rules
 
 - A score below 8 is a failure to repair, not a number to round up. Fix the named scenes, render those sections, rerun the gauntlet and review again.

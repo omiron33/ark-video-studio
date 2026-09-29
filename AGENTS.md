@@ -1,6 +1,6 @@
 # Ark Lyric Studio agent contract
 
-This engine is model agnostic: Codex, Claude or no agent at all can drive every CLI step, and agent-only steps have a named fallback. Read [docs/AGENTS_AND_MODELS.md](docs/AGENTS_AND_MODELS.md) for who does what, image providers and the shared skills. `node engine/cli.mjs agents` shows what this session can do.
+This engine is model agnostic: Codex, Claude or no agent at all can drive every CLI step, and agent-only steps have a named fallback. Read [docs/AGENTS_AND_MODELS.md](docs/AGENTS_AND_MODELS.md) for who does what, image providers and the shared skills. `node engine/cli.mjs agents` shows what this session can do. Claude runs in code-only mode (every frame drawn in code, bar set by mexicat/pdoom-video; see [docs/CODE_ONLY.md](docs/CODE_ONLY.md)); Codex runs in mixed mode unless `ARK_MODE=code-only`.
 
 The new engine is `engine/`; old Python renderers and original v1–v3 outputs are historical source and must not be overwritten as a side effect of new work.
 

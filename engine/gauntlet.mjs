@@ -1,4 +1,5 @@
 import {createHash} from 'node:crypto';
+import {auditCodeOnly} from './code-only.mjs';
 import {createReadStream} from 'node:fs';
 import {mkdir, readFile, writeFile, readdir, stat, rename} from 'node:fs/promises';
 import {dirname, resolve, relative, join} from 'node:path';
@@ -199,6 +200,8 @@ export async function reviewVideo({videoPath, projectPath, outDir, renderMetadat
     check('renderOutputBinding', metadata.sha256 === videoSha256, metadata.sha256 ?? null, videoSha256);
     check('renderRevisionBinding', metadata.sourceRevision?.revisionHash === revision.revisionHash && metadata.sourceRevisionEnd?.revisionHash === revision.revisionHash, {start: metadata.sourceRevision?.revisionHash, end: metadata.sourceRevisionEnd?.revisionHash}, revision.revisionHash);
   }
+  const codeOnly = auditCodeOnly(project);
+  if (codeOnly.required) check('codeOnly', codeOnly.passed && (!metadata || metadata.profile?.motionBlur), {issues: codeOnly.issues, renderedMotionBlur: metadata?.profile?.motionBlur ?? null}, 'fonts only, 60 fps, rendered with motion blur');
   let temporalActivity = {required: false, passed: true, present: false, errors: []};
   if (project.quality?.maxStaticSeconds !== undefined) {
     try {

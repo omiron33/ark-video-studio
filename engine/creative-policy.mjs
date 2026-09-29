@@ -2,6 +2,7 @@ import { allocateSceneArtwork, auditSceneArtwork, sceneArtworkId, SCENE_PHOTO_ST
 import { planPacing, auditPacing } from './pacing.mjs';
 import {auditChoreography} from './choreography-policy.mjs';
 import {CHOREOGRAPHY_CATALOG} from './story-visual.mjs';
+import {auditCodeOnly} from './code-only.mjs';
 
 export const CREATIVE_POLICY = Object.freeze({ version: 1, uniqueSceneArtwork: true, expressivePacing: true, immediateOpening: true });
 
@@ -32,7 +33,8 @@ export async function reviewCreativePolicy(project, manifestPath) {
   const artwork = await auditSceneArtwork(project, manifestPath, { requiredSectionIds: [...requiredSectionIds] });
   const pacing = auditPacing(project);
   const choreography = auditChoreography(project,{catalog:CHOREOGRAPHY_CATALOG});
-  issues.push(...artwork.issues, ...pacing.errors, ...choreography.issues);
+  const codeOnly = auditCodeOnly(project);
+  issues.push(...artwork.issues, ...pacing.errors, ...choreography.issues, ...codeOnly.issues);
   return { required: true, passed: issues.length === 0 && artwork.passed && pacing.passed, issues, warnings: pacing.warnings, assetRequests: artwork.assetRequests, artwork, pacing,
-    choreography, limitations: ['Unique file bytes, distinct choreography IDs and supported timing do not establish originality or compelling rhythm. The encoded film still requires visual and measured audio review.'] };
+    choreography, codeOnly, limitations: ['Unique file bytes, distinct choreography IDs and supported timing do not establish originality or compelling rhythm. The encoded film still requires visual and measured audio review.'] };
 }
