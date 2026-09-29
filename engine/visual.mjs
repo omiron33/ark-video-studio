@@ -2,6 +2,7 @@
 const {installStoryStyles,STORY_CATALOG}=await import(new URL('./story-visual.mjs'+new URL(import.meta.url).search,import.meta.url));
 const {installFieldGuide,FIELD_GUIDE_CATALOG}=await import(new URL('./field-guide-visual.mjs'+new URL(import.meta.url).search,import.meta.url));
 const {installRelief,RELIEF_CATALOG}=await import(new URL('./relief-visual.mjs'+new URL(import.meta.url).search,import.meta.url));
+const {installGarden,GARDEN_CATALOG}=await import(new URL('./garden-visual.mjs'+new URL(import.meta.url).search,import.meta.url));
 /** Deterministic, environment-neutral Canvas scene graph. No wall clock or random state.
  * New styles implement { background, typography }; agent edits live in project JSON.
  */
@@ -9,6 +10,7 @@ export const STYLE_CATALOG = {
   ...STORY_CATALOG,
   ...FIELD_GUIDE_CATALOG,
   ...RELIEF_CATALOG,
+  ...GARDEN_CATALOG,
   rise: 'A word-driven ocean field; the verb physically ascends above the water.',
   terrain: 'Contour lines become a mountain; the peak word follows its crest.',
   submerge: 'Photographic ocean, living surface, and lyrics descending below a waterline.',
@@ -177,6 +179,7 @@ for(const id of ['orbit','impact','verse'])registerStyle(id,{background:genericB
 installStoryStyles(registerStyle,{word,setFont,label,vignette,grain,oceanPhoto});
 installFieldGuide(registerStyle);
 installRelief(registerStyle);
+installGarden(registerStyle);
 function portalGeometry(c,e){
  const ground=role(e,'ground');if(!ground)return null;
  const text=ground.text.replace(/[.,]$/,'').toUpperCase(),i=text.indexOf('O');if(i<0)return null;
