@@ -112,17 +112,27 @@ async function reachableComfy(env, fetchImpl) {
 
 /** Generate one image with local ComfyUI: queue the graph, wait for its
  * history entry, download the first saved image and record provenance. */
-export async function generateComfyImage({ prompt, out, size = '1536x1024', seed = Math.floor(Math.random() * 2 ** 31), env = process.env, fetchImpl = fetch, workflowPath = env.ARK_COMFY_WORKFLOW, pollMs = 1500, timeoutMs = 600000 }) {
+/** Workflows shipped for the models installed on OmiPC. `ARK_COMFY_WORKFLOW`
+ * takes one of these names or a path to any API-format workflow. */
+export const COMFY_PRESETS = Object.freeze({
+  'qwen-image': new URL('./comfy/qwen-image-2.1.api.json', import.meta.url),
+  'krea2-turbo': new URL('./comfy/krea2-turbo.api.json', import.meta.url),
+});
+
+export async function generateComfyImage({ prompt, out, size = '1536x1024', seed = Math.floor(Math.random() * 2 ** 31), env = process.env, fetchImpl = fetch, workflow = env.ARK_COMFY_WORKFLOW, pollMs = 1500, timeoutMs = 600000 }) {
   if (!prompt?.trim()) throw new Error('image requires a prompt');
   const [width, height] = size.split('x').map(Number);
   const url = await reachableComfy(env, fetchImpl);
-  const template = workflowPath ? JSON.parse(await (await import('node:fs/promises')).readFile(workflowPath, 'utf8')) : undefined;
   let checkpoint = env.ARK_COMFY_CHECKPOINT;
-  if (!template && !checkpoint) {
+  if (!workflow && !checkpoint) {
     const info = await (await fetchImpl(`${url}/object_info/CheckpointLoaderSimple`)).json();
     checkpoint = info.CheckpointLoaderSimple?.input?.required?.ckpt_name?.[0]?.[0];
-    if (!checkpoint) throw new Error('ComfyUI has no checkpoint for the default graph; set ARK_COMFY_CHECKPOINT or ARK_COMFY_WORKFLOW');
+    // OmiPC has no classic checkpoints; its installed image model is Qwen-Image.
+    if (!checkpoint) workflow = 'qwen-image';
   }
+  const workflowPath = COMFY_PRESETS[workflow] ?? workflow;
+  // Workflows saved by ComfyUI on Windows may start with a UTF-8 byte order mark.
+  const template = workflowPath ? JSON.parse((await (await import('node:fs/promises')).readFile(workflowPath, 'utf8')).replace(/^\uFEFF/, '')) : undefined;
   const graph = comfyWorkflow({ prompt, seed, width, height, checkpoint, template });
   const queued = await fetchImpl(`${url}/prompt`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ prompt: graph, client_id: 'ark-video-studio' }) });
   const queuedBody = await queued.json();
@@ -141,7 +151,7 @@ export async function generateComfyImage({ prompt, out, size = '1536x1024', seed
   const bytes = Buffer.from(await view.arrayBuffer()), file = path.resolve(out);
   await mkdir(path.dirname(file), { recursive: true });
   await writeFile(file, bytes);
-  const provenance = { provider: 'comfyui', host: url, promptId: id, checkpoint: checkpoint ?? null, workflow: workflowPath ?? 'default-checkpoint-graph', seed, size, prompt, sha256: createHash('sha256').update(bytes).digest('hex'), cost: 'Local GPU only; no paid API generation', createdAt: new Date().toISOString() };
+  const provenance = { provider: 'comfyui', host: url, promptId: id, checkpoint: template ? null : checkpoint, workflow: template ? workflow : 'default-checkpoint-graph', seed, size, prompt, sha256: createHash('sha256').update(bytes).digest('hex'), cost: 'Local GPU only; no paid API generation', createdAt: new Date().toISOString() };
   await writeFile(`${file}.provenance.json`, JSON.stringify(provenance, null, 2) + '\n');
   return { path: file, provenancePath: `${file}.provenance.json`, ...provenance };
 }
