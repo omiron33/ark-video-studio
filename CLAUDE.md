@@ -4,7 +4,7 @@
 
 Everything in AGENTS.md applies. This file only adds what differs when Claude drives the engine. See [docs/AGENTS_AND_MODELS.md](docs/AGENTS_AND_MODELS.md) for the shared division of work.
 
-- Claude has no built-in image generator. Run `node engine/cli.mjs agents` first. Use `node engine/cli.mjs image` when `OPENAI_API_KEY` is set; otherwise save the exact prompts in the project and leave `assetRequests` pending for Codex or a person. Never draw a substitute in code and call it the requested photograph.
+- Claude has no built-in image generator. Run `node engine/cli.mjs agents` first. Use `node engine/cli.mjs image`: it uses the OpenAI API when `OPENAI_API_KEY` is set, otherwise local ComfyUI on OmiPC. If neither is reachable, save the exact prompts in the project and leave `assetRequests` pending. Never draw a substitute in code and call it the requested photograph.
 - Lean on planning and code: write the scene brief with the `ark-director-brief` skill, then author choreography with the HyperFrames and GSAP skills. Review encoded output with the `ark-frame-critic` skill.
 - Browser or Photos delivery needs computer use. If it isn't available in this session, finish everything up to the finished MP4 and its review, and say delivery is paused.
 

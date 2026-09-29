@@ -36,7 +36,7 @@ const usage = `Ark Video Studio
   approve-review --report report.json --reviewer name --scores scores.json --notes 'Review notes'
   review-check --report report.json [--video film.mp4] [--project project.json]
   agents [--json]
-  image --prompt 'scene description' | --prompt-file request.txt --out assets/scene.png [--size 1536x1024] [--model id]`;
+  image --prompt 'scene description' | --prompt-file request.txt --out assets/scene.png [--provider openai-images|comfyui] [--size 1536x1024] [--model id] [--seed n]`;
 try {
   const options = args(process.argv.slice(2)), command = options._[0];
   if (options.help || !command || command === 'help') console.log(usage);
@@ -45,9 +45,11 @@ try {
     console.log(JSON.stringify(capabilities(),null,2));
   } else if(command==='image'){
     if(!options.out||!(options.prompt||options['prompt-file']))throw Error('image requires --prompt or --prompt-file, and --out');
-    const {generateImage}=await import('./providers.mjs');
+    const {generateImage,generateComfyImage}=await import('./providers.mjs');
     const prompt=options.prompt??await readFile(options['prompt-file'],'utf8');
-    const {revisedPrompt,...result}=await generateImage({prompt,out:options.out,size:options.size,model:options.model});
+    const provider=options.provider??(process.env.OPENAI_API_KEY?'openai-images':'comfyui');
+    if(!['openai-images','comfyui'].includes(provider))throw Error('image --provider must be openai-images or comfyui');
+    const {revisedPrompt,...result}=provider==='comfyui'?await generateComfyImage({prompt,out:options.out,size:options.size,seed:options.seed===undefined?undefined:Number(options.seed)}):await generateImage({prompt,out:options.out,size:options.size,model:options.model});
     console.log(JSON.stringify(result,null,2));
   } else if(command==='references'){
     const {loadReferenceLibrary,searchReferences}=await import('./references.mjs');

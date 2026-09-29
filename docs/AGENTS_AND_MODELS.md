@@ -10,10 +10,10 @@ The engine is model agnostic. Every production step is a CLI command that runs w
 | --- | --- | --- | --- | --- |
 | Song intake, alignment, beats | Yes: `import`, `align` (local Whisper and forced alignment) | Yes | Yes | Run the CLI directly |
 | Reference search | Yes: `references`, `reference-context` | Yes | Yes | Run the CLI directly |
-| Four theme mockups | No, needs an image model | Built-in GPT Image | `image` command with an API key, or hand the prompts to Codex | Prompts wait in `concepts/`; the gate stays open |
+| Four theme mockups | Yes, with local ComfyUI: `image --provider comfyui` | Built-in GPT Image | `image` command (API key, else local ComfyUI) | Local ComfyUI; if it is off, prompts wait in `concepts/` and the gate stays open |
 | Director brief and scene plan | Deterministic planner only | Yes | Preferred (`ark-director-brief`) | Deterministic `create` vocabulary |
 | Choreography and HyperFrames/GSAP code | No | Yes | Preferred | Existing vocabulary only |
-| Scene artwork | No | Built-in GPT Image | `image` command, or pending request | `assetRequests` stay pending and the gate stays unfinished |
+| Scene artwork | Yes, with local ComfyUI | Built-in GPT Image | `image` command (API key, else local ComfyUI) | Local ComfyUI; if it is off, `assetRequests` stay pending |
 | Render, section cache, export | Yes: `render`, `patch`, `replace` | Yes | Yes | Run the CLI directly |
 | Audio and sync review | Yes, local measurement only | Yes | Yes | Run the CLI directly |
 | Visual review | Machine gate uses the local vision model | Independent review | Preferred (`ark-frame-critic`) | A person records `approve-review` |
@@ -28,9 +28,10 @@ Scene artwork requests (`assetRequests`) name a provider chosen by `resolveImage
 
 - `gpt-image`: the agent's built-in GPT Image tool. The default for Codex and when no agent is detected.
 - `openai-images`: GPT Image through the OpenAI Images API. Used when the agent has no image tool and `OPENAI_API_KEY` is set. Run `node engine/cli.mjs image --prompt-file request.txt --out project/assets/scene.png`; it writes `scene.png.provenance.json` beside the image. Set `ARK_IMAGE_MODEL` to change the model.
+- `comfyui`: local ComfyUI on the home network, the default whenever no external provider is available. It tries `ARK_COMFY_URL`, then OmiPC at `http://192.168.4.245:8188` (LAN) and `http://100.124.1.2:8188` (Tailscale). Run `node engine/cli.mjs image --provider comfyui --prompt-file request.txt --out project/assets/scene.png`. With no workflow set it builds a standard checkpoint graph using `ARK_COMFY_CHECKPOINT`, or the first checkpoint the server lists. For Flux, Qwen-Image or other graphs, export an API-format workflow and point `ARK_COMFY_WORKFLOW` at it, using `{{prompt}}`, `{{negative}}`, `{{seed}}`, `{{width}}` and `{{height}}` placeholders. ComfyUI must be started on OmiPC and listening on the network. Provenance records the host, checkpoint or workflow, seed and hash.
 - `supplied`: any original image file a person or agent adds, with its provenance recorded.
 
-Set `ARK_IMAGE_PROVIDER` to force a provider, or `ARK_AGENT` (`codex`, `claude`, `none`) to override detection. Detection reads `CLAUDECODE` for Claude Code and any `CODEX_*` variable for Codex.
+Order when the agent has no image tool: OpenAI API if `OPENAI_API_KEY` is set, otherwise local ComfyUI. Set `ARK_IMAGE_PROVIDER` to force a provider, or `ARK_AGENT` (`codex`, `claude`, `none`) to override detection. Detection reads `CLAUDECODE` for Claude Code and any `CODEX_*` variable for Codex.
 
 ## Skills
 
