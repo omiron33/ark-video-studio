@@ -49,4 +49,4 @@ The theme-choice gate, lyric provenance, the rubric threshold of 8, review bindi
 
 ## Asset storage
 
-Generated scene images and their provenance stay in each project's `assets/` folder so projects remain portable. Published film packages go to the `technochristianity-assets` repository under `/Volumes/Code/technochristianity-assets`. Finished movies are usually over GitHub's 100 MB file limit, so they need Git LFS or release attachments there; a plain commit will be rejected.
+Generated scene images and their provenance stay in each project's `assets/` folder so projects remain portable. Finished movies and their delivery packages are stored locally under `/Volumes/Code/technochristianity-assets/movies/<project-id>/` and are never pushed; that repository's published content stays the church model releases.
