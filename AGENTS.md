@@ -24,6 +24,10 @@ Before claiming a great output, run the gauntlet on the actual encoded MP4 and o
 
 The normal entry point is a song plus a style prompt. After the theme-choice gate, run the create workflow in docs/CREATE.md, including automatic local alignment, direction, render, audio and visual review, and bounded repairs. If the approved brief requires new pictures, the orchestrating agent generates them with the resolved image provider (built-in GPT Image, `node engine/cli.mjs image`, or a supplied file), records each prompt and image provenance, supplies a direction file, and continues automatically. Do not silently substitute an image-free treatment for a requested photographic story or imply that unavailable artwork exists. Never use paid video services. Deliver every finished video and preview clip to Photos and the owner-private Genesis Site review queue, verifying both without claiming that Photos import proves iPhone sync. OmiPC Studio is retired as a delivery destination.
 
+## Photoreal song films
+
+Songs rendered in photoreal mode (GPU scenes in their own song folder) follow the steps in [photoreal/README.md](photoreal/README.md#making-a-film): a storyboard table checked by a fresh critic before any animation, a draft with the measured pre-render check, five key stills reviewed before the full render, the full render under the watchdog with `out/progress.json` and `out/STATUS.md`, then the measured final check and the fresh critic until it says ship. The critic is a new Claude or Codex process that sees only the evidence folder; never review your own build in the session that built it. Keep lyric typography in `scenes/<name>.lyric.js` wherever the words don't need to sit inside the scene, so type changes never re-render pictures.
+
 ## Visual references during ideation
 
 Apply this before planning new scenes or substantial motion treatments, including agent-written concepts that happen before the CLI director runs. Read `docs/MOTION_REFERENCES.md`.

@@ -29,11 +29,62 @@ song/
 ```
 
 A scene module exports `{ name, from, to, frag, uniforms, camera(t), update?(t,u), textPlane?(t,cam),
-drawText?(ctx,t,lyrics), post?(t), textSize? }`. `frag` defines `vec3 shade(vec2 fragCoord)` and may
+drawText?(ctx,t,lyrics), post?(t), textSize? }`.
+
+### The lyric as its own layer
+
+Give a scene a sibling `scenes/<name>.lyric.js` exporting `(params) => ({ textSize?, textPlane(t, cam),
+drawText(ctx, t, lyrics), shade? })` and leave `drawText` and `uText` out of the scene itself. The
+picture then renders without words, the words render alone with transparency from the same camera,
+and the two are composited per segment. A typography change re-renders only the layer (seconds per
+scene) and the composite, never the picture. Keep type helpers in a song module that only lyric
+modules import (for example `lib/type.js`): anything a scene module imports is part of its picture.
+The layer has a soft `shade` (0 to 1, default 0.6) behind light words so they read over anything;
+the contrast gate measures whether that was enough. Words that must sit behind objects, refract
+through water or take the scene's fog stay in the scene (baked), and re-render with it. `frag` defines `vec3 shade(vec2 fragCoord)` and may
 use everything in `web/glsl.js`. Scenes import helpers from `/engine.js` and anchor to measured lyrics
 with `anchor()` from `/timing.js`.
 
-## Running
+## Making a film
+
+Every step is a command any agent (or a person) can run; the critic can be Claude, Codex or any
+command in `ARK_CRITIC_CMD`.
+
+1. **Storyboard, before any animation.** `node photoreal/storyboard.mjs draft --song S` writes
+   `docs/STORYBOARD.md`: one row per stretch of the song with the time, what's on screen, what the
+   moment is for, how it leaves and what carries into the next shot, with the lyrics filled in. Fill
+   every cell, `storyboard.mjs check`, then `node photoreal/critic.mjs storyboard --song S --agent
+   claude|codex`. The critic also reads the lyrics row by row as if the film were muted and says
+   whether the story still comes through.
+2. **Build the scenes**, then `node photoreal/film.mjs --song S --draft` and the pre-render check,
+   `node photoreal/check.mjs --song S --label draft`.
+3. **Key stills.** `node photoreal/film.mjs --song S --stills` renders the opening, the main image,
+   both sides of the fastest cut, a lyric hold and the ending at full quality;
+   `node photoreal/critic.mjs stills --song S` reviews them zoomed in.
+4. **Full render.** `node photoreal/film.mjs --song S` refuses to start until the storyboard, the
+   stills and the draft check have passed for the current scenes (`--skip-storyboard`,
+   `--skip-stills`, `--skip-check` override, and say so in `STATUS.md`). It times every scene
+   cheaply, renders one second of the slowest, uses that to choose one or two workers and prints an
+   honest finish time. Each worker runs under a watchdog: no new frame for 3 minutes (`--stall`)
+   and it is killed, logged and retried twice (`--retries`); a scene that still fails is marked
+   failed and the rest carry on. `out/progress.json` holds scenes done and total, what is rendering,
+   frames done, seconds per scene, the estimated finish and the last frame's time;
+   `out/STATUS.md` is written when the run finishes or gets blocked.
+5. **Final review.** `node photoreal/check.mjs --song S --label final`, then
+   `node photoreal/critic.mjs film --song S`. The critic gets a contact sheet, a strip of frames
+   around every cut and the measured results, and nothing about how the film was built. It returns
+   ranked problems with times and exact fixes and a verdict of ship or one more pass; it cannot ship
+   over a failed measurement. `out/review/ledger.md` carries every problem across rounds and marks
+   each fixed, partly fixed or still there. Fix, re-render only the scenes involved (`--only`), and
+   run the check and the critic again until the verdict is ship.
+
+The measured gates (`check.mjs`, thresholds overridable under `"gates"` in film.json): every lyric
+word at least 4.5:1 against what is actually behind it once sung; no words running together,
+overlapping or crowding, and no lines on top of each other; no stretch over 0.5 s with nothing
+visibly moving; no fast move that stops dead; no word moving before it has been still for 8 frames;
+and every cut on a measured beat or up to 2 frames before it (a scene can give `"offBeat": "why"`).
+
+## Running single scenes
 
 ```sh
 node photoreal/render.mjs stills --song ../genesis8-the-dove --scene ararat --t 78,80 --samples 4
