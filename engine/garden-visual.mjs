@@ -19,6 +19,25 @@ const tri = v => Math.abs((v % 2 + 2) % 2 - 1);
 
 // A touch lighter than the demo: warm umber ground, bone type, verdigris signal.
 const BG = '#2A211A', BONE = '#F1E8D8', VERDIGRIS = '#9AD6BE', CLAY = '#D98A5A';
+// Each scene's hue and the spread across its relief levels. The film starts
+// muted and grows more vivid toward the creation of man and woman; from Eve on
+// it runs in love colours: rose, coral, magenta and gold.
+const HUES = {
+  title: [28, 30], finished: [210, 80], sixDays: [30, 40], ceased: [200, 30], holy: [45, 30], unwind: [45, 60], strata: [20, 60], range: [15, 90],
+  barren: [35, 20], drought: [18, 25], fountain: [185, 40], calmWater: [190, 30], dust: [25, 30], breath: [170, 60], soul: [160, 80],
+  garden: [110, 60], placed: [100, 60], orchard: [95, 120], lifeTree: [130, 80], knowing: [300, 120], river: [195, 50], fourHeads: [200, 90],
+  gold: [42, 25], gems: [350, 140], geon: [210, 70], twinRivers: [190, 60], wall: [120, 80], furrows: [30, 50], freely: [80, 140],
+  forbidden: [355, 40], die: [270, 40], alone: [220, 40], helper: [260, 60], beasts: [28, 50], drain: [20, 280], naming: [50, 120],
+  parade: [30, 200], noHelper: [230, 40], trance: [250, 60], rib: [300, 90], woman: [330, 120], brought: [340, 140], bone: [320, 160],
+  oneFlesh: [330, 200], noShame: [300, 240], outro: [0, 360],
+};
+const LOVE = new Set(['woman', 'brought', 'bone', 'oneFlesh', 'noShame', 'outro']);
+const vibrancy = (t, scene) => Math.max(.12 + .88 * Math.pow(smooth((t - 8) / 262), 1.15), LOVE.has(scene) ? .96 : 0);
+function hsl(h, s, l) {
+  h = ((h % 360) + 360) % 360 / 360; const a = s * Math.min(l, 1 - l);
+  const f = n => { const k = (n + h * 12) % 12; return l - a * Math.max(-1, Math.min(k - 3, 9 - k, 1)); };
+  return [f(0) * 255, f(8) * 255, f(4) * 255];
+}
 const TINTS = [null, [150, 214, 190], [232, 184, 92], [226, 96, 80], [104, 206, 140], [190, 208, 236]];
 
 function noise(x, y) {
@@ -127,7 +146,7 @@ function textField(key, text, font, x, y, align = 'center') {
   let a = new Float32Array(NX * NY);
   for (let i = 0; i < a.length; i++) a[i] = data[i * 4] / 255;
   // Three box blurs round the letters into a carved mound.
-  for (let pass = 0; pass < 3; pass++) {
+  for (let pass = 0; pass < 2; pass++) {
     const b = new Float32Array(a.length);
     for (let j = 0; j < NY; j++) for (let i = 0; i < NX; i++) {
       let s = 0, n = 0;
@@ -176,6 +195,7 @@ const SCENES = {
       const i = Math.round(y / STEP) * NX + Math.round(x / STEP);
       return f[i] * 1.2 * at(q, .2, 2.2) + g[i] * .9 * at(q, 3.5, 2) + ring(x, y, 960, 540, q.t - q.s.start, 420, .3);
     },
+    texts: q => [{ text: 'GENESIS 2', font: `330px "Bebas Neue"`, x: 960, y: 470, w: at(q, .2, 2.2) }, { text: 'THE GARDEN', font: `190px "Bebas Neue"`, x: 960, y: 720, w: at(q, 3.5, 2) }],
     cam: q => ({ zoom: 1.1 - .1 * inOut(q.u), rot: .02 * (1 - q.u) }),
   },
   finished: {
@@ -217,6 +237,7 @@ const SCENES = {
       return rose * grow + f[Math.round(y / STEP) * NX + Math.round(x / STEP)] * bw(q, 'holy', .2, .8) * .9;
     },
     tint: (x, y, q) => Math.hypot(x - 960, y - 560) < 360 * at(q, 0, 2.2) ? 2 : 0,
+    texts: q => [{ text: 'holy', font: `italic 260px "EB Garamond Italic"`, x: 960, y: 560, w: bw(q, 'holy', .2, .8) }],
     cam: q => ({ zoom: 1 + .06 * q.u, rot: -.03 * q.u }),
   },
   unwind: {
@@ -328,6 +349,7 @@ const SCENES = {
       return h + f[Math.round(y / STEP) * NX + Math.round(x / STEP)] * bw(q, 'edem', .1, .7) * .9;
     },
     tint: (x, y, q) => 4 * (y < 780 ? 1 : 0) * (at(q, 0, 2) > .5 ? 1 : 0),
+    texts: q => [{ text: 'Edem', font: `italic 230px "EB Garamond Italic"`, x: 1440, y: 800, w: bw(q, 'edem', .1, .7) }],
     cam: q => ({ zoom: 1.04 }),
   },
   placed: {
@@ -571,6 +593,7 @@ const SCENES = {
       return h;
     },
     tint: (x, y, q) => y > 700 ? 1 : 0,
+    texts: q => [['deer', 420, 640], ['ox', 1000, 640], ['lion', 1560, 650]].map(([name, cx, cy], i) => ({ text: name, font: `italic 110px "EB Garamond Italic"`, x: cx, y: cy + 110, w: smooth((q.t - find(q, 'name').start - i * .25) / .5) })),
     cam: q => ({ zoom: 1.02 }),
   },
   parade: {
@@ -695,6 +718,7 @@ const SCENES = {
       return h * (1 - .7 * settle) + f[Math.round(y / STEP) * NX + Math.round(x / STEP)] * settle * 1.2;
     },
     tint: (x, y, q) => { const r = Math.hypot(x - 960, y - 560); return r > 520 && y < 1000 ? 4 : r < 260 ? 2 : 1; },
+    texts: q => [{ text: 'GENESIS 2', font: `200px "Bebas Neue"`, x: 960, y: 900, w: smooth((q.u - .55) / .35) }],
     cam: q => ({ zoom: 1.18 - .2 * inOut(q.u), rot: .04 * (1 - q.u) }),
   },
 };
@@ -730,7 +754,7 @@ function heightAt(x, y, q) {
 }
 
 const LEVEL = .075, LEVELS = 40, BANDS = TINTS.length;
-function contours(c, H, T) {
+function contours(c, H, T, look) {
   const paths = Array.from({ length: LEVELS * BANDS }, () => []);
   for (let j = 0; j < NY - 1; j++) for (let i = 0; i < NX - 1; i++) {
     const a = H[j * NX + i], b = H[j * NX + i + 1], d = H[(j + 1) * NX + i], e = H[(j + 1) * NX + i + 1];
@@ -750,10 +774,12 @@ function contours(c, H, T) {
     const list = paths[l * BANDS + band]; if (!list.length) continue;
     const u = l / (LEVELS - 1), index = l % 4 === 0;
     let r = mix(150, 250, Math.pow(u, .5)), g = mix(100, 222, Math.pow(u, 1)), b = mix(72, 196, Math.pow(u, 1.4));
+    const [vr, vg, vb] = hsl(look.hue + look.spread * u, .72 + .22 * u, .52 + .36 * Math.pow(u, .8));
+    r = mix(r, vr, look.vib); g = mix(g, vg, look.vib); b = mix(b, vb, look.vib);
     const tint = TINTS[band];
-    if (tint) { const k = .35 + .55 * Math.pow(u, .5); r = mix(r, tint[0], k); g = mix(g, tint[1], k); b = mix(b, tint[2], k); }
-    c.strokeStyle = `rgba(${r | 0},${g | 0},${b | 0},${mix(.55, 1, Math.pow(u, .45)) * (index ? 1 : .8)})`;
-    c.lineWidth = index ? 1.9 : 1;
+    if (tint) { const k = (.35 + .55 * Math.pow(u, .5)) * (1 - .7 * look.vib); r = mix(r, tint[0], k); g = mix(g, tint[1], k); b = mix(b, tint[2], k); }
+    c.strokeStyle = `rgba(${r | 0},${g | 0},${b | 0},${Math.min(1, mix(.55 + .2 * look.vib, 1, Math.pow(u, .45))) * (index ? 1 : .8 + .12 * look.vib)})`;
+    c.lineWidth = (index ? 1.9 : 1) * (1 + .25 * look.vib);
     c.beginPath();
     for (const p of list) { c.moveTo(p[0], p[1]); c.lineTo(p[2], p[3]); if (p.length === 8) { c.moveTo(p[4], p[5]); c.lineTo(p[6], p[7]); } }
     c.stroke();
@@ -777,6 +803,21 @@ function field(p, s, t, ripples) {
 }
 
 const TRANSITION = .6;
+/** Crisp outlines over carved words, so relief text reads sharply while its
+ * rings still ripple around it. */
+function carved(c, q, look) {
+  for (const spec of q.scene.texts?.(q) ?? []) {
+    if (spec.w <= 0) continue;
+    const [r, g, b] = hsl(look.hue + look.spread, .55 + .3 * look.vib, .84);
+    c.save(); c.globalAlpha = spec.w; c.font = spec.font; c.textAlign = 'center'; c.textBaseline = 'middle'; c.lineJoin = 'round';
+    c.fillStyle = 'rgba(20,15,12,.55)'; c.fillText(spec.text, spec.x, spec.y);
+    c.strokeStyle = `rgb(${mix(241, r, look.vib) | 0},${mix(232, g, look.vib) | 0},${mix(216, b, look.vib) | 0})`; c.lineWidth = 3.2; c.strokeText(spec.text, spec.x, spec.y);
+    c.globalAlpha = spec.w * .45; c.lineWidth = 1.2; c.strokeStyle = BONE;
+    c.save(); c.translate(0, -3); c.strokeText(spec.text, spec.x, spec.y); c.restore();
+    c.restore();
+  }
+}
+
 function background(c, e) {
   const { p, s, t } = e;
   if (!CanvasCtor && !globalThis.OffscreenCanvas) CanvasCtor = c.canvas.constructor;
@@ -792,10 +833,18 @@ function background(c, e) {
     if (k < .5) T = before.T;
     const a = before.q.cam; cam = Object.fromEntries(Object.keys(cam).map(key => [key, mix(a[key] ?? cam[key], cam[key], k)]));
   }
-  c.fillStyle = BG; c.fillRect(0, 0, 1920, 1080);
+  const sceneName = s.direction?.scene, [h1, s1] = HUES[sceneName] ?? [28, 40];
+  let look = { hue: h1, spread: s1, vib: vibrancy(t, sceneName) };
+  if (prev && prev.style === 'garden' && k < 1) {
+    const [h0, s0] = HUES[prev.direction?.scene] ?? [28, 40], dh = ((h1 - h0 + 540) % 360) - 180;
+    look = { hue: h0 + dh * k, spread: mix(s0, s1, k), vib: mix(vibrancy(t, prev.direction?.scene), look.vib, k) };
+  }
+  const [br, bg_, bb] = hsl(look.hue, .38, LOVE.has(sceneName) ? .15 : .12);
+  c.fillStyle = `rgb(${mix(42, br, look.vib * .7) | 0},${mix(33, bg_, look.vib * .7) | 0},${mix(26, bb, look.vib * .7) | 0})`; c.fillRect(0, 0, 1920, 1080);
   const kick = pulse(p, t, 'kicks', 9) * .012;
   c.save(); c.translate(cam.cx, cam.cy); c.rotate(cam.rot); c.scale(cam.zoom + kick, cam.zoom + kick); c.translate(-cam.cx + cam.x, -cam.cy + cam.y);
-  contours(c, H, T);
+  contours(c, H, T, look);
+  carved(c, q, look);
   c.restore();
   const g = c.createRadialGradient(960, 560, 420, 960, 560, 1180);
   g.addColorStop(0, 'rgba(26,20,16,0)'); g.addColorStop(1, 'rgba(26,20,16,.55)');
@@ -850,7 +899,7 @@ function typography(c, e) {
   const enter = smooth((t - s.start) / .25);
   c.save(); c.globalAlpha = (1 - exit) * enter; c.textBaseline = 'alphabetic'; c.textAlign = 'left';
   if (L.speaker) {
-    c.save(); c.font = `46px "${CAPS}"`; c.letterSpacing = '10px'; c.fillStyle = VERDIGRIS;
+    c.save(); c.font = `46px "${CAPS}"`; c.letterSpacing = '10px'; c.fillStyle = LOVE.has(s.direction?.scene) ? '#FFA3B8' : VERDIGRIS;
     const x = L.pos[1] === 'r' ? 1810 - c.measureText(L.speaker.toUpperCase()).width : L.pos[1] === 'c' ? 960 - c.measureText(L.speaker.toUpperCase()).width / 2 : 112;
     c.globalAlpha *= smooth((t - (L.speakerAt ?? s.start) + .2) / .3); c.fillText(L.speaker.toUpperCase(), x, L.top - L.size * .95); c.restore();
   }
@@ -861,7 +910,7 @@ function typography(c, e) {
     const sung = t >= word.start, lift = sung ? (1 - outExpo((t - word.start) / .5)) * L.size * .08 : L.size * .08;
     c.save(); c.globalAlpha *= shown * (sung ? 1 : .3);
     c.lineJoin = 'round'; c.strokeStyle = BG; c.lineWidth = L.size * .17; c.strokeText(text, x, y + lift);
-    c.fillStyle = sung && t < word.end + .35 ? VERDIGRIS : BONE; c.fillText(text, x, y + lift);
+    c.fillStyle = sung && t < word.end + .35 ? (LOVE.has(s.direction?.scene) ? '#FFA3B8' : VERDIGRIS) : BONE; c.fillText(text, x, y + lift);
     c.restore();
   }
   c.restore();
