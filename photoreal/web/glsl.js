@@ -11,6 +11,7 @@ uniform vec3 uCamTarget;
 uniform float uCamRoll;
 uniform float uFov;       // vertical, degrees
 uniform sampler2D uText;
+uniform sampler2D uTextShade;   // blurred copy of the text
 uniform vec3 uTxC, uTxX, uTxY; // text plane centre and axes
 uniform vec2 uTxHS;           // text plane half size
 uniform float uFrame;     // integer frame index, constant over the shutter
@@ -80,6 +81,24 @@ float sdRoundCone(vec3 p, vec3 a, vec3 b, float r1, float r2) {
   return (sqrt(x2 * a2 * il2) + y * rr) * il2 - r1;
 }
 float sdBox(vec3 p, vec3 b) { vec3 q = abs(p) - b; return length(max(q, 0.0)) + min(max(q.x, max(q.y, q.z)), 0.0); }
+
+// Lay the lyric over a colour. Within a soft surround of the letters, the background is pushed away
+// from the ink's own brightness (darkened under light words, lifted under dark ones) so every word
+// reads, whatever is behind it. The text texture is premultiplied.
+vec3 inkOver(vec3 c, vec2 uv) {
+  vec4 tx = texture(uText, uv);
+  // a broad, soft region around each line (no tight halo round the letters)
+  vec4 blur = texture(uTextShade, uv);
+  float sur = sat(blur.a * 4.5);
+  if (sur < 0.001 && tx.a < 0.001) return c;
+  vec3 ink = tx.a > 0.01 ? tx.rgb / tx.a : blur.rgb / max(blur.a, 1e-3);
+  float il = dot(ink, vec3(0.2126, 0.7152, 0.0722));
+  float bl = dot(c / (1.0 + c), vec3(0.2126, 0.7152, 0.0722));
+  if (il > 0.4) c *= mix(1.0, 0.2, sur * smoothstep(0.08, 0.45, bl));
+  else c = mix(c, vec3(1.2), sur * 0.45 * smoothstep(0.5, 0.15, bl));
+  vec3 lin = pow(max(ink, 0.0), vec3(2.2)) * tx.a;   // canvas colours are sRGB
+  return c * (1.0 - tx.a) + lin * 1.35;
+}
 
 vec3 camRay(vec2 fragCoord, out vec3 ro) {
   vec2 p = (2.0 * (fragCoord + uJitter) - uRes) / uRes.y;

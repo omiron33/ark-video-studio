@@ -124,10 +124,18 @@ export class Engine {
     this.textTex.premultiplyAlpha = true;
     this.textTex.minFilter = THREE.LinearMipmapLinearFilter;
     this.textTex.anisotropy = this.renderer.capabilities.getMaxAnisotropy();
+    // a soft blurred copy of the text, for the shade that keeps words readable
+    const sc = document.createElement('canvas');
+    sc.width = Math.round(tc.width / 4); sc.height = Math.round(tc.height / 4);
+    this.shadeCanvas = sc;
+    this.shadeTex = new THREE.CanvasTexture(sc);
+    this.shadeTex.colorSpace = THREE.NoColorSpace;
+    this.shadeTex.premultiplyAlpha = true;
+    this.shadeTex.minFilter = THREE.LinearFilter; this.shadeTex.generateMipmaps = false;
     const u = {
       uRes: { value: new THREE.Vector2(W, H) }, uJitter: { value: new THREE.Vector2() }, uTime: { value: 0 }, uFrame: { value: 0 },
       uCamPos: { value: new THREE.Vector3() }, uCamTarget: { value: new THREE.Vector3() }, uCamRoll: { value: 0 }, uFov: { value: 40 },
-      uText: { value: this.textTex },
+      uText: { value: this.textTex }, uTextShade: { value: this.shadeTex },
       uTxC: { value: new THREE.Vector3() }, uTxX: { value: new THREE.Vector3(1, 0, 0) }, uTxY: { value: new THREE.Vector3(0, 1, 0) }, uTxHS: { value: new THREE.Vector2(1, 0.25) },
     };
     for (const [k, v] of Object.entries(clip.uniforms ?? {})) u[k] = { value: Array.isArray(v) && v.length === 3 ? new THREE.Vector3(...v) : v };   // 3-arrays are vectors; longer arrays stay float arrays
@@ -153,6 +161,12 @@ void main() { vec3 c = shade(gl_FragCoord.xy); fragOut = vec4(max(c, 0.0), 1.0);
     ctx.clearRect(0, 0, this.textCanvas.width, this.textCanvas.height);
     this.clip.drawText?.(ctx, t, this.lyrics);
     this.textTex.needsUpdate = true;
+    const sc = this.shadeCanvas, sx = sc.getContext('2d');
+    sx.clearRect(0, 0, sc.width, sc.height);
+    sx.filter = `blur(${Math.round(sc.height / 60)}px)`;
+    sx.drawImage(this.textCanvas, 0, 0, sc.width, sc.height);
+    sx.filter = 'none';
+    this.shadeTex.needsUpdate = true;
   }
 
   // Render the frame at song time t: `samples` jittered sub-frames spread over `shutter` frames.

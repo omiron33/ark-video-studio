@@ -36,25 +36,39 @@ function filesUnder(dir) {
     return e.isDirectory() ? filesUnder(p) : [p];
   }).sort();
 }
-const shared = [...filesUnder(path.join(SONG, 'lib')), path.join(SONG, 'data', 'lyrics.json'), path.join(SONG, 'data', 'audio.json'), ...filesUnder(path.join(HERE, 'web'))]
-  .filter((f) => fs.existsSync(f));
-const sharedHash = crypto.createHash('sha256');
-for (const f of shared) sharedHash.update(f).update(fs.readFileSync(f));
-const sharedKey = sharedHash.digest('hex');
+// A segment's key covers only what that scene actually uses: its own module, the song modules it
+// imports (followed recursively), the lyrics and audio data, and the engine's web code.
+const engineHash = crypto.createHash('sha256');
+for (const f of filesUnder(path.join(HERE, 'web'))) engineHash.update(f).update(fs.readFileSync(f));
+for (const f of ['lyrics.json', 'audio.json']) { const p = path.join(SONG, 'data', f); if (fs.existsSync(p)) engineHash.update(fs.readFileSync(p)); }
+const sharedKey = engineHash.digest('hex');
+function depsOf(file, seen = new Set()) {
+  if (seen.has(file) || !fs.existsSync(file)) return seen;
+  seen.add(file);
+  const src = fs.readFileSync(file, 'utf8');
+  for (const m of src.matchAll(/from\s+'\/song\/([^']+)'/g)) depsOf(path.join(SONG, m[1]), seen);
+  return seen;
+}
+function sceneKey(scene) {
+  const h = crypto.createHash('sha256').update(sharedKey);
+  for (const f of [...depsOf(path.join(SONG, 'scenes', `${scene}.js`))].sort()) h.update(f).update(fs.readFileSync(f));
+  return h.digest('hex');
+}
 
 const segs = [];
 for (const s of scenes) {
   const f0 = Math.round(s.from * fps), f1 = Math.round(s.to * fps);
+  const sSamples = draft ? samples : String(s.samples ?? samples);   // a scene may ask for more sub-frames (fast wings)
   const out = path.join(segDir, `${s.id}.mp4`);
   segs.push(out);
   if (only && !only.includes(s.id)) continue;
-  const key = crypto.createHash('sha256').update(sharedKey).update(fs.readFileSync(path.join(SONG, 'scenes', `${s.scene}.js`)))
-    .update(JSON.stringify(s.params ?? {})).update(`${f0}-${f1}-${samples}`).digest('hex');
+  const key = crypto.createHash('sha256').update(sceneKey(s.scene))
+    .update(JSON.stringify(s.params ?? {})).update(`${f0}-${f1}-${sSamples}`).digest('hex');
   const keyFile = out + '.key';
   if (fs.existsSync(out) && fs.existsSync(keyFile) && fs.readFileSync(keyFile, 'utf8') === key) { console.log(`segment ${s.id} cached`); continue; }
   console.log(`segment ${s.id} (${s.scene}) ${s.from}–${s.to}: ${f1 - f0} frames`);
   const r = spawnSync('node', [path.join(HERE, 'render.mjs'), 'video', '--song', SONG, '--scene', s.scene, '--params', JSON.stringify({ ...(s.params ?? {}), id: s.id, from: s.from, to: s.to }),
-    '--from', String(f0 / fps), '--to', String(f1 / fps), '--samples', samples, '--noaudio', '--preset', draft ? 'veryfast' : 'slow', '--crf', opt('crf', '18'), '--out', out], { stdio: 'inherit' });
+    '--from', String(f0 / fps), '--to', String(f1 / fps), '--samples', sSamples, '--noaudio', '--preset', draft ? 'veryfast' : 'slow', '--crf', opt('crf', '18'), '--out', out], { stdio: 'inherit' });
   if (r.status !== 0) throw Error(`segment ${s.id} failed`);
   fs.writeFileSync(keyFile, key);
 }
