@@ -34,11 +34,22 @@ const usage = `Ark Video Studio
   replace --project project.json --section id --file replacement.json [--retime]
   gauntlet --project project.json --video film.mp4 --out review-directory
   approve-review --report report.json --reviewer name --scores scores.json --notes 'Review notes'
-  review-check --report report.json [--video film.mp4] [--project project.json]`;
+  review-check --report report.json [--video film.mp4] [--project project.json]
+  agents [--json]
+  image --prompt 'scene description' | --prompt-file request.txt --out assets/scene.png [--size 1536x1024] [--model id]`;
 try {
   const options = args(process.argv.slice(2)), command = options._[0];
   if (options.help || !command || command === 'help') console.log(usage);
-  else if(command==='references'){
+  else if(command==='agents'){
+    const {capabilities}=await import('./providers.mjs');
+    console.log(JSON.stringify(capabilities(),null,2));
+  } else if(command==='image'){
+    if(!options.out||!(options.prompt||options['prompt-file']))throw Error('image requires --prompt or --prompt-file, and --out');
+    const {generateImage}=await import('./providers.mjs');
+    const prompt=options.prompt??await readFile(options['prompt-file'],'utf8');
+    const {revisedPrompt,...result}=await generateImage({prompt,out:options.out,size:options.size,model:options.model});
+    console.log(JSON.stringify(result,null,2));
+  } else if(command==='references'){
     const {loadReferenceLibrary,searchReferences}=await import('./references.mjs');
     const result=options.query?await searchReferences({query:options.query,limit:Number(options.limit??4),usedIds:(options.used??'').split(',').filter(Boolean),duration:options.duration===undefined?undefined:Number(options.duration),libraryRoot:options.library}):await loadReferenceLibrary({libraryRoot:options.library});
     console.log(JSON.stringify(result,null,2));

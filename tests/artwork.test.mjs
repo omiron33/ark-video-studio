@@ -1,4 +1,6 @@
 import test from 'node:test';
+// These fixtures assert the historical GPT Image request; pin it so the agent running the suite does not change it.
+process.env.ARK_IMAGE_PROVIDER = 'gpt-image';
 import assert from 'node:assert/strict';
 import { mkdtemp, writeFile, rm } from 'node:fs/promises';
 import path from 'node:path';

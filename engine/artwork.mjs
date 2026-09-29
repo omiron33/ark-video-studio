@@ -1,5 +1,6 @@
 import path from 'node:path';
 import { fileHash, resolveSource } from './project.mjs';
+import { imageAction, resolveImageProvider } from './providers.mjs';
 
 export const SCENE_PHOTO_STYLES = Object.freeze(['verse', 'impact', 'orbit', 'story', 'submerge']);
 const photoStyles = new Set(SCENE_PHOTO_STYLES);
@@ -21,11 +22,12 @@ export function sceneArtworkId(project, section) {
 function requestFor(project, section, reason, stylePrompt = project.creation?.stylePrompt ?? '') {
   const ids = new Set(section.wordIds ?? []);
   const lyrics = (project.words ?? []).filter(word => ids.has(word.id)).map(word => word.text).join(' ');
+  const provider = resolveImageProvider();
   return {
     sectionId: section.id, status: 'pending', kind: 'unique-scene-artwork',
-    provider: 'gpt-image', reason, lyrics, start: section.start, end: section.end,
+    provider, reason, lyrics, start: section.start, end: section.end,
     request: `${stylePrompt}\nCreate a distinct scene image for ${section.id}${lyrics ? `, illustrating: ${lyrics}` : ` in ${project.title ?? 'this film'}`}. Compose it behind readable lyric typography. Do not reuse or merely crop another scene's artwork.`,
-    agentAction: 'Use the built-in GPT Image tool to create original artwork for this scene, record its prompt/provenance, copy it into this portable project, assign direction.photo and assetIds for this section, then rerun the artwork audit. This is agent work, not a user handoff.',
+    agentAction: imageAction(provider),
   };
 }
 
