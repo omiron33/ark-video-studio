@@ -9,10 +9,15 @@
     "studio": "node engine/cli.mjs serve",
     "validate": "node engine/cli.mjs validate",
     "render": "node engine/cli.mjs render",
-    "test:engine": "node --test tests/engine*.test.mjs"
+    "test:engine": "node --test tests/engine*.test.mjs",
+    "photoreal": "node photoreal/render.mjs"
   },
   "dependencies": {
-    "@napi-rs/canvas": "1.0.9"
+    "@napi-rs/canvas": "1.0.9",
+    "playwright-core": "^1.55.0",
+    "three": "^0.180.0"
   },
-  "engines": { "node": ">=22" }
+  "engines": {
+    "node": ">=22"
+  }
 }

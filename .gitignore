@@ -15,3 +15,4 @@ projects/**/.revisions/
 projects/**/out/
 
 projects/**/.review-cache/
+._*

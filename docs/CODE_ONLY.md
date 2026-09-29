@@ -42,3 +42,10 @@ The minimum acceptable film is on par with [mexicat/pdoom-video](https://github.
 ## Drafting quickly
 
 Full quality is slow on the CPU renderer. For a draft, render one section at `--scale .5` after temporarily setting `render.motionBlur.samples` to 4. Restore `"auto"` before the final render; a review binds to the exact render and source revision.
+
+## Photoreal mode
+
+For films that need lit, photographic depth (terrain, water, cloud, timber, feathers), scenes can be
+written as GPU shaders and rendered by [photoreal mode](../photoreal/README.md) instead of the CPU
+canvas. It keeps the same rules: code-only, 1080p60, sub-frame motion blur, frames as a pure function
+of song time, and lyrics placed in the scene. Song scenes live in the song's own repository.
