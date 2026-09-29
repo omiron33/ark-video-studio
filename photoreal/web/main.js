@@ -2,6 +2,7 @@ import { Engine, W, H } from './engine.js';
 
 const params = new URLSearchParams(location.search);
 const sceneName = params.get('scene');
+const sceneParams = JSON.parse(atob(params.get('params') ?? 'e30='));
 
 const G = (window.G = { ready: false, error: null });
 window.addEventListener('error', (e) => { G.error = String(e.message); });
@@ -14,7 +15,8 @@ try {
   await document.fonts.load('500 64px "EB Garamond"');
   await document.fonts.load('italic 500 64px "EB Garamond"');
   await document.fonts.load('500 64px "Inter Tight"');
-  const scene = mod.default;
+  // a scene module exports a scene, or a factory that builds one from the film's parameters
+  const scene = typeof mod.default === 'function' ? await mod.default(sceneParams) : mod.default;
   const engine = new Engine(document.getElementById('c'));
   engine.load(scene, lyrics);
   const gl = engine.renderer.getContext();

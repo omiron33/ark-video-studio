@@ -53,7 +53,8 @@ page.on('pageerror', (e) => console.log('[pageerror]', e.message));
 const clip = opt('scene');
 if (!clip) { console.error('--scene is required'); process.exit(1); }
 page.on('requestfailed', () => {});
-await page.goto(`http://127.0.0.1:${port}/?scene=${clip}`);
+const sceneParams = Buffer.from(opt('params', '{}')).toString('base64');
+await page.goto(`http://127.0.0.1:${port}/?scene=${clip}&params=${encodeURIComponent(sceneParams)}`);
 await page.waitForFunction(() => window.G && (window.G.ready || window.G.error), null, { timeout: 120000 });
 const err = await page.evaluate(() => window.G.error);
 if (err) { console.error('PAGE ERROR', err); await browser.close(); process.exit(1); }
@@ -76,14 +77,14 @@ try {
     const from = +opt('from', info.from), to = +opt('to', info.to), fps = +opt('fps', 60);
     const out = path.resolve(opt('out', path.join(SONG, 'out', clip, `${clip}.mp4`)));
     fs.mkdirSync(path.dirname(out), { recursive: true });
-    const audio = path.join(SONG, 'media/song.wav');
+    const audio = argv.includes('--noaudio') ? '' : path.join(SONG, 'media/song.wav');
     const ff = spawn('ffmpeg', ['-y', '-loglevel', 'error',
       '-f', 'rawvideo', '-pix_fmt', 'rgba', '-s', `${W}x${H}`, '-r', String(fps), '-i', 'pipe:0',
-      ...(fs.existsSync(audio) ? ['-ss', String(from), '-t', String(to - from), '-i', audio] : []),
+      ...(audio && fs.existsSync(audio) ? ['-ss', String(from), '-t', String(to - from), '-i', audio] : []),
       '-vf', 'vflip,scale=out_color_matrix=bt709:out_range=tv,format=yuv420p',
       '-c:v', 'libx264', '-preset', opt('preset', 'slow'), '-crf', opt('crf', '16'),
       '-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709',
-      ...(fs.existsSync(audio) ? ['-c:a', 'aac', '-b:a', '320k', '-af', `afade=t=in:d=0.15,afade=t=out:st=${Math.max(0, to - from - 0.25)}:d=0.25`, '-shortest'] : []), '-movflags', '+faststart', out], { stdio: ['pipe', 'inherit', 'inherit'] });
+      ...(audio && fs.existsSync(audio) ? ['-c:a', 'aac', '-b:a', '320k', '-af', `afade=t=in:d=0.15,afade=t=out:st=${Math.max(0, to - from - 0.25)}:d=0.25`, '-shortest'] : []), '-movflags', '+faststart', out], { stdio: ['pipe', 'inherit', 'inherit'] });
     const n = Math.round((to - from) * fps);
     let k = 0; const t0 = Date.now();
     onFrame = (buf) => new Promise((res, rej) => {

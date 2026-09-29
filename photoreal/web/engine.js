@@ -130,7 +130,7 @@ export class Engine {
       uText: { value: this.textTex },
       uTxC: { value: new THREE.Vector3() }, uTxX: { value: new THREE.Vector3(1, 0, 0) }, uTxY: { value: new THREE.Vector3(0, 1, 0) }, uTxHS: { value: new THREE.Vector2(1, 0.25) },
     };
-    for (const [k, v] of Object.entries(clip.uniforms ?? {})) u[k] = { value: Array.isArray(v) ? new THREE.Vector3(...v) : v };
+    for (const [k, v] of Object.entries(clip.uniforms ?? {})) u[k] = { value: Array.isArray(v) && v.length === 3 ? new THREE.Vector3(...v) : v };   // 3-arrays are vectors; longer arrays stay float arrays
     this.scenePass = quad(COMMON + '\nin vec2 vUv;\nout vec4 fragOut;\n' + clip.frag + `
 void main() { vec3 c = shade(gl_FragCoord.xy); fragOut = vec4(max(c, 0.0), 1.0); }`, u);
   }
