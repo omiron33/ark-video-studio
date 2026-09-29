@@ -20,6 +20,7 @@ test('long-lived renderer imports use the code revision instead of stale module 
 test('the production renderer propagates revisions to the story style dependency',async t=>{
   const dir=await mkdtemp(path.join(os.tmpdir(),'ark-style-module-'));t.after(()=>rm(dir,{recursive:true,force:true}));
   await writeFile(path.join(dir,'visual.mjs'),await readFile(new URL('../engine/visual.mjs',import.meta.url),'utf8'));
+  await writeFile(path.join(dir,'field-guide-visual.mjs'),await readFile(new URL('../engine/field-guide-visual.mjs',import.meta.url),'utf8'));
   const dependency=path.join(dir,'story-visual.mjs'),entry=pathToFileURL(path.join(dir,'visual.mjs'));
   const source=version=>`export const STORY_CATALOG={story:'${version}'};export const installStoryStyles=()=>{};`;
   await writeFile(dependency,source('first'));assert.equal((await loadRenderer('first',entry)).STYLE_CATALOG.story,'first');

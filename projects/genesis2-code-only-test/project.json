@@ -1,0 +1,414 @@
+{
+ "version": 1,
+ "id": "genesis2-code-only-test",
+ "title": "Genesis 2 \u2014 The Garden",
+ "width": 1920,
+ "height": 1080,
+ "fps": 60,
+ "duration": 10,
+ "audio": {
+  "src": "intake/genesis2-the-garden.wav",
+  "offset": 198.6
+ },
+ "assets": {
+  "archivo": {
+   "type": "font",
+   "src": "assets/ArchivoBlack-Regular.ttf",
+   "family": "Archivo Black"
+  },
+  "cormorant": {
+   "type": "font",
+   "src": "assets/CormorantGaramond.ttf",
+   "family": "Cormorant Garamond"
+  },
+  "mono": {
+   "type": "font",
+   "src": "assets/JetBrainsMono-Medium.ttf",
+   "family": "JetBrains Mono"
+  }
+ },
+ "words": [
+  {
+   "id": "w_71a6e88099eabd68",
+   "text": "God",
+   "start": 0.9339,
+   "end": 1.3139,
+   "phraseId": "phrase-0001",
+   "confidence": "machine_estimate",
+   "provenance": {
+    "method": "local-torchaudio-ctc",
+    "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "tokenProbability": 0.49816368945263706,
+    "timingVerified": false,
+    "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+   }
+  },
+  {
+   "id": "w_0311950968290a22",
+   "text": "formed",
+   "start": 1.4139,
+   "end": 1.7539,
+   "phraseId": "phrase-0001",
+   "confidence": "machine_estimate",
+   "provenance": {
+    "method": "local-torchaudio-ctc",
+    "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "tokenProbability": 0.07848970695231942,
+    "timingVerified": false,
+    "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+   }
+  },
+  {
+   "id": "w_4b311896df393347",
+   "text": "the",
+   "start": 1.7939,
+   "end": 1.8739,
+   "phraseId": "phrase-0001",
+   "confidence": "machine_estimate",
+   "provenance": {
+    "method": "local-torchaudio-ctc",
+    "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "tokenProbability": 0.8626469037901584,
+    "timingVerified": false,
+    "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+   }
+  },
+  {
+   "id": "w_04d68b3008646885",
+   "text": "beasts",
+   "start": 1.9339,
+   "end": 2.294,
+   "phraseId": "phrase-0001",
+   "confidence": "machine_estimate",
+   "provenance": {
+    "method": "local-torchaudio-ctc",
+    "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "tokenProbability": 0.4966735466123249,
+    "timingVerified": false,
+    "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+   }
+  },
+  {
+   "id": "w_ef798b590d3ecf14",
+   "text": "of",
+   "start": 2.554,
+   "end": 2.614,
+   "phraseId": "phrase-0001",
+   "confidence": "machine_estimate",
+   "provenance": {
+    "method": "local-torchaudio-ctc",
+    "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "tokenProbability": 0.08075419387166995,
+    "timingVerified": false,
+    "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+   }
+  },
+  {
+   "id": "w_e9da775b24017db6",
+   "text": "the",
+   "start": 2.714,
+   "end": 2.774,
+   "phraseId": "phrase-0001",
+   "confidence": "machine_estimate",
+   "provenance": {
+    "method": "local-torchaudio-ctc",
+    "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "tokenProbability": 0.8200840836231307,
+    "timingVerified": false,
+    "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+   }
+  },
+  {
+   "id": "w_bb11ce0dfb597933",
+   "text": "field",
+   "start": 2.894,
+   "end": 3.374,
+   "phraseId": "phrase-0001",
+   "confidence": "machine_estimate",
+   "provenance": {
+    "method": "local-torchaudio-ctc",
+    "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "tokenProbability": 0.33836701261696867,
+    "timingVerified": false,
+    "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+   }
+  },
+  {
+   "id": "w_d9ddc4b07eae3ac2",
+   "text": "and",
+   "start": 3.4141,
+   "end": 3.5141,
+   "phraseId": "phrase-0001",
+   "confidence": "machine_estimate",
+   "provenance": {
+    "method": "local-torchaudio-ctc",
+    "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "tokenProbability": 0.03610722841179943,
+    "timingVerified": false,
+    "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+   }
+  },
+  {
+   "id": "w_30a63fb8292695a2",
+   "text": "birds",
+   "start": 3.5741,
+   "end": 4.0541,
+   "phraseId": "phrase-0001",
+   "confidence": "machine_estimate",
+   "provenance": {
+    "method": "local-torchaudio-ctc",
+    "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "tokenProbability": 0.13579335857729197,
+    "timingVerified": false,
+    "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+   }
+  },
+  {
+   "id": "w_4eff426445c4c242",
+   "text": "of",
+   "start": 4.2341,
+   "end": 4.2741,
+   "phraseId": "phrase-0001",
+   "confidence": "machine_estimate",
+   "provenance": {
+    "method": "local-torchaudio-ctc",
+    "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "tokenProbability": 0.17355142582768082,
+    "timingVerified": false,
+    "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+   }
+  },
+  {
+   "id": "w_63f38022f2506387",
+   "text": "the",
+   "start": 4.3341,
+   "end": 4.3941,
+   "phraseId": "phrase-0001",
+   "confidence": "machine_estimate",
+   "provenance": {
+    "method": "local-torchaudio-ctc",
+    "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "tokenProbability": 0.6018409121825001,
+    "timingVerified": false,
+    "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+   }
+  },
+  {
+   "id": "w_9f0751ca382e46f6",
+   "text": "sky",
+   "start": 4.4941,
+   "end": 5.1142,
+   "phraseId": "phrase-0001",
+   "confidence": "machine_estimate",
+   "provenance": {
+    "method": "local-torchaudio-ctc",
+    "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "tokenProbability": 0.007355744364067818,
+    "timingVerified": false,
+    "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+   }
+  },
+  {
+   "id": "w_7ea11bda58401329",
+   "text": "from",
+   "start": 5.1742,
+   "end": 5.3142,
+   "phraseId": "phrase-0001",
+   "confidence": "machine_estimate",
+   "provenance": {
+    "method": "local-torchaudio-ctc",
+    "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "tokenProbability": 0.677296615720586,
+    "timingVerified": false,
+    "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+   }
+  },
+  {
+   "id": "w_32707a190979f095",
+   "text": "the",
+   "start": 5.3742,
+   "end": 5.4942,
+   "phraseId": "phrase-0001",
+   "confidence": "machine_estimate",
+   "provenance": {
+    "method": "local-torchaudio-ctc",
+    "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "tokenProbability": 0.7727619395213896,
+    "timingVerified": false,
+    "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+   }
+  },
+  {
+   "id": "w_52005850e91d9feb",
+   "text": "earth.",
+   "start": 5.7142,
+   "end": 6.0542,
+   "phraseId": "phrase-0001",
+   "confidence": "machine_estimate",
+   "provenance": {
+    "method": "local-torchaudio-ctc",
+    "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "tokenProbability": 0.3823528420285071,
+    "timingVerified": false,
+    "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+   }
+  },
+  {
+   "id": "w_f04bd533553b9fa9",
+   "text": "He",
+   "start": 6.3743,
+   "end": 6.4343,
+   "phraseId": "phrase-0001",
+   "confidence": "machine_estimate",
+   "provenance": {
+    "method": "local-torchaudio-ctc",
+    "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "tokenProbability": 0.6648964762025527,
+    "timingVerified": false,
+    "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+   }
+  },
+  {
+   "id": "w_d37b9973bec26b69",
+   "text": "brought",
+   "start": 6.5143,
+   "end": 6.7543,
+   "phraseId": "phrase-0001",
+   "confidence": "machine_estimate",
+   "provenance": {
+    "method": "local-torchaudio-ctc",
+    "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "tokenProbability": 0.04299822622579629,
+    "timingVerified": false,
+    "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+   }
+  },
+  {
+   "id": "w_321257ec4323a53b",
+   "text": "them",
+   "start": 6.8343,
+   "end": 7.0143,
+   "phraseId": "phrase-0001",
+   "confidence": "machine_estimate",
+   "provenance": {
+    "method": "local-torchaudio-ctc",
+    "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "tokenProbability": 0.25567674496064796,
+    "timingVerified": false,
+    "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+   }
+  },
+  {
+   "id": "w_40d3e4bbfdb8790e",
+   "text": "all",
+   "start": 7.6143,
+   "end": 7.7344,
+   "phraseId": "phrase-0001",
+   "confidence": "machine_estimate",
+   "provenance": {
+    "method": "local-torchaudio-ctc",
+    "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "tokenProbability": 0.07114729969608784,
+    "timingVerified": false,
+    "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+   }
+  },
+  {
+   "id": "w_72f97ffd866f4dfa",
+   "text": "to",
+   "start": 7.8344,
+   "end": 7.9944,
+   "phraseId": "phrase-0001",
+   "confidence": "machine_estimate",
+   "provenance": {
+    "method": "local-torchaudio-ctc",
+    "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "tokenProbability": 0.2428349111377943,
+    "timingVerified": false,
+    "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+   }
+  },
+  {
+   "id": "w_20997f9f1735bd59",
+   "text": "Adam;",
+   "start": 8.3944,
+   "end": 8.8344,
+   "phraseId": "phrase-0001",
+   "confidence": "machine_estimate",
+   "provenance": {
+    "method": "local-torchaudio-ctc",
+    "model": "wav2vec2_fairseq_large_lv60k_asr_ls960.pth",
+    "tokenProbability": 0.14194003045025816,
+    "timingVerified": false,
+    "note": "Token probability is not timestamp accuracy; review sung-word boundaries."
+   }
+  }
+ ],
+ "beats": [],
+ "palette": {
+  "ink": "#141416",
+  "paper": "#ECE7DB",
+  "accent": "#C2522B"
+ },
+ "sections": [
+  {
+   "id": "beasts-birds-adam",
+   "start": 0,
+   "end": 10,
+   "style": "field-guide",
+   "wordIds": [
+    "w_71a6e88099eabd68",
+    "w_0311950968290a22",
+    "w_4b311896df393347",
+    "w_04d68b3008646885",
+    "w_ef798b590d3ecf14",
+    "w_e9da775b24017db6",
+    "w_bb11ce0dfb597933",
+    "w_d9ddc4b07eae3ac2",
+    "w_30a63fb8292695a2",
+    "w_4eff426445c4c242",
+    "w_63f38022f2506387",
+    "w_9f0751ca382e46f6",
+    "w_7ea11bda58401329",
+    "w_32707a190979f095",
+    "w_52005850e91d9feb",
+    "w_f04bd533553b9fa9",
+    "w_d37b9973bec26b69",
+    "w_321257ec4323a53b",
+    "w_40d3e4bbfdb8790e",
+    "w_72f97ffd866f4dfa",
+    "w_20997f9f1735bd59"
+   ],
+   "assetIds": [
+    "archivo",
+    "cormorant",
+    "mono"
+   ],
+   "direction": {},
+   "seed": 2
+  }
+ ],
+ "creation": {
+  "mode": "code-only",
+  "stylePrompt": "Modern field guide; creation of the animals from the earth; not preachy"
+ },
+ "render": {
+  "motionBlur": {
+   "samples": "auto",
+   "shutter": 0.2,
+   "tolerance": 3
+  },
+  "crf": 16,
+  "preset": "slow"
+ },
+ "source": {
+  "suno": "https://suno.com/s/VCB6c2tqTTwI0juR",
+  "sunoSongId": "185c9425-6e80-42ae-8904-fc00cda3e189",
+  "audioSha256": "a9ce7b64af9abe9d0f6124eaf45a46158e87d029a2591162b884c5290c198309",
+  "interval": [
+   198.6,
+   208.6
+  ],
+  "themeGate": "Waived for this 10-second engine test: Shane asked directly for a test video (2026-09-29)."
+ }
+}
