@@ -57,7 +57,7 @@ export class Worker {
     }
     // a token unique to this run, so stopping a job there can never touch another run's worker
     const token = `${job}-${this.tag}`;
-    const remoteOut = `${m.root}/out/${token}.mp4`;
+    const remoteOut = `${m.root}/out/${token}${path.extname(out) || '.mp4'}`;
     m.ps(`New-Item -ItemType Directory -Force -Path '${m.root}/out' | Out-Null`);
     const c = m.command(this.dirs, token, [...renderArgs, '--out', remoteOut]);
     // a remote Chrome sometimes loses its GPU context in the first seconds (seen on OmiPC over SSH);
@@ -65,10 +65,17 @@ export class Worker {
     const r = await runWithWatchdog({ ...c, heartbeat: hb, stallSec, retries: retries + 3, onFrame, log, stdoutHeartbeat: true, onKill: () => m.kill(token), failOn: /CONTEXT_LOST|context lost/i });
     if (!r.ok) return r;
     try {
-      const tmp = `${out}.part.mp4`;
+      const tmp = `${out}.part${path.extname(out) || '.mp4'}`;
       m.fetch(remoteOut, tmp);
       const n = +spawnSync('ffprobe', ['-v', 'error', '-count_packets', '-select_streams', 'v:0', '-show_entries', 'stream=nb_read_packets', '-of', 'csv=p=0', tmp], { encoding: 'utf8' }).stdout.trim();
       if (frames && n !== frames) throw Error(`fetched ${n} frames, expected ${frames}`);
+      // a lost GPU context that slipped through draws flat black frames: look at one frame a second
+      // (not for a lyric layer, which is mostly empty by design)
+      if (!out.endsWith('.mkv')) {
+      const st = spawnSync('ffmpeg', ['-hide_banner', '-i', tmp, '-vf', 'fps=1,scale=192:-2,signalstats,metadata=print:key=lavfi.signalstats.YMAX:file=-', '-f', 'null', '-'], { encoding: 'utf8' });
+      const ymax = [...(st.stdout ?? '').matchAll(/YMAX=(\d+)/g)].map((x) => +x[1]);
+      if (ymax.length && ymax.filter((y) => y < 24).length > ymax.length / 2) throw Error('most of its frames came back black');
+      }
       fs.renameSync(tmp, out);
       return r;
     } catch (e) { return { ok: false, attempts: r.attempts, reason: `render finished on ${m.name} but ${e.message}` }; }

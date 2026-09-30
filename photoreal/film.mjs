@@ -155,9 +155,9 @@ for (const s of segs) {
   }
   if (s.layered && !cached(s.layerOut, s.layerKey)) {
     any = true;
-    // lyric layers are light and stay on this Mac
-    tasks.push({ id: s.id, job: `${s.id}-lyric`, part: 'layer', scene: s.scene, frames: s.frames, out: s.layerOut, key: s.layerKey, light: true, localOnly: true,
-      args: [RENDER, 'layer', ...common, '--samples', draft ? '2' : '8', '--out', s.layerOut] });
+    // lyric layers are light; they go wherever they finish soonest like any other job
+    tasks.push({ id: s.id, job: `${s.id}-lyric`, part: 'layer', scene: s.scene, frames: s.frames, out: s.layerOut, key: s.layerKey, light: true,
+      renderArgs: ['layer', '--scene', s.scene, '--params64', Buffer.from(paramsOf(s)).toString('base64'), '--from', String(s.f0 / fps), '--to', String(s.f1 / fps), '--samples', draft ? '2' : '8'] });
   }
   if (!any && !(s.layered && !cached(s.out, s.key))) { console.log(`segment ${s.id} cached`); cachedCount++; }
 }
@@ -192,7 +192,6 @@ for (const m of loadMachines({ only: flag('local') ? ['mac'] : opt('machines')?.
   workers.push(w);
 }
 if (!workers.length) { await restoreAll(); blocked('No machine could be used for rendering.'); }
-if (!workers.some((w) => !w.machine.remote) && tasks.some((t) => t.localOnly)) { await restoreAll(); blocked('Lyric layers render on this Mac, which was left out (--machines).'); }
 
 // One still per scene on this Mac and on the other machine, compared (PSNR). A scene the other
 // machine draws differently, or loses its GPU context on (black frames), stays off that machine.
@@ -325,11 +324,9 @@ async function runTask(slot, t) {
     progress.frame(t.job, b.frame);
     if (dash?.id && Date.now() - lastDash > 30000) { lastDash = Date.now(); m.announce('progress', { id: dash.id, percent: +(100 * b.frame / t.frames).toFixed(1) }); }
   };
-  const r = t.light
-    ? await runWithWatchdog({ cmd: 'node', args: [...t.args, '--heartbeat', path.join(workDir, `hb-${t.job}.json`)], heartbeat: path.join(workDir, `hb-${t.job}.json`), stallSec, retries, onFrame, log })
-    : await slot.worker.run({ job: t.job, renderArgs: t.renderArgs, out: t.out, frames: t.frames, stallSec, retries, onFrame, log });
+  const r = await slot.worker.run({ job: t.job, renderArgs: t.renderArgs, out: t.out, frames: t.frames, stallSec, retries, onFrame, log });
   if (dash?.id) m.announce('end', { id: dash.id, status: r.ok ? 'done' : 'failed', note: r.ok ? '' : r.reason });
-  if (r.ok) { fs.writeFileSync(t.out + '.key', t.key); progress.finish(t.job, true); return; }
+  if (r.ok) { fs.writeFileSync(t.out + '.key', t.key); t.renderedOn = m.name; progress.finish(t.job, true); return; }
   // a scene that fails on another machine comes back to this Mac instead of failing the film
   if (m.remote && !t.movedHome) {
     progress.log(t.job, `failed on ${m.name} (${r.reason}); moving it to this Mac`);
@@ -341,7 +338,7 @@ async function runTask(slot, t) {
   progress.finish(t.job, false, r.reason);
 }
 
-await Promise.all(slots.map(async (slot) => {
+const slotLoop = async (slot) => {
   for (;;) {
     if (slot.machine.dead) return;
     const allowed = pending.filter((x) => !(x.localOnly && slot.machine.remote));
@@ -359,7 +356,67 @@ await Promise.all(slots.map(async (slot) => {
     inflight++;
     try { await runTask(slot, t); } finally { inflight--; slot.freeAt = now(); wake(); }
   }
-}));
+};
+const loops = slots.map(slotLoop);
+
+// --add-local-when-free: a render started on other machines while this Mac's GPU is busy (another
+// film rendering) brings this Mac in as soon as that finishes. On joining it measures itself, then
+// checks the other machines' pictures against its own; a scene that doesn't match is rendered again
+// here, even if it was already done.
+if (flag('add-local-when-free') && !workers.some((w) => !w.machine.remote) && plates.length) loops.push((async () => {
+  // another film or render on this Mac: a node (or caffeinate) process running film.mjs or
+  // render.mjs that isn't this run or one of its ancestors
+  const ancestors = new Set([process.pid]);
+  for (let p = process.ppid; p > 1 && !ancestors.has(p);) { ancestors.add(p); p = +spawnSync('ps', ['-o', 'ppid=', '-p', String(p)], { encoding: 'utf8' }).stdout.trim() || 1; }
+  const busy = () => (spawnSync('ps', ['-axo', 'pid=,command='], { encoding: 'utf8' }).stdout ?? '').split('\n')
+    .map((l) => l.trim().match(/^(\d+)\s+(\S*node|caffeinate)\b.*photoreal\/(film|render)\.mjs/)).filter(Boolean).some((m) => !ancestors.has(+m[1]));
+  for (;;) {
+    for (let i = 0; i < 12 && (pending.length || inflight); i++) await new Promise((r) => setTimeout(r, 5000));
+    if (!pending.some((t) => !t.light) && !inflight) return;
+    if (busy()) continue;
+    const [mac] = loadMachines({ only: ['mac'] });
+    const w = new Worker({ machine: mac, engineRoot: ENGINE, song: SONG, render: RENDER, workDir });
+    mac.est = new Map(); mac.msPerFrame = (t) => mac.est.get(t.id) ?? 2000;
+    const todo = plates.filter((t) => pending.includes(t));
+    const bySeg = (t) => segs.find((x) => x.id === t.id);
+    for (const p of probeOn(w, todo.map(bySeg))) mac.est.set(p.id, p.fixedMs + p.perSampleMs * +bySeg(p).samples);
+    const slow = [...todo].sort((x, y) => (mac.est.get(y.id) ?? 0) - (mac.est.get(x.id) ?? 0))[0];
+    if (slow) {
+      const sg = bySeg(slow), at = Math.max(sg.from, (sg.from + sg.to) / 2 - 0.5);
+      const r = await w.run({ job: 'join-test', renderArgs: plateArgs({ ...sg, f0: Math.round(at * fps), f1: Math.round(at * fps) + fps }, fps, { draft: true, params: paramsOf(sg) }), out: path.join(workDir, 'join-test.mp4'), frames: fps, stallSec, retries: 0, log: (x) => console.log(`mac joining: ${x}`) });
+      const ms = readJson(path.join(workDir, 'hb-join-test.json'))?.msPerFrame;
+      if (r.ok && ms) { const over = Math.max(0, ms - (mac.est.get(slow.id) ?? 0)); for (const [id, v] of mac.est) mac.est.set(id, v + over); }
+    }
+    // two workers: measured tonight on this Mac at 1.74x the throughput of one
+    mac.parallel = +opt('jobs', 0) || 2; mac.slotFactor = mac.parallel === 2 ? 2 / 1.74 : 1;
+    // picture check of the other machines against this Mac, now that it can draw references
+    for (const rw of workers.filter((x) => x.machine.remote && !x.machine.dead)) {
+      const check = await pictureCheck(rw, plates.map(bySeg));
+      testReport.machines[rw.machine.name] = { ...testReport.machines[rw.machine.name], pictureCheck: check };
+      for (const t of plates) {
+        if (check[t.id]?.ok) continue;
+        (t.avoid ??= []).push(rw.machine.name);
+        if (t.renderedOn === rw.machine.name) {
+          fs.rmSync(t.out + '.key', { force: true });
+          t.renderedOn = null; pending.push(t); progress.requeue(t.job);
+          notes.push(`Scene ${t.id} came out differently on ${rw.machine.name} (${check[t.id].why}) and was rendered again on this Mac.`);
+        }
+      }
+    }
+    fs.writeFileSync(path.join(OUT, 'test-render.json'), JSON.stringify(testReport, null, 1) + '\n');
+    workers.push(w);
+    const added = Array.from({ length: mac.parallel }, (_, i) => ({ worker: w, machine: mac, name: `mac${mac.parallel > 1 ? '#' + (i + 1) : ''}`, freeAt: now() }));
+    slots.push(...added);
+    if (progress.machines) progress.machines.mac = { workers: mac.parallel, gpu: 'this Mac' };
+    console.log(`this Mac joined the render with ${mac.parallel} worker${mac.parallel > 1 ? 's' : ''}`);
+    notes.push(`This Mac joined the render when its GPU came free.`);
+    loops.push(...added.map(slotLoop));
+    wake();
+    return;
+  }
+})());
+// new workers can join while this runs: wait until no more have
+for (let n = -1; n !== loops.length;) { n = loops.length; await Promise.all(loops); }
 for (const t of pending) { failed.add(t.id); progress.finish(t.job, false, 'no machine left to render it'); }
 
 // the other machines' part is done: bring back anything stopped for it before finishing up here
