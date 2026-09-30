@@ -47,7 +47,7 @@ with `anchor()` from `/timing.js`.
 
 ## Making a film
 
-Every step is a command any agent (or a person) can run; the critic can be Claude, Codex or any
+Every step is a command any agent (or a person) can run; the critic can be Claude, Codex (GPT-6 Sol by default, reasoning high for a storyboard or stills and xhigh for a film) or any
 command in `ARK_CRITIC_CMD`.
 
 1. **Storyboard, before any animation.** `node photoreal/storyboard.mjs draft --song S` writes

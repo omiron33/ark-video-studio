@@ -2,7 +2,7 @@
 //   node photoreal/critic.mjs storyboard --song ../genesis9 --agent claude
 //   node photoreal/critic.mjs stills     --song ../genesis9 --agent codex
 //   node photoreal/critic.mjs film       --song ../genesis9 [--video out/film.mp4] --agent claude
-//   options: --model <name>   --pack-only (build the evidence folder and prompt, run nothing)
+//   options: --model <name>  --effort <level> (Codex; default GPT-6 Sol at high, xhigh for a film)  --pack-only (build the evidence folder and prompt, run nothing)
 //            --answer <file>  (record a critique written elsewhere, e.g. by a person or another tool)
 // The critic runs as a brand-new process whose working folder is the evidence folder alone, so it
 // cannot see the scene code or anything said while building. ARK_CRITIC_CMD overrides the agent:
@@ -90,6 +90,28 @@ fs.writeFileSync(path.join(pack, 'PROMPT.md'), prompt + '\n');
 console.log(`evidence and prompt in ${pack}`);
 if (argv.includes('--pack-only')) process.exit(0);
 
+// The model catalog in ~/.codex/config.toml lists reasoning levels ("max", "ultra") this Codex CLI
+// cannot parse, which stops it before it starts. Hand this run a copy without them; the user's own
+// files are left alone.
+function codexCatalog() {
+  try {
+    const home = process.env.CODEX_HOME ?? path.join(process.env.HOME, '.codex');
+    const m = fs.readFileSync(path.join(home, 'config.toml'), 'utf8').match(/^model_catalog_json\s*=\s*"([^"]+)"/m);
+    if (!m || !fs.existsSync(m[1])) return [];
+    const cat = JSON.parse(fs.readFileSync(m[1], 'utf8'));
+    const ok = new Set(['none', 'minimal', 'low', 'medium', 'high', 'xhigh']);
+    let changed = false;
+    for (const x of Array.isArray(cat) ? cat : cat.models ?? []) {
+      if (Array.isArray(x.supported_reasoning_levels)) { const n = x.supported_reasoning_levels.filter((l) => ok.has(l.effort)); changed ||= n.length !== x.supported_reasoning_levels.length; x.supported_reasoning_levels = n; }
+      if (x.default_reasoning_level && !ok.has(x.default_reasoning_level)) { x.default_reasoning_level = 'high'; changed = true; }
+    }
+    if (!changed) return [];
+    const f = path.join(REVIEW, 'critic', '.codex-models.json');
+    fs.writeFileSync(f, JSON.stringify(cat));
+    return ['-c', `model_catalog_json=${f}`];
+  } catch { return []; }
+}
+
 // ---------- run the critic ----------
 let answer, agent;
 if (opt('answer')) { answer = fs.readFileSync(path.resolve(opt('answer')), 'utf8'); agent = opt('agent', 'external'); }
@@ -102,7 +124,11 @@ else {
     { cwd: pack, encoding: 'utf8', maxBuffer: 64 << 20, timeout: 45 * 60000 });
   else if (agent === 'codex') {
     const last = path.join(pack, '.answer.txt');
-    r = spawnSync('codex', ['exec', '--skip-git-repo-check', '--sandbox', 'read-only', '-C', pack, '-o', last, ...(opt('model') ? ['-m', opt('model')] : []), ...images.slice(0, 40).flatMap((f) => ['-i', f]), task],
+    // Shane's choice for a Codex critic: GPT-6 Sol, reasoning set to the job (a storyboard or five
+    // stills: high; a whole film with every cut: xhigh). --model / --effort or ARK_CODEX_MODEL override.
+    const model = opt('model', process.env.ARK_CODEX_MODEL ?? 'gpt-6-sol');
+    const effort = opt('effort', { storyboard: 'high', stills: 'high', film: 'xhigh' }[kind]);
+    r = spawnSync('codex', ['exec', '--skip-git-repo-check', '--sandbox', 'read-only', '-C', pack, '-o', last, '-m', model, '-c', `model_reasoning_effort=${effort}`, ...codexCatalog(), task, ...images.slice(0, 40).flatMap((f) => ['-i', f])],   // -i takes several files, so the prompt goes first
       { cwd: pack, encoding: 'utf8', maxBuffer: 64 << 20, timeout: 45 * 60000 });
     if (fs.existsSync(last)) r.stdout = fs.readFileSync(last, 'utf8');
   } else { console.error(`unknown agent ${agent}; use claude, codex or ARK_CRITIC_CMD`); process.exit(1); }
