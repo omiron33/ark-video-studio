@@ -61,6 +61,54 @@ export class HelperMachine {
     return true;
   }
 
+  // Services that hold the GPU and may be stopped for a render (config "services": [{ "name":
+  // "ComfyUI", "match": "main.py", "check": "http://<host>:8188/system_stats", "listen": "0.0.0.0" }]).
+  // The exact command line each was running with is saved on the machine before it is stopped, so
+  // it comes back the way it was launched. Nothing is stopped while the machine's dashboard shows a
+  // job of its own running.
+  async stopServices(log = () => {}) {
+    this.stopped = [];
+    for (const svc of this.services ?? []) {
+      if (this.dashboard) {
+        try {
+          const d = await (await fetch(`${this.dashboard}/api/renders`, { signal: AbortSignal.timeout(5000) })).json();
+          const busy = (d.active ?? []).filter((j) => String(j.tool ?? '').toLowerCase().includes(svc.name.toLowerCase()));
+          if (busy.length) { log(`${svc.name} is busy (${busy.map((j) => j.description).join('; ')}); leaving it running`); continue; }
+        } catch {}
+      }
+      const saved = `${this.root}/services/${svc.name}.json`;
+      const r = this.ps(`New-Item -ItemType Directory -Force -Path '${this.root}/services' | Out-Null; $p = Get-CimInstance Win32_Process | Where-Object { $_.CommandLine -like '*${svc.match}*' -and $_.Name -like 'python*' }; if (-not $p) { 'NONE' } else { $p | Select-Object -First 1 | ForEach-Object { @{ commandLine = $_.CommandLine; exe = $_.ExecutablePath } } | ConvertTo-Json | Set-Content -Encoding UTF8 '${saved}'; $p | ForEach-Object { Stop-Process -Id $_.ProcessId -Force }; 'STOPPED' }`);
+      if (r.out.includes('STOPPED')) { this.stopped.push(svc); log(`stopped ${svc.name} to free graphics memory`); }
+      else if (r.out.includes('NONE')) log(`${svc.name} was not running`);
+      else log(`could not stop ${svc.name}: ${(r.err || r.out).trim().split('\n').pop()}`);
+    }
+    if (this.stopped.length) await new Promise((res) => setTimeout(res, 5000));
+  }
+
+  // Bring stopped services back with their saved command line (listening on the network), through a
+  // one-off scheduled task so they outlive this connection, and wait until they answer.
+  async restoreServices(log = () => {}) {
+    const results = [];
+    for (const svc of this.stopped ?? []) {
+      const saved = `${this.root}/services/${svc.name}.json`;
+      const task = `ArkRestart${svc.name.replace(/\W/g, '')}`;
+      const listen = svc.listen ?? '0.0.0.0';
+      const r = this.ps(`$s = Get-Content -Raw '${saved}' | ConvertFrom-Json; $cmd = $s.commandLine; if ($cmd -notmatch '--listen') { $cmd = "$cmd --listen ${listen}" }; $dir = Split-Path -Parent (($cmd -split '\s+' | Where-Object { $_ -like '*${svc.match}*' } | Select-Object -First 1).Trim('"')); if (-not $dir -or -not (Test-Path $dir)) { $dir = Split-Path -Parent $s.exe }; $a = New-ScheduledTaskAction -Execute 'cmd.exe' -Argument ("/c cd /d ""$dir"" && " + $cmd) -WorkingDirectory $dir; Register-ScheduledTask -TaskName '${task}' -Action $a -Force | Out-Null; Start-ScheduledTask -TaskName '${task}'; 'STARTED'`);
+      let up = false;
+      if (r.out.includes('STARTED') && svc.check) {
+        for (let i = 0; i < 60 && !up; i++) {
+          try { up = (await fetch(svc.check, { signal: AbortSignal.timeout(4000) })).ok; } catch {}
+          if (!up) await new Promise((res) => setTimeout(res, 5000));
+        }
+      }
+      const ok = r.out.includes('STARTED') && (up || !svc.check);
+      log(ok ? `${svc.name} is back${svc.check ? ' and answering' : ''}` : `${svc.name} did not come back: ${(r.err || r.out).trim().split('\n').pop() || 'no answer at ' + svc.check}`);
+      results.push({ name: svc.name, ok });
+    }
+    this.stopped = [];
+    return results;
+  }
+
   // Send a bundle (name, base folder, files) unless an identical one is already there; returns its
   // folder on the machine.
   sync(name, base, files) {
@@ -94,7 +142,11 @@ export class HelperMachine {
       ...filesUnder(path.join(engineRoot, 'node_modules', 'playwright-core')),
       path.join(engineRoot, 'node_modules', 'three', 'package.json'), ...filesUnder(path.join(engineRoot, 'node_modules', 'three', 'build')),
     ].filter((f) => !skip(f) && fs.existsSync(f));
-    const songFiles = [...['scenes', 'lib', 'data'].flatMap((d) => filesUnder(path.join(song, d))), path.join(song, 'film.json')].filter((f) => !skip(f) && fs.existsSync(f));
+    // the whole song folder (scenes may load fonts, textures or data from anywhere in it), except
+    // renders, the audio and version control
+    const leave = new Set(['out', 'media', '.git', 'node_modules']);
+    const songFiles = fs.readdirSync(song, { withFileTypes: true }).filter((e) => !leave.has(e.name) && !e.name.startsWith('.'))
+      .flatMap((e) => (e.isDirectory() ? filesUnder(path.join(song, e.name)) : [path.join(song, e.name)])).filter((f) => !skip(f));
     return { engine: this.sync('engine', engineRoot, engineFiles), song: this.sync(`song-${path.basename(song)}`, song, songFiles) };
   }
 

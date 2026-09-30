@@ -23,7 +23,7 @@ function killTree(child) {
 // With `stdoutHeartbeat` the worker prints its heartbeat as "HB {json}" lines (a worker on another
 // machine, reached over SSH); they are written to `heartbeat` here. `onKill` also stops what the
 // worker started elsewhere.
-export function runOnce({ cmd, args, heartbeat, stallSec = 180, firstFrameSec = 600, pollMs = 1000, onFrame, log = () => {}, env, stdoutHeartbeat = false, onKill }) {
+export function runOnce({ cmd, args, heartbeat, stallSec = 180, firstFrameSec = 600, pollMs = 1000, onFrame, log = () => {}, env, stdoutHeartbeat = false, onKill, failOn }) {
   return new Promise((resolve) => {
     try { fs.rmSync(heartbeat, { force: true }); } catch {}
     const started = Date.now();
@@ -32,7 +32,12 @@ export function runOnce({ cmd, args, heartbeat, stallSec = 180, firstFrameSec = 
       let buf = '';
       child.stdout.on('data', (d) => {
         buf += d; const lines = buf.split(/\r?\n/); buf = lines.pop();
-        for (const l of lines) { if (l.startsWith('HB ')) { try { fs.writeFileSync(heartbeat, l.slice(3)); } catch {} } else if (l.trim()) console.log(l); }
+        for (const l of lines) {
+          if (l.startsWith('HB ')) { try { fs.writeFileSync(heartbeat, l.slice(3)); } catch {} continue; }
+          if (l.trim()) console.log(l);
+          // output that means the frames are no good (e.g. a lost GPU context renders black): stop now
+          if (failOn?.test(l) && !reason) { reason = `bad output: ${l.trim().slice(0, 200)}`; log(reason); killTree(child); Promise.resolve(onKill?.()).catch(() => {}); }
+        }
       });
     }
     let lastFrame = -1, lastAt = started, reason = null, done = false;

@@ -19,7 +19,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
-import { spawnSync } from 'node:child_process';
+import { spawn, spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { makeKeys } from './lib/keys.mjs';
 import { runWithWatchdog } from './lib/watchdog.mjs';
@@ -167,9 +167,22 @@ const plates = tasks.filter((t) => t.part === 'plate');
 // Every reachable machine with a GPU renders; --local keeps it to this Mac, --machines a,b picks.
 const ENGINE = path.join(HERE, '..');
 const workers = [];
+const stoppedOn = [];
+// whatever happens, stopped services come back before this process ends
+async function restoreAll() {
+  for (const m of stoppedOn.splice(0)) for (const r of await m.restoreServices((x) => console.log(`${m.name}: ${x}`))) notes.push(r.ok ? `${r.name} on ${m.name} was stopped for the render and is running again.` : `${r.name} on ${m.name} was stopped for the render and did NOT come back; start it again by hand.`);
+}
+for (const sig of ['SIGINT', 'SIGTERM', 'SIGHUP']) process.once(sig, async () => { await restoreAll(); process.exit(130); });
 for (const m of loadMachines({ only: flag('local') ? ['mac'] : opt('machines')?.split(',') })) {
   if (m.remote && !plates.length) continue;
-  if (!(await m.available())) { console.log(`${m.name}: not used, ${m.why}`); if (m.remote) notes.push(`${m.name} was not used: ${m.why}. The film rendered on this Mac alone.`); continue; }
+  let ok = await m.available();
+  // services that may give up the GPU for a render (ComfyUI on OmiPC) are stopped first, so the
+  // worker count is sized to the memory that frees, and restored when the film is done
+  if (ok && m.remote && m.services?.length && !draft) {
+    await m.stopServices((x) => { console.log(`${m.name}: ${x}`); });
+    if (m.stopped.length) { stoppedOn.push(m); ok = await m.available(); }
+  }
+  if (!ok) { console.log(`${m.name}: not used, ${m.why}`); if (m.remote) notes.push(`${m.name} was not used: ${m.why}. The film rendered on this Mac alone.`); continue; }
   const w = new Worker({ machine: m, engineRoot: ENGINE, song: SONG, render: RENDER, workDir });
   if (m.remote) {
     try { console.log(`${m.name}: sending the engine and song`); w.dirs = m.prepare(ENGINE, SONG); }
@@ -181,36 +194,57 @@ for (const m of loadMachines({ only: flag('local') ? ['mac'] : opt('machines')?.
 if (!workers.length) blocked('No machine could be used for rendering.');
 if (!workers.some((w) => !w.machine.remote) && tasks.some((t) => t.localOnly)) blocked('Lyric layers render on this Mac, which was left out (--machines).');
 
-// One still from the middle of a scene on this Mac and on the other machine, compared (PSNR).
-async function pictureAgrees(w, seg) {
-  const t = +((seg.from + seg.to) / 2).toFixed(2), params = paramsOf(seg);
-  const dir = path.join(workDir, `agree-${w.machine.name}`);
-  fs.rmSync(dir, { recursive: true, force: true }); fs.mkdirSync(dir, { recursive: true });
-  const local = spawnSync('node', [RENDER, 'stills', '--song', SONG, '--scene', seg.scene, '--params', params, '--t', String(t), '--samples', '4', '--out', dir], { encoding: 'utf8' });
-  const mine = fs.readdirSync(dir).find((f) => f.endsWith('.png') && !f.startsWith('.'));
-  if (local.status !== 0 || !mine) return { ok: false, why: 'the reference still on this Mac failed' };
-  const m = w.machine, remoteDir = `${m.root}/out/agree-${w.tag}`;
-  const c = m.command(w.dirs, `agree-${w.tag}`, ['stills', '--scene', seg.scene, '--params64', Buffer.from(params).toString('base64'), '--t', String(t), '--samples', '4', '--out', remoteDir]);
-  const r = spawnSync(c.cmd, c.args, { encoding: 'utf8', timeout: 10 * 60000 });
-  const theirs = path.join(dir, `theirs.png`);
-  try { m.fetch(`${remoteDir}/${mine}`, theirs); } catch (e) { return { ok: false, why: `its still did not arrive (${(r.stderr || r.stdout || e.message).trim().split('\n').pop()})` }; }
-  if (/CONTEXT_LOST|context lost/i.test(r.stdout ?? '')) return { ok: false, why: 'its graphics context was lost while drawing (black frames)' };
-  const cmp = spawnSync('ffmpeg', ['-hide_banner', '-i', path.join(dir, mine), '-i', theirs, '-lavfi', 'psnr', '-f', 'null', '-'], { encoding: 'utf8' });
-  const psnr = +(/average:([\d.inf]+)/.exec(cmp.stderr)?.[1] ?? 0);
-  const v = psnr === Infinity || String(psnr) === 'inf' ? 99 : psnr;
-  return v >= 30 ? { ok: true, psnr: v } : { ok: false, psnr: v, why: `its picture differs from this Mac's (PSNR ${v.toFixed(1)} dB; 30 needed)` };
+// One still per scene on this Mac and on the other machine, compared (PSNR). A scene the other
+// machine draws differently, or loses its GPU context on (black frames), stays off that machine.
+async function pictureCheck(w, list) {
+  const m = w.machine, dir = path.join(workDir, `check-${m.name}`);
+  fs.rmSync(dir, { recursive: true, force: true }); fs.mkdirSync(path.join(dir, 'mac'), { recursive: true }); fs.mkdirSync(path.join(dir, m.name), { recursive: true });
+  const items = list.map((sg) => ({ id: sg.id, scene: sg.scene, params: sg.params, from: sg.from, to: sg.to, t: Math.round((sg.from + sg.to) / 2 * fps) / fps }));
+  const scenes64 = Buffer.from(JSON.stringify(items)).toString('base64');
+  const remoteDir = `${m.root}/out/check-${w.tag}`;
+  const c = m.command(w.dirs, `check-${w.tag}`, ['checkstills', '--scenes64', scenes64, '--samples', '2', '--out', remoteDir]);
+  const run = (cmd, args) => new Promise((res) => { const p = spawn(cmd, args); let stdout = ''; p.stdout.on('data', (d) => { stdout += d; }); p.stderr.on('data', () => {}); p.on('close', (status) => res({ status, stdout })); });
+  // both machines draw at the same time
+  const [, theirs] = await Promise.all([run('node', [RENDER, 'checkstills', '--song', SONG, '--scenes64', scenes64, '--samples', '2', '--out', path.join(dir, 'mac')]), run(c.cmd, c.args)]);
+  const lostThere = new Set((theirs.stdout ?? '').split('\n').filter((l) => l.startsWith('CHECK ')).map((l) => JSON.parse(l.slice(6))).filter((x) => x.lost).map((x) => x.id));
+  const out = {};
+  for (const it of items) {
+    const a = path.join(dir, 'mac', `${it.id}.png`), b = path.join(dir, m.name, `${it.id}.png`);
+    if (!fs.existsSync(a)) { out[it.id] = { ok: true, why: 'no reference on this Mac' }; continue; }
+    try { m.fetch(`${remoteDir}/${it.id}.png`, b); } catch { out[it.id] = { ok: false, why: 'no picture came back' }; continue; }
+    if (lostThere.has(it.id)) { out[it.id] = { ok: false, why: 'GPU context lost (black frames)' }; continue; }
+    const cmp = spawnSync('ffmpeg', ['-hide_banner', '-i', a, '-i', b, '-lavfi', 'psnr', '-f', 'null', '-'], { encoding: 'utf8' });
+    const raw = /average:(\S+)/.exec(cmp.stderr)?.[1];
+    const psnr = raw === 'inf' ? 99 : +raw || 0;
+    out[it.id] = psnr >= 30 ? { ok: true, psnr } : { ok: false, psnr, why: `draws it differently (PSNR ${psnr.toFixed(1)} dB)` };
+  }
+  return out;
 }
 
 // ---------- test render: each machine's speed and how many workers it takes ----------
 const testReport = { at: new Date().toISOString(), machines: {} };
 if (plates.length && !draft && !flag('no-test')) {
   const bySeg = (t) => segs.find((s) => s.id === t.id);
-  await Promise.all(workers.map(async (w) => {
+  const localM = workers.find((x) => !x.machine.remote)?.machine;
+  // this Mac first: the other machines are measured against it
+  for (const w of [...workers].sort((a, b) => a.machine.remote - b.machine.remote)) await (async () => {
     const m = w.machine;
-    const pr = probeOn(w, plates.map(bySeg));
-    for (const p of pr) m.est.set(p.id, p.fixedMs + p.perSampleMs * +bySeg(p).samples);
+    // GPU timings from the probe are only trusted on this Mac (ANGLE on OpenGL returns before the
+    // GPU finishes); other machines are scaled from their own test render against this Mac's estimate
+    const pr = m.remote && localM?.est.size ? plates.map((t) => ({ id: t.id, remote: true })) : probeOn(w, plates.map(bySeg));
+    for (const p of pr) if (!p.remote) m.est.set(p.id, p.fixedMs + p.perSampleMs * +bySeg(p).samples); else m.est.set(p.id, localM.est.get(p.id));
+    if (m.remote && !localM) notes.push(`${m.name}'s pictures were not checked against this Mac, which was left out of the render.`);
+    if (m.remote && localM) {
+      const check = await pictureCheck(w, plates.map(bySeg));
+      const bad = Object.entries(check).filter(([, v]) => !v.ok);
+      for (const t of plates) if (!check[t.id]?.ok) (t.avoid ??= []).push(m.name);
+      testReport.machines[m.name] = { gpu: m.gpu, pictureCheck: check };
+      if (bad.length) { console.log(`${m.name}: keeps off ${bad.map(([id, v]) => `${id} (${v.why})`).join(', ')}`); notes.push(`${m.name} did not render scene${bad.length > 1 ? 's' : ''} ${bad.map(([id]) => id).join(', ')}: ${[...new Set(bad.map(([, v]) => v.why))].join('; ')}.`); }
+      else console.log(`${m.name}: draws every scene the same as this Mac`);
+    }
     if (!pr.length) { console.log(`${m.name}: the probe returned nothing`); return; }
-    const order = plates.filter((t) => m.est.has(t.id)).sort((a, b) => m.est.get(b.id) - m.est.get(a.id));
+    const order = plates.filter((t) => m.est.has(t.id) && !t.avoid?.includes(m.name)).sort((a, b) => m.est.get(b.id) - m.est.get(a.id));
+    if (!order.length) { m.dead = true; notes.push(`${m.name} could not draw any of the scenes to render.`); return; }
     const slowSeg = bySeg(order[0]);
     // one second from the middle of the slowest scene, k at a time
     const test = async (k, tag) => {
@@ -223,19 +257,14 @@ if (plates.length && !draft && !flag('no-test')) {
       const ms = Array.from({ length: k }, (_, i) => readJson(path.join(workDir, `hb-test-${m.name}-${tag}${i}.json`))?.msPerFrame).filter(Boolean);
       return ms.length === k ? ms.reduce((a, b) => a + b, 0) / k : null;
     };
-    // another machine must draw the same picture as this Mac before it gets any scenes: a different
-    // GPU or graphics backend can lose the context and render black, or draw something else
-    if (m.remote) {
-      const agree = await pictureAgrees(w, slowSeg);
-      testReport.machines[m.name] = { gpu: m.gpu, agreement: agree };
-      if (!agree.ok) { console.log(`${m.name}: left out, ${agree.why}`); notes.push(`${m.name} was left out: ${agree.why}.`); m.dead = true; return; }
-      console.log(`${m.name}: draws the same picture as this Mac (${agree.psnr.toFixed(1)} dB)`);
-    }
     console.log(`${m.name}: test render of the slowest scene, ${slowSeg.id} (${slowSeg.scene})`);
     const solo = await test(1, 'a');
     if (!solo) { notes.push(`The test render on ${m.name} failed; it was left out.`); m.dead = true; return; }
+    // the probe times the GPU alone: on this Mac the read-back and encoding cost is added per frame;
+    // another machine is scaled from this Mac's estimate by its measured speed on the same scene
     const overhead = Math.max(0, solo - m.est.get(slowSeg.id));
-    for (const [id, v] of m.est) m.est.set(id, v + overhead);
+    if (m.remote && localM?.est.size) { const k = solo / m.est.get(slowSeg.id); for (const [id, v] of m.est) m.est.set(id, v * k); }
+    else for (const [id, v] of m.est) m.est.set(id, v + overhead);
     const rates = [1000 / solo];
     const jobsOpt = +opt('jobs', 0);
     if (!m.remote && jobsOpt) { m.parallel = jobsOpt; m.slotFactor = 1; }
@@ -252,8 +281,9 @@ if (plates.length && !draft && !flag('no-test')) {
     }
     testReport.machines[m.name] = { ...testReport.machines[m.name], gpu: m.gpu ?? 'this Mac', slowest: slowSeg.id, msPerFrame: Math.round(solo), readBackMs: Math.round(overhead), throughputByWorkers: rates.map((r) => +r.toFixed(2)), workers: m.parallel };
     console.log(`${m.name}: ${Math.round(solo)} ms/frame on the slowest scene; ${rates.map((r, i) => `${i + 1} worker${i ? 's' : ''} ${r.toFixed(2)} frames/s`).join(', ')}; using ${m.parallel}`);
-  }));
+  })();
   for (let i = workers.length - 1; i >= 0; i--) if (workers[i].machine.dead && workers[i].machine.remote) workers.splice(i, 1);
+  if (!workers.length) { await restoreAll(); blocked('No machine passed its test render.'); }
   fs.writeFileSync(path.join(OUT, 'test-render.json'), JSON.stringify(testReport, null, 1) + '\n');
 } else {
   const jobsOpt = +opt('jobs', 0);

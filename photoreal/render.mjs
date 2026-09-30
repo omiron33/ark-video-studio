@@ -21,11 +21,11 @@ const argv = process.argv.slice(2);
 const mode = argv[0];
 const opt = (k, d) => { const i = argv.indexOf('--' + k); return i >= 0 ? argv[i + 1] : d; };
 const CHROME = process.env.CHROME ?? (process.platform === 'win32' ? 'C:/Program Files/Google/Chrome/Application/chrome.exe' : '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome');
-// ANGLE backend: Metal on the Mac. On Windows, Direct3D 11 loses the WebGL context on heavy
-// raymarched scenes (the frames come out black), so the OpenGL backend is used; ARK_ANGLE overrides.
-// Whatever the backend, a machine only renders scenes after its picture has been checked against
-// this Mac's (see film.mjs).
-const ANGLE = process.env.ARK_ANGLE ?? (process.platform === 'darwin' ? 'metal' : process.platform === 'win32' ? 'gl' : 'vulkan');
+// ANGLE backend: Metal on the Mac. On Windows, Chrome's own default (Direct3D 11) proved the most
+// reliable over a remote session; forcing OpenGL lost the context on most runs. ARK_ANGLE overrides
+// ('default' for Chrome's choice). Whatever the backend, a machine only renders the scenes whose
+// pictures matched this Mac's (see film.mjs).
+const ANGLE = process.env.ARK_ANGLE === 'default' ? null : process.env.ARK_ANGLE ?? (process.platform === 'darwin' ? 'metal' : process.platform === 'win32' ? null : 'vulkan');
 const W = 1920, H = 1080;
 const SONG = path.resolve(opt('song', '.'));
 if (!fs.existsSync(path.join(SONG, 'scenes'))) { console.error('--song must be a folder with scenes/'); process.exit(1); }
@@ -62,7 +62,19 @@ const browser = await chromium.launch({
 const lyricOf = (scene) => fs.existsSync(path.join(SONG, 'scenes', `${scene}.lyric.js`));
 async function openScene(scene, params, tries = 1) {
   const page = await browser.newPage({ viewport: { width: W, height: H }, deviceScaleFactor: 1 });
-  page.on('console', (m) => { if (m.type() === 'error' || m.type() === 'warning') console.log('[page]', m.text().slice(0, 2000)); });
+  // Windows resets a GPU that goes about two seconds without finishing submitted work, losing the
+  // WebGL context (black frames). Flushing after every draw keeps each submission short. It changes
+  // no pixels, and it lives here rather than in web/ so it doesn't touch any segment's cache key.
+  if ((process.platform === 'win32' && !process.env.ARK_NO_FLUSH) || process.env.ARK_FLUSH_EACH_DRAW) await page.addInitScript(() => {
+    for (const C of [WebGL2RenderingContext, WebGLRenderingContext]) for (const f of ['drawArrays', 'drawElements']) {
+      const orig = C.prototype[f];
+      C.prototype[f] = function (...a) { const r = orig.apply(this, a); this.flush(); return r; };
+    }
+  });
+  page.on('console', (m) => {
+    if (/CONTEXT_LOST/.test(m.text())) page.contextLost = true;   // the GPU driver gave up on this scene
+    if (m.type() === 'error' || m.type() === 'warning') console.log('[page]', m.text().slice(0, 2000));
+  });
   page.on('pageerror', (e) => console.log('[pageerror]', e.message));
   page.on('requestfailed', () => {});
   const p64 = Buffer.from(params).toString('base64');
@@ -86,6 +98,28 @@ const beat = (o) => {
   if (heartbeat === '-') process.stdout.write(`HB ${line}\n`); else fs.writeFileSync(heartbeat, line);
 };
 beat({ frame: 0 });
+
+if (mode === 'checkstills') {
+  // One still per scene (list in --scenes64, each with its time t) for comparing one machine's
+  // pictures with another's: writes <out>/<id>.png and prints CHECK {"id", "lost"} per scene.
+  const list = JSON.parse(Buffer.from(opt('scenes64', ''), 'base64').toString('utf8') || '[]');
+  const out = path.resolve(opt('out', path.join(SONG, 'out', 'checkstills')));
+  fs.mkdirSync(out, { recursive: true });
+  try {
+    for (const s of list) {
+      let lost = false;
+      try {
+        const page = await openScene(s.scene, JSON.stringify({ ...(s.params ?? {}), id: s.id, from: s.from, to: s.to }));
+        await page.evaluate(([t, n]) => window.G.still(t, n), [s.t, +opt('samples', 2)]);
+        await page.screenshot({ path: path.join(out, `${s.id}.png`), clip: { x: 0, y: 0, width: W, height: H } });
+        lost = !!page.contextLost;
+        await page.close();
+      } catch (e) { lost = true; console.log(`scene ${s.id}: ${e.message.split('\n')[0]}`); }
+      console.log('CHECK ' + JSON.stringify({ id: s.id, lost }));
+    }
+  } finally { server.closeAllConnections?.(); server.close(); await Promise.race([browser.close(), new Promise((r) => setTimeout(r, 10000))]); }
+  process.exit(0);
+}
 
 if (mode === 'probe') {
   // One Chrome, one page per scene: a few frames at 1 and 4 sub-frames give the fixed and per-sample
@@ -112,10 +146,11 @@ if (mode === 'probe') {
       const inSpeed = speed(await cam(s.from + 0.001), await cam(s.from + 0.001 + dt), dt);
       const outSpeed = speed(await cam(s.to - dt - 0.001), await cam(s.to - 0.001), dt);
       const layer = await page.evaluate(() => window.G.scene.layer);
+      const lost = !!page.contextLost || await page.evaluate(() => !!document.querySelector('canvas')?.getContext('webgl2')?.isContextLost?.());
       const gpu = await page.evaluate(() => { const gl = document.createElement('canvas').getContext('webgl2'); const x = gl?.getExtension('WEBGL_debug_renderer_info'); return x ? gl.getParameter(x.UNMASKED_RENDERER_WEBGL) : 'unknown'; });
       await page.close();
       const perSample = Math.max(0.1, (ms4 - ms1) / 3), fixed = Math.max(0, ms1 - perSample);
-      console.log('PROBE ' + JSON.stringify({ id: s.id, scene: s.scene, loadMs, fixedMs: +fixed.toFixed(1), perSampleMs: +perSample.toFixed(2), inSpeed: +inSpeed.toFixed(3), outSpeed: +outSpeed.toFixed(3), layer, gpu }));
+      console.log('PROBE ' + JSON.stringify({ id: s.id, scene: s.scene, loadMs, fixedMs: +fixed.toFixed(1), perSampleMs: +perSample.toFixed(2), inSpeed: +inSpeed.toFixed(3), outSpeed: +outSpeed.toFixed(3), layer, gpu, lost }));
     }
   } finally { server.closeAllConnections?.(); server.close(); await Promise.race([browser.close(), new Promise((r) => setTimeout(r, 10000))]); }
   process.exit(0);

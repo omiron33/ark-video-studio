@@ -20,6 +20,7 @@ export function plan(pending, slots, now) {
     let best = null, bestEnd = Infinity;
     for (const s of sl) {
       if (t.localOnly && s.ref.machine.remote) continue;
+      if (t.avoid?.includes(s.ref.machine.name)) continue;   // this machine can't draw this scene
       const end = s.free + slotSeconds(s.ref, t);
       if (end < bestEnd - 1e-9) { best = s; bestEnd = end; }
     }
@@ -59,7 +60,9 @@ export class Worker {
     const remoteOut = `${m.root}/out/${token}.mp4`;
     m.ps(`New-Item -ItemType Directory -Force -Path '${m.root}/out' | Out-Null`);
     const c = m.command(this.dirs, token, [...renderArgs, '--out', remoteOut]);
-    const r = await runWithWatchdog({ ...c, heartbeat: hb, stallSec, retries, onFrame, log, stdoutHeartbeat: true, onKill: () => m.kill(token) });
+    // a remote Chrome sometimes loses its GPU context in the first seconds (seen on OmiPC over SSH);
+    // that costs a few seconds, so such a machine gets extra attempts before the scene moves home
+    const r = await runWithWatchdog({ ...c, heartbeat: hb, stallSec, retries: retries + 3, onFrame, log, stdoutHeartbeat: true, onKill: () => m.kill(token), failOn: /CONTEXT_LOST|context lost/i });
     if (!r.ok) return r;
     try {
       const tmp = `${out}.part.mp4`;

@@ -95,11 +95,13 @@ are listed only in `~/.config/ark/machines.json`, which is never committed:
 
 A helper is a command on this Mac with the verbs `run "<cmd.exe command>"`, `put <local> <remote>`
 and `get <remote> <local>`. The machine needs Node, Chrome and FFmpeg; the engine and the song are
-sent as content-addressed bundles, so an unchanged engine is never sent twice. On Windows Chrome
-renders through ANGLE's OpenGL backend (`ARK_ANGLE` overrides), because Direct3D 11 lost the
-context on heavy scenes and drew black frames. Every machine must pass a picture check against
-this Mac before it gets scenes. `out/test-render.json` records each machine's check, speed and
-worker count.
+sent as content-addressed bundles (the whole song folder except `out/` and `media/`), so an
+unchanged engine is never sent twice. On Windows Chrome uses its default backend (Direct3D 11),
+with a flush after every draw; `ARK_ANGLE` overrides. A remote Chrome can still lose its GPU
+context, which draws black: output that says so stops the job at once, it is retried, and after
+repeated losses the scene moves to this Mac. Before a full render every scene is drawn once on
+both machines and compared; scenes the other machine draws differently stay on this Mac.
+`out/test-render.json` records each machine's per-scene check, speed and worker count.
 
 ## Running single scenes
 
