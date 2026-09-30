@@ -12,6 +12,10 @@ import * as THREE from 'three';
 import { COMMON } from './glsl.js';
 import { W, H } from './engine.js';
 
+// song-wide lyric settings from film.json ("lyric": { "haloSpread": 9, "shade": 0.6 }); a lyric
+// module's own values win
+const SONG_LYRIC = await fetch('/song/film.json').then((r) => (r.ok ? r.json() : {})).then((f) => f.lyric ?? {}).catch(() => ({}));
+
 const VERT = /* glsl */ `in vec3 position; void main() { gl_Position = vec4(position.xy, 0.0, 1.0); }`;
 
 function pass(frag, uniforms, opts = {}) {
@@ -41,7 +45,7 @@ export class LyricLayer {
     this.out = rt(THREE.UnsignedByteType);
     const V = () => new THREE.Vector3();
     this.draw = pass(COMMON + /* glsl */ `
-uniform float uShade;
+uniform float uShade, uHaloSpread;
 out vec4 o;
 void main() {
   vec3 ro; vec3 rd = camRay(gl_FragCoord.xy, ro);
@@ -49,7 +53,7 @@ void main() {
   if (tp.z < 0.0 || any(lessThan(tp.xy, vec2(0))) || any(greaterThan(tp.xy, vec2(1)))) { o = vec4(0); return; }
   vec4 tx = texture(uText, tp.xy);           // premultiplied sRGB ink
   vec4 bl = texture(uTextShade, tp.xy);
-  float halo = sat(bl.a * 4.5) * uShade;
+  float halo = sat(bl.a * uHaloSpread) * uShade;
   vec3 ink = bl.a > 1e-3 ? bl.rgb / bl.a : vec3(1);
   float il = dot(ink, vec3(0.2126, 0.7152, 0.0722));
   vec3 haloCol = il > 0.4 ? vec3(0) : vec3(1);  // darken under light words, lift under dark ones
@@ -58,7 +62,9 @@ void main() {
 }`, {
       uRes: { value: new THREE.Vector2(W, H) }, uJitter: { value: new THREE.Vector2() }, uCamPos: { value: V() }, uCamTarget: { value: V() }, uCamRoll: { value: 0 }, uFov: { value: 40 },
       uText: { value: this.tex }, uTextShade: { value: this.shadeTex }, uTxC: { value: V() }, uTxX: { value: new THREE.Vector3(1, 0, 0) }, uTxY: { value: new THREE.Vector3(0, 1, 0) }, uTxHS: { value: new THREE.Vector2(1, 0.25) },
-      uShade: { value: lyric.shade ?? 0.6 },
+      uShade: { value: lyric.shade ?? SONG_LYRIC.shade ?? 0.6 },
+      // how far the backing spreads round the letters: 9 is what Genesis 8 settled on for readability
+      uHaloSpread: { value: lyric.haloSpread ?? SONG_LYRIC.haloSpread ?? 9 },
     }, { transparent: true, blending: THREE.CustomBlending, blendEquation: THREE.AddEquation, blendSrc: THREE.OneFactor, blendDst: THREE.OneFactor, blendSrcAlpha: THREE.OneFactor, blendDstAlpha: THREE.OneFactor });
     // accumulated premultiplied average -> straight-alpha 8-bit for the encoder
     this.resolve = pass(/* glsl */ `precision highp float; uniform sampler2D src; uniform float n; out vec4 o;

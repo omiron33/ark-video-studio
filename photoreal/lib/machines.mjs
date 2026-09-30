@@ -143,8 +143,8 @@ export class HelperMachine {
       path.join(engineRoot, 'node_modules', 'three', 'package.json'), ...filesUnder(path.join(engineRoot, 'node_modules', 'three', 'build')),
     ].filter((f) => !skip(f) && fs.existsSync(f));
     // the whole song folder (scenes may load fonts, textures or data from anywhere in it), except
-    // renders, the audio and version control
-    const leave = new Set(['out', 'media', '.git', 'node_modules']);
+    // renders, finished films, intake, the audio and version control
+    const leave = new Set(['out', 'media', 'movies', 'intake', '.git', 'node_modules']);
     const songFiles = fs.readdirSync(song, { withFileTypes: true }).filter((e) => !leave.has(e.name) && !e.name.startsWith('.'))
       .flatMap((e) => (e.isDirectory() ? filesUnder(path.join(song, e.name)) : [path.join(song, e.name)])).filter((f) => !skip(f));
     return { engine: this.sync('engine', engineRoot, engineFiles), song: this.sync(`song-${path.basename(song)}`, song, songFiles) };

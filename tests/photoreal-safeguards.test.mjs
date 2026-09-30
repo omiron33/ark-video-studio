@@ -202,3 +202,32 @@ test('key stills: opening, main, both sides of the fastest cut, a lyric hold and
   assert.equal(p[2].sceneId, '2'); assert.equal(p[3].sceneId, '3');
   assert.equal(p[1].sceneId, '2');
 });
+
+test('keys: do not depend on where the engine is checked out, and old keys carry over', () => {
+  const song = tmp();
+  fs.mkdirSync(path.join(song, 'scenes')); fs.mkdirSync(path.join(song, 'data'));
+  fs.writeFileSync(path.join(song, 'data', 'lyrics.json'), '{}');
+  fs.writeFileSync(path.join(song, 'scenes', 'a.js'), 'export default {}');
+  const webA = path.join(tmp(), 'photoreal', 'web'), webB = path.join(tmp(), 'elsewhere', 'photoreal', 'web');
+  for (const w of [webA, webB]) { fs.mkdirSync(w, { recursive: true }); fs.writeFileSync(path.join(w, 'engine.js'), 'x'); }
+  const s = { id: '1', scene: 'a', from: 0, to: 1 };
+  assert.equal(makeKeys(song, { web: webA }).plate(s, 60, 8), makeKeys(song, { web: webB }).plate(s, 60, 8));
+  // what the old code wrote from webA is recognised by an engine now living at webB
+  const oldKey = makeKeys(song, { web: webB }).legacyPlate(s, 60, 8, webA);
+  assert.notEqual(oldKey, makeKeys(song, { web: webB }).plate(s, 60, 8));
+  assert.equal(makeKeys(song, { web: webA }).legacyPlate(s, 60, 8), oldKey);
+});
+
+test('keys: song-wide lyric settings in film.json re-render only lyric layers', () => {
+  const song = tmp();
+  fs.mkdirSync(path.join(song, 'scenes')); fs.mkdirSync(path.join(song, 'data'));
+  fs.writeFileSync(path.join(song, 'scenes', 'a.js'), 'export default {}');
+  fs.writeFileSync(path.join(song, 'scenes', 'a.lyric.js'), 'export default {}');
+  fs.writeFileSync(path.join(song, 'film.json'), '{"scenes":[]}');
+  const s = { id: '1', scene: 'a', from: 0, to: 1 };
+  const k0 = makeKeys(song);
+  fs.writeFileSync(path.join(song, 'film.json'), '{"scenes":[],"lyric":{"haloSpread":4.5}}');
+  const k1 = makeKeys(song);
+  assert.equal(k1.plate(s, 60, 8), k0.plate(s, 60, 8));
+  assert.notEqual(k1.layer(s, 60, 8), k0.layer(s, 60, 8));
+});

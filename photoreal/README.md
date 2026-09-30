@@ -39,7 +39,9 @@ picture then renders without words, the words render alone with transparency fro
 and the two are composited per segment. A typography change re-renders only the layer (seconds per
 scene) and the composite, never the picture. Keep type helpers in a song module that only lyric
 modules import (for example `lib/type.js`): anything a scene module imports is part of its picture.
-The layer has a soft `shade` (0 to 1, default 0.6) behind light words so they read over anything;
+The layer has a soft `shade` (0 to 1, default 0.6) behind light words so they read over anything,
+spread by `haloSpread` (default 9, what Genesis 8 settled on); set either song-wide in film.json
+(`"lyric": { "haloSpread": 9, "shade": 0.6 }`) or per lyric module;
 the contrast gate measures whether that was enough. Words that must sit behind objects, refract
 through water or take the scene's fog stay in the scene (baked), and re-render with it. `frag` defines `vec3 shade(vec2 fragCoord)` and may
 use everything in `web/glsl.js`. Scenes import helpers from `/engine.js` and anchor to measured lyrics

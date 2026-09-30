@@ -5,6 +5,7 @@
 //   node photoreal/film.mjs --song ../genesis8-the-dove                  the full film
 //   options: [--only 01,02] [--samples 12] [--jobs N] [--stall 180] [--retries 2] [--no-test] [--out film.mp4]
 //            [--skip-storyboard] [--skip-stills] [--skip-check]   (each is written into STATUS.md)
+//            [--legacy-web <old engine's photoreal/web>]   carry over pictures cached by an engine checked out elsewhere
 // film.json: { "fps": 60, "samples": 12, "scenes": [{ "id": "01", "scene": "sea", "from": 0, "to": 15.5, "params": {}, "samples"?: 16, "offBeat"?: "why" }] }
 //
 // Scene windows must tile the song with no gaps. A segment is re-rendered only when something it
@@ -55,7 +56,7 @@ for (let i = 1; i < scenes.length; i++) {
   if (Math.abs(scenes[i].from - scenes[i - 1].to) > 1e-6) throw Error(`gap or overlap between ${scenes[i - 1].id} and ${scenes[i].id}`);
 }
 
-const keys = makeKeys(SONG);
+const keys = makeKeys(SONG, { legacyWeb: opt('legacy-web') });
 const sha = (s) => crypto.createHash('sha256').update(s).digest('hex');
 const readJson = (f) => { try { return JSON.parse(fs.readFileSync(f, 'utf8')); } catch { return null; } };
 const cached = (file, key) => key && fs.existsSync(file) && fs.existsSync(file + '.key') && fs.readFileSync(file + '.key', 'utf8') === key;
@@ -148,6 +149,12 @@ for (const s of segs) {
   if (!s.selected) continue;
   const common = ['--song', SONG, '--scene', s.scene, '--params', paramsOf(s), '--from', String(s.f0 / fps), '--to', String(s.f1 / fps)];
   let any = false;
+  // a picture cached under the older, location-dependent key carries over instead of re-rendering
+  if (!cached(s.plateOut, s.plateKey) && fs.existsSync(s.plateOut) && fs.existsSync(s.plateOut + '.key')
+      && fs.readFileSync(s.plateOut + '.key', 'utf8') === keys.legacyPlate(s, fps, s.samples)) {
+    fs.writeFileSync(s.plateOut + '.key', s.plateKey);
+    console.log(`segment ${s.id}: cached picture carried over to the new key`);
+  }
   if (!cached(s.plateOut, s.plateKey)) {
     any = true;
     tasks.push({ id: s.id, job: s.id, part: 'plate', scene: s.scene, frames: s.frames, out: s.plateOut, key: s.plateKey,
@@ -174,7 +181,7 @@ async function restoreAll() {
 }
 for (const sig of ['SIGINT', 'SIGTERM', 'SIGHUP']) process.once(sig, async () => { await restoreAll(); process.exit(130); });
 for (const m of loadMachines({ only: flag('local') ? ['mac'] : opt('machines')?.split(',') })) {
-  if (m.remote && !plates.length) continue;
+  if (m.remote && !tasks.length) continue;
   let ok = await m.available();
   // services that may give up the GPU for a render (ComfyUI on OmiPC) are stopped first, so the
   // worker count is sized to the memory that frees, and restored when the film is done
@@ -285,8 +292,14 @@ if (plates.length && !draft && !flag('no-test')) {
   if (!workers.length) { await restoreAll(); blocked('No machine passed its test render.'); }
   fs.writeFileSync(path.join(OUT, 'test-render.json'), JSON.stringify(testReport, null, 1) + '\n');
 } else {
-  const jobsOpt = +opt('jobs', 0);
-  for (const w of workers) if (!w.machine.remote) w.machine.parallel = jobsOpt || 1;
+  // no test render (a draft, --no-test, or only lyric layers to do): lyric layers are light, so
+  // each machine takes two at once (three on a GPU with room to spare)
+  const jobsOpt = +opt('jobs', 0), layersOnly = !plates.length;
+  for (const w of workers) {
+    const m = w.machine;
+    if (!m.remote) m.parallel = jobsOpt || (layersOnly ? 2 : 1);
+    else if (layersOnly) m.parallel = m.freeVramMB && m.freeVramMB > 6000 ? 3 : 2;
+  }
 }
 
 // worker slots: each machine as many times as it takes workers
