@@ -191,8 +191,8 @@ for (const m of loadMachines({ only: flag('local') ? ['mac'] : opt('machines')?.
   m.parallel = 1; m.slotFactor = 1; m.est = new Map(); m.msPerFrame = (t) => m.est.get(t.id) ?? m.est.get('*') ?? 1000;
   workers.push(w);
 }
-if (!workers.length) blocked('No machine could be used for rendering.');
-if (!workers.some((w) => !w.machine.remote) && tasks.some((t) => t.localOnly)) blocked('Lyric layers render on this Mac, which was left out (--machines).');
+if (!workers.length) { await restoreAll(); blocked('No machine could be used for rendering.'); }
+if (!workers.some((w) => !w.machine.remote) && tasks.some((t) => t.localOnly)) { await restoreAll(); blocked('Lyric layers render on this Mac, which was left out (--machines).'); }
 
 // One still per scene on this Mac and on the other machine, compared (PSNR). A scene the other
 // machine draws differently, or loses its GPU context on (black frames), stays off that machine.
@@ -361,6 +361,9 @@ await Promise.all(slots.map(async (slot) => {
   }
 }));
 for (const t of pending) { failed.add(t.id); progress.finish(t.job, false, 'no machine left to render it'); }
+
+// the other machines' part is done: bring back anything stopped for it before finishing up here
+await restoreAll();
 
 // ---------- composite lyric layers over their pictures ----------
 for (const s of segs) {
