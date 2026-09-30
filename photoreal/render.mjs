@@ -20,7 +20,12 @@ const WEB = path.join(HERE, 'web');
 const argv = process.argv.slice(2);
 const mode = argv[0];
 const opt = (k, d) => { const i = argv.indexOf('--' + k); return i >= 0 ? argv[i + 1] : d; };
-const CHROME = process.env.CHROME ?? '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
+const CHROME = process.env.CHROME ?? (process.platform === 'win32' ? 'C:/Program Files/Google/Chrome/Application/chrome.exe' : '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome');
+// ANGLE backend: Metal on the Mac. On Windows, Direct3D 11 loses the WebGL context on heavy
+// raymarched scenes (the frames come out black), so the OpenGL backend is used; ARK_ANGLE overrides.
+// Whatever the backend, a machine only renders scenes after its picture has been checked against
+// this Mac's (see film.mjs).
+const ANGLE = process.env.ARK_ANGLE ?? (process.platform === 'darwin' ? 'metal' : process.platform === 'win32' ? 'gl' : 'vulkan');
 const W = 1920, H = 1080;
 const SONG = path.resolve(opt('song', '.'));
 if (!fs.existsSync(path.join(SONG, 'scenes'))) { console.error('--song must be a folder with scenes/'); process.exit(1); }
@@ -52,10 +57,10 @@ const browser = await chromium.launch({
   executablePath: CHROME, headless: true,
   // --ark-worker marks this Chrome (which Playwright starts in its own process group) so the
   // watchdog can find and kill it along with this worker
-  args: [`--ark-worker=${process.pid}`, '--use-angle=metal', '--enable-gpu', '--ignore-gpu-blocklist', '--disable-gpu-watchdog', '--disable-background-timer-throttling', '--disable-renderer-backgrounding'],
+  args: [`--ark-worker=${process.pid}`, ...(ANGLE ? [`--use-angle=${ANGLE}`] : []), '--enable-gpu', '--ignore-gpu-blocklist', '--disable-gpu-watchdog', '--disable-background-timer-throttling', '--disable-renderer-backgrounding'],
 });
 const lyricOf = (scene) => fs.existsSync(path.join(SONG, 'scenes', `${scene}.lyric.js`));
-async function openScene(scene, params) {
+async function openScene(scene, params, tries = 1) {
   const page = await browser.newPage({ viewport: { width: W, height: H }, deviceScaleFactor: 1 });
   page.on('console', (m) => { if (m.type() === 'error' || m.type() === 'warning') console.log('[page]', m.text().slice(0, 2000)); });
   page.on('pageerror', (e) => console.log('[pageerror]', e.message));
@@ -64,18 +69,28 @@ async function openScene(scene, params) {
   await page.goto(`http://127.0.0.1:${port}/?scene=${scene}&params=${encodeURIComponent(p64)}${lyricOf(scene) ? '&lyric=1' : ''}`);
   await page.waitForFunction(() => window.G && (window.G.ready || window.G.error), null, { timeout: 120000 });
   const err = await page.evaluate(() => window.G.error);
-  if (err) throw Error(`PAGE ERROR in ${scene}: ${err}`);
+  if (err) {
+    // a GPU busy with other work (on a shared machine) can refuse a WebGL context for a moment
+    if (/creating WebGL context/.test(err) && tries < 4) { await page.close(); await new Promise((r) => setTimeout(r, 3000 * tries)); return openScene(scene, params, tries + 1); }
+    throw Error(`PAGE ERROR in ${scene}: ${err}`);
+  }
   return page;
 }
 const samples = +opt('samples', 16);
 const heartbeat = opt('heartbeat');
-const beat = (o) => { if (heartbeat) fs.writeFileSync(heartbeat, JSON.stringify({ ...o, at: Date.now() })); };
+// --heartbeat - prints the heartbeat as "HB {json}" lines instead, for a worker on another machine
+// whose output streams back over SSH
+const beat = (o) => {
+  if (!heartbeat) return;
+  const line = JSON.stringify({ ...o, at: Date.now() });
+  if (heartbeat === '-') process.stdout.write(`HB ${line}\n`); else fs.writeFileSync(heartbeat, line);
+};
 beat({ frame: 0 });
 
 if (mode === 'probe') {
   // One Chrome, one page per scene: a few frames at 1 and 4 sub-frames give the fixed and per-sample
   // cost of a frame, and the camera sampled at both ends gives how fast each cut moves.
-  const list = JSON.parse(opt('scenes', '[]'));
+  const list = JSON.parse(opt('scenes64') ? Buffer.from(opt('scenes64'), 'base64').toString('utf8') : opt('scenes', '[]'));
   const vec = (a, b) => Math.hypot(a[0] - b[0], a[1] - b[1], a[2] - b[2]);
   const dir = (c) => { const d = [c.target[0] - c.pos[0], c.target[1] - c.pos[1], c.target[2] - c.pos[2]]; const l = Math.hypot(...d); return [d.map((x) => x / l), l]; };
   // screen motion in frame heights per second, from camera turn and travel relative to what it looks at
@@ -97,9 +112,10 @@ if (mode === 'probe') {
       const inSpeed = speed(await cam(s.from + 0.001), await cam(s.from + 0.001 + dt), dt);
       const outSpeed = speed(await cam(s.to - dt - 0.001), await cam(s.to - 0.001), dt);
       const layer = await page.evaluate(() => window.G.scene.layer);
+      const gpu = await page.evaluate(() => { const gl = document.createElement('canvas').getContext('webgl2'); const x = gl?.getExtension('WEBGL_debug_renderer_info'); return x ? gl.getParameter(x.UNMASKED_RENDERER_WEBGL) : 'unknown'; });
       await page.close();
       const perSample = Math.max(0.1, (ms4 - ms1) / 3), fixed = Math.max(0, ms1 - perSample);
-      console.log('PROBE ' + JSON.stringify({ id: s.id, scene: s.scene, loadMs, fixedMs: +fixed.toFixed(1), perSampleMs: +perSample.toFixed(2), inSpeed: +inSpeed.toFixed(3), outSpeed: +outSpeed.toFixed(3), layer }));
+      console.log('PROBE ' + JSON.stringify({ id: s.id, scene: s.scene, loadMs, fixedMs: +fixed.toFixed(1), perSampleMs: +perSample.toFixed(2), inSpeed: +inSpeed.toFixed(3), outSpeed: +outSpeed.toFixed(3), layer, gpu }));
     }
   } finally { server.closeAllConnections?.(); server.close(); await Promise.race([browser.close(), new Promise((r) => setTimeout(r, 10000))]); }
   process.exit(0);
@@ -108,7 +124,9 @@ if (mode === 'probe') {
 const clip = opt('scene');
 if (!clip) { console.error('--scene is required'); process.exit(1); }
 let page;
-try { page = await openScene(clip, opt('params', '{}')); } catch (e) { console.error(e.message); await browser.close(); process.exit(1); }
+// --params64 carries the parameters base64-encoded, which survives remote shells' quoting
+const clipParams = opt('params64') ? Buffer.from(opt('params64'), 'base64').toString('utf8') : opt('params', '{}');
+try { page = await openScene(clip, clipParams); } catch (e) { console.error(e.message); await browser.close(); process.exit(1); }
 const info = await page.evaluate(() => window.G.scene);
 
 try {

@@ -20,11 +20,21 @@ function killTree(child) {
 }
 
 // One attempt. Resolves { ok, code, reason, frames, seconds }.
-export function runOnce({ cmd, args, heartbeat, stallSec = 180, firstFrameSec = 600, pollMs = 1000, onFrame, log = () => {}, env }) {
+// With `stdoutHeartbeat` the worker prints its heartbeat as "HB {json}" lines (a worker on another
+// machine, reached over SSH); they are written to `heartbeat` here. `onKill` also stops what the
+// worker started elsewhere.
+export function runOnce({ cmd, args, heartbeat, stallSec = 180, firstFrameSec = 600, pollMs = 1000, onFrame, log = () => {}, env, stdoutHeartbeat = false, onKill }) {
   return new Promise((resolve) => {
     try { fs.rmSync(heartbeat, { force: true }); } catch {}
     const started = Date.now();
-    const child = spawn(cmd, args, { stdio: ['ignore', 'inherit', 'inherit'], detached: true, env: env ?? process.env });
+    const child = spawn(cmd, args, { stdio: ['ignore', stdoutHeartbeat ? 'pipe' : 'inherit', 'inherit'], detached: true, env: env ?? process.env });
+    if (stdoutHeartbeat) {
+      let buf = '';
+      child.stdout.on('data', (d) => {
+        buf += d; const lines = buf.split(/\r?\n/); buf = lines.pop();
+        for (const l of lines) { if (l.startsWith('HB ')) { try { fs.writeFileSync(heartbeat, l.slice(3)); } catch {} } else if (l.trim()) console.log(l); }
+      });
+    }
     let lastFrame = -1, lastAt = started, reason = null, done = false;
     const timer = setInterval(() => {
       const hb = readHeartbeat(heartbeat);
@@ -38,6 +48,7 @@ export function runOnce({ cmd, args, heartbeat, stallSec = 180, firstFrameSec = 
           : `stalled: no new frame for ${Math.round(quiet)} s after frame ${lastFrame}${hb?.of ? ' of ' + hb.of : ''}`;
         log(reason);
         killTree(child);
+        Promise.resolve(onKill?.()).catch(() => {});
       }
     }, pollMs);
     const finish = (code, signal) => {

@@ -84,6 +84,23 @@ overlapping or crowding, and no lines on top of each other; no stretch over 0.5 
 visibly moving; no fast move that stops dead; no word moving before it has been still for 8 frames;
 and every cut on a measured beat or up to 2 frames before it (a scene can give `"offBeat": "why"`).
 
+## Several machines
+
+`film.mjs` renders on every reachable machine (see "Where work runs" in AGENTS.md). Other machines
+are listed only in `~/.config/ark/machines.json`, which is never committed:
+
+```json
+{ "machines": [ { "name": "omipc", "kind": "helper", "helper": "omipc", "dashboard": "http://<host>:5299", "minFreeVramMB": 1500 } ] }
+```
+
+A helper is a command on this Mac with the verbs `run "<cmd.exe command>"`, `put <local> <remote>`
+and `get <remote> <local>`. The machine needs Node, Chrome and FFmpeg; the engine and the song are
+sent as content-addressed bundles, so an unchanged engine is never sent twice. On Windows Chrome
+renders through ANGLE's OpenGL backend (`ARK_ANGLE` overrides), because Direct3D 11 lost the
+context on heavy scenes and drew black frames. Every machine must pass a picture check against
+this Mac before it gets scenes. `out/test-render.json` records each machine's check, speed and
+worker count.
+
 ## Running single scenes
 
 ```sh

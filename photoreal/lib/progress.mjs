@@ -19,8 +19,9 @@ export const fmtDuration = (s) => {
 
 export class Progress {
   // jobs: [{ id, scene, frames, estMsPerFrame }] still to render; speedup: measured gain from parallel workers
-  constructor({ file, jobs, total, cached = 0, speedup = 1, now = () => Date.now() }) {
-    this.file = file; this.now = now; this.speedup = speedup;
+  constructor({ file, jobs, total, cached = 0, speedup = 1, now = () => Date.now(), machines, remaining }) {
+    // remaining(): seconds left by the scheduler's own reckoning, when scenes run on several machines
+    this.file = file; this.now = now; this.speedup = speedup; this.machines = machines; this.remaining = remaining;
     this.jobs = new Map(jobs.map((j) => [j.id, { ...j, frameDone: 0, state: 'waiting', attempts: 0 }]));
     this.total = total; this.cached = cached;
     this.startedAt = now(); this.lastFrameAt = null;
@@ -28,7 +29,8 @@ export class Progress {
     this.write();
   }
 
-  start(id) { const j = this.jobs.get(id); j.state = 'rendering'; j.attempts++; j.startedAt = this.now(); j.frameDone = 0; this.write(); }
+  start(id, machine) { const j = this.jobs.get(id); j.state = 'rendering'; j.attempts++; j.startedAt = this.now(); j.frameDone = 0; if (machine) j.machine = machine; this.write(); }
+  requeue(id) { const j = this.jobs.get(id); j.state = 'waiting'; j.frameDone = 0; this.write(); }
   frame(id, frame) { const j = this.jobs.get(id); j.frameDone = frame; this.lastFrameAt = this.now(); this.write(); }
   log(id, text) { this.events.push({ at: new Date(this.now()).toISOString(), scene: id, text }); this.write(); }
   finish(id, ok, reason) {
@@ -59,16 +61,19 @@ export class Progress {
       state,
       // a scene with a lyric layer has two jobs (01 and 01-lyric); it is done when both are
       scenesDone: [...new Set(js.map((j) => j.id.replace(/-lyric$/, '')))].filter((id) => js.filter((j) => j.id.replace(/-lyric$/, '') === id).every((j) => j.state === 'done')).length + this.cached, scenesTotal: this.total, scenesCached: this.cached, scenesFailed: failed.map((j) => ({ id: j.id, scene: j.scene, reason: j.reason, attempts: j.attempts })),
-      current: js.filter((j) => j.state === 'rendering').map((j) => ({ id: j.id, scene: j.scene, frame: j.frameDone, of: j.frames, attempt: j.attempts })),
+      current: js.filter((j) => j.state === 'rendering').map((j) => ({ id: j.id, scene: j.scene, machine: j.machine, frame: j.frameDone, of: j.frames, attempt: j.attempts })),
+      ...(this.machines ? { machines: Object.fromEntries(Object.entries(this.machines).map(([n, m]) => [n, { ...m, scenesDone: js.filter((j) => j.state === 'done' && j.machine?.split('#')[0] === n).length }])) } : {}),
       framesDone, framesTotal,
       secondsPerScene: Object.fromEntries(done.map((j) => [j.id, Math.round(j.seconds)])),
       startedAt: new Date(this.startedAt).toISOString(),
       lastFrameAt: this.lastFrameAt ? new Date(this.lastFrameAt).toISOString() : null,
-      estimatedFinish: known && state === 'rendering' ? new Date(this.now() + remainingMs).toISOString() : null,
+      estimatedFinish: state !== 'rendering' ? null : this.remaining ? (Number.isFinite(this.remainingSec()) ? new Date(this.now() + this.remainingSec() * 1000).toISOString() : null) : known ? new Date(this.now() + remainingMs).toISOString() : null,
       estimateCorrection: +k.toFixed(3),
       events: this.events.slice(-50),
     };
   }
+
+  remainingSec() { try { return this.remaining(); } catch { return NaN; } }
 
   write() { writeAtomic(this.file, JSON.stringify(this.snapshot(), null, 1) + '\n'); }
 }

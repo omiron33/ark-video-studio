@@ -25,6 +25,8 @@ import { makeKeys } from './lib/keys.mjs';
 import { runWithWatchdog } from './lib/watchdog.mjs';
 import { Progress, writeStatus, fmtDuration } from './lib/progress.mjs';
 import { pickKeyStills } from './lib/stills.mjs';
+import { loadMachines } from './lib/machines.mjs';
+import { Worker, pickTask, slotSeconds, plateArgs, probeOn, simulate, chooseParallel } from './lib/farm.mjs';
 import { storyboardPath } from './lib/storyboard.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
@@ -148,87 +150,187 @@ for (const s of segs) {
   let any = false;
   if (!cached(s.plateOut, s.plateKey)) {
     any = true;
-    tasks.push({ id: s.id, part: 'plate', scene: s.scene, frames: s.frames, out: s.plateOut, key: s.plateKey,
-      args: [RENDER, 'video', ...common, '--samples', s.samples, '--noaudio', '--preset', draft ? 'veryfast' : 'slow', '--crf', opt('crf', '18'), '--out', s.plateOut] });
+    tasks.push({ id: s.id, job: s.id, part: 'plate', scene: s.scene, frames: s.frames, out: s.plateOut, key: s.plateKey,
+      renderArgs: plateArgs(s, fps, { draft, crf: opt('crf', '18'), params: paramsOf(s) }) });
   }
   if (s.layered && !cached(s.layerOut, s.layerKey)) {
     any = true;
-    tasks.push({ id: s.id, part: 'layer', scene: s.scene, frames: s.frames, out: s.layerOut, key: s.layerKey, light: true,
+    // lyric layers are light and stay on this Mac
+    tasks.push({ id: s.id, job: `${s.id}-lyric`, part: 'layer', scene: s.scene, frames: s.frames, out: s.layerOut, key: s.layerKey, light: true, localOnly: true,
       args: [RENDER, 'layer', ...common, '--samples', draft ? '2' : '8', '--out', s.layerOut] });
   }
   if (!any && !(s.layered && !cached(s.out, s.key))) { console.log(`segment ${s.id} cached`); cachedCount++; }
 }
-
-// ---------- test render: timing and parallelism ----------
-let jobs = +opt('jobs', 0) || 1, speedup = 1;
-const est = new Map();   // task id -> estimated ms per frame
 const plates = tasks.filter((t) => t.part === 'plate');
-if (plates.length) {
-  const pr = draft || flag('no-test') ? [] : probe(plates.map((t) => segs.find((s) => s.id === t.id)));
-  for (const p of pr) { const s = segs.find((x) => x.id === p.id); est.set(p.id, p.fixedMs + p.perSampleMs * +s.samples); }
-  if (pr.length) {
-    const order = [...plates].filter((t) => est.has(t.id)).sort((a, b) => est.get(b.id) - est.get(a.id));
-    const slow = order[0], s = segs.find((x) => x.id === slow.id);
-    const testRun = (seg, at, tag) => {
-      const hb = path.join(workDir, `test-${tag}.json`);
-      const from = Math.max(seg.from, Math.min(seg.to - 1, at));
-      return runWithWatchdog({ cmd: 'node', heartbeat: hb, stallSec, retries: 0, log: (m) => console.log(`test ${seg.id}: ${m}`),
-        args: [RENDER, 'video', '--song', SONG, '--scene', seg.scene, '--params', paramsOf(seg), '--from', String(from), '--to', String(from + 1), '--samples', seg.samples, '--noaudio', '--preset', 'veryfast', '--out', path.join(workDir, `test-${tag}.mp4`), '--heartbeat', hb] });
-    };
-    console.log(`test render: 1 s of the slowest scene, ${slow.id} (${slow.scene}), estimated ${Math.round(est.get(slow.id))} ms/frame`);
-    const t0 = Date.now();
-    const solo = await testRun(s, (s.from + s.to) / 2 - 0.5, 'a');
-    const soloSec = (Date.now() - t0) / 1000;
-    if (!solo.ok) notes.push(`The test render of scene ${slow.id} failed (${solo.reason}); the full run will retry it under the watchdog.`);
-    else {
-      // the heartbeat holds the worker's own ms/frame, without Chrome start-up
-      const hb = readJson(path.join(workDir, 'test-a.json'));
-      // the probe times the GPU alone; reading frames back and encoding them adds a per-frame cost
-      // that is much the same for every scene, so the difference is added, not multiplied
-      const measured = hb?.msPerFrame ?? (soloSec * 1000) / fps, overhead = Math.max(0, measured - est.get(slow.id));
-      for (const [id, v] of est) est.set(id, v + overhead);
-      console.log(`measured ${measured} ms/frame (${Math.round(overhead)} ms of it is read-back and encoding)`);
-      if (!+opt('jobs', 0) && plates.length > 1) {
-        const second = segs.find((x) => x.id === (order[1] ?? slow).id);
-        const t1 = Date.now();
-        const pair = await Promise.all([testRun(s, (s.from + s.to) / 2 - 0.5, 'b'), testRun(second, (second.from + second.to) / 2 - 0.5, 'c')]);
-        const pairSec = (Date.now() - t1) / 1000;
-        const soloRate = fps / soloSec, pairRate = (2 * fps) / pairSec;
-        speedup = pair.every((r) => r.ok) ? pairRate / soloRate : 1;
-        jobs = speedup >= 1.3 ? 2 : 1;
-        console.log(`two workers at once: ${speedup.toFixed(2)}× the throughput of one, so ${jobs} worker${jobs > 1 ? 's' : ''}`);
-      }
-    }
-    fs.writeFileSync(path.join(OUT, 'test-render.json'), JSON.stringify({ at: new Date().toISOString(), slowest: slow.id, jobs, speedup: +speedup.toFixed(2), estMsPerFrame: Object.fromEntries([...est].map(([k, v]) => [k, Math.round(v)])) }, null, 1) + '\n');
+
+// ---------- machines ----------
+// Every reachable machine with a GPU renders; --local keeps it to this Mac, --machines a,b picks.
+const ENGINE = path.join(HERE, '..');
+const workers = [];
+for (const m of loadMachines({ only: flag('local') ? ['mac'] : opt('machines')?.split(',') })) {
+  if (m.remote && !plates.length) continue;
+  if (!(await m.available())) { console.log(`${m.name}: not used, ${m.why}`); if (m.remote) notes.push(`${m.name} was not used: ${m.why}. The film rendered on this Mac alone.`); continue; }
+  const w = new Worker({ machine: m, engineRoot: ENGINE, song: SONG, render: RENDER, workDir });
+  if (m.remote) {
+    try { console.log(`${m.name}: sending the engine and song`); w.dirs = m.prepare(ENGINE, SONG); }
+    catch (e) { console.log(`${m.name}: not used, ${e.message}`); notes.push(`${m.name} was not used: ${e.message}`); continue; }
   }
-  if (jobs === 1) speedup = 1;
-  const totalMs = plates.reduce((a, t) => a + t.frames * (est.get(t.id) ?? 0), 0) / speedup;
-  if (est.size) console.log(`${plates.length} scenes to render, about ${fmtDuration(totalMs / 1000)} with ${jobs} worker${jobs > 1 ? 's' : ''}; finishing around ${new Date(Date.now() + totalMs).toLocaleTimeString()}`);
+  m.parallel = 1; m.slotFactor = 1; m.est = new Map(); m.msPerFrame = (t) => m.est.get(t.id) ?? m.est.get('*') ?? 1000;
+  workers.push(w);
 }
+if (!workers.length) blocked('No machine could be used for rendering.');
+if (!workers.some((w) => !w.machine.remote) && tasks.some((t) => t.localOnly)) blocked('Lyric layers render on this Mac, which was left out (--machines).');
+
+// One still from the middle of a scene on this Mac and on the other machine, compared (PSNR).
+async function pictureAgrees(w, seg) {
+  const t = +((seg.from + seg.to) / 2).toFixed(2), params = paramsOf(seg);
+  const dir = path.join(workDir, `agree-${w.machine.name}`);
+  fs.rmSync(dir, { recursive: true, force: true }); fs.mkdirSync(dir, { recursive: true });
+  const local = spawnSync('node', [RENDER, 'stills', '--song', SONG, '--scene', seg.scene, '--params', params, '--t', String(t), '--samples', '4', '--out', dir], { encoding: 'utf8' });
+  const mine = fs.readdirSync(dir).find((f) => f.endsWith('.png') && !f.startsWith('.'));
+  if (local.status !== 0 || !mine) return { ok: false, why: 'the reference still on this Mac failed' };
+  const m = w.machine, remoteDir = `${m.root}/out/agree-${w.tag}`;
+  const c = m.command(w.dirs, `agree-${w.tag}`, ['stills', '--scene', seg.scene, '--params64', Buffer.from(params).toString('base64'), '--t', String(t), '--samples', '4', '--out', remoteDir]);
+  const r = spawnSync(c.cmd, c.args, { encoding: 'utf8', timeout: 10 * 60000 });
+  const theirs = path.join(dir, `theirs.png`);
+  try { m.fetch(`${remoteDir}/${mine}`, theirs); } catch (e) { return { ok: false, why: `its still did not arrive (${(r.stderr || r.stdout || e.message).trim().split('\n').pop()})` }; }
+  if (/CONTEXT_LOST|context lost/i.test(r.stdout ?? '')) return { ok: false, why: 'its graphics context was lost while drawing (black frames)' };
+  const cmp = spawnSync('ffmpeg', ['-hide_banner', '-i', path.join(dir, mine), '-i', theirs, '-lavfi', 'psnr', '-f', 'null', '-'], { encoding: 'utf8' });
+  const psnr = +(/average:([\d.inf]+)/.exec(cmp.stderr)?.[1] ?? 0);
+  const v = psnr === Infinity || String(psnr) === 'inf' ? 99 : psnr;
+  return v >= 30 ? { ok: true, psnr: v } : { ok: false, psnr: v, why: `its picture differs from this Mac's (PSNR ${v.toFixed(1)} dB; 30 needed)` };
+}
+
+// ---------- test render: each machine's speed and how many workers it takes ----------
+const testReport = { at: new Date().toISOString(), machines: {} };
+if (plates.length && !draft && !flag('no-test')) {
+  const bySeg = (t) => segs.find((s) => s.id === t.id);
+  await Promise.all(workers.map(async (w) => {
+    const m = w.machine;
+    const pr = probeOn(w, plates.map(bySeg));
+    for (const p of pr) m.est.set(p.id, p.fixedMs + p.perSampleMs * +bySeg(p).samples);
+    if (!pr.length) { console.log(`${m.name}: the probe returned nothing`); return; }
+    const order = plates.filter((t) => m.est.has(t.id)).sort((a, b) => m.est.get(b.id) - m.est.get(a.id));
+    const slowSeg = bySeg(order[0]);
+    // one second from the middle of the slowest scene, k at a time
+    const test = async (k, tag) => {
+      const rs = await Promise.all(Array.from({ length: k }, (_, i) => {
+        const at = Math.max(slowSeg.from, Math.min(slowSeg.to - 1, (slowSeg.from + slowSeg.to) / 2 - 0.5 - i * 0.25));
+        const seg = { ...slowSeg, f0: Math.round(at * fps), f1: Math.round(at * fps) + fps };
+        return w.run({ job: `test-${m.name}-${tag}${i}`, renderArgs: plateArgs(seg, fps, { draft: true, params: paramsOf(slowSeg) }), out: path.join(workDir, `test-${m.name}-${tag}${i}.mp4`), frames: fps, stallSec, retries: 0, log: (x) => console.log(`test on ${m.name}: ${x}`) });
+      }));
+      if (!rs.every((r) => r.ok)) return null;
+      const ms = Array.from({ length: k }, (_, i) => readJson(path.join(workDir, `hb-test-${m.name}-${tag}${i}.json`))?.msPerFrame).filter(Boolean);
+      return ms.length === k ? ms.reduce((a, b) => a + b, 0) / k : null;
+    };
+    // another machine must draw the same picture as this Mac before it gets any scenes: a different
+    // GPU or graphics backend can lose the context and render black, or draw something else
+    if (m.remote) {
+      const agree = await pictureAgrees(w, slowSeg);
+      testReport.machines[m.name] = { gpu: m.gpu, agreement: agree };
+      if (!agree.ok) { console.log(`${m.name}: left out, ${agree.why}`); notes.push(`${m.name} was left out: ${agree.why}.`); m.dead = true; return; }
+      console.log(`${m.name}: draws the same picture as this Mac (${agree.psnr.toFixed(1)} dB)`);
+    }
+    console.log(`${m.name}: test render of the slowest scene, ${slowSeg.id} (${slowSeg.scene})`);
+    const solo = await test(1, 'a');
+    if (!solo) { notes.push(`The test render on ${m.name} failed; it was left out.`); m.dead = true; return; }
+    const overhead = Math.max(0, solo - m.est.get(slowSeg.id));
+    for (const [id, v] of m.est) m.est.set(id, v + overhead);
+    const rates = [1000 / solo];
+    const jobsOpt = +opt('jobs', 0);
+    if (!m.remote && jobsOpt) { m.parallel = jobsOpt; m.slotFactor = 1; }
+    else if (plates.length > 1) {
+      const maxK = m.remote && m.freeVramMB ? Math.max(1, Math.floor(m.freeVramMB / 1200)) : 3;
+      for (let k = 2; k <= Math.min(3, maxK); k++) {
+        const ms = await test(k, `k${k}`);
+        if (!ms) break;
+        rates.push((k * 1000) / ms);
+        if (rates[k - 1] < rates[k - 2] * 1.25) break;
+      }
+      const c = chooseParallel(rates);
+      m.parallel = c.parallel; m.slotFactor = c.parallel / c.speedup;
+    }
+    testReport.machines[m.name] = { ...testReport.machines[m.name], gpu: m.gpu ?? 'this Mac', slowest: slowSeg.id, msPerFrame: Math.round(solo), readBackMs: Math.round(overhead), throughputByWorkers: rates.map((r) => +r.toFixed(2)), workers: m.parallel };
+    console.log(`${m.name}: ${Math.round(solo)} ms/frame on the slowest scene; ${rates.map((r, i) => `${i + 1} worker${i ? 's' : ''} ${r.toFixed(2)} frames/s`).join(', ')}; using ${m.parallel}`);
+  }));
+  for (let i = workers.length - 1; i >= 0; i--) if (workers[i].machine.dead && workers[i].machine.remote) workers.splice(i, 1);
+  fs.writeFileSync(path.join(OUT, 'test-render.json'), JSON.stringify(testReport, null, 1) + '\n');
+} else {
+  const jobsOpt = +opt('jobs', 0);
+  for (const w of workers) if (!w.machine.remote) w.machine.parallel = jobsOpt || 1;
+}
+
+// worker slots: each machine as many times as it takes workers
+const slots = workers.flatMap((w) => Array.from({ length: w.machine.parallel }, (_, i) => ({ worker: w, machine: w.machine, name: `${w.machine.name}${w.machine.parallel > 1 ? '#' + (i + 1) : ''}`, freeAt: 0 })));
+for (const t of tasks) t.weight = t.frames * ((workers.find((w) => !w.machine.remote) ?? workers[0]).machine.msPerFrame(t)) * (t.light ? 0.01 : 1);
+const lightMs = 300;   // a lyric layer frame on this Mac, roughly
+for (const t of tasks) if (t.light) t.est = lightMs;
+const now = () => Date.now() / 1000;
+const planned = simulate(tasks, slots);
+if (plates.length && Number.isFinite(planned) && testReport.machines && Object.keys(testReport.machines).length)
+  console.log(`${plates.length} scenes to render on ${slots.map((s) => s.name).join(', ')}: about ${fmtDuration(planned)}, finishing around ${new Date(Date.now() + planned * 1000).toLocaleTimeString()}`);
 
 // ---------- render under the watchdog ----------
 const progress = new Progress({
-  file: path.join(OUT, 'progress.json'), total: segs.filter((s) => s.selected).length, cached: cachedCount, speedup,
-  jobs: tasks.map((t) => ({ id: `${t.id}${t.part === 'layer' ? '-lyric' : ''}`, scene: t.scene, frames: t.frames, estMsPerFrame: t.part === 'plate' ? est.get(t.id) : (est.size ? 5 : undefined) })),
+  file: path.join(OUT, 'progress.json'), total: segs.filter((s) => s.selected).length, cached: cachedCount,
+  jobs: tasks.map((t) => ({ id: t.job, scene: t.scene, frames: t.frames, estMsPerFrame: t.light ? lightMs : workers[0].machine.msPerFrame(t) })),
+  machines: Object.fromEntries(workers.map((w) => [w.machine.name, { workers: w.machine.parallel, gpu: w.machine.gpu ?? 'this Mac' }])),
+  remaining: () => simulate(pending.filter((t) => !t.light), slots.map((s) => ({ ...s, freeAt: Math.max(now(), s.freeAt) })), now()),
 });
 const failed = new Set();
-async function runTask(t) {
-  const pid = `${t.id}${t.part === 'layer' ? '-lyric' : ''}`;
-  const hb = path.join(workDir, `hb-${pid}.json`);
-  console.log(`segment ${pid} (${t.scene}): ${t.frames} frames`);
-  progress.start(pid);
-  const r = await runWithWatchdog({
-    cmd: 'node', args: [...t.args, '--heartbeat', hb], heartbeat: hb, stallSec, retries,
-    onFrame: (b) => progress.frame(pid, b.frame),
-    log: (m) => { console.log(`segment ${pid}: ${m}`); progress.log(pid, m); if (/^retry/.test(m)) progress.start(pid); },
-  });
-  if (r.ok) fs.writeFileSync(t.out + '.key', t.key);
-  else { failed.add(t.id); progress.log(pid, `failed after ${r.attempts.length} attempts: ${r.reason}`); }
-  progress.finish(pid, r.ok, r.reason);
+const pending = [...tasks];
+let inflight = 0;
+const waiters = [];
+const changed = () => new Promise((r) => waiters.push(r));
+const wake = () => { for (const r of waiters.splice(0)) r(); };
+
+async function runTask(slot, t) {
+  const m = slot.machine;
+  console.log(`segment ${t.job} (${t.scene}) on ${slot.name}: ${t.frames} frames`);
+  progress.start(t.job, slot.name);
+  let dash = null, lastDash = 0;
+  if (m.remote) dash = await m.announce('start', { agent: 'Claude', origin_machine: 'mac-mini', tool: 'ark photoreal', description: `${path.basename(SONG)} scene ${t.id} (${t.scene})`, project: path.basename(SONG), expected_minutes: +(slotSeconds(slot, t) / 60).toFixed(1) });
+  const log = (x) => { console.log(`segment ${t.job} on ${slot.name}: ${x}`); progress.log(t.job, `${slot.name}: ${x}`); if (/^retry/.test(x)) progress.start(t.job, slot.name); };
+  const onFrame = (b) => {
+    progress.frame(t.job, b.frame);
+    if (dash?.id && Date.now() - lastDash > 30000) { lastDash = Date.now(); m.announce('progress', { id: dash.id, percent: +(100 * b.frame / t.frames).toFixed(1) }); }
+  };
+  const r = t.light
+    ? await runWithWatchdog({ cmd: 'node', args: [...t.args, '--heartbeat', path.join(workDir, `hb-${t.job}.json`)], heartbeat: path.join(workDir, `hb-${t.job}.json`), stallSec, retries, onFrame, log })
+    : await slot.worker.run({ job: t.job, renderArgs: t.renderArgs, out: t.out, frames: t.frames, stallSec, retries, onFrame, log });
+  if (dash?.id) m.announce('end', { id: dash.id, status: r.ok ? 'done' : 'failed', note: r.ok ? '' : r.reason });
+  if (r.ok) { fs.writeFileSync(t.out + '.key', t.key); progress.finish(t.job, true); return; }
+  // a scene that fails on another machine comes back to this Mac instead of failing the film
+  if (m.remote && !t.movedHome) {
+    progress.log(t.job, `failed on ${m.name} (${r.reason}); moving it to this Mac`);
+    t.movedHome = true; t.localOnly = true; pending.push(t); progress.requeue(t.job);
+    if (!(await m.available())) { m.dead = true; notes.push(`${m.name} dropped out during the render (${m.why}); its scenes moved to this Mac.`); }
+    return;
+  }
+  failed.add(t.id); progress.log(t.job, `failed after ${r.attempts?.length ?? 1} attempts: ${r.reason}`);
+  progress.finish(t.job, false, r.reason);
 }
-// heavy scenes through the worker pool, lyric layers after them (they are light)
-const queue = [...tasks.filter((t) => !t.light), ...tasks.filter((t) => t.light)];
-await Promise.all(Array.from({ length: Math.min(jobs, queue.length) || 0 }, async () => { while (queue.length) await runTask(queue.shift()); }));
+
+await Promise.all(slots.map(async (slot) => {
+  for (;;) {
+    if (slot.machine.dead) return;
+    const allowed = pending.filter((x) => !(x.localOnly && slot.machine.remote));
+    let t = pickTask(slot, allowed, slots.filter((s) => !s.machine.dead), now());
+    if (!t) {
+      if (!pending.length && !inflight) { wake(); return; }
+      // nothing this slot should take while others work: wait for a scene to finish or come back;
+      // with nothing running at all, take the biggest scene it may rather than leave it undone
+      if (inflight) { await changed(); continue; }
+      t = allowed.sort((a, b) => b.weight - a.weight)[0];
+      if (!t) return;
+    }
+    pending.splice(pending.indexOf(t), 1);
+    slot.freeAt = now() + slotSeconds(slot, t);
+    inflight++;
+    try { await runTask(slot, t); } finally { inflight--; slot.freeAt = now(); wake(); }
+  }
+}));
+for (const t of pending) { failed.add(t.id); progress.finish(t.job, false, 'no machine left to render it'); }
 
 // ---------- composite lyric layers over their pictures ----------
 for (const s of segs) {

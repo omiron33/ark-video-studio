@@ -28,6 +28,17 @@ The normal entry point is a song plus a style prompt. After the theme-choice gat
 
 Songs rendered in photoreal mode (GPU scenes in their own song folder) follow the steps in [photoreal/README.md](photoreal/README.md#making-a-film): a storyboard table checked by a fresh critic before any animation, a draft with the measured pre-render check, five key stills reviewed before the full render, the full render under the watchdog with `out/progress.json` and `out/STATUS.md`, then the measured final check and the fresh critic until it says ship. The critic is a new Claude or Codex process that sees only the evidence folder; never review your own build in the session that built it. Keep lyric typography in `scenes/<name>.lyric.js` wherever the words don't need to sit inside the scene, so type changes never re-render pictures.
 
+## Where work runs
+
+The driving agent (Claude, Codex or a person) decides where each piece of work goes; the engine does the measuring and the dispatch.
+
+- **Renders go wherever they finish soonest.** `node photoreal/film.mjs` finds every reachable machine: this Mac, plus any listed in the local, never-committed `~/.config/ark/machines.json` (an `omipc` helper on the PATH is picked up on its own). Before a full render it checks that each other machine draws the same picture as this Mac (a still compared by PSNR; a machine that renders black or different frames is left out), measures its speed on the slowest scene, and adds workers per machine only while each extra one raises throughput by at least 25%. Scenes are then planned biggest-first onto whichever worker would finish them soonest, re-planned each time a worker comes free. `--local` keeps it to this Mac and `--machines mac,omipc` picks.
+- **Every machine keeps the safeguards.** The watchdog, retries, `out/progress.json` (now with the machine per scene) and `out/STATUS.md` work the same everywhere. A scene that fails on another machine moves back to this Mac rather than failing the film, and a machine that drops out mid-render hands its scenes back. If no other machine is reachable the film renders on this Mac alone, and STATUS.md says why.
+- **Shared GPUs are announced.** A machine with a dashboard in its config gets start, progress and end for every job. Don't restart or evict services already on that GPU (on OmiPC, ComfyUI holds most of the memory); the engine sizes workers to the free graphics memory it finds.
+- **Keep the machine config out of the repository.** Hostnames, addresses, users and keys live only in `~/.config/ark/machines.json` and the helper command.
+- **Light work stays local.** Lyric layers, composites, the join, the measured check and critics run on this Mac. Put only GPU-heavy scene renders on other machines.
+- **Don't split one render across machines by hand, or start a second film render on a GPU that is already rendering one.** Use `film.mjs` and let it measure.
+
 ## Visual references during ideation
 
 Apply this before planning new scenes or substantial motion treatments, including agent-written concepts that happen before the CLI director runs. Read `docs/MOTION_REFERENCES.md`.
