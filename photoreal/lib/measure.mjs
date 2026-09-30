@@ -7,10 +7,11 @@
 export const DEFAULTS = {
   minContrast: 4.5,        // WCAG AA for body text, measured against what is actually behind each word
   maxStillSeconds: 0.5,    // no stretch longer than this with nothing visibly moving
-  stillThreshold: 0.5,     // mean absolute frame difference (0-255) on a 96x54 grey proxy that counts as still
+  stillThreshold: 1.0,     // largest 8x6-tile mean change (0-255, 96x54 grey proxy) over a quarter second that still counts as still
+  stopThreshold: 0.5,      // frame-to-frame mean change that counts as stopped, for dead stops
   settleFrames: 8,         // a word stays put this long once it is fully on before it may move
   moveTolerance: 0.35,     // ...allowing drift up to this fraction of its own height
-  minGapRatio: 0.12,       // horizontal gap between neighbouring words, as a fraction of their height
+  minGapRatio: 0.03,       // horizontal gap between neighbouring recognised word boxes, as a fraction of their height (normal spacing measures about 0.07)
   cutEarlyFrames: 2,       // a cut lands on the beat or up to this many frames before it
 };
 

@@ -45,24 +45,34 @@ const add = (gate, severity, frame, detail, fix) => problems.push({ gate, severi
 
 // ---------- motion: one pass over a small grey proxy ----------
 console.log(`motion: decoding ${nFrames} frames`);
-const PW = 96, PH = 54, N = PW * PH;
-const mad = await new Promise((resolve, reject) => {
-  const out = []; let prev = null, carry = Buffer.alloc(0);
+const PW = 96, PH = 54, N = PW * PH, TX = 8, TY = 6, LAG = Math.max(1, Math.round(fps / 4));
+// mad[i]: mean change from the previous frame, for dead stops. motion[i]: the largest change in any
+// of 8x6 tiles over the last quarter second, for stills: slow drift and a single word arriving both
+// count as movement, film grain does not.
+const { mad, motion } = await new Promise((resolve, reject) => {
+  const mad = [], motion = [], ring = []; let carry = Buffer.alloc(0);
   const p = spawn('ffmpeg', ['-loglevel', 'error', '-i', video, '-vf', `scale=${PW}:${PH}:flags=area,format=gray`, '-f', 'rawvideo', '-']);
   p.stdout.on('data', (d) => {
     carry = Buffer.concat([carry, d]);
     while (carry.length >= N) {
-      const f = carry.subarray(0, N);
-      if (!prev) out.push(Infinity);
-      else { let s = 0; for (let i = 0; i < N; i++) s += Math.abs(f[i] - prev[i]); out.push(s / N); }
-      prev = Buffer.from(f); carry = carry.subarray(N);
+      const f = Buffer.from(carry.subarray(0, N)); carry = carry.subarray(N);
+      const prev = ring[ring.length - 1], old = ring.length >= LAG ? ring[ring.length - LAG] : null;
+      if (!prev) mad.push(Infinity);
+      else { let s = 0; for (let i = 0; i < N; i++) s += Math.abs(f[i] - prev[i]); mad.push(s / N); }
+      if (!old) motion.push(Infinity);
+      else {
+        const t = new Float64Array(TX * TY);
+        for (let y = 0; y < PH; y++) for (let x = 0; x < PW; x++) t[Math.floor(y * TY / PH) * TX + Math.floor(x * TX / PW)] += Math.abs(f[y * PW + x] - old[y * PW + x]);
+        motion.push(Math.max(...t) / (N / (TX * TY)));
+      }
+      ring.push(f); if (ring.length > LAG) ring.shift();
     }
   });
-  p.on('close', (c) => (c === 0 ? resolve(out) : reject(Error('ffmpeg motion pass failed'))));
+  p.on('close', (c) => (c === 0 ? resolve({ mad, motion }) : reject(Error('ffmpeg motion pass failed'))));
 });
 const cutFrames = scenes.slice(1).map((s) => Math.round(s.from * fps));
-for (const s of stillStretches(mad, fps, G)) add('still', 'fail', s.startFrame, `nothing visibly moves for ${s.seconds} s (${fmtTime(s.from)} to ${fmtTime(s.to)})`, 'keep something alive through the hold: a slow push, drifting light or breathing type');
-for (const s of deadStops(mad, fps, { ...G, cutFrames })) add('dead-stop', 'fail', s.frame, `a fast move (${s.before} mean change per frame) stops dead within 2 frames (${s.after})`, 'ease the move into its landing over at least 0.3 s instead of stopping it');
+for (const s of stillStretches(motion, fps, G)) add('still', 'fail', s.startFrame, `nothing visibly moves for ${s.seconds} s (${fmtTime(s.from)} to ${fmtTime(s.to)})`, 'keep something alive through the hold: a slow push, drifting light or breathing type');
+for (const s of deadStops(mad, fps, { ...G, stillThreshold: G.stopThreshold, cutFrames })) add('dead-stop', 'fail', s.frame, `a fast move (${s.before} mean change per frame) stops dead within 2 frames (${s.after})`, 'ease the move into its landing over at least 0.3 s instead of stopping it');
 
 // ---------- cuts against the measured beats ----------
 if (audio?.beats?.length && scenes.length > 1) {
@@ -87,7 +97,7 @@ if (!argv.includes('--no-ocr') && lyrics.words?.length) {
     const sel = fr.map((f) => `eq(n\\,${f - a})`).join('+');
     const r = spawnSync('ffmpeg', ['-loglevel', 'error', '-ss', String(a / fps), '-i', video, '-t', String((fr.at(-1) - a + 2) / fps), '-vf', `select='${sel}'`, '-fps_mode', 'passthrough', path.join(dir, '%04d.png')]);
     if (r.status !== 0) throw Error('frame extraction failed');
-    const files = fs.readdirSync(dir).filter((f) => f.endsWith('.png')).sort().map((f) => path.join(dir, f));
+    const files = fs.readdirSync(dir).filter((f) => f.endsWith('.png') && !f.startsWith('.')).sort().map((f) => path.join(dir, f));
     fs.writeFileSync(path.join(dir, 'in.json'), JSON.stringify(files));
     const res = JSON.parse(execFileSync(bin, [path.join(dir, 'in.json')], { maxBuffer: 256 << 20 }));
     for (let i = 0; i < files.length && i < fr.length; i++) {
@@ -119,7 +129,7 @@ if (!argv.includes('--no-ocr') && lyrics.words?.length) {
         if (cr.ratio < G.minContrast) add('contrast', 'fail', c.f1, `"${c.word}" is ${cr.ratio.toFixed(2)}:1 against what is behind it (${cr.ink} ink); needs ${G.minContrast}:1`, cr.ink === 'light' ? 'darken or blur what passes behind the word, strengthen its shade, or move it onto a quieter part of the frame' : 'lighten what is behind the word or switch to light ink here');
       }
       for (const k of collisions(o1, c.onScreen, G)) {
-        const key = `${c.f1}:${k.kind}:${k.text}`;
+        const key = `${sceneAt(scenes, c.f1 / fps)}:${k.kind}:${k.text}`;   // once per scene
         if (problems.some((p) => p.key === key)) continue;
         add('collision', k.kind === 'tight' ? 'warn' : 'fail', c.f1, k.kind === 'run-together' ? `"${k.text}" reads as one word` : k.kind === 'overlap' ? `"${k.text}" overlap each other` : k.kind === 'tight' ? `"${k.text}" are crowded (gap ${k.gap} of the letter height)` : `two lines sit on top of each other: ${k.text}`, 'open the word spacing or move the lines apart');
         problems.at(-1).key = key;

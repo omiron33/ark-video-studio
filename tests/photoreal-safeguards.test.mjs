@@ -155,10 +155,10 @@ test('measure: contrast of light words on dark and on bright backgrounds', () =>
 
 test('measure: run-together, overlapping and crowded words', () => {
   const line = (words) => ({ text: words.map((w) => w.text).join(' '), box: { x: 0, y: 0.4, w: 0.6, h: 0.1 }, words });
-  const frame = { lines: [line([{ text: 'everybeast', box: { x: 0.1, y: 0.4, w: 0.2, h: 0.1 } }, { text: 'and', box: { x: 0.28, y: 0.4, w: 0.1, h: 0.1 } }, { text: 'bird', box: { x: 0.385, y: 0.4, w: 0.1, h: 0.1 } }])] };
+  const frame = { lines: [line([{ text: 'everybeast', box: { x: 0.1, y: 0.4, w: 0.2, h: 0.1 } }, { text: 'and', box: { x: 0.28, y: 0.4, w: 0.1, h: 0.1 } }, { text: 'bird', box: { x: 0.382, y: 0.4, w: 0.1, h: 0.1 } }])] };
   const k = collisions(frame, ['and', 'every', 'beast', 'and', 'bird']).map((c) => c.kind);
   assert.deepEqual(k, ['run-together', 'overlap', 'tight']);
-  assert.equal(findWord(frame, 'Bird,').box.x, 0.385);
+  assert.equal(findWord(frame, 'Bird,').box.x, 0.382);
 });
 
 test('measure: each word is checked once sung, within its line', () => {

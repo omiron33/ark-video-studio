@@ -5,14 +5,17 @@
 // is tried again up to `retries` more times. A job that still fails is reported, not thrown, so the
 // caller can carry on with the other scenes.
 import fs from 'node:fs';
-import { spawn } from 'node:child_process';
+import { spawn, spawnSync } from 'node:child_process';
 
 export function readHeartbeat(file) {
   try { return JSON.parse(fs.readFileSync(file, 'utf8')); } catch { return null; }
 }
 
 function killTree(child) {
-  // the worker runs in its own process group, so Chrome and FFmpeg go with it
+  // the worker runs in its own process group, so FFmpeg goes with it; Chrome has a group of its own
+  // and carries --ark-worker=<worker pid> so it can be found
+  const found = spawnSync('pgrep', ['-f', `ark-worker=${child.pid}( |$)`], { encoding: 'utf8' }).stdout ?? '';
+  for (const pid of found.split('\n').map(Number).filter(Boolean)) { try { process.kill(-pid, 'SIGKILL'); } catch { try { process.kill(pid, 'SIGKILL'); } catch {} } }
   try { process.kill(-child.pid, 'SIGKILL'); } catch { try { child.kill('SIGKILL'); } catch {} }
 }
 

@@ -8,9 +8,10 @@ export function pickKeyStills(scenes, lyrics, probes = [], fps = 60) {
   const out = [];
   const add = (name, t, why) => { t = snap(t); out.push({ name, time: t, sceneId: at(t).id, why }); };
 
-  add('1-opening', first.from + Math.min(1, (first.to - first.from) / 2), 'the first second a viewer sees');
+  add('1-opening', first.from + 2 / fps, 'the first picture a viewer sees (it must already be finished)');
   const longest = [...scenes].sort((a, b) => (b.to - b.from) - (a.to - a.from))[0];
-  add('2-main', (longest.from + longest.to) / 2, `middle of the longest scene (${longest.id})`);
+  const mid = (longest.from + longest.to) / 2;
+  add('2-main', Math.abs(mid - out[0].time) < 0.5 ? longest.from + (longest.to - longest.from) * 0.75 : mid, `the heart of the longest scene (${longest.id})`);
 
   // the cut where the camera moves fastest across it, from the probe; the middle cut without one
   const speed = new Map(probes.map((p) => [p.id, p]));

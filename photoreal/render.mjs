@@ -50,7 +50,9 @@ const port = server.address().port;
 
 const browser = await chromium.launch({
   executablePath: CHROME, headless: true,
-  args: ['--use-angle=metal', '--enable-gpu', '--ignore-gpu-blocklist', '--disable-gpu-watchdog', '--disable-background-timer-throttling', '--disable-renderer-backgrounding'],
+  // --ark-worker marks this Chrome (which Playwright starts in its own process group) so the
+  // watchdog can find and kill it along with this worker
+  args: [`--ark-worker=${process.pid}`, '--use-angle=metal', '--enable-gpu', '--ignore-gpu-blocklist', '--disable-gpu-watchdog', '--disable-background-timer-throttling', '--disable-renderer-backgrounding'],
 });
 const lyricOf = (scene) => fs.existsSync(path.join(SONG, 'scenes', `${scene}.lyric.js`));
 async function openScene(scene, params) {
@@ -68,6 +70,7 @@ async function openScene(scene, params) {
 const samples = +opt('samples', 16);
 const heartbeat = opt('heartbeat');
 const beat = (o) => { if (heartbeat) fs.writeFileSync(heartbeat, JSON.stringify({ ...o, at: Date.now() })); };
+beat({ frame: 0 });
 
 if (mode === 'probe') {
   // One Chrome, one page per scene: a few frames at 1 and 4 sub-frames give the fixed and per-sample
@@ -98,7 +101,7 @@ if (mode === 'probe') {
       const perSample = Math.max(0.1, (ms4 - ms1) / 3), fixed = Math.max(0, ms1 - perSample);
       console.log('PROBE ' + JSON.stringify({ id: s.id, scene: s.scene, loadMs, fixedMs: +fixed.toFixed(1), perSampleMs: +perSample.toFixed(2), inSpeed: +inSpeed.toFixed(3), outSpeed: +outSpeed.toFixed(3), layer }));
     }
-  } finally { await browser.close(); server.close(); }
+  } finally { server.closeAllConnections?.(); server.close(); await Promise.race([browser.close(), new Promise((r) => setTimeout(r, 10000))]); }
   process.exit(0);
 }
 
@@ -156,6 +159,9 @@ try {
     console.log('wrote', out, r);
   }
 } finally {
-  await browser.close();
+  server.closeAllConnections?.();
   server.close();
+  await Promise.race([browser.close(), new Promise((r) => setTimeout(r, 10000))]);
 }
+// nothing may keep a finished worker alive (a lingering Chrome or socket would look like a stall)
+process.exit(0);

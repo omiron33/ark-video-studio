@@ -1,0 +1,10 @@
+{
+ "lines": [
+  { "text": "God remembered Noe", "start": 0.3, "end": 1.6 },
+  { "text": "and every beast", "start": 2.2, "end": 3.4 }
+ ],
+ "words": [
+  { "w": "God", "start": 0.3, "end": 0.6 }, { "w": "remembered", "start": 0.65, "end": 1.1 }, { "w": "Noe", "start": 1.15, "end": 1.6 },
+  { "w": "and", "start": 2.2, "end": 2.4 }, { "w": "every", "start": 2.45, "end": 2.8 }, { "w": "beast", "start": 2.85, "end": 3.4 }
+ ]
+}

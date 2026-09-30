@@ -110,7 +110,7 @@ if (flag('stills')) {
     const r = spawnSync('node', [RENDER, 'stills', '--song', SONG, '--scene', s.scene, '--params', paramsOf(s), '--t', String(p.time), '--samples', s.samples, '--out', tmp], { stdio: 'inherit' });
     if (r.status !== 0) { notes.push(`Key still ${p.name} (${s.id}) failed to render.`); continue; }
     const f = path.join(dir, `${p.name}.png`);
-    fs.renameSync(path.join(tmp, fs.readdirSync(tmp)[0]), f);
+    fs.renameSync(path.join(tmp, fs.readdirSync(tmp).find((f) => f.endsWith('.png') && !f.startsWith('.'))), f);
     shots.push({ ...p, file: path.relative(SONG, f), content: s.content });
   }
   fs.writeFileSync(path.join(dir, 'stills.json'), JSON.stringify({ fps, stills: shots }, null, 1) + '\n');
@@ -183,9 +183,11 @@ if (plates.length) {
     else {
       // the heartbeat holds the worker's own ms/frame, without Chrome start-up
       const hb = readJson(path.join(workDir, 'test-a.json'));
-      const k = (hb?.msPerFrame ?? (soloSec * 1000) / fps) / est.get(slow.id);
-      for (const [id, v] of est) est.set(id, v * k);
-      console.log(`measured ${hb?.msPerFrame} ms/frame (${k.toFixed(2)}× the estimate)`);
+      // the probe times the GPU alone; reading frames back and encoding them adds a per-frame cost
+      // that is much the same for every scene, so the difference is added, not multiplied
+      const measured = hb?.msPerFrame ?? (soloSec * 1000) / fps, overhead = Math.max(0, measured - est.get(slow.id));
+      for (const [id, v] of est) est.set(id, v + overhead);
+      console.log(`measured ${measured} ms/frame (${Math.round(overhead)} ms of it is read-back and encoding)`);
       if (!+opt('jobs', 0) && plates.length > 1) {
         const second = segs.find((x) => x.id === (order[1] ?? slow).id);
         const t1 = Date.now();

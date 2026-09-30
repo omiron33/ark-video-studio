@@ -57,7 +57,8 @@ export class Progress {
     const state = js.some((j) => j.state === 'rendering' || j.state === 'waiting') ? 'rendering' : failed.length ? 'blocked' : 'done';
     return {
       state,
-      scenesDone: done.length + this.cached, scenesTotal: this.total, scenesCached: this.cached, scenesFailed: failed.map((j) => ({ id: j.id, scene: j.scene, reason: j.reason, attempts: j.attempts })),
+      // a scene with a lyric layer has two jobs (01 and 01-lyric); it is done when both are
+      scenesDone: [...new Set(js.map((j) => j.id.replace(/-lyric$/, '')))].filter((id) => js.filter((j) => j.id.replace(/-lyric$/, '') === id).every((j) => j.state === 'done')).length + this.cached, scenesTotal: this.total, scenesCached: this.cached, scenesFailed: failed.map((j) => ({ id: j.id, scene: j.scene, reason: j.reason, attempts: j.attempts })),
       current: js.filter((j) => j.state === 'rendering').map((j) => ({ id: j.id, scene: j.scene, frame: j.frameDone, of: j.frames, attempt: j.attempts })),
       framesDone, framesTotal,
       secondsPerScene: Object.fromEntries(done.map((j) => [j.id, Math.round(j.seconds)])),

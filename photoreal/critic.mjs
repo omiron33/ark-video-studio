@@ -85,7 +85,7 @@ if (kind === 'storyboard') {
   binding.videoSha = shaFile(video);
 }
 
-const prompt = buildPrompt(kind, { openItems: openItems(ledger, kind) });
+const prompt = buildPrompt(kind, { openItems: openItems(ledger, kind), extra: `The film runs at ${fps} frames per second; frame n is at n / ${fps} seconds.` });
 fs.writeFileSync(path.join(pack, 'PROMPT.md'), prompt + '\n');
 console.log(`evidence and prompt in ${pack}`);
 if (argv.includes('--pack-only')) process.exit(0);
