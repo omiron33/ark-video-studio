@@ -15,6 +15,7 @@ try {
   await document.fonts.load('500 64px "EB Garamond"');
   await document.fonts.load('italic 500 64px "EB Garamond"');
   await document.fonts.load('500 64px "Inter Tight"');
+  for (const f of ['600 64px "EB Garamond"', '700 64px "EB Garamond"', '800 64px "EB Garamond"', 'italic 400 64px "EB Garamond"', 'italic 600 64px "EB Garamond"', '300 64px "Inter Tight"', '700 64px "Inter Tight"', '800 64px "Inter Tight"']) await document.fonts.load(f);
   // a scene module exports a scene, or a factory that builds one from the film's parameters
   const scene = typeof mod.default === 'function' ? await mod.default(sceneParams) : mod.default;
   const engine = new Engine(document.getElementById('c'));
