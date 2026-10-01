@@ -46,8 +46,26 @@ export class HelperMachine {
   ps(script, o) { return this.sh(`powershell -NoProfile -NonInteractive -EncodedCommand ${enc(`$ProgressPreference='SilentlyContinue'; ${script}`)}`, o); }
   describe() { return `${this.name} (${this.gpu ?? 'GPU unknown'})`; }
 
+  // The machine's dashboard may say hold off: its control set to pause or stop, or a job with GPU
+  // priority running (a voice job on OmiPC). Returns the reason, or null when work may start there.
+  async yieldReason() {
+    if (!this.dashboard) return null;
+    try {
+      const c = await (await fetch(`${this.dashboard}/api/control`, { signal: AbortSignal.timeout(5000) })).json();
+      const ctl = c.control ?? c.state;
+      if (ctl && ctl !== 'run') return `its dashboard is set to ${ctl}`;
+      const r = await (await fetch(`${this.dashboard}/api/renders`, { signal: AbortSignal.timeout(5000) })).json();
+      const pri = new RegExp(this.priorityPattern ?? 'voice|tts|speech|vocal', 'i');
+      const busy = (r.active ?? []).find((j) => j.agent !== 'Claude' && pri.test(`${j.tool ?? ''} ${j.description ?? ''}`));
+      if (busy) return `${busy.agent ?? 'another agent'}'s ${busy.description ?? busy.tool} has the GPU`;
+    } catch {}
+    return null;
+  }
+
   // reachable, with Node, Chrome and FFmpeg, and enough free graphics memory for one worker
   async available() {
+    const hold = await this.yieldReason();
+    if (hold) { this.why = hold; return false; }
     const r = this.ps(`$u=$env:USERPROFILE; $n=(Get-Command node -EA SilentlyContinue).Source; $f=(Get-Command ffmpeg -EA SilentlyContinue).Source; $c=Test-Path 'C:/Program Files/Google/Chrome/Application/chrome.exe'; $g=(nvidia-smi --query-gpu=name,memory.free,memory.total --format=csv,noheader,nounits 2>$null) -join ';'; "ARK|$u|$n|$f|$c|$g"`, { timeout: 30000 });
     const line = r.out.split('\n').find((l) => l.startsWith('ARK|'));
     if (!r.ok || !line) { this.why = `not reachable (${(r.err || r.out).trim().split('\n').pop() || 'no answer'})`; return false; }

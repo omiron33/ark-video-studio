@@ -387,6 +387,12 @@ async function runTask(slot, t) {
   console.log(`segment ${t.job} (${t.scene}) on ${slot.name}: ${t.frames} frames`);
   progress.start(t.job, slot.name);
   let dash = null, lastDash = 0;
+  // a remote machine whose dashboard says hold off (paused, stopped, or a priority job running) gives
+  // the scene back to be done elsewhere
+  if (m.remote) {
+    const hold = await m.yieldReason();
+    if (hold) { progress.log(t.job, `${m.name}: ${hold}; leaving it to another machine`); m.heldUntil = Date.now() + 120000; pending.push(t); progress.requeue(t.job); if (!m.holdNoted) { notes.push(`${m.name} stepped aside while ${hold}.`); m.holdNoted = true; } return; }
+  }
   if (m.remote) dash = await m.announce('start', { agent: 'Claude', origin_machine: 'mac-mini', tool: 'ark photoreal', description: `${path.basename(SONG)} scene ${t.id} (${t.scene})`, project: path.basename(SONG), expected_minutes: +(slotSeconds(slot, t) / 60).toFixed(1) });
   const log = (x) => { console.log(`segment ${t.job} on ${slot.name}: ${x}`); progress.log(t.job, `${slot.name}: ${x}`); if (/^retry/.test(x)) progress.start(t.job, slot.name); };
   const onFrame = (b) => {
@@ -410,8 +416,9 @@ async function runTask(slot, t) {
 const slotLoop = async (slot) => {
   for (;;) {
     if (slot.machine.dead) return;
+    if (slot.machine.heldUntil > Date.now()) { if (!pending.length && !inflight) return; await new Promise((r) => setTimeout(r, 15000)); continue; }
     const allowed = pending.filter((x) => !(x.localOnly && slot.machine.remote));
-    let t = pickTask(slot, allowed, slots.filter((s) => !s.machine.dead), now());
+    let t = pickTask(slot, allowed, slots.filter((s) => !s.machine.dead && !(s.machine.heldUntil > Date.now())), now());
     if (!t) {
       if (!pending.length && !inflight) { wake(); return; }
       // nothing this slot should take while others work: wait for a scene to finish or come back;
