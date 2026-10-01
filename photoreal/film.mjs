@@ -85,17 +85,25 @@ const segs = scenes.map((s0, i) => {
   const handles = handlesOf(i);
   const s = handles ? { ...s0, handles } : s0;
   const f0 = Math.round((s.from - (handles?.[0] ?? 0)) * fps), f1 = Math.round((s.to + (handles?.[1] ?? 0)) * fps);
+  // A scene can be raised to premium on its own ("tier": "premium" on the scene), so a few scenes
+  // can be rebuilt all-out and stitched into a film otherwise rendered at standard; it renders at the
+  // film's frame rate. The fast tier renders everything fast.
+  const st = tier === 'fast' ? 'fast' : s.tier === 'premium' ? 'premium' : tier;
+  const base = st === tier ? +samples : st === 'premium' ? Math.max(16, baseSamples * 2) : baseSamples;
   // a scene may ask for more sub-frames (fast wings); premium gives lens-heavy premium scenes 32
-  const own = s.samples != null ? String(tier === 'premium' ? Math.max(+s.samples, +samples) : tier === 'fast' ? Math.min(+s.samples, +samples) : s.samples) : samples;
-  const sSamples = draft ? samples : tier === 'premium' && keys.isPremium(s.scene) ? String(Math.max(32, +own)) : own;
+  const own = s.samples != null ? String(st === 'premium' ? Math.max(+s.samples, base) : st === 'fast' ? Math.min(+s.samples, base) : s.samples) : String(base);
+  const sSamples = draft ? samples : st === 'premium' && keys.isPremium(s.scene) ? String(Math.max(32, +own)) : own;
+  const sLayerSamples = st === 'premium' && !draft ? 16 : layerSamples;
+  const sDir = st === tier || draft ? segDir : path.join(OUT, `segments-${st}`);
+  fs.mkdirSync(sDir, { recursive: true });
   const layered = keys.hasLayer(s.scene);
-  const out = path.join(segDir, `${s.id}.mp4`);
-  const seg = { ...s, f0, f1, frames: f1 - f0, samples: sSamples, layered, out, content: keys.content(s, fps) };
+  const out = path.join(sDir, `${s.id}.mp4`);
+  const seg = { ...s, f0, f1, frames: f1 - f0, samples: sSamples, layered, out, content: keys.content(s, fps), sceneTier: st, crf: st === 'premium' && tier !== 'premium' ? '16' : encode.crf };
   if (layered) {
-    seg.plateOut = path.join(segDir, `${s.id}.plate.mp4`);
-    seg.layerOut = path.join(segDir, `${s.id}.lyric.mkv`);
+    seg.plateOut = path.join(sDir, `${s.id}.plate.mp4`);
+    seg.layerOut = path.join(sDir, `${s.id}.lyric.mkv`);
     seg.plateKey = keys.plate(s, fps, sSamples);
-    seg.layerKey = keys.layer(s, fps, layerSamples);
+    seg.layerKey = keys.layer(s, fps, sLayerSamples);
     seg.key = sha(seg.plateKey + seg.layerKey);
   } else {
     seg.plateOut = out;
@@ -183,13 +191,13 @@ for (const s of segs) {
   if (!cached(s.plateOut, s.plateKey)) {
     any = true;
     tasks.push({ id: s.id, job: s.id, part: 'plate', scene: s.scene, frames: s.frames, out: s.plateOut, key: s.plateKey,
-      renderArgs: plateArgs(s, fps, { draft: encode.preset === 'veryfast', crf: encode.crf, params: paramsOf(s) }) });
+      renderArgs: plateArgs(s, fps, { draft: encode.preset === 'veryfast', crf: s.crf, params: paramsOf(s) }) });
   }
   if (s.layered && !cached(s.layerOut, s.layerKey)) {
     any = true;
     // lyric layers are light; they go wherever they finish soonest like any other job
     tasks.push({ id: s.id, job: `${s.id}-lyric`, part: 'layer', scene: s.scene, frames: s.frames, out: s.layerOut, key: s.layerKey, light: true,
-      renderArgs: ['layer', '--scene', s.scene, '--params64', Buffer.from(paramsOf(s)).toString('base64'), '--from', String(s.f0 / fps), '--to', String(s.f1 / fps), '--samples', String(layerSamples)] });
+      renderArgs: ['layer', '--scene', s.scene, '--params64', Buffer.from(paramsOf(s)).toString('base64'), '--from', String(s.f0 / fps), '--to', String(s.f1 / fps), '--samples', String(s.sceneTier === 'premium' && !draft ? 16 : layerSamples)] });
   }
   if (!any && !(s.layered && !cached(s.out, s.key))) { console.log(`segment ${s.id} cached`); cachedCount++; }
 }

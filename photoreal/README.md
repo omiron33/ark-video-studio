@@ -101,6 +101,11 @@ would cost for this film, without rendering.
 Each tier keeps its own segments (`out/segments-fast/`, `out/segments/`, `out/segments-premium/`),
 so trying one never throws away another. The fast film is `out/film-fast.mp4`.
 
+To rebuild a few scenes all-out inside a film rendered at standard, give those scenes
+`"tier": "premium"` in film.json. They render with premium sub-frames, layers and encode at the
+film's frame rate into `out/segments-premium/`, and the join stitches them in; every other
+segment stays cached.
+
 ## Premium scenes
 
 A scene that declares `export const kind = 'three'` is a Three.js scene rendered through
