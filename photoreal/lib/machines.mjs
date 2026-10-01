@@ -141,6 +141,8 @@ export class HelperMachine {
       ...filesUnder(path.join(engineRoot, 'photoreal')), path.join(engineRoot, 'package.json'),
       ...filesUnder(path.join(engineRoot, 'node_modules', 'playwright-core')),
       path.join(engineRoot, 'node_modules', 'three', 'package.json'), ...filesUnder(path.join(engineRoot, 'node_modules', 'three', 'build')),
+      // the Three.js add-ons premium scenes use (studio environment, area lights, reflector, lens passes)
+      ...['environments', 'lights', 'objects', 'utils', 'math', 'shaders', 'postprocessing', 'geometries', 'curves'].flatMap((d) => filesUnder(path.join(engineRoot, 'node_modules', 'three', 'examples', 'jsm', d))),
     ].filter((f) => !skip(f) && fs.existsSync(f));
     // the whole song folder (scenes may load fonts, textures or data from anywhere in it), except
     // renders, finished films, intake, the audio and version control

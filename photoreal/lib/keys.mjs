@@ -32,8 +32,19 @@ const hashFiles = (h, files, base) => { for (const f of files) h.update(path.rel
 // depends on where the engine happens to be checked out
 const hashEngine = (h, webFiles, web, data, song) => { hashFiles(h, webFiles, web); return hashFiles(h, data, song); };
 
+// A scene module that declares `export const kind = '...'` (for example 'three') is a premium
+// scene: it renders through web/premium/, whose files belong to its keys only.
+export function sceneKind(song, scene) {
+  try { return /export\s+const\s+kind\s*=\s*['"](\w+)['"]/.exec(fs.readFileSync(path.join(song, 'scenes', `${scene}.js`), 'utf8'))?.[1] ?? null; } catch { return null; }
+}
+
 export function makeKeys(song, { web = WEB, legacyWeb } = {}) {
-  const webFiles = filesUnder(web);
+  // web/premium/ only matters to premium scenes, so adding to it never re-renders an existing film
+  const premiumDir = path.join(web, 'premium') + path.sep;
+  const allWeb = filesUnder(web);
+  const webFiles = allWeb.filter((f) => !f.startsWith(premiumDir));
+  const premiumFiles = allWeb.filter((f) => f.startsWith(premiumDir));
+  const premiumHash = hashFiles(crypto.createHash('sha256'), premiumFiles, web).digest('hex');
   const textOnly = (f) => path.basename(f) === 'layer.js' || f.includes(`${path.sep}fonts${path.sep}`);
   const data = ['lyrics.json', 'audio.json'].map((f) => path.join(song, 'data', f)).filter((f) => fs.existsSync(f));
   // legacyWeb: the web/ folder earlier keys were made with, when they hashed paths relative to the
@@ -53,11 +64,14 @@ export function makeKeys(song, { web = WEB, legacyWeb } = {}) {
   const lyricFile = (scene) => path.join(song, 'scenes', `${scene}.lyric.js`);
   const hasLayer = (scene) => fs.existsSync(lyricFile(scene));
   const sceneFiles = (scene) => [...depsOf(song, path.join(song, 'scenes', `${scene}.js`))].sort();
-  const window = (s, fps) => `${Math.round(s.from * fps)}-${Math.round(s.to * fps)}`;
+  const isPremium = (scene) => !!sceneKind(song, scene);
+  // handles: extra frames rendered before and after a scene for a transition across its cut
+  const window = (s, fps) => `${Math.round(s.from * fps)}-${Math.round(s.to * fps)}${s.handles ? `+${s.handles.map((x) => Math.round(x * fps)).join(',')}` : ''}`;
 
   // everything that decides what the segment looks like, apart from render quality
   function content(s, fps) {
     const h = crypto.createHash('sha256').update(hasLayer(s.scene) ? 'layer' : 'baked').update(engineAll);
+    if (isPremium(s.scene)) h.update('premium').update(premiumHash);
     const files = new Set(sceneFiles(s.scene));
     if (hasLayer(s.scene)) for (const f of depsOf(song, lyricFile(s.scene))) files.add(f);
     hashFiles(h, [...files].sort(), song);
@@ -66,6 +80,7 @@ export function makeKeys(song, { web = WEB, legacyWeb } = {}) {
   function plate(s, fps, samples) {
     const layered = hasLayer(s.scene);
     const h = crypto.createHash('sha256').update(layered ? 'plate' : 'baked').update(layered ? enginePlate : engineAll);
+    if (isPremium(s.scene)) h.update('premium').update(premiumHash);
     hashFiles(h, sceneFiles(s.scene), song);
     return h.update(JSON.stringify(s.params ?? {})).update(`${window(s, fps)}-${samples}`).digest('hex');
   }
@@ -80,5 +95,5 @@ export function makeKeys(song, { web = WEB, legacyWeb } = {}) {
     ({ engineAll, enginePlate } = engineHashes(oldWeb));
     try { return plate(s, fps, samples); } finally { ({ engineAll, enginePlate } = saved); }
   }
-  return { content, plate, layer, hasLayer, legacyPlate };
+  return { content, plate, layer, hasLayer, legacyPlate, isPremium };
 }

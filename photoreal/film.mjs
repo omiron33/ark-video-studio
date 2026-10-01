@@ -37,13 +37,25 @@ const opt = (k, d) => { const i = argv.indexOf('--' + k); return i >= 0 ? argv[i
 const flag = (k) => argv.includes('--' + k);
 const SONG = path.resolve(opt('song', '.'));
 const film = JSON.parse(fs.readFileSync(path.join(SONG, 'film.json'), 'utf8'));
-const fps = film.fps ?? 60;
 const draft = flag('draft');
-const samples = opt('samples', draft ? '2' : String(film.samples ?? 12));
+// Render tiers (--tier, or "tier" in film.json; standard when neither says):
+//   fast      30 fps, 2 sub-frames, quick encode, no review gates: a watchable film in a couple of hours
+//   standard  the film's own fps and samples: what every film rendered before tiers existed
+//   premium   60 fps, at least twice the sub-frames (32 for lens-heavy premium scenes), richer lyric
+//             layers, the slowest encode, every gate: the all-out photoreal render
+// A request for a photorealistic film means premium.
+const TIERS = ['fast', 'standard', 'premium'];
+const tier = opt('tier', film.tier ?? 'standard');
+if (!TIERS.includes(tier)) throw Error(`--tier must be one of ${TIERS.join(', ')}`);
+const fps = tier === 'fast' ? 30 : tier === 'premium' ? Math.max(60, film.fps ?? 60) : film.fps ?? 60;
+const baseSamples = film.samples ?? 12;
+const samples = opt('samples', draft ? '2' : tier === 'fast' ? '2' : tier === 'premium' ? String(Math.max(16, baseSamples * 2)) : String(baseSamples));
+const layerSamples = draft || tier === 'fast' ? 2 : tier === 'premium' ? 16 : 8;
+const encode = { preset: draft || tier === 'fast' ? 'veryfast' : 'slow', crf: opt('crf', tier === 'fast' ? '20' : tier === 'premium' ? '16' : '18') };
 const only = opt('only')?.split(',');
 const OUT = path.join(SONG, 'out');
 const REVIEW = path.join(OUT, 'review');
-const segDir = path.join(OUT, draft ? 'segments-draft' : 'segments');
+const segDir = path.join(OUT, draft ? 'segments-draft' : tier === 'standard' ? 'segments' : `segments-${tier}`);
 const workDir = path.join(OUT, 'work');
 for (const d of [segDir, REVIEW, workDir]) fs.mkdirSync(d, { recursive: true });
 const stallSec = +opt('stall', 180), retries = +opt('retries', 2);
@@ -62,9 +74,20 @@ const readJson = (f) => { try { return JSON.parse(fs.readFileSync(f, 'utf8')); }
 const cached = (file, key) => key && fs.existsSync(file) && fs.existsSync(file + '.key') && fs.readFileSync(file + '.key', 'utf8') === key;
 const paramsOf = (s) => JSON.stringify({ ...(s.params ?? {}), id: s.id, from: s.from, to: s.to });
 
-const segs = scenes.map((s) => {
-  const f0 = Math.round(s.from * fps), f1 = Math.round(s.to * fps);
-  const sSamples = draft ? samples : String(s.samples ?? samples);   // a scene may ask for more sub-frames (fast wings)
+// transitions: a scene with "transition": { "type", "duration" } blends in from the one before over
+// the cut; both are rendered half the duration past the cut (handles) and joined with that blend
+const handlesOf = (i) => {
+  const into = scenes[i].transition, out = scenes[i + 1]?.transition;
+  const pre = into ? (into.duration ?? 0.5) / 2 : 0, post = out ? (out.duration ?? 0.5) / 2 : 0;
+  return pre || post ? [pre, post] : null;
+};
+const segs = scenes.map((s0, i) => {
+  const handles = handlesOf(i);
+  const s = handles ? { ...s0, handles } : s0;
+  const f0 = Math.round((s.from - (handles?.[0] ?? 0)) * fps), f1 = Math.round((s.to + (handles?.[1] ?? 0)) * fps);
+  // a scene may ask for more sub-frames (fast wings); premium gives lens-heavy premium scenes 32
+  const own = s.samples != null ? String(tier === 'premium' ? Math.max(+s.samples, +samples) : tier === 'fast' ? Math.min(+s.samples, +samples) : s.samples) : samples;
+  const sSamples = draft ? samples : tier === 'premium' && keys.isPremium(s.scene) ? String(Math.max(32, +own)) : own;
   const layered = keys.hasLayer(s.scene);
   const out = path.join(segDir, `${s.id}.mp4`);
   const seg = { ...s, f0, f1, frames: f1 - f0, samples: sSamples, layered, out, content: keys.content(s, fps) };
@@ -72,7 +95,7 @@ const segs = scenes.map((s) => {
     seg.plateOut = path.join(segDir, `${s.id}.plate.mp4`);
     seg.layerOut = path.join(segDir, `${s.id}.lyric.mkv`);
     seg.plateKey = keys.plate(s, fps, sSamples);
-    seg.layerKey = keys.layer(s, fps, draft ? 2 : 8);
+    seg.layerKey = keys.layer(s, fps, layerSamples);
     seg.key = sha(seg.plateKey + seg.layerKey);
   } else {
     seg.plateOut = out;
@@ -122,7 +145,9 @@ if (flag('stills')) {
 }
 
 // ---------- gates before a full render ----------
-const full = !draft && !only;
+// the fast tier is for a quick look, so it doesn't wait on the review gates (STATUS.md says so)
+const full = !draft && !only && tier !== 'fast';
+if (tier === 'fast' && !draft && !only) notes.push('Fast tier: rendered at 30 fps with 2 sub-frames, without waiting for the storyboard, key-stills or pre-render check gates.');
 if (full) {
   const sb = storyboardPath(SONG), sbReview = readJson(path.join(REVIEW, 'storyboard-review.json'));
   if (flag('skip-storyboard')) notes.push('The storyboard gate was skipped with --skip-storyboard.');
@@ -158,13 +183,13 @@ for (const s of segs) {
   if (!cached(s.plateOut, s.plateKey)) {
     any = true;
     tasks.push({ id: s.id, job: s.id, part: 'plate', scene: s.scene, frames: s.frames, out: s.plateOut, key: s.plateKey,
-      renderArgs: plateArgs(s, fps, { draft, crf: opt('crf', '18'), params: paramsOf(s) }) });
+      renderArgs: plateArgs(s, fps, { draft: encode.preset === 'veryfast', crf: encode.crf, params: paramsOf(s) }) });
   }
   if (s.layered && !cached(s.layerOut, s.layerKey)) {
     any = true;
     // lyric layers are light; they go wherever they finish soonest like any other job
     tasks.push({ id: s.id, job: `${s.id}-lyric`, part: 'layer', scene: s.scene, frames: s.frames, out: s.layerOut, key: s.layerKey, light: true,
-      renderArgs: ['layer', '--scene', s.scene, '--params64', Buffer.from(paramsOf(s)).toString('base64'), '--from', String(s.f0 / fps), '--to', String(s.f1 / fps), '--samples', draft ? '2' : '8'] });
+      renderArgs: ['layer', '--scene', s.scene, '--params64', Buffer.from(paramsOf(s)).toString('base64'), '--from', String(s.f0 / fps), '--to', String(s.f1 / fps), '--samples', String(layerSamples)] });
   }
   if (!any && !(s.layered && !cached(s.out, s.key))) { console.log(`segment ${s.id} cached`); cachedCount++; }
 }
@@ -239,6 +264,7 @@ if (plates.length && !draft && !flag('no-test')) {
     // GPU finishes); other machines are scaled from their own test render against this Mac's estimate
     const pr = m.remote && localM?.est.size ? plates.map((t) => ({ id: t.id, remote: true })) : probeOn(w, plates.map(bySeg));
     for (const p of pr) if (!p.remote) m.est.set(p.id, p.fixedMs + p.perSampleMs * +bySeg(p).samples); else m.est.set(p.id, localM.est.get(p.id));
+    m.probe = new Map(pr.filter((p) => !p.remote).map((p) => [p.id, p]));   // GPU cost per frame and per sub-frame, for --estimate
     if (m.remote && !localM) notes.push(`${m.name}'s pictures were not checked against this Mac, which was left out of the render.`);
     if (m.remote && localM) {
       const check = await pictureCheck(w, plates.map(bySeg));
@@ -269,6 +295,7 @@ if (plates.length && !draft && !flag('no-test')) {
     // the probe times the GPU alone: on this Mac the read-back and encoding cost is added per frame;
     // another machine is scaled from this Mac's estimate by its measured speed on the same scene
     const overhead = Math.max(0, solo - m.est.get(slowSeg.id));
+    m.overhead = overhead; m.scale = m.remote && localM?.est.size ? solo / m.est.get(slowSeg.id) : 1;
     if (m.remote && localM?.est.size) { const k = solo / m.est.get(slowSeg.id); for (const [id, v] of m.est) m.est.set(id, v * k); }
     else for (const [id, v] of m.est) m.est.set(id, v + overhead);
     const rates = [1000 / solo];
@@ -300,6 +327,35 @@ if (plates.length && !draft && !flag('no-test')) {
     if (!m.remote) m.parallel = jobsOpt || (layersOnly ? 2 : 1);
     else if (layersOnly) m.parallel = m.freeVramMB && m.freeVramMB > 6000 ? 3 : 2;
   }
+}
+
+// --estimate: what each tier would cost on the machines just measured, then stop
+if (flag('estimate')) {
+  const mac = workers.find((w) => !w.machine.remote)?.machine;
+  if (!mac?.probe?.size) blocked('--estimate needs this Mac in the render and the test render (not --draft, --no-test or --local-free runs).');
+  const rows = [];
+  for (const tr of TIERS) {
+    const tfps = tr === 'fast' ? 30 : tr === 'premium' ? Math.max(60, film.fps ?? 60) : film.fps ?? 60;
+    const tSamples = (sc) => {
+      const base = tr === 'fast' ? 2 : tr === 'premium' ? Math.max(16, baseSamples * 2) : baseSamples;
+      const own = sc.samples != null ? (tr === 'premium' ? Math.max(sc.samples, base) : tr === 'fast' ? Math.min(sc.samples, base) : sc.samples) : base;
+      return tr === 'premium' && keys.isPremium(sc.scene) ? Math.max(32, own) : own;
+    };
+    const ttasks = scenes.map((sc, i) => {
+      const h = handlesOf(i);
+      return { id: sc.id, frames: Math.round((sc.to - sc.from + (h ? h[0] + h[1] : 0)) * tfps), weight: 0, smp: tSamples(sc) };
+    });
+    const perFrame = (m, t) => { const p = mac.probe.get(t.id) ?? [...mac.probe.values()][0]; return (p.fixedMs + p.perSampleMs * t.smp + (mac.overhead ?? 0)) * (m.scale ?? 1); };
+    for (const t of ttasks) t.weight = t.frames * perFrame(mac, t);
+    const tslots = workers.flatMap((w) => Array.from({ length: w.machine.parallel }, () => ({ machine: { ...w.machine, remote: w.machine.remote, slotFactor: w.machine.slotFactor ?? 1, msPerFrame: (t) => perFrame(w.machine, t) }, freeAt: 0 })));
+    const secs = simulate(ttasks, tslots);
+    rows.push({ tier: tr, fps: tfps, samples: [...new Set(ttasks.map((t) => t.smp))].join('/'), hours: +(secs / 3600).toFixed(2), seconds: Math.round(secs) });
+  }
+  console.log(`\nEstimated render time for the whole film on ${workers.map((w) => `${w.machine.name} x${w.machine.parallel}`).join(' + ')} (pictures only; joins and checks add minutes):`);
+  for (const r of rows) console.log(`  ${r.tier.padEnd(9)} ${String(r.fps).padStart(3)} fps, ${r.samples} sub-frames: about ${fmtDuration(r.seconds)}`);
+  fs.writeFileSync(path.join(OUT, 'tier-estimate.json'), JSON.stringify({ at: new Date().toISOString(), machines: testReport.machines, tiers: rows }, null, 1) + '\n');
+  await restoreAll();
+  process.exit(0);
 }
 
 // worker slots: each machine as many times as it takes workers
@@ -441,7 +497,7 @@ for (const s of segs) {
   console.log(`composite ${s.id}: lyric layer over the picture`);
   const r = spawnSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', s.plateOut, '-i', s.layerOut, '-filter_complex',
     '[0:v]scale=in_color_matrix=bt709:in_range=tv,format=gbrp[p];[1:v]format=gbrap[l];[p][l]overlay=format=gbrp:alpha=straight,scale=out_color_matrix=bt709:out_range=tv,format=yuv420p',
-    '-c:v', 'libx264', '-preset', draft ? 'veryfast' : 'slow', '-crf', opt('crf', '18'), '-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709', '-movflags', '+faststart', s.out], { stdio: 'inherit' });
+    '-c:v', 'libx264', '-preset', encode.preset, '-crf', encode.crf, '-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709', '-movflags', '+faststart', s.out], { stdio: 'inherit' });
   if (r.status !== 0) { failed.add(s.id); progress.log(s.id, 'composite failed'); continue; }
   fs.writeFileSync(s.out + '.key', s.key);
 }
@@ -458,12 +514,36 @@ if (only) {
   writeStatus(path.join(OUT, 'STATUS.md'), { song: SONG, state: 'done', snapshot: snap, notes: [`Only scenes ${only.join(', ')} were rendered; the film was not joined.`, ...notes], elapsed: elapsed() });
   process.exit(0);
 }
-const list = path.join(segDir, 'concat.txt');
-fs.writeFileSync(list, segs.map((s) => `file '${s.out.replace(/'/g, "'\\''")}'`).join('\n') + '\n');
-const out = path.resolve(opt('out', path.join(OUT, draft ? 'film-draft.mp4' : 'film.mp4')));
+const out = path.resolve(opt('out', path.join(OUT, draft ? 'film-draft.mp4' : tier === 'fast' ? 'film-fast.mp4' : 'film.mp4')));
 const end = scenes[scenes.length - 1].to;
-const r = spawnSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', list, '-i', path.join(SONG, 'media', 'song.wav'),
-  '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '320k', '-t', String(end), '-movflags', '+faststart', out], { stdio: 'inherit' });
+let r;
+if (!scenes.some((s) => s.transition)) {
+  // plain cuts: the segments join without re-encoding
+  const list = path.join(segDir, 'concat.txt');
+  fs.writeFileSync(list, segs.map((s) => `file '${s.out.replace(/'/g, "'\\''")}'`).join('\n') + '\n');
+  r = spawnSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', list, '-i', path.join(SONG, 'media', 'song.wav'),
+    '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '320k', '-t', String(end), '-movflags', '+faststart', out], { stdio: 'inherit' });
+} else {
+  // transitions: each blend is centred on its cut, over the handles both scenes rendered past it
+  const graph = [];
+  let cur = '[v0]', len = segs[0].frames / fps;
+  segs.forEach((s, i) => graph.push(`[${i}:v]settb=AVTB,setpts=PTS-STARTPTS,fps=${fps}[v${i}]`));
+  for (let i = 1; i < segs.length; i++) {
+    const tr = scenes[i].transition, next = `[j${i}]`;
+    if (tr) {
+      const d = tr.duration ?? 0.5;
+      graph.push(`${cur}[v${i}]xfade=transition=${tr.type ?? 'fade'}:duration=${d}:offset=${(len - d).toFixed(6)}${next}`);
+      len += segs[i].frames / fps - d;
+    } else {
+      graph.push(`${cur}[v${i}]concat=n=2:v=1:a=0${next}`);
+      len += segs[i].frames / fps;
+    }
+    cur = next;
+  }
+  r = spawnSync('ffmpeg', ['-y', '-loglevel', 'error', ...segs.flatMap((s) => ['-i', s.out]), '-i', path.join(SONG, 'media', 'song.wav'),
+    '-filter_complex', graph.join(';'), '-map', cur, '-map', `${segs.length}:a`, '-c:v', 'libx264', '-preset', encode.preset, '-crf', encode.crf, '-pix_fmt', 'yuv420p',
+    '-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709', '-c:a', 'aac', '-b:a', '320k', '-t', String(end), '-movflags', '+faststart', out], { stdio: 'inherit' });
+}
 if (r.status !== 0) {
   writeStatus(path.join(OUT, 'STATUS.md'), { song: SONG, state: 'blocked', snapshot: snap, notes: ['Every scene rendered, but joining them into the film failed.', ...notes], elapsed: elapsed() });
   throw Error('join failed');

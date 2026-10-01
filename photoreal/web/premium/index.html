@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ark photoreal premium</title>
+<style>
+  @font-face { font-family: 'EB Garamond'; font-weight: 400; font-style: normal; src: url(../fonts/eb-garamond-latin-400-normal.woff2); }
+  @font-face { font-family: 'EB Garamond'; font-weight: 500; font-style: normal; src: url(../fonts/eb-garamond-latin-500-normal.woff2); }
+  @font-face { font-family: 'EB Garamond'; font-weight: 400; font-style: italic; src: url(../fonts/eb-garamond-latin-400-italic.woff2); }
+  @font-face { font-family: 'EB Garamond'; font-weight: 500; font-style: italic; src: url(../fonts/eb-garamond-latin-500-italic.woff2); }
+  @font-face { font-family: 'EB Garamond'; font-weight: 600; font-style: normal; src: url(../fonts/eb-garamond-latin-600-normal.woff2); }
+  @font-face { font-family: 'EB Garamond'; font-weight: 600; font-style: italic; src: url(../fonts/eb-garamond-latin-600-italic.woff2); }
+  @font-face { font-family: 'EB Garamond'; font-weight: 700; font-style: normal; src: url(../fonts/eb-garamond-latin-700-normal.woff2); }
+  @font-face { font-family: 'EB Garamond'; font-weight: 700; font-style: italic; src: url(../fonts/eb-garamond-latin-700-italic.woff2); }
+  @font-face { font-family: 'EB Garamond'; font-weight: 800; font-style: normal; src: url(../fonts/eb-garamond-latin-800-normal.woff2); }
+  @font-face { font-family: 'EB Garamond'; font-weight: 800; font-style: italic; src: url(../fonts/eb-garamond-latin-800-italic.woff2); }
+  @font-face { font-family: 'Inter Tight'; font-weight: 100 900; src: url(../fonts/inter-tight-latin-wght-normal.woff2); }
+  html, body { margin: 0; background: #000; overflow: hidden; }
+  canvas { display: block; }
+  /* canvases that hold live HTML for in-world text sit behind the picture */
+  canvas[layoutsubtree] { position: fixed; left: 0; top: 0; z-index: -1; }
+  #c { position: relative; z-index: 1; }
+</style>
+<script type="importmap">
+  { "imports": { "three": "/node_modules/three/build/three.module.js", "three/addons/": "/node_modules/three/examples/jsm/" } }
+</script>
+</head>
+<body>
+<canvas id="c" width="1920" height="1080"></canvas>
+<script type="module" src="main.js"></script>
+</body>
+</html>

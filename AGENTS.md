@@ -28,6 +28,10 @@ The normal entry point is a song plus a style prompt. After the theme-choice gat
 
 Songs rendered in photoreal mode (GPU scenes in their own song folder) follow the steps in [photoreal/README.md](photoreal/README.md#making-a-film): a storyboard table checked by a fresh critic before any animation, a draft with the measured pre-render check, five key stills reviewed before the full render, the full render under the watchdog with `out/progress.json` and `out/STATUS.md`, then the measured final check and the fresh critic until it says ship. The critic is a new Claude or Codex process that sees only the evidence folder; never review your own build in the session that built it. Keep lyric typography in `scenes/<name>.lyric.js` wherever the words don't need to sit inside the scene, so type changes never re-render pictures.
 
+## Render tiers
+
+When Shane asks for a photorealistic film, render it at the premium tier (`"tier": "premium"` in film.json): 60 fps, many sub-frames, premium scenes (Three.js hero objects with studio light, a real lens, in-world type, the finishing kit and transitions) where they serve the song, and every gate. When he wants a film in a couple of hours instead, use `--tier fast`. Run `node photoreal/film.mjs --song <song> --estimate` and tell him what each tier would cost before a long render. Standard is what every existing film renders at, unchanged. See [photoreal/README.md](photoreal/README.md#tiers).
+
 ## Where work runs
 
 The driving agent (Claude, Codex or a person) decides where each piece of work goes; the engine does the measuring and the dispatch.

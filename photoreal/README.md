@@ -86,6 +86,65 @@ overlapping or crowding, and no lines on top of each other; no stretch over 0.5 
 visibly moving; no fast move that stops dead; no word moving before it has been still for 8 frames;
 and every cut on a measured beat or up to 2 frames before it (a scene can give `"offBeat": "why"`).
 
+## Tiers
+
+`film.mjs --tier fast|standard|premium` (or `"tier"` in film.json; standard when neither says).
+`node photoreal/film.mjs --song S --estimate` measures the machines and prints what each tier
+would cost for this film, without rendering.
+
+| Tier | Frames | Sub-frames | Encode | Gates | For |
+|---|---|---|---|---|---|
+| fast | 30 fps | 2 | veryfast | none (STATUS.md says so) | a watchable film in a couple of hours |
+| standard | film.json fps | film.json samples | slow | all | everything rendered before tiers existed, unchanged |
+| premium | 60 fps | at least twice, 32 for premium scenes | slow, CRF 16 | all, plus shot-length rules | the all-out photorealistic film |
+
+Each tier keeps its own segments (`out/segments-fast/`, `out/segments/`, `out/segments-premium/`),
+so trying one never throws away another. The fast film is `out/film-fast.mp4`.
+
+## Premium scenes
+
+A scene that declares `export const kind = 'three'` is a Three.js scene rendered through
+`web/premium/`; `export const kind = 'shader'` keeps a raymarched scene and adds the lens and
+finishing kit. Nothing else changes for existing scenes: their page, engine and cache keys are
+untouched (files in `web/premium/` count only toward premium scenes' keys).
+
+```js
+export const kind = 'three';
+export default (P) => ({
+  name, from: P.from, to: P.to,
+  async build({ THREE, renderer }) { /* make and return { scene } */ },
+  camera(t) { return { pos, target, fov, focus, aperture }; },   // focus distance, lens radius
+  update(t, { scene }) {},          // move things
+  async prepare(t) {},              // e.g. await words.set(html) for in-world text
+  post(t) { return { exposure, bloom, ... }; },                   // as for every scene
+  finish(t) { return { ...FINISH.studio }; },                     // flare, leak, grade, fade
+});
+```
+
+- **Studio** (`/premium/studio.js`): `studio(renderer, scene, { key, fill, rim, floor })` lights a
+  hero object like a product shot (room reflections, soft boxes, rim light, a glossy, matte or
+  mirror floor); `materials` has lacquer, glass, gold, silver, brushed metal, porcelain, wine and
+  emissive presets.
+- **Lens**: every sub-frame samples a point on the aperture and aims at the focus plane, so depth of
+  field, bokeh and rack focus (animate `focus`) come from the same averaging as motion blur. Wide
+  apertures need more sub-frames to stay smooth; set `samples` on the scene in film.json.
+- **In-world lyrics** (`/premium/text.js`): `htmlText({ width, height, css })` paints real browser
+  typography (HTML and CSS) into a texture for any surface in the scene, through Chrome's
+  HTML-in-canvas (enabled for premium scenes); without it, the same text is drawn with Canvas 2D.
+  The flat lyric layer (`scenes/<name>.lyric.js`) still works on top, and stays the cheap way to
+  revise words.
+- **Finishing kit** (`/premium/finish.js`): anamorphic flare, light leaks, split-tone grade and
+  fades, with presets `FINISH.studio`, `FINISH.film` and `FINISH.night`; grain, vignette, chromatic
+  aberration and bloom stay in `post()`.
+- **Transitions**: give a scene `"transition": { "type": "fade", "duration": 0.5 }` in film.json
+  and it blends in from the previous scene, centred on the cut. Both scenes render half the
+  duration past the cut so the blend has real frames. `type` is any FFmpeg xfade transition:
+  fade, fadeblack, fadewhite, smoothleft, circleopen, radial, hblur, zoomin, distance, pixelize and
+  more (`dissolve` is a grainy pixel dissolve).
+- **Checks** (`check.mjs` with the premium tier): shots over 4 s warn and over 8 s fail unless the
+  scene gives `"hold": "<why>"`; readability is judged on the word being sung, so soft background
+  text and close-set designed type pass; the critic judges against premium product and title work.
+
 ## Several machines
 
 `film.mjs` renders on every reachable machine (see "Where work runs" in AGENTS.md). Other machines

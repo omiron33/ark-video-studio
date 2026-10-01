@@ -183,3 +183,17 @@ export function summarize(problems) {
   for (const p of problems) { byGate[p.gate] ??= { fail: 0, warn: 0 }; byGate[p.gate][p.severity]++; }
   return { passed: fails.length === 0, fails: fails.length, warns: problems.length - fails.length, byGate };
 }
+
+// Shots: stretches between cuts (the film's own and hard cuts inside a scene, seen as a spike in
+// frame-to-frame change). Motion rules from premium motion design: about 1.5 to 4 s per idea.
+export function shots(mad, fps, cutFrames = [], { spike = 22, ratio = 6 } = {}) {
+  const cuts = new Set(cutFrames);
+  for (let i = 3; i < mad.length - 3; i++) {
+    const around = [mad[i - 3], mad[i - 2], mad[i + 2], mad[i + 3]].sort((a, b) => a - b)[1];
+    if (mad[i] > spike && mad[i] > ratio * Math.max(0.5, around)) cuts.add(i);
+  }
+  const marks = [0, ...[...cuts].filter((c) => c > 0 && c < mad.length).sort((a, b) => a - b), mad.length];
+  const out = [];
+  for (let i = 1; i < marks.length; i++) if (marks[i] - marks[i - 1] > 1) out.push({ from: marks[i - 1] / fps, to: marks[i] / fps, seconds: +((marks[i] - marks[i - 1]) / fps).toFixed(2), startFrame: marks[i - 1] });
+  return out;
+}

@@ -231,3 +231,28 @@ test('keys: song-wide lyric settings in film.json re-render only lyric layers', 
   assert.equal(k1.plate(s, 60, 8), k0.plate(s, 60, 8));
   assert.notEqual(k1.layer(s, 60, 8), k0.layer(s, 60, 8));
 });
+
+test('measure: shots split at the film cuts and at hard cuts inside a scene', async () => {
+  const { shots } = await import('../photoreal/lib/measure.mjs');
+  const mad = [Infinity, ...Array(119).fill(1)];
+  mad[60] = 40;                                   // a hard cut inside the scene
+  const s = shots(mad, 60, [90]);
+  assert.deepEqual(s.map((x) => x.seconds), [1, 0.5, 0.5]);
+});
+
+test('keys: premium scenes alone depend on web/premium, so it never re-renders an existing film', () => {
+  const song = tmp(), web = path.join(tmp(), 'web');
+  fs.mkdirSync(path.join(song, 'scenes'), { recursive: true }); fs.mkdirSync(path.join(web, 'premium'), { recursive: true });
+  fs.writeFileSync(path.join(web, 'engine.js'), 'x');
+  fs.writeFileSync(path.join(song, 'scenes', 'old.js'), 'export default {}');
+  fs.writeFileSync(path.join(song, 'scenes', 'cup.js'), "export const kind = 'three';\nexport default {}");
+  const old = { id: '1', scene: 'old', from: 0, to: 1 }, cup = { id: '2', scene: 'cup', from: 1, to: 2 };
+  const k0 = makeKeys(song, { web });
+  fs.writeFileSync(path.join(web, 'premium', 'engine.js'), 'premium v2');
+  const k1 = makeKeys(song, { web });
+  assert.equal(k1.plate(old, 60, 8), k0.plate(old, 60, 8));
+  assert.notEqual(k1.plate(cup, 60, 8), k0.plate(cup, 60, 8));
+  assert.equal(k1.isPremium('cup'), true); assert.equal(k1.isPremium('old'), false);
+  // transition handles widen only the scenes that have them
+  assert.notEqual(k1.plate({ ...old, handles: [0.25, 0] }, 60, 8), k1.plate(old, 60, 8));
+});

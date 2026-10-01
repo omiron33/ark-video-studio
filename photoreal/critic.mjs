@@ -85,7 +85,8 @@ if (kind === 'storyboard') {
   binding.videoSha = shaFile(video);
 }
 
-const prompt = buildPrompt(kind, { openItems: openItems(ledger, kind), extra: `The film runs at ${fps} frames per second; frame n is at n / ${fps} seconds.` });
+const premiumNote = (film?.tier ?? 'standard') === 'premium' ? `\n\nThis is a premium film, judged against the best product and title work: a real lens (focus, bokeh, flares used with restraint), studio light on hero objects, real typography in the world, and motion that never fully stops, with a new idea every 1.5 to 4 s. Dark frames are fine when the highlights carry the picture. Background text may be soft or out of focus; only the word being sung must read. A section may stay in one set, with the variety coming from camera, light and focus.` : '';
+const prompt = buildPrompt(kind, { openItems: openItems(ledger, kind), extra: `The film runs at ${fps} frames per second; frame n is at n / ${fps} seconds.${premiumNote}` });
 fs.writeFileSync(path.join(pack, 'PROMPT.md'), prompt + '\n');
 console.log(`evidence and prompt in ${pack}`);
 if (argv.includes('--pack-only')) process.exit(0);

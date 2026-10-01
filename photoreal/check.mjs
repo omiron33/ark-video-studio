@@ -16,7 +16,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { spawn, spawnSync, execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
-import { DEFAULTS, luminance, wordContrast, stillStretches, deadStops, cutsOffBeat, wordChecks, findWord, collisions, sceneAt, summarize } from './lib/measure.mjs';
+import { shots, DEFAULTS, luminance, wordContrast, stillStretches, deadStops, cutsOffBeat, wordChecks, findWord, collisions, sceneAt, summarize } from './lib/measure.mjs';
 import { makeKeys } from './lib/keys.mjs';
 import { fmtTime } from './lib/storyboard.mjs';
 
@@ -27,7 +27,10 @@ const SONG = path.resolve(opt('song', '.'));
 const label = opt('label', 'final');
 const read = (f) => { try { return JSON.parse(fs.readFileSync(path.join(SONG, f), 'utf8')); } catch { return null; } };
 const film = read('film.json'), lyrics = read('data/lyrics.json') ?? { lines: [], words: [] }, audio = read('data/audio.json');
-const G = { ...DEFAULTS, ...(film?.gates ?? {}) };
+// premium is judged on premium motion rules; its readability is judged on the word being sung, so
+// soft background text and words sitting close in a designed layout are allowed
+const tier = opt('tier', film?.tier ?? 'standard');
+const G = { ...DEFAULTS, maxShotSeconds: tier === 'premium' ? 8 : Infinity, longShotWarn: 4, ...(film?.gates ?? {}) };
 const video = path.resolve(SONG, opt('video', label === 'draft' ? 'out/film-draft.mp4' : 'out/film.mp4'));
 if (!fs.existsSync(video)) { console.error(`no film at ${video}`); process.exit(1); }
 const REVIEW = path.join(SONG, 'out', 'review');
@@ -71,6 +74,14 @@ const { mad, motion } = await new Promise((resolve, reject) => {
   p.on('close', (c) => (c === 0 ? resolve({ mad, motion }) : reject(Error('ffmpeg motion pass failed'))));
 });
 const cutFrames = scenes.slice(1).map((s) => Math.round(s.from * fps));
+// shot lengths: 1.5 to 4 s per idea reads as premium; longer shots warn, and in premium a shot over
+// maxShotSeconds fails unless its scene says why it holds ("hold": "reason" in film.json)
+const shotList = shots(mad, fps, scenes.slice(1).map((sc) => Math.round(sc.from * fps)));
+for (const sh of shotList) {
+  const sc = scenes.find((x) => sh.from + 1e-6 >= x.from && sh.from < x.to);
+  if (sh.seconds > G.maxShotSeconds && !sc?.hold) add('shot-length', 'fail', sh.startFrame, `one shot holds ${sh.seconds} s`, `break it with a cut, a new angle or a new idea every 1.5 to 4 s, or give scene ${sc?.id ?? '?'} "hold": "<why>"`);
+  else if (sh.seconds > G.longShotWarn && !sc?.hold) add('shot-length', 'warn', sh.startFrame, `one shot holds ${sh.seconds} s`, 'premium motion moves to a new idea every 1.5 to 4 s');
+}
 for (const s of stillStretches(motion, fps, G)) add('still', 'fail', s.startFrame, `nothing visibly moves for ${s.seconds} s (${fmtTime(s.from)} to ${fmtTime(s.to)})`, 'keep something alive through the hold: a slow push, drifting light or breathing type');
 for (const s of deadStops(mad, fps, { ...G, stillThreshold: G.stopThreshold, cutFrames })) add('dead-stop', 'fail', s.frame, `a fast move (${s.before} mean change per frame) stops dead within 2 frames (${s.after})`, 'ease the move into its landing over at least 0.3 s instead of stopping it');
 
@@ -128,7 +139,7 @@ if (!argv.includes('--no-ocr') && lyrics.words?.length) {
         const cr = wordContrast(vals);
         if (cr.ratio < G.minContrast) add('contrast', 'fail', c.f1, `"${c.word}" is ${cr.ratio.toFixed(2)}:1 against what is behind it (${cr.ink} ink); needs ${G.minContrast}:1`, cr.ink === 'light' ? 'darken or blur what passes behind the word, strengthen its shade, or move it onto a quieter part of the frame' : 'lighten what is behind the word or switch to light ink here');
       }
-      for (const k of collisions(o1, c.onScreen, G)) {
+      for (const k of collisions(o1, c.onScreen, G).filter((k) => tier !== 'premium' || k.kind === 'run-together' || k.kind === 'overlap')) {
         const key = `${sceneAt(scenes, c.f1 / fps)}:${k.kind}:${k.text}`;   // once per scene
         if (problems.some((p) => p.key === key)) continue;
         add('collision', k.kind === 'tight' ? 'warn' : 'fail', c.f1, k.kind === 'run-together' ? `"${k.text}" reads as one word` : k.kind === 'overlap' ? `"${k.text}" overlap each other` : k.kind === 'tight' ? `"${k.text}" are crowded (gap ${k.gap} of the letter height)` : `two lines sit on top of each other: ${k.text}`, 'open the word spacing or move the lines apart');
@@ -149,7 +160,7 @@ if (!argv.includes('--no-ocr') && lyrics.words?.length) {
 
 problems.sort((a, b) => a.frame - b.frame);
 for (const p of problems) delete p.key;
-const summary = summarize(problems);
+const summary = { ...summarize(problems), tier, shots: shotList.length, shotsPerMinute: +(shotList.length / (duration / 60)).toFixed(1), medianShotSeconds: shotList.length ? [...shotList].sort((a, b) => a.seconds - b.seconds)[Math.floor(shotList.length / 2)].seconds : null };
 const keys = makeKeys(SONG);
 const h = crypto.createHash('sha256'); { const fdv = fs.openSync(video, 'r'); const buf = Buffer.alloc(1 << 22); let n; while ((n = fs.readSync(fdv, buf, 0, buf.length)) > 0) h.update(buf.subarray(0, n)); fs.closeSync(fdv); }
 const report = {

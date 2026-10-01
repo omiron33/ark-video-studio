@@ -13,6 +13,7 @@ import path from 'node:path';
 import { spawn } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { chromium } from 'playwright-core';
+import { sceneKind } from './lib/keys.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ENGINE = path.resolve(HERE, '..');
@@ -53,11 +54,15 @@ const server = http.createServer((req, res) => {
 await new Promise((r) => server.listen(0, '127.0.0.1', r));
 const port = server.address().port;
 
+// premium scenes (a declared kind) render through web/premium/ with HTML-in-canvas enabled for
+// in-world text; existing scenes keep exactly the browser and page they always had
+const listed = (() => { try { return JSON.parse(Buffer.from(opt('scenes64', ''), 'base64').toString('utf8') || opt('scenes', '[]')).map((x) => x.scene); } catch { return []; } })();
+const anyPremium = [opt('scene'), ...listed].filter(Boolean).some((sc) => sceneKind(SONG, sc));
 const browser = await chromium.launch({
   executablePath: CHROME, headless: true,
   // --ark-worker marks this Chrome (which Playwright starts in its own process group) so the
   // watchdog can find and kill it along with this worker
-  args: [`--ark-worker=${process.pid}`, ...(ANGLE ? [`--use-angle=${ANGLE}`] : []), '--enable-gpu', '--ignore-gpu-blocklist', '--disable-gpu-watchdog', '--disable-background-timer-throttling', '--disable-renderer-backgrounding'],
+  args: [`--ark-worker=${process.pid}`, ...(anyPremium ? ['--enable-blink-features=CanvasDrawElement'] : []), ...(ANGLE ? [`--use-angle=${ANGLE}`] : []), '--enable-gpu', '--ignore-gpu-blocklist', '--disable-gpu-watchdog', '--disable-background-timer-throttling', '--disable-renderer-backgrounding'],
 });
 const lyricOf = (scene) => fs.existsSync(path.join(SONG, 'scenes', `${scene}.lyric.js`));
 async function openScene(scene, params, tries = 1) {
@@ -78,7 +83,8 @@ async function openScene(scene, params, tries = 1) {
   page.on('pageerror', (e) => console.log('[pageerror]', e.message));
   page.on('requestfailed', () => {});
   const p64 = Buffer.from(params).toString('base64');
-  await page.goto(`http://127.0.0.1:${port}/?scene=${scene}&params=${encodeURIComponent(p64)}${lyricOf(scene) ? '&lyric=1' : ''}`);
+  const kind = sceneKind(SONG, scene);
+  await page.goto(`http://127.0.0.1:${port}/${kind ? `premium/index.html?kind=${kind}&` : '?'}scene=${scene}&params=${encodeURIComponent(p64)}${lyricOf(scene) ? '&lyric=1' : ''}`);
   await page.waitForFunction(() => window.G && (window.G.ready || window.G.error), null, { timeout: 120000 });
   const err = await page.evaluate(() => window.G.error);
   if (err) {
