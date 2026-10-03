@@ -191,7 +191,10 @@ export class HelperMachine {
   async announce(phase, body) {
     if (!this.dashboard) return null;
     try {
-      const r = await fetch(`${this.dashboard}/api/renders/${phase}`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body), signal: AbortSignal.timeout(5000) });
+      // progress and end go to the job's own path (/api/renders/<id>/<phase>); the dashboard answers
+      // 404 for /api/renders/progress, which left every announced job running until it went stale
+      const url = phase !== 'start' && body?.id ? `${this.dashboard}/api/renders/${body.id}/${phase}` : `${this.dashboard}/api/renders/${phase}`;
+      const r = await fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body), signal: AbortSignal.timeout(5000) });
       return r.ok ? await r.json().catch(() => ({})) : null;
     } catch { return null; }
   }
