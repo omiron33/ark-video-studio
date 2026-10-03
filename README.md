@@ -22,7 +22,7 @@ Song films made with this engine, each kept in its own standalone repository:
 
 The reusable Canvas rendering core is also published on its own as [Ark Engine](https://github.com/omiron33/ark-engine).
 
-Licensed under the [MIT License](LICENSE). Contributions are welcome; see [CONTRIBUTING.md](CONTRIBUTING.md).
+Source code is released under the [MIT License](LICENSE). Song recordings, rendered films and generated or sampled images under `projects/`, `briefs/`, `experiments/` and `references/` are separate media; the source-code license does not grant rights to them. Fonts keep their SIL Open Font License notices. Contributions are welcome; see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 
