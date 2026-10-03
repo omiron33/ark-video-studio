@@ -38,8 +38,12 @@ export function decodeStereo(file, rate = RATE) {
 }
 export function writeWav(file, samples, channels, rate = RATE) {
   fs.mkdirSync(path.dirname(file), { recursive: true });
-  const r = spawnSync('ffmpeg', ['-y', '-v', 'error', '-f', 'f32le', '-ar', String(rate), '-ac', String(channels), '-i', '-', '-c:a', 'pcm_s24le', file], { input: Buffer.from(samples.buffer, samples.byteOffset, samples.byteLength) });
-  if (r.status !== 0) throw Error(`could not write ${file}: ${r.stderr}`);
+  // through a raw file rather than ffmpeg's stdin: a piped write once hung under heavy load
+  const raw = `${file}.${process.pid}.f32`;
+  fs.writeFileSync(raw, Buffer.from(samples.buffer, samples.byteOffset, samples.byteLength));
+  const r = spawnSync('ffmpeg', ['-y', '-v', 'error', '-nostdin', '-f', 'f32le', '-ar', String(rate), '-ac', String(channels), '-i', raw, '-c:a', 'pcm_s24le', file], { timeout: 120000 });
+  fs.rmSync(raw, { force: true });
+  if (r.status !== 0) throw Error(`could not write ${file}: ${r.stderr ?? r.error?.message}`);
 }
 export const duration = (file) => +spawnSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', file], { encoding: 'utf8' }).stdout.trim();
 const shaFile = (f) => crypto.createHash('sha256').update(fs.readFileSync(f)).digest('hex');
