@@ -90,6 +90,39 @@ export function diffWords(expected, heard) {
   return ops.reverse();
 }
 
+// Several models' hearings of one recording against the script. Exact only when every model heard
+// exactly the script. `diffs` lists each word that any model got wrong, with the models that did.
+export function combineHearing(scriptText, results) {
+  const want = tokens(scriptText);
+  const per = results.map((r) => ({ ...r, heard: tokens(r.transcript), diffs: diffWords(want, tokens(r.transcript)) }));
+  const byWord = new Map();
+  for (const r of per) for (const d of r.diffs) {
+    const k = `${d.op}:${d.index}:${d.expected ?? ''}:${d.heard ?? ''}`;
+    if (!byWord.has(k)) byWord.set(k, { ...d, models: [] });
+    byWord.get(k).models.push(r.model);
+  }
+  const diffs = [...byWord.values()].sort((a, b) => a.index - b.index);
+  return { exact: per.every((r) => r.diffs.length === 0), diffs, transcript: per[0]?.transcript ?? '', model: per.map((r) => r.model).join('+'), byModel: per.map((r) => ({ model: r.model, transcript: r.transcript, exact: r.diffs.length === 0 })) };
+}
+
+// Narration built from separate takes, one per script line (story.takes in film.json):
+//   [{ "line": 1, "file": "media/tts/line01.flac", "pause": 2.4, "lufs": -20, "tempo": 0.92 }]
+// line: script line (1-based); pause: silence after it (s); lufs: its loudness (default -20); tempo:
+// a gentle speed change (0.85 to 1.15). Every script line exactly once, in order.
+export function takesPlan(takes, scriptText) {
+  const lines = scriptLines(scriptText), errors = [];
+  if (!Array.isArray(takes) || !takes.length) return { errors: ['story.takes is empty'], plan: [] };
+  takes.forEach((t, i) => {
+    if (t.line !== i + 1) errors.push(`take ${i + 1} is for line ${t.line}; takes must cover script lines 1 to ${lines.length} in order`);
+    if (!t.file) errors.push(`take for line ${t.line} has no file`);
+    if (t.pause != null && !(t.pause >= 0)) errors.push(`take for line ${t.line} has a negative pause`);
+    if (t.tempo != null && !(t.tempo >= 0.85 && t.tempo <= 1.15)) errors.push(`take for line ${t.line}: tempo ${t.tempo} is outside 0.85 to 1.15 (beyond that the voice sounds processed)`);
+  });
+  if (takes.length !== lines.length) errors.push(`${takes.length} takes for ${lines.length} script lines`);
+  const plan = takes.map((t, i) => ({ line: t.line, text: lines[i]?.text ?? '', file: t.file, pause: t.pause ?? 0.8, lufs: t.lufs ?? -20, tempo: t.tempo ?? 1 }));
+  return { errors, plan };
+}
+
 // ---------- timing ----------
 // Measured narration words (in narration time, in script order) become the film's lyrics file:
 // lines are script lines, words carry film time. Throws when the alignment doesn't cover the script.

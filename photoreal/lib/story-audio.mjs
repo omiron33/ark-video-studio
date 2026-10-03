@@ -5,7 +5,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
-import { storyConfig, speechSpans, duckGain, pcmArgs, tokens, diffWords, narrationLyrics, resolveEvents } from './story.mjs';
+import { storyConfig, speechSpans, duckGain, pcmArgs, tokens, diffWords, narrationLyrics, resolveEvents, combineHearing, takesPlan, scriptLines } from './story.mjs';
 
 const ENGINE = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 const MODELS = process.env.ARK_MODELS ?? '/Volumes/DATA/AI/Models';
@@ -16,8 +16,12 @@ export function python() {
   const known = '/opt/homebrew/Cellar/openai-whisper/20250625_3/libexec/bin/python';
   return fs.existsSync(known) ? known : 'python3';
 }
+// Listening uses two Whisper models by default (ARK_STORY_HEAR=small.en,medium.en): a word counts as
+// read right only when both hear the script. In testing, small.en alone heard "Thank you" in a
+// silent tail and medium.en did not; a real misreading ("abouteth", "lose" for "Loose") both heard.
 export const models = () => ({
   whisper: process.env.ARK_STORY_WHISPER ?? `${MODELS}/Whisper/small.en.pt`,
+  hear: (process.env.ARK_STORY_HEAR ?? 'small.en,medium.en').split(',').map((m) => (m.includes('/') ? m : `${MODELS}/Whisper/${m}.pt`)).filter((m) => fs.existsSync(m)),
   ctc: process.env.ARK_STORY_CTC ?? `${MODELS}/TorchAudio/wav2vec2_fairseq_large_lv60k_asr_ls960.pth`,
 });
 
@@ -56,18 +60,66 @@ export function speech(task, audio, { script, work }) {
   return j;
 }
 
-// What a recording actually says, against the script: { transcript, heard, diffs, exact }. Plain
-// Whisper text (lib/hear.py): the comparison is of words, so no word timing is needed or trusted.
-export function hear(audio, scriptText, { work }) {
+// What a recording actually says, against the script (lib/hear.py: plain Whisper text, so no word
+// timing is needed or trusted). Returns combineHearing()'s verdict over every listening model;
+// `start` / `end` (seconds) listen to part of the file.
+export function hear(audio, scriptText, { work, start, end } = {}) {
   fs.mkdirSync(work, { recursive: true });
+  const ms = models().hear;
+  if (!ms.length) throw Error('no local Whisper model to listen with (set ARK_STORY_HEAR or ARK_MODELS)');
   const out = path.join(work, `hear-${crypto.randomBytes(4).toString('hex')}.json`);
-  const r = spawnSync(python(), [path.join(ENGINE, 'photoreal', 'lib', 'hear.py'), audio, models().whisper, out], { encoding: 'utf8', maxBuffer: 64 << 20, timeout: 20 * 60000 });
+  const args = [path.join(ENGINE, 'photoreal', 'lib', 'hear.py'), audio, out, ...ms, ...(start != null ? ['--start', String(start)] : []), ...(end != null ? ['--end', String(end)] : [])];
+  const r = spawnSync(python(), args, { encoding: 'utf8', maxBuffer: 64 << 20, timeout: 30 * 60000 });
   if (r.status !== 0 || !fs.existsSync(out)) throw Error(`transcription failed: ${(r.stderr || '').slice(-1500)}`);
   const t = JSON.parse(fs.readFileSync(out, 'utf8'));
   fs.rmSync(out, { force: true });
-  const heard = tokens(t.transcript);
-  const diffs = diffWords(tokens(scriptText), heard);
-  return { transcript: t.transcript, heard, diffs, exact: diffs.length === 0, model: path.basename(models().whisper) };
+  return combineHearing(scriptText, t.results.map((x) => ({ model: path.basename(x.model, '.pt'), transcript: x.transcript })));
+}
+
+// One narration from separate line takes (story.takes; see takesPlan): each take slowed or sped by its
+// tempo, trimmed of its own leading and trailing silence, set to its loudness, faded in and out over
+// 12 ms and followed by its pause. Unless hearIt is false, every take is first heard against its own
+// script line and a take that is not exact stops the assembly. Writes story.narration and, beside
+// it, <name>.plan.json with each line's place in the narration.
+export function assemble(song, film, { log = console.log, hearIt = true } = {}) {
+  const cfg = storyConfig(film);
+  const scriptText = fs.readFileSync(path.join(song, cfg.script), 'utf8');
+  const { errors, plan } = takesPlan(cfg.takes, scriptText);
+  if (errors.length) throw Error(errors.join('; '));
+  const work = path.join(song, 'out', 'work', 'story');
+  if (hearIt) for (const p of plan) {
+    const h = hear(path.join(song, p.file), p.text, { work });
+    log(`line ${p.line} (${p.file}): ${h.exact ? 'exact' : h.diffs.map((d) => `${d.op} ${d.expected ?? ''}${d.heard ? ` heard "${d.heard}"` : ''} [${d.models.join(', ')}]`).join('; ')}`);
+    if (!h.exact) throw Error(`the take for line ${p.line} does not read "${p.text}" exactly; choose or record another`);
+  }
+  // integrated loudness: the summary's I (the last one ebur128 prints; the per-frame lines come first)
+  const lufsOf = (f) => +([...spawnSync('ffmpeg', ['-v', 'info', '-i', f, '-af', 'ebur128', '-f', 'null', '-'], { encoding: 'utf8' }).stderr.matchAll(/I:\s+(-?[\d.]+) LUFS/g)].at(-1)?.[1] ?? NaN);
+  const parts = [new Float32Array(Math.round(0.25 * RATE))], out = [];
+  let t = 0.25;
+  for (const p of plan) {
+    const src = path.join(song, p.file);
+    const trim = 'silenceremove=start_periods=1:start_threshold=-48dB:start_silence=0.03,areverse,silenceremove=start_periods=1:start_threshold=-48dB:start_silence=0.06,areverse';
+    const r = spawnSync('ffmpeg', ['-v', 'error', '-i', src, '-af', `${p.tempo !== 1 ? `atempo=${p.tempo},` : ''}${trim}`, '-ac', '1', '-ar', String(RATE), '-f', 'f32le', '-'], { maxBuffer: 1 << 30 });
+    if (r.status !== 0) throw Error(`could not read ${p.file}: ${r.stderr}`);
+    const x = new Float32Array(r.stdout.buffer.slice(r.stdout.byteOffset, r.stdout.byteOffset + r.stdout.length));
+    const level = lufsOf(src), g = Number.isFinite(level) ? 10 ** ((p.lufs - level) / 20) : 1;
+    const fade = Math.round(0.012 * RATE);
+    for (let i = 0; i < x.length; i++) x[i] *= g * Math.min(1, i / fade, (x.length - 1 - i) / fade);
+    out.push({ line: p.line, file: p.file, start: +t.toFixed(3), end: +(t + x.length / RATE).toFixed(3), gainDb: +(20 * Math.log10(g)).toFixed(2), tempo: p.tempo });
+    parts.push(x, new Float32Array(Math.round(p.pause * RATE)));
+    t += x.length / RATE + p.pause;
+  }
+  parts.push(new Float32Array(Math.round(0.4 * RATE)));
+  const y = new Float32Array(parts.reduce((n, a) => n + a.length, 0));
+  let o = 0, peak = 0;
+  for (const a of parts) { y.set(a, o); o += a.length; }
+  for (const v of y) peak = Math.max(peak, Math.abs(v));
+  if (peak > 0.95) for (let i = 0; i < y.length; i++) y[i] *= 0.95 / peak;
+  const dst = path.join(song, cfg.narration);
+  writeWav(dst, y, 1);
+  fs.writeFileSync(dst.replace(/\.[^.]+$/, '') + '.plan.json', JSON.stringify({ duration: +(y.length / RATE).toFixed(3), lines: out, peakTrimDb: peak > 0.95 ? +(20 * Math.log10(0.95 / peak)).toFixed(2) : 0 }, null, 1) + '\n');
+  log(`wrote ${cfg.narration}: ${(y.length / RATE).toFixed(2)} s from ${plan.length} takes`);
+  return { file: dst, duration: y.length / RATE, lines: out };
 }
 
 // Align the narration to the script and write data/lyrics.json, data/audio.json and data/story.json.

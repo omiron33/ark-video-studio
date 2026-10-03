@@ -125,13 +125,23 @@ nothing about it changes (its cache keys included).
   fixed trim is applied only if the sum would clip. `film.mjs` joins the picture with this mix
   instead of `media/song.wav`. `story.mjs mix` rebuilds it after a level change.
 - **Auditioning takes:** `node photoreal/story.mjs hear --song S --audio take.wav` transcribes a
-  take with local Whisper and lists every word changed, missing or added against the script.
+  take with two local Whisper models (small.en and medium.en; `ARK_STORY_HEAR` changes them) and
+  lists every word changed, missing or added against the script, with the model that heard it. A
+  take is exact only when both hear the script. One model alone can imagine words in a silence
+  ("Thank you" at the end of a take); a real misreading is heard by both.
+- **A narration from line takes:** when no single take reads everything exactly (a long passage, a
+  local voice), generate one take per script line and list them in `story.takes`:
+  `[{ "line": 1, "file": "media/tts/line01.flac", "pause": 2.4, "lufs": -20, "tempo": 0.92 }]`.
+  `node photoreal/story.mjs assemble --song S` hears each take against its own line (any slip
+  stops it), trims each take's own silence, sets its loudness (`lufs`, -20 by default; raise one
+  line to give it force), applies a gentle `tempo` (0.85 to 1.15) and the `pause` after it, and
+  writes `story.narration` with a `.plan.json` beside it. Then `prepare` as usual.
 
 `check.mjs` on a story film runs the motion gates as usual, drops the beat gate, and adds:
 
 | Gate | Fails when |
 |---|---|
-| `spoken-text` | the encoded film's own audio, transcribed locally, differs from the script by any word |
+| `spoken-text` | the encoded film's own audio over the narrated stretch, heard by both local models, differs from the script by any word |
 | `audio-sync` | the encoded audio is more than 20 ms off the mix it was made from (or shorter or longer) |
 | `voice-music` | during any spoken word the music is less than 12 dB under the voice (measured on the stems) |
 | `events` | a cue is not in the narration, an event falls outside the scene that claims it, or beats run out of order |
@@ -143,7 +153,8 @@ the critic is briefed on a narrated story (`narration.txt`, `beats.txt`) rather 
 Thresholds live with the others under `"gates"` (`minVoiceOverMusicDb`, `maxSyncLagMs`,
 `minSyncCorrelation`, `cutWordMargin`).
 
-The working sequence: write the script, record and `hear` takes until one is exact, `prepare`, write
+The working sequence: write the script, record and `hear` takes until one is exact (or `assemble`
+exact line takes), `prepare`, write
 the storyboard against `narration.txt` and the events, build scenes, then `--draft`, `check.mjs`,
 `--stills`, the full render and the critic exactly as for a song.
 

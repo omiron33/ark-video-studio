@@ -140,11 +140,13 @@ if (story) {
     console.log('story: transcribing the encoded film (local Whisper)');
     const wav = path.join(work, 'film-audio.wav');
     execFileSync('ffmpeg', ['-y', '-v', 'error', '-i', video, '-vn', '-ac', '1', '-ar', '16000', wav]);
-    const h = hear(wav, scriptText, { work });
-    spokenReport = { model: h.model, transcript: h.transcript, exact: h.exact, diffs: h.diffs };
+    // only the narrated stretch: a music-only tail can make a model imagine words ("Thank you")
+    const ws = lyrics.words ?? [];
+    const h = hear(wav, scriptText, { work, start: Math.max(0, (ws[0]?.start ?? 0) - 0.5), end: (ws.at(-1)?.end ?? duration) + 0.8 });
+    spokenReport = { model: h.model, byModel: h.byModel, exact: h.exact, diffs: h.diffs };
     for (const d of h.diffs) {
       const w = lyrics.words?.[Math.min(d.index, (lyrics.words?.length ?? 1) - 1)];
-      add('spoken-text', 'fail', Math.round((w?.start ?? 0) * fps), d.op === 'missing' ? `"${d.expected}" is not heard in the film` : d.op === 'extra' ? `"${d.heard}" is heard but is not in the script` : `"${d.expected}" is heard as "${d.heard}"`, 'record or choose a take that reads the script exactly, or lower the music where it masks the word');
+      add('spoken-text', 'fail', Math.round((w?.start ?? 0) * fps), `${d.op === 'missing' ? `"${d.expected}" is not heard in the film` : d.op === 'extra' ? `"${d.heard}" is heard but is not in the script` : `"${d.expected}" is heard as "${d.heard}"`} (${d.models.join(', ')})`, 'record or choose a take that reads the script exactly, or lower the music where it masks the word');
     }
   }
 }

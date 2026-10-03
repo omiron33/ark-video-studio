@@ -6,9 +6,9 @@ import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import {
   isStory, storyConfig, diffWords, tokens, scriptLines, narrationLyrics, findPhrase, resolveEvents, onScreenLyrics,
-  speechSpans, duckGain, voiceOverMusic, bestLag, cutsInsideWords, eventProblems,
+  speechSpans, duckGain, voiceOverMusic, bestLag, cutsInsideWords, eventProblems, combineHearing, takesPlan,
 } from '../photoreal/lib/story.mjs';
-import { buildMix, mixPaths, decode, writeWav, RATE } from '../photoreal/lib/story-audio.mjs';
+import { buildMix, mixPaths, decode, writeWav, RATE, assemble } from '../photoreal/lib/story-audio.mjs';
 import { validateStoryboard } from '../photoreal/lib/storyboard.mjs';
 import { buildPrompt } from '../photoreal/lib/critic.mjs';
 import { makeKeys } from '../photoreal/lib/keys.mjs';
@@ -202,4 +202,41 @@ test('the mix keeps the voice untouched, ducks the music under it and caches unt
   assert.equal(buildMix(d, film, { log: () => {} }).cached, true);
   film.story.duckDb = 10;
   assert.equal(buildMix(d, film, { log: () => {} }).cached, false);
+});
+
+test('listening with two models: exact only when both hear the script; a slip names the model that heard it', () => {
+  const both = combineHearing('Loose him, and let him go.', [{ model: 'small.en', transcript: 'Loose him and let him go.' }, { model: 'medium.en', transcript: 'Loose him, and let him go' }]);
+  assert.equal(both.exact, true);
+  const one = combineHearing('Loose him, and let him go.', [{ model: 'small.en', transcript: 'Loose him and let him go. Thank you.' }, { model: 'medium.en', transcript: 'Loose him, and let him go.' }]);
+  assert.equal(one.exact, false);
+  assert.deepEqual(one.diffs.map((d) => [d.op, d.heard, d.models]), [['extra', 'thank', ['small.en']], ['extra', 'you', ['small.en']]]);
+  const real = combineHearing('Loose him', [{ model: 'small.en', transcript: 'lose him' }, { model: 'medium.en', transcript: 'Lose him.' }]);
+  assert.deepEqual(real.diffs.map((d) => d.models), [['small.en', 'medium.en']]);
+});
+
+test('line takes must cover the script once, in order, with sane tempo', () => {
+  const script = 'One line.\nTwo line.';
+  assert.deepEqual(takesPlan([{ line: 1, file: 'a' }, { line: 2, file: 'b', pause: 0, tempo: 0.92 }], script).errors, []);
+  assert.equal(takesPlan([{ line: 1, file: 'a' }, { line: 2, file: 'b' }], script).plan[0].pause, 0.8);
+  const bad = takesPlan([{ line: 2, file: 'b', tempo: 0.5 }], script).errors.join('\n');
+  assert.match(bad, /in order/);
+  assert.match(bad, /tempo 0.5/);
+  assert.match(bad, /1 takes for 2 script lines/);
+});
+
+test('assembling line takes: trimmed, levelled, paused, and laid out in a plan', { skip: !hasFfmpeg && 'needs ffmpeg' }, () => {
+  const d = tmp();
+  fs.mkdirSync(path.join(d, 'media'), { recursive: true }); fs.mkdirSync(path.join(d, 'data'));
+  fs.writeFileSync(path.join(d, 'data', 'script.txt'), 'First.\nSecond.\n');
+  const tone = (secs, amp) => { const x = new Float32Array(Math.round((secs + 1) * RATE)); for (let i = Math.round(0.5 * RATE); i < Math.round((0.5 + secs) * RATE); i++) x[i] = amp * Math.sin(2 * Math.PI * 180 * i / RATE); return x; };
+  writeWav(path.join(d, 'media', 'l1.wav'), tone(1, 0.05), 1);
+  writeWav(path.join(d, 'media', 'l2.wav'), tone(0.8, 0.4), 1);
+  const film = { mode: 'story', story: { script: 'data/script.txt', narration: 'media/narration.wav', takes: [{ line: 1, file: 'media/l1.wav', pause: 1.5 }, { line: 2, file: 'media/l2.wav', pause: 0 }] } };
+  const r = assemble(d, film, { hearIt: false, log: () => {} });
+  // 0.25 lead + 1.0 + 1.5 pause + 0.8 + 0.4 tail; each take keeps 0.03 s before and 0.06 s after its
+  // sound of its own half-second silences
+  assert.ok(Math.abs(r.duration - 4.13) < 0.06, `duration ${r.duration}`);
+  assert.ok(Math.abs(r.lines[1].start - 2.84) < 0.05, `line 2 at ${r.lines[1].start}`);
+  assert.ok(r.lines[0].gainDb > 10 && r.lines[1].gainDb < 0, 'both levelled toward -20 LUFS');
+  assert.ok(fs.existsSync(path.join(d, 'media', 'narration.plan.json')));
 });
