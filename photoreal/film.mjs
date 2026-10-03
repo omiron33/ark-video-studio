@@ -48,17 +48,20 @@ const draft = flag('draft');
 //   premium   60 fps, at least twice the sub-frames (32 for lens-heavy premium scenes), richer lyric
 //             layers, the slowest encode, every gate: the all-out photoreal render
 // A request for a photorealistic film means premium.
-const TIERS = ['fast', 'standard', 'premium'];
+// ultra: the highest quality the engine draws: 4K (unless film.json says otherwise), four times the
+//   film's sub-frames (at least 64; every sub-frame is jittered inside the pixel, so this is the
+//   engine's supersampling as well as its motion blur), the film's own frame rate, CRF 12, every gate.
+const TIERS = ['fast', 'standard', 'premium', 'ultra'];
 const tier = opt('tier', film.tier ?? 'standard');
 if (!TIERS.includes(tier)) throw Error(`--tier must be one of ${TIERS.join(', ')}`);
 const fps = tier === 'fast' ? 30 : tier === 'premium' ? Math.max(60, film.fps ?? 60) : film.fps ?? 60;
 const baseSamples = film.samples ?? 12;
-const samples = opt('samples', draft ? '2' : tier === 'fast' ? '2' : tier === 'premium' ? String(Math.max(16, baseSamples * 2)) : String(baseSamples));
-const layerSamples = draft || tier === 'fast' ? 2 : tier === 'premium' ? 16 : 8;
-const encode = { preset: draft || tier === 'fast' ? 'veryfast' : 'slow', crf: opt('crf', tier === 'fast' ? '20' : tier === 'premium' ? '16' : '18') };
+const samples = opt('samples', draft ? '2' : tier === 'fast' ? '2' : tier === 'premium' ? String(Math.max(16, baseSamples * 2)) : tier === 'ultra' ? String(Math.max(64, baseSamples * 4)) : String(baseSamples));
+const layerSamples = draft || tier === 'fast' ? 2 : tier === 'premium' || tier === 'ultra' ? 16 : 8;
+const encode = { preset: draft || tier === 'fast' ? 'veryfast' : 'slow', crf: opt('crf', tier === 'fast' ? '20' : tier === 'premium' ? '16' : tier === 'ultra' ? '12' : '18') };
 const only = opt('only')?.split(',');
 // output size: "resolution": "3840x2160" in film.json or --res (drafts and the fast tier stay 1920x1080)
-const res = draft || tier === 'fast' ? '1920x1080' : opt('res', film.resolution ?? '1920x1080');
+const res = draft || tier === 'fast' ? '1920x1080' : opt('res', film.resolution ?? (tier === 'ultra' ? '3840x2160' : '1920x1080'));
 if (!/^\d+x\d+$/.test(res)) throw Error('resolution must look like 3840x2160');
 const OUT = path.join(SONG, 'out');
 const REVIEW = path.join(OUT, 'review');
@@ -378,7 +381,7 @@ if (flag('estimate')) {
   for (const tr of TIERS) {
     const tfps = tr === 'fast' ? 30 : tr === 'premium' ? Math.max(60, film.fps ?? 60) : film.fps ?? 60;
     const tSamples = (sc) => {
-      const base = tr === 'fast' ? 2 : tr === 'premium' ? Math.max(16, baseSamples * 2) : baseSamples;
+      const base = tr === 'fast' ? 2 : tr === 'premium' ? Math.max(16, baseSamples * 2) : tr === 'ultra' ? Math.max(64, baseSamples * 4) : baseSamples;
       const own = sc.samples != null ? (tr === 'premium' ? Math.max(sc.samples, base) : tr === 'fast' ? Math.min(sc.samples, base) : sc.samples) : base;
       return tr === 'premium' && keys.isPremium(sc.scene) ? Math.max(32, own) : own;
     };

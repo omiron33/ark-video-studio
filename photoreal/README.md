@@ -187,6 +187,7 @@ would cost for this film, without rendering.
 | fast | 30 fps | 2 | veryfast | none (STATUS.md says so) | a watchable film in a couple of hours |
 | standard | film.json fps | film.json samples | slow | all | everything rendered before tiers existed, unchanged |
 | premium | 60 fps | at least twice, 32 for premium scenes | slow, CRF 16 | all, plus shot-length rules | the all-out photorealistic film |
+| ultra | film.json fps | four times, at least 64 | slow, CRF 12, 4K unless `resolution` says | all | the highest definition: every sub-frame is jittered inside the pixel, so 64 sub-frames is 64x supersampling as well as motion blur |
 
 **Resolution.** `"resolution": "3840x2160"` in film.json (or `--res`) renders every picture, lyric
 layer and key still at that size; drafts and the fast tier stay 1920x1080. The page reads its size
