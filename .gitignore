@@ -41,3 +41,6 @@ renders/
 *.flac
 *.aiff
 *.prores
+
+# Third-party reference frames stay local (regenerate with scripts/seed-external-reference.mjs)
+references/motion/images/external-*
