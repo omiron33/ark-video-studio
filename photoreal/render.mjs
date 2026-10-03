@@ -120,7 +120,7 @@ if (mode === 'checkstills') {
       try {
         const page = await openScene(s.scene, JSON.stringify({ ...(s.params ?? {}), id: s.id, from: s.from, to: s.to }));
         await page.evaluate(([t, n]) => window.G.still(t, n), [s.t, +opt('samples', 2)]);
-        await page.screenshot({ path: path.join(out, `${s.id}.png`), clip: { x: 0, y: 0, width: W, height: H } });
+        await page.screenshot({ path: path.join(out, `${s.id}.png`), clip: { x: 0, y: 0, width: W, height: H }, timeout: 600000 });
         lost = !!page.contextLost;
         await page.close();
       } catch (e) { lost = true; console.log(`scene ${s.id}: ${e.message.split('\n')[0]}`); }
@@ -182,7 +182,7 @@ try {
       const t0 = Date.now();
       await page.evaluate(([t, s]) => window.G.still(t, s), [t, samples]);
       const f = path.join(out, `${clip}-${t.toFixed(2)}.png`);
-      await page.screenshot({ path: f, clip: { x: 0, y: 0, width: W, height: H } });
+      await page.screenshot({ path: f, clip: { x: 0, y: 0, width: W, height: H }, timeout: 600000 });
       console.log(f, `${Date.now() - t0} ms`);
     }
   } else if (mode === 'video' || mode === 'layer') {
