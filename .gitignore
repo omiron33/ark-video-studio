@@ -15,3 +15,29 @@ projects/**/.revisions/
 projects/**/out/
 
 projects/**/.review-cache/
+
+# Secrets and credentials: never commit these
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+cookies*.txt
+*cookies*.json
+*.cookies
+
+# Render output, large media and model weights stay out of git
+# (keep big assets on /Volumes/DATA; small project assets under projects/ are fine)
+out/
+output/
+renders/
+*.safetensors
+*.ckpt
+*.gguf
+*.onnx
+*.mov
+*.mkv
+*.flac
+*.aiff
+*.prores
