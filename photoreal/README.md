@@ -158,6 +158,24 @@ exact line takes), `prepare`, write
 the storyboard against `narration.txt` and the events, build scenes, then `--draft`, `check.mjs`,
 `--stills`, the full render and the critic exactly as for a song.
 
+## People rendered in Blender
+
+A scene can have its people drawn by Blender instead of in the shader: put who stands where in
+`scenes/<name>.people.json` (people with a pose, a place on the ground in the scene's own
+coordinates and a heading, plus the sun, sky and any local light), and name the song's Blender script
+in film.json (`"people": { "renderer": "tools/blender_layer.py", "samples": 64 }`). `film.mjs` then
+renders that scene's picture as usual, asks the scene module for its camera at every frame, runs the
+script in Blender (`BLENDER` overrides the path) to draw the people as a transparent layer from that
+camera, and composites picture, people and words in that order. The layer is cached like the lyric
+layer, keyed by the scene, the people file and everything under the song's `tools/`. It renders on
+this Mac. The script receives `--spec` (the people file plus `camera`: one entry per frame with
+`pos`, `target`, `fov`, `roll`, `focus` and `aperture`), `--out`, `--res`, `--samples` and `--frames`
+and writes `00000.png`, ... with transparency. Engine coordinates are metres with y up; Blender's
+are z up, so (x, y, z) becomes (x, -z, y).
+
+Segments now render at the film's own frame rate when it is not 60 (`"fps": 24`); films at 60 are
+rendered exactly as before.
+
 ## Tiers
 
 `film.mjs --tier fast|standard|premium` (or `"tier"` in film.json; standard when neither says).

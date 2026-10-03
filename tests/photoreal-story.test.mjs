@@ -260,3 +260,22 @@ test('drawing at 4K: segments made before keep their keys; a non-default size ge
   assert.equal(makeKeys(d).plate({ ...s, res: '1920x1080' }, 60, 8), makeKeys(d).plate(s, 60, 8));
   assert.notEqual(makeKeys(d).plate({ ...s, res: '3840x2160' }, 60, 8), makeKeys(d).plate(s, 60, 8));
 });
+
+test('a people layer is keyed by its people file and the song tools that build them; scenes without one are untouched', () => {
+  const d = tmp();
+  for (const x of ['scenes', 'data', 'tools']) fs.mkdirSync(path.join(d, x));
+  fs.writeFileSync(path.join(d, 'scenes', 'a.js'), 'export default {}');
+  fs.writeFileSync(path.join(d, 'data', 'lyrics.json'), '{"lines":[],"words":[]}');
+  fs.writeFileSync(path.join(d, 'tools', 'render.py'), '# v1');
+  const s = { id: '01', scene: 'a', from: 0, to: 2 };
+  const plate = makeKeys(d).plate(s, 24, 8);
+  assert.equal(makeKeys(d).hasPeople('a'), false);
+  assert.equal(makeKeys(d).people(s, 24, 32), null);
+  fs.writeFileSync(path.join(d, 'scenes', 'a.people.json'), '{"people":[]}');
+  const k1 = makeKeys(d).people(s, 24, 32);
+  assert.ok(k1);
+  assert.equal(makeKeys(d).plate(s, 24, 8), plate, 'the picture keeps its key');
+  fs.writeFileSync(path.join(d, 'tools', 'render.py'), '# v2');
+  assert.notEqual(makeKeys(d).people(s, 24, 32), k1);
+  assert.notEqual(makeKeys(d).people(s, 24, 64), makeKeys(d).people(s, 24, 32));
+});

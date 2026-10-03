@@ -114,12 +114,18 @@ const segs = scenes.map((s0, i) => {
   const layered = keys.hasLayer(s.scene);
   const out = path.join(sDir, `${s.id}.mp4`);
   const seg = { ...s, f0, f1, frames: f1 - f0, samples: sSamples, layered, out, content: keys.content(s, fps), sceneTier: st, crf: st === 'premium' && tier !== 'premium' ? '16' : encode.crf };
-  if (layered) {
+  // people rendered in Blender as their own layer (scenes/<name>.people.json)
+  if (keys.hasPeople(s.scene)) {
+    seg.peopleOut = path.join(sDir, `${s.id}.people.mkv`);
+    seg.peopleSamples = draft ? 16 : (film.people?.samples ?? 64);
+    seg.peopleKey = keys.people(s, fps, seg.peopleSamples);
+  }
+  if (layered || seg.peopleOut) {
     seg.plateOut = path.join(sDir, `${s.id}.plate.mp4`);
     seg.layerOut = path.join(sDir, `${s.id}.lyric.mkv`);
     seg.plateKey = keys.plate(s, fps, sSamples);
-    seg.layerKey = keys.layer(s, fps, sLayerSamples);
-    seg.key = sha(seg.plateKey + seg.layerKey);
+    seg.layerKey = layered ? keys.layer(s, fps, sLayerSamples) : '';
+    seg.key = sha(seg.plateKey + seg.layerKey + (seg.peopleKey ?? ''));
   } else {
     seg.plateOut = out;
     seg.plateKey = keys.plate(s, fps, sSamples);
@@ -218,9 +224,15 @@ for (const s of segs) {
     any = true;
     // lyric layers are light; they go wherever they finish soonest like any other job
     tasks.push({ id: s.id, job: `${s.id}-lyric`, part: 'layer', scene: s.scene, frames: s.frames, out: s.layerOut, key: s.layerKey, light: true,
-      renderArgs: ['layer', '--scene', s.scene, '--params64', Buffer.from(paramsOf(s)).toString('base64'), '--from', String(s.f0 / fps), '--to', String(s.f1 / fps), '--samples', String(s.sceneTier === 'premium' && !draft ? 16 : layerSamples), ...(s.res ? ['--res', s.res] : [])] });
+      renderArgs: ['layer', '--scene', s.scene, '--params64', Buffer.from(paramsOf(s)).toString('base64'), '--from', String(s.f0 / fps), '--to', String(s.f1 / fps), '--samples', String(s.sceneTier === 'premium' && !draft ? 16 : layerSamples), ...(s.res ? ['--res', s.res] : []), ...(fps !== 60 ? ['--fps', String(fps)] : [])] });
   }
-  if (!any && !(s.layered && !cached(s.out, s.key))) { console.log(`segment ${s.id} cached`); cachedCount++; }
+  if (s.peopleOut && !cached(s.peopleOut, s.peopleKey)) {
+    any = true;
+    // Blender runs on this Mac (its people builder and assets live in the song folder here)
+    tasks.push({ id: s.id, job: `${s.id}-people`, part: 'people', scene: s.scene, frames: s.frames, out: s.peopleOut, key: s.peopleKey, localOnly: true,
+      renderArgs: ['people', '--scene', s.scene, '--params64', Buffer.from(paramsOf(s)).toString('base64'), '--from', String(s.f0 / fps), '--to', String(s.f1 / fps), '--fps', String(fps), '--samples', String(s.peopleSamples), ...(s.res ? ['--res', s.res] : [])] });
+  }
+  if (!any && !((s.layered || s.peopleOut) && !cached(s.out, s.key))) { console.log(`segment ${s.id} cached`); cachedCount++; }
 }
 const plates = tasks.filter((t) => t.part === 'plate');
 
@@ -529,10 +541,15 @@ await restoreAll();
 
 // ---------- composite lyric layers over their pictures ----------
 for (const s of segs) {
-  if (!s.selected || !s.layered || failed.has(s.id) || cached(s.out, s.key)) continue;
-  console.log(`composite ${s.id}: lyric layer over the picture`);
-  const r = spawnSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', s.plateOut, '-i', s.layerOut, '-filter_complex',
-    '[0:v]scale=in_color_matrix=bt709:in_range=tv,format=gbrp[p];[1:v]format=gbrap[l];[p][l]overlay=format=gbrp:alpha=straight,scale=out_color_matrix=bt709:out_range=tv,format=yuv420p',
+  if (!s.selected || !(s.layered || s.peopleOut) || failed.has(s.id) || cached(s.out, s.key)) continue;
+  console.log(`composite ${s.id}: ${[s.peopleOut && 'people', s.layered && 'lyric layer'].filter(Boolean).join(' and ')} over the picture`);
+  // picture, then the people, then the words
+  const ins = [s.plateOut, ...(s.peopleOut ? [s.peopleOut] : []), ...(s.layered ? [s.layerOut] : [])];
+  const chain = ['[0:v]scale=in_color_matrix=bt709:in_range=tv,format=gbrp[c0]'];
+  ins.slice(1).forEach((_, i) => { chain.push(`[${i + 1}:v]format=gbrap[l${i}]`, `[c${i}][l${i}]overlay=format=gbrp:alpha=straight[c${i + 1}]`); });
+  const graph = chain.join(';') + `;[c${ins.length - 1}]scale=out_color_matrix=bt709:out_range=tv,format=yuv420p`;
+  const r = spawnSync('ffmpeg', ['-y', '-loglevel', 'error', ...ins.flatMap((f) => ['-i', f]), '-filter_complex',
+    graph,
     '-c:v', 'libx264', '-preset', encode.preset, '-crf', encode.crf, '-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709', '-movflags', '+faststart', s.out], { stdio: 'inherit' });
   if (r.status !== 0) { failed.add(s.id); progress.log(s.id, 'composite failed'); continue; }
   fs.writeFileSync(s.out + '.key', s.key);

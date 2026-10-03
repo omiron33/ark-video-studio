@@ -10,7 +10,7 @@
 import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
-import { spawn } from 'node:child_process';
+import { spawn, spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { chromium } from 'playwright-core';
 import { sceneKind } from './lib/keys.mjs';
@@ -162,6 +162,55 @@ if (mode === 'probe') {
       console.log('PROBE ' + JSON.stringify({ id: s.id, scene: s.scene, loadMs, fixedMs: +fixed.toFixed(1), perSampleMs: +perSample.toFixed(2), inSpeed: +inSpeed.toFixed(3), outSpeed: +outSpeed.toFixed(3), layer, gpu, lost }));
     }
   } finally { server.closeAllConnections?.(); server.close(); await Promise.race([browser.close(), new Promise((r) => setTimeout(r, 10000))]); }
+  process.exit(0);
+}
+
+// The people of a scene, rendered by Blender as their own transparent layer (scenes/<name>.people.json
+// says who stands where, in what pose and light; the song's renderer script draws them). The camera
+// comes from the scene module itself, frame by frame, so the people sit exactly in the shader's world.
+if (mode === 'people') {
+  const sceneName = opt('scene');
+  const spec = JSON.parse(fs.readFileSync(path.join(SONG, 'scenes', `${sceneName}.people.json`), 'utf8'));
+  const params = JSON.parse(opt('params64') ? Buffer.from(opt('params64'), 'base64').toString('utf8') : opt('params', '{}'));
+  const from = +opt('from'), to = +opt('to'), fps = +opt('fps', 60);
+  const n = Math.round((to - from) * fps);
+  const out = path.resolve(opt('out'));
+  // the camera track, from the scene module evaluated in the page (no picture is drawn)
+  const page = await browser.newPage({ viewport: { width: 64, height: 64 } });
+  await page.goto(`http://127.0.0.1:${port}/`);
+  const track = await page.evaluate(async ([name, params, from, fps, n]) => {
+    const m = await import(`/song/scenes/${name}.js`);
+    const sc = typeof m.default === 'function' ? await m.default(params) : m.default;
+    const out = [];
+    for (let i = 0; i < n; i++) { const t = from + i / fps; const c = sc.camera(t); out.push({ t, pos: c.pos, target: c.target, fov: c.fov ?? 40, roll: c.roll ?? 0, focus: c.focus, aperture: c.aperture ?? 0 }); }
+    return out;
+  }, [sceneName, { ...params }, from, fps, n]).catch((e) => { throw Error('camera track: ' + e.message); });
+  await page.close();
+  server.closeAllConnections?.(); server.close(); await Promise.race([browser.close(), new Promise((r) => setTimeout(r, 10000))]);
+  const work = `${out}.frames`;
+  fs.rmSync(work, { recursive: true, force: true }); fs.mkdirSync(work, { recursive: true });
+  const specFile = path.join(work, 'spec.json');
+  fs.writeFileSync(specFile, JSON.stringify({ ...spec, fps, from, camera: track }));
+  const film = JSON.parse(fs.readFileSync(path.join(SONG, 'film.json'), 'utf8'));
+  const script = path.join(SONG, film.people?.renderer ?? 'tools/blender_layer.py');
+  const blender = process.env.BLENDER ?? (process.platform === 'darwin' ? '/Applications/Blender.app/Contents/MacOS/Blender' : 'blender');
+  beat({ frame: 0, of: n });
+  const t0 = Date.now();
+  const code = await new Promise((res) => {
+    const b = spawn(blender, ['-b', '-P', script, '--', '--spec', specFile, '--out', work, '--res', `${W}x${H}`, '--samples', String(samples), '--frames', `0:${n}`], { stdio: ['ignore', 'pipe', 'inherit'] });
+    let carry = '';
+    b.stdout.on('data', (d) => {
+      carry += d; const lines = carry.split('\n'); carry = lines.pop();
+      for (const l of lines) { const m = /^FRAME (\d+)/.exec(l); if (m) { const k = +m[1] + 1; beat({ frame: k, of: n, msPerFrame: Math.round((Date.now() - t0) / k) }); if (k % 10 === 0 || k === n) console.log(`people frame ${k}/${n}`); } }
+    });
+    b.on('close', res);
+  });
+  if (code !== 0) { console.error(`blender exited with ${code}`); process.exit(1); }
+  // transparency kept losslessly (FFV1, as the lyric layer)
+  const r = spawnSync('ffmpeg', ['-y', '-loglevel', 'error', '-framerate', String(fps), '-i', path.join(work, '%05d.png'), '-vf', 'format=yuva444p', '-c:v', 'ffv1', '-level', '3', '-slices', '16', out], { stdio: 'inherit' });
+  if (r.status !== 0) { console.error('encoding the people layer failed'); process.exit(1); }
+  fs.rmSync(work, { recursive: true, force: true });
+  console.log('wrote', out, { frames: n, ms: Date.now() - t0 });
   process.exit(0);
 }
 

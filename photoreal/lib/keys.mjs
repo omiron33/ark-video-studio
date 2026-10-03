@@ -106,5 +106,16 @@ export function makeKeys(song, { web = WEB, legacyWeb } = {}) {
     ({ engineAll, enginePlate } = engineHashes(oldWeb));
     try { return plate(s, fps, samples); } finally { ({ engineAll, enginePlate } = saved); }
   }
-  return { content, plate, layer, hasLayer, legacyPlate, isPremium };
+  // The people layer (scenes/<name>.people.json, rendered by the song's Blender script): keyed by the
+  // scene's content (its camera lives there), the people file, the renderer and everything under the
+  // song's tools/ folder it builds people with, and the render settings.
+  const peopleFile = (scene) => path.join(song, 'scenes', `${scene}.people.json`);
+  const hasPeople = (scene) => fs.existsSync(peopleFile(scene));
+  function people(s, fps, samples) {
+    if (!hasPeople(s.scene)) return null;
+    const h = crypto.createHash('sha256').update('people').update(content(s, fps)).update(fs.readFileSync(peopleFile(s.scene)));
+    hashFiles(h, filesUnder(path.join(song, 'tools')), song);
+    return h.update(`${fps}-${samples}`).digest('hex');
+  }
+  return { content, plate, layer, hasLayer, legacyPlate, isPremium, hasPeople, people };
 }
