@@ -27,7 +27,10 @@ const CHROME = process.env.CHROME ?? (process.platform === 'win32' ? 'C:/Program
 // ('default' for Chrome's choice). Whatever the backend, a machine only renders the scenes whose
 // pictures matched this Mac's (see film.mjs).
 const ANGLE = process.env.ARK_ANGLE === 'default' ? null : process.env.ARK_ANGLE ?? (process.platform === 'darwin' ? 'metal' : process.platform === 'win32' ? null : 'vulkan');
-const W = 1920, H = 1080;
+// --res WxH draws at another size (default 1920x1080); the page reads it from its URL
+const RES = opt('res', '1920x1080');
+if (!/^\d+x\d+$/.test(RES)) { console.error('--res must look like 3840x2160'); process.exit(1); }
+const [W, H] = RES.split('x').map(Number);
 const SONG = path.resolve(opt('song', '.'));
 if (!fs.existsSync(path.join(SONG, 'scenes'))) { console.error('--song must be a folder with scenes/'); process.exit(1); }
 
@@ -84,7 +87,7 @@ async function openScene(scene, params, tries = 1) {
   page.on('requestfailed', () => {});
   const p64 = Buffer.from(params).toString('base64');
   const kind = sceneKind(SONG, scene);
-  await page.goto(`http://127.0.0.1:${port}/${kind ? `premium/index.html?kind=${kind}&` : '?'}scene=${scene}&params=${encodeURIComponent(p64)}${lyricOf(scene) ? '&lyric=1' : ''}`);
+  await page.goto(`http://127.0.0.1:${port}/${kind ? `premium/index.html?kind=${kind}&` : '?'}scene=${scene}&params=${encodeURIComponent(p64)}${lyricOf(scene) ? '&lyric=1' : ''}${RES !== '1920x1080' ? `&res=${RES}` : ''}`);
   await page.waitForFunction(() => window.G && (window.G.ready || window.G.error), null, { timeout: 120000 });
   const err = await page.evaluate(() => window.G.error);
   if (err) {

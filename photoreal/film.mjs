@@ -57,6 +57,9 @@ const samples = opt('samples', draft ? '2' : tier === 'fast' ? '2' : tier === 'p
 const layerSamples = draft || tier === 'fast' ? 2 : tier === 'premium' ? 16 : 8;
 const encode = { preset: draft || tier === 'fast' ? 'veryfast' : 'slow', crf: opt('crf', tier === 'fast' ? '20' : tier === 'premium' ? '16' : '18') };
 const only = opt('only')?.split(',');
+// output size: "resolution": "3840x2160" in film.json or --res (drafts and the fast tier stay 1920x1080)
+const res = draft || tier === 'fast' ? '1920x1080' : opt('res', film.resolution ?? '1920x1080');
+if (!/^\d+x\d+$/.test(res)) throw Error('resolution must look like 3840x2160');
 const OUT = path.join(SONG, 'out');
 const REVIEW = path.join(OUT, 'review');
 const segDir = path.join(OUT, draft ? 'segments-draft' : tier === 'standard' ? 'segments' : `segments-${tier}`);
@@ -95,7 +98,7 @@ const handlesOf = (i) => {
 };
 const segs = scenes.map((s0, i) => {
   const handles = handlesOf(i);
-  const s = handles ? { ...s0, handles } : s0;
+  const s = { ...(handles ? { ...s0, handles } : s0), ...(res !== '1920x1080' ? { res } : {}) };
   const f0 = Math.round((s.from - (handles?.[0] ?? 0)) * fps), f1 = Math.round((s.to + (handles?.[1] ?? 0)) * fps);
   // A scene can be raised to premium on its own ("tier": "premium" on the scene), so a few scenes
   // can be rebuilt all-out and stitched into a film otherwise rendered at standard; it renders at the
@@ -159,7 +162,7 @@ if (flag('stills')) {
     const s = segs.find((x) => x.id === p.sceneId);
     const tmp = path.join(workDir, 'stills');
     fs.rmSync(tmp, { recursive: true, force: true });
-    const r = spawnSync('node', [RENDER, 'stills', '--song', SONG, '--scene', s.scene, '--params', paramsOf(s), '--t', String(p.time), '--samples', s.samples, '--out', tmp], { stdio: 'inherit' });
+    const r = spawnSync('node', [RENDER, 'stills', '--song', SONG, '--scene', s.scene, '--params', paramsOf(s), '--t', String(p.time), '--samples', s.samples, '--out', tmp, ...(s.res ? ['--res', s.res] : [])], { stdio: 'inherit' });
     if (r.status !== 0) { notes.push(`Key still ${p.name} (${s.id}) failed to render.`); continue; }
     const f = path.join(dir, `${p.name}.png`);
     fs.renameSync(path.join(tmp, fs.readdirSync(tmp).find((f) => f.endsWith('.png') && !f.startsWith('.'))), f);
@@ -215,7 +218,7 @@ for (const s of segs) {
     any = true;
     // lyric layers are light; they go wherever they finish soonest like any other job
     tasks.push({ id: s.id, job: `${s.id}-lyric`, part: 'layer', scene: s.scene, frames: s.frames, out: s.layerOut, key: s.layerKey, light: true,
-      renderArgs: ['layer', '--scene', s.scene, '--params64', Buffer.from(paramsOf(s)).toString('base64'), '--from', String(s.f0 / fps), '--to', String(s.f1 / fps), '--samples', String(s.sceneTier === 'premium' && !draft ? 16 : layerSamples)] });
+      renderArgs: ['layer', '--scene', s.scene, '--params64', Buffer.from(paramsOf(s)).toString('base64'), '--from', String(s.f0 / fps), '--to', String(s.f1 / fps), '--samples', String(s.sceneTier === 'premium' && !draft ? 16 : layerSamples), ...(s.res ? ['--res', s.res] : [])] });
   }
   if (!any && !(s.layered && !cached(s.out, s.key))) { console.log(`segment ${s.id} cached`); cachedCount++; }
 }

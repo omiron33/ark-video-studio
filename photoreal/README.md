@@ -170,6 +170,12 @@ would cost for this film, without rendering.
 | standard | film.json fps | film.json samples | slow | all | everything rendered before tiers existed, unchanged |
 | premium | 60 fps | at least twice, 32 for premium scenes | slow, CRF 16 | all, plus shot-length rules | the all-out photorealistic film |
 
+**Resolution.** `"resolution": "3840x2160"` in film.json (or `--res`) renders every picture, lyric
+layer and key still at that size; drafts and the fast tier stay 1920x1080. The page reads its size
+from its URL, and that line of `web/engine.js` is hashed as the constant it replaced, so films
+rendered before keep their cached segments; a size other than 1920x1080 is part of each segment's
+key. A 4K frame costs about four times a 1080p one.
+
 Each tier keeps its own segments (`out/segments-fast/`, `out/segments/`, `out/segments-premium/`),
 so trying one never throws away another. The fast film is `out/film-fast.mp4`.
 

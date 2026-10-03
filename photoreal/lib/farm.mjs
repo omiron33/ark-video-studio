@@ -85,7 +85,7 @@ export class Worker {
 // Plate render arguments that work on any machine (no local paths; parameters base64-encoded).
 export function plateArgs(seg, fps, { draft, crf = '18', params }) {
   return ['video', '--scene', seg.scene, '--params64', b64(params), '--from', String(seg.f0 / fps), '--to', String(seg.f1 / fps),
-    '--samples', String(seg.samples), '--noaudio', '--preset', draft ? 'veryfast' : 'slow', '--crf', crf];
+    '--samples', String(seg.samples), '--noaudio', '--preset', draft ? 'veryfast' : 'slow', '--crf', crf, ...(seg.res && seg.res !== '1920x1080' ? ['--res', seg.res] : [])];
 }
 
 // Cheap per-scene timing on a machine (see render.mjs probe).

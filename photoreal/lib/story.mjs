@@ -53,7 +53,12 @@ export function storyConfig(film) {
 
 // ---------- text ----------
 // The spoken form of a word for comparison: case, accents, punctuation and apostrophes don't count.
-export const normWord = (s) => String(s).normalize('NFKD').replace(/\p{M}/gu, '').toLowerCase().replace(/[’']/g, '').replace(/[^\p{L}\p{N}]/gu, '');
+// Small numbers count the same written either way ("Four" and "4"): a recogniser writes digits.
+const NUMBERS = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve'];
+export const normWord = (s) => {
+  const w = String(s).normalize('NFKD').replace(/\p{M}/gu, '').toLowerCase().replace(/[’']/g, '').replace(/[^\p{L}\p{N}]/gu, '');
+  return /^\d+$/.test(w) && +w < NUMBERS.length ? NUMBERS[+w] : w;
+};
 export const tokens = (text) => String(text).split(/[\s—–]+|--/).map((t) => t.trim()).filter((t) => normWord(t));
 
 // Script lines: one per non-empty line of the script file, each with its display text and tokens.

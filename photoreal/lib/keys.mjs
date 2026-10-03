@@ -27,7 +27,17 @@ export function depsOf(song, file, seen = new Set()) {
   return seen;
 }
 
-const hashFiles = (h, files, base) => { for (const f of files) h.update(path.relative(base, f)).update(fs.readFileSync(f)); return h; };
+// The engine learned to draw at other sizes by reading its size from the page URL. That line is hashed
+// as the constant it replaced, so every segment rendered before keeps its key; a size other than
+// 1920x1080 enters the key through the segment's window (see window() below).
+const KEY_NEUTRAL = [[/^export const \[W, H\] = \(new URLSearchParams.*key-neutral.*$/m, 'export const W = 1920, H = 1080;']];
+const keyBytes = (f) => {
+  if (!f.endsWith('.js')) return fs.readFileSync(f);
+  let t = fs.readFileSync(f, 'utf8');
+  for (const [re, was] of KEY_NEUTRAL) t = t.replace(re, was);
+  return Buffer.from(t);
+};
+const hashFiles = (h, files, base) => { for (const f of files) h.update(path.relative(base, f)).update(keyBytes(f)); return h; };
 // engine files by their place inside web/ and song data by its place in the song, so a key never
 // depends on where the engine happens to be checked out
 const hashEngine = (h, webFiles, web, data, song) => { hashFiles(h, webFiles, web); return hashFiles(h, data, song); };
@@ -55,7 +65,7 @@ export function makeKeys(song, { web = WEB, legacyWeb } = {}) {
     if (rel === 'web') { hashEngine(all, webFiles, web, data, song); hashEngine(plate, webFiles.filter((f) => !textOnly(f)), web, data, song); }
     else {
       const moved = (f) => path.join(rel, path.relative(web, f));
-      const h = (hh, files) => { for (const f of files) hh.update(path.relative(song, moved(f))).update(fs.readFileSync(f)); for (const f of data) hh.update(path.relative(song, f)).update(fs.readFileSync(f)); };
+      const h = (hh, files) => { for (const f of files) hh.update(path.relative(song, moved(f))).update(keyBytes(f)); for (const f of data) hh.update(path.relative(song, f)).update(fs.readFileSync(f)); };
       h(all, webFiles); h(plate, webFiles.filter((f) => !textOnly(f)));
     }
     return { engineAll: all.digest('hex'), enginePlate: plate.digest('hex') };
@@ -67,7 +77,7 @@ export function makeKeys(song, { web = WEB, legacyWeb } = {}) {
   const sceneFiles = (scene) => [...depsOf(song, path.join(song, 'scenes', `${scene}.js`))].sort();
   const isPremium = (scene) => !!sceneKind(song, scene);
   // handles: extra frames rendered before and after a scene for a transition across its cut
-  const window = (s, fps) => `${Math.round(s.from * fps)}-${Math.round(s.to * fps)}${s.handles ? `+${s.handles.map((x) => Math.round(x * fps)).join(',')}` : ''}`;
+  const window = (s, fps) => `${Math.round(s.from * fps)}-${Math.round(s.to * fps)}${s.handles ? `+${s.handles.map((x) => Math.round(x * fps)).join(',')}` : ''}${s.res && s.res !== '1920x1080' ? `@${s.res}` : ''}`;
 
   // everything that decides what the segment looks like, apart from render quality
   function content(s, fps) {

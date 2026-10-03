@@ -47,6 +47,10 @@ test('spoken text: a changed, dropped or added word is reported', () => {
   assert.deepEqual(diffWords(tokens('Loose him, and let him go.'), tokens('Loose him and let him go now')).map((x) => [x.op, x.heard]), [['extra', 'now']]);
 });
 
+test('spoken text: a small number written as a digit is the same word', () => {
+  assert.deepEqual(diffWords(tokens('One day passed. Two. Three. Four.'), tokens('One day passed, 2, 3, 4.')), []);
+});
+
 test('spoken text: a compound heard as two words (or two as one) is the same text', () => {
   assert.deepEqual(diffWords(tokens('bound with graveclothes'), tokens('bound with grave clothes')), []);
   assert.deepEqual(diffWords(tokens('came forth any more'), tokens('came forth anymore')), []);
@@ -239,4 +243,20 @@ test('assembling line takes: trimmed, levelled, paused, and laid out in a plan',
   assert.ok(Math.abs(r.lines[1].start - 2.84) < 0.05, `line 2 at ${r.lines[1].start}`);
   assert.ok(r.lines[0].gainDb > 10 && r.lines[1].gainDb < 0, 'both levelled toward -20 LUFS');
   assert.ok(fs.existsSync(path.join(d, 'media', 'narration.plan.json')));
+});
+
+test('drawing at 4K: segments made before keep their keys; a non-default size gets its own', () => {
+  const d = tmp();
+  fs.mkdirSync(path.join(d, 'scenes')); fs.mkdirSync(path.join(d, 'data'));
+  fs.writeFileSync(path.join(d, 'scenes', 'a.js'), 'export default {}');
+  fs.writeFileSync(path.join(d, 'data', 'lyrics.json'), '{"lines":[],"words":[]}');
+  // the engine's web folder as it was before it read its size from the URL
+  const web = path.join(path.dirname(new URL(import.meta.url).pathname), '..', 'photoreal', 'web');
+  const old = path.join(d, 'oldweb'); fs.cpSync(web, old, { recursive: true });
+  const f = path.join(old, 'engine.js');
+  fs.writeFileSync(f, fs.readFileSync(f, 'utf8').replace(/^export const \[W, H\] = .*$/m, 'export const W = 1920, H = 1080;'));
+  const s = { id: '01', scene: 'a', from: 0, to: 2 };
+  assert.equal(makeKeys(d).plate(s, 60, 8), makeKeys(d, { web: old }).plate(s, 60, 8));
+  assert.equal(makeKeys(d).plate({ ...s, res: '1920x1080' }, 60, 8), makeKeys(d).plate(s, 60, 8));
+  assert.notEqual(makeKeys(d).plate({ ...s, res: '3840x2160' }, 60, 8), makeKeys(d).plate(s, 60, 8));
 });
