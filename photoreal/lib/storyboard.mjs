@@ -35,8 +35,9 @@ export function parseStoryboard(text) {
   return { rows, errors };
 }
 
-// duration: song length in seconds; lyrics: { lines: [{ text, start, end }] }
-export function validateStoryboard(text, { duration, lyrics } = {}) {
+// duration: song length in seconds; lyrics: { lines: [{ text, start, end }] }; events (story films):
+// [{ id, time, what }], each of which must fall inside a row
+export function validateStoryboard(text, { duration, lyrics, events } = {}) {
   const { rows, errors } = parseStoryboard(text);
   if (!rows.length) return { ok: false, errors: errors.length ? errors : ['The storyboard table has no rows.'], rows };
   const tol = 0.1;
@@ -56,6 +57,12 @@ export function validateStoryboard(text, { duration, lyrics } = {}) {
   for (const l of lyrics?.lines ?? []) {
     const r = byRow.find((x) => l.start >= x.from - 0.05 && l.start < x.to);
     if (r) r.lyrics.push(l.text); else errors.push(`The lyric "${l.text}" at ${fmtTime(l.start)} falls outside every row.`);
+  }
+  for (const r of byRow) r.events = [];
+  for (const e of events ?? []) {
+    if (e.time == null) continue;
+    const r = byRow.find((x) => e.time >= x.from - 0.05 && e.time < x.to);
+    if (r) r.events.push(e); else errors.push(`The story beat "${e.id}" at ${fmtTime(e.time)} falls outside every row.`);
   }
   return { ok: errors.length === 0, errors, rows: byRow };
 }

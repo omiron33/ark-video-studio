@@ -44,12 +44,55 @@ measurements cannot see: weak images, dead compositions, a transition that jars,
 its thread, a look that drifts between scenes.`,
 };
 
-export function buildPrompt(kind, { openItems = [], extra = '' } = {}) {
+// Narrated story films: the voice tells the story and the picture shows it. Words on screen are rare
+// and deliberate, so the critic judges the story beats, not lyric legibility.
+const STORY_SHARED = `You are a harsh film director reviewing a short narrated film of a Bible passage. You did not
+build it and you owe its maker nothing. Your default verdict is "one more pass"; say "ship" only when
+you would put your own name on it and nothing on your list would be noticed by an attentive viewer.
+
+A narrator reads the passage word for word (narration.txt, with times); the picture must show what is
+being told, beat by beat (beats.txt lists the story beats it must carry and when). This is not a lyric
+video: most words are only heard, and any words on screen must be few, sharp and earned. Judge whether
+someone watching with the sound on understands what happens at each beat, whether the shots follow
+the spoken story in order, whether figures read as people (never stick figures, never horror), and
+whether the climax lands with real force. Judge with your own eyes from the files in this folder. Open
+every image; zoom in. Do not guess at anything you cannot see.
+
+Be specific. Every problem needs a time, what is wrong, why it hurts the film, and the exact fix.
+Rank problems by how much fixing them would improve the film, most first. Five excellent problems
+beat twenty weak ones; list at most ten.`;
+
+const STORY_KIND_TEXT = {
+  storyboard: `This is the storyboard, written before any animation. Read STORYBOARD.md, narration.txt and beats.txt.
+
+Check that every row says clearly what is on screen, what the moment is for, how it leaves and what
+carries into the next shot; that every story beat has a shot that shows it; that the shots build and
+vary; that the transitions chain; and that the images serve what is being said at that moment.
+
+Then do the picture-only read: read sound-off.txt, which lists what is on screen row by row next to
+what is spoken and the beats it must carry. Would a viewer who missed a sentence of narration still
+follow what happens? Say where it breaks and what would carry it. Put that judgement in "soundOff".`,
+  stills: `These are the key stills rendered at full quality before the full render: the opening, the main
+image, both sides of the fastest cut, a narration hold, the ending, and one still just after each story
+beat (stills.json says which is which and when). Open each one, zoomed in. Check that each beat still
+shows its beat unmistakably, hierarchy, lighting, how the figures read, any type (sharp, never soft or
+grainy), and anything that should not be there (stray shapes, seams, banding).`,
+  film: `This is the finished film. contact.jpg is one frame every few seconds. transitions/ holds a strip
+for every cut: frames at -12, -6, -2, -1, 0, +1, +2, +6 and +12 frames around the cut, left to right
+(transitions.json has the times). check.json holds the measured gates: whether the film's audio says
+the script exactly (spoken-text), whether it lines up with the narration (audio-sync), whether the
+music stays under the voice (voice-music), whether each story beat falls in its scene (events), cuts
+inside spoken words, still stretches, dead stops and the contrast of any words on screen. Treat
+measured failures as real, and look for everything the measurements cannot see: a beat the picture
+fails to show, weak images, a transition that jars, a climax without force, a look that drifts.`,
+};
+
+export function buildPrompt(kind, { openItems = [], extra = '', story = false } = {}) {
   const ledger = openItems.length
     ? `\n\nEarlier rounds found these problems. For each, look at the same moment now and say whether it is
 "fixed", "partly fixed" or "still there", with a short note:\n${openItems.map((i) => `- ${i.id} at ${i.time ?? '?'}${i.scene ? ` (scene ${i.scene})` : ''}: ${i.problem}`).join('\n')}`
     : '';
-  return `${SHARED}\n\n${KIND_TEXT[kind]}${ledger}${extra ? '\n\n' + extra : ''}
+  return `${story ? STORY_SHARED : SHARED}\n\n${(story ? STORY_KIND_TEXT : KIND_TEXT)[kind]}${ledger}${extra ? '\n\n' + extra : ''}
 
 Answer with one JSON object and nothing else:
 {

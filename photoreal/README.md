@@ -49,7 +49,8 @@ with `anchor()` from `/timing.js`.
 
 ## Making a film
 
-Every step is a command any agent (or a person) can run; the critic can be Claude, Codex (GPT-6 Sol by default, reasoning high for a storyboard or stills and xhigh for a film) or any
+For a narrated story instead of a song, see [Narrated story films](#narrated-story-films); the
+steps are the same. Every step is a command any agent (or a person) can run; the critic can be Claude, Codex (GPT-6 Sol by default, reasoning high for a storyboard or stills and xhigh for a film) or any
 command in `ARK_CRITIC_CMD`.
 
 1. **Storyboard, before any animation.** `node photoreal/storyboard.mjs draft --song S` writes
@@ -85,6 +86,66 @@ word at least 4.5:1 against what is actually behind it once sung; no words runni
 overlapping or crowding, and no lines on top of each other; no stretch over 0.5 s with nothing
 visibly moving; no fast move that stops dead; no word moving before it has been still for 8 frames;
 and every cut on a measured beat or up to 2 frames before it (a scene can give `"offBeat": "why"`).
+
+## Narrated story films
+
+A film can follow a spoken story instead of a song: the same scenes, segments, layers, farm, checks
+and critic, switched on by `"mode": "story"` in film.json. A film without it is a lyric film, and
+nothing about it changes (its cache keys included).
+
+```json
+"mode": "story",
+"story": {
+  "script": "data/script.txt",
+  "narration": "media/narration.wav",
+  "narrationAt": 1.5,
+  "music": "media/score.wav", "musicGainDb": -14, "duckDb": 12,
+  "onScreen": ["Lazarus, come forth."],
+  "events": [{ "id": "stone", "cue": "took away the stone", "scene": "02", "what": "the stone is rolled back" }]
+}
+```
+
+- **The script** is the exact text, one spoken line per line of the file. Whatever the narrator says
+  must match it word for word; punctuation and case don't count, and a compound heard as two words
+  (`graveclothes`, `grave clothes`) is the same word.
+- **The narration's timing is authoritative.** `node photoreal/story.mjs prepare --song S` aligns
+  the voice to the script locally (wav2vec2 CTC) and writes `data/lyrics.json` in film time, so a
+  scene anchors to a spoken phrase exactly as a lyric scene anchors to a sung line (`anchor()` in
+  `/timing.js`). It also writes `data/story.json` with each event's time and `data/audio.json` with
+  no beats: story cuts follow the voice. Re-run it whenever the narration changes.
+- **Events are the story beats the picture must show.** `cue` is a phrase of the script and the
+  event lands on its first word (`offset` moves it); `at` gives a silent beat in film seconds;
+  `scene` is the scene that shows it. Scenes can read `/song/data/story.json` to time their action.
+- **Most words are only heard.** The phrases in `onScreen` are the only ones the text gates read;
+  put them in a `scenes/<name>.lyric.js` layer as usual. Everything else is carried by the voice and
+  the picture.
+- **Music sits under the voice.** `music` is optional. The engine builds `out/audio/mix.wav` from the
+  measured words: the music drops `duckDb` before each stretch of speech and recovers after it, and
+  fades out over `musicFadeOut` s at the end; the voice itself is never compressed or moved. One
+  fixed trim is applied only if the sum would clip. `film.mjs` joins the picture with this mix
+  instead of `media/song.wav`. `story.mjs mix` rebuilds it after a level change.
+- **Auditioning takes:** `node photoreal/story.mjs hear --song S --audio take.wav` transcribes a
+  take with local Whisper and lists every word changed, missing or added against the script.
+
+`check.mjs` on a story film runs the motion gates as usual, drops the beat gate, and adds:
+
+| Gate | Fails when |
+|---|---|
+| `spoken-text` | the encoded film's own audio, transcribed locally, differs from the script by any word |
+| `audio-sync` | the encoded audio is more than 20 ms off the mix it was made from (or shorter or longer) |
+| `voice-music` | during any spoken word the music is less than 12 dB under the voice (measured on the stems) |
+| `events` | a cue is not in the narration, an event falls outside the scene that claims it, or beats run out of order |
+| `cut-word` | a cut lands inside a spoken word (a scene can give `"midWord": "why"`) |
+
+The text gates (contrast, collision, settle) read only the `onScreen` phrases. The storyboard check
+also requires every event to fall in a row; the key stills add one still just after each event; and
+the critic is briefed on a narrated story (`narration.txt`, `beats.txt`) rather than a lyric film.
+Thresholds live with the others under `"gates"` (`minVoiceOverMusicDb`, `maxSyncLagMs`,
+`minSyncCorrelation`, `cutWordMargin`).
+
+The working sequence: write the script, record and `hear` takes until one is exact, `prepare`, write
+the storyboard against `narration.txt` and the events, build scenes, then `--draft`, `check.mjs`,
+`--stills`, the full render and the critic exactly as for a song.
 
 ## Tiers
 

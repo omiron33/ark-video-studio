@@ -23,7 +23,7 @@ if (argv[0] === 'draft') {
   console.log('wrote', file);
 } else if (argv[0] === 'check') {
   if (!fs.existsSync(file)) { console.error(`no storyboard at ${file}`); process.exit(1); }
-  const r = validateStoryboard(fs.readFileSync(file, 'utf8'), { duration, lyrics });
+  const r = validateStoryboard(fs.readFileSync(file, 'utf8'), { duration, lyrics, events: read('data/story.json')?.events });
   for (const e of r.errors) console.log('-', e);
   console.log(r.ok ? `storyboard ok: ${r.rows.length} rows` : `storyboard has ${r.errors.length} problems`);
   process.exit(r.ok ? 0 : 1);

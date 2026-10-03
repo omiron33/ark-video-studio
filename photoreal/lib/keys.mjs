@@ -46,7 +46,8 @@ export function makeKeys(song, { web = WEB, legacyWeb } = {}) {
   const premiumFiles = allWeb.filter((f) => f.startsWith(premiumDir));
   const premiumHash = hashFiles(crypto.createHash('sha256'), premiumFiles, web).digest('hex');
   const textOnly = (f) => path.basename(f) === 'layer.js' || f.includes(`${path.sep}fonts${path.sep}`);
-  const data = ['lyrics.json', 'audio.json'].map((f) => path.join(song, 'data', f)).filter((f) => fs.existsSync(f));
+  // story.json exists only in narrated story films (event times), so lyric films' keys are unchanged
+  const data = ['lyrics.json', 'audio.json', 'story.json'].map((f) => path.join(song, 'data', f)).filter((f) => fs.existsSync(f));
   // legacyWeb: the web/ folder earlier keys were made with, when they hashed paths relative to the
   // song (see legacy() below)
   const engineHashes = (rel) => {

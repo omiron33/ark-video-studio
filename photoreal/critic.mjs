@@ -16,6 +16,7 @@ import crypto from 'node:crypto';
 import { spawnSync } from 'node:child_process';
 import { buildPrompt, parseCritique, mergeLedger, openItems, ledgerMarkdown, KINDS } from './lib/critic.mjs';
 import { validateStoryboard, storyboardPath, fmtTime } from './lib/storyboard.mjs';
+import { isStory } from './lib/story.mjs';
 
 const argv = process.argv.slice(2);
 const kind = argv[0];
@@ -29,6 +30,9 @@ const shaFile = (f) => { const h = crypto.createHash('sha256'); const fd = fs.op
 const lyrics = read(path.join(SONG, 'data', 'lyrics.json')) ?? { lines: [], words: [] };
 const film = read(path.join(SONG, 'film.json'));
 const fps = film?.fps ?? 60;
+// a narrated story film: the evidence holds the spoken script and the story beats, not lyrics
+const story = isStory(film);
+const events = story ? read(path.join(SONG, 'data', 'story.json'))?.events ?? [] : [];
 const ledgerFile = path.join(REVIEW, 'ledger.json');
 const ledger = read(ledgerFile);
 const round = 1 + (ledger?.rounds ?? []).filter((r) => r.kind === kind).length;
@@ -38,7 +42,10 @@ fs.mkdirSync(pack, { recursive: true });
 const ff = (args) => { const r = spawnSync('ffmpeg', ['-y', '-loglevel', 'error', ...args], { stdio: 'inherit' }); if (r.status !== 0) throw Error('ffmpeg failed: ' + args.join(' ')); };
 
 // ---------- evidence ----------
-fs.writeFileSync(path.join(pack, 'lyrics.txt'), lyrics.lines.map((l) => `${fmtTime(l.start)}  ${l.text}`).join('\n') + '\n');
+if (story) {
+  fs.writeFileSync(path.join(pack, 'narration.txt'), lyrics.lines.map((l) => `${fmtTime(l.start)}  ${l.text}`).join('\n') + '\n');
+  fs.writeFileSync(path.join(pack, 'beats.txt'), events.map((e) => `${e.time == null ? '?' : fmtTime(e.time)}  ${e.id}${e.scene ? ` (scene ${e.scene})` : ''}: ${e.what ?? e.cue ?? ''}`).join('\n') + '\n');
+} else fs.writeFileSync(path.join(pack, 'lyrics.txt'), lyrics.lines.map((l) => `${fmtTime(l.start)}  ${l.text}`).join('\n') + '\n');
 const sb = storyboardPath(SONG);
 const images = [];
 const binding = {};
@@ -47,9 +54,9 @@ if (fs.existsSync(sb)) fs.copyFileSync(sb, path.join(pack, 'STORYBOARD.md'));
 if (kind === 'storyboard') {
   if (!fs.existsSync(sb)) { console.error(`no storyboard at ${sb}; run node photoreal/storyboard.mjs draft`); process.exit(1); }
   const text = fs.readFileSync(sb, 'utf8');
-  const v = validateStoryboard(text, { duration: read(path.join(SONG, 'data', 'audio.json'))?.duration ?? film?.scenes?.at(-1)?.to, lyrics });
+  const v = validateStoryboard(text, { duration: read(path.join(SONG, 'data', 'audio.json'))?.duration ?? film?.scenes?.at(-1)?.to, lyrics, events });
   if (!v.ok) { for (const e of v.errors) console.log('-', e); console.error('fix the storyboard (node photoreal/storyboard.mjs check) before the critic reads it'); process.exit(1); }
-  fs.writeFileSync(path.join(pack, 'sound-off.txt'), v.rows.map((r) => `${r.time}\n  on screen: ${r.screen}\n  words: ${r.lyrics.length ? r.lyrics.join(' / ') : '(no singing)'}`).join('\n\n') + '\n');
+  fs.writeFileSync(path.join(pack, 'sound-off.txt'), v.rows.map((r) => `${r.time}\n  on screen: ${r.screen}\n  ${story ? `spoken: ${r.lyrics.length ? r.lyrics.join(' / ') : '(no narration)'}\n  story beats: ${r.events.length ? r.events.map((e) => e.what ?? e.id).join(' / ') : '(none)'}` : `words: ${r.lyrics.length ? r.lyrics.join(' / ') : '(no singing)'}`}`).join('\n\n') + '\n');
   binding.storyboardSha = sha(fs.readFileSync(sb));
 } else if (kind === 'stills') {
   const dir = path.join(SONG, 'out', 'keystills');
@@ -86,7 +93,7 @@ if (kind === 'storyboard') {
 }
 
 const premiumNote = (film?.tier ?? 'standard') === 'premium' ? `\n\nThis is a premium film, judged against the best product and title work: a real lens (focus, bokeh, flares used with restraint), studio light on hero objects, real typography in the world, and motion that never fully stops, with a new idea every 1.5 to 4 s. Dark frames are fine when the highlights carry the picture. Background text may be soft or out of focus; only the word being sung must read. A section may stay in one set, with the variety coming from camera, light and focus.` : '';
-const prompt = buildPrompt(kind, { openItems: openItems(ledger, kind), extra: `The film runs at ${fps} frames per second; frame n is at n / ${fps} seconds.${premiumNote}` });
+const prompt = buildPrompt(kind, { story, openItems: openItems(ledger, kind), extra: `The film runs at ${fps} frames per second; frame n is at n / ${fps} seconds.${premiumNote}` });
 fs.writeFileSync(path.join(pack, 'PROMPT.md'), prompt + '\n');
 console.log(`evidence and prompt in ${pack}`);
 if (argv.includes('--pack-only')) process.exit(0);

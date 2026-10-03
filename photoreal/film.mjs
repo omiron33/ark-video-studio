@@ -7,6 +7,8 @@
 //            [--skip-storyboard] [--skip-stills] [--skip-check]   (each is written into STATUS.md)
 //            [--legacy-web <old engine's photoreal/web>]   carry over pictures cached by an engine checked out elsewhere
 // film.json: { "fps": 60, "samples": 12, "scenes": [{ "id": "01", "scene": "sea", "from": 0, "to": 15.5, "params": {}, "samples"?: 16, "offBeat"?: "why" }] }
+// A narrated story film adds "mode": "story" and a "story" block (lib/story.mjs); it is joined with
+// out/audio/mix.wav (the narration with music ducked under it) instead of media/song.wav.
 //
 // Scene windows must tile the song with no gaps. A segment is re-rendered only when something it
 // uses changes (see lib/keys.mjs). A scene with scenes/<name>.lyric.js keeps its words in their own
@@ -29,6 +31,8 @@ import { pickKeyStills } from './lib/stills.mjs';
 import { loadMachines } from './lib/machines.mjs';
 import { Worker, pickTask, slotSeconds, plateArgs, probeOn, simulate, chooseParallel } from './lib/farm.mjs';
 import { storyboardPath } from './lib/storyboard.mjs';
+import { isStory, storyConfig } from './lib/story.mjs';
+import { buildMix } from './lib/story-audio.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const RENDER = path.join(HERE, 'render.mjs');
@@ -66,6 +70,14 @@ const notes = [];
 const scenes = film.scenes;
 for (let i = 1; i < scenes.length; i++) {
   if (Math.abs(scenes[i].from - scenes[i - 1].to) > 1e-6) throw Error(`gap or overlap between ${scenes[i - 1].id} and ${scenes[i].id}`);
+}
+
+// a narrated story film ("mode": "story") is joined with its narration mix instead of a song
+const story = isStory(film);
+if (story) {
+  const errs = storyConfig(film).errors;
+  if (errs.length) throw Error(`film.json story: ${errs.join('; ')}`);
+  if (!fs.existsSync(path.join(SONG, 'data', 'story.json'))) throw Error('run node photoreal/story.mjs prepare first: the narration has not been aligned');
 }
 
 const keys = makeKeys(SONG, { legacyWeb: opt('legacy-web') });
@@ -134,6 +146,12 @@ if (flag('stills')) {
   const pr = probe(segs);
   const lyrics = readJson(path.join(SONG, 'data', 'lyrics.json')) ?? { lines: [], words: [] };
   const picks = pickKeyStills(scenes, lyrics, pr, fps);
+  // a story film also shows each story beat it must carry, just after it lands
+  if (story) for (const e of readJson(path.join(SONG, 'data', 'story.json'))?.events ?? []) {
+    if (e.time == null) continue;
+    const t = Math.min(scenes.at(-1).to - 1 / fps, Math.round((e.time + 0.6) * fps) / fps);
+    picks.push({ name: `6-event-${e.id}`, time: t, sceneId: scenes.find((s) => t >= s.from && t < s.to)?.id ?? scenes.at(-1).id, why: `story beat "${e.id}": ${e.what ?? e.cue ?? ''}` });
+  }
   const dir = path.join(OUT, 'keystills');
   fs.rmSync(dir, { recursive: true, force: true }); fs.mkdirSync(dir, { recursive: true });
   const shots = [];
@@ -531,12 +549,13 @@ if (only) {
 }
 const out = path.resolve(opt('out', path.join(OUT, draft ? 'film-draft.mp4' : tier === 'fast' ? 'film-fast.mp4' : 'film.mp4')));
 const end = scenes[scenes.length - 1].to;
+const audioIn = story ? buildMix(SONG, film).mix : path.join(SONG, 'media', 'song.wav');
 let r;
 if (!scenes.some((s) => s.transition)) {
   // plain cuts: the segments join without re-encoding
   const list = path.join(segDir, 'concat.txt');
   fs.writeFileSync(list, segs.map((s) => `file '${s.out.replace(/'/g, "'\\''")}'`).join('\n') + '\n');
-  r = spawnSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', list, '-i', path.join(SONG, 'media', 'song.wav'),
+  r = spawnSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', list, '-i', audioIn,
     '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '320k', '-t', String(end), '-movflags', '+faststart', out], { stdio: 'inherit' });
 } else {
   // transitions: each blend is centred on its cut, over the handles both scenes rendered past it
@@ -555,7 +574,7 @@ if (!scenes.some((s) => s.transition)) {
     }
     cur = next;
   }
-  r = spawnSync('ffmpeg', ['-y', '-loglevel', 'error', ...segs.flatMap((s) => ['-i', s.out]), '-i', path.join(SONG, 'media', 'song.wav'),
+  r = spawnSync('ffmpeg', ['-y', '-loglevel', 'error', ...segs.flatMap((s) => ['-i', s.out]), '-i', audioIn,
     '-filter_complex', graph.join(';'), '-map', cur, '-map', `${segs.length}:a`, '-c:v', 'libx264', '-preset', encode.preset, '-crf', encode.crf, '-pix_fmt', 'yuv420p',
     '-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709', '-c:a', 'aac', '-b:a', '320k', '-t', String(end), '-movflags', '+faststart', out], { stdio: 'inherit' });
 }
