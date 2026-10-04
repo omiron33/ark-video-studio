@@ -45,7 +45,7 @@ export class LyricLayer {
     this.out = rt(THREE.UnsignedByteType);
     const V = () => new THREE.Vector3();
     this.draw = pass(COMMON + /* glsl */ `
-uniform float uShade, uHaloSpread;
+uniform float uShade, uHaloSpread, uLift;
 out vec4 o;
 void main() {
   vec3 ro; vec3 rd = camRay(gl_FragCoord.xy, ro);
@@ -57,7 +57,7 @@ void main() {
   float halo = sat(max(bl.a - 0.016, 0.0) * uHaloSpread) * uShade;
   vec3 ink = bl.a > 1e-3 ? bl.rgb / bl.a : vec3(1);
   float il = dot(ink, vec3(0.2126, 0.7152, 0.0722));
-  vec3 haloCol = vec3(1.0 - smoothstep(0.3, 0.5, il));  // darken under light words, lift under dark ones
+  vec3 haloCol = vec3((1.0 - smoothstep(0.3, 0.5, il)) * uLift);  // darken under light words, lift under dark ones
   float a = tx.a + halo * (1.0 - tx.a);
   o = vec4(tx.rgb + haloCol * halo * (1.0 - tx.a), a);   // premultiplied
 }`, {
@@ -66,6 +66,7 @@ void main() {
       uShade: { value: lyric.shade ?? SONG_LYRIC.shade ?? 0.6 },
       // how far the backing spreads round the letters: 9 is what Genesis 8 settled on for readability
       uHaloSpread: { value: lyric.haloSpread ?? SONG_LYRIC.haloSpread ?? 9 },
+      uLift: { value: (lyric.lift ?? SONG_LYRIC.lift ?? true) ? 1 : 0 },   // "lift": false always darkens (no pale box round dark-glow words)
     }, { transparent: true, blending: THREE.CustomBlending, blendEquation: THREE.AddEquation, blendSrc: THREE.OneFactor, blendDst: THREE.OneFactor, blendSrcAlpha: THREE.OneFactor, blendDstAlpha: THREE.OneFactor });
     // accumulated premultiplied average -> straight-alpha 8-bit for the encoder
     this.resolve = pass(/* glsl */ `precision highp float; uniform sampler2D src; uniform float n; out vec4 o;
