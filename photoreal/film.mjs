@@ -104,7 +104,7 @@ const segs = scenes.map((s0, i) => {
     seg.layerOut = path.join(sDir, `${s.id}.lyric.mkv`);
     seg.plateKey = keys.plate(s, fps, sSamples);
     seg.layerKey = keys.layer(s, fps, sLayerSamples);
-    seg.key = sha(seg.plateKey + seg.layerKey);
+    seg.key = sha(seg.plateKey + seg.layerKey + 'composite-v2');   // v2: composites capped at the segment's frame count
   } else {
     seg.plateOut = out;
     seg.plateKey = keys.plate(s, fps, sSamples);
@@ -516,6 +516,7 @@ for (const s of segs) {
   console.log(`composite ${s.id}: lyric layer over the picture`);
   const r = spawnSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', s.plateOut, '-i', s.layerOut, '-filter_complex',
     '[0:v]scale=in_color_matrix=bt709:in_range=tv,format=gbrp[p];[1:v]format=gbrap[l];[p][l]overlay=format=gbrp:alpha=straight,scale=out_color_matrix=bt709:out_range=tv,format=yuv420p',
+    '-frames:v', String(s.frames),   // the overlay can emit one extra frame; extra frames drift the joined film off the audio
     '-c:v', 'libx264', '-preset', encode.preset, '-crf', encode.crf, '-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709', '-movflags', '+faststart', s.out], { stdio: 'inherit' });
   if (r.status !== 0) { failed.add(s.id); progress.log(s.id, 'composite failed'); continue; }
   fs.writeFileSync(s.out + '.key', s.key);
