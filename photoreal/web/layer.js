@@ -53,10 +53,11 @@ void main() {
   if (tp.z < 0.0 || any(lessThan(tp.xy, vec2(0))) || any(greaterThan(tp.xy, vec2(1)))) { o = vec4(0); return; }
   vec4 tx = texture(uText, tp.xy);           // premultiplied sRGB ink
   vec4 bl = texture(uTextShade, tp.xy);
-  float halo = sat(bl.a * uHaloSpread) * uShade;
+  // ignore the faint 8-bit tails of glow shadows: amplified, they drew stepped box outlines
+  float halo = sat(max(bl.a - 0.016, 0.0) * uHaloSpread) * uShade;
   vec3 ink = bl.a > 1e-3 ? bl.rgb / bl.a : vec3(1);
   float il = dot(ink, vec3(0.2126, 0.7152, 0.0722));
-  vec3 haloCol = il > 0.4 ? vec3(0) : vec3(1);  // darken under light words, lift under dark ones
+  vec3 haloCol = vec3(1.0 - smoothstep(0.3, 0.5, il));  // darken under light words, lift under dark ones
   float a = tx.a + halo * (1.0 - tx.a);
   o = vec4(tx.rgb + haloCol * halo * (1.0 - tx.a), a);   // premultiplied
 }`, {
