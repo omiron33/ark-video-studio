@@ -84,7 +84,24 @@ The measured gates (`check.mjs`, thresholds overridable under `"gates"` in film.
 word at least 4.5:1 against what is actually behind it once sung; no words running together,
 overlapping or crowding, and no lines on top of each other; no stretch over 0.5 s with nothing
 visibly moving; no fast move that stops dead; no word moving before it has been still for 8 frames;
-and every cut on a measured beat or up to 2 frames before it (a scene can give `"offBeat": "why"`).
+every cut on a measured beat or up to 2 frames before it (a scene can give `"offBeat": "why"`);
+and no shaking frame in a scene that hasn't opted in (see [Shake](#shake)).
+
+## Shake
+
+Shake is off by default. Shaking the whole frame (camera shake, a jolted or juddering picture, a
+lyric that rattles as it lands) is only for extreme power or a violent, energetic collision: a blow
+landing, lightning striking close, the ground splitting, walls falling, a wave breaking over the
+ark. It is not a way to make a strong word, a beat or a chorus feel big; light, scale, a cut on the
+beat, a held composition or sudden stillness carry that. A scene that earns it says so in film.json,
+`"shake": "<the violent moment>"`; keep it to the one or two most violent moments in a film, short
+and damped (gone within about 0.3 s), and written in that scene's own code. Shared song helpers
+(for example a lyric `strike()` in `lib/type.js`) default to no shake and shake only when an
+opted-in scene passes it. One object moving on its own (a flame trembling, a head shaking no) is
+not frame shake; mark the line with a comment `ark-shake-ok: <what moves>`. The `shake` gate in
+`check.mjs` reads every scene's source and fails a scene that shakes without opting in, warns about
+shared helpers that shake, and warns when more than `maxShakeScenes` (2) scenes opt in. The field
+is not part of any cache key, so opting in never re-renders a segment.
 
 ## Tiers
 

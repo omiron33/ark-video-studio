@@ -10,6 +10,8 @@
 //   dead-stop     no fast move that slams into a dead stop
 //   settle        no word moving before it has sat still for 8 frames
 //   cut-beat      every cut on the beat or up to 2 frames before it (a scene can set "offBeat": "why")
+//   shake         no shaking frame unless the scene opts in with "shake": "<the violent moment>"
+//                 (read from the scene source; see lib/shake.mjs)
 // Writes out/review/check-<label>.json, which the full render and the critic read.
 import fs from 'node:fs';
 import path from 'node:path';
@@ -19,6 +21,7 @@ import { fileURLToPath } from 'node:url';
 import { shots, DEFAULTS, luminance, wordContrast, stillStretches, deadStops, cutsOffBeat, wordChecks, findWord, collisions, sceneAt, summarize } from './lib/measure.mjs';
 import { makeKeys } from './lib/keys.mjs';
 import { fmtTime } from './lib/storyboard.mjs';
+import { shakeReview } from './lib/shake.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const argv = process.argv.slice(2);
@@ -89,6 +92,9 @@ for (const s of deadStops(mad, fps, { ...G, stillThreshold: G.stopThreshold, cut
 if (audio?.beats?.length && scenes.length > 1) {
   for (const c of cutsOffBeat(scenes, audio.beats, fps, G)) add('cut-beat', 'fail', Math.round(c.cut * fps), `the cut into scene ${c.id} is ${Math.abs(c.offFrames)} frame${Math.abs(c.offFrames) === 1 ? '' : 's'} ${c.offFrames > 0 ? 'after' : 'before'} the beat at ${fmtTime(c.beat)}`, `move the cut to ${c.target.toFixed(3)} s (the beat) or up to ${G.cutEarlyFrames} frames earlier, or give the scene "offBeat": "<reason>" if it follows the voice on purpose`);
 }
+
+// ---------- shake: only where a scene opted in for a violent moment ----------
+for (const p of shakeReview(SONG, scenes, G)) add('shake', p.severity, p.scene ? Math.round(p.scene.from * fps) : 0, p.detail, p.fix);
 
 // ---------- lyric words: contrast, collisions, settling ----------
 if (!argv.includes('--no-ocr') && lyrics.words?.length) {

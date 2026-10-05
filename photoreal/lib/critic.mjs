@@ -41,7 +41,9 @@ right (transitions.json has the times). check.json holds the measured gates: tex
 colliding words, still stretches, fast moves that slam into a dead stop, words moving before they
 can be read, and cuts off the beat. Treat measured failures as real, and look for everything the
 measurements cannot see: weak images, dead compositions, a transition that jars, a story that loses
-its thread, a look that drifts between scenes.`,
+its thread, a look that drifts between scenes. Call out any shaking frame (camera shake, a jolted
+picture, rattling words) that isn't an extreme-power or violent moment such as a blow landing or
+lightning striking close: shake used to make a line or a beat feel strong is overused and should go.`,
 };
 
 export function buildPrompt(kind, { openItems = [], extra = '' } = {}) {

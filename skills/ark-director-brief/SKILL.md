@@ -54,5 +54,6 @@ Write each scene as a block like this, then store it in that section's `directio
 - Use real lyrics only. Instrumental passages may use the real song or chapter title, never invented words.
 - Do not reuse scene artwork; cropping or tinting is reuse.
 - Mark any treatment the engine cannot yet render as a proposed new capability.
+- No shake by default. Plan a shaking frame only for extreme power or a violent, energetic collision (a blow landing, lightning striking close, the ground breaking), at most once or twice in a film, and write the reason in that scene's `<choreography>`; photoreal scenes also carry it as `"shake": "<the violent moment>"` in film.json. Strong words, beats and choruses get light, scale, a cut or stillness instead.
 - Record `inspiration` with inspected reference IDs, or record no-match honestly.
 - Hand the brief to choreography authoring (HyperFrames/GSAP skills) and keep it in the project so a different agent can continue it.

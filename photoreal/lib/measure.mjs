@@ -13,6 +13,7 @@ export const DEFAULTS = {
   moveTolerance: 0.35,     // ...allowing drift up to this fraction of its own height
   minGapRatio: 0.03,       // horizontal gap between neighbouring recognised word boxes, as a fraction of their height (normal spacing measures about 0.07)
   cutEarlyFrames: 2,       // a cut lands on the beat or up to this many frames before it
+  maxShakeScenes: 2,       // scenes that may opt into shake ("shake": "why" in film.json) before the check warns
 };
 
 // ---------- colour ----------

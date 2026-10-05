@@ -26,6 +26,7 @@ The minimum acceptable film is on par with [mexicat/pdoom-video](https://github.
 **Timing**
 - Every word appears exactly at its measured start and completes by its end. Dim anticipation up to about 0.4 s early is fine; highlighting never runs ahead of the voice.
 - Big changes land on the beat: cuts on downbeats, hits on kicks and snares, and camera moves that ease into downbeats. Use strong eases or springs, holds, then snaps. No floaty screensaver motion.
+- A hit is not a shake. Land accents with light, scale, a cut or a snap into stillness; shake the frame only for extreme power or a violent collision, and opt that scene in (see [Shake](../photoreal/README.md#shake)).
 
 **Not slop**
 - No neon cyberpunk, glowing orbs, lens-flare soup, generic particle nebulae or anything that looks AI-generated.
