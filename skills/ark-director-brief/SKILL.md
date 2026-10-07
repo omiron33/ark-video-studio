@@ -41,6 +41,7 @@ Write each scene as a block like this, then store it in that section's `directio
   <purpose>What this moment must make the viewer feel or understand.</purpose>
   <music>Measured accents, phrase shape, held notes in this interval.</music>
   <choreography name="nourishing-bowl">How each word enters, acts on its meaning, and leaves. Name the camera move.</choreography>
+  <world>Where the words live in the scene: the surface, form or field they are part of, and what in the world lights, hides or acts on them. "overlay: why" only when they genuinely belong over the picture.</world>
   <identity>Palette, type, geometry and texture from the chosen theme. Any recurring figure's locked look.</identity>
   <imagery>None, or the one image this moment needs, with its provider request.</imagery>
   <inspiration ids="..." principle="..." adaptation="..."/>

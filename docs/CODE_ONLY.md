@@ -21,7 +21,7 @@ The minimum acceptable film is on par with [mexicat/pdoom-video](https://github.
 - Each scene is a "plate" with its own visual idiom (engraving, blueprint, oscilloscope, woven cloth, stained-glass lead lines, manuscript, star chart), all inside the shared system.
 - A running motif travels through the whole film, transforming from plate to plate (for scripture, for example, a single flame, a thread of light or a line of ink).
 - Visual metaphors and transformations, never literal storyboard illustrations of each line.
-- The lyric is part of the image: written by the motif, riding a curve, carved, stamped or woven. It is never a subtitle laid on top.
+- The lyric is part of the image: written by the motif, riding a curve, carved, stamped or woven, lit and hidden by the world it is in. It is never a subtitle laid on top. 3D visualizations (a terrain, a creature, a field, the ark itself) carry the story with the words on them.
 
 **Timing**
 - Every word appears exactly at its measured start and completes by its end. Dim anticipation up to about 0.4 s early is fine; highlighting never runs ahead of the voice.
@@ -49,4 +49,6 @@ Full quality is slow on the CPU renderer. For a draft, render one section at `--
 For films that need lit, photographic depth (terrain, water, cloud, timber, feathers), scenes can be
 written as GPU shaders and rendered by [photoreal mode](../photoreal/README.md) instead of the CPU
 canvas. It keeps the same rules: code-only, 1080p60, sub-frame motion blur, frames as a pure function
-of song time, and lyrics placed in the scene. Song scenes live in the song's own repository.
+of song time, and lyrics placed in the scene (the default; words over the picture need an opt-in).
+Photoreal films render at the premium (ultra realistic) tier by default. Song scenes live in the
+song's own repository.

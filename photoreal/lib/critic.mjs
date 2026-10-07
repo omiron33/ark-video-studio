@@ -14,6 +14,15 @@ The lyrics are the source of truth: the words on screen must match them, be read
 with the voice. Judge with your own eyes from the files in this folder. Open every image; zoom into
 text. Do not guess at anything you cannot see.
 
+The words belong to the world, not on top of it. A lyric should be part of the scene: painted or
+carved on a surface (written on the side of the ark), lying along a ridge or a wave crest, wrapped
+round a 3D form, bent by the same field that bends the scene, burned, stamped or drawn by something
+in it, lit, shadowed, fogged or hidden by what is there. The 3D world carries the story and the words
+are in it. A lyric that floats over the picture like a subtitle, unaffected by anything in the
+scene, is a problem worth ranking high, unless the scene is listed as an opted-in overlay. In-scene
+words still have to be sharp and read in one clear path at the moment they are sung: no soft or
+out-of-focus lyric, no light words on bright sky, no word that has to be hunted for.
+
 Be specific. "The motion feels weird" is useless. "At 1:23.40 (frame 5004, scene 12) the word
 'dove' sits on the bright cloud edge and loses its right half; move the line 80 px down or darken
 the cloud behind it" is useful. Every problem needs a time, what is wrong, why it hurts the film,

@@ -16,6 +16,7 @@ import crypto from 'node:crypto';
 import { spawnSync } from 'node:child_process';
 import { buildPrompt, parseCritique, mergeLedger, openItems, ledgerMarkdown, KINDS } from './lib/critic.mjs';
 import { validateStoryboard, storyboardPath, fmtTime } from './lib/storyboard.mjs';
+import { resolveTier } from './lib/tier.mjs';
 
 const argv = process.argv.slice(2);
 const kind = argv[0];
@@ -85,8 +86,11 @@ if (kind === 'storyboard') {
   binding.videoSha = shaFile(video);
 }
 
-const premiumNote = (film?.tier ?? 'standard') === 'premium' ? `\n\nThis is a premium film, judged against the best product and title work: a real lens (focus, bokeh, flares used with restraint), studio light on hero objects, real typography in the world, and motion that never fully stops, with a new idea every 1.5 to 4 s. Dark frames are fine when the highlights carry the picture. Background text may be soft or out of focus; only the word being sung must read. A section may stay in one set, with the variety coming from camera, light and focus.` : '';
-const prompt = buildPrompt(kind, { openItems: openItems(ledger, kind), extra: `The film runs at ${fps} frames per second; frame n is at n / ${fps} seconds.${premiumNote}` });
+const tier = resolveTier(SONG, film, opt('tier')).tier;
+const premiumNote = tier === 'premium' ? `\n\nThis is a premium (ultra realistic) film, judged against the best product and title work: a real lens (focus, bokeh, flares used with restraint), studio light on hero objects, typography that lives in the world, and motion that never fully stops. Dark frames are fine when the highlights carry the picture. Scenery may fall out of focus, but every lyric word stays sharp. A section may stay in one set or ride one long camera move through it, with the variety coming from camera, light, focus and what the words do in that world.` : '';
+const overlays = (film?.scenes ?? []).filter((s) => typeof s.overlay === 'string' && s.overlay.trim());
+const overlayNote = overlays.length ? `\n\nThese scenes opted into words laid over the picture, for the reason given: ${overlays.map((s) => `${s.id} (${fmtTime(s.from)} to ${fmtTime(s.to)}): ${s.overlay.trim()}`).join('; ')}.` : '';
+const prompt = buildPrompt(kind, { openItems: openItems(ledger, kind), extra: `The film runs at ${fps} frames per second; frame n is at n / ${fps} seconds.${premiumNote}${overlayNote}` });
 fs.writeFileSync(path.join(pack, 'PROMPT.md'), prompt + '\n');
 console.log(`evidence and prompt in ${pack}`);
 if (argv.includes('--pack-only')) process.exit(0);

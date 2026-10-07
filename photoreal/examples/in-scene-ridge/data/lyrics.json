@@ -1,0 +1,10 @@
+{
+  "lines": [{ "text": "upon the mountains of Ararat", "start": 1.0, "end": 4.2 }],
+  "words": [
+    { "w": "upon", "start": 1.0, "end": 1.5 },
+    { "w": "the", "start": 1.5, "end": 1.8 },
+    { "w": "mountains", "start": 1.8, "end": 2.7 },
+    { "w": "of", "start": 2.7, "end": 3.0 },
+    { "w": "Ararat", "start": 3.0, "end": 4.2 }
+  ]
+}

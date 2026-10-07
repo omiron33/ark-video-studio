@@ -13,9 +13,10 @@ Review what was actually encoded, never the source code, a screenshot of the edi
 2. Open the decoded evidence the gauntlet wrote: word-onset frames, transition frames and contact sheets. Look at every scene's frames, and at the first second as a quick social-feed glance.
 3. Score each visual rubric category in `scores.json` (leave out `sync`, which makes it a visual-only review) from 0 to 10: `lyricLegibility`, `semanticMotion`, `photorealism`, `composition`, `continuity`. The pass line is 8 in every category.
 4. Do not score `sync` from hearing. Sync is owned by the measured machine audio gate; read its report and quote its result.
-5. Flag shake. A shaking frame (camera shake, a jolted picture, rattling words) is only right at an extreme-power or violent moment, such as a blow landing or lightning striking close. Shake used to make a line or a beat feel strong lowers `semanticMotion` and gets a note to remove it.
-6. Write concrete notes per failing scene: section ID, time, what is wrong, and the specific change that would fix it.
-7. Record the review:
+5. Flag words that float over the picture. Lyrics belong in the world (on a surface, along a form, lit, shadowed and hidden by it); a lyric laid on top like a subtitle lowers `semanticMotion` and `composition` unless the scene opted into overlay with a reason. In-scene words must still be sharp and read in one clear path.
+6. Flag shake. A shaking frame (camera shake, a jolted picture, rattling words) is only right at an extreme-power or violent moment, such as a blow landing or lightning striking close. Shake used to make a line or a beat feel strong lowers `semanticMotion` and gets a note to remove it.
+7. Write concrete notes per failing scene: section ID, time, what is wrong, and the specific change that would fix it.
+8. Record the review:
 
 ```sh
 node engine/cli.mjs approve-review --report <review-dir>/review.json \

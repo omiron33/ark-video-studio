@@ -12,6 +12,10 @@
 //   cut-beat      every cut on the beat or up to 2 frames before it (a scene can set "offBeat": "why")
 //   shake         no shaking frame unless the scene opts in with "shake": "<the violent moment>"
 //                 (read from the scene source; see lib/shake.mjs)
+//   in-scene      lyrics are drawn in the scene, not laid over it: a scene with a lyric layer needs
+//                 "overlay": "<why>" (fails at premium, warns at other tiers; see lib/inscene.mjs)
+//   shot-length   a shot over 8 s warns unless its scene gives "hold": "<why>" (a long camera move
+//                 through one world is allowed; set gates.maxShotSeconds to make it fail)
 // Writes out/review/check-<label>.json, which the full render and the critic read.
 import fs from 'node:fs';
 import path from 'node:path';
@@ -22,6 +26,8 @@ import { shots, DEFAULTS, luminance, wordContrast, stillStretches, deadStops, cu
 import { makeKeys } from './lib/keys.mjs';
 import { fmtTime } from './lib/storyboard.mjs';
 import { shakeReview } from './lib/shake.mjs';
+import { inSceneReview } from './lib/inscene.mjs';
+import { resolveTier } from './lib/tier.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const argv = process.argv.slice(2);
@@ -30,10 +36,9 @@ const SONG = path.resolve(opt('song', '.'));
 const label = opt('label', 'final');
 const read = (f) => { try { return JSON.parse(fs.readFileSync(path.join(SONG, f), 'utf8')); } catch { return null; } };
 const film = read('film.json'), lyrics = read('data/lyrics.json') ?? { lines: [], words: [] }, audio = read('data/audio.json');
-// premium is judged on premium motion rules; its readability is judged on the word being sung, so
-// soft background text and words sitting close in a designed layout are allowed
-const tier = opt('tier', film?.tier ?? 'standard');
-const G = { ...DEFAULTS, maxShotSeconds: tier === 'premium' ? 8 : Infinity, longShotWarn: 4, ...(film?.gates ?? {}) };
+// premium (the default) lets words sit close in a designed layout; every word must still read
+const tier = resolveTier(SONG, film, opt('tier')).tier;
+const G = { ...DEFAULTS, maxShotSeconds: Infinity, longShotWarn: 8, ...(film?.gates ?? {}) };
 const video = path.resolve(SONG, opt('video', label === 'draft' ? 'out/film-draft.mp4' : 'out/film.mp4'));
 if (!fs.existsSync(video)) { console.error(`no film at ${video}`); process.exit(1); }
 const REVIEW = path.join(SONG, 'out', 'review');
@@ -77,13 +82,13 @@ const { mad, motion } = await new Promise((resolve, reject) => {
   p.on('close', (c) => (c === 0 ? resolve({ mad, motion }) : reject(Error('ffmpeg motion pass failed'))));
 });
 const cutFrames = scenes.slice(1).map((s) => Math.round(s.from * fps));
-// shot lengths: 1.5 to 4 s per idea reads as premium; longer shots warn, and in premium a shot over
-// maxShotSeconds fails unless its scene says why it holds ("hold": "reason" in film.json)
+// shot lengths: a shot over longShotWarn warns, and one over maxShotSeconds (off unless film.json
+// sets it) fails, unless its scene says why it holds ("hold": "reason" in film.json)
 const shotList = shots(mad, fps, scenes.slice(1).map((sc) => Math.round(sc.from * fps)));
 for (const sh of shotList) {
   const sc = scenes.find((x) => sh.from + 1e-6 >= x.from && sh.from < x.to);
   if (sh.seconds > G.maxShotSeconds && !sc?.hold) add('shot-length', 'fail', sh.startFrame, `one shot holds ${sh.seconds} s`, `break it with a cut, a new angle or a new idea every 1.5 to 4 s, or give scene ${sc?.id ?? '?'} "hold": "<why>"`);
-  else if (sh.seconds > G.longShotWarn && !sc?.hold) add('shot-length', 'warn', sh.startFrame, `one shot holds ${sh.seconds} s`, 'premium motion moves to a new idea every 1.5 to 4 s');
+  else if (sh.seconds > G.longShotWarn && !sc?.hold) add('shot-length', 'warn', sh.startFrame, `one shot holds ${sh.seconds} s`, 'keep the shot alive: move the camera through the world, let the words change it, or cut on a beat');
 }
 for (const s of stillStretches(motion, fps, G)) add('still', 'fail', s.startFrame, `nothing visibly moves for ${s.seconds} s (${fmtTime(s.from)} to ${fmtTime(s.to)})`, 'keep something alive through the hold: a slow push, drifting light or breathing type');
 for (const s of deadStops(mad, fps, { ...G, stillThreshold: G.stopThreshold, cutFrames })) add('dead-stop', 'fail', s.frame, `a fast move (${s.before} mean change per frame) stops dead within 2 frames (${s.after})`, 'ease the move into its landing over at least 0.3 s instead of stopping it');
@@ -95,6 +100,9 @@ if (audio?.beats?.length && scenes.length > 1) {
 
 // ---------- shake: only where a scene opted in for a violent moment ----------
 for (const p of shakeReview(SONG, scenes, G)) add('shake', p.severity, p.scene ? Math.round(p.scene.from * fps) : 0, p.detail, p.fix);
+
+// ---------- in-scene: words in the world, not over it ----------
+for (const p of inSceneReview(SONG, scenes, tier)) add('in-scene', p.severity, Math.round(p.scene.from * fps), p.detail, p.fix);
 
 // ---------- lyric words: contrast, collisions, settling ----------
 if (!argv.includes('--no-ocr') && lyrics.words?.length) {
@@ -143,9 +151,9 @@ if (!argv.includes('--no-ocr') && lyrics.words?.length) {
         const vals = []; const step = Math.max(1, Math.floor(Math.sqrt(((x1 - x0) * (y1 - y0)) / 20000)));
         for (let y = y0; y < y1; y += step) for (let x = x0; x < x1; x += step) vals.push(L[y * W + x]);
         const cr = wordContrast(vals);
-        if (cr.ratio < G.minContrast) add('contrast', 'fail', c.f1, `"${c.word}" is ${cr.ratio.toFixed(2)}:1 against what is behind it (${cr.ink} ink); needs ${G.minContrast}:1`, cr.ink === 'light' ? 'darken or blur what passes behind the word, strengthen its shade, or move it onto a quieter part of the frame' : 'lighten what is behind the word or switch to light ink here');
+        if (cr.ratio < G.minContrast) add('contrast', 'fail', c.f1, `"${c.word}" is ${cr.ratio.toFixed(2)}:1 against what is behind it (${cr.ink} ink); needs ${G.minContrast}:1`, cr.ink === 'light' ? 'light the word or the surface it is on, darken or blur what passes behind it, or put it on a quieter part of the world (a dark hull, a shadowed ridge)' : 'lighten what is behind the word or switch to light ink here');
       }
-      for (const k of collisions(o1, c.onScreen, G).filter((k) => tier !== 'premium' || k.kind === 'run-together' || k.kind === 'overlap')) {
+      for (const k of collisions(o1, c.onScreen, G).filter((k) => tier !== 'premium' || k.kind !== 'tight')) {
         const key = `${sceneAt(scenes, c.f1 / fps)}:${k.kind}:${k.text}`;   // once per scene
         if (problems.some((p) => p.key === key)) continue;
         add('collision', k.kind === 'tight' ? 'warn' : 'fail', c.f1, k.kind === 'run-together' ? `"${k.text}" reads as one word` : k.kind === 'overlap' ? `"${k.text}" overlap each other` : k.kind === 'tight' ? `"${k.text}" are crowded (gap ${k.gap} of the letter height)` : `two lines sit on top of each other: ${k.text}`, 'open the word spacing or move the lines apart');

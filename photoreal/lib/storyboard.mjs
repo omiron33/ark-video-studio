@@ -1,11 +1,13 @@
 // The storyboard: one table, written before any animation, that says for every stretch of the song
 // what is on screen, what the moment is for, how it leaves and what carries into the next shot.
-// It lives at docs/STORYBOARD.md in the song folder. The fresh critic checks it, including whether
+// A sixth column says where the words live in that world (carved on the hull, lying along the ridge,
+// burned by the fuse); storyboards written before it existed may leave it out, but when it is there
+// every row fills it. It lives at docs/STORYBOARD.md in the song folder. The fresh critic checks it, including whether
 // the story reads with the sound off through the lyrics alone.
 import fs from 'node:fs';
 import path from 'node:path';
 
-export const COLUMNS = ['Time', 'On screen', 'What the moment is for', 'How it leaves', 'What carries into the next shot'];
+export const COLUMNS = ['Time', 'On screen', 'What the moment is for', 'How it leaves', 'What carries into the next shot', 'Where the words live in the scene'];
 const MATCH = [/time/i, /screen/i, /for|purpose|why/i, /leave|exit|out/i, /carr|next/i];
 
 export const storyboardPath = (song) => path.join(song, 'docs', 'STORYBOARD.md');
@@ -24,11 +26,12 @@ export function parseStoryboard(text) {
   const lines = text.split('\n');
   const h = lines.findIndex((l) => l.trim().startsWith('|') && MATCH.every((re, i) => re.test(cells(l)[i] ?? '')));
   if (h < 0) return { rows: [], errors: [`No storyboard table: expected a header row with the columns ${COLUMNS.join(' | ')}.`] };
+  const words = /word|lyric|text/i.test(cells(lines[h])[5] ?? '');
   const rows = [], errors = [];
   for (let i = h + 2; i < lines.length && lines[i].trim().startsWith('|'); i++) {
     const c = cells(lines[i]);
     const [a, b] = (c[0] ?? '').split(/\s*[-–—]\s*/);
-    const row = { line: i + 1, from: parseTime(a ?? ''), to: parseTime(b ?? ''), time: c[0], screen: c[1] ?? '', purpose: c[2] ?? '', leaves: c[3] ?? '', carries: c[4] ?? '' };
+    const row = { line: i + 1, from: parseTime(a ?? ''), to: parseTime(b ?? ''), time: c[0], screen: c[1] ?? '', purpose: c[2] ?? '', leaves: c[3] ?? '', carries: c[4] ?? '', words: words ? c[5] ?? '' : undefined };
     if (!Number.isFinite(row.from) || !Number.isFinite(row.to) || row.to <= row.from) errors.push(`Line ${row.line}: the time "${c[0]}" should look like 0:12.5–0:20.0.`);
     rows.push(row);
   }
@@ -47,7 +50,8 @@ export function validateStoryboard(text, { duration, lyrics } = {}) {
   }
   if (duration && rows[rows.length - 1].to < duration - 0.5) errors.push(`The last row ends at ${fmtTime(rows[rows.length - 1].to)} but the song runs to ${fmtTime(duration)}.`);
   for (const r of rows) {
-    for (const [k, name] of [['screen', 'On screen'], ['purpose', 'What the moment is for'], ['leaves', 'How it leaves'], ['carries', 'What carries into the next shot']]) {
+    for (const [k, name] of [['screen', 'On screen'], ['purpose', 'What the moment is for'], ['leaves', 'How it leaves'], ['carries', 'What carries into the next shot'], ['words', 'Where the words live in the scene']]) {
+      if (k === 'words' && r.words === undefined) continue;
       if (!r[k] || /\bTODO\b|^\?+$|^[-–—]$/.test(r[k])) errors.push(`Line ${r.line} (${r.time}): "${name}" is empty or still TODO.`);
     }
   }
@@ -72,9 +76,9 @@ export function draftStoryboard({ title, duration, lyrics, scenes }) {
   }
   const rows = spans.map(([a, b]) => {
     const words = (lyrics?.lines ?? []).filter((l) => l.start >= a - 0.05 && l.start < b).map((l) => `“${l.text}”`).join(' ');
-    return `| ${fmtTime(a)}–${fmtTime(b)} | ${words ? `Lyric: ${words}. ` : ''}TODO | TODO | TODO | TODO |`;
+    return `| ${fmtTime(a)}–${fmtTime(b)} | ${words ? `Lyric: ${words}. ` : ''}TODO | TODO | TODO | TODO | TODO |`;
   });
   return [`# Storyboard: ${title}`, '',
-    'Written before any animation. One row per stretch of the song. Read the lyric column top to bottom with the sound off: the story should still come through.', '',
+    'Written before any animation. One row per stretch of the song. Read the lyric column top to bottom with the sound off: the story should still come through. The last column says how the words are part of that world (on a surface, along a form, lit, burned, stamped or hidden by it), not laid over it.', '',
     `| ${COLUMNS.join(' | ')} |`, `|${COLUMNS.map(() => '---').join('|')}|`, ...rows, ''].join('\n');
 }

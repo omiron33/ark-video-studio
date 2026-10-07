@@ -1,0 +1,5 @@
+{
+  "fps": 60,
+  "samples": 12,
+  "scenes": [{ "id": "01", "scene": "ridge", "from": 0, "to": 8 }]
+}

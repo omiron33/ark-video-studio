@@ -29,6 +29,7 @@ import { pickKeyStills } from './lib/stills.mjs';
 import { loadMachines } from './lib/machines.mjs';
 import { Worker, pickTask, slotSeconds, plateArgs, probeOn, simulate, chooseParallel } from './lib/farm.mjs';
 import { storyboardPath } from './lib/storyboard.mjs';
+import { resolveTier, TIERS } from './lib/tier.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const RENDER = path.join(HERE, 'render.mjs');
@@ -38,15 +39,14 @@ const flag = (k) => argv.includes('--' + k);
 const SONG = path.resolve(opt('song', '.'));
 const film = JSON.parse(fs.readFileSync(path.join(SONG, 'film.json'), 'utf8'));
 const draft = flag('draft');
-// Render tiers (--tier, or "tier" in film.json; standard when neither says):
+// Render tiers (--tier, or "tier" in film.json; premium when neither says, see lib/tier.mjs):
 //   fast      30 fps, 2 sub-frames, quick encode, no review gates: a watchable film in a couple of hours
-//   standard  the film's own fps and samples: what every film rendered before tiers existed
-//   premium   60 fps, at least twice the sub-frames (32 for lens-heavy premium scenes), richer lyric
-//             layers, the slowest encode, every gate: the all-out photoreal render
-// A request for a photorealistic film means premium.
-const TIERS = ['fast', 'standard', 'premium'];
-const tier = opt('tier', film.tier ?? 'standard');
-if (!TIERS.includes(tier)) throw Error(`--tier must be one of ${TIERS.join(', ')}`);
+//   standard  the film's own fps and samples: what every film rendered before premium became the
+//             default, and what a film already rendered at standard keeps
+//   premium   the ultra realistic render and the default: 60 fps, at least twice the sub-frames (32
+//             for lens-heavy premium scenes), richer lyric layers, the slowest encode, every gate
+const { tier, why: tierWhy } = resolveTier(SONG, film, opt('tier'));
+if (tierWhy !== '--tier' && tierWhy !== 'film.json') console.log(`tier: ${tier} (${tierWhy})`);
 const fps = tier === 'fast' ? 30 : tier === 'premium' ? Math.max(60, film.fps ?? 60) : film.fps ?? 60;
 const baseSamples = film.samples ?? 12;
 const samples = opt('samples', draft ? '2' : tier === 'fast' ? '2' : tier === 'premium' ? String(Math.max(16, baseSamples * 2)) : String(baseSamples));
