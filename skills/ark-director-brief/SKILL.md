@@ -41,6 +41,7 @@ Write each scene as a block like this, then store it in that section's `directio
   <purpose>What this moment must make the viewer feel or understand.</purpose>
   <music>Measured accents, phrase shape, held notes in this interval.</music>
   <choreography name="nourishing-bowl">How each word enters, acts on its meaning, and leaves. Name the camera move.</choreography>
+  <world>Where the words live in the scene: the surface, form or field they are part of, and what in the world lights, hides or acts on them. "overlay: why" only when they genuinely belong over the picture.</world>
   <identity>Palette, type, geometry and texture from the chosen theme. Any recurring figure's locked look.</identity>
   <imagery>None, or the one image this moment needs, with its provider request.</imagery>
   <inspiration ids="..." principle="..." adaptation="..."/>
@@ -54,5 +55,6 @@ Write each scene as a block like this, then store it in that section's `directio
 - Use real lyrics only. Instrumental passages may use the real song or chapter title, never invented words.
 - Do not reuse scene artwork; cropping or tinting is reuse.
 - Mark any treatment the engine cannot yet render as a proposed new capability.
+- No shake by default. Plan a shaking frame only for extreme power or a violent, energetic collision (a blow landing, lightning striking close, the ground breaking), at most once or twice in a film, and write the reason in that scene's `<choreography>`; photoreal scenes also carry it as `"shake": "<the violent moment>"` in film.json. Strong words, beats and choruses get light, scale, a cut or stillness instead.
 - Record `inspiration` with inspected reference IDs, or record no-match honestly.
 - Hand the brief to choreography authoring (HyperFrames/GSAP skills) and keep it in the project so a different agent can continue it.
