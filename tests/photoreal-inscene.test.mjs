@@ -14,10 +14,10 @@ function song(files) {
   return dir;
 }
 
-test('premium (ultra realistic) is the default tier; a film already rendered at standard keeps it', () => {
-  assert.equal(resolveTier(song({}), {}).tier, 'premium');
+test('ultra is the default tier; a film already rendered at standard keeps it', () => {
+  assert.equal(resolveTier(song({}), {}).tier, 'ultra');
   assert.equal(resolveTier(song({ 'out/segments/01.mp4': '' }), {}).tier, 'standard');
-  assert.equal(resolveTier(song({ 'out/segments-draft/01.mp4': '' }), {}).tier, 'premium', 'a draft is not a standard render');
+  assert.equal(resolveTier(song({ 'out/segments-draft/01.mp4': '' }), {}).tier, 'ultra', 'a draft is not a standard render');
   assert.equal(resolveTier(song({ 'out/segments/01.mp4': '' }), { tier: 'premium' }).tier, 'premium');
   assert.equal(resolveTier(song({}), { tier: 'standard' }, 'fast').tier, 'fast');
   assert.throws(() => resolveTier(song({}), { tier: 'huge' }));

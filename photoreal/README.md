@@ -75,7 +75,8 @@ with `anchor()` from `/timing.js`.
 
 ## Making a film
 
-Every step is a command any agent (or a person) can run; the critic can be Claude, Codex (GPT-6 Sol by default, reasoning high for a storyboard or stills and xhigh for a film) or any
+For a narrated story instead of a song, see [Narrated story films](#narrated-story-films); the
+steps are the same. Every step is a command any agent (or a person) can run; the critic can be Claude, Codex (GPT-6 Sol by default, reasoning high for a storyboard or stills and xhigh for a film) or any
 command in `ARK_CRITIC_CMD`.
 
 1. **Storyboard, before any animation.** `node photoreal/storyboard.mjs draft --song S` writes
@@ -132,12 +133,102 @@ not frame shake; mark the line with a comment `ark-shake-ok: <what moves>`. The 
 shared helpers that shake, and warns when more than `maxShakeScenes` (2) scenes opt in. The field
 is not part of any cache key, so opting in never re-renders a segment.
 
+## Narrated story films
+
+A film can follow a spoken story instead of a song: the same scenes, segments, layers, farm, checks
+and critic, switched on by `"mode": "story"` in film.json. A film without it is a lyric film, and
+nothing about it changes (its cache keys included).
+
+```json
+"mode": "story",
+"story": {
+  "script": "data/script.txt",
+  "narration": "media/narration.wav",
+  "narrationAt": 1.5,
+  "music": "media/score.wav", "musicGainDb": -14, "duckDb": 12,
+  "onScreen": ["Lazarus, come forth."],
+  "events": [{ "id": "stone", "cue": "took away the stone", "scene": "02", "what": "the stone is rolled back" }]
+}
+```
+
+- **The script** is the exact text, one spoken line per line of the file. Whatever the narrator says
+  must match it word for word; punctuation and case don't count, and a compound heard as two words
+  (`graveclothes`, `grave clothes`) is the same word.
+- **The narration's timing is authoritative.** `node photoreal/story.mjs prepare --song S` aligns
+  the voice to the script locally (wav2vec2 CTC) and writes `data/lyrics.json` in film time, so a
+  scene anchors to a spoken phrase exactly as a lyric scene anchors to a sung line (`anchor()` in
+  `/timing.js`). It also writes `data/story.json` with each event's time and `data/audio.json` with
+  no beats: story cuts follow the voice. Re-run it whenever the narration changes.
+- **Events are the story beats the picture must show.** `cue` is a phrase of the script and the
+  event lands on its first word (`offset` moves it); `at` gives a silent beat in film seconds;
+  `scene` is the scene that shows it. Scenes can read `/song/data/story.json` to time their action.
+- **Most words are only heard.** The phrases in `onScreen` are the only ones the text gates read;
+  put them in a `scenes/<name>.lyric.js` layer as usual. Everything else is carried by the voice and
+  the picture.
+- **Music sits under the voice.** `music` is optional. The engine builds `out/audio/mix.wav` from the
+  measured words: the music drops `duckDb` before each stretch of speech and recovers after it, and
+  fades out over `musicFadeOut` s at the end; the voice itself is never compressed or moved. One
+  fixed trim is applied only if the sum would clip. `film.mjs` joins the picture with this mix
+  instead of `media/song.wav`. `story.mjs mix` rebuilds it after a level change.
+- **Auditioning takes:** `node photoreal/story.mjs hear --song S --audio take.wav` transcribes a
+  take with two local Whisper models (small.en and medium.en; `ARK_STORY_HEAR` changes them) and
+  lists every word changed, missing or added against the script, with the model that heard it. A
+  take is exact only when both hear the script. One model alone can imagine words in a silence
+  ("Thank you" at the end of a take); a real misreading is heard by both.
+- **A narration from line takes:** when no single take reads everything exactly (a long passage, a
+  local voice), generate one take per script line and list them in `story.takes`:
+  `[{ "line": 1, "file": "media/tts/line01.flac", "pause": 2.4, "lufs": -20, "tempo": 0.92 }]`.
+  `node photoreal/story.mjs assemble --song S` hears each take against its own line (any slip
+  stops it), trims each take's own silence, sets its loudness (`lufs`, -20 by default; raise one
+  line to give it force), applies a gentle `tempo` (0.85 to 1.15) and the `pause` after it, and
+  writes `story.narration` with a `.plan.json` beside it. Then `prepare` as usual.
+
+`check.mjs` on a story film runs the motion gates as usual, drops the beat gate, and adds:
+
+| Gate | Fails when |
+|---|---|
+| `spoken-text` | the encoded film's own audio over the narrated stretch, heard by both local models, differs from the script by any word |
+| `audio-sync` | the encoded audio is more than 20 ms off the mix it was made from (or shorter or longer) |
+| `voice-music` | during any spoken word the music is less than 12 dB under the voice (measured on the stems) |
+| `events` | a cue is not in the narration, an event falls outside the scene that claims it, or beats run out of order |
+| `cut-word` | a cut lands inside a spoken word (a scene can give `"midWord": "why"`) |
+
+The text gates (contrast, collision, settle) read only the `onScreen` phrases. The storyboard check
+also requires every event to fall in a row; the key stills add one still just after each event; and
+the critic is briefed on a narrated story (`narration.txt`, `beats.txt`) rather than a lyric film.
+Thresholds live with the others under `"gates"` (`minVoiceOverMusicDb`, `maxSyncLagMs`,
+`minSyncCorrelation`, `cutWordMargin`).
+
+The working sequence: write the script, record and `hear` takes until one is exact (or `assemble`
+exact line takes), `prepare`, write
+the storyboard against `narration.txt` and the events, build scenes, then `--draft`, `check.mjs`,
+`--stills`, the full render and the critic exactly as for a song.
+
+## People rendered in Blender
+
+A scene can have its people drawn by Blender instead of in the shader: put who stands where in
+`scenes/<name>.people.json` (people with a pose, a place on the ground in the scene's own
+coordinates and a heading, plus the sun, sky and any local light), and name the song's Blender script
+in film.json (`"people": { "renderer": "tools/blender_layer.py", "samples": 64 }`). `film.mjs` then
+renders that scene's picture as usual, asks the scene module for its camera at every frame, runs the
+script in Blender (`BLENDER` overrides the path) to draw the people as a transparent layer from that
+camera, and composites picture, people and words in that order. The layer is cached like the lyric
+layer, keyed by the scene, the people file and everything under the song's `tools/`. It renders on
+this Mac. The script receives `--spec` (the people file plus `camera`: one entry per frame with
+`pos`, `target`, `fov`, `roll`, `focus` and `aperture`), `--out`, `--res`, `--samples` and `--frames`
+and writes `00000.png`, ... with transparency. Engine coordinates are metres with y up; Blender's
+are z up, so (x, y, z) becomes (x, -z, y).
+
+Segments now render at the film's own frame rate when it is not 60 (`"fps": 24`); films at 60 are
+rendered exactly as before.
+
 ## Tiers
 
-`film.mjs --tier fast|standard|premium` (or `"tier"` in film.json). **Premium, the ultra realistic
-render, is the default** when neither says: 1920x1080 at 60 fps. A film already rendered at standard
+`film.mjs --tier fast|standard|premium|ultra` (or `"tier"` in film.json). **Ultra, the ultra
+realistic render, is the default** when neither says: 1920x1080 at the film's frame rate, at least
+64 sub-frames, CRF 12 (add `"resolution": "3840x2160"` for 4K). A film already rendered at standard
 before that (it has segments in `out/segments/`) stays at standard so it is never silently
-re-rendered; give it `"tier": "premium"` to move it up.
+re-rendered; give it `"tier": "ultra"` to move it up.
 `node photoreal/film.mjs --song S --estimate` measures the machines and prints what each tier
 would cost for this film, without rendering.
 
@@ -145,9 +236,17 @@ would cost for this film, without rendering.
 |---|---|---|---|---|---|
 | fast | 30 fps | 2 | veryfast | none (STATUS.md says so) | a watchable film in a couple of hours |
 | standard | film.json fps | film.json samples | slow | all | films already rendered at standard, unchanged |
-| premium (default) | 60 fps | at least twice, 32 for premium scenes | slow, CRF 16 | all, plus in-scene words | ultra realistic: every new film |
+| premium | 60 fps | at least twice, 32 for premium scenes | slow, CRF 16 | all, plus in-scene words | a lighter all-out render |
+| ultra (default) | film.json fps | four times, at least 64 | slow, CRF 12, 1080p unless `resolution` says | all, plus in-scene words | ultra realistic: every new film. Every sub-frame is jittered inside the pixel, so 64 sub-frames is 64x supersampling as well as motion blur |
 
-Each tier keeps its own segments (`out/segments-fast/`, `out/segments/`, `out/segments-premium/`),
+**Resolution.** `"resolution": "3840x2160"` in film.json (or `--res`) renders every picture, lyric
+layer and key still at that size; drafts and the fast tier stay 1920x1080. The page reads its size
+from its URL, and that line of `web/engine.js` is hashed as the constant it replaced, so films
+rendered before keep their cached segments; a size other than 1920x1080 is part of each segment's
+key. A 4K frame costs about four times a 1080p one.
+
+Each tier keeps its own segments (`out/segments-fast/`, `out/segments/`, `out/segments-premium/`,
+`out/segments-ultra/`),
 so trying one never throws away another. The fast film is `out/film-fast.mp4`.
 
 To rebuild a few scenes all-out inside a film rendered at standard, give those scenes

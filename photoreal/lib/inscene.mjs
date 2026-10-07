@@ -9,7 +9,7 @@
 // the scene says so with "overlay": "<why>" on its film.json entry. That field is not part of any
 // cache key, so opting in never re-renders a segment.
 //
-// The check fails a premium scene that uses a layer without opting in, and warns at the other
+// The check fails an ultra or premium scene that uses a layer without opting in, and warns at the other
 // tiers, so films made before in-scene became the default still pass.
 import fs from 'node:fs';
 import path from 'node:path';
@@ -27,7 +27,7 @@ export function inSceneReview(song, scenes, tier) {
     }
     if (hasLayer(song, s.scene) && !why) {
       problems.push({
-        severity: tier === 'premium' ? 'fail' : 'warn', scene: s,
+        severity: tier === 'premium' || tier === 'ultra' ? 'fail' : 'warn', scene: s,
         detail: `scene ${s.id} lays its words over the picture (scenes/${s.scene}.lyric.js) instead of putting them in the scene`,
         fix: `draw the words in scenes/${s.scene}.js as part of the world (on a surface, along a form, lit, fogged and hidden by it) and remove the lyric layer, or give the scene "overlay": "<why the words sit over the picture>" in film.json`,
       });

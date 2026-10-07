@@ -7,6 +7,8 @@
 //            [--skip-storyboard] [--skip-stills] [--skip-check]   (each is written into STATUS.md)
 //            [--legacy-web <old engine's photoreal/web>]   carry over pictures cached by an engine checked out elsewhere
 // film.json: { "fps": 60, "samples": 12, "scenes": [{ "id": "01", "scene": "sea", "from": 0, "to": 15.5, "params": {}, "samples"?: 16, "offBeat"?: "why" }] }
+// A narrated story film adds "mode": "story" and a "story" block (lib/story.mjs); it is joined with
+// out/audio/mix.wav (the narration with music ducked under it) instead of media/song.wav.
 //
 // Scene windows must tile the song with no gaps. A segment is re-rendered only when something it
 // uses changes (see lib/keys.mjs). A scene with scenes/<name>.lyric.js keeps its words in their own
@@ -30,6 +32,8 @@ import { loadMachines } from './lib/machines.mjs';
 import { Worker, pickTask, slotSeconds, plateArgs, probeOn, simulate, chooseParallel } from './lib/farm.mjs';
 import { storyboardPath } from './lib/storyboard.mjs';
 import { resolveTier, TIERS } from './lib/tier.mjs';
+import { isStory, storyConfig } from './lib/story.mjs';
+import { buildMix } from './lib/story-audio.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const RENDER = path.join(HERE, 'render.mjs');
@@ -41,18 +45,26 @@ const film = JSON.parse(fs.readFileSync(path.join(SONG, 'film.json'), 'utf8'));
 const draft = flag('draft');
 // Render tiers (--tier, or "tier" in film.json; premium when neither says, see lib/tier.mjs):
 //   fast      30 fps, 2 sub-frames, quick encode, no review gates: a watchable film in a couple of hours
-//   standard  the film's own fps and samples: what every film rendered before premium became the
+//   standard  the film's own fps and samples: what every film rendered before ultra became the
 //             default, and what a film already rendered at standard keeps
-//   premium   the ultra realistic render and the default: 60 fps, at least twice the sub-frames (32
-//             for lens-heavy premium scenes), richer lyric layers, the slowest encode, every gate
+//   premium   60 fps, at least twice the sub-frames (32 for lens-heavy premium scenes), richer lyric
+//             layers, CRF 16, every gate
+//   ultra     the ultra realistic render and the default: four times the film's sub-frames (at least
+//             64; every sub-frame is jittered inside the pixel, so this is the engine's supersampling
+//             as well as its motion blur), the film's own frame rate, CRF 12, every gate. 1920x1080
+//             unless film.json gives "resolution" (e.g. "3840x2160").
 const { tier, why: tierWhy } = resolveTier(SONG, film, opt('tier'));
 if (tierWhy !== '--tier' && tierWhy !== 'film.json') console.log(`tier: ${tier} (${tierWhy})`);
 const fps = tier === 'fast' ? 30 : tier === 'premium' ? Math.max(60, film.fps ?? 60) : film.fps ?? 60;
 const baseSamples = film.samples ?? 12;
-const samples = opt('samples', draft ? '2' : tier === 'fast' ? '2' : tier === 'premium' ? String(Math.max(16, baseSamples * 2)) : String(baseSamples));
-const layerSamples = draft || tier === 'fast' ? 2 : tier === 'premium' ? 16 : 8;
-const encode = { preset: draft || tier === 'fast' ? 'veryfast' : 'slow', crf: opt('crf', tier === 'fast' ? '20' : tier === 'premium' ? '16' : '18') };
+const samples = opt('samples', draft ? '2' : tier === 'fast' ? '2' : tier === 'premium' ? String(Math.max(16, baseSamples * 2)) : tier === 'ultra' ? String(Math.max(64, baseSamples * 4)) : String(baseSamples));
+const layerSamples = draft || tier === 'fast' ? 2 : tier === 'premium' || tier === 'ultra' ? 16 : 8;
+const encode = { preset: draft || tier === 'fast' ? 'veryfast' : 'slow', crf: opt('crf', tier === 'fast' ? '20' : tier === 'premium' ? '16' : tier === 'ultra' ? '12' : '18') };
 const only = opt('only')?.split(',');
+// output size: 1920x1080 at every tier unless "resolution": "3840x2160" in film.json or --res says
+// otherwise (drafts and the fast tier always stay 1920x1080)
+const res = draft || tier === 'fast' ? '1920x1080' : opt('res', film.resolution ?? '1920x1080');
+if (!/^\d+x\d+$/.test(res)) throw Error('resolution must look like 3840x2160');
 const OUT = path.join(SONG, 'out');
 const REVIEW = path.join(OUT, 'review');
 const segDir = path.join(OUT, draft ? 'segments-draft' : tier === 'standard' ? 'segments' : `segments-${tier}`);
@@ -66,6 +78,14 @@ const notes = [];
 const scenes = film.scenes;
 for (let i = 1; i < scenes.length; i++) {
   if (Math.abs(scenes[i].from - scenes[i - 1].to) > 1e-6) throw Error(`gap or overlap between ${scenes[i - 1].id} and ${scenes[i].id}`);
+}
+
+// a narrated story film ("mode": "story") is joined with its narration mix instead of a song
+const story = isStory(film);
+if (story) {
+  const errs = storyConfig(film).errors;
+  if (errs.length) throw Error(`film.json story: ${errs.join('; ')}`);
+  if (!fs.existsSync(path.join(SONG, 'data', 'story.json'))) throw Error('run node photoreal/story.mjs prepare first: the narration has not been aligned');
 }
 
 const keys = makeKeys(SONG, { legacyWeb: opt('legacy-web') });
@@ -83,7 +103,7 @@ const handlesOf = (i) => {
 };
 const segs = scenes.map((s0, i) => {
   const handles = handlesOf(i);
-  const s = handles ? { ...s0, handles } : s0;
+  const s = { ...(handles ? { ...s0, handles } : s0), ...(res !== '1920x1080' ? { res } : {}) };
   const f0 = Math.round((s.from - (handles?.[0] ?? 0)) * fps), f1 = Math.round((s.to + (handles?.[1] ?? 0)) * fps);
   // A scene can be raised to premium on its own ("tier": "premium" on the scene), so a few scenes
   // can be rebuilt all-out and stitched into a film otherwise rendered at standard; it renders at the
@@ -91,7 +111,7 @@ const segs = scenes.map((s0, i) => {
   const st = tier === 'fast' ? 'fast' : s.tier === 'premium' ? 'premium' : tier;
   const base = st === tier ? +samples : st === 'premium' ? Math.max(16, baseSamples * 2) : baseSamples;
   // a scene may ask for more sub-frames (fast wings); premium gives lens-heavy premium scenes 32
-  const own = s.samples != null ? String(st === 'premium' ? Math.max(+s.samples, base) : st === 'fast' ? Math.min(+s.samples, base) : s.samples) : String(base);
+  const own = s.samples != null ? String(st === 'premium' || st === 'ultra' ? Math.max(+s.samples, base) : st === 'fast' ? Math.min(+s.samples, base) : s.samples) : String(base);
   const sSamples = draft ? samples : st === 'premium' && keys.isPremium(s.scene) ? String(Math.max(32, +own)) : own;
   const sLayerSamples = st === 'premium' && !draft ? 16 : layerSamples;
   const sDir = st === tier || draft ? segDir : path.join(OUT, `segments-${st}`);
@@ -99,12 +119,19 @@ const segs = scenes.map((s0, i) => {
   const layered = keys.hasLayer(s.scene);
   const out = path.join(sDir, `${s.id}.mp4`);
   const seg = { ...s, f0, f1, frames: f1 - f0, samples: sSamples, layered, out, content: keys.content(s, fps), sceneTier: st, crf: st === 'premium' && tier !== 'premium' ? '16' : encode.crf };
-  if (layered) {
+  // people rendered in Blender as their own layer (scenes/<name>.people.json)
+  if (keys.hasPeople(s.scene)) {
+    seg.peopleOut = path.join(sDir, `${s.id}.people.mkv`);
+    seg.peopleSamples = draft ? 16 : (film.people?.samples ?? 64);
+    seg.peopleKey = keys.people(s, fps, seg.peopleSamples);
+  }
+  if (layered || seg.peopleOut) {
     seg.plateOut = path.join(sDir, `${s.id}.plate.mp4`);
     seg.layerOut = path.join(sDir, `${s.id}.lyric.mkv`);
     seg.plateKey = keys.plate(s, fps, sSamples);
-    seg.layerKey = keys.layer(s, fps, sLayerSamples);
-    seg.key = sha(seg.plateKey + seg.layerKey + 'composite-v2');   // v2: composites capped at the segment's frame count
+    seg.layerKey = layered ? keys.layer(s, fps, sLayerSamples) : '';
+    // v2: composites capped at the segment's frame count
+    seg.key = sha(seg.plateKey + seg.layerKey + 'composite-v2' + (seg.peopleKey ?? ''));
   } else {
     seg.plateOut = out;
     seg.plateKey = keys.plate(s, fps, sSamples);
@@ -134,6 +161,12 @@ if (flag('stills')) {
   const pr = probe(segs);
   const lyrics = readJson(path.join(SONG, 'data', 'lyrics.json')) ?? { lines: [], words: [] };
   const picks = pickKeyStills(scenes, lyrics, pr, fps);
+  // a story film also shows each story beat it must carry, just after it lands
+  if (story) for (const e of readJson(path.join(SONG, 'data', 'story.json'))?.events ?? []) {
+    if (e.time == null) continue;
+    const t = Math.min(scenes.at(-1).to - 1 / fps, Math.round((e.time + 0.6) * fps) / fps);
+    picks.push({ name: `6-event-${e.id}`, time: t, sceneId: scenes.find((s) => t >= s.from && t < s.to)?.id ?? scenes.at(-1).id, why: `story beat "${e.id}": ${e.what ?? e.cue ?? ''}` });
+  }
   const dir = path.join(OUT, 'keystills');
   fs.rmSync(dir, { recursive: true, force: true }); fs.mkdirSync(dir, { recursive: true });
   const shots = [];
@@ -141,7 +174,7 @@ if (flag('stills')) {
     const s = segs.find((x) => x.id === p.sceneId);
     const tmp = path.join(workDir, 'stills');
     fs.rmSync(tmp, { recursive: true, force: true });
-    const r = spawnSync('node', [RENDER, 'stills', '--song', SONG, '--scene', s.scene, '--params', paramsOf(s), '--t', String(p.time), '--samples', s.samples, '--out', tmp], { stdio: 'inherit' });
+    const r = spawnSync('node', [RENDER, 'stills', '--song', SONG, '--scene', s.scene, '--params', paramsOf(s), '--t', String(p.time), '--samples', s.samples, '--out', tmp, ...(s.res ? ['--res', s.res] : [])], { stdio: 'inherit' });
     if (r.status !== 0) { notes.push(`Key still ${p.name} (${s.id}) failed to render.`); continue; }
     const f = path.join(dir, `${p.name}.png`);
     fs.renameSync(path.join(tmp, fs.readdirSync(tmp).find((f) => f.endsWith('.png') && !f.startsWith('.'))), f);
@@ -197,9 +230,15 @@ for (const s of segs) {
     any = true;
     // lyric layers are light; they go wherever they finish soonest like any other job
     tasks.push({ id: s.id, job: `${s.id}-lyric`, part: 'layer', scene: s.scene, frames: s.frames, out: s.layerOut, key: s.layerKey, light: true,
-      renderArgs: ['layer', '--scene', s.scene, '--params64', Buffer.from(paramsOf(s)).toString('base64'), '--from', String(s.f0 / fps), '--to', String(s.f1 / fps), '--samples', String(s.sceneTier === 'premium' && !draft ? 16 : layerSamples)] });
+      renderArgs: ['layer', '--scene', s.scene, '--params64', Buffer.from(paramsOf(s)).toString('base64'), '--from', String(s.f0 / fps), '--to', String(s.f1 / fps), '--samples', String(s.sceneTier === 'premium' && !draft ? 16 : layerSamples), ...(s.res ? ['--res', s.res] : []), ...(fps !== 60 ? ['--fps', String(fps)] : [])] });
   }
-  if (!any && !(s.layered && !cached(s.out, s.key))) { console.log(`segment ${s.id} cached`); cachedCount++; }
+  if (s.peopleOut && !cached(s.peopleOut, s.peopleKey)) {
+    any = true;
+    // Blender runs on this Mac (its people builder and assets live in the song folder here)
+    tasks.push({ id: s.id, job: `${s.id}-people`, part: 'people', scene: s.scene, frames: s.frames, out: s.peopleOut, key: s.peopleKey, localOnly: true,
+      renderArgs: ['people', '--scene', s.scene, '--params64', Buffer.from(paramsOf(s)).toString('base64'), '--from', String(s.f0 / fps), '--to', String(s.f1 / fps), '--fps', String(fps), '--samples', String(s.peopleSamples), ...(s.res ? ['--res', s.res] : [])] });
+  }
+  if (!any && !((s.layered || s.peopleOut) && !cached(s.out, s.key))) { console.log(`segment ${s.id} cached`); cachedCount++; }
 }
 const plates = tasks.filter((t) => t.part === 'plate');
 
@@ -349,8 +388,8 @@ if (flag('estimate')) {
   for (const tr of TIERS) {
     const tfps = tr === 'fast' ? 30 : tr === 'premium' ? Math.max(60, film.fps ?? 60) : film.fps ?? 60;
     const tSamples = (sc) => {
-      const base = tr === 'fast' ? 2 : tr === 'premium' ? Math.max(16, baseSamples * 2) : baseSamples;
-      const own = sc.samples != null ? (tr === 'premium' ? Math.max(sc.samples, base) : tr === 'fast' ? Math.min(sc.samples, base) : sc.samples) : base;
+      const base = tr === 'fast' ? 2 : tr === 'premium' ? Math.max(16, baseSamples * 2) : tr === 'ultra' ? Math.max(64, baseSamples * 4) : baseSamples;
+      const own = sc.samples != null ? (tr === 'premium' || tr === 'ultra' ? Math.max(sc.samples, base) : tr === 'fast' ? Math.min(sc.samples, base) : sc.samples) : base;
       return tr === 'premium' && keys.isPremium(sc.scene) ? Math.max(32, own) : own;
     };
     const ttasks = scenes.map((sc, i) => {
@@ -512,10 +551,15 @@ await restoreAll();
 
 // ---------- composite lyric layers over their pictures ----------
 for (const s of segs) {
-  if (!s.selected || !s.layered || failed.has(s.id) || cached(s.out, s.key)) continue;
-  console.log(`composite ${s.id}: lyric layer over the picture`);
-  const r = spawnSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', s.plateOut, '-i', s.layerOut, '-filter_complex',
-    '[0:v]scale=in_color_matrix=bt709:in_range=tv,format=gbrp[p];[1:v]format=gbrap[l];[p][l]overlay=format=gbrp:alpha=straight,scale=out_color_matrix=bt709:out_range=tv,format=yuv420p',
+  if (!s.selected || !(s.layered || s.peopleOut) || failed.has(s.id) || cached(s.out, s.key)) continue;
+  console.log(`composite ${s.id}: ${[s.peopleOut && 'people', s.layered && 'lyric layer'].filter(Boolean).join(' and ')} over the picture`);
+  // picture, then the people, then the words
+  const ins = [s.plateOut, ...(s.peopleOut ? [s.peopleOut] : []), ...(s.layered ? [s.layerOut] : [])];
+  const chain = ['[0:v]scale=in_color_matrix=bt709:in_range=tv,format=gbrp[c0]'];
+  ins.slice(1).forEach((_, i) => { chain.push(`[${i + 1}:v]format=gbrap[l${i}]`, `[c${i}][l${i}]overlay=format=gbrp:alpha=straight[c${i + 1}]`); });
+  const graph = chain.join(';') + `;[c${ins.length - 1}]scale=out_color_matrix=bt709:out_range=tv,format=yuv420p`;
+  const r = spawnSync('ffmpeg', ['-y', '-loglevel', 'error', ...ins.flatMap((f) => ['-i', f]), '-filter_complex',
+    graph,
     '-frames:v', String(s.frames),   // the overlay can emit one extra frame; extra frames drift the joined film off the audio
     '-c:v', 'libx264', '-preset', encode.preset, '-crf', encode.crf, '-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709', '-movflags', '+faststart', s.out], { stdio: 'inherit' });
   if (r.status !== 0) { failed.add(s.id); progress.log(s.id, 'composite failed'); continue; }
@@ -536,12 +580,13 @@ if (only) {
 }
 const out = path.resolve(opt('out', path.join(OUT, draft ? 'film-draft.mp4' : tier === 'fast' ? 'film-fast.mp4' : 'film.mp4')));
 const end = scenes[scenes.length - 1].to;
+const audioIn = story ? buildMix(SONG, film).mix : path.join(SONG, 'media', 'song.wav');
 let r;
 if (!scenes.some((s) => s.transition)) {
   // plain cuts: the segments join without re-encoding
   const list = path.join(segDir, 'concat.txt');
   fs.writeFileSync(list, segs.map((s) => `file '${s.out.replace(/'/g, "'\\''")}'`).join('\n') + '\n');
-  r = spawnSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', list, '-i', path.join(SONG, 'media', 'song.wav'),
+  r = spawnSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', list, '-i', audioIn,
     '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '320k', '-t', String(end), '-movflags', '+faststart', out], { stdio: 'inherit' });
 } else {
   // transitions: each blend is centred on its cut, over the handles both scenes rendered past it
@@ -560,7 +605,7 @@ if (!scenes.some((s) => s.transition)) {
     }
     cur = next;
   }
-  r = spawnSync('ffmpeg', ['-y', '-loglevel', 'error', ...segs.flatMap((s) => ['-i', s.out]), '-i', path.join(SONG, 'media', 'song.wav'),
+  r = spawnSync('ffmpeg', ['-y', '-loglevel', 'error', ...segs.flatMap((s) => ['-i', s.out]), '-i', audioIn,
     '-filter_complex', graph.join(';'), '-map', cur, '-map', `${segs.length}:a`, '-c:v', 'libx264', '-preset', encode.preset, '-crf', encode.crf, '-pix_fmt', 'yuv420p',
     '-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709', '-c:a', 'aac', '-b:a', '320k', '-t', String(end), '-movflags', '+faststart', out], { stdio: 'inherit' });
 }

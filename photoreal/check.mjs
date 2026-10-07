@@ -16,6 +16,13 @@
 //                 "overlay": "<why>" (fails at premium, warns at other tiers; see lib/inscene.mjs)
 //   shot-length   a shot over 8 s warns unless its scene gives "hold": "<why>" (a long camera move
 //                 through one world is allowed; set gates.maxShotSeconds to make it fail)
+// A narrated story film ("mode": "story") is judged on its voice instead of a beat and a lyric:
+//   spoken-text   the encoded film's audio, transcribed locally, says the script exactly
+//   audio-sync    the encoded audio lines up with the narration mix it was made from
+//   voice-music   during every spoken word the voice sits well above the music
+//   events        every story beat happens inside the scene that claims it, in story order
+//   cut-word      no cut lands in the middle of a spoken word (a scene can set "midWord": "why")
+//   and the text gates (contrast, collision, settle) only for the phrases in story.onScreen
 // Writes out/review/check-<label>.json, which the full render and the critic read.
 import fs from 'node:fs';
 import path from 'node:path';
@@ -28,6 +35,8 @@ import { fmtTime } from './lib/storyboard.mjs';
 import { shakeReview } from './lib/shake.mjs';
 import { inSceneReview } from './lib/inscene.mjs';
 import { resolveTier } from './lib/tier.mjs';
+import { isStory, storyConfig, STORY_GATES, onScreenLyrics, cutsInsideWords, eventProblems, voiceOverMusic, bestLag } from './lib/story.mjs';
+import { hear, decode, mixPaths, mixKey, RATE } from './lib/story-audio.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const argv = process.argv.slice(2);
@@ -36,9 +45,10 @@ const SONG = path.resolve(opt('song', '.'));
 const label = opt('label', 'final');
 const read = (f) => { try { return JSON.parse(fs.readFileSync(path.join(SONG, f), 'utf8')); } catch { return null; } };
 const film = read('film.json'), lyrics = read('data/lyrics.json') ?? { lines: [], words: [] }, audio = read('data/audio.json');
-// premium (the default) lets words sit close in a designed layout; every word must still read
+// premium and ultra (the default) let words sit close in a designed layout; every word must still read
 const tier = resolveTier(SONG, film, opt('tier')).tier;
-const G = { ...DEFAULTS, maxShotSeconds: Infinity, longShotWarn: 8, ...(film?.gates ?? {}) };
+const story = isStory(film);
+const G = { ...DEFAULTS, ...(story ? STORY_GATES : {}), maxShotSeconds: Infinity, longShotWarn: 8, ...(film?.gates ?? {}) };
 const video = path.resolve(SONG, opt('video', label === 'draft' ? 'out/film-draft.mp4' : 'out/film.mp4'));
 if (!fs.existsSync(video)) { console.error(`no film at ${video}`); process.exit(1); }
 const REVIEW = path.join(SONG, 'out', 'review');
@@ -51,6 +61,7 @@ const fps = fn / fd, W = probe.streams[0].width, H = probe.streams[0].height;
 const duration = +probe.format.duration, nFrames = +probe.streams[0].nb_read_packets;
 const scenes = film?.scenes ?? [];
 const problems = [];
+let syncReport = null, balanceReport = null, spokenReport = null;
 const at = (frame) => ({ time: fmtTime(frame / fps), frame, scene: sceneAt(scenes, frame / fps) ?? null });
 const add = (gate, severity, frame, detail, fix) => problems.push({ gate, severity, ...at(frame), detail, fix });
 
@@ -94,7 +105,7 @@ for (const s of stillStretches(motion, fps, G)) add('still', 'fail', s.startFram
 for (const s of deadStops(mad, fps, { ...G, stillThreshold: G.stopThreshold, cutFrames })) add('dead-stop', 'fail', s.frame, `a fast move (${s.before} mean change per frame) stops dead within 2 frames (${s.after})`, 'ease the move into its landing over at least 0.3 s instead of stopping it');
 
 // ---------- cuts against the measured beats ----------
-if (audio?.beats?.length && scenes.length > 1) {
+if (!story && audio?.beats?.length && scenes.length > 1) {
   for (const c of cutsOffBeat(scenes, audio.beats, fps, G)) add('cut-beat', 'fail', Math.round(c.cut * fps), `the cut into scene ${c.id} is ${Math.abs(c.offFrames)} frame${Math.abs(c.offFrames) === 1 ? '' : 's'} ${c.offFrames > 0 ? 'after' : 'before'} the beat at ${fmtTime(c.beat)}`, `move the cut to ${c.target.toFixed(3)} s (the beat) or up to ${G.cutEarlyFrames} frames earlier, or give the scene "offBeat": "<reason>" if it follows the voice on purpose`);
 }
 
@@ -104,13 +115,63 @@ for (const p of shakeReview(SONG, scenes, G)) add('shake', p.severity, p.scene ?
 // ---------- in-scene: words in the world, not over it ----------
 for (const p of inSceneReview(SONG, scenes, tier)) add('in-scene', p.severity, Math.round(p.scene.from * fps), p.detail, p.fix);
 
+// ---------- story: the voice, the mix, the beats ----------
+// the text gates below then read only the phrases a story film puts on screen
+let shown = lyrics;
+if (story) {
+  const cfg = storyConfig(film);
+  const storyData = read('data/story.json');
+  const scriptText = fs.readFileSync(path.join(SONG, cfg.script), 'utf8');
+  const os = onScreenLyrics(cfg.onScreen, lyrics);
+  for (const m of os.missing) add('events', 'fail', 0, `the on-screen phrase "${m}" is not in the narration`, 'use the script\'s exact words in story.onScreen');
+  shown = { lines: os.lines, words: os.words };
+  // events
+  if (!storyData) add('events', 'fail', 0, 'no data/story.json', 'run node photoreal/story.mjs prepare');
+  else {
+    for (const p of storyData.problems ?? []) add('events', 'fail', 0, p.detail, 'fix the cue to match the script, then run story.mjs prepare again');
+    for (const p of eventProblems(storyData.events ?? [], scenes)) add('events', 'fail', Math.round(p.time * fps), p.detail, 'move the scene boundary or give the event to the scene that shows it');
+  }
+  for (const c of cutsInsideWords(scenes, lyrics.words ?? [], G)) add('cut-word', 'fail', Math.round(c.cut * fps), `the cut into scene ${c.id} lands inside the spoken word "${c.word}" (${c.start.toFixed(2)}-${c.end.toFixed(2)} s)`, `move the cut to ${c.start.toFixed(3)} s or ${c.end.toFixed(3)} s, or give the scene "midWord": "<why>"`);
+  // the encoded audio against the mix it was made from
+  const P = mixPaths(SONG);
+  if (!fs.existsSync(P.mix) || !fs.existsSync(P.key) || fs.readFileSync(P.key, 'utf8') !== mixKey(SONG, film)) add('audio-sync', 'fail', 0, 'the narration mix is missing or older than its inputs', 'run node photoreal/story.mjs mix and join the film again');
+  else {
+    console.log('story: comparing the encoded audio with the mix');
+    const enc = decode(video, { rate: 16000 }), ref = decode(P.mix, { rate: 16000 });
+    const s = bestLag(ref, enc, 16000);
+    const durDiff = Math.abs(enc.length - ref.length) / 16000;
+    if (Math.abs(s.lagMs) > G.maxSyncLagMs || s.correlation < G.minSyncCorrelation) add('audio-sync', 'fail', 0, `the film's audio is ${s.lagMs} ms off the narration mix (match ${s.correlation})`, 'join the film again from the current mix (film.mjs)');
+    if (durDiff > 2 / fps) add('audio-sync', 'fail', nFrames - 1, `the film's audio runs ${durDiff.toFixed(2)} s ${enc.length > ref.length ? 'longer' : 'shorter'} than the mix`, 'join the film again from the current mix');
+    syncReport = { ...s, durationDiff: +durDiff.toFixed(3) };
+    // voice over music, from the stems the mix was summed from
+    const voice = decode(P.voice, { rate: 16000 }), music = decode(P.music, { rate: 16000 });
+    const vm = voiceOverMusic(voice, music, 16000, lyrics.words ?? [], G.minVoiceOverMusicDb);
+    balanceReport = { worstDb: vm.worstDb, wordsUnder: vm.low.length };
+    for (const w of vm.low) add('voice-music', 'fail', Math.round(w.start * fps), `the music is only ${w.marginDb} dB under the voice on "${w.word}"`, `lower story.musicGainDb or raise story.duckDb (needs ${G.minVoiceOverMusicDb} dB)`);
+  }
+  // what the finished film actually says
+  if (!argv.includes('--no-asr')) {
+    console.log('story: transcribing the encoded film (local Whisper)');
+    const wav = path.join(work, 'film-audio.wav');
+    execFileSync('ffmpeg', ['-y', '-v', 'error', '-i', video, '-vn', '-ac', '1', '-ar', '16000', wav]);
+    // only the narrated stretch: a music-only tail can make a model imagine words ("Thank you")
+    const ws = lyrics.words ?? [];
+    const h = hear(wav, scriptText, { work, start: Math.max(0, (ws[0]?.start ?? 0) - 0.5), end: (ws.at(-1)?.end ?? duration) + 0.8 });
+    spokenReport = { model: h.model, byModel: h.byModel, exact: h.exact, diffs: h.diffs };
+    for (const d of h.diffs) {
+      const w = lyrics.words?.[Math.min(d.index, (lyrics.words?.length ?? 1) - 1)];
+      add('spoken-text', 'fail', Math.round((w?.start ?? 0) * fps), `${d.op === 'missing' ? `"${d.expected}" is not heard in the film` : d.op === 'extra' ? `"${d.heard}" is heard but is not in the script` : `"${d.expected}" is heard as "${d.heard}"`} (${d.models.join(', ')})`, 'record or choose a take that reads the script exactly, or lower the music where it masks the word');
+    }
+  }
+}
+
 // ---------- lyric words: contrast, collisions, settling ----------
-if (!argv.includes('--no-ocr') && lyrics.words?.length) {
+if (!argv.includes('--no-ocr') && shown.words?.length) {
   const swift = path.join(HERE, 'lib', 'ocr-words.swift');
   const bin = path.join(SONG, 'out', 'work', `ocr-words-${crypto.createHash('sha256').update(fs.readFileSync(swift)).digest('hex').slice(0, 12)}`);
   if (!fs.existsSync(bin)) execFileSync('swiftc', ['-O', swift, '-o', bin, '-framework', 'Vision', '-framework', 'ImageIO'], { stdio: 'inherit' });
   const { createCanvas, loadImage } = await import('@napi-rs/canvas');
-  const checks = wordChecks(lyrics, fps, duration, G).filter((c) => c.f1 < nFrames);
+  const checks = wordChecks(shown, fps, duration, G).filter((c) => c.f1 < nFrames);
   const wanted = [...new Set(checks.flatMap((c) => [c.f1, c.f2]))].filter((f) => f < nFrames).sort((a, b) => a - b);
   console.log(`words: ${checks.length} words, ${wanted.length} frames to read`);
   const ocr = new Map();   // frame -> recognised frame
@@ -153,7 +214,7 @@ if (!argv.includes('--no-ocr') && lyrics.words?.length) {
         const cr = wordContrast(vals);
         if (cr.ratio < G.minContrast) add('contrast', 'fail', c.f1, `"${c.word}" is ${cr.ratio.toFixed(2)}:1 against what is behind it (${cr.ink} ink); needs ${G.minContrast}:1`, cr.ink === 'light' ? 'light the word or the surface it is on, darken or blur what passes behind it, or put it on a quieter part of the world (a dark hull, a shadowed ridge)' : 'lighten what is behind the word or switch to light ink here');
       }
-      for (const k of collisions(o1, c.onScreen, G).filter((k) => tier !== 'premium' || k.kind !== 'tight')) {
+      for (const k of collisions(o1, c.onScreen, G).filter((k) => (tier !== 'premium' && tier !== 'ultra') || k.kind !== 'tight')) {
         const key = `${sceneAt(scenes, c.f1 / fps)}:${k.kind}:${k.text}`;   // once per scene
         if (problems.some((p) => p.key === key)) continue;
         add('collision', k.kind === 'tight' ? 'warn' : 'fail', c.f1, k.kind === 'run-together' ? `"${k.text}" reads as one word` : k.kind === 'overlap' ? `"${k.text}" overlap each other` : k.kind === 'tight' ? `"${k.text}" are crowded (gap ${k.gap} of the letter height)` : `two lines sit on top of each other: ${k.text}`, 'open the word spacing or move the lines apart');
@@ -183,6 +244,7 @@ const report = {
   // whether this check still describes the current scenes
   thresholds: G, content: read(path.relative(SONG, video.replace(/\.mp4$/, '') + '.content.json')) ?? Object.fromEntries(scenes.map((s) => [s.id, keys.content(s, film.fps ?? 60)])),
   summary, problems,
+  ...(story ? { story: { sync: syncReport, voiceOverMusic: balanceReport, spoken: spokenReport } } : {}),
 };
 const outFile = path.join(REVIEW, `check-${label}.json`);
 fs.writeFileSync(outFile, JSON.stringify(report, null, 1) + '\n');

@@ -4,7 +4,7 @@
 import * as THREE from 'three';
 import { COMMON } from './glsl.js';
 
-export const W = 1920, H = 1080;
+export const [W, H] = (new URLSearchParams(location.search).get('res') ?? '1920x1080').split('x').map(Number);   // key-neutral: see lib/keys.mjs
 
 const VERT = /* glsl */ `
 in vec3 position;

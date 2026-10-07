@@ -10,7 +10,7 @@
 import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
-import { spawn } from 'node:child_process';
+import { spawn, spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { chromium } from 'playwright-core';
 import { sceneKind } from './lib/keys.mjs';
@@ -27,7 +27,10 @@ const CHROME = process.env.CHROME ?? (process.platform === 'win32' ? 'C:/Program
 // ('default' for Chrome's choice). Whatever the backend, a machine only renders the scenes whose
 // pictures matched this Mac's (see film.mjs).
 const ANGLE = process.env.ARK_ANGLE === 'default' ? null : process.env.ARK_ANGLE ?? (process.platform === 'darwin' ? 'metal' : process.platform === 'win32' ? null : 'vulkan');
-const W = 1920, H = 1080;
+// --res WxH draws at another size (default 1920x1080); the page reads it from its URL
+const RES = opt('res', '1920x1080');
+if (!/^\d+x\d+$/.test(RES)) { console.error('--res must look like 3840x2160'); process.exit(1); }
+const [W, H] = RES.split('x').map(Number);
 const SONG = path.resolve(opt('song', '.'));
 if (!fs.existsSync(path.join(SONG, 'scenes'))) { console.error('--song must be a folder with scenes/'); process.exit(1); }
 
@@ -84,7 +87,7 @@ async function openScene(scene, params, tries = 1) {
   page.on('requestfailed', () => {});
   const p64 = Buffer.from(params).toString('base64');
   const kind = sceneKind(SONG, scene);
-  await page.goto(`http://127.0.0.1:${port}/${kind ? `premium/index.html?kind=${kind}&` : '?'}scene=${scene}&params=${encodeURIComponent(p64)}${lyricOf(scene) ? '&lyric=1' : ''}`);
+  await page.goto(`http://127.0.0.1:${port}/${kind ? `premium/index.html?kind=${kind}&` : '?'}scene=${scene}&params=${encodeURIComponent(p64)}${lyricOf(scene) ? '&lyric=1' : ''}${RES !== '1920x1080' ? `&res=${RES}` : ''}`);
   await page.waitForFunction(() => window.G && (window.G.ready || window.G.error), null, { timeout: 120000 });
   const err = await page.evaluate(() => window.G.error);
   if (err) {
@@ -117,7 +120,7 @@ if (mode === 'checkstills') {
       try {
         const page = await openScene(s.scene, JSON.stringify({ ...(s.params ?? {}), id: s.id, from: s.from, to: s.to }));
         await page.evaluate(([t, n]) => window.G.still(t, n), [s.t, +opt('samples', 2)]);
-        await page.screenshot({ path: path.join(out, `${s.id}.png`), clip: { x: 0, y: 0, width: W, height: H } });
+        await page.screenshot({ path: path.join(out, `${s.id}.png`), clip: { x: 0, y: 0, width: W, height: H }, timeout: 600000 });
         lost = !!page.contextLost;
         await page.close();
       } catch (e) { lost = true; console.log(`scene ${s.id}: ${e.message.split('\n')[0]}`); }
@@ -162,6 +165,55 @@ if (mode === 'probe') {
   process.exit(0);
 }
 
+// The people of a scene, rendered by Blender as their own transparent layer (scenes/<name>.people.json
+// says who stands where, in what pose and light; the song's renderer script draws them). The camera
+// comes from the scene module itself, frame by frame, so the people sit exactly in the shader's world.
+if (mode === 'people') {
+  const sceneName = opt('scene');
+  const spec = JSON.parse(fs.readFileSync(path.join(SONG, 'scenes', `${sceneName}.people.json`), 'utf8'));
+  const params = JSON.parse(opt('params64') ? Buffer.from(opt('params64'), 'base64').toString('utf8') : opt('params', '{}'));
+  const from = +opt('from'), to = +opt('to'), fps = +opt('fps', 60);
+  const n = Math.round((to - from) * fps);
+  const out = path.resolve(opt('out'));
+  // the camera track, from the scene module evaluated in the page (no picture is drawn)
+  const page = await browser.newPage({ viewport: { width: 64, height: 64 } });
+  await page.goto(`http://127.0.0.1:${port}/`);
+  const track = await page.evaluate(async ([name, params, from, fps, n]) => {
+    const m = await import(`/song/scenes/${name}.js`);
+    const sc = typeof m.default === 'function' ? await m.default(params) : m.default;
+    const out = [];
+    for (let i = 0; i < n; i++) { const t = from + i / fps; const c = sc.camera(t); out.push({ t, pos: c.pos, target: c.target, fov: c.fov ?? 40, roll: c.roll ?? 0, focus: c.focus, aperture: c.aperture ?? 0 }); }
+    return out;
+  }, [sceneName, { ...params }, from, fps, n]).catch((e) => { throw Error('camera track: ' + e.message); });
+  await page.close();
+  server.closeAllConnections?.(); server.close(); await Promise.race([browser.close(), new Promise((r) => setTimeout(r, 10000))]);
+  const work = `${out}.frames`;
+  fs.rmSync(work, { recursive: true, force: true }); fs.mkdirSync(work, { recursive: true });
+  const specFile = path.join(work, 'spec.json');
+  fs.writeFileSync(specFile, JSON.stringify({ ...spec, fps, from, camera: track }));
+  const film = JSON.parse(fs.readFileSync(path.join(SONG, 'film.json'), 'utf8'));
+  const script = path.join(SONG, film.people?.renderer ?? 'tools/blender_layer.py');
+  const blender = process.env.BLENDER ?? (process.platform === 'darwin' ? '/Applications/Blender.app/Contents/MacOS/Blender' : 'blender');
+  beat({ frame: 0, of: n });
+  const t0 = Date.now();
+  const code = await new Promise((res) => {
+    const b = spawn(blender, ['-b', '-P', script, '--', '--spec', specFile, '--out', work, '--res', `${W}x${H}`, '--samples', String(samples), '--frames', `0:${n}`], { stdio: ['ignore', 'pipe', 'inherit'] });
+    let carry = '';
+    b.stdout.on('data', (d) => {
+      carry += d; const lines = carry.split('\n'); carry = lines.pop();
+      for (const l of lines) { const m = /^FRAME (\d+)/.exec(l); if (m) { const k = +m[1] + 1; beat({ frame: k, of: n, msPerFrame: Math.round((Date.now() - t0) / k) }); if (k % 10 === 0 || k === n) console.log(`people frame ${k}/${n}`); } }
+    });
+    b.on('close', res);
+  });
+  if (code !== 0) { console.error(`blender exited with ${code}`); process.exit(1); }
+  // transparency kept losslessly (FFV1, as the lyric layer)
+  const r = spawnSync('ffmpeg', ['-y', '-loglevel', 'error', '-framerate', String(fps), '-i', path.join(work, '%05d.png'), '-vf', 'format=yuva444p', '-c:v', 'ffv1', '-level', '3', '-slices', '16', out], { stdio: 'inherit' });
+  if (r.status !== 0) { console.error('encoding the people layer failed'); process.exit(1); }
+  fs.rmSync(work, { recursive: true, force: true });
+  console.log('wrote', out, { frames: n, ms: Date.now() - t0 });
+  process.exit(0);
+}
+
 const clip = opt('scene');
 if (!clip) { console.error('--scene is required'); process.exit(1); }
 let page;
@@ -179,7 +231,7 @@ try {
       const t0 = Date.now();
       await page.evaluate(([t, s]) => window.G.still(t, s), [t, samples]);
       const f = path.join(out, `${clip}-${t.toFixed(2)}.png`);
-      await page.screenshot({ path: f, clip: { x: 0, y: 0, width: W, height: H } });
+      await page.screenshot({ path: f, clip: { x: 0, y: 0, width: W, height: H }, timeout: 600000 });
       console.log(f, `${Date.now() - t0} ms`);
     }
   } else if (mode === 'video' || mode === 'layer') {
