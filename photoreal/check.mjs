@@ -16,6 +16,11 @@
 //                 "overlay": "<why>" (fails at premium, warns at other tiers; see lib/inscene.mjs)
 //   shot-length   a shot over 8 s warns unless its scene gives "hold": "<why>" (a long camera move
 //                 through one world is allowed; set gates.maxShotSeconds to make it fail)
+//   live          no stretch over 1.5 s where only the camera moves (a still pushed, panned or
+//                 breathing): something in the world must move on its own, or show parallax; a
+//                 scene can give "cameraOnly": "<why>" (see lib/live.mjs)
+//   rest-to-rest  warns when a shot's camera starts and ends at a standstill, so the cut joins two
+//                 stopped cameras; a scene can give "rest": "<why>" (read from the scene's camera)
 // A narrated story film ("mode": "story") is judged on its voice instead of a beat and a lyric:
 //   spoken-text   the encoded film's audio, transcribed locally, says the script exactly
 //   audio-sync    the encoded audio lines up with the narration mix it was made from
@@ -31,6 +36,7 @@ import { spawn, spawnSync, execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { shots, DEFAULTS, luminance, wordContrast, stillStretches, deadStops, cutsOffBeat, wordChecks, findWord, collisions, sceneAt, summarize } from './lib/measure.mjs';
 import { makeKeys } from './lib/keys.mjs';
+import { LIVE_DEFAULTS, liveResidual, cameraOnlyStretches, restToRest } from './lib/live.mjs';
 import { fmtTime } from './lib/storyboard.mjs';
 import { shakeReview } from './lib/shake.mjs';
 import { inSceneReview } from './lib/inscene.mjs';
@@ -48,7 +54,7 @@ const film = read('film.json'), lyrics = read('data/lyrics.json') ?? { lines: []
 // premium and ultra (the default) let words sit close in a designed layout; every word must still read
 const tier = resolveTier(SONG, film, opt('tier')).tier;
 const story = isStory(film);
-const G = { ...DEFAULTS, ...(story ? STORY_GATES : {}), maxShotSeconds: Infinity, longShotWarn: 8, ...(film?.gates ?? {}) };
+const G = { ...DEFAULTS, ...LIVE_DEFAULTS, ...(story ? STORY_GATES : {}), maxShotSeconds: Infinity, longShotWarn: 8, ...(film?.gates ?? {}) };
 const video = path.resolve(SONG, opt('video', label === 'draft' ? 'out/film-draft.mp4' : 'out/film.mp4'));
 if (!fs.existsSync(video)) { console.error(`no film at ${video}`); process.exit(1); }
 const REVIEW = path.join(SONG, 'out', 'review');
@@ -103,6 +109,46 @@ for (const sh of shotList) {
 }
 for (const s of stillStretches(motion, fps, G)) add('still', 'fail', s.startFrame, `nothing visibly moves for ${s.seconds} s (${fmtTime(s.from)} to ${fmtTime(s.to)})`, 'keep something alive through the hold: a slow push, drifting light or breathing type');
 for (const s of deadStops(mad, fps, { ...G, stillThreshold: G.stopThreshold, cutFrames })) add('dead-stop', 'fail', s.frame, `a fast move (${s.before} mean change per frame) stops dead within 2 frames (${s.after})`, 'ease the move into its landing over at least 0.3 s instead of stopping it');
+
+// ---------- live: something in the world moves, not only the camera ----------
+// small grey frames 0.1 s apart, each pair with the frame-wide move (and light change) taken out;
+// pairs across a cut aren't compared
+{
+  console.log('live: measuring motion of the world apart from the camera');
+  const LW = G.liveWidth, LH = G.liveHeight, LN = LW * LH;
+  const lag = Math.max(1, Math.round(G.liveLagSeconds * fps)), step = Math.max(1, Math.round(fps / 30));
+  const cutSet = new Set(cutFrames);
+  const crosses = (i) => { for (let k = i - lag + 1; k <= i; k++) if (cutSet.has(k)) return true; return false; };
+  const scores = await new Promise((resolve, reject) => {
+    const out = [], ring = []; let carry = Buffer.alloc(0), i = 0;
+    const p = spawn('ffmpeg', ['-loglevel', 'error', '-i', video, '-vf', `scale=${LW}:${LH}:flags=area,format=gray`, '-f', 'rawvideo', '-']);
+    p.stdout.on('data', (d) => {
+      carry = Buffer.concat([carry, d]);
+      while (carry.length >= LN) {
+        const f = Buffer.from(carry.subarray(0, LN)); carry = carry.subarray(LN);
+        ring.push(f); if (ring.length > lag + 1) ring.shift();
+        out.push(i >= lag && i % step === 0 && !crosses(i) ? liveResidual(ring[0], f, LW, LH).score : NaN);
+        i++;
+      }
+    });
+    p.on('close', (c) => (c === 0 ? resolve(out) : reject(Error('ffmpeg live pass failed'))));
+  });
+  for (const st of cameraOnlyStretches(scores, fps, G)) {
+    const sc = scenes.find((x) => st.from + 1e-6 >= x.from && st.from < x.to);
+    if (sc?.cameraOnly) continue;
+    add('live', 'fail', st.startFrame, `only the camera moves for ${st.seconds} s (${fmtTime(st.from)} to ${fmtTime(st.to)}): nothing in the world moves on its own`, `give the world a life of its own (the kit's dust, embers, wind, haze or flame in /kit/life.js, water, cloth, a figure) or parallax from a real move through depth, or give scene ${sc?.id ?? '?'} "cameraOnly": "<why>"`);
+  }
+}
+
+// ---------- rest-to-rest: shots whose camera starts and ends at a standstill ----------
+if (scenes.length) {
+  const list = scenes.map((s) => ({ id: s.id, scene: s.scene, params: s.params, from: s.from, to: s.to }));
+  const r = spawnSync('node', [path.join(HERE, 'render.mjs'), 'camera', '--song', SONG, '--scenes64', Buffer.from(JSON.stringify(list)).toString('base64')], { encoding: 'utf8', maxBuffer: 256 * 1024 * 1024 });
+  const tracks = (r.stdout ?? '').split('\n').filter((l) => l.startsWith('CAMERA ')).map((l) => JSON.parse(l.slice(7)));
+  if (r.status !== 0 || !tracks.length) add('rest-to-rest', 'warn', 0, 'the scenes\' cameras could not be read, so shots were not checked for starting and ending at rest', 'run node photoreal/render.mjs camera --song S --scenes \'[...]\' to see why');
+  for (const tr of tracks.filter((x) => x.error)) add('rest-to-rest', 'warn', Math.round((scenes.find((s) => s.id === tr.id)?.from ?? 0) * fps), `the camera of scene ${tr.id} could not be read: ${tr.error}`, 'check the scene module builds outside the renderer');
+  for (const p of restToRest(tracks.filter((x) => !x.error), scenes, G)) add('rest-to-rest', 'warn', Math.round(p.from * fps), `scene ${p.id}'s camera starts and ends at a standstill (${Math.round(p.head * 100)}% and ${Math.round(p.tail * 100)}% of its top speed), so its cuts join stopped cameras`, `let the shot enter or leave moving: rig() from /kit/motion.js with enter or exit 'moving' (the default), or give scene ${p.id} "rest": "<why>"`);
+}
 
 // ---------- cuts against the measured beats ----------
 if (!story && audio?.beats?.length && scenes.length > 1) {

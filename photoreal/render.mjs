@@ -165,6 +165,40 @@ if (mode === 'probe') {
   process.exit(0);
 }
 
+// Every scene's camera, sampled through the shot with nothing drawn: the speed of the picture's
+// movement in frame heights per second (camera turn and travel relative to what it looks at), for
+// the rest-to-rest check. Prints one "CAMERA {json}" line per scene.
+if (mode === 'camera') {
+  const list = JSON.parse(opt('scenes64') ? Buffer.from(opt('scenes64'), 'base64').toString('utf8') : opt('scenes', '[]'));
+  const rate = +opt('rate', 15);
+  const page = await browser.newPage({ viewport: { width: 64, height: 64 } });
+  // the premium page's import map resolves three and its add-ons for premium scenes too; with no
+  // scene named it draws nothing
+  await page.goto(`http://127.0.0.1:${port}/premium/index.html?kind=none`);
+  try {
+    for (const s of list) {
+      const r = await page.evaluate(async ([s, rate]) => {
+        const m = await import(`/song/scenes/${s.scene}.js`);
+        const sc = typeof m.default === 'function' ? await m.default({ ...(s.params ?? {}), id: s.id, from: s.from, to: s.to }) : m.default;
+        if (!sc.camera) return { id: s.id, speed: [] };
+        const dir = (c) => { const d = [c.target[0] - c.pos[0], c.target[1] - c.pos[1], c.target[2] - c.pos[2]]; const l = Math.hypot(...d); return [d.map((x) => x / l), l]; };
+        const n = Math.max(2, Math.round((s.to - s.from) * rate)), dt = 1 / 120, speed = [];
+        for (let i = 0; i <= n; i++) {
+          const t = Math.min(s.to - dt - 1e-4, s.from + 1e-4 + ((s.to - s.from) * i) / n);
+          const a = sc.camera(t), b = sc.camera(t + dt);
+          const [da, la] = dir(a), [db] = dir(b), fa = a.fov ?? 40, fb = b.fov ?? 40;
+          const turn = Math.acos(Math.min(1, da[0] * db[0] + da[1] * db[1] + da[2] * db[2])) / ((fa * Math.PI) / 180);
+          const travel = Math.hypot(a.pos[0] - b.pos[0], a.pos[1] - b.pos[1], a.pos[2] - b.pos[2]) / la;
+          speed.push((turn + travel + Math.abs(fa - fb) / fa) / dt);
+        }
+        return { id: s.id, speed };
+      }, [s, rate]).catch((e) => ({ id: s.id, error: String(e.message).slice(0, 300) }));
+      console.log('CAMERA ' + JSON.stringify(r));
+    }
+  } finally { await page.close(); server.closeAllConnections?.(); server.close(); await Promise.race([browser.close(), new Promise((r) => setTimeout(r, 10000))]); }
+  process.exit(0);
+}
+
 // The people of a scene, rendered by Blender as their own transparent layer (scenes/<name>.people.json
 // says who stands where, in what pose and light; the song's renderer script draws them). The camera
 // comes from the scene module itself, frame by frame, so the people sit exactly in the shader's world.

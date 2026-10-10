@@ -48,10 +48,29 @@ export function sceneKind(song, scene) {
   try { return /export\s+const\s+kind\s*=\s*['"](\w+)['"]/.exec(fs.readFileSync(path.join(song, 'scenes', `${scene}.js`), 'utf8'))?.[1] ?? null; } catch { return null; }
 }
 
+// The engine's kit (web/kit/: the camera rig, motion helpers, the life kit) belongs to the keys of
+// the scenes that import it, and of no other, so adding to the kit never re-renders a finished film.
+// Returns the kit files a set of song files imports (as '/kit/<file>'), followed through the kit.
+export function kitDepsOf(web, files) {
+  const kit = path.join(web, 'kit');
+  const out = new Set();
+  const visit = (src) => {
+    for (const m of src.matchAll(/(?:from|import)\s*\(?\s*['"]\/kit\/([^'"]+)['"]/g)) {
+      const f = path.join(kit, m[1]);
+      if (out.has(f) || !fs.existsSync(f)) continue;
+      out.add(f); visit(fs.readFileSync(f, 'utf8'));
+    }
+  };
+  for (const f of files) if (fs.existsSync(f)) visit(fs.readFileSync(f, 'utf8'));
+  return [...out].sort();
+}
+
 export function makeKeys(song, { web = WEB, legacyWeb } = {}) {
-  // web/premium/ only matters to premium scenes, so adding to it never re-renders an existing film
+  // web/premium/ only matters to premium scenes, so adding to it never re-renders an existing film;
+  // web/kit/ only to the scenes that import from it
   const premiumDir = path.join(web, 'premium') + path.sep;
-  const allWeb = filesUnder(web);
+  const kitDir = path.join(web, 'kit') + path.sep;
+  const allWeb = filesUnder(web).filter((f) => !f.startsWith(kitDir));
   const webFiles = allWeb.filter((f) => !f.startsWith(premiumDir));
   const premiumFiles = allWeb.filter((f) => f.startsWith(premiumDir));
   const premiumHash = hashFiles(crypto.createHash('sha256'), premiumFiles, web).digest('hex');
@@ -86,6 +105,8 @@ export function makeKeys(song, { web = WEB, legacyWeb } = {}) {
     const files = new Set(sceneFiles(s.scene));
     if (hasLayer(s.scene)) for (const f of depsOf(song, lyricFile(s.scene))) files.add(f);
     hashFiles(h, [...files].sort(), song);
+    const kit = kitDepsOf(web, [...files]);
+    if (kit.length) hashFiles(h.update('kit'), kit, web);
     return h.update(JSON.stringify(s.params ?? {})).update(window(s, fps)).digest('hex');
   }
   function plate(s, fps, samples) {
@@ -93,6 +114,8 @@ export function makeKeys(song, { web = WEB, legacyWeb } = {}) {
     const h = crypto.createHash('sha256').update(layered ? 'plate' : 'baked').update(layered ? enginePlate : engineAll);
     if (isPremium(s.scene)) h.update('premium').update(premiumHash);
     hashFiles(h, sceneFiles(s.scene), song);
+    const kit = kitDepsOf(web, sceneFiles(s.scene));
+    if (kit.length) hashFiles(h.update('kit'), kit, web);
     return h.update(JSON.stringify(s.params ?? {})).update(`${window(s, fps)}-${samples}`).digest('hex');
   }
   function layer(s, fps, samples) {

@@ -111,11 +111,65 @@ command in `ARK_CRITIC_CMD`.
 The measured gates (`check.mjs`, thresholds overridable under `"gates"` in film.json): every lyric
 word at least 4.5:1 against what is actually behind it once sung; no words running together or
 overlapping, and no lines on top of each other; no stretch over 0.5 s with nothing visibly moving;
-no fast move that stops dead; no word moving before it has been still for 8 frames; every cut on a
+no fast move that stops dead; no stretch over 1.5 s where only the camera moves (a still pushed,
+panned or breathing light: the `live` gate takes the frame-wide move and any light change out of
+each pair of frames and fails when nothing is left; a scene can give `"cameraOnly": "<why>"`); a
+warning for a shot whose camera starts and ends at a standstill (`rest-to-rest`, read from the
+scene's camera; a scene can give `"rest": "<why>"`); no word moving before it has been still for 8 frames; every cut on a
 measured beat or up to 2 frames before it (a scene can give `"offBeat": "why"`); no shaking frame in
 a scene that hasn't opted in (see [Shake](#shake)); and no lyric layer over the picture in a premium
 scene that hasn't opted in (see [Words in the scene](#words-in-the-scene)). A shot over 8 s warns
 unless its scene gives `"hold": "<why>"`; a long camera move through one world is allowed.
+
+## Motion kit
+
+`/kit/motion.js` is the shared way to move a camera or anything else, after Lasseter's principles of
+animation. Most of our shots used to be one ease from a standstill to a standstill: measured over 263
+shots of six code films, 70% started and ended at rest, so most cuts joined two stopped cameras, and
+the paths were straight lines. The rig fixes that by default.
+
+```js
+import { rig, spring, anticipate, follow, stagger, weight, move } from '/kit/motion.js';
+camera: rig({
+  from: P.from, to: P.to,
+  path: [[0, 1.6, 0], [2, 1.7, 4], [3, 1.6, 9]],   // passed through on a curve, at an even pace
+  look: { ahead: 6 },                                // or fixed [x, y, z], or points moved along
+  enter: 'moving', exit: 'moving',                   // the defaults; 'rest' or a speed multiple
+  handheld: 0.6,                                     // 0 for a tripod
+}),
+```
+
+- **Slow in and out only where a move really starts or stops.** `enter` and `exit` default to
+  `'moving'`, so a shot starts and ends at its travelling speed. `'rest'` eases to a standstill; at a
+  rest exit the operator carries a hair past the mark and comes back (`settle`, critically damped:
+  one soft return, never a wobble). To join two shots of one moment, give the second `enter` the
+  speed the first left at (`camera.speed(t)`).
+- **Arcs.** Paths are centripetal Catmull-Rom curves through the points, measured by arc length.
+  `bank` rolls into turns for a crane or a drone.
+- **Hand-held.** Layered natural noise in position and aim plus a slow breath, about 1.5 cm and
+  0.15 degrees at `handheld: 1` (`metres` scales it to a scene's units). It replaces the two-sine
+  `drift()`. It is not shake: nothing in it is periodic or fast, and the shake rules still apply.
+- **Helpers.** `spring(t, t0, { freq, damping })` (a hit that settles), `anticipate(t, t0, { lead,
+  back, dur })` (a small wind-up the other way before the move), `follow(fn, t, lag)` (a lagged copy
+  of a motion that keeps going after it stops), `stagger(i, n, spread)` (parts of a whole starting one
+  after another, a little unevenly), and `weight.heavy | normal | light` with `move(t, t0, t1, w)`
+  (a stone is slow to get going and lands firmly; cloth gets going at once and floats in).
+
+## Life kit
+
+`/kit/life.js` holds the secondary action that makes a frame read as footage, in GLSL
+(`LIFE_GLSL`, added to a scene's `frag` before its own code) and in JS for uniforms:
+`lifeMotes` (dust turning in a box of air, taking the scene's light through `LIFE_LIGHT(p)`),
+`lifeEmbers` (sparks rising off a fire, cooling as they go), `lifeFlicker` / `flicker()` (a flame
+that never repeats), `lifeGust` and `lifeSway` (wind that travels across a field, the tip of each
+stalk lagging its root), `lifeShimmer` (heat haze), `lifeHaze` (drifting density for light shafts)
+and `lifeGlow` (a glowing point hidden behind anything nearer). Pass the depth of the scene's hit so
+particles go behind what stands in front. Keep them restrained: dust is seen against shadow, never
+as fireflies against the sky, and nothing reads as rain.
+
+Files under `web/kit/` belong to the cache keys of the scenes that import them (followed through
+kit-to-kit imports) and of no other scene, so adding to or changing the kit never re-renders a
+finished film that doesn't use it.
 
 ## Shake
 
