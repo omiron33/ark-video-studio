@@ -280,14 +280,16 @@ async function pictureCheck(w, list) {
   const items = list.map((sg) => ({ id: sg.id, scene: sg.scene, params: sg.params, from: sg.from, to: sg.to, t: Math.round((sg.from + sg.to) / 2 * fps) / fps }));
   const scenes64 = Buffer.from(JSON.stringify(items)).toString('base64');
   const remoteDir = `${m.root}/out/check-${w.tag}`;
-  const c = m.command(w.dirs, `check-${w.tag}`, ['checkstills', '--scenes64', scenes64, '--samples', '2', '--out', remoteDir]);
+  // 8 sub-frames each side: at 2 the per-pixel sampling noise alone can pull two matching pictures under 30 dB
+  const cs = String(+opt('check-samples', 8));
+  const c = m.command(w.dirs, `check-${w.tag}`, ['checkstills', '--scenes64', scenes64, '--samples', cs, '--out', remoteDir]);
   // A remote Chrome that loses its WebGL context can be blocked from making a new one and never
   // answer, so each side gets a time limit (2 min plus 1 min per scene); a check that runs out is
   // killed and its missing scenes simply stay off that machine.
   const limitMs = (+opt('check-timeout', 0) || 120 + 60 * items.length) * 1000;
   const run = (cmd, args) => new Promise((res) => { const p = spawn(cmd, args); let stdout = ''; const timer = setTimeout(() => { console.log(`${m.name}: the picture check ran past ${Math.round(limitMs / 1000)} s and was stopped`); p.kill('SIGKILL'); }, limitMs); p.stdout.on('data', (d) => { stdout += d; }); p.stderr.on('data', () => {}); p.on('close', (status) => { clearTimeout(timer); res({ status, stdout }); }); });
   // both machines draw at the same time
-  const [, theirs] = await Promise.all([run('node', [RENDER, 'checkstills', '--song', SONG, '--scenes64', scenes64, '--samples', '2', '--out', path.join(dir, 'mac')]), run(c.cmd, c.args)]);
+  const [, theirs] = await Promise.all([run('node', [RENDER, 'checkstills', '--song', SONG, '--scenes64', scenes64, '--samples', cs, '--out', path.join(dir, 'mac')]), run(c.cmd, c.args)]);
   const lostThere = new Set((theirs.stdout ?? '').split('\n').filter((l) => l.startsWith('CHECK ')).map((l) => JSON.parse(l.slice(6))).filter((x) => x.lost).map((x) => x.id));
   const out = {};
   for (const it of items) {

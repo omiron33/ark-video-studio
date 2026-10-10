@@ -1,7 +1,7 @@
 // The machines a film can render on. This Mac is always one. Others are listed in a local file that
 // never goes in the repository, because it holds hostnames and addresses:
 //   ~/.config/ark/machines.json (or $ARK_MACHINES)
-//   { "machines": [ { "name": "omipc", "kind": "helper", "helper": "omipc", "dashboard": "http://<host>:5299", "minFreeVramMB": 1500 } ] }
+//   { "machines": [ { "name": "omipc", "kind": "helper", "helper": "omipc", "dashboard": "http://<host>:5299", "minFreeVramMB": 1500, "angle"?: "vulkan" } ] }
 // A "helper" machine is a Windows PC reached through a small command on this Mac with the verbs
 // `run "<cmd.exe command>"`, `put <local> <remote>` and `get <remote> <local>` (for example the
 // `omipc` helper, which wraps SSH over Tailscale). Nothing is installed there beyond Node, Chrome and
@@ -173,7 +173,10 @@ export class HelperMachine {
   // The command that runs one render job there; its heartbeat streams back on stdout.
   command({ engine, song }, job, renderArgs) {
     const args = renderArgs.map((a) => (/[\s&|<>^"]/.test(a) ? winq(a) : a)).join(' ');
-    return { cmd: this.helper, args: ['run', `cd /d ${winq(engine)} && node photoreal/render.mjs ${args} --song ${winq(song)} --job ${job} --heartbeat -`] };
+    // "angle" in the machine's config picks Chrome's graphics backend there (OmiPC loses the WebGL
+    // context on long ray-marched shaders under its default Direct3D 11, and draws them under Vulkan)
+    const env = this.angle ? `set ARK_ANGLE=${this.angle}&& ` : '';
+    return { cmd: this.helper, args: ['run', `${env}cd /d ${winq(engine)} && node photoreal/render.mjs ${args} --song ${winq(song)} --job ${job} --heartbeat -`] };
   }
 
   // Stop a job: its Node worker and the Chrome it started.
