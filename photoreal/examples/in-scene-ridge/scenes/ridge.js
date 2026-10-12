@@ -2,18 +2,25 @@
 // burns into the near face of a ridge just under its crest, following the crest as it rises and
 // falls. The letters are embers in the rock: they light the slope around them, take the terrain's
 // contour lines across them, fall away in the haze with distance and are hidden where a nearer spur
-// crosses in front. Each word catches as it is sung. Nothing is laid over the picture.
-//   node photoreal/render.mjs stills --song photoreal/examples/in-scene-ridge --scene ridge --t 5.5
+// crosses in front. Each word catches as it is sung, and when "Ararat" is sung the whole cut
+// flares and the survey lines run hot, keyed by a sung cue (/kit/sung.js), not by seconds. Nothing
+// is laid over the picture.
+//   node photoreal/render.mjs stills --song photoreal/examples/in-scene-ridge --scene ridge --t 3.2,5.5
+import lyrics from '/timing.js';
+import { sung } from '/kit/sung.js';
+const S = sung(lyrics, 'upon the [mountains] of [Ararat]');
 const X0 = -7, X1 = 15;             // the text runs along the ridge from x = -7 to 15 m
 const V = 2.0;                      // ...and from the crest down to 2 m below it
 const TW = 8192, TH = Math.round(TW * V / (X1 - X0));   // same pixels per metre both ways
 
-const ease = (x) => { x = Math.min(1, Math.max(0, x)); return 1 - (1 - x) ** 3; };
-
 export default (P) => ({
   name: 'ridge', from: P.from, to: P.to,
   textSize: [TW, TH],
+  uniforms: { uFlare: 0 },
+  // the rock answers the sung words: a strike when "Ararat" lands, dying away over a second
+  update(t, u) { u.uFlare.value = S.hit(t, 'Ararat', { attack: 0.06, decay: 0.5 }); },
   frag: /* glsl */ `
+uniform float uFlare;
 // the ridge: a crest wandering along x, a long slope toward the camera (+z), detail from fbm
 float crestZ(float x) { return 1.6 * sin(x * 0.21) + 0.7 * sin(x * 0.53 + 1.0); }
 float crestH(float x) { return 3.2 + 0.9 * sin(x * 0.17 + 0.4) + 0.35 * sin(x * 0.61); }
@@ -71,8 +78,8 @@ vec3 shade(vec2 fc) {
     vec4 tx = texture(uText, uv);
     vec4 glow = texture(uTextShade, uv) * smoothstep(0.0, 0.08, uv.y) * smoothstep(1.0, 0.92, uv.y);
     // the letters light the rock around them, warmest close in
-    lit = sat(glow.a * 3.0) * near;
-    col += vec3(1.0, 0.36, 0.08) * 0.45 * glow.a * near * (0.4 + 0.6 * sat(dot(n, vec3(0.0, 0.3, 1.0))));
+    lit = sat(glow.a * 3.0) * near * (1.0 + 0.8 * uFlare);
+    col += vec3(1.0, 0.36, 0.08) * (0.45 + 0.5 * uFlare) * glow.a * near * (0.4 + 0.6 * sat(dot(n, vec3(0.0, 0.3, 1.0))));
     // ember core: white-gold where the cut is deepest, orange at its edges, contour lines across it
     vec3 ember = mix(vec3(1.0, 0.30, 0.05) * 1.4, vec3(1.0, 0.72, 0.38) * 1.9, smoothstep(0.6, 1.0, tx.a) * (0.6 + 0.4 * fbm(p.xy * 9.0 + uTime * 0.7, 3)));
     ember *= 1.0 - 0.35 * contour;
@@ -91,15 +98,15 @@ vec3 shade(vec2 fc) {
     return { pos: [x, 2.4, 19.0], target: [x + 2.5, 2.6, 0.5], fov: 38, roll: 0 };
   },
   post() { return { exposure: 1.1, bloom: 0.14, threshold: 0.9, vignette: 0.55, grain: 0.03, ca: 0.25 }; },
-  drawText(ctx, t, lyrics) {
+  drawText(ctx, t) {
     const px = (x) => ((x - X0) / (X1 - X0)) * TW;
     const size = Math.round(TH * 0.56);
     ctx.font = `600 ${size}px "EB Garamond"`;
     ctx.textBaseline = 'alphabetic';
     let x = px(-3.0);
-    for (const w of lyrics.words) {
+    for (const w of S.each(t)) {
       // each word catches as it is sung and burns up to full over 0.25 s
-      const k = ease((t - w.start + 0.05) / 0.25);
+      const k = w.k;
       if (k > 0) { ctx.fillStyle = `rgba(255,255,255,${k.toFixed(3)})`; ctx.fillText(w.w, x, TH * 0.66); }
       x += ctx.measureText(w.w + ' ').width;
     }

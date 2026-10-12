@@ -155,6 +155,37 @@ camera: rig({
   after another, a little unevenly), and `weight.heavy | normal | light` with `move(t, t0, t1, w)`
   (a stone is slow to get going and lands firmly; cloth gets going at once and floats in).
 
+## Sung cues
+
+`/kit/sung.js` keys motion to the words as they are sung, after ManimGX's `say()`. Write the lyric
+as it is sung and put in brackets the words something happens on; each bracket is a beat from its
+first word's onset to its last word's end, read from `data/lyrics.json`. A new take or a
+re-measured lyric moves every beat with it, and the scene says in words, not seconds, what lands
+where.
+
+```js
+import lyrics from '/timing.js';
+import { sung } from '/kit/sung.js';
+// in the scene's default export (P) => ...
+const S = sung(lyrics, 'let us make [brick] and [burn them throughly]', { within: [P.from, P.to] });
+S.on(t, 'brick')            // 0..1 over the beat (lead, dur, ease): a brick stamped as it is sung
+S.hit(t, 1)                 // a strike at "burn", dying away (attack, decay): the kiln flares
+S.held(t, 1)                // 1 while the beat is sung
+S.lit(t, 'throughly')       // one word catching as it is sung; S.each(t) gives every word with k
+rig({ from, to, path, move: S.span('burn them throughly', { lead: 0.3 }) })   // a move on a phrase
+```
+
+Use it wherever a scene would otherwise write a time: words carved, burned or lit in the world
+(`drawText`, an `htmlText` span, a shader uniform set in `update`), what the world does on a word
+(a flare, a stamp, a door giving, light catching a line) and camera beats, and in a lyric layer.
+The picture and the type then key off the same sung words. A cue that is not in the measured
+lyrics throws when the scene loads, naming the nearest match, so a misheard or changed word stops
+the render instead of landing on the wrong moment. `after` picks a later repeat of a refrain and
+`within` (the scene's `from` and `to`) keeps a cue from landing on the same words elsewhere in the
+song. `sung.js` imports nothing, so it adds only itself to the keys of the scenes that use it.
+`photoreal/examples/in-scene-ridge` uses it: each word burns as it is sung and the cut flares on
+"Ararat".
+
 ## Life kit
 
 `/kit/life.js` holds the secondary action that makes a frame read as footage, in GLSL

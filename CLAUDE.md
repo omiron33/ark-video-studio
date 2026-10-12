@@ -14,7 +14,7 @@ Everything in AGENTS.md applies. This file only adds what differs when Claude dr
 Every composition Claude writes must meet these before any review:
 
 1. Deterministic and seekable. Frame `t` depends only on `t`, the project JSON and its assets. No `Date.now()`, unseeded randomness or wall-clock timers; HyperFrames timelines stay paused and are driven by seek.
-2. Words are time-bound to their measured cues. Motion keyframes derive from word IDs and measured beats, never from a guessed grid.
+2. Words are time-bound to their measured cues. Motion keyframes derive from word IDs and measured beats, never from a guessed grid. In photoreal scenes, key word and world beats with sung cues (`/kit/sung.js`, photoreal/README.md#sung-cues) rather than written seconds.
 3. Motion is physical. Prefer spring or measured-inertia easing over stock ease curves, and let held notes breathe.
 4. The audio plan comes first. Mark accents, phrases and held notes from the analysis before choreographing.
 5. One brief per scene, in the structure `ark-director-brief` defines, recorded in `direction`.
