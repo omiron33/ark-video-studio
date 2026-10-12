@@ -26,6 +26,7 @@ try {
   // a scene module exports a scene, or a factory that builds one from the film's parameters
   const build = async (m) => (typeof m.default === 'function' ? await m.default(sceneParams) : m.default);
   const scene = await build(mod);
+  if (params.get('nowords') === '1') { globalThis.ARK_NO_WORDS = true; scene.drawText = undefined; }   // key-neutral: nowords
   const lyric = lyricMod ? await build(lyricMod) : null;
   const engine = new PremiumEngine(document.getElementById('c'));
   await engine.loadPremium(params.get('kind') ?? 'three', scene, lyrics);

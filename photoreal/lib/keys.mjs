@@ -30,7 +30,9 @@ export function depsOf(song, file, seen = new Set()) {
 // The engine learned to draw at other sizes by reading its size from the page URL. That line is hashed
 // as the constant it replaced, so every segment rendered before keeps its key; a size other than
 // 1920x1080 enters the key through the segment's window (see window() below).
-const KEY_NEUTRAL = [[/^export const \[W, H\] = \(new URLSearchParams.*key-neutral.*$/m, 'export const W = 1920, H = 1080;']];
+// The photorealistic setting's no-words switch (?nowords=1) is hashed as the lines it was added to, so
+// adding it re-renders nothing.
+const KEY_NEUTRAL = [[/^export const \[W, H\] = \(new URLSearchParams.*key-neutral.*$/m, 'export const W = 1920, H = 1080;'], [/^.*\/\/ key-neutral: nowords\n/gm, '']];
 const keyBytes = (f) => {
   if (!f.endsWith('.js')) return fs.readFileSync(f);
   let t = fs.readFileSync(f, 'utf8');

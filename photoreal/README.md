@@ -339,6 +339,40 @@ To rebuild a few scenes all-out inside a film rendered at standard, give those s
 film's frame rate into `out/segments-premium/`, and the join stitches them in; every other
 segment stays cached.
 
+## Photorealistic setting (generated)
+
+The tiers above are pure code. The photorealistic setting is separate and is **generated**: MiniMax
+H3 paints every pixel except the in-scene words, steered by the code render. It never changes a
+tier's segments, keys or output.
+
+```sh
+node photoreal/photorealistic.mjs --song ../my-song [--only 07] [--from 12 --to 20] [--look none|code|<image>]
+```
+
+How it works (Code Video Model's training-free early-step conditioning,
+github.com/code-video-model/CodeVideoModel, Apache 2.0):
+
+1. **Proxy.** Each scene renders at 960x544, 24 fps, with its words left out (`render.mjs --nowords`).
+2. **H3.** On the machine in `~/.config/ark/machines.json` that has a ComfyUI service, through its GPU
+   dashboard queue. The proxy is a reference video for only the first 5 of 20 denoise steps, so the
+   code fixes layout, camera, timing and motion and H3 draws the surfaces, light and people. Scenes
+   longer than 15 s are made in pieces; each piece starts from the last 5 frames of the one before.
+3. **Words stay code.** The scene renders at full size with and without its words. Where the two
+   differ (the letters and the light they cast) the code pixels are laid over H3's picture, so H3
+   never repaints a letter. Overlay lyric layers (`scenes/<name>.lyric.js`) composite as usual.
+4. **Output.** H3's 24 fps picture is upscaled to 1920x1080. `out/photorealistic/<id>.mp4` per scene,
+   `out/film-photorealistic.mp4` when every scene is done.
+
+Each scene gives what it shows as live action in film.json:
+`"photorealistic": { "prompt": "..." }`. `--look` picks the style reference. `none` (the default)
+is the prompt only, so the repo stays code and text. `code` is the scene's own first code frame.
+An image file means the repo has to ship that image.
+
+What a reader should know: a photorealistic film is not code-only. Its layout and motion rebuild
+from the repo, but its pixels need H3 (a separate ~20 GB model under the MiniMax H3 Community
+License) on an NVIDIA GPU, and the same seed on another GPU or driver gives a close but not identical
+picture.
+
 ## Premium scenes
 
 A scene that declares `export const kind = 'three'` is a Three.js scene rendered through

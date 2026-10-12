@@ -56,6 +56,7 @@ export async function htmlText({ width = 2048, height = 512, css = '', html = ''
   }
 
   async function set(nextHtml, nextCss) {
+    if (globalThis.ARK_NO_WORDS) nextHtml = '';   // key-neutral: nowords
     if (nextCss != null) el.style.cssText = nextCss;
     const key = `${nextHtml}|${el.style.cssText}`;
     if (key === last) return;                 // unchanged since the last frame: no repaint

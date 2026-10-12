@@ -87,7 +87,7 @@ async function openScene(scene, params, tries = 1) {
   page.on('requestfailed', () => {});
   const p64 = Buffer.from(params).toString('base64');
   const kind = sceneKind(SONG, scene);
-  await page.goto(`http://127.0.0.1:${port}/${kind ? `premium/index.html?kind=${kind}&` : '?'}scene=${scene}&params=${encodeURIComponent(p64)}${lyricOf(scene) ? '&lyric=1' : ''}${RES !== '1920x1080' ? `&res=${RES}` : ''}`);
+  await page.goto(`http://127.0.0.1:${port}/${kind ? `premium/index.html?kind=${kind}&` : '?'}scene=${scene}&params=${encodeURIComponent(p64)}${lyricOf(scene) ? '&lyric=1' : ''}${argv.includes('--nowords') ? '&nowords=1' : ''}${RES !== '1920x1080' ? `&res=${RES}` : ''}`);
   await page.waitForFunction(() => window.G && (window.G.ready || window.G.error), null, { timeout: 120000 });
   const err = await page.evaluate(() => window.G.error);
   if (err) {
