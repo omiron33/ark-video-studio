@@ -262,7 +262,7 @@ export async function createSong(options, serviceOverrides = {}) {
       const attempt = { number: run.attempts.length + 1, startedAt: new Date().toISOString(), repairsAllowed: pass < maxPasses }; run.attempts.push(attempt); await save();
       const attemptDir = path.join(outDir, 'review', `attempt-${String(attempt.number).padStart(2, '0')}`);
       const render = await stage('render', () => services.renderProject({ projectPath: manifestPath, outPath: videoPath, scale: request.scale, onProgress: options.onProgress }));
-      attempt.render = { sha256: render.sha256, seconds: render.seconds, metadataPath: `${videoPath}.render.json` }; await save();
+      attempt.render = { sha256: render.sha256, seconds: render.seconds, metadataPath: `${videoPath}.render.json` }; attempt.critic = render.critic; run.critic = render.critic; await save();
       const audio = await stage('audio-review', () => services.reviewAudio({ projectPath: manifestPath, videoPath, outDir: path.join(attemptDir, 'audio'), repair: pass < maxPasses, maxAttempts: 3, python: options.python ?? run.alignment?.python, model: options.model, backend: options.backend }));
       attempt.audio = { status: audio.status, reportPath: audio.reportPath, projectChanged: audio.projectChanged, repairs: audio.repairs, checks: audio.checks }; await save();
       if (audio.projectChanged) {
@@ -320,7 +320,7 @@ export async function createSong(options, serviceOverrides = {}) {
       const finished = attempt.gate.passed === true && audio.status === 'passed' && visual.status === 'passed';
       attempt.outcome = finished ? 'finished' : 'quality-failed';
       run.status = finished ? 'finished' : 'quality_failed';
-      run.result = { videoPath, projectPath: manifestPath, gauntletPath: gauntlet.reportPath, audioReviewPath: audio.reportPath, visualReviewPath: visual.reviewPath, passed: finished, gate: attempt.gate, nextAction: finished ? null : 'Inspect the saved concrete quality findings. Repair the portable project or resolve the reported model/input failure, then resume this same run.' };
+      run.result = { critic: attempt.critic, videoPath, projectPath: manifestPath, gauntletPath: gauntlet.reportPath, audioReviewPath: audio.reportPath, visualReviewPath: visual.reviewPath, passed: finished, gate: attempt.gate, nextAction: finished ? null : 'Inspect the saved concrete quality findings. Repair the portable project or resolve the reported model/input failure, then resume this same run.' };
       run.completedAt = new Date().toISOString(); await save(); return run;
     }
     throw new Error('Bounded repair passes exhausted');
@@ -359,7 +359,7 @@ export async function finalizeRun(options, serviceOverrides = {}) {
     const event = { checkedAt: new Date().toISOString(), method: 'existing-independent-visual-review', passed, reportPath: path.resolve(reportPath), gate: { passed, status: passed ? 'independently_reviewed' : pendingAssets ? 'required_assets_pending' : !creative.passed ? 'creative_policy_failed' : gate.passed ? 'independent_finalization_failed' : gate.status, reasons }, creative, binding: gate.currentBinding };
     run.finalizations ??= []; run.finalizations.push(event);
     run.status = passed ? 'finished' : 'quality_failed';
-    run.result = { videoPath: run.videoPath, projectPath: run.projectPath, gauntletPath: path.resolve(reportPath), audioReviewPath: gate.machineAudio?.path, visualReviewPath: gate.machineVisual?.path, passed, gate: event.gate, finalizationMethod: event.method, nextAction: passed ? null : 'Resolve the saved current gate failures before finalizing. Prior local-model reviews remain recorded.' };
+    run.result = { critic: run.critic ?? run.attempts?.at(-1)?.critic, videoPath: run.videoPath, projectPath: run.projectPath, gauntletPath: path.resolve(reportPath), audioReviewPath: gate.machineAudio?.path, visualReviewPath: gate.machineVisual?.path, passed, gate: event.gate, finalizationMethod: event.method, nextAction: passed ? null : 'Resolve the saved current gate failures before finalizing. Prior local-model reviews remain recorded.' };
     delete run.error; delete run.nextAction;
     run.updatedAt = new Date().toISOString();
     if (passed) run.completedAt = run.updatedAt; else delete run.completedAt;

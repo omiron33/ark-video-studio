@@ -152,6 +152,9 @@ export async function renderProject({ projectPath, outPath, sectionId, scale = 1
     await rename(final, output);
     const report = { version: 1, projectPath: manifestPath, output, sha256, sourceRevision, sourceRevisionEnd, audioSha256: audioHash, audioStart, sourceStart: firstFrame / project.fps, sourceEnd: lastFrame / project.fps, duration, width: profile.width, height: profile.height, fps: project.fps, profile, sectionId: sectionId ?? null, frames: lastFrame - firstFrame, sections: chunks.map(c => ({ id: c.id, key: c.key, cacheHit: c.cacheHit, frames: c.frames, startFrame: c.startFrame, endFrame: c.endFrame, seconds: c.seconds, artifact: c.video, sha256: c.metadata.sha256 })), startedAt, completedAt: new Date().toISOString(), seconds: (performance.now() - started) / 1000, bytes: (await stat(output)).size, validation: { technical: 'passed', visual: 'pending-independent-review' } };
     await atomicJson(`${output}.render.json`, report);
+    const { reviewRenderedArtifact } = await import('./studio-critic.mjs');
+    report.critic = await reviewRenderedArtifact(report, { onProgress });
+    await atomicJson(`${output}.render.json`, report);
     onProgress({ type: 'complete', output, sha256, seconds: report.seconds, cacheHits: chunks.filter(c => c.cacheHit).length });
     return report;
   } finally { await rm(tempDir, { recursive: true, force: true }); }

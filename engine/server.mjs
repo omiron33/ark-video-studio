@@ -25,7 +25,7 @@ async function sendFile(request, response, file) {
     createReadStream(file, { start, end }).pipe(response);
   } else { response.writeHead(200, { ...headers, 'Content-Length': info.size }); createReadStream(file).pipe(response); }
 }
-export async function startServer({ projectPath, port = 4177, host = '127.0.0.1' }) {
+export async function startServer({ projectPath, port = 4177, host = '127.0.0.1', services = {} }) {
   if (!['127.0.0.1', 'localhost', '::1'].includes(host)) throw new Error('Studio binds to loopback only');
   const manifestPath = path.resolve(projectPath);
   await loadProject(manifestPath);
@@ -39,7 +39,7 @@ export async function startServer({ projectPath, port = 4177, host = '127.0.0.1'
       if (!allowedHost.has(request.headers.host)) return json(403, { error: 'Invalid Host header' });
       if (!['GET', 'HEAD'].includes(request.method) && request.headers.origin && !allowedHost.has(new URL(request.headers.origin).host)) return json(403, { error: 'Cross-origin editing is forbidden' });
       if (request.method === 'GET' && url.pathname === '/') return await sendFile(request, response, path.join(engineDir, 'preview.html'));
-      if (request.method === 'GET' && ['/engine/visual.mjs', '/engine/story-visual.mjs'].includes(url.pathname)) return await sendFile(request, response, path.join(engineDir, path.basename(url.pathname)));
+      if (request.method === 'GET' && ['visual.mjs','story-visual.mjs','camera-choreography.mjs','semantic-choreography.mjs','sculptural-choreography.mjs','genesis-choreography.mjs','field-guide-visual.mjs','relief-visual.mjs','garden-visual.mjs'].map(name => '/engine/' + name).includes(url.pathname)) return await sendFile(request, response, path.join(engineDir, path.basename(url.pathname)));
       if (request.method === 'GET' && url.pathname === '/api/project') {
         const { project, validation } = await loadProject(manifestPath);
         const view = structuredClone(project);
@@ -69,7 +69,7 @@ export async function startServer({ projectPath, port = 4177, host = '127.0.0.1'
         const outPath = path.join(path.dirname(manifestPath), 'out', `${safeName}-${jobId.slice(0, 8)}.mp4`);
         const job = { id: jobId, status: 'running', progress: null, result: null, error: null };
         jobs.set(jobId, job); activeRender = true;
-        renderProject({ projectPath: manifestPath, outPath, sectionId: options.sectionId, scale: options.scale ?? 0.5, force: options.force === true, onProgress: progress => { job.progress = progress; } }).then(result => { job.status = 'complete'; job.result = result; job.downloadUrl = `/api/jobs/${jobId}/video`; }, error => { job.status = 'failed'; job.error = error.message; }).finally(() => { activeRender = false; });
+        (services.renderProject ?? renderProject)({ projectPath: manifestPath, outPath, sectionId: options.sectionId, scale: options.scale ?? 0.5, force: options.force === true, onProgress: progress => { job.progress = progress; } }).then(result => { job.status = 'complete'; job.result = result; job.downloadUrl = `/api/jobs/${jobId}/video`; }, error => { job.status = 'failed'; job.error = error.message; }).finally(() => { activeRender = false; });
         return json(202, { jobId, id: jobId, status: 'running', poll: `/api/jobs/${jobId}` });
       }
       const videoMatch = url.pathname.match(/^\/api\/jobs\/([^/]+)\/video$/);
