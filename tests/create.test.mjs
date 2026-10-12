@@ -29,7 +29,7 @@ function services(log = []) {
   return {
     detectAudioEvents: async () => ({ timebase: 'source', beats: [{ time: .5, strength: .7, kind: 'measured_onset' }] }),
     directProject: async ({ project }) => { log.push('plan'); return { project, method: 'test-only-director', evidence: {} }; },
-    renderProject: async ({ outPath }) => { log.push('render'); await writeFile(outPath, 'test-only encoded output'); return { sha256: 'test-only', seconds: .01 }; },
+    renderProject: async ({ outPath }) => { log.push('render'); await writeFile(outPath, 'test-only encoded output'); return { sha256: 'test-only', seconds: .01, critic: { status: 'no_benchmarked_candidates', reportId: 'encoded-test-report', aestheticApproval: false } }; },
     reviewAudio: async () => { log.push('audio'); return { status: 'passed', reportPath: '/test/audio.json', checks: [] }; },
     reviewVideo: async () => { log.push('technical'); return { reportPath: '/test/gauntlet.json' }; },
     reviewVisual: async () => { log.push('visual'); return { status: 'passed', scores: {}, reviewPath: '/test/visual.json' }; },
@@ -79,6 +79,7 @@ test('create portable intake copies fonts, invokes measured reviews, and records
   for (const font of fonts) await access(path.resolve(path.dirname(result.projectPath), font.src));
   await access(path.join(path.dirname(result.projectPath), 'assets', 'OFL-bebasneue.txt'));
   assert.equal(result.attempts.length, 1); assert.equal(result.result.passed, true);
+  assert.equal(result.result.critic.reportId, 'encoded-test-report'); assert.deepEqual(result.attempts[0].critic, result.result.critic); assert.equal(result.result.critic.aestheticApproval, false);
 });
 
 test('repair rerenders before reviewing the changed project, and final pass cannot repair', async t => {
