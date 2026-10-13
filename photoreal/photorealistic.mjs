@@ -31,16 +31,44 @@ const argv = process.argv.slice(2);
 const opt = (k, d) => { const i = argv.indexOf('--' + k); return i >= 0 ? argv[i + 1] : d; };
 const SONG = path.resolve(opt('song', '.'));
 const film = JSON.parse(fs.readFileSync(path.join(SONG, 'film.json'), 'utf8'));
-const only = opt('only')?.split(',');
-const scenes = film.scenes.filter((s) => !only || only.includes(s.id));
-if (!scenes.length) { console.error('no scenes match --only'); process.exit(1); }
 const keep = +opt('keep', 5), steps = +opt('steps', 20), seed = +opt('seed', 42), look = opt('look', 'none');
 const wordSamples = opt('word-samples', '16');
+const maxFrames = Math.min(+opt('max-frames', H3.maxFrames), H3.maxFrames);
+// --stage proxy|words|h3|composite|all: run one part for every unit, so the code passes can run on one
+// machine while H3 runs on another (h3 waits for each unit's proxy; composite needs everything)
+const stage = opt('stage', 'all');
+// --proxy-blur <sigma>: soften the proxy H3 sees, so fine code patterns (dense rivets, crack networks)
+// steer only the layout and are not copied as texture
+const proxyBlur = +opt('proxy-blur', 0);
+// --matte-floor <0-255>: how much a pixel must change with the words before it counts as a word (raise it
+// when the words' glow on nearby code surfaces drags a haze of code picture into the composite)
+const matteFloor = +opt('matte-floor', 4), matteGain = matteFloor <= 4 ? 24 : 12;
+const doing = (k) => stage === 'all' || stage === k;
 const OUT = path.join(SONG, 'out', 'photorealistic');
 // --reuse keeps the code passes and H3 pieces already made for this window (after a composite change)
-const reuse = argv.includes('--reuse');
+const reuse = argv.includes('--reuse') || stage !== 'all';
 const have = (f) => reuse && fs.existsSync(f) && fs.statSync(f).size > 0;
 const FW = 1920, FH = 1088;   // code renders at twice H3's 960x544, cropped to 1080 at the end
+
+// The units H3 paints. By default each scene is one. With "photorealistic": { "takes": [...] } in film.json,
+// consecutive scenes in one place are one take: H3 paints the take as one continuous generation (chained
+// pieces), so the place, the people and the light stay the same across the code film's cuts inside it.
+//   "photorealistic": { "style": "<the look, for every take>",
+//                       "takes": [{ "id": "T04", "scenes": ["04", "05"], "prompt": "<the place>", "look": "looks/x.png" }] }
+// A take's "look" is a style reference image (palette, light, texture; not its composition) shipped in the song folder.
+// Each piece's prompt is the style, the take's place, then the action of the scenes it covers in order
+// (each scene's own "photorealistic": { "prompt" }).
+const PR = film.photorealistic ?? {};
+const byId = Object.fromEntries(film.scenes.map((s) => [s.id, s]));
+const allUnits = PR.takes
+  ? PR.takes.map((t) => ({ id: t.id, place: t.prompt, look: t.look, scenes: t.scenes.map((id) => byId[id] ?? (() => { throw Error(`take ${t.id}: no scene ${id}`); })()) }))
+  : film.scenes.map((s) => ({ id: s.id, place: null, scenes: [s] }));
+const covered = new Set(allUnits.flatMap((u) => u.scenes.map((s) => s.id)));
+const missing = film.scenes.filter((s) => !covered.has(s.id)).map((s) => s.id);
+if (missing.length) throw Error(`scenes in no take: ${missing.join(', ')}`);
+const only = opt('only')?.split(',');
+const units = allUnits.filter((u) => !only || only.includes(u.id));
+if (!units.length) { console.error('no takes or scenes match --only'); process.exit(1); }
 
 const run = (cmd, args, what) => {
   const r = spawnSync(cmd, args, { stdio: ['ignore', 'inherit', 'inherit'] });
@@ -51,66 +79,114 @@ const frameCount = (f) => +spawnSync('ffprobe', ['-v', 'error', '-count_frames',
 const code = (s, from, to, { res, samples, nowords, out }) => run('node', [RENDER, 'video', '--song', SONG, '--scene', s.scene,
   '--params64', Buffer.from(JSON.stringify({ ...(s.params ?? {}), id: s.id, from: s.from, to: s.to })).toString('base64'),
   '--from', String(from), '--to', String(to), '--fps', String(H3.fps), '--res', res, '--samples', String(samples),
-  '--noaudio', '--crf', '10', '--preset', 'medium', ...(nowords ? ['--nowords'] : []), '--out', out], `code render of ${s.id}`);
+  '--noaudio', '--crf', '10', '--preset', 'medium', ...(nowords ? ['--nowords'] : []), '--out', out + '.part.mp4'], `code render of ${s.id}`)
+  || fs.renameSync(out + '.part.mp4', out);
+const sceneFrames = (from, to) => Math.round(to * H3.fps) - Math.round(from * H3.fps);
+// one code pass over a unit's window: each scene's part, joined (scene boundaries on whole frames)
+const pass = (u, from, to, kind, dir) => {
+  const parts = u.parts.map(({ s, a, b }) => {
+    const sd = path.join(OUT, 'scenes', s.id, `${a}-${b}`);
+    fs.mkdirSync(sd, { recursive: true });
+    const f = path.join(sd, `${kind}.mp4`);
+    if (!have(f)) code(s, a, b, kind === 'proxy' ? { res: `${H3.width}x${H3.height}`, samples: 4, nowords: true, out: f }
+      : { res: `${FW}x${FH}`, samples: wordSamples, nowords: kind === 'plate', out: f });
+    return { f, n: sceneFrames(a, b) };
+  });
+  const out = path.join(dir, `${kind}.mp4`);
+  if (have(out)) return out;
+  const list = path.join(dir, `${kind}.txt`);
+  // each part trimmed or held to its exact frame count, so the passes line up frame for frame
+  const fixed = parts.map(({ f, n }, i) => {
+    const t = path.join(dir, `${kind}-part-${i}.mp4`);
+    ff(['-i', f, '-vf', `tpad=stop_mode=clone:stop=2,trim=end_frame=${n},setpts=PTS-STARTPTS`, '-r', String(H3.fps), '-c:v', 'libx264', '-crf', '10', '-preset', 'medium', '-pix_fmt', 'yuv420p', t], `${kind} part`);
+    return t;
+  });
+  fs.writeFileSync(list, fixed.map((t) => `file '${t}'`).join('\n'));
+  ff(['-f', 'concat', '-safe', '0', '-i', list, '-c', 'copy', out + '.part.mp4'], `${kind} join`);
+  fs.renameSync(out + '.part.mp4', out);
+  for (const t of fixed) fs.rmSync(t);
+  return out;
+};
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-const { comfy, dashboard } = findComfy();
+const { comfy, dashboard } = doing('h3') ? findComfy() : {};
 const done = [];
-for (const s of scenes) {
-  const prompt = s.photorealistic?.prompt ?? (opt('prompt-file') && fs.readFileSync(opt('prompt-file'), 'utf8').trim());
-  if (!prompt) throw Error(`scene ${s.id} needs "photorealistic": { "prompt": "..." } in film.json (or --prompt-file)`);
-  const from = +opt('from', s.from), to = +opt('to', s.to);
-  const dir = path.join(OUT, s.id);
+for (const u of units) {
+  const a0 = u.scenes[0].from, b0 = u.scenes.at(-1).to;
+  const from = Math.max(+opt('from', a0), a0), to = Math.min(+opt('to', b0), b0);
+  u.parts = u.scenes.map((s) => ({ s, a: Math.max(from, s.from), b: Math.min(to, s.to) })).filter((p) => p.b - p.a > 1 / H3.fps);
+  if (!u.parts.length) throw Error(`--from/--to miss ${u.id}`);
+  const beatOf = (s) => s.photorealistic?.prompt ?? (opt('prompt-file') && fs.readFileSync(opt('prompt-file'), 'utf8').trim());
+  if (!u.place && u.parts.some(({ s }) => !beatOf(s))) throw Error(`scene ${u.parts.find(({ s }) => !beatOf(s)).s.id} needs "photorealistic": { "prompt": "..." } in film.json (or --prompt-file)`);
+  const win = from === a0 && to === b0 ? 'full' : `${from}-${to}`;
+  const dir = path.join(OUT, u.id, win);
   fs.mkdirSync(dir, { recursive: true });
-  const n = Math.round((to - from) * H3.fps);
-  console.log(`scene ${s.id} (${s.scene}) ${from}-${to} s: ${n} frames`);
+  const n = u.parts.reduce((k, p) => k + sceneFrames(p.a, p.b), 0);
+  console.log(`${u.id} (${u.parts.map((p) => p.s.id).join(' ')}) ${from}-${to} s: ${n} frames [${stage}]`);
+  // where each part starts, in frames from the unit's start, for the piece prompts
+  let at = 0; const marks = u.parts.map((p) => { const m = { ...p, f0: at }; at += sceneFrames(p.a, p.b); return { ...m, f1: at }; });
 
   // 1. the proxy: the code picture without its words, at H3's size and rate
   const proxy = path.join(dir, 'proxy.mp4');
-  if (!have(proxy)) code(s, from, to, { res: `${H3.width}x${H3.height}`, samples: 4, nowords: true, out: proxy });
+  if (doing('proxy')) pass(u, from, to, 'proxy', dir);
   // 2. the words: the full-size code picture with and without them
   const withWords = path.join(dir, 'words.mp4'), noWords = path.join(dir, 'plate.mp4');
-  if (!have(withWords)) code(s, from, to, { res: `${FW}x${FH}`, samples: wordSamples, nowords: false, out: withWords });
-  if (!have(noWords)) code(s, from, to, { res: `${FW}x${FH}`, samples: wordSamples, nowords: true, out: noWords });
+  if (doing('words')) { pass(u, from, to, 'words', dir); pass(u, from, to, 'plate', dir); }
 
   // the style reference
+  // a take's own "look" (an image in the song folder) wins over --look
   let lookFile = null;
-  if (look === 'code') { lookFile = path.join(dir, 'look.png'); ff(['-i', noWords, '-frames:v', '1', lookFile], 'first code frame'); }
+  if (u.look && !argv.includes('--look')) lookFile = path.resolve(SONG, u.look);
+  else if (look === 'code') { lookFile = path.join(dir, 'look.png'); if (!have(lookFile)) ff(['-i', proxy, '-frames:v', '1', lookFile], 'first code frame'); }
   else if (look !== 'none') lookFile = path.resolve(look);
 
-  // 3. H3, in pieces of at most 362 frames; each later piece repeats the last 5 frames of the one before
+  // 3. H3, in pieces of at most maxFrames; each later piece repeats the last 5 frames of the one before
   const OVER = 5, pieces = [];
   for (let start = 0; ;) {
-    const want = Math.min(n - start, H3.maxFrames);
+    const want = Math.min(n - start, maxFrames);
     const len = Math.min(h3Len(want), H3.maxFrames);
     pieces.push({ start, len });
     if (start + len >= n) break;
     start += len - OVER;
   }
-  const outs = [];
-  for (const [i, p] of pieces.entries()) {
-    const tag = `${path.basename(SONG)}-${s.id}-${i}`;
-    const piece = path.join(dir, `proxy-${i}.mp4`);
-    // the proxy's frames for this piece, the last one held if the piece runs past the scene
-    ff(['-i', proxy, '-vf', `trim=start_frame=${p.start}:end_frame=${p.start + p.len},setpts=PTS-STARTPTS,tpad=stop_mode=clone:stop=${p.len},trim=end_frame=${p.len}`, '-r', String(H3.fps), '-c:v', 'libx264', '-crf', '12', '-pix_fmt', 'yuv420p', piece], 'proxy piece');
-    let guideFile = null;
-    if (i > 0) {
-      guideFile = path.join(dir, `guide-${i}.mp4`);
-      const prev = outs[i - 1], pn = frameCount(prev);
-      ff(['-i', prev, '-vf', `trim=start_frame=${pn - OVER},setpts=PTS-STARTPTS`, '-c:v', 'libx264', '-crf', '12', '-pix_fmt', 'yuv420p', guideFile], 'guide clip');
+  const promptOf = (p) => {
+    const beats = marks.filter((m) => m.f1 > p.start && m.f0 < p.start + p.len).map((m) => beatOf(m.s)).filter(Boolean);
+    return [PR.style, u.place, beats.length > 1 ? beats.map((b, i) => (i ? 'Then ' : '') + b).join(' ') : beats[0]].filter(Boolean).join('\n\n');
+  };
+  const outs = pieces.map((p, i) => path.join(dir, `h3-${i}-${seed}.mp4`));
+  if (doing('h3')) {
+    while (!fs.existsSync(proxy)) { console.log(`  waiting for ${path.relative(SONG, proxy)}`); await sleep(60000); }
+    for (const [i, p] of pieces.entries()) {
+      const tag = `${path.basename(SONG)}-${u.id}-${i}`;
+      const out = outs[i];
+      if (have(out)) continue;
+      const piece = path.join(dir, `proxy-${i}.mp4`);
+      // the proxy's frames for this piece, the last one held if the piece runs past the unit
+      ff(['-i', proxy, '-vf', `${proxyBlur ? `gblur=sigma=${proxyBlur},` : ''}trim=start_frame=${p.start}:end_frame=${p.start + p.len},setpts=PTS-STARTPTS,tpad=stop_mode=clone:stop=${p.len},trim=end_frame=${p.len}`, '-r', String(H3.fps), '-c:v', 'libx264', '-crf', '12', '-pix_fmt', 'yuv420p', piece], 'proxy piece');
+      let guideFile = null;
+      if (i > 0) {
+        guideFile = path.join(dir, `guide-${i}.mp4`);
+        const prev = outs[i - 1], pn = frameCount(prev);
+        ff(['-i', prev, '-vf', `trim=start_frame=${pn - OVER},setpts=PTS-STARTPTS`, '-c:v', 'libx264', '-crf', '12', '-pix_fmt', 'yuv420p', guideFile], 'guide clip');
+      }
+      const prompt = promptOf(p);
+      fs.writeFileSync(path.join(dir, `prompt-${i}.txt`), prompt);
+      const job = await claimGpu(dashboard, { description: `${path.basename(SONG)} ${u.id} photorealistic, piece ${i + 1}/${pieces.length} (${p.len} frames, ${H3.width}x${H3.height})`, project: path.basename(SONG), expectMinutes: Math.ceil(p.len / 10) });
+      try {
+        const r = await generate(comfy, { proxyFile: piece, lookFile, guideFile, prompt, frames: p.len, steps, keep, seed: seed + i, tag, out: out + '.part.mp4',
+          onBeat: (min, pid) => { if (min && min % 5 === 0) gpuProgress(dashboard, job, `rendering for ${min} min, ComfyUI prompt ${pid}`); } });
+        fs.renameSync(out + '.part.mp4', out);
+        await gpuEnd(dashboard, job, 'done');
+        console.log(`  piece ${i + 1}/${pieces.length}: ${r.seconds} s on the GPU`);
+        fs.appendFileSync(path.join(OUT, 'timings.jsonl'), JSON.stringify({ unit: u.id, win, piece: i, frames: p.len, seconds: r.seconds, at: new Date().toISOString() }) + '\n');
+      } catch (e) { await gpuEnd(dashboard, job, 'failed'); throw e; }
     }
-    const out = path.join(dir, `h3-${i}-${seed}.mp4`);
-    if (have(out)) { outs.push(out); continue; }
-    const job = await claimGpu(dashboard, { description: `${path.basename(SONG)} scene ${s.id} photorealistic, piece ${i + 1}/${pieces.length} (${p.len} frames, ${H3.width}x${H3.height})`, project: path.basename(SONG), expectMinutes: Math.ceil(p.len / 12) });
-    try {
-      const r = await generate(comfy, { proxyFile: piece, lookFile, guideFile, prompt, frames: p.len, steps, keep, seed: seed + i, tag, out,
-        onBeat: (min, pid) => { if (min && min % 5 === 0) gpuProgress(dashboard, job, `rendering for ${min} min, ComfyUI prompt ${pid}`); } });
-      await gpuEnd(dashboard, job, 'done');
-      console.log(`  piece ${i + 1}/${pieces.length}: ${r.seconds} s on the GPU`);
-    } catch (e) { await gpuEnd(dashboard, job, 'failed'); throw e; }
-    outs.push(out);
   }
 
   // 4. join the pieces (dropping each repeated head), upscale, crop to 1080, lay the code words back on top
+  const seg = path.join(OUT, win === 'full' ? `${u.id}.mp4` : `${u.id}-${win}.mp4`);
+  if (!doing('composite')) continue;
+  if (have(seg) && stage !== 'all') { done.push(seg); continue; }
   const list = path.join(dir, 'pieces.txt');
   const trimmed = outs.map((o, i) => {
     const t = path.join(dir, `piece-${i}.mp4`);
@@ -120,24 +196,23 @@ for (const s of scenes) {
   fs.writeFileSync(list, trimmed.map((t) => `file '${t}'`).join('\n'));
   const gen = path.join(dir, `generated-${seed}.mp4`);
   ff(['-f', 'concat', '-safe', '0', '-i', list, '-vf', `trim=end_frame=${n},scale=${FW}:${FH}:flags=lanczos`, '-c:v', 'libx264', '-crf', '10', '-pix_fmt', 'yuv420p', gen], 'join');
-  const seg = path.join(OUT, `${s.id}.mp4`);
   const song = path.join(SONG, 'media', 'song.wav');
-  ff(['-i', gen, '-i', withWords, '-i', noWords, ...(fs.existsSync(song) ? ['-ss', String(from), '-t', String(to - from), '-i', song] : []),
+  ff(['-i', gen, '-i', withWords, '-i', noWords, ...(fs.existsSync(song) ? ['-ss', String(from), '-t', String(n / H3.fps), '-i', song] : []),
     '-filter_complex',
     // the matte: where the code picture changes when its words are left out, softened by a pixel
     // (in RGB: a YUV difference has an offset in every pixel), less a little for encoder noise
     '[1:v]format=gbrp,split[wa][w0];[2:v]format=gbrp[pa];[wa][pa]blend=all_mode=difference,'
     + 'colorchannelmixer=rr=.34:rg=.33:rb=.33:gr=.34:gg=.33:gb=.33:br=.34:bg=.33:bb=.33,format=gray,'
-    + 'lut=y=\'clip((val-4)*24,0,255)\',gblur=sigma=1.2,format=gbrp[m];'
+    + `lut=y='clip((val-${matteFloor})*${matteGain},0,255)',gblur=sigma=1.2,format=gbrp[m];`
     + `[0:v]trim=end_frame=${n},format=gbrp[g];[w0]trim=end_frame=${n}[w];[g][w][m]maskedmerge,crop=1920:1080,format=yuv420p[v]`,
     '-map', '[v]', ...(fs.existsSync(song) ? ['-map', '3:a', '-c:a', 'aac', '-b:a', '320k', '-shortest'] : []),
     '-r', String(H3.fps), '-c:v', 'libx264', '-preset', 'slow', '-crf', '14',
     '-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709', '-movflags', '+faststart', seg], 'word composite');
-  fs.writeFileSync(path.join(dir, 'run.json'), JSON.stringify({ scene: s.id, from, to, frames: n, pieces, look, keep, steps, seed, prompt, generated: 'every pixel but the in-scene words is painted by MiniMax H3' }, null, 1));
+  fs.writeFileSync(path.join(dir, 'run.json'), JSON.stringify({ unit: u.id, scenes: u.parts.map((p) => p.s.id), from, to, frames: n, pieces: pieces.map((p) => ({ ...p, prompt: promptOf(p) })), look, keep, steps, seed, generated: 'every pixel but the in-scene words is painted by MiniMax H3' }, null, 1));
   console.log('wrote', seg);
   done.push(seg);
 }
-if (!only && done.length === film.scenes.length) {
+if (!only && !argv.includes('--from') && !argv.includes('--to') && done.length === allUnits.length) {
   const list = path.join(OUT, 'segments.txt');
   fs.writeFileSync(list, done.map((f) => `file '${f}'`).join('\n'));
   const out = path.resolve(opt('out', path.join(SONG, 'out', 'film-photorealistic.mp4')));
