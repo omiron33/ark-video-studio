@@ -389,8 +389,9 @@ github.com/code-video-model/CodeVideoModel, Apache 2.0):
 1. **Proxy.** Each scene renders at 960x544, 24 fps, with its words left out (`render.mjs --nowords`).
 2. **H3.** On the machine in `~/.config/ark/machines.json` that has a ComfyUI service, through its GPU
    dashboard queue. The proxy is a reference video for only the first 5 of 20 denoise steps, so the
-   code fixes layout, camera, timing and motion and H3 draws the surfaces, light and people. Scenes
-   longer than 15 s are made in pieces; each piece starts from the last 5 frames of the one before.
+   code fixes layout, camera, timing and motion and H3 draws the surfaces, light and people. A take
+   too long for one H3 piece is chained with H3-Continuum by default (below); with `"chain": "bridges"`
+   it is made in pieces instead, each starting from the last 5 frames of the one before.
 3. **Words stay code.** The scene renders at full size with and without its words. Where the two
    differ (the letters and the light they cast) the code pixels are laid over H3's picture, so H3
    never repaints a letter. Overlay lyric layers (`scenes/<name>.lyric.js`) composite as usual.
@@ -412,6 +413,36 @@ default in a music video) each frame's depth (Depth-Anything-V2-Small, the small
 whether the end letters of a line sit behind something nearer than the line: up to 40% of the ink of
 the first or last letter can pass behind a post, a shoulder or a branch. Every other letter stays
 whole, so a line always reads. Rule after claudia-bot's depth-occluded type (MIT).
+
+### Continuum chaining (ON TRIAL since 2026-10-14)
+
+> **Future agents: if photoreal output looks wrong, suspect this first.** Harsh or contrasty ends to
+> takes, picture that gets crisper and harsher every ~5 s, a one-frame texture pop at 5 s intervals,
+> or a camera that stops following the code render all point here. Set
+> `"photorealistic": { "chain": "bridges" }` in film.json (or pass `--chain bridges`) and re-render the
+> affected takes; if bridges look better, remove Continuum (`photoreal/lib/continuum.mjs`,
+> `photoreal/lib/chainmatch.py` and the `continuum` branch in `photorealistic.mjs`). Shane added it on
+> trial for the King of Glory photoreal film: "if the output sucks when we do the full glory video,
+> we'll remove it."
+
+`"photorealistic": { "chain": "continuum" }` is the default. A take that would need more than one H3
+piece is rendered with [ComfyUI-H3-Continuum](https://github.com/ukr8b3g-cmyk/ComfyUI-H3-Continuum)
+(MIT, v3.9.4, installed in OmiPC's `C:\Comfy\custom_nodes`): one GPU job per chain of up to 15 s, as 5 s
+chunks that each carry the previous chunk's last 22 frames, seams assembled by Continuum. The take's
+code render is Continuum's Timeline Video in Follow Timeline mode, so each chunk is steered by its own
+stretch of the code picture; unlike the bridges path this steers every denoise step, not just the first 5
+(`--proxy-blur` matters more). The look image is Reference Image 1 for every chunk, and each chunk gets
+its own Timeline prompt section. A take longer than 15 s is several chains; each later chain starts from
+the previous chain's last frame. Takes that fit in one piece render exactly as before.
+
+Drift guard: `lib/chainmatch.py` matches every chunk's colour and contrast back to the take's first
+chunk, following the code render's own light changes, eased between chunk centres. Sharpness drift is
+not corrected. Each chain's numbers are in `run.json` (`chains`, `chainMatch`).
+
+Measured 2026-10-14 (KoG T01, 3 x 5 s, 960x544, OmiPC 3080 Ti, first image + look, no code guide):
+passed on 12 GB with peak VRAM 11.8 of 12 GB and ~42 GB host RAM; ~80 s of GPU per output second;
+seams showed no jump but a one-frame texture pop; contrast rose ~25-30% and sharpness ~34% over three
+chunks (Continuum Issue #13). The code-guided path (Follow Timeline) was not GPU-tested before it went in.
 
 ## Music video setting (generated)
 

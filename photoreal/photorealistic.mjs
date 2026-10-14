@@ -1,7 +1,7 @@
 // The photorealistic setting: a film's code scenes, repainted to look filmed by MiniMax H3.
 //   node photoreal/photorealistic.mjs --song ../king-of-glory --only 73 [--from 409.4 --to 417.4]
 //   options: [--look none|code|<image>] [--keep 5] [--steps 20] [--seed 42] [--word-samples 16] [--prompt-file f]
-//            [--reuse] (keep this window's code passes and H3 pieces) [--out film.mp4]
+//            [--reuse] (keep this window's code passes and H3 pieces) [--out film.mp4] [--chain continuum|bridges]
 //
 // This is separate from the render tiers (fast, standard, premium, ultra), which stay pure code: it
 // never changes their segments, keys or output. The picture it makes is GENERATED: H3 paints every
@@ -33,7 +33,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
-import { H3, h3Len, findComfy, claimGpu, gpuProgress, gpuEnd, generate } from './lib/h3.mjs';
+import { H3, h3Len, findComfy, claimGpu, gpuProgress, gpuEnd, generate, upload, runGraph, STYLE_REFERENCE } from './lib/h3.mjs';
+import { CONTINUUM, planChains, usesContinuum, timelinePrompt, continuumWorkflow, hasContinuum, chunkBounds } from './lib/continuum.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const RENDER = path.join(HERE, 'render.mjs');
@@ -69,6 +70,14 @@ const FW = 1920, FH = 1088;   // code renders at twice H3's 960x544, cropped to 
 // Each piece's prompt is the style, the take's place, then the action of the scenes it covers in order
 // (each scene's own "photorealistic": { "prompt" }).
 const PR = film.photorealistic ?? {};
+// How a take longer than one H3 piece is joined (ON TRIAL since 2026-10-14, see lib/continuum.mjs):
+//   "continuum" (default): ComfyUI-H3-Continuum chains, 5 s chunks with 22 frames of carried context,
+//               steered chunk by chunk by the code render, colour/contrast matched back to the first chunk
+//   "bridges":  the original pieces, each started from the previous piece's last 5 frames
+// If photoreal takes look harsh or contrasty at their ends, pop every ~5 s, or stop following the code
+// camera, Continuum is the first suspect: set "photorealistic": { "chain": "bridges" } or pass --chain bridges.
+const chain = opt('chain', PR.chain ?? 'continuum');
+if (!['continuum', 'bridges'].includes(chain)) throw Error(`"chain" is continuum or bridges, not ${chain}`);
 const MV = film.mode === 'musicvideo';
 const tuck = argv.includes('--no-tuck') ? false : argv.includes('--tuck') ? true : (PR.tuck ?? MV);
 // a music video paints only its generated shots here; its code shots render as code (film.mjs)
@@ -180,8 +189,48 @@ for (const u of units) {
     const beats = marks.filter((m) => m.f1 > p.start && m.f0 < p.start + p.len).map((m) => beatOf(m.s)).filter(Boolean);
     return [PR.style, u.place, beats.length > 1 ? beats.map((b, i) => (i ? 'Then ' : '') + b).join(' ') : beats[0]].filter(Boolean).join('\n\n');
   };
-  const outs = pieces.map((p, i) => path.join(dir, `h3-${i}-${seed}.mp4`));
-  if (doing('h3')) {
+  const sectionOf = (a, b) => {
+    const beats = marks.filter((m) => m.f1 > a && m.f0 < b).map((m) => beatOf(m.s)).filter(Boolean);
+    return [PR.style, u.place, beats.length > 1 ? beats.map((t, i) => (i ? 'Then ' : '') + t).join(' ') : beats[0]].filter(Boolean).join(' ');
+  };
+  const continuum = usesContinuum(chain, pieces.length);
+  const chains = continuum ? planChains(n) : null;
+  const outs = continuum ? chains.map((c, i) => path.join(dir, `chain-${i}-${seed}.mp4`)) : pieces.map((p, i) => path.join(dir, `h3-${i}-${seed}.mp4`));
+  if (continuum && doing('h3')) {
+    // 3c. Continuum: each chain is one GPU job of 5 s chunks (lib/continuum.mjs)
+    while (proxy && !fs.existsSync(proxy)) { console.log(`  waiting for ${path.relative(SONG, proxy)}`); await sleep(60000); }
+    if (chains.some((c, i) => !have(outs[i])) && !(await hasContinuum(comfy))) throw Error(`ComfyUI at ${comfy} has no ${CONTINUUM.sampler}: install ComfyUI-H3-Continuum there, or set "photorealistic": { "chain": "bridges" }`);
+    for (const [i, c] of chains.entries()) {
+      const tag = `${path.basename(SONG)}-${u.id}-c${i}`;
+      const out = outs[i];
+      if (have(out)) continue;
+      const piece = proxy && path.join(dir, `proxy-c${i}.mp4`);
+      if (proxy) ff(['-i', proxy, '-vf', `${proxyBlur ? `gblur=sigma=${proxyBlur},` : ''}trim=start_frame=${c.start}:end_frame=${c.start + c.len},setpts=PTS-STARTPTS,tpad=stop_mode=clone:stop=${c.len},trim=end_frame=${c.len}`, '-r', String(H3.fps), '-c:v', 'libx264', '-crf', '12', '-pix_fmt', 'yuv420p', piece], 'proxy chain');
+      let firstFile = null;
+      if (i > 0) {
+        firstFile = path.join(dir, `first-c${i}.png`);
+        ff(['-sseof', '-0.2', '-i', outs[i - 1], '-update', '1', '-frames:v', '1', firstFile], 'chain first frame');
+      }
+      const per = c.len / c.chunks;
+      const prompt = timelinePrompt(Array.from({ length: c.chunks }, (_, k) => sectionOf(c.start + Math.round(k * per), c.start + Math.round((k + 1) * per))), c.chunkSeconds);
+      fs.writeFileSync(path.join(dir, `prompt-c${i}.txt`), prompt);
+      const job = await claimGpu(dashboard, { description: `${path.basename(SONG)} ${u.id} photorealistic (Continuum), chain ${i + 1}/${chains.length} (${c.chunks} x ${c.chunkSeconds} s, ${H3.width}x${H3.height})`, project: path.basename(SONG), expectMinutes: Math.ceil(c.chunks * 7) });
+      try {
+        const files = {
+          proxy: piece ? await upload(comfy, piece, `ark-${tag}-proxy.mp4`) : null,
+          look: lookFile ? await upload(comfy, lookFile, `ark-${tag}-look${path.extname(lookFile)}`) : null,
+          first: firstFile ? await upload(comfy, firstFile, `ark-${tag}-first.png`) : null,
+        };
+        const graph = continuumWorkflow({ ...files, prompt, chunks: c.chunks, chunkSeconds: c.chunkSeconds, steps, seed: seed + i, prefix: `ark-photorealistic/${tag}-${seed}`, styleReference: STYLE_REFERENCE });
+        const r = await runGraph(comfy, graph, { out: out + '.part.mp4', onBeat: (min, pid) => { if (min && min % 5 === 0) gpuProgress(dashboard, job, `rendering for ${min} min, ComfyUI prompt ${pid}`); } });
+        fs.renameSync(out + '.part.mp4', out);
+        await gpuEnd(dashboard, job, 'done');
+        console.log(`  chain ${i + 1}/${chains.length}: ${r.seconds} s on the GPU`);
+        fs.appendFileSync(path.join(OUT, 'timings.jsonl'), JSON.stringify({ unit: u.id, win, chain: i, chunks: c.chunks, frames: c.len, seconds: r.seconds, continuum: true, at: new Date().toISOString() }) + '\n');
+      } catch (e) { await gpuEnd(dashboard, job, 'failed'); throw e; }
+    }
+  }
+  if (!continuum && doing('h3')) {
     while (proxy && !fs.existsSync(proxy)) { console.log(`  waiting for ${path.relative(SONG, proxy)}`); await sleep(60000); }
     for (const [i, p] of pieces.entries()) {
       const tag = `${path.basename(SONG)}-${u.id}-${i}`;
@@ -217,12 +266,23 @@ for (const u of units) {
   const list = path.join(dir, 'pieces.txt');
   const trimmed = outs.map((o, i) => {
     const t = path.join(dir, `piece-${i}.mp4`);
-    ff(['-i', o, '-vf', `trim=start_frame=${i ? OVER : 0},setpts=PTS-STARTPTS`, '-an', '-c:v', 'libx264', '-crf', '10', '-pix_fmt', 'yuv420p', t], 'piece trim');
+    // a Continuum chain is held or cut to its planned length; after the first it drops its frame 0 (the previous chain's last)
+    const vf = continuum ? `tpad=stop_mode=clone:stop=${chains[i].len},trim=end_frame=${chains[i].len},trim=start_frame=${i ? 1 : 0},setpts=PTS-STARTPTS`
+      : `trim=start_frame=${i ? OVER : 0},setpts=PTS-STARTPTS`;
+    ff(['-i', o, '-vf', vf, '-an', '-r', String(H3.fps), '-c:v', 'libx264', '-crf', '10', '-pix_fmt', 'yuv420p', t], 'piece trim');
     return t;
   });
   fs.writeFileSync(list, trimmed.map((t) => `file '${t}'`).join('\n'));
   const gen = path.join(dir, `generated-${seed}.mp4`);
-  ff(['-f', 'concat', '-safe', '0', '-i', list, '-vf', `trim=end_frame=${n},scale=${FW}:${FH}:flags=lanczos`, '-c:v', 'libx264', '-crf', '10', '-pix_fmt', 'yuv420p', gen], 'join');
+  let chainMatch = null;
+  if (continuum) {
+    // the drift guard: every chunk's colour and contrast matched back to the take's first chunk (lib/chainmatch.py)
+    const joined = path.join(dir, `joined-${seed}.mp4`), matched = path.join(dir, `matched-${seed}.mp4`), rep = path.join(dir, 'chainmatch.json');
+    ff(['-f', 'concat', '-safe', '0', '-i', list, '-vf', `tpad=stop_mode=clone:stop=${n},trim=end_frame=${n}`, '-c:v', 'libx264', '-crf', '10', '-pix_fmt', 'yuv420p', joined], 'chain join');
+    run('python3', [path.join(HERE, 'lib', 'chainmatch.py'), '--generated', joined, '--bounds', JSON.stringify(chunkBounds(chains)), '--out', matched, '--report', rep, ...(proxy ? ['--proxy', proxy] : [])], 'chain colour match');
+    chainMatch = JSON.parse(fs.readFileSync(rep, 'utf8'));
+    ff(['-i', matched, '-vf', `trim=end_frame=${n},scale=${FW}:${FH}:flags=lanczos`, '-c:v', 'libx264', '-crf', '10', '-pix_fmt', 'yuv420p', gen], 'upscale');
+  } else ff(['-f', 'concat', '-safe', '0', '-i', list, '-vf', `trim=end_frame=${n},scale=${FW}:${FH}:flags=lanczos`, '-c:v', 'libx264', '-crf', '10', '-pix_fmt', 'yuv420p', gen], 'join');
   const song = path.join(SONG, 'media', 'song.wav');
   const audioIn = fs.existsSync(song) ? ['-ss', String(from), '-t', String(n / H3.fps), '-i', song] : [];
   const encodeOut = ['-r', String(H3.fps), '-c:v', 'libx264', '-preset', 'slow', '-crf', '14',
@@ -251,7 +311,7 @@ for (const u of units) {
       '-filter_complex', `${matteGraph},format=gbrp[m];[0:v]trim=end_frame=${n},format=gbrp[g];[w0]trim=end_frame=${n}[w];[g][w][m]maskedmerge,crop=1920:1080,format=yuv420p[v]`,
       '-map', '[v]', ...(audioIn.length ? ['-map', '3:a', '-c:a', 'aac', '-b:a', '320k', '-shortest'] : []), ...encodeOut], 'word composite');
   }
-  fs.writeFileSync(path.join(dir, 'run.json'), JSON.stringify({ unit: u.id, scenes: u.parts.map((p) => p.s.id), from, to, frames: n, pieces: pieces.map((p) => ({ ...p, prompt: promptOf(p) })), look, keep, steps, seed, tuck: tuckReport, generated: u.words ? 'every pixel but the in-scene words is painted by MiniMax H3' : 'every pixel is painted by MiniMax H3' }, null, 1));
+  fs.writeFileSync(path.join(dir, 'run.json'), JSON.stringify({ unit: u.id, scenes: u.parts.map((p) => p.s.id), from, to, frames: n, chain: continuum ? 'continuum' : 'bridges', ...(continuum ? { chains, chainMatch } : { pieces: pieces.map((p) => ({ ...p, prompt: promptOf(p) })) }), look, keep, steps, seed, tuck: tuckReport, generated: u.words ? 'every pixel but the in-scene words is painted by MiniMax H3' : 'every pixel is painted by MiniMax H3' }, null, 1));
   console.log('wrote', seg);
   done.push(seg);
 }

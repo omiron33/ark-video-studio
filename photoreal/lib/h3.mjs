@@ -37,7 +37,7 @@ const post = async (url, body, timeout = 120000) => {
 };
 const getJson = async (url, timeout = 30000) => (await fetch(url, { signal: AbortSignal.timeout(timeout) })).json();
 
-async function upload(comfy, file, name) {
+export async function upload(comfy, file, name) {
   const form = new FormData();
   form.append('image', new Blob([fs.readFileSync(file)]), name);
   form.append('overwrite', 'true');
@@ -128,7 +128,12 @@ export async function generate(comfy, { proxyFile, lookFile, guideFile, prompt, 
   const proxy = proxyFile ? await upload(comfy, proxyFile, `ark-${tag}-proxy.mp4`) : null;
   const look = lookFile ? await upload(comfy, lookFile, `ark-${tag}-look${path.extname(lookFile)}`) : null;
   const guide = guideFile ? await upload(comfy, guideFile, `ark-${tag}-guide.mp4`) : null;
-  const r = await post(`${comfy}/prompt`, { prompt: workflow({ proxy, look, guide, prompt, frames, steps, keep, seed, prefix: `ark-photorealistic/${tag}-${seed}` }) });
+  return runGraph(comfy, workflow({ proxy, look, guide, prompt, frames, steps, keep, seed, prefix: `ark-photorealistic/${tag}-${seed}` }), { out, onBeat });
+}
+
+// Queue a graph, wait, download its video to `out` (also used by the Continuum chains, lib/continuum.mjs).
+export async function runGraph(comfy, graph, { out, onBeat = () => {} }) {
+  const r = await post(`${comfy}/prompt`, { prompt: graph });
   if (!r.prompt_id) throw Error('ComfyUI rejected the graph: ' + JSON.stringify(r).slice(0, 1500));
   const id = r.prompt_id, t0 = Date.now();
   for (;;) {
