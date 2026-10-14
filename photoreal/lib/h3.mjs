@@ -66,6 +66,7 @@ export const gpuProgress = (dashboard, id, note) => id && post(`${dashboard}/api
 export const gpuEnd = (dashboard, id, status) => id && post(`${dashboard}/api/renders/${id}/end`, { status }).catch(() => {});
 
 // The ComfyUI graph: two ref2va conditionings (with and without the proxy) over one schedule split at `keep`.
+// With no proxy (live action from a prompt and a look), the conditioning without it runs every step.
 // `look` is an image filename already uploaded (or null), `guide` an uploaded clip of the previous
 // piece's last frames anchored at frame 0 (or null).
 export function workflow({ proxy, look, guide, prompt, frames, steps, keep, seed, prefix }) {
@@ -102,13 +103,21 @@ export function workflow({ proxy, look, guide, prompt, frames, steps, keep, seed
     15: { class_type: 'SaveVideo', inputs: { video: ['14', 0], filename_prefix: prefix, format: 'auto', codec: 'auto' } },
   };
   if (look) g[30] = { class_type: 'LoadImage', inputs: { image: look } };
+  if (!proxy) {
+    // nothing to steer by (live action from its prompt and look): the free conditioning runs every step
+    for (const k of [20, 21, 6, 7, 19, 11]) delete g[k];
+    g[22].inputs = { noise: ['8', 0], guider: ['17', 0], sampler: ['10', 0], sigmas: ['9', 0], latent_image: ['16', 1] };
+  }
   if (guide) {
     // the previous piece's last frames, anchored at frame 0 of both conditionings, carry the shot on
     g[40] = { class_type: 'LoadVideo', inputs: { file: guide } };
     g[41] = { class_type: 'GetVideoComponents', inputs: { video: ['40', 0] } };
-    g[42] = { class_type: 'MiniMaxH3AddGuide', inputs: { positive: ['6', 0], vae: ['3', 0], latent: ['6', 1], image: ['41', 0], frame_idx: 0 } };
-    g[43] = { class_type: 'MiniMaxH3AddGuide', inputs: { positive: ['16', 0], vae: ['3', 0], latent: ['6', 1], image: ['41', 0], frame_idx: 0 } };
-    g[7].inputs.conditioning = ['42', 0];
+    const lat = proxy ? ['6', 1] : ['16', 1];
+    if (proxy) {
+      g[42] = { class_type: 'MiniMaxH3AddGuide', inputs: { positive: ['6', 0], vae: ['3', 0], latent: lat, image: ['41', 0], frame_idx: 0 } };
+      g[7].inputs.conditioning = ['42', 0];
+    }
+    g[43] = { class_type: 'MiniMaxH3AddGuide', inputs: { positive: ['16', 0], vae: ['3', 0], latent: lat, image: ['41', 0], frame_idx: 0 } };
     g[17].inputs.conditioning = ['43', 0];
   }
   return g;
@@ -116,7 +125,7 @@ export function workflow({ proxy, look, guide, prompt, frames, steps, keep, seed
 
 // Run one piece: upload, queue the prompt, wait, download the video to `out`.
 export async function generate(comfy, { proxyFile, lookFile, guideFile, prompt, frames, steps, keep, seed, tag, out, onBeat = () => {} }) {
-  const proxy = await upload(comfy, proxyFile, `ark-${tag}-proxy.mp4`);
+  const proxy = proxyFile ? await upload(comfy, proxyFile, `ark-${tag}-proxy.mp4`) : null;
   const look = lookFile ? await upload(comfy, lookFile, `ark-${tag}-look${path.extname(lookFile)}`) : null;
   const guide = guideFile ? await upload(comfy, guideFile, `ark-${tag}-guide.mp4`) : null;
   const r = await post(`${comfy}/prompt`, { prompt: workflow({ proxy, look, guide, prompt, frames, steps, keep, seed, prefix: `ark-photorealistic/${tag}-${seed}` }) });

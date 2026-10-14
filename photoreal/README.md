@@ -119,7 +119,29 @@ scene's camera; a scene can give `"rest": "<why>"`); no word moving before it ha
 measured beat or up to 2 frames before it (a scene can give `"offBeat": "why"`); no shaking frame in
 a scene that hasn't opted in (see [Shake](#shake)); and no lyric layer over the picture in a premium
 scene that hasn't opted in (see [Words in the scene](#words-in-the-scene)). A shot over 8 s warns
-unless its scene gives `"hold": "<why>"`; a long camera move through one world is allowed.
+unless its scene gives `"hold": "<why>"`; a long camera move through one world is allowed. A `flash` gate counts flashes the way WCAG 2.3.1 does (a quarter of the frame or more swinging
+at least 10% in light, with the darker side under 0.8, both ways in one flash) and fails any second
+with more than three; it runs on every film, music videos included. In a music video the `shake`
+gate is off and the lyric gates read only the code shots' words.
+
+**Calibrated critic.** The critic gives a score from 0 to 10 and marks each problem blocking or
+not. A blocking problem (unreadable words, wrong theology, a dirty robe on Christ, a stick figure,
+a generation artifact, more than three flashes a second...) always means one more pass. Over that,
+once the critic has been calibrated to Shane's own verdicts, "ship" means no blocking problem and a
+score at or over the measured bar:
+
+```sh
+node photoreal/calibrate.mjs record --film "Genesis 5 ultra" --verdict accept --song genesis5 [--rank 1] [--note "..."]
+node photoreal/calibrate.mjs run --songs /Volumes/DATA/songs     # the critic re-scores each logged film blind
+node photoreal/calibrate.mjs list
+```
+
+`run` trusts the critic only when his accepted films outscore his rejected ones (AUC 0.70 or more)
+and its order follows his ranking (Kendall tau 0.6 or more); otherwise the fix is the rubric's
+wording, and no bar is set. The bar is the score that best separates his verdicts (or the 10th
+percentile of accepted scores while every logged film is accepted). It belongs to the rubric it was
+measured with; `critic.mjs` says when it is stale. Method after claudia-bot's reviewer calibration
+(MIT).
 
 ## Motion kit
 
@@ -185,6 +207,18 @@ the render instead of landing on the wrong moment. `after` picks a later repeat 
 song. `sung.js` imports nothing, so it adds only itself to the keys of the scenes that use it.
 `photoreal/examples/in-scene-ridge` uses it: each word burns as it is sung and the cut flares on
 "Ararat".
+
+## Music cues
+
+`node photoreal/musicvideo.mjs --song S --stage music` (or `python3 photoreal/lib/music.py --song S`)
+measures the track into `data/music.json`: a beat map that follows the tempo, downbeats, kicks,
+snares, real hits scored by how much the song jumps there, swells and the hit each lands on, drum
+fills, vocal entries and 24 fps loudness for each stem (`media/stems/` when you have them, Demucs
+when it is installed, a harmonic/percussive split otherwise). Any scene can use it through
+`/kit/music.js`: `M.swell(t)` pushes slowly into a swell and arrives on its hit, `M.landed(t)` rings
+off a real hit, `M.progress(t, a, b)` moves faster where the music is louder. Importing
+`/song/data/music.json` keys only that scene. This is for the slow, physical camera of the lyric
+films; the punches and shake are the music video's alone.
 
 ## Life kit
 
@@ -372,6 +406,36 @@ What a reader should know: a photorealistic film is not code-only. Its layout an
 from the repo, but its pixels need H3 (a separate ~20 GB model under the MiniMax H3 Community
 License) on an NVIDIA GPU, and the same seed on another GPU or driver gives a close but not identical
 picture.
+
+**Words tucked behind the world.** With `"photorealistic": { "tuck": true }` (or `--tuck`; on by
+default in a music video) each frame's depth (Depth-Anything-V2-Small, the small model only) decides
+whether the end letters of a line sit behind something nearer than the line: up to 40% of the ink of
+the first or last letter can pass behind a post, a shoulder or a branch. Every other letter stays
+whole, so a line always reads. Rule after claudia-bot's depth-occluded type (MIT).
+
+## Music video setting (generated)
+
+Shane's one mostly-generated setting (2026-10-14): live-action shots from H3 cut with the engine's
+code shots, as most music videos mix footage and graphics, and a pop-video camera that plays the
+track. The finished film is labelled as containing generated video (`out/film.label.txt`); say so
+wherever it is published.
+
+```sh
+node photoreal/musicvideo.mjs --song ../my-video [--stage music|code|h3|join] [--no-popcam] [--no-tuck]
+```
+
+film.json sets `"mode": "musicvideo"` and `"fps": 24`. Each scene is a generated shot
+(`"source": "h3"` with `"photorealistic": { "prompt", "look", "proxy" }`; the proxy is an optional
+greybox video that steers layout and camera, as code renders steer the photorealistic setting) or a
+code shot (`"scene"`), and a generated shot with a `"scene"` is that code shot repainted by H3 with
+its code words kept. The stages: measure the music (above), render the code shots through
+`film.mjs --only`, generate the H3 shots through `photorealistic.mjs`, then join every shot on exact
+frame counts and lay the pop camera over the cut (`photoreal/lib/popcam.py`): a punch on each kick,
+shake riding the drums, a push into every swell, an impact on every big hit and a whip into a cut
+that lands on a hit. A scene can turn moves off with `"camera": { "shake": false, ... }` or
+`"camera": false`; `"popcam": { "energy": 0.6 }` softens the whole film. The shake cap does not apply
+here and nowhere else. The storyboard gate, `check.mjs --label final` (flash included) and the critic
+(judging the generated shots as live action) apply as for every film.
 
 ## Premium scenes
 

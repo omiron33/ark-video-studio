@@ -98,22 +98,42 @@ measured failures as real, and look for everything the measurements cannot see: 
 fails to show, weak images, a transition that jars, a climax without force, a look that drifts.`,
 };
 
+// What blocks a film (the rest is polish). A verdict of "ship" is impossible with a blocking problem
+// on the list. Calibrated against Shane's own verdicts (lib/calibrate.mjs), "ship" then also needs
+// the critic's score at or above the lowest score his accepted films get.
+export const BLOCKING = `Mark each problem "blocking": true or false. Blocking means a viewer would be let down or misled,
+whatever else is good: a sung word missing, wrong, unreadable or late; a Scripture or theology error
+(the films are Orthodox); Christ's robes anything but pure white, or his light left behind him; people
+or creatures drawn as stick figures, primitive blocks or code puppets; low-poly, aliasing, flicker,
+popping, clipping or a broken frame (black, seams, smears, garbled lettering painted by a generator);
+a scene repeated; a jarring cut or slam; more than three full-frame flashes in a second. Everything
+else (a stronger image, better pacing, a richer light) is polish: "blocking": false.
+
+Also give the film one "score" from 0 to 10 against the best films of this kind you know: 9 is a
+film you'd hold up beside the best title sequences and music videos, 5 is competent and forgettable,
+2 is crude. Score what is on screen, not the effort behind it.`;
+
 export function buildPrompt(kind, { openItems = [], extra = '', story = false } = {}) {
   const ledger = openItems.length
     ? `\n\nEarlier rounds found these problems. For each, look at the same moment now and say whether it is
 "fixed", "partly fixed" or "still there", with a short note:\n${openItems.map((i) => `- ${i.id} at ${i.time ?? '?'}${i.scene ? ` (scene ${i.scene})` : ''}: ${i.problem}`).join('\n')}`
     : '';
-  return `${story ? STORY_SHARED : SHARED}\n\n${(story ? STORY_KIND_TEXT : KIND_TEXT)[kind]}${ledger}${extra ? '\n\n' + extra : ''}
+  return `${rubric(kind, story)}${ledger}${extra ? '\n\n' + extra : ''}
 
 Answer with one JSON object and nothing else:
 {
   "verdict": "ship" or "one more pass",
-  "problems": [{ "rank": 1, "time": "m:ss.ss", "frame": 0, "scene": "id", "problem": "...", "why": "...", "fix": "..." }],
+  "score": 0 to 10,
+  "problems": [{ "rank": 1, "time": "m:ss.ss", "frame": 0, "scene": "id", "problem": "...", "why": "...", "fix": "...", "blocking": true or false }],
   "ledger": [{ "id": "F1-2", "status": "fixed" | "partly fixed" | "still there", "note": "..." }],
   "soundOff": "storyboard reviews only: does the story read with the sound off, and where does it break",
   "summary": "two sentences a busy person can act on"
 }`;
 }
+
+// The fixed part of the prompt: what the critic is told to value. Its hash binds a calibration to
+// the rubric it was measured with; change the rubric and the calibration has to be run again.
+export const rubric = (kind, story = false) => `${story ? STORY_SHARED : SHARED}\n\n${BLOCKING}\n\n${(story ? STORY_KIND_TEXT : KIND_TEXT)[kind]}`;
 
 // Pull the JSON object out of a model's answer (bare, fenced, or wrapped by the CLI).
 export function parseCritique(text) {
@@ -127,18 +147,35 @@ export function parseCritique(text) {
 }
 
 function normalize(c) {
-  const verdict = String(c.verdict ?? '').toLowerCase().trim() === 'ship' ? 'ship' : 'one more pass';
-  const problems = (Array.isArray(c.problems) ? c.problems : []).map((p, i) => ({ rank: +p.rank || i + 1, time: p.time ?? null, frame: Number.isFinite(+p.frame) ? +p.frame : null, scene: p.scene != null ? String(p.scene) : null, problem: String(p.problem ?? ''), why: String(p.why ?? ''), fix: String(p.fix ?? '') }))
+  let verdict = String(c.verdict ?? '').toLowerCase().trim() === 'ship' ? 'ship' : 'one more pass';
+  const yes = (v) => v === true || String(v).toLowerCase() === 'true';
+  const problems = (Array.isArray(c.problems) ? c.problems : []).map((p, i) => ({ rank: +p.rank || i + 1, time: p.time ?? null, frame: Number.isFinite(+p.frame) ? +p.frame : null, scene: p.scene != null ? String(p.scene) : null, problem: String(p.problem ?? ''), why: String(p.why ?? ''), fix: String(p.fix ?? ''), blocking: yes(p.blocking) }))
     .filter((p) => p.problem).sort((a, b) => a.rank - b.rank);
   const STATUS = ['fixed', 'partly fixed', 'still there'];
   const ledger = (Array.isArray(c.ledger) ? c.ledger : []).map((l) => ({ id: String(l.id), status: STATUS.includes(String(l.status).toLowerCase()) ? String(l.status).toLowerCase() : 'still there', note: String(l.note ?? '') }));
-  return { verdict, problems, ledger, soundOff: c.soundOff ?? null, summary: c.summary ?? null };
+  const score = Number.isFinite(+c.score) && c.score !== null && c.score !== '' ? Math.max(0, Math.min(10, +c.score)) : null;
+  const blocking = problems.filter((p) => p.blocking).length;
+  // a blocking problem can't ship, whatever the critic said
+  const said = verdict;
+  if (blocking) verdict = 'one more pass';
+  return { verdict, said, score, blocking, problems, ledger, soundOff: c.soundOff ?? null, summary: c.summary ?? null };
+}
+
+// Shane's calibration (lib/calibrate.mjs) for this rubric: with it, a film ships only with no
+// blocking problem AND a score at or above the threshold his accepted films set. Returns the
+// critique with the verdict it ends on and why.
+export function applyCalibration(critique, cal, rubricSha) {
+  if (!cal) return { ...critique, calibration: 'none yet (node photoreal/calibrate.mjs run)' };
+  if (cal.rubricSha !== rubricSha) return { ...critique, calibration: 'stale: the rubric changed since it was calibrated; run node photoreal/calibrate.mjs run' };
+  if (!Number.isFinite(cal.threshold)) return { ...critique, calibration: `not trusted: ${cal.problems?.[0] ?? 'no bar'}` };
+  const ok = !critique.blocking && critique.score != null && critique.score >= cal.threshold;
+  return { ...critique, verdict: ok ? 'ship' : 'one more pass', calibration: `ship needs no blocking problem and a score of at least ${cal.threshold} (from ${cal.films} of Shane's verdicts; the critic agrees with him on ${cal.agreement})` };
 }
 
 // Fold one round into the ledger that runs across rounds.
 export function mergeLedger(ledger, { kind, round, critique, agent, at }) {
   const L = ledger ?? { rounds: [], items: [] };
-  L.rounds.push({ kind, round, verdict: critique.verdict, agent, at, problems: critique.problems.length });
+  L.rounds.push({ kind, round, verdict: critique.verdict, agent, at, problems: critique.problems.length, blocking: critique.blocking ?? 0, score: critique.score ?? null });
   const seen = new Set();
   for (const e of critique.ledger) {
     const item = L.items.find((i) => i.id === e.id);
@@ -150,7 +187,7 @@ export function mergeLedger(ledger, { kind, round, critique, agent, at }) {
   for (const item of L.items) if (item.kind === kind && item.status !== 'fixed' && !seen.has(item.id)) item.history.push({ round, status: 'not checked', note: 'the critic did not report on it this round' });
   const prefix = { storyboard: 'S', stills: 'K', film: 'F' }[kind];
   for (const p of critique.problems) {
-    L.items.push({ id: `${prefix}${round}-${p.rank}`, kind, round, status: 'open', time: p.time, frame: p.frame, scene: p.scene, problem: p.problem, why: p.why, fix: p.fix, history: [] });
+    L.items.push({ id: `${prefix}${round}-${p.rank}`, kind, round, status: 'open', time: p.time, frame: p.frame, scene: p.scene, problem: p.problem, why: p.why, fix: p.fix, blocking: !!p.blocking, history: [] });
   }
   return L;
 }

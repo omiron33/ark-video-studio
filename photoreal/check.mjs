@@ -21,6 +21,11 @@
 //                 scene can give "cameraOnly": "<why>" (see lib/live.mjs)
 //   rest-to-rest  warns when a shot's camera starts and ends at a standstill, so the cut joins two
 //                 stopped cameras; a scene can give "rest": "<why>" (read from the scene's camera)
+//   flash         no more than 3 full-frame flashes in any second (WCAG 2.3.1; see lib/flash.mjs)
+// A music video ("mode": "musicvideo") mixes generated shots with code shots and moves its camera to
+// the track: the shake gate is off (the pop camera is the point), rest-to-rest and in-scene read only
+// its code shots, and the word gates read only the words sung inside shots that carry them (shots
+// with a code scene behind them); every other gate, flash included, runs as usual.
 // A narrated story film ("mode": "story") is judged on its voice instead of a beat and a lyric:
 //   spoken-text   the encoded film's audio, transcribed locally, says the script exactly
 //   audio-sync    the encoded audio lines up with the narration mix it was made from
@@ -39,6 +44,7 @@ import { makeKeys } from './lib/keys.mjs';
 import { LIVE_DEFAULTS, liveResidual, cameraOnlyStretches, restToRest } from './lib/live.mjs';
 import { fmtTime } from './lib/storyboard.mjs';
 import { shakeReview } from './lib/shake.mjs';
+import { FLASH, frameLuminance, transitionOf, countFlashes } from './lib/flash.mjs';
 import { inSceneReview } from './lib/inscene.mjs';
 import { resolveTier } from './lib/tier.mjs';
 import { isStory, storyConfig, STORY_GATES, onScreenLyrics, cutsInsideWords, eventProblems, voiceOverMusic, bestLag } from './lib/story.mjs';
@@ -54,6 +60,7 @@ const film = read('film.json'), lyrics = read('data/lyrics.json') ?? { lines: []
 // premium and ultra (the default) let words sit close in a designed layout; every word must still read
 const tier = resolveTier(SONG, film, opt('tier')).tier;
 const story = isStory(film);
+const musicVideo = film?.mode === 'musicvideo';
 const G = { ...DEFAULTS, ...LIVE_DEFAULTS, ...(story ? STORY_GATES : {}), maxShotSeconds: Infinity, longShotWarn: 8, ...(film?.gates ?? {}) };
 const video = path.resolve(SONG, opt('video', label === 'draft' ? 'out/film-draft.mp4' : 'out/film.mp4'));
 if (!fs.existsSync(video)) { console.error(`no film at ${video}`); process.exit(1); }
@@ -140,30 +147,58 @@ for (const s of deadStops(mad, fps, { ...G, stillThreshold: G.stopThreshold, cut
   }
 }
 
+// ---------- flash: no more than 3 full-frame flashes in any second ----------
+let flashReport = null;
+{
+  console.log('flash: counting full-frame flashes');
+  const FN = FLASH.width * FLASH.height * 3;
+  // streamed: only the previous frame is kept
+  const ev = await new Promise((resolve, reject) => {
+    const out = []; let carry = Buffer.alloc(0), prev = null;
+    const p = spawn('ffmpeg', ['-loglevel', 'error', '-i', video, '-vf', `fps=${FLASH.fps},scale=${FLASH.width}:${FLASH.height}:flags=area,format=rgb24`, '-f', 'rawvideo', '-']);
+    p.stdout.on('data', (d) => {
+      carry = Buffer.concat([carry, d]);
+      while (carry.length >= FN) { const L = frameLuminance(carry.subarray(0, FN)); carry = carry.subarray(FN); if (prev) out.push(transitionOf(prev, L, G.flash ?? {})); prev = L; }
+    });
+    p.on('close', (c) => (c === 0 ? resolve(out) : reject(Error('ffmpeg flash pass failed'))));
+  });
+  const fl = countFlashes(ev, { fps: FLASH.fps, max: G.maxFlashesPerSecond ?? FLASH.max });
+  flashReport = { flashes: fl.flashes, worstPerSecond: fl.worstPerSecond, limit: fl.limit, flashTimes: fl.flashTimes.slice(0, 200) };
+  for (const f of fl.fails) add('flash', 'fail', Math.round(f.time * fps), `${f.flashes} full-frame flashes within one second from ${fmtTime(f.time)} (the limit is ${fl.limit}; WCAG 2.3.1, a risk to viewers with photosensitive epilepsy)`, 'keep to 3 flashes a second: let the light swell and hold instead of strobing, shrink the flash to under a quarter of the frame, or lower its contrast');
+}
+
 // ---------- rest-to-rest: shots whose camera starts and ends at a standstill ----------
-if (scenes.length) {
-  const list = scenes.map((s) => ({ id: s.id, scene: s.scene, params: s.params, from: s.from, to: s.to }));
+const coded = scenes.filter((s) => s.scene);
+if (coded.length) {
+  const list = coded.map((s) => ({ id: s.id, scene: s.scene, params: s.params, from: s.from, to: s.to }));
   const r = spawnSync('node', [path.join(HERE, 'render.mjs'), 'camera', '--song', SONG, '--scenes64', Buffer.from(JSON.stringify(list)).toString('base64')], { encoding: 'utf8', maxBuffer: 256 * 1024 * 1024 });
   const tracks = (r.stdout ?? '').split('\n').filter((l) => l.startsWith('CAMERA ')).map((l) => JSON.parse(l.slice(7)));
   if (r.status !== 0 || !tracks.length) add('rest-to-rest', 'warn', 0, 'the scenes\' cameras could not be read, so shots were not checked for starting and ending at rest', 'run node photoreal/render.mjs camera --song S --scenes \'[...]\' to see why');
   for (const tr of tracks.filter((x) => x.error)) add('rest-to-rest', 'warn', Math.round((scenes.find((s) => s.id === tr.id)?.from ?? 0) * fps), `the camera of scene ${tr.id} could not be read: ${tr.error}`, 'check the scene module builds outside the renderer');
-  for (const p of restToRest(tracks.filter((x) => !x.error), scenes, G)) add('rest-to-rest', 'warn', Math.round(p.from * fps), `scene ${p.id}'s camera starts and ends at a standstill (${Math.round(p.head * 100)}% and ${Math.round(p.tail * 100)}% of its top speed), so its cuts join stopped cameras`, `let the shot enter or leave moving: rig() from /kit/motion.js with enter or exit 'moving' (the default), or give scene ${p.id} "rest": "<why>"`);
+  for (const p of restToRest(tracks.filter((x) => !x.error), coded, G)) add('rest-to-rest', 'warn', Math.round(p.from * fps), `scene ${p.id}'s camera starts and ends at a standstill (${Math.round(p.head * 100)}% and ${Math.round(p.tail * 100)}% of its top speed), so its cuts join stopped cameras`, `let the shot enter or leave moving: rig() from /kit/motion.js with enter or exit 'moving' (the default), or give scene ${p.id} "rest": "<why>"`);
 }
 
 // ---------- cuts against the measured beats ----------
-if (!story && audio?.beats?.length && scenes.length > 1) {
-  for (const c of cutsOffBeat(scenes, audio.beats, fps, G)) add('cut-beat', 'fail', Math.round(c.cut * fps), `the cut into scene ${c.id} is ${Math.abs(c.offFrames)} frame${Math.abs(c.offFrames) === 1 ? '' : 's'} ${c.offFrames > 0 ? 'after' : 'before'} the beat at ${fmtTime(c.beat)}`, `move the cut to ${c.target.toFixed(3)} s (the beat) or up to ${G.cutEarlyFrames} frames earlier, or give the scene "offBeat": "<reason>" if it follows the voice on purpose`);
+// a music video without data/audio.json cuts on the beat map in data/music.json (lib/music.py)
+const beats = audio?.beats?.length ? audio.beats : musicVideo ? read('data/music.json')?.beats : null;
+if (!story && beats?.length && scenes.length > 1) {
+  for (const c of cutsOffBeat(scenes, beats, fps, G)) add('cut-beat', 'fail', Math.round(c.cut * fps), `the cut into scene ${c.id} is ${Math.abs(c.offFrames)} frame${Math.abs(c.offFrames) === 1 ? '' : 's'} ${c.offFrames > 0 ? 'after' : 'before'} the beat at ${fmtTime(c.beat)}`, `move the cut to ${c.target.toFixed(3)} s (the beat) or up to ${G.cutEarlyFrames} frames earlier, or give the scene "offBeat": "<reason>" if it follows the voice on purpose`);
 }
 
 // ---------- shake: only where a scene opted in for a violent moment ----------
-for (const p of shakeReview(SONG, scenes, G)) add('shake', p.severity, p.scene ? Math.round(p.scene.from * fps) : 0, p.detail, p.fix);
+if (!musicVideo) for (const p of shakeReview(SONG, scenes, G)) add('shake', p.severity, p.scene ? Math.round(p.scene.from * fps) : 0, p.detail, p.fix);
 
 // ---------- in-scene: words in the world, not over it ----------
-for (const p of inSceneReview(SONG, scenes, tier)) add('in-scene', p.severity, Math.round(p.scene.from * fps), p.detail, p.fix);
+for (const p of inSceneReview(SONG, coded, tier)) add('in-scene', p.severity, Math.round(p.scene.from * fps), p.detail, p.fix);
 
 // ---------- story: the voice, the mix, the beats ----------
 // the text gates below then read only the phrases a story film puts on screen
 let shown = lyrics;
+if (musicVideo) {
+  // only the words sung inside shots that carry words
+  const inWords = (t) => coded.some((s) => t >= s.from && t < s.to);
+  shown = { lines: (lyrics.lines ?? []).filter((l) => inWords(l.start)), words: (lyrics.words ?? []).filter((w) => inWords(w.start)) };
+}
 if (story) {
   const cfg = storyConfig(film);
   const storyData = read('data/story.json');
@@ -290,6 +325,7 @@ const report = {
   // whether this check still describes the current scenes
   thresholds: G, content: read(path.relative(SONG, video.replace(/\.mp4$/, '') + '.content.json')) ?? Object.fromEntries(scenes.map((s) => [s.id, keys.content(s, film.fps ?? 60)])),
   summary, problems,
+  flash: flashReport,
   ...(story ? { story: { sync: syncReport, voiceOverMusic: balanceReport, spoken: spokenReport } } : {}),
 };
 const outFile = path.join(REVIEW, `check-${label}.json`);

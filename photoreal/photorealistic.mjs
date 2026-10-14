@@ -19,6 +19,16 @@
 // H3 makes 24 fps pictures at 960x544, upscaled to 1920x1080; a scene longer than 15 s is made in
 // pieces, each starting from the last frames of the one before. Output: out/photorealistic/<id>.mp4
 // per scene, then out/film-photorealistic.mp4 with the song when every scene is done.
+//
+// Words that tuck: with "photorealistic": { "tuck": true } (on by default in a music video; --no-tuck
+// turns it off) the code words are cut where H3 paints something nearer in front of them, measured
+// from H3's own frames, so only a line's end letter ever tucks (lib/tuck.py).
+//
+// The music video ("mode": "musicvideo", see musicvideo.mjs) uses this for its generated shots: only
+// scenes with "source": "h3" are painted here. A generated shot with a code scene behind it works as
+// above. One without ("source": "h3" and no "scene") is live action: H3 paints it from its prompt and
+// look, steered by "photorealistic": { "proxy": "<a guide video in the song folder>" } when it has one
+// (a Blender greybox of the blocking and camera, rendered at any size), and carries no words.
 import fs from 'node:fs';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
@@ -59,12 +69,23 @@ const FW = 1920, FH = 1088;   // code renders at twice H3's 960x544, cropped to 
 // Each piece's prompt is the style, the take's place, then the action of the scenes it covers in order
 // (each scene's own "photorealistic": { "prompt" }).
 const PR = film.photorealistic ?? {};
-const byId = Object.fromEntries(film.scenes.map((s) => [s.id, s]));
+const MV = film.mode === 'musicvideo';
+const tuck = argv.includes('--no-tuck') ? false : argv.includes('--tuck') ? true : (PR.tuck ?? MV);
+// a music video paints only its generated shots here; its code shots render as code (film.mjs)
+const painted = MV ? film.scenes.filter((s) => s.source === 'h3') : film.scenes;
+const byId = Object.fromEntries(painted.map((s) => [s.id, s]));
 const allUnits = PR.takes
   ? PR.takes.map((t) => ({ id: t.id, place: t.prompt, look: t.look, scenes: t.scenes.map((id) => byId[id] ?? (() => { throw Error(`take ${t.id}: no scene ${id}`); })()) }))
-  : film.scenes.map((s) => ({ id: s.id, place: null, scenes: [s] }));
+  : painted.map((s) => ({ id: s.id, place: null, look: s.photorealistic?.look, scenes: [s] }));
+for (const u of allUnits) {
+  // a unit is steered by its code scenes (and keeps their words), or is live action with none
+  const withCode = u.scenes.filter((s) => s.scene).length;
+  if (withCode && withCode < u.scenes.length) throw Error(`take ${u.id} mixes code scenes and live-action shots; split it into two takes`);
+  u.words = withCode > 0;
+  u.guide = u.words ? null : (PR.takes?.find((t) => t.id === u.id)?.proxy ?? u.scenes[0].photorealistic?.proxy ?? null);
+}
 const covered = new Set(allUnits.flatMap((u) => u.scenes.map((s) => s.id)));
-const missing = film.scenes.filter((s) => !covered.has(s.id)).map((s) => s.id);
+const missing = painted.filter((s) => !covered.has(s.id)).map((s) => s.id);
 if (missing.length) throw Error(`scenes in no take: ${missing.join(', ')}`);
 const only = opt('only')?.split(',');
 const units = allUnits.filter((u) => !only || only.includes(u.id));
@@ -127,17 +148,23 @@ for (const u of units) {
   let at = 0; const marks = u.parts.map((p) => { const m = { ...p, f0: at }; at += sceneFrames(p.a, p.b); return { ...m, f1: at }; });
 
   // 1. the proxy: the code picture without its words, at H3's size and rate
-  const proxy = path.join(dir, 'proxy.mp4');
-  if (doing('proxy')) pass(u, from, to, 'proxy', dir);
+  // (live action: the guide video conformed to H3's size, rate and length, or no proxy at all)
+  let proxy = path.join(dir, 'proxy.mp4');
+  if (u.words) { if (doing('proxy')) pass(u, from, to, 'proxy', dir); }
+  else if (u.guide) {
+    const src = path.resolve(SONG, u.guide);
+    if (!fs.existsSync(src)) throw Error(`take ${u.id}: no guide video at ${src}`);
+    if (doing('proxy') && !have(proxy)) ff(['-ss', String(from - a0), '-i', src, '-vf', `fps=${H3.fps},scale=${H3.width}:${H3.height}:force_original_aspect_ratio=increase,crop=${H3.width}:${H3.height},tpad=stop_mode=clone:stop=${n},trim=end_frame=${n},setpts=PTS-STARTPTS`, '-an', '-c:v', 'libx264', '-crf', '12', '-pix_fmt', 'yuv420p', proxy], 'guide proxy');
+  } else proxy = null;
   // 2. the words: the full-size code picture with and without them
   const withWords = path.join(dir, 'words.mp4'), noWords = path.join(dir, 'plate.mp4');
-  if (doing('words')) { pass(u, from, to, 'words', dir); pass(u, from, to, 'plate', dir); }
+  if (u.words && doing('words')) { pass(u, from, to, 'words', dir); pass(u, from, to, 'plate', dir); }
 
   // the style reference
   // a take's own "look" (an image in the song folder) wins over --look
   let lookFile = null;
   if (u.look && !argv.includes('--look')) lookFile = path.resolve(SONG, u.look);
-  else if (look === 'code') { lookFile = path.join(dir, 'look.png'); if (!have(lookFile)) ff(['-i', proxy, '-frames:v', '1', lookFile], 'first code frame'); }
+  else if (look === 'code' && proxy) { lookFile = path.join(dir, 'look.png'); if (!have(lookFile)) ff(['-i', proxy, '-frames:v', '1', lookFile], 'first code frame'); }
   else if (look !== 'none') lookFile = path.resolve(look);
 
   // 3. H3, in pieces of at most maxFrames; each later piece repeats the last 5 frames of the one before
@@ -155,14 +182,14 @@ for (const u of units) {
   };
   const outs = pieces.map((p, i) => path.join(dir, `h3-${i}-${seed}.mp4`));
   if (doing('h3')) {
-    while (!fs.existsSync(proxy)) { console.log(`  waiting for ${path.relative(SONG, proxy)}`); await sleep(60000); }
+    while (proxy && !fs.existsSync(proxy)) { console.log(`  waiting for ${path.relative(SONG, proxy)}`); await sleep(60000); }
     for (const [i, p] of pieces.entries()) {
       const tag = `${path.basename(SONG)}-${u.id}-${i}`;
       const out = outs[i];
       if (have(out)) continue;
-      const piece = path.join(dir, `proxy-${i}.mp4`);
+      const piece = proxy && path.join(dir, `proxy-${i}.mp4`);
       // the proxy's frames for this piece, the last one held if the piece runs past the unit
-      ff(['-i', proxy, '-vf', `${proxyBlur ? `gblur=sigma=${proxyBlur},` : ''}trim=start_frame=${p.start}:end_frame=${p.start + p.len},setpts=PTS-STARTPTS,tpad=stop_mode=clone:stop=${p.len},trim=end_frame=${p.len}`, '-r', String(H3.fps), '-c:v', 'libx264', '-crf', '12', '-pix_fmt', 'yuv420p', piece], 'proxy piece');
+      if (proxy) ff(['-i', proxy, '-vf', `${proxyBlur ? `gblur=sigma=${proxyBlur},` : ''}trim=start_frame=${p.start}:end_frame=${p.start + p.len},setpts=PTS-STARTPTS,tpad=stop_mode=clone:stop=${p.len},trim=end_frame=${p.len}`, '-r', String(H3.fps), '-c:v', 'libx264', '-crf', '12', '-pix_fmt', 'yuv420p', piece], 'proxy piece');
       let guideFile = null;
       if (i > 0) {
         guideFile = path.join(dir, `guide-${i}.mp4`);
@@ -197,22 +224,38 @@ for (const u of units) {
   const gen = path.join(dir, `generated-${seed}.mp4`);
   ff(['-f', 'concat', '-safe', '0', '-i', list, '-vf', `trim=end_frame=${n},scale=${FW}:${FH}:flags=lanczos`, '-c:v', 'libx264', '-crf', '10', '-pix_fmt', 'yuv420p', gen], 'join');
   const song = path.join(SONG, 'media', 'song.wav');
-  ff(['-i', gen, '-i', withWords, '-i', noWords, ...(fs.existsSync(song) ? ['-ss', String(from), '-t', String(n / H3.fps), '-i', song] : []),
-    '-filter_complex',
-    // the matte: where the code picture changes when its words are left out, softened by a pixel
-    // (in RGB: a YUV difference has an offset in every pixel), less a little for encoder noise
-    '[1:v]format=gbrp,split[wa][w0];[2:v]format=gbrp[pa];[wa][pa]blend=all_mode=difference,'
+  const audioIn = fs.existsSync(song) ? ['-ss', String(from), '-t', String(n / H3.fps), '-i', song] : [];
+  const encodeOut = ['-r', String(H3.fps), '-c:v', 'libx264', '-preset', 'slow', '-crf', '14',
+    '-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709', '-movflags', '+faststart', seg];
+  // the matte: where the code picture changes when its words are left out, softened by a pixel
+  // (in RGB: a YUV difference has an offset in every pixel), less a little for encoder noise
+  const matteGraph = '[1:v]format=gbrp,split[wa][w0];[2:v]format=gbrp[pa];[wa][pa]blend=all_mode=difference,'
     + 'colorchannelmixer=rr=.34:rg=.33:rb=.33:gr=.34:gg=.33:gb=.33:br=.34:bg=.33:bb=.33,format=gray,'
-    + `lut=y='clip((val-${matteFloor})*${matteGain},0,255)',gblur=sigma=1.2,format=gbrp[m];`
-    + `[0:v]trim=end_frame=${n},format=gbrp[g];[w0]trim=end_frame=${n}[w];[g][w][m]maskedmerge,crop=1920:1080,format=yuv420p[v]`,
-    '-map', '[v]', ...(fs.existsSync(song) ? ['-map', '3:a', '-c:a', 'aac', '-b:a', '320k', '-shortest'] : []),
-    '-r', String(H3.fps), '-c:v', 'libx264', '-preset', 'slow', '-crf', '14',
-    '-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709', '-movflags', '+faststart', seg], 'word composite');
-  fs.writeFileSync(path.join(dir, 'run.json'), JSON.stringify({ unit: u.id, scenes: u.parts.map((p) => p.s.id), from, to, frames: n, pieces: pieces.map((p) => ({ ...p, prompt: promptOf(p) })), look, keep, steps, seed, generated: 'every pixel but the in-scene words is painted by MiniMax H3' }, null, 1));
+    + `lut=y='clip((val-${matteFloor})*${matteGain},0,255)',gblur=sigma=1.2`;
+  let tuckReport = null;
+  if (!u.words) {
+    // a generated shot with no code scene behind it (a music video's live-action take): no words to lay on
+    ff(['-i', gen, ...(audioIn.length ? audioIn : []), '-vf', `trim=end_frame=${n},crop=1920:1080,format=yuv420p`, '-map', '0:v', ...(audioIn.length ? ['-map', '1:a', '-c:a', 'aac', '-b:a', '320k', '-shortest'] : []), ...encodeOut], 'generated shot');
+  } else if (tuck) {
+    // the words tuck behind what H3 paints in front of them (lib/tuck.py): the matte is written out,
+    // cut where H3's own depth puts something nearer than the words' surface, then used as before
+    const matte = path.join(dir, 'matte.mkv'), tucked = path.join(dir, 'matte-tucked.mkv'), rep = path.join(dir, 'tuck.json');
+    ff(['-i', gen, '-i', withWords, '-i', noWords, '-filter_complex', `${matteGraph},trim=end_frame=${n}[m]`, '-map', '[m]', '-c:v', 'ffv1', '-pix_fmt', 'gray', matte], 'word matte');
+    run('python3', [path.join(HERE, 'lib', 'tuck.py'), '--generated', gen, '--matte', matte, '--out', tucked, '--report', rep], 'word tuck');
+    tuckReport = JSON.parse(fs.readFileSync(rep, 'utf8'));
+    ff(['-i', gen, '-i', withWords, '-i', tucked, ...audioIn,
+      '-filter_complex', `[2:v]format=gray,format=gbrp[m];[0:v]trim=end_frame=${n},format=gbrp[g];[1:v]format=gbrp,trim=end_frame=${n}[w];[g][w][m]maskedmerge,crop=1920:1080,format=yuv420p[v]`,
+      '-map', '[v]', ...(audioIn.length ? ['-map', '3:a', '-c:a', 'aac', '-b:a', '320k', '-shortest'] : []), ...encodeOut], 'word composite');
+  } else {
+    ff(['-i', gen, '-i', withWords, '-i', noWords, ...audioIn,
+      '-filter_complex', `${matteGraph},format=gbrp[m];[0:v]trim=end_frame=${n},format=gbrp[g];[w0]trim=end_frame=${n}[w];[g][w][m]maskedmerge,crop=1920:1080,format=yuv420p[v]`,
+      '-map', '[v]', ...(audioIn.length ? ['-map', '3:a', '-c:a', 'aac', '-b:a', '320k', '-shortest'] : []), ...encodeOut], 'word composite');
+  }
+  fs.writeFileSync(path.join(dir, 'run.json'), JSON.stringify({ unit: u.id, scenes: u.parts.map((p) => p.s.id), from, to, frames: n, pieces: pieces.map((p) => ({ ...p, prompt: promptOf(p) })), look, keep, steps, seed, tuck: tuckReport, generated: u.words ? 'every pixel but the in-scene words is painted by MiniMax H3' : 'every pixel is painted by MiniMax H3' }, null, 1));
   console.log('wrote', seg);
   done.push(seg);
 }
-if (!only && !argv.includes('--from') && !argv.includes('--to') && done.length === allUnits.length) {
+if (!MV && !only && !argv.includes('--from') && !argv.includes('--to') && done.length === allUnits.length) {
   const list = path.join(OUT, 'segments.txt');
   fs.writeFileSync(list, done.map((f) => `file '${f}'`).join('\n'));
   const out = path.resolve(opt('out', path.join(SONG, 'out', 'film-photorealistic.mp4')));

@@ -74,9 +74,14 @@ const stallSec = +opt('stall', 180), retries = +opt('retries', 2);
 const started = Date.now();
 const notes = [];
 
-// tiling check
-const scenes = film.scenes;
-for (let i = 1; i < scenes.length; i++) {
+// A music video ("mode": "musicvideo", see musicvideo.mjs) mixes code shots with generated ones
+// ("source": "h3", painted by photorealistic.mjs); this renders only its code shots, and
+// musicvideo.mjs joins the film.
+const musicVideo = film.mode === 'musicvideo';
+const scenes = musicVideo ? film.scenes.filter((s) => s.source !== 'h3') : film.scenes;
+if (musicVideo && !only && !flag('stills') && !flag('estimate')) throw Error('a music video is made with node photoreal/musicvideo.mjs; film.mjs renders its code shots there with --only');
+// tiling check (a music video's code shots have its generated shots between them)
+if (!musicVideo) for (let i = 1; i < scenes.length; i++) {
   if (Math.abs(scenes[i].from - scenes[i - 1].to) > 1e-6) throw Error(`gap or overlap between ${scenes[i - 1].id} and ${scenes[i].id}`);
 }
 
