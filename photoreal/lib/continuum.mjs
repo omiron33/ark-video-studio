@@ -1,10 +1,11 @@
 // H3-Continuum chaining for the photorealistic setting (photorealistic.mjs, "chain": "continuum").
 //
-// ON TRIAL since 2026-10-14 (Shane's call: "if the output sucks when we do the full glory video, we'll
-// remove it"). If photoreal output looks wrong (contrast or sharpness that climbs through a take, a
-// one-frame texture pop every ~5 s, the camera not following the code render), this is the first
-// suspect: set "photorealistic": { "chain": "bridges" } in film.json (or pass --chain bridges) to go
-// back to the old pieces joined by 5-frame guide bridges, or remove this file and its branch.
+// OPT-IN ONLY ("photorealistic": { "chain": "continuum" } or --chain continuum). Added 2026-10-14 on trial;
+// FAILED its trial on 2026-10-15 (King of Glory, hall-of-Hades take T03, 0:31-0:57, steered by the code
+// render): the last chunk jumped back to an earlier shot, then showed the raw code layout instead of
+// the film, most likely because Continuum applies the guide video at every denoise step (the bridges
+// path applies it only for the first `keep` steps). It also ran ~8.5 s per frame on OmiPC.
+// The default went back to "bridges". Don't opt a lyric or code-steered take in until that is fixed.
 //
 // ComfyUI-H3-Continuum (MIT, github.com/ukr8b3g-cmyk/ComfyUI-H3-Continuum, v3.9.4 on OmiPC) makes one
 // long H3 take as 5 s chunks in a single job, each chunk carrying the last 22 frames of the one before,
@@ -23,6 +24,9 @@
 // lib/chainmatch.py (each chunk's colour and contrast matched back to the take's first chunk, following
 // the code render's own light changes) are the guards against the drift.
 import { H3, h3Len } from './h3.mjs';
+
+// how photorealistic.mjs joins a long take when film.json doesn't say
+export const DEFAULT_CHAIN = 'bridges';
 
 export const CONTINUUM = {
   chunkSeconds: 5,                       // the chunk length Continuum is validated at

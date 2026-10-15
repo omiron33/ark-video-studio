@@ -34,7 +34,7 @@ import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { H3, h3Len, findComfy, claimGpu, gpuProgress, gpuEnd, generate, upload, runGraph, STYLE_REFERENCE } from './lib/h3.mjs';
-import { CONTINUUM, planChains, usesContinuum, timelinePrompt, continuumWorkflow, hasContinuum, chunkBounds } from './lib/continuum.mjs';
+import { CONTINUUM, DEFAULT_CHAIN, planChains, usesContinuum, timelinePrompt, continuumWorkflow, hasContinuum, chunkBounds } from './lib/continuum.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const RENDER = path.join(HERE, 'render.mjs');
@@ -70,13 +70,13 @@ const FW = 1920, FH = 1088;   // code renders at twice H3's 960x544, cropped to 
 // Each piece's prompt is the style, the take's place, then the action of the scenes it covers in order
 // (each scene's own "photorealistic": { "prompt" }).
 const PR = film.photorealistic ?? {};
-// How a take longer than one H3 piece is joined (ON TRIAL since 2026-10-14, see lib/continuum.mjs):
-//   "continuum" (default): ComfyUI-H3-Continuum chains, 5 s chunks with 22 frames of carried context,
+// How a take longer than one H3 piece is joined (see lib/continuum.mjs):
+//   "bridges" (default): the original pieces, each started from the previous piece's last 5 frames
+//   "continuum" (opt-in only; its trial FAILED on 2026-10-15, see lib/continuum.mjs): ComfyUI-H3-Continuum
+//               chains, 5 s chunks with 22 frames of carried context,
 //               steered chunk by chunk by the code render, colour/contrast matched back to the first chunk
-//   "bridges":  the original pieces, each started from the previous piece's last 5 frames
-// If photoreal takes look harsh or contrasty at their ends, pop every ~5 s, or stop following the code
-// camera, Continuum is the first suspect: set "photorealistic": { "chain": "bridges" } or pass --chain bridges.
-const chain = opt('chain', PR.chain ?? 'continuum');
+// Don't opt a code-steered (lyric) take into Continuum until the late-chain jump and code show-through are fixed.
+const chain = opt('chain', PR.chain ?? DEFAULT_CHAIN);
 if (!['continuum', 'bridges'].includes(chain)) throw Error(`"chain" is continuum or bridges, not ${chain}`);
 const MV = film.mode === 'musicvideo';
 const tuck = argv.includes('--no-tuck') ? false : argv.includes('--tuck') ? true : (PR.tuck ?? MV);

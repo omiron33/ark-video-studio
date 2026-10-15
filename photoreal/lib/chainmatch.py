@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Continuum drift guard (photorealistic setting, "chain": "continuum"; ON TRIAL since 2026-10-14).
+"""Continuum drift guard (photorealistic setting, "chain": "continuum"; opt-in only, its trial failed 2026-10-15).
 
     python3 photoreal/lib/chainmatch.py --generated joined.mp4 --bounds '[[0,124],[124,243]]' --out matched.mp4
                                         [--proxy proxy.mp4] [--report chainmatch.json]

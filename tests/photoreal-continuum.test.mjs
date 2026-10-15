@@ -4,10 +4,17 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
-import { CONTINUUM, planChains, usesContinuum, timelinePrompt, continuumWorkflow, chunkBounds } from '../photoreal/lib/continuum.mjs';
+import { CONTINUUM, DEFAULT_CHAIN, planChains, usesContinuum, timelinePrompt, continuumWorkflow, chunkBounds } from '../photoreal/lib/continuum.mjs';
 import { H3 } from '../photoreal/lib/h3.mjs';
 
 const fresh = (chains) => chains.reduce((k, c, i) => k + c.len - (i ? 1 : 0), 0);
+
+test('bridges are the default; Continuum is opt-in only (its trial failed 2026-10-15)', () => {
+  assert.equal(DEFAULT_CHAIN, 'bridges');
+  const src = fs.readFileSync(new URL('../photoreal/photorealistic.mjs', import.meta.url), 'utf8');
+  assert.match(src, /opt\('chain', PR\.chain \?\? DEFAULT_CHAIN\)/);
+  assert.equal(usesContinuum(DEFAULT_CHAIN, 3), false, 'a long take with no "chain" in film.json uses bridges');
+});
 
 test('Continuum is used only for takes that would otherwise be joined from pieces', () => {
   assert.equal(usesContinuum('continuum', 1), false);

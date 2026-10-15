@@ -390,8 +390,8 @@ github.com/code-video-model/CodeVideoModel, Apache 2.0):
 2. **H3.** On the machine in `~/.config/ark/machines.json` that has a ComfyUI service, through its GPU
    dashboard queue. The proxy is a reference video for only the first 5 of 20 denoise steps, so the
    code fixes layout, camera, timing and motion and H3 draws the surfaces, light and people. A take
-   too long for one H3 piece is chained with H3-Continuum by default (below); with `"chain": "bridges"`
-   it is made in pieces instead, each starting from the last 5 frames of the one before.
+   too long for one H3 piece is made in pieces, each starting from the last 5 frames of the one before
+   (`"chain": "bridges"`, the default; H3-Continuum chaining is an opt-in whose trial failed, below).
 3. **Words stay code.** The scene renders at full size with and without its words. Where the two
    differ (the letters and the light they cast) the code pixels are laid over H3's picture, so H3
    never repaints a letter. Overlay lyric layers (`scenes/<name>.lyric.js`) composite as usual.
@@ -414,18 +414,19 @@ whether the end letters of a line sit behind something nearer than the line: up 
 the first or last letter can pass behind a post, a shoulder or a branch. Every other letter stays
 whole, so a line always reads. Rule after claudia-bot's depth-occluded type (MIT).
 
-### Continuum chaining (ON TRIAL since 2026-10-14)
+### Continuum chaining (opt-in; trial failed 2026-10-15)
 
-> **Future agents: if photoreal output looks wrong, suspect this first.** Harsh or contrasty ends to
-> takes, picture that gets crisper and harsher every ~5 s, a one-frame texture pop at 5 s intervals,
-> or a camera that stops following the code render all point here. Set
-> `"photorealistic": { "chain": "bridges" }` in film.json (or pass `--chain bridges`) and re-render the
-> affected takes; if bridges look better, remove Continuum (`photoreal/lib/continuum.mjs`,
-> `photoreal/lib/chainmatch.py` and the `continuum` branch in `photorealistic.mjs`). Shane added it on
-> trial for the King of Glory photoreal film: "if the output sucks when we do the full glory video,
-> we'll remove it."
+> **Bridges are the default again. Don't opt a lyric or code-steered take into Continuum until the
+> problem below is fixed.** Continuum went in on trial on 2026-10-14 as the default ("if the output
+> sucks when we do the full glory video, we'll remove it"). It failed on 2026-10-15 on King of Glory's
+> hall-of-Hades take (T03, 0:31-0:57), steered by the code render: the last chunk jumped back to an
+> earlier shot, then showed the raw code layout instead of the film. The likely cause is that Continuum
+> applies the guide video at every denoise step, where the bridges path uses it for only the first 5 of
+> 20. It also ran ~8.5 s per frame on OmiPC. KoG went back to bridges. If a film still has
+> `"chain": "continuum"` and looks wrong (a late jump to an earlier shot, the code picture showing
+> through, harsh contrasty ends, a pop every ~5 s), switch it to `"bridges"` and re-render those takes.
 
-`"photorealistic": { "chain": "continuum" }` is the default. A take that would need more than one H3
+With `"photorealistic": { "chain": "continuum" }` (or `--chain continuum`), a take that would need more than one H3
 piece is rendered with [ComfyUI-H3-Continuum](https://github.com/ukr8b3g-cmyk/ComfyUI-H3-Continuum)
 (MIT, v3.9.4, installed in OmiPC's `C:\Comfy\custom_nodes`): one GPU job per chain of up to 15 s, as 5 s
 chunks that each carry the previous chunk's last 22 frames, seams assembled by Continuum. The take's
@@ -442,7 +443,7 @@ not corrected. Each chain's numbers are in `run.json` (`chains`, `chainMatch`).
 Measured 2026-10-14 (KoG T01, 3 x 5 s, 960x544, OmiPC 3080 Ti, first image + look, no code guide):
 passed on 12 GB with peak VRAM 11.8 of 12 GB and ~42 GB host RAM; ~80 s of GPU per output second;
 seams showed no jump but a one-frame texture pop; contrast rose ~25-30% and sharpness ~34% over three
-chunks (Continuum Issue #13). The code-guided path (Follow Timeline) was not GPU-tested before it went in.
+chunks (Continuum Issue #13). The code-guided path (Follow Timeline) failed on KoG T03 on 2026-10-15, as above.
 
 ## Music video setting (generated)
 
