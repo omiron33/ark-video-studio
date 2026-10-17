@@ -1,6 +1,7 @@
-// Lyrics live in the scene by default. The words are part of the world: painted or carved on a
-// surface, lying along a ridge, wrapped round a form, bent by the scene's own field, burned or
-// stamped, and lit, fogged and hidden by what is there. That means drawing them in the scene module
+// Lyrics live in the scene by default. The words are part of the world, in any form that fits the
+// scene: 3D letterforms, letters built into its architecture or landscape, any style or material,
+// painted or carved on a surface, lying along a ridge, wrapped round a form, bent by the scene's own
+// field, burned or stamped (examples, not a closed list), and lit, fogged and hidden by what is there. That means drawing them in the scene module
 // itself (baked), where they render with the picture and re-render with it.
 //
 // A lyric layer (scenes/<name>.lyric.js) is drawn on its own and composited over the finished

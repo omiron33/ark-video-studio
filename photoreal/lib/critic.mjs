@@ -14,10 +14,12 @@ The lyrics are the source of truth: the words on screen must match them, be read
 with the voice. Judge with your own eyes from the files in this folder. Open every image; zoom into
 text. Do not guess at anything you cannot see.
 
-The words belong to the world, not on top of it. A lyric should be part of the scene: painted or
-carved on a surface (written on the side of the ark), lying along a ridge or a wave crest, wrapped
-round a 3D form, bent by the same field that bends the scene, burned, stamped or drawn by something
-in it, lit, shadowed, fogged or hidden by what is there. The 3D world carries the story and the words
+The words belong to the world, not on top of it. A lyric should be part of the scene, in any form
+that fits it: 3D letterforms, letters built into the architecture or landscape, any style or
+material; painted or carved on a surface (written on the side of the ark), lying along a ridge or a
+wave crest, wrapped round a 3D form, bent by the same field that bends the scene, burned, stamped or
+drawn by something in it are only examples. Do not mark a form down for being unusual; judge whether
+it fits the scene and reads. The words are lit, shadowed, fogged or hidden by what is there. The 3D world carries the story and the words
 are in it. A lyric that floats over the picture like a subtitle, unaffected by anything in the
 scene, is a problem worth ranking high, unless the scene is listed as an opted-in overlay. In-scene
 words still have to be sharp and read in one clear path at the moment they are sung: no soft or

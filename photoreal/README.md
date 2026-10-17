@@ -33,10 +33,14 @@ drawText?(ctx,t,lyrics), post?(t), textSize? }`.
 
 ## Words in the scene
 
-The lyric is part of the world by default, and the world carries the story. Words are painted or
-carved on a surface (written on the side of the ark), lie along a ridge or a wave crest, wrap round a
-3D form with callout lines to what they name, bend into the same field that bends the grid, get
-typed, signed and stamped onto a page, or burn as a fuse runs through them. Something in the scene
+The lyric is part of the world by default, and the world carries the story. The words take any form
+that fits the scene: 3D letterforms standing in it, letters built into its architecture or
+landscape, any generated style or material. Painted or carved on a surface (written on the side of
+the ark), lying along a ridge or a wave crest, wrapped round a 3D form with callout lines to what
+they name, bent into the same field that bends the grid, typed, signed and stamped onto a page, lit,
+or burning as a fuse runs through them are examples, not a closed list (Shane, 2026-10-17: "The text
+can be three D, generated in various styles, part of the architecture. Anything, whatever fits the
+scene"). Design the form fresh for each scene from what it is about. Something in the scene
 touches them: its light, shadow, fog, focus, a hand, a flame, an object passing in front. Draw them
 in the scene module itself (the shader's text texture, or `htmlText` on a mesh in a premium scene)
 so they render with the picture. A word changed there re-renders that scene only, which is the

@@ -1,7 +1,7 @@
 // The storyboard: one table, written before any animation, that says for every stretch of the song
 // what is on screen, what the moment is for, how it leaves and what carries into the next shot.
-// A sixth column says where the words live in that world (carved on the hull, lying along the ridge,
-// burned by the fuse); storyboards written before it existed may leave it out, but when it is there
+// A sixth column says where the words live in that world, in any form that fits it (3D letterforms,
+// built into the architecture, carved on the hull, lying along the ridge, burned by the fuse); storyboards written before it existed may leave it out, but when it is there
 // every row fills it. It lives at docs/STORYBOARD.md in the song folder. The fresh critic checks it, including whether
 // the story reads with the sound off through the lyrics alone.
 import fs from 'node:fs';
@@ -86,6 +86,6 @@ export function draftStoryboard({ title, duration, lyrics, scenes }) {
     return `| ${fmtTime(a)}–${fmtTime(b)} | ${words ? `Lyric: ${words}. ` : ''}TODO | TODO | TODO | TODO | TODO |`;
   });
   return [`# Storyboard: ${title}`, '',
-    'Written before any animation. One row per stretch of the song. Read the lyric column top to bottom with the sound off: the story should still come through. The last column says how the words are part of that world (on a surface, along a form, lit, burned, stamped or hidden by it), not laid over it.', '',
+    'Written before any animation. One row per stretch of the song. Read the lyric column top to bottom with the sound off: the story should still come through. The last column says how the words are part of that world, in any form that fits the scene (3D letterforms, built into the architecture or landscape, any style or material, on a surface, along a form, lit, burned, stamped or hidden by it), not laid over it.', '',
     `| ${COLUMNS.join(' | ')} |`, `|${COLUMNS.map(() => '---').join('|')}|`, ...rows, ''].join('\n');
 }
