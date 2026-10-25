@@ -31,6 +31,29 @@ song/
 A scene module exports `{ name, from, to, frag, uniforms, camera(t), update?(t,u), textPlane?(t,cam),
 drawText?(ctx,t,lyrics), post?(t), textSize? }`.
 
+**Every film starts from scratch.** A new song gets new worlds, written for its own story: no
+scene code, world library, look, figure or imagery carried over from an earlier film, and no
+"shared world renderer" copied between songs so that films chain (Shane, 2026-10-25, after the
+Genesis 9 cut built on the Genesis 10 worlds). The engine's own kits (`/kit/*`, `/engine.js`,
+`/premium/*`) are shared tooling, not imagery; a song's `lib/` is its own. Earlier films are
+benchmarks to look at (Genesis 8 The Dove first, then King of Glory and Salt and Light), never a
+source of parts.
+
+**No human figure built in code.** Capsule, cone and block people read as floating stick figures
+every time, however they are lit (Shane, 2026-10-25). Show people by what they leave and use:
+footprints pressed into wet ground, a staff against an altar, tracks, a garment carried, a cup, a
+cairn, fire and lamplight; or by the camera standing where they stand. A figure may appear only as
+still artwork inside a stylized idiom the theme already owns (painted glass in a window, paper
+craft), never as a moving code body. Generated (H3) films, where real people act, are a separate
+setting and keep their own rules.
+
+**Words are built as things of the world, differently in each scene.** Letters that sprout as
+shoots, clay letters with fingerprints in them, words rising in smoke, rain lit in letter shapes,
+letter-shaped breaks in a cloud deck, pools of sky, stone courses laid as a wall: three-dimensional,
+lit and shadowed, with the world acting on them. Carving, painting or weaving a line onto a stone,
+leaf or cloth is fine now and then, not the default (Shane, 2026-10-25: "not just throwing text in
+the scene like an overlay on a stone or leaf").
+
 ## Words in the scene
 
 The lyric is part of the world by default, and the world carries the story. The words take any form

@@ -53,7 +53,9 @@ Write each scene as a block like this, then store it in that section's `directio
 
 - Long songs need at least 30 genuinely distinct choreographies, one or two uses each and never more than three. A new color, font, backdrop or seed is not a new choreography. Keep a running list while writing.
 - Use real lyrics only. Instrumental passages may use the real song or chapter title, never invented words.
-- Do not reuse scene artwork; cropping or tinting is reuse.
+- Do not reuse scene artwork; cropping or tinting is reuse. Every film starts from scratch: nothing (worlds, libraries, looks, figures, imagery) is carried from an earlier film, and no shared world renderer chains songs together (Shane, 2026-10-25).
+- No human figure built in code: capsule, cone and block people read as floating stick figures. Plan people as what they leave and use (prints, a staff, tracks, a garment, a cup, a cairn, fire, lamplight), or as still artwork inside a stylized idiom the theme owns.
+- Plan each scene's words as a three-dimensional thing of its world, different from the scenes around it; a line carved or painted onto a surface is the occasional exception, not the default.
 - Mark any treatment the engine cannot yet render as a proposed new capability.
 - No shake by default. Plan a shaking frame only for extreme power or a violent, energetic collision (a blow landing, lightning striking close, the ground breaking), at most once or twice in a film, and write the reason in that scene's `<choreography>`; photoreal scenes also carry it as `"shake": "<the violent moment>"` in film.json. Strong words, beats and choruses get light, scale, a cut or stillness instead.
 - Record `inspiration` with inspected reference IDs, or record no-match honestly.
