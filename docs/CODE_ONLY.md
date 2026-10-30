@@ -50,5 +50,6 @@ For films that need lit, photographic depth (terrain, water, cloud, timber, feat
 written as GPU shaders and rendered by [photoreal mode](../photoreal/README.md) instead of the CPU
 canvas. It keeps the same rules: code-only, 1080p60, sub-frame motion blur, frames as a pure function
 of song time, and lyrics placed in the scene (the default; words over the picture need an opt-in).
-Photoreal films render at the ultra tier by default. Song scenes live in the
+New photoreal films default to Ultra finishing with Dove's 8–16 sample preset. The old
+64-sample policy is an explicit `--sample-preset ultra` choice; existing cached sampling is preserved. Song scenes live in the
 song's own repository.

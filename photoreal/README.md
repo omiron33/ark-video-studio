@@ -370,20 +370,34 @@ rendered exactly as before.
 
 ## Tiers
 
-`film.mjs --tier fast|standard|premium|ultra` (or `"tier"` in film.json). **Ultra, the ultra
-realistic render, is the default** when neither says: 1920x1080 at the film's frame rate, at least
-64 sub-frames, CRF 12 (add `"resolution": "3840x2160"` for 4K). A film already rendered at standard
-before that (it has segments in `out/segments/`) stays at standard so it is never silently
-re-rendered; give it `"tier": "ultra"` to move it up.
-`node photoreal/film.mjs --song S --estimate` measures the machines and prints what each tier
-would cost for this film, without rendering.
+`film.mjs --tier fast|standard|premium|ultra` (or `"tier"` in film.json). **New films keep
+Ultra finishing and review, with Dove's 8–16 sample preset by default**: 1920x1080 at the film's
+frame rate, CRF 12, 8 samples normally, and `"samples": 16` on individual scenes needing smoother
+edges or motion blur. Explicit film/scene samples and `--samples` remain supported. For example:
+
+```json
+{"fps":60,"samples":8,"samplePreset":"dove","scenes":[{"id":"01","scene":"sea","from":0,"to":5},{"id":"02","scene":"wings","from":5,"to":10,"samples":16}]}
+```
+
+These are jittered sub-frames averaged into each output frame, not extra output frames. More
+samples refine anti-aliasing and shutter blur; they do not add authored scene detail, improve
+choreography or increase frame rate. `--sample-preset ultra` / `"samplePreset": "ultra"` restores
+the previous Ultra tier sampling (four times the base, at least 64). `--sample-preset dove` /
+`"samplePreset": "dove"` explicitly selects the lighter preset, including on an existing film.
+Existing production caches retain their tier, previous sample policy and implicit 12-sample
+baseline unless explicitly overridden; standard takes precedence if several tiers were tried.
+Drafts do not pin a production tier or sample preset. The Genesis 9 safe-render wrapper remains
+at its independently frozen 64 samples; this engine default does not alter that running film.
+
+`node photoreal/film.mjs --song S --estimate` measures the machines and prints estimates under
+the selected sampling preset. It runs GPU probes/test renders and requires normal GPU admission.
 
 | Tier | Frames | Sub-frames | Encode | Gates | For |
 |---|---|---|---|---|---|
-| fast | 30 fps | 2 | veryfast | none (STATUS.md says so) | a watchable film in a couple of hours |
-| standard | film.json fps | film.json samples | slow | all | films already rendered at standard, unchanged |
-| premium | 60 fps | at least twice, 32 for premium scenes | slow, CRF 16 | all, plus in-scene words | a lighter all-out render |
-| ultra (default) | film.json fps | four times, at least 64 | slow, CRF 12, 1080p unless `resolution` says | all, plus in-scene words | ultra realistic: every new film. Every sub-frame is jittered inside the pixel, so 64 sub-frames is 64x supersampling as well as motion blur |
+| fast | 30 fps | 2 | veryfast | none (STATUS.md says so) | quick draft |
+| standard | film.json fps | film.json samples, default 8 | slow, CRF 18 | all standard gates | existing standard films or explicit selection |
+| premium | 60 fps | at least twice, 32 for premium scenes | slow, CRF 16 | all, plus in-scene words | explicit premium selection |
+| ultra (default) | film.json fps | Dove: 8 normally, 16 per scene when requested; heavy preset: four times, at least 64 | slow, CRF 12, 1080p unless `resolution` says | all, plus in-scene words | default finishing with independently selected sampling |
 
 **Resolution.** `"resolution": "3840x2160"` in film.json (or `--res`) renders every picture, lyric
 layer and key still at that size; drafts and the fast tier stay 1920x1080. The page reads its size

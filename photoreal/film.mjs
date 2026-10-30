@@ -3,7 +3,7 @@
 //   node photoreal/film.mjs --song ../genesis8-the-dove --draft          fast draft for the pre-render check
 //   node photoreal/film.mjs --song ../genesis8-the-dove --stills         the five key stills, for review
 //   node photoreal/film.mjs --song ../genesis8-the-dove                  the full film
-//   options: [--only 01,02] [--samples 12] [--jobs N] [--stall 180] [--retries 2] [--no-test] [--out film.mp4]
+//   options: [--only 01,02] [--samples 12] [--sample-preset dove|ultra] [--jobs N] [--stall 180] [--retries 2] [--no-test] [--out film.mp4]
 //            [--skip-storyboard] [--skip-stills] [--skip-check]   (each is written into STATUS.md)
 //            [--legacy-web <old engine's photoreal/web>]   carry over pictures cached by an engine checked out elsewhere
 // film.json: { "fps": 60, "samples": 12, "scenes": [{ "id": "01", "scene": "sea", "from": 0, "to": 15.5, "params": {}, "samples"?: 16, "offBeat"?: "why" }] }
@@ -31,7 +31,7 @@ import { pickKeyStills } from './lib/stills.mjs';
 import { loadMachines } from './lib/machines.mjs';
 import { Worker, pickTask, slotSeconds, plateArgs, probeOn, simulate, chooseParallel } from './lib/farm.mjs';
 import { storyboardPath } from './lib/storyboard.mjs';
-import { resolveTier, TIERS } from './lib/tier.mjs';
+import { resolveTier, resolveSamplePreset, samplesForTier, samplesForScene, DEFAULT_SAMPLES, TIERS } from './lib/tier.mjs';
 import { isStory, storyConfig } from './lib/story.mjs';
 import { buildMix } from './lib/story-audio.mjs';
 
@@ -43,21 +43,22 @@ const flag = (k) => argv.includes('--' + k);
 const SONG = path.resolve(opt('song', '.'));
 const film = JSON.parse(fs.readFileSync(path.join(SONG, 'film.json'), 'utf8'));
 const draft = flag('draft');
-// Render tiers (--tier, or "tier" in film.json; premium when neither says, see lib/tier.mjs):
+// Render tiers (--tier, or "tier" in film.json; ultra for new films, see lib/tier.mjs):
 //   fast      30 fps, 2 sub-frames, quick encode, no review gates: a watchable film in a couple of hours
-//   standard  the film's own fps and samples: what every film rendered before ultra became the
-//             default, and what a film already rendered at standard keeps
+//   standard  the film's own fps and samples, with standard finishing and review
 //   premium   60 fps, at least twice the sub-frames (32 for lens-heavy premium scenes), richer lyric
 //             layers, CRF 16, every gate
-//   ultra     the ultra realistic render and the default: four times the film's sub-frames (at least
-//             64; every sub-frame is jittered inside the pixel, so this is the engine's supersampling
-//             as well as its motion blur), the film's own frame rate, CRF 12, every gate. 1920x1080
-//             unless film.json gives "resolution" (e.g. "3840x2160").
+//   ultra     default finishing: the film's own frame rate, CRF 12, every gate, 1920x1080 unless
+//             film.json gives "resolution". Sampling defaults to Dove's 8–16; --sample-preset ultra
+//             restores the old four-times/64-minimum supersampling and shutter blur.
 const { tier, why: tierWhy } = resolveTier(SONG, film, opt('tier'));
+const { preset: samplePreset, why: sampleWhy } = resolveSamplePreset(SONG, film, opt('sample-preset'));
 if (tierWhy !== '--tier' && tierWhy !== 'film.json') console.log(`tier: ${tier} (${tierWhy})`);
+console.log(`sample preset: ${samplePreset} (${sampleWhy})`);
 const fps = tier === 'fast' ? 30 : tier === 'premium' ? Math.max(60, film.fps ?? 60) : film.fps ?? 60;
-const baseSamples = film.samples ?? 12;
-const samples = opt('samples', draft ? '2' : tier === 'fast' ? '2' : tier === 'premium' ? String(Math.max(16, baseSamples * 2)) : tier === 'ultra' ? String(Math.max(64, baseSamples * 4)) : String(baseSamples));
+// Retain the old implicit baseline for cached films; only new films get the new default.
+const baseSamples = film.samples ?? (sampleWhy.startsWith('existing render') ? 12 : DEFAULT_SAMPLES);
+const samples = opt('samples', draft ? '2' : String(samplesForTier(tier, baseSamples, samplePreset)));
 const layerSamples = draft || tier === 'fast' ? 2 : tier === 'premium' || tier === 'ultra' ? 16 : 8;
 const encode = { preset: draft || tier === 'fast' ? 'veryfast' : 'slow', crf: opt('crf', tier === 'fast' ? '20' : tier === 'premium' ? '16' : tier === 'ultra' ? '12' : '18') };
 const only = opt('only')?.split(',');
@@ -114,10 +115,9 @@ const segs = scenes.map((s0, i) => {
   // can be rebuilt all-out and stitched into a film otherwise rendered at standard; it renders at the
   // film's frame rate. The fast tier renders everything fast.
   const st = tier === 'fast' ? 'fast' : s.tier === 'premium' ? 'premium' : tier;
-  const base = st === tier ? +samples : st === 'premium' ? Math.max(16, baseSamples * 2) : baseSamples;
+  const base = st === tier ? +samples : samplesForTier(st, baseSamples, samplePreset);
   // a scene may ask for more sub-frames (fast wings); premium gives lens-heavy premium scenes 32
-  const own = s.samples != null ? String(st === 'premium' || st === 'ultra' ? Math.max(+s.samples, base) : st === 'fast' ? Math.min(+s.samples, base) : s.samples) : String(base);
-  const sSamples = draft ? samples : st === 'premium' && keys.isPremium(s.scene) ? String(Math.max(32, +own)) : own;
+  const sSamples = String(samplesForScene(st, base, { samples: s.samples, draft, premiumScene: keys.isPremium(s.scene) }));
   const sLayerSamples = st === 'premium' && !draft ? 16 : layerSamples;
   const sDir = st === tier || draft ? segDir : path.join(OUT, `segments-${st}`);
   fs.mkdirSync(sDir, { recursive: true });
@@ -395,9 +395,8 @@ if (flag('estimate')) {
   for (const tr of TIERS) {
     const tfps = tr === 'fast' ? 30 : tr === 'premium' ? Math.max(60, film.fps ?? 60) : film.fps ?? 60;
     const tSamples = (sc) => {
-      const base = tr === 'fast' ? 2 : tr === 'premium' ? Math.max(16, baseSamples * 2) : tr === 'ultra' ? Math.max(64, baseSamples * 4) : baseSamples;
-      const own = sc.samples != null ? (tr === 'premium' || tr === 'ultra' ? Math.max(sc.samples, base) : tr === 'fast' ? Math.min(sc.samples, base) : sc.samples) : base;
-      return tr === 'premium' && keys.isPremium(sc.scene) ? Math.max(32, own) : own;
+      const base = samplesForTier(tr, baseSamples, samplePreset);
+      return samplesForScene(tr, base, { samples: sc.samples, premiumScene: keys.isPremium(sc.scene) });
     };
     const ttasks = scenes.map((sc, i) => {
       const h = handlesOf(i);

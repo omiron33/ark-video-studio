@@ -4,7 +4,8 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { inSceneReview } from '../photoreal/lib/inscene.mjs';
-import { resolveTier } from '../photoreal/lib/tier.mjs';
+import { resolveTier, resolveSamplePreset, samplesForTier, samplesForScene, DEFAULT_SAMPLES } from '../photoreal/lib/tier.mjs';
+import { plateArgs } from '../photoreal/lib/farm.mjs';
 import { validateStoryboard, draftStoryboard } from '../photoreal/lib/storyboard.mjs';
 import { makeKeys } from '../photoreal/lib/keys.mjs';
 
@@ -14,13 +15,64 @@ function song(files) {
   return dir;
 }
 
-test('ultra is the default tier; a film already rendered at standard keeps it', () => {
+test('Ultra finishing remains the default; cached films retain their tier and explicit choices win', () => {
   assert.equal(resolveTier(song({}), {}).tier, 'ultra');
   assert.equal(resolveTier(song({ 'out/segments/01.mp4': '' }), {}).tier, 'standard');
-  assert.equal(resolveTier(song({ 'out/segments-draft/01.mp4': '' }), {}).tier, 'ultra', 'a draft is not a standard render');
+  assert.equal(resolveTier(song({ 'out/segments-draft/01.mp4': '' }), {}).tier, 'ultra', 'a draft does not pin a production tier');
+  for (const tier of ['ultra', 'premium', 'fast']) {
+    assert.equal(resolveTier(song({ [`out/segments-${tier}/01.mp4`]: '' }), {}).tier, tier);
+  }
+  assert.equal(resolveTier(song({ 'out/segments-ultra/not-a-plate.txt': '' }), {}).tier, 'ultra');
+  assert.equal(resolveTier(song({ 'out/segments/01.mp4': '', 'out/segments-ultra/01.mp4': '' }), {}).tier, 'standard');
   assert.equal(resolveTier(song({ 'out/segments/01.mp4': '' }), { tier: 'premium' }).tier, 'premium');
   assert.equal(resolveTier(song({}), { tier: 'standard' }, 'fast').tier, 'fast');
   assert.throws(() => resolveTier(song({}), { tier: 'huge' }));
+});
+
+test('Dove samples are default independently of finishing; 16 and heavier samples remain explicit', () => {
+  assert.equal(DEFAULT_SAMPLES, 8);
+  assert.equal(samplesForTier('standard'), 8);
+  assert.equal(samplesForTier('ultra'), 8);
+  assert.equal(samplesForTier('ultra', 16), 16);
+  assert.equal(samplesForTier('standard', 16), 16);
+  assert.equal(samplesForTier('standard', 64), 64, 'explicit samples are never capped');
+  assert.equal(samplesForTier('ultra', 16, 'ultra'), 64, 'the previous Ultra sampling remains opt-in');
+  assert.equal(samplesForTier('ultra', 32, 'ultra'), 128);
+  assert.equal(samplesForTier('premium', 12), 24);
+  assert.equal(samplesForTier('fast', 16), 2);
+  assert.throws(() => samplesForTier('huge'));
+  assert.throws(() => samplesForTier('ultra', 8, 'huge'));
+});
+
+test('sample-preset overrides win; cached production preserves old sampling and drafts do not', () => {
+  assert.deepEqual(resolveSamplePreset(song({}), {}), { preset: 'dove', why: 'default' });
+  assert.equal(resolveSamplePreset(song({ 'out/segments-draft/01.mp4': '' }), {}).preset, 'dove');
+  for (const dir of ['segments', 'segments-ultra', 'segments-premium', 'segments-fast']) {
+    const s = song({ [`out/${dir}/01.mp4`]: '' });
+    assert.equal(resolveSamplePreset(s, {}).preset, 'ultra');
+    assert.equal(resolveSamplePreset(s, { samplePreset: 'dove' }).preset, 'dove');
+    assert.equal(resolveSamplePreset(s, { samplePreset: 'ultra' }, 'dove').preset, 'dove');
+  }
+  assert.equal(resolveSamplePreset(song({}), { samplePreset: 'ultra' }).preset, 'ultra');
+  assert.throws(() => resolveSamplePreset(song({}), { samplePreset: 'huge' }));
+});
+
+test('Dove scenes send 8/16 samples to the worker and changes invalidate cached plates', () => {
+  const dir = song({ 'scenes/a.js': 'export default {};', 'data/lyrics.json': '{"lines":[],"words":[]}' });
+  const keys = makeKeys(dir), s = { id: '01', scene: 'a', from: 0, to: 2, f0: 0, f1: 120 };
+  const tier = resolveTier(dir, {}).tier, preset = resolveSamplePreset(dir, {}).preset;
+  const base = samplesForTier(tier, DEFAULT_SAMPLES, preset);
+  for (const samples of [undefined, 16]) {
+    const n = samplesForScene(tier, base, { samples });
+    assert.equal(n, samples ?? 8);
+    const args = plateArgs({ ...s, samples: String(n) }, 60, { params: '{}' });
+    assert.equal(args[args.indexOf('--samples') + 1], String(n));
+  }
+  assert.notEqual(keys.plate(s, 60, 8), keys.plate(s, 60, 16));
+  assert.notEqual(keys.plate(s, 60, 8), keys.plate(s, 60, 64));
+  assert.equal(samplesForScene('ultra', 64, { samples: 16 }), 64);
+  assert.equal(samplesForScene('ultra', 2, { samples: 16, draft: true }), 2);
+  assert.equal(samplesForScene('premium', 16, { premiumScene: true }), 32);
 });
 
 test('a lyric layer over the picture fails at premium unless the scene opts into overlay with a reason', () => {

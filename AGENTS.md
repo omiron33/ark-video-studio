@@ -42,7 +42,7 @@ A film that tells a spoken story (a narrated Scripture passage rather than a son
 
 ## Render tiers
 
-Ultra, the ultra realistic tier, is the default for every new film (1080p at the film's frame rate, at least 64 sub-frames, CRF 12, every gate; `"resolution": "3840x2160"` in film.json for 4K): premium scenes (Three.js hero objects with studio light, a real lens, in-world type, the finishing kit and transitions) where they serve the song. When Shane wants a film in a couple of hours instead, use `--tier fast`; `--tier premium` is the lighter all-out render. Run `node photoreal/film.mjs --song <song> --estimate` and tell him what each tier would cost before a long render. Films already rendered at standard stay at standard unless film.json says otherwise. See [photoreal/README.md](photoreal/README.md#tiers).
+New films default to Dove's 8–16 sample preset while retaining Ultra finishing and review (1080p at the film's frame rate, CRF 12, in-world type and every Ultra gate). Use 8 samples normally and `"samples": 16` on scenes that need it; explicit film/scene samples remain authoritative. `--sample-preset ultra` / `"samplePreset": "ultra"` restores the old Ultra four-times/64-minimum sampling; `--sample-preset dove` explicitly selects the lighter policy. Existing production caches retain their tier and historical sampling unless overridden; standard takes precedence when several tiers were tried. Preserve authored worlds, finishing and transitions regardless of sample count. Run `node photoreal/film.mjs --song <song> --estimate` before a long render; its probe/test path needs normal GPU admission. See [photoreal/README.md](photoreal/README.md#tiers).
 
 ## Where work runs
 
