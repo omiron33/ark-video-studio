@@ -14,7 +14,7 @@ Claude runs in **code-only** mode: every frame is drawn in code, and the bar is 
 | --- | --- | --- | --- | --- |
 | Song intake, alignment, beats | Yes: `import`, `align` (local Whisper and forced alignment) | Yes | Yes | Run the CLI directly |
 | Reference search | Yes: `references`, `reference-context` | Yes | Yes | Run the CLI directly |
-| Four theme mockups | Yes, with local ComfyUI: `image --provider comfyui` | Built-in GPT Image | `image` command (API key, else local ComfyUI) | Local ComfyUI; if it is off, prompts wait in `concepts/` and the gate stays open |
+| Four theme mockups (only when Shane asks) | Yes, with local ComfyUI: `image --provider comfyui` | Built-in GPT Image | `image` command (API key, else local ComfyUI) | Local ComfyUI; if it is off, prompts wait in `concepts/` and the gate stays open |
 | Director brief and scene plan | Deterministic planner only | Yes | Preferred (`ark-director-brief`) | Deterministic `create` vocabulary |
 | Choreography and HyperFrames/GSAP code | No | Yes | Preferred | Existing vocabulary only |
 | Scene artwork | Yes, with local ComfyUI | Built-in GPT Image | `image` command (API key, else local ComfyUI) | Local ComfyUI; if it is off, `assetRequests` stay pending |
@@ -41,7 +41,7 @@ Order when the agent has no image tool: OpenAI API if `OPENAI_API_KEY` is set, o
 
 Project skills live in `skills/` and are linked, not copied, into both `~/.codex/skills` and `~/.claude/skills`, so an edit reaches both agents.
 
-- `ark-song-video`: the whole song-to-film workflow and its theme-choice gate. Shared.
+- `ark-song-video`: the whole song-to-film workflow, with the optional theme-mockup step. Shared.
 - `ark-director-brief`: turn an approved theme into a structured scene-by-scene brief. Written for Claude's planning strength; any agent can use it.
 - `ark-frame-critic`: score decoded frames against the rubric and record an honest `approve-review`. Written for Claude's vision strength; any agent can use it.
 
@@ -49,7 +49,7 @@ The HeyGen HyperFrames and GSAP skills are installed once under `~/.codex/skills
 
 ## Rules that do not change with the model
 
-The theme-choice gate, lyric provenance, the rubric threshold of 8, review binding to the exact file hash and source revision, and "no paid video services" are the same for every agent. A review records the reviewer's real name, such as `claude` or `codex`, and never claims to have listened.
+The default of skipping theme mockups, lyric provenance, the rubric threshold of 8, review binding to the exact file hash and source revision, and "no paid video services" are the same for every agent. A review records the reviewer's real name, such as `claude` or `codex`, and never claims to have listened.
 
 ## Asset storage
 
