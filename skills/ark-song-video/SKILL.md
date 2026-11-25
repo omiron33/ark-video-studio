@@ -9,6 +9,8 @@ This skill is shared by Codex and Claude. Everything here applies to both; where
 
 Use the existing engine and the song's story to make a lyric-led film. On this Mac the canonical checkout is `/Volumes/Code/ark-video-studio`; the existing `/Users/shanefisher/storybook/ark-video` checkout also exists. Inspect the active checkout's instructions and state before changing it. Do not overwrite accepted films or authored manifests. Keep revisions and experiments separate; edit only the requested sections and reuse valid section caches.
 
+**Code-only song films (Shane, 2026-11-25):** follow `docs/SONG_FILM_PROCEDURE.md` in the engine checkout as the default procedure.
+
 ## Intake before themes
 
 1. Check the owner-private Genesis Site for the supplied track first. Resolve a Suno share link to its canonical song identity, match that identity in the Site, and reuse the stored source audio and exact lyrics. If absent, use an authorized official Suno API connection or a supplied original file, store it in the Site, verify the saved entry, and pull that stored copy for the project. Do not send Shane through a Suno login flow. Keep the source/share URLs, Site identity, audio hash and exact supplied lyrics. Never substitute a similarly titled song. Use current Site/API documentation or inspect the running app rather than inventing endpoints.
