@@ -1,15 +1,15 @@
 ---
 name: ark-director-brief
-description: Turn an approved Ark theme and analyzed song into a structured scene-by-scene director brief before any choreography code is written. Use after Shane has chosen a theme for an Ark lyric film, when planning or re-planning scenes. Works for any agent; written for Claude's planning strength.
+description: Turn an Ark theme and analyzed song into a structured scene-by-scene director brief before any choreography code is written. Use once the theme of an Ark lyric film is set (chosen by the agent by default, or by Shane when he asked for mockups), when planning or re-planning scenes. Works for any agent; written for Claude's planning strength.
 ---
 
 # Ark director brief
 
-Use only after the theme-choice gate in `ark-song-video` has `status: "chosen"`. Read `AGENTS.md`, `docs/AGENTS_AND_MODELS.md` and the project's intake and analysis first.
+Use once the theme is set: chosen by the agent (the default; `status: "waived"`), or by Shane when he asked for mockups (`status: "chosen"`). Read `AGENTS.md`, `docs/AGENTS_AND_MODELS.md` and the project's intake and analysis first.
 
 ## Inputs to gather
 
-- The chosen theme and Shane's exact instruction from `theme-choice.json`.
+- The theme, and Shane's exact instruction from `theme-choice.json` when he chose it.
 - Canonical words with IDs and measured times, the beat and accent analysis, and the song duration (`node engine/cli.mjs inspect --project <project.json> --json`).
 - Reference context for each planned scene (`node engine/cli.mjs reference-context ...`). Open the actual contact-sheet images; captions alone are not inspection.
 

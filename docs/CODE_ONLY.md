@@ -37,7 +37,7 @@ The minimum acceptable film is on par with [mexicat/pdoom-video](https://github.
 
 - `create` detects Claude and starts the project with `creation.mode: "code-only"`, 60 fps and the render settings above. A brief asking for photography is translated into coded treatments, with a warning in the plan.
 - The creative preflight fails any code-only scene that uses an image or video asset (fonts are the only permitted files), any code-only project below 60 fps, and any without motion blur.
-- The theme-choice gate's four mockups are single still frames rendered by code, not image-model pictures.
+- Theme mockups are skipped by default. When Shane asks for them, the four are single still frames rendered by code, not image-model pictures.
 - The visual rubric's `photorealism` category is scored as **finish** in code-only mode: anti-aliasing, grain, blur, banding and type crispness, judged against the pdoom renders.
 
 ## Drafting quickly

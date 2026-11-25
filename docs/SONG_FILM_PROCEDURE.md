@@ -19,8 +19,9 @@ This public file holds no addresses, hostnames or machine paths. Those are in th
 - Register the project on the dashboard. Send the plan and an ETA. A progress note every 30 to 45 minutes.
 - Find the song in Music Studio's store of WAV masters by its chapter id; the same database record holds
   the lyrics. Copy it to `media/song.wav`. Never commit it.
-- **Theme gate:** Genesis 16 ran without the four-mockup theme choice. Shane told us to start Genesis 17
-  with this process. For any other new song, the engine's gate stands unless he waives it.
+- **No theme gate.** The four-mockup theme choice is skipped by default for every new song film (Shane,
+  2026-11-25: "Skip for every film"). Choose the theme yourself, write it in `docs/BRIEF.md`, and go on.
+  Make the mockups only when he asks for them; then wait for his choice.
 
 ## 1. Lyrics and beats (about 1 h)
 

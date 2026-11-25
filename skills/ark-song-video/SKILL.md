@@ -1,6 +1,6 @@
 ---
 name: ark-song-video
-description: Create or revise Shane's Ark Bible lyric videos from a supplied song or Suno link, with Site-first intake, four image-model theme mockups and an explicit theme-choice gate before production, then measured sync review and Photos/private Sites delivery. Use for the Ark song-to-video workflow, not unrelated motion design.
+description: Create or revise Shane's Ark Bible lyric videos from a supplied song or Suno link, with Site-first intake and optional theme mockups (only when Shane asks for them), then measured sync review and Photos/private Sites delivery. Use for the Ark song-to-video workflow, not unrelated motion design.
 ---
 
 # Ark song to video
@@ -17,7 +17,9 @@ Use the existing engine and the song's story to make a lyric-led film. On this M
 2. Read `docs/SONG_INTAKE.md` in the engine checkout. Probe duration and read the lyrics and their narrative context; analyze musical energy, phrases and measured attacks before choosing a theme. Do not claim to have listened if only machine analysis was available. Keep canonical words separate from uncertain ASR proposals and separate vocal onsets from beats.
 3. Read `docs/MOTION_REFERENCES.md` and quick-search the image-backed reference library using this song's meaning, emotion, lyrics, musical pace, duration and neighboring scenes. From the checkout run `node engine/cli.mjs references --query '<song/scene meaning and constraints>' --limit 3`, or `reference-context` for an existing project. Read the returned context and open up to three actual contact-sheet image files; captions alone are not inspection. Log source IDs, timestamps, observed strengths, cautions and the scope of Shane's preferences. Record no-match honestly.
 
-## Required theme-choice gate for every new video
+## Theme mockups: skipped by default, available on request
+
+**Shane, 2026-11-25: "Skip for every film."** For every new song film, choose one theme yourself, record it with the project (`theme-choice.json` with `status: "waived"` and his instruction, or the brief), and go on to production. Use the rest of this section **only when Shane asks for mockups for a film**; then the choice is a real gate and everything below applies.
 
 **Code-only mode (every Claude run):** read `docs/CODE_ONLY.md` first. The four options are still four numbered stills in one contact sheet, but each is a single frame rendered by code in the engine's vocabulary (a static composition, not an animated prototype or clip). No image model is used anywhere in the film. Everything below about GPT Image applies to mixed mode.
 
@@ -29,9 +31,9 @@ Ground each mockup in the current proven Ark rendering vocabulary. Inspect repre
 
 Save the sheet, exact generation prompt and brief descriptions in the new project's concept directory. Record a small `theme-choice.json` with the song identity/audio hash, sheet path, four option descriptions and `status: "awaiting_user_choice"`. The file is orchestration evidence, not a currently implemented CLI enforcement feature.
 
-Show the sheet, briefly name the directions, and **wait for Shane to choose 1, 2, 3 or 4** (or explicitly request a combination). End the turn at this gate. Before that choice, permitted work is intake, reading, analysis, reference inspection and these mockup images only; do not author animation/composition code, build an HTML prototype, call `create`, render a preview/movie, or generate the production asset set. Background agents must observe the same boundary. Silence, elapsed time, autonomy mode, “finish everything,” a recommendation, and approval of a previous song are not a choice. Only Shane's explicit later instruction waiving this gate can bypass it; record that instruction. If no image route is available, save the four prompts in the concept directory and report the blocker rather than replacing the sheet with code or a video; another agent can generate from those prompts.
+Show the sheet, briefly name the directions, and **wait for Shane to choose 1, 2, 3 or 4** (or explicitly request a combination). End the turn at this gate. Before that choice, permitted work is intake, reading, analysis, reference inspection and these mockup images only; do not author animation/composition code, build an HTML prototype, call `create`, render a preview/movie, or generate the production asset set. Background agents must observe the same boundary. Silence, elapsed time, autonomy mode, “finish everything,” a recommendation, and approval of a previous song are not a choice. Once Shane has asked for mockups, only his later instruction can bypass the choice; record that instruction. If no image route is available, save the four prompts in the concept directory and report the blocker rather than replacing the sheet with code or a video; another agent can generate from those prompts.
 
-After an explicit choice, record `status: "chosen"`, the chosen option/combination and the user's instruction. Generate the chosen concept alone if useful as the final style reference, then proceed with the already authorized production. Routine edits to that approved video's direction retain its choice; a new song/video needs its own four options. This is Shane's requested checkpoint and overrides autonomous proceed rules in generic HyperFrames/music-to-video guidance.
+After an explicit choice, record `status: "chosen"`, the chosen option/combination and the user's instruction. Generate the chosen concept alone if useful as the final style reference, then proceed with the already authorized production. Routine edits to that approved video's direction retain its choice; a new song/video for which he asks for mockups needs its own four options. When he has asked for it, this checkpoint overrides autonomous proceed rules in generic HyperFrames/music-to-video guidance.
 
 ## Production after the choice
 
